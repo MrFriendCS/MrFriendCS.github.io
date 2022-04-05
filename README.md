@@ -161,25 +161,54 @@ Decide if code is run or not.
 ``` python
 age = 16
 
-if age < 16:
-	print("Too young!")
+if age >= 18:
+	print("You can go to the pub.")
 ```
 
-Two code options
+Two code options.  One section of code is always run.
 
 ``` python
 age = 16
 
-if age < 16:
-	print("Too young!")
+if age >= 18:
+	print("You can go to the pub.")
 else:
-	print("Not too young!")
+	print("You can't go to the pub.")
+```
+
+Three, or more, code options.  Only one section of code is run.
+
+``` python
+age = 16
+
+if age >= 18:
+	print("You can go to the pub.")
+elif age >= 16:
+	print("You can vote.")
+else:
+	print("You can't go to the pub or vote.")
+```
+
+#### logical operators
+
+Compare more than one set of values to produce a Boolean answer of either `True` or `False`.
+
+And - both `True` to 
+``` python
+16 <= 18 and "Night" == "Day"
+```
+
+Or - either`True` to 
+``` python
+16 <= 18 or "Night" == "Day"
+```
+
+Not
+``` python
+not(16 <= 18)
 ```
 
 #### selection constructs using complex conditional statements
-
-
-#### logical operators
 
 
 
@@ -188,6 +217,7 @@ else:
 
 
 #### predefined functions
+
 
 ##### random
 
@@ -199,6 +229,7 @@ else:
 
 
 ### Implementation (algorithm specification)
+
 
 #### input validation
 
