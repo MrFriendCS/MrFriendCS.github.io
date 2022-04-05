@@ -7,6 +7,14 @@ All code examples use Python.
 
 **Note:** These notes are focused on N5 Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
+### Display information
+
+``` Python
+print("Hello world")
+
+print(3.14)
+```
+
 ### Implementation (computational constructs)
 
 #### expressions to assign values
@@ -17,7 +25,7 @@ Variables are used to store values.  An assignment statement has 3 parts:
  2. The value to the right of the assignment operator
  3. The variable name to the left of the assignment operator
 
-The value is assigned to the variable.  The value *might* need to be calculated first before being assigned.
+The value is assigned to (stored in) the variable.  The value *might* need to be calculated first before being assigned.
 
 ``` python
 myInteger = 5
@@ -76,11 +84,14 @@ Exponentiation (to the power of)
 Examples
 ``` python
 myMultiplication = 3 * 2
+print(myMultiplication)
 
 mySquare = 3 ** 2
+print(mySquare)
 
-myCounter = 0
-myCounter = myCounter + 1
+myAge = 21
+myAge = myAge + 1
+print(myAge)
 ```
 
 #### expressions to concatenate strings
@@ -92,6 +103,8 @@ part1 = "Ho"
 part2 = "use"
 
 word = part1 + part2
+
+print(word)
 ```
 
 Be sure to include a space between words when concatenating.
@@ -101,6 +114,8 @@ word1 = "Hello"
 word2 = "world"
 
 phrase = word1 + " " + word2
+
+print(phrase)
 ```
 
 #### selection constructs using simple conditional statement
@@ -139,13 +154,26 @@ Less than or equal to
 16 <= 18
 ```
 
+##### Selection
+
+Decide if code is run or not.
+
 ``` python
 age = 16
 
-if 
-word2 = "world"
+if age < 16:
+	print("Too young!")
+```
 
-phrase = word1 + " " + word2
+Two code options
+
+``` python
+age = 16
+
+if age < 16:
+	print("Too young!")
+else:
+	print("Not too young!")
 ```
 
 #### selection constructs using complex conditional statements
