@@ -1,3 +1,4 @@
 theme: jekyll-theme-modernist
 title: Mr Friend's homepage
 description: Seeing what's possible.
+markdown: kramdown
