@@ -2,7 +2,7 @@
 
 ## Software Design and Development
 
-**Note:** These notes are focused on N5 Computing Science so some Python terms are used differently.  Any reference to an `array` will actually use a `list`.
+**Note:** These notes are focused on N5 Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
 ### Implementation (computational constructs)
 
@@ -39,7 +39,59 @@ myArrayOfIntegers = [56, 34, 2, 85, 51]
 
 #### expressions to return values using arithmetic operations
 
+Addition
+``` python
+4 + 2
+```
+
+Subtraction
+``` python
+4 - 2
+```
+
+Multiplication
+``` python
+4 * 2
+```
+
+Division
+``` python
+4 / 2
+```
+
+Exponentiation (to the power of)
+``` python
+4 ** 2
+```
+
+Examples
+``` python
+myMultiplication = 3 * 2
+
+mySquare = 3 ** 2
+
+myCounter = 0
+myCounter = myCounter + 1
+```
+
 #### expressions to concatenate strings
+
+Concatenate means to join together.
+
+``` python
+part1 = "Ho"
+part2 = "use"
+
+word = part1 + part2
+```
+Be sure to include a space between words when concatenating.
+
+``` python
+word1 = "Hello"
+word2 = "world"
+
+phrase = word1 + " " + word2
+```
 
 
 #### selection constructs using complex conditional statements
