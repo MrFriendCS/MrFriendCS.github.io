@@ -21,7 +21,7 @@ print(3.14)
 
 Variables are used to store values.  An assignment statement has 3 parts:
 
- 1. An assignment operator = (an equals sign in maths)
+ 1. An assignment operator **=** (an equals sign in maths)
  2. The value to the right of the assignment operator
  3. The variable name to the left of the assignment operator
 
@@ -193,20 +193,42 @@ else:
 
 Compare more than one set of values to produce a Boolean answer of either `True` or `False`.
 
-And - both `True` to 
+AND: both comparisons must be `True` to produce `True`
+
 ``` python
 16 <= 18 and "Night" == "Day"
 ```
 
-Or - either`True` to 
+|Comparison 1|Comparison 2|Result|
+|--|--|--|
+|False|False|False|
+|False|True|False|
+|True|False|False|
+|True|True|True|
+
+OR:  one or both comparisons must be `True` to produce `True`
+
 ``` python
 16 <= 18 or "Night" == "Day"
 ```
 
-Not
+|Comparison 1|Comparison 2|Result|
+|--|--|--|
+|False|False|False|
+|False|True|True|
+|True|False|True|
+|True|True|True|
+
+NOT: reverses the result of the comparison
+
 ``` python
 not(16 <= 18)
 ```
+
+|Comparison |Result|
+|--|--|
+|False|True|
+|True|False|
 
 #### selection constructs using complex conditional statements
 
