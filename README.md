@@ -122,7 +122,7 @@ print(phrase)
 
 ##### Comparisons
 
-Compare one value with another to produce a Boolean answer of either `True` or `False`.
+Compare one value with another to produce a Boolean answer of `True` or `False`.
 
 Equality (the same as)
 ``` python
@@ -156,7 +156,7 @@ Less than or equal to
 
 ##### Selection
 
-Decide if code is run or not.
+Code is run if the comparison is `True`.
 
 ``` python
 age = 16
@@ -191,9 +191,11 @@ else:
 
 #### logical operators
 
-Compare more than one set of values to produce a Boolean answer of either `True` or `False`.
+Compare more than one set of values to produce a Boolean answer of `True` or `False`.
 
-AND: both comparisons must be `True` to produce `True`
+##### AND
+
+Both comparisons must be `True` to produce `True`.
 
 ``` python
 16 <= 18 and "Night" == "Day"
@@ -206,7 +208,9 @@ AND: both comparisons must be `True` to produce `True`
 |True|False|False|
 |True|True|True|
 
-OR:  one or both comparisons must be `True` to produce `True`
+##### OR
+
+One or both comparisons must be `True` to produce `True`.
 
 ``` python
 16 <= 18 or "Night" == "Day"
@@ -219,7 +223,9 @@ OR:  one or both comparisons must be `True` to produce `True`
 |True|False|True|
 |True|True|True|
 
-NOT: reverses the result of the comparison
+##### NOT
+
+Reverses the result of the comparison.
 
 ``` python
 not(16 <= 18)
