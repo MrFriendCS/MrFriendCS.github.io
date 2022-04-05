@@ -1,4 +1,4 @@
-theme: jekyll-theme-hacker
 title: Mr Friend's homepage
 description: Very much work in progress
 markdown: kramdown
+theme: jekyll-theme-minimal
