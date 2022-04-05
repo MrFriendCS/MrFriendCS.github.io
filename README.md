@@ -84,6 +84,7 @@ part2 = "use"
 
 word = part1 + part2
 ```
+
 Be sure to include a space between words when concatenating.
 
 ``` python
@@ -93,6 +94,31 @@ word2 = "world"
 phrase = word1 + " " + word2
 ```
 
+#### selection constructs using simple conditional statement
+
+##### Comparisons
+
+Compare one value with another to produce an answer of either `True` or `False`.
+
+Equality (the same as)
+``` python
+16 == 18
+```
+
+Inequality (not the same as)
+``` python
+16 != 18
+```
+
+
+``` python
+age = 16
+
+if 
+word2 = "world"
+
+phrase = word1 + " " + word2
+```
 
 #### selection constructs using complex conditional statements
 
@@ -100,7 +126,7 @@ phrase = word1 + " " + word2
 #### logical operators
 
 
-#### selection constructs using simple conditional statements
+
 
 #### iteration and repetition using fixed and conditional loops
 
