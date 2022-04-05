@@ -1,4 +1,4 @@
 title: Computing Science
 description: Very much work in progress
-markdown: kramdown
+markdown: GFM
 theme: jekyll-theme-minimal
