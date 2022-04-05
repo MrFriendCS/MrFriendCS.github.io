@@ -156,16 +156,16 @@ Less than or equal to
 
 ##### Selection
 
-Code is run if the comparison is `True`.
+One section of code.  Code is only run if the comparison is `True`.
 
 ``` python
-age = 16
+age = 21
 
 if age >= 18:
 	print("You can go to the pub.")
 ```
 
-Two code options.  One section of code is always run.
+Two sections of code.  One section of code is always run.
 
 ``` python
 age = 16
@@ -176,10 +176,12 @@ else:
 	print("You can't go to the pub.")
 ```
 
-Three, or more, code options.  Only one section of code is run.
+Two, or more, sections of code.  Only the section of code for the first comparison that is `True` is run.
+
+The `else` is optional.
 
 ``` python
-age = 16
+age = 21
 
 if age >= 18:
 	print("You can go to the pub.")
