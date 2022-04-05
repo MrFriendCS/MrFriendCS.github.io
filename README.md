@@ -1,3 +1,4 @@
+
 # N5 Computing Science
 
 ## Software Design and Development
@@ -10,7 +11,13 @@ All code examples use Python.
 
 #### expressions to assign values
 
-Variables are used to store values.
+Variables are used to store values.  An assignment statement has 3 parts:
+
+ 1. An assignment operator $=$ (an equals sign in maths)
+ 2. The value to the right of the assignment operator
+ 3. The variable name to the left of the assignment operator
+
+The value is assigned to the variable.  The value *might* need to be calculated first before being assigned.
 
 ``` python
 myInteger = 5
@@ -100,7 +107,7 @@ phrase = word1 + " " + word2
 
 ##### Comparisons
 
-Compare one value with another to produce an answer of either `True` or `False`.
+Compare one value with another to produce a Boolean answer of either `True` or `False`.
 
 Equality (the same as)
 ``` python
@@ -112,6 +119,25 @@ Inequality (not the same as)
 16 != 18
 ```
 
+Greater than
+``` python
+16 > 18
+```
+
+Greater than or equal to
+``` python
+16 >= 18
+```
+
+Less than
+``` python
+16 < 18
+```
+
+Less than or equal to
+``` python
+16 <= 18
+```
 
 ``` python
 age = 16
