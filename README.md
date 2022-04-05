@@ -21,7 +21,7 @@ print(3.14)
 
 Variables are used to store values.  An assignment statement has 3 parts:
 
- 1. An assignment operator $=$ (an equals sign in maths)
+ 1. An assignment operator = (an equals sign in maths)
  2. The value to the right of the assignment operator
  3. The variable name to the left of the assignment operator
 
