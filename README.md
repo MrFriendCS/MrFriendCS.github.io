@@ -2,6 +2,8 @@
 
 ## Software Design and Development
 
+All code examples use Python.
+
 **Note:** These notes are focused on N5 Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
 ### Implementation (computational constructs)
