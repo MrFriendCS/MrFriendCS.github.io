@@ -99,6 +99,8 @@ print(myAge)
 
 Concatenate means to join together.
 
+**Note:**  Only strings can be concatenated.
+
 ``` python
 part1 = "Ho"
 part2 = "use"
@@ -118,8 +120,6 @@ phrase = word1 + " " + word2
 
 print(phrase)
 ```
-
-**Note:**  Only strings can be concatenated.
 
 #### selection constructs using simple conditional statement
 
@@ -400,7 +400,28 @@ print("The combined age is " + str(total))
 
 #### traversing a 1-D array
 
-##### Getting values out
+Arrays store more than one value, called elements.  Each element has a position.  Python starts counting from zero.
+
+```
+arrayName[indexValue]
+```
+
+**Example**.  Retrieve the value in the second element, and change the value of the the third element.
+
+``` python
+scores = [56, 34, 2, 85, 51]
+
+score = scores[1]
+
+print(score)
+
+scores[2] = 82
+
+print(scores)
+```
+
+
+#### Getting values out
 
 ``` python
 scores = [56, 34, 2, 85, 51]
