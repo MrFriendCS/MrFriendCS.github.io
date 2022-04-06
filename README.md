@@ -279,6 +279,10 @@ while counter < 10:
 
 ##### random
 
+The code to produce a random number needs to be imported before it can be used.
+
+The code can be used to produce a random integer, with the lowest and highest possible values specified, or a random floating point value that ranges from 0 to 1.
+
 ``` python
 import random
 
@@ -291,12 +295,54 @@ print(myFloat)
 
 ##### round
 
+The round function works with floating point values (decimals).  It returns (produces) a value that is rounded to a specified number of decimal places
+
+``` python
+myFloat = 3.14159265359
+
+myRound = round(myFloat, 2)
+print(myRound)
+```
+
+The round function can also be used to return values without any decimal places.
+
+The following example will return a value of 4.
+
+``` python
+myFloat = 3.5
+
+myRound = round(myFloat)
+print(myRound)
+```
+
+The following example will ***also*** return a value of 4.
+
+``` python
+myFloat = 4.5
+
+myRound = round(myFloat)
+print(myRound)
+```
+
+**Note:** When Python does not always round up when the value is 5.  Instead it rounds to the nearest even number!
 
 ##### length
 
+The length function works with strings and arrays.  It returns a number that is equal to the number of characters in a string or the number of elements in an array.
+
 ``` python
-myString = "Hello"
+myLength = len("Hello world")
+print(myLength)
+
+
+myString = "Computing"
+myLength = len(myString)
+print(myLength)
+
+
 myArrayOfIntegers = [56, 34, 2, 85, 51]
+myLength = len(myArrayOfIntegers)
+print(myLength)
 ```
 
 
