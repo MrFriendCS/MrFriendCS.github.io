@@ -17,7 +17,7 @@ The data used in the examples can be represented in a table:
 | Carl | 24 | 1.89 |
 | Dina | 21 | 1.59 |
 
-It can also be represented as a comma separated values, e.g. `people.csv`:
+It can also be represented as comma separated values, e.g. `people.csv`:
 
 ```
 Alan,24,1.78
@@ -110,13 +110,40 @@ sub-programs/routines, defined by their name and arguments (inputs and outputs):
 
 ### convert from character to ASCII and vice versa
 
+#### character to ASCII
+
+``` python
+myCharacter = "A"
+myASCII = ord(myCharacter)
+print(myASCII)
+```
+
+#### ASCII to character
+
+``` python
+myASCII = 97
+myCharacter = chr(myASCII)
+print(myCharacter)
+```
 
 ### convert floating-point numbers to integers
 
+This removes the decimal part of the value.  It does not round.
+
+``` python
+myFloat = 3.95
+myInt = int(myFloat)
+print(myInt)
+```
 
 ### modulus
 
+The modulus is the remainder when doing division.
 
+``` python
+myModulus = 12 // 5
+print(myModulus)
+```
 
 ### file handling:
 — sequential CSV and txt files (open, create, read, write, close)
