@@ -400,9 +400,22 @@ print("The combined age is " + str(total))
 
 #### traversing a 1-D array
 
+##### Getting values out
+
 ``` python
 scores = [56, 34, 2, 85, 51]
 
 for index in range(len(scores)):
     print(scores[index])
+```
+
+##### Putting values in
+
+``` python
+heights = [0.0] * 5
+
+for index in range(len(heights)):
+    height = float(input("Enter a height: "))
+
+    heights[index] = height
 ```
