@@ -9,7 +9,7 @@ All code examples use Python.  Python uses indentation (spaces at the beginning 
 
 ### Display information
 
-``` Python
+``` python
 print("Hello world")
 
 print(3.14)
@@ -263,7 +263,7 @@ for counter in range(10):
 
 Before a conditional loop starts, the number of times it will run ***is not*** stated.
 
-It only runs if the comparison is `True`.  Each time the code is completed the comparison is checked again.  If it is still `True` the code is repeated.
+It only runs if the comparison is `True`.  Each time the code is completed the comparison is checked again.  If it is still `True` the code is run again.
 
 ``` python
 counter = 0
@@ -279,11 +279,25 @@ while counter < 10:
 
 ##### random
 
+``` python
+import random
+
+myInt = random.randint(1, 6)
+print(myInt)
+
+myFloat = random.random()
+print(myFloat)
+```
 
 ##### round
 
 
 ##### length
+
+``` python
+myString = "Hello"
+myArrayOfIntegers = [56, 34, 2, 85, 51]
+```
 
 
 ### Implementation (algorithm specification)
