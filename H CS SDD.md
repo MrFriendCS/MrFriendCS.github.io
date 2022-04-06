@@ -8,10 +8,21 @@ All the code examples use Python.  Python uses indentation (spaces at the beginn
 
 ## Implementation (data types and structures) 
 
-Describe, exemplify and implement appropriately the following structures:
-parallel 1D arrays
-records
-arrays of records
+### parallel 1D arrays
+
+Parallel arrays have the same number of elements in each array.
+
+``` python
+names = ["Alan", "Beth", "Carl", "Dina"]
+ages = [22, 23, 24, 21]
+heights = [1.78, 1.63. 1.89, 1.59]
+```
+
+### records
+
+
+### arrays of records
+
 
 ## Implementation (computational constructs)
 
