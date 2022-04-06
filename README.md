@@ -320,7 +320,7 @@ myRound = round(myFloat, 2)
 print(myRound)
 ```
 
-The round function can also be used to return values without any decimal places.
+The round function can also be used to return a value without any decimal places (integer).
 
 The following example will return a value of 4.
 
@@ -368,7 +368,7 @@ print(myLength)
 
 ##### User input
 
-Using the input function, the user can enter information with the keyboard.
+The input function allows a user to use the keyboard to enter information .
 
 ``` python
 user = input("What is your name? ")
@@ -415,9 +415,6 @@ print("The combined age is " + str(total))
 
 Arrays store more than one value, called elements.  Each element has a position.  Python starts counting from zero.
 
-```
-arrayName[indexValue]
-```
 
 Example.  Retrieve the value in the second element, and change the value of the the third element.
 
@@ -430,7 +427,6 @@ print(score)
 scores[2] = 82
 print(scores)
 ```
-
 
 ##### Getting values out
 
