@@ -118,6 +118,8 @@ phrase = word1 + " " + word2
 print(phrase)
 ```
 
+**Note:**  Only strings can be concatenated.
+
 #### selection constructs using simple conditional statement
 
 ##### Comparisons
@@ -324,7 +326,7 @@ myRound = round(myFloat)
 print(myRound)
 ```
 
-**Note:** When Python does not always round up when the value is 5.  Instead it rounds to the nearest even number!
+**Note:** Python does not always round up when the value is 5.  Instead it rounds to the nearest even number!
 
 ##### length
 
@@ -348,10 +350,39 @@ print(myLength)
 
 ### Implementation (algorithm specification)
 
-
 #### input validation
 
+##### User input
 
+Using the input function, the user can use the keyboard to enter information.
+
+``` python
+user = input("What is your name? ")
+
+print("Hello " + user)
+```
+
+Anything entered using the keyboard is a string.  If the value represents another data type then it must be cast (converted) to that data type.
+
+``` python
+age = int(input("How old are you? (In whole years) "))
+
+height = float(input("How tall are you? (In metres) "))
+```
+
+##### Validation
+
+User input can be checked using a conditional loop.  If it is not acceptable it can be re-entered until it is.
+
+``` python
+dice = int(input("Enter a value from 1 to 6: "))
+
+while dice < 1 or dice > 6:
+    print("You entered an invalid value.")
+    dice = int(input("Enter a value from 1 to 6: "))
+
+print("You entered " + str(dice))
+```
 
 #### running total within loop
 
