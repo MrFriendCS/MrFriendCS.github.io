@@ -3,7 +3,7 @@
 
 ## Software Design and Development
 
-All code examples use Python.
+All code examples use Python.  Python uses indentation (spaces at the beginning of a line) to show where code blocks are.
 
 **Note:** These notes are focused on N5 Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
@@ -162,7 +162,7 @@ One section of code.  Code is only run if the comparison is `True`.
 age = 21
 
 if age >= 18:
-	print("You can go to the pub.")
+    print("You can go to the pub.")
 ```
 
 Two sections of code.  One section of code is always run.
@@ -171,9 +171,9 @@ Two sections of code.  One section of code is always run.
 age = 16
 
 if age >= 18:
-	print("You can go to the pub.")
+    print("You can go to the pub.")
 else:
-	print("You can't go to the pub.")
+    print("You can't go to the pub.")
 ```
 
 Two, or more, sections of code.  Only the section of code for the first comparison that is `True` is run.
@@ -184,11 +184,11 @@ The `else` is optional.
 age = 21
 
 if age >= 18:
-	print("You can go to the pub.")
+    print("You can go to the pub.")
 elif age >= 16:
-	print("You can vote.")
+    print("You can vote.")
 else:
-	print("You can't go to the pub or vote.")
+    print("You can't go to the pub or vote.")
 ```
 
 #### logical operators
@@ -245,26 +245,32 @@ age = 21
 banned = False
 
 if age >= 18 and not(banned):
-	print("You can go to the pub.")
+    print("You can go to the pub.")
 ```
 
 #### iteration and repetition using fixed and conditional loops
 
 ##### Fixed loop
 
+Before a fixed loop starts, the number of times it will run ***is*** stated.
+
 ``` python
 for counter in range(10):
-	print(counter)
+    print(counter)
 ```
 
 ##### Conditional loop
+
+Before a conditional loop starts, the number of times it will run ***is not*** stated.
+
+It only runs if the comparison is `True`.  Each time the code is completed the comparison is checked again.  If it is still `True` the code is repeated.
 
 ``` python
 counter = 0
 
 while counter < 10:
-	print(counter)
-	counter = counter + 1
+    print(counter)
+    counter = counter + 1
 ```
 
 
