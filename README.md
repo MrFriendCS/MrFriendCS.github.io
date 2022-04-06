@@ -3,7 +3,7 @@
 
 ## Software Design and Development
 
-All code examples use Python.  Python uses indentation (spaces at the beginning of a line) to show where code blocks are.
+All the code examples use Python.  Python uses indentation (spaces at the beginning of a line) to show where code blocks are.
 
 **Note:** These notes are focused on N5 Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
@@ -262,6 +262,19 @@ for counter in range(10):
     print(counter)
 ```
 
+The range function needs a minimum of one parameter but can have more.
+
+``` python
+range(stop)
+
+range(start, stop)
+
+range(start, stop, step)
+```
+
+If only the `stop` parameter is used then the `start` value is always 0.  A little confusingly, the largest value in the range is one less than the `stop` value.
+
+
 ##### Conditional loop
 
 Before a conditional loop starts, the number of times it will run ***is not*** stated.
@@ -406,22 +419,20 @@ Arrays store more than one value, called elements.  Each element has a position.
 arrayName[indexValue]
 ```
 
-**Example**.  Retrieve the value in the second element, and change the value of the the third element.
+Example.  Retrieve the value in the second element, and change the value of the the third element.
 
 ``` python
 scores = [56, 34, 2, 85, 51]
 
 score = scores[1]
-
 print(score)
 
 scores[2] = 82
-
 print(scores)
 ```
 
 
-#### Getting values out
+##### Getting values out
 
 ``` python
 scores = [56, 34, 2, 85, 51]
@@ -439,4 +450,6 @@ for index in range(len(heights)):
     height = float(input("Enter a height: "))
 
     heights[index] = height
+
+print(heights)
 ```
