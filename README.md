@@ -51,8 +51,9 @@ myBoolean = True
 myArrayOfIntegers = [56, 34, 2, 85, 51]
 ```
 
-
-
+``` python
+myArrayOfStrings = [""] * 4
+```
 
 #### expressions to return values using arithmetic operations
 
@@ -354,7 +355,7 @@ print(myLength)
 
 ##### User input
 
-Using the input function, the user can use the keyboard to enter information.
+Using the input function, the user can enter information with the keyboard.
 
 ``` python
 user = input("What is your name? ")
@@ -386,6 +387,22 @@ print("You entered " + str(dice))
 
 #### running total within loop
 
+``` python
+total = 0
 
+for counter in range(4):
+    age = int(input("Enter an age: "))
+
+    total = total + age
+
+print("The combined age is " + str(total))
+```
 
 #### traversing a 1-D array
+
+``` python
+scores = [56, 34, 2, 85, 51]
+
+for index in range(len(scores)):
+    print(scores[index])
+```
