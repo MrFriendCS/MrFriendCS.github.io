@@ -1,3 +1,5 @@
+[Higher Computing Science](H-CS-SDD.md)
+
 # N5 Computing Science
 
 ## Software Design and Development
@@ -271,7 +273,7 @@ range(start, stop)
 range(start, stop, step)
 ```
 
-If only the `stop` parameter is used then the `start` value is always 0.  A little confusingly, the largest value in the range is one less than the `stop` value.
+If only the `stop` parameter is used then the `start` value is always zero.  A little confusingly, the largest value in the range is one less than the `stop` value.
 
 
 ##### Conditional loop
