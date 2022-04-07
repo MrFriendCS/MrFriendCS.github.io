@@ -1,4 +1,4 @@
-[N5 Computing Science](README.md)
+[N5 Computing Science](index.md)
 
 # Higher Computing Science
 
