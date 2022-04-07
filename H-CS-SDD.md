@@ -12,9 +12,9 @@ The data used in the examples can be represented in a table:
 
 | Name | Age | Height |
 |--|--|--|
-| Alan | 22 | 1.78 |
+| Alan | 24 | 1.78 |
 | Beth | 23 | 1.63 |
-| Carl | 24 | 1.89 |
+| Carl | 22 | 1.89 |
 | Dina | 21 | 1.59 |
 
 It can also be represented as comma separated values, e.g. `people.csv`:
@@ -95,15 +95,53 @@ people = [person()] * 4
 
 ## Implementation (computational constructs)
 
-Describe, exemplify and implement the appropriate constructs in a procedural high-level (textual) language:
+### sub-routines
 
-parameter passing (formal and actual)
+When a sub-routine if defined it can zero, one, or more parameters.  These are known as formal parameters.  The formal parameters will 'catch' values that are passed to the sub-routine.
 
-the scope of local and global variables
+``` python
+def subroutineName(formalParameter):
+    <sub-routine code>
+```
 
-sub-programs/routines, defined by their name and arguments (inputs and outputs):
-— functions
-— procedures
+When a sub-routine is called it can have parameters passed to it.  These are known as actual parameters.
+
+``` python
+subroutineName(actualParameter):
+```
+
+### procedures
+
+A procedure is a type of sub-routine that ***does not*** return a value.  It must be defined before it can be used.
+
+``` python
+def square(number):
+    squared = number ** 2
+    print(squared)
+```
+
+A procedure can be called from the main program, or from another sub-routine.
+
+``` python
+square(2)
+```
+
+### functions
+
+A function is another type of sub-routine that ***does*** return a value.  It must be defined before it can be used.
+
+``` python
+def square(number):
+    squared = number ** 2
+    return squared
+```
+
+A function can be called from the main program, or from another sub-routine.
+
+``` python
+squareNumber = square(2)
+print(squareNumber)
+```
 
 ### create substrings
 
@@ -218,8 +256,50 @@ print(myModulus)
 
 ### implement standard algorithms using 1D arrays or arrays of records
 
-#### linear search
+#### linear search - array
 
-#### find minimum and maximum
+``` python
+names = ["Alan", "Beth", "Carl", "Dina"]
+found = False
+pointer = -1
 
-#### count occurrences
+for index in range(len(names)):
+    if found == False and names[index] == "Carl":
+        found = True
+        pointer = index
+
+if found:
+    print("Found at index " + str(pointer))
+else:
+    print("Not found")
+```
+
+#### find minimum and maximum - array
+
+``` python
+heights = [1.78, 1.63, 1.89, 1.59]
+pointer = 0
+
+highest = heights[0]
+
+for index in range(1, len(heights)):
+    if heights[index] > highest:
+        highest = heights[index]
+        pointer = index
+
+print("Highest: " + str(highest))
+print("Found at index " + str(pointer))
+```
+
+#### count occurrences - array
+
+``` python
+names = ["Alan", "Beth", "Carl", "Dina"]
+count = 0
+
+for index in range(len(names)):
+    if names[index] == "Carl":
+        count = count + 1
+
+print("Found " + str(count) + " occurence(s)")
+```
