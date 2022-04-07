@@ -107,6 +107,72 @@ sub-programs/routines, defined by their name and arguments (inputs and outputs):
 
 ### create substrings
 
+Python does not have pre-defined functions for creating substrings.  Strings can be treated like an array.  Python starts counting from zero.
+
+``` python
+myString = "Hello world"
+
+myCharacter = myString[0]
+print(myCharacter)
+
+myCharacter = myString[6]
+print(myCharacter)
+```
+
+To extract more than a single character a second parameter is used.
+
+```
+string[start : stop]
+```
+
+``` python
+myString = "Hello world"
+
+mySubstring = myString[0:4]
+print(mySubstring)
+
+mySubstring = myString[6:11]
+print(mySubstring)
+```
+
+If the first or the last character is included in the substring then the `start` or `stop` parameter can be omitted.
+
+#### Left substring
+
+``` python
+myString = "Hello world"
+
+mySubstring = myString[ :4]
+print(mySubstring)
+```
+
+#### Right substring
+
+``` python
+myString = "Hello world"
+
+mySubstring = myString[6: ]
+print(mySubstring)
+```
+
+It is possible to use a negative value for the `start` parameter.
+
+``` python
+myString = "Hello world"
+
+mySubstring = myString[-5: ]
+print(mySubstring)
+```
+
+
+#### Mid substring
+
+``` python
+myString = "Hello world"
+
+mySubstring = myString[1:5]
+print(mySubstring)
+```
 
 ### convert from character to ASCII and vice versa
 
