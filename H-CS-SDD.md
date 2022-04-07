@@ -255,7 +255,7 @@ print(myModulus)
 
 #### Reading parallel arrays from a file
 
-Declare large enough parallel arrays to hold the data.
+Declare parallel arrays that are large enough to hold the data.
 
 ``` python
 names = [""] * 4
