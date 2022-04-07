@@ -8,7 +8,7 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - README.md
+  - index.md
   - H-CS-SDD.md
   
 theme: jekyll-theme-minimal
