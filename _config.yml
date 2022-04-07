@@ -1,3 +1,14 @@
 title: Computing Science
 description: A work in progress
+
+
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+  - H-CS-SDD.md
+  
 theme: jekyll-theme-minimal
