@@ -330,7 +330,7 @@ Close the file.
 file.close()
 ```
 
-#### Reading parallel arrays from a file
+#### Reading an array of records from a file
 
 Declare a large enough array of records to hold the data.
 
