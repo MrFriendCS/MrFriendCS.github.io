@@ -250,13 +250,168 @@ print(myModulus)
 ```
 
 ### file handling:
-— sequential CSV and txt files (open, create, read, write, close)
+
+#### Reading parallel arrays from a file
+
+Declare large enough parallel arrays to hold the data.
+
+``` python
+names = [""] * 4
+ages = [0] * 4
+heights = [0.0] * 4
+```
+
+Declare other variables
+
+``` python
+tempArray = [""] * 3
+name = ""
+age = 0
+height = 0.0
+line = ""
+index = 0
+```
+
+Open the file that holds the data, in read only mode.
+
+``` python
+file = open("people.csv" ,"r" )
+```
+
+Read the first line of the file.
+
+``` python
+line = file.readline()
+```
+
+Start / continue the conditional loop if the variable `line` is not empty.
+
+``` python
+while line:
+```
+
+Split the content of the variable `line` at the commas.  Assign the elements to `tempArray`.
+
+``` python
+	tempArray = line.split(",")
+```
+
+Retrieve the individual elements from `tempArray` and cast appropriately.
+
+``` python
+	name = tempArray[0].strip()
+	age = int(tempArray[1].strip())
+	height = float(tempArray[2].strip())
+```
+
+Assign the data the appropriate parallel array.
+
+``` python
+	names[index] = name
+	ages[index] = age
+	height[index] = height
+```
+
+Read the next line of the file.
+
+``` python
+	line = file.readline()
+```
+
+Increase the index of where the next element will be stored.
+
+``` python
+	index = index + 1
+```
+
+Close the file.
+
+``` python
+file.close()
+```
+
+#### Reading parallel arrays from a file
+
+Declare a large enough array of records to hold the data.
+
+``` python
+people = [person()] * 4
+```
+
+Declare other variables
+
+``` python
+tempArray = [""] * 3
+name = ""
+age = 0
+height = 0.0
+line = ""
+index = 0
+```
+
+Open the file that holds the data, in read only mode.
+
+``` python
+file = open("people.csv" ,"r" )
+```
+
+Read the first line of the file.
+
+``` python
+line = file.readline()
+```
+
+Start / continue the conditional loop if the variable `line` is not empty.
+
+``` python
+while line:
+```
+
+Split the content of the variable `line` at the commas.  Assign the elements to `tempArray`.
+
+``` python
+	tempArray = line.split(",")
+```
+
+Retrieve the individual attributes from `tempArray` and cast appropriately.
+
+``` python
+	name = tempArray[0].strip()
+	age = int(tempArray[1].strip())
+	height = float(tempArray[2].strip())
+```
+
+Assign the record to appropriate element in the array.
+
+``` python
+	people[index] = person(name, age, height)
+```
+
+Read the next line of the file.
+
+``` python
+	line = file.readline()
+```
+
+Increase the index of where the next element will be stored.
+
+``` python
+	index = index + 1
+```
+
+Close the file.
+
+``` python
+file.close()
+```
 
 ## Implementation (algorithm specification)
 
 ### implement standard algorithms using 1D arrays or arrays of records
 
 #### linear search - array
+
+Finds the first occurrence.
 
 ``` python
 names = ["Alan", "Beth", "Carl", "Dina"]
@@ -276,19 +431,18 @@ else:
 
 #### find minimum and maximum - array
 
+Assign the value in the first element as the highest. or lowest, value.  Loop from the second element.
+
 ``` python
 heights = [1.78, 1.63, 1.89, 1.59]
-pointer = 0
 
 highest = heights[0]
 
 for index in range(1, len(heights)):
     if heights[index] > highest:
         highest = heights[index]
-        pointer = index
 
 print("Highest: " + str(highest))
-print("Found at index " + str(pointer))
 ```
 
 #### count occurrences - array
