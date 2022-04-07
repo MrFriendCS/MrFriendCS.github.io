@@ -99,7 +99,7 @@ people = [person()] * 4
 
 ### sub-routines
 
-When a sub-routine if defined it can zero, one, or more parameters.  These are known as formal parameters.  The formal parameters will 'catch' values that are passed to the sub-routine.
+When a sub-routine if defined it can have zero, one, or more parameters.  These are known as formal parameters.  The formal parameters will 'catch' values that are passed to the sub-routine.
 
 ``` python
 def subroutineName(formalParameter):
