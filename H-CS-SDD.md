@@ -1,3 +1,5 @@
+[N5 Computing Science](README.md)
+
 # Higher Computing Science
 
 ## Software Design and Development
@@ -330,7 +332,7 @@ Close the file.
 file.close()
 ```
 
-#### Reading an array of records from a file
+#### Reading an array of record from a file
 
 Declare a large enough array of records to hold the data.
 
