@@ -251,7 +251,7 @@ myModulus = 12 // 5
 print(myModulus)
 ```
 
-### file handling:
+### file handling
 
 #### Reading parallel arrays from a file
 
