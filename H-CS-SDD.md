@@ -255,7 +255,7 @@ print(myModulus)
 
 Reading and writing a csv or txt file can be achieved using the same code, just change the file extension.
 
-#### Reading parallel arrays from a file
+#### Reading ==parallel arrays== from a file
 
 Declare parallel arrays that are large enough to hold the data.
 
@@ -334,7 +334,7 @@ Close the file.
 file.close()
 ```
 
-#### Reading an array of records from a file
+#### Reading an ==array of records== from a file
 
 Declare a large enough array of records to hold the data.
 
@@ -409,7 +409,7 @@ Close the file.
 file.close()
 ```
 
-#### Writing parallel arrays to a file
+#### Writing ==parallel arrays== to a file
 
 Open the file that will hold the data, in write mode.  If the file does not exist it will be created, but if it does exist it will be overwritten.
 
