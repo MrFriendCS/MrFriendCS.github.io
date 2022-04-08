@@ -29,6 +29,7 @@ Carl,22,1.89
 Dina,21,1.59
 ```
 
+* TOC
 {:toc}
 
 ## Implementation (data types and structures) 
