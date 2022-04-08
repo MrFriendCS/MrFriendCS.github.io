@@ -26,7 +26,7 @@ print(3.14)
 
 ### Implementation (computational constructs)
 
-#### expressions to assign values
+#### assign values
 
 Variables are used to store values.  An assignment statement has 3 parts:
 
@@ -64,7 +64,7 @@ myArrayOfIntegers = [56, 34, 2, 85, 51]
 myArrayOfStrings = [""] * 4
 ```
 
-#### expressions to return values using arithmetic operations
+#### arithmetic operations
 
 Addition
 ``` python
@@ -104,7 +104,7 @@ myAge = myAge + 1
 print(myAge)
 ```
 
-#### expressions to concatenate strings
+#### concatenate strings
 
 Concatenate means to join together.
 
@@ -130,7 +130,7 @@ phrase = word1 + " " + word2
 print(phrase)
 ```
 
-#### selection constructs using simple conditional statement
+#### selection using simple conditional statement
 
 ##### Comparisons
 
@@ -250,7 +250,7 @@ not(16 <= 18)
 |False|True|
 |True|False|
 
-#### selection constructs using complex conditional statements
+#### selection using complex conditional statements
 
 ``` python
 age = 21
@@ -407,7 +407,7 @@ while dice < 1 or dice > 6:
 print("You entered " + str(dice))
 ```
 
-#### running total within loop
+#### running total within a loop
 
 ``` python
 total = 0
