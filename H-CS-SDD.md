@@ -253,6 +253,8 @@ print(myModulus)
 
 ### file handling
 
+Reading and writing a csv or txt file can be achieved using the same code, just change the file extension.
+
 #### Reading parallel arrays from a file
 
 Declare parallel arrays that are large enough to hold the data.
@@ -306,12 +308,12 @@ Retrieve the individual elements from `tempArray` and cast appropriately.
 	height = float(tempArray[2].strip())
 ```
 
-Assign the data the appropriate parallel array.
+Assign the data to the appropriate parallel array.
 
 ``` python
 	names[index] = name
 	ages[index] = age
-	height[index] = height
+	heights[index] = height
 ```
 
 Read the next line of the file.
@@ -320,7 +322,7 @@ Read the next line of the file.
 	line = file.readline()
 ```
 
-Increase the index of where the next element will be stored.
+Increase the index of where the next element will be stored, and back to `while` statement.
 
 ``` python
 	index = index + 1
@@ -332,7 +334,7 @@ Close the file.
 file.close()
 ```
 
-#### Reading an array of record from a file
+#### Reading an array of records from a file
 
 Declare a large enough array of records to hold the data.
 
@@ -399,6 +401,34 @@ Increase the index of where the next element will be stored.
 
 ``` python
 	index = index + 1
+```
+
+Close the file.
+
+``` python
+file.close()
+```
+
+#### Writing parallel arrays to a file
+
+Open the file that will hold the data, in write mode.  If the file does not exist it will be created, but if it does exist it will be overwritten.
+
+``` python
+file = open("newPeople.csv", "w")
+```
+
+Loop for each element in the arrays.
+
+``` python
+for index in range(len(names)):
+```
+
+Write the elements to the file, separated with commas, and finish with a newline `\n`.
+
+``` python
+    file.write(names[index] + ",")
+    file.write(str(ages[index]) + ",")
+    file.write(str(heights[index]) + "\n")
 ```
 
 Close the file.
