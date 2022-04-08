@@ -1,15 +1,16 @@
 [Higher Computing Science](H-CS-SDD.md)
 
 # N5 Computing Science
+{:.no_toc}
 
 ## Software Design and Development
+{:.no_toc}
 
 All the code examples use Python.  Python uses indentation (spaces at the beginning of a line) to show where code blocks are.
 
 **Note:** These notes are focused on N5 Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
-* TOC
-{:toc}
+* TOC {:toc}
 
 ### Display information
 
