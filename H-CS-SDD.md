@@ -31,6 +31,9 @@ Carl,22,1.89
 Dina,21,1.59
 ```
 
+## Table of Contents
+{:.no_toc}
+
 * TOC
 {:toc}
 
