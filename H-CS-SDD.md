@@ -154,7 +154,7 @@ squareNumber = square(2)
 print(squareNumber)
 ```
 
-### create substrings
+### substrings
 
 Python does not have pre-defined functions for creating substrings.  Strings can be treated like an array.  Python starts counting from zero.
 
@@ -470,20 +470,20 @@ else:
     print("Not found")
 ```
 
-#### find minimum and maximum - array
+#### find minimum (or maximum) - array
 
-Assign the value in the first element as the highest. or lowest, value.  Loop from the second element.
+Assign the value in the first element as the minimum. or maximum, value.  Loop from the second element.
 
 ``` python
 heights = [1.78, 1.63, 1.89, 1.59]
 
-highest = heights[0]
+minimum = heights[0]
 
 for index in range(1, len(heights)):
-    if heights[index] > highest:
-        highest = heights[index]
+    if heights[index] < minimum:
+        minimum = heights[index]
 
-print("Highest: " + str(highest))
+print("Minimum: " + str(minimum))
 ```
 
 #### count occurrences - array
