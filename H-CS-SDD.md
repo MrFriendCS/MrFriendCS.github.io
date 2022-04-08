@@ -34,7 +34,7 @@ Dina,21,1.59
 ## Table of Contents
 {:.no_toc}
 
-* TOC
+* TOC will be displayed here
 {:toc}
 
 ## Implementation (data types and structures) 
