@@ -13,7 +13,7 @@ All the code examples use Python.  Python uses indentation (spaces at the beginn
 ## Table of Contents
 {:.no_toc}
 
-* TOC
+* TOC will be displayed here
 {:toc}
 
 ### Display information
@@ -126,6 +126,16 @@ word1 = "Hello"
 word2 = "world"
 
 phrase = word1 + " " + word2
+
+print(phrase)
+```
+
+To join together anything that is not a string then it must be cast (converted) to a string.
+
+``` python
+age = 18
+
+phrase = "I am " + str(age)
 
 print(phrase)
 ```
