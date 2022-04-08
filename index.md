@@ -10,6 +10,7 @@ All the code examples use Python.  Python uses indentation (spaces at the beginn
 
 **Note:** These notes are focused on N5 Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
+* TOC
 {:toc}
 
 ### Display information
