@@ -31,7 +31,7 @@ Carl,22,1.89
 Dina,21,1.59
 ```
 
-## Table of Contents {#toc-id}
+## Table of Contents {#toc}
 {:.no_toc}
 
 * TOC will be displayed here
@@ -102,6 +102,8 @@ print(person2)
 people = [person()] * 4
 ```
 
+[Back to Table of Contents](#toc)
+
 ## Computational constructs
 
 ### Sub-routines
@@ -151,6 +153,8 @@ A function can be called from the main program, or from another sub-routine.
 squareNumber = square(2)
 print(squareNumber)
 ```
+
+[Back to Table of Contents](#toc)
 
 ### Substrings
 
@@ -257,6 +261,8 @@ The modulus is the remainder when doing division.
 myModulus = 12 // 5
 print(myModulus)
 ```
+
+[Back to Table of Contents](#toc)
 
 ### File handling
 
@@ -444,6 +450,8 @@ Close the file.
 file.close()
 ```
 
+[Back to Table of Contents](#toc)
+
 ## Standard algorithms
 
 ### Linear search - array
@@ -494,3 +502,5 @@ for index in range(len(names)):
 
 print("Found " + str(count) + " occurence(s)")
 ```
+
+[Back to Table of Contents](#toc)
