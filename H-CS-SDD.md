@@ -119,7 +119,7 @@ When a sub-routine is called it can have parameters passed to it.  These are kno
 subroutineName(actualParameter):
 ```
 
-### Procedures
+#### Procedures
 
 A procedure is a type of sub-routine that ***does not*** return a value.  It must be defined before it can be used.
 
@@ -135,7 +135,7 @@ A procedure can be called from the main program, or from another sub-routine.
 square(2)
 ```
 
-### Functions
+#### Functions
 
 A function is another type of sub-routine that ***does*** return a value.  It must be defined before it can be used.
 
