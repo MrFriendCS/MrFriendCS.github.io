@@ -37,9 +37,9 @@ Dina,21,1.59
 * TOC will be displayed here
 {:toc}
 
-## Implementation (data types and structures) 
+## Data types and structures
 
-### parallel 1D arrays
+### Parallel 1D arrays
 
 Parallel arrays have the same number of elements in each array.
 
@@ -49,7 +49,7 @@ ages = [0] * 4
 heights = [0.0] * 4
 ```
 
-### records
+### Records
 
 The code to produce a record needs to be imported before it can be used.
 
@@ -96,17 +96,15 @@ person2.age = age
 print(person2)
 ```
 
-### arrays of records
+### Arrays of records
 
 ``` python
 people = [person()] * 4
 ```
 
+## Computational constructs
 
-
-## Implementation (computational constructs)
-
-### sub-routines
+### Sub-routines
 
 When a sub-routine if defined it can have zero, one, or more parameters.  These are known as formal parameters.  The formal parameters will 'catch' values that are passed to the sub-routine.
 
@@ -121,7 +119,7 @@ When a sub-routine is called it can have parameters passed to it.  These are kno
 subroutineName(actualParameter):
 ```
 
-### procedures
+### Procedures
 
 A procedure is a type of sub-routine that ***does not*** return a value.  It must be defined before it can be used.
 
@@ -137,7 +135,7 @@ A procedure can be called from the main program, or from another sub-routine.
 square(2)
 ```
 
-### functions
+### Functions
 
 A function is another type of sub-routine that ***does*** return a value.  It must be defined before it can be used.
 
@@ -154,7 +152,7 @@ squareNumber = square(2)
 print(squareNumber)
 ```
 
-### substrings
+### Substrings
 
 Python does not have pre-defined functions for creating substrings.  Strings can be treated like an array.  Python starts counting from zero.
 
@@ -223,7 +221,7 @@ mySubstring = myString[1:5]
 print(mySubstring)
 ```
 
-### convert from character to ASCII and vice versa
+### Character to ASCII and vice versa
 
 #### character to ASCII
 
@@ -241,7 +239,7 @@ myCharacter = chr(myASCII)
 print(myCharacter)
 ```
 
-### convert floating-point numbers to integers
+### Floating-point numbers to integers
 
 This removes the decimal part of the value.  It does not round.
 
@@ -251,7 +249,7 @@ myInt = int(myFloat)
 print(myInt)
 ```
 
-### modulus
+### Modulus
 
 The modulus is the remainder when doing division.
 
@@ -260,7 +258,7 @@ myModulus = 12 // 5
 print(myModulus)
 ```
 
-### file handling
+### File handling
 
 Reading and writing a csv or txt file can be achieved using the same code, just change the file extension.
 
@@ -446,11 +444,9 @@ Close the file.
 file.close()
 ```
 
-## Implementation (algorithm specification)
+## Standard algorithms
 
-### implement standard algorithms using 1D arrays or arrays of records
-
-#### linear search - array
+### Linear search - array
 
 Finds the first occurrence.
 
@@ -470,7 +466,7 @@ else:
     print("Not found")
 ```
 
-#### find minimum (or maximum) - array
+### Find minimum (or maximum) - array
 
 Assign the value in the first element as the minimum. or maximum, value.  Loop from the second element.
 
@@ -486,7 +482,7 @@ for index in range(1, len(heights)):
 print("Minimum: " + str(minimum))
 ```
 
-#### count occurrences - array
+### Count occurrences - array
 
 ``` python
 names = ["Alan", "Beth", "Carl", "Dina"]
