@@ -10,7 +10,7 @@ All the code examples use Python.  Python uses indentation (spaces at the beginn
 
 **Note:** These notes are focused on N5 Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
-## Table of Contents
+## Table of Contents {#toc}
 {:.no_toc}
 
 * TOC will be displayed here
@@ -103,6 +103,8 @@ myAge = 21
 myAge = myAge + 1
 print(myAge)
 ```
+
+[Back to Table of Contents](#toc)
 
 ### Concatenate strings
 
@@ -213,6 +215,8 @@ else:
     print("You can't go to the pub or vote.")
 ```
 
+[Back to Table of Contents](#toc)
+
 ### Logical operators
 
 Compare more than one set of values to produce a Boolean answer of `True` or `False`.
@@ -270,6 +274,8 @@ if age >= 18 and not(banned):
     print("You can go to the pub.")
 ```
 
+[Back to Table of Contents](#toc)
+
 ###  Fixed and conditional loops
 
 #### Fixed loop (for)
@@ -308,6 +314,7 @@ while counter < 10:
     counter = counter + 1
 ```
 
+[Back to Table of Contents](#toc)
 
 ### Predefined functions
 
@@ -380,6 +387,7 @@ myLength = len(myArrayOfIntegers)
 print(myLength)
 ```
 
+[Back to Table of Contents](#toc)
 
 ## Standard algorithms
 
@@ -468,3 +476,5 @@ for index in range(len(heights)):
 
 print(heights)
 ```
+
+[Back to Table of Contents](#toc)
