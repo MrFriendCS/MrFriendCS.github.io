@@ -24,9 +24,9 @@ print("Hello world")
 print(3.14)
 ```
 
-### Implementation (computational constructs)
+## Computational constructs
 
-#### assign values
+### assign values
 
 Variables are used to store values.  An assignment statement has 3 parts:
 
@@ -64,7 +64,7 @@ myArrayOfIntegers = [56, 34, 2, 85, 51]
 myArrayOfStrings = [""] * 4
 ```
 
-#### arithmetic operations
+### arithmetic operations
 
 Addition
 ``` python
@@ -104,7 +104,7 @@ myAge = myAge + 1
 print(myAge)
 ```
 
-#### concatenate strings
+### concatenate strings
 
 Concatenate means to join together.
 
@@ -140,9 +140,9 @@ phrase = "I am " + str(age)
 print(phrase)
 ```
 
-#### selection using simple conditional statement
+### Selection - simple
 
-##### Comparisons
+#### Comparisons
 
 Compare one value with another to produce a Boolean answer of `True` or `False`.
 
@@ -176,7 +176,7 @@ Less than or equal to
 16 <= 18
 ```
 
-##### Selection
+#### Selection
 
 One section of code.  Code is only run if the comparison is `True`.
 
@@ -213,11 +213,11 @@ else:
     print("You can't go to the pub or vote.")
 ```
 
-#### logical operators
+### logical operators
 
 Compare more than one set of values to produce a Boolean answer of `True` or `False`.
 
-##### AND
+#### AND
 
 Both comparisons must be `True` to produce `True`.
 
@@ -232,7 +232,7 @@ Both comparisons must be `True` to produce `True`.
 |True|False|False|
 |True|True|True|
 
-##### OR
+#### OR
 
 One or both comparisons must be `True` to produce `True`.
 
@@ -247,7 +247,7 @@ One or both comparisons must be `True` to produce `True`.
 |True|False|True|
 |True|True|True|
 
-##### NOT
+#### NOT
 
 Reverses the result of the comparison.
 
@@ -260,7 +260,7 @@ not(16 <= 18)
 |False|True|
 |True|False|
 
-#### selection using complex conditional statements
+### Selection - complex
 
 ``` python
 age = 21
@@ -270,9 +270,9 @@ if age >= 18 and not(banned):
     print("You can go to the pub.")
 ```
 
-#### iteration and repetition using fixed and conditional loops
+###  Fixed and conditional loops
 
-##### Fixed loop
+#### Fixed loop (for)
 
 Before a fixed loop starts, the number of times it will run ***is*** stated.
 
@@ -294,7 +294,7 @@ range(start, stop, step)
 If only the `stop` parameter is used then the `start` value is always zero.  A little confusingly, the largest value in the range is one less than the `stop` value.
 
 
-##### Conditional loop
+#### Conditional loop (while)
 
 Before a conditional loop starts, the number of times it will run ***is not*** stated.
 
@@ -309,10 +309,10 @@ while counter < 10:
 ```
 
 
-#### predefined functions
+### Predefined functions
 
 
-##### random
+#### random
 
 The code to produce a random number needs to be imported before it can be used.
 
@@ -328,7 +328,7 @@ myFloat = random.random()
 print(myFloat)
 ```
 
-##### round
+#### round
 
 The round function works with floating point values (decimals).  It returns (produces) a value that is rounded to a specified number of decimal places
 
@@ -361,7 +361,7 @@ print(myRound)
 
 **Note:** Python does not always round up when the value is 5.  Instead it rounds to the nearest even number!
 
-##### length
+#### length
 
 The length function works with strings and arrays.  It returns a number that is equal to the number of characters in a string or the number of elements in an array.
 
@@ -381,11 +381,11 @@ print(myLength)
 ```
 
 
-### Implementation (algorithm specification)
+## Standard algorithms
 
-#### input validation
+### input validation
 
-##### User input
+#### User input
 
 The input function allows a user to use the keyboard to enter information .
 
@@ -403,7 +403,7 @@ age = int(input("How old are you? (In whole years) "))
 height = float(input("How tall are you? (In metres) "))
 ```
 
-##### Validation
+#### Validation
 
 User input can be checked using a conditional loop.  If it is not acceptable it can be re-entered until it is.
 
@@ -417,7 +417,7 @@ while dice < 1 or dice > 6:
 print("You entered " + str(dice))
 ```
 
-#### running total within a loop
+### Running total within a loop
 
 ``` python
 total = 0
@@ -430,7 +430,7 @@ for counter in range(4):
 print("The combined age is " + str(total))
 ```
 
-#### traversing a 1-D array
+### Traversing a 1-D array
 
 Arrays store more than one value, called elements.  Each element has a position.  Python starts counting from zero.
 
@@ -447,7 +447,7 @@ scores[2] = 82
 print(scores)
 ```
 
-##### Getting values out
+#### Getting values out
 
 ``` python
 scores = [56, 34, 2, 85, 51]
@@ -456,7 +456,7 @@ for index in range(len(scores)):
     print(scores[index])
 ```
 
-##### Putting values in
+#### Putting values in
 
 ``` python
 heights = [0.0] * 5
