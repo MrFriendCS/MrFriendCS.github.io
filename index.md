@@ -26,7 +26,7 @@ print(3.14)
 
 ## Computational constructs
 
-### assign values
+### Assign values
 
 Variables are used to store values.  An assignment statement has 3 parts:
 
@@ -64,7 +64,7 @@ myArrayOfIntegers = [56, 34, 2, 85, 51]
 myArrayOfStrings = [""] * 4
 ```
 
-### arithmetic operations
+### Arithmetic operations
 
 Addition
 ``` python
@@ -104,7 +104,7 @@ myAge = myAge + 1
 print(myAge)
 ```
 
-### concatenate strings
+### Concatenate strings
 
 Concatenate means to join together.
 
@@ -213,7 +213,7 @@ else:
     print("You can't go to the pub or vote.")
 ```
 
-### logical operators
+### Logical operators
 
 Compare more than one set of values to produce a Boolean answer of `True` or `False`.
 
@@ -312,7 +312,7 @@ while counter < 10:
 ### Predefined functions
 
 
-#### random
+#### Random
 
 The code to produce a random number needs to be imported before it can be used.
 
@@ -328,7 +328,7 @@ myFloat = random.random()
 print(myFloat)
 ```
 
-#### round
+#### Round
 
 The round function works with floating point values (decimals).  It returns (produces) a value that is rounded to a specified number of decimal places
 
@@ -361,7 +361,7 @@ print(myRound)
 
 **Note:** Python does not always round up when the value is 5.  Instead it rounds to the nearest even number!
 
-#### length
+#### Length
 
 The length function works with strings and arrays.  It returns a number that is equal to the number of characters in a string or the number of elements in an array.
 
@@ -383,7 +383,7 @@ print(myLength)
 
 ## Standard algorithms
 
-### input validation
+### Input validation
 
 #### User input
 
