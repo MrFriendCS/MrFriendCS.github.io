@@ -223,7 +223,7 @@ print(mySubstring)
 
 ### Character to ASCII and vice versa
 
-#### character to ASCII
+#### Character to ASCII
 
 ``` python
 myCharacter = "A"
