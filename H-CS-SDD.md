@@ -31,7 +31,7 @@ Carl,22,1.89
 Dina,21,1.59
 ```
 
-## Table of Contents
+## Table of Contents {#toc-id}
 {:.no_toc}
 
 * TOC will be displayed here
