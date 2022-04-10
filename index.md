@@ -132,7 +132,7 @@ phrase = word1 + " " + word2
 print(phrase)
 ```
 
-To join together anything that is not a string then it must be cast (converted) to a string.
+Only strings can be concatenated, anything else must be cast (converted) to a string.
 
 ``` python
 age = 18
