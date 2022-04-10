@@ -424,6 +424,8 @@ file.close()
 
 #### Writing parallel arrays to a file
 
+**Note:** Only strings can be written to a file.  Anything else will need to be cast to a string.
+
 Open the file that will hold the data, in write mode.  If the file does not exist it will be created, but if it does exist it will be overwritten.
 
 ``` python
