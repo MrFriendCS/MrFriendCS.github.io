@@ -268,6 +268,8 @@ print(myModulus)
 
 Reading and writing a csv or txt file can be achieved using the same code, just change the file extension.
 
+**Note:** Anything read from a file is a string.  If the value represents another data type then it must be cast to that data type.
+
 #### Reading parallel arrays from a file
 
 Declare parallel arrays that are large enough to hold the data.
