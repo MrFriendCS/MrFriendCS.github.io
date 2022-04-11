@@ -310,35 +310,35 @@ while line:
 Split the content of the variable `line` at the commas.  Assign the elements to `tempArray`.
 
 ``` python
-	tempArray = line.split(",")
+    tempArray = line.split(",")
 ```
 
 Retrieve the individual elements from `tempArray` and cast appropriately.
 
 ``` python
-	name = tempArray[0].strip()
-	age = int(tempArray[1].strip())
-	height = float(tempArray[2].strip())
+    name = tempArray[0].strip()
+    age = int(tempArray[1].strip())
+    height = float(tempArray[2].strip())
 ```
 
 Assign the data to the appropriate parallel array.
 
 ``` python
-	names[index] = name
-	ages[index] = age
-	heights[index] = height
+    names[index] = name
+    ages[index] = age
+    heights[index] = height
 ```
 
 Read the next line of the file.
 
 ``` python
-	line = file.readline()
+    line = file.readline()
 ```
 
 Increase the index of where the next element will be stored, and back to `while` statement.
 
 ``` python
-	index = index + 1
+    index = index + 1
 ```
 
 Close the file.
@@ -387,33 +387,33 @@ while line:
 Split the content of the variable `line` at the commas.  Assign the elements to `tempArray`.
 
 ``` python
-	tempArray = line.split(",")
+    tempArray = line.split(",")
 ```
 
 Retrieve the individual attributes from `tempArray` and cast appropriately.
 
 ``` python
-	name = tempArray[0].strip()
-	age = int(tempArray[1].strip())
-	height = float(tempArray[2].strip())
+    name = tempArray[0].strip()
+    age = int(tempArray[1].strip())
+    height = float(tempArray[2].strip())
 ```
 
 Assign the record to appropriate element in the array.
 
 ``` python
-	people[index] = person(name, age, height)
+    people[index] = person(name, age, height)
 ```
 
 Read the next line of the file.
 
 ``` python
-	line = file.readline()
+    line = file.readline()
 ```
 
 Increase the index of where the next element will be stored.
 
 ``` python
-	index = index + 1
+    index = index + 1
 ```
 
 Close the file.
