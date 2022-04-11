@@ -98,6 +98,8 @@ print(person2)
 
 ### Arrays of records
 
+Using default values.
+
 ``` python
 people = [person()] * 4
 ```
@@ -224,6 +226,8 @@ myString = "Hello world"
 mySubstring = myString[1:5]
 print(mySubstring)
 ```
+
+[Back to Table of Contents](#toc)
 
 ### Character to ASCII and vice versa
 
@@ -423,6 +427,8 @@ Close the file.
 ``` python
 file.close()
 ```
+
+[Back to Table of Contents](#toc)
 
 #### Writing parallel arrays to a file
 
