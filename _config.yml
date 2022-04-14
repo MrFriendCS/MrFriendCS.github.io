@@ -8,6 +8,7 @@ relative_links:
   collections: true
 include:
   - index.md
+  - N5-CS-DD.md
   - H-CS-SDD.md
   
 theme: jekyll-theme-minimal
