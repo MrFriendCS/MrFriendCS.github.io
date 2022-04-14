@@ -1,7 +1,8 @@
-Link: [Higher Computing Science](H-CS-SDD.md)
-
 # N5 Computing Science
 {:.no_toc}
+
+[DDD](N5-CS-DDD.md)
+[Higher](H-CS-SDD.md)
 
 ## Software Design and Development
 {:.no_toc}
@@ -403,7 +404,7 @@ user = input("What is your name? ")
 print("Hello " + user)
 ```
 
-Anything entered using the keyboard is a string.  If the value represents another data type then it must be cast (converted) to that data type.
+**Note:** Anything entered using the keyboard is a string.  If the value represents another data type then it must be cast (converted) to that data type.
 
 ``` python
 age = int(input("How old are you? (In whole years) "))
