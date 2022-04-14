@@ -1,7 +1,7 @@
-Link: [N5 Computing Science](index.md)
-
 # Higher Computing Science
 {:.no_toc}
+
+[N5](index.md)
 
 ## Software Design and Development
 {:.no_toc}
