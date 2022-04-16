@@ -51,26 +51,26 @@ The `text` datatype can be used for:
 
 The data used in the examples is from the following tables:
 
-#### Customer
+#### Pet
 {:.no_toc}
 
-| customer_id | forename| surname | assistance |
+| pet_id | name | type | dob|
 | -- | -- | -- | -- |
-| c1 | Alan | Mitchell | False |
-| c2 | Beth | Nicolson | True |
-| c3 | Carl | Osswald | True |
-| c4 | Dina | Peters | False |
+| 1 | Hans | Cat | 2015-09-22 |
+| 2 | Minnnie | Gerbil | 2021-05-24 |
+| 3	| Bo | Rabbit | 2011-10-13 |
+| 4 | Joscelin | Gerbil | 2022-02-19 |
 
-#### Ticket
+#### Vaccination
 {:.no_toc}
 
-| ticket_id | customer_id| date| xxx |
-| -- | -- | -- | -- |
-| t1 | p1 |  |  |
-| t2 | p2 |  |  |
-| t3 | p1 |  |  |
-| t4 | p3 |  |  |
-| t5 | p4 |  |  |
+| vax_id | pet_id | date| type | reaction |
+| -- | -- | -- | -- | -- |
+| 1 | 13 | 2019-09-03 | Distemper | True |
+| 2 | 5 | 2019-06-23 | Canine hepatitis | False |
+| 3 | 1 | 2015-01-17 | Cat Flu | False |
+| 4 | 17 | 2011-10-05 | Cat Flu | False |
+| 5 | 6 | 2016-12-20 | Feline parvovirus | False |
 
 ## Display information
 
@@ -99,16 +99,19 @@ FROM customer;
 To select one, or more columns, their names are used.
 
 ``` sql
-SELECT forename, surname
-FROM customer;
+SELECT name, type
+FROM pet;
 ```
 
+## Where (comparison)
 
-## from
+To limit the number of rows returned, the `WHERE` keyword is used.
 
-## where
-
-
+``` sql
+SELECT forename, surname
+FROM customer
+WHERE assistance = "True";
+```
 
 [Back to Table of Contents](#toc)
 
