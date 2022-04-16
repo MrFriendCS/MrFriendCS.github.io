@@ -7,30 +7,26 @@
 ## Database Design and Development
 {:.no_toc}
 
-All the code examples use SQLite.
+___Work in Progress___
 
-### Example Data
-{:.no_toc}
+All the code examples use SQLite.  They will work with [Replit](https://replit.com/) and [DB Browser for SQLite](https://sqlitebrowser.org/).
 
-The data used in the examples is from the following tables
+**Note:** These notes are focused on N5 Computing Science so some terms are used differently.
 
-#### People
+**Note:**  SQLite, and SQL, keywords are case insensitive.  The following are all equally valid:
 
-| User ID | Name | Age | Height |
-|--|--|--| -- |
-| 1 | Alan | 24 | 1.78 |
-| 2 | Beth | 23 | 1.63 |
-| 3 | Carl | 22 | 1.89 |
-| 4 | Dina | 21 | 1.59 |
+``` sql
+SELECT
+```
+``` sql
+SeLeCt
+```
 
-#### Cars
+``` sql
+select
+```
 
-| Car ID | Name | Age | Height |
-|--|--|--| -- |
-| 1 | Alan | 24 | 1.78 |
-| 2 | Beth | 23 | 1.63 |
-| 3 | Carl | 22 | 1.89 |
-| 4 | Dina | 21 | 1.59 |
+In the examples, the keywords will be in uppercase.
 
 ## Table of Contents {#toc}
 {:.no_toc}
@@ -38,28 +34,125 @@ The data used in the examples is from the following tables
 * TOC will be displayed here
 {:toc}
 
-### Display information
+### Attribute types (Data types)
 
-``` SQL
-.print Output
+SQLite has fewer data types than SQL.  SQLite has:
+
+* Text
+* Integer
+* Real
+
+The `text` datatype can be used for:
+
+* Date: "2022-08-15"
+* Boolean: "True", "False"
+
+### Example Data
+
+The data used in the examples is from the following tables:
+
+#### Customer
+{:.no_toc}
+
+| customer_id | forename| surname | assistance |
+| -- | -- | -- | -- |
+| c1 | Alan | Mitchell | False |
+| c2 | Beth | Nicolson | True |
+| c3 | Carl | Osswald | True |
+| c4 | Dina | Peters | False |
+
+#### Ticket
+{:.no_toc}
+
+| ticket_id | customer_id| date| xxx |
+| -- | -- | -- | -- |
+| t1 | p1 |  |  |
+| t2 | p2 |  |  |
+| t3 | p1 |  |  |
+| t4 | p3 |  |  |
+| t5 | p4 |  |  |
+
+## Display information
+
+It is possible to display simple messages using the `.print` command.
+
+``` sql
+.print A message
 ```
 
-## Implementation
+## Select
 
-### select
+A basic select statement uses two keywords `SELECT` and `FROM`.   
 
-#### from
+```
+SELECT column(s)
+FROM table(s)
+```
 
-#### where:
+To select everything in a table the `*` symbol is used.
 
-### AND, OR, <, >, =
+``` sql
+SELECT *
+FROM customer;
+```
 
-### order by with a maximum of two fields
+To select one, or more columns, their names are used.
 
-### insert
+``` sql
+SELECT forename, surname
+FROM customer;
+```
 
-### update
 
-### delete
+## from
 
-### equi-join between tables
+## where
+
+
+
+[Back to Table of Contents](#toc)
+
+## AND, OR, <, >, =
+
+
+
+[Back to Table of Contents](#toc)
+
+## Order by with a maximum of two fields
+
+
+
+[Back to Table of Contents](#toc)
+
+## Insert
+
+This command will insert a row, or multiple rows, into a table.  All validation rules must be met for the row to be added.
+
+``` sql
+INSERT INTO 
+```
+
+[Back to Table of Contents](#toc)
+
+## Update
+
+
+
+[Back to Table of Contents](#toc)
+
+## Delete
+
+
+
+[Back to Table of Contents](#toc)
+
+## Equi-join between tables
+
+Tables are joined using the Primary Key of each table, where the primary keys are equal.
+
+``` sql
+SELECT *
+WHERE table1.primary_key = table2.primary_key
+```
+
+[Back to Table of Contents](#toc)
