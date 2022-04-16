@@ -16,14 +16,7 @@ All the code examples use SQLite.  They will work with [Replit](https://replit.c
 **Note:**  SQLite, and SQL, keywords are case insensitive.  The following are all equally valid:
 
 ``` sql
-SELECT
-```
-``` sql
-SeLeCt
-```
-
-``` sql
-select
+SELECT / SeLeCt / select
 ```
 
 In the examples, the keywords will be in uppercase.
@@ -71,6 +64,8 @@ The data used in the examples is from the following tables:
 | 3 | 1 | 2015-01-17 | Cat Flu | False |
 | 4 | 17 | 2011-10-05 | Cat Flu | False |
 
+[Back to Table of Contents](#toc)
+
 ## Display information
 
 It is possible to display simple messages using the `.print` command.
@@ -83,9 +78,9 @@ It is possible to display simple messages using the `.print` command.
 
 To search a database, a basic statement with two keywords `SELECT` and `FROM` is used.
 
-The `SELECT` keyword lists the required field, or fields.  Whilst the `FROM` keyword states the table that the fields are in.
+The `SELECT` keyword lists the required field, or fields.  The `FROM` keyword states the table that the fields are in.
 
-To select everything in a table the `*` symbol is used.
+To display all the fields the `*` symbol is used.
 
 ``` sql
 SELECT *
@@ -98,9 +93,12 @@ To select one, or more columns, their names are used.
 SELECT name, species
 FROM Pet;
 ```
-## Where
 
-To limit the number of rows returned, the `WHERE` keyword is used.
+[Back to Table of Contents](#toc)
+
+## Search
+
+To limit the number of records returned, the `WHERE` keyword is used.
 
 ### Simple search
 
@@ -125,7 +123,8 @@ If both comparisons are `True` then the required fields of that record are displ
 ``` sql
 SELECT vax_id, name
 FROM vaccination
-WHERE name = "Distemper" AND reaction = "True";
+WHERE name = "Distemper"
+    AND reaction = "True";
 ```
 
 #### OR
@@ -135,7 +134,8 @@ If either comparison is `True` then the required fields of that record are displ
 ``` sql
 SELECT vax_id, name
 FROM vaccination
-WHERE name = "Distemper" OR reaction = "True";
+WHERE name = "Distemper"
+    OR reaction = "True";
 ```
 
 
