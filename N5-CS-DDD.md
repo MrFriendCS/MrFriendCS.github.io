@@ -79,11 +79,11 @@ It is possible to display simple messages using the `.print` command.
 .print A message
 ```
 
-## Select
+## Search
 
 To search a database, a basic statement with two keywords `SELECT` and `FROM` is used.
 
-The `SELECT` keyword is for the required field, or fields.  Whilst the `FROM` keyword states the table that the fields are in.
+The `SELECT` keyword lists the required field, or fields.  Whilst the `FROM` keyword states the table that the fields are in.
 
 To select everything in a table the `*` symbol is used.
 
@@ -103,7 +103,8 @@ FROM Pet;
 To limit the number of rows returned, the `WHERE` keyword is used.
 
 ### Simple search
-<, >, =
+
+A simple search compares a field in record against a value.  If the comparison is `True` then the required fields of that record are displayed.
 
 ``` sql
 SELECT vax_id, name
@@ -114,8 +115,28 @@ WHERE reaction = "True";
 [Back to Table of Contents](#toc)
 
 ### Complex search
-AND, OR
 
+A complex search compares two fields.
+
+#### AND
+
+If both comparisons are `True` then the required fields of that record are displayed.
+
+``` sql
+SELECT vax_id, name
+FROM vaccination
+WHERE name = "Distemper" AND reaction = "True";
+```
+
+#### OR
+
+If either comparison is `True` then the required fields of that record are displayed.
+
+``` sql
+SELECT vax_id, name
+FROM vaccination
+WHERE name = "Distemper" OR reaction = "True";
+```
 
 
 [Back to Table of Contents](#toc)
@@ -131,12 +152,18 @@ AND, OR
 This command will insert a row, or multiple rows, into a table.  All validation rules must be met for the row to be added.
 
 ``` sql
-INSERT INTO 
+INSERT INTO
+
 ```
 
 [Back to Table of Contents](#toc)
 
 ## Update
+
+``` sql
+UPDATE
+
+```
 
 
 
@@ -144,24 +171,37 @@ INSERT INTO
 
 ## Delete
 
+``` sql
+DELETE FROM
+
+```
 
 
 [Back to Table of Contents](#toc)
 
 ## Equi-join between tables
 
-Tables are joined using the Primary Key of each table, where the primary key of one table is equal to the foreign key of another table.
+Tables are joined using the primary key of one table and the foreign key of the other table.
+
+### Generic
 
 ``` sql
 SELECT *
 FROM table1, table2
-WHERE table1.primary_key = table2.foreign_key
+WHERE table1.primary_key = table2.foreign_key;
 ```
+### Example
 
 ``` sql
 SELECT *
 FROM Pet, Vaccination
-WHERE Pet.pet_id = Vaccination.pet_id
+WHERE Pet.pet_id = Vaccination.pet_id;
 ```
+
+[Back to Table of Contents](#toc)
+
+## Examples
+
+
 
 [Back to Table of Contents](#toc)
