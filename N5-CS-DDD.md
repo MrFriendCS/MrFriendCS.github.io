@@ -54,7 +54,7 @@ The data used in the examples is from the following tables:
 #### Pet
 {:.no_toc}
 
-| pet_id | name | type | dob|
+| pet_id | name | species| dob|
 | -- | -- | -- | -- |
 | 1 | Hans | Cat | 2015-09-22 |
 | 2 | Minnnie | Gerbil | 2021-05-24 |
@@ -64,13 +64,12 @@ The data used in the examples is from the following tables:
 #### Vaccination
 {:.no_toc}
 
-| vax_id | pet_id | date| type | reaction |
+| vax_id | pet_id | date| name| reaction |
 | -- | -- | -- | -- | -- |
 | 1 | 13 | 2019-09-03 | Distemper | True |
 | 2 | 5 | 2019-06-23 | Canine hepatitis | False |
 | 3 | 1 | 2015-01-17 | Cat Flu | False |
 | 4 | 17 | 2011-10-05 | Cat Flu | False |
-| 5 | 6 | 2016-12-20 | Feline parvovirus | False |
 
 ## Display information
 
@@ -82,40 +81,40 @@ It is possible to display simple messages using the `.print` command.
 
 ## Select
 
-A basic select statement uses two keywords `SELECT` and `FROM`.   
+To search a database, a basic statement with two keywords `SELECT` and `FROM` is used.
 
-```
-SELECT column(s)
-FROM table(s)
-```
+The `SELECT` keyword is for the required field, or fields.  Whilst the `FROM` keyword states the table that the fields are in.
 
 To select everything in a table the `*` symbol is used.
 
 ``` sql
 SELECT *
-FROM customer;
+FROM Pet;
 ```
 
 To select one, or more columns, their names are used.
 
 ``` sql
-SELECT name, type
-FROM pet;
+SELECT name, species
+FROM Pet;
 ```
-
-## Where (comparison)
+## Where
 
 To limit the number of rows returned, the `WHERE` keyword is used.
 
+### Simple search
+<, >, =
+
 ``` sql
-SELECT forename, surname
-FROM customer
-WHERE assistance = "True";
+SELECT vax_id, name
+FROM vaccination
+WHERE reaction = "True";
 ```
 
 [Back to Table of Contents](#toc)
 
-## AND, OR, <, >, =
+### Complex search
+AND, OR
 
 
 
@@ -151,11 +150,18 @@ INSERT INTO
 
 ## Equi-join between tables
 
-Tables are joined using the Primary Key of each table, where the primary keys are equal.
+Tables are joined using the Primary Key of each table, where the primary key of one table is equal to the foreign key of another table.
 
 ``` sql
 SELECT *
-WHERE table1.primary_key = table2.primary_key
+FROM table1, table2
+WHERE table1.primary_key = table2.foreign_key
+```
+
+``` sql
+SELECT *
+FROM Pet, Vaccination
+WHERE Pet.pet_id = Vaccination.pet_id
 ```
 
 [Back to Table of Contents](#toc)
