@@ -13,13 +13,15 @@ All the code examples use SQLite.  They will work with [Replit](https://replit.c
 
 **Note:** These notes are focused on N5 Computing Science so some terms are used differently.
 
-**Note:**  SQLite, and SQL, keywords are case insensitive.  The following are all equally valid:
+SQLite, and SQL, keywords are not case sensitive.  The following are all equally valid:
 
 ``` sql
 SELECT / SeLeCt / select
 ```
 
 In the examples, the keywords will be in uppercase.
+
+SQLite, and SQL, is not whitespace sensitive.  This means a statement can be all on a single line or split over multiple lines.  In general, the examples have one keyword per line.
 
 ## Table of Contents {#toc}
 {:.no_toc}
@@ -105,7 +107,7 @@ To limit the number of records returned, the `WHERE` keyword is used.
 A simple search compares a field in record against a value.  If the comparison is `True` then the required fields of that record are displayed.
 
 ``` sql
-SELECT vax_id, name
+SELECT *
 FROM vaccination
 WHERE reaction = "True";
 ```
@@ -121,7 +123,7 @@ A complex search compares two fields.
 If both comparisons are `True` then the required fields of that record are displayed.
 
 ``` sql
-SELECT vax_id, name
+SELECT *
 FROM vaccination
 WHERE name = "Distemper"
     AND reaction = "True";
@@ -132,18 +134,31 @@ WHERE name = "Distemper"
 If either comparison is `True` then the required fields of that record are displayed.
 
 ``` sql
-SELECT vax_id, name
+SELECT *
 FROM vaccination
 WHERE name = "Distemper"
     OR reaction = "True";
 ```
 
-
 [Back to Table of Contents](#toc)
 
-## Order by with a maximum of two fields
+## Order results
 
+It is possible to order the output of a search using `ORDER BY` and stating the field, or fields.  Fields are sorted ascending, smallest to largest, by default.
 
+``` sql
+SELECT *
+FROM Pet
+ORDER BY species;
+```
+
+To change the sort order of a field to descending the keyword `DESC` used.  The keyword `ASC` can be used to explicitly sort ascending.
+
+``` sql
+SELECT *
+FROM Pet
+ORDER BY species DESC, name ASC;
+```
 
 [Back to Table of Contents](#toc)
 
