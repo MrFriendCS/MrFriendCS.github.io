@@ -63,7 +63,7 @@ The first 4 records of the data used in the examples is shown in the following t
 #### Vaccination
 {:.no_toc}
 
-| vax_id | pet_id | date| name| reaction |
+| vax_id | pet_id | vax_date| name| reaction |
 | -- | -- | -- | -- | -- |
 | 1 | 13 | 2019-09-03 | Distemper | True |
 | 2 | 5 | 2020-06-23 | Canine hepatitis | False |
@@ -238,6 +238,8 @@ WHERE table1.primary_key = table2.foreign_key;
 
 ### Example
 
+**Note:** Both tables that will be used have a field with the same name.  So that the database can distinguish between the fields they must be qualified with the table name.  Just using the field name would be ambiguous.
+
 ``` sql
 SELECT *
 FROM Pet, Vaccination
@@ -250,12 +252,15 @@ WHERE Pet.pet_id = Vaccination.pet_id;
 
 ### Select
 
+Select various fields from two tables, with two search conditions and ordered on two fields.
+
 ``` sql
-SELECT pet.name, species, vaccination.name, date
+SELECT pet.name, species, vaccination.name, vax_date
 FROM Pet, Vaccination
 WHERE Pet.pet_id = Vaccination.pet_id
+  AND species = "Rabbit"
 ORDER BY pet.name ASC,
-         date DESC;
+         vax_date DESC;
 ```
 
 ### Update
@@ -283,7 +288,8 @@ WHERE name = "Feline Leukaemia Virus";
 ``` sql
 SELECT *
 FROM Vaccination
-WHERE name = "FLV";
+WHERE name = "FLV"
+   OR name = "Feline Leukaemia Virus";
 ```
 
 [Back to Table of Contents](#toc)
