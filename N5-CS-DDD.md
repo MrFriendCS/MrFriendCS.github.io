@@ -46,7 +46,7 @@ The `text` datatype can be used for:
 
 ### Example Data
 
-[Database](N5 Database.db)
+[Database](N5-CS-Database.db)
 
 The first 4 records of the data used in the examples is shown in the following tables:
 
