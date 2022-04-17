@@ -46,7 +46,9 @@ The `text` datatype can be used for:
 
 ### Example Data
 
-The data used in the examples is from the following tables:
+[Database](N5 Database.db)
+
+The first 4 records of the data used in the examples is shown in the following tables:
 
 #### Pet
 {:.no_toc}
@@ -159,7 +161,8 @@ To change the sort order of a field to descending the keyword `DESC` used.  The 
 ``` sql
 SELECT *
 FROM Pet
-ORDER BY species DESC, name ASC;
+ORDER BY species DESC,
+         name ASC;
 ```
 
 [Back to Table of Contents](#toc)
