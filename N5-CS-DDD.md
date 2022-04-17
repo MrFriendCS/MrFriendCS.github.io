@@ -248,6 +248,42 @@ WHERE Pet.pet_id = Vaccination.pet_id;
 
 ## Examples
 
+### Select
 
+``` sql
+SELECT pet.name, species, vaccination.name, date
+FROM Pet, Vaccination
+WHERE Pet.pet_id = Vaccination.pet_id
+ORDER BY pet.name ASC,
+         date DESC;
+```
+
+### Update
+
+Update vaccination records so that `Feline Leukaemia Virus` is replaced with `FLV`.
+
+1. Create a `SELECT` statement to test the logic before anything is changed.
+
+``` sql
+SELECT *
+FROM Vaccination
+WHERE name = "Feline Leukaemia Virus";
+```
+
+2. Create an `UPDATE` statement to use the logic to change the correct records.
+
+``` sql
+UPDATE Vaccination
+SET name = "FLV"
+WHERE name = "Feline Leukaemia Virus";
+```
+
+3. Check that the changes have been made.
+
+``` sql
+SELECT *
+FROM Vaccination
+WHERE name = "FLV";
+```
 
 [Back to Table of Contents](#toc)
