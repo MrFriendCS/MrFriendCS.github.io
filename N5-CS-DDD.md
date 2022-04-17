@@ -262,7 +262,7 @@ ORDER BY pet.name ASC,
 
 Update vaccination records so that `Feline Leukaemia Virus` is replaced with `FLV`.
 
-1. Create a `SELECT` statement to test the logic before anything is changed.
+* Create a `SELECT` statement to test the logic before anything is changed.
 
 ``` sql
 SELECT *
@@ -270,7 +270,7 @@ FROM Vaccination
 WHERE name = "Feline Leukaemia Virus";
 ```
 
-2. Create an `UPDATE` statement to use the logic to change the correct records.
+* Create an `UPDATE` statement to use the logic to change the correct records.
 
 ``` sql
 UPDATE Vaccination
@@ -278,7 +278,7 @@ SET name = "FLV"
 WHERE name = "Feline Leukaemia Virus";
 ```
 
-3. Check that the changes have been made.
+* Check that the changes have been made.
 
 ``` sql
 SELECT *
