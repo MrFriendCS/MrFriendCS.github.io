@@ -23,6 +23,8 @@ In the examples, the keywords will be in uppercase.
 
 SQLite, and SQL, is not whitespace sensitive.  This means a statement can be all on a single line or split over multiple lines.  In general, the examples have one keyword per line.
 
+The statements are terminated with a semicolon, `;`.  Individual statements will run without a semicolon but multiple statement will not.
+
 ## Table of Contents {#toc}
 {:.no_toc}
 
@@ -98,7 +100,7 @@ FROM Pet;
 
 [Back to Table of Contents](#toc)
 
-## Search
+## Refine search
 
 To limit the number of records returned, the `WHERE` keyword is used.
 
@@ -126,7 +128,7 @@ If both comparisons are `True` then the required fields of that record are displ
 SELECT *
 FROM vaccination
 WHERE name = "Distemper"
-    AND reaction = "True";
+  AND reaction = "True";
 ```
 
 #### OR
@@ -137,7 +139,7 @@ If either comparison is `True` then the required fields of that record are displ
 SELECT *
 FROM vaccination
 WHERE name = "Distemper"
-    OR reaction = "True";
+   OR reaction = "True";
 ```
 
 [Back to Table of Contents](#toc)
@@ -164,33 +166,58 @@ ORDER BY species DESC, name ASC;
 
 ## Insert
 
-This command will insert a row, or multiple rows, into a table.  All validation rules must be met for the row to be added.
+It is possible to insert a record, multiple records, or partial records into a table using `INSERT INTO` and `VALUES`.  All validation rules must be met for the new data to be added.
+
+### Complete record
 
 ``` sql
-INSERT INTO
+INSERT INTO Pet
+VALUES (26, "Tiger", "Cat", "2022-04-17");
+```
 
+### Complete records
+
+``` sql
+INSERT INTO Pet
+VALUES (27, "Bill", "Ferret", "2022-05-01"),
+       (28, "Ben", "Ferret", "2022-05-01");
+```
+
+### Partial record
+
+If a partial record is added then the field names must be stated.  The values must be in the same order as the fields.
+
+``` sql
+INSERT INTO Pet ("species", "name", "pet_id")
+VALUES ("Dog", "Winston", 29);
 ```
 
 [Back to Table of Contents](#toc)
 
 ## Update
 
-``` sql
-UPDATE
+**Note:** It is possible to damage the data with an `UPDATE` statement.  It is advisable to practise with a `SELECT` statement first to see if the correct record, or records, will be changed.
 
+``` sql
+UPDATE Pet
+SET dob = "2022-04-01"
+WHERE pet_id = 29;
 ```
 
-
+Caution: without the `WHERE` keyword the `dob` of all records would be updated!
 
 [Back to Table of Contents](#toc)
 
 ## Delete
 
-``` sql
-DELETE FROM
+**Note:** It is possible to damage the data with a `DELETE FROM` statement.  It is advisable to practise with a `SELECT` statement first to see if the correct record, or records, will be deleted.
 
+``` sql
+DELETE FROM Pet
+WHERE pet_id >= 26;
 ```
 
+Caution: without the `WHERE` keyword all records would be deleted!
 
 [Back to Table of Contents](#toc)
 
