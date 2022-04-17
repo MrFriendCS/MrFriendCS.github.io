@@ -66,9 +66,9 @@ The first 4 records of the data used in the examples is shown in the following t
 | vax_id | pet_id | date| name| reaction |
 | -- | -- | -- | -- | -- |
 | 1 | 13 | 2019-09-03 | Distemper | True |
-| 2 | 5 | 2019-06-23 | Canine hepatitis | False |
-| 3 | 1 | 2015-01-17 | Cat Flu | False |
-| 4 | 17 | 2011-10-05 | Cat Flu | False |
+| 2 | 5 | 2020-06-23 | Canine hepatitis | False |
+| 3 | 1 | 2015-12-17 | Cat Flu | False |
+| 4 | 17 | 2015-10-05 | Cat Flu | False |
 
 [Back to Table of Contents](#toc)
 
@@ -108,7 +108,7 @@ To limit the number of records returned, the `WHERE` keyword is used.
 
 ### Simple search
 
-A simple search compares a field in record against a value.  If the comparison is `True` then the required fields of that record are displayed.
+A simple search compares a field in a record with a value.  If the comparison is `True` then the required fields of that record are displayed.
 
 ``` sql
 SELECT *
@@ -207,7 +207,7 @@ SET dob = "2022-04-01"
 WHERE pet_id = 29;
 ```
 
-Caution: without the `WHERE` keyword the `dob` of all records would be updated!
+Caution: without the `WHERE` keyword the `dob` field of all records would be updated!
 
 [Back to Table of Contents](#toc)
 
@@ -235,6 +235,7 @@ SELECT *
 FROM table1, table2
 WHERE table1.primary_key = table2.foreign_key;
 ```
+
 ### Example
 
 ``` sql
