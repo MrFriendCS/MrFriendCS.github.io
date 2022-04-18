@@ -23,7 +23,7 @@ All the code examples use SQLite.  They will work with [Replit](https://replit.c
 
 [Database](H-CS-Database.db)
 
-The first 4 records of the data used in the examples is shown in the following tables:
+Four records of the data used in the examples are shown in the following tables:
 
 #### Pet
 {:.no_toc}
@@ -38,12 +38,12 @@ The first 4 records of the data used in the examples is shown in the following t
 #### Vaccination
 {:.no_toc}
 
-| vax_id | pet_id | vax_date| reaction |
-| -- | -- | -- | -- |
-| 3 | 13 | 2019-09-03 | True |
-| 1 | 5 | 2020-06-23 | False |
-| 2 | 1 | 2015-12-17 | False |
-| 2 | 17 | 2015-10-05 | False |
+| vax_id | pet_id | vax_date| reaction | paid |
+| -- | -- | -- | -- | -- |
+| 4 | 2 | 2021-11-06 | False | False |
+|9 | 20 | 2021-09-05 | False | False |
+|2 | 19 | 2021-07-06 | False | True |
+|8 | 9 | 2021-03-05 | False | False |
 
 #### Vaccine
 {:.no_toc}
@@ -55,29 +55,53 @@ The first 4 records of the data used in the examples is shown in the following t
 | 3 | Distemper | 34.75 |
 | 4 | Feline Leukaemia Virus | 25.35 |
 
+[Back to Table of Contents](#toc)
 
+## Wildcards
 
-## wildcards
+Wildcards use the `LIKE` keyword, and are used with `WHERE`.  There are two wildcards:
 
+| Symbol | Name | Meaning|
+| :--: | -- | -- |
+| % | Percent | Zero, one, or more characters |
+| _ | Underscore | A single character |
+
+``` sql
+SELECT *
+FROM Pet
+WHERE name LIKE "G%";
+```
+
+``` sql
+SELECT *
+FROM Pet
+WHERE species LIKE "R%t";
+```
+
+``` sql
+SELECT *
+FROM Pet
+WHERE name LIKE "R_t";
+```
 
 [Back to Table of Contents](#toc)
 
 ## Aggregate functions
 
 
-### MIN
+### Minimum
 
 
-### MAX
+### Maximum
 
 
-### AVG
+### Average
 
 
-### SUM
+### Sum
 
 
-### COUNT
+### Count
 
 
 [Back to Table of Contents](#toc)
@@ -100,4 +124,17 @@ The first 4 records of the data used in the examples is shown in the following t
 ## WHERE
 
 
+
 [Back to Table of Contents](#toc)
+
+## Examples
+
+``` sql
+SELECT Pet.pet_id, Pet.name, species, SUM(cost * 1.2) as [inc VAT]
+FROM Pet, Vaccination, Vaccine
+WHERE Pet.pet_id = Vaccination.vax_id
+  AND Vaccination.vax_id = Vaccine.vax_id
+  AND paid = "False"
+GROUP BY Pet.pet_id
+ORDER BY [inc VAT] DESC;
+```
