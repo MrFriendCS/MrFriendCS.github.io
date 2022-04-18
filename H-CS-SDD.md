@@ -1,6 +1,7 @@
 # Higher Computing Science
 {:.no_toc}
 
+[DDD](H-CS-DDD.md)
 [N5](index.md)
 
 ## Software Design and Development
@@ -10,8 +11,13 @@ All the code examples use Python.  Python uses indentation (spaces at the beginn
 
 **Note:** These notes are focused on Higher Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
-### Example Data
+## Table of Contents {#toc}
 {:.no_toc}
+
+* TOC will be displayed here
+{:toc}
+
+### Example Data
 
 The data used in the examples can be represented in a table:
 
@@ -30,12 +36,6 @@ Beth,23,1.63
 Carl,22,1.89
 Dina,21,1.59
 ```
-
-## Table of Contents {#toc}
-{:.no_toc}
-
-* TOC will be displayed here
-{:toc}
 
 ## Data types and structures
 
