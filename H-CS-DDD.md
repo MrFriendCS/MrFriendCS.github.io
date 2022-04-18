@@ -39,7 +39,7 @@ The first 4 records of the data used in the examples is shown in the following t
 {:.no_toc}
 
 | vax_id | pet_id | vax_date| reaction |
-| -- | -- | -- | -- | -- |
+| -- | -- | -- | -- |
 | 3 | 13 | 2019-09-03 | True |
 | 1 | 5 | 2020-06-23 | False |
 | 2 | 1 | 2015-12-17 | False |
