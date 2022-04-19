@@ -38,12 +38,12 @@ Four records of the data used in the examples are shown in the following tables:
 #### Vaccination
 {:.no_toc}
 
-| vax_id | pet_id | vax_date| reaction | paid |
+| pet_id | vax_id | vax_date| reaction | paid |
 | -- | -- | -- | -- | -- |
-| 4 | 2 | 2021-11-06 | False | False |
-|9 | 20 | 2021-09-05 | False | False |
-|2 | 19 | 2021-07-06 | False | True |
-|8 | 9 | 2021-03-05 | False | False |
+| 2 | 4 | 2021-11-06 | False | False |
+| 20 | 9 | 2021-09-05 | False | False |
+| 19 | 2 | 2021-07-06 | False | True |
+| 9 | 8 | 2021-03-05 | False | False |
 
 #### Vaccine
 {:.no_toc}
@@ -69,7 +69,7 @@ Wildcards use the `LIKE` keyword, and are used with `WHERE`.  There are two wild
 ``` sql
 SELECT *
 FROM Pet
-WHERE name LIKE "G%";
+WHERE name LIKE "%n";
 ```
 
 ``` sql
@@ -130,6 +130,16 @@ WHERE name LIKE "R_t";
 ## Examples
 
 ``` sql
+SELECT species, COUNT(*) as jags
+FROM Pet, Vaccination
+WHERE Pet.pet_id = Vaccination.vax_id
+  AND vax_date >= "2020-01-01"
+	AND vax_date <= "2020-12-21"
+GROUP BY species
+ORDER BY jags DESC;
+```
+
+``` sql
 SELECT Pet.pet_id, Pet.name, species, SUM(cost * 1.2) as [inc VAT]
 FROM Pet, Vaccination, Vaccine
 WHERE Pet.pet_id = Vaccination.vax_id
@@ -138,3 +148,5 @@ WHERE Pet.pet_id = Vaccination.vax_id
 GROUP BY Pet.pet_id
 ORDER BY [inc VAT] DESC;
 ```
+
+[Back to Table of Contents](#toc)
