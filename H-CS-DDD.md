@@ -134,7 +134,7 @@ SELECT species, COUNT(*) as jags
 FROM Pet, Vaccination
 WHERE Pet.pet_id = Vaccination.vax_id
   AND vax_date >= "2020-01-01"
-  AND vax_date <= "2020-12-21"
+  AND vax_date <= "2020-12-31"
 GROUP BY species
 ORDER BY jags DESC;
 ```
