@@ -1,8 +1,7 @@
 # Higher Computing Science
 {:.no_toc}
 
-[DDD](H-CS-DDD.md)
-[N5](index.md)
+[Home](index.md)
 
 ## Software Design and Development
 {:.no_toc}
