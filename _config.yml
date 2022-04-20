@@ -9,6 +9,7 @@ relative_links:
 include:
   - index.md
   - N5-CS-DDD.md
+  - N5-CS-SDD.md
   - H-CS-DDD.md
   - H-CS-SDD.md
   
