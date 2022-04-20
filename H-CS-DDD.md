@@ -1,8 +1,7 @@
 # Higher Computing Science
 {:.no_toc}
 
-[SDD](H-CS-SDD.md)
-[N5](index.md)
+[Home](index.md)
 
 ## Database Design and Development
 {:.no_toc}
@@ -65,6 +64,12 @@ Wildcards use the `LIKE` keyword, and are used with `WHERE`.  There are two wild
 | :--: | -- | -- |
 | % | Percent | Zero, one, or more characters |
 | _ | Underscore | A single character |
+
+``` sql
+SELECT *
+FROM Pet
+WHERE name LIKE "G%";
+```
 
 ``` sql
 SELECT *
