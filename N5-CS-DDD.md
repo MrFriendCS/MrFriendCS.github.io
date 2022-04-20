@@ -1,8 +1,7 @@
 # N5 Computing Science
 {:.no_toc}
 
-[SDD](index.md)
-[Higher](H-CS-SDD.md)
+[Home](index.md)
 
 ## Database Design and Development
 {:.no_toc}
@@ -48,12 +47,12 @@ The `text` datatype can be used for:
 
 [Database](N5-CS-Database.db)
 
-The first 4 records of the data used in the examples is shown in the following tables:
+The first 4 records of the data used in the examples are shown in the following tables:
 
 #### Pet
 {:.no_toc}
 
-| pet_id | name | species| dob|
+| pet_id | name | species | dob |
 | -- | -- | -- | -- |
 | 1 | Hans | Cat | 2015-09-22 |
 | 2 | Minnnie | Gerbil | 2021-05-24 |
@@ -63,7 +62,7 @@ The first 4 records of the data used in the examples is shown in the following t
 #### Vaccination
 {:.no_toc}
 
-| vax_id | pet_id | vax_date| name| reaction |
+| vax_id | pet_id | vax_date | name | reaction |
 | -- | -- | -- | -- | -- |
 | 1 | 13 | 2019-09-03 | Distemper | True |
 | 2 | 5 | 2020-06-23 | Canine hepatitis | False |
@@ -265,9 +264,9 @@ ORDER BY pet.name ASC,
 
 ### Update
 
-Update vaccination records so that `Feline Leukaemia Virus` is replaced with `FLV`.
+Update vaccination records so that **Feline Leukaemia Virus** is replaced with **FLV**.
 
-* Create a `SELECT` statement to test the logic before anything is changed.
+* Create a `SELECT` statement to test the the `WHERE` keyword selects the correct records.
 
 ``` sql
 SELECT *
@@ -275,7 +274,7 @@ FROM Vaccination
 WHERE name = "Feline Leukaemia Virus";
 ```
 
-* Create an `UPDATE` statement to use the logic to change the correct records.
+* Create an `UPDATE` statement to update the correct records.
 
 ``` sql
 UPDATE Vaccination
