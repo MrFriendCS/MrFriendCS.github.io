@@ -22,7 +22,7 @@ All the code examples use SQLite.  They will work with [Replit](https://replit.c
 
 [Database](H-CS-Database.db)
 
-Four records of the data used in the examples are shown in the following tables:
+Four records from each table used in the examples are shown below.
 
 #### Pet
 {:.no_toc}
@@ -91,10 +91,46 @@ WHERE name LIKE "R_t";
 
 [Back to Table of Contents](#toc)
 
+## Alias
+
+To display search results with a different column heading instead of the field name the `AS` keyword is used.
+
+``` sql
+SELECT name AS Jag, cost AS Price
+FROM Vaccine;
+```
+
+The alias can be used in the statement.
+
+``` sql
+SELECT name AS Jag, cost AS Price
+FROM Vaccine
+ORDER BY Price DESC;
+```
+
+Aliases are not restricted to single words.  Due to the space, square brackets are used.
+
+``` sql
+SELECT pet_id, name, species, dob AS [Date of Birth]
+FROM Pet
+ORDER BY [Date of Birth] ASC;
+```
+
+[Back to Table of Contents](#toc)
+
+## Computed values
+
+[Back to Table of Contents](#toc)
+
 ## Aggregate functions
 
 
 ### Minimum
+
+``` sql
+SELECT MIN(dob)
+FROM Pet;
+```
 
 
 ### Maximum
@@ -111,10 +147,6 @@ WHERE name LIKE "R_t";
 
 [Back to Table of Contents](#toc)
 
-## computed values, alias
-
-
-[Back to Table of Contents](#toc)
 
 ## GROUP BY
 
