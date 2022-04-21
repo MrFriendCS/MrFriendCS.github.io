@@ -92,7 +92,7 @@ SELECT *
 FROM Pet;
 ```
 
-To select one, or more columns, their names are used.
+To select one, or more fields, their names are used.
 
 ``` sql
 SELECT name, species
@@ -112,7 +112,7 @@ A simple search compares a field in a record with a value.  If the comparison is
 ``` sql
 SELECT *
 FROM vaccination
-WHERE reaction = "True";
+WHERE species = "Cat";
 ```
 
 [Back to Table of Contents](#toc)
@@ -155,7 +155,7 @@ FROM Pet
 ORDER BY species;
 ```
 
-To change the sort order of a field to descending the keyword `DESC` used.  The keyword `ASC` can be used to explicitly sort ascending.
+To change the sort order of a field to descending the keyword `DESC` used.  The keyword `ASC` is not needed but can be used to explicitly sort ascending.
 
 ``` sql
 SELECT *
@@ -254,7 +254,7 @@ WHERE Pet.pet_id = Vaccination.pet_id;
 Select various fields from two tables, with two search conditions and ordered on two fields.
 
 ``` sql
-SELECT pet.name, species, vaccination.name, vax_date
+SELECT Pet.name, species, Vaccination.name, vax_date
 FROM Pet, Vaccination
 WHERE Pet.pet_id = Vaccination.pet_id
   AND species = "Rabbit"
@@ -266,7 +266,7 @@ ORDER BY pet.name ASC,
 
 Update vaccination records so that **Feline Leukaemia Virus** is replaced with **FLV**.
 
-* Create a `SELECT` statement to test the the `WHERE` keyword selects the correct records.
+* Create a `SELECT` statement to test the the `WHERE` clause selects the correct records.
 
 ``` sql
 SELECT *
