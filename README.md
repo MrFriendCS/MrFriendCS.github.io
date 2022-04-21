@@ -1,3 +1,3 @@
 # Computing Science
 
-Some Python notes to support SDD implementation of N5 and Higher Computing Science.
+Some notes to support N5 and Higher Computing Science.
