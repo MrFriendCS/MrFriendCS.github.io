@@ -215,21 +215,9 @@ GROUP BY species;
 
 ## WHERE
 
-Which animals received the most expensive injection?
+It is possible to use the result from an aggregate function in a `WHERE` clause.
 
-### Single query (sub-query)
-
-``` sql
-SELECT Pet.name, Vaccine.name, vax_date, cost
-FROM Oldest, Pet, Vaccination, Vaccine
-WHERE Pet.pet_id = Vaccination.pet_id
-  AND Vaccination.vax_id = Vaccine.vax_id
-  AND Pet.dob = 
-      (SELECT MIN(doB)
-       FROM Pet);
-```
-
-### Two queries
+### Using a result (Two queries)
 
 ``` sql
 CREATE TEMP VIEW Oldest (dob) AS
@@ -243,6 +231,20 @@ FROM Oldest, Pet, Vaccination, Vaccine
 WHERE Pet.pet_id = Vaccination.pet_id
   AND Vaccination.vax_id = Vaccine.vax_id
   AND Oldest.dob = Pet.dob;
+```
+
+### Subclause (Single query)
+
+**Note** Using subclauses is beyond the scope of the Higher course and will not be assessed.
+
+``` sql
+SELECT Pet.name, Vaccine.name, vax_date, cost
+FROM Oldest, Pet, Vaccination, Vaccine
+WHERE Pet.pet_id = Vaccination.pet_id
+  AND Vaccination.vax_id = Vaccine.vax_id
+  AND Pet.dob = 
+      (SELECT MIN(doB)
+       FROM Pet);
 ```
 
 [Back to Table of Contents](#toc)
