@@ -105,6 +105,7 @@ The alias can be used in the statement.
 ``` sql
 SELECT name AS Jag, cost AS Price
 FROM Vaccine
+WHERE Price >= 30
 ORDER BY Price DESC;
 ```
 
@@ -120,47 +121,131 @@ ORDER BY [Date of Birth] ASC;
 
 ## Computed values
 
-[Back to Table of Contents](#toc)
-
-## Aggregate functions
-
-
-### Minimum
-
 ``` sql
-SELECT MIN(dob)
-FROM Pet;
+SELECT name, cost, cost * 1.2 [inc VAT]
+FROM Vaccine;
 ```
 
-
-### Maximum
-
-
-### Average
-
-
-### Sum
-
-
-### Count
-
-
 [Back to Table of Contents](#toc)
-
 
 ## GROUP BY
 
+The following example will return the `species` field from every record.
+
+``` sql
+SELECT species
+FROM Pet;
+```
+The following example will group together `species` field from every record.
+
+``` sql
+SELECT species
+FROM Pet
+GROUP BY species;
+```
 
 [Back to Table of Contents](#toc)
 
 ## ORDER BY
 
+``` sql
+SELECT species
+FROM Pet
+GROUP BY species;
+```
+
+[Back to Table of Contents](#toc)
+
+## Aggregate functions
+
+Aggregate functions can be used with with `GROUP BY` clause.
+
+### Minimum / Maximum
+
+The `MIN` keyword is used to find the minimum value in a field, and `MAX` is used to find the maximum.  These work for both numeric and text values.
+
+Find the `dob` of the oldest and youngest pet.
+
+``` sql
+SELECT MIN(dob), MAX(dob)
+FROM Pet;
+```
+
+Find the `dob` of the oldest and youngest pet of each species.
+
+**Note:** As a general rule, if fields and aggregate functions are both displayed then the fields need to be in the `GROUP BY` clause.  Otherwise the result is meaningless.
+
+``` sql
+SELECT species, MIN(dob), MAX(dob)
+FROM Pet
+GROUP BY species;
+```
+
+### Average
+
+``` sql
+SELECT AVG(cost)
+FROM Vaccine;
+```
+
+### Sum
+
+``` sql
+SELECT SUM(cost)
+FROM Vaccination, Vaccine
+WHERE Vaccination.vax_id = Vaccine.vax_id
+  AND pet_id = 14;
+```
+
+### Count
+
+``` sql
+SELECT COUNT(*)
+FROM Pet
+WHERE species = "Rabbit";
+```
+
+``` sql
+SELECT species, COUNT(*)
+FROM Pet
+GROUP BY species;
+```
 
 [Back to Table of Contents](#toc)
 
 ## WHERE
 
+It is possible to use the result from an aggregate function in a `WHERE` clause.
 
+### Using a result (Two queries)
+
+``` sql
+CREATE TEMP VIEW Oldest (dob) AS
+SELECT MIN(doB)
+FROM Pet;
+```
+
+``` sql
+SELECT Pet.name, Vaccine.name, vax_date, cost
+FROM Oldest, Pet, Vaccination, Vaccine
+WHERE Pet.pet_id = Vaccination.pet_id
+  AND Vaccination.vax_id = Vaccine.vax_id
+  AND Oldest.dob = Pet.dob;
+```
+
+### Subclause (Single query)
+
+**Note** Using subclauses is beyond the scope of the Higher course and will not be assessed.
+
+``` sql
+SELECT Pet.name, Vaccine.name, vax_date, cost
+FROM Oldest, Pet, Vaccination, Vaccine
+WHERE Pet.pet_id = Vaccination.pet_id
+  AND Vaccination.vax_id = Vaccine.vax_id
+  AND Pet.dob = 
+      (SELECT MIN(doB)
+       FROM Pet);
+```
 
 [Back to Table of Contents](#toc)
 
