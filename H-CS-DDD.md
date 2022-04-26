@@ -217,7 +217,7 @@ GROUP BY species;
 
 It is possible to use the result from an aggregate function in a `WHERE` clause.
 
-### Using a result (Two queries)
+### Using a result in another query
 
 ``` sql
 CREATE TEMP VIEW Oldest (dob) AS
