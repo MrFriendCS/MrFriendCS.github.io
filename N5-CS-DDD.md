@@ -266,7 +266,7 @@ ORDER BY pet.name ASC,
 
 Update vaccination records so that **Feline Leukaemia Virus** is replaced with **FLV**.
 
-* Create a `SELECT` statement to test the the `WHERE` clause selects the correct records.
+* Create a `SELECT` statement to test that the `WHERE` clause selects the correct records.
 
 ``` sql
 SELECT *
