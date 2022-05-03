@@ -6,7 +6,7 @@
 ## Software Design and Development
 {:.no_toc}
 
-All the code examples use Python.  Python uses indentation (spaces at the beginning of a line) to show where code blocks are.
+All the code examples use Python.  Python uses indentation (spaces at the beginning of a line) to show where code blocks are.  The code is available on  [Replit](https://replit.com/@esafriend1r/H-CS-Software).
 
 **Note:** These notes are focused on Higher Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
