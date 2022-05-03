@@ -109,7 +109,7 @@ people = [person()] * 4
 
 ### Sub-routines
 
-When a sub-routine if defined it can have zero, one, or more parameters.  These are known as formal parameters.  The formal parameters will 'catch' values that are passed to the sub-routine.
+When a sub-routine is defined it can have zero, one, or more parameters.  These are known as formal parameters.  The formal parameters will 'catch' values that are passed to the sub-routine.
 
 ``` python
 def subroutineName(formalParameter):
@@ -151,7 +151,7 @@ def square(number):
 A function can be called from the main program, or from another sub-routine.
 
 ``` python
-squareNumber = square(2)
+squareNumber = square(3)
 print(squareNumber)
 ```
 
@@ -251,7 +251,7 @@ print(myCharacter)
 This removes the decimal part of the value.  It does not round.
 
 ``` python
-myFloat = 3.95
+myFloat = 4.95
 myInt = int(myFloat)
 print(myInt)
 ```
@@ -260,8 +260,10 @@ print(myInt)
 
 The modulus is the remainder when doing division.
 
+13 &#xf7; 5 = 2 remainder 3
+
 ``` python
-myModulus = 12 // 5
+myModulus = 13 % 5
 print(myModulus)
 ```
 
