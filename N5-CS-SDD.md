@@ -395,7 +395,7 @@ print(myLength)
 
 #### User input
 
-The input function allows a user to use the keyboard to enter information .
+The input function allows a user to enter information using the keyboard.
 
 ``` python
 user = input("What is your name? ")
