@@ -6,7 +6,7 @@
 ## Software Design and Development
 {:.no_toc}
 
-All the code examples use Python.  Python uses indentation (spaces at the beginning of a line) to show where code blocks are.  The code is available on  [Replit](https://replit.com/@esafriend1r/H-CS-Software).
+All the code examples use Python.   The code is available on  [Replit](https://replit.com/@esafriend1r/H-CS-Software).
 
 **Note:** These notes are focused on Higher Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
@@ -356,13 +356,13 @@ file.close()
 
 #### Reading an array of records from a file
 
-Declare a large enough array of records to hold the data.
+Declare an array of records large enough to hold the data.
 
 ``` python
 people = [person()] * 4
 ```
 
-Declare other variables
+Declare all other variables.
 
 ``` python
 tempArray = [""] * 3
@@ -391,13 +391,13 @@ Start / continue the conditional loop if the variable `line` is not empty.
 while line:
 ```
 
-Split the content of the variable `line` at the commas.  Assign the elements to `tempArray`.
+Split the content of the variable `line` at the commas and assign the elements to `tempArray`.
 
 ``` python
     tempArray = line.split(",")
 ```
 
-Retrieve the individual attributes from `tempArray` and cast appropriately.
+Retrieve the individual attributes from `tempArray`, remove leading and trailing spaces, and cast appropriately.
 
 ``` python
     name = tempArray[0].strip()
@@ -405,7 +405,7 @@ Retrieve the individual attributes from `tempArray` and cast appropriately.
     height = float(tempArray[2].strip())
 ```
 
-Assign the record to appropriate element in the array.
+Assign a record to appropriate element in the array.
 
 ``` python
     people[index] = person(name, age, height)
@@ -417,7 +417,7 @@ Read the next line of the file.
     line = file.readline()
 ```
 
-Increase the index of where the next element will be stored.
+Increase the index of where the next record will be stored.
 
 ``` python
     index = index + 1
