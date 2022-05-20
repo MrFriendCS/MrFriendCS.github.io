@@ -13,6 +13,6 @@ include:
   - H-CS-DDD.md
   - H-CS-SDD.md
   
-theme: jekyll-theme-modernist
+theme: jekyll-theme-minimal
 
 markdown: kramdown
