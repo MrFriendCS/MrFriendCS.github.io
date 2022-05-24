@@ -6,7 +6,7 @@
 ## Software Design and Development
 {:.no_toc}
 
-All the code examples use Python.  Python uses indentation (spaces at the beginning of a line) to show where code blocks are.
+All the code examples use Python.   The code is available on  [Replit](https://replit.com/@esafriend1r/H-CS-Software).
 
 **Note:** These notes are focused on Higher Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
@@ -109,7 +109,7 @@ people = [person()] * 4
 
 ### Sub-routines
 
-When a sub-routine if defined it can have zero, one, or more parameters.  These are known as formal parameters.  The formal parameters will 'catch' values that are passed to the sub-routine.
+When a sub-routine is defined it can have zero, one, or more parameters.  These are known as formal parameters.  The formal parameters will 'catch' values that are passed to the sub-routine.
 
 ``` python
 def subroutineName(formalParameter):
@@ -151,7 +151,7 @@ def square(number):
 A function can be called from the main program, or from another sub-routine.
 
 ``` python
-squareNumber = square(2)
+squareNumber = square(3)
 print(squareNumber)
 ```
 
@@ -251,7 +251,7 @@ print(myCharacter)
 This removes the decimal part of the value.  It does not round.
 
 ``` python
-myFloat = 3.95
+myFloat = 4.95
 myInt = int(myFloat)
 print(myInt)
 ```
@@ -260,8 +260,10 @@ print(myInt)
 
 The modulus is the remainder when doing division.
 
+13 &#xf7; 5 = 2 remainder 3
+
 ``` python
-myModulus = 12 // 5
+myModulus = 13 % 5
 print(myModulus)
 ```
 
@@ -354,13 +356,13 @@ file.close()
 
 #### Reading an array of records from a file
 
-Declare a large enough array of records to hold the data.
+Declare an array of records large enough to hold the data.
 
 ``` python
 people = [person()] * 4
 ```
 
-Declare other variables
+Declare all other variables.
 
 ``` python
 tempArray = [""] * 3
@@ -389,13 +391,13 @@ Start / continue the conditional loop if the variable `line` is not empty.
 while line:
 ```
 
-Split the content of the variable `line` at the commas.  Assign the elements to `tempArray`.
+Split the content of the variable `line` at the commas and assign the elements to `tempArray`.
 
 ``` python
     tempArray = line.split(",")
 ```
 
-Retrieve the individual attributes from `tempArray` and cast appropriately.
+Retrieve the individual attributes from `tempArray`, remove leading and trailing spaces, and cast appropriately.
 
 ``` python
     name = tempArray[0].strip()
@@ -403,7 +405,7 @@ Retrieve the individual attributes from `tempArray` and cast appropriately.
     height = float(tempArray[2].strip())
 ```
 
-Assign the record to appropriate element in the array.
+Assign a record to appropriate element in the array.
 
 ``` python
     people[index] = person(name, age, height)
@@ -415,7 +417,7 @@ Read the next line of the file.
     line = file.readline()
 ```
 
-Increase the index of where the next element will be stored.
+Increase the index of where the next record will be stored.
 
 ``` python
     index = index + 1

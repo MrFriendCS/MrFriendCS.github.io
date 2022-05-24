@@ -8,7 +8,7 @@
 
 ___Work in Progress___
 
-All the code examples use SQLite.  They will work with [Replit](https://replit.com/) and [DB Browser for SQLite](https://sqlitebrowser.org/).
+All the code examples use SQLite.  They will work with [Replit](https://replit.com/@esafriend1r/H-CS-Database) and [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 **Note:** These notes are focused on Higher Computing Science so some terms are used differently.
 
@@ -65,11 +65,14 @@ Wildcards use the `LIKE` keyword, and are used with `WHERE`.  There are two wild
 | % | Percent | Zero, one, or more characters |
 | _ | Underscore | A single character |
 
+Zero, one, or more characters, after the first character.
+
 ``` sql
 SELECT *
 FROM Pet
 WHERE name LIKE "G%";
 ```
+A single character, before the first character.
 
 ``` sql
 SELECT *
@@ -77,11 +80,15 @@ FROM Pet
 WHERE name LIKE "%n";
 ```
 
+Zero, one, or more characters in the middle.
+
 ``` sql
 SELECT *
 FROM Pet
 WHERE species LIKE "R%t";
 ```
+
+A single character in the middle.
 
 ``` sql
 SELECT *
@@ -100,7 +107,7 @@ SELECT name AS Jag, cost AS Price
 FROM Vaccine;
 ```
 
-The alias can be used in the statement.
+The alias can be used within the statement.
 
 ``` sql
 SELECT name AS Jag, cost AS Price
@@ -130,13 +137,13 @@ FROM Vaccine;
 
 ## GROUP BY
 
-The following example will return the `species` field from every record.
+The following example will return the `species` field from every record.  Values will be repeated if they are repeated in the table.
 
 ``` sql
 SELECT species
 FROM Pet;
 ```
-The following example will group together `species` field from every record.
+The following example will group together `species` field from every record.  Values will not be repeated.
 
 ``` sql
 SELECT species
@@ -199,6 +206,8 @@ WHERE Vaccination.vax_id = Vaccine.vax_id
 
 ### Count
 
+Count the number of records in a table that meet the condition.
+
 ``` sql
 SELECT COUNT(*)
 FROM Pet
@@ -217,13 +226,17 @@ GROUP BY species;
 
 It is possible to use the result from an aggregate function in a `WHERE` clause.
 
-### Using a result (Two queries)
+### Using a result in another query
+
+This will crate a temporary query (view) that will be deleted when the database is closed.
 
 ``` sql
 CREATE TEMP VIEW Oldest (dob) AS
 SELECT MIN(doB)
 FROM Pet;
 ```
+
+Use the stored result.
 
 ``` sql
 SELECT Pet.name, Vaccine.name, vax_date, cost

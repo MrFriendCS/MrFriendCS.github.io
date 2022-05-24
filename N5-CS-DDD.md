@@ -206,7 +206,7 @@ SET dob = "2022-04-01"
 WHERE pet_id = 29;
 ```
 
-Caution: without the `WHERE` keyword the `dob` field of all records would be updated!
+Caution: without the `WHERE` clause the `dob` field of all records would be updated!
 
 [Back to Table of Contents](#toc)
 
@@ -219,7 +219,7 @@ DELETE FROM Pet
 WHERE pet_id >= 26;
 ```
 
-Caution: without the `WHERE` keyword all records would be deleted!
+Caution: without the `WHERE` clause all records would be deleted!
 
 [Back to Table of Contents](#toc)
 
@@ -266,7 +266,7 @@ ORDER BY pet.name ASC,
 
 Update vaccination records so that **Feline Leukaemia Virus** is replaced with **FLV**.
 
-* Create a `SELECT` statement to test the the `WHERE` clause selects the correct records.
+* Create a `SELECT` statement to test that the `WHERE` clause selects the correct records.
 
 ``` sql
 SELECT *

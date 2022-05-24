@@ -207,14 +207,14 @@ Two, or more, sections of code.  Only the section of code for the first comparis
 The `else` is optional.
 
 ``` python
-age = 21
+score = 81
 
-if age >= 18:
-    print("You can go to the pub.")
-elif age >= 16:
-    print("You can vote.")
+if score >= 80:
+    print("Excellent score!")
+elif score >= 50:
+    print("Well done!")
 else:
-    print("You can't go to the pub or vote.")
+    print("Oh dear!")
 ```
 
 [Back to Table of Contents](#toc)
@@ -295,8 +295,6 @@ The range function needs a minimum of one parameter but can have more.
 range(stop)
 
 range(start, stop)
-
-range(start, stop, step)
 ```
 
 If only the `stop` parameter is used then the `start` value is always zero.  A little confusingly, the largest value in the range is one less than the `stop` value.
@@ -397,7 +395,7 @@ print(myLength)
 
 #### User input
 
-The input function allows a user to use the keyboard to enter information .
+The input function allows a user to enter information using the keyboard.
 
 ``` python
 user = input("What is your name? ")
