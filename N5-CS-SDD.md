@@ -160,9 +160,9 @@ print(phrase)
 Values that have a different datatype must be cast from string to the correct datatype, using one of the following functions:
 
 ```python
-int("42")
-float("3.14")
-bool("True")
+myInt = int("42")
+myFloat = float("3.14")
+myBool = bool("True")
 ```
 
 Example:
