@@ -144,6 +144,38 @@ phrase = "I am " + str(age)
 print(phrase)
 ```
 
+### User input
+
+**Note:** Whenever the user enters anything using the keyboard it is treated as a *string* by Python.
+
+```python
+word1 = input("Enter the first word: ")
+word2 = input("Enter the second word: ")
+
+phrase = word1 + " " + word2
+
+print(phrase)
+```
+
+Values that have a different datatype must be cast from string to the correct datatype, using one of the following functions:
+
+```python
+int("42")
+float("3.14")
+bool("True")
+```
+
+Example:
+
+```python
+value1 = int(input("Enter the first value: "))
+value2 = int(input("Enter the second value: "))
+
+addition = value1 + value2
+
+print(addition)
+```
+
 ### Selection - simple
 
 #### Comparisons
