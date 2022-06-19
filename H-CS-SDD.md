@@ -146,16 +146,13 @@ A function is another type of sub-routine that ***does*** return a value.  It mu
 def toThePowerOf(number, power):
     value = number ** power
     return value
-
-answer = toThePowerOf(2, 5)
-print(answer)
 ```
 
 A function can be called from the main program, or from another sub-routine.
 
 ``` python
-squareNumber = square(3)
-print(squareNumber)
+answer = toThePowerOf(2, 5)
+print(answer)
 ```
 
 [Back to Table of Contents](#toc)
