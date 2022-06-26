@@ -143,23 +143,28 @@ square(2)
 A function is another type of sub-routine that ***does*** return a value.  It must be defined before it can be used.
 
 ``` python
-def square(number):
-    squared = number ** 2
-    return squared
+def toThePowerOf(number, power):
+    value = number ** power
+    return value
 ```
 
 A function can be called from the main program, or from another sub-routine.
 
 ``` python
-squareNumber = square(3)
-print(squareNumber)
+answer = toThePowerOf(2, 5)
+print(answer)
 ```
 
 [Back to Table of Contents](#toc)
 
 ### Substrings
 
-Python does not have pre-defined functions for creating substrings.  Strings can be treated like an array.  Python starts counting from zero.
+Python does not have pre-defined functions for creating substrings.  Strings can be treated as an array of characters.  Python starts counting from zero.
+
+```
+Index: 0  1  2  3  4  5  6  7  8  9  10
+Value: H  e  l  l  o     W  o  r  l  d
+```
 
 ``` python
 myString = "Hello world"
@@ -176,6 +181,8 @@ To extract more than a single character a second parameter is used.
 ```
 string[start : stop]
 ```
+
+**Note:** The `stop` value is always one more than the last element to be included.
 
 ``` python
 myString = "Hello world"
@@ -207,7 +214,7 @@ mySubstring = myString[6: ]
 print(mySubstring)
 ```
 
-It is possible to use a negative value for the `start` parameter.
+It is possible to use a negative value for the `start` parameter, with `-1` being the last element.
 
 ``` python
 myString = "Hello world"
@@ -222,7 +229,7 @@ print(mySubstring)
 ``` python
 myString = "Hello world"
 
-mySubstring = myString[1:5]
+mySubstring = myString[3:8]
 print(mySubstring)
 ```
 
