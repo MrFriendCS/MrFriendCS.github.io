@@ -119,7 +119,7 @@ def subroutineName(formalParameter):
 When a sub-routine is called it can have parameters passed to it.  These are known as actual parameters.
 
 ``` python
-subroutineName(actualParameter):
+subroutineName(actualParameter)
 ```
 
 #### Procedures
@@ -276,13 +276,13 @@ print(myModulus)
 
 [Back to Table of Contents](#toc)
 
-### File handling
+## File handling
 
 Reading and writing a csv or txt file can be achieved using the same code, just change the file extension.
 
 **Note:** Anything read from a file is a string.  If the value represents another data type then it must be cast to that data type.
 
-#### Reading parallel arrays from a file
+### Reading parallel arrays from a file
 
 Declare parallel arrays that are large enough to hold the data.
 
@@ -361,7 +361,7 @@ Close the file.
 file.close()
 ```
 
-#### Reading an array of records from a file
+### Reading an array of records from a file
 
 Declare an array of records large enough to hold the data.
 
@@ -438,7 +438,7 @@ file.close()
 
 [Back to Table of Contents](#toc)
 
-#### Writing parallel arrays to a file
+### Writing parallel arrays to a file
 
 **Note:** Only strings can be written to a file, anything else must be cast to a string.
 
@@ -479,15 +479,14 @@ Finds the first occurrence.
 ``` python
 names = ["Alan", "Beth", "Carl", "Dina"]
 found = False
-pointer = -1
+index = 0
 
-for index in range(len(names)):
-    if found == False and names[index] == "Carl":
+while not(found) and index < len(names):
+    if names[index] == "Carl":
         found = True
-        pointer = index
 
 if found:
-    print("Found at index " + str(pointer))
+    print("Found")
 else:
     print("Not found")
 ```
