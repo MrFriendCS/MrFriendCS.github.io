@@ -176,6 +176,8 @@ addition = value1 + value2
 print(addition)
 ```
 
+[Back to Table of Contents](#toc)
+
 ### Selection - simple
 
 #### Comparisons
@@ -489,11 +491,22 @@ print(scores)
 
 #### Getting values out
 
+Method 1
+
 ``` python
 scores = [56, 34, 2, 85, 51]
 
 for index in range(len(scores)):
     print(scores[index])
+```
+
+Method 2
+
+``` python
+scores = [56, 34, 2, 85, 51]
+
+for score in scores:
+    print(score)
 ```
 
 #### Putting values in
