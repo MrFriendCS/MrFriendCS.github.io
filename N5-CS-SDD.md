@@ -180,9 +180,9 @@ print(addition)
 
 ### Selection - simple
 
-#### Comparisons
+#### Comparison operators
 
-Compare one value with another to produce a Boolean answer of `True` or `False`.
+Comparison operators are used to compare one value with another.   All of the following examples produce a Boolean answer of `True` or `False`.
 
 Equality (the same as)
 ``` python
@@ -216,7 +216,9 @@ Less than or equal to
 
 #### Selection
 
-One section of code.  Code is only run if the comparison is `True`.
+Selection makes use of a comparison operator to decide what to do.
+
+Example 1.  Code is only run if the comparison is `True`.
 
 ``` python
 age = 21
@@ -225,7 +227,7 @@ if age >= 18:
     print("You can go to the pub.")
 ```
 
-Two sections of code.  One section of code is always run.
+Example 2.  One section of code is always run.
 
 ``` python
 age = 16
@@ -236,7 +238,7 @@ else:
     print("You can't go to the pub.")
 ```
 
-Two, or more, sections of code.  Only the section of code for the first comparison that is `True` is run.
+Example 3.  Only the section of code for the first comparison that is `True` is run.  There can be multiple `elif` statements.
 
 The `else` is optional.
 
@@ -259,7 +261,7 @@ Compare more than one set of values to produce a Boolean answer of `True` or `Fa
 
 #### AND
 
-Both comparisons must be `True` to produce `True`.
+Both comparisons must be `True` to produce a final answer of `True`.
 
 ``` python
 16 <= 18 and "Night" == "Day"
@@ -274,7 +276,7 @@ Both comparisons must be `True` to produce `True`.
 
 #### OR
 
-One or both comparisons must be `True` to produce `True`.
+One or both comparisons must be `True` to produce a final answer of `True`.
 
 ``` python
 16 <= 18 or "Night" == "Day"
@@ -302,6 +304,8 @@ not(16 <= 18)
 
 ### Selection - complex
 
+Complex selection makes use of logical operators.
+
 ``` python
 age = 21
 banned = False
@@ -318,6 +322,8 @@ if age >= 18 and not(banned):
 
 Before a fixed loop starts, the number of times it will run ***is*** stated.
 
+Example.  Display the numbers 0 to 9, ten numbers in total.
+
 ``` python
 for counter in range(10):
     print(counter)
@@ -329,7 +335,24 @@ The range function needs a minimum of one parameter but can have more.
 range(stop)
 
 range(start, stop)
+
+range(start, stop, step)
 ```
+
+Example.  Display the numbers 1 to 9.
+
+``` python
+for counter in range(1, 10):
+    print(counter)
+```
+
+Example.  Display the odd numbers from 1 to 9.
+
+``` python
+for counter in range(1, 10, 2):
+    print(counter)
+```
+
 
 If only the `stop` parameter is used then the `start` value is always zero.  A little confusingly, the largest value in the range is one less than the `stop` value.
 
@@ -352,21 +375,18 @@ while counter < 10:
 
 ### Predefined functions
 
-
 #### Random
 
 The code to produce a random number needs to be imported before it can be used.
 
-The code can be used to produce a random integer, with the lowest and highest possible values specified, or a random floating point value that ranges from 0 to 1.
+The code can be used to produce a random integer, with the lowest and highest possible values specified.
 
 ``` python
 import random
 
-myInt = random.randint(1, 6)
-print(myInt)
+myDice = random.randint(1, 6)
 
-myFloat = random.random()
-print(myFloat)
+print(myDice)
 ```
 
 #### Round
@@ -400,22 +420,19 @@ myRound = round(myFloat)
 print(myRound)
 ```
 
-**Note:** Python does not always round up when the value is 5.  Instead it rounds to the nearest even number!
+**Note:** Python does not always round up when a value has 5 tenths.  Instead it rounds to the nearest even number!
 
 #### Length
 
-The length function works with strings and arrays.  It returns a number that is equal to the number of characters in a string or the number of elements in an array.
+The length function works with strings and arrays.  It returns a number of characters in a string or the number of elements in an array.
 
 ``` python
-myLength = len("Hello world")
-print(myLength)
-
-
 myString = "Computing"
 myLength = len(myString)
 print(myLength)
+```
 
-
+``` python
 myArrayOfIntegers = [56, 34, 2, 85, 51]
 myLength = len(myArrayOfIntegers)
 print(myLength)
@@ -440,9 +457,9 @@ print("Hello " + user)
 **Note:** Anything entered using the keyboard is a string.  If the value represents another data type then it must be cast (converted) to that data type.
 
 ``` python
-age = int(input("How old are you? (In whole years) "))
+age = int(input("Age? (In whole years) "))
 
-height = float(input("How tall are you? (In metres) "))
+height = float(input("Height? (In metres) "))
 ```
 
 #### Validation
@@ -476,8 +493,7 @@ print("The combined age is " + str(total))
 
 Arrays store more than one value, called elements.  Each element has a position.  Python starts counting from zero.
 
-
-Example.  Retrieve the value in the second element, and change the value of the the third element.
+Example.  Retrieve and display the value in the second element, and change the value of the the third element.
 
 ``` python
 scores = [56, 34, 2, 85, 51]
@@ -487,26 +503,6 @@ print(score)
 
 scores[2] = 82
 print(scores)
-```
-
-#### Getting values out
-
-Method 1
-
-``` python
-scores = [56, 34, 2, 85, 51]
-
-for index in range(len(scores)):
-    print(scores[index])
-```
-
-Method 2
-
-``` python
-scores = [56, 34, 2, 85, 51]
-
-for score in scores:
-    print(score)
 ```
 
 #### Putting values in
@@ -520,6 +516,26 @@ for index in range(len(heights)):
     heights[index] = height
 
 print(heights)
+```
+
+#### Getting values out
+
+Method 1 - using the index value
+
+``` python
+scores = [56, 34, 2, 85, 51]
+
+for index in range(len(scores)):
+    print(scores[index])
+```
+
+Method 2 - not using the index value
+
+``` python
+scores = [56, 34, 2, 85, 51]
+
+for score in scores:
+    print(score)
 ```
 
 [Back to Table of Contents](#toc)
