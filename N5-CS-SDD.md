@@ -478,6 +478,8 @@ print("You entered " + str(dice))
 
 ### Running total within a loop
 
+Method 1 - Fixed loop
+
 ``` python
 total = 0
 
@@ -485,6 +487,21 @@ for counter in range(4):
     age = int(input("Enter an age: "))
 
     total = total + age
+
+print("The combined age is " + str(total))
+```
+
+Method 2 - Conditional loop
+
+``` python
+answer = ""
+total = 0
+
+while answer != "no":
+    age = int(input("Enter an age: "))
+    total = total + age
+
+    answer = input("Anter another age? ")
 
 print("The combined age is " + str(total))
 ```
