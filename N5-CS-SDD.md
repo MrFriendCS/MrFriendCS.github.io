@@ -501,7 +501,7 @@ while answer != "no":
     age = int(input("Enter an age: "))
     total = total + age
 
-    answer = input("Anter another age? ")
+    answer = input("Enter another age? ")
 
 print("The combined age is " + str(total))
 ```
