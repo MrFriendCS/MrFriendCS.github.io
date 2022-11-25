@@ -83,9 +83,9 @@ It is possible to display simple messages using the `.print` command.
 
 To search a database, a basic statement with two keywords `SELECT` and `FROM` is used.
 
-The `SELECT` keyword lists the required field, or fields.  The `FROM` keyword states the table that the fields are in.
+The `SELECT` keyword lists the required field(s).  The `FROM` keyword states the table(s) that the fields are in.
 
-To display all the fields the `*` symbol is used.
+To display all the fields the __`*`__ symbol is used.
 
 ``` sql
 SELECT *
@@ -237,7 +237,7 @@ WHERE table1.primary_key = table2.foreign_key;
 
 ### Example
 
-**Note:** Both tables that will be used have a field with the same name.  So that the database can distinguish between the fields they must be qualified with the table name.  Just using the field name would be ambiguous.
+**Note:** Both tables that will be used have a field with the same name.  So that the database can distinguish between the fields they must be qualified with the table name.  Just using the field name would be _ambiguous_.
 
 ``` sql
 SELECT *
