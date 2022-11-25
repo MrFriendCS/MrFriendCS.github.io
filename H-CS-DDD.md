@@ -72,7 +72,7 @@ SELECT *
 FROM Pet
 WHERE name LIKE "G%";
 ```
-A single character, before the first character.
+Zero, one, or more characters, before the last character.
 
 ``` sql
 SELECT *
@@ -93,7 +93,7 @@ A single character in the middle.
 ``` sql
 SELECT *
 FROM Pet
-WHERE name LIKE "R_t";
+WHERE species LIKE "R%t";
 ```
 
 [Back to Table of Contents](#toc)
@@ -137,6 +137,8 @@ FROM Vaccine;
 
 ## GROUP BY
 
+`GROUP BY` removes duplicate records.
+
 The following example will return the `species` field from every record.  Values will be repeated if they are repeated in the table.
 
 ``` sql
@@ -155,17 +157,20 @@ GROUP BY species;
 
 ## ORDER BY
 
+`ORDER BY`, if used, follows `GROUP BY`.
+
 ``` sql
 SELECT species
 FROM Pet
-GROUP BY species;
+GROUP BY species
+ORDER BY species;
 ```
 
 [Back to Table of Contents](#toc)
 
 ## Aggregate functions
 
-Aggregate functions can be used with with `GROUP BY` clause.
+Aggregate functions can be used with with the `GROUP BY` clause.
 
 ### Minimum / Maximum
 
@@ -224,7 +229,7 @@ GROUP BY species;
 
 ## WHERE
 
-It is possible to use the result from an aggregate function in a `WHERE` clause.
+It is possible to use the result from an aggregate function in a `WHERE` clause, but not directly.
 
 ### Using a result in another query
 
