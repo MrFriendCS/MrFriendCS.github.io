@@ -22,7 +22,7 @@ In the examples, the keywords will be in uppercase.
 
 SQLite, and SQL, is not whitespace sensitive.  This means a statement can be all on a single line or split over multiple lines.  In general, the examples have one keyword per line.
 
-The statements are terminated with a semicolon, `;`.  Individual statements will run without a semicolon but multiple statement will not.
+The statements are terminated with a semicolon, __`;`__.  Individual statements will run without a semicolon but multiple statement will not.
 
 ## Table of Contents {#toc}
 {:.no_toc}
@@ -45,7 +45,7 @@ The `text` datatype can be used for:
 
 ### Example Data
 
-[Database](N5-CS-Database.db)
+The example [database](https://stackedit.io/N5-CS-Database.db) contains the tables and records that the SQL examples will work with. The file can be opened with [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 The first 4 records of the data used in the examples are shown in the following tables:
 
@@ -68,6 +68,11 @@ The first 4 records of the data used in the examples are shown in the following 
 | 2 | 5 | 2020-06-23 | Canine hepatitis | False |
 | 3 | 1 | 2015-12-17 | Cat Flu | False |
 | 4 | 17 | 2015-10-05 | Cat Flu | False |
+
+#### ER Diagram
+{:.no_toc}
+
+![N5 DDD Enitiy Relationship Diagram](N5-CS-DDD.png "ER Diagram")
 
 [Back to Table of Contents](#toc)
 
