@@ -8,7 +8,7 @@
 
 ___Work in Progress___
 
-All the code examples use SQLite.  They will work with [Replit](https://replit.com/@esafriend1r/H-CS-Database) and [DB Browser for SQLite](https://sqlitebrowser.org/).
+All the code examples use SQLite.  They will work with [Replit](https://replit.com/) and [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 **Note:** These notes are focused on Higher Computing Science so some terms are used differently.
 
@@ -145,7 +145,7 @@ The following example will return the `species` field from every record.  Values
 SELECT species
 FROM Pet;
 ```
-The following example will group together `species` field from every record.  Values will not be repeated.
+The following example will group together `species` field from every record.  Values will not be repeated, i.e. one row for each group.
 
 ``` sql
 SELECT species
@@ -170,7 +170,7 @@ ORDER BY species;
 
 ## Aggregate functions
 
-Aggregate functions can be used with with the `GROUP BY` clause.
+Aggregate functions can be used with the `GROUP BY` clause.
 
 ### Minimum / Maximum
 
