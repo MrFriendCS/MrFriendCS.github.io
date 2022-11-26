@@ -20,7 +20,7 @@ All the code examples use SQLite.  They will work with [Replit](https://replit.c
 
 ### Example Data
 
-[Database](H-CS-Database.db)
+The example [database](H-CS-Database.db) contains the tables and records that the SQL examples will work with.  The file can be opened with [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 Four records from each table used in the examples are shown below.
 
@@ -53,6 +53,11 @@ Four records from each table used in the examples are shown below.
 | 2 | Cat Flu | 19.30 |
 | 3 | Distemper | 34.75 |
 | 4 | Feline Leukaemia Virus | 25.35 |
+
+#### ER Diagram
+{:.no_toc}
+
+![H DDD Enitiy Relationship Diagram](H-CS-DDD.png "ER Diagram")
 
 [Back to Table of Contents](#toc)
 
