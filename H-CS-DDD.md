@@ -108,17 +108,17 @@ WHERE species LIKE "R%t";
 To display search results with a different column heading instead of the field name the `AS` keyword is used.
 
 ``` sql
-SELECT name AS Jag, cost AS Price
+SELECT name AS Jag, cost
 FROM Vaccine;
 ```
 
 The alias can be used within the statement.
 
 ``` sql
-SELECT name AS Jag, cost AS Price
+SELECT name AS Jag, cost
 FROM Vaccine
-WHERE Price >= 30
-ORDER BY Price DESC;
+WHERE Jag LIKE "F%"
+ORDER BY Jag DESC;
 ```
 
 Aliases are not restricted to single words.  Due to the space, square brackets are used.
@@ -134,8 +134,9 @@ ORDER BY [Date of Birth] ASC;
 ## Computed values
 
 ``` sql
-SELECT name, cost, cost * 1.2 [inc VAT]
-FROM Vaccine;
+SELECT name, cost, cost * 1.2 AS [inc VAT]
+FROM Vaccine
+ORDER BY name ASC;
 ```
 
 [Back to Table of Contents](#toc)
