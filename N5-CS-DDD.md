@@ -22,7 +22,7 @@ In the examples, the keywords will be in uppercase.
 
 SQLite, and SQL, is not whitespace sensitive.  This means a statement can be all on a single line or split over multiple lines.  In general, the examples have one keyword per line.
 
-The statements are terminated with a semicolon, __`;`__.  Individual statements will run without a semicolon but multiple statement will not.
+The statements are terminated with a semicolon, __`;`__.  An individual statement will run without a semicolon but multiple statements will not.
 
 ## Table of Contents {#toc}
 {:.no_toc}
