@@ -93,12 +93,12 @@ FROM Pet
 WHERE species LIKE "R%t";
 ```
 
-A single character in the middle.
+A single character.
 
 ``` sql
 SELECT *
 FROM Pet
-WHERE species LIKE "R%t";
+WHERE species LIKE "_at";
 ```
 
 [Back to Table of Contents](#toc)
