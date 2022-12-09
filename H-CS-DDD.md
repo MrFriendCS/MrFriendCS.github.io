@@ -74,14 +74,14 @@ Zero, one, or more characters, after the first character.
 
 ``` sql
 SELECT *
-    FROM Pet
+    FROM pet
     WHERE name LIKE "G%";
 ```
 Zero, one, or more characters, before the last character.
 
 ``` sql
 SELECT *
-    FROM Pet
+    FROM pet
     WHERE name LIKE "%n";
 ```
 
@@ -89,7 +89,7 @@ Zero, one, or more characters in the middle.
 
 ``` sql
 SELECT *
-    FROM Pet
+    FROM pet
     WHERE species LIKE "R%t";
 ```
 
@@ -97,7 +97,7 @@ A single character.
 
 ``` sql
 SELECT *
-    FROM Pet
+    FROM pet
     WHERE species LIKE "_at";
 ```
 
@@ -109,7 +109,7 @@ To display search results with a different column heading instead of the field n
 
 ``` sql
 SELECT name AS Jag, cost
-    FROM Vaccine;
+    FROM vaccine;
 ```
 
 The alias can be used within the statement.
@@ -125,7 +125,7 @@ Aliases are not restricted to single words.  Due to the space, square brackets a
 
 ``` sql
 SELECT pet_id, name, species, dob AS [Date of Birth]
-    FROM Pet
+    FROM pet
     ORDER BY [Date of Birth] ASC;
 ```
 
@@ -135,7 +135,7 @@ SELECT pet_id, name, species, dob AS [Date of Birth]
 
 ``` sql
 SELECT name, cost, cost * 1.2 AS [inc VAT]
-    FROM Vaccine
+    FROM vaccine
     ORDER BY name ASC;
 ```
 
@@ -153,22 +153,22 @@ Find the `dob` of the oldest and youngest pet.
 
 ``` sql
 SELECT MIN(dob), MAX(dob)
-    FROM Pet;
+    FROM pet;
 ```
 
 ### Average
 
 ``` sql
 SELECT AVG(cost)
-    FROM Vaccine;
+    FROM vaccine;
 ```
 
 ### Sum
 
 ``` sql
 SELECT SUM(cost)
-    FROM Vaccination, Vaccine
-    WHERE Vaccination.vax_id = Vaccine.vax_id
+    FROM vaccination, Vaccine
+    WHERE vaccination.vax_id = vaccine.vax_id
         AND pet_id = 14;
 ```
 
@@ -178,7 +178,7 @@ Count the number of records in a table that meet the condition.
 
 ``` sql
 SELECT COUNT(*)
-    FROM Pet
+    FROM pet
     WHERE species = "Rabbit";
 ```
 
@@ -192,14 +192,14 @@ The following example will return the `species` field from every record.  Values
 
 ``` sql
 SELECT species
-    FROM Pet;
+    FROM pet;
 ```
 
 The following example will group together `species` field from every record.  Values will not be repeated, i.e. one row for each group.
 
 ``` sql
 SELECT species
-    FROM Pet
+    FROM pet
     GROUP BY species;
 ```
 
@@ -207,13 +207,13 @@ SELECT species
 
 ``` sql
 SELECT species, COUNT(species)
-    FROM Pet
+    FROM pet
     GROUP BY species;
 ```
 
 ``` sql
 SELECT species, MIN(dob), MAX(dob)
-    FROM Pet
+    FROM pet
     GROUP BY species;
 ```
 
@@ -225,7 +225,7 @@ SELECT species, MIN(dob), MAX(dob)
 
 ``` sql
 SELECT species
-    FROM Pet
+    FROM pet
     GROUP BY species
     ORDER BY species;
 ```
@@ -246,17 +246,17 @@ This will create a temporary view that will be deleted when the database is clos
 CREATE TEMP VIEW Oldest (dob)
     AS
     SELECT MIN(doB)
-    FROM Pet;
+    FROM pet;
 ```
 
 Use the stored result.
 
 ``` sql
-SELECT Pet.name, Vaccine.name, vax_date, cost
-    FROM Oldest, Pet, Vaccination, Vaccine
-    WHERE Pet.pet_id = Vaccination.pet_id
-        AND Vaccination.vax_id = Vaccine.vax_id
-        AND Oldest.dob = Pet.dob;
+SELECT pet.name, vaccine.name, vax_date, cost
+    FROM Oldest, pet, vaccination, vaccine
+    WHERE pet.pet_id = vaccination.pet_id
+        AND vaccination.vax_id = vaccine.vax_id
+        AND Oldest.dob = pet.dob;
 ```
 
 ### Subclause (Single query)
@@ -264,13 +264,13 @@ SELECT Pet.name, Vaccine.name, vax_date, cost
 **Note** Using subclauses is beyond the scope of the Higher course and will not be assessed.
 
 ``` sql
-SELECT Pet.name, Vaccine.name, vax_date, cost
-    FROM Oldest, Pet, Vaccination, Vaccine
-    WHERE Pet.pet_id = Vaccination.pet_id
-        AND Vaccination.vax_id = Vaccine.vax_id
+SELECT pet.name, vaccine.name, vax_date, cost
+    FROM Oldest, pet, vaccination, vaccine
+    WHERE pet.pet_id = vaccination.pet_id
+        AND vaccination.vax_id = vaccine.vax_id
         AND Pet.dob = 
             (SELECT MIN(doB)
-            FROM Pet);
+                FROM pet);
 ```
 
 [Back to Table of Contents](#toc)
@@ -279,8 +279,8 @@ SELECT Pet.name, Vaccine.name, vax_date, cost
 
 ``` sql
 SELECT species, COUNT(*) as jags
-    FROM Pet, Vaccination
-    WHERE Pet.pet_id = Vaccination.vax_id
+    FROM pet, vaccination
+    WHERE pet.pet_id = vaccination.vax_id
         AND vax_date >= "2020-01-01"
         AND vax_date <= "2020-12-31"
     GROUP BY species
@@ -288,12 +288,12 @@ SELECT species, COUNT(*) as jags
 ```
 
 ``` sql
-SELECT Pet.pet_id, Pet.name, species, SUM(cost * 1.2) as [inc VAT]
-    FROM Pet, Vaccination, Vaccine
-    WHERE Pet.pet_id = Vaccination.vax_id
-        AND Vaccination.vax_id = Vaccine.vax_id
+SELECT pet.pet_id, pet.name, species, SUM(cost * 1.2) as [inc VAT]
+    FROM pet, vaccination, vaccine
+    WHERE pet.pet_id = vaccination.vax_id
+        AND vaccination.vax_id = vaccine.vax_id
         AND paid = "False"
-    GROUP BY Pet.pet_id
+    GROUP BY pet.pet_id
     ORDER BY [inc VAT] DESC;
 ```
 
