@@ -178,6 +178,8 @@ ORDER BY species;
 
 Aggregate functions can be used with the `GROUP BY` [clause](#group).
 
+**Note:** If fields and aggregate functions are both displayed then the fields must be in the `GROUP BY` clause, otherwise the result is meaningless.
+
 ### Minimum / Maximum
 
 The `MIN` keyword is used to find the minimum value in a field, and `MAX` is used to find the maximum.  These work for both numeric and text values.
@@ -190,8 +192,6 @@ FROM Pet;
 ```
 
 Find the `dob` of the oldest and youngest pet of each species.
-
-**Note:** If fields and aggregate functions are both displayed then the fields must be in the `GROUP BY` clause.  Otherwise the result is meaningless.
 
 ``` sql
 SELECT species, MIN(dob), MAX(dob)
