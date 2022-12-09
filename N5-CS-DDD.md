@@ -179,14 +179,14 @@ It is possible to insert a record, multiple records, or partial records into a t
 ### Complete record
 
 ``` sql
-INSERT INTO Pet
+INSERT INTO pet
     VALUES (26, "Tiger", "Cat", "2022-04-17");
 ```
 
 ### Complete records
 
 ``` sql
-INSERT INTO Pet
+INSERT INTO pet
     VALUES (27, "Bill", "Ferret", "2022-05-01"),
            (28, "Ben", "Ferret", "2022-05-01");
 ```
@@ -196,7 +196,7 @@ INSERT INTO Pet
 If a partial record is added then the field names must be stated.  The values must be in the same order as the fields.
 
 ``` sql
-INSERT INTO Pet ("species", "name", "pet_id")
+INSERT INTO pet ("species", "name", "pet_id")
     VALUES ("Dog", "Winston", 29);
 ```
 
@@ -262,7 +262,7 @@ Select various fields from two tables, with two search conditions and ordered on
 ``` sql
 SELECT pet.name, species, vaccination.name, vax_date
     FROM pet, vaccination
-    WHERE Pet.pet_id = Vaccination.pet_id
+    WHERE pet.pet_id = vaccination.pet_id
         AND species = "Rabbit"
     ORDER BY pet.name ASC,
         vax_date DESC;
