@@ -49,7 +49,7 @@ The example [database](https://stackedit.io/N5-CS-Database.db) contains the tabl
 
 The first 4 records of the data used in the examples are shown in the following tables:
 
-#### Pet
+#### Table: pet
 {:.no_toc}
 
 | pet_id | name | species | dob |
@@ -59,7 +59,7 @@ The first 4 records of the data used in the examples are shown in the following 
 | 3	| Bo | Rabbit | 2011-10-13 |
 | 4 | Joscelin | Gerbil | 2022-02-19 |
 
-#### Vaccination
+#### Table: vaccination
 {:.no_toc}
 
 | vax_id | pet_id | vax_date | name | reaction |
@@ -94,14 +94,14 @@ To display all the fields the __`*`__ symbol is used.
 
 ``` sql
 SELECT *
-FROM Pet;
+    FROM pet;
 ```
 
 To select one, or more fields, their names are used.
 
 ``` sql
 SELECT name, species
-FROM Pet;
+    FROM pet;
 ```
 
 [Back to Table of Contents](#toc)
@@ -116,8 +116,8 @@ A simple search compares a field in a record with a value.  If the comparison is
 
 ``` sql
 SELECT *
-FROM vaccination
-WHERE species = "Cat";
+    FROM vaccination
+    WHERE species = "Cat";
 ```
 
 [Back to Table of Contents](#toc)
@@ -132,9 +132,9 @@ If both comparisons are `True` then the required fields of that record are displ
 
 ``` sql
 SELECT *
-FROM vaccination
-WHERE name = "Distemper"
-  AND reaction = "True";
+    FROM vaccination
+    WHERE name = "Distemper"
+        AND reaction = "True";
 ```
 
 #### OR
@@ -143,9 +143,9 @@ If either comparison is `True` then the required fields of that record are displ
 
 ``` sql
 SELECT *
-FROM vaccination
-WHERE name = "Distemper"
-   OR reaction = "True";
+    FROM vaccination
+    WHERE name = "Distemper"
+        OR reaction = "True";
 ```
 
 [Back to Table of Contents](#toc)
@@ -156,17 +156,18 @@ It is possible to order the output of a search using `ORDER BY` and stating the 
 
 ``` sql
 SELECT *
-FROM Pet
-ORDER BY species;
+    FROM pet
+    ORDER BY species;
 ```
 
 To change the sort order of a field to descending the keyword `DESC` used.  The keyword `ASC` is not needed but can be used to explicitly sort ascending.
 
 ``` sql
 SELECT *
-FROM Pet
-ORDER BY species DESC,
-         name ASC;
+    FROM pet
+    ORDER BY
+        species DESC,
+        name ASC;
 ```
 
 [Back to Table of Contents](#toc)
@@ -179,15 +180,15 @@ It is possible to insert a record, multiple records, or partial records into a t
 
 ``` sql
 INSERT INTO Pet
-VALUES (26, "Tiger", "Cat", "2022-04-17");
+    VALUES (26, "Tiger", "Cat", "2022-04-17");
 ```
 
 ### Complete records
 
 ``` sql
 INSERT INTO Pet
-VALUES (27, "Bill", "Ferret", "2022-05-01"),
-       (28, "Ben", "Ferret", "2022-05-01");
+    VALUES (27, "Bill", "Ferret", "2022-05-01"),
+           (28, "Ben", "Ferret", "2022-05-01");
 ```
 
 ### Partial record
@@ -196,7 +197,7 @@ If a partial record is added then the field names must be stated.  The values mu
 
 ``` sql
 INSERT INTO Pet ("species", "name", "pet_id")
-VALUES ("Dog", "Winston", 29);
+    VALUES ("Dog", "Winston", 29);
 ```
 
 [Back to Table of Contents](#toc)
@@ -206,9 +207,9 @@ VALUES ("Dog", "Winston", 29);
 **Note:** It is possible to damage the data with an `UPDATE` statement.  It is advisable to practise with a `SELECT` statement first to see if the correct record, or records, will be changed.
 
 ``` sql
-UPDATE Pet
-SET dob = "2022-04-01"
-WHERE pet_id = 29;
+UPDATE pet
+    SET dob = "2022-04-01"
+    WHERE pet_id = 29;
 ```
 
 Caution: without the `WHERE` clause the `dob` field of all records would be updated!
@@ -220,8 +221,8 @@ Caution: without the `WHERE` clause the `dob` field of all records would be upda
 **Note:** It is possible to damage the data with a `DELETE FROM` statement.  It is advisable to practise with a `SELECT` statement first to see if the correct record, or records, will be deleted.
 
 ``` sql
-DELETE FROM Pet
-WHERE pet_id >= 26;
+DELETE FROM pet
+    WHERE pet_id >= 26;
 ```
 
 Caution: without the `WHERE` clause all records would be deleted!
@@ -236,8 +237,8 @@ Tables are joined using the primary key of one table and the foreign key of the 
 
 ``` sql
 SELECT *
-FROM table1, table2
-WHERE table1.primary_key = table2.foreign_key;
+    FROM table1, table2
+    WHERE table1.primary_key = table2.foreign_key;
 ```
 
 ### Example
@@ -246,8 +247,8 @@ WHERE table1.primary_key = table2.foreign_key;
 
 ``` sql
 SELECT *
-FROM Pet, Vaccination
-WHERE Pet.pet_id = Vaccination.pet_id;
+    FROM pet, vaccination
+    WHERE pet.pet_id = vaccination.pet_id;
 ```
 
 [Back to Table of Contents](#toc)
@@ -259,12 +260,12 @@ WHERE Pet.pet_id = Vaccination.pet_id;
 Select various fields from two tables, with two search conditions and ordered on two fields.
 
 ``` sql
-SELECT Pet.name, species, Vaccination.name, vax_date
-FROM Pet, Vaccination
-WHERE Pet.pet_id = Vaccination.pet_id
-  AND species = "Rabbit"
-ORDER BY pet.name ASC,
-         vax_date DESC;
+SELECT pet.name, species, vaccination.name, vax_date
+    FROM pet, vaccination
+    WHERE Pet.pet_id = Vaccination.pet_id
+        AND species = "Rabbit"
+    ORDER BY pet.name ASC,
+        vax_date DESC;
 ```
 
 ### Update
@@ -275,25 +276,25 @@ Update vaccination records so that **Feline Leukaemia Virus** is replaced with *
 
 ``` sql
 SELECT *
-FROM Vaccination
-WHERE name = "Feline Leukaemia Virus";
+    FROM vaccination
+    WHERE name = "Feline Leukaemia Virus";
 ```
 
 * Create an `UPDATE` statement to update the correct records.
 
 ``` sql
-UPDATE Vaccination
-SET name = "FLV"
-WHERE name = "Feline Leukaemia Virus";
+UPDATE vaccination
+    SET name = "FLV"
+    WHERE name = "Feline Leukaemia Virus";
 ```
 
 * Check that the changes have been made.
 
 ``` sql
 SELECT *
-FROM Vaccination
-WHERE name = "FLV"
-   OR name = "Feline Leukaemia Virus";
+    FROM vaccination
+    WHERE name = "FLV"
+        OR name = "Feline Leukaemia Virus";
 ```
 
 [Back to Table of Contents](#toc)
