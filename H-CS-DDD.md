@@ -191,7 +191,7 @@ FROM Pet;
 
 Find the `dob` of the oldest and youngest pet of each species.
 
-**Note:** As a general rule, if fields and aggregate functions are both displayed then the fields need to be in the `GROUP BY` clause.  Otherwise the result is meaningless.
+**Note:** If fields and aggregate functions are both displayed then the fields must be in the `GROUP BY` clause.  Otherwise the result is meaningless.
 
 ``` sql
 SELECT species, MIN(dob), MAX(dob)
