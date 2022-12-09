@@ -116,7 +116,7 @@ The alias can be used within the statement.
 
 ``` sql
 SELECT name AS Jag, cost
-    FROM Vaccine
+    FROM vaccine
     WHERE Jag LIKE "F%"
     ORDER BY Jag DESC;
 ```
@@ -167,7 +167,7 @@ SELECT AVG(cost)
 
 ``` sql
 SELECT SUM(cost)
-    FROM vaccination, Vaccine
+    FROM vaccination, vaccine
     WHERE vaccination.vax_id = vaccine.vax_id
         AND pet_id = 14;
 ```
@@ -243,7 +243,7 @@ A `VIEW` stores the result of a `SELECT` statement.  The view can then be querie
 This will create a temporary view that will be deleted when the database is closed.
 
 ``` sql
-CREATE TEMP VIEW Oldest (dob)
+CREATE TEMP VIEW oldest (dob)
     AS
     SELECT MIN(doB)
     FROM pet;
@@ -253,10 +253,10 @@ Use the stored result.
 
 ``` sql
 SELECT pet.name, vaccine.name, vax_date, cost
-    FROM Oldest, pet, vaccination, vaccine
+    FROM oldest, pet, vaccination, vaccine
     WHERE pet.pet_id = vaccination.pet_id
         AND vaccination.vax_id = vaccine.vax_id
-        AND Oldest.dob = pet.dob;
+        AND oldest.dob = pet.dob;
 ```
 
 ### Subclause (Single query)
@@ -268,7 +268,7 @@ SELECT pet.name, vaccine.name, vax_date, cost
     FROM Oldest, pet, vaccination, vaccine
     WHERE pet.pet_id = vaccination.pet_id
         AND vaccination.vax_id = vaccine.vax_id
-        AND Pet.dob = 
+        AND pet.dob = 
             (SELECT MIN(doB)
                 FROM pet);
 ```
