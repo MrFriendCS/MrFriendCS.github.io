@@ -237,9 +237,11 @@ GROUP BY species;
 
 It is possible to use the result from an aggregate function in a `WHERE` clause, but not directly.
 
+A `VIEW` stores the result of a `SELECT` statement.  The view can then be queried like a table.
+
 ### Using a result in another query
 
-This will crate a temporary query (view) that will be deleted when the database is closed.
+This will create a temporary view that will be deleted when the database is closed.
 
 ``` sql
 CREATE TEMP VIEW Oldest (dob) AS
