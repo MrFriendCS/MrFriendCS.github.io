@@ -24,7 +24,7 @@ The example [database](H-CS-Database.db) contains the tables and records that th
 
 Four records from each table used in the examples are shown below.
 
-#### Pet
+#### Table: pet
 {:.no_toc}
 
 | pet_id | name | species | dob |
@@ -34,7 +34,7 @@ Four records from each table used in the examples are shown below.
 | 3	| Bo | Rabbit | 2011-10-13 |
 | 4 | Joscelin | Gerbil | 2022-02-19 |
 
-#### Vaccination
+####  Table: vaccination
 {:.no_toc}
 
 | pet_id | vax_id | vax_date| reaction | paid |
@@ -44,7 +44,7 @@ Four records from each table used in the examples are shown below.
 | 19 | 2 | 2021-07-06 | False | True |
 | 9 | 8 | 2021-03-05 | False | False |
 
-#### Vaccine
+#### Table: vaccine
 {:.no_toc}
 
 | vax_id | name | cost |
@@ -74,31 +74,31 @@ Zero, one, or more characters, after the first character.
 
 ``` sql
 SELECT *
-FROM Pet
-WHERE name LIKE "G%";
+    FROM Pet
+    WHERE name LIKE "G%";
 ```
 Zero, one, or more characters, before the last character.
 
 ``` sql
 SELECT *
-FROM Pet
-WHERE name LIKE "%n";
+    FROM Pet
+    WHERE name LIKE "%n";
 ```
 
 Zero, one, or more characters in the middle.
 
 ``` sql
 SELECT *
-FROM Pet
-WHERE species LIKE "R%t";
+    FROM Pet
+    WHERE species LIKE "R%t";
 ```
 
 A single character.
 
 ``` sql
 SELECT *
-FROM Pet
-WHERE species LIKE "_at";
+    FROM Pet
+    WHERE species LIKE "_at";
 ```
 
 [Back to Table of Contents](#toc)
@@ -109,24 +109,24 @@ To display search results with a different column heading instead of the field n
 
 ``` sql
 SELECT name AS Jag, cost
-FROM Vaccine;
+    FROM Vaccine;
 ```
 
 The alias can be used within the statement.
 
 ``` sql
 SELECT name AS Jag, cost
-FROM Vaccine
-WHERE Jag LIKE "F%"
-ORDER BY Jag DESC;
+    FROM Vaccine
+    WHERE Jag LIKE "F%"
+    ORDER BY Jag DESC;
 ```
 
 Aliases are not restricted to single words.  Due to the space, square brackets are used.
 
 ``` sql
 SELECT pet_id, name, species, dob AS [Date of Birth]
-FROM Pet
-ORDER BY [Date of Birth] ASC;
+    FROM Pet
+    ORDER BY [Date of Birth] ASC;
 ```
 
 [Back to Table of Contents](#toc)
@@ -135,8 +135,51 @@ ORDER BY [Date of Birth] ASC;
 
 ``` sql
 SELECT name, cost, cost * 1.2 AS [inc VAT]
-FROM Vaccine
-ORDER BY name ASC;
+    FROM Vaccine
+    ORDER BY name ASC;
+```
+
+[Back to Table of Contents](#toc)
+
+## Aggregate functions {#functions}
+
+Aggregate functions can be used with the `GROUP BY` [clause](#group).
+
+### Minimum / Maximum
+
+The `MIN` keyword is used to find the minimum value in a field, and `MAX` is used to find the maximum.  These work for both numeric and text values.
+
+Find the `dob` of the oldest and youngest pet.
+
+``` sql
+SELECT MIN(dob), MAX(dob)
+    FROM Pet;
+```
+
+### Average
+
+``` sql
+SELECT AVG(cost)
+    FROM Vaccine;
+```
+
+### Sum
+
+``` sql
+SELECT SUM(cost)
+    FROM Vaccination, Vaccine
+    WHERE Vaccination.vax_id = Vaccine.vax_id
+        AND pet_id = 14;
+```
+
+### Count
+
+Count the number of records in a table that meet the condition.
+
+``` sql
+SELECT COUNT(*)
+    FROM Pet
+    WHERE species = "Rabbit";
 ```
 
 [Back to Table of Contents](#toc)
@@ -149,86 +192,42 @@ The following example will return the `species` field from every record.  Values
 
 ``` sql
 SELECT species
-FROM Pet;
+    FROM Pet;
 ```
+
 The following example will group together `species` field from every record.  Values will not be repeated, i.e. one row for each group.
 
 ``` sql
 SELECT species
-FROM Pet
-GROUP BY species;
+    FROM Pet
+    GROUP BY species;
+```
+
+**Note:** If fields and aggregate functions are both displayed then the fields must be in the `GROUP BY` clause, otherwise the result is meaningless.
+
+``` sql
+SELECT species, COUNT(species)
+    FROM Pet
+    GROUP BY species;
+```
+
+``` sql
+SELECT species, MIN(dob), MAX(dob)
+    FROM Pet
+    GROUP BY species;
 ```
 
 [Back to Table of Contents](#toc)
 
 ## ORDER BY
 
-`ORDER BY`, if used, follows `GROUP BY`.
+`ORDER BY`, if used, must follow `GROUP BY`.
 
 ``` sql
 SELECT species
-FROM Pet
-GROUP BY species
-ORDER BY species;
-```
-
-[Back to Table of Contents](#toc)
-
-## Aggregate functions {#functions}
-
-Aggregate functions can be used with the `GROUP BY` [clause](#group).
-
-**Note:** If fields and aggregate functions are both displayed then the fields must be in the `GROUP BY` clause, otherwise the result is meaningless.
-
-### Minimum / Maximum
-
-The `MIN` keyword is used to find the minimum value in a field, and `MAX` is used to find the maximum.  These work for both numeric and text values.
-
-Find the `dob` of the oldest and youngest pet.
-
-``` sql
-SELECT MIN(dob), MAX(dob)
-FROM Pet;
-```
-
-Find the `dob` of the oldest and youngest pet of each species.
-
-``` sql
-SELECT species, MIN(dob), MAX(dob)
-FROM Pet
-GROUP BY species;
-```
-
-### Average
-
-``` sql
-SELECT AVG(cost)
-FROM Vaccine;
-```
-
-### Sum
-
-``` sql
-SELECT SUM(cost)
-FROM Vaccination, Vaccine
-WHERE Vaccination.vax_id = Vaccine.vax_id
-  AND pet_id = 14;
-```
-
-### Count
-
-Count the number of records in a table that meet the condition.
-
-``` sql
-SELECT COUNT(*)
-FROM Pet
-WHERE species = "Rabbit";
-```
-
-``` sql
-SELECT species, COUNT(*)
-FROM Pet
-GROUP BY species;
+    FROM Pet
+    GROUP BY species
+    ORDER BY species;
 ```
 
 [Back to Table of Contents](#toc)
@@ -244,19 +243,20 @@ A `VIEW` stores the result of a `SELECT` statement.  The view can then be querie
 This will create a temporary view that will be deleted when the database is closed.
 
 ``` sql
-CREATE TEMP VIEW Oldest (dob) AS
-SELECT MIN(doB)
-FROM Pet;
+CREATE TEMP VIEW Oldest (dob)
+    AS
+    SELECT MIN(doB)
+    FROM Pet;
 ```
 
 Use the stored result.
 
 ``` sql
 SELECT Pet.name, Vaccine.name, vax_date, cost
-FROM Oldest, Pet, Vaccination, Vaccine
-WHERE Pet.pet_id = Vaccination.pet_id
-  AND Vaccination.vax_id = Vaccine.vax_id
-  AND Oldest.dob = Pet.dob;
+    FROM Oldest, Pet, Vaccination, Vaccine
+    WHERE Pet.pet_id = Vaccination.pet_id
+        AND Vaccination.vax_id = Vaccine.vax_id
+        AND Oldest.dob = Pet.dob;
 ```
 
 ### Subclause (Single query)
@@ -265,12 +265,12 @@ WHERE Pet.pet_id = Vaccination.pet_id
 
 ``` sql
 SELECT Pet.name, Vaccine.name, vax_date, cost
-FROM Oldest, Pet, Vaccination, Vaccine
-WHERE Pet.pet_id = Vaccination.pet_id
-  AND Vaccination.vax_id = Vaccine.vax_id
-  AND Pet.dob = 
-      (SELECT MIN(doB)
-       FROM Pet);
+    FROM Oldest, Pet, Vaccination, Vaccine
+    WHERE Pet.pet_id = Vaccination.pet_id
+        AND Vaccination.vax_id = Vaccine.vax_id
+        AND Pet.dob = 
+            (SELECT MIN(doB)
+            FROM Pet);
 ```
 
 [Back to Table of Contents](#toc)
@@ -279,22 +279,22 @@ WHERE Pet.pet_id = Vaccination.pet_id
 
 ``` sql
 SELECT species, COUNT(*) as jags
-FROM Pet, Vaccination
-WHERE Pet.pet_id = Vaccination.vax_id
-  AND vax_date >= "2020-01-01"
-  AND vax_date <= "2020-12-31"
-GROUP BY species
-ORDER BY jags DESC;
+    FROM Pet, Vaccination
+    WHERE Pet.pet_id = Vaccination.vax_id
+        AND vax_date >= "2020-01-01"
+        AND vax_date <= "2020-12-31"
+    GROUP BY species
+    ORDER BY jags DESC;
 ```
 
 ``` sql
 SELECT Pet.pet_id, Pet.name, species, SUM(cost * 1.2) as [inc VAT]
-FROM Pet, Vaccination, Vaccine
-WHERE Pet.pet_id = Vaccination.vax_id
-  AND Vaccination.vax_id = Vaccine.vax_id
-  AND paid = "False"
-GROUP BY Pet.pet_id
-ORDER BY [inc VAT] DESC;
+    FROM Pet, Vaccination, Vaccine
+    WHERE Pet.pet_id = Vaccination.vax_id
+        AND Vaccination.vax_id = Vaccine.vax_id
+        AND paid = "False"
+    GROUP BY Pet.pet_id
+    ORDER BY [inc VAT] DESC;
 ```
 
 [Back to Table of Contents](#toc)
