@@ -243,8 +243,7 @@ A `VIEW` stores the result of a `SELECT` statement.  The view can then be querie
 This will create a temporary view that will be deleted when the database is closed.
 
 ``` sql
-CREATE TEMP VIEW oldest (dob)
-    AS
+CREATE TEMP VIEW oldest (dob) AS
     SELECT MIN(doB)
     FROM pet;
 ```
