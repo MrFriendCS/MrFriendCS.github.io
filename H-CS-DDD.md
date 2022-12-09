@@ -141,9 +141,9 @@ ORDER BY name ASC;
 
 [Back to Table of Contents](#toc)
 
-## GROUP BY
+## GROUP BY {#group}
 
-`GROUP BY` removes duplicate records.
+`GROUP BY` places results of a query into logical groups and removes duplicates.  [Aggregate functions](#functions) can be used with each group.
 
 The following example will return the `species` field from every record.  Values will be repeated if they are repeated in the table.
 
@@ -174,9 +174,9 @@ ORDER BY species;
 
 [Back to Table of Contents](#toc)
 
-## Aggregate functions
+## Aggregate functions {#functions}
 
-Aggregate functions can be used with the `GROUP BY` clause.
+Aggregate functions can be used with the [`GROUP BY`](#group)  clause.
 
 ### Minimum / Maximum
 
