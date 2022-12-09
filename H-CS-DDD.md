@@ -176,7 +176,7 @@ ORDER BY species;
 
 ## Aggregate functions {#functions}
 
-Aggregate functions can be used with the [`GROUP BY`](#group)  clause.
+Aggregate functions can be used with the `GROUP BY` [clause](#group).
 
 ### Minimum / Maximum
 
