@@ -206,7 +206,8 @@ SELECT species
 ``` sql
 SELECT species, COUNT(species)
     FROM pet
-    GROUP BY species;
+    GROUP BY species
+    ORDER BY COUNT(species) DESC;
 ```
 
 ``` sql
