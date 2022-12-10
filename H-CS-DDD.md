@@ -6,8 +6,6 @@
 ## Database Design and Development
 {:.no_toc}
 
-___Work in Progress___
-
 All the code examples use SQLite.  They will work with [Replit](https://replit.com/) and [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 **Note:** These notes are focused on Higher Computing Science so some terms are used differently.
@@ -224,10 +222,10 @@ SELECT species, MIN(dob), MAX(dob)
 `ORDER BY`, if used, must follow `GROUP BY`.
 
 ``` sql
-SELECT species
+SELECT species, COUNT(species)
     FROM pet
     GROUP BY species
-    ORDER BY species;
+    ORDER BY COUNT(species) DESC;
 ```
 
 [Back to Table of Contents](#toc)
@@ -264,7 +262,7 @@ SELECT pet.name, vaccine.name, vax_date, cost
 
 ``` sql
 SELECT pet.name, vaccine.name, vax_date, cost
-    FROM Oldest, pet, vaccination, vaccine
+    FROM pet, vaccination, vaccine
     WHERE pet.pet_id = vaccination.pet_id
         AND vaccination.vax_id = vaccine.vax_id
         AND pet.dob = 
