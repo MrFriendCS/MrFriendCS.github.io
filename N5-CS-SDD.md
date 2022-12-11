@@ -18,6 +18,14 @@ Python uses indentation (spaces at the beginning of a line) to show where code b
 * TOC will be displayed here
 {:toc}
 
+## Information
+
+### Comments
+
+``` python
+# This comment is not displayed
+```
+
 ### Display information
 
 ``` python
