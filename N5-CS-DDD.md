@@ -6,8 +6,6 @@
 ## Database Design and Development
 {:.no_toc}
 
-___Work in Progress___
-
 All the code examples use SQLite.  They will work with [Replit](https://replit.com/) and [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 **Note:** These notes are focused on N5 Computing Science so some terms are used differently.
@@ -76,12 +74,19 @@ The first 4 records of the data used in the examples are shown in the following 
 
 [Back to Table of Contents](#toc)
 
-## Display information
+## Information
 
+### Comments
+
+``` sql
+-- This comment is not displayed
+```
+
+### Display information
 It is possible to display simple messages using the `.print` command.
 
 ``` sql
-.print A message
+.print Hello World!
 ```
 
 ## Search
@@ -102,6 +107,28 @@ To select one, or more fields, their names are used.
 ``` sql
 SELECT name, species
     FROM pet;
+```
+
+[Back to Table of Contents](#toc)
+
+## Order results
+
+It is possible to order the output of a search using `ORDER BY` and stating the field, or fields.  Fields are sorted ascending, smallest to largest, by default.
+
+``` sql
+SELECT *
+    FROM pet
+    ORDER BY species;
+```
+
+To change the sort order of a field to descending the keyword `DESC` used.  The keyword `ASC` is not needed but can be used to explicitly sort ascending.  More than one field can be sorted.
+
+``` sql
+SELECT *
+    FROM pet
+    ORDER BY
+        species DESC,
+        name ASC;
 ```
 
 [Back to Table of Contents](#toc)
@@ -146,28 +173,6 @@ SELECT *
     FROM vaccination
     WHERE name = "Distemper"
         OR reaction = "True";
-```
-
-[Back to Table of Contents](#toc)
-
-## Order results
-
-It is possible to order the output of a search using `ORDER BY` and stating the field, or fields.  Fields are sorted ascending, smallest to largest, by default.
-
-``` sql
-SELECT *
-    FROM pet
-    ORDER BY species;
-```
-
-To change the sort order of a field to descending the keyword `DESC` used.  The keyword `ASC` is not needed but can be used to explicitly sort ascending.
-
-``` sql
-SELECT *
-    FROM pet
-    ORDER BY
-        species DESC,
-        name ASC;
 ```
 
 [Back to Table of Contents](#toc)
@@ -243,7 +248,7 @@ SELECT *
 
 ### Example
 
-**Note:** Both tables that will be used have a field with the same name.  So that the database can distinguish between the fields they must be qualified with the table name.  Just using the field name would be _ambiguous_.
+**Note:** In this example both tables have a field with the same name.  So that the database can distinguish between the fields they must be qualified with the table name.  Just using the field name would be _ambiguous_.
 
 ``` sql
 SELECT *
