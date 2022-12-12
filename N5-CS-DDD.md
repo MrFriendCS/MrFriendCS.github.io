@@ -135,7 +135,20 @@ SELECT *
 
 ## Refine search
 
-To limit the number of records returned, the `WHERE` keyword is used.
+To limit the number of records returned, the `WHERE` keyword is used with a comparison operator.
+
+### Comparison operators
+
+Comparison operators are used to compare one value with another.
+
+| Symbol | Meaning |
+| :--: | :-- |
+| = | Equality (the same as) |
+| <> | Inequality (not the same as) |
+| > | Greater than |
+| >= | Greater than or equal to |
+| < | Less than |
+| <= | Less than or equal to |
 
 ### Simple search
 
