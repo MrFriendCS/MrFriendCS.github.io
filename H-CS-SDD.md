@@ -484,11 +484,11 @@ index = 0
 while not(found) and index < len(names):
     if names[index] == "Carl":
         found = True
-        
-    index = index + 1
+    else:
+        index = index + 1
 
 if found:
-    print("Found")
+    print("Found at index " + str(index))
 else:
     print("Not found")
 ```
