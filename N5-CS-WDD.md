@@ -228,7 +228,7 @@ The image tag (`<img>`) has three attributes.  The first (`src`) is where the im
 
 ``` html
 <audio controls>  
-	<source src="clapping.mp3"  type="audio/mpeg">
+	<source src="clapping.mp3" type="audio/mpeg">
 </audio>
 ```
 
@@ -236,7 +236,7 @@ The image tag (`<img>`) has three attributes.  The first (`src`) is where the im
 
 ``` html
 <video controls>  
-	<source src="clapping.mp4"  type="video/mp4">
+	<source src="clapping.mp4" type="video/mp4">
 </video>
 ```
 
@@ -249,17 +249,17 @@ A class can be assigned to one or more elements on a page, whereas an ID can onl
 #### Classes
 
 ``` html
-<p class="highlight">A paragraph of text.</p>
-<p>Another paragraph of text.</p>
-<p class="highlight">Plus another paragraph of text.</p>
+<p class="highlight">A paragraph.</p>
+<p>Another paragraph.</p>
+<p class="highlight">Plus another.</p>
 ```
 
 #### IDs
 
 ``` html
-<p id="main">A paragraph of text.</p>
-<p>Another paragraph of text.</p>
-<p>Plus another paragraph of text.</p>
+<p id="main">A paragraph.</p>
+<p>Another paragraph.</p>
+<p>Plus another.</p>
 ```
 
 #### Classes and IDs
@@ -267,9 +267,9 @@ A class can be assigned to one or more elements on a page, whereas an ID can onl
 An element can have an ID and a class.
 
 ``` html
-<p id="main" class="highlight">A paragraph of text.</p>
-<p>Another paragraph of text.</p>
-<p class="highlight">Plus another paragraph of text.</p>
+<p id="main" class="highlight">A paragraph.</p>
+<p>Another paragraph.</p>
+<p class="highlight">Plus another.</p>
 ```
 
 [Back to Table of Contents](#toc)
@@ -412,8 +412,8 @@ This event is triggered when the mouse is no longer over an element that has the
 Passing `this` as a parameter to the JS function allows the same function to be used with multiple elements.
 
 ``` html
-<p onmouseover="change(this)">A short paragraph.</p>
-<p onmouseover="change(this)">Another short paragraph.</p>
+<p onmouseover="change(this)">A paragraph.</p>
+<p onmouseover="change(this)">Another paragraph.</p>
 
 <script>
 	function change(x) {
