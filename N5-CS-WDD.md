@@ -385,10 +385,10 @@ This event is triggered when the mouse is over an element that has the `onmouseo
 <p id="mouse" onmouseover="over()">Function not called</p>
 
 <script>
-	function over() {
-		document.getElementById("mouse").innerHTML = "Mouse over";
-		document.getElementById("mouse").style.color = "red";
-	}
+    function over() {
+        document.getElementById("mouse").innerHTML = "Mouse over";
+        document.getElementById("mouse").style.color = "red";
+    }
 </script>
 ```
 
@@ -400,10 +400,10 @@ This event is triggered when the mouse is no longer over an element that has the
 <p id="mouse" onmouseout="out()">Function not called</p>
 
 <script>
-	function out() {
-		document.getElementById("mouse").innerHTML = "Mouse out";
-		document.getElementById("mouse").style.color = "red";
-	}
+    function out() {
+        document.getElementById("mouse").innerHTML = "Mouse out";
+        document.getElementById("mouse").style.color = "red";
+    }
 </script>
 ```
 
@@ -416,10 +416,10 @@ Passing `this` as a parameter to the JS function allows the same function to be 
 <p onmouseover="change(this)">Another paragraph.</p>
 
 <script>
-	function change(x) {
-		x.style.color = "red";
-		x.style.backgroundColor = "yellow";
-	}
+    function change(x) {
+        x.style.color = "red";
+        x.style.backgroundColor = "yellow";
+    }
 </script>
 ```
 
