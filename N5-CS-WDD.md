@@ -114,10 +114,10 @@ The [CSS](#css) for a webpage can be internal using the style tag.
 The [CSS](#css) for a webpage can be in an external file using the link element.
 
 ``` html
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="styles.css" rel="stylesheet" type="text/css">
 ```
 
-Note: A few HTML elements do not have a closing tag, and link is one of them.
+___Note___: A few HTML elements do not have a closing tag, and `link` is one of them.
 
 [Back to Table of Contents](#toc)
 
@@ -231,7 +231,7 @@ The image tag (`<img>`) has two attributes.  The first (`src`) is where the imag
 </audio>
 ```
 
-#### Video
+##### Video
 
 ``` html
 <video controls>  
@@ -292,8 +292,8 @@ The colour of the text and / or the background can be changed using one of the m
 
 To change the colour, the properties are:
 
-* text: `color`
-* background: `background-color`
+* __text__: `color`
+* __background__: `background-color`
 
 ``` css
 h5 {color: DarkRed;
@@ -304,18 +304,52 @@ h5 {color: DarkRed;
 
 ## JavaScript (JS)
 
-The statements are terminated with a semicolon, **`;`**. An individual statement will run without a semicolon but multiple statements will not.
+The statements are terminated with a semicolon, **`;`**. An individual statement will probably run without a semicolon but multiple statements will not.
 
-### Onmouseover
+### Mouse Over
+
+This event is triggered when the mouse is over an element that has the `onmouseover` listener set.  It calls the associated JS function.
 
 ``` html
+<p id="mouse" onmouseover="over()">Function not called</p>
 
+<script>
+	function over() {
+		document.getElementById("mouse").innerHTML = "Mouse over";
+		document.getElementById("mouse").style.color = "red";
+	}
+</script>
 ```
 
-### Onmouseout
+### Mouse Out
+
+This event is triggered when the mouse is no longer over an element that has the `onmouseout` listener set.  It calls the associated JS function.
 
 ``` html
+<p id="mouse" onmouseout="out()">Function not called</p>
 
+<script>
+	function out() {
+		document.getElementById("mouse").innerHTML = "Mouse out";
+		document.getElementById("mouse").style.color = "red";
+	}
+</script>
+```
+
+### This
+
+Passing `this` as a parameter to the JS function allows the same function to be used with multiple elements.
+
+``` html
+<p onmouseover="change(this)">A short paragraph.</p>
+<p onmouseover="change(this)">Another short paragraph.</p>
+
+<script>
+	function change(x) {
+		x.style.color = "red";
+		x.style.backgroundColor = "yellow";
+	}
+</script>
 ```
 
 [Back to Table of Contents](#toc)
