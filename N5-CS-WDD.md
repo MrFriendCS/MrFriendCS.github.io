@@ -81,7 +81,7 @@ A HTML document has two main parts:
     <head>
     </head>
 
-	<body>
+    <body>
     </body>
 
 </html>
