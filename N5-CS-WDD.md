@@ -1,0 +1,289 @@
+# N5 Computing Science
+{:.no_toc}
+
+[Home](index.md)
+
+___Work in Progress___
+
+## Web Design and Development
+{:.no_toc}
+
+**Note:** HTML, CSS, and JavaScript use American spelling so when you see `center` or `color` they are not typos.
+
+All the code examples will work with [Replit](https://replit.com/).
+
+## Table of Contents {#toc}
+{:.no_toc}
+
+* TOC will be displayed here
+{:toc}
+
+## Information
+
+### Comments
+
+``` html
+<!-- This comment is not displayed -->
+```
+
+### Display information
+
+``` html
+Hello world
+```
+
+## Hypertext Markup Language (HTML) 
+
+Describe, exemplify and implement HTML code: 
+
+### HTML
+
+HTML uses elements to display content.  An element normally consists of opening (`<tag>`) and closing (`</tag>`) tags, with the content to be display contained between the tags.
+
+HTML is not whitespace sensitive.  This means a statement can be all on a single line or split over multiple lines.
+
+``` html
+<tag>content</tag>
+
+<tag>
+    content
+</tag>
+```
+
+
+``` html
+<tag attribute="value">
+    content
+</tag>
+```
+
+All elements on a HTML page are contained within the opening and closing `html` tags.
+
+``` html
+<!DOCTYPE html>
+<html>
+
+</html>
+```
+
+A HTML page has two main parts:
+
+ * __head__: information about the page
+ * __body__: the content that is displayed
+
+``` html
+<!DOCTYPE html>
+<html>
+
+    <head>
+    </head>
+
+	<body>
+    </body>
+
+</html>
+```
+
+### Head
+
+#### Title
+
+The webpage title will be displayed on the browser tab:
+
+``` html
+<title>My Web Page</title>
+```
+
+#### Style
+
+The [CSS](#css) for a webpage can be internal using the style tag.
+
+``` html
+<style>
+    <!-- CSS goes here -->
+</style>
+```
+
+#### Link
+
+The [CSS](#css) for a webpage can be in an external file using the link element.
+
+``` html
+<link rel="stylesheet" type="text/css" href="styles.css">
+```
+
+Note: A few HTML elements do not have a closing tag, and link is one of them.
+
+[Back to Table of Contents](#toc)
+
+### Body
+
+
+#### Heading
+
+``` html
+<h1>Main heading level</h1>
+<h3>Mid-level heading</h3>
+<h6>Least heading level</h6>
+```
+
+#### Paragraph
+
+``` html
+<p>A paragraph of text.</p>
+<p>Another paragraph of text.</p>
+<p>Plus another paragraph of text.</p>
+```
+
+#### Lists
+
+Lists can be ordered (`ol`) or unordered (`ul`).  Both types of lists contain list items (`li`).
+
+##### Ordered list - Numbered
+{:.no_toc}
+
+``` html
+<ol>
+    <li>First list item</li>
+    <li>Another list item</li>
+    <li>Last list item</li>
+</ol>
+```
+##### Unorderd list - Bullet points
+{:.no_toc}
+
+``` html
+<ul>
+    <li>First list item</li>
+    <li>Another list item</li>
+    <li>Last list item</li>
+</ul>
+```
+
+#### Division
+
+
+
+
+#### Anchor (Hyperlinks)
+
+Describe and implement hyperlinks (internal and external), relative and absolute addressing.
+
+##### External
+{:.no_toc}
+
+Link to an external website, using absolute addressing.
+
+``` html
+<a href="https://mrfriendcs.github.io/">N5 CS Help</a>
+```
+
+##### Internal
+{:.no_toc}
+
+Link to another webpage, in the same folder, using relative addressing.
+
+``` html
+<a href="home.html">Home</a>
+```
+
+#### Image
+
+``` html
+
+```
+
+#### Audio
+
+``` html
+
+```
+
+#### Video
+
+``` html
+
+```
+
+[Back to Table of Contents](#toc)
+
+## Cascading Style Sheets (CSS) {#css}
+
+Describe, exemplify and implement internal and external Cascading Style Sheets (CSS):
+
+### selectors, classes and IDs
+
+### CSS rules
+
+Rules are terminated with a semicolon, **`;`**. An rule will run without a semicolon but multiple rules will not.
+
+#### Single property
+
+``` css
+selector {property: value;}
+```
+
+#### Multiple properties
+
+``` css
+selector {property: value;
+          property: value;}
+```
+
+### Properties
+
+**Note:** All examples will use a HTML element as the selector but would work equally well with a class or ID.
+
+#### Font
+
+``` css
+p {font-family: sans-serif;}
+
+h1 {font-size: large;}
+```
+
+#### Alignment
+
+``` css
+h2 {text-align: left;}
+
+h3 {text-align: center;}
+
+h4 {text-align: right;}
+```
+
+#### Colour
+
+The colour of the text and / or the background can be changed using one of the many predefined colours.  To see a list visit [W3Schools](https://www.w3schools.com/colors/colors_names.asp). 
+
+To change the colour, the properties are:
+
+* text: `color`
+* background: `background-color`
+
+``` css
+h5 {color: DarkRed;
+    background-color: Cornsilk;}
+```
+
+[Back to Table of Contents](#toc)
+
+## JavaScript (JS)
+
+Describe and identify JavaScript coding related to mouse events.
+
+The statements are terminated with a semicolon, **`;`**. An individual statement will run without a semicolon but multiple statements will not.
+
+### Onmouseover
+
+``` html
+
+```
+
+### Onmouseout
+
+``` html
+
+```
+
+[Back to Table of Contents](#toc)
