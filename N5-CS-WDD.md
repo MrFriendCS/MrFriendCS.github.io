@@ -240,6 +240,38 @@ The image tag (`<img>`) has three attributes.  The first (`src`) is where the im
 </video>
 ```
 
+### Classes and IDs
+
+HTML elements can have additional attributes for `class` and `id` which are useful applying [CSS](#css) rules to specific elements, and can be used by [JavaScript](#js).
+
+A class can be assigned to one or more elements on a page, whereas an ID can only be applied to one element on a page.
+
+#### Classes
+
+``` html
+<p class="highlight">A paragraph of text.</p>
+<p>Another paragraph of text.</p>
+<p class="highlight">Plus another paragraph of text.</p>
+```
+
+#### IDs
+
+``` html
+<p id="main">A paragraph of text.</p>
+<p>Another paragraph of text.</p>
+<p>Plus another paragraph of text.</p>
+```
+
+#### Classes and IDs
+
+An element can have an ID and a class.
+
+``` html
+<p id="main" class="highlight">A paragraph of text.</p>
+<p>Another paragraph of text.</p>
+<p class="highlight">Plus another paragraph of text.</p>
+```
+
 [Back to Table of Contents](#toc)
 
 ## Cascading Style Sheets (CSS) {#css}
@@ -273,13 +305,15 @@ p {property: value;}
 
 #### Class selectors
 
-Class selectors use the class name with a 
+Class selectors use the class name with a dot in front.
 
 ``` css
 .mainPara {property: value;}
 ```
 
 #### ID selectors
+
+ID selectors use the ID name with a hash in front.
 
 ``` css
 #otherPara {property: value;}
@@ -298,6 +332,8 @@ Class selectors use the class name with a
  * External rules overwrite default rules
  * Internal rules overwrite external rules
  * Inline rules overwrite internal rules
+
+[Back to Table of Contents](#toc)
 
 ### Properties
 
@@ -337,7 +373,7 @@ h5 {color: DarkRed;
 
 [Back to Table of Contents](#toc)
 
-## JavaScript (JS)
+## JavaScript (JS) {#js}
 
 The statements are terminated with a semicolon, **`;`**. An individual statement will probably run without a semicolon but multiple statements will not.
 
