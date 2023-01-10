@@ -61,7 +61,7 @@ All elements on a HTML documents are contained within the opening and closing `h
 
 ##### Display information
 
-Without HTML tags information is displayed as plain text, but with tags it will have the formatting associated with the tag applied.
+Without HTML tags information is displayed as plain text, but with tags it will have the formatting associated with the tag.
 
 ``` html
 Hello world
@@ -101,17 +101,17 @@ The webpage title will be displayed on the browser tab:
 
 #### Style
 
-The [CSS](#css) for a webpage can be internal using the style tag.
+The [CSS](#css) for a webpage can be internal using the `style` tag.
 
 ``` html
 <style>
-    <!-- CSS goes here -->
+    <!-- CSS rules go here -->
 </style>
 ```
 
 #### Link
 
-The [CSS](#css) for a webpage can be in an external file using the link element.
+The [CSS](#css) for a webpage can be in an external file using the `link` element.
 
 ``` html
 <link href="styles.css" rel="stylesheet" type="text/css">
@@ -169,6 +169,8 @@ Lists can be ordered (`ol`) or unordered (`ul`).  Both types of lists contain li
 </ul>
 ```
 
+[Back to Table of Contents](#toc)
+
 #### Division
 
 The `<div>` tag is used to divide the webpage into different parts.
@@ -214,10 +216,9 @@ To ensure that media is displayed / played correctly the `type` attribute is use
 | mp3 | audio/mpeg |
 | mp4 | video/mp4 |
 
-
 ##### Image
 
-The image tag (`<img>`) has two attributes.  The first (`src`) is where the image is located, and can use relative or absolute addressing.  The second (`alt`) is the alternative text that will be displayed if the image can't be displayed, and is used by screen readers.
+The image tag (`<img>`) has three attributes.  The first (`src`) is where the image is located, and can use relative or absolute addressing.  The second (`alt`) is the alternative text that will be displayed if the image can't be displayed, and is used by screen readers.  The third is `type`.
 
 ``` html
 <img src="laptop.jpg" alt="Laptop on a table" type="image/jpeg">
@@ -243,10 +244,6 @@ The image tag (`<img>`) has two attributes.  The first (`src`) is where the imag
 
 ## Cascading Style Sheets (CSS) {#css}
 
-Describe, exemplify and implement internal and external Cascading Style Sheets (CSS):
-
-### selectors, classes and IDs
-
 ### CSS rules
 
 Rules are terminated with a semicolon, **`;`**. A rule will be applied without a semicolon but multiple rules will not.
@@ -263,6 +260,44 @@ selector {property: value;}
 selector {property: value;
           property: value;}
 ```
+
+### Selectors
+
+#### Element selectors
+
+Element selectors are HTML tags without the angle brackets.  All elements of that type will have their formatting modified by the CSS rule(s).
+
+``` css
+p {property: value;}
+```
+
+#### Class selectors
+
+Class selectors use the class name with a 
+
+``` css
+.mainPara {property: value;}
+```
+
+#### ID selectors
+
+``` css
+#otherPara {property: value;}
+```
+
+#### CSS Precedence
+
+##### Selectors
+
+ * Element rules overwrite default rules
+ * Class rules overwrite element rules
+ * ID rules overwrite class rules
+
+##### Location
+
+ * External rules overwrite default rules
+ * Internal rules overwrite external rules
+ * Inline rules overwrite internal rules
 
 ### Properties
 
