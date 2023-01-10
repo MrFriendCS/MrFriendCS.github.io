@@ -18,23 +18,7 @@ All the code examples will work with [Replit](https://replit.com/).
 * TOC will be displayed here
 {:toc}
 
-## Information
-
-### Comments
-
-``` html
-<!-- This comment is not displayed -->
-```
-
-### Display information
-
-``` html
-Hello world
-```
-
 ## Hypertext Markup Language (HTML) 
-
-Describe, exemplify and implement HTML code: 
 
 ### HTML
 
@@ -50,6 +34,7 @@ HTML is not whitespace sensitive.  This means a statement can be all on a single
 </tag>
 ```
 
+Opening tags can have attributes.
 
 ``` html
 <tag attribute="value">
@@ -57,7 +42,7 @@ HTML is not whitespace sensitive.  This means a statement can be all on a single
 </tag>
 ```
 
-All elements on a HTML page are contained within the opening and closing `html` tags.
+All elements on a HTML documents are contained within the opening and closing `html` tags.
 
 ``` html
 <!DOCTYPE html>
@@ -66,7 +51,25 @@ All elements on a HTML page are contained within the opening and closing `html` 
 </html>
 ```
 
-A HTML page has two main parts:
+#### Information
+
+##### Comments
+
+``` html
+<!-- This comment is not displayed -->
+```
+
+##### Display information
+
+Without HTML tags information is displayed as plain text, but with tags it will have the formatting associated with the tag applied.
+
+``` html
+Hello world
+```
+
+### HTML document (Webpage)
+
+A HTML document has two main parts:
 
  * __head__: information about the page
  * __body__: the content that is displayed
@@ -83,6 +86,8 @@ A HTML page has two main parts:
 
 </html>
 ```
+
+[Back to Table of Contents](#toc)
 
 ### Head
 
@@ -118,13 +123,16 @@ Note: A few HTML elements do not have a closing tag, and link is one of them.
 
 ### Body
 
-
 #### Heading
 
+There are six levels of heading.
+
 ``` html
-<h1>Main heading level</h1>
+<h1>Highest level heading</h1>
+
 <h3>Mid-level heading</h3>
-<h6>Least heading level</h6>
+
+<h6>Lowest level heading</h6>
 ```
 
 #### Paragraph
@@ -149,6 +157,7 @@ Lists can be ordered (`ol`) or unordered (`ul`).  Both types of lists contain li
     <li>Last list item</li>
 </ol>
 ```
+
 ##### Unorderd list - Bullet points
 {:.no_toc}
 
@@ -162,12 +171,19 @@ Lists can be ordered (`ol`) or unordered (`ul`).  Both types of lists contain li
 
 #### Division
 
+The `<div>` tag is used to divide the webpage into different parts.
 
+``` html
+<div>
+	<h1>First area</h1>
+<div>
 
+<div>
+	<h1>Second area</h1>
+<div>
+```
 
 #### Anchor (Hyperlinks)
-
-Describe and implement hyperlinks (internal and external), relative and absolute addressing.
 
 ##### External
 {:.no_toc}
@@ -187,22 +203,40 @@ Link to another webpage, in the same folder, using relative addressing.
 <a href="home.html">Home</a>
 ```
 
-#### Image
+#### Media
+
+To ensure that media is displayed / played correctly the `type` attribute is used.
+
+| File type | Type |
+|--|--|
+| jpeg / jpg | image/jpeg |
+| png | image/png |
+| mp3 | audio/mpeg |
+| mp4 | video/mp4 |
+
+
+##### Image
+
+The image tag (`<img>`) has two attributes.  The first (`src`) is where the image is located, and can use relative or absolute addressing.  The second (`alt`) is the alternative text that will be displayed if the image can't be displayed, and is used by screen readers.
 
 ``` html
-
+<img src="laptop.jpg" alt="Laptop on a table" type="image/jpeg">
 ```
 
-#### Audio
+##### Audio
 
 ``` html
-
+<audio controls>  
+	<source src="clapping.mp3"  type="audio/mpeg">
+</audio>
 ```
 
 #### Video
 
 ``` html
-
+<video controls>  
+	<source src="clapping.mp4"  type="video/mp4">
+</video>
 ```
 
 [Back to Table of Contents](#toc)
@@ -215,7 +249,7 @@ Describe, exemplify and implement internal and external Cascading Style Sheets (
 
 ### CSS rules
 
-Rules are terminated with a semicolon, **`;`**. An rule will run without a semicolon but multiple rules will not.
+Rules are terminated with a semicolon, **`;`**. A rule will be applied without a semicolon but multiple rules will not.
 
 #### Single property
 
@@ -269,8 +303,6 @@ h5 {color: DarkRed;
 [Back to Table of Contents](#toc)
 
 ## JavaScript (JS)
-
-Describe and identify JavaScript coding related to mouse events.
 
 The statements are terminated with a semicolon, **`;`**. An individual statement will run without a semicolon but multiple statements will not.
 
