@@ -111,28 +111,6 @@ SELECT name, species
 
 [Back to Table of Contents](#toc)
 
-## Order results
-
-It is possible to order the output of a search using `ORDER BY` and stating the field, or fields.  Fields are sorted ascending, smallest to largest, by default.
-
-``` sql
-SELECT *
-    FROM pet
-    ORDER BY species;
-```
-
-To change the sort order of a field to descending the keyword `DESC` used.  The keyword `ASC` is not needed but can be used to explicitly sort ascending.  More than one field can be sorted.
-
-``` sql
-SELECT *
-    FROM pet
-    ORDER BY
-        species DESC,
-        name ASC;
-```
-
-[Back to Table of Contents](#toc)
-
 ## Refine search
 
 To limit the number of records returned, the `WHERE` keyword is used with a comparison operator.
@@ -186,6 +164,66 @@ SELECT *
     FROM vaccination
     WHERE name = "Distemper"
         OR reaction = "True";
+```
+
+[Back to Table of Contents](#toc)
+
+## Order results
+
+It is possible to order the output of a search using `ORDER BY` and stating the field, or fields.  Fields are sorted ascending, smallest to largest, by default.
+
+``` sql
+SELECT *
+    FROM pet
+    ORDER BY species;
+```
+
+To change the sort order of a field to descending the keyword `DESC` used.  The keyword `ASC` is not needed but can be used to explicitly sort ascending.  More than one field can be sorted.
+
+``` sql
+SELECT *
+    FROM pet
+    ORDER BY
+        species DESC,
+        name ASC;
+```
+
+[Back to Table of Contents](#toc)
+
+## Equi-join between tables
+
+Tables are joined using the primary key of one table and the foreign key of the other table.
+
+### Generic
+
+``` sql
+SELECT *
+    FROM table1, table2
+    WHERE table1.primary_key = table2.foreign_key;
+```
+
+### Example
+
+**Note:** In this example both tables have a field with the same name.  So that the database can distinguish between the fields they must be qualified with the table name.  Just using the field name would be _ambiguous_.
+
+``` sql
+SELECT *
+    FROM pet, vaccination
+    WHERE pet.pet_id = vaccination.pet_id;
+```
+
+[Back to Table of Contents](#toc)
+
+## SELECT Example
+
+``` sql
+SELECT *
+    FROM pet, vaccination
+    WHERE pet.pet_id = vaccination.pet_id
+        AND reaction = "True"
+    ORDER BY
+        species DESC,
+        name ASC;
 ```
 
 [Back to Table of Contents](#toc)
@@ -244,30 +282,6 @@ DELETE FROM pet
 ```
 
 Caution: without the `WHERE` clause all records would be deleted!
-
-[Back to Table of Contents](#toc)
-
-## Equi-join between tables
-
-Tables are joined using the primary key of one table and the foreign key of the other table.
-
-### Generic
-
-``` sql
-SELECT *
-    FROM table1, table2
-    WHERE table1.primary_key = table2.foreign_key;
-```
-
-### Example
-
-**Note:** In this example both tables have a field with the same name.  So that the database can distinguish between the fields they must be qualified with the table name.  Just using the field name would be _ambiguous_.
-
-``` sql
-SELECT *
-    FROM pet, vaccination
-    WHERE pet.pet_id = vaccination.pet_id;
-```
 
 [Back to Table of Contents](#toc)
 
