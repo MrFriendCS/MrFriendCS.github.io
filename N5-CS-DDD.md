@@ -214,20 +214,6 @@ SELECT *
 
 [Back to Table of Contents](#toc)
 
-## SELECT Example
-
-``` sql
-SELECT *
-    FROM pet, vaccination
-    WHERE pet.pet_id = vaccination.pet_id
-        AND reaction = "True"
-    ORDER BY
-        species DESC,
-        name ASC;
-```
-
-[Back to Table of Contents](#toc)
-
 ## Insert
 
 It is possible to insert a record, multiple records, or partial records into a table using `INSERT INTO` and `VALUES`.  All validation rules must be met for the new data to be added.
