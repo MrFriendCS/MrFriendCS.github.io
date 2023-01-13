@@ -218,14 +218,14 @@ SELECT *
 
 It is possible to insert a record, multiple records, or partial records into a table using `INSERT INTO` and `VALUES`.  All validation rules must be met for the new data to be added.
 
-### Complete record
+### Single record
 
 ``` sql
 INSERT INTO pet
     VALUES (26, "Tiger", "Cat", "2022-04-17");
 ```
 
-### Complete records
+### Multiple records
 
 ``` sql
 INSERT INTO pet
