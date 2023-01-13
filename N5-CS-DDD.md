@@ -233,7 +233,7 @@ INSERT INTO pet
            (28, "Ben", "Ferret", "2022-05-01");
 ```
 
-### Partial record
+### Partial record(s)
 
 If a partial record is added then the field names must be stated.  The values must be in the same order as the fields.
 
