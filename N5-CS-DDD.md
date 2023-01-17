@@ -93,7 +93,7 @@ These examples use [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 #### Validation
 | Key| Example | Comment |
-| -- | ------- | ------- | 
+| --- | ------- | ------- | 
 | Presence check | __NN__ column| NN = Not Null |
 | Restricted choice | Check: "reaction" __IN__ (0,1) | list of acceptable values |
 | Field length | Check: __LENGTH__("vax_date") = 10 | |
