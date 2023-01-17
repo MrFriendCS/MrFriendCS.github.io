@@ -92,9 +92,9 @@ These examples use [DB Browser for SQLite](https://sqlitebrowser.org/).
 | Foreign | "pet"("pet_id") | table(field)|
 
 #### Validation
-| Key| Example | Comment |
+| Key | Example | Comment |
 | --- | ------- | ------- | 
-| Presence check | __NN__ column| NN = Not Null |
+| Presence check | __NN__ column | NN = Not Null |
 | Restricted choice | Check: "reaction" __IN__ (0,1) | list of acceptable values |
 | Field length | Check: __LENGTH__("vax_date") = 10 | |
 | Range | Check: "price" __>= 10 AND__ "price" __<= 100__ | |
