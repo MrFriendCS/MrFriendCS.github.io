@@ -84,6 +84,13 @@ These examples use [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 ![N5 DDD Validation](N5-CS-DDD-Validation.png "Validation")
 
+#### Keys
+
+| Key| Example | Comment |
+| -- | ------- | ------- | 
+| Primary | __PK__ column| PK = Primary Key |
+| Foreign | "pet"("pet_id") | table(field)|
+
 #### Validation
 
 | Key | Example | Comment |
@@ -92,13 +99,6 @@ These examples use [DB Browser for SQLite](https://sqlitebrowser.org/).
 | Restricted choice | Check: "reaction" __IN__ (0,1) | list of acceptable values |
 | Field length | Check: __LENGTH__("vax_date") = 10 | ? |
 | Range | Check: "price" __>= 10 AND__ "price" __<= 100__ | ? |
-
-#### Keys
-
-| Key| Example | Comment |
-| -- | ------- | ------- | 
-| Primary | __PK__ column| PK = Primary Key |
-| Foreign | "pet"("pet_id") | table(field)|
 
 [Back to Table of Contents](#toc)
 
