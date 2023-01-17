@@ -38,7 +38,8 @@ SQLite has fewer data types than SQL.  SQLite has:
 
 The `text` datatype can be used for:
 
-* Date: "2022-08-15"
+* Date: "2022-08-15" (YYYY-MM-DD)
+* Time: "15:40:00" (HH:MM:SS)
 
 The `integer` datatype can be used for:
 
