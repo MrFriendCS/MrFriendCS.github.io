@@ -94,9 +94,9 @@ These examples use [DB Browser for SQLite](https://sqlitebrowser.org/).
 | Key| Example | Comment |
 | -- | ------- | ------- | 
 | Presence check | __NN__ column| NN = Not Null |
-| Restricted choice | "reaction" __IN__ (0,1) | list of acceptable values |
-| Field length | __LENGTH__("vax_date") = 10 | |
-| Range | "price" __>= 10 AND__ "price" __<= 100__ | |
+| Restricted choice | Check: "reaction" __IN__ (0,1) | list of acceptable values |
+| Field length | Check: __LENGTH__("vax_date") = 10 | |
+| Range | Check: "price" __>= 10 AND__ "price" __<= 100__ | |
 
 [Back to Table of Contents](#toc)
 
