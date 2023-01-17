@@ -80,7 +80,7 @@ The first 4 records of the data used in the examples are shown in the following 
 
 ### Keys and Validation
 
-These examples use [DB Browser for SQLite](https://sqlitebrowser.org/).
+These examples use [DB Browser for SQLite](https://sqlitebrowser.org/) which will allow keys and validation rules to be modified.
 
 ![N5 DDD Validation](N5-CS-DDD-Validation.png "Validation")
 
@@ -89,7 +89,7 @@ These examples use [DB Browser for SQLite](https://sqlitebrowser.org/).
 | Key| Example | Comment |
 | -- | ------- | ------- | 
 | Primary | __PK__ column: ticked | PK = Primary Key |
-| Foreign | "pet"("pet_id") | table(field)|
+| Foreign | "pet"("pet_id") | table(field) |
 
 #### Validation
 
