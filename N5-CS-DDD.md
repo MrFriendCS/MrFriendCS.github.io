@@ -80,7 +80,7 @@ The first 4 records of the data used in the examples are shown in the following 
 
 ### Keys and Validation
 
-These examples use [DB Browser for SQLite](https://sqlitebrowser.org/) which will allow keys and validation rules to be modified.
+The screenshot is from [DB Browser for SQLite](https://sqlitebrowser.org/), which allows keys and validation rules to be modified.
 
 ![N5 DDD Validation](N5-CS-DDD-Validation.png "Validation")
 
