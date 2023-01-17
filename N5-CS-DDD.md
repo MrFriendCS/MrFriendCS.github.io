@@ -39,7 +39,10 @@ SQLite has fewer data types than SQL.  SQLite has:
 The `text` datatype can be used for:
 
 * Date: "2022-08-15"
-* Boolean: "True", "False"
+
+The `integer` datatype can be used for:
+
+* Boolean: 0, 1 (`False`, `True`)
 
 ### Example Data
 
@@ -62,15 +65,21 @@ The first 4 records of the data used in the examples are shown in the following 
 
 | vax_id | pet_id | vax_date | name | reaction |
 | -- | -- | -- | -- | -- |
-| 1 | 13 | 2019-09-03 | Distemper | True |
-| 2 | 5 | 2020-06-23 | Canine hepatitis | False |
-| 3 | 1 | 2015-12-17 | Cat Flu | False |
-| 4 | 17 | 2015-10-05 | Cat Flu | False |
+| 1 | 13 | 2019-09-03 | Distemper | 1 |
+| 2 | 5 | 2020-06-23 | Canine hepatitis | 0 |
+| 3 | 1 | 2015-12-17 | Cat Flu | 0 |
+| 4 | 17 | 2015-10-05 | Cat Flu | 0 |
 
 #### ER Diagram
 {:.no_toc}
 
 ![N5 DDD Enitiy Relationship Diagram](N5-CS-DDD.png "ER Diagram")
+
+[Back to Table of Contents](#toc)
+
+### Keys and Validation
+
+
 
 [Back to Table of Contents](#toc)
 
@@ -152,7 +161,7 @@ If both comparisons are `True` then the required fields of that record are displ
 SELECT *
     FROM vaccination
     WHERE name = "Distemper"
-        AND reaction = "True";
+        AND reaction = True;
 ```
 
 #### OR
@@ -163,7 +172,7 @@ If either comparison is `True` then the required fields of that record are displ
 SELECT *
     FROM vaccination
     WHERE name = "Distemper"
-        OR reaction = "True";
+        OR reaction = True;
 ```
 
 [Back to Table of Contents](#toc)
