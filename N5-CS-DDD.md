@@ -54,7 +54,7 @@ The first 4 records of the data used in the examples are shown in the following 
 {:.no_toc}
 
 | pet_id | name | species | dob |
-| -- | -- | -- | -- |
+| :----: | ---- | ------- | --- |
 | 1 | Hans | Cat | 2015-09-22 |
 | 2 | Minnnie | Gerbil | 2021-05-24 |
 | 3	| Bo | Rabbit | 2011-10-13 |
@@ -63,21 +63,25 @@ The first 4 records of the data used in the examples are shown in the following 
 #### Table: vaccination
 {:.no_toc}
 
-| vax_id | pet_id | vax_date | name | reaction |
-| -- | -- | -- | -- | -- |
-| 1 | 13 | 2019-09-03 | Distemper | 1 |
-| 2 | 5 | 2020-06-23 | Canine hepatitis | 0 |
-| 3 | 1 | 2015-12-17 | Cat Flu | 0 |
-| 4 | 17 | 2015-10-05 | Cat Flu | 0 |
+| vax_id | pet_id | vax_date | name | reaction | price |
+| :----: | :----: | -------- | ---- | :------: | ----- |
+| 1 | 13 | 2019-09-03 | Distemper | 1 | 45.00 |
+| 2 | 5 | 2020-06-23 | Canine hepatitis | 0 | 35.50 |
+| 3 | 1 | 2015-12-17 | Cat Flu | 0 | 12.99 |
+| 4 | 17 | 2015-10-05 | Cat Flu | 0 | 12.99 |
 
 #### ER Diagram
 {:.no_toc}
 
-![N5 DDD Enitiy Relationship Diagram](N5-CS-DDD.png "ER Diagram")
+![N5 DDD Enitiy Relationship Diagram](N5-CS-DDD-ER.png "ER Diagram")
 
 [Back to Table of Contents](#toc)
 
 ### Keys and Validation
+
+These examples use [DB Browser for SQLite](https://sqlitebrowser.org/).
+
+![N5 DDD Validation](N5-CS-DDD-Validation.png "Validation")
 
 
 
