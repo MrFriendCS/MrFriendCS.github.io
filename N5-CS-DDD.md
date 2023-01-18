@@ -47,7 +47,7 @@ The `integer` datatype can be used for:
 
 ### Example Data
 
-The example [database](https://stackedit.io/N5-CS-Database.db) contains the tables and records that the SQL examples will work with. The file can be opened with [DB Browser for SQLite](https://sqlitebrowser.org/).
+The example [database](N5-CS-Database.db) contains the tables and records that the SQL examples will work with. The file can be opened with [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 The first 4 records of the data used in the examples are shown in the following tables:
 
