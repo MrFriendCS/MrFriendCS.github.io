@@ -88,14 +88,14 @@ The screenshot is from [DB Browser for SQLite](https://sqlitebrowser.org/), whic
 
 | Key| Example | Comment |
 | -- | ------- | ------- | 
-| Primary | __PK__ column: ticked | PK = Primary Key |
-| Foreign | "pet"("pet_id") | table(field) |
+| Primary | PK column: __ticked__ | PK = Primary Key |
+| Foreign | "pet"("pet_id") | Enforces referential integrity |
 
 #### Validation
 
 | Key | Example | Comment |
 | --- | ------- | ------- |
-| Presence check | __NN__ column: ticked | NN = Not Null |
+| Presence check | NN column: __ticked__ | NN = Not Null |
 | Restricted choice | Check: "reaction" __IN__ (0,1) | list of acceptable values |
 | Field length | Check: __LENGTH__("vax_date") = 10 | |
 | Range | Check: "price" __>= 10 AND__ "price" __<= 100__ | |
@@ -106,8 +106,19 @@ The screenshot is from [DB Browser for SQLite](https://sqlitebrowser.org/), whic
 
 ### Comments
 
+Single line comment.
+
 ``` sql
 -- This comment is not displayed
+```
+
+Multiline comment.
+
+``` sql
+/*
+This comment is not displayed
+This comment is not displayed
+*/
 ```
 
 ### Display information
@@ -148,7 +159,7 @@ To limit the number of records returned, the `WHERE` keyword is used with a comp
 Comparison operators are used to compare one value with another.
 
 | Symbol | Meaning |
-| :--: | :-- |
+| :----: | :------ |
 | = | Equality (the same as) |
 | <> | Inequality (not the same as) |
 | > | Greater than |
@@ -292,7 +303,7 @@ Caution: without the `WHERE` clause the `dob` field of all records would be upda
 
 ``` sql
 DELETE FROM pet
-    WHERE pet_id >= 26;
+    WHERE pet_id = 29;
 ```
 
 Caution: without the `WHERE` clause all records would be deleted!
