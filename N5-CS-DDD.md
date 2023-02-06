@@ -87,8 +87,8 @@ The screenshot is from [DB Browser for SQLite](https://sqlitebrowser.org/), whic
 #### Keys
 
 | Key| Example | Comment |
-| -- | ------- | ------- | 
-| Primary | PK column: __ticked__ | PK = Primary Key |
+| -- | ------- | ------- |
+| Primary | PK column: __ticked__ <br> U column: __ticked__ | PK = Primary Key <br> U = Unique|
 | Foreign | "pet"("pet_id") | Enforces referential integrity |
 
 #### Validation
