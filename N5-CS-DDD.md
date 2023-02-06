@@ -87,8 +87,8 @@ The screenshot is from [DB Browser for SQLite](https://sqlitebrowser.org/), whic
 #### Keys
 
 | Key| Example | Comment |
-| -- | ------- | ------- | 
-| Primary | PK column: __ticked__ | PK = Primary Key |
+| -- | ------- | ------- |
+| Primary | PK column: __ticked__ <br> U column: __ticked__ | PK = Primary Key <br> U = Unique|
 | Foreign | "pet"("pet_id") | Enforces referential integrity |
 
 #### Validation
@@ -97,7 +97,7 @@ The screenshot is from [DB Browser for SQLite](https://sqlitebrowser.org/), whic
 | --- | ------- | ------- |
 | Presence check | NN column: __ticked__ | NN = Not Null |
 | Restricted choice | Check: "reaction" __IN__ (0,1) | list of acceptable values |
-| Field length | Check: __LENGTH__("vax_date") = 10 | |
+| Field length | Check: __LENGTH__("name") >= 2 | |
 | Range | Check: "price" __>= 10 AND__ "price" __<= 100__ | |
 
 [Back to Table of Contents](#toc)
