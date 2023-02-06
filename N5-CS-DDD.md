@@ -93,8 +93,8 @@ The screenshot is from [DB Browser for SQLite](https://sqlitebrowser.org/), whic
 
 #### Validation
 
-| Key | Example | Comment |
-| --- | ------- | ------- |
+| Type | Example | Comment |
+| ---- | ------- | ------- |
 | Presence check | NN column: __ticked__ | NN = Not Null |
 | Restricted choice | Check: "reaction" __IN__ (0,1) | list of acceptable values |
 | Field length | Check: __LENGTH__("name") >= 2 | |
