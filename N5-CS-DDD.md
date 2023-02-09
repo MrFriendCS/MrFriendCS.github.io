@@ -100,6 +100,29 @@ The screenshot is from [DB Browser for SQLite](https://sqlitebrowser.org/), whic
 | Field length | Check: __LENGTH__("name") >= 2 | |
 | Range | Check: "price" __>= 10 AND__ "price" __<= 100__ | |
 
+#### View table setup
+
+To view the field names, keys, data types, and validation of a table the `.schema` command is used.
+
+``` sql
+.schema vaccination
+```
+
+The output will look similar to:
+
+``` sql
+CREATE TABLE IF NOT EXISTS "vaccination" (
+    "vax_id"    INTEGER NOT NULL CHECK("vax_id" >= 1) UNIQUE,
+    "pet_id"    INTEGER NOT NULL,
+    "vax_date"  TEXT NOT NULL CHECK("vax_date" LIKE "____-__-__"),
+    "name"  TEXT NOT NULL CHECK(LENGTH("name") >= 2),
+    "reaction"  INTEGER NOT NULL CHECK("reaction" IN (0, 1)),
+    "price" REAL NOT NULL CHECK("price" >= 10 AND "price" <= 100),
+    PRIMARY KEY("vax_id"),
+    FOREIGN KEY("pet_id") REFERENCES "pet"("pet_id")
+);
+```
+
 [Back to Table of Contents](#toc)
 
 ## Information
