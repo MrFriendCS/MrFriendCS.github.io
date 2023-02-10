@@ -21,7 +21,7 @@ All the code examples use Python.
 The data used in the examples can be represented in a table:
 
 | Name | Age | Height |
-|--|--|--|
+| ---- | --- | ------ |
 | Alan | 24 | 1.78 |
 | Beth | 23 | 1.63 |
 | Carl | 22 | 1.89 |
