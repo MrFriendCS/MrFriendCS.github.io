@@ -22,8 +22,19 @@ Python uses indentation (spaces at the beginning of a line) to show where code b
 
 ### Comments
 
+Single line comment.
+
 ``` python
 # This comment is not displayed
+```
+
+Multiline comment.
+
+``` python
+"""
+This comment is not displayed
+This comment is not displayed
+"""
 ```
 
 ### Display information
