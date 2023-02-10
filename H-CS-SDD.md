@@ -6,7 +6,7 @@
 ## Software Design and Development
 {:.no_toc}
 
-All the code examples use Python.   The code is available on  [Replit](https://replit.com/@esafriend1r/H-CS-Software).
+All the code examples use Python.
 
 **Note:** These notes are focused on Higher Computing Science so some terms are used differently.  Any reference to an `array` will actually use a `list`.
 
