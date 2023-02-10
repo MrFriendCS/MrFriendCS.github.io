@@ -463,13 +463,3 @@ Passing `this` as a parameter to the JS function allows the same function to be 
 ```
 
 [Back to Table of Contents](#toc)
-## JavaScript (JS)
-
-Describe and identify JavaScript coding related to mouse events:
-
-### Onmouseover
-
-
-
-### Onmouseout
-
