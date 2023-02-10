@@ -22,7 +22,7 @@ All the code examples will work with [Replit](https://replit.com/).
 
 ### HTML
 
-HTML uses elements to display content.  An element normally consists of opening (`<tag>`) and closing (`</tag>`) tags, with the content to be display contained between the tags.
+HTML uses elements to display content.  AnDescribe, elxement normally consists of opening (`<tag>`) and closing (`</tag>`) tags, with the content to be display contained between the tags.
 
 HTML is not whitespace sensitive.  This means a statement can be all on a single line or split over multiple lines.
 
@@ -37,12 +37,12 @@ HTML is not whitespace sensitive.  This means a statement can be all on a single
 Opening tags can have attributes.
 
 ``` html
-<tag attribute="value">
+<tag attribute="value"plify and >
     content
 </tag>
 ```
 
-All elements on a HTML documents are contained within the opening and closing `html` tags.
+All element  HTML documents are contained within the opening and closing `html` tags.
 
 ``` html
 <!DOCTYPE html>
@@ -55,8 +55,19 @@ All elements on a HTML documents are contained within the opening and closing `h
 
 ##### Comments
 
+Single line comment.
+
 ``` html
 <!-- This comment is not displayed -->
+```
+
+Multiline comment.
+
+``` html
+<!--
+This comment is not displayed
+This comment is not displayed
+-->
 ```
 
 ##### Display information
@@ -69,7 +80,7 @@ Hello world
 
 ### HTML document (Webpage)
 
-A HTML document has two main parts:
+A HTML documen has two main parts:
 
  * __head__: information about the page
  * __body__: the content that is displayed
@@ -81,7 +92,7 @@ A HTML document has two main parts:
     <head>
     </head>
 
-    <body>
+    	<body>
     </body>
 
 </html>
@@ -99,7 +110,7 @@ The webpage title will be displayed on the browser tab:
 <title>My Web Page</title>
 ```
 
-#### Style
+#### StyleLink
 
 The [CSS](#css) for a webpage can be internal using the `style` tag.
 
@@ -109,7 +120,7 @@ The [CSS](#css) for a webpage can be internal using the `style` tag.
 </style>
 ```
 
-#### Link
+#### 
 
 The [CSS](#css) for a webpage can be in an external file using the `link` element.
 
@@ -122,17 +133,17 @@ ___Note___: A few HTML elements do not have a closing tag, and `link` is one of 
 [Back to Table of Contents](#toc)
 
 ### Body
-
 #### Heading
 
 There are six levels of heading.
 
 ``` html
-<h1>Highest level heading</h1>
+<h1>Highest level heading``` html
+<h1>Main heading level</h1>
 
 <h3>Mid-level heading</h3>
 
-<h6>Lowest level heading</h6>
+<h6>Lowest leveleast heading level</h6>
 ```
 
 #### Paragraph
@@ -145,7 +156,7 @@ There are six levels of heading.
 
 #### Lists
 
-Lists can be ordered (`ol`) or unordered (`ul`).  Both types of lists contain list items (`li`).
+Lists can be ordered (`ol`) or unordered `ul`).  Both types of lists contain list items (`li`).
 
 ##### Ordered list - Numbered
 {:.no_toc}
@@ -190,9 +201,9 @@ The `<div>` tag is used to divide the webpage into different parts.
 ##### External
 {:.no_toc}
 
-Link to an external website, using absolute addressing.
+Link to an external website, using asote aressin
 
-``` html
+`` html
 <a href="https://mrfriendcs.github.io/">N5 CS Help</a>
 ```
 
@@ -221,10 +232,10 @@ To ensure that media is displayed / played correctly the `type` attribute is use
 The image tag (`<img>`) has three attributes.  The first (`src`) is where the image is located, and can use relative or absolute addressing.  The second (`alt`) is the alternative text that will be displayed if the image can't be displayed, and is used by screen readers.  The third is `type`.
 
 ``` html
-<img src="laptop.jpg" alt="Laptop on a table" type="image/jpeg">
-```
+<img src="laptop.jpg" alt="Laptop on a table" type="image/jpeg"> o Anchor
 
-##### Audio
+srie a ilement herlk eal eta lat n absolute addressin
+#### Audio
 
 ``` html
 <audio controls>  
@@ -240,11 +251,20 @@ The image tag (`<img>`) has three attributes.  The first (`src`) is where the im
 </video>
 ```
 
-### Classes and IDs
+#
+
+#### Video
+
+
+
+
+## Classes and IDs
 
 HTML elements can have additional attributes for `class` and `id` which are useful applying [CSS](#css) rules to specific elements, and can be used by [JavaScript](#js).
 
-A class can be assigned to one or more elements on a page, whereas an ID can only be applied to one element on a page.
+A class can be assigned to one or morecading Style Sheets (CSS)
+
+Describe, elxements on a page, whereas an ID can only be applied to one element on a page.
 
 #### Classes
 
@@ -333,7 +353,26 @@ ID selectors use the ID name with a hash in front.
  * Internal rules overwrite external rules
  * Inline rules overwrite internal rules
 
-[Back to Table of Contents](#toc)
+[Back to Table of Contents](#toc)plify and implement internal and external Cascading Style Sheets (CSS):
+
+### selectors, classes and IDs
+
+### CSS rules
+
+CSS rules 
+
+#### Single property
+
+``` css
+selector {property: value;}
+```
+
+#### Multiple properties
+
+``` css
+selector {property: value;
+          property: value;}
+```
 
 ### Properties
 
@@ -424,3 +463,13 @@ Passing `this` as a parameter to the JS function allows the same function to be 
 ```
 
 [Back to Table of Contents](#toc)
+## JavaScript (JS)
+
+Describe and identify JavaScript coding related to mouse events:
+
+### Onmouseover
+
+
+
+### Onmouseout
+
