@@ -22,7 +22,7 @@ All the code examples will work with [Replit](https://replit.com/).
 
 ### HTML
 
-HTML uses elements to display content.  AnDescribe, elxement normally consists of opening (`<tag>`) and closing (`</tag>`) tags, with the content to be display contained between the tags.
+HTML uses elements to display content.  An element normally consists of opening (`<tag>`) and closing (`</tag>`) tags, with the content to be display contained between the tags.
 
 HTML is not whitespace sensitive.  This means a statement can be all on a single line or split over multiple lines.
 
@@ -37,7 +37,7 @@ HTML is not whitespace sensitive.  This means a statement can be all on a single
 Opening tags can have attributes.
 
 ``` html
-<tag attribute="value"plify and >
+<tag attribute="value">
     content
 </tag>
 ```
@@ -203,7 +203,7 @@ The `<div>` tag is used to divide the webpage into different parts.
 
 Link to an external website, using asote aressin
 
-`` html
+``` html
 <a href="https://mrfriendcs.github.io/">N5 CS Help</a>
 ```
 
@@ -221,7 +221,7 @@ Link to another webpage, in the same folder, using relative addressing.
 To ensure that media is displayed / played correctly the `type` attribute is used.
 
 | File type | Type |
-|--|--|
+| --------- | ---- |
 | jpeg / jpg | image/jpeg |
 | png | image/png |
 | mp3 | audio/mpeg |
@@ -251,20 +251,11 @@ srie a ilement herlk eal eta lat n absolute addressin
 </video>
 ```
 
-#
-
-#### Video
-
-
-
-
 ## Classes and IDs
 
 HTML elements can have additional attributes for `class` and `id` which are useful applying [CSS](#css) rules to specific elements, and can be used by [JavaScript](#js).
 
-A class can be assigned to one or morecading Style Sheets (CSS)
-
-Describe, elxements on a page, whereas an ID can only be applied to one element on a page.
+A class can be assigned to one or more cascading Style Sheets (CSS), whereas an ID can only be applied to one element on a page.
 
 #### Classes
 
