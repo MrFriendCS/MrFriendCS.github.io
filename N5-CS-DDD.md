@@ -310,13 +310,23 @@ INSERT INTO pet ("species", "name", "pet_id")
 
 **Note:** It is possible to damage the data with an `UPDATE` statement.  It is advisable to practise with a `SELECT` statement first to see if the correct record, or records, will be changed.
 
+### Single field
+
 ``` sql
 UPDATE pet
     SET dob = "2022-04-01"
     WHERE pet_id = 29;
 ```
 
-Caution: without the `WHERE` clause the `dob` field of all records would be updated!
+### Multiple  fields
+
+``` sql
+UPDATE pet
+    SET name = "Churchill", species = "Cat"
+    WHERE pet_id = 29;
+```
+
+__Caution__: without the `WHERE` clause all records would be updated!
 
 [Back to Table of Contents](#toc)
 
@@ -329,7 +339,7 @@ DELETE FROM pet
     WHERE pet_id = 29;
 ```
 
-Caution: without the `WHERE` clause all records would be deleted!
+__Caution__: without the `WHERE` clause all records would be deleted!
 
 [Back to Table of Contents](#toc)
 
