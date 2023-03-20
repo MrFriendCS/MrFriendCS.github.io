@@ -327,7 +327,7 @@ Split the content of the variable `line` at the commas.  Assign the elements to 
     tempArray = line.split(",")
 ```
 
-Retrieve the individual elements from `tempArray` and cast appropriately.
+Retrieve the individual attributes from `tempArray`, remove leading and trailing spaces, and cast appropriately.
 
 ``` python
     name = tempArray[0].strip()
