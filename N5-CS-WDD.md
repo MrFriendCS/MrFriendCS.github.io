@@ -46,7 +46,7 @@ All element  HTML documents are contained within the opening and closing `html` 
 
 ``` html
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
 
 </html>
 ```
@@ -87,12 +87,12 @@ A HTML documen has two main parts:
 
 ``` html
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
 
     <head>
     </head>
 
-    	<body>
+    <body>
     </body>
 
 </html>
@@ -138,8 +138,7 @@ ___Note___: A few HTML elements do not have a closing tag, and `link` is one of 
 There are six levels of heading.
 
 ``` html
-<h1>Highest level heading``` html
-<h1>Main heading level</h1>
+<h1>Highest level heading</h1>
 
 <h3>Mid-level heading</h3>
 
@@ -229,25 +228,25 @@ To ensure that media is displayed / played correctly the `type` attribute is use
 
 ##### Image
 
-The image tag (`<img>`) has three attributes.  The first (`src`) is where the image is located, and can use relative or absolute addressing.  The second (`alt`) is the alternative text that will be displayed if the image can't be displayed, and is used by screen readers.  The third is `type`.
+The image tag (`<img>`) has three attributes.  The first (`src`) is where the image is located, and can use relative or absolute addressing.  The second (`alt`) is the alternative text that will be displayed if the image can't be displayed, and is used by screen readers.
 
 ``` html
-<img src="laptop.jpg" alt="Laptop on a table" type="image/jpeg"> o Anchor
+<img src="laptop.jpg" alt="Laptop on a table">
+```
 
-srie a ilement herlk eal eta lat n absolute addressin
-#### Audio
+##### Audio
 
 ``` html
-<audio controls>  
-	<source src="clapping.mp3" type="audio/mpeg">
+<audio controls src="clapping.mp3">  
+    No audio player available
 </audio>
 ```
 
 ##### Video
 
 ``` html
-<video controls>  
-	<source src="clapping.mp4" type="video/mp4">
+<video controls src="clapping.mp4">  
+	No video player available
 </video>
 ```
 
@@ -286,6 +285,25 @@ An element can have an ID and a class.
 [Back to Table of Contents](#toc)
 
 ## Cascading Style Sheets (CSS) {#css}
+
+### Information
+
+#### Comments
+
+Single line comment.
+
+``` css
+/* This comment is not displayed */
+```
+
+Multiline comment.
+
+``` css
+/*
+This comment is not displayed
+This comment is not displayed
+*/
+```
 
 ### CSS rules
 
@@ -405,7 +423,26 @@ h5 {color: DarkRed;
 
 ## JavaScript (JS) {#js}
 
-The statements are terminated with a semicolon, **`;`**. An individual statement will probably run without a semicolon but multiple statements will not.
+JavaScript statements are terminated with a semicolon, **`;`**. An individual statement will probably run without a semicolon but multiple statements will not.
+
+### Information
+
+#### Comments
+
+Single line comment.
+
+``` js
+// This comment is not displayed
+```
+
+Multiline comment.
+
+``` js
+/*
+This comment is not displayed
+This comment is not displayed
+*/
+```
 
 ### Mouse Over
 
