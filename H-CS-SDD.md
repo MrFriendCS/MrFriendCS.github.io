@@ -470,6 +470,26 @@ file.close()
 
 [Back to Table of Contents](#toc)
 
+### Count number of lines in a file
+
+If the size of the required array(s) is unknown then it is possible to to find out how many lines are in the file.
+
+``` python
+count = 0
+
+file = open("people.csv", "r")
+line = file.readline()
+
+while line != "":
+    count = count + 1
+    line = file.readline()
+
+file.close()
+```
+
+[Back to Table of Contents](#toc)
+
+
 ## Standard algorithms
 
 ### Linear search - array
