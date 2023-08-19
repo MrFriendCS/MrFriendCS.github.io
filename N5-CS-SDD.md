@@ -483,7 +483,7 @@ height = float(input("Height? (In metres) "))
 
 #### Validation
 
-User input can be checked using a conditional loop.  If it is not acceptable it can be re-entered until it is.
+User input can be checked using a conditional loop.  If it is not acceptable it is re-entered until it is.
 
 ``` python
 dice = int(input("Enter a value from 1 to 6: "))
