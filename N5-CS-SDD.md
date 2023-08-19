@@ -574,4 +574,8 @@ for score in scores:
     print(score)
 ```
 
+#### Multiple arrays
+
+A program can use more than one array, in the same way that multiple variables can be used.
+
 [Back to Table of Contents](#toc)
