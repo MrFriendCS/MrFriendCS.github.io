@@ -445,11 +445,15 @@ print(myRound)
 
 The length function works with strings and arrays.  It returns a number of characters in a string or the number of elements in an array.
 
+##### String
+
 ``` python
 myString = "Computing"
 myLength = len(myString)
 print(myLength)
 ```
+
+##### Array
 
 ``` python
 myArrayOfIntegers = [56, 34, 2, 85, 51]
@@ -495,6 +499,8 @@ while dice < 1 or dice > 6:
 print("You entered " + str(dice))
 ```
 
+[Back to Table of Contents](#toc)
+
 ### Running total within a loop
 
 Method 1 - Fixed loop
@@ -524,6 +530,8 @@ while answer != "no":
 
 print("The combined age is " + str(total))
 ```
+
+[Back to Table of Contents](#toc)
 
 ### Traversing a 1-D array
 
