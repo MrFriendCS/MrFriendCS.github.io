@@ -318,7 +318,7 @@ line = file.readline()
 Start / continue the conditional loop if the variable `line` is not empty.
 
 ``` python
-while line:
+while line != "":
 ```
 
 Split the content of the variable `line` at the commas.  Assign the elements to `tempArray`.
@@ -395,7 +395,7 @@ line = file.readline()
 Start / continue the conditional loop if the variable `line` is not empty.
 
 ``` python
-while line:
+while line != "":
 ```
 
 Split the content of the variable `line` at the commas and assign the elements to `tempArray`.
