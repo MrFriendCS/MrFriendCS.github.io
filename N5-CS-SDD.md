@@ -503,7 +503,7 @@ print("You entered " + str(dice))
 
 ### Running total within a loop
 
-Method 1 - Fixed loop
+#### Fixed loop
 
 ``` python
 total = 0
@@ -516,7 +516,7 @@ for counter in range(4):
 print("The combined age is " + str(total))
 ```
 
-Method 2 - Conditional loop
+#### Conditional loop
 
 ``` python
 answer = ""
