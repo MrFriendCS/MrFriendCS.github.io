@@ -62,7 +62,7 @@ myInteger = 5
 ```
 
 ``` python
-myFloat = 3.14
+myReal = 3.14
 ```
 
 ``` python
@@ -165,7 +165,7 @@ print(phrase)
 
 ### User input
 
-**Note:** Whenever the user enters anything using the keyboard it is treated as a *string* by Python.
+**Note:** Anything from the keyboard is a *string*.
 
 ```python
 word1 = input("Enter the first word: ")
@@ -180,7 +180,7 @@ Values that have a different datatype must be cast from string to the correct da
 
 ```python
 myInt = int("42")
-myFloat = float("3.14")
+myReal = float("3.14")
 myBool = bool("True")
 ```
 
@@ -259,7 +259,7 @@ else:
 
 Example 3.  Only the section of code for the first comparison that is `True` is run.  There can be multiple `elif` statements.
 
-The `else` is optional.
+There can be multiple `elif` statements, and the `else` is optional.
 
 ``` python
 score = 81
@@ -282,44 +282,50 @@ Compare more than one set of values to produce a Boolean answer of `True` or `Fa
 
 Both comparisons must be `True` to produce a final answer of `True`.
 
+| Comparison 1 | Comparison 2 | Result |
+| ------------ | ------------ | ------ |
+| False        | False        | False  |
+| False        | True         | False  |
+| True         | False        | False  |
+| True         | True         | True   |
+
+##### Example AND
+
 ``` python
 16 <= 18 and "Night" == "Day"
 ```
-
-|Comparison 1|Comparison 2|Result|
-|--|--|--|
-|False|False|False|
-|False|True|False|
-|True|False|False|
-|True|True|True|
 
 #### OR
 
 One or both comparisons must be `True` to produce a final answer of `True`.
 
+| Comparison 1 | Comparison 2 | Result |
+| ------------ | ------------ | ------ |
+| False        | False        | False  |
+| False        | True         | True   |
+| True         | False        | True   |
+| True         | True         | True   |
+
+##### Example OR
+
 ``` python
 16 <= 18 or "Night" == "Day"
 ```
-
-|Comparison 1|Comparison 2|Result|
-|--|--|--|
-|False|False|False|
-|False|True|True|
-|True|False|True|
-|True|True|True|
 
 #### NOT
 
 Reverses the result of the comparison.
 
+| Comparison | Result |
+| ---------- | ------ |
+| False      | True   |
+| True       | False  |
+
+##### Example NOT
+
 ``` python
 not(16 <= 18)
 ```
-
-|Comparison |Result|
-|--|--|
-|False|True|
-|True|False|
 
 ### Selection - complex
 
@@ -348,10 +354,10 @@ for counter in range(10):
     print(counter)
 ```
 
-The range function needs a minimum of one parameter but can have more.
+The range function produces a sequence of values.  The last value in the sequence is always one less than the `stop` value:
 
 ``` python
-range(stop)
+range(stop)  # Starts from 0
 
 range(start, stop)
 
@@ -371,10 +377,6 @@ Example.  Display the odd numbers from 1 to 9.
 for counter in range(1, 10, 2):
     print(counter)
 ```
-
-
-If only the `stop` parameter is used then the `start` value is always zero.  A little confusingly, the largest value in the range is one less than the `stop` value.
-
 
 #### Conditional loop (while)
 
@@ -413,9 +415,9 @@ print(myDice)
 The round function works with floating point values (decimals).  It returns (produces) a value that is rounded to a specified number of decimal places
 
 ``` python
-myFloat = 3.14159265359
+myReal = 3.14159265359
 
-myRound = round(myFloat, 2)
+myRound = round(myReal, 2)
 print(myRound)
 ```
 
@@ -424,18 +426,18 @@ The round function can also be used to return a value without any decimal places
 The following example will return a value of 4.
 
 ``` python
-myFloat = 3.5
+myReal= 3.5
 
-myRound = round(myFloat)
+myRound = round(myReal)
 print(myRound)
 ```
 
 The following example will ***also*** return a value of 4.
 
 ``` python
-myFloat = 4.5
+myReal= 4.5
 
-myRound = round(myFloat)
+myRound = round(myReal)
 print(myRound)
 ```
 
@@ -584,6 +586,6 @@ for score in scores:
 
 #### Multiple arrays
 
-A program can use more than one array, in the same way that multiple variables can be used.
+A program can use more than one array, in the same way that a program can use multiple variables.
 
 [Back to Table of Contents](#toc)
