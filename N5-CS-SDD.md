@@ -492,11 +492,13 @@ height = float(input("Height? (In metres) "))
 User input can be checked using a conditional loop.  If it is not acceptable it is re-entered until it is.
 
 ``` python
-dice = int(input("Enter a value from 1 to 6: "))
+dice = 0
 
 while dice < 1 or dice > 6:
-    print("You entered an invalid value.")
-    dice = int(input("Enter a value from 1 to 6: "))
+    dice = int(input("Enter dice value: "))
+    
+    if dice < 1 or dice > 6:
+        print("Value must be from 1 to 6.")
 
 print("You entered " + str(dice))
 ```
@@ -566,7 +568,7 @@ print(heights)
 
 #### Getting values out
 
-Method 1 - using the index value
+Method 1 - using a loop variable (`index`)
 
 ``` python
 scores = [56, 34, 2, 85, 51]
@@ -575,7 +577,7 @@ for index in range(len(scores)):
     print(scores[index])
 ```
 
-Method 2 - not using the index value
+Method 2 - not using a loop variable
 
 ``` python
 scores = [56, 34, 2, 85, 51]
