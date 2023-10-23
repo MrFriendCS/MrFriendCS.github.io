@@ -165,7 +165,7 @@ print(phrase)
 
 ### User input
 
-**Note:** Anything from the keyboard is a *string*.
+#### String input
 
 ```python
 word1 = input("Enter the first word: ")
@@ -175,6 +175,10 @@ phrase = word1 + " " + word2
 
 print(phrase)
 ```
+
+#### Non-string input 
+
+**Note:** Anything from the keyboard is a *string*.
 
 Values that have a different datatype must be cast from string to the correct datatype, using one of the following functions:
 
@@ -385,11 +389,11 @@ Before a conditional loop starts, the number of times it will run ***is not*** s
 It only runs if the comparison is `True`.  Each time the code is completed the comparison is checked again.  If it is still `True` the code is run again.
 
 ``` python
-counter = 0
+value = int(input("Enter a value: ")
 
-while counter < 10:
+while value < 10:
+    value = value + 1
     print(counter)
-    counter = counter + 1
 ```
 
 [Back to Table of Contents](#toc)
@@ -412,6 +416,8 @@ print(myDice)
 
 #### Round
 
+##### Decimal Places
+
 The round function works with floating point values (decimals).  It returns (produces) a value that is rounded to a specified number of decimal places
 
 ``` python
@@ -420,6 +426,8 @@ myReal = 3.14159265359
 myRound = round(myReal, 2)
 print(myRound)
 ```
+
+##### Whole number
 
 The round function can also be used to return a value without any decimal places (integer).
 
