@@ -389,7 +389,7 @@ Before a conditional loop starts, the number of times it will run ***is not*** s
 It only runs if the comparison is `True`.  Each time the code is completed the comparison is checked again.  If it is still `True` the code is run again.
 
 ``` python
-value = int(input("Enter a value: ")
+value = int(input("Enter a value: "))
 
 while value < 10:
     value = value + 1
