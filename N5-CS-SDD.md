@@ -477,27 +477,7 @@ print(myLength)
 
 ### Input validation
 
-#### User input
-
-The input function allows a user to enter information using the keyboard.
-
-``` python
-user = input("What is your name? ")
-
-print("Hello " + user)
-```
-
-**Note:** Anything entered using the keyboard is a string.  If the value represents another data type then it must be cast (converted) to that data type.
-
-``` python
-age = int(input("Age? (In whole years) "))
-
-height = float(input("Height? (In metres) "))
-```
-
-#### Validation
-
-User input can be checked using a conditional loop.  If it is not acceptable it is re-entered until it is.
+User input can be checked using a conditional loop.  If the value entered is not acceptable an error message is displayed and the value re-entered until it is.
 
 ``` python
 dice = 0
