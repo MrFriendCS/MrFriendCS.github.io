@@ -338,7 +338,7 @@ __Caution__: without the `WHERE` clause all records would be deleted!
 
 | Attribute | Key   | Type    | Size  | Req'd | Validation |
 | --------- | :---: | ----    | :---: | :---: | ---------- |
-| veh_reg   | PK    | text    | 8     | Y     | |
+| veh_reg   | PK    | text    | 8     | Y     | length: >=4 |
 | make      |       | text    | 20    | N     | |
 | model     |       | text    | 20    | N     | |
 | colour    |       | text    | 15    | Y     | |
@@ -353,13 +353,13 @@ __Caution__: without the `WHERE` clause all records would be deleted!
 | cost_estimate |       | number  |       | N     | range: >= 0.00 |
 | cost_actual   |       | number  |       | N     | range: >= 0.00 |
 | completed     |       | boolean |       | Y     | |
-| paid          |       | boolean |       | Y     | |
+| paid          |       | text    | 7     | Y     | Restricted choice: Nothing, Part, All |
 
 #### SQL
 
 ``` sql
 CREATE TABLE vehicle(
-    veh_reg VARCHAR(8) NOT NULL,
+    veh_reg VARCHAR(8) NOT NULL CHECK(LENGTH(veh_reg >= 4)),
     make VARCHAR(20),
     model VARCHAR(20),
     colour VARCHAR(15) NOT NULL,
@@ -375,7 +375,7 @@ CREATE TABLE repair(
     cost_estimate REAL CHECK(cost_estimate >= 0),
     cost_actual REAL CHECK(cost_actual >= 0),
     completed BOOL NOT NULL,
-    paid BOOL NOT NULL,
+    paid VARCHAR(7) NOT NULL CHECK(paid IN ("Nothing", "Part", "All")),
     FOREIGN KEY (veh_reg)
         REFERENCES vehicle(veh_reg),
     PRIMARY KEY (repair_no)
