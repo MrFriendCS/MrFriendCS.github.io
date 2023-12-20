@@ -143,6 +143,8 @@ SELECT name, species
 
 To limit the number of records returned, the `WHERE` keyword is used with a comparison operator.
 
+**Note:** Whilst SQL keywords are not case sensitive, search terms are.  Searching for `Hello` will not find `hello`, `HELLO`, or any other variation.
+
 ### Comparison operators
 
 Comparison operators are used to compare one value with another.
@@ -413,9 +415,9 @@ CREATE TABLE "vaccination" (
     vax_id INT NOT NULL,
     pet_id INT NOT NULL,
     vax_date DATE NOT NULL,
-    name VARCHAR(30) NOT NULL CHECK(LENGTH(name) >= 2),
+    name VARCHAR(30) NOT NULL,
     reaction BOOL NOT NULL,
-    price REAL NOT NULL CHECK(price >= 10 AND price <= 100),
+    price REAL NOT NULL,
     FOREIGN KEY(pet_id) REFERENCES pet(pet_id),
     PRIMARY KEY(vax_id)
 )
@@ -444,8 +446,8 @@ Copy the data from the old table into the new table.
 
 ``` sql
 INSERT INTO new_vaccianation
-	SELECT *
-		FROM vaccination;
+    SELECT *
+    FROM vaccination;
 ```
 
 ### 4. Turn off referential integrity
@@ -470,7 +472,7 @@ Rename the new table.
 
 ``` sql
 ALTER TABLE new_vaccination
-	RENAME TO vaccination;
+    RENAME TO vaccination;
 ```
 
 ### 7. Turn off referential integrity
