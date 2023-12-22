@@ -30,13 +30,7 @@ The statements are terminated with a semicolon, __`;`__.  An individual statemen
 
 ### Attribute types (Data types)
 
-SQLite has fewer data types than SQL.  SQLite has:
-
-* Text
-* Integer
-* Real
-
-However, SQL datatypes can be used and SQLite will match these to it's own datatypes.
+SQLite has fewer data types than SQL.  However, SQL datatypes can be used and SQLite will match these to it's own datatypes.
 
 ### Example Data
 
@@ -393,10 +387,11 @@ Modifying a table involves a number of steps:
  1. Get the details of the table
  2. Create a new table using the modified details of the old table
  3. Copy the data from the old table to the new table
- 4. Turn off referential integrity - _if needed_
- 5. Delete the old table
- 6. Rename the new table as the old table
- 7. Turn on referential integrity - _if needed_
+ 4. Check the data has been copied
+ 5. Turn off referential integrity - _if needed_
+ 6. Delete the old table
+ 7. Rename the new table as the old table
+ 8. Turn on referential integrity - _if needed_
 
 ### 1. Get details
 
@@ -450,7 +445,16 @@ INSERT INTO new_vaccianation
     FROM vaccination;
 ```
 
-### 4. Turn off referential integrity
+### 4. Check data
+
+Check that the data has been copied into the new table.
+
+``` sql
+SELECT *
+    FROM new_vaccianation;
+```
+
+### 5. Turn off referential integrity
 
 If the primary key of the old table is used as a foreign key  in another table then referential integrity will need to be turned off.
 
@@ -458,7 +462,7 @@ If the primary key of the old table is used as a foreign key  in another table t
 PRAGMA foreign_keys = off;
 ```
 
-### 5. Delete old table
+### 6. Delete old table
 
 Delete the old table.
 
@@ -466,7 +470,7 @@ Delete the old table.
 DROP TABLE staff;
 ```
 
-### 6. Rename new table
+### 7. Rename new table
 
 Rename the new table.
 
@@ -475,7 +479,7 @@ ALTER TABLE new_vaccination
     RENAME TO vaccination;
 ```
 
-### 7. Turn off referential integrity
+### 8. Turn off referential integrity
 
 If referential integrity was turned off, it will needed to be turned on.
 
