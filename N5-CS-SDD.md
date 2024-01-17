@@ -127,11 +127,13 @@ print(myAge)
 
 [Back to Table of Contents](#toc)
 
-### Concatenate strings
+### Concatenation
+
+#### Strings
 
 Concatenate means to join together.
 
-**Note:**  Only strings can be concatenated.
+**Note:**  Only a string can be concatenated with another string
 
 ``` python
 part1 = "Ho"
@@ -161,6 +163,32 @@ age = 18
 phrase = "I am " + str(age)
 
 print(phrase)
+```
+
+#### Arrays
+
+Concatenate means to join together.
+
+**Note:**  Only an array can be concatenated with another array
+
+``` python
+part1 = ["Ho", "Ho"]
+part2 = ["Ho"]
+
+whole = part1 + part2
+
+print(whole)
+```
+
+Only arrays can be concatenated, anything else must be cast (converted) to an array.
+
+``` python
+myArray = []
+myInt = 18
+
+combined = myArray + [myInt]
+
+print(combined)
 ```
 
 ### User input
