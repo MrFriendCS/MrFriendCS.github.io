@@ -191,6 +191,8 @@ combined = myArray + [myInt]
 print(combined)
 ```
 
+[Back to Table of Contents](#toc)
+
 ### User input
 
 #### String input
