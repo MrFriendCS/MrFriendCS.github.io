@@ -199,7 +199,7 @@ It is possible to sort the output of a search using `ORDER BY` and stating the f
 ``` sql
 SELECT *
     FROM pet
-    ORDER BY species;
+    ORDER BY species ASC;
 ```
 
 To change the sort order of a field to descending the keyword `DESC` used.  The keyword `ASC` is not needed but can be used to explicitly sort ascending.  More than one field can be sorted.
@@ -207,8 +207,7 @@ To change the sort order of a field to descending the keyword `DESC` used.  The 
 ``` sql
 SELECT *
     FROM pet
-    ORDER BY
-        species DESC,
+    ORDER BY species DESC, 
         name ASC;
 ```
 
@@ -284,7 +283,8 @@ UPDATE pet
 
 ``` sql
 UPDATE pet
-    SET name = "Churchill", species = "Cat"
+    SET name = "Churchill", 
+        species = "Cat"
     WHERE pet_id = 29;
 ```
 
@@ -368,10 +368,13 @@ CREATE TABLE repair(
     repair_no INT NOT NULL,
     veh_reg VARCHAR(8) NOT NULL,
     repair_date DATE,
-    cost_estimate REAL CHECK(cost_estimate >= 0),
-    cost_actual REAL CHECK(cost_actual >= 0),
+    cost_estimate REAL 
+        CHECK(cost_estimate >= 0),
+    cost_actual REAL 
+        CHECK(cost_actual >= 0),
     completed BOOL NOT NULL,
-    paid VARCHAR(7) NOT NULL CHECK(paid IN ("Nothing", "Part", "All")),
+    paid VARCHAR(7) NOT NULL
+        CHECK(paid IN ("Nothing", "Part", "All")),
     FOREIGN KEY (veh_reg)
         REFERENCES vehicle(veh_reg),
     PRIMARY KEY (repair_no)
@@ -413,7 +416,8 @@ CREATE TABLE "vaccination" (
     name VARCHAR(30) NOT NULL,
     reaction BOOL NOT NULL,
     price REAL NOT NULL,
-    FOREIGN KEY(pet_id) REFERENCES pet(pet_id),
+    FOREIGN KEY(pet_id) 
+        REFERENCES pet(pet_id),
     PRIMARY KEY(vax_id)
 )
 ```
@@ -427,10 +431,14 @@ CREATE TABLE new_vaccination (
     vax_id INT NOT NULL,
     pet_id INT NOT NULL,
     vax_date DATE NOT NULL,
-    name VARCHAR(30) NOT NULL CHECK(LENGTH(namen) >= 2),
+    name VARCHAR(30) NOT NULL 
+        CHECK(LENGTH(namen) >= 2),
     reaction BOOL NOT NULL,
-    price REAL NOT NULL CHECK(price >= 10 AND price <= 100),
-    FOREIGN KEY(pet_id) REFERENCES pet(pet_id)
+    price REAL NOT NULL 
+        CHECK(price >= 10 
+            AND price <= 100),
+    FOREIGN KEY(pet_id) 
+        REFERENCES pet(pet_id)
     PRIMARY KEY(vax_id),
 );
 ```
