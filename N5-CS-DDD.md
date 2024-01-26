@@ -261,7 +261,7 @@ INSERT INTO pet
 If a partial record is added then the field names must be stated.  The values must be in the same order as the fields.
 
 ``` sql
-INSERT INTO pet ("species", "name", "pet_id")
+INSERT INTO pet (species, name, pet_id)
     VALUES ("Dog", "Winston", 29);
 ```
 
