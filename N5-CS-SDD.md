@@ -507,6 +507,27 @@ print(myLength)
 
 User input can be checked using a conditional loop.  If the value entered is not acceptable an error message is displayed and the value re-entered until it is.
 
+It can be done two different ways, initial input before the loop or within the loop.
+
+#### Input before loop
+
+The conditional loop is only entered if the value entered is invalid.
+
+``` python
+dice = int(input("Enter dice value: "))
+
+while dice < 1 or dice > 6:
+    print("Value must be from 1 to 6.")
+    
+    dice = int(input("Enter dice value: "))
+
+print("You entered " + str(dice))
+```
+
+#### Input within loop
+
+Variable is assigned a value that will cause the loop condition to be true.
+
 ``` python
 dice = 0
 
@@ -556,18 +577,6 @@ print("The combined age is " + str(total))
 ### Traversing a 1-D array
 
 Arrays store more than one value, called elements.  Each element has a position.  Python starts counting from zero.
-
-Example.  Retrieve and display the value in the second element, and change the value of the the third element.
-
-``` python
-scores = [56, 34, 2, 85, 51]
-
-score = scores[1]
-print(score)
-
-scores[2] = 82
-print(scores)
-```
 
 #### Putting values in
 
