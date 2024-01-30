@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Call-out</title>
+	<style>
+
+		/* For mobile phones: */
+
+		* {
+			margin: 0;
+		}
+
+		body {
+			background-color: burlywood;
+			font-family: sans-serif;
+			margin: 2vw 5vw;
+		}
+
+		h1 {
+			font-size: 7.5vw;
+			margin-top: 2vw;
+			margin-bottom: 5vw;
+		}
+
+		input, label {
+			font-size: 4vw;
+		}
+
+        p {
+			font-size: 5vw;
+		}
+
+		.topMargin {
+			margin-top: 2vw;
+			margin-bottom: 10vw;
+		}
+
+		#callout {
+			font-weight: bold;
+		}
+
+        /* For desktop: */
+		@media only screen and (min-width: 600px) {
+			
+			.left {
+				float: left;
+				width: 40vw;
+				margin-top: 2vw;
+				margin-left: 2vw;
+			}
+
+			.right {
+				float: right;
+				width: 40vw;
+				margin-top: 2vw;
+				margin-right: 2vw;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Call-out Calculator</h1>
+
+    <div class="left">
+        <p>Claim: <span id="callout">0</span></p>
+        <p class="topMargin">Duration: <span id="duration">0:00</span></p>
+    </div>
+
+	<div class="right">
+		<form>
+			<label for="startTime">Start time:</label>
+            <input type="time" id="startTime" value="12:00" onchange="changeTime()" height="5vw">
+            <br>
+            <label for="endTime" >End time:</label>
+            <input type="time" id="endTime" class="topMargin" value="12:00" onchange="changeTime()">
+        </div>
+    </form>
+
+    <script>
+        function changeTime(){
+
+            var startTime = document.getElementById("startTime").value;
+            var endTime = document.getElementById("endTime").value;
+
+            var startHours = parseInt(startTime.substring(0, 2));
+            var startMinutes = parseInt(startTime.substring(3, 5));
+
+            var endHours = parseInt(endTime.substring(0, 2));
+            var endMinutes = parseInt(endTime.substring(3, 5));
+
+            if (startTime > endTime) {
+                endHours = endHours + 24;
+                }
+
+            if (startMinutes > endMinutes) {
+                endHours = endHours - 1;
+                endMinutes = endMinutes + 60;
+                }
+
+            var callHours = endHours - startHours;
+            var callMinutes = endMinutes - startMinutes;
+
+            if (callMinutes < 10) {
+                document.getElementById("duration").innerHTML = callHours + ":0" + callMinutes;
+            } else {
+                document.getElementById("duration").innerHTML = callHours + ":" + callMinutes;
+            }
+
+            var paidMinutes = 0;
+            var paidHours = callHours;
+
+            if (callMinutes == 0) {
+                paidMinutes = 0;
+            } else if (callMinutes > 0 && callMinutes <= 15) {
+                paidMinutes = 0.25;
+            } else if (callMinutes > 15 && callMinutes <= 30 ) {
+                paidMinutes = 0.5;
+            } else if (callMinutes > 30 && callMinutes <= 45 ) {
+                paidMinutes = 0.75;
+            } else {
+                paidMinutes = 0;
+                paidHours =paidHours + 1;
+            }
+
+            document.getElementById("callout").innerHTML = paidHours + paidMinutes;
+
+        }
+    </script>
+  </body>
+</html>
