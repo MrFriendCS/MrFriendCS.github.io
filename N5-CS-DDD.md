@@ -32,6 +32,15 @@ The statements are terminated with a semicolon, __`;`__.  An individual statemen
 
 SQLite has fewer data types than SQL.  However, SQL datatypes can be used and SQLite will match these to it's own datatypes.
 
+| Data type     | Example data |
+| ----          | ---- |
+| Text          | "Cat", "01871" |
+| Number (INT)  | -99, 0, 99 |
+| Number (REAL) | -99.0, 0.0, 99.0 |
+| Date          | "2024-02-29" |
+| Time          | "13:15:00" |
+| Boolean       | TRUE, FALSE |
+
 ### Example Data
 
 The example [database](N5-CS-Database.db) contains the tables and records that the SQL examples will work with. The file can be opened with [DB Browser for SQLite](https://sqlitebrowser.org/).
@@ -261,7 +270,7 @@ INSERT INTO pet
 If a partial record is added then the field names must be stated.  The values must be in the same order as the fields.
 
 ``` sql
-INSERT INTO pet (species, name, pet_id)
+INSERT INTO pet ("species", "name", "pet_id")
     VALUES ("Dog", "Winston", 29);
 ```
 
@@ -271,7 +280,7 @@ INSERT INTO pet (species, name, pet_id)
 
 **Note:** It is possible to damage the data with an `UPDATE` statement.  It is advisable to practise with a `SELECT` statement first to see if the correct record, or records, will be changed.
 
-### Single field
+### Single value changed
 
 ``` sql
 UPDATE pet
@@ -279,7 +288,7 @@ UPDATE pet
     WHERE pet_id = 29;
 ```
 
-### Multiple  fields
+### Multiple  values changed
 
 ``` sql
 UPDATE pet
