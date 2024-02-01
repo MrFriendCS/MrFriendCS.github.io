@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+	<title>Probability</title>
+        
+	<style>
+		body {
+			background-color: burlywood;
+			font-family: sans-serif;            
+			font-size: 3vw;
+            margin: 2vw 5vw;
+		}
+
+		h1 {
+			font-size: 4vw;
+		}
+
+		p {
+			font-size: 3vw;
+            margin: 1vw 0vw;
+		}
+
+		td {
+			text-align: center;
+		}
+
+		.total {
+			font-weight: bold;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+		}
+
+		.left {
+			float: left;
+			width: 40vw;
+		}
+
+        .right {
+			float: right;
+			width: 40vw;
+		}
+
+        
+        /* Class - Clickable values */
+        .roll {
+            display: inline-block;
+        }
+        
+        .roll:hover {
+            background-color: lightblue;
+        }
+
+        .roll:active {
+            background-color: blue;
+        }
+
+        /* ID - Reset button */
+        #button {
+            display: inline-block;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        #button:hover {
+            background-color: pink;
+        }
+
+        #button:active {
+            background-color: red;
+        }
+        
+	</style>
+
+</head>
+
+<body>
+    <h1>Probability</h1>
+
+	<div class="left">
+        <!-- Image of a die -->
+		<img id="die" src="images/Dice6.png"  type="image/jpeg" 
+        width="75%" onclick="rollDie(this)">
+
+        <p>Click the die to roll once.</p>
+
+        <!-- Clickable values -->
+        <p>Roll: 
+            <span class="roll" onclick="roll(this)"">60</span>, 
+            <span class="roll" onclick="roll(this)"">600</span>, 
+            <span class="roll" onclick="roll(this)"">6000</span> 
+        </p>
+    </div>
+
+
+    <div class="right">
+
+        <table id="resultsTable">
+            <tr>
+                <th>Face</th>
+                <th>Count</th>
+            </tr>
+            <tr class="odd">
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr class="even">
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr class="odd">
+                <td>3</td>
+                <td>0</td>
+            </tr>
+            <tr class="even">
+                <td>4</td>
+                <td>0</td>
+            </tr>
+            <tr class="odd">
+                <td>5</td>
+                <td>0</td>
+            </tr>
+            <tr class="even">
+                <td>6</td>
+                <td>0</td>
+            </tr>
+            <tr class="total">
+                <td>Total</td>
+                <td>0</td>
+            </tr>
+
+        </table>
+
+        <!-- Clickable button -->
+        <p id="button" onclick="resetTable()">Reset</p>
+
+    </div>
+
+    <!-- Avoid delays with initial clicks on die -->
+    <link rel="preload" href="images/Dice1.png" as="image" type="image/jpeg">
+    <link rel="preload" href="images/Dice2.png" as="image" type="image/jpeg">
+    <link rel="preload" href="images/Dice3.png" as="image" type="image/jpeg">
+    <link rel="preload" href="images/Dice4.png" as="image" type="image/jpeg">
+    <link rel="preload" href="images/Dice5.png" as="image" type="image/jpeg">
+    <link rel="preload" href="images/roll.gif" as="image" type="image/gif">
+
+	<script>
+
+        function roll(x) {
+            // Replace die image with agif
+            document.getElementById('die').src = 'images/roll.gif';
+
+            // Loop for the value clicked on
+            var rolls = parseInt(x.innerHTML)
+            for (let i = 0; i < rolls; i++) {
+                setTimeout(rollDie, 500);
+            }
+        }
+        
+        function rollDie() {
+            // Pick a random value, 1 to 6
+            var face = parseInt(Math.random() * 6) + 1;
+
+            var table = document.getElementById('resultsTable')
+
+            // Update count value
+            table.rows[face].cells[1].innerHTML = parseInt(table.rows[face].cells[1].innerHTML) + 1
+            // Update total
+            table.rows[7].cells[1].innerHTML = parseInt(table.rows[7].cells[1].innerHTML) + 1
+
+            // Replace image with number thrown
+            var image = document.getElementById('die')
+
+            switch(face) {
+
+                case 1:
+                    image.src = 'images/Dice1.png';
+                    break;
+                
+                case 2:
+                    image.src = 'images/Dice2.png';
+                    break;
+                
+                case 3:
+                    image.src = 'images/Dice3.png';
+                    break;
+
+                case 4:
+                    image.src = 'images/Dice4.png';
+                    break;
+
+                case 5:
+                    image.src = 'images/Dice5.png';
+                    break;
+                    
+                default:
+                    image.src = 'images/Dice6.png';
+            }
+        }
+
+        function resetTable() {
+            // Overwite counts and total with zero
+            for (let i = 1; i < 8; i++) {
+                document.getElementById('resultsTable').rows[i].cells[1].innerHTML = 0;
+            }
+        }
+
+	</script>
+</body>
+
+</html>
