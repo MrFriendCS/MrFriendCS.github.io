@@ -284,6 +284,8 @@ Reading and writing a csv or txt file can be achieved using the same code, just 
 
 ### Reading parallel arrays from a file
 
+**Note:** An assumption is that the maximum array size is known, and the file contains that number of rows or fewer.
+
 Declare parallel arrays that are large enough to hold the data.
 
 ``` python
@@ -295,10 +297,7 @@ heights = [0.0] * 4
 Declare other variables
 
 ``` python
-tempArray = [""] * 3
-name = ""
-age = 0
-height = 0.0
+tempData = [""] * 3
 line = ""
 index = 0
 ```
@@ -324,23 +323,15 @@ while line != "":
 Split the content of the variable `line` at the commas.  Assign the elements to `tempArray`.
 
 ``` python
-    tempArray = line.split(",")
+    tempData = line.split(",")
 ```
 
-Retrieve the individual attributes from `tempArray`, remove leading and trailing spaces, and cast appropriately.
+Remove leading and trailing spaces from `tempData`, cast appropriately, and assign to parallel arrays.
 
 ``` python
-    name = tempArray[0].strip()
-    age = int(tempArray[1].strip())
-    height = float(tempArray[2].strip())
-```
-
-Assign the data to the appropriate parallel array.
-
-``` python
-    names[index] = name
-    ages[index] = age
-    heights[index] = height
+    names[index] = tempData[0].strip()
+    ages[index] = int(tempData[1].strip())
+    heights[index] = float(tempData[2].strip())
 ```
 
 Read the next line of the file.
@@ -363,6 +354,8 @@ file.close()
 
 ### Reading an array of records from a file
 
+**Note:** An assumption is that the maximum array size is known, and the file contains that number of rows or fewer.
+
 Declare an array of records large enough to hold the data.
 
 ``` python
@@ -372,7 +365,7 @@ people = [person()] * 4
 Declare all other variables.
 
 ``` python
-tempArray = [""] * 3
+tempData = [""] * 3
 name = ""
 age = 0
 height = 0.0
@@ -401,18 +394,18 @@ while line != "":
 Split the content of the variable `line` at the commas and assign the elements to `tempArray`.
 
 ``` python
-    tempArray = line.split(",")
+    tempData = line.split(",")
 ```
 
-Retrieve the individual attributes from `tempArray`, remove leading and trailing spaces, and cast appropriately.
+Retrieve the individual attributes from `tempData`, remove leading and trailing spaces, and cast appropriately.
 
 ``` python
-    name = tempArray[0].strip()
-    age = int(tempArray[1].strip())
-    height = float(tempArray[2].strip())
+    name = tempData[0].strip()
+    age = int(tempData[1].strip())
+    height = float(tempData[2].strip())
 ```
 
-Assign a record to appropriate element in the array.
+Assign a new record to appropriate element in the array.
 
 ``` python
     people[index] = person(name, age, height)
