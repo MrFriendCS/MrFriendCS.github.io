@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     
-	<title>Denary to Binary to Denary</title>
+	<title>Binary to Denary to Binary</title>
         
 	<style>
 		body {
@@ -45,11 +45,11 @@
 </head>
 
 <body onload="fnPickValues()">
-    <h1 id="idHeading">Denary to Binary</h1>
-
-    <p>Denary: <span id="idDenary"></span></p>
+    <h1 id="idHeading">Binary to Denary</h1>
 
     <p>Binary: <span id="idBinary">?</span></p>
+
+    <p>Denary: <span id="idDenary"></span></p>
 
     <p class="button" id="idSwitch" onclick="fnDirection()">Switch</p>
 
@@ -57,7 +57,7 @@
     
     <script>
         // Global variables
-        let strDirection = "d2b";
+        let strDirection = "b2d";
         let strBinary = "";
         let intDenary = 0;
 
