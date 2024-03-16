@@ -9,13 +9,44 @@
         
 	<style>
 	
+		/* For mobile phones: */
+		body {
+				background-color: burlywood;
+				font-family: sans-serif;            
+				font-size: 6vw;
+				margin: 4vw 10vw;
+			}
+
+			h1 {
+				font-size: 8vw;
+			}
+
+			p {
+				font-size: 6vw;
+				margin: 2vw 0vw;
+			}
+
+			/* Class - Clickable 'button' */
+			.button {
+				display: inline-block;
+				border: 0.2vw solid black;
+				border-radius: 4vw;
+				padding: 2vw;
+			}
+
+			.button:hover {
+				background-color: lightblue;
+			}
+
+			.button:active {
+				background-color: blue;
+			}
+	
 	
 		/* Large devices (laptops/desktops, 992px and up) */
 		@media only screen and (min-width: 992px) {
 		
-			body {
-				background-color: burlywood;
-				font-family: sans-serif;            
+			body {           
 				font-size: 3vw;
 				margin: 2vw 5vw;
 			}
@@ -31,19 +62,11 @@
 
 			/* Class - Clickable 'button' */
 			.button {
-				display: inline-block;
 				border: 0.1vw solid black;
 				border-radius: 2vw;
 				padding: 1vw;
 			}
 
-			.button:hover {
-				background-color: lightblue;
-			}
-
-			.button:active {
-				background-color: blue;
-			}
 		}
         
 	</style>
