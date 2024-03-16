@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>Denary to strBinary</title>
+        
+	<style>
+		body {
+			background-color: burlywood;
+			font-family: sans-serif;            
+			font-size: 3vw;
+            margin: 2vw 5vw;
+		}
+
+		h1 {
+			font-size: 4vw;
+		}
+
+		p {
+			font-size: 3vw;
+            margin: 1vw 0vw;
+		}
+
+        /* Class - Clickable 'button' */
+        .button {
+            display: inline-block;
+            border: 0.1vw solid black;
+            border-radius: 2vw;
+            padding: 1vw;
+        }
+
+        .button:hover {
+            background-color: lightblue;
+        }
+
+        .button:active {
+            background-color: blue;
+        }
+        
+	</style>
+
+</head>
+
+<body onload="fnPickValues()">
+    <h1 id="idHeading">Denary to Binary</h1>
+
+    <p>Denary: <span id="idDenary"></span></p>
+
+    <p>Binary: <span id="idBinary">?</span></p>
+
+    <p class="button" id="idSwitch" onclick="fnDirection()">Switch</p>
+
+    <p class="button" id="idQuestion">Show</p>
+    
+    <script>
+        // Global variables
+        let strDirection = "d2b";
+        let strBinary = "";
+        let intDenary = 0;
+
+        function fnPickValues() {
+
+            // Reset strBinary value
+            strBinary = "";
+            
+            // Pick a denary value: 0 - 255
+            intDenary = parseInt(Math.random() * 256);
+
+            // Calculate binary value
+            let intRemainder = intDenary;
+
+            for (let i = 7; i > -1; i--) {
+
+                if ((intRemainder - 2**i) >= 0) {
+                    intRemainder = intRemainder - 2**i;
+                    strBinary = strBinary + "1";
+                } else {
+                    strBinary = strBinary + "0";
+                }
+
+            if (strDirection == "d2b") {
+                // Display denary value
+                document.getElementById('idDenary').innerHTML = intDenary;
+                document.getElementById('idBinary').innerHTML = "?";
+            } else {
+                // Display binary value
+                document.getElementById('idBinary').innerHTML = strBinary;
+                document.getElementById('idDenary').innerHTML = "?";
+            }
+            
+        }
+                
+            // Set button
+            document.getElementById('idQuestion').innerHTML = "Show";
+            document.getElementById('idQuestion').removeEventListener('click', fnPickValues);
+            document.getElementById('idQuestion').addEventListener('click', fnShowAnswer);
+
+        }
+
+        
+        function fnShowAnswer() {
+
+            if (strDirection == "d2b") {
+                // Display strBinary value
+                document.getElementById('idBinary').innerHTML = strBinary;
+            } else {
+                // Display intDenary value
+                document.getElementById('idDenary').innerHTML = intDenary;
+            }
+
+            // Set button
+            document.getElementById('idQuestion').innerHTML = "New";
+            document.getElementById('idQuestion').removeEventListener('click', fnShowAnswer);
+            document.getElementById('idQuestion').addEventListener('click', fnPickValues);
+
+            
+        }
+        
+
+        function fnDirection() {
+            
+            if (strDirection == "d2b") {
+                strDirection = "b2d";
+                document.getElementById('idHeading').innerHTML = "Binary to Denary";
+            } else {
+                strDirection = "d2b";
+                document.getElementById('idHeading').innerHTML = "Denary to Binary";
+            }
+
+            // Pick new values
+            fnPickValues();
+            
+        }
+        
+    </script>
+</body>
+
+</html>
