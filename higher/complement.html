@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="shortcut icon" href="higher.png">
+    
+	<title>Two&#39;s Complement</title>
+        
+	<style>
+	
+		/* For mobile phones: */
+		
+		body {
+			background-color: burlywood;
+			font-family: sans-serif;            
+			font-size: 9vw;
+			margin: 2vw 5vw;
+		}
+
+		h1 {
+			font-size: 12vw;
+		}
+
+		p {
+			font-size: 9vw;
+			margin: 3vw 0vw;
+            font-family: Consolas, monospace;
+		}
+
+		/* Class - Clickable 'button' */
+		.button {
+            font-family: sans-serif;  
+			display: inline-block;
+			border: 0.3vw solid black;
+			border-radius: 6vw;
+			padding: 3vw;
+		}
+
+		.button:hover {
+			background-color: lightblue;
+		}
+
+		.button:active {
+			background-color: blue;
+		}
+
+	
+		/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 992px) {
+		
+			body {           
+				font-size: 3vw;
+			}
+
+			h1 {
+				font-size: 4vw;
+			}
+
+			p {
+				font-size: 3vw;
+				margin: 1vw 0vw;
+			}
+
+			/* Class - Clickable 'button' */
+			.button {
+				border: 0.1vw solid black;
+				border-radius: 2vw;
+				padding: 1vw;
+			}
+
+		}
+        
+	</style>
+
+</head>
+
+<body onload="fnPickValues()">
+    <h1 id="idHeading">Two&#39;s Complement</h1>
+
+    <p>Value:&nbsp;&nbsp;&nbsp;<span id="idValue"></span></p>
+
+    <p>Binary+: <span id="idBinary"></span></p>
+
+    <p>Inverse: <span id="idInverse"></span></p>
+
+    <p>Answer:&nbsp;&nbsp;<span id="idAnswer"></span></p>
+
+    <p class="button" id="idQuestion">Show</p>
+    
+    <script>
+        
+        // Global variables
+        let intNegative = 0;
+        let strInverse = "";
+        let strBinary = "";
+
+        function fnPickValues() {
+
+            // Local variables
+            let intDenary = 0;
+            let intRemainder = 0;
+            let intComplement = 0
+   
+            // Pick a value value: 1 - 128
+            intDenary = parseInt(Math.random() * 128) + 1;
+
+            // Negative value
+            intNegative = 0 - intDenary;
+
+            strBinary = fnD2B(intDenary);
+
+            strInverse = fnInverse(strBinary);
+
+            intComplement = fnB2D(strInverse) + 1;
+
+            strComplement = fnD2B(intComplement);
+         
+            // Display value
+            document.getElementById('idValue').innerHTML = intNegative;
+            document.getElementById('idBinary').innerHTML = "?";
+            document.getElementById('idInverse').innerHTML = "?";
+            document.getElementById('idAnswer').innerHTML = "?";
+            
+            // Set button
+            document.getElementById('idQuestion').innerHTML = "Show";
+            document.getElementById('idQuestion').removeEventListener('click', fnPickValues);
+            document.getElementById('idQuestion').addEventListener('click', fnShowAnswer);
+
+        }
+
+        
+        function fnShowAnswer() {
+
+            // Display Answer
+            document.getElementById('idBinary').innerHTML = strBinary;
+            document.getElementById('idInverse').innerHTML = strInverse;
+            document.getElementById('idAnswer').innerHTML = strComplement;
+
+            // Set button
+            document.getElementById('idQuestion').innerHTML = "New";
+            document.getElementById('idQuestion').removeEventListener('click', fnShowAnswer);
+            document.getElementById('idQuestion').addEventListener('click', fnPickValues);
+
+        }
+
+        function fnD2B(intDenary) {
+
+            // Local variable
+            let strBinary = "";
+
+            for (let i = 7; i > -1; i--) {
+
+                if ((intDenary - 2**i) >= 0) {
+                    intDenary = intDenary - 2**i;
+                    strBinary = strBinary + "1";                  
+                } else {
+                    strBinary = strBinary + "0";
+                }
+            }
+
+            return strBinary;
+            
+        }
+
+        function fnB2D(strBinary) {
+
+            // Local variable
+            let intDenary = 0;
+
+            for (let i = 0; i < strBinary.length; i++) {
+
+                if (strBinary.charAt(i) == "1") {
+                    intDenary = intDenary + 2**(strBinary.length-i-1);                  
+                }
+            }
+
+            return intDenary;
+
+        }
+
+
+        function fnInverse(strBinary) {
+
+            // Local variable
+            let strInverse = "";
+
+            for (let i = 0; i < strBinary.length; i++) {
+
+                if (strBinary.charAt(i) == "1") {
+                    strInverse = strInverse + "0";                  
+                } else {
+                    strInverse = strInverse + "1";
+                }
+            }
+
+            return strInverse;
+
+        }
+                
+    </script>
+</body>
+
+</html>

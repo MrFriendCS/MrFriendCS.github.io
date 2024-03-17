@@ -27,10 +27,12 @@
 		p {
 			font-size: 9vw;
 			margin: 3vw 0vw;
+            font-family: Consolas, monospace;
 		}
 
 		/* Class - Clickable 'button' */
 		.button {
+            font-family: sans-serif;  
 			display: inline-block;
 			border: 0.3vw solid black;
 			border-radius: 6vw;
@@ -78,10 +80,9 @@
 <body onload="fnPickValues()">
     <h1 id="idHeading">Floating Point</h1>
 
-    <p>Value: <span id="idValue"></span></p>
+    <p>Value:&nbsp;&nbsp;&nbsp;&nbsp;<span id="idValue"></span></p>
 
     <p>Mantissa: <span id="idMantissa"></span></p>
-
     <p>Exponent: <span id="idExponent"></span></p>
 
     <p class="button" id="idQuestion">Show</p>
