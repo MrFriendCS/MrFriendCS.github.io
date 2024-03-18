@@ -25,7 +25,7 @@
 		}
 
 		p {
-			font-size: 9vw;
+			font-size: 8vw;
 			margin: 3vw 0vw;
             font-family: Consolas, monospace;
 		}
@@ -46,6 +46,21 @@
 		.button:active {
 			background-color: blue;
 		}
+
+        /* ID - Clickable 'button' */
+        #showFloat:hover {
+            background-color: pink;
+        }
+
+        #showFloat:active {
+            background-color: red;
+        }
+
+        /* ID - Float exponent */
+        #idPower {
+            vertical-align: text-top;
+            font-size: 5vw;
+        }
 
 	
 		/* Large devices (laptops/desktops, 992px and up) */
@@ -71,6 +86,13 @@
 				padding: 1vw;
 			}
 
+            /* ID - Float exponent */
+            #idPower {
+                font-size: 2vw;
+            }
+
+            
+
 		}
         
 	</style>
@@ -80,9 +102,12 @@
 <body onload="fnPickValues()">
     <h1 id="idHeading">Floating Point</h1>
 
-    <p>Value:&nbsp;&nbsp;&nbsp;&nbsp;<span id="idValue"></span></p>
+    <p>Value: &nbsp;&nbsp;&nbsp;<span id="idValue"></span></p>
+
+    <p id="showFloat" onclick="fnShowFloat()">Float: &nbsp;&nbsp;&nbsp;<span id="idFloat"></span><span id="idPower"></p>
 
     <p>Mantissa: <span id="idMantissa"></span></p>
+    
     <p>Exponent: <span id="idExponent"></span></p>
 
     <p class="button" id="idQuestion">Show</p>
@@ -123,6 +148,8 @@
             
             // Display value
             document.getElementById('idValue').innerHTML = newValue;
+            document.getElementById('idFloat').innerHTML = "?";
+            document.getElementById('idPower').innerHTML = "";
             document.getElementById('idMantissa').innerHTML = "?";
             document.getElementById('idExponent').innerHTML = "?";
             
@@ -136,7 +163,7 @@
         
         function fnShowAnswer() {
 
-            // Display Answer
+            fnShowFloat();
             document.getElementById('idMantissa').innerHTML = intMantissa;
             document.getElementById('idExponent').innerHTML = intExponent;
 
@@ -145,6 +172,15 @@
             document.getElementById('idQuestion').removeEventListener('click', fnShowAnswer);
             document.getElementById('idQuestion').addEventListener('click', fnPickValues);
 
+        }
+
+        function fnShowFloat() {
+            // Floating point representation
+            let strFloat = "0." + intMantissa +" &#215; 10"
+
+            // Display Answer
+            document.getElementById('idFloat').innerHTML = strFloat;
+            document.getElementById('idPower').innerHTML = intExponent;
         }
                 
     </script>
