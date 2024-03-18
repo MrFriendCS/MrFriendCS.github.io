@@ -80,13 +80,15 @@
 <body onload="fnPickValues()">
     <h1 id="idHeading">Two&#39;s Complement</h1>
 
-    <p>Value:&nbsp;&nbsp;&nbsp;<span id="idValue"></span></p>
+    <p>Value: &nbsp;&nbsp;<span id="idValue"></span></p>
 
     <p>Binary+: <span id="idBinary"></span></p>
 
     <p>Inverse: <span id="idInverse"></span></p>
 
-    <p>Answer:&nbsp;&nbsp;<span id="idAnswer"></span></p>
+    <p>Add: &nbsp;&nbsp;&nbsp;&nbsp;<span id="idAdd"></span></p>
+
+    <p>Answer: &nbsp;<span id="idAnswer"></span></p>
 
     <p class="button" id="idQuestion">Show</p>
     
@@ -122,6 +124,7 @@
             document.getElementById('idValue').innerHTML = intNegative;
             document.getElementById('idBinary').innerHTML = "?";
             document.getElementById('idInverse').innerHTML = "?";
+            document.getElementById('idAdd').innerHTML = "?";
             document.getElementById('idAnswer').innerHTML = "?";
             
             // Set button
@@ -137,6 +140,7 @@
             // Display Answer
             document.getElementById('idBinary').innerHTML = strBinary;
             document.getElementById('idInverse').innerHTML = strInverse;
+            document.getElementById('idAdd').innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1";
             document.getElementById('idAnswer').innerHTML = strComplement;
 
             // Set button
