@@ -104,6 +104,7 @@
 </head>
 
 <body onload="fnPickValues()">
+    
     <h1 id="idHeading">Floating Point</h1>
 
     <p>Value: &nbsp;&nbsp;&nbsp;<span id="idValue"></span></p>
@@ -117,14 +118,18 @@
     <p class="button" id="idQuestion">Show</p>
     
     <script>
+        
         // Global variables
         let intMantissa = 0;
         let intExponent = 0;
+        let strValue = '';
+        let strExponent = '';
+        let newValue = 0;
 
         function fnPickValues() {
    
-            // Pick a value value: 0 - 10000
-            intMantissa = parseInt(Math.random() * 10001);
+            // Pick a value value: 0 - 9999
+            intMantissa = parseInt(Math.random() * 10000);
 
             // Divisible by 10?
             if (intMantissa % 10 == 0) {
@@ -132,15 +137,15 @@
             }
 
             // Get exponent
-            let strValue = Number.parseFloat(intMantissa).toExponential(1);
-            let strExponent = strValue.substring(5, 6);
+            strValue = Number.parseFloat(intMantissa).toExponential(1);
+            strExponent = strValue.substring(5, 6);
             intExponent = parseInt(strExponent);
         
             // How big?
             intChangeExponent = parseInt(Math.random() * 10);
             intNewExponent = intExponent - intChangeExponent;
             
-            let newValue = intMantissa * 10**intNewExponent;
+            newValue = intMantissa * 10**intNewExponent;
 
             // Round value - lose spurious decimal places
             if (intNewExponent < 0) {
@@ -152,13 +157,13 @@
             
             // Display value
             document.getElementById('idValue').innerHTML = newValue;
-            document.getElementById('idFloat').innerHTML = "?";
-            document.getElementById('idPower').innerHTML = "";
-            document.getElementById('idMantissa').innerHTML = "?";
-            document.getElementById('idExponent').innerHTML = "?";
+            document.getElementById('idFloat').innerHTML = '?';
+            document.getElementById('idPower').innerHTML = '';
+            document.getElementById('idMantissa').innerHTML = '?';
+            document.getElementById('idExponent').innerHTML = '?';
             
             // Set button
-            document.getElementById('idQuestion').innerHTML = "Show";
+            document.getElementById('idQuestion').innerHTML = 'Show';
             document.getElementById('idQuestion').removeEventListener('click', fnPickValues);
             document.getElementById('idQuestion').addEventListener('click', fnShowAnswer);
 
@@ -172,15 +177,16 @@
             document.getElementById('idExponent').innerHTML = intExponent;
 
             // Set button
-            document.getElementById('idQuestion').innerHTML = "New";
+            document.getElementById('idQuestion').innerHTML = 'New';
             document.getElementById('idQuestion').removeEventListener('click', fnShowAnswer);
             document.getElementById('idQuestion').addEventListener('click', fnPickValues);
 
         }
 
+        
         function fnShowFloat() {
             // Floating point representation
-            let strFloat = "0." + intMantissa +" &#215; 10"
+            let strFloat = '0.' + intMantissa + ' &#215; 10'
 
             // Display Answer
             document.getElementById('idFloat').innerHTML = strFloat;
