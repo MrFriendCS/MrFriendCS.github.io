@@ -1,174 +1,205 @@
-<!DOCTYPE html>
-<html lang="en-gb">
+        <!DOCTYPE html>
+        <html lang="en-gb">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="shortcut icon" href="n5.png">
-    
-	<title>Binary to Denary to Binary</title>
-        
-	<style>
-	
-		/* For mobile phones: */
-		
-		body {
-			background-color: burlywood;
-			font-family: sans-serif;            
-			font-size: 9vw;
-			margin: 2vw 5vw;
-		}
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		h1 {
-			font-size: 12vw;
-		}
+            <link rel="shortcut icon" href="n5.png">
 
-		p {
-			font-size: 9vw;
-			margin: 3vw 0vw;
-            font-family: Consolas, monospace;
-		}
+            <title>Binary to Denary to Binary</title>
 
-		/* Class - Clickable 'button' */
-		.button {
-            font-family: sans-serif;  
-			display: inline-block;
-			border: 0.3vw solid black;
-			border-radius: 6vw;
-			padding: 3vw;
-		}
+            <style>
 
-		.button:hover {
-			background-color: lightblue;
-		}
+                /* For mobile phones: */
 
-		.button:active {
-			background-color: blue;
-		}
-
-	
-		/* Large devices (laptops/desktops, 992px and up) */
-		@media only screen and (min-width: 992px) {
-		
-			body {           
-				font-size: 3vw;
-			}
-
-			h1 {
-				font-size: 4vw;
-			}
-
-			p {
-				font-size: 3vw;
-				margin: 1vw 0vw;
-			}
-
-			/* Class - Clickable 'button' */
-			.button {
-				border: 0.1vw solid black;
-				border-radius: 2vw;
-				padding: 1vw;
-			}
-
-		}
-        
-	</style>
-
-</head>
-
-<body onload="fnPickValues()">
-    <h1 id="idHeading">Binary to Denary</h1>
-
-    <p>Binary: <span id="idBinary">?</span></p>
-
-    <p>Denary: <span id="idDenary"></span></p>
-
-    <p class="button" id="idSwitch" onclick="fnDirection()">Switch</p>
-
-    <p class="button" id="idQuestion">Show</p>
-    
-    <script>
-        // Global variables
-        let strDirection = "b2d";
-        let strBinary = "";
-        let intDenary = 0;
-
-        function fnPickValues() {
-
-            // Reset strBinary value
-            strBinary = "";
-            
-            // Pick a denary value: 0 - 255
-            intDenary = parseInt(Math.random() * 256);
-
-            // Calculate binary value
-            let intRemainder = intDenary;
-
-            for (let i = 7; i > -1; i--) {
-
-                if ((intRemainder - 2**i) >= 0) {
-                    intRemainder = intRemainder - 2**i;
-                    strBinary = strBinary + "1";
-                } else {
-                    strBinary = strBinary + "0";
+                body {
+                    background-color: burlywood;
+                    font-family: sans-serif;            
+                    font-size: 9vw;
+                    margin: 2vw 5vw;
                 }
 
-            if (strDirection == "d2b") {
-                // Display denary value
-                document.getElementById('idDenary').innerHTML = intDenary;
-                document.getElementById('idBinary').innerHTML = "?";
-            } else {
-                // Display binary value
-                document.getElementById('idBinary').innerHTML = strBinary;
-                document.getElementById('idDenary').innerHTML = "?";
-            }
+                h1 {
+                    font-size: 12vw;
+                }
+
+                p {
+                    font-size: 9vw;
+                    margin: 3vw 0vw;
+                    font-family: Consolas, monospace;
+                }
+
+                /* Class - Clickable 'button' */
+                .button {
+                    display: inline-block;
+                    border: 0.3vw solid black;
+                    border-radius: 6vw;
+                    padding: 3vw;
+                }
+
+                .button:hover {
+                    background-color: lightblue;
+                }
+
+                .button:active {
+                    background-color: blue;
+                }
+
+
+                /* Large devices (laptops/desktops, 992px and up) */
+                @media only screen and (min-width: 992px) {
+
+                    body {           
+                        font-size: 3vw;
+                    }
+
+                    h1 {
+                        font-size: 4vw;
+                    }
+
+                    p {
+                        font-size: 3vw;
+                        margin: 1vw 0vw;
+                    }
+
+                    /* Class - Clickable 'button' */
+                    .button {
+                        border: 0.1vw solid black;
+                        border-radius: 2vw;
+                        padding: 1vw;
+                    }
+
+                }
+
+            </style>
+
+        </head>
+
+        <body onload="fnPickValues()">
             
-        }
+            <h1 id="idHeading">Binary to Denary</h1>
+
+            <p><span id="textOne">Binary: </span><span id="answerOne"></span></p>
+
+            <p><span id="textTwo">Denary: </span><span id="answerTwo"></span></p>
+
+            <p class="button" id="idSwitch" onclick="fnDirection()">Switch</p>
+
+            <p class="button" id="idQuestion">Show</p>
+
+            <script>
                 
-            // Set button
-            document.getElementById('idQuestion').innerHTML = "Show";
-            document.getElementById('idQuestion').removeEventListener('click', fnPickValues);
-            document.getElementById('idQuestion').addEventListener('click', fnShowAnswer);
+                // Global variables
+                let strDirection = 'b2d';
+                let strBinary = '';
+                let intDenary = 0;
 
-        }
+                function fnPickValues() {
 
-        
-        function fnShowAnswer() {
+                    // Local variables
+                    let strOne = '';
+                    let strTwo = '';
 
-            if (strDirection == "d2b") {
-                // Display strBinary value
-                document.getElementById('idBinary').innerHTML = strBinary;
-            } else {
-                // Display intDenary value
-                document.getElementById('idDenary').innerHTML = intDenary;
-            }
+                    // Reset strBinary value
+                    strBinary = '';
 
-            // Set button
-            document.getElementById('idQuestion').innerHTML = "New";
-            document.getElementById('idQuestion').removeEventListener('click', fnShowAnswer);
-            document.getElementById('idQuestion').addEventListener('click', fnPickValues);
+                    // Pick a denary value: 0 - 255
+                    intDenary = parseInt(Math.random() * 256);
 
-            
-        }
-        
+                    // Calculate binary value
+                    let intRemainder = intDenary;
 
-        function fnDirection() {
-            
-            if (strDirection == "d2b") {
-                strDirection = "b2d";
-                document.getElementById('idHeading').innerHTML = "Binary to Denary";
-            } else {
-                strDirection = "d2b";
-                document.getElementById('idHeading').innerHTML = "Denary to Binary";
-            }
+                    for (let i = 7; i > -1; i--) {
 
-            // Pick new values
-            fnPickValues();
-            
-        }
-        
-    </script>
-</body>
+                        if ((intRemainder - 2**i) >= 0) {
+                            intRemainder = intRemainder - 2**i;
+                            strBinary = strBinary + '1';
+                        } else {
+                            strBinary = strBinary + '0';
+                        }
 
-</html>
+                    if (strDirection == 'b2d') {
+                        // Display binary value
+                        strOne = strBinary;
+                        strTwo = '?';
+                    } else {
+                        // Display denary value
+                        strOne = String(intDenary);
+                        strTwo = '?';
+                    }
+
+                    // Display values
+                    document.getElementById('answerOne').innerHTML = strOne;
+                    document.getElementById('answerTwo').innerHTML = strTwo;
+                }
+
+                    // Set button
+                    document.getElementById('idQuestion').innerHTML = 'Show';
+                    document.getElementById('idQuestion').removeEventListener('click', fnPickValues);
+                    document.getElementById('idQuestion').addEventListener('click', fnShowAnswer);
+
+                }
+
+
+                function fnShowAnswer() {
+
+                    // Local variables
+                    let strOne = '';
+                    let strTwo = '';
+
+                    if (strDirection == 'b2d') {
+                        // Set binary value
+                        strOne = strBinary;
+                        strTwo = String(intDenary);
+                    } else {
+                        // Set denary value
+                        strOne = String(intDenary);
+                        strTwo = strBinary;
+                    }
+
+                    // Display answer text
+                    document.getElementById('answerOne').innerHTML = strOne;
+                    document.getElementById('answerTwo').innerHTML = strTwo;
+
+                    // Set button
+                    document.getElementById('idQuestion').innerHTML = 'New';
+                    document.getElementById('idQuestion').removeEventListener('click', fnShowAnswer);
+                    document.getElementById('idQuestion').addEventListener('click', fnPickValues);
+
+                }
+
+
+                function fnDirection() {
+
+                    // Local variables
+                    let strHeading = '';
+                    let strOne = '';
+                    let strTwo = '';
+                    
+                    if (strDirection == 'b2d') {
+                        strDirection = 'd2b';
+                        strHeading = 'Denary to Binary';
+                        strOne = 'Denary: ';
+                        strTwo = 'Binary: ';
+                    } else {
+                        strDirection = 'b2d';
+                        strHeading = 'Binary to Denary';
+                        strOne = 'Binary: ';
+                        strTwo = 'Denary: ';
+                    }
+
+                    // Display text
+                    document.getElementById('idHeading').innerHTML = strHeading;
+                    document.getElementById('textOne').innerHTML = strOne;
+                    document.getElementById('textTwo').innerHTML = strTwo;
+
+                    // Pick new values
+                    fnPickValues();
+
+                }
+
+            </script>
+        </body>
+
+        </html>
