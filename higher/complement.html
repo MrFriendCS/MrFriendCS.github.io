@@ -2,111 +2,117 @@
 <html lang="en-gb">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="shortcut icon" href="higher.png">
-    
-	<title>Two&#39;s Complement</title>
-        
-	<style>
-	
-		/* For mobile phones: */
-		
-		body {
-			background-color: burlywood;
-			font-family: sans-serif;            
-			font-size: 9vw;
-			margin: 2vw 5vw;
-		}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		h1 {
-			font-size: 12vw;
-		}
+    <link rel="shortcut icon" href="higher.png">
 
-		p {
-			font-size: 8vw;
-			margin: 3vw 0vw;
+    <title>Two&#39;s Complement</title>
+
+    <style>
+
+        /* For mobile phones: */
+
+        body {
+            background-color: burlywood;
+            font-family: sans-serif;            
+            font-size: 9vw;
+            margin: 2vw 5vw;
+        }
+
+        h1 {
+            font-size: 12vw;
+        }
+
+        p {
+            font-size: 8vw;
+            margin: 3vw 0vw;
             font-family: Consolas, monospace;
-		}
+        }
 
-		/* Class - Clickable 'button' */
-		.button {
+        /* Class - Clickable 'button' */
+        .button {
             font-family: sans-serif;  
-			display: inline-block;
-			border: 0.3vw solid black;
-			border-radius: 6vw;
-			padding: 3vw;
-		}
+            display: inline-block;
+            border: 0.3vw solid black;
+            border-radius: 6vw;
+            padding: 3vw;
+        }
 
-		.button:hover {
-			background-color: lightblue;
-		}
+        .button:hover {
+            background-color: lightblue;
+        }
 
-		.button:active {
-			background-color: blue;
-		}
+        .button:active {
+            background-color: blue;
+        }
 
-	
-		/* Large devices (laptops/desktops, 992px and up) */
-		@media only screen and (min-width: 992px) {
-		
-			body {           
-				font-size: 3vw;
-			}
 
-			h1 {
-				font-size: 4vw;
-			}
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
 
-			p {
-				font-size: 3vw;
-				margin: 1vw 0vw;
-			}
+            body {           
+                font-size: 3vw;
+            }
 
-			/* Class - Clickable 'button' */
-			.button {
-				border: 0.1vw solid black;
-				border-radius: 2vw;
-				padding: 1vw;
-			}
+            h1 {
+                font-size: 4vw;
+            }
 
-		}
-        
-	</style>
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw;
+            }
+
+            /* Class - Clickable 'button' */
+            .button {
+                border: 0.1vw solid black;
+                border-radius: 2vw;
+                padding: 1vw;
+            }
+
+        }
+
+    </style>
 
 </head>
 
 <body onload="fnPickValues()">
+    
     <h1 id="idHeading">Two&#39;s Complement</h1>
 
-    <p>Value: &nbsp;&nbsp;<span id="idValue"></span></p>
+    <p><span id="textOne">Denary: &nbsp;</span><span id="answerOne"></span></p>
 
-    <p>Binary+: <span id="idBinary"></span></p>
+    <p><span id="textTwo">Binary+: </span><span id="answerTwo"></span></p>
 
-    <p>Inverse: <span id="idInverse"></span></p>
+    <p><span id="textThree">Inverse: </span><span id="answerThree"></span></p>
 
-    <p>Add: &nbsp;&nbsp;&nbsp;&nbsp;<span id="idAdd"></span></p>
+    <p><span id="textFour">Add: &nbsp;&nbsp;&nbsp;&nbsp;</span><span id="answerFour"></span></p>
 
-    <p>Answer: &nbsp;<span id="idAnswer"></span></p>
+    <p><span id="textFive">Binary: &nbsp;</span><span id="answerFive"></span></p>
+
+    <p class="button" id="idSwitch" onclick="fnDirection()">Switch</p>
 
     <p class="button" id="idQuestion">Show</p>
-    
+
     <script>
-        
+
         // Global variables
+        let strDirection = 'd2b';
         let intNegative = 0;
-        let strInverse = "";
+        let strInverseB = "";
+        let strInverseC = "";
         let strBinary = "";
+        let intDenary = 0;
 
         function fnPickValues() {
 
             // Local variables
-            let intDenary = 0;
             let intRemainder = 0;
-            let intComplement = 0
-   
-            // Pick a value value: 1 - 128
+            let intComplement = 0;
+            let strOne = '';
+
+            // Pick a value value: 2 - 128 (Even)
             intDenary = (parseInt(Math.random() * 64) + 1) * 2;
 
             // Negative value
@@ -114,19 +120,27 @@
 
             strBinary = fnD2B(intDenary);
 
-            strInverse = fnInverse(strBinary);
+            strInverseB = fnInverse(strBinary);
 
-            intComplement = fnB2D(strInverse) + 1;
+            intComplement = fnB2D(strInverseB) + 1;
 
             strComplement = fnD2B(intComplement);
-         
-            // Display value
-            document.getElementById('idValue').innerHTML = intNegative;
-            document.getElementById('idBinary').innerHTML = "?";
-            document.getElementById('idInverse').innerHTML = "?";
-            document.getElementById('idAdd').innerHTML = "?";
-            document.getElementById('idAnswer').innerHTML = "?";
+
+            strInverseC = fnInverse(strComplement);
+
+            // Display values
+            if (strDirection == 'd2b') {
+                strOne = String(intNegative);
+            } else {
+                strOne = strComplement;
+            }
             
+            document.getElementById('answerOne').innerHTML = strOne;
+            document.getElementById('answerTwo').innerHTML = "?";
+            document.getElementById('answerThree').innerHTML = "?";
+            document.getElementById('answerFour').innerHTML = "?";
+            document.getElementById('answerFive').innerHTML = "?";
+
             // Set button
             document.getElementById('idQuestion').innerHTML = "Show";
             document.getElementById('idQuestion').removeEventListener('click', fnPickValues);
@@ -134,14 +148,32 @@
 
         }
 
-        
+
         function fnShowAnswer() {
 
+            // Local variables
+            let strTwo = '';
+            let strThree = '';
+            let strFour = '';
+            let strFive = '';
+
             // Display Answer
-            document.getElementById('idBinary').innerHTML = strBinary;
-            document.getElementById('idInverse').innerHTML = strInverse;
-            document.getElementById('idAdd').innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1";
-            document.getElementById('idAnswer').innerHTML = strComplement;
+            if (strDirection == 'd2b') {
+                strTwo = strBinary;
+                strThree = strInverseB;
+                strFour = String.fromCharCode(160, 160, 160, 160,  160, 160, 160) + '1';
+                strFive = strComplement;
+            } else {
+                strTwo = strInverseC;
+                strThree = String.fromCharCode(160, 160, 160, 160,  160, 160, 160) + '1';
+                strFour = strBinary;
+                strFive = String(intNegative);
+            }
+
+            document.getElementById('answerTwo').innerHTML = strTwo;
+            document.getElementById('answerThree').innerHTML = strThree;
+            document.getElementById('answerFour').innerHTML = strFour
+            document.getElementById('answerFive').innerHTML = strFive;
 
             // Set button
             document.getElementById('idQuestion').innerHTML = "New";
@@ -166,7 +198,7 @@
             }
 
             return strBinary;
-            
+
         }
 
         function fnB2D(strBinary) {
@@ -189,21 +221,59 @@
         function fnInverse(strBinary) {
 
             // Local variable
-            let strInverse = "";
+            let strInverseB = "";
 
             for (let i = 0; i < strBinary.length; i++) {
 
                 if (strBinary.charAt(i) == "1") {
-                    strInverse = strInverse + "0";                  
+                    strInverseB = strInverseB + "0";                  
                 } else {
-                    strInverse = strInverse + "1";
+                    strInverseB = strInverseB + "1";
                 }
             }
 
-            return strInverse;
+            return strInverseB;
 
         }
-                
+        
+
+        function fnDirection() {
+
+            // Local variables
+            let strOne = '';
+            let strTwo = '';
+            let strThree = '';
+            let strFour = '';
+            let strFive = '';
+
+            if (strDirection == 'b2d') {
+                strDirection = 'd2b';
+                strOne = 'Denary: ' + String.fromCharCode(160);
+                strTwo = 'Binary+: ';
+                strThree = 'Inverse: ';
+                strFour = 'Add: ' + String.fromCharCode(160, 160, 160, 160);
+                strFive = 'Binary: '+ String.fromCharCode(160);
+            } else {
+                strDirection = 'b2d';
+                strOne = 'Binary-: ';
+                strTwo = 'Inverse: ';
+                strThree = 'Add: ' + String.fromCharCode(160, 160, 160, 160);
+                strFour = 'Binary+: ';
+                strFive = 'Denary: ' + String.fromCharCode(160);
+            }
+
+            // Display text
+            document.getElementById('textOne').innerHTML = strOne;
+            document.getElementById('textTwo').innerHTML = strTwo;
+            document.getElementById('textThree').innerHTML = strThree;
+            document.getElementById('textFour').innerHTML = strFour;
+            document.getElementById('textFive').innerHTML = strFive;
+
+            // Pick new values
+            fnPickValues();
+
+        }
+
     </script>
 </body>
 
