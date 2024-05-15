@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="n5.png">
+
+    <title>ASCII</title>
+
+    <style>
+
+        /* For mobile phones: */
+
+        body {
+            background-color: burlywood;
+            font-family: sans-serif;            
+            font-size: 9vw;
+            margin: 2vw 5vw;
+        }
+
+        h1 {
+            font-size: 12vw;
+        }
+
+        p {
+            font-size: 7vw;
+            margin: 3vw 0vw;
+            font-family: Consolas, monospace;
+        }
+
+        /* Class - Clickable 'button' */
+        .button {
+            font-family: sans-serif;  
+            display: inline-block;
+            border: 0.3vw solid black;
+            border-radius: 6vw;
+            padding: 3vw;
+        }
+
+        .button:hover {
+            background-color: lightblue;
+        }
+
+        .button:active {
+            background-color: blue;
+        }
+
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+
+            body {           
+                font-size: 3vw;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw;
+            }
+
+            /* Class - Clickable 'button' */
+            .button {
+                border: 0.1vw solid black;
+                border-radius: 2vw;
+                padding: 1vw;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="idHeading">ASCII</h1>
+
+    <p>ASCII:&nbsp;&nbsp;<span id="idAscii">A</span></p>
+
+    <p>Denary:&nbsp;<span id="idDenary">65</span></p>
+
+    <p>Binary:
+        <span id="7" onclick="fnBinary(this)">0</span>
+        <span id="6" onclick="fnBinary(this)">1</span>
+        <span id="5" onclick="fnBinary(this)">0</span>
+        <span id="4" onclick="fnBinary(this)">0</span>
+        <span id="3" onclick="fnBinary(this)">0</span>
+        <span id="2" onclick="fnBinary(this)">0</span>
+        <span id="1" onclick="fnBinary(this)">0</span>
+        <span id="0" onclick="fnBinary(this)">1</span>
+    </p>
+
+    <script>
+
+        // Global variables
+        let intDenary = 65;
+
+        function fnBinary(element) {
+
+            // Local variables
+            let intChange = 0;
+            let index = parseInt(element.id);
+            let value = parseInt(element.innerHTML);
+
+            // Toggle binary value
+            if (value == 0) {
+                element.innerHTML = 1;
+                change = 2 ** index;
+            } else {
+                element.innerHTML = 0;
+                change = -(2 ** index);
+            }
+
+            // Update binary value
+            intDenary = intDenary + change;
+            document.getElementById('idDenary').innerHTML = intDenary;
+            document.getElementById('idAscii').innerHTML = String.fromCharCode(intDenary);
+
+        }
+
+    </script>
+</body>
+
+</html>
