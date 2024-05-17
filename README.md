@@ -1,3 +1,11 @@
-# Computing Science
+# Advanced Higher Computing Science
+{:.no_toc}
 
-Some notes to support N5 and Higher Computing Science.
+[Home](index.md)
+
+___Work in Progress___
+
+## Software Design and Development
+{:.no_toc}
+
+All the code examples use Python.
