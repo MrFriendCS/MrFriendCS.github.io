@@ -14,6 +14,7 @@ include:
   - H-CS-DDD.md
   - H-CS-SDD.md
   
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
+theme: just-the-docs
 
 markdown: kramdown
