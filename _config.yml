@@ -1,10 +1,9 @@
 title: Computing Science
 description: Focusing on SQA's qualifications.
 
-# theme: jekyll-theme-minimal
-theme: just-the-docs
+theme: jekyll-theme-minimal
 
-url: https://mrfriendcs.github.io/YOUR-SITE-NAME
+url: https://mrfriendcs.github.io/
 
 plugins:
   - jekyll-relative-links
