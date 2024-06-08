@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+	<title>Addition</title>
+
+	<style>/* For all screens */
+
+		body {
+			background-color: burlywood;
+			font-family: monospace;
+			font-size: 9vw;
+			margin: 2vw 5vw;
+		}
+
+		h1 {
+			font-family: sans-serif;
+			font-size: 12vw;
+		}
+
+		p {
+			font-size: 6vw;
+			margin: 1vw 0vw;
+		}
+
+        	div {
+			text-align:right;
+			letter-spacing: 2vw;
+		}
+
+
+        /* Class */
+
+        .button {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 10vw;
+            margin-top: 4vw;
+            border: 0.1vw solid black;
+            border-radius: 2vw;
+            padding: 0.75vw;
+        }
+
+        .button:hover {
+            background-color: pink;
+        }
+
+        .button:active {
+            background-color: red;
+        }
+
+        .even {
+            color: red;
+        }
+
+        .odd {
+            color: green;
+        }
+
+
+        /* ID */
+        #divQuestion {
+          display: inline-block;
+        }
+
+        #divValues {
+          display: inline-block;
+          border-top: 0.2vw solid black;
+          border-bottom: 0.2vw solid black;
+          float: left;
+        }
+
+        #divCalcs {
+          border-top: 0.2vw solid burlywood;
+          letter-spacing: 0vw;
+          display: inline-block;
+          text-align: left;
+          padding-left: 2vw;
+          float: left;
+        }
+
+        #divAnswer {
+          clear: both;
+          text-align: left;
+          text-decoration: underline overline;
+        }
+
+        #divCarry {
+          text-align: left;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+
+            body {
+                font-size: 3vw;
+                margin: 2vw 5vw;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw;
+            }
+
+            div {
+                 letter-spacing: 1vw;
+            }
+
+
+            /* Class */
+
+            .button {
+                font-size: 3vw;
+                margin-top: 1vw;
+            }
+
+
+            /* ID */
+
+        }
+	</style>
+
+</head>
+
+<body>
+    <h1>Addition</h1>
+
+    <div id='divQuestion'>
+        &nbsp;9876<br>
+        +&nbsp;5432
+    </div>
+
+
+    </div>
+
+    <div id='divAnswer'>
+        &nbsp;1<span class="even">5</span><span class="odd">3</span><span class="even">0</span>8
+    </div>
+
+    <div id='divCarry'>
+        &nbsp;<span class="even">1</span><span class="odd">1</span><span class="even">1</span>&nbsp;&nbsp;&nbsp;
+    </div>
+
+    <p class='button' onClick='newQuestion()'>New</p>
+    <p class='button' onClick='showAnswer()'>Show</p>
+
+	<script>
+
+        // Global variables
+        let value1 = 9876;
+        let value2 = 5432;
+
+        function newQuestion() {
+
+            // Local variables
+            let txtQuestion = '';
+            let txtAnswer = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+            let txtCarry = '&nbsp;';
+
+            // Pick new values
+            value1 = parseInt(Math.random() * 8999) + 1000;
+            value2 = parseInt(Math.random() * 8999) + 1000;
+
+            // Create values text
+            txtQuestion = '&nbsp;' + String(value1) + '<br>+&nbsp;' + String(value2);
+
+            // Update question
+            document.getElementById('divQuestion').innerHTML = txtQuestion;
+            document.getElementById('divAnswer').innerHTML = txtAnswer;
+            document.getElementById('divCarry').innerHTML = txtCarry;
+        }
+
+        function showAnswer() {
+
+            // Local variables
+            let answer = value1 + value2;
+            let sum = 0;
+            let txtValue1 = String(value1);
+            let txtValue2 = String(value2);
+            let v1 = '';
+            let v2 = '';
+            let txtAnswer = '';
+            let txtCarry = '&nbsp;';
+
+            let startTag = '';
+            let endTag = '</span>';
+
+            let txt1000sV1 = String(value1).substring(0,1);
+            let txt100sV1 = String(value1).substring(1,2);
+            let txt10sV1 = String(value1).substring(2,3);
+            let txt1sV1 = String(value1).substring(3,4);
+
+
+
+            // Loop 1s to 1000s
+            for (let i = 3; i >= 0; i--) {
+                v1 = parseInt(txtValue1.substring(i, i+1));
+                v2 = parseInt(txtValue2.substring(i, i+1));
+
+                if (i % 2 == 0) {
+                    startTag = '<span class="even">';
+                }
+                else {
+                    startTag = '<span class="odd">';
+                }
+
+                if (txtCarry.substring(18,19) == '1' || txtCarry.substring(19,20) == '1'){
+                    carry = 1;
+                }
+                else {
+                    carry = 0;
+                }
+
+                sum = v1 + v2 + carry;
+
+                if (sum >= 10) {
+                    txtAnswer = startTag + String(sum).substring(1,2) + endTag + txtAnswer;
+                    txtCarry = startTag + '1' + endTag + txtCarry;
+                }
+                else {
+                    txtAnswer = sum + txtAnswer;
+                    txtCarry = '&nbsp;' + txtCarry;
+                }
+            }
+
+            if (txtCarry.substring(18,19) == '1' || txtCarry.substring(19,20) == '1'){
+                txtAnswer = '1' + txtAnswer;;
+            }
+
+
+            // Create answer text
+            if (answer >= 10000) {
+                txtAnswer = '&nbsp;' + txtAnswer;
+            }
+            else {
+                txtAnswer = '&nbsp;&nbsp;' + txtAnswer;
+            }
+
+            txtCarry = '&nbsp;' + txtCarry;
+
+            // Update question
+            document.getElementById('divAnswer').innerHTML = txtAnswer;
+            document.getElementById('divCarry').innerHTML = txtCarry;
+        }
+
+	</script>
+</body>
+
+</html>
