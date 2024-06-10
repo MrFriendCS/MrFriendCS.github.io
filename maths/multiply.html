@@ -2,29 +2,29 @@
 <html lang='en-gb'>
 
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-	<title>Multiply</title>
+    <title>Multiply</title>
 
-	<style>/* For all screens */
+    <style>/* For all screens */
 
-		body {
-			background-color: burlywood;
-			font-family: monospace;
-			font-size: 9vw;
-			margin: 2vw 5vw;
-		}
+        body {
+            background-color: burlywood;
+            font-family: monospace;
+            font-size: 9vw;
+            margin: 2vw 5vw;
+        }
 
-		h1 {
-			font-family: sans-serif;
-			font-size: 12vw;
-		}
+        h1 {
+            font-family: sans-serif;
+            font-size: 12vw;
+        }
 
-		p {
-			font-size: 6vw;
-			margin: 1vw 0vw;
-		}
+        p {
+            font-size: 6vw;
+            margin: 1vw 0vw;
+        }
 
         /* Class */
 
@@ -135,7 +135,7 @@
             }
 
         }
-	</style>
+    </style>
 
 </head>
 
@@ -164,11 +164,12 @@
         <p class='button' onClick='showAnswer()'>Show</p>
     </div>
 
-	<script>
+    <script>
 
         // Global variables
         let value1 = 7;
         let value2 = 8;
+        let answer = value1 * value2
 
         let tables = [2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -197,14 +198,20 @@
 
             // Local variables
             let txtProblem = '';
+            let oldAnswer = answer;
 
             // Pick new values
 
-            // 2 to 10
-            value1 = parseInt(Math.random() * 9) + 2;
+            while (answer == oldAnswer) {
+                // 2 to 10
+                value1 = parseInt(Math.random() * 9) + 2;
+    
+                // Selected tables
+                value2 = tables[parseInt(Math.random() * tables.length)];
 
-            // Selected tables
-            value2 = tables[parseInt(Math.random() * tables.length)];
+                // Calculate answer
+                answer = value1 * value2;
+            }
 
             // Create problem text
             txtProblem = problemText();
@@ -218,7 +225,7 @@
 
             // Local variables
             let answer = value1 * value2;
-            let txtProblem = String();
+            let txtProblem = '';
 
             // Create problem text
             txtProblem = problemText();
@@ -243,7 +250,7 @@
 
         }
 
-	</script>
+    </script>
 </body>
 
 </html>
