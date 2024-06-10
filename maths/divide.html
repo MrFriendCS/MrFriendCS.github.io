@@ -198,10 +198,10 @@
 
             // Local variables
             let txtProblem = '';
-            let newMultiple = multiple;
+            let oldMultiple = multiple;
 
             // Pick new values
-            while (newMultiple == multiple) {
+            while (multiple == oldMultiple) {
 
                 // Selected tables
                 value1 = tables[parseInt(Math.random() * tables.length)];
