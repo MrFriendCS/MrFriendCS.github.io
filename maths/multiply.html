@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+	<title>Multiply</title>
+
+	<style>/* For all screens */
+
+		body {
+			background-color: burlywood;
+			font-family: monospace;
+			font-size: 9vw;
+			margin: 2vw 5vw;
+		}
+
+		h1 {
+			font-family: sans-serif;
+			font-size: 12vw;
+		}
+
+		p {
+			font-size: 6vw;
+			margin: 1vw 0vw;
+		}
+
+        /* Class */
+
+        .button {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 10vw;
+            margin-top: 4vw;
+            border: 0.1vw solid black;
+            border-radius: 4vw;
+            padding: 0.75vw;
+        }
+
+        .button:hover {
+            background-color: pink;
+        }
+
+        .button:active {
+            background-color: red;
+        }
+
+        .on {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 8vw;
+            margin-top: 1vw;
+            border: 0.2vw inset black;
+            border-radius: 2vw;
+            padding: 0.2vw;
+            background-color: red;
+        }
+
+        .off {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 8vw;
+            margin-top: 1vw;
+            border: 0.2vw solid black;
+            padding: 0.2vw;
+            background-color: green;
+        }
+
+        .even {
+            color: red;
+        }
+
+        .odd {
+            color: green;
+        }
+
+        /* ID */
+
+        #divTables {
+            letter-spacing: 0vw;
+        }
+
+        #divProblem {
+            display: inline-block;
+            margin-top: 20vw;
+            margin-bottom: 20vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+
+            body {
+                font-size: 3vw;
+                margin: 2vw 5vw;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw;
+            }
+
+            /* Class */
+
+            .button {
+                font-size: 3vw;
+                margin-top: 1vw;
+                border-radius: 2vw;
+            }
+
+            .on {
+                font-size: 2vw;
+                margin-top: 1vw;
+                border: 0.2vw inset black;
+                padding: 0.2vw;
+            }
+
+            .off {
+                font-size: 2vw;
+                margin-top: 1vw;
+                border: 0.2vw solid black;
+                padding: 0.2vw;
+            }
+
+
+            /* ID */
+
+            #divProblem {
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
+
+        }
+	</style>
+
+</head>
+
+<body>
+    <h1>Multiply</h1>
+
+    <div id="divTables">
+        <p class="on" onClick='toggle(this)'>2</p>
+        <p class="on" onClick='toggle(this)'>3</p>
+        <p class="on" onClick='toggle(this)'>4</p>
+        <p class="on" onClick='toggle(this)'>5</p>
+        <p class="on" onClick='toggle(this)'>6</p>
+        <p class="on" onClick='toggle(this)'>7</p>
+        <p class="on" onClick='toggle(this)'>8</p>
+        <p class="on" onClick='toggle(this)'>9</p>
+    </div>
+
+    <div id='divProblem'>
+        &nbsp;7&nbsp;&times;&nbsp;8&nbsp;=&nbsp;56
+    </div>
+
+    </div>
+
+    <div id="divButtons">
+        <p class='button' onClick='newQuestion()'>New</p>
+        <p class='button' onClick='showAnswer()'>Show</p>
+    </div>
+
+	<script>
+
+        // Global variables
+        let value1 = 7;
+        let value2 = 8;
+
+        let tables = [2, 3, 4, 5, 6, 7, 8, 9];
+
+        function toggle(element) {
+
+            // Local variable
+            let table = parseInt(element.innerHTML);
+            let index = 0;
+
+            if (element.classList == 'on') {
+                element.classList.remove('on');
+                element.classList.add('off');
+
+                // Remove value from array
+                index = tables.indexOf(table);
+                tables.splice(index, 1);
+            }
+            else {
+                element.classList.remove('off');
+                element.classList.add('on');
+                tables.push(table);
+            }
+        }
+
+        function newQuestion() {
+
+            // Local variables
+            let txtProblem = '';
+
+            // Pick new values
+
+            // 2 to 10
+            value1 = parseInt(Math.random() * 9) + 2;
+
+            // Selected tables
+            value2 = tables[parseInt(Math.random() * tables.length)];
+
+            // Create problem text
+            txtProblem = problemText();
+
+            // Update problem
+            document.getElementById('divProblem').innerHTML = txtProblem;
+
+        }
+
+        function showAnswer() {
+
+            // Local variables
+            let answer = value1 * value2;
+            let txtProblem = String();
+
+            // Create problem text
+            txtProblem = problemText();
+            txtProblem = txtProblem + String(answer);
+
+            // Update problem
+            document.getElementById('divProblem').innerHTML = txtProblem;
+
+        }
+
+        function problemText() {
+
+            // Local variable
+            let txtProblem = String(value1) + '&nbsp;&times;&nbsp;' + String(value2) + '&nbsp;=&nbsp;';
+
+            if (value1 != 10) {
+                txtProblem = '&nbsp;' + txtProblem;
+            }
+
+            // Return text
+            return txtProblem;
+
+        }
+
+	</script>
+</body>
+
+</html>
