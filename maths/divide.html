@@ -143,7 +143,7 @@
     <h1>Divide</h1>
 
     <div id="divTables">
-        <p class="on" onClick='toggle(this)'>2</p>
+        <p id = "2" class="on" onClick='toggle(this)'>2</p>
         <p class="on" onClick='toggle(this)'>3</p>
         <p class="on" onClick='toggle(this)'>4</p>
         <p class="on" onClick='toggle(this)'>5</p>
@@ -192,16 +192,22 @@
                 element.classList.add('on');
                 tables.push(table);
             }
+
+            if (tables.length == 0) {
+                document.getElementById('2').classList.remove('off');
+                document.getElementById('2').classList.add('on');
+                tables.push(2);
+            }
         }
 
         function newQuestion() {
 
             // Local variables
             let txtProblem = '';
-            let oldMultiple = multiple;
+            let newMultiple = multiple;
 
             // Pick new values
-            while (multiple == oldMultiple) {
+            while (newMultiple == multiple) {
 
                 // Selected tables
                 value1 = tables[parseInt(Math.random() * tables.length)];
