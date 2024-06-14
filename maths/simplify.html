@@ -143,22 +143,18 @@
         function newQuestion() {
 
             // Local variables
-            let oldNumerator = numerator;
+            let oldDenominator = denominator;
             let multiplier = 0;
-            let values = [1, 2, 3, 5, 7, 11, 13, 17, 19, 23];
+            let values = [2, 3, 5, 7, 11, 13, 17, 19, 23];
 
             // Pick new values
-            while (numerator == oldNumerator) {
-                // Select numerator
-                numerator = values[parseInt(Math.random() * (values.length-1))];
-            }
-
-            // Select denominator
-            denominator = values[parseInt(Math.random() * values.length)];
-
-            while (denominator <= numerator) {
+            while (denominator == oldDenominator) {
+                // Select denominator
                 denominator = values[parseInt(Math.random() * values.length)];
             }
+
+            // Select numerator
+            numerator = parseInt(Math.random() * (denominator - 1) + 1);
 
             // Select multiplier
             if (denominator >= 13) {
