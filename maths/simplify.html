@@ -112,16 +112,17 @@
             <mrow>
                 <mtd>
                     <mfrac>
-                        <mi>9</mi>
-                        <mi>12</mi>
+                        <mi id="numer1">9</mi>
+                        <mi id="denom1">12</mi>
                     </mfrac>
                 </mtd>
                 <mtd>=</mtd>
                 <mtd>
                     <mfrac>
-                        <mi>3</mi>
-                        <mi>4</mi>
+                        <mi id="numer2">3</mi>
+                        <mi id="denom2">4</mi>
                     </mfrac>
+                </mtd>
             </mrow>
         </math>
     </div>
@@ -138,23 +139,19 @@
         // Global variables
         let numerator = 3;
         let denominator = 4;
-        let multiplier = 3;
-
-        let values = [1, 2, 3, 5, 7, 11];
-        let values2 = [13, 17, 19, 23, 27, 29];
 
         function newQuestion() {
 
             // Local variables
-            let txtProblem = '';
             let oldNumerator = numerator;
+            let multiplier = 0;
+            let values = [1, 2, 3, 5, 7, 11, 13, 17, 19, 23];
 
             // Pick new values
             while (numerator == oldNumerator) {
                 // Select numerator
                 numerator = values[parseInt(Math.random() * (values.length-1))];
             }
-
 
             // Select denominator
             denominator = values[parseInt(Math.random() * values.length)];
@@ -164,55 +161,26 @@
             }
 
             // Select multiplier
-            multiplier = parseInt(Math.random() * 9) + 2;
-
-            // Start problem text
-            txtProblem = problemText();
-
-            // Finish problem text
-            txtProblem += '</mrow></math>';
+            if (denominator >= 13) {
+                multiplier = parseInt(Math.random() * 5) + 2;
+            }
+            else {
+                multiplier = parseInt(Math.random() * 10) + 2;
+            }
 
             // Update problem
-            document.getElementById('divProblem').innerHTML = txtProblem;
+            document.getElementById('numer1').innerHTML = numerator * multiplier;
+            document.getElementById('denom1').innerHTML = denominator * multiplier;
+            document.getElementById('numer2').innerHTML = '';
+            document.getElementById('denom2').innerHTML = '';
 
         }
 
         function showAnswer() {
 
-            // Local variables
-            let txtProblem = '';
-
-            // Start problem text
-            txtProblem = problemText();
-
-            // Finish problem text
-            txtProblem += '<mtd><mfrac><mi>';
-            txtProblem += String(numerator);
-            txtProblem += '</mi><mi>';
-            txtProblem += String(denominator);
-            txtProblem += '</mi></mfrac></mrow></math>';
-
             // Update problem
-            document.getElementById('divProblem').innerHTML = txtProblem;
-
-        }
-
-        function problemText() {
-
-            // Local variable
-            let txtProblem = '<math><mrow><mtd><mfrac><mi>';
-
-            txtProblem += String(numerator*multiplier);
-            txtProblem += '</mi><mi>';
-            txtProblem += String(denominator*multiplier)
-            txtProblem += '</mi></mfrac></mtd><mtd>=</mtd>';
-
-            //if (value1 != 10) {
-            //   txtProblem = '&nbsp;' + txtProblem;
-            //}
-
-            // Return text
-            return txtProblem;
+            document.getElementById('numer2').innerHTML = numerator;
+            document.getElementById('denom2').innerHTML = denominator;
 
         }
 
