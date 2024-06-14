@@ -143,6 +143,7 @@
         function newQuestion() {
 
             // Local variables
+            let oldNumerator = numerator;
             let oldDenominator = denominator;
             let multiplier = 0;
             let values = [2, 3, 5, 7, 11, 13, 17, 19, 23];
@@ -154,14 +155,16 @@
             }
 
             // Select numerator
-            numerator = parseInt(Math.random() * (denominator - 1) + 1);
+            if (numerator == oldNumerator) {
+                numerator = parseInt(Math.random() * (denominator - 1) + 1);
+            }
 
             // Select multiplier
             if (denominator >= 13) {
                 multiplier = parseInt(Math.random() * 5) + 2;
             }
             else {
-                multiplier = parseInt(Math.random() * 10) + 2;
+                multiplier = parseInt(Math.random() * 5) + 5;
             }
 
             // Update problem
