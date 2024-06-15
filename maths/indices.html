@@ -148,16 +148,19 @@
 
     <div id='divProblem'>
         <math>
+            <mi id="coeff1">3</mi>
             <msup>
                 <mi id="base1">a</mi>
                 <mn id="index1">2</mn>
             </msup>
             <mo>&times;</mo>
+            <mi id="coeff2">2</mi>
             <msup>
                 <mi id="base2">a</mi>
                 <mn id="index2">3</mn>
             </msup>
             <mo>=</mo>
+            <mi id="coeff3">6</mi>
             <msup>
                 <mi id="base3">a</mi>
                 <mn id="index3">5</mn>
@@ -176,26 +179,53 @@
 
         // Global variables
         let base = 'a';
+        let coeff1 = 3;
+        let coeff2 = 2;
         let index1 = 2;
-        let index2 = 3
-        let answer = index1 + index2
+        let index2 = 3;
+        let coeffAnswer = coeff1 * coeff2;
+        let indAnswer = index1 + index2;
 
 
         function newQuestion() {
 
             // Local variables
             let intBase = 0;
+            let oldCoeff = coeffAnswer;
             let oldBase = base;
-            let oldAnswer = answer;
+            let oldAnswer = indAnswer;
 
             // Pick new values
+            while (coeffAnswer == oldCoeff) {
+                if (parseInt(Math.random() * 9) > 3) {
+                    // 2 to 10
+                    coeff1 = parseInt(Math.random() * 9) + 2;
+                }
+                else {
+                    // -1 to -10
+                    coeff1 = 0 - (parseInt(Math.random() * 10) + 1);
+                }
+
+                if (parseInt(Math.random() * 9) > 3) {
+                    // 2 to 10
+                    coeff2 = parseInt(Math.random() * 9) + 2;
+                }
+                else {
+                    // -1 to -10
+                    coeff2 = 0 - (parseInt(Math.random() * 10) + 1);
+                }
+
+                // Calculate coefficient answer
+                coeffAnswer = coeff1 * coeff2;
+            }
+
             while (base == oldBase) {
                 // 0 to 10
                 intBase = parseInt(Math.random() * 10);
                 base = String.fromCharCode(97 + intBase);
             }
 
-            while (answer == oldAnswer) {
+            while (indAnswer == oldAnswer) {
 
                 if (parseInt(Math.random() * 9) > 3) {
                     // 2 to 10
@@ -215,17 +245,21 @@
                     index2 = 0 - (parseInt(Math.random() * 10) + 1);
                 }
 
-                // Calculate answer
-                answer = index1 + index2;
+                // Calculate indices answer
+                indAnswer = index1 + index2;
             }
 
             // Update problem
+            document.getElementById('coeff1').innerHTML = coeff1;
             document.getElementById('base1').innerHTML = base;
-            document.getElementById('base2').innerHTML = base;
-            document.getElementById('base3').innerHTML = '';
-
             document.getElementById('index1').innerHTML = index1;
+
+            document.getElementById('coeff2').innerHTML = coeff2;
+            document.getElementById('base2').innerHTML = base;
             document.getElementById('index2').innerHTML = index2;
+
+            document.getElementById('coeff3').innerHTML = '';
+            document.getElementById('base3').innerHTML = '';
             document.getElementById('index3').innerHTML = '';
 
         }
@@ -233,19 +267,30 @@
 
         function showAnswer() {
 
-            // Update problem
-            if (answer == 0) {
-                document.getElementById('base3').innerHTML = 1;
+            // Create answer
+
+            // Coefficients
+            if (coeffAnswer == 1) {
+                document.getElementById('coeff3').innerHTML = '';
+            }
+            else {
+                document.getElementById('coeff3').innerHTML = coeffAnswer;
+            }
+
+            // Base
+            if (indAnswer == 0) {
+                document.getElementById('base3').innerHTML = '';
             }
             else {
                 document.getElementById('base3').innerHTML = base;
             }
 
-            if (answer == 0 || answer == 1) {
+            // Index
+            if (indAnswer == 0 || indAnswer == 1) {
                 document.getElementById('index3').innerHTML = '';
             }
             else {
-                document.getElementById('index3').innerHTML = answer;
+                document.getElementById('index3').innerHTML = indAnswer;
             }
 
         }
