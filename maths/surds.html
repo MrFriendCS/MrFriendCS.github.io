@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Surds</title>
+
+    <style>/* For all screens */
+
+        body {
+            background-color: burlywood;
+            font-family: monospace;
+            font-size: 9vw;
+            margin: 2vw 5vw;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 12vw;
+        }
+
+        p {
+            font-size: 6vw;
+            margin: 1vw 0vw;
+        }
+
+        math {
+            font-size: 10vw;
+        }
+
+        /* Class */
+
+        .button {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 10vw;
+            margin-top: 4vw;
+            border: 0.1vw solid black;
+            border-radius: 4vw;
+            padding: 0.75vw;
+        }
+
+        .button:hover {
+            background-color: pink;
+        }
+
+        .button:active {
+            background-color: red;
+        }
+
+        .off {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 8vw;
+            margin-top: 1vw;
+            border: 0.2vw inset black;
+            border-radius: 2vw;
+            padding: 0.4vw 0.8vw;
+            background-color: red;
+        }
+
+        .on {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 8vw;
+            margin-top: 1vw;
+            border: 0.2vw solid black;
+            padding: 0.4vw 0.8vw;;
+            background-color: green;
+        }
+
+        .even {
+            color: red;
+        }
+
+        .odd {
+            color: green;
+        }
+
+        /* ID */
+
+        #divProblem {
+            display: inline-block;
+            margin-top: 20vw;
+            margin-bottom: 20vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+
+            body {
+                font-size: 3vw;
+                margin: 2vw 5vw;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw;
+            }
+
+            math {
+                font-size: 9vw;
+            }
+
+            /* Class */
+
+            .button {
+                font-size: 3vw;
+                margin-top: 1vw;
+                border-radius: 2vw;
+            }
+
+            .off {
+                font-size: 2vw;
+                margin-top: 1vw;
+                border: 0.2vw inset black;
+                padding: 0.2vw;
+            }
+
+            .on {
+                font-size: 2vw;
+                margin-top: 1vw;
+                border: 0.2vw solid black;
+                padding: 0.2vw;
+            }
+
+
+            /* ID */
+
+            #divProblem {
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Surds</h1>
+
+    <!--div id="divOptions">
+        <p class="off" onClick='toggle(this)'>Negatives</p>
+        <p class="off" onClick='toggle(this)'>Coefficients</p>
+</div-->
+
+    <div id='divProblem'>
+        <math>
+            <mroot>
+                <mi id="root1">18</mi>
+                <mn></mn>
+            </mroot>
+            <mo>&times;</mo>
+            <mroot>
+                <mi id="root2">32</mi>
+                <mn></mn>
+            </mroot>
+            <mo>=</mo>
+            <mi id="coeff3">12</mi>
+            <mroot id="sqrt3">
+                <mi id="root3">4</mi>
+                <mn></mn>
+            </mroot>
+        </math>
+    </div>
+
+    </div>
+
+    <div id="divButtons">
+        <p class='button' onClick='newQuestion()'>New</p>
+        <p class='button' onClick='showAnswer()'>Show</p>
+    </div>
+
+    <script>
+
+        // Global variables
+        let newQ = false;
+        let root = 2;
+        let coeff1 = 3;
+        let coeff2 = 4;
+        let answer = coeff1 * coeff2;
+
+        function toggle(element) {
+
+            // Local variable
+            let option = element.innerHTML;
+
+            if (element.classList == 'on') {
+                element.classList.remove('on');
+                element.classList.add('off');
+
+                if (option == 'Negatives') {
+                    negative = false;
+                }
+                else {
+                    coefficients = false;
+                }
+            }
+            else {
+                element.classList.remove('off');
+                element.classList.add('on');
+
+                if (option == 'Negatives') {
+                    negative = true;
+                }
+                else {
+                    coefficients = true;
+                }
+            }
+
+        }
+
+
+        function newQuestion() {
+
+            // Local variables
+            let roots = [2, 3, 5, 7]
+            let oldRoot = root;
+            let oldAnswer = answer;
+
+            // Pick new values
+
+            // Base
+            while (root == oldRoot) {
+                root = roots[parseInt(Math.random() * roots.length)];
+            }
+
+            // Coefficents
+
+            while (answer == oldAnswer || coeff1 == coeff2) {
+                // 2 to 5
+                coeff1 = parseInt(Math.random() * 4) + 2;
+
+                // 2 to 5
+                coeff2 = parseInt(Math.random() * 4) + 2;
+
+                // Calculate coefficient answer
+                answer = coeff1 * coeff2;
+
+            }
+
+            console.log('c1: ', coeff1);
+            console.log('c2: ', coeff2);
+            console.log('r: ', root);
+
+            // Create problem
+
+            // First value
+            document.getElementById('root1').innerHTML = root * coeff1**2;
+
+            // Second value
+            document.getElementById('root2').innerHTML = root * coeff2**2;
+
+            // Third value
+            if (newQuestion == false) {
+                document.getElementById('coeff3').innerHTML = '';
+                document.getElementById('root3').innerHTML = '';
+                document.getElementById('sqrt3').innerHTML = '';
+                newQuestion = true;
+            }
+
+        }
+
+
+        function showAnswer() {
+
+            // Local variable
+            txtSqrt = '<mi id="root3"></mi><mn></mn>'
+
+            // Create answer
+            document.getElementById('sqrt3').innerHTML = txtSqrt;
+            document.getElementById('root3').innerHTML = root;
+            document.getElementById('coeff3').innerHTML = coeff1 * coeff2;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
