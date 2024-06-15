@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Indices</title>
+
+    <style>/* For all screens */
+
+        body {
+            background-color: burlywood;
+            font-family: monospace;
+            font-size: 9vw;
+            margin: 2vw 5vw;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 12vw;
+        }
+
+        p {
+            font-size: 6vw;
+            margin: 1vw 0vw;
+        }
+
+        math {
+            font-size: 15vw;
+        }
+
+        /* Class */
+
+        .button {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 10vw;
+            margin-top: 4vw;
+            border: 0.1vw solid black;
+            border-radius: 4vw;
+            padding: 0.75vw;
+        }
+
+        .button:hover {
+            background-color: pink;
+        }
+
+        .button:active {
+            background-color: red;
+        }
+
+        .on {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 8vw;
+            margin-top: 1vw;
+            border: 0.2vw inset black;
+            border-radius: 2vw;
+            padding: 0.4vw 0.8vw;
+            background-color: red;
+        }
+
+        .off {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 8vw;
+            margin-top: 1vw;
+            border: 0.2vw solid black;
+            padding: 0.4vw 0.8vw;;
+            background-color: green;
+        }
+
+        .even {
+            color: red;
+        }
+
+        .odd {
+            color: green;
+        }
+
+        /* ID */
+
+        #divProblem {
+            display: inline-block;
+            margin-top: 20vw;
+            margin-bottom: 20vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+
+            body {
+                font-size: 3vw;
+                margin: 2vw 5vw;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw;
+            }
+
+            math {
+                font-size: 9vw;
+            }
+
+            /* Class */
+
+            .button {
+                font-size: 3vw;
+                margin-top: 1vw;
+                border-radius: 2vw;
+            }
+
+            .on {
+                font-size: 2vw;
+                margin-top: 1vw;
+                border: 0.2vw inset black;
+                padding: 0.2vw;
+            }
+
+            .off {
+                font-size: 2vw;
+                margin-top: 1vw;
+                border: 0.2vw solid black;
+                padding: 0.2vw;
+            }
+
+
+            /* ID */
+
+            #divProblem {
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Indices</h1>
+
+    <div id='divProblem'>
+        <math>
+            <msup>
+                <mi id="base1">a</mi>
+                <mn id="index1">2</mn>
+            </msup>
+            <mo>+</mo>
+            <msup>
+                <mi id="base2">a</mi>
+                <mn id="index2">3</mn>
+            </msup>
+            <mo>=</mo>
+            <msup>
+                <mi id="base3">a</mi>
+                <mn id="index3">5</mn>
+            </msup>
+        </math>
+    </div>
+
+    </div>
+
+    <div id="divButtons">
+        <p class='button' onClick='newQuestion()'>New</p>
+        <p class='button' onClick='showAnswer()'>Show</p>
+    </div>
+
+    <script>
+
+        // Global variables
+        let base = 'a';
+        let index1 = 2;
+        let index2 = 3
+        let answer = index1 + index2
+
+
+        function newQuestion() {
+
+            // Local variables
+            let intBase = 0;
+            let oldBase = base;
+            let oldAnswer = answer;
+
+            // Pick new values
+            while (base == oldBase) {
+                // 0 to 10
+                intBase = parseInt(Math.random() * 10);
+                base = String.fromCharCode(97 + intBase);
+            }
+
+            while (answer == oldAnswer) {
+
+                if (parseInt(Math.random() * 9) > 3) {
+                    // 2 to 10
+                    index1 = parseInt(Math.random() * 9) + 2;
+                }
+                else {
+                    // -1 to -10
+                    index1 = 0 - (parseInt(Math.random() * 10) + 1);
+                }
+
+                if (parseInt(Math.random() * 9) > 3) {
+                    // 2 to 10
+                    index2 = parseInt(Math.random() * 9) + 2;
+                }
+                else {
+                    // -1 to -10
+                    index2 = 0 - (parseInt(Math.random() * 10) + 1);
+                }
+
+                // Calculate answer
+                answer = index1 + index2;
+            }
+
+            // Update problem
+            document.getElementById('base1').innerHTML = base;
+            document.getElementById('base2').innerHTML = base;
+            document.getElementById('base3').innerHTML = '';
+
+            document.getElementById('index1').innerHTML = index1;
+            document.getElementById('index2').innerHTML = index2;
+            document.getElementById('index3').innerHTML = '';
+
+        }
+
+
+        function showAnswer() {
+
+            // Update problem
+            if (answer == 0) {
+                document.getElementById('base3').innerHTML = 1;
+            }
+            else {
+                document.getElementById('base3').innerHTML = base;
+            }
+
+            if (answer == 0 || answer == 1) {
+                document.getElementById('index3').innerHTML = '';
+            }
+            else {
+                document.getElementById('index3').innerHTML = answer;
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
