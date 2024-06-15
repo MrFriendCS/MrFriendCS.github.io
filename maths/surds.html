@@ -259,11 +259,11 @@
             document.getElementById('root2').innerHTML = root * coeff2**2;
 
             // Third value
-            if (newQuestion == false) {
+            if (newQ == false) {
                 document.getElementById('coeff3').innerHTML = '';
                 document.getElementById('root3').innerHTML = '';
                 document.getElementById('sqrt3').innerHTML = '';
-                newQuestion = true;
+                newQ = true;
             }
 
         }
@@ -279,6 +279,7 @@
             document.getElementById('root3').innerHTML = root;
             document.getElementById('coeff3').innerHTML = coeff1 * coeff2;
 
+            newQ = false;
         }
 
     </script>
