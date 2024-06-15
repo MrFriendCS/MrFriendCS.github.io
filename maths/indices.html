@@ -50,7 +50,7 @@
             background-color: red;
         }
 
-        .on {
+        .off {
             display: inline-block;
             font-family: sans-serif;
             font-size: 8vw;
@@ -61,7 +61,7 @@
             background-color: red;
         }
 
-        .off {
+        .on {
             display: inline-block;
             font-family: sans-serif;
             font-size: 8vw;
@@ -116,14 +116,14 @@
                 border-radius: 2vw;
             }
 
-            .on {
+            .off {
                 font-size: 2vw;
                 margin-top: 1vw;
                 border: 0.2vw inset black;
                 padding: 0.2vw;
             }
 
-            .off {
+            .on {
                 font-size: 2vw;
                 margin-top: 1vw;
                 border: 0.2vw solid black;
@@ -145,6 +145,11 @@
 
 <body>
     <h1>Indices</h1>
+
+    <div id="divOptions">
+        <p class="off" onClick='toggle(this)'>Negatives</p>
+        <p class="off" onClick='toggle(this)'>Coefficients</p>
+    </div>
 
     <div id='divProblem'>
         <math>
@@ -178,6 +183,8 @@
     <script>
 
         // Global variables
+        let coefficients = false;
+        let negative = false;
         let base = 'a';
         let coeff1 = 3;
         let coeff2 = 2;
@@ -185,6 +192,36 @@
         let index2 = 3;
         let coeffAnswer = coeff1 * coeff2;
         let indAnswer = index1 + index2;
+
+        function toggle(element) {
+
+            // Local variable
+            let option = element.innerHTML;
+
+            if (element.classList == 'on') {
+                element.classList.remove('on');
+                element.classList.add('off');
+
+                if (option == 'Negatives') {
+                    negative = false;
+                }
+                else {
+                    coefficients = false;
+                }
+            }
+            else {
+                element.classList.remove('off');
+                element.classList.add('on');
+
+                if (option == 'Negatives') {
+                    negative = true;
+                }
+                else {
+                    coefficients = true;
+                }
+            }
+
+        }
 
 
         function newQuestion() {
@@ -198,29 +235,38 @@
             // Pick new values
 
             // Coefficients
-            while (coeffAnswer == oldCoeff) {
-
-                if (parseInt(Math.random() * 9) > 3) {
-                    // 1 to 10
-                    coeff1 = parseInt(Math.random() * 10) + 1;
-                }
-                else {
-                    // -1 to -10
-                    coeff1 = 0 - (parseInt(Math.random() * 10) + 1);
-                }
-
-                if (parseInt(Math.random() * 9) > 3) {
-                    // 1 to 10
-                    coeff2 = parseInt(Math.random() * 10) + 1;
-                }
-                else {
-                    // -1 to -10
-                    coeff2 = 0 - (parseInt(Math.random() * 10) + 1);
-                }
-
-                // Calculate coefficient answer
-                coeffAnswer = coeff1 * coeff2;
+            if (parseInt(Math.random() * 9) > 3) {
+                // 1 to 10
+                coeff1 = parseInt(Math.random() * 10) + 1;
             }
+            else {
+                // -1 to -10
+                coeff1 = 0 - (parseInt(Math.random() * 10) + 1);
+            }
+
+            if (parseInt(Math.random() * 9) > 3) {
+                // 1 to 10
+                coeff2 = parseInt(Math.random() * 10) + 1;
+            }
+            else {
+                // -1 to -10
+                coeff2 = 0 - (parseInt(Math.random() * 10) + 1);
+            }
+
+            // Coefficients?
+            if (coefficients == false) {
+                coeff1 = 1;
+                coeff2 = 1;
+            }
+
+            // Negatives allowed?
+            if (negative == false) {
+                coeff1 = Math.abs(coeff1);
+                coeff2 = Math.abs(coeff2);
+            }
+
+            // Calculate coefficient answer
+            coeffAnswer = coeff1 * coeff2;
 
             // Base
             while (base == oldBase) {
@@ -252,27 +298,57 @@
 
                 // Calculate indices answer
                 indAnswer = index1 + index2;
+
             }
 
-            // Update problem
+            // Negative indices?
+            if (negative == false) {
+                index1 = Math.abs(index1);
+                index2 = Math.abs(index2);
+                indAnswer = Math.abs(index1 + index2);
+            }
+
+            // Create problem
+
+            // First value
             if (coeff1 == 1) {
                 document.getElementById('coeff1').innerHTML = '';
+            }
+            else if (coeff1 == -1) {
+                document.getElementById('coeff1').innerHTML = '-';
             }
             else {
                 document.getElementById('coeff1').innerHTML = coeff1;
             }
             document.getElementById('base1').innerHTML = base;
-            document.getElementById('index1').innerHTML = index1;
 
+            if (index1 == 1) {
+                document.getElementById('index1').innerHTML = '';
+            }
+            else {
+                document.getElementById('index1').innerHTML = index1;
+            }
+
+            // Second value
             if (coeff2 == 1) {
                 document.getElementById('coeff2').innerHTML = '';
+            }
+            else if (coeff2 == -1) {
+                document.getElementById('coeff2').innerHTML = '-';
             }
             else {
                 document.getElementById('coeff2').innerHTML = coeff2;
             }
             document.getElementById('base2').innerHTML = base;
-            document.getElementById('index2').innerHTML = index2;
 
+            if (index2 == 1) {
+                document.getElementById('index2').innerHTML = '';
+            }
+            else {
+                document.getElementById('index2').innerHTML = index2;
+            }
+
+            // Third value
             document.getElementById('coeff3').innerHTML = '';
             document.getElementById('base3').innerHTML = '';
             document.getElementById('index3').innerHTML = '';
@@ -293,7 +369,10 @@
             }
 
             // Base
-            if (indAnswer == 0) {
+            if (indAnswer == 0 && coeffAnswer == 1) {
+                document.getElementById('base3').innerHTML = 1;
+            }
+            else if (indAnswer == 0) {
                 document.getElementById('base3').innerHTML = '';
             }
             else {
