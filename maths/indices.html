@@ -196,10 +196,13 @@
             let oldAnswer = indAnswer;
 
             // Pick new values
+
+            // Coefficients
             while (coeffAnswer == oldCoeff) {
+
                 if (parseInt(Math.random() * 9) > 3) {
-                    // 2 to 10
-                    coeff1 = parseInt(Math.random() * 9) + 2;
+                    // 1 to 10
+                    coeff1 = parseInt(Math.random() * 10) + 1;
                 }
                 else {
                     // -1 to -10
@@ -207,8 +210,8 @@
                 }
 
                 if (parseInt(Math.random() * 9) > 3) {
-                    // 2 to 10
-                    coeff2 = parseInt(Math.random() * 9) + 2;
+                    // 1 to 10
+                    coeff2 = parseInt(Math.random() * 10) + 1;
                 }
                 else {
                     // -1 to -10
@@ -219,12 +222,14 @@
                 coeffAnswer = coeff1 * coeff2;
             }
 
+            // Base
             while (base == oldBase) {
                 // 0 to 10
                 intBase = parseInt(Math.random() * 10);
                 base = String.fromCharCode(97 + intBase);
             }
 
+            // Indices
             while (indAnswer == oldAnswer) {
 
                 if (parseInt(Math.random() * 9) > 3) {
@@ -250,11 +255,21 @@
             }
 
             // Update problem
-            document.getElementById('coeff1').innerHTML = coeff1;
+            if (coeff1 == 1) {
+                document.getElementById('coeff1').innerHTML = '';
+            }
+            else {
+                document.getElementById('coeff1').innerHTML = coeff1;
+            }
             document.getElementById('base1').innerHTML = base;
             document.getElementById('index1').innerHTML = index1;
 
-            document.getElementById('coeff2').innerHTML = coeff2;
+            if (coeff2 == 1) {
+                document.getElementById('coeff2').innerHTML = '';
+            }
+            else {
+                document.getElementById('coeff2').innerHTML = coeff2;
+            }
             document.getElementById('base2').innerHTML = base;
             document.getElementById('index2').innerHTML = index2;
 
@@ -269,7 +284,7 @@
 
             // Create answer
 
-            // Coefficients
+            // Coefficient
             if (coeffAnswer == 1) {
                 document.getElementById('coeff3').innerHTML = '';
             }
