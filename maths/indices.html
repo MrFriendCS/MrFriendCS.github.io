@@ -5,6 +5,8 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
+    <link rel="shortcut icon" href="images/n5.png">
+
     <title>Indices</title>
 
     <style>/* For all screens */
@@ -50,7 +52,7 @@
             background-color: red;
         }
 
-        .off {
+        .switch {
             display: inline-block;
             font-family: sans-serif;
             font-size: 8vw;
@@ -58,16 +60,13 @@
             border: 0.2vw inset black;
             border-radius: 2vw;
             padding: 0.4vw 0.8vw;
+        }
+
+        .off {
             background-color: red;
         }
 
         .on {
-            display: inline-block;
-            font-family: sans-serif;
-            font-size: 8vw;
-            margin-top: 1vw;
-            border: 0.2vw solid black;
-            padding: 0.4vw 0.8vw;;
             background-color: green;
         }
 
@@ -116,17 +115,10 @@
                 border-radius: 2vw;
             }
 
-            .off {
+            .switch {
                 font-size: 2vw;
                 margin-top: 1vw;
                 border: 0.2vw inset black;
-                padding: 0.2vw;
-            }
-
-            .on {
-                font-size: 2vw;
-                margin-top: 1vw;
-                border: 0.2vw solid black;
                 padding: 0.2vw;
             }
 
@@ -147,8 +139,8 @@
     <h1>Indices</h1>
 
     <div id="divOptions">
-        <p class="off" onClick='toggle(this)'>Negatives</p>
-        <p class="off" onClick='toggle(this)'>Coefficients</p>
+        <p class="switch off" onClick='toggle(this)'>Negatives</p>
+        <p class="switch off" onClick='toggle(this)'>Coefficients</p>
     </div>
 
     <div id='divProblem'>
@@ -198,7 +190,7 @@
             // Local variable
             let option = element.innerHTML;
 
-            if (element.classList == 'on') {
+            if (element.classList.contains('on')) {
                 element.classList.remove('on');
                 element.classList.add('off');
 
@@ -231,6 +223,7 @@
             let oldCoeff = coeffAnswer;
             let oldBase = base;
             let oldAnswer = indAnswer;
+            let bases = ['a', 'b', 'c', 'e', 'g', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
             // Pick new values
 
@@ -271,8 +264,8 @@
             // Base
             while (base == oldBase) {
                 // 0 to 10
-                intBase = parseInt(Math.random() * 10);
-                base = String.fromCharCode(97 + intBase);
+                intBase = parseInt(Math.random() * bases.length);
+                base = bases[intBase];
             }
 
             // Indices
