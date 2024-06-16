@@ -5,6 +5,8 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
+    <link rel="shortcut icon" href="images/n5.png">
+
     <title>Surds</title>
 
     <style>/* For all screens */
@@ -50,35 +52,6 @@
             background-color: red;
         }
 
-        .off {
-            display: inline-block;
-            font-family: sans-serif;
-            font-size: 8vw;
-            margin-top: 1vw;
-            border: 0.2vw inset black;
-            border-radius: 2vw;
-            padding: 0.4vw 0.8vw;
-            background-color: red;
-        }
-
-        .on {
-            display: inline-block;
-            font-family: sans-serif;
-            font-size: 8vw;
-            margin-top: 1vw;
-            border: 0.2vw solid black;
-            padding: 0.4vw 0.8vw;;
-            background-color: green;
-        }
-
-        .even {
-            color: red;
-        }
-
-        .odd {
-            color: green;
-        }
-
         /* ID */
 
         #divProblem {
@@ -116,21 +89,6 @@
                 border-radius: 2vw;
             }
 
-            .off {
-                font-size: 2vw;
-                margin-top: 1vw;
-                border: 0.2vw inset black;
-                padding: 0.2vw;
-            }
-
-            .on {
-                font-size: 2vw;
-                margin-top: 1vw;
-                border: 0.2vw solid black;
-                padding: 0.2vw;
-            }
-
-
             /* ID */
 
             #divProblem {
@@ -145,11 +103,6 @@
 
 <body>
     <h1>Surds</h1>
-
-    <!--div id="divOptions">
-        <p class="off" onClick='toggle(this)'>Negatives</p>
-        <p class="off" onClick='toggle(this)'>Coefficients</p>
-</div-->
 
     <div id='divProblem'>
         <math>
@@ -245,10 +198,6 @@
                 answer = coeff1 * coeff2;
 
             }
-
-            console.log('c1: ', coeff1);
-            console.log('c2: ', coeff2);
-            console.log('r: ', root);
 
             // Create problem
 
