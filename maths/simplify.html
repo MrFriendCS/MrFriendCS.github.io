@@ -151,12 +151,12 @@
             // Pick new values
             while (denominator == oldDenominator) {
                 // Select denominator
-                denominator = parseInt(Math.random() * 25) + 1;
+                denominator = parseInt(Math.random() * 25) + 2;
             }
 
             // Select numerator
-            if (numerator == oldNumerator) {
-                numerator = parseInt(Math.random() * (denominator - 2)) + 2;
+            while (numerator == oldNumerator) {
+                numerator = parseInt(Math.random() * (denominator - 1)) + 1;
             }
 
             // Simplify numerator and denominator, if possible
