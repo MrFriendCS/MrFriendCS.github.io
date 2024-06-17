@@ -139,11 +139,16 @@
     </div>
 
     <div id="divButtons">
-        <p class='button' onClick='newQuestion()'>New</p>
-        <p class='button' onClick='showAnswer()'>Show</p>
+        <p id="btnNew" class='button'>New</p>
+        <p id="btnShow" class='button'>Show</p>
     </div>
 
-    <script>
+    <script type="module">
+        import {simplify} from '/simplify.js';
+
+        // Add event listeners - needed due to import
+        document.getElementById('btnNew').addEventListener('click', newQuestion);
+        document.getElementById('btnShow').addEventListener('click', showAnswer);
 
         // Global variables
         let whole = 1
@@ -153,21 +158,24 @@
         function newQuestion() {
 
             // Local variables
+            let newNumerator = 0;
             let oldNumerator = numerator;
             let oldDenominator = denominator;
             let multiplier = 0;
-            let values = [2, 3, 5, 7, 11, 13, 17, 19, 23];
 
             // Pick new values
             while (denominator == oldDenominator) {
                 // Select denominator
-                denominator = values[parseInt(Math.random() * values.length)];
+                denominator = parseInt(Math.random() * 25) + 2;
             }
 
             // Select numerator
-            if (numerator == oldNumerator) {
-                numerator = parseInt(Math.random() * (denominator - 1) + 1);
+            while (numerator == oldNumerator) {
+                numerator = parseInt(Math.random() * (denominator - 1)) + 1;
             }
+
+            // Simplify numerator and denominator, if possible
+            [numerator, denominator] = simplify(numerator, denominator)
 
             // Select whole
             if (denominator >= 13) {
