@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title>Mixed Number Fractions</title>
+    <title>Mixed Numbers</title>
 
     <style>/* For all screens */
 
@@ -139,11 +139,16 @@
     </div>
 
     <div id="divButtons">
-        <p class='button' onClick='newQuestion()'>New</p>
-        <p class='button' onClick='showAnswer()'>Show</p>
+        <p id="btnNew" class='button'>New</p>
+        <p id="btnShow" class='button'>Show</p>
     </div>
 
-    <script>
+    <script type="module">
+        import {simplify} from '/simplify.js';
+
+        // Add event listeners - needed due to import
+        document.getElementById('btnNew').addEventListener('click', newQuestion);
+        document.getElementById('btnShow').addEventListener('click', showAnswer);
 
         // Global variables
         let whole = 1
@@ -161,13 +166,16 @@
             // Pick new values
             while (denominator == oldDenominator) {
                 // Select denominator
-                denominator = denominators[parseInt(Math.random() * denominators.length)];
+                denominator = parseInt(Math.random() * 25) + 1;
             }
 
             // Select numerator
             if (numerator == oldNumerator) {
-                numerator = parseInt(Math.random() * (denominator - 1) + 1);
+                numerator = parseInt(Math.random() * (denominator - 2)) + 2;
             }
+
+            // Simplify numerator and denominator, if possible
+            [numerator, denominator] = simplify(numerator, denominator)
 
             // Select whole
             while (whole == oldWhole) {
@@ -192,7 +200,7 @@
         function showAnswer() {
 
             // Local variable
-            improper = whole * denominator + numerator;
+            let improper = whole * denominator + numerator;
 
             // Update problem
             document.getElementById('numer1').innerHTML = improper;
