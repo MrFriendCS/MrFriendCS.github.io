@@ -127,38 +127,38 @@
 
     <script>
 
-    function change(element) {
+        function change(element) {
 
-        // Local variable
-        let option = element.innerHTML;
+            // Local variable
+            let option = element.innerHTML;
 
-        if (element.classList.contains('on')) {
-            element.classList.remove('on');
-            element.classList.add('off');
-        }
-        else {
-            element.classList.remove('off');
-            element.classList.add('on');
-        }
+            if (element.classList.contains('on')) {
+                element.classList.remove('on');
+                element.classList.add('off');
+            }
+            else {
+                element.classList.remove('off');
+                element.classList.add('on');
+            }
 
-        if (element.classList.contains('off')) {
+            if (element.classList.contains('off')) {
 
-            var cols = document.getElementsByClassName(option.toLowerCase());
+                var cols = document.getElementsByClassName(option.toLowerCase());
 
-            for(i = 0; i < cols.length; i++) {
-                cols[i].style.display = 'none';
-          }
-        }
-        else {
+                for(i = 0; i < cols.length; i++) {
+                    cols[i].style.display = 'none';
+              }
+            }
+            else {
 
-            var cols = document.getElementsByClassName(option.toLowerCase());
+                var cols = document.getElementsByClassName(option.toLowerCase());
 
-            for(i = 0; i < cols.length; i++) {
-                cols[i].style.display = 'list-item';
-          }
-        }
+                for(i = 0; i < cols.length; i++) {
+                    cols[i].style.display = 'list-item';
+              }
+            }
 
-    }
+            }
 
     </script>
 
