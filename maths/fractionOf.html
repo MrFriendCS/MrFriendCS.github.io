@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <title>Fraction of a Number</title>
+
+    <style>/* For all screens */
+
+        body {
+            background-color: burlywood;
+            font-family: monospace;
+            font-size: 9vw;
+            margin: 2vw 5vw;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 9vw;
+        }
+
+        p {
+            font-size: 6vw;
+            margin: 1vw 0vw;
+        }
+
+        math {
+            font-family: monospace;
+            font-size: 13vw;
+        }
+
+        /* Class */
+
+        .button {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 10vw;
+            margin-top: 4vw;
+            border: 0.1vw solid black;
+            border-radius: 4vw;
+            padding: 0.75vw;
+        }
+
+        .button:hover {
+            background-color: pink;
+        }
+
+        .button:active {
+            background-color: red;
+        }
+
+        /* ID */
+
+        #divTables {
+            letter-spacing: 0vw;
+        }
+
+        #divProblem {
+            display: inline-block;
+            margin-top: 20vw;
+            margin-bottom: 20vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+
+            body {
+                font-size: 3vw;
+                margin: 2vw 5vw;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw;
+            }
+
+            math {
+                font-size: 9vw;
+            }
+
+            /* Class */
+
+            .button {
+                font-size: 3vw;
+                margin-top: 1vw;
+                border-radius: 2vw;
+            }
+
+            /* ID */
+
+            #divProblem {
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Fraction of a Number</h1>
+
+    <div id='divProblem'>
+        <math>
+            <mfrac>
+                <mn id="numer">2</mn>
+                <mn id="denom">7</mn>
+            </mfrac>
+            <mo id="type">&times;</mo>
+            <mn id="whole">350</mn>
+            <mo>=</mo>
+            <mn id="answer">100</mn>
+        </math>
+    </div>
+
+    </div>
+
+    <div id="divButtons">
+        <p id="btnNew" class='button'>New</p>
+        <p id="btnShow" class='button'>Show</p>
+    </div>
+
+    <script type="module">
+
+        // Add event listeners
+        document.getElementById('btnNew').addEventListener('click', newQuestion);
+        document.getElementById('btnShow').addEventListener('click', showAnswer);
+
+        // Global variables
+        let number = 35;
+        let multiplier = 10;
+        let denominator = 7;
+        let numerator = 2;
+
+        function newQuestion() {
+
+            // Local variables
+            let oldNumber = number;
+            let oldMultiplier = multiplier;
+            let prime = true;
+            let factors = [];
+            let oldDenominator = denominator;
+            let index = 0;
+            let counter = 0;
+            let type = "";
+
+            // Pick new values
+            while (number == oldNumber || factors.length == 0) {
+                // Select denominator
+                number = parseInt(Math.random() * 100) + 1;
+                factors = findFactors(number);
+            }
+
+            // Select denominater
+            while (denominator == oldDenominator) {
+                index = parseInt(Math.random() * (factors.length));
+                denominator = factors[index];
+                //denominator = factors[factors.length - 1];
+                counter ++;
+                if (counter >= 5) {
+                    break;
+                }
+            }
+
+            // Select numerator
+            numerator = parseInt(Math.random() * (denominator - 1)) + 1;
+
+            // Select multiplier
+            multiplier = parseInt(Math.random() * 8) + 1;
+
+            // Select symbol
+            if (Math.random() >= 0.5) {
+                type = '&times;'
+            }
+            else {
+                type = "of";
+            }
+
+            // Update problem
+            document.getElementById('numer').innerHTML = numerator * multiplier;
+            document.getElementById('denom').innerHTML = denominator * multiplier;
+            document.getElementById('whole').innerHTML = number * multiplier;
+            document.getElementById('type').innerHTML = type;
+            document.getElementById('answer').innerHTML = '';
+
+        }
+
+        function showAnswer() {
+
+            // Update problem
+            document.getElementById('answer').innerHTML = number / denominator * numerator * multiplier;
+
+        }
+
+        function findFactors(value) {
+            // Local variable
+
+            let allFactors = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+            let factors = [];
+
+            for (let factor of allFactors) {
+
+                if (value % factor == 0) {
+                    factors.push(factor);
+                }
+            }
+
+            return factors;
+
+        }
+
+
+    </script>
+</body>
+
+</html>
