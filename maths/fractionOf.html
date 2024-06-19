@@ -53,6 +53,26 @@
             background-color: red;
         }
 
+        .switch {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 8vw;
+            margin-top: 1vw;
+            border: 0.2vw inset black;
+            border-radius: 2vw;
+            padding: 0.4vw 0.8vw;
+        }
+
+        .on {
+            border-radius: 2vw;
+            background-color: green;
+        }
+
+        .off {
+            border-radius: 0vw;
+            background-color: red;
+        }
+
         /* ID */
 
         #divTables {
@@ -94,6 +114,13 @@
                 border-radius: 2vw;
             }
 
+            .switch {
+                font-size: 2vw;
+                margin-top: 1vw;
+                border: 0.2vw inset black;
+                padding: 0.2vw;
+            }
+
             /* ID */
 
             #divProblem {
@@ -109,16 +136,20 @@
 <body>
     <h1>Fraction of a Number</h1>
 
+    <div id="divOptions">
+        <p id="btnImproper" class="switch off">Improper</p>
+    </div>
+
     <div id='divProblem'>
         <math>
             <mfrac>
                 <mn id="numer">2</mn>
                 <mn id="denom">7</mn>
             </mfrac>
-            <mo id="type">&times;</mo>
-            <mn id="whole">350</mn>
+            <mo id="symbol">&times;</mo>
+            <mn id="whole">70</mn>
             <mo>=</mo>
-            <mn id="answer">100</mn>
+            <mn id="answer">20</mn>
         </math>
     </div>
 
@@ -135,87 +166,113 @@
         document.getElementById('btnNew').addEventListener('click', newQuestion);
         document.getElementById('btnShow').addEventListener('click', showAnswer);
 
-        // Global variables
-        let number = 35;
-        let multiplier = 10;
-        let denominator = 7;
-        let numerator = 2;
+        /**
+        * This function toggles the button on / off
+        */
+        document.getElementById('btnImproper').addEventListener('click', function(event) {
 
+            if (this.classList.contains('on')) {
+                this.classList.remove('on');
+                this.classList.add('off');
+
+                improper = false;
+            }
+            else {
+                this.classList.remove('off');
+                this.classList.add('on');
+
+                improper = true;
+            }
+        });
+
+        // Global variables
+        let denom = 7;
+        let numer = 2;
+        let multiplier = 10;
+        let improper = false;
+
+        /**
+        * This function creates a new question
+        */
         function newQuestion() {
 
             // Local variables
-            let oldNumber = number;
-            let oldMultiplier = multiplier;
-            let prime = true;
-            let factors = [];
-            let oldDenominator = denominator;
-            let index = 0;
-            let counter = 0;
-            let type = "";
-
-            // Pick new values
-            while (number == oldNumber || factors.length == 0) {
-                // Select denominator
-                number = parseInt(Math.random() * 100) + 1;
-                factors = findFactors(number);
-            }
+            let oldDenom = denom;
+            let symbol = '';
+            let improperMulti = 1;
 
             // Select denominater
-            while (denominator == oldDenominator) {
-                index = parseInt(Math.random() * (factors.length));
-                denominator = factors[index];
-                //denominator = factors[factors.length - 1];
-                counter ++;
-                if (counter >= 5) {
-                    break;
-                }
+            while (denom == oldDenom) {
+                // 2 to 12
+                denom = parseInt(Math.random() * 11) + 2;
             }
 
-            // Select numerator
-            numerator = parseInt(Math.random() * (denominator - 1)) + 1;
+            // Select numer
+            numer = parseInt(Math.random() * (denom - 1)) + 1;
 
-            // Select multiplier
-            multiplier = parseInt(Math.random() * 8) + 1;
+            // Simplify numerator and denominator, if possible
+            [numer, denom] = simplify(numer, denom);
+
+            // Select multiplier 10 to 20
+            multiplier = parseInt(Math.random() * 11) + 10;
 
             // Select symbol
             if (Math.random() >= 0.5) {
-                type = '&times;'
+                    symbol = '&times;'
             }
             else {
-                type = "of";
+                symbol = "of";
+            }
+
+            // Create improper fraction, if required
+            if (improper) {
+                // 2 to 12
+                improperMulti = parseInt(Math.random() * 11) + 2;
             }
 
             // Update problem
-            document.getElementById('numer').innerHTML = numerator * multiplier;
-            document.getElementById('denom').innerHTML = denominator * multiplier;
-            document.getElementById('whole').innerHTML = number * multiplier;
-            document.getElementById('type').innerHTML = type;
+            document.getElementById('numer').innerHTML = numer * improperMulti;
+            document.getElementById('denom').innerHTML = denom * improperMulti;
+            document.getElementById('whole').innerHTML = denom * multiplier;
+            document.getElementById('symbol').innerHTML = symbol;
             document.getElementById('answer').innerHTML = '';
 
         }
 
+        /**
+        * This function displays the answer
+        */
         function showAnswer() {
 
             // Update problem
-            document.getElementById('answer').innerHTML = number / denominator * numerator * multiplier;
+            document.getElementById('answer').innerHTML = numer * multiplier;
 
         }
 
-        function findFactors(value) {
+        /**
+        * This function simplifies a fraction
+        * @param {number} numer - The numerator
+        * @param {number} denom - The denominator
+        * @returns {array} The numerator and denominator
+        */
+        function simplify (numer, denom) {
             // Local variable
+            let divided = true;
 
-            let allFactors = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-            let factors = [];
+            while (divided) {
+                divided = false;
 
-            for (let factor of allFactors) {
+                for (let factor = 20; factor >= 2; factor--) {
 
-                if (value % factor == 0) {
-                    factors.push(factor);
+                    if (numer % factor == 0 && denom % factor == 0) {
+                        numer = numer / factor;
+                        denom = denom / factor;
+                        divided = true;
+                    }
                 }
             }
 
-            return factors;
-
+            return [numer, denom];
         }
 
 
