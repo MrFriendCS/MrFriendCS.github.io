@@ -137,7 +137,7 @@
     <h1>Fraction of a Number</h1>
 
     <div id="divOptions">
-        <p id="btnImproper" class="switch off">Improper</p>
+        <p id="btnImproper" class="switch on">Simplify</p>
     </div>
 
     <div id='divProblem'>
@@ -175,13 +175,13 @@
                 this.classList.remove('on');
                 this.classList.add('off');
 
-                improper = false;
+                simplified = false;
             }
             else {
                 this.classList.remove('off');
                 this.classList.add('on');
 
-                improper = true;
+                simplified = true;
             }
         });
 
@@ -189,7 +189,7 @@
         let denom = 7;
         let numer = 2;
         let multiplier = 10;
-        let improper = false;
+        let simplified = true;
 
         /**
         * This function creates a new question
@@ -225,7 +225,7 @@
             }
 
             // Create improper fraction, if required
-            if (improper) {
+            if (!simplified) {
                 // 2 to 12
                 improperMulti = parseInt(Math.random() * 11) + 2;
             }
