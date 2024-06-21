@@ -28,10 +28,10 @@
             margin: 1vw 0vw;
         }
 
-	math {
-	    font-family: monospace;
-	    font-size: 13vw;
-	}
+        math {
+            font-family: monospace;
+            font-size: 13vw;
+        }
 
         /* Class */
 
@@ -142,7 +142,13 @@
     </div>
 
     <div id='divProblem'>
-        &nbsp;7&nbsp;&times;&nbsp;8&nbsp;=&nbsp;56
+        <math>
+            <mn id="number">7</mn>
+            <mo>&times</mo>
+            <mn id="multiplier">8</mn>
+            <mo>=</mo>
+            <mn id="product">56</mn>
+        </math>
     </div>
 
     <div id="divButtons">
@@ -153,9 +159,9 @@
     <script>
 
         // Global variables
-        let value1 = 7;
-        let value2 = 8;
-        let answer = value1 * value2
+        let number = 7;
+        let multiplier = 8;
+        let product = 56;
 
         let tables = [2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -188,57 +194,35 @@
 
         function newQuestion() {
 
-            // Local variables
-            let txtProblem = '';
-            let oldAnswer = answer;
+            // Local variable
+            let oldProduct = product;
 
             // Pick new values
 
-            while (answer == oldAnswer) {
+            while (product == oldProduct) {
                 // 2 to 10
-                value1 = parseInt(Math.random() * 9) + 2;
-    
+                number = parseInt(Math.random() * 9) + 2;
+
                 // Selected tables
-                value2 = tables[parseInt(Math.random() * tables.length)];
+                multiplier = tables[parseInt(Math.random() * tables.length)];
 
                 // Calculate answer
-                answer = value1 * value2;
+                product = number * multiplier;
             }
 
             // Create problem text
-            txtProblem = problemText();
 
             // Update problem
-            document.getElementById('divProblem').innerHTML = txtProblem;
+            document.getElementById('number').innerHTML = number;
+            document.getElementById('multiplier').innerHTML = multiplier;
+            document.getElementById('product').innerHTML = '';
 
         }
 
         function showAnswer() {
 
-            // Local variables
-            let answer = value1 * value2;
-            let txtProblem = '';
-
-            // Create problem text
-            txtProblem = problemText();
-            txtProblem = txtProblem + String(answer);
-
             // Update problem
-            document.getElementById('divProblem').innerHTML = txtProblem;
-
-        }
-
-        function problemText() {
-
-            // Local variable
-            let txtProblem = String(value1) + '&nbsp;&times;&nbsp;' + String(value2) + '&nbsp;=&nbsp;';
-
-            if (value1 != 10) {
-                txtProblem = '&nbsp;' + txtProblem;
-            }
-
-            // Return text
-            return txtProblem;
+            document.getElementById('product').innerHTML = product;
 
         }
 
