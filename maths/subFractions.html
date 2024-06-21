@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <title>Subtract Fractions</title>
+
+    <style>/* For all screens */
+
+        body {
+            background-color: burlywood;
+            font-family: monospace;
+            font-size: 9vw;
+            margin: 2vw 5vw;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 9vw;
+        }
+
+        p {
+            font-size: 6vw;
+            margin: 1vw 0vw;
+        }
+
+        math {
+            font-family: monospace;
+            font-size: 13vw;
+        }
+
+        /* Class */
+
+        .button {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 10vw;
+            margin-top: 4vw;
+            border: 0.1vw solid black;
+            border-radius: 4vw;
+            padding: 0.75vw;
+        }
+
+        .button:hover {
+            background-color: pink;
+        }
+
+        .button:active {
+            background-color: red;
+        }
+
+        .switch {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 8vw;
+            margin-top: 1vw;
+            border: 0.2vw inset black;
+            border-radius: 2vw;
+            padding: 0.4vw 0.8vw;
+        }
+
+        .on {
+            border-radius: 2vw;
+            background-color: green;
+        }
+
+        .off {
+            border-radius: 0vw;
+            background-color: red;
+        }
+
+        /* ID */
+
+        #divTables {
+            letter-spacing: 0vw;
+        }
+
+        #divProblem {
+            display: inline-block;
+            margin-top: 20vw;
+            margin-bottom: 20vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+
+            body {
+                font-size: 3vw;
+                margin: 2vw 5vw;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw;
+            }
+
+            math {
+                font-size: 9vw;
+            }
+
+            /* Class */
+
+            .button {
+                font-size: 3vw;
+                margin-top: 1vw;
+                border-radius: 2vw;
+            }
+
+            .switch {
+                font-size: 2vw;
+                margin-top: 1vw;
+                border: 0.2vw inset black;
+                padding: 0.2vw;
+            }
+
+            /* ID */
+
+            #divProblem {
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Subtract Fractions</h1>
+
+    <div id="divOptions">
+        <p id="integers" class="switch off">Integers</p>
+    </div>
+
+    <div id='divProblem'>
+        <math>
+            <mn id="whole1"></mn>
+            <mfrac>
+                <mn id="numer1">1</mn>
+                <mn id="denom1">2</mn>
+            </mfrac>
+            <mo>-</mo>
+            <mn id="whole2"></mn>
+            <mfrac>
+                <mn id="numer2">2</mn>
+                <mn id="denom2">5</mn>
+            </mfrac>
+            <mo>=</mo>
+            <mn id="whole3"></mn>
+            <mfrac>
+                <mn id="numer3">1</mn>
+                <mn id="denom3">10</mn>
+            </mfrac>
+        </math>
+    </div>
+
+    </div>
+
+    <div id="divButtons">
+        <p id="btnNew" class='button'>New</p>
+        <p id="btnShow" class='button'>Show</p>
+    </div>
+
+    <script type="module">
+
+        // Add event listeners
+        document.getElementById('btnNew').addEventListener('click', newQuestion);
+        document.getElementById('btnShow').addEventListener('click', showAnswer);
+
+        /**
+        * This function toggles the button on / off
+        */
+        document.getElementById('integers').addEventListener('click', function(event) {
+
+            if (this.classList.contains('on')) {
+                this.classList.remove('on');
+                this.classList.add('off');
+
+                integers = false;
+            }
+            else {
+                this.classList.remove('off');
+                this.classList.add('on');
+
+                integers = true;
+            }
+        });
+
+        // Global variables
+        let integers = false;
+        let whole1 = 0;
+        let numer1 = 1;
+        let denom1 = 2;
+
+        let whole2 = 0;
+        let numer2 = 2;
+        let denom2 = 5;
+
+        let whole3 = 0;
+        let numer3 = 1;
+        let denom3 = 2;
+
+        /**
+        * This function creates a new question
+        */
+        function newQuestion() {
+            // Force fractions to be the same
+            whole1 = 0;
+            numer1 = 1;
+            denom1 = 2;
+            whole2 = 0;
+            numer2 = 1;
+            denom2 = 2;
+
+            // Select fractions until different
+            while (denom1 == denom2) {
+                // Select denominater 1
+                denom1 = parseInt(Math.random() * 11) + 2;
+
+                // Select numerator 1
+                numer1 = parseInt(Math.random() * (denom1 - 1)) + 1;
+
+                // Simplify fraction 1, if possible
+                [numer1, denom1] = simplify(numer1, denom1);
+
+                // Select denominater 2
+                denom2 = parseInt(Math.random() * 11) + 2;
+
+                // Select numerator 2
+                numer2 = parseInt(Math.random() * (denom2 - 1)) + 1;
+
+                // Simplify fraction 2, if possible
+                [numer2, denom2] = simplify(numer2, denom2);
+            }
+
+            // Select integers, if necessary
+            if (integers) {
+                whole1 = parseInt(Math.random() * 11) + 2;
+                whole2 = parseInt(Math.random() * 11) + 2;
+            }
+
+            // Swap fractions, if necessary, to avoid negatives
+            if (!integers && numer1/denom1 < numer2/denom2) {
+                let tempN = numer1;
+                let tempD = denom1;
+
+                numer1 = numer2;
+                denom1 = denom2;
+
+                numer2 = tempN;
+                denom2 = tempD;
+            }
+
+
+            // Swap integers, if necessary, to avoid negatives
+            if (integers && whole1 < whole2) {
+                let tempW = whole1;
+                whole1 = whole2;
+                whole2 = tempW;
+            }
+
+            // Swap fractions to force improper fractions
+            if (integers && numer1/denom1 > numer2/denom2) {
+                let tempN = numer1;
+                let tempD = denom1;
+
+                numer1 = numer2;
+                denom1 = denom2;
+
+                numer2 = tempN;
+                denom2 = tempD;
+            }
+
+            // Update problem
+            if (integers) {
+                document.getElementById('whole1').innerHTML = whole1;
+                document.getElementById('whole2').innerHTML = whole2;
+            }
+            else {
+                document.getElementById('whole1').innerHTML = '';
+                document.getElementById('whole2').innerHTML = '';
+            }
+            document.getElementById('numer1').innerHTML = numer1;
+            document.getElementById('denom1').innerHTML = denom1;
+
+            document.getElementById('numer2').innerHTML = numer2;
+            document.getElementById('denom2').innerHTML = denom2;
+
+            document.getElementById('whole3').innerHTML = '';
+            document.getElementById('numer3').innerHTML = '';
+            document.getElementById('denom3').innerHTML = '';
+
+        }
+
+        /**
+        * This function displays the answer
+        */
+        function showAnswer() {
+
+            // Local variables
+            let impNumer1 = whole1 * denom1 + numer1;
+            let impNumer2 = whole2 * denom2 + numer2;
+
+            // Calciulate result
+            denom3 = denom1 * denom2;
+            numer3 = impNumer1 * denom2 - impNumer2 * denom1;
+
+            // Simplify numerator and denominator, if possible
+            [numer3, denom3] = simplify(numer3, denom3);
+
+            // Improper to mixed, if possible
+            if (numer3 >= denom3) {
+                whole3 = parseInt(numer3 / denom3);
+                numer3 = numer3 % denom3;
+            }
+            else {
+                whole3 = 0;
+            }
+
+            // Update problem
+            if (whole3 > 0) {
+                document.getElementById('whole3').innerHTML = whole3;
+            }
+
+            if (numer3 > 0) {
+                document.getElementById('numer3').innerHTML = numer3;
+                document.getElementById('denom3').innerHTML = denom3;
+            }
+            else if (numer3 == 0) {
+                document.getElementById('whole3').innerHTML = whole3;
+            }
+
+        }
+
+        /**
+        * This function simplifies a fraction
+        * @param {number} numer - The numerator
+        * @param {number} denom - The denominator
+        * @returns {array} The numerator and denominator
+        */
+        function simplify (numer, denom) {
+            // Local variable
+            let divided = true;
+
+            while (divided) {
+                divided = false;
+
+                for (let factor = 20; factor >= 2; factor--) {
+
+                    if (numer % factor == 0 && denom % factor == 0) {
+                        numer = numer / factor;
+                        denom = denom / factor;
+                        divided = true;
+                    }
+                }
+            }
+
+            return [numer, denom];
+        }
+
+
+    </script>
+</body>
+
+</html>
