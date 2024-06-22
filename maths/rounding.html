@@ -192,6 +192,7 @@
 
             // Local variable
             let oldRounded = rounded;
+            let oldAccuracy = accuracy;
             let strType = '';
             let strPlural = '';
 
@@ -200,13 +201,15 @@
                 // Random value
                 unrounded = Number((Math.random() * 100).toFixed(4));
 
-                if (decimal) {
-                    // Select dp accuracy (0 to 3)
-                    accuracy = parseInt(Math.random() * 4);
-                }
-                else {
-                    // Select sf accuracy (2 to 4)
-                    accuracy = parseInt(Math.random() * 3) + 2;
+                while (accuracy == oldAccuracy) {
+                    if (decimal) {
+                        // Select dp accuracy (0 to 3)
+                        accuracy = parseInt(Math.random() * 4);
+                    }
+                    else {
+                        // Select sf accuracy (2 to 4)
+                        accuracy = parseInt(Math.random() * 3) + 2;
+                    }
                 }
 
                 // Calculate rounded
