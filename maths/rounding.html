@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <title>Rounding</title>
+
+    <style>/* For all screens */
+
+        body {
+            background-color: burlywood;
+            font-family: monospace;
+            font-size: 9vw;
+            margin: 2vw 5vw;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 12vw;
+        }
+
+        p {
+            font-size: 6vw;
+            margin: 1vw 0vw;
+        }
+
+        math {
+            font-family: monospace;
+            font-size: 8vw;
+        }
+
+        /* Class */
+
+        .button {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 10vw;
+            margin-top: 4vw;
+            border: 0.1vw solid black;
+            border-radius: 4vw;
+            padding: 0.75vw;
+        }
+
+        .button:hover {
+            background-color: pink;
+        }
+
+        .button:active {
+            background-color: red;
+        }
+
+        .switch {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 8vw;
+            margin-top: 1vw;
+            border: 0.2vw inset black;
+            padding: 0.4vw 0.8vw;
+        }
+
+        .on {
+            border-radius: 2vw;
+            background-color: green;
+        }
+
+        .off {
+            border-radius: 0vw;
+            background-color: red;
+        }
+
+        /* ID */
+
+        #divTables {
+            letter-spacing: 0vw;
+        }
+
+        #divProblem {
+            display: inline-block;
+            margin-top: 20vw;
+            margin-bottom: 20vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+
+            body {
+                font-size: 3vw;
+                margin: 2vw 5vw;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw;
+            }
+
+            /* Class */
+
+            .button {
+                font-size: 3vw;
+                margin-top: 1vw;
+                border-radius: 2vw;
+            }
+
+            .switch {
+                font-size: 2vw;
+                margin-top: 1vw;
+                padding: 0.2vw;
+            }
+
+            /* ID */
+
+            #divProblem {
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Rounding</h1>
+
+    <div id="divOptions">
+        <p id="decimal" class="switch on">Decimal</p>
+        <p id="significant" class="switch off">Significant</p>
+    </div>
+
+    <div id='divProblem'>
+        <p>Round the following value to <span id="accuracy1">2</span> <span id="type">decimal place</span><span id="plural">s</span>:</p>
+        <math>
+            <mn id="unrounded">17.5253</mn>
+            <mo>=</mo>
+            <mn id="rounded">17.52</mn>
+            <mn id="accuracy2">(2dp)</mn>
+        </math>
+    </div>
+
+    <div id="divButtons">
+        <p class='button' onClick='newQuestion()'>New</p>
+        <p class='button' onClick='showAnswer()'>Show</p>
+    </div>
+
+    <script>
+
+        // Global variables
+        let decimal = true;
+        let unrounded = 17.5253;
+        let accuracy = 2;
+        let rounded = 17.52;
+
+        /**
+        * This function toggles the buttons on / off and betwen dp / sf
+        */
+        document.querySelectorAll('.switch').forEach(item => {
+            item.addEventListener('click', function(event) {
+
+                document.querySelectorAll('.switch').forEach(item => {
+                    if (item.classList.contains('on')) {
+                        item.classList.remove('on');
+                        item.classList.add('off');
+                    }
+                    else {
+                        item.classList.remove('off');
+                        item.classList.add('on');
+                    }
+
+                });
+
+                if (decimal) {
+                    decimal = false;
+                }
+                else {
+                    decimal = true;
+                }
+
+                newQuestion();
+
+            });
+        });
+
+        function newQuestion() {
+
+            // Local variable
+            let oldRounded = rounded;
+            let strType = '';
+            let strPlural = '';
+
+            // Pick new values
+            while (rounded == oldRounded) {
+                // Random value
+                unrounded = Number((Math.random() * 100).toFixed(4));
+
+                if (decimal) {
+                    // Select dp accuracy (0 to 3)
+                    accuracy = parseInt(Math.random() * 4);
+                }
+                else {
+                    // Select sf accuracy (2 to 4)
+                    accuracy = parseInt(Math.random() * 3) + 2;
+                }
+
+                // Calculate rounded
+                if (decimal) {
+                    rounded = unrounded.toFixed(accuracy);
+                }
+                else {
+                    rounded = unrounded.toPrecision(accuracy);
+                }
+            }
+
+            // Create problem text
+
+            // Update problem
+            document.getElementById('accuracy1').innerHTML = accuracy;
+
+            if (decimal) {
+                strType = 'decimal place';
+            }
+            else {
+                strType = 'significant figure';
+            }
+            document.getElementById('type').innerHTML = strType;
+
+            if (accuracy == 1) {
+                strPlural = '';
+            }
+            else {
+                strPlural = 's';
+            }
+            document.getElementById('plural').innerHTML = strPlural;
+
+            document.getElementById('unrounded').innerHTML = unrounded;
+            document.getElementById('rounded').innerHTML = '';
+            document.getElementById('accuracy2').innerHTML = '';
+
+        }
+
+        function showAnswer() {
+
+            // Local variable
+            let type = 'dp'
+
+            if (!decimal) {
+                type = 'sf'
+            }
+
+            // Update problem
+            document.getElementById('rounded').innerHTML = rounded;
+            document.getElementById('accuracy2').innerHTML = '(' + accuracy + type + ')';
+
+        }
+
+    </script>
+</body>
+
+</html>
