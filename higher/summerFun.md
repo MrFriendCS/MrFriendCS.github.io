@@ -107,7 +107,7 @@ Output: ?
 
 ## Task 5
 
-Create a function (`contains`) that will accept a string and a character.  If the character is is anywhere in the string the function will return `True`, otherwise it will return `False`.  The function is not case sensitive.
+Create a function (`contains`) that will accept a string and a character.  If the character is anywhere in the string the function will return `True`, otherwise it will return `False`.  The function is not case sensitive.
 
 ### Example 1
 
@@ -165,7 +165,7 @@ Output: (0, 0)
 
 ## Task 7
 
-Create a function (`checkIBSN13`) that will check if a 13-digit [ISBN](https://en.wikipedia.org/wiki/ISBN#ISBN-13_check_digit_calculation) is valid.  It will accept a string, and return a Boolean value.  The function must be able to accept ISBNs with and with dashes that separate the values.
+Create a function (`checkIBSN13`) that will check if a 13-digit [ISBN](https://en.wikipedia.org/wiki/ISBN#ISBN-13_check_digit_calculation) is valid.  It will accept a string, and return a Boolean value.  The function must be able to accept ISBNs with and without dashes that separate the values.
 
 The book 'The Computers That Made Britain: The Home Computer Revolution of the 1980s' has an ISBN-13 of 9781912047857.  There are 12 digits plus the final check digit.  The check digit is calculated using the other 12 digits.
 
@@ -222,14 +222,14 @@ Output: True
 
 ## Task 8
 
-Create a procedure (`circleStuff`) that will calculate and display various values when passed the radius of a circle.  It will calculate and display various values, rounded to 2 decimal points:
+Create a procedure (`circleStuff`) that will accept a number that represents a radius.  It will calculate and display various values, rounded to 2 decimal points:
 
 * Diameter
 * Circumference
 * [Area of a circle](https://www.mathsisfun.com/geometry/circle-area.html)
 * [Volume of a sphere](https://www.mathsisfun.com/geometry/sphere-volume-area.html)
 
-The results of values that have no decimal values will be shown as an integer.
+Any results that have no decimal part will be shown as an integer.
 
 ### Starter code
 
