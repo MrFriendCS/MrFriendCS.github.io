@@ -7,7 +7,7 @@
 
     <link rel="shortcut icon" href="images/n5.png">
 
-    <title>Fraction of a Number</title>
+    <title>Subtract Fractions</title>
 
     <style>/* For all screens */
 
@@ -134,22 +134,31 @@
 </head>
 
 <body>
-    <h1>Fraction of a Number</h1>
+    <h1>Subtract Fractions</h1>
 
     <div id="divOptions">
-        <p id="btnImproper" class="switch on">Simplified</p>
+        <p id="integers" class="switch off">Integers</p>
     </div>
 
     <div id='divProblem'>
         <math>
+            <mn id="whole1"></mn>
             <mfrac>
-                <mn id="numer">2</mn>
-                <mn id="denom">7</mn>
+                <mn id="numer1">1</mn>
+                <mn id="denom1">2</mn>
             </mfrac>
-            <mo id="symbol">&times;</mo>
-            <mn id="whole">70</mn>
+            <mo>-</mo>
+            <mn id="whole2"></mn>
+            <mfrac>
+                <mn id="numer2">2</mn>
+                <mn id="denom2">5</mn>
+            </mfrac>
             <mo>=</mo>
-            <mn id="answer">20</mn>
+            <mn id="whole3"></mn>
+            <mfrac>
+                <mn id="numer3">1</mn>
+                <mn id="denom3">10</mn>
+            </mfrac>
         </math>
     </div>
 
@@ -169,76 +178,133 @@
         /**
         * This function toggles the button on / off
         */
-        document.getElementById('btnImproper').addEventListener('click', function(event) {
+        document.getElementById('integers').addEventListener('click', function(event) {
 
             if (this.classList.contains('on')) {
                 this.classList.remove('on');
                 this.classList.add('off');
 
-                simplified = false;
+                integers = false;
             }
             else {
                 this.classList.remove('off');
                 this.classList.add('on');
 
-                simplified = true;
+                integers = true;
             }
 
             newQuestion();
-            
+
         });
 
         // Global variables
-        let denom = 7;
-        let numer = 2;
-        let multiplier = 10;
-        let simplified = true;
+        let integers = false;
+        let whole1 = 0;
+        let numer1 = 1;
+        let denom1 = 2;
+
+        let whole2 = 0;
+        let numer2 = 2;
+        let denom2 = 5;
+
+        let whole3 = 0;
+        let numer3 = 1;
+        let denom3 = 2;
 
         /**
         * This function creates a new question
         */
         function newQuestion() {
+            // Force fractions to be the same
+            whole1 = 0;
+            numer1 = 1;
+            denom1 = 2;
+            whole2 = 0;
+            numer2 = 1;
+            denom2 = 2;
 
-            // Local variables
-            let oldDenom = denom;
-            let symbol = '';
-            let improperMulti = 1;
+            // Select fractions until different
+            while (denom1 == denom2) {
+                // Select denominater 1
+                denom1 = parseInt(Math.random() * 11) + 2;
 
-            // Select denominater
-            while (denom == oldDenom) {
-                // 2 to 12
-                denom = parseInt(Math.random() * 11) + 2;
+                // Select numerator 1
+                numer1 = parseInt(Math.random() * (denom1 - 1)) + 1;
+
+                // Simplify fraction 1, if possible
+                [numer1, denom1] = simplify(numer1, denom1);
+
+                // Select denominater 2
+                denom2 = parseInt(Math.random() * 11) + 2;
+
+                // Select numerator 2
+                numer2 = parseInt(Math.random() * (denom2 - 1)) + 1;
+
+                // Simplify fraction 2, if possible
+                [numer2, denom2] = simplify(numer2, denom2);
             }
 
-            // Select numer
-            numer = parseInt(Math.random() * (denom - 1)) + 1;
-
-            // Simplify numerator and denominator, if possible
-            [numer, denom] = simplify(numer, denom);
-
-            // Select multiplier 10 to 20
-            multiplier = parseInt(Math.random() * 11) + 10;
-
-            // Select symbol
-            if (Math.random() >= 0.5) {
-                    symbol = '&times;'
-            }
-            else {
-                symbol = '<span style="font-size:50%">of</span>';
+            // Select integers, if necessary
+            if (integers) {
+                whole1 = parseInt(Math.random() * 11) + 2;
+                whole2 = parseInt(Math.random() * 11) + 2;
             }
 
-            // Create improper fraction, if required
-            if (!simplified) {
-                // 2 to 12
-                improperMulti = parseInt(Math.random() * 11) + 2;
+            // Swap fractions, if necessary, to avoid negatives
+            if (!integers && numer1/denom1 < numer2/denom2) {
+                let tempN = numer1;
+                let tempD = denom1;
+
+                numer1 = numer2;
+                denom1 = denom2;
+
+                numer2 = tempN;
+                denom2 = tempD;
+            }
+
+
+            // Avoid negative answer
+            if (integers && whole1 < whole2) {
+                // Swap integers, if necessary
+                let tempW = whole1;
+                whole1 = whole2;
+                whole2 = tempW;
+            }
+            else if (integers && whole1 == whole2) {
+                // Increment integer, if necessary
+                whole1 ++;
+            }
+
+            // Swap fractions to force improper fractions
+            if (integers && numer1/denom1 > numer2/denom2) {
+                let tempN = numer1;
+                let tempD = denom1;
+
+                numer1 = numer2;
+                denom1 = denom2;
+
+                numer2 = tempN;
+                denom2 = tempD;
             }
 
             // Update problem
-            document.getElementById('numer').innerHTML = numer * improperMulti;
-            document.getElementById('denom').innerHTML = denom * improperMulti;
-            document.getElementById('whole').innerHTML = denom * multiplier;
-            document.getElementById('symbol').innerHTML = symbol;
-            document.getElementById('answer').innerHTML = '';
+            if (integers) {
+                document.getElementById('whole1').innerHTML = whole1;
+                document.getElementById('whole2').innerHTML = whole2;
+            }
+            else {
+                document.getElementById('whole1').innerHTML = '';
+                document.getElementById('whole2').innerHTML = '';
+            }
+            document.getElementById('numer1').innerHTML = numer1;
+            document.getElementById('denom1').innerHTML = denom1;
+
+            document.getElementById('numer2').innerHTML = numer2;
+            document.getElementById('denom2').innerHTML = denom2;
+
+            document.getElementById('whole3').innerHTML = '';
+            document.getElementById('numer3').innerHTML = '';
+            document.getElementById('denom3').innerHTML = '';
 
         }
 
@@ -247,8 +313,38 @@
         */
         function showAnswer() {
 
+            // Local variables
+            let impNumer1 = whole1 * denom1 + numer1;
+            let impNumer2 = whole2 * denom2 + numer2;
+
+            // Calciulate result
+            denom3 = denom1 * denom2;
+            numer3 = impNumer1 * denom2 - impNumer2 * denom1;
+
+            // Simplify numerator and denominator, if possible
+            [numer3, denom3] = simplify(numer3, denom3);
+
+            // Improper to mixed, if possible
+            if (numer3 >= denom3) {
+                whole3 = parseInt(numer3 / denom3);
+                numer3 = numer3 % denom3;
+            }
+            else {
+                whole3 = 0;
+            }
+
             // Update problem
-            document.getElementById('answer').innerHTML = numer * multiplier;
+            if (whole3 > 0) {
+                document.getElementById('whole3').innerHTML = whole3;
+            }
+
+            if (numer3 > 0) {
+                document.getElementById('numer3').innerHTML = numer3;
+                document.getElementById('denom3').innerHTML = denom3;
+            }
+            else if (numer3 == 0) {
+                document.getElementById('whole3').innerHTML = whole3;
+            }
 
         }
 
