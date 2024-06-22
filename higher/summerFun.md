@@ -2,7 +2,7 @@
 
 ## Introduction
 
-There are nearly eight weeks between classes in June and August.  There are eight tasks below, just one a week, to complete over the break.  Replit will switch off the Education element at the end of July, so make sure your code is still accessible when this happens.  An option would be to use Thonny and save your code to OneDrive.
+There are nearly eight weeks between classes in June and August.  There are eight tasks below, just one a week, to complete over the break.  Replit will switch off the Education element at the end of July, so make sure your code is still accessible when this happens.  An option would be to use [Thonny ](https://thonny.org/) and save your code to OneDrive.
 
 ## Task 1
 
@@ -165,7 +165,7 @@ Output: (0, 0)
 
 ## Task 7
 
-Create a function (`checkIBSN13`) that will check if a 13-digit ISBN [ISBN](https://en.wikipedia.org/wiki/ISBN#ISBN-13_check_digit_calculation) is valid.  It will accept a string, and return a Boolean value.  The function must be able to accept ISBNs with and with dashes that separate the values.
+Create a function (`checkIBSN13`) that will check if a 13-digit [ISBN](https://en.wikipedia.org/wiki/ISBN#ISBN-13_check_digit_calculation) is valid.  It will accept a string, and return a Boolean value.  The function must be able to accept ISBNs with and with dashes that separate the values.
 
 The book 'The Computers That Made Britain: The Home Computer Revolution of the 1980s' has an ISBN-13 of 9781912047857.  There are 12 digits plus the final check digit.  The check digit is calculated using the other 12 digits.
 
@@ -226,8 +226,8 @@ Create a procedure (`circleStuff`) that will calculate and display various value
 
 * Diameter
 * Circumference
-* Area of a circle
-* Volume of a sphere
+* [Area of a circle](https://www.mathsisfun.com/geometry/circle-area.html)
+* [Volume of a sphere](https://www.mathsisfun.com/geometry/sphere-volume-area.html)
 
 The results of values that have no decimal values will be shown as an integer.
 
