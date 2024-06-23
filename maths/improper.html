@@ -7,51 +7,22 @@
 
     <link rel="shortcut icon" href="images/n5.png">
 
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
     <title>Improper Fractions</title>
 
     <style>/* For all screens */
 
         body {
-            background-color: burlywood;
-            font-family: monospace;
             font-size: 9vw;
-            margin: 2vw 5vw;
         }
 
         h1 {
-            font-family: sans-serif;
             font-size: 8vw;
         }
 
         p {
-            font-size: 6vw;
             margin: 1vw 0vw;
-        }
-
-        mn {
-            font-family: monospace;
-            font-size: 10vw;
-        }
-
-        /* Class */
-
-        .button {
-            display: inline-block;
-            font-family: sans-serif;
-            font-size: 10vw;
-            margin-top: 4vw;
-            border: 0.1vw solid black;
-            border-radius: 4vw;
-            padding: 0.75vw;
-            background-color: grey;
-        }
-
-        .button:hover {
-            background-color: pink;
-        }
-
-        .button:active {
-            background-color: red;
         }
 
         /* ID */
@@ -75,28 +46,14 @@
 
             body {
                 font-size: 3vw;
-                margin: 2vw 5vw;
-            }
-
-            h1 {
-                font-size: 4vw;
             }
 
             p {
                 font-size: 3vw;
-                margin: 1vw 0vw;
             }
 
-            mi {
+            math {
                 font-size: 9vw;
-            }
-
-            /* Class */
-
-            .button {
-                font-size: 3vw;
-                margin-top: 1vw;
-                border-radius: 2vw;
             }
 
             /* ID */
@@ -116,26 +73,16 @@
 
     <div id='divProblem'>
         <math>
-            <mrow>
-                <mtd>
-                    <mfrac>
-                        <mn id="numer1">12</mn>
-                        <mn id="denom1">9</mn>
-                    </mfrac>
-                </mtd>
-                <mtd>
-                    <mn>=</mn>
-                </mtd>
-                <mtd>
-                    <mn id="whole">1</mn>
-                </mtd>
-                <mtd>
-                    <mfrac>
-                        <mn id="numer2">1</mn>
-                        <mn id="denom2">3</mn>
-                    </mfrac>
-                </mtd>
-            </mrow>
+            <mfrac>
+                <mn id="numer1">12</mn>
+                <mn id="denom1">9</mn>
+            </mfrac>
+            <mo>=</mo>
+            <mn id="whole">1</mn>
+            <mfrac>
+                <mn id="numer2">1</mn>
+                <mn id="denom2">3</mn>
+            </mfrac>
         </math>
     </div>
 
@@ -147,6 +94,7 @@
     </div>
 
     <script type="module">
+        // import {simplify} from '/simplify.js';
 
         // Add event listeners
         document.getElementById('btnNew').addEventListener('click', newQuestion);
@@ -207,56 +155,30 @@
 
         }
 
-        function simplify (value1, value2) {
+        /**
+        * This function simplifies a fraction
+        * @param {number} numer - The numerator
+        * @param {number} denom - The denominator
+        * @returns {array} The numerator and denominator
+        */
+        function simplify (numer, denom) {
             // Local variable
             let divided = true;
 
             while (divided) {
                 divided = false;
 
-                if (value1 % 2 == 0 && value2 % 2 == 0) {
-                    value1 = value1 / 2;
-                    value2 = value2 / 2;
-                    divided = true;
-                }
-                else if (value1 % 3 == 0 && value2 % 3 == 0) {
-                    value1 = value1 / 3;
-                    value2 = value2 / 3;
-                    divided = true;
-                }
-                else if (value1 % 5 == 0 && value2 % 5 == 0) {
-                    value1 = value1 / 5;
-                    value2 = value2 / 5;
-                    divided = true;
-                }
-                else if (value1 % 7 == 0 && value2 % 7 == 0) {
-                    value1 = value1 / 7;
-                    value2 = value2 / 7;
-                    divided = true;
-                }
-                else if (value1 % 13 == 0 && value2 % 13 == 0) {
-                    value1 = value1 / 13;
-                    value2 = value2 / 13;
-                    divided = true;
-                }
-                else if (value1 % 17 == 0 && value2 % 17 == 0) {
-                    value1 = value1 / 17;
-                    value2 = value2 / 17;
-                    divided = true;
-                }
-                else if (value1 % 19 == 0 && value2 % 19 == 0) {
-                    value1 = value1 / 19;
-                    value2 = value2 / 19;
-                    divided = true;
-                }
-                else if (value1 % 23 == 0 && value2 % 23 == 0) {
-                    value1 = value1 / 23;
-                    value2 = value2 / 23;
-                    divided = true;
+                for (let factor = 20; factor >= 2; factor--) {
+
+                    if (numer % factor == 0 && denom % factor == 0) {
+                        numer = numer / factor;
+                        denom = denom / factor;
+                        divided = true;
+                    }
                 }
             }
 
-            return [value1, value2];
+            return [numer, denom];
         }
 
     </script>
