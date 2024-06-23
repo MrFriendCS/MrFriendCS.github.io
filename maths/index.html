@@ -1,112 +1,93 @@
-/* For all screens */
+<!DOCTYPE html>
+<html lang='en-gb'>
 
-body {
-    background-color: burlywood;
-    font-family: sans-serif;
-    font-size: 6vw;
-    margin: 2vw 5vw;
-}
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 
-h1 {
-    font-size: 12vw;
-}
+    <link rel="shortcut icon" href="images/n5.png">
 
-h2 {
-    font-size: 6vw;
-}
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
 
-p {
-    font-size: 4vw;
-    margin: 1vw 0vw;
-}
+	<title>Maths Practise</title>
 
-li {
-    padding: 1vw 0vw;
-}
+	<style>
+        /* See external style sheet */
+    </style>
 
-math {
-    font-family: monospace;
-    font-size: 13vw;
-}
+</head>
 
-/* Classes */
+<body>
+    <h1>Maths Practise</h1>
 
-.button {
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 10vw;
-    margin: 4vw 6vw 1vw 0vw;
-    border: 0.1vw solid black;
-    border-radius: 2vw;
-    padding: 0.75vw;
-    background-color: grey;
-}
+    <div id="divOptions">
+        <p class="switch on" onClick='change(this)'>AoM</p>
+        <p class="switch on" onClick='change(this)'>Maths</p>
+    </div>
 
-.button:hover {
-    background-color: pink;
-}
+    <div id='apps'>
 
-.button:active {
-    background-color: red;
-}
+        <ul>
+            <li class='aom'><a href="addition.html">Addition</a></li>
+            <li class='aom'><a href="multiply.html">Multiply</a></li>
+            <li class='aom'><a href="divide.html">Divide</a></li>
+            <li class='aom'><a href="rounding.html">Rounding</a></li>
+            <li class='aom'><a href="multiplication.html">Multiplication</a></li>
+            <li class='aom'><a href="simplify.html">Simplify fractions</a></li>
+            <li class='aom'><a href="improper.html">Improper to Mixed</a></li>
+            <li class='aom'><a href="mixed.html">Mixed to Improper</a></li>
+            <li class='aom'><a href="fractionOf.html">Fraction of a number</a></li>
+            <li class='aom'><a href="addFractions.html">Add fractions</a></li>
+            <li class='aom'><a href="subFractions.html">Subtract fractions</a></li>
+        </ul>
+    </div>
 
-.even {
-    color: red;
-}
+    <div id='maths'>
 
-.odd {
-    color: green;
-}
+        <ul>
+            <li class='maths'><a href="surds.html">Surds</a></li>
+            <li class='maths'><a href="indices.html">Indices</a></li>
+        </ul>
+    </div>
 
-/* IDs */
+    <script>
 
-#divProblem {
-    margin-top: 20vw;
-    margin-bottom: 20vw;
-}
+        function change(element) {
 
+            // Local variable
+            let option = element.innerHTML;
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+            if (element.classList.contains('on')) {
+                element.classList.remove('on');
+                element.classList.add('off');
+            }
+            else {
+                element.classList.remove('off');
+                element.classList.add('on');
+            }
 
-    body {
-        font-size: 2vw;
-    }
+            if (element.classList.contains('off')) {
 
-    h1 {
-        font-size: 4vw;
-    }
+                var cols = document.getElementsByClassName(option.toLowerCase());
 
-    h2 {
-        font-size: 3vw;
-    }
+                for(i = 0; i < cols.length; i++) {
+                    cols[i].style.display = 'none';
+              }
+            }
+            else {
 
-    p {
-        font-size: 2vw;
-        margin: 1vw 0vw;
-    }
+                var cols = document.getElementsByClassName(option.toLowerCase());
 
-    li {
-        padding: 0.25vw 0vw;
-    }
+                for(i = 0; i < cols.length; i++) {
+                    cols[i].style.display = 'list-item';
+              }
+            }
 
-    math {
-        font-size: 9vw;
-    }
+            }
 
-    /* Classes */
+    </script>
 
-    .button {
-        font-size: 3vw;
-        margin-top: 1vw;
-        margin-right: 3vw;
-    }
+</body>
 
-    /* ID */
-
-    #divProblem {
-        margin-top: 2vw;
-        margin-bottom: 2vw;
-    }
-
-}
+</html>
