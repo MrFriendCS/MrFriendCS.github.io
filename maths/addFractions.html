@@ -7,71 +7,23 @@
 
     <link rel="shortcut icon" href="images/n5.png">
 
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+
     <title>Add Fractions</title>
 
     <style>/* For all screens */
 
         body {
-            background-color: burlywood;
-            font-family: monospace;
             font-size: 9vw;
-            margin: 2vw 5vw;
         }
 
         h1 {
-            font-family: sans-serif;
             font-size: 9vw;
         }
 
         p {
             font-size: 6vw;
-            margin: 1vw 0vw;
-        }
-
-        math {
-            font-family: monospace;
-            font-size: 13vw;
-        }
-
-        /* Class */
-
-        .button {
-            display: inline-block;
-            font-family: sans-serif;
-            font-size: 10vw;
-            margin-top: 4vw;
-            border: 0.1vw solid black;
-            border-radius: 4vw;
-            padding: 0.75vw;
-            background-color: grey;
-        }
-
-        .button:hover {
-            background-color: pink;
-        }
-
-        .button:active {
-            background-color: red;
-        }
-
-        .switch {
-            display: inline-block;
-            font-family: sans-serif;
-            font-size: 8vw;
-            margin-top: 1vw;
-            border: 0.2vw inset black;
-            border-radius: 2vw;
-            padding: 0.4vw 0.8vw;
-        }
-
-        .on {
-            border-radius: 2vw;
-            background-color: green;
-        }
-
-        .off {
-            border-radius: 0vw;
-            background-color: red;
         }
 
         /* ID */
@@ -80,53 +32,15 @@
             letter-spacing: 0vw;
         }
 
-        #divProblem {
-            display: inline-block;
-            margin-top: 20vw;
-            margin-bottom: 20vw;
-        }
-
         /* Large devices (laptops/desktops, 992px and up) */
         @media only screen and (min-width: 992px) {
 
             body {
                 font-size: 3vw;
-                margin: 2vw 5vw;
-            }
-
-            h1 {
-                font-size: 4vw;
             }
 
             p {
                 font-size: 3vw;
-                margin: 1vw 0vw;
-            }
-
-            math {
-                font-size: 9vw;
-            }
-
-            /* Class */
-
-            .button {
-                font-size: 3vw;
-                margin-top: 1vw;
-                border-radius: 2vw;
-            }
-
-            .switch {
-                font-size: 2vw;
-                margin-top: 1vw;
-                border: 0.2vw inset black;
-                padding: 0.2vw;
-            }
-
-            /* ID */
-
-            #divProblem {
-                margin-top: 2vw;
-                margin-bottom: 2vw;
             }
 
         }
@@ -157,8 +71,6 @@
         </math>
     </div>
 
-    </div>
-
     <div id="divButtons">
         <p id="btnNew" class='button'>New</p>
         <p id="btnShow" class='button'>Show</p>
@@ -186,7 +98,7 @@
 
             // Local variables
 
-            // Select denominater 1
+            // Select denominater 1 (2 to 12)
             denom1 = parseInt(Math.random() * 11) + 2;
 
             // Select numerator 1
