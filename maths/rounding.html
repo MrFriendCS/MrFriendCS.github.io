@@ -195,30 +195,58 @@
             let oldAccuracy = accuracy;
             let strType = '';
             let strPlural = '';
+            let strUnrounded = '';
+            let exponent = 0;
 
             // Pick new values
             while (rounded == oldRounded) {
-                // Random value
-                unrounded = Number((Math.random() * 100).toFixed(4));
+
+                // Create 6 digit figure
+                // Leading digit non zero
+                strUnrounded = strUnrounded + String(parseInt(Math.random() * 9) + 1);
+
+                // Add 4 digits
+                for (let digit = 0; digit < 4; digit++) {
+                    strUnrounded = strUnrounded + String(parseInt(Math.random() * 10));
+                }
+
+                // Trailing digit non zero
+                strUnrounded = strUnrounded + String(parseInt(Math.random() * 9) + 1);
+
+                // Cast to number
+                unrounded = Number(strUnrounded);
 
                 while (accuracy == oldAccuracy) {
-                    if (decimal) {
-                        // Select dp accuracy (0 to 3)
-                        accuracy = parseInt(Math.random() * 4);
-                    }
-                    else {
-                        // Select sf accuracy (2 to 4)
-                        accuracy = parseInt(Math.random() * 3) + 2;
-                    }
+                    // Select dp accuracy (0 to 3)
+                    accuracy = parseInt(Math.random() * 4);
                 }
 
-                // Calculate rounded
                 if (decimal) {
+                    // Pick divisor
+                    exponent = parseInt(Math.random() * 2) + 4;
+
+                    // Decimal places
+                    unrounded = (unrounded * 10**(-exponent));
+                    unrounded = Number(unrounded.toFixed(exponent));
+
+                    // Calculate rounded
                     rounded = unrounded.toFixed(accuracy);
+
                 }
                 else {
-                    rounded = unrounded.toPrecision(accuracy);
+                    // Pick divisor
+                    exponent = parseInt(Math.random() * 6);
+
+                    // Decimal places
+                    unrounded = (unrounded * 10**(-exponent));
+                    unrounded = Number(unrounded.toFixed(exponent));
+
+                    accuracy++;
+
+                    // Calculate rounded
+                    rounded = Number(unrounded.toPrecision(accuracy));
                 }
+
             }
 
             // Create problem text
