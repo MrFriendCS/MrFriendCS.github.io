@@ -2,86 +2,59 @@
 <html lang="en-gb">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" href="images/n5.png">
+    <link rel="shortcut icon" href="images/n5.png">
 
-	<title>Multiplication</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
 
-	<style>/* For all screens */
+    <title>Multiplication</title>
 
-		body {
-			background-color: burlywood;
-			font-family: monospace;
-			font-size: 9vw;
-			margin: 2vw 5vw;
-		}
+    <style>/* For all screens */
 
-		h1 {
-			font-family: sans-serif;
-			font-size: 12vw;
-		}
-
-		p {
-			font-size: 6vw;
-			margin: 1vw 0vw;
-		}
-
-        	div {
-			text-align:right;
-			letter-spacing: 2vw;
-		}
-
-
-        /* Class */
-
-        .button {
-            display: inline-block;
-            font-family: sans-serif;
-            font-size: 10vw;
-            margin-top: 4vw;
-            border: 0.1vw solid black;
-            border-radius: 2vw;
-            padding: 0.75vw;
-            background-color: grey;
+        body {
+            font-size: 9vw;
         }
 
-        .button:hover {
-            background-color: pink;
+        p {
+            font-size: 6vw;
         }
 
-        .button:active {
-            background-color: red;
+        div {
+            font-family: monospace;
+            text-align:right;
+            letter-spacing: 2vw;
         }
 
 
-        /* ID */
+        /* IDs */
         #divQuestion {
-          display: inline-block;
+            display: inline-block;
         }
 
         #divValues {
-          display: inline-block;
-          border-top: 0.2vw solid black;
-          border-bottom: 0.2vw solid black;
-          float: left;
+            display: inline-block;
+            border-top: 0.2vw solid black;
+            border-bottom: 0.2vw solid black;
+            float: left;
         }
 
         #divCalcs {
-          border-top: 0.2vw solid burlywood;
-          letter-spacing: 0vw;
-          display: inline-block;
-          text-align: left;
-          padding-left: 2vw;
-          float: left;
+            border-top: 0.2vw solid burlywood;
+            letter-spacing: 0vw;
+            display: inline-block;
+            text-align: left;
+            padding-left: 2vw;
+            float: left;
         }
 
         #divAnswer {
-          clear: both;
-          text-align: left;
-          text-decoration-line: underline;
-          text-decoration-style: double;
+            clear: both;
+            text-align: left;
+            text-decoration-line: underline;
+            text-decoration-style: double;
+            margin-bottom: 20vw;
         }
 
         /* Large devices (laptops/desktops, 992px and up) */
@@ -89,35 +62,23 @@
 
             body {
                 font-size: 3vw;
-                margin: 2vw 5vw;
-            }
-
-            h1 {
-                font-size: 4vw;
             }
 
             p {
                 font-size: 3vw;
-                margin: 1vw 0vw;
             }
 
             div {
                  letter-spacing: 1vw;
             }
 
-
-            /* Class */
-
-            .button {
-                font-size: 3vw;
-                margin-top: 1vw;
+            /* IDs */
+            #divAnswer {
+                margin-bottom: 8vw;
             }
 
-
-            /* ID */
-
         }
-	</style>
+    </style>
 
 </head>
 
@@ -130,19 +91,19 @@
     </div>
 
     <div id="divMiddle">
-      
+
         <div id="divValues">
             &nbsp;&nbsp;&nbsp;42<br>
             +&nbsp;480<br>
             &nbsp;5400
         </div>
-      
+
         <div id="divCalcs">
           (6 &times; 7)<br>
           (6 &times; 80)<br>
           (6 &times; 900)
         </div>
-      
+
     </div>
 
     <div id="divAnswer">
@@ -152,7 +113,7 @@
     <p class="button" onClick="newQuestion()">New</p>
     <p class="button" onClick="showAnswer()">Show</p>
 
-	<script>
+    <script>
 
         // Global variables
         let value1 = 987;
@@ -225,7 +186,7 @@
             document.getElementById("divAnswer").innerHTML = txtAnswer;
         }
 
-	</script>
+    </script>
 </body>
 
 </html>
