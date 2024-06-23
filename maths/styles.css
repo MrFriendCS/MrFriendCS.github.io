@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 12vw;
+    font-size: 8vw;
 }
 
 h2 {
@@ -105,8 +105,8 @@ math {
     /* ID */
 
     #divProblem {
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
     }
 
 }
