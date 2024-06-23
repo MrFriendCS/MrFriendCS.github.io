@@ -58,6 +58,13 @@ math {
     color: green;
 }
 
+/* IDs */
+
+#divProblem {
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -83,6 +90,10 @@ math {
         padding: 0.25vw 0vw;
     }
 
+    math {
+        font-size: 9vw;
+    }
+
     /* Classes */
 
     .button {
@@ -92,5 +103,10 @@ math {
     }
 
     /* ID */
+
+    #divProblem {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
 
 }
