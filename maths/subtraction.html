@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+
+    <title>Subtraction</title>
+
+    <style>
+        /* See external CSS */
+
+        /* For all screens, inc mobile */
+        math {
+            font-size: 9vw;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Subtraction</h1>
+
+    <div id='divProblem'>
+        <math>
+            <mn id="minuend">9876</mn>
+            <mo>-</mo>
+            <mn id="subtrahend">5432</mn>
+            <mo>=</mo>
+            <mn id="difference">4444</mn>
+        </math>
+    </div>
+
+    <div id="divButtons">
+        <p id="btnNew" class='button' onClick='newQuestion()'>New</p>
+        <p id="btnShow" class='button' onClick='showAnswer()'>Show</p>
+    </div>
+
+    <script>
+
+        // Global variables
+        let minuend = 9876;
+        let subtrahend = 5432;
+        let difference = 4444;
+
+        // Add event listeners
+        document.getElementById('btnNew').addEventListener('click', newQuestion);
+        document.getElementById('btnShow').addEventListener('click', showAnswer);
+
+        function newQuestion() {
+
+            // Local variable
+            let oldDifference = difference;
+
+            // Pick new values
+
+            while (difference == oldDifference) {
+                // 100 to 999
+                minuend = parseInt(Math.random() * 9000) + 100;
+
+                // 100 to 999
+                subtrahend = parseInt(Math.random() * 9000) + 100;
+
+                // Swap values if necessary
+                if (minuend < subtrahend) {
+                    let temp = minuend;
+                    minuend = subtrahend;
+                    subtrahend = temp;
+                }
+
+                // Calculate answer
+                difference = minuend - subtrahend;
+            }
+
+            // Update problem
+            document.getElementById('minuend').innerHTML = minuend;
+            document.getElementById('subtrahend').innerHTML = subtrahend;
+            document.getElementById('difference').innerHTML = '';
+
+        }
+
+        function showAnswer() {
+
+            // Update problem
+            document.getElementById('difference').innerHTML = difference;
+
+        }
+
+    </script>
+</body>
+
+</html>
