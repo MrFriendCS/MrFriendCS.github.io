@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+
+    <title>Multiplication</title>
+
+    <style>
+        /* See external CSS */
+
+        /* For all screens, inc mobile */
+        math {
+            font-size: 8vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            math {
+                font-size: 9vw;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Multiplication</h1>
+
+    <div id="divOptions">
+        <p id="2" class="switch on">1</p>
+        <p class="switch off">10</p>
+        <p class="switch off">100</p>
+        <p class="switch off">1000</p>
+    </div>
+
+    <div id='divProblem'>
+        <math>
+            <mn id="number">987</mn>
+            <mo>&times;</mo>
+            <mn id="multiplier">6</mn>
+            <mo>=</mo>
+            <mn id="product">5922</mn>
+        </math>
+    </div>
+
+    <div id="divButtons">
+        <p id="btnNew" class='button' onClick='newQuestion()'>New</p>
+        <p id="btnShow" class='button' onClick='showAnswer()'>Show</p>
+    </div>
+
+    <script>
+
+        // Global variables
+        let number = 987;
+        let multiplier = 6;
+        let product = 5922;
+        let multiple = 1;
+
+        // Add event listeners
+        document.getElementById('btnNew').addEventListener('click', newQuestion);
+        document.getElementById('btnShow').addEventListener('click', showAnswer);
+
+        /**
+        * This function toggles the buttons on / off and betwen dp / sf
+        */
+        document.querySelectorAll('.switch').forEach(item => {
+            item.addEventListener('click', function(event) {
+
+                let html = this.innerHTML;
+
+                document.querySelectorAll('.switch').forEach(item => {
+
+                    if (item.innerHTML == html) {
+                        item.classList.remove('off');
+                        item.classList.add('on');
+                    }
+                    else {
+                        item.classList.remove('on');
+                        item.classList.add('off');
+                    }
+
+                });
+
+                multiple = String(html);
+
+                newQuestion();
+
+            });
+        });
+
+        function newQuestion() {
+
+            // Local variable
+            let oldProduct = product;
+
+            // Pick new values
+
+            while (product == oldProduct) {
+                // 100 to 999
+                number = parseInt(Math.random() * 900) + 100;
+
+                // 2 to 9
+                multiplier = (parseInt(Math.random() * 8) + 2) * multiple;
+
+                // Calculate answer
+                product = number * multiplier;
+            }
+
+            // Create problem text
+
+            // Update problem
+            document.getElementById('number').innerHTML = number;
+            document.getElementById('multiplier').innerHTML = multiplier;
+            document.getElementById('product').innerHTML = '';
+
+        }
+
+        function showAnswer() {
+
+            // Update problem
+            document.getElementById('product').innerHTML = product;
+
+        }
+
+    </script>
+</body>
+
+</html>
