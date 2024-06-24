@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+
+    <title>Division</title>
+
+    <style>
+        /* See external CSS */
+
+        /* For all screens, inc mobile */
+        math {
+            font-size: 8vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            math {
+                font-size: 9vw;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Division</h1>
+
+    <div id="divOptions">
+        <p class="switch on">1</p>
+        <p class="switch off">10</p>
+        <p class="switch off">100</p>
+        <p class="switch off">1000</p>
+        <p class="option off">Decimals</p>
+
+    <div id='divProblem'>
+        <math>
+            <mn id="dividend">9876</mn>
+            <mo>&divide;</mo>
+            <mn id="divisor">4</mn>
+            <mo>=</mo>
+            <mn id="quotient">2469</mn>
+        </math>
+    </div>
+
+    <div id="divButtons">
+        <p id="btnNew" class='button'>New</p>
+        <p id="btnShow" class='button'>Show</p>
+    </div>
+
+    <script>
+
+        // Global variables
+        let dividend = 9876;
+        let divisor = 4;
+        let quotient = 2469;
+        let multiple = 1;
+        let decimal = false;
+
+        // Add event listeners
+        document.getElementById('btnNew').addEventListener('click', newQuestion);
+        document.getElementById('btnShow').addEventListener('click', showAnswer);
+
+        /**
+        * This function toggles the switches on / off for divisor
+        */
+        document.querySelectorAll('.switch').forEach(item => {
+            item.addEventListener('click', function(event) {
+
+                let html = this.innerHTML;
+
+                document.querySelectorAll('.switch').forEach(item => {
+
+                    if (item.innerHTML == html) {
+                        item.classList.remove('off');
+                        item.classList.add('on');
+                    }
+                    else {
+                        item.classList.remove('on');
+                        item.classList.add('off');
+                    }
+
+                });
+
+                multiple = String(html);
+
+                newQuestion();
+
+            });
+        });
+
+        /**
+        * This function toggles the option on / off for decimals
+        */
+        document.querySelectorAll('.option').forEach(item => {
+            item.addEventListener('click', function(event) {
+
+                if (this.classList.contains('on')) {
+                    this.classList.remove('on');
+                    this.classList.add('off');
+
+                    decimal = false;
+                }
+                else {
+                    this.classList.remove('off');
+                    this.classList.add('on');
+
+                    decimal = true;
+                }
+
+                newQuestion();
+
+            });
+
+        });
+
+        function newQuestion() {
+
+            // Local variable
+            let olddividend = dividend;
+
+            // Pick new values
+
+            while (dividend == olddividend) {
+                // 100 to 999
+                quotient = parseInt(Math.random() * 900) + 100;
+
+                // 2 to 9
+                divisor = (parseInt(Math.random() * 8) + 2);
+
+                // Calculate answer
+
+                dividend = quotient * divisor;
+
+            }
+
+
+            divisor = divisor * multiple;
+
+            if (!decimal) {
+                dividend = dividend * multiple;
+                quotient = quotient * multiple;
+            }
+            else {
+                quotient = quotient / multiple;
+            }
+
+            // Update problem
+            document.getElementById('dividend').innerHTML = dividend;
+            document.getElementById('divisor').innerHTML = divisor;
+            document.getElementById('quotient').innerHTML = '';
+
+        }
+
+        function showAnswer() {
+
+            // Update problem
+            document.getElementById('quotient').innerHTML = quotient;
+
+        }
+
+    </script>
+</body>
+
+</html>
