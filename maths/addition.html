@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+
+    <title>Addition</title>
+
+    <style>
+        /* See external CSS */
+
+        /* For all screens, inc mobile */
+        math {
+            font-size: 9vw;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Addition</h1>
+
+    <div id='divProblem'>
+        <math>
+            <mn id="augend">1234</mn>
+            <mo>+</mo>
+            <mn id="addend">5678</mn>
+            <mo>=</mo>
+            <mn id="sum">6912</mn>
+        </math>
+    </div>
+
+    <div id="divButtons">
+        <p id="btnNew" class='button' onClick='newQuestion()'>New</p>
+        <p id="btnShow" class='button' onClick='showAnswer()'>Show</p>
+    </div>
+
+    <script>
+
+        // Global variables
+        let augend = 1234;
+        let addend = 5678;
+        let sum = 6912;
+
+        // Add event listeners
+        document.getElementById('btnNew').addEventListener('click', newQuestion);
+        document.getElementById('btnShow').addEventListener('click', showAnswer);
+
+        function newQuestion() {
+
+            // Local variable
+            let oldSum = sum;
+
+            // Pick new values
+
+            while (sum == oldSum) {
+                // 100 to 999
+                augend  = parseInt(Math.random() * 9000) + 100;
+
+                // 100 to 999
+                addend = parseInt(Math.random() * 9000) + 100;
+
+                // Calculate answer
+                sum = augend + addend;
+            }
+
+            // Update problem
+            document.getElementById('augend').innerHTML = augend;
+            document.getElementById('addend').innerHTML = addend;
+            document.getElementById('sum').innerHTML = '';
+
+        }
+
+        function showAnswer() {
+
+            // Update problem
+            document.getElementById('sum').innerHTML = sum;
+
+        }
+
+    </script>
+</body>
+
+</html>
