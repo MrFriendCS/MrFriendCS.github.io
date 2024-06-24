@@ -1,4 +1,4 @@
-/* For all screens */
+/* For all screens, inc mobile */
 
 body {
     background-color: burlywood;
@@ -17,7 +17,6 @@ h2 {
 
 p {
     font-size: 4vw;
-    margin: 1vw 0vw;
 }
 
 li {
