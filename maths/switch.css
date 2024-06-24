@@ -1,4 +1,4 @@
-/* For all screens */
+/* For all screens, inc mobile */
 
 /* Classes */
 
@@ -6,10 +6,10 @@
     display: inline-block;
     font-family: sans-serif;
     font-size: 8vw;
-    margin-top: 1vw;
+    margin: 1vw 2vw 1vw 0vw;
     border: 0.2vw inset black;
     border-radius: 2vw;
-    padding: 0.4vw 0.8vw;
+    padding: 0.4vw 1vw;
 }
 
 .on {
@@ -30,7 +30,6 @@
     .switch {
         font-size: 2vw;
         margin-top: 1vw;
-        border: 0.2vw inset black;
         padding: 0.2vw;
     }
 
