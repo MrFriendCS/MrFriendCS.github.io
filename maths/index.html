@@ -2,58 +2,84 @@
 <html lang='en-gb'>
 
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <link rel="shortcut icon" href="images/n5.png">
 
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link href="switch.css" rel="stylesheet" type="text/css">
 
-	<title>Maths Practise</title>
+    <title>Indices</title>
 
-	<style>
-        /* See external style sheet */
+    <style>
+        /* See external CSS */
+
+        /* For all screens, inc mobile */
+        math {
+            font-size: 8vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            math {
+                font-size: 9vw;
+            }
+        }
+
     </style>
 
 </head>
 
 <body>
-    <h1>Maths Practise</h1>
+    <h1>Indices</h1>
 
     <div id="divOptions">
-        <p class="switch on" onClick='change(this)'>AoM</p>
-        <p class="switch on" onClick='change(this)'>Maths</p>
+        <p class="switch off" onClick='toggle(this)'>Negatives</p>
+        <p class="switch off" onClick='toggle(this)'>Coefficients</p>
     </div>
 
-    <div id='apps'>
-
-        <ul>
-            <li class='aom'><a href="addition.html">Addition</a></li>
-            <li class='aom'><a href="multiply.html">Multiply</a></li>
-            <li class='aom'><a href="divide.html">Divide</a></li>
-            <li class='aom'><a href="rounding.html">Rounding</a></li>
-            <li class='aom'><a href="multiplication.html">Multiplication</a></li>
-            <li class='aom'><a href="simplify.html">Simplify fractions</a></li>
-            <li class='aom'><a href="improper.html">Improper to Mixed</a></li>
-            <li class='aom'><a href="mixed.html">Mixed to Improper</a></li>
-            <li class='aom'><a href="fractionOf.html">Fraction of a number</a></li>
-            <li class='aom'><a href="addFractions.html">Add fractions</a></li>
-            <li class='aom'><a href="subFractions.html">Subtract fractions</a></li>
-        </ul>
+    <div id='divProblem'>
+        <math>
+            <mi id="coeff1">3</mi>
+            <msup>
+                <mi id="base1">a</mi>
+                <mn id="index1">2</mn>
+            </msup>
+            <mo>&times;</mo>
+            <mi id="coeff2">2</mi>
+            <msup>
+                <mi id="base2">a</mi>
+                <mn id="index2">3</mn>
+            </msup>
+            <mo>=</mo>
+            <mi id="coeff3">6</mi>
+            <msup>
+                <mi id="base3">a</mi>
+                <mn id="index3">5</mn>
+            </msup>
+        </math>
     </div>
 
-    <div id='maths'>
-
-        <ul>
-            <li class='maths'><a href="surds.html">Surds</a></li>
-            <li class='maths'><a href="indices.html">Indices</a></li>
-        </ul>
+    <div id="divButtons">
+        <p class='button' onClick='newQuestion()'>New</p>
+        <p class='button' onClick='showAnswer()'>Show</p>
     </div>
 
     <script>
 
-        function change(element) {
+        // Global variables
+        let coefficients = false;
+        let negative = false;
+        let base = 'a';
+        let coeff1 = 3;
+        let coeff2 = 2;
+        let index1 = 2;
+        let index2 = 3;
+        let coeffAnswer = coeff1 * coeff2;
+        let indAnswer = index1 + index2;
+
+        function toggle(element) {
 
             // Local variable
             let option = element.innerHTML;
@@ -61,30 +87,196 @@
             if (element.classList.contains('on')) {
                 element.classList.remove('on');
                 element.classList.add('off');
+
+                if (option == 'Negatives') {
+                    negative = false;
+                }
+                else {
+                    coefficients = false;
+                }
             }
             else {
                 element.classList.remove('off');
                 element.classList.add('on');
+
+                if (option == 'Negatives') {
+                    negative = true;
+                }
+                else {
+                    coefficients = true;
+                }
             }
 
-            if (element.classList.contains('off')) {
+            newQuestion();
 
-                var cols = document.getElementsByClassName(option.toLowerCase());
+        }
 
-                for(i = 0; i < cols.length; i++) {
-                    cols[i].style.display = 'none';
-              }
+
+        function newQuestion() {
+
+            // Local variables
+            let intBase = 0;
+            let oldCoeff = coeffAnswer;
+            let oldBase = base;
+            let oldAnswer = indAnswer;
+            let bases = ['a', 'b', 'c', 'e', 'g', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+            // Pick new values
+
+            // Coefficients
+            if (parseInt(Math.random() * 9) > 3) {
+                // 1 to 10
+                coeff1 = parseInt(Math.random() * 10) + 1;
             }
             else {
-
-                var cols = document.getElementsByClassName(option.toLowerCase());
-
-                for(i = 0; i < cols.length; i++) {
-                    cols[i].style.display = 'list-item';
-              }
+                // -1 to -10
+                coeff1 = 0 - (parseInt(Math.random() * 10) + 1);
             }
 
+            if (parseInt(Math.random() * 9) > 3) {
+                // 1 to 10
+                coeff2 = parseInt(Math.random() * 10) + 1;
             }
+            else {
+                // -1 to -10
+                coeff2 = 0 - (parseInt(Math.random() * 10) + 1);
+            }
+
+            // Coefficients?
+            if (coefficients == false) {
+                coeff1 = 1;
+                coeff2 = 1;
+            }
+
+            // Negatives allowed?
+            if (negative == false) {
+                coeff1 = Math.abs(coeff1);
+                coeff2 = Math.abs(coeff2);
+            }
+
+            // Calculate coefficient answer
+            coeffAnswer = coeff1 * coeff2;
+
+            // Base
+            while (base == oldBase) {
+                // 0 to 10
+                intBase = parseInt(Math.random() * bases.length);
+                base = bases[intBase];
+            }
+
+            // Indices
+            while (indAnswer == oldAnswer) {
+
+                if (parseInt(Math.random() * 9) > 3) {
+                    // 2 to 10
+                    index1 = parseInt(Math.random() * 9) + 2;
+                }
+                else {
+                    // -1 to -10
+                    index1 = 0 - (parseInt(Math.random() * 10) + 1);
+                }
+
+                if (parseInt(Math.random() * 9) > 3) {
+                    // 2 to 10
+                    index2 = parseInt(Math.random() * 9) + 2;
+                }
+                else {
+                    // -1 to -10
+                    index2 = 0 - (parseInt(Math.random() * 10) + 1);
+                }
+
+                // Calculate indices answer
+                indAnswer = index1 + index2;
+
+            }
+
+            // Negative indices?
+            if (negative == false) {
+                index1 = Math.abs(index1);
+                index2 = Math.abs(index2);
+                indAnswer = Math.abs(index1 + index2);
+            }
+
+            // Create problem
+
+            // First value
+            if (coeff1 == 1) {
+                document.getElementById('coeff1').innerHTML = '';
+            }
+            else if (coeff1 == -1) {
+                document.getElementById('coeff1').innerHTML = '-';
+            }
+            else {
+                document.getElementById('coeff1').innerHTML = coeff1;
+            }
+            document.getElementById('base1').innerHTML = base;
+
+            if (index1 == 1) {
+                document.getElementById('index1').innerHTML = '';
+            }
+            else {
+                document.getElementById('index1').innerHTML = index1;
+            }
+
+            // Second value
+            if (coeff2 == 1) {
+                document.getElementById('coeff2').innerHTML = '';
+            }
+            else if (coeff2 == -1) {
+                document.getElementById('coeff2').innerHTML = '-';
+            }
+            else {
+                document.getElementById('coeff2').innerHTML = coeff2;
+            }
+            document.getElementById('base2').innerHTML = base;
+
+            if (index2 == 1) {
+                document.getElementById('index2').innerHTML = '';
+            }
+            else {
+                document.getElementById('index2').innerHTML = index2;
+            }
+
+            // Third value
+            document.getElementById('coeff3').innerHTML = '';
+            document.getElementById('base3').innerHTML = '';
+            document.getElementById('index3').innerHTML = '';
+
+        }
+
+
+        function showAnswer() {
+
+            // Create answer
+
+            // Coefficient
+            if (coeffAnswer == 1) {
+                document.getElementById('coeff3').innerHTML = '';
+            }
+            else {
+                document.getElementById('coeff3').innerHTML = coeffAnswer;
+            }
+
+            // Base
+            if (indAnswer == 0 && coeffAnswer == 1) {
+                document.getElementById('base3').innerHTML = 1;
+            }
+            else if (indAnswer == 0) {
+                document.getElementById('base3').innerHTML = '';
+            }
+            else {
+                document.getElementById('base3').innerHTML = base;
+            }
+
+            // Index
+            if (indAnswer == 0 || indAnswer == 1) {
+                document.getElementById('index3').innerHTML = '';
+            }
+            else {
+                document.getElementById('index3').innerHTML = indAnswer;
+            }
+
+        }
 
     </script>
 
