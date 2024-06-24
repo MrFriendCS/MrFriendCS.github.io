@@ -2,7 +2,7 @@
 
 /* Classes */
 
-.switch {
+.switch, .option {
     display: inline-block;
     font-family: sans-serif;
     font-size: 8vw;
@@ -27,7 +27,7 @@
 
     /* Classes */
 
-    .switch {
+    .switch, .option {
         font-size: 2vw;
         margin-top: 1vw;
         padding: 0.2vw;
