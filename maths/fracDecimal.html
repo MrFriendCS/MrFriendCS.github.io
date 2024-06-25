@@ -16,21 +16,10 @@
         /* See external CSS */
 
         /* For all screens, inc mobile */
-        p {
-            font-size: 6vw;
-        }
-
         math {
-            font-size: 8vw;
+            font-size: 12vw;
         }
 
-        /* Large devices (laptops/desktops, 992px and up) */
-        @media only screen and (min-width: 992px) {
-            p {
-                font-size: 3vw;
-                margin: 1vw 0vw 2vw 0vw;
-            }
-        }
     </style>
 
 </head>
@@ -132,7 +121,7 @@
                     denominator = denominators[index];
                 }
                 else {
-                    denominator = parseInt(Math.random() * 21) + 3;
+                    denominator = ((parseInt(Math.random() * 4) + 2) * 2) -1;
                 }
 
                 // Select numerator
