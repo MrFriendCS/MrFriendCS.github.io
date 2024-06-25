@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+
+    <title>Decimals</title>
+
+    <style>
+        /* See external CSS */
+    </style>
+
+</head>
+
+<body>
+    <h1>Fraction to Decimal</h1>
+
+    <div id="divOptions">
+        <p id="btnImproper" class="switch on">Simplified</p>
+        <p id="btnRounding" class="switch off">Rounding</p>
+    </div>
+
+    <div id="divProblem">
+        <math>
+            <mfrac>
+                <mn id="numer">1</mn>
+                <mn id="denom">4</mn>
+            </mfrac>
+            <mo>=</mo>
+            <mn id="decimal">0.25</mn>
+            <mn id="rounded"></mn>
+        </math>
+    </div>
+
+    <div id="divButtons">
+        <p id="btnNew" class="button">New</p>
+        <p id="btnShow" class="button">Show</p>
+    </div>
+
+    <script type="module">
+        // import {simplify} from '/simplify.js';
+
+        // Add event listeners
+        document.getElementById('btnNew').addEventListener('click', newQuestion);
+        document.getElementById('btnShow').addEventListener('click', showAnswer);
+
+        /**
+        * This function toggles the switches on / off
+        */
+        document.querySelectorAll('.switch').forEach(item => {
+        item.addEventListener('click', function(event) {
+
+            let option = this.innerHTML;
+
+            if (this.classList.contains('on')) {
+                this.classList.remove('on');
+                this.classList.add('off');
+
+                if (option == 'Simplified') {
+                    simplified = false;
+                }
+                else {
+                    round = true;
+                }
+            }
+            else {
+                this.classList.remove('off');
+                this.classList.add('on');
+
+                if (option == 'Simplified') {
+                    simplified = true;
+                }
+                else {
+                    round = false;
+                }
+            }
+
+            newQuestion();
+
+        });
+    });
+
+        // Global variables
+        let numerator = 1;
+        let denominator = 4;
+        let decimal = 0.25;
+        let simplified = true;
+        let round = false;
+        let rounded = false;
+
+        function newQuestion() {
+
+            // Local variables
+            let oldDecimal = decimal;
+            let multiplier = 1;
+            let index = 0;
+            let denominators = [2, 4, 5, 8, 10, 20, 25, 50];
+
+            // Global
+            rounded = false;
+
+            // Pick new values
+            while (decimal == oldDecimal) {
+                // Select denominator
+                if (!round) {
+                    index = parseInt(Math.random() * denominators.length);
+                    denominator = denominators[index];
+                }
+                else {
+                    denominator = parseInt(Math.random() * 21) + 3;
+                }
+
+                // Select numerator
+                numerator = parseInt(Math.random() * (denominator - 1)) + 1;
+
+                // Simplify numerator and denominator, if possible
+                [numerator, denominator] = simplify(numerator, denominator)
+
+                // Calculate decimal
+                decimal = numerator / denominator;
+            }
+
+            // Round if necessary: 3 dp
+            if (decimal - decimal.toFixed(3) != 0) {
+                decimal = decimal.toFixed(3);
+                rounded = true;
+            }
+
+            // Select multiplier
+            if (!simplified) {
+                // 2 to 10
+                multiplier = parseInt(Math.random() * 8) + 2;
+            }
+
+            // Update problem
+            document.getElementById('numer').innerHTML = numerator * multiplier;
+            document.getElementById('denom').innerHTML = denominator * multiplier;
+            document.getElementById('decimal').innerHTML = '';
+            document.getElementById('rounded').innerHTML = '';
+
+        }
+
+        function showAnswer() {
+
+            // Update problem
+            document.getElementById('decimal').innerHTML = decimal;
+            if (rounded) {
+                document.getElementById('rounded').innerHTML = '(3 dp)';
+            }
+
+        }
+
+        /**
+        * This function simplifies a fraction
+        * @param {number} numer - The numerator
+        * @param {number} denom - The denominator
+        * @returns {array} The numerator and denominator
+        */
+        function simplify (numer, denom) {
+            // Local variable
+            let divided = true;
+
+            while (divided) {
+                divided = false;
+
+                for (let factor = 20; factor >= 2; factor--) {
+
+                    if (numer % factor == 0 && denom % factor == 0) {
+                        numer = numer / factor;
+                        denom = denom / factor;
+                        divided = true;
+                    }
+                }
+            }
+
+            return [numer, denom];
+        }
+
+    </script>
+</body>
+
+</html>
