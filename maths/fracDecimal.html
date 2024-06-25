@@ -14,6 +14,23 @@
 
     <style>
         /* See external CSS */
+
+        /* For all screens, inc mobile */
+        p {
+            font-size: 6vw;
+        }
+
+        math {
+            font-size: 8vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw 2vw 0vw;
+            }
+        }
     </style>
 
 </head>
@@ -66,7 +83,7 @@
                     simplified = false;
                 }
                 else {
-                    round = true;
+                    round = false;
                 }
             }
             else {
@@ -77,9 +94,11 @@
                     simplified = true;
                 }
                 else {
-                    round = false;
+                    round = true;
                 }
+
             }
+            console.log(round);
 
             newQuestion();
 
@@ -151,7 +170,7 @@
             // Update problem
             document.getElementById('decimal').innerHTML = decimal;
             if (rounded) {
-                document.getElementById('rounded').innerHTML = '(3 dp)';
+                document.getElementById('rounded').innerHTML = '(3dp)';
             }
 
         }
