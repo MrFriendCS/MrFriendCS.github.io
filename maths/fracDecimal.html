@@ -87,7 +87,6 @@
                 }
 
             }
-            console.log(round);
 
             newQuestion();
 
@@ -121,7 +120,7 @@
                     denominator = denominators[index];
                 }
                 else {
-                    denominator = ((parseInt(Math.random() * 4) + 2) * 2) -1;
+                    denominator = parseInt(Math.random() * 7) + 3;
                 }
 
                 // Select numerator
