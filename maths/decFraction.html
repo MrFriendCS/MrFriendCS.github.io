@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+
+    <title>Decimal to Fraction</title>
+
+    <style>
+        /* See external CSS */
+    </style>
+
+</head>
+
+<body>
+    <h1>Decimal to Fraction</h1>
+
+    <div id="divProblem">
+        <math>
+            <mn id="decimal">0.25</mn>
+            <mo>=</mo>
+            <mfrac>
+                <mn id="numer">1</mn>
+                <mn id="denom">4</mn>
+            </mfrac>
+        </math>
+    </div>
+
+    <div id="divButtons">
+        <p id="btnNew" class="button">New</p>
+        <p id="btnShow" class="button">Show</p>
+    </div>
+
+    <script type="module">
+        // import {simplify} from '/simplify.js';
+
+        // Add event listeners
+        document.getElementById('btnNew').addEventListener('click', newQuestion);
+        document.getElementById('btnShow').addEventListener('click', showAnswer);
+
+        // Global variables
+        let decimal = 0.25;
+        let numerator = 1;
+        let denominator = 4;
+
+        function newQuestion() {
+
+            // Global variable - Reset
+            denominator = 0;
+
+            // Local variables
+            let oldDecimal = decimal;
+            let option = 0;
+            let max = 0
+
+            option = parseInt(Math.random() * 10) + 1;
+
+            if (option >= 8) {
+                max = 999;
+                denominator = 1000;
+            }
+            else if (option >= 2) {
+                max = 99;
+                denominator = 100;
+            }
+            else {
+                max = 9;
+                denominator = 10;
+            }
+
+            // Pick new values
+            while (decimal == oldDecimal) {
+                // Select numerator
+                numerator = parseInt(Math.random() * max) + 1;
+
+                // Simplify numerator and denominator, if possible
+                [numerator, denominator] = simplify(numerator, denominator)
+
+                // Calculate decimal
+                decimal = numerator / denominator;
+            }
+
+            // Update problem
+            document.getElementById('decimal').innerHTML = decimal;
+            document.getElementById('numer').innerHTML = '';
+            document.getElementById('denom').innerHTML = '';
+
+        }
+
+        function showAnswer() {
+
+            // Update problem
+            document.getElementById('numer').innerHTML = numerator;
+            document.getElementById('denom').innerHTML = denominator;
+
+        }
+
+        /**
+        * This function simplifies a fraction
+        * @param {number} numer - The numerator
+        * @param {number} denom - The denominator
+        * @returns {array} The numerator and denominator
+        */
+        function simplify (numer, denom) {
+            // Local variable
+            let divided = true;
+
+            while (divided) {
+                divided = false;
+
+                for (let factor = 20; factor >= 2; factor--) {
+
+                    if (numer % factor == 0 && denom % factor == 0) {
+                        numer = numer / factor;
+                        denom = denom / factor;
+                        divided = true;
+                    }
+                }
+            }
+
+            return [numer, denom];
+        }
+
+    </script>
+</body>
+
+</html>
