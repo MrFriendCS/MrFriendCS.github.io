@@ -43,7 +43,7 @@ The square root is: 5.099
 
 ## Task 2
 
-Write a program to help with addition.  Ask how many numbers are to be added together, and the maximum value  of any number.  The only 2 to 5 numbers can be added together.  The maximum value must be positive.
+Write a program to help with addition.  Ask how many numbers are to be added together, and the maximum value  of any number.  Only from 2 to 5 numbers can be added together.  The maximum value must be positive.
 
 Create and display a list of random numbers that meet the criteria.
 
@@ -94,7 +94,7 @@ Wrong.  It's 184!
 
 ## Task 3
 
-Write a program to ask the user if they are a pupil of Castlebay School.  The program must be able to accept the answers of `Yes` and `yes`.  Any other answer will display a message to phone the office.  Pupils will be asked where are they a pupil (Nursery, Primary, or Secondary) and display the time they start school in the morning (8.30&nbsp;am, 8.55&nbsp;am, or 8.50&nbsp;am).
+Write a program to ask the user if they are a pupil of Castlebay School.  The program must be able to accept the answers of `Yes` and `yes`.  Any other answer will display a message to phone the office.  Pupils will be asked where are they a pupil (Nursery, Primary, or Secondary are the only acceptable answers) and display the time they start school in the morning (8.30&nbsp;am, 8.55&nbsp;am, or 8.50&nbsp;am).
 
 ### Structure Diagram
 
