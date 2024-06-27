@@ -98,9 +98,7 @@ Write a program to ask the user if they are a pupil of Castlebay School.  If not
 
 ### Structure Diagram
 
-```
 ![Structre diagrams](/images/N5-SDD-School-Pupil.png "Structre diagrams")
-```
 
 ### Example 1
 
