@@ -128,18 +128,25 @@ Your learning fun starts at 8.30 am.
 
 ## Task 4
 
+Create a line of poetry generator.  Each line is to be in the format:
 
+```
+<determiner> <adjective> <noun> <verb> <adverb>.
+```
+Each time the program is run, a random line of poetry is created.
 
-### Example
+### Examples
 
-#### Input
-
+```
+A blue wind slept playfully.
 ```
 
 ```
-
-#### Output
-
+My big seagull ate slowly.
 ```
 
 ```
+The rainbow dog slept happily.
+```
+
+__Tip__ five arrays are needed.  More elements in each array, the more random the poetry.
