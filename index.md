@@ -1,13 +1,11 @@
 # Courses
 
-## National 5
 
+## Computing Science
 
-* [Software](N5-CS-SDD.md)
-* [Databases](N5-CS-DDD.md)
-* [Web](N5-CS-WDD.md)
+* [N5 CS Notes](https://n5cs.readthedocs.io/ "Read the Docs")
+* [H CS Notes](https://h-cs.readthedocs.io/ "Read the Docs")
 
-## Higher
+## Maths
 
-* [Software](H-CS-SDD.md)
-* [Databases](H-CS-DDD.md)
+* [Maths Practise](https://mrfriendcs.github.io/maths/ "Maths Practise")
