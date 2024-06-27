@@ -94,7 +94,7 @@ Wrong.  It's 184!
 
 ## Task 3
 
-Write a program to ask the user if they are a pupil of Castlebay School.  If not, display a message to phone the office, otherwise ask them where are they a pupil (Nursery, Primary, or Secondary) and display the time they start school in the morning (8.30&nbsp;am, 8.55&nbsp;am, or 8.50&nbsp;am).
+Write a program to ask the user if they are a pupil of Castlebay School.  The program must be able to accept the answers of `Yes` and `yes`.  Any other answer will display a message to phone the office.  Pupils will be asked where are they a pupil (Nursery, Primary, or Secondary) and display the time they start school in the morning (8.30&nbsp;am, 8.55&nbsp;am, or 8.50&nbsp;am).
 
 ### Structure Diagram
 
@@ -111,7 +111,7 @@ Are you a pupil at Castlebay School? No
 #### Output
 
 ```
-Phone the office on 810100, Mon-Fri, after 9.30&nbsp;am.
+Phone 810100, Mon-Fri, after 9.30 am.
 ```
 
 ### Example 2
@@ -153,4 +153,4 @@ My big seagull ate slowly.
 The rainbow dog slept happily.
 ```
 
-__Tip__ five arrays are needed.  More elements in each array, the more random the poetry.
+__Tip__ Five arrays are needed.  More elements in each array, the more random the poetry.
