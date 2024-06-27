@@ -96,6 +96,12 @@ Wrong.  It's 184!
 
 Write a program to ask the user if they are a pupil of Castlebay School.  If not, display a message to phone the office, otherwise ask them where are they a pupil (Nursery, Primary, or Secondary) and display the time they start school in the morning (8.30&nbsp;am, 8.55&nbsp;am, or 8.50&nbsp;am).
 
+### Structure Diagram
+
+```
+![Structre diagrams](/images/N5-SDD-School-Pupil.png "Structre diagrams")
+```
+
 ### Example 1
 
 #### Input
