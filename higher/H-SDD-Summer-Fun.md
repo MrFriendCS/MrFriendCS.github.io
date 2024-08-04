@@ -243,13 +243,15 @@ print (math.pi)
 
 ### Example 1
 
+#### Code
+
 ``` python
 circleStuff(10.5)
 ```
 
-```
-Output:
+#### Output
 
+```
 Diameter: 21 units
 Circumference: 65.97 units
 Area: 346.36 units squared
