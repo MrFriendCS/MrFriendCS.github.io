@@ -10,22 +10,30 @@ Create a function (`inchesToFeet`) that will accept an integer.  The actual para
 
 ### Example 1
 
+#### Code
+
 ``` python
 print(inchesToFeet(36))
 ```
 
+#### Output
+
 ```
-Output: (3, 0)
+(3, 0)
 ```
 
 ### Example 2
+
+#### Code
 
 ``` python
 print(inchesToFeet(78))
 ```
 
+#### Output
+
 ```
-Output: (6, 6)
+(6, 6)
 ```
 
 ## Task 2
@@ -39,22 +47,30 @@ Create a function (`makeUsername`) that will accept a string.  It will use the s
 
 ### Example 1
 
+#### Code
+
 ``` python
 print(makeUsername("William"))
 ```
 
+#### Output
+
 ```
-Output: eswill2f
+eswill2f
 ```
 
 ### Example 2
+
+#### Code
 
 ``` python
 print(makeUsername("SUE"))
 ```
 
+#### Output
+
 ```
-Output: essue5t
+essue5t
 ```
 
 ## Task 3
@@ -63,22 +79,30 @@ Create a function (`reverse`) that will reverse the characters in a string.
 
 ### Example 1
 
+#### Code
+
 ``` python
 print(reverse("William"))
 ```
 
+#### Output
+
 ```
-Output: mailliW
+mailliW
 ```
 
 ### Example 2
+
+#### Code
 
 ``` python
 print(makeUsername("How are you m8?"))
 ```
 
+#### Output
+
 ```
-Output: ?8m uoy era woH
+?8m uoy era woH
 ```
 
 ## Task 4
@@ -87,22 +111,30 @@ Create a function (`shift`) that will accept a letter (lower or uppercase) and r
 
 ### Example 1
 
+#### Code
+
 ``` python
 print(shift("a"))
 ```
 
+#### Output
+
 ```
-Output: B
+B
 ```
 
 ### Example 2
+
+#### Code
 
 ``` python
 print(shift("?"))
 ```
 
+#### Output
+
 ```
-Output: ?
+?
 ```
 
 ## Task 5
@@ -111,32 +143,44 @@ Create a function (`contains`) that will accept a string and a character.  If th
 
 ### Example 1
 
+#### Code
+
 ``` python
 print(contains("Help!", "!"))
 ```
 
+#### Output
+
 ```
-Output: True
+True
 ```
 
 ### Example 2
+
+#### Code
 
 ``` python
 print(contains("Help!", "h"))
 ```
 
+#### Output
+
 ```
-Output: True
+True
 ```
 
 ### Example 3
+
+#### Code
 
 ``` python
 print(contains("Help!", "E"))
 ```
 
+#### Output
+
 ```
-Output: True
+True
 ```
 
 ## Task 6
@@ -145,22 +189,30 @@ Create a function (`letterTypes`) that will accept a string.  The function will 
 
 ### Example 1
 
+#### Code
+
 ``` python
 print(letterTypes("Ada Lovelace was the first programmer!"))
 ```
 
+#### Output
+
 ```
-Output: (2, 30)
+(2, 30)
 ```
 
 ### Example 2
+
+#### Code
 
 ``` python
 print(letterTypes("####! ####!"))
 ```
 
+#### Output
+
 ```
-Output: (0, 0)
+(0, 0)
 ```
 
 ## Task 7
@@ -181,12 +233,14 @@ Each digit is multiplied by either 1 or 3, depending on its position.
 | 8 &times; 1 = 8 | 5 &times; 3 = 15 |
 
 Calculate the sum (example of working):
+
 ```
 Sum = 9 + 21 + 8 + 3 + 9 + 3 + 2 + 0 + 4 + 21 + 8 + 15
 Sum = 103
 ```
 
 Calculate the remainder (example of working):
+
 ```
 Remainder = Sum mod 10
 Remainder = 103 mod 10
@@ -194,6 +248,7 @@ Remainder = 3
 ```
 
 Calculate the sum digit (example of working):
+
 ```
 Check digit = 10 - Remainder
 Check digit = 10 - 3
@@ -202,22 +257,30 @@ Check digit = 7
 
 ### Example 1
 
+#### Code
+
 ``` python
 print(checkIBSN13("9781916868076"))
 ```
 
+#### Output
+
 ```
-Output: True
+True
 ```
 
 ### Example 2
+
+#### Code
 
 ``` python
 print(checkIBSN13("978-0-306-40615-7"))
 ```
 
+#### Output
+
 ```
-Output: True
+True
 ```
 
 ## Task 8
