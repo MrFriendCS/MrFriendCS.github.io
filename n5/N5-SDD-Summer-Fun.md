@@ -150,7 +150,7 @@ My big seagull ate slowly.
 ```
 
 ```
-The rainbow dog slept happily.
+The rainbow dog ran happily.
 ```
 
 __Tip__ Five arrays are needed.  More elements in each array, the more random the poetry.
