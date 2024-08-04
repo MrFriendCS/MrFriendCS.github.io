@@ -4,7 +4,7 @@
 
 There are over seven weeks between classes in June and August.  There are four tasks below, about one every other week, to complete over the break.
 
-Replit will switch off the Education element at the end of July, so make sure your code is still accessible when this happens.  An option would be to use [Thonny ](https://thonny.org/) and save your code to OneDrive.
+Replit will switch off the Education element at the end of July, so make sure your code is still accessible when this happens.  An option would be to use [Thonny ](https://thonny.org/) or the [RPF Code Editor](https://editor.raspberrypi.org/en/) and save your code to OneDrive or OneNote.
 
 ## Task 1
 
