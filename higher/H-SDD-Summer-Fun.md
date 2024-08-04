@@ -96,7 +96,7 @@ mailliW
 #### Code
 
 ``` python
-print(makeUsername("How are you m8?"))
+print(reverse("How are you m8?"))
 ```
 
 #### Output
