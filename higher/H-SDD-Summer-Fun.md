@@ -171,8 +171,8 @@ The book 'The Computers That Made Britain: The Home Computer Revolution of the 1
 
 Each digit is multiplied by either 1 or 3, depending on its position.
 
-| 1st, 3rd, ... | 2nd, 4th, ... |
-| ------------- | ------------- |
+| 1st, 3rd, ...   | 2nd, 4th, ... |
+| -------------   | ------------- |
 | 9 &times; 1 = 9 | 7 &times; 3 = 21 |
 | 8 &times; 1 = 8 | 1 &times; 3 = 3 |
 | 9 &times; 1 = 9 | 1 &times; 3 = 3 |
@@ -180,20 +180,20 @@ Each digit is multiplied by either 1 or 3, depending on its position.
 | 4 &times; 1 = 4 | 7 &times; 3 = 21 |
 | 8 &times; 1 = 8 | 5 &times; 3 = 15 |
 
-Calculate the sum :
+Calculate the sum (example of working):
 ```
 Sum = 9 + 21 + 8 + 3 + 9 + 3 + 2 + 0 + 4 + 21 + 8 + 15
 Sum = 103
 ```
 
-Calculate the remainder:
+Calculate the remainder (example of working):
 ```
 Remainder = Sum mod 10
 Remainder = 103 mod 10
 Remainder = 3
 ```
 
-Calculate the sum digit:
+Calculate the sum digit (example of working):
 ```
 Check digit = 10 - Remainder
 Check digit = 10 - 3
