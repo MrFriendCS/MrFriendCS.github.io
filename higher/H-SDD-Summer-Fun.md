@@ -174,13 +174,13 @@ True
 #### Code
 
 ``` python
-print(contains("Help!", "E"))
+print(contains("Help!", "a"))
 ```
 
 #### Output
 
 ```
-True
+False
 ```
 
 ## Task 6
