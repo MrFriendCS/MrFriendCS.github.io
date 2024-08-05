@@ -294,7 +294,7 @@ Create a procedure (`circleStuff`) that will accept a number that represents a r
 
 Any results that have no decimal part will be shown as an integer.
 
-### Starter code
+### Using pi Example
 
 ``` python
 # Import math Library
