@@ -45,7 +45,7 @@ Create a function (`makeUsername`) that will accept a string.  It will use the s
 * Integer: random single digit (1 to 9)
 * Character: random single character (a to z)
 
-### Example 1
+### Example 3
 
 #### Code
 
@@ -59,7 +59,7 @@ print(makeUsername("William"))
 eswill2f
 ```
 
-### Example 2
+### Example 4
 
 #### Code
 
@@ -77,7 +77,7 @@ essue5t
 
 Create a function (`reverse`) that will reverse the characters in a string.
 
-### Example 1
+### Example 5
 
 #### Code
 
@@ -91,7 +91,7 @@ print(reverse("William"))
 mailliW
 ```
 
-### Example 2
+### Example 6
 
 #### Code
 
@@ -109,7 +109,7 @@ print(reverse("How are you m8?"))
 
 Create a function (`shift`) that will accept a letter (lower or uppercase) and return the next letter (uppercase).  If the letter is `z` or `Z` then `A` is returned.  Any other characters are returned unchanged.
 
-### Example 1
+### Example 7
 
 #### Code
 
@@ -123,7 +123,7 @@ print(shift("a"))
 B
 ```
 
-### Example 2
+### Example 8
 
 #### Code
 
@@ -141,7 +141,7 @@ print(shift("?"))
 
 Create a function (`contains`) that will accept a string and a character.  If the character is anywhere in the string the function will return `True`, otherwise it will return `False`.  The function is not case sensitive.
 
-### Example 1
+### Example 9
 
 #### Code
 
@@ -155,7 +155,7 @@ print(contains("Help!", "!"))
 True
 ```
 
-### Example 2
+### Example 10
 
 #### Code
 
@@ -169,7 +169,7 @@ print(contains("Help!", "h"))
 True
 ```
 
-### Example 3
+### Example 11
 
 #### Code
 
@@ -187,7 +187,7 @@ True
 
 Create a function (`letterTypes`) that will accept a string.  The function will count the number of uppercase and lowercase characters and return the values.
 
-### Example 1
+### Example 12
 
 #### Code
 
@@ -201,7 +201,7 @@ print(letterTypes("Ada Lovelace was the first programmer!"))
 (2, 30)
 ```
 
-### Example 2
+### Example 13
 
 #### Code
 
@@ -255,7 +255,7 @@ Check digit = 10 - 3
 Check digit = 7
 ```
 
-### Example 1
+### Example 14
 
 #### Code
 
@@ -269,7 +269,7 @@ print(checkIBSN13("9781916868076"))
 True
 ```
 
-### Example 2
+### Example 15
 
 #### Code
 
@@ -304,7 +304,7 @@ import math
 print (math.pi)
 ```
 
-### Example 1
+### Example 16
 
 #### Code
 
