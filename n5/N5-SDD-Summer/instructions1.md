@@ -1,16 +1,16 @@
-# S3 SDD Tasks - Summer 2024
+# N5 SDD - Summer Tasks
 
 ## Introduction
 
 There are over seven weeks between classes in June and August.  There are four tasks below, about one every other week, to complete over the break.
 
-Replit will switch off the Education element at the end of July, so make sure your code is still accessible when this happens.  An option would be to use [Thonny ](https://thonny.org/) or the [RPF Code Editor](https://editor.raspberrypi.org/en/) and save your code to OneDrive or OneNote.
+Use [Thonny](https://thonny.org/) or the [RPF Code Editor](https://editor.raspberrypi.org/en/) and save your code to OneDrive or OneNote.
 
 ## Task 1
 
 Ask the user to enter two values.  Use the values to do a number of calculations.
 
-### Example
+### Example 1
 
 #### Input
 
@@ -35,7 +35,7 @@ Ask the use for the base and height of a triangle.  Use these values to calculat
 
 Link: [Maths is Fun](https://www.mathsisfun.com/algebra/trig-area-triangle-without-right-angle.html)
 
-### Example
+### Example 2
 
 #### Input
 
@@ -56,7 +56,7 @@ Ask the user for a value.  Use the value to calculate its square root.
 
 `Note:` Raise a value to the power of `0.5` to find it's square root.
 
-### Example
+### Example 3
 
 #### Input
 
@@ -74,7 +74,7 @@ The square root of 25 is 5.0
 
 Ask the user their name, year of birth (4 digits), and the current year (4 digits).  Use the information provided to calculate the years that some milestone ages are reached.
 
-### Example
+### Example 4
 
 #### Input
 ```

@@ -1,10 +1,10 @@
-# N5 SDD Tasks - Summer 2024
+# N5 SDD - Summer Tasks
 
 ## Introduction
 
 There are over seven weeks between classes in June and August.  There are four tasks below, about one every other week, to complete over the break.
 
-Replit will switch off the Education element at the end of July, so make sure your code is still accessible when this happens.  An option would be to use [Thonny ](https://thonny.org/) or the [RPF Code Editor](https://editor.raspberrypi.org/en/) and save your code to OneDrive or OneNote.
+Use [Thonny](https://thonny.org/) or the [RPF Code Editor](https://editor.raspberrypi.org/en/) and save your code to OneDrive or OneNote.
 
 ## Task 1
 
@@ -52,7 +52,7 @@ Ask the user for the sum of the values, and display an appropriate message.
 __Note 1__: `\n` = new line
 __Note 2__: `\t` = tab
 
-### Example 1
+### Example 3
 
 #### Input
 
@@ -72,7 +72,7 @@ What is the sum? 15
 Correct!
 ```
 
-### Example 2
+### Example 4
 
 #### Input
 
@@ -100,7 +100,7 @@ Write a program to ask the user if they are a pupil of Castlebay School.  The pr
 
 ![Structure diagram](images/N5-SDD-School-Pupil.png "Structure diagram")
 
-### Example 1
+### Example 5
 
 #### Input
 
@@ -114,7 +114,7 @@ Are you a pupil at Castlebay School? No
 Phone 810100, Mon-Fri, after 9.30 am.
 ```
 
-### Example 2
+### Example 6
 
 #### Input
 
@@ -139,7 +139,7 @@ Create a line of poetry generator.  Each line is to be in the format:
 ```
 Each time the program is run, a random line of poetry is created.
 
-### Examples
+### Example 6
 
 ```
 A blue wind slept playfully.
