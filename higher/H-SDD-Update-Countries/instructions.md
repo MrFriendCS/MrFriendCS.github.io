@@ -1,6 +1,6 @@
 # H SDD - Update Countries
 
-The file [countries.csv](https://raw.githubusercontent.com/MrFriendCS/MrFriendCS.github.io/main/higher/H-SDD-Update-Countries/countries.csv "CSV file") contains the information about six countries.  Increase the populations by 10%, rounded to 1 decimal place, and then save the data in a new file called `updated.csv`.  Hint, be careful of the order of the parallel arrays.
+The file [costs.csv](assets/costs.csv "CSV file") contains the information about seven sweets that are sold in a tuck shop.  There are four fields in the file: Name, Weight, Contains nuts, Price.  Increase the price by 10%, and then save the data in a new file called `updated.csv`.
 
 ![Structure diagram](assets/sd.png)
 
