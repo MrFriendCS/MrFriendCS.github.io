@@ -1,28 +1,28 @@
-# Title: H SDD Update Countries
+# Title: H SDD Update Prices
 # Author: Mr Friend
-# Date 5 Sep 2023
+# Date 22 Aug 2024
 
 #
 # Subprograms
 #
 
 def getData():
-    """Return parallel arrays from countries.csv"""
+    """Return parallel arrays from costs.csv"""
 
     # Declare local variable and arrays
     line = ""
     
-    caps = [""] * 6
-    states = [""] * 6
-    pops = [0.0] * 6
+    subNames = [""] * 7
+    subWeights = [""] * 7
+    subPrices = [0.0] * 7
     
-    temp = [""] * 3
+    temp = [""] * 4
     
     # Open connection to file
-    file = open("countries.csv", "r")
+    file = open("costs.csv", "r")
 
     # Loop for each line of data
-    for index in range(len(caps)):
+    for index in range(len(subNames)):
         # Read line of data
         line = file.readline()
 
@@ -30,53 +30,54 @@ def getData():
         temp = line.split(",")
 
         # Assign values to arrays
-        caps[index] = temp[0].strip()
-        states[index] = temp[1].strip()
-        pops[index] = float(temp[2].strip())
+        subNames[index] = temp[0].strip()
+        subWeights[index] = int(temp[1].strip())
+        subPrices[index] = float(temp[2].strip())
+        
 
     # close connection to file
     file.close()
 
     # Return data
-    return caps, states, pops
+    return subNames, subWeights, subPrices
 
 
-def increase(values):
+def increase(subPrices):
     """Return array of real, increased by 10%"""
 
     # Declare local variables and array
-    value = 0.0
-    newValue = 0.0
+    price = 0.0
+    newPrice = 0.0
     
-    newValues = [0.0] * len(values)
+    subNewPrices = [0.0] * len(subPrices)
 
     # Loop for each value
-    for index in range(len(values)):
+    for index in range(len(subPrices)):
 
         # Extract population
-        value = values[index]
+        price = subPrices[index]
 
-        # Increase by 10% and round to 1 dp
-        newValue = round(value * 1.1, 1)
+        # Increase by 10% and round to 2 dp
+        newPrice = round(price * 1.1, 2)
 
         # Store new value
-        newValues[index] = newValue
+        subNewPrices[index] = newPrice
 
     # Return values
-    return newValues
+    return subNewPrices
 
 
-def saveData(states, caps, pops):
+def saveData(subNames, subWeights, subPrices):
     """Save parallel arrays to updated.csv"""
     
     # Open connection to file
     file = open("updated.csv", "w")
 
     # Loop for each line of data
-    for index in range(len(caps)):
-        file.write(states[index] + ",")
-        file.write(caps[index] + ",")
-        file.write(str(pops[index]) + "\n")
+    for index in range(len(subNames)):
+        file.write(subNames[index] + ",")
+        file.write(str(subWeights[index]) + ",")
+        file.write(str(subPrices[index]) + "\n")
 
     # close connection to file
     file.close()
@@ -87,16 +88,16 @@ def saveData(states, caps, pops):
 #
 
 # Declare global variables and arrays
-countries = [""] * 6
-capitals = [""] * 6
-populations = [0.0] * 6
-newPops = [0.0] * 6
+names = [""] * 7
+weights = [0] * 7
+prices = [0.0] * 7
+newPrices = [0.0] * 7
 
 # Get data
-capitals, countries, populations = getData()
+names, weights, prices = getData()
 
 # Increase population
-newPops = increase(populations)
+newPrices = increase(prices)
 
 # Save data
-saveData(countries, capitals, newPops)
+saveData(names, weights, newPrices)
