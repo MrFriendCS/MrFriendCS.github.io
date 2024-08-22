@@ -10,9 +10,9 @@ A new food business wants to make sure it is charging enough to be able to stay 
 
 Produce a program that will help the business calculate the price of each plate of food.
 
-The user is to be asked how many ingredients there are, and the price of each ingredient.  The net cost of a plate will be calculated and displayed.
+The user is to be asked how many ingredients there are, and the price of each ingredient.  The cost of a plate will be calculated and displayed.
 
-The gross price of each item will be displayed, and the gross cost of a plate will be caluclated and displayed.
+The price that each item will be sold for will be displayed, and the cost of a plate will be calculated and displayed.
 
 Any example of the expected user interface is shown below.
 
