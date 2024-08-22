@@ -4,7 +4,7 @@
 
 A small app is required to record how far someone has walked over a four week period.  The app will ask the user to enter a valid total distance for each of the four weeks.  An example of the user interface is shown below.
 
-### Example: Input
+### Example: User Interface
 
 ```
 Enter the distance walked each week:
@@ -19,7 +19,7 @@ The app will calculate the total distance, and the average distance to 1 decimal
 
 The data and the results will be written to a file `walking.txt`.  An example of the file content is shown below.
 
-### Example: Output
+### Example: walking.txt
 
 ```
 Walking Results - 4 Weeks
