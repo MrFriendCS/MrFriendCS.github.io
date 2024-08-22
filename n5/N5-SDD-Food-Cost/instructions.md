@@ -21,7 +21,7 @@ Any example of the expected user interface is shown below.
 ```
 How many ingredients? 4
 
-Net
+Buy
 -------------
 Item 1: 9.23
 Item 2: 2.56
@@ -31,7 +31,7 @@ Item 4: 5
 £ 17.8
 -------------
 
-Gross
+Sell
 -------------
 Item 1: 36.92
 Item 2: 10.24
