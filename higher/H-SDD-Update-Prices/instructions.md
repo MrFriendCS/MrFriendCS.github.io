@@ -29,7 +29,7 @@ Increase the prices by 10%, update the names of the items so each starts with a 
 4.1.4 End if
 ```
 
-### Example file content
+### Example pricelist.txt
 
 ```
 Tuck Shop Price List
