@@ -1,103 +1,75 @@
-# Title: H SDD Update Prices
+# Title: H SDD Tuck Shop
 # Author: Mr Friend
-# Date 22 Aug 2024
-
-#
-# Subprograms
-#
-
-def getData():
-    """Return parallel arrays from costs.csv"""
-
-    # Declare local variable and arrays
-    line = ""
-    
-    subNames = [""] * 7
-    subWeights = [""] * 7
-    subPrices = [0.0] * 7
-    
-    temp = [""] * 4
-    
-    # Open connection to file
-    file = open("costs.csv", "r")
-
-    # Loop for each line of data
-    for index in range(len(subNames)):
-        # Read line of data
-        line = file.readline()
-
-        # Split line - array
-        temp = line.split(",")
-
-        # Assign values to arrays
-        subNames[index] = temp[0].strip()
-        subWeights[index] = int(temp[1].strip())
-        subPrices[index] = float(temp[2].strip())
-        
-
-    # close connection to file
-    file.close()
-
-    # Return data
-    return subNames, subWeights, subPrices
-
-
-def increase(subPrices):
-    """Return array of real, increased by 10%"""
-
-    # Declare local variables and array
-    price = 0.0
-    newPrice = 0.0
-    
-    subNewPrices = [0.0] * len(subPrices)
-
-    # Loop for each value
-    for index in range(len(subPrices)):
-
-        # Extract population
-        price = subPrices[index]
-
-        # Increase by 10% and round to 2 dp
-        newPrice = round(price * 1.1, 2)
-
-        # Store new value
-        subNewPrices[index] = newPrice
-
-    # Return values
-    return subNewPrices
-
-
-def saveData(subNames, subWeights, subPrices):
-    """Save parallel arrays to updated.csv"""
-    
-    # Open connection to file
-    file = open("updated.csv", "w")
-
-    # Loop for each line of data
-    for index in range(len(subNames)):
-        file.write(subNames[index] + ",")
-        file.write(str(subWeights[index]) + ",")
-        file.write(str(subPrices[index]) + "\n")
-
-    # close connection to file
-    file.close()
-
-
-#
-# Main program
-#
+# Date 23 Aug 2024
 
 # Declare global variables and arrays
-names = [""] * 7
-weights = [0] * 7
-prices = [0.0] * 7
-newPrices = [0.0] * 7
+names = [""] * 11
+weights = [0] * 11
+prices = [0.0] * 11
+newPrices = [0.0] * 11
+line = ""
+temp = [""] * 3
+firstLetter = ""
+ascii = 0
 
-# Get data
-names, weights, prices = getData()
+# Open connection to file
+file = open("tuckshop.txt", "r")
 
-# Increase population
-newPrices = increase(prices)
+# Loop for each line of data
+for index in range(len(names)):
+    # Read line of data
+    line = file.readline()
 
-# Save data
-saveData(names, weights, newPrices)
+    # Split line - array
+    temp = line.split(",")
+
+    # Assign values to arrays
+    names[index] = temp[0].strip()
+    weights[index] = int(temp[1].strip())
+    prices[index] = float(temp[2].strip())
+    
+# close connection to file
+file.close()
+
+
+# Loop for each value
+for index in range(len(prices)):
+
+    # Increase by 10%
+    prices[index] = round(prices[index] * 1.10, 2)
+
+# Loop for each name
+for index in range(len(names)):
+
+    # Get first letter
+    firstLetter = names[index][0]
+    
+    # ASCII value
+    ascii = ord(firstLetter)
+    
+    if ascii >= 97 and ascii <= 122:
+        firstLetter = chr(ascii-32)
+        names[index] = firstLetter + names[index][1: ]
+
+
+# Open connection to file
+file = open("pricelist.txt", "w")
+
+file.write("Tuck Shop Price List\n")
+file.write("--------------------\n\n")
+
+# Loop for each line of data
+for index in range(len(names)):
+    
+    file.write(names[index] + " (")
+    file.write(str(weights[index]) + "g) - ")
+    
+    if prices[index] >= 1:
+        file.write("£" + str(prices[index]) + "\n")
+    else:
+        file.write(str(prices[index]) + "p" + "\n")
+
+file.write("\nEnd of price list!")
+
+# close connection to file
+file.close()
