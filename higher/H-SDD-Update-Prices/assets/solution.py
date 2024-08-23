@@ -13,7 +13,7 @@ firstLetter = ""
 ascii = 0
 
 # Open connection to file
-file = open("tuckshop.txt", "r")
+file = open("tuckshop.csv", "r")
 
 # Loop for each line of data
 for index in range(len(names)):

@@ -1,4 +1,4 @@
-# H SDD - Tuck Shop Prices
+# H SDD - Tuck Shop
 
 ## Introduction
 
