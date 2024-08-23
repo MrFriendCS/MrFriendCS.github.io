@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Youth Cafe runs a tuck shop that sells sweets, crisps, drinks etc. The details of how much each item costs to buy from the Co-op are kept in the file [tuckshop.txt](assets/tuckshop.txt "Text file").  There are three fields in the file: Name, Weight, and Price.
+The Youth Cafe runs a tuck shop that sells sweets, crisps, drinks etc. The details of how much each item costs to buy from the Co-op are kept in the file [tuckshop.csv](assets/tuckshop.csv "CSV file").  There are three fields in the file: Name, Weight, and Price.
 
 The Youth Cafe sells the items at a small profit (10%).  A price list is created that shows the details of the items and the price they are sold for.  These details are saved in a file called `pricelist.txt`.
 
