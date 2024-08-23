@@ -2,11 +2,9 @@
 
 ## Introduction
 
-The Youth Cafe runs a tuck shop that sells sweets, crisps, drinks etc. The details of how much each item costs to buy from the Co-op is kept in the file [tuckshop.txt](assets/tuckshop.txt "Text file").
+The Youth Cafe runs a tuck shop that sells sweets, crisps, drinks etc. The details of how much each item costs to buy from the Co-op are kept in the file [tuckshop.txt](assets/tuckshop.txt "Text file").  There are three fields in the file: Name, Weight, and Price.
 
-The Youth Cafe sells the items at a small profit (10%).  A price list is created that shows the details of the items and the price they are sold for.  These details are saved in held in a file called `pricelist.txt`.
-
-The file [tuckshop.txt](assets/tuckshop.txt "Text file") contains the information about seven sweets that are sold in the Youth Cafe tuck shop.  There are three fields in the file: Name, Weight, and Price.
+The Youth Cafe sells the items at a small profit (10%).  A price list is created that shows the details of the items and the price they are sold for.  These details are saved in a file called `pricelist.txt`.
 
 ## Task
 
@@ -24,7 +22,7 @@ Increase the prices by 10%, update the names of the items so each starts with a 
 ## Refinements
 
 ```
-4.1   If price less than a pound
+4.1   If price is less than a pound
 4.1.1     write as pence
 4.1.2 Otherwise
 4.1.3     write as pounds
