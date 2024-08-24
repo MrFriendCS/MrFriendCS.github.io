@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+
+    <title>Basic Pay</title>
+
+    <style>
+        /* See external CSS */
+
+        /* For all screens, inc mobile */
+        p {
+            font-size: 6vw;
+        }
+
+        math {
+            font-size: 8vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            p {
+                font-size: 3vw;
+                margin: 1vw 0vw 2vw 0vw;
+            }
+			
+			math {
+				font-size: 5vw;
+				margin-bottom: 2vw;
+				}
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Basic Pay</h1>
+
+    <div id='divProblem'>
+        <p>A job pays £<span id="rate">13.50</span> per hour, working <span id="hours">20</span> hours per week.</p>
+		<p>Calculate the weekly, annual, and monthly gross pay.<p>
+		
+		
+        <math>
+			<ms onclick='showWeek()'>Week:&nbsp;</ms>
+            <mn id="rateTxt">£13.50</mn>
+            <mo id="symbol1">&times;</mo>
+            <mn id="noOfHours">20</mn>
+            <mo id="symbol2">=</mo>
+            <mn id="weeklyAns">£270</mn>
+        </math>
+		
+		<br>
+		
+		<math>
+			<ms onclick='showYear()'>Year:&nbsp;</ms>
+            <mn id="weeklyTxt">£270</mn>
+            <mo id="symbol3">&times;</mo>
+            <mn id="noOfWeeks">52</mn>
+            <mo id="symbol4">=</mo>
+            <mn id="annualAns">£14040</mn>
+        </math>
+		
+		<br>
+		
+		<math>
+			<ms onclick='showMonth()'>Month:&nbsp;</ms>
+            <mn id="annualTxt">£14040</mn>
+            <mo id="symbol5">&divide;</mo>
+            <mn id="noOfMonths">12</mn>
+            <mo id="symbol6">=</mo>
+            <mn id="monthlyAns">£1170</mn>
+        </math>
+    </div>
+
+    <div id="divButtons">
+        <p class='button' onclick='newQuestion()'>New</p>
+        <p class='button' onclick='showAnswer()'>Show</p>
+    </div>
+
+    <script>
+
+        // Global variables
+        let rate = 13.50;
+        let hours = 20;
+        let weekly = 270;
+		let annual = 14040;
+		let monthly = 1170;
+		
+        
+        function newQuestion() {
+
+            // Pick new values
+			rate = (parseInt(Math.random() * 1650) + 1350) / 100
+			hours = parseInt(Math.random() * 37) + 3	
+
+			// Create problem text			
+			document.getElementById('rate').innerHTML = rate.toFixed(2);
+			document.getElementById('hours').innerHTML = hours;
+			
+			// Calculate answers
+			weekly = rate * hours;
+			annual = weekly * 52;
+			monthly = annual / 12;
+			
+			// Clear answers - Week
+			document.getElementById('rateTxt').innerHTML = "";
+			document.getElementById('symbol1').innerHTML = "";
+			document.getElementById('noOfHours').innerHTML = "";
+			document.getElementById('symbol2').innerHTML = "";
+			document.getElementById('weeklyAns').innerHTML = "";
+			
+			// Clear answers - Year
+			document.getElementById('weeklyTxt').innerHTML = "";
+			document.getElementById('symbol3').innerHTML = "";
+			document.getElementById('noOfWeeks').innerHTML = "";
+			document.getElementById('symbol4').innerHTML = "";
+			document.getElementById('annualAns').innerHTML = "";
+			
+			// Clear answers - Month
+			document.getElementById('annualTxt').innerHTML = "";
+			document.getElementById('symbol5').innerHTML = "";
+			document.getElementById('noOfMonths').innerHTML = "";
+			document.getElementById('symbol6').innerHTML = "";
+			document.getElementById('monthlyAns').innerHTML = "";
+			       
+
+        }
+
+        function showAnswer() {
+		
+            showMonth();  // Shows all
+
+        }
+		
+		function showWeek() {
+		
+		// Create answer - week
+			if (rate == Math.trunc(rate)) {
+				document.getElementById('rateTxt').innerHTML = "£" + rate;
+			}
+			else {
+				document.getElementById('rateTxt').innerHTML = "£" + rate.toFixed(2);
+			}
+			
+			
+			document.getElementById('symbol1').innerHTML = "&times;";
+			document.getElementById('noOfHours').innerHTML = hours;
+			document.getElementById('symbol2').innerHTML = "=";
+			
+			if (weekly == Math.trunc(weekly)) {
+				document.getElementById('weeklyAns').innerHTML = "£" + weekly;
+			}
+			else {
+				document.getElementById('weeklyAns').innerHTML = "£" + weekly.toFixed(2);
+			}
+		}
+		
+		function showYear() {
+		
+			showWeek();
+		
+			// Create answer - year
+			if (weekly == Math.trunc(weekly)) {
+				document.getElementById('weeklyTxt').innerHTML = "£" + weekly;
+			}
+			else {
+				document.getElementById('weeklyTxt').innerHTML = "£" + weekly.toFixed(2);
+			}
+			
+			document.getElementById('symbol3').innerHTML = "&times;";
+			document.getElementById('noOfWeeks').innerHTML = 52;
+			document.getElementById('symbol4').innerHTML = "=";
+			
+			if (annual == Math.trunc(annual)) {
+				document.getElementById('annualAns').innerHTML = "£" + annual;
+			}
+			else {
+				document.getElementById('annualAns').innerHTML = "£" + annual.toFixed(2);
+			}
+			
+			
+		}
+		
+		function showMonth() {
+		
+			showYear();
+
+			// Create answer - month
+			if (annual == Math.trunc(annual)) {
+				document.getElementById('annualTxt').innerHTML = "£" + annual;
+			}
+			else {
+				document.getElementById('annualTxt').innerHTML = "£" + annual.toFixed(2);
+			}
+			
+			document.getElementById('symbol5').innerHTML = "&divide;";
+			document.getElementById('noOfMonths').innerHTML = 12;
+			document.getElementById('symbol6').innerHTML = "=";
+			
+			if (monthly == Math.trunc(monthly)) {
+				document.getElementById('monthlyAns').innerHTML = "£" + monthly;
+			}
+			else {
+				document.getElementById('monthlyAns').innerHTML = "£" + monthly.toFixed(2);
+			}           
+		}
+
+    </script>
+</body>
+
+</html>
