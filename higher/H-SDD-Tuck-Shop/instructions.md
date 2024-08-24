@@ -13,7 +13,7 @@ Increase the prices by 10%, update the names of the items so each starts with a 
 ## Program top-level design (pseudocode)
 
 ```
-1. Read data from `tuckshop.txt`
+1. Read data from `tuckshop.csv`
 2. Increase prices by 10%
 3. Update item names - start with capital letters
 4. Write data to `pricelist.txt`
