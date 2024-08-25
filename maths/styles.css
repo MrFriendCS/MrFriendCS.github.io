@@ -30,6 +30,17 @@ math {
 
 /* Classes */
 
+.clickable {
+}
+
+.clickable:hover {
+    background-color: pink;
+}
+
+.clickable:active {
+    background-color: red;
+}
+
 .button {
     display: inline-block;
     font-family: sans-serif;
