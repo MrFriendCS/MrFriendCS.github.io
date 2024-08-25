@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+
+    <title>Overtime</title>
+
+    <style>
+        /* See external CSS */
+
+        /* For all screens, inc mobile */
+        p {
+            font-size: 6vw;
+        }
+		
+		p#end {
+                margin: 0vw 0vw 2vw 0vw;
+            }
+		
+        math {
+            font-size: 6vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            p {
+                font-size: 3vw;
+                margin: 0vw;
+            }
+			
+			math {
+				font-size: 5vw;
+				margin-bottom: 2vw;
+				}
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Ovetime</h1>
+
+    <div id='divProblem'>
+        <p>A job pays £<span id="rate">13.50</span> per hour, for <span id="contract">20</span> hours per week.</p>
+		<p>Additional hours are paid at <span id="overtimeRateTxt">time and a half</span>.</p>
+		<p id="end">If <span id="hours">25</span> hours are worked in a week, what is the gross income?</p>
+		
+		
+        <math>
+			<ms class="clickable" onclick='showContract()'>Contract:&nbsp;</ms>
+            <mn id="rateTxt1">£13.50</mn>
+            <mo id="symbol1">&times;</mo>
+            <mn id="workHours">20</mn>
+            <mo id="symbol2">=</mo>
+            <mn id="contractPay">£270</mn>
+        </math>
+		
+		<br>
+		
+		<math>
+			<ms class="clickable" onclick='showOvertime()'>Overtime:&nbsp;</ms>
+            <mn id="rateTxt2">£13.50</mn>
+            <mo id="symbol3">&times;</mo>
+            <mn id="overtimeHours">5</mn>
+            <mo id="symbol4">&times;</mo>
+            <mn id="overtimeRate">1.5</mn>
+            <mo id="symbol5">=</mo>
+            <mn id="overtimePay">£101.25</mn>
+        </math>
+		
+		<br>
+		
+		<math>
+			<ms class="clickable" onclick='showGrossPay()'>Total:&nbsp;</ms>
+            <mn id="contractTxt">£270</mn>
+            <mo id="symbol6">+</mo>
+            <mn id="overtimeTxt">£101.25</mn>
+            <mo id="symbol7">=</mo>
+            <mn id="grossPay">£371.25</mn>
+        </math>
+    </div>
+
+    <div id="divButtons">
+        <p class='button' onclick='newQuestion()'>New</p>
+        <p class='button' onclick='showAnswer()'>Show</p>
+    </div>
+
+    <script>
+
+        // Global variables
+        let rate = 13.50;
+        let contract = 20;
+		let overtime = 5;
+		let overtimeRate = 1.5;
+        let contractPay = 270;
+		let overtimePay = 101.25;
+		let grossPay = 371.25;
+		
+        
+        function newQuestion() {
+		
+			// Local variables
+			let overtimeTexts = ["time and a quarter", "time and a half", "double time", "treble time"];
+			let overtimeRates = [1.25, 1.5, 2, 3];
+			let choice = parseInt(Math.random() * 4);
+
+            // Pick new values
+			rate = (parseInt(Math.random() * 1650) + 1350) / 100
+			contract = parseInt(Math.random() * 30) + 10
+			overtime = parseInt(Math.random() * 13) + 2
+			overtimeRate = overtimeRates.at(choice);
+			
+			// Create problem text			
+			document.getElementById('rate').innerHTML = rate.toFixed(2);
+			document.getElementById('contract').innerHTML = contract;
+			document.getElementById('overtimeRateTxt').innerHTML = overtimeTexts.at(choice);
+			document.getElementById('hours').innerHTML = contract + overtime;
+			
+			// Calculate answers
+			contractPay = rate * contract;
+			overtimePay = rate * overtime * overtimeRate;
+			grossPay = contractPay + overtimePay;
+			
+			// Clear answers - Contract
+			document.getElementById('rateTxt1').innerHTML = "";
+			document.getElementById('symbol1').innerHTML = "";
+			document.getElementById('workHours').innerHTML = "";
+			document.getElementById('symbol2').innerHTML = "";
+			document.getElementById('contractPay').innerHTML = "";
+			
+			// Clear answers - Overtime
+			document.getElementById('rateTxt2').innerHTML = "";
+			document.getElementById('symbol3').innerHTML = "";
+			document.getElementById('overtimeHours').innerHTML = "";
+			document.getElementById('symbol4').innerHTML = "";
+			document.getElementById('overtimeRate').innerHTML = "";
+			document.getElementById('symbol5').innerHTML = "";
+			document.getElementById('overtimePay').innerHTML = "";
+			
+			// Clear answers - Gross Pay
+			document.getElementById('contractTxt').innerHTML = "";
+			document.getElementById('symbol6').innerHTML = "";
+			document.getElementById('overtimeTxt').innerHTML = "";
+			document.getElementById('symbol7').innerHTML = "";
+			document.getElementById('grossPay').innerHTML = "";
+			       
+
+        }
+
+        function showAnswer() {
+		
+            showGrossPay();  // Shows all
+
+        }
+		
+		function showContract() {
+		
+		// Create answer - Contract
+			if (rate == Math.trunc(rate)) {
+				document.getElementById('rateTxt1').innerHTML = "£" + rate;
+			}
+			else {
+				document.getElementById('rateTxt1').innerHTML = "£" + rate.toFixed(2);
+			}
+			
+			
+			document.getElementById('symbol1').innerHTML = "&times;";
+			document.getElementById('workHours').innerHTML = contract;
+			document.getElementById('symbol2').innerHTML = "=";
+			
+			if (contractPay == Math.trunc(contractPay)) {
+				document.getElementById('contractPay').innerHTML = "£" + contractPay;
+			}
+			else {
+				document.getElementById('contractPay').innerHTML = "£" + contractPay.toFixed(2);
+			}
+		}
+		
+		function showOvertime() {
+		
+			showContract();
+		
+			// Create answer - Ovetime
+			if (rate == Math.trunc(rate)) {
+				document.getElementById('rateTxt2').innerHTML = "£" + rate;
+			}
+			else {
+				document.getElementById('rateTxt2').innerHTML = "£" + rate.toFixed(2);
+			}
+			
+			document.getElementById('symbol3').innerHTML = "&times;";
+			document.getElementById('overtimeHours').innerHTML = overtime;
+			document.getElementById('symbol4').innerHTML = "&times;";
+			document.getElementById('overtimeRate').innerHTML = overtimeRate;
+			document.getElementById('symbol5').innerHTML = "=";
+			
+			
+			if (overtimePay == Math.trunc(overtimePay)) {
+				document.getElementById('overtimePay').innerHTML = "£" + overtimePay;
+			}
+			else {
+				document.getElementById('overtimePay').innerHTML = "£" + overtimePay.toFixed(2);
+			}
+			
+			
+		}
+		
+		function showGrossPay() {
+		
+			showOvertime();
+
+			// Create answer - Gross Pay
+			if (contractPay == Math.trunc(contractPay)) {
+				document.getElementById('contractTxt').innerHTML = "£" + contractPay;
+			}
+			else {
+				document.getElementById('contractTxt').innerHTML = "£" + contractPay.toFixed(2);
+			}
+			
+			document.getElementById('symbol6').innerHTML = "+";
+			
+			if (overtimePay == Math.trunc(overtimePay)) {
+				document.getElementById('overtimeTxt').innerHTML = "£" + overtimePay;
+			}
+			else {
+				document.getElementById('overtimeTxt').innerHTML = "£" + overtimePay.toFixed(2);
+			}
+			
+			document.getElementById('symbol7').innerHTML = "=";
+			
+			if (grossPay == Math.trunc(grossPay)) {
+				document.getElementById('grossPay').innerHTML = "£" + grossPay;
+			}
+			else {
+				document.getElementById('grossPay').innerHTML = "£" + grossPay.toFixed(2);
+			}           
+		}
+
+    </script>
+</body>
+
+</html>
