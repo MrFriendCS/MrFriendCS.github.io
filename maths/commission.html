@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="images/n5.png">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+
+    <title>Commission</title>
+
+    <style>
+        /* See external CSS */
+
+        /* For all screens, inc mobile */
+        p {
+            font-size: 6vw;
+        }
+		
+		p#end {
+                margin: 0vw 0vw 2vw 0vw;
+            }
+		
+        math {
+            font-size: 5vw;
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            p {
+                font-size: 3vw;
+                margin: 0vw;
+            }
+			
+			math {
+				font-size: 5vw;
+				margin-bottom: 2vw;
+				}
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Commission</h1>
+
+    <div id='divProblem'>
+	
+        <p id="end">A sales job pays £<span id="salary">20000</span> per annum.  Commission of <span id="commission">5</span>% is paid on sales over
+		£<span id="threshold">10000</span> in a month.  One month £<span id="sales">15000</span> of sales are made.  What is the gross income for the month?</p>
+		
+        <math>
+			<ms class="clickable" onclick='showContract()'>Contract:&nbsp;</ms>
+            <mn id="pay">£24000</mn>
+            <mo id="symbol1">&divide;</mo>
+            <mn id="months">12</mn>
+            <mo id="symbol2">=</mo>
+            <mn id="contractPay">£2000</mn>
+        </math>
+		
+		<br>
+		
+		<math>
+			<ms class="clickable" onclick='showCommission()'>Commission:&nbsp;</ms>
+            <mn id="salesAmount">£5000</mn>
+            <mo id="symbol3">&times;</mo>
+            <mn id="commissionRate">5%</mn>
+            <mo id="symbol4">=</mo>
+            <mn id="commissionPay">£250</mn>
+        </math>
+		
+		<br>
+		
+		<math>
+			<ms class="clickable" onclick='showGrossPay()'>Gross:&nbsp;</ms>
+            <mn id="contractTxt">£2000</mn>
+            <mo id="symbol5">+</mo>
+            <mn id="commissionTxt">£250</mn>
+            <mo id="symbol6">=</mo>
+            <mn id="grossPay">£2250</mn>
+        </math>
+		
+    </div>
+
+    <div id="divButtons">
+        <p class='button' onclick='newQuestion()'>New</p>
+        <p class='button' onclick='showAnswer()'>Show</p>
+    </div>
+
+    <script>
+
+        // Global variables
+        let salary = 20000;
+        let commission = 5;
+		let threshold = 10000;
+		let sales = 15000;
+		let salesAmount = 5000
+        let contractPay = 2000;
+		let commisionPay = 250;
+		let grossPay = 2250;
+		
+        function newQuestion() {
+		
+			// Local variables
+			let overtimeTexts = ["time and a quarter", "time and a half", "double time", "treble time"];
+			let overtimeRates = [1.25, 1.5, 2, 3];
+			let choice = parseInt(Math.random() * 4);
+
+            // Pick new values
+			salary = (parseInt(Math.random() * 300) * 100) + 20000;
+			commission = parseInt(Math.random() * 20) + 10;
+			threshold = parseInt(Math.random() * 100) * 1000;
+			sales = threshold + parseInt(Math.random() * 100) * 1000;
+			
+			// Create problem text			
+			document.getElementById('salary').innerHTML = salary;
+			document.getElementById('commission').innerHTML = commission;
+			document.getElementById('threshold').innerHTML = threshold;
+			document.getElementById('sales').innerHTML = sales;
+			
+			// Calculate answers
+			salesAmount = sales - threshold;
+			contractPay = salary / 12;
+			commissionPay = salesAmount * (commission / 100);
+			grossPay = contractPay + commissionPay;
+			
+			// Clear answers - Contract
+			document.getElementById('pay').innerHTML = "";
+			document.getElementById('symbol1').innerHTML = "";
+			document.getElementById('months').innerHTML = "";
+			document.getElementById('symbol2').innerHTML = "";
+			document.getElementById('contractPay').innerHTML = "";
+			
+			// Clear answers - Commission
+			document.getElementById('salesAmount').innerHTML = "";
+			document.getElementById('symbol3').innerHTML = "";
+			document.getElementById('commissionRate').innerHTML = "";
+			document.getElementById('symbol4').innerHTML = "";
+			document.getElementById('commissionPay').innerHTML = "";
+			
+			// Clear answers - Gross Pay
+			document.getElementById('contractTxt').innerHTML = "";
+			document.getElementById('symbol5').innerHTML = "";
+			document.getElementById('commissionTxt').innerHTML = "";
+			document.getElementById('symbol6').innerHTML = "";
+			document.getElementById('grossPay').innerHTML = "";
+		
+        }
+
+        function showAnswer() {
+		
+            showGrossPay();  // Shows all
+
+        }
+		
+		function showContract() {
+		
+		// Create answer - Contract
+			document.getElementById('pay').innerHTML = "£" + salary;			
+			document.getElementById('symbol1').innerHTML = "&divide;";
+			document.getElementById('months').innerHTML = 12;
+			document.getElementById('symbol2').innerHTML = "=";
+			
+			if (contractPay == Math.trunc(contractPay)) {
+				document.getElementById('contractPay').innerHTML = "£" + contractPay;
+			}
+			else {
+
+				document.getElementById('contractPay').innerHTML = "£" + contractPay.toFixed(2);
+			}
+		}
+		
+		function showCommission() {
+		
+			showContract();
+		
+			// Create answer - Commission
+			document.getElementById('salesAmount').innerHTML = "£" + salesAmount;
+			document.getElementById('symbol3').innerHTML = "&times;";
+			document.getElementById('commissionRate').innerHTML = commission +'%';
+			document.getElementById('symbol4').innerHTML = "=";
+			
+			if (commissionPay == Math.trunc(commissionPay)) {
+				document.getElementById('commissionPay').innerHTML = "£" + commissionPay;
+			}
+			else {
+				document.getElementById('commissionPay').innerHTML = "£" + commissionPay.toFixed(2);
+			}
+		}
+		
+		function showGrossPay() {
+		
+			showCommission();
+
+			// Create answer - Gross Pay
+			if (contractPay == Math.trunc(contractPay)) {
+				document.getElementById('contractTxt').innerHTML = "£" + contractPay;
+			}
+			else {
+				document.getElementById('contractTxt').innerHTML = "£" + contractPay.toFixed(2);
+			}
+			
+			document.getElementById('symbol5').innerHTML = "+";
+			
+			if (commissionPay == Math.trunc(commissionPay)) {
+				document.getElementById('commissionTxt').innerHTML = "£" + commissionPay;
+			}
+			else {
+				document.getElementById('commissionTxt').innerHTML = "£" + commissionPay.toFixed(2);
+			}
+			
+			document.getElementById('symbol6').innerHTML = "=";
+			
+			
+			if (grossPay == Math.trunc(grossPay)) {
+				document.getElementById('grossPay').innerHTML = "£" + grossPay;
+			}
+			else {
+				document.getElementById('grossPay').innerHTML = "£" + grossPay.toFixed(2);
+			}
+		}
+
+    </script>
+</body>
+
+</html>
