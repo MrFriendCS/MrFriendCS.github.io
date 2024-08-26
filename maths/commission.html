@@ -104,17 +104,12 @@
 		let grossPay = 2250;
 		
         function newQuestion() {
-		
-			// Local variables
-			let overtimeTexts = ["time and a quarter", "time and a half", "double time", "treble time"];
-			let overtimeRates = [1.25, 1.5, 2, 3];
-			let choice = parseInt(Math.random() * 4);
 
             // Pick new values
-			salary = (parseInt(Math.random() * 300) * 100) + 20000;
+			salary = (parseInt(Math.random() * 400) + 100) * 120;
 			commission = parseInt(Math.random() * 20) + 10;
 			threshold = parseInt(Math.random() * 100) * 1000;
-			sales = threshold + parseInt(Math.random() * 100) * 1000;
+			sales = 10 + threshold + parseInt(Math.random() * 100) * 1000;
 			
 			// Create problem text			
 			document.getElementById('salary').innerHTML = salary;
@@ -125,7 +120,7 @@
 			// Calculate answers
 			salesAmount = sales - threshold;
 			contractPay = salary / 12;
-			commissionPay = salesAmount * (commission / 100);
+			commissionPay = Math.trunc(salesAmount * commission * 10) / 1000;
 			grossPay = contractPay + commissionPay;
 			
 			// Clear answers - Contract
@@ -164,14 +159,7 @@
 			document.getElementById('symbol1').innerHTML = "&divide;";
 			document.getElementById('months').innerHTML = 12;
 			document.getElementById('symbol2').innerHTML = "=";
-			
-			if (contractPay == Math.trunc(contractPay)) {
-				document.getElementById('contractPay').innerHTML = "£" + contractPay;
-			}
-			else {
-
-				document.getElementById('contractPay').innerHTML = "£" + contractPay.toFixed(2);
-			}
+			document.getElementById('contractPay').innerHTML = "£" + contractPay;
 		}
 		
 		function showCommission() {
@@ -197,21 +185,16 @@
 			showCommission();
 
 			// Create answer - Gross Pay
-			if (contractPay == Math.trunc(contractPay)) {
-				document.getElementById('contractTxt').innerHTML = "£" + contractPay;
-			}
-			else {
-				document.getElementById('contractTxt').innerHTML = "£" + contractPay.toFixed(2);
-			}
-			
+			document.getElementById('contractTxt').innerHTML = "£" + contractPay;
 			document.getElementById('symbol5').innerHTML = "+";
 			
-			if (commissionPay == Math.trunc(commissionPay)) {
+			if (commissionPay.toPrecision(4) == Math.trunc(commissionPay)) {
 				document.getElementById('commissionTxt').innerHTML = "£" + commissionPay;
 			}
 			else {
 				document.getElementById('commissionTxt').innerHTML = "£" + commissionPay.toFixed(2);
 			}
+			console.log(commissionPay);
 			
 			document.getElementById('symbol6').innerHTML = "=";
 			
