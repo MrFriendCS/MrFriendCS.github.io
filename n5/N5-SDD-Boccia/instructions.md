@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Boccia is a Paralympic sport.  The aim of the game is to get a coloured ball (red or blue), closest to the jack (white ball).
+[Boccia](https://boccia.uk.com/about-boccia "External link") is a Paralympic sport.  The aim of the game is to get a coloured ball (red or blue), closest to the jack (white ball).
 
 In the individual game there are two athletes who take it in turns to throw six balls each.  This is called an End, and the competitor with the ball closest to the jack scores one point, and one dditional point for each ball that is closer to the jack than the oppenents closest ball.  If the End is a draw, each player is awarded one point.  There are four Ends in a game.  If at the end of the game is a draw then tie-break Ends are played to determine the winner but it does not change the score.
 
