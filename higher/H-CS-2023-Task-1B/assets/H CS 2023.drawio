@@ -1,0 +1,127 @@
+<mxfile host="Electron" modified="2023-09-11T20:01:37.550Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="FF8xj6tubUK-88B7ilY8" version="21.6.8" type="device" pages="4">
+  <diagram id="Wb2tyo1ti-DSQy7-LSAl" name="PC">
+    <mxGraphModel dx="869" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xFM741aIUmRi7CFWQs0O-26" value="Read data from file into parallel arrays" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="430" y="200" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-28" value="OUT" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="660" y="200" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-30" value="attraction(), category(), visitors(), daysOpen(), height()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="700" y="200" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-31" value="Find and display the names of the least visited and most visited attractions&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="430" y="240" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-32" value="IN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="660" y="240" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-33" value="IN" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="660" y="280" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-34" value="attraction(), visitors()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="700" y="240" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-35" value="attraction(), category(), daysOpen()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="700" y="280" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-36" value="Write to file the names of roller coasters that need a service within 7 days" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="430" y="280" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-37" value="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="400" y="200" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-38" value="2" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="400" y="240" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-39" value="3" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="400" y="280" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xFM741aIUmRi7CFWQs0O-40" value="&lt;b&gt;&lt;br&gt;Refinements&lt;/b&gt;&lt;br&gt;&lt;br&gt;3.1&amp;nbsp;&amp;nbsp;&amp;nbsp; Create ‘service.csv’ file&lt;br&gt;3.2&amp;nbsp;&amp;nbsp;&amp;nbsp; Loop for each attraction&lt;br&gt;3.3&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; If current category is ‘Roller Coaster’ then&lt;br&gt;3.4&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Set days to current daysOpen modulus 90&lt;br&gt;3.5&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; If (90 – days) is less than or equal to 7 then&lt;br&gt;3.6&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Write&amp;nbsp;current attraction to file&lt;br&gt;3.7&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; End if&lt;br&gt;3.8&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; End if&lt;br&gt;3.9&amp;nbsp;&amp;nbsp;&amp;nbsp; End loop&lt;br&gt;3.10&amp;nbsp; Close ‘service.csv’ file" style="rounded=0;verticalAlign=top;align=left;spacingLeft=4;spacingRight=4;horizontal=1;fontStyle=0;html=1;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="400" y="320" width="480" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="HJJkClxjVFEAcqCunxAE-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="400" y="200" width="480" height="320" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rixkyah6m9kLtBdBK0iV" name="TT">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="edKIq7crGZylfQP5pC1n-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="510" y="200" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-2" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="660" y="200" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-3" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="720" y="200" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-4" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="510" y="240" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-5" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="660" y="240" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-6" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="660" y="280" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-7" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="720" y="240" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-8" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="720" y="280" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-9" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="510" y="280" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-10" value="1st iteration" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#D4D4D4;" vertex="1" parent="1">
+          <mxGeometry x="430" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-15" value="&lt;div&gt;If current category is&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;‘Roller Coaster’&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;" vertex="1" parent="1">
+          <mxGeometry x="510" y="160" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-16" value="days" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;" vertex="1" parent="1">
+          <mxGeometry x="660" y="160" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-17" value="&lt;div&gt;If (90 – days) is less than or&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;equal to 7&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;" vertex="1" parent="1">
+          <mxGeometry x="720" y="160" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-19" value="2nd iteration" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#D4D4D4;" vertex="1" parent="1">
+          <mxGeometry x="430" y="240" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-20" value="3rd iteration" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#D4D4D4;" vertex="1" parent="1">
+          <mxGeometry x="430" y="280" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="VjIK9JYqOsCn8P8hzo6P" name="data">
+    <mxGraphModel dx="869" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-rkg1obHWKEd9jUhDGJY-1" value="Aftershock,Roller Coaster,510324,695,1.2m &#xa;Aqua Loop,Water,157288,542,0.9m&#xa;Asteroid Belt,Roller Coaster,551218,623,1.4m&#xa;Attack of the Smartphones,Simulation,548630,663,1.0m&#xa;Beaver Falls,Water,95970,695,1.2m&#xa;Bug Blaster,Simulation,293033,542,0.9m&#xa;Bumblebee Flyer,Kids,104010,715,0.9m&#xa;Candyfloss Carousel,Kids,95970,663,0.9m&#xa;..." style="rounded=0;verticalAlign=top;align=left;spacingLeft=4;spacingRight=4;strokeColor=none;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="310" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="L0uYPGNuT_bQ_fbG3nav" name="test">
+    <mxGraphModel dx="869" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cpdJd47du0oTkgEmzcML-1" value="Aftershock,Roller Coaster,510324,695,1.2m&#xa;Aqua Loop,Water,57288,542,0.9m&#xa;Asteroid Belt,Roller Coaster,551218,623,1.4m" style="rounded=0;align=left;verticalAlign=top;whiteSpace=wrap;spacingLeft=4;spacingRight=4;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="280" width="260" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

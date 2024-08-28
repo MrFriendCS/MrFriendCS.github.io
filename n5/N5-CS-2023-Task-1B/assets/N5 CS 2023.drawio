@@ -1,0 +1,317 @@
+<mxfile host="Electron" modified="2023-10-10T20:32:18.167Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="1zcqlOT--XwpCdpzsTIj" version="22.0.2" type="device" pages="6">
+  <diagram id="F0UfCObQ2QMdtl9TviPR" name="sd">
+    <mxGraphModel dx="869" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5jMCNNXWwo4XEHV6JcEh-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="5jMCNNXWwo4XEHV6JcEh-1" target="5jMCNNXWwo4XEHV6JcEh-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5jMCNNXWwo4XEHV6JcEh-1" value="PROGRAM - Calculate vehicle charging costs" style="rounded=0;whiteSpace=wrap;html=1;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="350" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5jMCNNXWwo4XEHV6JcEh-2" value="Calculate and store the cost of each stage of the journey" style="rounded=0;whiteSpace=wrap;html=1;spacingRight=4;spacingLeft=4;" parent="1" vertex="1">
+          <mxGeometry x="350" y="270" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5jMCNNXWwo4XEHV6JcEh-7" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" parent="1" source="5jMCNNXWwo4XEHV6JcEh-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5jMCNNXWwo4XEHV6JcEh-3" value="Get journey details" style="rounded=0;whiteSpace=wrap;html=1;spacingRight=4;spacingLeft=4;" parent="1" vertex="1">
+          <mxGeometry x="150" y="270" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5jMCNNXWwo4XEHV6JcEh-8" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" parent="1" source="5jMCNNXWwo4XEHV6JcEh-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5jMCNNXWwo4XEHV6JcEh-4" value="Display total miles, journey stage costs and total costs" style="rounded=0;whiteSpace=wrap;html=1;spacingRight=4;spacingLeft=4;" parent="1" vertex="1">
+          <mxGeometry x="550" y="270" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5jMCNNXWwo4XEHV6JcEh-5" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="240" as="sourcePoint" />
+            <mxPoint x="620" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="L7t2mDckhyBGyZSpyBtJ" name="r1">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7V8OM3PbU_AAPLTBa-5y-3" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" parent="1" source="CW1WJXDgBDliq5Vp6Gwy-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CW1WJXDgBDliq5Vp6Gwy-1" value="Get journey details" style="rounded=0;whiteSpace=wrap;html=1;spacingRight=4;spacingLeft=4;" parent="1" vertex="1">
+          <mxGeometry x="350" y="210" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7V8OM3PbU_AAPLTBa-5y-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" parent="1" source="bnDPXHGDoVpsFLLGURT6-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bnDPXHGDoVpsFLLGURT6-1" value="Get lieage at start of journey (startMiles)" style="rounded=0;whiteSpace=wrap;html=1;spacingRight=4;spacingLeft=4;" parent="1" vertex="1">
+          <mxGeometry x="280" y="310" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7V8OM3PbU_AAPLTBa-5y-4" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" parent="1" source="7V8OM3PbU_AAPLTBa-5y-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="505" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7V8OM3PbU_AAPLTBa-5y-1" value="Get number of charging stations" style="rounded=0;whiteSpace=wrap;html=1;spacingRight=4;spacingLeft=4;" parent="1" vertex="1">
+          <mxGeometry x="450" y="310" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7V8OM3PbU_AAPLTBa-5y-2" value="" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;shape=connector;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="280" as="sourcePoint" />
+            <mxPoint x="505" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="DxGrdaZ09ppcGiqMDQCD" name="r2">
+    <mxGraphModel dx="1195" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-1" target="BV_vZ8NvLf80R58uvZHg-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-1" value="Calculate and store the cost of each stage of the journey" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="415" y="260" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-15" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-3" value="Loop for each charging startion" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;arcSize=50;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="425" y="340" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-14" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-4" value="Get mileage at current charging station&lt;br&gt;(currentMiles)" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="200" y="430" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-9" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-5" value="Get valid kW rating for current charging staion" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="305" y="430" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-5" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-6" target="BV_vZ8NvLf80R58uvZHg-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-10" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-16" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-6" target="BV_vZ8NvLf80R58uvZHg-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-6" value="Is kW&lt;br&gt;rating = 7?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="390" y="430" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-7" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.542;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-7" target="BV_vZ8NvLf80R58uvZHg-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-8" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-7" target="BV_vZ8NvLf80R58uvZHg-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-7" value="Is kW&lt;br&gt;rating = 22?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="430" y="530" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-8" value="Set pricePerMile = 0" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="310" y="530" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-9" value="Set pricePerMile = 0.005" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="305" y="610" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-10" value="Set pricePerMile = 0.01" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="495" y="610" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-11" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-11" value="Calculate&lt;br&gt;and store milesTravelled&lt;br&gt;(currentMiles - startMiles)" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="490" y="430" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-12" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="635" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-12" value="Store new startMiles&lt;br&gt;(= currentMiles)" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="590" y="430" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-13" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="BV_vZ8NvLf80R58uvZHg-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BV_vZ8NvLf80R58uvZHg-13" value="Calculate and store cost of journeyStage&lt;br&gt;(pricePerMile * milesTravelled)" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="700" y="430" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="400" as="sourcePoint" />
+            <mxPoint x="750" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-17" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="330" y="500" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-18" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="460" y="500" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-21" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="345" y="580" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-CfiL7u8oEeKjaInoD1G-23" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="540" y="580" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="lK7a76SVBZwwpe_lGAXs" name="r3">
+    <mxGraphModel dx="700" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FgZr-Hg5fJTj02p5TlsL-8" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="lsrKv0dsJR8Z6xi2u7Rz-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455.1219512195123" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lsrKv0dsJR8Z6xi2u7Rz-1" value="Display toral miles, journey stage costs and total cost" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="390" y="230" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FgZr-Hg5fJTj02p5TlsL-2" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="lsrKv0dsJR8Z6xi2u7Rz-2" target="lsrKv0dsJR8Z6xi2u7Rz-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FgZr-Hg5fJTj02p5TlsL-7" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="lsrKv0dsJR8Z6xi2u7Rz-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="344.8780487804879" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lsrKv0dsJR8Z6xi2u7Rz-2" value="Loop for each charging startion" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;arcSize=50;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="290" y="330" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FgZr-Hg5fJTj02p5TlsL-4" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="lsrKv0dsJR8Z6xi2u7Rz-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lsrKv0dsJR8Z6xi2u7Rz-3" value="Display next journeyStage" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="190" y="420" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lsrKv0dsJR8Z6xi2u7Rz-4" value="Calculate totalJourneyCost&lt;br&gt;(totalJourneyCost + journeyStage)" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="290" y="420" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FgZr-Hg5fJTj02p5TlsL-3" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="lsrKv0dsJR8Z6xi2u7Rz-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lsrKv0dsJR8Z6xi2u7Rz-5" value="Calculate totalMiles&lt;br&gt;(totalMiles + milesTravelled)" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="420" y="420" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FgZr-Hg5fJTj02p5TlsL-5" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="lsrKv0dsJR8Z6xi2u7Rz-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530.2439024390244" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lsrKv0dsJR8Z6xi2u7Rz-6" value="Display totalJourneyCost rounded to two decimal places" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="480" y="330" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FgZr-Hg5fJTj02p5TlsL-6" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="lsrKv0dsJR8Z6xi2u7Rz-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="649.7560975609758" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lsrKv0dsJR8Z6xi2u7Rz-7" value="Display totalMiles with message" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="600" y="330" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lsrKv0dsJR8Z6xi2u7Rz-8" value="" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;shape=connector;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="345" y="310" as="sourcePoint" />
+            <mxPoint x="650" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FgZr-Hg5fJTj02p5TlsL-1" value="" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;shape=connector;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="400" as="sourcePoint" />
+            <mxPoint x="465" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rixkyah6m9kLtBdBK0iV" name="tt1">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="edKIq7crGZylfQP5pC1n-1" value="Normal" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="280" y="240" width="100" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-2" value="Miles at start &lt;b&gt;1200&lt;br&gt;&lt;br&gt;2&lt;/b&gt;&amp;nbsp;charge stations visited&lt;br&gt;&lt;br&gt;&lt;b&gt;Charge station 1&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;1320 miles&lt;/li&gt;&lt;li&gt;22 kW&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;b&gt;Charge station 2&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;1411 miles&lt;/li&gt;&lt;li&gt;50 kW&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="380" y="240" width="110" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-3" value="Journey stage 1&lt;br&gt;cost = &lt;b&gt;0.60&lt;/b&gt;&lt;br&gt;&lt;br&gt;Journey stage 2&lt;br&gt;cost = &lt;b&gt;0.91&lt;/b&gt;&lt;br&gt;&lt;br&gt;Total cost = &lt;b&gt;1.51&lt;/b&gt;&lt;br&gt;&lt;br&gt;Total miles = &lt;b&gt;211&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="490" y="240" width="170" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-15" value="&lt;div&gt;Tyoe of test&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="280" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-16" value="User input" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="380" y="200" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-17" value="&lt;div&gt;Expected output&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="490" y="200" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f0j-VDK9Ub8zjqvwvqj--1" value="&lt;div&gt;Actual output&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="660" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f0j-VDK9Ub8zjqvwvqj--2" value="&lt;div&gt;Attach printouts of&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;inputs and outputs&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;as evidence&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="660" y="240" width="120" height="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="tt2" id="Y7-6O1T7on1gTb_6kbT9">
+    <mxGraphModel dx="869" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="9wVTjgYAI3shZfpZmw2U-0" />
+        <mxCell id="9wVTjgYAI3shZfpZmw2U-1" parent="9wVTjgYAI3shZfpZmw2U-0" />
+        <mxCell id="9wVTjgYAI3shZfpZmw2U-3" value="Miles at start &lt;b&gt;18000&lt;br&gt;&lt;br&gt;2&lt;/b&gt;&amp;nbsp;charge stations visited&lt;br&gt;&lt;br&gt;&lt;b&gt;Charge station 1&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;18350 miles&lt;/li&gt;&lt;li&gt;7 kW&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;b&gt;Charge station 2&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;17800 miles&lt;/li&gt;&lt;li&gt;50 kW&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" parent="9wVTjgYAI3shZfpZmw2U-1" vertex="1">
+          <mxGeometry x="320" y="240" width="170" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVTjgYAI3shZfpZmw2U-4" value="Journey stage 1 cost = ____________&lt;br&gt;&lt;br&gt;Journey stage 2 cost = ____________&lt;br&gt;&lt;br&gt;Total cost = ____________&lt;br&gt;&lt;br&gt;Total miles = ____________" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" parent="9wVTjgYAI3shZfpZmw2U-1" vertex="1">
+          <mxGeometry x="490" y="240" width="280" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVTjgYAI3shZfpZmw2U-6" value="Test data" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;fontStyle=1" parent="9wVTjgYAI3shZfpZmw2U-1" vertex="1">
+          <mxGeometry x="320" y="200" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVTjgYAI3shZfpZmw2U-7" value="&lt;div&gt;Expected results&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;fontStyle=1" parent="9wVTjgYAI3shZfpZmw2U-1" vertex="1">
+          <mxGeometry x="490" y="200" width="280" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
