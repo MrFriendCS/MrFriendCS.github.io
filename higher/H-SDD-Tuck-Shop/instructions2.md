@@ -12,7 +12,7 @@ Write a modular program that will increase the prices by 10%, update the names o
 
 ## Program top-level design (Structure Diagram)
 
-![Structure diagram](assets/sd.csv "Structure diagram")
+![Structure diagram](assets/sd.png "Structure diagram")
 
 ## Example pricelist.txt
 
