@@ -31,7 +31,7 @@ A structure diagram of the design is provided below.
 
 Examples of the expected user interface are shown below with some possible input and output values.
 
-### Example 1
+### User Interface - Example 1
 ```
 Total amount: £10
 
@@ -46,7 +46,7 @@ No change given when using a voucher
 Final amount to pay: £0
 ```
 
-### Example 2
+### User Interface - Example 2
 ```
 Total amount: £7.25
 
@@ -59,7 +59,7 @@ Voucher? no
 Final amount to pay: £7.25
 ```
 
-### Example 3
+### User Interface - Example 3
 ```
 Total amount: £25.50
 
