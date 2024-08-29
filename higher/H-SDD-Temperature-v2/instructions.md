@@ -2,17 +2,17 @@
 
 ## Overview
 
-There are a year's worth of temperature readings in a csv file: 8,759 readings.  Unfortunately, they are all in Fahrenheit and need to be converted to Celsius, rounded to 1 decimal place.
+There is a year's worth of temperature readings in a [csv file](assets/tempF.csv "data file"): 8,759 readings.  Unfortunately, they are all in Fahrenheit and need to be converted to Celsius, rounded to 1 decimal place.
 
-## Steps
+## Top Level Design (Psuedocode)
 
-1. Read the data from a csv file: `tempF.csv`
-2. Convert the temperatures
-3. Write the data to a text file: `tempC.txt`
+1. Read the data from the csv file: `tempF.csv`
+2. Convert the temperatures to Celsius
+3. Write the data to the text file: `tempC.txt`
 
-## Structure diagram
+## Top Level Design (Structure diagram)
 
-![Structure diagram](assets/Temperatures-v2.png)
+![Structure diagram](assets/sd.png)
 
 
 ## Data
