@@ -3,12 +3,13 @@
 
 ## SDD Tasks
 
-| Title             | Description      | Concepts | Comments |
-| -----             | -----------      | -------- | -------- |
-| N5-SDD-Average    | | | |
-| N5-SDD-Food-Cost  | | | |
-| N5-SDD-Retirement | | | |
-| N5-SDD-Summer     | For summer break |          | Y1 &amp; Y2 |
+| Title                 | Description                 | Concepts          | Comments |
+| -----                 | -----------                 | --------          | -------- |
+| N5-SDD-Number-Madness | Two values, various results | IP, maths, Concat | Y1 |
+| N5-SDD-Average        | | | |
+| N5-SDD-Food-Cost      | | | |
+| N5-SDD-Retirement     | | | |
+| N5-SDD-Summer         | For summer break            |                   | Y1 &amp; Y2 |
 
 
 
