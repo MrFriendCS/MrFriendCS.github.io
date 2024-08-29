@@ -2,7 +2,7 @@
 
 ## Overview
 
-A year's worth of temperature readings are in a [csv file](assets/tempF.csv "data file"), 8,759 readings in total.  Unfortunately, they are all in Fahrenheit and need to be converted to Celsius, rounded to 1 decimal place.
+A year's worth of temperature readings are in a [csv file](assets/tempF.csv "data file"), 8,759 readings in total.  All of the temperature readings are in Fahrenheit and need to be converted to Celsius, rounded to 1 decimal place.
 
 ## Top Level Design (Psuedocode)
 
