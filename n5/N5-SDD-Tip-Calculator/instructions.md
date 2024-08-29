@@ -6,7 +6,7 @@ A group of four friends often go out for a meal together and split the bill equa
 
 ## Task
 
-Using the top level design below, write a program that will help the friends work out the combined cost of the meals, how much to tip, and the total cost.  Also calculate how much each person will pay when they split the bill.
+Using the top level design below, write a program that will help the friends work out the combined cost of the meals, how much to tip, and the total cost.  Finally, calculate how much each person will pay when they split the bill.
 
 ### Top Level Design (Structure diagram)
 
