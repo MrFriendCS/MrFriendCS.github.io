@@ -1,31 +1,51 @@
-# N5 Tip Calculator
+# N5 SDD - Tip Calculator
 
 ## Introduction
 
-Write a program that will help 4 friends work out the cost of a meal, how much to tip, the total, and how much each will pay when they split the bill equally.
+A group of four friends often go out for a meal together and split the bill equally.  An individual meal never costs more than £25, and the friends never tip more than 20%.
 
-The 4 friends never have a meal that costs anyone more than £25, and never tip more than 20%.
+## Task
 
-## User Experience
+Using the top level design below, write a program that will help the friends work out the combined cost of the meals, how much to tip, and the total cost.  Also calculate how much each person will pay when they split the bill.
 
-![Structure diagram](assets/Example.png)
+### Top Level Design (Structure diagram)
 
-## Structure diagram
+![Structure diagram](assets/sd.png)
 
-![Structure diagram](assets/SD.png)
+### Example User Interface
 
-## Maths
+```
+Costs
+-----
+Person 1: 15
+Person 2: 7.50
+Person 3: 9.75
+Person 4: 12.30
+
+Percentage
+----------
+Tip percent: 10
+
+
+Group
+-----
+Meal:  £44.55
+Tip:   £4.46
+-------------
+Total: £49.01
+=============
+
+
+Individual
+----------
+  £12.25
+  ======
+```
+
+### Maths
 
 To calculate the tip:
 
-&nbsp;&nbsp;&nbsp;&nbsp;tip = cost &#215; (tip percent &#247; 100) 
-
-
-## Notes
-
-Be sure to use:
-
-1. Meaningful identifiers
-2. Internal commentary
-3. Whitespace
-4. Indentation
+```
+tip = cost &times; (tip percent &divide; 100) 
+```
