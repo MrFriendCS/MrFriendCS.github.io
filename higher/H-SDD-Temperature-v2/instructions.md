@@ -1,19 +1,18 @@
-# Instructions
+# H SDD - Temperatures v2
 
 ## Overview
 
-There is a year's worth of temperature readings in a [csv file](assets/tempF.csv "data file"): 8,759 readings.  Unfortunately, they are all in Fahrenheit and need to be converted to Celsius, rounded to 1 decimal place.
+A year's worth of temperature readings are in a [csv file](assets/tempF.csv "data file"), 8,759 readings in total.  Unfortunately, they are all in Fahrenheit and need to be converted to Celsius, rounded to 1 decimal place.
 
 ## Top Level Design (Psuedocode)
 
 1. Read the data from the csv file: `tempF.csv`
-2. Convert the temperatures to Celsius
+2. [Convert](https://www.mathsisfun.com/temperature-conversion.html "Maths is Fun!") the temperatures to Celsius
 3. Write the data to the text file: `tempC.txt`
 
 ## Top Level Design (Structure diagram)
 
 ![Structure diagram](assets/sd.png)
-
 
 ## Data
 
