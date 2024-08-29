@@ -11,10 +11,10 @@ type = ""
 
 # Get name
 while name == "":
-    name = input("\nHi!  What is your name? ")
+    name = input("Hi!  What is your name? ")
     # Error message if left balnk
     if name == "":
-        print("Are you shy?")
+        print("\nAre you shy?")
 
 # Get age
 while age < 11 or age > 18:
@@ -23,7 +23,7 @@ while age < 11 or age > 18:
 
     # Error message if too young or too old
     if age < 11 or age > 18:
-        print(name + "! This quiz is only for secondary pupils.")
+        print(name + "! You must be aged 11 to 18.")
 
 # Like cats?
 while catAnswer != "yes" and catAnswer != "no":
@@ -54,12 +54,11 @@ print("Like dogs: " + dogAnswer)
 # Decide type of person
 if catAnswer == "yes" and dogAnswer == "yes":
     type = "a good"
+elif catAnswer == "no" and dogAnswer == "no":
+    type = "an evil"
 else:
-    if catAnswer == "no" and dogAnswer == "no":
-        type = "an evil"
-    else:
-        # Everyone else
-        type = "an ok"
+    # Everyone else
+    type = "an ok"
 
 # Display results
 print("\nFrom your answers about animals")
