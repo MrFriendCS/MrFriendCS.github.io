@@ -46,6 +46,5 @@ Individual
 
 To calculate the tip:
 
-```
-tip = cost &times; (tip percent &divide; 100) 
-```
+&nbsp;&nbsp;tip = cost &times; (tip percent &divide; 100) 
+
