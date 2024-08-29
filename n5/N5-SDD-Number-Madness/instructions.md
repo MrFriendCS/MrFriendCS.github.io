@@ -9,7 +9,7 @@ Write a short program that will ask the user for two values.  The program will t
 3. Multiplied
 4. Divided
 
-### Example
+### Example User Interface
 
 ```
 Number Madness!
@@ -22,7 +22,7 @@ What is the second value? 2
 2 subtracted from 10 is 8
 
 10 multiplied by 2 is 20
-10 divided by 2 is 5
+10 divided by 2 is 5.0
 ```
 
 ## Assumptions
@@ -41,4 +41,5 @@ Ensure that your program is easy to maintain by ensuring you include:
 ## Top Tips
 
 1. Everything from the keyboard is a string.
-2. Only strings can be concatenated.
+2. Division creates a real value.
+3. Only strings can be concatenated.

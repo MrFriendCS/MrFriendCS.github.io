@@ -8,9 +8,9 @@ In the individual game there are two athletes who take it in turns to throw six 
 
 ## Task
 
-Create an app that will ask for which colour won an end, and how many points were scored.  The total points for each team (colour) will be calculated and displayed.  The team with the most points will declared the winner.  All values enterd must be valid.
+Create an app that will ask for which colour won an end, and how many points were scored.  The total points for each team (colour) will be calculated and displayed.  The team with the most points will declared the winner.  All values entered must be valid.
 
-## Example UI
+## Example User Interface
 
 ```
 Paris Paralympics

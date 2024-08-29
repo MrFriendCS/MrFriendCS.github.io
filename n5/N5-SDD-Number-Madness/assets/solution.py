@@ -9,7 +9,7 @@ answer = 0
 add = 0
 subtract = 0
 multiply = 0
-divide = 0.0  # Divide produces real
+divide = 0.0  # Division answers are real
 
 # Display header
 print("Number Madness!")
