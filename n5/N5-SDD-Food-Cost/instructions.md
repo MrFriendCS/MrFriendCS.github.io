@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Food businesses need to operate at a profit to stay in business.  This means they sell food for more than they buy it for.   
+Food businesses need to operate at a profit to stay in business.  This means they sell food for more than they buy it for.
 
 A new food business wants to make sure it is charging enough to be able to stay in business.  Its unique selling point (USP) is that each plate of food only has three, four, or five ingredients.  Every ingredient costs less than £10 to the business.  It multiplies the cost of each item by four to see how much it should charge customers.
 

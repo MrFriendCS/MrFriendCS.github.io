@@ -13,6 +13,9 @@ The sum of the values will be displayed, and the mean.
 ### Example 1
 
 ```
+Mean Calculator
+---------------
+
 How many values: 3
 
 Value 1: 5

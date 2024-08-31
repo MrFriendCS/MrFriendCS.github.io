@@ -8,6 +8,10 @@ value = 0.0
 sum = 0.0
 mean = 0.0
 
+# Display header
+print("Mean Calculator")
+print("---------------")
+print()
 
 # Get number of values
 noOfValues = int(input("How many values? "))
@@ -15,7 +19,7 @@ noOfValues = int(input("How many values? "))
 # Display a blank line
 print()
 
-# loop for number of values
+# Loop for number of values
 for counter in range(noOfValues):
     
     # Get value
@@ -33,7 +37,3 @@ print()
 # Display results
 print("Sum: " + str(sum))
 print("Mean: " + str(mean))
-
-
-
-

@@ -27,9 +27,12 @@ All inputs are whole numbers.
 
 An example of the expected inputs and outputs are shown below.
 
-### Example 1
+### User Interface Example 1
 
-``` JavaScript 
+```
+Rectangle Calculations
+----------------------
+
 What is the width? 5
 What is the height? 4
 
@@ -37,9 +40,9 @@ The perimeter is 18 units
 The area is 20 units squared
 ```
 
-### Example 2
+### User Interface Example 2
 
-``` JavaScript 
+```
 What is the width? 6
 What is the height? 2
 

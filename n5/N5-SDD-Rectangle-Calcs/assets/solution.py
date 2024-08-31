@@ -1,8 +1,13 @@
-# Title: S3 SDD Rectangle Calculations
+# Title: N5 SDD Rectangle Calculations
 # Author: Mr Friend
-# Date: 17 Nov 2021
+# Date: 31 Aug 2024
 
-# Inputs
+# Display header
+print("Rectangle Calculations")
+print("----------------------")
+print()
+
+# Inputs - Whole numbers only
 width = int(input("What is the width? "))
 height = int(input("What is the height? "))
 
