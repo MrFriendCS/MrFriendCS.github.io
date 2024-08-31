@@ -15,13 +15,13 @@
 
 ### Abbreviations
 
-cat = Concatenate
-if1 = if
-if2 = if, else
-if3 = if, elif, else
-if4 = if, elif
-ip = User input
-iv = Input validation
+cat = Concatenate,
+if1 = if,
+if2 = if/else,
+if3 = if/elif/else,
+if4 = if/elif,
+ip = User input,
+iv = Input validation,
 rt = Running total
 
 ## SDD Assignment Tasks
