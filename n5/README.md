@@ -5,6 +5,7 @@
 | Title                 | Description                       | Concepts       | Comments |
 | -----                 | -----------                       | --------       | -------- |
 | N5-SDD-Number-Madness | Two values, various results       | ip, maths, cat | Y1 |
+| N5-SDD-Book-Shop      | Calculates student book price     | ip, if1        | Y1 |
 | N5-SDD-Average        | | | |
 | N5-SDD-Food-Cost      | | | |
 | N5-SDD-Retirement     | | | |
@@ -15,6 +16,10 @@
 ### Abbreviations
 
 cat = Concatenate
+if1 = if
+if2 = if, else
+if3 = if, elif, else
+if4 = if, elif
 ip = User input
 iv = Input validation
 rt = Running total
