@@ -29,6 +29,9 @@ Mean: 10.0
 ### Example 2
 
 ```
+Mean Calculator
+---------------
+
 How many values: 2
 
 Value 1: 3.7
