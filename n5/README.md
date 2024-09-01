@@ -11,7 +11,7 @@
 | N5-SDD-Boccia-v1       | Records scores, gives result       | ip              | Y1 |
 | N5-SDD-Book-Shop       | Calculates student book price      | ip, if1         | Y1 |
 | N5-SDD-Retirement      | Calculate years to retirement      | ip, if3         | Y1 |
-| N5-SDD-School-Lunches  | Calculate cost of 5 lunches        | fl, , ip, t1d   | Y1, sqarl |
+| N5-SDD-School-Lunches  | Calculate cost of 5 lunches        | fl, ip, t1d     | Y1, sqarl |
 | N5-SDD-Summer-v2       | For summer break                   |                 | Y2 |
 | N5-SDD-Food-Cost       | Calculate cost of 3, 4, or 5 items | rt, iv, t1d x 2 | Y2 |
 | N5-SDD-Boccia-v2       | Records scores, gives result       | rt x 2, iv, if3 | Y2 |
@@ -51,7 +51,9 @@ sqarl = SQA Reference Language
 
 | Title         | Description | Concepts | Comments |
 | -----         | ----------- | -------- | -------- |
-| | | | | 
+| | | | |
+
+### Abbreviations
 
 ## DDD Assignment Tasks
 
