@@ -3,11 +3,13 @@
 
 ## SDD Tasks
 
-| Title           | Description         | Concepts                   | Comments |
-| -----           | -----------         | --------                   | -------- |
-| H-SDD-Summer    | For summer break    | asc, chr, int, mod, SP, SS | |
-| H-SDD-Walking   | Write data to file  | w                          | |
-| H-SDD-Tuck-Shop | Create a price list | PA, r, w                   | |
+| Title                | Description         | Concepts                   | Comments |
+| -----                | -----------         | --------                   | -------- |
+| H-SDD-Summer         | For summer break    | asc, chr, int, mod, sp, ss | |
+| H-SDD-Walking        | Write data to file  | w                          | |
+| H-SDD-Tuck-Shop      | Create a price list | r, pa, ss, asc, chr, w     | |
+| H-SDD-Tuck-Shop-v2   | Create a price list | Tuck Shop + sp             | |
+| H-SDD-Temperature-v2 | Convert F to C      | sp, r, pa, w               | |
 
 
 ### Abbreviations
@@ -16,10 +18,10 @@ asc = Character to ASCII
 chr = ASCII to character
 int = Real to integer
 mod = Modulus
-PA = Parallel arrays
+pa = Parallel arrays
 r = read from file
-SP = Sub-programs
-SS = Sub-strings
+sp = Sub-programs
+ss = Sub-strings
 w = write to file
 
 
