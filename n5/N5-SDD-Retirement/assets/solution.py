@@ -7,16 +7,16 @@ name = ""
 age = 0
 yearsLeft = 0
 
+# Display Header
+print("Retirement Calculator")
+print("---------------------")
+
+
 # Get user name
 name = input("What is your name? ")
 
 # Get user age
 age = int(input("\nHow old are you " + name + "? "))
-
-# Is age valid?
-while age < 0:
-    print("\nAge must be 0 or more.")
-    age = int(input("\nHow old are you " + name + "? "))
 
 # Calculate years to retirement
 yearsLeft = 68 - age
