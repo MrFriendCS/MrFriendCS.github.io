@@ -1,46 +1,38 @@
 # N5 SDD - Number Guess
 
-Let the computer pick a value from 1 to 10.  Ask the user to enter a valid guess, and then tell them if they're correct,  too high, or too low.
+## Introduction
 
-Three chances, or fewer if correct.
+A player has a maximum of three chances to guess the random number (1-10) that the computer has picked.
 
-If user fails to guess correctly, the computer will display the value.
 
-## User Experience
+## Task
 
-### Example 1
+Implement a solution that matches the design shown below.
+
+
+### Top Level Design (Stucture diagram)
+
+![Structure diagram](assets/sd.png "Structure diagram")
+
+
+### User Interface
+
+An example of the user interface is shown below.
 
 ```
+Number Guess
+------------
+
 I've picked a number between 1 and 10.
 
 What is your first guess? 8
-
 Too high!
 
 What is your second guess? 2
-
 Too low!
 
 What is your last guess? 4
-
 Too high!
 
 The correct value was 3.
-```
-
-### Example 2
-
-```
-I've picked a number between 1 and 10.
-
-What is your first guess? 12
-
-Only values from 1 to 10 are accepted.
-What is your first guess? 2
-
-Too high!
-
-What is your second guess? 1
-
-Correct!
 ```
