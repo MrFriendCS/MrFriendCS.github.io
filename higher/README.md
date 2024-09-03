@@ -3,13 +3,41 @@
 
 ## SDD Tasks
 
-| Title                | Description         | Concepts                   | Comments |
-| -----                | -----------         | --------                   | -------- |
-| H-SDD-Summer         | For summer break    | asc, chr, int, mod, sp, ss | |
-| H-SDD-Walking        | Write data to file  | w                          | |
-| H-SDD-Tuck-Shop      | Create a price list | r, pa, ss, asc, chr, w     | |
-| H-SDD-Tuck-Shop-v2   | Create a price list | Tuck Shop + sp             | |
-| H-SDD-Temperature-v2 | Convert F to C      | sp, r, pa, w               | |
+| Title                    | Description         | Concepts                   | Comments |
+| -----                    | -----------         | --------                   | -------- |
+| H-SDD-Summer             | For summer break    | asc, chr, int, mod, sp, ss | |
+| H-SDD-Walking            | Write data to file  | w                          | |
+| H-SDD-Tuck-Shop          | Create a price list | r, pa, ss, asc, chr, w     | |
+| H-SDD-Tuck-Shop-v2       | Create a price list | Tuck Shop + sp             | |
+| H-SDD-Temperature-v2     | Convert F to C      | sp, r, pa, w               | |
+| H-SDD-Bearings-v1        | | | |
+| H-SDD-Bearings-v2        | | | |
+| H-SDD-Caesar-Cipher      | | | |
+| H-SDD-Convert-F-to-C     | | | |
+| H-SDD-Frequency-Analysis | | | |
+| H-SDD-Hot-Cold           | | | |
+| H-SDD-House-Prices       | | | |
+| H-SDD-ISBNs              | | | |
+| H-SDD-KIS-v1             | | | |
+| H-SDD-KIS-v2             | | | |
+| H-SDD-Monopoly           | | | |
+| H-SDD-Parabola-Fun       | | | |
+| H-SDD-Password-Generator | | | |
+| H-SDD-Runners            | | | |
+| H-SDD-Straight-Line      | | | |
+| H-SDD-Subprograms        | | | |
+| H-SDD-Substrings         | | | |
+| H-SDD-Temp-Dates         | | | |
+| H-SDD-Temperature-v1     | | | |
+| H-SDD-Temperature-v2     | | | |
+| H-SDD-Temperature-v3     | | | |
+| H-SDD-Tuck-Shop-v1       | | | |
+| H-SDD-Tuck-Shop-v2       | | | |
+| H-SDD-Update-Countries   | | | |
+| H-SDD-Usernames-v1       | | | |
+| H-SDD-Usernames-v2       | | | |
+| H-SDD-Usernames-v3       | | | |
+| H-SDD-Various-Functions  | | | |
 
 
 ### Abbreviations
