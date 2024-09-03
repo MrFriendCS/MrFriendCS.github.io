@@ -1,42 +1,58 @@
 # Title: N5 SDD Number Guess
 # Author: Mr Friend
-# Date: 2 Dec 2021
+# Date: 3 Sep 2024
 
 # Import module
 import random
 
-# Declare variables and data structures
-
+# Initialise variables
 compValue = 0
-userValue = 0
-correct = False
 guess = 0
-guesses = ["first", "second", "last"]
+found = False
+life = 3
+guesses = ["last", "second", "first"]
 
-# Pick the number
+# Pick random number
 compValue = random.randint(1, 10)
 
+# Display header
+print("Number Guess")
+print("------------")
 print("I've picked a number between 1 and 10.")
 
-# Loop until correct or 3 guesses
-while guess < 3 and correct == False:
-    userValue = int(input("\nWhat is your " + guesses[guess] + " guess? "))
+# Repeat until guess is correct or no lives left
+while life > 0 and found != True:
+    
+    #Get valid guess
+    guess = int(input("\nWhat is your " + guesses[life-1] + " guess? "))
 
     # Only accept 1 to 10 as guesses
-    while userValue < 1 or userValue > 10:
-        print("\nOnly values from 1 to 10 are accepted.")
-        userValue = int(input("What is your " + guesses[guess] + " guess? "))
-
-    if userValue == compValue:
-        print("\nCorrect!")
-        correct = True
-    elif userValue > compValue:
-        print("\nToo high!")
+    while guess < 1 or guess > 10:
+        print("Only values from 1 to 10 are accepted.")
+        userValue = int(input("\nWhat is your " + guesses[life] + " guess? "))
+    
+    # Is guess correct?
+    if guess == compValue:
+        # Yes
+        found = True
+    
     else:
-        print("\nToo low!")
+        # No
+        life = life - 1
+        
+        # Is guess too high?
+        if guess > compValue:
+            # Yes
+            print("Too high!")
+        else:
+            # No
+            print("Too low!")
 
-    # Increment the number of guesses
-    guess = guess + 1
+# Guessed correctly?
+if found == True:
+    # Yes
+    print("Correct!")
 
-if correct == False:
+else:
+    # No
     print("\nThe correct value was " + str(compValue) + ".")
