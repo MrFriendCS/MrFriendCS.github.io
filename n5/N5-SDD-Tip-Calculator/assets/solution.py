@@ -1,6 +1,6 @@
 # Title: Tip Calculator
 # Author: Mr Friend
-# Date: 28 Sep 2022
+# Date: 1 Sep 2024
 
 # Initialise variables
 amount = 0.0
@@ -9,6 +9,10 @@ percentage = 0.0
 tip = 0.0
 total = 0.0
 individual = 0.0
+
+# Display header
+print("Costs")
+print("-----")
 
 # Loop 4 times
 for counter in range(4):
@@ -19,20 +23,23 @@ for counter in range(4):
     # Check valid
     while amount < 0 or amount > 25:
         # Error message
-        print("Amount must be from 0 to 25")
+        print("Amount must be from £0 to £25")
         # Re-enter amount
         amount = float(input("Person " + str(counter + 1) + ": "))
 
     # Add amount to cost
     cost = cost + amount
+    
+print("\nPercentage")
+print("----------")
 
 # Get valid percentage
-percentage = float(input("\nTip percent: "))
+percentage = float(input("Tip percent: "))
 
 # Check valid
 while percentage < 0 or percentage > 20:
     # Error message
-    print("Percentage must be from 0 to 20")
+    print("\nPercentage must be from 0 to 20")
     # Re-enter percentage
     percentage = float(input("Tip percent: "))
 
@@ -45,14 +52,19 @@ tip = round(tip, 2)
 # Calculate total
 total = cost + tip
 
+print("\nGroup")
+print("-----")
+
 # Display cost
-print("\nCost: £" + str(cost))
+print("Cost:  £" + str(cost))
 
 # Display tip
-print("Tip: £" + str(tip))
+print("Tip:   £" + str(tip))
 
 # Display total
-print("\nTotal: £" + str(total))
+print("-------------")
+print("Total: £" + str(total))
+print("=============")
 
 # Calculate individual cost
 individual = total / 4
@@ -61,4 +73,9 @@ individual = total / 4
 individual = round(individual, 2)
 
 # Display individual cost
-print("\nEach pays: £" + str(individual))
+print("\nIndividual")
+print("----------")
+print("  £" + str(individual))
+
+# Display footer
+print("  ======")
