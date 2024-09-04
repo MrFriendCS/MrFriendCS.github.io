@@ -4,13 +4,13 @@
 
 A user wants an automatic grading system that will classify a test score using the table below.  Only scores from ___0___ to ___100___ are acceptable.
 
-| Mark | Grade |
-| --- | :---: |
-| 70+ | A |
+| Mark    | Grade |
+| ----    | :---: |
+| 70+     | A |
 | 60 - 69 | B |
 | 50 - 59 | C |
 | 40 - 49 | D |
-| 0 - 39 | No Award |
+| 0 - 39  | No Award |
 
 ## Tasks
 
@@ -37,6 +37,3 @@ Below is an example of the expected user experience.
 
 ## Structure Diagram
 ![Structure Diagram](assets/TestResult-Graded.png)
-
-
-
