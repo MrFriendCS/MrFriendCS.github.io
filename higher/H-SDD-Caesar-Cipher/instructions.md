@@ -14,7 +14,9 @@ Julius Caesar used the cipher to encrypt messages over 2,000 years ago but today
 
 Use the structure diagram to create a sub-program that will encrypt a plain text message and return the cipher text.
 
-All punctuation and spaces are ignored.  The cipher text will all be lowercase.
+All punctuation and spaces are ignored.  The cipher text will be lowercase.
+
+Save the code as `caesar.py`.
 
 
 ## Structure diagram
@@ -40,7 +42,7 @@ ifmmn
 
 #### Code
 ``` python
-print(encode("abc XYZ", 3))
+print(encode("abc XYZ", 29))
 ```
 
 #### Output
@@ -48,3 +50,6 @@ print(encode("abc XYZ", 3))
 defabc
 ```
 
+## Testing
+
+Run the file [Caesar-Test.py](assets/Caesar-Test.py "Download file") and choose 'Encode test'.  The file must be in the same folder as `caesar.py`.
