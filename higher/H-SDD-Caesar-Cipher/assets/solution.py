@@ -1,25 +1,46 @@
-# Title: Caesar Cipher - Encode
+# Title: H SDD Caesar Cipher
 # Author: Mr Friend
-# Date: 30 Sep 2022
+# Date: 4 Sep 2024
 
-# Declare global variables
-plainText = ""
-key = 0
-interimText = ""
-letterValue = 0
-cipherText = ""
 
-# Get plain text message
-plainText = input("Plain text: ")
+def encode(plainText, key):
+    """Shift cipher.  Creates cipher text."""
+    # Initialise local variables
+    ascii = 0
+    cipherText = ""
+    
+    # Loop for each letter in message
+    for index in range(len(plainText)):
+        
+        # Get ASCII value
+        ascii = ord(plainText[index])
+        
+        # Is ASCII value 65 to 90?
+        if ascii >= 65 and ascii <= 90:
+            
+            ascii = ascii + 32
+            
+        # Is ASCII value 95 to 122?
+        if ascii >= 95 and ascii <= 122:
+            
+            # Add key value to ASCII value
+            ascii = ascii + key
+            
+            # Is ascii > 122?
+            if ascii > 122:
+                
+                ascii = ascii - 26
+            
+            # Add ASCII character to cipher text
+            cipherText = cipherText + chr(ascii)
+    
+    return cipherText
 
-# Get valid key value
-key = int(input("Key: "))
 
-# Input validation
-while key < 1 or key > 25:
-    # Display error message
-    print("Key must be between 2 and 25")
-    # Get valid key value
-    key = int(input("Key: "))
+#
+# Main program
+#
 
-# Loop
+print(encode("Hello!", 1))
+
+print(encode("abc XYZ",3))
