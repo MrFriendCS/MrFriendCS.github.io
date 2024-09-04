@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A Caesar cipher is a simple shift cipher.  Each letter of a plain text message is shifted by a set number of places.
+A Caesar cipher is a simple shift cipher.  Each letter of a plain text message is shifted a set number of places.
 
 With a shift of 3, __a__ becomes __d__, and __m__ becomes __p__.  The end of the alhpabet wraps around to the beginning.
 
