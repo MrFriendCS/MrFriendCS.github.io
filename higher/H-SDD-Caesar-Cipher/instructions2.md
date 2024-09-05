@@ -3,9 +3,9 @@
 
 ## Task
 
-Use the structure diagram to create a sub-program that will decrypt a cipher text message and return the plain text.
+Use the structure diagram to create a sub-program that will decrypt a ciphertext message and return the plaintext.
 
-All punctuation and spaces are maintained.  The plain text will have the same case as the cipher text.
+All punctuation and spaces are maintained.  The plaintext will have the same case as the ciphertext.
 
 Save the code as `caesar.py`.
 

@@ -1,9 +1,9 @@
-# H SDD - Caesar Cipher  
+# H SDD - Caesar Cipher Part 1
 
 
 ## Introduction
 
-A Caesar cipher is a simple shift cipher.  Each letter of a plain text message is shifted a set number of places.
+A Caesar cipher is a simple shift cipher.  Each letter of a plaintext message is shifted a set number of places.
 
 With a shift of 3, __a__ becomes __d__, and __m__ becomes __p__.  The end of the alhpabet wraps around to the beginning.
 
@@ -12,9 +12,9 @@ Julius Caesar used the cipher to encrypt messages over 2,000 years ago but today
 
 ## Task
 
-Use the structure diagram to create a sub-program that will encrypt a plain text message and return the cipher text.
+Use the structure diagram to create a sub-program that will encrypt a plaintext message and return the ciphertext.
 
-All punctuation and spaces are ignored.  The cipher text will be lowercase.
+All punctuation and spaces are ignored.  The ciphertext will be lowercase.
 
 Save the code as `caesar.py`.
 

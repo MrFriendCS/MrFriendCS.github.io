@@ -30,7 +30,7 @@
             <mxPoint x="540" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="naudl5dFCF3qfg-9gcWL-2" value="Loop for each letter&lt;br&gt;in the plain text" style="rounded=1;whiteSpace=wrap;html=1;arcSize=47;" parent="1" vertex="1">
+        <mxCell id="naudl5dFCF3qfg-9gcWL-2" value="Loop for each letter&lt;br&gt;in the plaintext" style="rounded=1;whiteSpace=wrap;html=1;arcSize=47;" parent="1" vertex="1">
           <mxGeometry x="480" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PnTi4dvMfxkBQY3S4DTA-9" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="PnTi4dvMfxkBQY3S4DTA-1" target="PnTi4dvMfxkBQY3S4DTA-2" edge="1">
@@ -86,7 +86,7 @@
             <mxPoint x="700" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PnTi4dvMfxkBQY3S4DTA-8" value="&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Add ASCII &lt;br&gt;character to&lt;br&gt;cipher text&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=12;fontColor=default;" parent="1" vertex="1">
+        <mxCell id="PnTi4dvMfxkBQY3S4DTA-8" value="&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Add ASCII &lt;br&gt;character to&lt;br&gt;ciphertext&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=12;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="640" y="440" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PnTi4dvMfxkBQY3S4DTA-17" value="" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;shape=connector;" parent="1" edge="1">
@@ -112,7 +112,7 @@
             <mxPoint x="700" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MsXQw97fwFRbFhlOeUjv-1" value="&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Return cipher text&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=12;fontColor=default;" parent="1" vertex="1">
+        <mxCell id="MsXQw97fwFRbFhlOeUjv-1" value="&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Return ciphertext&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=12;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="640" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uPzhVEWbCUpj4W8JSAq3-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="uPzhVEWbCUpj4W8JSAq3-1" edge="1">
@@ -136,7 +136,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="j9v1CMzI2s5wIjUqh_NG" name="sd2">
-    <mxGraphModel dx="869" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="608" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="a64HkmenT_zKooSn4q8b-0" />
         <mxCell id="a64HkmenT_zKooSn4q8b-1" parent="a64HkmenT_zKooSn4q8b-0" />
@@ -166,7 +166,7 @@
             <mxPoint x="500" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="a64HkmenT_zKooSn4q8b-8" value="Loop for each letter&lt;br&gt;in the cipher text" style="rounded=1;whiteSpace=wrap;html=1;arcSize=47;" parent="a64HkmenT_zKooSn4q8b-1" vertex="1">
+        <mxCell id="a64HkmenT_zKooSn4q8b-8" value="Loop for each letter&lt;br&gt;in the ciphertext" style="rounded=1;whiteSpace=wrap;html=1;arcSize=47;" parent="a64HkmenT_zKooSn4q8b-1" vertex="1">
           <mxGeometry x="440" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="a64HkmenT_zKooSn4q8b-10" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="a64HkmenT_zKooSn4q8b-1" source="a64HkmenT_zKooSn4q8b-11" edge="1">
@@ -185,11 +185,11 @@
         </mxCell>
         <mxCell id="LgUnG8IKYTyM7h--CjLK-16" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="a64HkmenT_zKooSn4q8b-1" source="a64HkmenT_zKooSn4q8b-21" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="499" y="280" as="targetPoint" />
+            <mxPoint x="500" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="a64HkmenT_zKooSn4q8b-21" value="Is ASCII value&lt;br&gt;65-90 or 97-122?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="a64HkmenT_zKooSn4q8b-1" vertex="1">
-          <mxGeometry x="439" y="320" width="120" height="60" as="geometry" />
+          <mxGeometry x="440" y="319" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LgUnG8IKYTyM7h--CjLK-7" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;entryX=0.375;entryY=1;entryDx=0;entryDy=0;" parent="a64HkmenT_zKooSn4q8b-1" source="a64HkmenT_zKooSn4q8b-22" target="LgUnG8IKYTyM7h--CjLK-6" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -204,7 +204,7 @@
             <mxPoint x="660" y="279" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="a64HkmenT_zKooSn4q8b-24" value="&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Add ASCII &lt;br&gt;character to&lt;br&gt;plain text&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=12;fontColor=default;" parent="a64HkmenT_zKooSn4q8b-1" vertex="1">
+        <mxCell id="a64HkmenT_zKooSn4q8b-24" value="&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Add ASCII &lt;br&gt;character to&lt;br&gt;plaintext&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=12;fontColor=default;" parent="a64HkmenT_zKooSn4q8b-1" vertex="1">
           <mxGeometry x="600" y="319" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="a64HkmenT_zKooSn4q8b-26" value="" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;shape=connector;" parent="a64HkmenT_zKooSn4q8b-1" edge="1">
