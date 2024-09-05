@@ -35,7 +35,7 @@ print(encode("Hello!", 1))
 
 #### Output
 ```
-ifmmn
+ifmmp
 ```
 
 ### Example 2

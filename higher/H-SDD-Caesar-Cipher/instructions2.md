@@ -1,0 +1,46 @@
+# H SDD - Caesar Cipher Part 2
+
+
+## Task
+
+Use the structure diagram to create a sub-program that will decrypt a cipher text message and return the plain text.
+
+All punctuation and spaces are maintained.  The plain text will have the same case as the cipher text.
+
+Save the code as `caesar.py`.
+
+
+## Structure diagram
+
+![Structure diagram](assets/sd2.png)
+
+
+## Examples
+
+### Example 1
+
+#### Code
+``` python
+print(decode("Iifmmn!", 1))
+```
+
+#### Output
+```
+Hello!
+```
+
+### Example 2
+
+#### Code
+``` python
+print(encode("def ABC", 29))
+```
+
+#### Output
+```
+abc XYZ
+```
+
+## Testing
+
+Run the file [Caesar-Test.py](assets/Caesar-Test.py "Download file") and choose 'Decode test'.  The file must be in the same folder as `caesar.py`.
