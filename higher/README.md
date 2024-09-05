@@ -3,16 +3,17 @@
 
 ## SDD Tasks
 
-| Title                    | Description         | Concepts                   | Comments |
-| -----                    | -----------         | --------                   | -------- |
-| H-SDD-Summer             | For summer break    | asc, chr, int, mod, sp, ss | |
-| H-SDD-Walking            | Write data to file  | w                          | |
-| H-SDD-Tuck-Shop          | Create a price list | r, pa, ss, asc, chr, w     | |
-| H-SDD-Tuck-Shop-v2       | Create a price list | Tuck Shop + sp             | |
-| H-SDD-Temperature-v2     | Convert F to C      | sp, r, pa, w               | |
+| Title                    | Description             | Concepts                   | Comments |
+| -----                    | -----------             | --------                   | -------- |
+| H-SDD-Summer             | For summer break        | asc, chr, int, mod, sp, ss | |
+| H-SDD-Walking            | Write data to file      | w                          | |
+| H-SDD-Tuck-Shop          | Create a price list     | r, pa, ss, asc, chr, w     | |
+| H-SDD-Tuck-Shop-v2       | Create a price list     | Tuck Shop + sp             | |
+| H-SDD-Temperature-v2     | Convert F to C          | sp, r, pa, w               | |
+| H-SDD-Caesar-Cipher      | Plaintext to ciphertext | sp, mod, ss, asc, chr      | Part 1, tests |
+| H-SDD-Caesar-Cipher      | Ciphertext to plaintext | sp, mod, ss, asc, chr      | Part 2, tests |
 | H-SDD-Bearings-v1        | | | |
 | H-SDD-Bearings-v2        | | | |
-| H-SDD-Caesar-Cipher      | | | |
 | H-SDD-Convert-F-to-C     | | | |
 | H-SDD-Frequency-Analysis | | | |
 | H-SDD-Hot-Cold           | | | |
