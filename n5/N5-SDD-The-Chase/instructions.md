@@ -7,16 +7,15 @@ A popular TV quiz show was planning on coming to Barra.  Unfortunately, due to a
 
 To save the day you are to produce a program that will ask questions, show the correct answers if wrong, and then give a result.
 
-As a proof of concept, the initial program will ask three questions.
-
-There is a structure diagram and an example of the user interface.
+As a proof of concept, the initial program will ask three questions.  Implement the design shown below.
 
 
-## Structure Diagram
+## Top level design (Structure diagram)
 
 ![Structure Diagram](assets/sd.png)
 
-## Example User Interface
+
+### Example User Interface
 
 ```
 What animal says 'meow'? cat
