@@ -1,7 +1,9 @@
-# N5 SDD - Triathlon  
+# N5 SDD - Triathlon
 
 
 ## Introduction
+
+A Super Sprint triathlon has 5 sections (3 stages and 2 transitions):
 
 1. Swim - 400 m
 2. Transition 1 (T1)
@@ -9,11 +11,12 @@
 4. Transition 2 (T2)
 5. Run - 2.5 km
 
+The time from each section is added together to give the overall time for the triathlon.  The transitions, T1 and T2, are the changes from one stage to another.
+
 
 ## Task
 
-Implement the design shown below.  An example of the user interface is also shown.
-
+Implement the design shown below.  An example of the user interface is also shown.  Unfortunately, the mins and seconds for each section need to entered seperately.
 
 
 ### Top level design (Structure diagram)
