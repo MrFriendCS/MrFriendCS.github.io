@@ -13,7 +13,7 @@ A triathlon is being planned for Barra. A 'Super Sprint' triathlon has 5 section
 
 The time from each section is added together to give the overall time for the triathlon.  The transitions, T1 and T2, are time taken to change from one stage to another.
 
-As the Barra Triathlon is for fun, there will be no cut off times for any of the stages.  
+As the Barra triathlon is for fun, there will be no cut off times for any of the stages.  
 
 
 ## Task
