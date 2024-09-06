@@ -30,7 +30,7 @@ Implement the design shown below.  An example of the user interface is also show
 Barra Triathlon
 ---------------
 
-Enter times
+Enter times for each stage:
 
 Swim time (min): 12
 Swim time (sec): 58
