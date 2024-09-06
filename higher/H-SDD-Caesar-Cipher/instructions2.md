@@ -21,7 +21,7 @@ Save the code as `caesar.py`.
 
 #### Code
 ``` python
-print(decode("Iifmmn!", 1))
+print(decode("Ifmmn!", 1))
 ```
 
 #### Output
