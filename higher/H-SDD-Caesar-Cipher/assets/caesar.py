@@ -83,5 +83,3 @@ def decode(cipherText, shift):
     
     # Return plain text
     return plainText
-
-print(decode("ABCD", 24))
