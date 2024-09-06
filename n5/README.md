@@ -34,6 +34,7 @@
 | N5-SDD-Boccia-v2         | Records scores, gives result       | rt x 2, iv, if3      | Y2 |
 | N5-SDD-Tip-Calculator    | Calculate cost, tip, total, share  | rt, iv               | Y2, sd |
 | N5-SDD-Number-Game       | Guess random number, 3 chances     | rnd, cl, iv, lo, if2 | Y2, sd |
+| N5-SDD-Triathlon         | Calculate triathlon time - 5 times | t1d, rt, iv          | Y2, sd |
 | N5-SDD-Cat-Food          | | | Y2 |
 | N5-SDD-Menu-Options      | | | Y2 |
 | N5-SDD-Number-Guess      | | | Y2 |
