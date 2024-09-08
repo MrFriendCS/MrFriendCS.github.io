@@ -38,10 +38,14 @@ def testF2C():
         print("\nAll f2c() tests passed!")
         print("===========+===========\n")
         
+        return 1
+        
     except:
         print("FAILED")
         print("\nf2c() testing ended")
         print("===================\n")
+        
+        return 0
 
 
 def testC2F():
@@ -75,10 +79,14 @@ def testC2F():
         print("\nAll c2f() tests passed!")
         print("=======================\n")
         
+        return 1
+        
     except:
         print("FAILED")
         print("\nc2f() testing ended")
         print("====================\n")
+        
+        return 0
 
 
 def testM2KM():
@@ -112,10 +120,14 @@ def testM2KM():
         print("\nAll m2km() tests passed!")
         print("========================\n")
         
+        return 1
+        
     except:
         print("FAILED")
         print("\nm2km() testing ended")
         print("====================\n")
+        
+        return 0
 
 
 def testKM2M():
@@ -149,10 +161,14 @@ def testKM2M():
         print("\nAll km2m() tests passed!")
         print("========================\n")
         
+        return 1
+        
     except:
         print("FAILED")
         print("\nkm2m() testing ended")
         print("====================\n")
+        
+        return 0
 
 
 def testFI2CM():
@@ -174,10 +190,14 @@ def testFI2CM():
         print("\nAll fi2cm() tests passed!")
         print("=========================\n")
         
+        return 1
+        
     except:
         print("FAILED")
         print("\nfi2cm() testing ended")
         print("=====================\n")
+        
+        return 0
         
 
 def testCM2FI():
@@ -199,10 +219,14 @@ def testCM2FI():
         print("\nAll cm2fi() tests passed!")
         print("=========================\n")
         
+        return 1
+        
     except:
         print("FAILED")
         print("\ncm2fi() testing ended")
         print("=====================\n")
+        
+        return 0
 
 
 def testSL2KG():
@@ -224,10 +248,14 @@ def testSL2KG():
         print("\nAll sl2kg() tests passed!")
         print("=========================\n")
         
+        return 1
+        
     except:
         print("FAILED")
         print("\nsl2kg() testing ended")
         print("=====================\n")
+        
+        return 0
         
 
 def testKG2SL():
@@ -249,11 +277,46 @@ def testKG2SL():
         print("\nAll kg2sl() tests passed!")
         print("=========================\n")
         
+        return 1
+        
     except:
         print("FAILED")
         print("\nkg2sl() testing ended")
         print("=====================\n")
+        
+        return 0
 
+
+def testAll():
+    """Tests all functions"""
+    
+    # Local variable
+    passed = 0
+    
+    print("\nRun All Tests")
+    print("--------------\n")
+    
+    try:
+        
+        passed += testF2C()
+        passed += testC2F()
+        passed += testM2KM()
+        passed += testKM2M()
+        passed += testFI2CM()
+        passed += testCM2FI()
+        passed += testSL2KG()
+        passed += testKG2SL()
+        
+        if passed == 8:
+            print("\nTesting of all functions passed!")
+            print("================================\n")
+        else:
+            1/0
+        
+    except:
+            print("\nTesting of all functions FAILED!")
+            print("================================\n")
+        
 
 #
 # Main program
@@ -275,6 +338,7 @@ while run:
     print("6. cm2fi tests")
     print("7. sl2kg tests")
     print("8. kg2sl tests")
+    print("\na. All tests")
     print("x. Exit")
 
     # Get text value from user
@@ -311,6 +375,10 @@ while run:
     elif test == "8":
         # Kilograms to stones and pounds tests
         testKG2SL()
+        
+    elif test == "a":
+        # Run all tests
+        testAll()
         
     elif test == "x":
         # Exit tests
