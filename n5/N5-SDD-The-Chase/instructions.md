@@ -18,6 +18,9 @@ As a proof of concept, the initial program will ask three questions.  Implement 
 ### Example User Interface
 
 ```
+The Chase
+---------
+
 What animal says 'meow'? cat
 Correct!
 
@@ -28,4 +31,5 @@ What animal says 'oink'? pig
 Correct!
 
 Genius!
+=======
 ```
