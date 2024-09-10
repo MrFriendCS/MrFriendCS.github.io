@@ -12,9 +12,9 @@
 | H-SDD-Temperature-v2     | Convert F to C          | sp, r, pa, w               | |
 | H-SDD-Caesar-Cipher      | Plaintext to ciphertext | sp, mod, ss, asc, chr      | Part 1, tests |
 | H-SDD-Caesar-Cipher      | Ciphertext to plaintext | sp, mod, ss, asc, chr      | Part 2, tests |
+| H-SDD-Convert            | Multiple conversions    | sp, int, mod               | Tests |
 | H-SDD-Bearings-v1        | | | |
 | H-SDD-Bearings-v2        | | | |
-| H-SDD-Convert-F-to-C     | | | |
 | H-SDD-Frequency-Analysis | | | |
 | H-SDD-Hot-Cold           | | | |
 | H-SDD-House-Prices       | | | |
