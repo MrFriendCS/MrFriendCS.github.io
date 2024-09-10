@@ -270,8 +270,14 @@ def testKG2SL():
     try:
         
         print("Test " + str(test) +
-              ": 66.7 --> ", end="")
-        assert convert.kg2sl(66.7) == (10, 7)
+              ": 10.0 --> ", end="")
+        assert convert.kg2sl(10.0) == (1, 8)
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 150.0 --> ", end="")
+        assert convert.kg2sl(150.0) == (23, 9)
         print("Passed")
                 
         print("\nAll kg2sl() tests passed!")
@@ -311,7 +317,7 @@ def testAll():
             print("\nTesting of all functions passed!")
             print("================================\n")
         else:
-            1/0
+            1/0  # Throws an exception
         
     except:
             print("\nTesting of all functions FAILED!")
