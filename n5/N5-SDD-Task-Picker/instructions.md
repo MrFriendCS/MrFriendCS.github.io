@@ -8,12 +8,12 @@ Very few people enjoy doing chores.  There are different ways of organising them
 
 ## Task
 
-Using the flowchart below, implement a program that will pick a name and a task for them to do.
+Using the flowchart below, implement a program that will ask how many tasks need doing and pick a name and a task for each of them.
 
 
 ### Top level design (Flowchart)
 
-![Flowchart](assests/fc.png "Flowchart")
+![Flowchart](assets/fc.png "Flowchart")
 
 
 ### Example user interface
@@ -22,7 +22,7 @@ Using the flowchart below, implement a program that will pick a name and a task 
 Task Picker
 -----------
 
-How many task? 3
+How many tasks? 3
 
 Emma will clean the cat litter
 Tom will clean the toilet
