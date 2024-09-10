@@ -125,7 +125,7 @@
             <mxPoint x="600" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UtDX9IJsaf98Vin3WjMV-3" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;sl2kg(stones, lbs)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="UtDX9IJsaf98Vin3WjMV-3" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;sl2kg(stones, pounds)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="420" y="560" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UtDX9IJsaf98Vin3WjMV-4" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Lucida Console&quot;&gt;10, 7&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="1" vertex="1">
@@ -141,7 +141,7 @@
             <mxPoint x="920" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UtDX9IJsaf98Vin3WjMV-8" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;kg2sl(kg)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="UtDX9IJsaf98Vin3WjMV-8" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;kg2sl(kilograms)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="740" y="560" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UtDX9IJsaf98Vin3WjMV-9" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Lucida Console&quot;&gt;66.7&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="1" vertex="1">
