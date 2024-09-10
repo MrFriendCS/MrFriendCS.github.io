@@ -40,7 +40,6 @@
 | N5-SDD-Number-Guess      | | | Y2 |
 | N5-SDD-Password-Checker  | | | Y2 |
 | N5-SDD-Walking           | | | Y2 |
-| N5-SDD-Book-Shop-v2      | | | |
 
 ### Abbreviations
 
