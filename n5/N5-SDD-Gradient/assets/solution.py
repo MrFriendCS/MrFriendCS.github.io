@@ -15,7 +15,7 @@ print("-------------------\n")
 rise = float(input("Rise: "))
 
 # Get run from user
-run = int(input("Run: "))
+run = float(input("Run: "))
 
 # Calculate the gradient
 gradient = rise / run
