@@ -18,7 +18,7 @@ Using the flowchart below, implement a program that will ask how many tasks need
 
 ### Example user interface
 
-``` python
+```
 Task Picker
 -----------
 
