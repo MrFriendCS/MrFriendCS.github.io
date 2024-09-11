@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>N5 SDD - Normal Testing</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body {
+			background-color: burlywood;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			font-size: 4vw;
+			padding-left: 2vw;
+		}
+
+        h2 {
+			font-size: 3vw;
+			padding-left: 2vw;
+		}
+
+		p {
+			font-size: 3vw;
+            font-weight: bold;
+		}
+
+		main section div {
+			float: left;
+			height: 10vw;
+			width: 15vw;
+			background-color: black;
+			border: 1px solid burlywood;
+		}
+
+        label {
+			font-size: 3vw;
+            font-weight: bold;
+			height: 4vw;
+        }
+        
+        input {
+			font-size: 3vw;
+            font-weight: bold;
+			height: 4vw;
+            width: 8vw;
+        }
+
+		.info {
+			text-align: center;
+			background-color: salmon;
+		}
+
+		.left {
+			float: left;
+			padding-left: 2vw;
+		}
+
+		.right {
+			float: right;
+			padding-right: 2vw;
+		}
+
+		.button {
+            clear: both;
+			width: 20vw;
+			text-align: center;
+		    /* margin-top: 4vh; */
+            border: 1px solid red;
+			background-color: lightgray;
+		}
+
+        .row {
+			clear: both;
+		}
+
+		.start {
+			background-color: burlywood;
+		}
+
+        .answer {
+			margin-top: 1vh;
+            border: 1px solid burlywood;
+            border-top: 4px solid black;
+            border-bottom: 8px double black;
+        }
+
+        /* mouse over add */
+        .click:hover {
+            background-color: lightblue;
+        }
+        
+        /* selected add */
+        .click:active {
+            background-color: red;
+        }
+        
+	</style>
+
+</head>
+
+<body">
+
+	<header>
+		<h1>N5 SDD - Normal Testing</h1>
+
+        <h2>Add Two Values Together</h2>
+	</header>
+
+	<main>
+
+		<section class="left">
+
+        <form>
+            <label for="value1">Value 1: </label>
+            <input type="number" id="value1" value="0"><br>
+            <label for="value1">Value 2: </label>
+            <input type="number" id="value2" value="0">
+        </form>
+
+        <div class="button answer" id="answer">
+            <p>0</p>
+		</div>
+
+    </section>
+
+    <section class="left">
+        <div class="button click" id="button" onclick="add()">
+            <p>Add</p>
+		</div>
+    </section>
+
+	</main>
+
+    
+	<script>
+
+        function add(){
+            // Get values
+            var value1 = document.getElementById("value1").value;
+            var value2 = document.getElementById("value2").value;
+
+            // Add values (error is intentional!)
+            var answer = value1 - value2;
+
+            // Display answer
+            document.getElementById("answer").innerHTML = '<p>' + answer + '</p>';;
+        }
+
+	</script>
+
+</body>
+
+</html>
