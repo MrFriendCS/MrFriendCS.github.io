@@ -1,8 +1,8 @@
 # Title: N5 SDD Cat Food
 # Author: Mr Friend
-# Date: 19 Apr 2021
+# Date: 11 Sep 2024
 
-# Declare variables
+# Initialise variables
 age = 0
 food = ""
 
@@ -13,18 +13,21 @@ age = int(input("How old is the cat? "))
 while age < 0 or age > 25:
 
     # Display an error message
-	print("Enter an age of 0 - 25")
+    print("\nEnter an age of 0 - 25")
+    
     # Get the cat's age from the user
-	age = int(input("How old is the cat? "))
+    age = int(input("How old is the cat? "))
 
 # Decide the type of cat food
 if age == 0:
-	food = "kitten"
+    food = "kitten"
 elif age < 7:
-	food = "adult cat"
+    food = "adult cat"
 else:
     food = "senior cat"
 
-# Display the output
+# Display cat age
 print("\nYour cat is " + str(age) + " years old.")
+
+# Display cat food type
 print("Feed it " + food + " food.")

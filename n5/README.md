@@ -14,6 +14,7 @@
 | N5-SDD-The-Chase         | Quiz questions                       | if2, if3              | Y1 |
 | N5-SDD-Retirement        | Calculate years to retirement        | ip, if3               | Y1 |
 | N5-SDD-School-Lunches    | Calculate cost of 5 lunches          | fl, ip, t1d           | Y1, sqarl |
+| N5-SDD-Cat-Food          | Cat's age decides the food type      | ip, if3               | Y1 |
 | N5-SDD-Book-Shop         | Calculate student/staff price        | ip, if4, lo, maths    | Part 2, Y1 |
 | N5-SDD-Ask-Questions     | | | Y1 |
 | N5-SDD-Looperty-Loop     | | | Y1 |
@@ -36,7 +37,6 @@
 | N5-SDD-Number-Game       | Guess random number, 3 chances       | rnd, cl, iv, lo, if2  | Y2, sd |
 | N5-SDD-Triathlon         | Calculate triathlon time - 5 times   | t1d, rt, iv           | Y2, sd |
 | N5-SDD-Task-Picker       | Pick random person for random task   | 1d &times; 2, iv, rnd | Y2, fc |
-| N5-SDD-Cat-Food          | | | Y2 |
 | N5-SDD-Menu-Options      | | | Y2 |
 | N5-SDD-Password-Checker  | | | Y2 |
 | N5-SDD-Walking           | | | Y2 |
