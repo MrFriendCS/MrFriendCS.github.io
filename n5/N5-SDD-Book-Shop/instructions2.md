@@ -8,13 +8,13 @@ Currently, the total is rung up using an old till with any discount or vouchers 
 
 ## Task
 
-Create a program that will accept a non-discounted amount, calculate the discounted price if appropriate, and then take into account using a voucher to pay for some, or all, of the amount.
+Use the structure diagram to implement a program that will accept a non-discounted amount, calculate the discounted price if appropriate, and then take into account using a voucher to pay for some, or all, of the amount.
 
 A structure diagram of the design is provided below.
 
-## Design (Structure Diagram)
+## Top level design (Structure Diagram)
 
-![Diagram](assets/sd.png)
+![Structure diagram](assets/sd2.png "Structure diagram")
 
 ## Assumptions
 
@@ -23,7 +23,7 @@ A structure diagram of the design is provided below.
 * £10 as 10
 * 50p as 0.50
 
-2. Any text entered is lower case.
+2. Any text entered is lower or upper case, i.e. yes, YES, staff, STAFF, ...
 
 3. Any rounding of the final amount will be done by the UoB bookshop staff.
 
@@ -35,7 +35,7 @@ Examples of the expected user interface are shown below with some possible input
 ```
 Total amount: £10
 
-Discount? student
+Discount? STUDENT
 
 Amount to pay: £9
 
@@ -54,7 +54,7 @@ Discount? no
 
 Amount to pay: £7.25
 
-Voucher? no
+Voucher? NO
 
 Final amount to pay: £7.25
 ```
@@ -67,7 +67,7 @@ Discount: staff
 
 Amount to pay: £20.40
 
-Voucher? yes
+Voucher? YES
 £10 voucher applied
 
 Final amount to pay: £10.40
