@@ -49,6 +49,7 @@ Discount: £1.0
 Amount to pay: £9.0
 
 Voucher? yes
+
 £10 voucher applied
 No change given when using a voucher
 
@@ -61,6 +62,7 @@ Final amount to pay: £0.0
 ```
 UoB Book Shop
 -------------
+
 Total amount: £7.25
 
 Discount? no
@@ -78,6 +80,7 @@ Final amount to pay: £7.25
 ```
 UoB Book Shop
 -------------
+
 Total amount: £25.50
 
 Discount: staff
@@ -86,6 +89,7 @@ Discount: £5.1
 Amount to pay: £20.4
 
 Voucher? YES
+
 £10 voucher applied
 
 Final amount to pay: £10.4
