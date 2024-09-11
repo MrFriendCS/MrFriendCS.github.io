@@ -38,7 +38,6 @@
 | N5-SDD-Task-Picker       | Pick random person for random task   | 1d &times; 2, iv, rnd | Y2, fc |
 | N5-SDD-Cat-Food          | | | Y2 |
 | N5-SDD-Menu-Options      | | | Y2 |
-| N5-SDD-Number-Guess      | | | Y2 |
 | N5-SDD-Password-Checker  | | | Y2 |
 | N5-SDD-Walking           | | | Y2 |
 
