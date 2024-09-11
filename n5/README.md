@@ -14,7 +14,7 @@
 | N5-SDD-The-Chase         | Quiz questions                       | if2, if3              | Y1 |
 | N5-SDD-Retirement        | Calculate years to retirement        | ip, if3               | Y1 |
 | N5-SDD-School-Lunches    | Calculate cost of 5 lunches          | fl, ip, t1d           | Y1, sqarl |
-| N5-SDD-Book-Shop         | Calculate student/staff price        | ip, if4, lo maths     | Part 2, Y1 |
+| N5-SDD-Book-Shop         | Calculate student/staff price        | ip, if4, lo, maths    | Part 2, Y1 |
 | N5-SDD-Ask-Questions     | | | Y1 |
 | N5-SDD-Looperty-Loop     | | | Y1 |
 | N5-SDD-Negative          | | | Y1 |
