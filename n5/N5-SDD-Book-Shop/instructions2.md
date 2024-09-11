@@ -1,20 +1,20 @@
-# N5 SDD - Decisions Decisions
+# N5 SDD - Book Shoop - Part 2
+
 
 ## Introduction
 
-The University of Barra (UoB) bookshop wants to update how it calculates the discount that students and staff get when they buy something.  A gift voucher can be used to pay for all or some of the purchase.  Only one £10 gift voucher can be used per purchase.  When using a voucher, no change is given if the amount to pay is less than £10.
+The University of Barra (UoB) bookshop is upgrading its software.  There is a wide selection of items for sale in the shop, ranging from a minimum of £5 up to a maximum of £100.  To help staff and students with the cost they get a discount.  The book shop will accept a gift voucher to pay for all or some of the purchase.  Only one £10 gift voucher can be used per purchase.  When using a voucher, no change is given if the amount to pay is less than £10.
 
-Currently, the total is rung up using an old till with any discount or vouchers being calculated by hand.  There have been some embarrassing mistakes!  Hence the need to modernise.
 
 ## Task
 
 Use the structure diagram to implement a program that will accept a non-discounted amount, calculate the discounted price if appropriate, and then take into account using a voucher to pay for some, or all, of the amount.
 
-A structure diagram of the design is provided below.
 
-## Top level design (Structure Diagram)
+## Top level design (Structure diagram)
 
 ![Structure diagram](assets/sd2.png "Structure diagram")
+
 
 ## Assumptions
 
@@ -25,29 +25,42 @@ A structure diagram of the design is provided below.
 
 2. Any text entered is lower or upper case, i.e. yes, YES, staff, STAFF, ...
 
-3. Any rounding of the final amount will be done by the UoB bookshop staff.
+3. Any rounding will be done by the UoB bookshop staff.
+
 
 ## Examples
 
 Examples of the expected user interface are shown below with some possible input and output values.
 
-### User Interface - Example 1
+
+### User Interface
+
+#### Example 1
+
 ```
+UoB Book Shop
+-------------
+
 Total amount: £10
 
 Discount? STUDENT
 
-Amount to pay: £9
+Discount: £1.0
+Amount to pay: £9.0
 
 Voucher? yes
 £10 voucher applied
 No change given when using a voucher
 
-Final amount to pay: £0
+Final amount to pay: £0.0
+====================
 ```
 
-### User Interface - Example 2
+#### Example 2
+
 ```
+UoB Book Shop
+-------------
 Total amount: £7.25
 
 Discount? no
@@ -57,18 +70,24 @@ Amount to pay: £7.25
 Voucher? NO
 
 Final amount to pay: £7.25
+====================
 ```
 
-### User Interface - Example 3
+#### Example 3
+
 ```
+UoB Book Shop
+-------------
 Total amount: £25.50
 
 Discount: staff
 
-Amount to pay: £20.40
+Discount: £5.1
+Amount to pay: £20.4
 
 Voucher? YES
 £10 voucher applied
 
-Final amount to pay: £10.40
+Final amount to pay: £10.4
+====================
 ```
