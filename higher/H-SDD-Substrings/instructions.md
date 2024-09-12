@@ -10,4 +10,4 @@ Create multiple sub-programs that will create the substrings shown.  Save the co
 
 ## Testing
 
-Run the file [Substrings-Test.py](assets/Substrings-Test.py "Download file").  The file must be in the same folder as `convert.py`.
+Run the file [Substrings-Test.py](assets/Substrings-Test.py "Download file").  The file must be in the same folder as `substring.py`.
