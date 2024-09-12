@@ -1,90 +1,90 @@
-# Title: H-SDD-Convert Tests
+# Title: H-SDD-Substring Tests
 # Author: Mr Friend
-# Date: 8 Sep 2024
+# Date: 12 Sep 2024
 
-"""Tests the functions in convert.py"""
+"""Tests the functions in substring.py"""
 
-import convert
+import substring
 
 
-def testF2C():
-    """Tests the f2c() function"""
+def testLeft():
+    """Tests the left() function"""
     
     # Local variable
     test = 1
     
-    print("\nFahrenheit to Celsius Tests")
-    print("---------------------------\n")
+    print("\nleft() Tests")
+    print("------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": 32.0 --> ", end="")
-        assert convert.f2c(32.0) == 0
+              ": 'Hello', 4 --> ", end="")
+        assert substring.left("Hello", 4) == "Hell"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": -40.0 --> ", end="")
-        assert convert.f2c(-40.0) == -40.0
+              ": 'Hello', 14 --> ", end="")
+        assert substring.left("Hello", 14) == "Hello"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 100.0 --> ", end="")
-        assert convert.f2c(100.0) == 37.8
+              ": '', 4 --> ", end="")
+        assert substring.left("", 4) == ""
         print("Passed")
                      
-        print("\nAll f2c() tests passed!")
-        print("===========+===========\n")
+        print("\nAll left() tests passed!")
+        print("========================\n")
         
         return 1
         
     except:
         print("FAILED")
-        print("\nf2c() testing ended")
-        print("===================\n")
+        print("\nleft() testing ended")
+        print("====================\n")
         
         return 0
 
 
-def testC2F():
-    """Tests the c2f() function"""
+def testRight():
+    """Tests the right() function"""
     
     # Local variable
     test = 1
     
-    print("\nCelsius to Fahrenheit Tests")
-    print("---------------------------\n")
+    print("\nright() Tests")
+    print("------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": 0.0 --> ", end="")
-        assert convert.c2f(0.0) == 32.0
+              ": 'Hello', 4 --> ", end="")
+        assert substring.right("Hello", 4) == "ello"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": -40.0 --> ", end="")
-        assert convert.c2f(-40.0) == -40.0
+              ": 'Hello', 14 --> ", end="")
+        assert substring.right("Hello", 14) == "Hello"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 100.0 --> ", end="")
-        assert convert.c2f(100.0) == 212.0
+              ": '', 4 --> ", end="")
+        assert substring.right("", 4) == ""
         print("Passed")
-                
-        print("\nAll c2f() tests passed!")
-        print("=======================\n")
+                     
+        print("\nAll right() tests passed!")
+        print("=========================\n")
         
         return 1
         
     except:
         print("FAILED")
-        print("\nc2f() testing ended")
-        print("====================\n")
+        print("\nright() testing ended")
+        print("=====================\n")
         
         return 0
 
@@ -336,14 +336,15 @@ while run:
     print("\nConvert Tests")
     print("-------------")
 
-    print("\n1. f2c tests")
-    print("2. c2f tests")
-    print("3. m2km tests")
-    print("4. km2m tests")
-    print("5. fi2cm tests")
-    print("6. cm2fi tests")
-    print("7. sl2kg tests")
-    print("8. kg2sl tests")
+    print("\n1. left() tests")
+    print("2. right() tests")
+    print("3. mid() tests")
+    print("4. lower() tests")
+    print("5. upper() tests")
+    print("6. reverse() tests")
+    print("7. swap() tests")
+    print("8. reverse() tests")
+    print("9. remove() tests")
     print("\na. All tests")
     print("x. Exit")
 
@@ -352,7 +353,7 @@ while run:
 
     if test == "1":
         # Celsius to Fahrenheit tests
-        testF2C()
+        testLeft()
         
     elif test == "2":
         # Fahrenheit to Celsius tests
