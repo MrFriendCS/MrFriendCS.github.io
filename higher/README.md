@@ -3,16 +3,17 @@
 
 ## SDD Tasks
 
-| Title                    | Description             | Concepts                   | Comments |
-| -----                    | -----------             | --------                   | -------- |
-| H-SDD-Summer             | For summer break        | asc, chr, int, mod, sp, ss | |
-| H-SDD-Walking            | Write data to file      | w                          | |
-| H-SDD-Tuck-Shop          | Create a price list     | r, pa, ss, asc, chr, w     | |
-| H-SDD-Tuck-Shop-v2       | Create a price list     | Tuck Shop + sp             | |
-| H-SDD-Temperature-v2     | Convert F to C          | sp, r, pa, w               | |
-| H-SDD-Caesar-Cipher      | Plaintext to ciphertext | sp, mod, ss, asc, chr      | Part 1, tests |
-| H-SDD-Caesar-Cipher      | Ciphertext to plaintext | sp, mod, ss, asc, chr      | Part 2, tests |
-| H-SDD-Convert            | Multiple conversions    | sp, int, mod               | Tests |
+| Title                    | Description                   | Concepts                   | Comments |
+| -----                    | -----------                   | --------                   | -------- |
+| H-SDD-Summer             | For summer break              | asc, chr, int, mod, sp, ss | |
+| H-SDD-Walking            | Write data to file            | w                          | |
+| H-SDD-Tuck-Shop          | Create a price list           | r, pa, ss, asc, chr, w     | |
+| H-SDD-Tuck-Shop-v2       | Create a price list           | Tuck Shop + sp             | |
+| H-SDD-Temperature-v2     | Convert F to C                | sp, r, pa, w               | |
+| H-SDD-Caesar-Cipher      | Plaintext to ciphertext       | sp, mod, ss, asc, chr      | Part 1, tests |
+| H-SDD-Caesar-Cipher      | Ciphertext to plaintext       | sp, mod, ss, asc, chr      | Part 2, tests |
+| H-SDD-Convert            | Multiple conversions of units | sp, int, mod               | Tests |
+| H-SDD-Substring          | Multiple string manipulations | sp, ss, asc, chr           | Tests |
 | H-SDD-Bearings-v1        | | | |
 | H-SDD-Bearings-v2        | | | |
 | H-SDD-Frequency-Analysis | | | |
@@ -27,7 +28,6 @@
 | H-SDD-Runners            | | | |
 | H-SDD-Straight-Line      | | | |
 | H-SDD-Subprograms        | | | |
-| H-SDD-Substrings         | | | |
 | H-SDD-Temp-Dates         | | | |
 | H-SDD-Temperature-v1     | | | |
 | H-SDD-Temperature-v2     | | | |
