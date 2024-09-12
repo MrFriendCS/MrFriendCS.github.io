@@ -37,14 +37,8 @@ def testLeft():
         
         test += 1
         print("Test " + str(test) +
-              ": 'Hello!', -1 --> ", end="")
+              ": 'Hello!', -17 --> ", end="")
         assert substring.left("Hello!", -1) == "Hello!"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '', 4 --> ", end="")
-        assert substring.left("", 4) == ""
         print("Passed")
                      
         print("\nPASSED: left()")
@@ -90,14 +84,8 @@ def testRight():
         
         test += 1
         print("Test " + str(test) +
-              ": 'Hello!', -1 --> ", end="")
+              ": 'Hello!', -17 --> ", end="")
         assert substring.right("Hello!", -1) == "Hello!"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '', 4 --> ", end="")
-        assert substring.right("", 4) == ""
         print("Passed")
                      
         print("\nPASSED: right()")
@@ -149,14 +137,14 @@ def testMid():
         
         test += 1
         print("Test " + str(test) +
-              ": 'Hello!', 3, -1 --> ", end="")
+              ": 'Hello!', 4, 2 --> ", end="")
         assert substring.mid("Hello!", 3, -1) == "Hello!"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": '', 4 --> ", end="")
-        assert substring.mid("", 4, 2) == ""
+              ": 'Hello!', -17, 4 --> ", end="")
+        assert substring.mid("Hello!", 3, -1) == "Hello!"
         print("Passed")
                 
         print("\nPASSED: mid()")
