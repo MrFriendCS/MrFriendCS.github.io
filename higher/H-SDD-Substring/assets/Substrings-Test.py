@@ -55,7 +55,7 @@ def testRight():
     test = 1
     
     print("\nright() Tests")
-    print("------------\n")
+    print("-------------\n")
     
     try:
         
@@ -89,102 +89,102 @@ def testRight():
         return 0
 
 
-def testM2KM():
-    """Tests the m2km() function"""
+def testMid():
+    """Tests the mid() function"""
     
     # Local variable
     test = 1
     
-    print("\nMiles to Kilometres Tests")
-    print("-------------------------\n")
+    print("\nmid() Tests")
+    print("-----------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": 5.0 --> ", end="")
-        assert convert.m2km(5.0) == 8.0
+              ": 'Hello world!', 4, 5 --> ", end="")
+        assert substring.mid("Hello world!", 4, 5) == "lo wo"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 500.0 --> ", end="")
-        assert convert.m2km(500.0) == 804.7
+              ": 'Hello world!', 2, 6 --> ", end="")
+        assert substring.mid("Hello world!", 2, 6) == "ello w"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 50000.0 --> ", end="")
-        assert convert.m2km(50000.0) == 80467.2
+              ": 'Hello world!', 2, 5 --> ", end="")
+        assert substring.mid("Hello world!", 4, 5) == "lo wo"
         print("Passed")
                 
-        print("\nAll m2km() tests passed!")
+        print("\nAll mid() tests passed!")
         print("========================\n")
         
         return 1
         
     except:
         print("FAILED")
-        print("\nm2km() testing ended")
+        print("\nmid() testing ended")
         print("====================\n")
         
         return 0
 
 
-def testKM2M():
-    """Tests the km2m() function"""
+def testLower():
+    """Tests the lower() function"""
     
     # Local variable
     test = 1
     
-    print("\nKilometres to Miles Tests")
-    print("-------------------------\n")
+    print("\nlower() Tests")
+    print("-------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": 8.0 --> ", end="")
-        assert convert.km2m(8.0) == 5.0
+              ": 'Hello!' --> ", end="")
+        assert substring.lower("Hello!") == "hello!"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 800.0 --> ", end="")
-        assert convert.km2m(800.0) == 497.1
+              ": 'Hello!' --> ", end="")
+        assert substring.lower("Hello!") == "hello!"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 80000.0 --> ", end="")
-        assert convert.km2m(80000.0) == 49709.7
+              ": 'Hello!' --> ", end="")
+        assert substring.lower("Hello!") == "hello!"
         print("Passed")
                 
-        print("\nAll km2m() tests passed!")
-        print("========================\n")
+        print("\nAll lower() tests passed!")
+        print("=========================\n")
         
         return 1
         
     except:
         print("FAILED")
-        print("\nkm2m() testing ended")
+        print("\nlower() testing ended")
         print("====================\n")
         
         return 0
 
 
-def testFI2CM():
-    """Tests the fi2cm() function"""
+def testUpper():
+    """Tests the upper() function"""
     
     # Local variable
     test = 1
     
-    print("\nFeet and Inches to Centimetres Tests")
-    print("------------------------------------\n")
+    print("\nFupper() Tests")
+    print("--------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": 6, 6 --> ", end="")
-        assert convert.fi2cm(6, 6) == 198.1
+              ": 'Hello!' --> ", end="")
+        assert substring.upper("Hello!") == "HELLO!"
         print("Passed")
                 
         print("\nAll fi2cm() tests passed!")
@@ -352,36 +352,36 @@ while run:
     test = input("\nTest: ")
 
     if test == "1":
-        # Celsius to Fahrenheit tests
+        # 
         testLeft()
         
     elif test == "2":
-        # Fahrenheit to Celsius tests
-        testC2F()
+        # 
+        testRight()
         
     elif test == "3":
-        # Miles to kilometres tests
-        testM2KM()
+        # 
+        testMid()
         
     elif test == "4":
-        # Kilometres to miles tests
-        testKM2M()
+        # 
+        testLower()
         
     elif test == "5":
-        # Feet and inches to centimetres tests
-        testFI2CM()
+        # 
+        testUpper()
         
     elif test == "6":
-        # Centimetres to feet and inches tests
-        testCM2FI()
+        # 
+        testReverse()
         
     elif test == "7":
-        # Stones and pounds to kilograms tests
-        testSL2KG()
+        # 
+        testSwap()
         
     elif test == "8":
-        # Kilograms to stones and pounds tests
-        testKG2SL()
+        # 
+        testRemove()
         
     elif test == "a":
         # Run all tests

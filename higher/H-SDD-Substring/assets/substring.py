@@ -8,7 +8,7 @@ def left(text, count):
     # Local variable
     subString = ""
     
-    if count < len(text) and count > 0:
+    if count > 0 and count < len(text):
         # Extract substring
         subString = text[ :count]
     else:
@@ -24,7 +24,7 @@ def right(text, count):
     # Local variable
     subString = ""
     
-    if count < len(text) and count > 0:
+    if count > 0 and count < len(text):
         # Extract substring
         subString = text[-count: ]
     else:
@@ -35,12 +35,12 @@ def right(text, count):
 
 
 def mid(text, start, count):
-    """Creates a substring, counting from the right."""
+    """Creates a substring, starting at a position, counting from the left."""
     
     # Local variable
     subString = ""
     
-    if count < len(text) and count > 0:
+    if start > 0 and count > 0 and start+count < len(text):
         # Extract substring
         subString = text[start-1:start+count-1]
     else:

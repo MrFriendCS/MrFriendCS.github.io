@@ -1,9 +1,9 @@
-# H SDD - Substrings
+# H SDD - Substring
 
 
 ## Task
 
-Create multiple sub-programs that will create the substrings shown.  Save the code as `substrings.py`.  The functions should be robust.
+Implement the functions shown below.  All the functions should be robust.  If invalid parameters are passed to a function the original text will be returned unchanged.  Save the code as `substring.py`.  
 
 ![functions.png](assets/functions.png)
 
