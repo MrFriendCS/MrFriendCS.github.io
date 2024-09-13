@@ -11,6 +11,11 @@ Use the structure diagram to implement a program that will calculate the gradien
 ![Structure diagram](assets/sd2.png)
 
 
-### Calculate gradient
+#### Calculate gradient
 
 ![Gradient calculation](assets/diagram.png)
+
+
+### Assumptions
+
+* The __rise__ and __run__ values will have a maximum of 1 decimal places.
