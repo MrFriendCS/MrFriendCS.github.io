@@ -17,7 +17,7 @@
 | N5-SDD-Cat-Food          | Cat's age decides the food type      | ip, if3               | Y1 |
 | N5-SDD-Book-Shop         | Calculate student/staff price        | ip, if4, lo, maths    | Part 2, Y1 |
 | N5-SDD-Gradient          | Calculate gradient from rise and run | ip, if2, maths, cat   | Part 2, Y1 |
-| N5-SDD-Gradient          | Calculate gradient from rise and run | iv, maths, cat        | Part 1, Y1 |
+| N5-SDD-Gradient          | Calculate gradient from rise and run | iv, maths, cat        | Part 3, Y1 |
 | N5-SDD-Ask-Questions     | | | Y1 |
 | N5-SDD-Looperty-Loop     | | | Y1 |
 | N5-SDD-Negative          | | | Y1 |
