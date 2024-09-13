@@ -8,12 +8,12 @@ Use the structure diagram to implement a program that will calculate the gradien
 
 ### Top level design (Structure diagram)
 
-![Structure diagram](assets/sd.png "Structure diagram")
+![Structure diagram](assets/sd1.png)
 
 
 ### Calculate gradient
 
-![Gradient calculation](assets/diagram.png "Gradient calculation")
+![Gradient calculation](assets/diagram.png)
 
 
 ### Example use interface
