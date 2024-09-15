@@ -6,18 +6,18 @@
 | -----                    | -----------                          | --------              | -------- |
 | N5-SDD-Rectangle-Calcs   | Calculate perimeter and area         | ip, maths, cat        | Y1 |
 | N5-SDD-Number-Madness    | Two values, various results          | ip, maths, cat        | Y1 |
-| N5-SDD-Gradient          | Calculate gradient from rise and run | ip, maths, cat        | Part 1, Y1 |
+| N5-SDD-Gradient Pt 1     | Calculate gradient from rise and run | ip, maths, cat        | Part 1, Y1 |
 | N5-SDD-Summer Pt 1       | For summer break                     |                       | Part 1, Y1 |
 | N5-SDD-Average           | Calculate mean                       | ip, rt, maths         | Y1 |
 | N5-SDD-Boccia-v1         | Records scores, gives result         | ip                    | Y1 |
-| N5-SDD-Book-Shop         | Calculate student book price         | ip, if1               | Part 1, Y1 |
+| N5-SDD-Book-Shop Pt 1    | Calculate student book price         | ip, if1               | Part 1, Y1 |
 | N5-SDD-The-Chase         | Quiz questions                       | if2, if3              | Y1 |
 | N5-SDD-Retirement        | Calculate years to retirement        | ip, if3               | Y1 |
 | N5-SDD-School-Lunches    | Calculate cost of 5 lunches          | fl, ip, t1d           | Y1, sqarl |
 | N5-SDD-Cat-Food          | Cat's age decides the food type      | ip, if3               | Y1 |
-| N5-SDD-Book-Shop         | Calculate student/staff price        | ip, if4, lo, maths    | Part 2, Y1 |
-| N5-SDD-Gradient          | Calculate gradient from rise and run | ip, if2, maths, cat   | Part 2, Y1 |
-| N5-SDD-Gradient          | Calculate gradient from rise and run | iv, maths, cat        | Part 3, Y1 |
+| N5-SDD-Book-Shop Pt 2    | Calculate student/staff price        | ip, if4, lo, maths    | Part 2, Y1 |
+| N5-SDD-Gradient Pt 2     | Calculate gradient from rise and run | ip, if2, maths, cat   | Part 2, Y1 |
+| N5-SDD-Gradient Pt 3     | Calculate gradient from rise and run | iv, maths, cat        | Part 3, Y1 |
 | N5-SDD-Ask-Questions     | | | Y1 |
 | N5-SDD-Looperty-Loop     | | | Y1 |
 | N5-SDD-Negative          | | | Y1 |
