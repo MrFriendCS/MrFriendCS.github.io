@@ -7,8 +7,8 @@
 | -----                    | -----------                   | --------                   | -------- |
 | H-SDD-Summer             | For summer break              | asc, chr, int, mod, sp, ss | |
 | H-SDD-Walking            | Write data to file            | w                          | |
-| H-SDD-Tuck-Shop Pt 1     | Create a price list           | r, pa, ss, asc, chr, w     | Part 1 |
-| H-SDD-Tuck-Shop Pt 2     | Create a price list           | Tuck Shop + sp             | Part 2 |
+| H-SDD-Tuck-Shop Pt 1     | Create a price list           | r, pa, ss, asc, chr, w     | Part 1, pc |
+| H-SDD-Tuck-Shop Pt 2     | Create a price list           | Tuck Shop + sp             | Part 2, sd |
 | H-SDD-Temperature-v2     | Convert F to C                | sp, r, pa, w               | |
 | H-SDD-Caesar-Cipher Pt 1 | Plaintext to ciphertext       | sp, mod, ss, asc, chr      | Part 1, tests |
 | H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext       | sp, mod, ss, asc, chr      | Part 2, tests |
@@ -32,7 +32,6 @@
 | H-SDD-Temperature Pt 1   | | | Part 1 |
 | H-SDD-Temperature Pt 2   | | | Part 2 |
 | H-SDD-Temperature Pt 3   | | | Part 3 |
-| H-SDD-Tuck-Shop Pt 1     | | | Part 1 |
 | H-SDD-Tuck-Shop Pt 2     | | | Part 2 |
 | H-SDD-Update-Countries   | | | |
 | H-SDD-Usernames Pt 1     | | | Part 1 |
@@ -52,6 +51,8 @@ r = read from file
 sp = Sub-programs
 ss = Sub-strings
 w = write to file
+
+pc = Pseudocode
 
 
 ## SDD Assignment Tasks
