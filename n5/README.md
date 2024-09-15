@@ -7,7 +7,7 @@
 | N5-SDD-Rectangle-Calcs   | Calculate perimeter and area         | ip, maths, cat        | Y1 |
 | N5-SDD-Number-Madness    | Two values, various results          | ip, maths, cat        | Y1 |
 | N5-SDD-Gradient          | Calculate gradient from rise and run | ip, maths, cat        | Part 1, Y1 |
-| N5-SDD-Summer-v1         | For summer break                     |                       | Y1 |
+| N5-SDD-Summer Pt 1       | For summer break                     |                       | Part 1, Y1 |
 | N5-SDD-Average           | Calculate mean                       | ip, rt, maths         | Y1 |
 | N5-SDD-Boccia-v1         | Records scores, gives result         | ip                    | Y1 |
 | N5-SDD-Book-Shop         | Calculate student book price         | ip, if1               | Part 1, Y1 |
@@ -23,16 +23,16 @@
 | N5-SDD-Negative          | | | Y1 |
 | N5-SDD-Poem-Generator    | | | Y1 |
 | N5-SDD-Pontoon           | | | Y1 |
-| N5-SDD-Result-v1         | | | Y1 |
-| N5-SDD-Result-v2         | | | Y1 |
-| N5-SDD-Result-v3         | | | Y1 |
-| N5-SDD-Result-v4         | | | Y1 |
-| N5-SDD-Result-v5         | | | Y1 |
+| N5-SDD-Result Pt 1       | | | Part 1, Y1 |
+| N5-SDD-Result Pt 2       | | | Part 2, Y1 |
+| N5-SDD-Result Pt 3       | | | Part 2, Y1 |
+| N5-SDD-Result Pt 4       | | | Part 2, Y1 |
+| N5-SDD-Result Pt 5       | | | Part 2, Y1 |
 | N5-SDD-School-Days       | | | Y1 |
 | N5-SDD-School-Enrollment | | | Y1 |
 | N5-SDD-SnapTok           | | | Y1 |
 | N5-SDD-Swimming          | | | Y1 |
-| N5-SDD-Summer-v2         | For summer break                     |                       | Y2 |
+| N5-SDD-Summer Pt 2       | For summer break                     |                       | Part 2, Y2 |
 | N5-SDD-Food-Cost         | Calculate cost of 3, 4, or 5 items   | rt, iv, t1d x 2       | Y2 |
 | N5-SDD-Boccia-v2         | Records scores, gives result         | rt x 2, iv, if3       | Y2 |
 | N5-SDD-Tip-Calculator    | Calculate cost, tip, total, share    | rt, iv                | Y2, sd |
