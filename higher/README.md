@@ -41,17 +41,18 @@
 
 ### Abbreviations
 
-asc = Character to ASCII
-chr = ASCII to character
-int = Real to integer
-mod = Modulus
-pa = Parallel arrays
-r = read from file
-sp = Sub-programs
-ss = Sub-strings
+asc = Character to ASCII,
+chr = ASCII to character,
+int = Real to integer,
+mod = Modulus,
+pa = Parallel arrays,
+r = read from file,
+sp = Sub-programs,
+ss = Sub-strings,
 w = write to file
 
-pc = Pseudocode
+pc = Pseudocode,
+sd = Structure diagram
 
 
 ## SDD Assignment Tasks
