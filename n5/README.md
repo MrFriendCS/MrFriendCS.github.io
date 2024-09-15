@@ -9,7 +9,7 @@
 | N5-SDD-Gradient Pt 1     | Calculate gradient from rise and run | ip, maths, cat        | Part 1, Y1 |
 | N5-SDD-Summer Pt 1       | For summer break                     |                       | Part 1, Y1 |
 | N5-SDD-Average           | Calculate mean                       | ip, rt, maths         | Y1 |
-| N5-SDD-Boccia-v1         | Records scores, gives result         | ip                    | Y1 |
+| N5-SDD-Boccia Pt 1       | Records scores, gives result         | ip                    | Part 1, Y1 |
 | N5-SDD-Book-Shop Pt 1    | Calculate student book price         | ip, if1               | Part 1, Y1 |
 | N5-SDD-The-Chase         | Quiz questions                       | if2, if3              | Y1 |
 | N5-SDD-Retirement        | Calculate years to retirement        | ip, if3               | Y1 |
@@ -34,7 +34,7 @@
 | N5-SDD-Swimming          | | | Y1 |
 | N5-SDD-Summer Pt 2       | For summer break                     |                       | Part 2, Y2 |
 | N5-SDD-Food-Cost         | Calculate cost of 3, 4, or 5 items   | rt, iv, t1d x 2       | Y2 |
-| N5-SDD-Boccia-v2         | Records scores, gives result         | rt x 2, iv, if3       | Y2 |
+| N5-SDD-Boccia Pt 2       | Records scores, gives result         | rt x 2, iv, if3       | Part 2, Y2 |
 | N5-SDD-Tip-Calculator    | Calculate cost, tip, total, share    | rt, iv                | Y2, sd |
 | N5-SDD-Number-Game       | Guess random number, 3 chances       | rnd, cl, iv, lo, if2  | Y2, sd |
 | N5-SDD-Triathlon         | Calculate triathlon time - 5 times   | t1d, rt, iv           | Y2, sd |
@@ -43,9 +43,10 @@
 | N5-SDD-Password-Checker  | | | Y2 |
 | N5-SDD-Walking           | | | Y2 |
 
+
 ### Abbreviations
 
-1d = Array
+1d = Array,
 cat = Concatenate,
 cl = Conditional loop,
 fl = Fixed loop,
@@ -55,8 +56,8 @@ if3 = if/elif/else,
 if4 = if/elif,
 ip = User input,
 iv = Input validation,
-lo = Logical operator
-rnd = Random
+lo = Logical operator,
+rnd = Random,
 rt = Running total,
 t1d = Traverse 1D array
 
@@ -64,6 +65,7 @@ fc = Flowchart,
 pc = Pseudocode,
 sd = Structure diagram,
 sqarl = SQA Reference Language
+
 
 ## SDD Assignment Tasks
 
@@ -76,13 +78,16 @@ sqarl = SQA Reference Language
 | N5-CS-2022-Task-1B | | | |
 | N5-CS-2023-Task-1B | | | |
 
+
 ## DDD Tasks
 
 | Title         | Description | Concepts | Comments |
 | -----         | ----------- | -------- | -------- |
 | | | | |
 
+
 ### Abbreviations
+
 
 ## DDD Assignment Tasks
 
