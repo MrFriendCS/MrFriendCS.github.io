@@ -35,9 +35,9 @@
 | H-SDD-Tuck-Shop Pt 1     | | | Part 1 |
 | H-SDD-Tuck-Shop Pt 2     | | | Part 2 |
 | H-SDD-Update-Countries   | | | |
-| H-SDD-Usernames-v1       | | | |
-| H-SDD-Usernames-v2       | | | |
-| H-SDD-Usernames-v3       | | | |
+| H-SDD-Usernames Pt 1     | | | Part 1 |
+| H-SDD-Usernames Pt 2     | | | Part 2 |
+| H-SDD-Usernames Pt 3     | | | Part 3 |
 | H-SDD-Various-Functions  | | | |
 
 
