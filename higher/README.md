@@ -32,7 +32,6 @@
 | H-SDD-Temperature Pt 1   | | | Part 1 |
 | H-SDD-Temperature Pt 2   | | | Part 2 |
 | H-SDD-Temperature Pt 3   | | | Part 3 |
-| H-SDD-Tuck-Shop Pt 2     | | | Part 2 |
 | H-SDD-Update-Countries   | | | |
 | H-SDD-Usernames Pt 1     | | | Part 1 |
 | H-SDD-Usernames Pt 2     | | | Part 2 |
