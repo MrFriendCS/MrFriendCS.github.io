@@ -19,10 +19,10 @@
 | N5-SDD-Book-Shop Pt 2    | Calculate student/staff price        | ip, if4, lo, maths    | Part 2, Y1 |
 | N5-SDD-Gradient Pt 2     | Calculate gradient from rise and run | ip, if2, maths, cat   | Part 2, Y1 |
 | N5-SDD-Gradient Pt 3     | Calculate gradient from rise and run | iv, maths, cat        | Part 3, Y1 |
+| N5-SDD-Pontoon           | Play a single hand of pontoon        | rnd, ip, cl, if2      | Y1, pc |
 | N5-SDD-Ask-Questions     | | | Y1 |
 | N5-SDD-Looperty-Loop     | | | Y1 |
 | N5-SDD-Poem-Generator    | | | Y1 |
-| N5-SDD-Pontoon           | | | Y1 |
 | N5-SDD-Result Pt 1       | | | Part 1, Y1 |
 | N5-SDD-Result Pt 2       | | | Part 2, Y1 |
 | N5-SDD-Result Pt 3       | | | Part 2, Y1 |
