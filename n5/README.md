@@ -11,6 +11,7 @@
 | N5-SDD-Average           | Calculate mean                       | ip, rt, maths         | Y1 |
 | N5-SDD-Boccia Pt 1       | Records scores, gives result         | ip                    | Part 1, Y1 |
 | N5-SDD-Book-Shop Pt 1    | Calculate student book price         | ip, if1               | Part 1, Y1 |
+| N5-SDD-Negative          | Determine if a value is negative     | ip, if2               | Y1 |
 | N5-SDD-The-Chase         | Quiz questions                       | if2, if3              | Y1 |
 | N5-SDD-Retirement        | Calculate years to retirement        | ip, if3               | Y1 |
 | N5-SDD-School-Lunches    | Calculate cost of 5 lunches          | fl, ip, t1d           | Y1, sqarl |
@@ -20,7 +21,6 @@
 | N5-SDD-Gradient Pt 3     | Calculate gradient from rise and run | iv, maths, cat        | Part 3, Y1 |
 | N5-SDD-Ask-Questions     | | | Y1 |
 | N5-SDD-Looperty-Loop     | | | Y1 |
-| N5-SDD-Negative          | Determine if a value negative        | ip, if2               | Y1 |
 | N5-SDD-Poem-Generator    | | | Y1 |
 | N5-SDD-Pontoon           | | | Y1 |
 | N5-SDD-Result Pt 1       | | | Part 1, Y1 |
