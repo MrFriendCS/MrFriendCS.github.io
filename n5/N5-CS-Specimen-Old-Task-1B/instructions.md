@@ -2,7 +2,7 @@
 
 ## Data dictionary
 
-![Vlogger database](assets/Task_1B.png)
+![Vlogger database](assets/dd.png)
 
 ## Tasks
 

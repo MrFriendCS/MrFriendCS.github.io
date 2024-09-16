@@ -33,7 +33,7 @@ The program will ask the user to enter the number of hits scored by each of the 
 
 ## Program design (flow chart)
 
-![Flow chart](assets/Flowchart.png)
+![Flow chart](assets/fc.png)
 
 ___2a___ Using the program analysis and flowchart design, implement the program in a language of your choice. Ensure the program matches the design. (__15 marks__)
 
@@ -41,7 +41,7 @@ Print evidence of the program code.
 
 ___2b___ Complete the table below to create two sets of test data. You must demonstrate that the program correctly outputs the messages that one or both points have been earned. (__3 marks__)
 
-![Test data](assets/Testdata.png)
+![Test data](assets/test.png)
 
 Test your program using both sets of test data. Print evidence of inputs and outputs to show that you have completed each test.
 

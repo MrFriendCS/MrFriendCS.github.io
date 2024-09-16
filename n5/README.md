@@ -57,6 +57,7 @@ if4 = if/elif,
 ip = User input,
 iv = Input validation,
 lo = Logical operator,
+rd = Round,
 rnd = Random,
 rt = Running total,
 t1d = Traverse 1D array
@@ -69,14 +70,15 @@ sqarl = SQA Reference Language
 
 ## SDD Assignment Tasks
 
-| Title              | Description | Concepts | Comments |
-| -----              | ----------- | -------- | -------- |
-| N5-CS-2018-Task-2B | | | |
-| N5-CS-2019-Task-2B | | | |
-| N5-CS-2020-Task-2B | | | |
-| N5-CS-2021-Task-1C | | | |
-| N5-CS-2022-Task-1B | | | |
-| N5-CS-2023-Task-1B | | | |
+| Title                   | Description                    | Concepts                      | Comments |
+| -----                   | -----------                    | --------                      | -------- |
+| N5-CS-Specimen-Old-Task | 'Capturing Olympus' board game | iv, lo, t1d, rt, rd, if1, if4 | Basic MI |
+| N5-CS-2018-Task-2B      | | | |
+| N5-CS-2019-Task-2B      | | | |
+| N5-CS-2020-Task-2B      | | | |
+| N5-CS-2021-Task-1C      | | | |
+| N5-CS-2022-Task-1B      | | | |
+| N5-CS-2023-Task-1B      | | | |
 
 
 ## DDD Tasks
@@ -91,11 +93,12 @@ sqarl = SQA Reference Language
 
 ## DDD Assignment Tasks
 
-| Title              | Description | Concepts | Comments |
-| -----              | ----------- | -------- | -------- |
-| N5-CS-2018-Task-1B | | | |
-| N5-CS-2019-Task-1C | | | |
-| N5-CS-2020-Task-1B | | | |
-| N5-CS-2021-Task-2B | | | |
-| N5-CS-2022-Task-2B | | | |
-| N5-CS-2023-Task-2B | | | |
+| Title                      | Description | Concepts | Comments |
+| -----                      | ----------- | -------- | -------- |
+| N5-CS-Specimen-Old-Task-1B | | | |
+| N5-CS-2018-Task-1B         | | | |
+| N5-CS-2019-Task-1C         | | | |
+| N5-CS-2020-Task-1B         | | | |
+| N5-CS-2021-Task-2B         | | | |
+| N5-CS-2022-Task-2B         | | | |
+| N5-CS-2023-Task-2B         | | | |

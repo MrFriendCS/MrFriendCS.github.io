@@ -4,7 +4,7 @@
 .mode column
 -- Don't touch lines 1 to 5
  
-.print N5 CS Specimen Task 1B
+.print N5 CS Specimen Old Task 1B
 
 .print
 .print Q1d
