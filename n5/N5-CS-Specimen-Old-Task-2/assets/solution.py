@@ -1,9 +1,9 @@
 # Title: N5 CS Specimen Old Task 2
 # Author: Mr Friend
-# Date: 19 Feb 2022
+# Date: 16 Sep 2024
 
 # Initialise variables
-player = 0
+score = 0
 hits = [0] * 6
 total = 0
 average = 0.0
@@ -11,13 +11,13 @@ points = 0
 
 #  Get 6 valid hits from players
 for index in range(6):
-    player = int(input(str(index + 1) + ". How many hits? "))
+    score = int(input("Player " +str(index + 1) + ". How many hits? "))
 
-    while player < 0 or player > 30:
-        print("Hits must be from 0 to 30")
-        player = int(input(str(index + 1) + ". How many hits? "))
+    while score < 0 or score > 30:
+        print("\nHits must be from 0 to 30")
+        score = int(input("Player " +str(index + 1) + ". How many hits? "))
     
-    hits[index] = player
+    hits[index] = score
 
 # Calculate total hits for 6 players
 for index in range(6):
@@ -39,7 +39,7 @@ if average >= 10:
 # 1 point earned?
 if points == 1:
     # Yes - display message - 1 point was earned
-    print("1 point was earned")
+    print("\n1 point was earned")
 
 # 2 points earned?
 if points == 2:
@@ -49,6 +49,6 @@ if points == 2:
 # 0 points earned?
 if points == 0:
     # Yes - display message - no points were earned
-    print("No points were earned")
+    print("\nNo points were earned")
 
 # End
