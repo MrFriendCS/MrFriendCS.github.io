@@ -48,9 +48,9 @@ Test your program using both sets of test data. Print evidence of inputs and out
 ___2c___ The program should ensure that only a valid number of hits can be entered for each of the six players. State two extreme and one exceptional numerical value that could be used as part of a test run to check that only a valid number of hits can be
 entered: (__2 marks__)
 
-* Extreme 1 ____
-* Extreme 2 ____
-* Exceptional ____
+* Extreme 1: ____________________
+* Extreme 2: ____________________
+* Exceptional: ____________________
 
 ___2d___ Evaluate your program by commenting on the following:
 
