@@ -14,7 +14,7 @@
 | H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext       | sp, mod, ss, asc, chr      | Part 2, tests |
 | H-SDD-Convert            | Multiple conversions of units | sp, int, mod               | Tests |
 | H-SDD-Substring          | Multiple string manipulations | sp, ss, asc, chr           | Tests |
-| H-SDD-Write-Data Pt 1    | Create and write random data  | sp, pa, chr, w             | Part 1 |
+| H-SDD-Write-Data Pt 1    | Create and write random data  | sp, pa, chr, w             | Part 1, tests |
 | H-SDD-Bearings Pt 1      | | | Part 1 |
 | H-SDD-Bearings Pt 2      | | | Part 2 |
 | H-SDD-Frequency-Analysis | | | |
