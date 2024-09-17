@@ -12,7 +12,7 @@ Random data is required to help test some software.  A modular program is requir
 
 ## Task
 
-Implement a program that matches the data flow in the structure digram below.  The data is to be written to `randomData.csv`.
+Implement a program that matches the data flow in the structure digram below.  Save the file as `writeData.py`.  The data is to be written to a file called `randomData.csv`.
 
 
 ### Design (Structure diagram)
