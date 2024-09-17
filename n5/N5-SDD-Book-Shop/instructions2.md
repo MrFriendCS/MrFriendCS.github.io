@@ -67,8 +67,6 @@ Total amount: £7.25
 
 Discount? no
 
-Amount to pay: £7.25
-
 Voucher? NO
 
 Final amount to pay: £7.25
