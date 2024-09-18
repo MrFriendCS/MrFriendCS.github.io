@@ -1,4 +1,4 @@
-# N5 SDD - Book Shoop - Part 2
+# N5 SDD - Book Shop Part 2
 
 
 ## Introduction
