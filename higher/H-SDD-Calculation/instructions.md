@@ -3,31 +3,32 @@
 
 ## Introduction
 
-Creating functions to do repetitive task is a useful feature of modular programming.  Get the function right, and it will produce the correct result every time it is called!
+Creating functions to do repetitive tasks is a useful way to save time.  Get the function right, and it will produce the correct result every time it is called!
 
 
 ## Task
 
 Create the following functions:
 
-| Name             | Description          | Parameters |
-| ----             | -----------          | ---------- |
-| areaOfSqaure     | Area of a square     | length, dp |
-| areaOfRectangle  | Area of a rectangle  | width, height, dp |
-| areaOfTriangle   | Area of a triangle   | base, height, dp |
-| areaOfCircle     | Area of a circle     | value, type, dp |
-| volumeOfCube     | Volume of a cube     | length, dp |
-| volumeOfCuboid   | Volume of a cuboid   | length, base, height, dp |
-| volumeOfCylinder | Volume of a cylinder | height, value, type, dp |
+| Name            | Description          | Parameters |
+| ----            | -----------          | ---------- |
+| areaOfSqaure    | Area of a square     | length |
+| areaOfRectangle | Area of a rectangle  | width, height |
+| areaOfTriangle  | Area of a triangle   | base, height |
+| areaOfCircle    | Area of a circle     | value, option |
+| volOfCube       | Volume of a cube     | length |
+| volOfCuboid     | Volume of a cuboid   | length, base, height |
+| volOfCylinder   | Volume of a cylinder | value, option, height |
+| volOfSphere     | Volume of a sphere   | value, option |
 
-Each function will return the value to the specified number of decimal places.
-
-The parameter `type` has two acceptable values:
+The parameter `option` has two acceptable values:
 
 1. `radius`
 2. `diameter`
 
-A function will return `-1` if invalid parameters are used.
+Any mixture of lowercase and uppercase letters are acceptable.
+
+A function will return `-1` if any invalid parameters are used.
 
 Save the code as `calculation.py`.
 

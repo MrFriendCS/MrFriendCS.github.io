@@ -1,10 +1,13 @@
-# Title: Various functions
+# Title: H-SDD-Calculation
 # Author: Mr Friend
-# Date: 18 Nov 2020
+# Date: 19 Sep 2024
 
-def areaSquare(length):
-    # Declare local variable
-    area = 0
+def areaOfSquare(length):
+    """Returns the area of a square: length x length"""
+    
+    # Check length is valid
+    if length <= 0:
+        return -1
 
     # Calculate area
     area = length**2
@@ -13,96 +16,109 @@ def areaSquare(length):
     return area
 
 
-def areaRectangle(length, breadth):
-    # Declare local variable
-    area = 0
+def areaOfRectangle(width, height):
+    """Returns the area of a rectangle: width x height"""
+    
+    # Check width and height are valid
+    if width <= 0 or height <= 0:
+        return -1
 
     # Calculate area
-    
+    area = width * height
 
     # return value
     return area
 
 
-def areaTriangle(base, height):
-    # Declare local variable
-    area = 0
+def areaOfTriangle(base, height):
+    """Returns the area of a traingle: 0.5 x base x height"""
+    
+    # Check base and height are valid
+    if base <= 0 or height <= 0:
+        return -1
 
     # Calculate area
-    
+    area = 0.5 * base * height
 
     # return value
     return area
 
 
-def areaCircle(radius):
+def areaOfCircle(value, option):
+    """Returns the area of a circle: pi x radius x radius"""
+    
+    # Check value is valid
+    if value <= 0:
+        return -1
+    
     # Declare local variable
-    area = 0
     pi = 3.14
 
     # Calculate area
-    
-
-    # Round to 2 decimal places
-    
+    area = pi * value**2  
 
     # return value
     return area
 
-def volCube(length):
-    # Declare local variable
-    volume = 0
 
-    # Calculate volume
+def volOfCube(length):
+    """Returns the volume of a cube: length x length x length"""
     
+    # Check length valid
+    if length <= 0:
+        return -1
+    
+    # Calculate volume
+    volume = length**3
 
     # return value
     return volume
 
 
-def volCuboid(length, breadth, height):
-    # Declare local variable
-    volume = 0
-
-    # Calculate volume
+def volOfCuboid(length, breadth, height):
+    """Returns the volume of a cube: length x breadth x height"""
     
-
+    # Check width and height are valid
+    if length <= 0 or breadth <= 0 or height <= 0:
+        return -1
+    
+    # Calculate volume
+    volume = length * breadth * height
+    
     # return value
     return volume
 
 
-def volCylinder(radius, height):
+def volOfCylinder(height, value, option):
+    """Returns the volume of a cylinder: pi x radius x radius x height"""
+    
+    # Check height and value are valid
+    if height <= 0 or value <= 0:
+        return -1
+    
     # Declare local variable
-    volume = 0
     pi = 3.14
 
     # Calculate volume
-    
-
-    # Round to 2 decimal places
-    
+    volume = pi * value**2 * height
+      
 
     # return value
     return volume
 
 
-def findAt(email):
-    # Declare local variable
-    position = -1
-
-    # Find index position of @ symbol
-
+def volOfSphere(value, option):
+    """Returns the volume of a sphere: (3/4) * pi * radius * radius * radius"""
     
-    # return value
-    return position
-
-
-def findChar(text, character):
-    # Declare local variable
-    found = False
-
-    # Is character in the text?
-
+    # Check value is valid
+    if value <= 0:
+        return -1
     
+    # Declare local variable
+    pi = 3.14
+
+    # Calculate volume
+    volume = (3/4) * pi * value**3
+
     # return value
-    return found
+    return volume

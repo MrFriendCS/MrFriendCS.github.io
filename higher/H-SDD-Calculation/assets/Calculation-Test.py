@@ -1,61 +1,214 @@
-# Use Ctrl + Shift + s to open the command shell
+# Title: H-SDD-Calculation - Tests
+# Author: Mr Friend
+# Date: 19 Sep 2024
 
-# Type 'pytest' to run the tests
+"""Tests the functions in calculation.py"""
 
-# Do not change this program!
-
-import functions
-
-def test_areaSquare():
-    assert functions.areaSquare(1) == 1
-    assert functions.areaSquare(2) == 4
-    assert functions.areaSquare(3) == 9
+import calculation
 
 
-def test_areaRectangle():
-    assert functions.areaRectangle(1,1) == 1
-    assert functions.areaRectangle(2,3) == 6
-    assert functions.areaRectangle(3,4) == 12
+def testAreaOfSquare():
+    """Tests the areaOfSqaure() function"""
+    
+    # Local variable
+    test = 1
+    
+    print("\nareaOfSqaure() Tests")
+    print("------------\n")
+    
+    try:
+        
+        print("Test " + str(test) +
+              ": 1 --> ", end="")
+        assert calculation.areaOfSquare(1) == 1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0 --> ", end="")
+        assert calculation.areaOfSquare(0) == -1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 5 --> ", end="")
+        assert calculation.areaOfSquare(5) == 25
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0.5 --> ", end="")
+        assert calculation.areaOfSquare(0.5) == 0.25
+        print("Passed")
+                     
+        print("\nPASSED: areaOfSquare()")
+        print("====================\n")
+        
+        return 1
+        
+    except:
+        print("Failed")
+        print("\nFAILED: areaOfSquare()")
+        print("====================\n")
+        
+        return 0
 
 
-def test_areaTriangle():
-    assert functions.areaTriangle(1,1) == 0.5
-    assert functions.areaTriangle(2,3) == 3
-    assert functions.areaTriangle(3,4) == 6
+def testAreaOfRectangle():
+    """Tests the areaOfRectangle() function"""
+    
+    import os
+    
+    # Local variable
+    test = 1
+    
+    print("\nareaOfRectangle() Tests")
+    print("-----------------\n")
+    
+    try:
+        
+        print("Test " + str(test) +
+              ": 1, 1 --> ", end="")
+        assert calculation.areaOfRectangle(1, 1) == 1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0, 1 --> ", end="")
+        assert calculation.areaOfRectangle(0, 1) == -1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 1, 0 --> ", end="")
+        assert calculation.areaOfRectangle(1, 0) == -1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 2, 5 --> ", end="")
+        assert calculation.areaOfRectangle(2, 5) == 10
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 5, 2 --> ", end="")
+        assert calculation.areaOfRectangle(5, 2) == 10
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0.5, 0.5 --> ", end="")
+        assert calculation.areaOfRectangle(0.5, 0.5) == 0.25
+        print("Passed")
+                     
+        print("\nPASSED: areaOfRectangle()")
+        print("====================\n")
+        
+        return 1
+        
+    except:
+        print("Failed")
+        print("\nFAILED: areaOfRectangle()")
+        print("===============\n")
+        
+        return 0
 
 
-def test_areaCircle():
-    assert functions.areaCircle(1) == 3.14
-    assert functions.areaCircle(2) == 12.56
-    assert functions.areaCircle(10) == 314
+def testAll():
+    """Tests all functions"""
+    
+    # Local variable
+    passed = 0
+    
+    print("\nRun All Tests")
+    print("--------------\n")
+    
+    try:
+        
+        passed += testAreaOfSquare()
+        passed += testAreaOfRectangle()
+        passed += testAreaOfTriangle()
+        passed += testAreaOfCircle()
+        passed += testVolOfCube()
+        passed += testVolOfCuboid()
+        passed += testVolOfCylinder()
+        passed += testVolOfSphere()
+        
+        if passed == 8:
+            print("\nTesting of all functions: PASSED!")
+            print("=================================\n")
+        else:
+            1/0  # Throws an exception
+        
+    except:
+            print("\nTesting of all functions: FAILED!")
+            print("=================================\n")
+        
 
+#
+# Main program
+#
 
-def test_volCube():
-    assert functions.volCube(1) == 1
-    assert functions.volCube(2) == 8
-    assert functions.volCube(3) == 27
+# Initialise global variables
+test = ""
+run = True
 
+while run:
+    print("\nCalculation Tests")
+    print("-----------------------\n")
 
-def test_volCuboid():
-    assert functions.volCuboid(1,1,1) == 1
-    assert functions.volCuboid(1,2,3) == 6
-    assert functions.volCuboid(2,3,4) == 24
+    print("1. areaOfSquare() tests")
+    print("2. areaOfRectangle() tests")
+    print("3. areaOfTriangle() tests")
+    print("4. areaOfCircle() tests")
+    print("5. volOfCube() tests")
+    print("6. volOfCuboid() tests")
+    print("7. volOfCylinder() tests")
+    print("8. volOfSphere() tests")
+    
+    print("\na. All tests")
+    print("x. Exit")
 
+    # Get text value from user
+    test = input("\nTest: ")
 
-def test_volCylinder():
-    assert functions.volCylinder(1,1) == 3.14
-    assert functions.volCylinder(2,3) == 37.68
-    assert functions.volCylinder(10,10) == 3140
-
-
-def test_findAt():
-    assert functions.findAt("@") == 0
-    assert functions.findAt("pupil@glow.sch.uk") == 5
-    assert functions.findAt("@@") == 1
-
-
-def test_findChar():
-    assert functions.findChar("test@test.com","@") == True
-    assert functions.findChar("pupilglow.sch.uk","@") == False
-    assert functions.findChar("abcdef","c") == True
-    assert functions.findChar("12345","c") == False
+    if test == "1":
+        # 
+        testAreaOfSquare()
+        
+    elif test == "2":
+        # 
+        testAreaOfRectangle()
+        
+    elif test == "3":
+        # 
+        testAreaOfTriangle()
+        
+    elif test == "4":
+        # 
+        testAreaOfCircle()
+        
+    elif test == "5":
+        # 
+        testVolOfCube()
+        
+    elif test == "6":
+        # 
+        testVolOfCuboid()
+        
+    elif test == "7":
+        # 
+        testVolOfCylinder()
+        
+    elif test == "8":
+        # 
+        testVolOfSphere()
+             
+    elif test == "a":
+        # Run all tests
+        testAll()
+        
+    elif test == "x":
+        # Exit tests
+        run = False
