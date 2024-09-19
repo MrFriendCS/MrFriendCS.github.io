@@ -1,8 +1,10 @@
 # H SDD – Calculation
 
+
 ## Introduction
 
-Creating functions to do repetitive task is a useful feature of modular programming.  Get the function right, and it will produce the correct result every time it is called.  
+Creating functions to do repetitive task is a useful feature of modular programming.  Get the function right, and it will produce the correct result every time it is called!
+
 
 ## Task
 
@@ -32,4 +34,4 @@ Save the code as `calculation.py`.
 
 ## Testing
 
-Run the file ![Calculation-Test.py](Calculation-Test.py "Download file"). The file must be in the same folder as `calculation.py`.
+Run the file [Calculation-Test.py](Calculation-Test.py "Download file"). The file must be in the same folder as `calculation.py`.
