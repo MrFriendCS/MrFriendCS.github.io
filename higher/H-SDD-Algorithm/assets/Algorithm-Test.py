@@ -1,552 +1,186 @@
-# Title: H-SDD-Calculation - Tests
+# Title: H-SDD-Algorithm - Tests
 # Author: Mr Friend
 # Date: 20 Sep 2024
 
-"""Tests the functions in calculation.py"""
+"""Tests the functions in algorithm.py"""
 
-import calculation
+import algorithm
 
 
-def testAreaOfSquare():
-    """Tests the areaOfSqaure() function"""
+def testFindItem():
+    """Tests the findItem() function"""
     
     # Local variable
     test = 1
     
-    print("\nareaOfSqaure() Tests")
-    print("--------------------\n")
+    print("\nfindItem() Tests")
+    print("----------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": 1 --> ", end="")
-        assert calculation.areaOfSquare(1) == 1
+              ": ['A','B','C'], 'A' --> ", end="")
+        assert algorithm.findItem(["A","B","C"], "A") == 0
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 0 --> ", end="")
-        assert calculation.areaOfSquare(0) == -1
+              ": ['X','Y','Z'], 'Z' --> ", end="")
+        assert algorithm.findItem(["X","Y","Z"], "Z") == 2
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 5 --> ", end="")
-        assert calculation.areaOfSquare(5) == 25
+              ": ['A','B','C'], 'D' --> ", end="")
+        assert algorithm.findItem(["A","B","C"], "D") == -1
         print("Passed")
         
-        test += 1
-        print("Test " + str(test) +
-              ": 0.1 --> ", end="")
-        assert round(calculation.areaOfSquare(0.1), 2) == 0.01
-        print("Passed")
-                     
-        print("\nPASSED: areaOfSquare()")
-        print("======================\n")
+        print("\nPASSED: findItem()")
+        print("==================\n")
         
         return 1
         
     except:
         print("Failed")
-        print("\nFAILED: areaOfSquare()")
-        print("======================\n")
+        print("\nFAILED: findItem()")
+        print("==================\n")
         
         return 0
 
 
-def testAreaOfRectangle():
-    """Tests the areaOfRectangle() function"""
+def testCountItem():
+    """Tests the countItem() function"""
     
     # Local variable
     test = 1
     
-    print("\nareaOfRectangle() Tests")
-    print("-----------------------\n")
-    
-    try:
-        
-        print("Test " + str(test) +
-              ": 1, 1 --> ", end="")
-        assert calculation.areaOfRectangle(1, 1) == 1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0, 1 --> ", end="")
-        assert calculation.areaOfRectangle(0, 1) == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 1, 0 --> ", end="")
-        assert calculation.areaOfRectangle(1, 0) == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 2, 5 --> ", end="")
-        assert calculation.areaOfRectangle(2, 5) == 10
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 5, 2 --> ", end="")
-        assert calculation.areaOfRectangle(5, 2) == 10
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0.1, 0.1 --> ", end="")
-        assert round(calculation.areaOfRectangle(0.1, 0.1), 2) == 0.01
-        print("Passed")
-                     
-        print("\nPASSED: areaOfRectangle()")
-        print("=========================\n")
-        
-        return 1
-        
-    except:
-        print("Failed")
-        print("\nFAILED: areaOfRectangle()")
-        print("=========================\n")
-        
-        return 0
-    
-
-def testAreaOfTriangle():
-    """Tests the areaOfTriangle() function"""
-    
-    # Local variable
-    test = 1
-    
-    print("\nareaOfTriangle() Tests")
-    print("----------------------\n")
-    
-    try:
-        
-        print("Test " + str(test) +
-              ": 1, 1 --> ", end="")
-        assert calculation.areaOfTriangle(1, 1) == 0.5
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0, 1 --> ", end="")
-        assert calculation.areaOfTriangle(0, 1) == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 1, 0 --> ", end="")
-        assert calculation.areaOfTriangle(1, 0) == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 2, 5 --> ", end="")
-        assert calculation.areaOfTriangle(2, 5) == 5
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 5, 2 --> ", end="")
-        assert calculation.areaOfTriangle(5, 2) == 5
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0.1, 0.1 --> ", end="")
-        assert round(calculation.areaOfTriangle(0.1, 0.1), 3) == 0.005
-        print("Passed")
-                     
-        print("\nPASSED: areaOfTriangle()")
-        print("========================\n")
-        
-        return 1
-        
-    except:
-        print("Failed")
-        print("\nFAILED: areaOfTriangle()")
-        print("========================\n")
-        
-        return 0
-    
-
-def testAreaOfCircle():
-    """Tests the areaOfCircle() function"""
-    
-    # Local variable
-    test = 1
-    
-    print("\nareaOfCircle() Tests")
-    print("--------------------\n")
-    
-    try:
-        
-        print("Test " + str(test) +
-              ": 1, 'radius' --> ", end="")
-        assert calculation.areaOfCircle(1, "radius") == 3.14
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 2, 'diameter' --> ", end="")
-        assert calculation.areaOfCircle(2, "diameter") == 3.14
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0, 'radius' --> ", end="")
-        assert calculation.areaOfCircle(0, "radius") == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0, 'diameter' --> ", end="")
-        assert calculation.areaOfCircle(0, "diameter") == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 1, 'Hello' --> ", end="")
-        assert calculation.areaOfCircle(1, "Hello") == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0.1, 'radius' --> ", end="")
-        assert round(calculation.areaOfCircle(0.1, "radius"), 4) == 0.0314
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 10, 'RADIUS' --> ", end="")
-        assert calculation.areaOfCircle(10, "RADIUS") == 314
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 20, 'DIAMETER' --> ", end="")
-        assert calculation.areaOfCircle(20, "DIAMETER") == 314
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 5, 'RaDiUs' --> ", end="")
-        assert calculation.areaOfCircle(5, "RaDiUs") == 78.5
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 10, 'dIaMeTeR' --> ", end="")
-        assert calculation.areaOfCircle(10, "dIaMeTeR") == 78.5
-        print("Passed")
-                     
-        print("\nPASSED: areaOfCircle()")
-        print("======================\n")
-        
-        return 1
-        
-    except:
-        print("Failed")
-        print("\nFAILED: areaOfCircle()")
-        print("======================\n")
-        
-        return 0
-    
-
-def testVolOfCube():
-    """Tests the volOfCube() function"""
-    
-    # Local variable
-    test = 1
-    
-    print("\nvolOfCube() Tests")
+    print("\ncountItem() Tests")
     print("-----------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": 1 --> ", end="")
-        assert calculation.volOfCube(1) == 1
+              ": ['A','B','C'], 'A' --> ", end="")
+        assert algorithm.countItem(["A","B","C"], "A") == 1
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 0 --> ", end="")
-        assert calculation.volOfCube(0) == -1
+              ": ['X','Y','Z'], 'Z' --> ", end="")
+        assert algorithm.countItem(["X","Y","Z"], "Z") == 1
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 5 --> ", end="")
-        assert calculation.volOfCube(5) == 125
+              ": ['C','C','C'], 'C' --> ", end="")
+        assert algorithm.countItem(["C","C","C"], "C") == 3
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 0.1 --> ", end="")
-        assert round(calculation.volOfCube(0.1), 3) == 0.001
+              ": ['A','A','A'], 'D' --> ", end="")
+        assert algorithm.countItem(["A","A","A"], "D") == 0
         print("Passed")
                      
-        print("\nPASSED: volOfCube()")
+        print("\nPASSED: countItem()")
         print("===================\n")
         
         return 1
         
     except:
         print("Failed")
-        print("\nFAILED: volOfCube()")
+        print("\nFAILED: countItem()")
         print("===================\n")
         
         return 0
+    
 
-
-def testVolOfCuboid():
-    """Tests the volOfCuboid() function"""
+def testFindMax():
+    """Tests the findMax() function"""
     
     # Local variable
     test = 1
     
-    print("\nvolOfCuboid() Tests")
-    print("-------------------\n")
+    print("\nfindMax Tests")
+    print("-------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": 1, 1, 1 --> ", end="")
-        assert calculation.volOfCuboid(1, 1, 1) == 1
+              ": ['A','B','C'] --> ", end="")
+        assert algorithm.findMax(["A","B","C"]) == "C"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 0, 1, 1 --> ", end="")
-        assert calculation.volOfCuboid(0, 1, 1) == -1
+              ": ['Z','Y','X'] --> ", end="")
+        assert algorithm.findMax(["Z","Y","X"]) == "Z"
         print("Passed")
         
-        test += 1
         print("Test " + str(test) +
-              ": 1, 0, 1 --> ", end="")
-        assert calculation.volOfCuboid(1, 0, 1) == -1
+              ": [17,61,19] --> ", end="")
+        assert algorithm.findMax([17,61,19]) == 61
         print("Passed")
         
-        test += 1
         print("Test " + str(test) +
-              ": 1, 1, 0 --> ", end="")
-        assert calculation.volOfCuboid(1, 1, 0) == -1
+              ": [1.7,6.1,1.9] --> ", end="")
+        assert algorithm.findMax([1.7,6.1,1.9]) == 6.1
         print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 2, 5, 10 --> ", end="")
-        assert calculation.volOfCuboid(2, 5, 10) == 100
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 10, 5, 2 --> ", end="")
-        assert calculation.volOfCuboid(10, 5, 2) == 100
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0.1, 0.1, 0.1 --> ", end="")
-        assert round(calculation.volOfCuboid(0.1, 0.1, 0.1), 3) == 0.001
-        print("Passed")
-                     
-        print("\nPASSED: volOfCuboid()")
-        print("=====================\n")
+                             
+        print("\nPASSED: findMax()")
+        print("=================\n")
         
         return 1
         
     except:
         print("Failed")
-        print("\nFAILED: volOfCuboid()")
-        print("=====================\n")
-        
-        return 0
-
-
-def testVolOfCylinder():
-    """Tests the volOfCylinder() function"""
-    
-    # Local variable
-    test = 1
-    
-    print("\nvolOfCylinder() Tests")
-    print("---------------------\n")
-    
-    try:
-        
-        print("Test " + str(test) +
-              ": 1, 'radius', 1 --> ", end="")
-        assert calculation.volOfCylinder(1, "radius", 1) == 3.14
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 2, 'diameter', 1 --> ", end="")
-        assert calculation.volOfCylinder(2, "diameter", 1) == 3.14
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0, 'radius, 1' --> ", end="")
-        assert calculation.volOfCylinder(0, "radius", 1) == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0, 'diameter', 1 --> ", end="")
-        assert calculation.volOfCylinder(0, "diameter", 1) == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 1, 'radius, 0' --> ", end="")
-        assert calculation.volOfCylinder(0, "radius", 1) == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 1, 'diameter', 0 --> ", end="")
-        assert calculation.volOfCylinder(0, "diameter", 1) == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 1, 'Hello', 1 --> ", end="")
-        assert calculation.volOfCylinder(1, "Hello", 1) == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0.1, 'radius', 1 --> ", end="")
-        assert round(calculation.volOfCylinder(0.1, "radius", 1), 4) == 0.0314
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 1, 'radius', 0.1 --> ", end="")
-        assert round(calculation.volOfCylinder(1, "radius", 0.1), 3) == 0.314
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 10, 'RADIUS', 1 --> ", end="")
-        assert calculation.volOfCylinder(10, "RADIUS", 1) == 314
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 20, 'DIAMETER', 1 --> ", end="")
-        assert calculation.volOfCylinder(20, "DIAMETER", 1) == 314
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 1, 'RaDiUs', 5 --> ", end="")
-        assert round(calculation.volOfCylinder(1, "RaDiUs", 5), 1) == 15.7
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 2, 'dIaMeTeR', 10 --> ", end="")
-        assert round(calculation.volOfCylinder(2, "dIaMeTeR", 10), 1) == 31.4
-        print("Passed")
-                     
-        print("\nPASSED: volOfCylinder()")
-        print("=======================\n")
-        
-        return 1
-        
-    except:
-        print("Failed")
-        print("\nFAILED: volOfCylinder()")
-        print("=======================\n")
+        print("\nFAILED: findMax()")
+        print("=================\n")
         
         return 0
     
 
-def testVolOfSphere():
-    """Tests the volOfSphere() function"""
+def testFindMin():
+    """Tests the findMin() function"""
     
     # Local variable
     test = 1
     
-    print("\nvolOfSphere() Tests")
-    print("-------------------\n")
+    print("\nfindMin() Tests")
+    print("---------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": 1, 'radius' --> ", end="")
-        assert round(calculation.volOfSphere(1, "radius"), 4) == 4.1867
+              ": ['A','B','C'] --> ", end="")
+        assert algorithm.findMin(["A","B","C"]) == "A"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 2, 'diameter' --> ", end="")
-        assert round(calculation.volOfSphere(2, "diameter"), 4) == 4.1867
+              ": ['Z','Y','X'] --> ", end="")
+        assert algorithm.findMin(["Z","Y","X"]) == "X"
         print("Passed")
         
-        test += 1
         print("Test " + str(test) +
-              ": 0, 'radius' --> ", end="")
-        assert calculation.volOfSphere(0, "radius") == -1
+              ": [17,61,19] --> ", end="")
+        assert algorithm.findMin([17,61,19]) == 17
         print("Passed")
         
-        test += 1
         print("Test " + str(test) +
-              ": 0, 'diameter' --> ", end="")
-        assert calculation.volOfSphere(0, "diameter") == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 1, 'Hello' --> ", end="")
-        assert calculation.volOfSphere(1, "Hello") == -1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0.1, 'radius' --> ", end="")
-        assert round(calculation.volOfSphere(0.1, "radius"), 7) == 0.0041867
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 10, 'RADIUS' --> ", end="")
-        assert round(calculation.volOfSphere(10, "RADIUS"), 3) == 4186.667
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 20, 'DIAMETER' --> ", end="")
-        assert round(calculation.volOfSphere(20, "DIAMETER"), 3) == 4186.667
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 1, 'RaDiUs' --> ", end="")
-        assert round(calculation.volOfSphere(2, "RaDiUs"), 4) == 33.4933
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 2, 'dIaMeTeR' --> ", end="")
-        assert round(calculation.volOfSphere(48, "dIaMeTeR"), 4) == 33.4933
+              ": [1.7,6.1,1.9] --> ", end="")
+        assert algorithm.findMin([1.7,6.1,1.9]) == 1.7
         print("Passed")
                      
-        print("\nPASSED: volOfSphere()")
-        print("=====================\n")
+        print("\nPASSED: findMin()")
+        print("=================\n")
         
         return 1
         
     except:
         print("Failed")
-        print("\nFAILED: volOfSphere()")
-        print("=====================\n")
+        print("\nFAILED: findMin()")
+        print("=================\n")
         
         return 0
 
@@ -562,16 +196,12 @@ def testAll():
     
     try:
         
-        passed += testAreaOfSquare()
-        passed += testAreaOfRectangle()
-        passed += testAreaOfTriangle()
-        passed += testAreaOfCircle()
-        passed += testVolOfCube()
-        passed += testVolOfCuboid()
-        passed += testVolOfCylinder()
-        passed += testVolOfSphere()
+        passed += testFindItem()
+        passed += testCountItem()
+        passed += testFindMax()
+        passed += testFindMin()
         
-        if passed == 8:
+        if passed == 4:
             print("\nTesting of all functions: PASSED!")
             print("=================================\n")
         else:
@@ -591,17 +221,13 @@ test = ""
 run = True
 
 while run:
-    print("\nCalculation Tests")
-    print("-----------------\n")
+    print("\nAlgorithm Tests")
+    print("---------------\n")
 
-    print("1. areaOfSquare()")
-    print("2. areaOfRectangle()")
-    print("3. areaOfTriangle()")
-    print("4. areaOfCircle()")
-    print("5. volOfCube()")
-    print("6. volOfCuboid()")
-    print("7. volOfCylinder()")
-    print("8. volOfSphere()")
+    print("1. findItem()")
+    print("2. countItem()")
+    print("3. findMax()")
+    print("4. findMin()")
     
     print("\na. All tests")
     print("x. Exit")
@@ -610,28 +236,16 @@ while run:
     test = input("\nTest: ")
 
     if test == "1":
-        testAreaOfSquare()
+        testFindItem()
         
     elif test == "2":
-        testAreaOfRectangle()
+        testCountItem()
         
     elif test == "3":
-        testAreaOfTriangle()
+        testFindMax()
         
     elif test == "4":
-        testAreaOfCircle()
-        
-    elif test == "5":
-        testVolOfCube()
-        
-    elif test == "6":
-        testVolOfCuboid()
-        
-    elif test == "7":
-        testVolOfCylinder()
-        
-    elif test == "8":
-        testVolOfSphere()
+        testFindMin()
              
     elif test == "a":
         # Run all tests
