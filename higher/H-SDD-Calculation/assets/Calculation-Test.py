@@ -170,6 +170,71 @@ def testAreaOfTriangle():
         print("========================\n")
         
         return 0
+    
+
+def testAreaOfTriangle():
+    """Tests the areaOfTriangle() function"""
+    
+    # Local variable
+    test = 1
+    
+    print("\nareaOfCircle() Tests")
+    print("----------------------\n")
+    
+    try:
+        
+        print("Test " + str(test) +
+              ": 1, 'radius' --> ", end="")
+        assert calculation.areaOfCircle(1, "radius") == 3.14
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 2, 'diameter' --> ", end="")
+        assert calculation.areaOfCircle(2, "diameter") == 3.14
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0, 1 --> ", end="")
+        assert calculation.areaOfCircle(0, 1) == -1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 1, 0 --> ", end="")
+        assert calculation.areaOfCircle(1, 0) == -1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 2, 5 --> ", end="")
+        assert calculation.areaOfCircle(2, 5) == 5
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 5, 2 --> ", end="")
+        assert calculation.areaOfCircle(5, 2) == 5
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0.5, 0.5 --> ", end="")
+        assert calculation.areaOfCircle(0.5, 0.5) == 0.125
+        print("Passed")
+                     
+        print("\nPASSED: areaOfCircle()")
+        print("========================\n")
+        
+        return 1
+        
+    except:
+        print("Failed")
+        print("\nFAILED: areaOfCircle()")
+        print("========================\n")
+        
+        return 0
 
 
 def testAll():
