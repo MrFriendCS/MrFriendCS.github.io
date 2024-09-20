@@ -12,7 +12,7 @@ Create the following functions:
 
 | Name            | Description          | Parameters |
 | ----            | -----------          | ---------- |
-| areaOfSqaure    | Area of a square     | length |
+| areaOfSquare    | Area of a square     | length |
 | areaOfRectangle | Area of a rectangle  | width, height |
 | areaOfTriangle  | Area of a triangle   | base, height |
 | areaOfCircle    | Area of a circle     | value, option |
@@ -26,7 +26,7 @@ The parameter `option` has two acceptable values:
 1. `radius`
 2. `diameter`
 
-Any mixture of lowercase and uppercase letters are acceptable.
+Any combination of lowercase and uppercase letters is acceptable.
 
 A function will return `-1` if any invalid parameters are used.
 
@@ -35,4 +35,4 @@ Save the code as `calculation.py`.
 
 ## Testing
 
-Run the file [Calculation-Test.py](Calculation-Test.py "Download file"). The file must be in the same folder as `calculation.py`.
+Run the file [Calculation-Test.py](assets/Calculation-Test.py "Download file"). The file must be in the same folder as `calculation.py`.
