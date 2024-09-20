@@ -64,11 +64,11 @@ def areaOfCircle(value, option):
         newOption = newOption + chr(ascii)
         
     # Check value is valid
-    if value <= 0 or (option != "radius" and option != "diameter"):
+    if value <= 0 or (newOption != "radius" and newOption != "diameter"):
         return -1
     
     # Have radius value
-    if option != "radius":
+    if newOption != "radius":
         value = value / 2
 
     # Calculate area
@@ -92,29 +92,48 @@ def volOfCube(length):
     return volume
 
 
-def volOfCuboid(length, breadth, height):
-    """Returns the volume of a cube: length x breadth x height"""
+def volOfCuboid(length, base, height):
+    """Returns the volume of a cube: length x base x height"""
     
     # Check width and height are valid
-    if length <= 0 or breadth <= 0 or height <= 0:
+    if length <= 0 or base <= 0 or height <= 0:
         return -1
     
     # Calculate volume
-    volume = length * breadth * height
+    volume = length * base * height
     
     # return value
     return volume
 
 
-def volOfCylinder(height, value, option):
+def volOfCylinder(value, option, height):
     """Returns the volume of a cylinder: pi x radius x radius x height"""
     
-    # Check height and value are valid
-    if height <= 0 or value <= 0:
+    # Initialise local variable
+    ascii = 0
+    newOption = ""
+    pi = 3.14
+    
+    # Ensure 'option' is lowercase
+    for letter in option:
+        ascii = ord(letter)
+        
+        # Uppercase?
+        if ascii >= 65 and ascii <= 90:
+            ascii = ascii + 32
+            
+        # Create string
+        newOption = newOption + chr(ascii)
+        
+    # Check values are valid
+    if value <= 0 or height < 0 or (
+        newOption != "radius" and newOption != "diameter"):
+        
         return -1
     
-    # Declare local variable
-    pi = 3.14
+    # Have radius value
+    if newOption != "radius":
+        value = value / 2
 
     # Calculate volume
     volume = pi * value**2 * height
@@ -125,17 +144,34 @@ def volOfCylinder(height, value, option):
 
 
 def volOfSphere(value, option):
-    """Returns the volume of a sphere: (3/4) * pi * radius * radius * radius"""
+    """Returns the volume of a sphere: (4/3) * pi * radius * radius * radius"""
     
+    # Initialise local variable
+    ascii = 0
+    newOption = ""
+    pi = 3.14
+    
+    # Ensure 'option' is lowercase
+    for letter in option:
+        ascii = ord(letter)
+        
+        # Uppercase?
+        if ascii >= 65 and ascii <= 90:
+            ascii = ascii + 32
+            
+        # Create string
+        newOption = newOption + chr(ascii)
+        
     # Check value is valid
-    if value <= 0:
+    if value <= 0 or (newOption != "radius" and newOption != "diameter"):
         return -1
     
-    # Declare local variable
-    pi = 3.14
+    # Have radius value
+    if newOption != "radius":
+        value = value / 2
 
     # Calculate volume
-    volume = (3/4) * pi * value**3
+    volume = (4/3) * pi * value**3
 
     # return value
     return volume
