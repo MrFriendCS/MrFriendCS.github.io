@@ -1,6 +1,6 @@
 # Title: H-SDD-Calculation
 # Author: Mr Friend
-# Date: 19 Sep 2024
+# Date: 20 Sep 2024
 
 def areaOfSquare(length):
     """Returns the area of a square: length x length"""
