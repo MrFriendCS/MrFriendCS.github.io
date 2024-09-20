@@ -14,7 +14,7 @@ def testAreaOfSquare():
     test = 1
     
     print("\nareaOfSqaure() Tests")
-    print("------------\n")
+    print("--------------------\n")
     
     try:
         
@@ -42,14 +42,14 @@ def testAreaOfSquare():
         print("Passed")
                      
         print("\nPASSED: areaOfSquare()")
-        print("====================\n")
+        print("======================\n")
         
         return 1
         
     except:
         print("Failed")
         print("\nFAILED: areaOfSquare()")
-        print("====================\n")
+        print("======================\n")
         
         return 0
 
@@ -57,13 +57,11 @@ def testAreaOfSquare():
 def testAreaOfRectangle():
     """Tests the areaOfRectangle() function"""
     
-    import os
-    
     # Local variable
     test = 1
     
     print("\nareaOfRectangle() Tests")
-    print("-----------------\n")
+    print("-----------------------\n")
     
     try:
         
@@ -103,14 +101,73 @@ def testAreaOfRectangle():
         print("Passed")
                      
         print("\nPASSED: areaOfRectangle()")
-        print("====================\n")
+        print("=========================\n")
         
         return 1
         
     except:
         print("Failed")
         print("\nFAILED: areaOfRectangle()")
-        print("===============\n")
+        print("=========================\n")
+        
+        return 0
+    
+
+def testAreaOfTriangle():
+    """Tests the areaOfTriangle() function"""
+    
+    # Local variable
+    test = 1
+    
+    print("\nareaOfTriangle() Tests")
+    print("----------------------\n")
+    
+    try:
+        
+        print("Test " + str(test) +
+              ": 1, 1 --> ", end="")
+        assert calculation.areaOfTriangle(1, 1) == 0.5
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0, 1 --> ", end="")
+        assert calculation.areaOfTriangle(0, 1) == -1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 1, 0 --> ", end="")
+        assert calculation.areaOfTriangle(1, 0) == -1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 2, 5 --> ", end="")
+        assert calculation.areaOfTriangle(2, 5) == 5
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 5, 2 --> ", end="")
+        assert calculation.areaOfTriangle(5, 2) == 5
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0.5, 0.5 --> ", end="")
+        assert calculation.areaOfTriangle(0.5, 0.5) == 0.125
+        print("Passed")
+                     
+        print("\nPASSED: areaOfTriangle()")
+        print("========================\n")
+        
+        return 1
+        
+    except:
+        print("Failed")
+        print("\nFAILED: areaOfTriangle()")
+        print("========================\n")
         
         return 0
 
