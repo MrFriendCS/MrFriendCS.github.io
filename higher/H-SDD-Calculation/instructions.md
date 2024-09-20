@@ -26,7 +26,7 @@ The parameter `option` has two acceptable values:
 1. `radius`
 2. `diameter`
 
-Any combination of lowercase and uppercase letters is acceptable.
+Any combination of lowercase and uppercase letters is acceptable for `option`.
 
 For any calculations that use `pi`, a value of 3.14 is to be used.
 

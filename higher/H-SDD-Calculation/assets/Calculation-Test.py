@@ -172,14 +172,14 @@ def testAreaOfTriangle():
         return 0
     
 
-def testAreaOfTriangle():
-    """Tests the areaOfTriangle() function"""
+def testAreaOfCircle():
+    """Tests the areaOfCircle() function"""
     
     # Local variable
     test = 1
     
     print("\nareaOfCircle() Tests")
-    print("----------------------\n")
+    print("--------------------\n")
     
     try:
         
@@ -225,14 +225,14 @@ def testAreaOfTriangle():
         print("Passed")
                      
         print("\nPASSED: areaOfCircle()")
-        print("========================\n")
+        print("======================\n")
         
         return 1
         
     except:
         print("Failed")
         print("\nFAILED: areaOfCircle()")
-        print("========================\n")
+        print("======================\n")
         
         return 0
 
@@ -244,7 +244,7 @@ def testAll():
     passed = 0
     
     print("\nRun All Tests")
-    print("--------------\n")
+    print("-------------\n")
     
     try:
         
@@ -278,7 +278,7 @@ run = True
 
 while run:
     print("\nCalculation Tests")
-    print("-----------------------\n")
+    print("-----------------\n")
 
     print("1. areaOfSquare() tests")
     print("2. areaOfRectangle() tests")

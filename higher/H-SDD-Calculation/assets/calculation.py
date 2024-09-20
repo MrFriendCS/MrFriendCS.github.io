@@ -47,12 +47,29 @@ def areaOfTriangle(base, height):
 def areaOfCircle(value, option):
     """Returns the area of a circle: pi x radius x radius"""
     
+    # Initialise local variable
+    ascii = 0
+    newOption = ""
+    pi = 3.14
+    
+    # Ensure 'option' is lowercase
+    for letter in option:
+        ascii = ord(letter)
+        
+        # Uppercase?
+        if ascii >= 65 and ascii <= 90:
+            ascii = ascii + 32
+            
+        # Create string
+        newOption = newOption + chr(ascii)
+        
     # Check value is valid
-    if value <= 0:
+    if value <= 0 or (option != "radius" and option != "diameter"):
         return -1
     
-    # Declare local variable
-    pi = 3.14
+    # Have radius value
+    if option != "radius":
+        value = value / 2
 
     # Calculate area
     area = pi * value**2  
