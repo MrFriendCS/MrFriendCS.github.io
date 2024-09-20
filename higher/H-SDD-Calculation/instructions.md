@@ -28,7 +28,7 @@ The parameter `option` has two acceptable values:
 
 Any combination of lowercase and uppercase letters is acceptable.
 
-For any calculations that require _pi_, a value of 3.14 is to be used.
+For any calculations that use `pi`, a value of 3.14 is to be used.
 
 A function will return `-1` if any invalid parameters are used.
 
