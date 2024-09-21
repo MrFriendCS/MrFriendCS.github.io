@@ -39,16 +39,16 @@ The design for the Teetastic Golf Club member program is shown below.
 ### Program top level design (pseudocode)
 
 ```
-1. Get new member first name, surname,          __OUT__: first name, surname, category, password
+1. Get new member first name, surname,          OUT: first name, surname, category, password
 category and password.
 
-2. Read existing member data from file to       __IN__: first name, surname, category, password
+2. Read existing member data from file to       IN: first name, surname, category, password
 parallel arrays.  Add new member data to
-parallel arrays.  Display first name, surname   __OUT__: category()
+parallel arrays.  Display first name, surname   OUT: category()
 and category of all members.
 
 3. Find and display the number of members in
-each category and the total number of members.  __IN__: category()
+each category and the total number of members.  IN: category()
 ```
 
 ### Refinements
