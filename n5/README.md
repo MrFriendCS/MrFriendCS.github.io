@@ -79,7 +79,7 @@ sqarl = SQA Reference Language
 | N5-CS-2021-Task-1C | | | |
 | N5-CS-2022-Task-1B | Automatic dog food dispenser   | fl, iv, t1d, rt, ip, if3, rd      | pc |
 | N5-CS-2023-Task-1B | EV charging network            | ip, iv, if3, t1d, rt              | sd |
-| N5-CS-2024-Task-1B | DJ training sessions           |  | pc |
+| N5-CS-2024-Task-1B | DJ training sessions           | iv, cl, t1d, rt, rnd, fl, if1     | pc |
 
 
 ## DDD Tasks
