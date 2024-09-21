@@ -54,8 +54,9 @@ sp = Sub-programs,
 ss = Sub-strings,
 w = Write to file,
 ls = Linear search,
-ls+ = ls + a twist
+ls+ = ls plus a twist,
 co = Count occurrences,
+co+ = co plus a twist,
 min = Find minimum,
 max = Find maximum
 
@@ -65,11 +66,11 @@ sd = Structure diagram
 
 ## SDD Assignment Tasks
 
-| Title                | Description         | Concepts       | Comments |
-| -----                | -----------         | --------       | -------- |
-| H-CS-Specimen-Task-2 | Beach water quality | sp, r, ar, ls+ | sd |
+| Title                | Description         | Concepts                | Comments |
+| -----                | -----------         | --------                | -------- |
+| H-CS-Specimen-Task-2 | Beach water quality | sp, r, ar, ls+          | sd |
 | H-CS-2019-Task-2B    | | | |
-| H-CS-2020-Task-2B    | | | |
+| H-CS-2020-Task-2B    | Golf club           | sp, ss, asc, r, pa, co+ | sd |
 | H-CS-2021-Task-1B    | | | |
 | H-CS-2022-Task-1B    | | | |
 | H-CS-2023-Task-1B    | | | |
