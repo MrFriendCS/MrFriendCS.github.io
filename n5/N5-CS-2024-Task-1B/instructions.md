@@ -21,6 +21,8 @@ The program will select a random song when the DJ should switch on the foam mach
 * When the final song is played in full, the training session duration may be longer than the original session duration entered by the user. 
 
 
+## Program design (Pseudocode)
+
 ### Main steps
 
 ```
