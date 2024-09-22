@@ -51,6 +51,7 @@ pa = Parallel arrays,
 r = Read from file,
 ar = Array of records,
 sp = Sub-programs,
+sp+ = sp calls a sp,
 ss = Sub-strings,
 w = Write to file,
 ls = Linear search,
@@ -58,7 +59,9 @@ ls+ = ls plus a twist,
 co = Count occurrences,
 co+ = co plus a twist,
 min = Find minimum,
-max = Find maximum
+min+ = min plus a twist,
+max = Find maximum,
+max+ = max plus a twist
 
 pc = Pseudocode,
 sd = Structure diagram
@@ -66,14 +69,15 @@ sd = Structure diagram
 
 ## SDD Assignment Tasks
 
-| Title                | Description         | Concepts                | Comments |
-| -----                | -----------         | --------                | -------- |
-| H-CS-Specimen-Task-2 | Beach water quality | sp, r, ar, ls+          | sd |
-| H-CS-2019-Task-2B    | | | |
-| H-CS-2020-Task-2B    | Golf club           | sp, ss, asc, r, pa, co+ | sd |
-| H-CS-2021-Task-1B    | | | |
-| H-CS-2022-Task-1B    | | | |
-| H-CS-2023-Task-1B    | | | |
+| Title                | Description         | Concepts                             | Comments |
+| -----                | -----------         | --------                             | -------- |
+| H-CS-Specimen-Task-2 | Beach water quality | sp, r, ar, ls+                       | sd |
+| H-CS-2019-Task-2B    | Walking club        | sp, r, ar, max, ls+, w               | pc |
+| H-CS-2020-Task-2B    | Golf club           | sp+, ss, asc, r, pa, ss, asc, r, co+ | pc |
+| H-CS-2021-Task-1B    | Jumping Jacks       | sp, r, pa, ss, asc, max, ls+, w      | pc |
+| H-CS-2022-Task-1B    | Mammals             | sp+, r, ar, max, ls+, co+            | pc |
+| H-CS-2023-Task-1B    | Theme Park          | sp, r, pa, min+, max+, ls+, mod, w   | pc |
+| H-CS-2024-Task-1C    | CEO salaries        | sp+, r, pa, max, ls+, co             | pc |
 
 
 ## DDD Tasks
