@@ -26,8 +26,8 @@ An example user interface has been designed.  Ensure that Kisimul Buth can not l
 ### User interface
 
 ```
-Barra Buth
-----------
+Kisimul Buth
+------------
 
 Item 1: 0.50
 Item 2: 2.50
@@ -37,6 +37,6 @@ Total
 -----
 Items: 2
 Cost: £3.0
-==========
+=====
 ```
 
