@@ -33,13 +33,14 @@
 | N5-SDD-School-Enrollment | | |  |
 | N5-SDD-SnapTok           | | |  |
 | N5-SDD-Swimming          | | |  |
-| N5-SDD-Summer Pt 2       | For summer break                     |                       | Part 2 |
-| N5-SDD-Food-Cost         | Calculate cost of 3, 4, or 5 items   | rt, iv, t1d x 2       |  |
-| N5-SDD-Boccia Pt 2       | Records scores, gives result         | rt x 2, iv, if3       | Part 2 |
-| N5-SDD-Tip-Calculator    | Calculate cost, tip, total, share    | rt, iv                | sd |
-| N5-SDD-Number-Game       | Guess random number, 3 chances       | rnd, cl, iv, lo, if2  | sd |
-| N5-SDD-Triathlon         | Calculate triathlon time - 5 times   | t1d, rt, iv           | sd |
-| N5-SDD-Task-Picker       | Pick random person for random task   | 1d &times; 2, iv, rnd | fc |
+| N5-SDD-Summer Pt 2       | For summer break                     |                               | Part 2 |
+| N5-SDD-Food-Cost         | Calculate cost of 3, 4, or 5 items   | rt, iv, t1d x 2               |  |
+| N5-SDD-Boccia Pt 2       | Records scores, gives result         | rt x 2, iv, if3               | Part 2 |
+| N5-SDD-Tip-Calculator    | Calculate cost, tip, total, share    | rt, iv                        | sd |
+| N5-SDD-Number-Game       | Guess random number, 3 chances       | rnd, cl, iv, lo, if2          | sd |
+| N5-SDD-Triathlon         | Calculate triathlon time - 5 times   | t1d, rt, iv                   | sd |
+| N5-SDD-Task-Picker       | Pick random person for random task   | 1d &times; 2, iv, rnd         | fc |
+| N5-SDD-TST               | Tangasdale Sea Tours                 | iv &times; 3, fl, t1d, rt, rd | sd |
 | N5-SDD-Menu-Options      | | |  |
 | N5-SDD-Password-Checker  | | |  |
 | N5-SDD-Walking           | | |  |
