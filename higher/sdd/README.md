@@ -78,21 +78,3 @@ sd = Structure diagram
 | H-CS-2022-Task-1B    | Mammals             | sp+, r, ar, max, ls+, co+            | pc |
 | H-CS-2023-Task-1B    | Theme Park          | sp, r, pa, min+, max+, ls+, mod, w   | pc |
 | H-CS-2024-Task-1C    | CEO salaries        | sp+, r, pa, max, ls+, co             | pc |
-
-
-## DDD Tasks
-
-| Title         | Description | Concepts | Comments |
-| -----         | ----------- | -------- | -------- |
-| | | | | 
-
-
-## DDD Assignment Tasks
-
-| Title             | Description | Concepts | Comments |
-| -----             | ----------- | -------- | -------- |
-| H-CS-2019-Task-1B | | | |
-| H-CS-2020-Task-1B | | | |
-| H-CS-2021-Task-2B | | | |
-| H-CS-2022-Task-2B | | | |
-| H-CS-2023-Task-2B | | | |
