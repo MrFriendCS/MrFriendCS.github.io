@@ -22,6 +22,7 @@
 | N5-SDD-Pontoon           | Play a single hand of pontoon        | rnd, ip, cl, lo, if2  | pc |
 | N5-SDD-Result Pt 3       | Convert exam mark to grade           | iv, if3               | Part 3, sd |
 | N5-SDD-Result Pt 4       | Convert mark to grade and store      | fl, iv, if3, t1d      | Part 4, sd |
+| N5-SDD-Checkout          | Shop checkout system                 | cl, iv, if1, rt       | User interface |
 | N5-SDD-Ask-Questions     | | |  |
 | N5-SDD-Looperty-Loop     | | |  |
 | N5-SDD-Poem-Generator    | | |  |
