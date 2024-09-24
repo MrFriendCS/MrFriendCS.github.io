@@ -20,14 +20,14 @@
 | N5-SDD-Gradient Pt 2     | Calculate gradient from rise and run | ip, if2, maths, cat   | Part 2 |
 | N5-SDD-Gradient Pt 3     | Calculate gradient from rise and run | iv, maths, cat        | Part 3 |
 | N5-SDD-Pontoon           | Play a single hand of pontoon        | rnd, ip, cl, lo, if2  | pc |
+| N5-SDD-Result Pt 3       | Convert exam mark to grade           | iv, if3               | Part 3, sd |
+| N5-SDD-Result Pt 4       | Convert mark to grade and store      | fl, iv, if3, t1d      | Part 4, sd |
 | N5-SDD-Ask-Questions     | | |  |
 | N5-SDD-Looperty-Loop     | | |  |
 | N5-SDD-Poem-Generator    | | |  |
 | N5-SDD-Result Pt 1       | | | Part 1 |
 | N5-SDD-Result Pt 2       | | | Part 2 |
-| N5-SDD-Result Pt 3       | | | Part 2 |
-| N5-SDD-Result Pt 4       | | | Part 2 |
-| N5-SDD-Result Pt 5       | | | Part 2 |
+| N5-SDD-Result Pt 5       | | | Part 5 |
 | N5-SDD-School-Days       | | |  |
 | N5-SDD-School-Enrollment | | |  |
 | N5-SDD-SnapTok           | | |  |
