@@ -36,4 +36,4 @@ Below is an example of the expected user experience.
 ```
 
 ## Structure Diagram
-![Structure Diagram](assets/TestResult-Graded.png)
+![Structure Diagram](assets/sd3.png)
