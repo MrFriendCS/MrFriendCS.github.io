@@ -19,7 +19,7 @@ The grades are to be stored so they can be used later.
 
 1. Create a comprehensive test plan for the program.
 
-2. Implement a program that matches the structure diagram below. Ensure the code is efficient.
+2. Implement a program that matches the structure diagram below.
 
 3. Use the test plan to check that the program works correctly.
 
