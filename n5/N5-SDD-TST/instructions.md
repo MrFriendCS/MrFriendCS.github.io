@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Tangasdale Sea Tours (TST) is a small business that does popular tours of the west coast of Barra, with the slogan "__West is Best!__".  When the weather is good enough, TST runs up to 4 tours a day, two before lunch and two after lunch.  Each tour has a space 5 passengers, which can be any mixture of adults and children.  An adult ticket is £25 and a child ticket is £15.
+Tangasdale Sea Tours (TST) is a small business that does popular tours along the west coast of Barra, with the slogan "__West is Best!__".  When the weather is good enough, TST runs up to 4 tours a day, two before lunch and two after lunch.  Each tour has a space for 5 passengers, which can be any mixture of adults and children.  An adult ticket is £25 and a child ticket is £15.
 
 At the end of the day the overall takings are calculated from the tickets sold, and an average per tour is caluclated.
 
@@ -42,7 +42,7 @@ An example of the expected output is shown below.
 ![Structure diagram](assets/sd.png)
 
 
-#### Final receipt
+#### Expected output
 
 ```
 Tours
