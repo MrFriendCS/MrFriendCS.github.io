@@ -21,7 +21,7 @@
 | H-SDD-Bearings Pt 2      | | | Part 2 |
 | H-SDD-Frequency-Analysis | | | |
 | H-SDD-Hot-Cold           | | | |
-| H-SDD-House-Prices       | | | |
+| H-SDD-House-Prices       | | sp+ | |
 | H-SDD-ISBNs              | | | |
 | H-SDD-KIS Pt 1           | | | Part 1 |
 | H-SDD-KIS Pt 2           | | | Part 2 |

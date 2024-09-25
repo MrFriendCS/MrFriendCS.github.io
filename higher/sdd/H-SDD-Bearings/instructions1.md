@@ -1,10 +1,16 @@
 # H SDD - Ball Bearings v1
 
-Barra Ball Bearings Ltd produce top quality ball bearings for high spec engineering projects.  Whilst the products always go through quality assurance there are very few ball bearings that fail to meet the required specification, so it is just done manually.
 
-Unfortunately, there is a blip each year when pupils from the local school undertake a week's work experience.  The number of failures increases and it becomes too time consuming to be done manually.  The company has asked another local company, Sea Software Ltd, to produce a solution to help speed up the process.
+## Introduction
 
-Batches of 1,000 ball bearings are electronically measured, and the results of each ball bearing are stored in a csv file.  If too many of the ball bearings are too big or too small the batch is melted down and the batch is remade.
+Horve Engineering Ltd produce bearings to exacting requirements.  The quality assurance is carried out manually as so few ball bearnings fail to meet the standard.  If too many of the ball bearings are too big or too small the batch is melted down and the batch is remade.
+
+Unfortunately, there is a blip each year when pupils from the local school undertake a week's work experience.  The number of failures increases and it has become too time consuming to do the quality assurance manually.
+
+
+## Analysis
+
+Batches of 1,000 ball bearings are now electronically measured, and the results of each ball bearing are stored in a csv file called [bearingsData.csv](assets/earingsData.csv "Download file").
 
 A batch of ball bearings fails when:
 
@@ -14,48 +20,28 @@ A batch of ball bearings fails when:
 
 The ball bearing specification is 3 cm ± 0.01 cm.
 
-As an employee of Sea Software Ltd you are to produce the software solution, in Python, using the design below.  In line with company policy, you will need to use meaningful identifiers, internal commentary, whitespace, and indentation.  The code must be modular to aid maintainability, plus there is another project being planned that will build on this code.
 
-Evaluate the solution.  Does it meet the requirement?  Is it robust?  Could it be improved?
+### Assumptions
 
-## Top Level Design
+* The csv file contains the data for 1000 bearings.
+* All values in the csv file are in cm.
+* The csv file is correctly formatted.
 
-<table>
-<tr>
-    <td
-<td>1 Get maximum size allowed</td>
-<td>OUT: maxSize</td>
-</tr>
-<tr>
-<td>2 Get minimum size allowed</td>
-<td>OUT: minSize</td>
-</tr>
-<tr>
-<td>3 Read results data from a file and add to an array</td>
-<td>OUT: sizeData()</td>
-</tr>
-<tr>
-<td>4 Count how many ball bearings are too big</td>
-<td>IN: maxSize, sizeData()<br>
-    OUT: tooBig</td>
-</tr>
-<tr>
-<td>5 Count how many ball bearings are too small</td>
-<td>IN: minSize, sizeData()<br>
-    OUT: tooSmall</td>
-</tr>
-<tr>
-<td>6 Calculate if the batch passes or fails</td>
-<td>IN: tooBig, tooSmall<br>
-    OUT: batchResult</td>
-</tr>
-<tr>
-<td>7. Display the result.</td>
-<td>IN: batchResult</td>
-</tr>
-</table>
 
-## Structure Diagram
+## Top level design (Pseudocode)
 
-![Structure diagram](assets/BBB.png)
+```
+1.  Read bearings sizes from file              OUT: sizeData()
 
+2.  Calculate how many bearings are too big    IN: sizeData()
+                                               OUT: tooBig 
+
+3.  Calculate how many bearings are too small  IN: sizeData()
+                                               OUT: tooSmall
+											  
+4.  Calculate the result and write to file         IN: tooBig, tooSmall							  
+```
+
+## Task
+
+Using the program analysis and the design, implement the program in a language of your choice.

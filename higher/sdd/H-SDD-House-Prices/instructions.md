@@ -1,5 +1,6 @@
 # H SDD - House Prices
 
+
 ## Introduction
 
 Kisimul Conveyancing Ltd (KCL) keeps a database of properties in the Western Isles.
@@ -22,7 +23,8 @@ Where:
  * __#__ is a single digit
  * __$__ is a single letter
 
-The single digit at ___x___ will be used to determine the percentage change of each property.
+The single digit  (___x___) will be used to determine the percentage change of each property.
+
 
 ### Examples
 
@@ -44,6 +46,7 @@ The single digit at ___x___ will be used to determine the percentage change of e
 * Original value: £100,000
 * New value: £105,000
 
+
 ## Design
 
 1. Read in the postcodes and current house prices from `housePrices.csv`
@@ -54,9 +57,11 @@ The single digit at ___x___ will be used to determine the percentage change of e
 6. Find the lowest and highest house prices.
 7. Write the postcodes and new house prices of the top 2% and bottom 2% of all properties to `extremes.txt`.
 
-### Structure Diagram
 
-![Structure Diagram](assets/sd.png "Structure Diagram")
+### Structure diagram
+
+![Structure diagram](assets/sd.png)
+
 
 ### Refinements
 
@@ -76,7 +81,9 @@ The single digit at ___x___ will be used to determine the percentage change of e
     OUT: newPrice
 ```
 
+
 ## Example Output
+
 
 ### errorPostcodes.txt
 
@@ -99,6 +106,7 @@ HS9 3CC,100000,105000
 ...
 ```
 
+
 ### extremes.txt
 
 ```
@@ -116,6 +124,7 @@ HS2 6DD,40000
 ...
 
 ```
+
 
 ## Assumptions
 
