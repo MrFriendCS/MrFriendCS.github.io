@@ -29,51 +29,51 @@ def getSizeData():
     return bearingSizes
 
 
-def findMin(values):
+def findMin(items):
     """Finds and returns minimum value in an array."""
     
     # Initialise local variable
     min = 0.0
     
     # Set min to first value in array
-    min = values[0]
+    min = items[0]
     
     # Loop from second element
-    for index in range(1, len(values)):
+    for index in range(1, len(items)):
         
         # Compare current value with min
-        if values[index] < min:
+        if items[index] < min:
             
             # Update min
-            min = values[index]
+            min = items[index]
             
     # Return minimum value
     return min
 
 
-def findMax(values):
+def findMax(items):
     """Finds and returns maximum value in an array."""
     
     # Initialise local variable
     max = 0.0
     
     # Set max to first value in array
-    max = values[0]
+    max = items[0]
     
     # Loop from second element
-    for index in range(1, len(values)):
+    for index in range(1, len(items)):
         
         # Compare current value with min
-        if values[index] > max:
+        if items[index] > max:
             
             # Update min
-            max = values[index]
+            max = items[index]
             
     # Return maximum value
     return max
 
 
-def countTooSmall(values):
+def countSmall(items):
     """Count and return how many ball bearings are too big."""
 
     # Initialise local variables
@@ -81,16 +81,16 @@ def countTooSmall(values):
     minSize = 2.99
 
     # Loop for each value
-    for index in range(len(values)):
+    for index in range(len(items)):
         
         # Copare value
-        if values[index] < minSize:
+        if items[index] < minSize:
             count = count + 1
     
     return count
 
 
-def countTooBig(values):
+def countBig(items):
     """Count and return how many ball bearings are too big."""
 
     # Initialise local variables
@@ -98,35 +98,39 @@ def countTooBig(values):
     maxSize = 3.01
 
     # Loop for each value
-    for index in range(len(values)):
+    for index in range(len(items)):
         
         # Copare value
-        if values[index] > maxSize:
+        if items[index] > maxSize:
             count = count + 1
     
     return count
 
 
-def writeResult(min, max, big, small):
-    """Calculate the result and write to file."""
+def calcResults (small, big):
+    """Calculate result of batch.  Returns Boolean."""
     
     # Initialise local variables
-    result = "FAIL"
-    bigPer = 0.0
     smallPer = 0.0
-    totalPer = 0.0
+    bigPer = 0.0
+    result = False
     
     # Calculate percentages
     bigPer = (big / 1000) * 100
     smallPer = (small / 1000) * 100
+    
+    return smallPer, bigPer, result
+
+
+def writeData(min, max, smallPer, bigPer, result):
+    """Write data to file."""
+    
+    # Initialise local variables
+    totalPer = 0.0
+    
+    # Calculate total percentage
     totalPer = bigPer + smallPer
         
-    # Calculate result
-    if bigPer < 3 and smallPer < 2 and totalPer < 3:
-        
-        # Set to pass
-        result = "PASS"
-
     # Open file in write mode
     file = open("batchResult.txt", "w")
     
@@ -145,7 +149,10 @@ def writeResult(min, max, big, small):
     file.write("Total:     " + str(totalPer) + "%\n\n")
     
     # Write result
-    file.write(result + "\n")
+    if result:
+        file.write("PASS" + "\n")
+    else:
+        file.write("FAIL" + "\n")
     
     # Write footer
     file.write("====" + "\n")
@@ -158,11 +165,14 @@ def main():
     """Main program"""
 
     # Initialise variables
-    data = [0.0] * 1000
+    sizeData = [0.0] * 1000
     min = 0.0
     max = 0.0
     small = 0
     big = 0
+    smallPer = 0.0
+    bigPer = 0.0
+    result = False
 
     # 1.  Read bearings sizes from file
     sizeData = getSizeData()
@@ -174,13 +184,16 @@ def main():
     max = findMax(sizeData)
 
     # 4.  Calculate how many bearings are too small
-    small = countTooSmall(sizeData)
+    small = countSmall(sizeData)
 
     # 5.  Calculate how many bearings are too big
-    big = countTooBig(sizeData)
+    big = countBig(sizeData)
+    
+    # 6.  Calculate batch result
+    smallPer, bigPer, result = calcResults(small, big)
 
-    # 6.  Calculate the result and write to file
-    writeResult(min, max, small, big)
+    # 7.  Write data to file
+    writeData(min, max, smallPer, bigPer, result)
     
 # Call main()
-main()
+#main()

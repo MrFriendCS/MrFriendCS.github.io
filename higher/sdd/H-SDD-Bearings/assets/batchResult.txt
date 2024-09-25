@@ -4,8 +4,8 @@ Batch Result
 Min:   2.985 cm
 Max:   3.016 cm
 
-Too big:   1.6%
-Too small: 1.9%
+Too big:   1.9%
+Too small: 1.6%
 Total:     3.5%
 
 FAIL

@@ -1,4 +1,4 @@
-# H SDD - Bearings v1
+# H SDD - Bearings Part 1
 
 
 ## Introduction
@@ -45,26 +45,30 @@ FAIL
 * The csv file contains the data for 1,000 bearings.
 * All values in the csv file are in cm.
 * The csv file is correctly formatted.
+* Th global variable `result` is Boolean.
 
 
 ## Top level design (Pseudocode)
 
 ```
-1.  Read bearings sizes from file              OUT: sizeData()
+1.  Read bearings sizes from file               OUT: sizeData()
 
-2.  Determine size of smallest bearing         IN: sizeData()
-                                               OUT: min
+2.  Determine size of smallest bearing          IN: sizeData()
+                                                OUT: min
 
-3.  Determine size of largest bearing          IN: sizeData()
-                                               OUT: max
+3.  Determine size of largest bearing           IN: sizeData()
+                                                OUT: max
 											   
-4.  Calculate how many bearings are too small  IN: sizeData()
-                                               OUT: small
+4.  Calculate how many bearings are too small   IN: sizeData()
+                                                OUT: small
 											   
-5.  Calculate how many bearings are too big    IN: sizeData()
-                                               OUT: big 
+5.  Calculate how many bearings are too big     IN: sizeData()
+                                                OUT: big
+												
+6.  Calculate batch result					    IN: small, big
+												OUT: smallPer, bigPer, result
 											  
-6.  Calculate result and write to file         IN: min, max, small, big							  
+7.  Write data to file  				        IN: min, max, smallPer, bigPer, result					  
 ```
 
 
