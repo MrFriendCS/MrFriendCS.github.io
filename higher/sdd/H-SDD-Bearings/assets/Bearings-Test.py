@@ -1,99 +1,93 @@
-# Title: H-SDD-Algorithm - Tests
+# Title: H-SDD-Bearing - Tests
 # Author: Mr Friend
-# Date: 20 Sep 2024
+# Date: 25 Sep 2024
 
-"""Tests the functions in algorithm.py"""
+"""Tests the functions in bearings.py"""
 
-import algorithm
+import bearings1
 
 
-def testFindItem():
-    """Tests the findItem() function"""
+def testGetSizeData():
+    """Tests the getSizeData() function"""
     
     # Local variable
     test = 1
     
-    print("\nfindItem() Tests")
-    print("----------------\n")
+    print("\ngetSizeData() Tests")
+    print("-------------------\n")
     
     try:
         
         print("Test " + str(test) +
               ": ['A','B','C'], 'A' --> ", end="")
-        assert algorithm.findItem(["A","B","C"], "A") == 0
+        assert bearings1.findItem(["A","B","C"], "A") == 0
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": ['X','Y','Z'], 'Z' --> ", end="")
-        assert algorithm.findItem(["X","Y","Z"], "Z") == 2
+        assert bearings1.findItem(["X","Y","Z"], "Z") == 2
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": ['A','B','C'], 'D' --> ", end="")
-        assert algorithm.findItem(["A","B","C"], "D") == -1
+        assert bearings1.findItem(["A","B","C"], "D") == -1
         print("Passed")
         
-        print("\nPASSED: findItem()")
-        print("==================\n")
+        print("\nPASSED: getSizeData()")
+        print("=====================\n")
         
         return 1
         
     except:
         print("Failed")
-        print("\nFAILED: findItem()")
-        print("==================\n")
+        print("\nFAILED: getSizeData()")
+        print("=====================\n")
         
         return 0
 
 
-def testCountItem():
-    """Tests the countItem() function"""
+def testFindMin():
+    """Tests the findMin() function"""
     
     # Local variable
     test = 1
     
-    print("\ncountItem() Tests")
-    print("-----------------\n")
+    print("\nfindMin() Tests")
+    print("---------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": ['A','B','C'], 'A' --> ", end="")
-        assert algorithm.countItem(["A","B","C"], "A") == 1
+              ": [1, 2, 3] --> ", end="")
+        assert bearings1.findMin([1,2,3]) == 1
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": ['X','Y','Z'], 'Z' --> ", end="")
-        assert algorithm.countItem(["X","Y","Z"], "Z") == 1
+              ": [3, 1, 2] --> ", end="")
+        assert bearings1.findMin([3,1,2]) == 1
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": ['C','C','C'], 'C' --> ", end="")
-        assert algorithm.countItem(["C","C","C"], "C") == 3
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": ['A','A','A'], 'D' --> ", end="")
-        assert algorithm.countItem(["A","A","A"], "D") == 0
+              ": [2, 3, 1] --> ", end="")
+        assert bearings1.findMin([2,3,1]) == 1
         print("Passed")
                      
-        print("\nPASSED: countItem()")
-        print("===================\n")
+        print("\nPASSED: findMin()")
+        print("=================\n")
         
         return 1
         
     except:
         print("Failed")
-        print("\nFAILED: countItem()")
-        print("===================\n")
+        print("\nFAILED: findMin()")
+        print("=================\n")
         
         return 0
-    
+  
 
 def testFindMax():
     """Tests the findMax() function"""
@@ -107,24 +101,20 @@ def testFindMax():
     try:
         
         print("Test " + str(test) +
-              ": ['A','B','C'] --> ", end="")
-        assert algorithm.findMax(["A","B","C"]) == "C"
+              ": [1, 2, 3] --> ", end="")
+        assert bearings1.findMax([1,2,3]) == 3
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": ['Z','Y','X'] --> ", end="")
-        assert algorithm.findMax(["Z","Y","X"]) == "Z"
+              ": [3, 1, 2] --> ", end="")
+        assert bearings1.findMax([3,1,2]) == 3
         print("Passed")
         
+        test += 1
         print("Test " + str(test) +
-              ": [17,61,19] --> ", end="")
-        assert algorithm.findMax([17,61,19]) == 61
-        print("Passed")
-        
-        print("Test " + str(test) +
-              ": [1.7,6.1,1.9] --> ", end="")
-        assert algorithm.findMax([1.7,6.1,1.9]) == 6.1
+              ": [2, 3, 1] --> ", end="")
+        assert bearings1.findMax([2,3,1]) == 3
         print("Passed")
                              
         print("\nPASSED: findMax()")
@@ -139,48 +129,244 @@ def testFindMax():
         
         return 0
     
-
-def testFindMin():
-    """Tests the findMin() function"""
+    
+def testCountSmall():
+    """Tests the countSmall() function"""
     
     # Local variable
     test = 1
     
-    print("\nfindMin() Tests")
-    print("---------------\n")
+    print("\ncountSmall() Tests")
+    print("----------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": ['A','B','C'] --> ", end="")
-        assert algorithm.findMin(["A","B","C"]) == "A"
+              ": [3.0, 3.0, 3.0] --> ", end="")
+        assert bearings1.countSmall([3.0, 3.0, 3.0]) == 0
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": ['Z','Y','X'] --> ", end="")
-        assert algorithm.findMin(["Z","Y","X"]) == "X"
+              ": [2.99, 3.0, 3.0] --> ", end="")
+        assert bearings1.countSmall([2.99, 3.0, 3.0]) == 1
         print("Passed")
         
+        test += 1
         print("Test " + str(test) +
-              ": [17,61,19] --> ", end="")
-        assert algorithm.findMin([17,61,19]) == 17
+              ": [2.99, 2.99, 3.0] --> ", end="")
+        assert bearings1.countSmall([2.99, 2.99, 3.0]) == 2
         print("Passed")
         
+        test += 1
         print("Test " + str(test) +
-              ": [1.7,6.1,1.9] --> ", end="")
-        assert algorithm.findMin([1.7,6.1,1.9]) == 1.7
+              ": [2.99, 2.99, 2.99] --> ", end="")
+        assert bearings1.countSmall([2.99, 2.99, 2.99]) == 3
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": [2.91, 2.91, 2.91] --> ", end="")
+        assert bearings1.countSmall([2.991, 2.991, 2.991]) == 0
         print("Passed")
                      
-        print("\nPASSED: findMin()")
-        print("=================\n")
+        print("\nPASSED: countSmall()")
+        print("====================\n")
         
         return 1
         
     except:
         print("Failed")
-        print("\nFAILED: findMin()")
-        print("=================\n")
+        print("\nFAILED: countSmall()")
+        print("====================\n")
+        
+        return 0
+
+
+def testCountBig():
+    """Tests the countBig() function"""
+    
+    # Local variable
+    test = 1
+    
+    print("\ncountItem() Tests")
+    print("-----------------\n")
+    
+    try:
+        
+        print("Test " + str(test) +
+              ": [3.0, 3.0, 3.0] --> ", end="")
+        assert bearings1.countBig([3.0, 3.0, 3.0]) == 0
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": [3.01, 3.0, 3.0] --> ", end="")
+        assert bearings1.countBig([3.01, 3.0, 3.0]) == 1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": [3.01, 3.01, 3.0] --> ", end="")
+        assert bearings1.countBig([3.01, 3.01, 3.0]) == 2
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": [3.01, 3.01, 3.01] --> ", end="")
+        assert bearings1.countBig([3.01, 3.01, 3.01]) == 3
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": [3.009, 3.009, 3.009] --> ", end="")
+        assert bearings1.countBig([3.009, 3.009, 3.009]) == 0
+        print("Passed")
+                     
+        print("\nPASSED: countBig()")
+        print("==================\n")
+        
+        return 1
+        
+    except:
+        print("Failed")
+        print("\nFAILED: countBig()")
+        print("==================\n")
+        
+        return 0
+
+
+def testCalcResults():
+    """Tests the calcResults() function"""
+    
+    # Local variable
+    test = 1
+    
+    print("\ncalcResults() Tests")
+    print("-------------------\n")
+    
+    try:
+        
+        print("Test " + str(test) +
+              ": 0, 0 --> ", end="")
+        assert bearings1.calcResults(0, 0) == (0.0, 0.0, True)
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 20, 0 --> ", end="")
+        assert bearings1.calcResults(20, 0) == (2.0, 0.0, False)
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0, 20 --> ", end="")
+        assert bearings1.calcResults(0, 20) == (0.0, 2.0, False)
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 15, 15 --> ", end="")
+        assert bearings1.calcResults(15, 15) == (1.5, 1.5, False)
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 15, 14 --> ", end="")
+        result = bearings1.calcResults(15, 14)
+        assert result[0] == 1.5
+        assert round(result[1], 1) == 1.4
+        assert result[2] == True
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 14, 15 --> ", end="")
+        result = bearings1.calcResults(14, 15)
+        assert round(result[0], 1) == 1.4
+        assert result[1] == 1.5
+        assert result[2] == True
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 19, 0 --> ", end="")
+        assert bearings1.calcResults(19, 0) == (1.9, 0.0, True)
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0, 19 --> ", end="")
+        assert bearings1.calcResults(0, 19) == (0.0, 1.9, True)
+        print("Passed")
+                     
+        print("\nPASSED: calcResults()")
+        print("=====================\n")
+        
+        return 1
+        
+    except:
+        print("Failed")
+        print("\nFAILED: calcResults()")
+        print("=====================\n")
+        
+        return 0
+    
+
+def testWriteData1():
+    """Tests the writeData() function"""
+    
+    # Local variable
+    test = 1
+    
+    print("\nwriteData() Tests")
+    print("-----------------\n")
+    
+    try:
+        
+        print("Test " + str(test) +
+              ": 1.0, 2.0, 3.0, 4.0, True --> ", end="")
+        bearings1.writeData(1.0, 2.0, 3.0, 4.0, True)
+        print("Written")
+                     
+        print("\nCompleted: writeData()")
+        print("======================\n")
+        
+        return 1
+        
+    except:
+        print("Failed")
+        print("\nFAILED: writeData()")
+        print("===================\n")
+        
+        return 0
+
+
+def testWriteData2():
+    """Tests the writeData() function"""
+    
+    # Local variable
+    test = 1
+    
+    print("\nwriteData() Tests")
+    print("-----------------\n")
+    
+    try:
+        
+        print("Test " + str(test) +
+              ": 0.1, 0.2, 0.3, 0.4, False --> ", end="")
+        bearings1.writeData(0.1, 0.2, 0.3, 0.4, False)
+        print("Written")
+                     
+        print("\nCompleted: writeData()")
+        print("======================\n")
+        
+        return 1
+        
+    except:
+        print("Failed")
+        print("\nFAILED: writeData()")
+        print("===================\n")
         
         return 0
 
@@ -196,12 +382,15 @@ def testAll():
     
     try:
         
-        passed += testFindItem()
-        passed += testCountItem()
-        passed += testFindMax()
+        passed += testGetSizeData()
         passed += testFindMin()
+        passed += testFindMax()
+        passed += testCountBig()
+        passed += testCountBig()
+        passed += testCalcResults()
+        passed += writeData()
         
-        if passed == 4:
+        if passed == 7:
             print("\nTesting of all functions: PASSED!")
             print("=================================\n")
         else:
@@ -221,13 +410,17 @@ test = ""
 run = True
 
 while run:
-    print("\nAlgorithm Tests")
-    print("---------------\n")
+    print("\nBearings Tests")
+    print("--------------\n")
 
-    print("1. findItem()")
-    print("2. countItem()")
+    print("1. getSizeData()")
+    print("2. findMin()")
     print("3. findMax()")
-    print("4. findMin()")
+    print("4. countSmall()")
+    print("5. countBig()")
+    print("6. calcResults()")
+    print("7. writeData() - Test 1")
+    print("8. writeData() - Test 2")
     
     print("\na. All tests")
     print("x. Exit")
@@ -236,16 +429,28 @@ while run:
     test = input("\nTest: ")
 
     if test == "1":
-        testFindItem()
+        testGetSizeData()
         
     elif test == "2":
-        testCountItem()
+        testFindMin()
         
     elif test == "3":
         testFindMax()
         
     elif test == "4":
-        testFindMin()
+        testCountSmall()
+        
+    elif test == "5":
+        testCountBig()
+        
+    elif test == "6":
+        testCalcResults()
+        
+    elif test == "7":
+        testWriteData1()
+        
+    elif test == "8":
+        testWriteData2()
              
     elif test == "a":
         # Run all tests

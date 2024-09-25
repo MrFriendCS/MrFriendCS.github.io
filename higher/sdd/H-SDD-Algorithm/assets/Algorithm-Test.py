@@ -117,11 +117,13 @@ def testFindMax():
         assert algorithm.findMax(["Z","Y","X"]) == "Z"
         print("Passed")
         
+        test += 1
         print("Test " + str(test) +
               ": [17,61,19] --> ", end="")
         assert algorithm.findMax([17,61,19]) == 61
         print("Passed")
         
+        test += 1
         print("Test " + str(test) +
               ": [1.7,6.1,1.9] --> ", end="")
         assert algorithm.findMax([1.7,6.1,1.9]) == 6.1
@@ -162,11 +164,13 @@ def testFindMin():
         assert algorithm.findMin(["Z","Y","X"]) == "X"
         print("Passed")
         
+        test += 1
         print("Test " + str(test) +
               ": [17,61,19] --> ", end="")
         assert algorithm.findMin([17,61,19]) == 17
         print("Passed")
         
+        test += 1
         print("Test " + str(test) +
               ": [1.7,6.1,1.9] --> ", end="")
         assert algorithm.findMin([1.7,6.1,1.9]) == 1.7

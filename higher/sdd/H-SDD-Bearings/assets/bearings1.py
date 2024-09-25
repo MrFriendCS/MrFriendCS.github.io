@@ -84,7 +84,7 @@ def countSmall(items):
     for index in range(len(items)):
         
         # Copare value
-        if items[index] < minSize:
+        if items[index] <= minSize:
             count = count + 1
     
     return count
@@ -101,7 +101,7 @@ def countBig(items):
     for index in range(len(items)):
         
         # Copare value
-        if items[index] > maxSize:
+        if items[index] >= maxSize:
             count = count + 1
     
     return count
@@ -111,9 +111,19 @@ def calcResults (small, big):
     """Calculate result of batch.  Returns Boolean."""
     
     # Initialise local variables
+    total = 0
     smallPer = 0.0
     bigPer = 0.0
     result = False
+    
+    # Calculate total
+    total = small + big
+    
+    # Decide result
+    if small < 20 and big < 20 and total < 30:
+        
+        # Update result
+        result = True
     
     # Calculate percentages
     bigPer = (big / 1000) * 100
@@ -144,8 +154,8 @@ def writeData(min, max, smallPer, bigPer, result):
     
     
     # Write counts
-    file.write("Too big:   " + str(bigPer) + "%\n")
     file.write("Too small: " + str(smallPer) + "%\n")
+    file.write("Too big:   " + str(bigPer) + "%\n")
     file.write("Total:     " + str(totalPer) + "%\n\n")
     
     # Write result
