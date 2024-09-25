@@ -1,9 +1,9 @@
-# H SDD - Ball Bearings v1
+# H SDD - Bearings v1
 
 
 ## Introduction
 
-Horve Engineering Ltd produce bearings to exacting requirements.  The quality assurance is carried out manually as so few ball bearnings fail to meet the standard.  If too many of the ball bearings are too big or too small the batch is melted down and the batch is remade.
+Horve Engineering Ltd produce ball bearings to exacting requirements.  The quality assurance is carried out manually as so few ball bearings fail to meet the standard.  If too many are too big or too small the batch is melted down and the batch remade.
 
 Unfortunately, there is a blip each year when pupils from the local school undertake a week's work experience.  The number of failures increases and it has become too time consuming to do the quality assurance manually.
 
@@ -14,16 +14,30 @@ Batches of 1,000 ball bearings are now electronically measured, and the results 
 
 A batch of ball bearings fails when:
 
-    • 5% or more are too big
-    • 5% or more are too small
-    • 7% or more are too big or too small
+• 2% or more are too big
+• 2% or more are too small
+• 3% or more are too big or too small
 
 The ball bearing specification is 3 cm ± 0.01 cm.
+
+The results of the batch are to be written to `batchResult.txt`.  An example is shown below:
+
+```
+Batch Result
+------------
+
+Too big:   1.5%
+Too small: 1.6%
+Total:     3.1%
+
+FAIL
+====
+```
 
 
 ### Assumptions
 
-* The csv file contains the data for 1000 bearings.
+* The csv file contains the data for 1,000 bearings.
 * All values in the csv file are in cm.
 * The csv file is correctly formatted.
 
@@ -39,7 +53,7 @@ The ball bearing specification is 3 cm ± 0.01 cm.
 3.  Calculate how many bearings are too small  IN: sizeData()
                                                OUT: tooSmall
 											  
-4.  Calculate the result and write to file         IN: tooBig, tooSmall							  
+4.  Calculate the result and write to file     IN: tooBig, tooSmall							  
 ```
 
 ## Task
