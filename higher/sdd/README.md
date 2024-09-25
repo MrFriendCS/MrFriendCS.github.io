@@ -17,7 +17,7 @@
 | H-SDD-Write-Data Pt 1    | Create and write random data  | sp, pa, chr, w             | Part 1, tests |
 | H-SDD-Calculation        | Multiple calculations         | sp, ss, asc, chr           | Tests |
 | H-SDD-Algorithm          | Standard algorithms           | sp, ls, co, min, max       | Tests |
-| H-SDD-Bearings Pt 1      | | | Part 1 |
+| H-SDD-Bearings Pt 1      | Check size of bearings        | r, min, max, co+, w        | Part 1 |
 | H-SDD-Bearings Pt 2      | | | Part 2 |
 | H-SDD-Frequency-Analysis | | | |
 | H-SDD-Hot-Cold           | | | |

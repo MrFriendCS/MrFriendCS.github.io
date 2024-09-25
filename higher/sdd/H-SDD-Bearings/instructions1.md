@@ -14,11 +14,13 @@ Batches of 1,000 ball bearings are now electronically measured, and the results 
 
 A batch of ball bearings fails when:
 
-* 2% or more are too big
 * 2% or more are too small
+* 2% or more are too big
 * 3% or more are too big or too small
 
 The ball bearing specification is 3 cm ± 0.01 cm.
+
+The sizes of the smallest and largest bearings are to be included in the results.
 
 The results of the batch are to be written to `batchResult.txt`.  An example is shown below:
 
@@ -26,8 +28,11 @@ The results of the batch are to be written to `batchResult.txt`.  An example is 
 Batch Result
 ------------
 
-Too big:   1.5%
+Min: 2.089 cm
+Max: 3.102 cm
+
 Too small: 1.6%
+Too big:   1.5%
 Total:     3.1%
 
 FAIL
@@ -47,14 +52,21 @@ FAIL
 ```
 1.  Read bearings sizes from file              OUT: sizeData()
 
-2.  Calculate how many bearings are too big    IN: sizeData()
-                                               OUT: tooBig 
+2.  Determine size of smallest bearing         IN: sizeData()
+                                               OUT: min
 
-3.  Calculate how many bearings are too small  IN: sizeData()
-                                               OUT: tooSmall
+3.  Determine size of largest bearing          IN: sizeData()
+                                               OUT: max
+											   
+4.  Calculate how many bearings are too small  IN: sizeData()
+                                               OUT: small
+											   
+5.  Calculate how many bearings are too big    IN: sizeData()
+                                               OUT: big 
 											  
-4.  Calculate the result and write to file     IN: tooBig, tooSmall							  
+6.  Calculate result and write to file         IN: min, max, small, big							  
 ```
+
 
 ## Task
 
