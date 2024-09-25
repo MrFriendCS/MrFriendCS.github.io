@@ -3,7 +3,11 @@
 
 ## Introduction
 
-Tangasdale Sea Tours (TST) is a small business that does popular tours along the west coast of Barra, with the slogan "__West is Best!__".  When the weather is good enough, TST runs up to 4 tours a day, two before lunch and two after lunch.  Each tour has space for 5 passengers, which can be any mixture of adults and children.  An adult ticket is £25 and a child ticket is £15.
+Tangasdale Sea Tours (TST) is a small business that does popular tours along the west coast of Barra, with the slogan "__West is Best!__".
+Every trip is different, depending on the customers wishes: touring Castlebay marina, visiting the iconic Seal Bay, or going north to see Spàgan.
+When the weather is good enough, TST runs up to 4 tours a day, two before lunch and two after lunch.
+Each tour has space for 5 passengers, which can be any mixture of adults and children.
+An adult ticket is £25 and a child ticket is £15.
 
 At the end of the day the overall takings are calculated from the tickets sold, and an average per tour is caluclated.
 
