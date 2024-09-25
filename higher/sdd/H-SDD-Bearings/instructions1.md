@@ -10,13 +10,13 @@ Unfortunately, there is a blip each year when pupils from the local school under
 
 ## Analysis
 
-Batches of 1,000 ball bearings are now electronically measured, and the results of each ball bearing are stored in a csv file called [bearingsData.csv](assets/earingsData.csv "Download file").
+Batches of 1,000 ball bearings are now electronically measured, and the results of each ball bearing are stored in a csv file called [bearingsData.csv](assets/bearingsData.csv "Download file").
 
 A batch of ball bearings fails when:
 
-• 2% or more are too big
-• 2% or more are too small
-• 3% or more are too big or too small
+* 2% or more are too big
+* 2% or more are too small
+* 3% or more are too big or too small
 
 The ball bearing specification is 3 cm ± 0.01 cm.
 
