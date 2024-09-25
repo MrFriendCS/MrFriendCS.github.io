@@ -1,0 +1,9 @@
+Batch Result
+------------
+
+Too big:   1.9%
+Too small: 1.6%
+Total:     3.5%
+
+FAIL
+====
