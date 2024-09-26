@@ -17,7 +17,7 @@
             <mxPoint x="659.6470588235295" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JHqvVUvI9hTNreNDda3T-2" value="Calculate total&lt;div&gt;cost of&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;tours&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="JHqvVUvI9hTNreNDda3T-2" value="Calculate&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;cost of all&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;tours&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="600" y="240" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="JHqvVUvI9hTNreNDda3T-19" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" source="JHqvVUvI9hTNreNDda3T-3" edge="1">
@@ -68,10 +68,10 @@
         <mxCell id="JHqvVUvI9hTNreNDda3T-6" value="Is passenger&lt;div&gt;type = adult?&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="600" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="JHqvVUvI9hTNreNDda3T-7" value="Increase tour&lt;div&gt;cost by £25&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="JHqvVUvI9hTNreNDda3T-7" value="Increase current&lt;div&gt;tour&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;cost by £25&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="720" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="JHqvVUvI9hTNreNDda3T-8" value="Increase tour&lt;div&gt;cost by £15&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="JHqvVUvI9hTNreNDda3T-8" value="Increase current&lt;div&gt;tour&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;cost by £15&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="720" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="JHqvVUvI9hTNreNDda3T-18" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" source="JHqvVUvI9hTNreNDda3T-9" edge="1">
@@ -79,7 +79,7 @@
             <mxPoint x="579.6470588235295" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JHqvVUvI9hTNreNDda3T-9" value="Store tour cost" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="JHqvVUvI9hTNreNDda3T-9" value="Store current&lt;div&gt;tour cost&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="JHqvVUvI9hTNreNDda3T-12" value="" style="endArrow=none;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="1" edge="1">
@@ -107,10 +107,10 @@
             <mxPoint x="979.6470588235295" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JHqvVUvI9hTNreNDda3T-21" value="Display cost of tours" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="JHqvVUvI9hTNreNDda3T-21" value="Display cost&lt;div&gt;of all tours&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="920" y="240" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="YAo7TNQyRswxn5Hg-1_i-3" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="JHqvVUvI9hTNreNDda3T-22" target="YAo7TNQyRswxn5Hg-1_i-1">
+        <mxCell id="YAo7TNQyRswxn5Hg-1_i-3" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" source="JHqvVUvI9hTNreNDda3T-22" target="YAo7TNQyRswxn5Hg-1_i-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="JHqvVUvI9hTNreNDda3T-22" value="Display total&lt;div&gt;cost of&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;tours&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -144,10 +144,10 @@
         <mxCell id="JHqvVUvI9hTNreNDda3T-34" value="Calculate average cost of tours&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;to&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;two decimal places&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="760" y="240" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="YAo7TNQyRswxn5Hg-1_i-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="YAo7TNQyRswxn5Hg-1_i-1" target="JHqvVUvI9hTNreNDda3T-21">
+        <mxCell id="YAo7TNQyRswxn5Hg-1_i-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="YAo7TNQyRswxn5Hg-1_i-1" target="JHqvVUvI9hTNreNDda3T-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YAo7TNQyRswxn5Hg-1_i-1" value="Display average&lt;div&gt;cost of&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;tours&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="YAo7TNQyRswxn5Hg-1_i-1" value="Display average&lt;div&gt;cost of&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;tours&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="920" y="360" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
