@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Kisimul Buth wants a new checkout system.  Customers can buy one or more items at a time.  To speed the process up the cost of items are to be entered one after another, with a cost of `0` being used to finish.
+The Kisimul Buth wants a new checkout system.  Customers can buy one or more items at a time.  To speed up the process, the cost of items are to be entered one after another, with a cost of `0` being used to finish.
 
 
 ## Tasks
