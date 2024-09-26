@@ -19,20 +19,8 @@ def testGetSizeData():
     try:
         
         print("Test " + str(test) +
-              ": ['A','B','C'], 'A' --> ", end="")
-        assert bearings1.findItem(["A","B","C"], "A") == 0
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": ['X','Y','Z'], 'Z' --> ", end="")
-        assert bearings1.findItem(["X","Y","Z"], "Z") == 2
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": ['A','B','C'], 'D' --> ", end="")
-        assert bearings1.findItem(["A","B","C"], "D") == -1
+              ": Read data --> ", end="")
+        assert len(bearings1.getSizeData()) == 1000
         print("Passed")
         
         print("\nPASSED: getSizeData()")
@@ -388,9 +376,10 @@ def testAll():
         passed += testCountBig()
         passed += testCountBig()
         passed += testCalcResults()
-        passed += writeData()
+        passed += testWriteData1()
+        passed += testWriteData2()
         
-        if passed == 7:
+        if passed == 8:
             print("\nTesting of all functions: PASSED!")
             print("=================================\n")
         else:
