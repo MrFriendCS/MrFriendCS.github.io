@@ -1,6 +1,6 @@
 # Title: H-SDD-Bearing - Tests
 # Author: Mr Friend
-# Date: 25 Sep 2024
+# Date: 26 Sep 2024
 
 """Tests the functions in bearings.py"""
 
@@ -234,81 +234,169 @@ def testCountBig():
         print("==================\n")
         
         return 0
+    
 
-
-def testCalcResults():
-    """Tests the calcResults() function"""
+def testCalcSmallPercent():
+    """Tests the calcSmallPercent() function"""
     
     # Local variable
     test = 1
     
-    print("\ncalcResults() Tests")
-    print("-------------------\n")
+    print("\ncalcSmallPercent() Tests")
+    print("------------------------\n")
     
     try:
         
         print("Test " + str(test) +
-              ": 0, 0 --> ", end="")
-        assert bearings1.calcResults(0, 0) == (0.0, 0.0, True)
+              ": 14 --> ", end="")
+        assert bearings1.calcSmallPercent(14) == 1.4
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 20, 0 --> ", end="")
-        assert bearings1.calcResults(20, 0) == (2.0, 0.0, False)
+              ": 15 --> ", end="")
+        assert bearings1.calcSmallPercent(15) == 1.5
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 0, 20 --> ", end="")
-        assert bearings1.calcResults(0, 20) == (0.0, 2.0, False)
+              ": 19 --> ", end="")
+        assert bearings1.calcSmallPercent(19) == 1.9
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": 15, 15 --> ", end="")
-        assert bearings1.calcResults(15, 15) == (1.5, 1.5, False)
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 15, 14 --> ", end="")
-        result = bearings1.calcResults(15, 14)
-        assert result[0] == 1.5
-        assert round(result[1], 1) == 1.4
-        assert result[2] == True
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 14, 15 --> ", end="")
-        result = bearings1.calcResults(14, 15)
-        assert round(result[0], 1) == 1.4
-        assert result[1] == 1.5
-        assert result[2] == True
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 19, 0 --> ", end="")
-        assert bearings1.calcResults(19, 0) == (1.9, 0.0, True)
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 0, 19 --> ", end="")
-        assert bearings1.calcResults(0, 19) == (0.0, 1.9, True)
+              ": 20 --> ", end="")
+        assert bearings1.calcSmallPercent(20) == 2.0
         print("Passed")
                      
-        print("\nPASSED: calcResults()")
-        print("=====================\n")
+        print("\nPASSED: calcSmallPercent()")
+        print("==========================\n")
         
         return 1
         
     except:
         print("Failed")
-        print("\nFAILED: calcResults()")
-        print("=====================\n")
+        print("\nFAILED: calcSmallPercent()")
+        print("==========================\n")
+        
+        return 0
+    
+    
+def testCalcBigPercent():
+    """Tests the calcBigPercent() function"""
+    
+    # Local variable
+    test = 1
+    
+    print("\ncalcBigPercent() Tests")
+    print("----------------------\n")
+    
+    try:
+        
+        print("Test " + str(test) +
+              ": 14 --> ", end="")
+        assert bearings1.calcBigPercent(14) == 1.4
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 15 --> ", end="")
+        assert bearings1.calcBigPercent(15) == 1.5
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 19 --> ", end="")
+        assert bearings1.calcBigPercent(19) == 1.9
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 20 --> ", end="")
+        assert bearings1.calcBigPercent(20) == 2.0
+        print("Passed")
+                     
+        print("\nPASSED: calcBigPercent()")
+        print("========================\n")
+        
+        return 1
+        
+    except:
+        print("Failed")
+        print("\nFAILED: calcBigPercent()")
+        print("========================\n")
+        
+        return 0
+
+
+def testCalcBatchResult():
+    """Tests the calcBatchResult() function"""
+    
+    # Local variable
+    test = 1
+    
+    print("\ncalcBatchResult() Tests")
+    print("-----------------------\n")
+    
+    try:
+        
+        print("Test " + str(test) +
+              ": 0, 0 --> ", end="")
+        assert bearings1.calcBatchResult(0, 0) == True
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 2, 0 --> ", end="")
+        assert bearings1.calcBatchResult(2, 0) == False
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0, 2 --> ", end="")
+        assert bearings1.calcBatchResult(0, 2) == False
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 1.5, 1.5 --> ", end="")
+        assert bearings1.calcBatchResult(1.5, 1.5) == False
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 1.5, 1.4 --> ", end="")
+        assert bearings1.calcBatchResult(1.5, 1.4) == True
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 1.4, 1.5 --> ", end="")
+        assert bearings1.calcBatchResult(1.4, 1.5) == True
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 1.9, 0 --> ", end="")
+        assert bearings1.calcBatchResult(1.9, 0) == True
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": 0, 1.9 --> ", end="")
+        assert bearings1.calcBatchResult(0, 1.9) == True
+        print("Passed")
+                     
+        print("\nPASSED: calcBatchResult()")
+        print("=========================\n")
+        
+        return 1
+        
+    except:
+        print("Failed")
+        print("\nFAILED: calcBatchResult()")
+        print("=========================\n")
         
         return 0
     
@@ -385,13 +473,15 @@ def testAll():
         passed += testGetSizeData()
         passed += testFindMin()
         passed += testFindMax()
+        passed += testCountSmall()
         passed += testCountBig()
-        passed += testCountBig()
-        passed += testCalcResults()
+        passed += testCalcSmallPercent()
+        passed += testCalcBigPercent()
+        passed += testCalcBatchResult()
         passed += testWriteData1()
         passed += testWriteData2()
         
-        if passed == 8:
+        if passed == 10:
             print("\nTesting of all functions: PASSED!")
             print("=================================\n")
         else:
@@ -414,14 +504,16 @@ while run:
     print("\nBearings Tests")
     print("--------------\n")
 
-    print("1. getSizeData()")
-    print("2. findMin()")
-    print("3. findMax()")
-    print("4. countSmall()")
-    print("5. countBig()")
-    print("6. calcResults()")
-    print("7. writeData() - Test 1")
-    print("8. writeData() - Test 2")
+    print(" 1. getSizeData()")
+    print(" 2. findMin()")
+    print(" 3. findMax()")
+    print(" 4. countSmall()")
+    print(" 5. countBig()")
+    print(" 6. calcSmallPercent()")
+    print(" 7. calcBigPercent()")
+    print(" 8. calcBatchResult()")
+    print(" 9. writeData() - Test 1")
+    print("10. writeData() - Test 2")
     
     print("\na. All tests")
     print("x. Exit")
@@ -445,12 +537,18 @@ while run:
         testCountBig()
         
     elif test == "6":
-        testCalcResults()
+        testCalcSmallPercent()
         
     elif test == "7":
-        testWriteData1()
+        testCalcBigPercent()
         
     elif test == "8":
+        testCalcBatchResult()
+        
+    elif test == "9":
+        testWriteData1()
+        
+    elif test == "10":
         testWriteData2()
              
     elif test == "a":

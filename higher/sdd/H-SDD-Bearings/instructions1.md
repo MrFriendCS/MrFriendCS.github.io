@@ -60,7 +60,7 @@ FAIL
                                             OUT: max
 											   
 4.  Count how many bearings are too small   IN: sizeData()
-                                                OUT: small
+                                            OUT: small
 											   
 5.  Count how many bearings are too big     IN: sizeData()
                                             OUT: big

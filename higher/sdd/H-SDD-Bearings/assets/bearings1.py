@@ -1,6 +1,6 @@
 # Title: H SDD Bearings v1
 # Author: Mr Friend
-# Date: 25 Sep 2024
+# Date: 26 Sep 2024
 
 #
 # Subprograms
@@ -107,39 +107,63 @@ def countBig(items):
     return count
 
 
-def calcResults (small, big):
+def calcSmallPercent(small):
+    """Calculate percentage of small bearings to 2 dp."""
+    
+    # Initialise local variable
+    smallPercent = 0.0
+    
+    # Calculate percentage
+    smallPercent = (small / 1000) * 100
+    
+    # Round to 2 dp
+    smallPercent = round(smallPercent, 2)
+    
+    return smallPercent
+
+
+def calcBigPercent(big):
+    """Calculate percentage of big bearings to 2 dp."""
+    
+    # Initialise local variable
+    bigPercent = 0.0
+    
+    # Calculate percentage
+    bigPercent = (big / 1000) * 100
+    
+    # Round to 2 dp
+    bigPercent = round(bigPercent, 2)
+    
+    return bigPercent
+    
+
+def calcBatchResult (smallPercent, bigPercent):
     """Calculate result of batch.  Returns Boolean."""
     
-    # Initialise local variables
-    total = 0
-    smallPer = 0.0
-    bigPer = 0.0
+    # Initialise local variable
+    totalPercent = 0.0
     result = False
     
-    # Calculate total
-    total = small + big
+    # Calculate total percent
+    totalPercent = smallPercent + bigPercent
     
-    # Decide result
-    if small < 20 and big < 20 and total < 30:
+    # Determine result
+    if smallPercent < 2 and bigPercent < 2 and totalPercent < 3:
         
         # Update result
         result = True
     
-    # Calculate percentages
-    bigPer = (big / 1000) * 100
-    smallPer = (small / 1000) * 100
-    
-    return smallPer, bigPer, result
+    return result
 
 
-def writeData(min, max, smallPer, bigPer, result):
+def writeData(min, max, smallPercent, bigPercent, result):
     """Write data to file."""
     
     # Initialise local variables
-    totalPer = 0.0
+    totalPercent = 0.0
     
     # Calculate total percentage
-    totalPer = bigPer + smallPer
+    totalPercent = smallPercent + bigPercent
         
     # Open file in write mode
     file = open("batchResult.txt", "w")
@@ -154,9 +178,9 @@ def writeData(min, max, smallPer, bigPer, result):
     
     
     # Write counts
-    file.write("Too small: " + str(smallPer) + "%\n")
-    file.write("Too big:   " + str(bigPer) + "%\n")
-    file.write("Total:     " + str(totalPer) + "%\n\n")
+    file.write("Too small: " + str(smallPercent) + "%\n")
+    file.write("Too big:   " + str(bigPercent) + "%\n")
+    file.write("Total:     " + str(totalPercent) + "%\n\n")
     
     # Write result
     if result:
@@ -198,12 +222,18 @@ def main():
 
     # 5.  Calculate how many bearings are too big
     big = countBig(sizeData)
-    
-    # 6.  Calculate batch result
-    smallPer, bigPer, result = calcResults(small, big)
 
-    # 7.  Write data to file
-    writeData(min, max, smallPer, bigPer, result)
+    # 6.  Calculate percentage of small bearings, 2 dp
+    smallPercent = calcSmallPercent(small)
+
+    # 7.  Calculate percentage of big bearings, 2 dp
+    bigPercent = calcBigPercent(big)
+    
+    # 8.  Calculate batch result
+    result = calcBatchResult(smallPercent, bigPercent)
+
+    # 9.  Write data to file
+    writeData(min, max, smallPercent, bigPercent, result)
     
 # Call main()
-#main()
+main()
