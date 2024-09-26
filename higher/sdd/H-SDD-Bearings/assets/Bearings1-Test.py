@@ -148,26 +148,26 @@ def testCountSmall():
         
         test += 1
         print("Test " + str(test) +
-              ": [2.99, 3.0, 3.0] --> ", end="")
-        assert bearings1.countSmall([2.99, 3.0, 3.0]) == 1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": [2.99, 2.99, 3.0] --> ", end="")
-        assert bearings1.countSmall([2.99, 2.99, 3.0]) == 2
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
               ": [2.99, 2.99, 2.99] --> ", end="")
-        assert bearings1.countSmall([2.99, 2.99, 2.99]) == 3
+        assert bearings1.countSmall([2.99, 2.99, 2.99]) == 0
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": [2.91, 2.91, 2.91] --> ", end="")
-        assert bearings1.countSmall([2.991, 2.991, 2.991]) == 0
+              ": [2.989, 2.99, 2.99] --> ", end="")
+        assert bearings1.countSmall([2.989, 2.99, 2.99]) == 1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": [2.989, 2.989, 2.99] --> ", end="")
+        assert bearings1.countSmall([2.989, 2.989, 2.99]) == 2
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": [2.989, 2.989, 2.989] --> ", end="")
+        assert bearings1.countSmall([2.989, 2.989, 2.989]) == 3
         print("Passed")
                      
         print("\nPASSED: countSmall()")
@@ -201,26 +201,26 @@ def testCountBig():
         
         test += 1
         print("Test " + str(test) +
-              ": [3.01, 3.0, 3.0] --> ", end="")
-        assert bearings1.countBig([3.01, 3.0, 3.0]) == 1
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": [3.01, 3.01, 3.0] --> ", end="")
-        assert bearings1.countBig([3.01, 3.01, 3.0]) == 2
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
               ": [3.01, 3.01, 3.01] --> ", end="")
-        assert bearings1.countBig([3.01, 3.01, 3.01]) == 3
+        assert bearings1.countBig([3.01, 3.01, 3.01]) == 0
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": [3.009, 3.009, 3.009] --> ", end="")
-        assert bearings1.countBig([3.009, 3.009, 3.009]) == 0
+              ": [3.011, 3.01, 3.01] --> ", end="")
+        assert bearings1.countBig([3.011, 3.01, 3.01]) == 1
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": [3.011, 3.011, 3.01] --> ", end="")
+        assert bearings1.countBig([3.011, 3.011, 3.01]) == 2
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": [3.011, 3.011, 3.011] --> ", end="")
+        assert bearings1.countBig([3.011, 3.011, 3.011]) == 3
         print("Passed")
                      
         print("\nPASSED: countBig()")

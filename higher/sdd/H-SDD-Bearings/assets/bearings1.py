@@ -84,7 +84,7 @@ def countSmall(items):
     for index in range(len(items)):
         
         # Copare value
-        if items[index] <= minSize:
+        if items[index] < minSize:
             count = count + 1
     
     return count
@@ -101,7 +101,7 @@ def countBig(items):
     for index in range(len(items)):
         
         # Copare value
-        if items[index] >= maxSize:
+        if items[index] > maxSize:
             count = count + 1
     
     return count
