@@ -236,96 +236,49 @@ def testCountBig():
         return 0
     
 
-def testCalcSmallPercent():
-    """Tests the calcSmallPercent() function"""
+def testCalcPercent():
+    """Tests the calcPercent() function"""
     
     # Local variable
     test = 1
     
-    print("\ncalcSmallPercent() Tests")
+    print("\ncalcPercent() Tests")
     print("------------------------\n")
     
     try:
         
         print("Test " + str(test) +
               ": 14 --> ", end="")
-        assert bearings1.calcSmallPercent(14) == 1.4
+        assert bearings1.calcPercent(14) == 1.4
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 15 --> ", end="")
-        assert bearings1.calcSmallPercent(15) == 1.5
+        assert bearings1.calcPercent(15) == 1.5
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 19 --> ", end="")
-        assert bearings1.calcSmallPercent(19) == 1.9
+        assert bearings1.calcPercent(19) == 1.9
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 20 --> ", end="")
-        assert bearings1.calcSmallPercent(20) == 2.0
+        assert bearings1.calcPercent(20) == 2.0
         print("Passed")
                      
-        print("\nPASSED: calcSmallPercent()")
-        print("==========================\n")
+        print("\nPASSED: calcPercent()")
+        print("=====================\n")
         
         return 1
         
     except:
         print("Failed")
-        print("\nFAILED: calcSmallPercent()")
-        print("==========================\n")
-        
-        return 0
-    
-    
-def testCalcBigPercent():
-    """Tests the calcBigPercent() function"""
-    
-    # Local variable
-    test = 1
-    
-    print("\ncalcBigPercent() Tests")
-    print("----------------------\n")
-    
-    try:
-        
-        print("Test " + str(test) +
-              ": 14 --> ", end="")
-        assert bearings1.calcBigPercent(14) == 1.4
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 15 --> ", end="")
-        assert bearings1.calcBigPercent(15) == 1.5
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 19 --> ", end="")
-        assert bearings1.calcBigPercent(19) == 1.9
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 20 --> ", end="")
-        assert bearings1.calcBigPercent(20) == 2.0
-        print("Passed")
-                     
-        print("\nPASSED: calcBigPercent()")
-        print("========================\n")
-        
-        return 1
-        
-    except:
-        print("Failed")
-        print("\nFAILED: calcBigPercent()")
-        print("========================\n")
+        print("\nFAILED: calcPercent()")
+        print("=====================\n")
         
         return 0
 
@@ -475,13 +428,12 @@ def testAll():
         passed += testFindMax()
         passed += testCountSmall()
         passed += testCountBig()
-        passed += testCalcSmallPercent()
-        passed += testCalcBigPercent()
+        passed += testCalcPercent()
         passed += testCalcBatchResult()
         passed += testWriteData1()
         passed += testWriteData2()
         
-        if passed == 10:
+        if passed == 9:
             print("\nTesting of all functions: PASSED!")
             print("=================================\n")
         else:
@@ -504,16 +456,15 @@ while run:
     print("\nBearings Tests")
     print("--------------\n")
 
-    print(" 1. getSizeData()")
-    print(" 2. findMin()")
-    print(" 3. findMax()")
-    print(" 4. countSmall()")
-    print(" 5. countBig()")
-    print(" 6. calcSmallPercent()")
-    print(" 7. calcBigPercent()")
-    print(" 8. calcBatchResult()")
-    print(" 9. writeData() - Test 1")
-    print("10. writeData() - Test 2")
+    print("1. getSizeData()")
+    print("2. findMin()")
+    print("3. findMax()")
+    print("4. countSmall()")
+    print("5. countBig()")
+    print("6. calcPercent()")
+    print("7. calcBatchResult()")
+    print("8. writeData() - Test 1")
+    print("9. writeData() - Test 2")
     
     print("\na. All tests")
     print("x. Exit")
@@ -537,18 +488,15 @@ while run:
         testCountBig()
         
     elif test == "6":
-        testCalcSmallPercent()
+        testCalcPercent()
         
     elif test == "7":
-        testCalcBigPercent()
-        
-    elif test == "8":
         testCalcBatchResult()
         
-    elif test == "9":
+    elif test == "8":
         testWriteData1()
         
-    elif test == "10":
+    elif test == "9":
         testWriteData2()
              
     elif test == "a":

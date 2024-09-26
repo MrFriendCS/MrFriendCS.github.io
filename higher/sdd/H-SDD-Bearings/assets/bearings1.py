@@ -107,35 +107,20 @@ def countBig(items):
     return count
 
 
-def calcSmallPercent(small):
-    """Calculate percentage of small bearings to 2 dp."""
+def calcPercent(count):
+    """Calculate percentage of small/big bearings to 2 dp."""
     
     # Initialise local variable
-    smallPercent = 0.0
+    percent = 0.0
     
     # Calculate percentage
-    smallPercent = (small / 1000) * 100
+    percent = (count / 1000) * 100
     
     # Round to 2 dp
-    smallPercent = round(smallPercent, 2)
+    percent = round(percent, 2)
     
-    return smallPercent
+    return percent
 
-
-def calcBigPercent(big):
-    """Calculate percentage of big bearings to 2 dp."""
-    
-    # Initialise local variable
-    bigPercent = 0.0
-    
-    # Calculate percentage
-    bigPercent = (big / 1000) * 100
-    
-    # Round to 2 dp
-    bigPercent = round(bigPercent, 2)
-    
-    return bigPercent
-    
 
 def calcBatchResult (smallPercent, bigPercent):
     """Calculate result of batch.  Returns Boolean."""
@@ -224,10 +209,10 @@ def main():
     big = countBig(sizeData)
 
     # 6.  Calculate percentage of small bearings, 2 dp
-    smallPercent = calcSmallPercent(small)
+    smallPercent = calcPercent(small)
 
     # 7.  Calculate percentage of big bearings, 2 dp
-    bigPercent = calcBigPercent(big)
+    bigPercent = calcPercent(big)
     
     # 8.  Calculate batch result
     result = calcBatchResult(smallPercent, bigPercent)
@@ -236,4 +221,4 @@ def main():
     writeData(min, max, smallPercent, bigPercent, result)
     
 # Call main()
-main()
+#main()
