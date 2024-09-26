@@ -23,6 +23,18 @@ def testGetSizeData():
         assert len(bearings1.getSizeData()) == 1000
         print("Passed")
         
+        test += 1
+        print("Test " + str(test) +
+              ": First value --> ", end="")
+        assert type(bearings1.getSizeData()[0]) == type(1.1)
+        print("Passed")
+        
+        test += 1
+        print("Test " + str(test) +
+              ": Last value --> ", end="")
+        assert type(bearings1.getSizeData()[-1]) == type(1.1)
+        print("Passed")
+        
         print("\nPASSED: getSizeData()")
         print("=====================\n")
         

@@ -75,3 +75,8 @@ FAIL
 ## Task
 
 Using the program analysis and the design, implement the program in a language of your choice.
+
+
+## Testing
+
+Run the file [Bearings1-Test.py](assets/Bearings1-Test.py "Download file"). The file must be in the same folder as `bearings1.py`.
