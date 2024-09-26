@@ -51,24 +51,30 @@ FAIL
 ## Top level design (Pseudocode)
 
 ```
-1.  Read bearings sizes from file               OUT: sizeData()
+1.  Read bearings sizes from file           OUT: sizeData()
 
-2.  Determine size of smallest bearing          IN: sizeData()
-                                                OUT: min
+2.  Determine size of smallest bearing      IN: sizeData()
+                                            OUT: min
 
-3.  Determine size of largest bearing           IN: sizeData()
-                                                OUT: max
+3.  Determine size of largest bearing       IN: sizeData()
+                                            OUT: max
 											   
-4.  Calculate how many bearings are too small   IN: sizeData()
+4.  Count how many bearings are too small   IN: sizeData()
                                                 OUT: small
 											   
-5.  Calculate how many bearings are too big     IN: sizeData()
-                                                OUT: big
+5.  Count how many bearings are too big     IN: sizeData()
+                                            OUT: big
 												
-6.  Calculate batch result                      IN: small, big
-                                                OUT: smallPer, bigPer, result
+6.  Calculate percentage of small bearings  IN: small
+      to 2 decimal places                   OUT: smallPercent
+											
+7.  Calculate percentage of big bearings    IN: big
+      to 2 decimal places                   OUT: bigPercent
+												
+8.  Calculate batch result                  IN: smallPercent, bigPercent
+                                            OUT: result
 											  
-7.  Write data to file                          IN: min, max, smallPer, bigPer, result					  
+9.  Write data to file                      IN: min, max, smallPer, bigPer, result					  
 ```
 
 
