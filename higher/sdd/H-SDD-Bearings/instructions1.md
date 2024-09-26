@@ -45,7 +45,7 @@ FAIL
 * The csv file contains the data for 1,000 bearings.
 * All values in the csv file are in cm.
 * The csv file is correctly formatted.
-* Th global variable `result` is Boolean.
+* The global variable `result` is Boolean.
 
 
 ## Top level design (Pseudocode)
