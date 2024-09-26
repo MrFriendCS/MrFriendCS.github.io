@@ -65,10 +65,10 @@ FAIL
 5.  Calculate how many bearings are too big     IN: sizeData()
                                                 OUT: big
 												
-6.  Calculate batch result					    IN: small, big
-												OUT: smallPer, bigPer, result
+6.  Calculate batch result                      IN: small, big
+                                                OUT: smallPer, bigPer, result
 											  
-7.  Write data to file  				        IN: min, max, smallPer, bigPer, result					  
+7.  Write data to file                          IN: min, max, smallPer, bigPer, result					  
 ```
 
 
