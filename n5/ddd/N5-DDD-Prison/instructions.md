@@ -52,12 +52,12 @@ SELECT
 
 | Attribute  | Key   | Type    | Size  | Req'd | Validation |
 | ---------  | :---: | ----    | :---: | :---: | ---------- |
-| prison_id  | PK    | number  |       | Y     |            |
-| surname    |       | text    | 30    | Y     | length: >= 3 |
-| forename   |       | text    | 20    | Y     | length: >= 3 |
-| hair       |       | text    | 6     | N     | restricted choice: Auburn, Black, Blond, Brown, Grey, None, Red, White |
-| eyes       |       | text    | 5     | N     | restricted choice: Amber, Black, Blue, Brown, Green, Hazel, Grey |
-| height     |       | number  |       | Y     | range: >= 1.3 and <= 2.5 |
-| conviction |       | text    | 20    | Y     |            |       
-| open       |       | boolean |       | Y     |            |
-| dob        |       | date    |       | Y     |            |
+| prison_id  | PK    | INT     |       | Y     |            |
+| surname    |       | VARCHAR | 30    | Y     | length: >= 3 |
+| forename   |       | VARCHAR | 20    | Y     | length: >= 3 |
+| hair       |       | VARCHAR | 6     | N     | restricted choice: Auburn, Black, Blond, Brown, Grey, None, Red, White |
+| eyes       |       | VARCHAR | 5     | N     | restricted choice: Amber, Black, Blue, Brown, Green, Hazel, Grey |
+| height     |       | FLOAT   |       | Y     | range: >= 1.3 and <= 2.5 |
+| conviction |       | VARCHAR | 20    | Y     |            |       
+| open       |       | BOOLEAN |       | Y     |            |
+| dob        |       | DATE    |       | Y     |            |
