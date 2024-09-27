@@ -1,5 +1,7 @@
 # N5 DDD Prison
 
+File: [prison.db](assets/prison.db "Download file")
+
 ## Tasks
 
 1. Select everything from the prisoner table. Keywords needed:
@@ -13,7 +15,7 @@ SELECT
 
 3. Add a query to show only the hair colour, eye colour, and height of each prisoner.
 
-4.  Display all the information for prisoners with black hair. Keywords needed:
+4. Display all the information for prisoners with black hair. Keywords needed:
 
 ``` SQL
 SELECT
@@ -45,6 +47,7 @@ SELECT
 12. Show the dates of birth and prison IDs of all prisoners born in 1999.
 
 13. Display details for all the prisoners who are bald and have amber eyes.
+
 
 ## Data dictionary
 
