@@ -42,11 +42,6 @@ Where:
 10. Create a data file `updatedPrices.csv`
 
 
-### Structure diagram
-
-![Structure diagram](assets/sd.png)
-
-
 ### Refinements
 
 ```
@@ -54,6 +49,11 @@ Where:
 4.2 HS6 to HS8: increase by 2%
 4.3 HS9: increase by 5%
 ```
+
+
+### Structure diagram
+
+![Structure diagram](assets/sd.png)
 
 
 ## Example Output
