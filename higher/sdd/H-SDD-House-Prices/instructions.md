@@ -31,8 +31,8 @@ Where:
 ## Design
 
  1. Get the postcodes and current house prices from `housePrices.csv`
- 2. Count all HS0 postcodes
- 3. Correct all HS0 postcodes to HS1
+ 2. Count HS0 postcodes
+ 3. Correct HS0 postcodes
  4. Calculate the new house prices, using the postcode, to the nearest pound
  5. Find lowest house price
  6. Find highest house price
@@ -61,8 +61,6 @@ Where:
 ### summary.txt
 
 ```
-There were 27 incorrect postcodes.
-
 Summary
 -------
 
@@ -79,7 +77,6 @@ Lowest postcodes: 3
 Highest postcodes: 2
   HS7 6XW
   HS9 8ZY
-...
 ```
 
 ### updatedPrices.csv

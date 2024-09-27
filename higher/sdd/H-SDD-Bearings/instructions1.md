@@ -74,7 +74,7 @@ FAIL
 8.  Calculate batch result                  IN: smallPercent, bigPercent
                                             OUT: result
 											  
-9.  Write data to file                      IN: min, max, smallPer, bigPer, result					  
+9.  Write data to file                      IN: min, max, smallPercent, bigPercent, result					  
 ```
 
 
