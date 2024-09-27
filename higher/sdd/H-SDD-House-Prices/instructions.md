@@ -11,51 +11,35 @@ KCL wants to update the property values in its database, and extract some other 
 
 When KCL created the data file a small error changed some of the postcodes from HS1 to HS0.
 
+
+## Analysis
+
 ### Postcode Format
 
 Each property has a postcode in the format:
 
- * HSx #$$
+ * HSx #ab
 
 Where:
 
  * __x__ is a single digit
  * __#__ is a single digit
- * __$__ is a single letter
-
-The single digit  (___x___) will be used to determine the percentage change of each property.
-
-
-### Examples
-
-#### Postcode: HS5 7BD
-
-* Decrease: 2%
-* Original value: £100,000
-* New value: £98,000
-
-#### Postcode: HS6 7BD
-
-* Increase: 2%
-* Original value: £100,000
-* New value: £102,000
-
-#### Postcode: HS9 3TY
-
-* Increase: 5%
-* Original value: £100,000
-* New value: £105,000
+ * __a__ is a single letter
+ * __b__ is a single letter
 
 
 ## Design
 
-1. Read in the postcodes and current house prices from `housePrices.csv`
-2. Find and count all HS0 postcodes, write the result to `errorPostcodes.txt`
-3. Amend all HS0 postcodes to HS1
-4. Calculate the new house prices, using the postcode, to the nearest pound
-5. Write the postcodes, old house prices, and new house prices to `newPrices.csv`
-6. Find the lowest and highest house prices.
-7. Write the postcodes and new house prices of the top 2% and bottom 2% of all properties to `extremes.txt`.
+ 1. Get the postcodes and current house prices from `housePrices.csv`
+ 2. Count all HS0 postcodes
+ 3. Correct all HS0 postcodes to HS1
+ 4. Calculate the new house prices, using the postcode, to the nearest pound
+ 5. Find lowest house price
+ 6. Find highest house price
+ 7. Count number of properties with lowest house price
+ 8. Count number of properties with highest house price
+ 9. Create a summary file `summary.txt`
+10. Create a data file `updatedPrices.csv`
 
 
 ### Structure diagram
@@ -66,63 +50,45 @@ The single digit  (___x___) will be used to determine the percentage change of e
 ### Refinements
 
 ```
-3.1 Call a function to amend postcode
-    IN: postcodeHS0
-    OUT: postcodeHS1
-
-4.1 For a HS1 to HS5 postcode call a function to decrease the property value by 2%
-    IN: currentPrice, percent
-    OUT: newPrice
-4.2 For a HS6 to HS8 postcode call a function to increase the property value by 2%
-    IN: currentPrice, percent
-    OUT: newPrice
-4.3 For a HS9 postcodes call a function to increase the property value by 5%
-    IN: currentPrice, percent
-    OUT: newPrice
+4.1 HS1 to HS5: decrease by 2%
+4.2 HS6 to HS8: increase by 2%
+4.3 HS9: increase by 5%
 ```
 
 
 ## Example Output
 
-
-### errorPostcodes.txt
+### summary.txt
 
 ```
 There were 27 incorrect postcodes.
 
-Errors
+Summary
 -------
-HS0 1AA
-HS0 2BB
+
+HS0 errors: 6
+
+Lowest:  £25000
+Highest: £250000
+
+Lowest postcodes: 3
+  HS1 2AB
+  HS3 4CD
+  HS5 6EF
+  
+Highest postcodes: 2
+  HS7 6XW
+  HS9 8ZY
 ...
 ```
 
-### newPrices.csv
+### updatedPrices.csv
 
 ```
 HS1 1AA,100000,98000
 HS6 2BB,100000,102000
 HS9 3CC,100000,105000
 ...
-```
-
-
-### extremes.txt
-
-```
-The most expensive house cost £400000.
-The least expensive house cost £40000.
-
-The top 2% of properties by price are:
-HS8 3CC,392800
-HS9 4DD,400000
-...
-
-The bottom 2% of properties by price are:
-HS1 5EE,47200
-HS2 6DD,40000
-...
-
 ```
 
 
