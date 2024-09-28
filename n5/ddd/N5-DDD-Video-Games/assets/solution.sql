@@ -89,5 +89,5 @@ SELECT *
 -- Question 13 -- Order results: Multiple fields
 SELECT *
     FROM game
-    ORDER BY title ASC,
+    ORDER BY name ASC,
              age ASC;

@@ -6,6 +6,11 @@ File: [VideoGames.db](assets/VideoGames.db "Download file")
 
 ## Tasks
 
+``` sql
+SELECT
+    FROM
+```
+
 1. Select everything from the company table.
 
 2. Select everything from the game table.
@@ -13,6 +18,12 @@ File: [VideoGames.db](assets/VideoGames.db "Download file")
 3. Select the company name and country for each record in the company table.
 
 4. Display the title and genre for each record in the game table.
+
+``` sql
+SELECT
+    FROM
+    WHERE
+```
 
 5. Create a query that returns the details of all games that are suitable for those aged 5 or younger.
 
@@ -26,13 +37,13 @@ File: [VideoGames.db](assets/VideoGames.db "Download file")
 
 10. Show all games created by the Elite company, and are of the action genre.
 
-11. Display all the company details and order by website address.  Keywords needed:
-
 ``` sql
 SELECT
     FROM
     ORDER BY   (ASC / DESC)
 ```
+
+11. Display all the company details and order by website address.
 
 12. Create a query to display all the games sold with the highest number displayed first.
 
