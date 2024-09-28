@@ -84,6 +84,6 @@ DELETE FROM
 | town       |       | VARCHAR | 20    | N     |            |
 | postcode   |       | VARCHAR | 8     | N     |            |
 | dob        |       | DATE    |       | Y     | range: >= 1 Jan 1925 |
-| renewal    |       | INT     |       | Y     | range: >= 1 and <= 12 |
+| renew      |       | INT     |       | Y     | range: >= 1 and <= 12 |
 | gender     |       | VARCHAR | 2     | N     | restricted choice: F, M, ND |
 | type       |       | VARCHAR | 8     | Y     | restricted choice: Adult, Child, Guest, Senior, Student  |
