@@ -1,5 +1,5 @@
 -- Don't touch lines 1 to 6
-.open practise.db
+.open Practise.db
 .headers ON
 .mode column
 PRAGMA foreign_keys = on;

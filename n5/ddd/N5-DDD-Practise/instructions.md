@@ -1,5 +1,9 @@
 # N5 DDD Practise
 
+
+File: [Practise.db](assets/Practise.db "Download file")
+
+
 ## Data Dictionary
 
 ### Entity: pupil
@@ -13,6 +17,7 @@
 | dob        |       | date    |       | Y     |            |
 | age        |       | number  |       | Y     | range: >= 0 |
 | enrolled   |       | boolean |       | Y     |            |
+
 
 ### Entity: address
 
@@ -38,6 +43,7 @@
 | half      |       | time   |       | N     |            |
 | finish    |       | time   |       | N     |            |
 
+
 ### Entity: datatypes
 
 | Attribute | Key   | Type    | Size  | Req'd | Validation |
@@ -50,6 +56,7 @@
 | time      |       | time    |       | N     |            |
 | nice      |       | boolean |       | N     |            |
 
+
 ### Entity: taxi
 
 | Attribute  | Key   | Type   | Size  | Req'd | Validation |
@@ -59,6 +66,7 @@
 | make       |       | text   | 20    |       |            |
 | model      |       | text   | 20    |       |            |
 | colour     |       | text   | 15    |       |            |
+
 
 ### Entity: journey
 
