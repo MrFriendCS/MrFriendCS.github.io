@@ -26,7 +26,7 @@ SELECT *
 
 
 -- Question 3
-SELECT company_name, country
+SELECT name, country
     FROM company;
 
 
@@ -70,7 +70,7 @@ SELECT *
 -- Question 10
 SELECT *
     FROM game
-    WHERE company_name = "Elite"
+    WHERE title = "Elite"
       AND genre = "Action";
 
 
@@ -89,5 +89,5 @@ SELECT *
 -- Question 13 -- Order results: Multiple fields
 SELECT *
     FROM game
-    ORDER BY company_name ASC,
+    ORDER BY title ASC,
              age ASC;

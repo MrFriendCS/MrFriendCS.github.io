@@ -43,20 +43,20 @@ SELECT
 
 ### Table: company
 
-| Attribute    | Key   | Type     | Size  | Req'd | Validation |
-| ---------    | :---: | ----     | :---: | :---: | ---------- |
-| company_name | PK    | VARCHAR  | 20    | Y     |            |
-| country      |       | VARCHAR  | 20    | Y     |            |
-| founded      |       | DATE     |       | Y     | range: >= 1 Jan 1970 |
-| website      |       | VARCHAR  | 30    | N     |            |
-| profit       |       | INT      |       | Y     |            |
+| Attribute | Key   | Type     | Size  | Req'd | Validation |
+| --------- | :---: | ----     | :---: | :---: | ---------- |
+| name      | PK    | VARCHAR  | 20    | Y     |            |
+| country   |       | VARCHAR  | 20    | Y     |            |
+| founded   |       | DATE     |       | Y     | range: >= 1 Jan 1970 |
+| website   |       | VARCHAR  | 30    | N     |            |
+| profit    |       | INT      |       | Y     |            |
 
 ### Table: game
 
 | Attribute    | Key   | Type    | Size  | Req'd | Validation |
 | ---------    | :---: | ----    | :---: | :---: | ---------- |
 | title        | PK    | VARCHAR | 30    | Y     |            |
-| company_name | FK    | VARCHAR | 20    | Y     | Exists in company table |
+| company      | FK    | VARCHAR | 20    | Y     | Exists in company table |
 | genre        |       | VARCHAR | 15    | Y     |            |
 | age          |       | INT     |       | Y     | restricted choice: 3, 7, 12, 16, 18 |
 | price        |       | FLOAT   |       | Y     | range: >= 0 and <= 100 |
