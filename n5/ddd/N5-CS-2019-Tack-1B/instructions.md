@@ -1,7 +1,7 @@
 # N5 CS 2019 Task 1 Part B
 
 
-File: [vlogger.db](assets/Vlogger.db "Download file")
+File: [Vlogger.db](assets/Vlogger.db "Download file")
 
 
 ## Task

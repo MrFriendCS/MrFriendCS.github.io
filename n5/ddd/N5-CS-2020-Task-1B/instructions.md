@@ -1,7 +1,7 @@
 # N5 CS 2020 Task 1 Part B
 
 
-File: [anyTimeFlowers.db](assets/anyTimeFlowers.db "Download file")
+File: [AnyTimeFlowers.db](assets/AnyTimeFlowers.db "Download file")
 
 
 ## Data Dictionary

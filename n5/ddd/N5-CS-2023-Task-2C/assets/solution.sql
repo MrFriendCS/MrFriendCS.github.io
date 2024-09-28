@@ -1,9 +1,10 @@
 /*
-.open maintenance.db
+.open Maintenance.db
 .headers on
 .mode column
 PRAGMA foreign_keys = on;
 */
+
 
 /*
 Title: N5 CS 2023 Task 2C

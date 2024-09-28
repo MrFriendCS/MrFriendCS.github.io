@@ -1,7 +1,7 @@
 # N5 CS 2019 Task 1 Part C
 
 
-File: [vlogger.db](assets/Vlogger.db "Download file")
+File: [Vlogger.db](assets/Vlogger.db "Download file")
 
 
 ## Data dictionary
