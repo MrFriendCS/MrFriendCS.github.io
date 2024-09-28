@@ -1,5 +1,9 @@
 # N5 DDD Video Games
 
+
+File: [VideoGames.db](assets/VideoGames.db "Download file")
+
+
 ## Tasks
 
 1. Select everything from the company table.
@@ -39,22 +43,22 @@ SELECT
 
 ### Table: company
 
-| Attribute    | Key   | Type   | Size  | Req'd | Validation |
-| ---------    | :---: | ----   | :---: | :---: | ---------- |
-| company_name | PK    | text   | 20    | Y     |            |
-| country      |       | text   | 20    | Y     |            |
-| founded      |       | date   |       | Y     | range: >= 1 Jan 1970 |
-| website      |       | text   | 30    | N     |            |
-| profit       |       | number |       | Y     |            |
+| Attribute    | Key   | Type     | Size  | Req'd | Validation |
+| ---------    | :---: | ----     | :---: | :---: | ---------- |
+| company_name | PK    | VARCHAR  | 20    | Y     |            |
+| country      |       | VARCHAR  | 20    | Y     |            |
+| founded      |       | DATE     |       | Y     | range: >= 1 Jan 1970 |
+| website      |       | VARCHAR  | 30    | N     |            |
+| profit       |       | INT      |       | Y     |            |
 
 ### Table: game
 
-| Attribute    | Key   | Type   | Size  | Req'd | Validation |
-| ---------    | :---: | ----   | :---: | :---: | ---------- |
-| title        | PK    | text   | 30    | Y     |            |
-| company_name | FK    | text   | 20    | Y     | Exists in company table |
-| genre        |       | text   | 15    | Y     |            |
-| age          |       | number |       | Y     | restricted choice: 3, 7, 12, 16, 18 |
-| price        |       | number |       | Y     | range: >= 0 and <= 100 |
-| released     |       | date   |       | Y     | range: >= 1 Jan 1970 |
-| copies_sold  |       | number |       | Y     | range: >= 0 |
+| Attribute    | Key   | Type    | Size  | Req'd | Validation |
+| ---------    | :---: | ----    | :---: | :---: | ---------- |
+| title        | PK    | VARCHAR | 30    | Y     |            |
+| company_name | FK    | VARCHAR | 20    | Y     | Exists in company table |
+| genre        |       | VARCHAR | 15    | Y     |            |
+| age          |       | INT     |       | Y     | restricted choice: 3, 7, 12, 16, 18 |
+| price        |       | FLOAT   |       | Y     | range: >= 0 and <= 100 |
+| released     |       | DATE    |       | Y     | range: >= 1 Jan 1970 |
+| copies_sold  |       | INT     |       | Y     | range: >= 0 |

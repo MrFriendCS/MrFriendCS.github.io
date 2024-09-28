@@ -6,6 +6,20 @@ File: [Practise.db](assets/Practise.db "Download file")
 
 ## Data Dictionary
 
+
+### Entity: datatypes
+
+| Attribute | Key   | Type    | Size  | Req'd | Validation |
+| --------- | :---: | ----    | :---: | :---: | ---------- |
+| rowID     | PK    | number  |       | Y     |            |
+| colour    |       | text    | 10    | N     | length: >= 3 |
+| score     |       | number  |       | N     | range: >= 0 and <= 100 |
+| height    |       | number  |       | Y     | range: >= 1.0 and <= 2.5 |
+| date      |       | date    |       | N     | range: >= 1900-01-01 and <= 2024-12-31 |
+| time      |       | time    |       | N     | range: >= 08:00:00 and <= 16:00:00 |
+| nice      |       | boolean |       | Y     |            |
+
+
 ### Entity: pupil
 
 | Attribute  | Key   | Type    | Size  | Req'd | Validation |
@@ -44,19 +58,6 @@ File: [Practise.db](assets/Practise.db "Download file")
 | finish    |       | time   |       | N     |            |
 
 
-### Entity: datatypes
-
-| Attribute | Key   | Type    | Size  | Req'd | Validation |
-| --------- | :---: | ----    | :---: | :---: | ---------- |
-| rowID     | PK    | number  |       | Y     |            |
-| colour    |       | text    | 10    | N     | length: >= 3 |
-| score     |       | number  |       | N     | range: >= 0 and <= 100 |
-| height    |       | number  |       | N     | range: >= 1.0 and <= 2.0 |
-| date      |       | date    |       | N     | range: >= 1900-01-01 and <= 2023-12-31 |
-| time      |       | time    |       | N     |            |
-| nice      |       | boolean |       | N     |            |
-
-
 ### Entity: taxi
 
 | Attribute  | Key   | Type   | Size  | Req'd | Validation |
@@ -73,7 +74,7 @@ File: [Practise.db](assets/Practise.db "Download file")
 | Attribute    | Key   | Type   | Size  | Req'd | Validation |
 | ---------    | :---: | ----   | :---: | :---: | ---------- |
 | journey_id   | PK    | number |       | Y     |            |
-| taxi_id      | FK    | number |       | Y     |            |
+| taxi_id      | FK    | number |       | Y     | Exists in taxi |
 | pick_up_date |       | date   |       | N     |            |
 | pick_up_time |       | time   |       | N     |            |
 | pax          |       | number |       | N     |            |
