@@ -1,26 +1,21 @@
--- Don't touch lines 1 to 6
+/*
 .open anyTimeFlowers.db
 .headers on
 .mode column
 PRAGMA foreign_keys = on;
--- Don't touch lines 1 to 6
+*/
 
 
 /*
 Title: N5 CS 2020 Task 1 Part B
 Author: Mr Friend
-Date: 25 Nov 2023
+Date: 28 Sep 2024
 */
 
-.print
-.print N5 CS 2020 Task 1 Part B
 
-.print
-.print Q1b - Add validation
+-- Q1b - Add validation
 
-.print
-.print Q1b - Customer Table - Before
-
+-- Q1b - Customer Table - Before
 .schema Customer
 
 CREATE TABLE newCustomer(
@@ -47,14 +42,11 @@ ALTER TABLE newCustomer
 -- Referential integrity: On
 PRAGMA foreign_keys = on;
 
-.print
-.print Q1b - Customer Table - After
-
+-- Q1b - Customer Table - After
 .schema Customer
 
-.print
-.print Q1b - FlowerOrder Table - Before
 
+-- Q1b - FlowerOrder Table - Before
 .schema FlowerOrder
 
 CREATE TABLE newFlowerOrder(
@@ -85,36 +77,29 @@ ALTER TABLE newFlowerOrder
 -- Referential integrity: On
 PRAGMA foreign_keys = on;
 
-.print
-.print Q1b - FlowerOrder Table - After
-
+-- Q1b - FlowerOrder Table - After
 .schema FlowerOrder
 
-.print
-.print Q1c(i) - Update order
+
+-- Q1c(i) - Update order
 UPDATE FlowerOrder
     SET flowerType = "tulip", price = 17
     WHERE orderID = "CHQ3848";
 
-.print Q1c(i) - Evidence
+-- Q1c(i) - Evidence
 SELECT *
     FROM FlowerOrder
     WHERE orderID = "CHQ3848";
 
 
-.print
-.print Q1c(ii) - Add customer
-
+-- Q1c(ii) - Add customer
 INSERT INTO Customer
     VALUES (2986, "Richard", "Glass", "", "07654029336");
 
-.print Q1c(ii) - Evidence
+-- Q1c(ii) - Evidence
 SELECT *
     FROM Customer
     WHERE customerID = 2986;
-
-
-.print
 
 
 
@@ -189,4 +174,3 @@ UPDATE FlowerOrder
 -- Q1c(ii) - Remove customer
 DELETE FROM Customer
     WHERE customerID = 2986;
-

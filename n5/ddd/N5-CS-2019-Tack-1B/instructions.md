@@ -1,12 +1,16 @@
-# N5 CS 2019 Task 1B
+# N5 CS 2019 Task 1 Part B
 
-## Tasks
+
+File: [vlogger.db](assets/Vlogger.db "Download file")
+
+
+## Task
 
 ___1b___ Using the data dictionary below complete the Vlogger table by adding the validation.
 
 (__2 marks__)
 
-![Vlogger database](assets/Task_1C.png)
+![Data dictionary](assets/dd.png)
 
 Print evidence to show that you have added both validations to the Vlogger table.
 

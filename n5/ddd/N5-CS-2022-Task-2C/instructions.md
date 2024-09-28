@@ -1,5 +1,11 @@
 # N5 CS 2022 Task 2 Part C
 
+
+File: [AuctionDatabase.db](assets/AuctionDatabase.db "Download file")
+
+
+## Introduction
+
 ScotAuction sells property in Aberdeen, Dundee, Edinburgh, Glasgow, Inverness, Perth and Stirling.
 
 To register a property for sale, ScotAuction requests the following details from sellers: name, email address, telephone number and home address. ScotAuction gives each seller a unique ID and will contact the seller if an offer is made.
@@ -9,6 +15,9 @@ Every property registered for sale must have the following information recorded:
 A seller can have multiple properties for sale.
 
 A property cannot be listed for sale without the seller’s details being recorded first.
+
+
+## Tasks
 
 ___2c(i)___ The asking price for propertyRef DUN-101 has not been recorded correctly. This should be changed from £105500 to £112000.
 
@@ -21,32 +30,18 @@ Print evidence of the SQL statement and the Property table, clearly showing that
 
 ___2c(ii)___ Implement an SQL statement that will add the following details of a new seller to the database. 
 
-<table>
-    <tr>
-        <td>sellerID:</td>
-        <td>1502</td>
-    </tr>
-    <tr>
-        <td>sellerName:</td>
-        <td>Eve Grace</td>
-    </tr>
-    <tr>
-        <td>sellerAddress:</td>
-        <td>128 Cameron Drive Edinburgh EH4 5DS</td>
-    </tr>
-    <tr>
-        <td>email:</td>
-        <td>EveGrace@yehoo.net</td>
-    </tr>
-    <tr>
-        <td>telephoneNumber:</td>
-        <td>0131 279100</td>
-    </tr>
-</table>
+```
+sellerID:        1502
+sellerName:      Eve Grace
+sellerAddress:   128 Cameron Drive Edinburgh EH4 5DS
+email:           EveGrace@yehoo.net
+telephoneNumber: 0131 279100
+```
 
 (__2 marks__)
 
 _Print evidence of the SQL statement and the Seller table, clearly showing that the change has been implemented._
+
 
 ___(iii)___ ScotAuction is running a workshop to give sellers advice on how to achieve a higher sale price. Due to the limited spaces available, ScotAuction is only inviting selected sellers to attend. 
 
@@ -55,6 +50,7 @@ Implement an SQL statement that will display the seller’s email address and te
 (__4 marks__)
 
 _Print evidence of the SQL statement and the output._
+
 
 ___2d___ ScotAuction would like a list of seller IDs and asking prices for properties in Glasgow. The list should be sorted showing the lowest price first.
 
@@ -72,6 +68,7 @@ Test this SQL statement.
 State two reasons why this SQL statement will not run when implemented.
 
 (__2 marks__)
+
 
 ___2e___ The initial analysis identified the following functional requirements for the database. It should:
 
