@@ -1,10 +1,7 @@
-# Title: H SDD Temperature Dates v1
+# Title: H-SDD-Temp-Dates
 # Author: Mr Friend
-# Date: 9 Oct 2023
+# Date: 29 Sep 2024
 
-#
-# Subprograms
-#
 
 def f2c(tempF):
     """Converts fahrenheit to celsius.  Rounds to 1 dp."""
@@ -54,7 +51,7 @@ def readData():
     temps = [0.0] * 8759
 
     # Open connection to the file
-    file = open("tempF.csv", "r")
+    file = open("USdata.csv", "r")
 
     # Read each row of data
     for index in range(len(dates)):
@@ -103,7 +100,7 @@ def writeData(dates, times, temps):
     """Write data to file from parallel arrays."""
 
     # Create file
-    file = open("tempC.csv", "w")
+    file = open("ISOdata.csv", "w")
     
     # Loop for each value
     for index in range(len(dates)):
@@ -117,23 +114,26 @@ def writeData(dates, times, temps):
     file.close()
 
     
-#
-# Main program
-#
+def main():
+    """Main program."""
+    
+    # Declare global variables
+    dates = [""] * 8759
+    times = [""] * 8759
+    temps = [0.0] * 8759
 
-# Declare global variables
-dates = [""] * 8759
-times = [""] * 8759
-temps = [0.0] * 8759
+    # 1. Read the data from a csv file: tempF.csv
+    dates, times, temps = readData()
 
-# 1. Read the data from a csv file: tempF.csv
-dates, times, temps = readData()
+    # 2. Convert the temperatures from Fahrenheit to Centigrade
+    temps = convertTemps(temps)
 
-# 2. Convert the temperatures from Fahrenheit to Centigrade
-temps = convertTemps(temps)
+    # 3. Convert the dates from US to ISO format
+    dates = convertDates(dates)
 
-# 3. Convert the dates from US to ISO format
-dates = convertDates(dates)
+    # 4. Write the data to a csv file: tempC.csv
+    writeData(dates, times, temps)
 
-# 4. Write the data to a csv file: tempC.csv
-writeData(dates, times, temps)
+
+# Call main()
+main()

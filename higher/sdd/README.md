@@ -3,22 +3,23 @@
 
 ## SDD Tasks
 
-| Title                    | Description                   | Concepts                    | Comments |
-| -----                    | -----------                   | --------                    | -------- |
-| H-SDD-Summer             | For summer break              | asc, chr, int, mod, sp, ss  | |
-| H-SDD-Walking            | Write data to file            | w                           | |
-| H-SDD-Tuck-Shop Pt 1     | Create a price list           | r, pa, ss, asc, chr, w      | Part 1, pc |
-| H-SDD-Tuck-Shop Pt 2     | Create a price list           | Tuck Shop + sp              | Part 2, sd |
-| H-SDD-Temperature-v2     | Convert F to C                | sp, r, pa, w                | |
-| H-SDD-Caesar-Cipher Pt 1 | Plaintext to ciphertext       | sp, mod, ss, asc, chr       | Part 1, tests |
-| H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext       | sp, mod, ss, asc, chr       | Part 2, tests |
-| H-SDD-Convert            | Multiple conversions of units | sp, int, mod                | Tests |
-| H-SDD-Substring          | Multiple string manipulations | sp, ss, asc, chr            | Tests |
-| H-SDD-Write-Data Pt 1    | Create and write random data  | sp, pa, chr, w              | Part 1, tests |
-| H-SDD-Calculation        | Multiple calculations         | sp, ss, asc, chr            | Tests |
-| H-SDD-Algorithm          | Standard algorithms           | sp, ls, co, min, max        | Tests |
-| H-SDD-Bearings Pt 1      | Check size of bearings        | sp, r, min, max, co+, w     | Part 1, tests |
-| H-SDD-House-Prices       | Update house prices           | sp, r, co, ls+, min, max, w | |
+| Title                    | Description                    | Concepts                    | Comments |
+| -----                    | -----------                    | --------                    | -------- |
+| H-SDD-Summer             | For summer break               | asc, chr, int, mod, sp, ss  | |
+| H-SDD-Walking            | Write data to file             | w                           | |
+| H-SDD-Tuck-Shop Pt 1     | Create a price list            | r, pa, ss, asc, chr, w      | Part 1, pc |
+| H-SDD-Tuck-Shop Pt 2     | Create a price list            | Tuck Shop + sp              | Part 2, sd |
+| H-SDD-Temperature-v2     | Convert F to C                 | sp, r, pa, w                | |
+| H-SDD-Caesar-Cipher Pt 1 | Plaintext to ciphertext        | sp, mod, ss, asc, chr       | Part 1, tests |
+| H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext        | sp, mod, ss, asc, chr       | Part 2, tests |
+| H-SDD-Convert            | Multiple conversions of units  | sp, int, mod                | Tests |
+| H-SDD-Substring          | Multiple string manipulations  | sp, ss, asc, chr            | Tests |
+| H-SDD-Write-Data Pt 1    | Create and write random data   | sp, pa, chr, w              | Part 1, tests |
+| H-SDD-Calculation        | Multiple calculations          | sp, ss, asc, chr            | Tests |
+| H-SDD-Algorithm          | Standard algorithms            | sp, ls, co, min, max        | Tests |
+| H-SDD-Bearings Pt 1      | Check size of bearings         | sp, r, min, max, co+, w     | Part 1, tests |
+| H-SDD-House-Prices       | Update house prices            | sp, r, co, ls+, min, max, w | |
+| H-SDD-Temp-Dates         | Convert temperatures and dates | sp+, r, pa, ss, r           | pc+ |
 | H-SDD-Bearings Pt 2      | | | Part 2 |
 | H-SDD-Frequency-Analysis | | | |
 | H-SDD-Hot-Cold           | | | |
@@ -31,7 +32,6 @@
 | H-SDD-Runners            | | | |
 | H-SDD-Straight-Line      | | | |
 | H-SDD-Subprograms        | | | |
-| H-SDD-Temp-Dates         | | | |
 | H-SDD-Temperature Pt 1   | | | Part 1 |
 | H-SDD-Temperature Pt 2   | | | Part 2 |
 | H-SDD-Temperature Pt 3   | | | Part 3 |
@@ -64,6 +64,7 @@ max = Find maximum,
 max+ = max plus a twist
 
 pc = Pseudocode,
+pc+ = pc plus refinements,
 sd = Structure diagram
 
 

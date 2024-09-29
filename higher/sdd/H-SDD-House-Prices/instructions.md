@@ -9,7 +9,7 @@ KCL has noticed that the value of properties is generally increasing.  However, 
 
 KCL wants to update the property values in its database, and extract some other information.  It will provide a file that only includes the postcodes and current values.
 
-When KCL created the data file a small error changed some of the postcodes from HS1 to HS0.
+When KCL created the data file ([housePrices.csv](assets/housePrices.csv "Download file")) a small error changed some of the postcodes from HS1 to HS0.
 
 
 ## Analysis
