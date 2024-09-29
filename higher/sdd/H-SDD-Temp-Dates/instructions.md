@@ -34,11 +34,11 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
 ```
 2.1 Loop for each temperature
     2.1.1 Call function to convert    IN: tempF
-	      current temperature         OUT: tempC
+          current temperature         OUT: tempC
 
 3.1 Loop for each date
     3.1.1 Call function to convert    IN: dateUS
-	      current date                OUT: dateISO
+          current date                OUT: dateISO
 ```
 
 
