@@ -17,6 +17,7 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
 
 ## Top level design (Pseudocode)
 
+```
 1. Read the data from a csv file              OUT: dates(), times(), temps()
 
 2. Convert the temperatures from              IN: temps()
@@ -26,6 +27,8 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
                                               OUT: dates()
 
 5. Write the data to a csv file               IN: dates(), times(), temps()
+```
+
 
 ### Refinements
 
