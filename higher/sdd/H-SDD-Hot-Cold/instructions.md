@@ -1,23 +1,28 @@
 # Instructions
 
+
 ## Introduction
 
 Barra Data Solutions (BDS) has been contracted to find the minimum and maximum temperatures within a data set.
+
 
 ## Task
 
 Follow the design shown in the structure diagram to produce modular code.  The output must be similiar to the example output but with the correct temperatures, dates, and times.
 
+
 ## Steps
 
-1. Read the data from `Temperature Data.csv`
+1. Read the data from `TemperatureData.csv`
 2. Find the maximum temperature
 3. Find the minimum temperature
-4. Write all occurences of the hottest and coldest temperatures to `Hot and Cold.txt`
+4. Write all occurences of the hottest and coldest temperatures to `HotAndCold.txt`
 
-## Structure diagram
 
-![Structure diagram](assets/HotAndCold.png)
+## Top-level design (Structure diagram)
+
+![Structure diagram](assets/sd.png)
+
 
 ## Example Output
 

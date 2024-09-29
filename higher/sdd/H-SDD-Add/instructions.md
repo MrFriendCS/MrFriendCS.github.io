@@ -1,10 +1,12 @@
 # H SDD - Subprograms
 
+
 ## Introduction
 
 Create a small program that will ask the user for two values, add them together, and display the result.
 
 It must use subprograms!
+
 
 ## Information
 
@@ -18,29 +20,21 @@ Some subprograms can be passed more than one parameter, e.g. `round(3.1415, 2)`.
 
 Not all subprograms return a value.
 
-## Program top-level design
+
+## Top-level design (Pseudocode)
+
+```
+1. Get first value    OUT: value1
+
+2. Get second value   OUT: value2
+
+3. Add values         IN: value1, value2
+                      OUT: sum
+					  
+4. Display result     IN: sum
+```
 
 The data flow shows where a subprogram is to be used in the program.
 
 * IN: Parameter passed to subprogram
 * OUT: Value returned by subprogram
-
-<table>
-    <tr>
-        <td>1. Get first value</td>
-        <td>OUT: value1</td>
-    </tr>
-    <tr>
-        <td>2. Get second value</td>
-        <td>OUT: value2</td>
-    </tr>
-    <tr>
-        <td>3. Calculate the total</td>
-        <td>IN: value1, value2<br>
-OUT: total</td>
-    </tr>
-    <tr>
-        <td>4. Display the result</td>
-        <td>IN: total</td>
-    </tr>
-</table>

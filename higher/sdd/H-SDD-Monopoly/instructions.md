@@ -1,5 +1,6 @@
 # Mini Monopoly
 
+
 ## Task
 
 As a group, create a Monopoly inspired game.  Decide which features will be included, and which ones won't.
@@ -7,6 +8,7 @@ As a group, create a Monopoly inspired game.  Decide which features will be incl
 [Rules](https://monopoly.fandom.com/wiki/Monopoly_Rules)
 
 Use modular code to aide maintainability.
+
 
 ## Tokens
 

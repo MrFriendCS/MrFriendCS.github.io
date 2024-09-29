@@ -24,7 +24,8 @@ def check(isbn):
         checkDigit = 10 - checkDigit    
 
     return str(checkDigit) 
-        
+
+
 # Declare Global variable and array
 checkDigit = ""
 isbns = [""] * 1000
