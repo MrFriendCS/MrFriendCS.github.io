@@ -12,7 +12,7 @@ Unfortunately, the dates are in the US format, and all of the temperatures are i
 
 ## Task
 
-Convert all of the dates from US to ISO format.  Convert all of the temperatures from Fahrenheit to Celsius.  Write the data to a new csv file.
+Convert all of the dates from US to ISO format.  Convert all of the temperatures from Fahrenheit to Celsius.  Write the data to a new csv file, `dataISO.csv`.
 
 
 ## Top level design (Pseudocode)
@@ -34,12 +34,12 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
 
 ```
 2.1 Loop for each temperature
-    2.1.1 Call function to convert current temperature    IN: tempF
-                                                          OUT: tempC
+    2.1.1 Call function to convert    IN: tempF
+	      current temperature         OUT: tempC
 
 3.1 Loop for each date
-    3.1.1 Call function to convert current date           IN: dateUS
-                                                          OUT: dateISO
+    3.1.1 Call function to convert    IN: dateUS
+	      current date                OUT: dateISO
 ```
 
 
