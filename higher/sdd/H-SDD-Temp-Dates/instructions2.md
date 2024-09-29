@@ -1,4 +1,4 @@
-# H SDD - Temperature Dates
+# H SDD - Temperature Dates Part 2
 
 
 ## Introduction
@@ -18,26 +18,23 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
 ## Top level design (Pseudocode)
 
 ```
-1. Read the data from a csv file              OUT: dates(), times(), temps()
+1. Read the data from a csv file              OUT: data(date, time, temp)
 
-2. Convert the temperatures from              IN: temps()
-   Fahrenheit to Centigrade                   OUT: temps()  
+2. Convert the temperatures from              IN: data(date, time, temp)
+   Fahrenheit to Centigrade and               OUT: data(date, time, temp)
+   US to ISO format
    
-3. Convert the dates from US to ISO format    IN: dates()
-                                              OUT: dates()
-
-5. Write the data to a csv file               IN: dates(), times(), temps()
+3. Write the data to a csv file               IN: data(date, time, temp)
 ```
 
 ### Refinements
 
 ```
-2.1 Loop for each temperature
+2.1 Loop for each record
     2.1.1 Call function to convert    IN: tempF
           current temperature         OUT: tempC
 
-3.1 Loop for each date
-    3.1.1 Call function to convert    IN: dateUS
+    2.1.2 Call function to convert    IN: dateUS
           current date                OUT: dateISO
 ```
 

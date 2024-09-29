@@ -19,7 +19,8 @@
 | H-SDD-Algorithm          | Standard algorithms            | sp, ls, co, min, max        | Tests |
 | H-SDD-Bearings Pt 1      | Check size of bearings         | sp, r, min, max, co+, w     | Part 1, tests |
 | H-SDD-House-Prices       | Update house prices            | sp, r, co, ls+, min, max, w | |
-| H-SDD-Temp-Dates         | Convert temperatures and dates | sp+, r, pa, ss, r           | pc+ |
+| H-SDD-Temp-Dates Pt 1    | Convert temperatures and dates | sp+, r, pa, ss, r           | Part 1, pc+ |
+| H-SDD-Temp-Dates Pt 2    | Convert temperatures and dates | sp+, r, ar, ss, r           | Part 2, pc+ |
 | H-SDD-Bearings Pt 2      | | | Part 2 |
 | H-SDD-Frequency-Analysis | | | |
 | H-SDD-Hot-Cold           | | | |
