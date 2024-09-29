@@ -29,7 +29,6 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
 5. Write the data to a csv file               IN: dates(), times(), temps()
 ```
 
-
 ### Refinements
 
 ```
