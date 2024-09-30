@@ -7,6 +7,7 @@
 | -----                    | -----------                    | --------                    | -------- |
 | H-SDD-Summer             | For summer break               | asc, chr, int, mod, sp, ss  | |
 | H-SDD-Add                | Add two values                 | sp                          | pc |
+| H-SDD-Update-Countries   | Increase populations by 10%    | sp, r, w                    | sd |
 | H-SDD-Walking            | Write data to file             | w                           | |
 | H-SDD-Tuck-Shop Pt 1     | Create a price list            | r, pa, ss, asc, chr, w      | Part 1, pc |
 | H-SDD-Tuck-Shop Pt 2     | Create a price list            | Tuck Shop + sp              | Part 2, sd |
@@ -23,19 +24,18 @@
 | H-SDD-House-Prices       | Update house prices            | sp, r, co, ls+, min, max, w | |
 | H-SDD-Temp-Dates Pt 1    | Convert temperatures and dates | sp+, r, pa, ss, r           | Part 1, pc+ |
 | H-SDD-Temp-Dates Pt 2    | Convert temperatures and dates | sp+, r, ar, ss, r           | Part 2, pc+ |
+| H-SDD-Runners            | Find qualifying runners        | sp, r, ar, ls+              | pc |
 | H-SDD-Bearings Pt 2      | | | Part 2 |
-| H-SDD-Frequency-Analysis | | | |
-| H-SDD-Parabola-Fun       | | | |
 | H-SDD-Password-Generator | | | |
-| H-SDD-Runners            | | | |
 | H-SDD-Straight-Line      | | | |
 | H-SDD-Temperature Pt 1   | | | Part 1 |
 | H-SDD-Temperature Pt 2   | | | Part 2 |
 | H-SDD-Temperature Pt 3   | | | Part 3 |
-| H-SDD-Update-Countries   | | | |
 | H-SDD-Usernames Pt 1     | | | Part 1 |
 | H-SDD-Usernames Pt 2     | | | Part 2 |
 | H-SDD-Usernames Pt 3     | | | Part 3 |
+| H-SDD-Parabola-Fun       | Quadratic equation             | sp                          | Needs a refresh |
+| H-SDD-Frequency-Analysis |                                |                             | No instructions |
 | H-SDD-KIS Pt 1           |                                |                             | No instructions |
 | H-SDD-KIS Pt 2           |                                |                             | No instructions |
 | H-SDD-ISBNs              |                                |                             | No instructions |
