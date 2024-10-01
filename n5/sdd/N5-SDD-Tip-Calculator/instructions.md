@@ -15,8 +15,8 @@ Using the top level design below, write a program that will help the friends wor
 ### Example User Interface
 
 ```
-Costs
------
+Meal Costs
+----------
 Person 1: 15
 Person 2: 7.50
 Person 3: 9.75
@@ -47,4 +47,3 @@ Individual
 To calculate the tip:
 
 &nbsp;&nbsp;tip = cost &times; (tip percent &divide; 100) 
-

@@ -154,14 +154,8 @@
         <mxCell id="DJOuTY2LFSwK7dt1zbWp-24" value="Repeat for&lt;br&gt;each player" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" parent="1" vertex="1">
           <mxGeometry x="760" y="160" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DJOuTY2LFSwK7dt1zbWp-35" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" parent="1" source="DJOuTY2LFSwK7dt1zbWp-25" target="DJOuTY2LFSwK7dt1zbWp-26" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="DJOuTY2LFSwK7dt1zbWp-25" value="Display player&#39;s&lt;br&gt;name and score" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="760" y="280" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="DJOuTY2LFSwK7dt1zbWp-26" value="Is score &amp;gt; 21?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="760" y="400" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="DJOuTY2LFSwK7dt1zbWp-40" value="" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;shape=connector;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -190,12 +184,12 @@
         <mxCell id="rlh4JI9Xb0ndSaXNDbWQ-3" value="Yes" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="460" y="700" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cShhL4fhOzDO-buVLAKe-1" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="cShhL4fhOzDO-buVLAKe-2">
+        <mxCell id="cShhL4fhOzDO-buVLAKe-1" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" parent="1" source="cShhL4fhOzDO-buVLAKe-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="660.4000000000001" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cShhL4fhOzDO-buVLAKe-2" value="Display card value" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="cShhL4fhOzDO-buVLAKe-2" value="Display card value" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="600" y="640" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
