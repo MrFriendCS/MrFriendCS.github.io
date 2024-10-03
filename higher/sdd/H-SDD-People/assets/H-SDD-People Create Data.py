@@ -4,15 +4,15 @@
 
 import sys
 
-directory = "C:\\Users\\afriend1r\\AppData\\Local\\Programs\\Thonny"
+school = "C:\\Users\\afriend1r\\AppData\\Local\\Programs\\Thonny"
 
 start1 = "C:\\Users\\afriend1r"
-start2 = "C:\\Users\\afriend1r"
+start2 = "D:"
 
 end = "\\OneDrive - Glow Scotland\\SQA - CS - N5\\DDD\\Database Files\\Modules"
 
 # Check if directory exists
-if directory in sys.path:
+if school in sys.path:
     # School laptop
     sys.path.append(start1 + end)
     

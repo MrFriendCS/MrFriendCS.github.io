@@ -9,18 +9,20 @@ from dataclasses import dataclass
 # Define record
 @dataclass
 class Person:
+    """A record to represent a person."""
     first: str = ""
     last: str = ""
     age: int = 0
-    
+
+
 def getData():
     """Reads data into array of records."""
     
     # Create array of records
-    people = (Person() for i in range(100))
-    
+    people = [Person() for i in range(100)]
+
     # Make connection to file
-    file.open("people.csv", "r")
+    file = open("people.csv", "r")
     
     for index in range(len(people)):
         
@@ -33,6 +35,6 @@ def getData():
         # Assign data to current record
         people[index].first = data[0].strip()
         people[index].last = data[1].strip()
-        people[index].age = data[1].strip()
+        people[index].age = int(data[2].strip())
         
-    
+    return people
