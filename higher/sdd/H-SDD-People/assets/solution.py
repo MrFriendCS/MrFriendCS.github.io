@@ -38,3 +38,27 @@ def getData():
         people[index].age = int(data[2].strip())
         
     return people
+
+
+def countMacs(people):
+    """Count surnames that start with 'Mac' or 'Mc'."""
+    
+    # Initialise variables
+    count = 0
+    surname = ""
+    
+    # Loop for each record
+    for index in range(len(people)):
+        
+        # Get surname
+        surname = people[index].last
+        
+        # Count 'Mac' and 'Mc'
+        if surname[:3] == "Mac" or surname[:2] == 2:
+            
+            # Increment count
+            count = count + 1
+            
+    return count
+
+
