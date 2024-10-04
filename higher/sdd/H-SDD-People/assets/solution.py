@@ -84,7 +84,7 @@ def saveResults(people, macs, oldest):
     """Write the results to file."""
     
     # Create file
-    file = open("results.txt", "w")
+    file = open("summary1871.txt", "w")
     
     file.write("Results\n")
     file.write("-------\n\n")
@@ -106,7 +106,7 @@ def saveResults(people, macs, oldest):
             file.write("\t" + people[index].first + " ")
             file.write(people[index].last + "\n")
     
-    file.write("\n=======\n\n")
+    file.write("\n=======\n")
     
     # Close connection to file
     file.close()
