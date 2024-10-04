@@ -1,6 +1,6 @@
 # Title: H-SDD-People Solution
 # Author: Mr Friend
-# Date: 3 Oct 2024
+# Date: 4 Oct 2024
 
 # Import code
 from dataclasses import dataclass
@@ -86,13 +86,13 @@ def saveResults(people, macs, oldest):
     # Create file
     file = open("summary1871.txt", "w")
     
-    file.write("Results\n")
-    file.write("-------\n\n")
+    file.write("1871 Census Summary\n")
+    file.write("-------------------\n\n")
     
     file.write("There were " + str(macs) + " people ")
     file.write("with either 'Mac' or 'Mc' surnames.\n\n")
     
-    file.write("The oldest was " + str(oldest) + ".\n\n")
+    file.write("The oldest age was " + str(oldest) + ".\n\n")
     
     file.write("Oldest people:\n\n")
     
@@ -106,7 +106,7 @@ def saveResults(people, macs, oldest):
             file.write("\t" + people[index].first + " ")
             file.write(people[index].last + "\n")
     
-    file.write("\n=======\n")
+    file.write("\n===================\n")
     
     # Close connection to file
     file.close()
