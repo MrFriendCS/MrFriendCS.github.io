@@ -23,7 +23,7 @@
 | H-SDD-Hot-Cold           | Find hottest and coldest days  | sp, r, pa, min, max, ls+, w | sd |
 | H-SDD-House-Prices       | Update house prices            | sp, r, co, ls+, min, max, w | |
 | H-SDD-Temp-Dates Pt 1    | Convert temperatures and dates | sp+, r, pa, ss, r           | pc+ |
-| H-SDD-People             | Read and write with records    | sp, r, ar, co, max, ls+     |
+| H-SDD-People             | Read and write with records    | sp, r, ar, co, max, ls+     | |
 | H-SDD-Temp-Dates Pt 2    | Convert temperatures and dates | sp+, r, ar, ss, r           | pc+ |
 | H-SDD-Runners            | Find qualifying runners        | sp, r, ar, ls+              | pc |
 | H-SDD-Bearings Pt 2      | | | |

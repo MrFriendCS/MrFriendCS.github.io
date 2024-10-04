@@ -62,3 +62,68 @@ def countMacs(people):
     return count
 
 
+def findOldest(people):
+    """Find the age of the oldest person."""
+    
+    # Initialise local variables
+    oldest = people[0].age
+    
+    # Loop for remaining people
+    for index in range(1, len(people)):
+        
+        # Check if older
+        if people[index].age > oldest:
+            
+            # Update oldest
+            oldest = people[index].age
+            
+    return oldest
+
+
+def saveResults(people, macs, oldest):
+    """Write the results to file."""
+    
+    # Create file
+    file = open("results.txt", "w")
+    
+    file.write("Results\n")
+    file.write("-------\n\n")
+    
+    file.write("There were " + str(macs) + " people ")
+    file.write("with either 'Mac' or 'Mc' surnames.\n\n")
+    
+    file.write("The oldest was " + str(oldest) + ".\n\n")
+    
+    file.write("Oldest people:\n\n")
+    
+    # Loop to find oldest people
+    for index in range(len(people)):
+        
+        # Check
+        if people[index].age == oldest:
+            
+            # Save name
+            file.write("\t" + people[index].first + " ")
+            file.write(people[index].last + "\n")
+    
+    file.write("\n=======\n\n")
+    
+    # Close connection to file
+    file.close()
+    
+
+def main():
+    """Main program."""
+    
+    people = getData()
+    
+    macs = countMacs(people)
+    
+    oldest = findOldest(people)
+    
+    saveResults(people, macs, oldest)
+
+
+# Call main()
+main()
+
