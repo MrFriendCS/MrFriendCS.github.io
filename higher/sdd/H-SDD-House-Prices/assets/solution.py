@@ -1,33 +1,12 @@
-# Title: H SDD House Prices
+# Title: H-SDD-House-Prices
 # Author: Mr Friend
-# Date: 12 Oct 2023
+# Date: 5 Oct 2024
 
-#
-# Subprograms
-#
-
-def newPrice(value, percent):
-    """Change a value by a percentage.  Round to 0 dp."""
-
-    # Calculate new value
-    newValue = round(value * (1 + percent/100))
-
-    # Return new value
-    return newValue
-
-def updatePostcode(postcode):
-    """Change first 3 digits of postcode to HS1."""
-
-    # Create new postcode
-    newPostcode = "HS1 " + postcode[-3: ]
-
-    # Return new postcode
-    return newPostcode
 
 def readData():
     """Read data from file into parallel arrays."""
 
-    # Declare local variables
+    # Initialise local variables
     line = ""
     data = [""] * 2
     postcodes = [""] * 1000
@@ -55,10 +34,11 @@ def readData():
     # Return data
     return postcodes, origValues
 
-def countHS0(postcodes):
-    """Find and count all HS0 postcodes.  Write results to file."""
 
-    # Declare local variables
+def countHS0(postcodes):
+    """Count all HS0 postcodes."""
+
+    # Initialise local variables
     count = 0
 
     # Loop for each postcode
@@ -66,32 +46,14 @@ def countHS0(postcodes):
 
         # Check postcode
         if postcodes[index][0:3] == "HS0":
+            
             # Increment count
             count = count + 1
 
-    # Make connection to file
-    file = open("errorPostcodes.txt", "w")
+    return count
 
-    # Write result to file
-    file.write("There were ")
-    file.write(str(count))
-    file.write(" incorrect postcodes.\n\n")
 
-    file.write("Errors\n")
-    file.write("------\n")
-
-    # Loop for each postcode
-    for index in range(len(postcodes)):
-
-        # Check postcode
-        if postcodes[index][0:3] == "HS0":
-            # Write to file
-            file.write(postcodes[index] + "\n")
-
-    # Close connection to file
-    file.close()
-
-def updatePostcodes(postcodes):
+def fixHS0(postcodes):
     """Find and change all HS0 postcodes to HS1."""
 
     # Loop for each postcode
@@ -101,17 +63,21 @@ def updatePostcodes(postcodes):
         if postcodes[index][0:3] == "HS0":
             
             # Update postcode
-            postcodes[index] = updatePostcode(postcodes[index])
+            postcodes[index] = "HS1 " + postcodes[index][3: ]
 
     # Return postcodes
     return postcodes
 
+
 def newPrices(postcodes, origValues):
     """Updates house prices depending on postcodes."""
 
-    # Declare local variables
+    # Initialise local variables
     newValues = [0] * len(origValues)
+    currentValue = 0
+    newValue = 0
     digit = 0
+    percent = 0
 
     # Loop for each property
     for index in range(len(postcodes)):
@@ -121,35 +87,35 @@ def newPrices(postcodes, origValues):
 
         # Set percentage change
         if digit < 6:
-            newValues[index] = newPrice(origValues[index], -2)
+            # 2% less
+            percent = -2
+            
         elif digit < 9:
-            newValues[index] = newPrice(origValues[index], 2)
+            # 2% more
+            percent = 2
+            
         elif digit == 9:
-            newValues[index] = newPrice(origValues[index], 5)
+            # 5% more
+            percent = 5
+        
+        # Get current value
+        currentValue = origValues[index]
+        
+        # Calculate new price.  Round to 0 dp.
+        newValue = round(currentValue * (1 + percent/100))
+            
+        # Update price
+        newValues[index] = newValue
 
     # Return new house prices
     return newValues
 
-def writeData(postcodes, origValues, newValues):
-    """Write postcodes, old prices, and new prices to file."""
 
-    # Make a connection to the file
-    file = open("newPrices.csv", "w")
+def findLowest(newValues):
+    """Find lowest house price."""
 
-    # Loop for each house
-    for index in range(len(postcodes)):
-
-        # Write a line of data
-        file.write(postcodes[index] + ",")
-        file.write(str(origValues[index]) + ",")
-        file.write(str(newValues[index]) + "\n")
-
-def findMinMax(newValues):
-    """Find lowest and highest house prices."""
-
-    # Declare local variables
+    # Initialise local variables
     lowest = 0
-    highest = 0
 
     # Assign first value as lowest
     lowest = newValues[0]
@@ -162,6 +128,15 @@ def findMinMax(newValues):
             # Update lowest
             lowest = newValues[index]
 
+    return lowest
+
+
+def findHighest(newValues):
+    """Find highest house price."""
+
+    # Initialise local variables
+    highest = 0
+
     # Assign first value as highest
     highest = newValues[0]
     
@@ -173,94 +148,138 @@ def findMinMax(newValues):
             # Update highest
             highest = newValues[index]
 
-    # Return lowest and highest house prices
-    return lowest, highest
+    return highest
 
-def findExtremes(postcodes, newValues, lowest, highest):
-    """find the most expensive 2% and least expensive 2% of properties.  Write results to file."""
 
-    # Declare local variables
-    priceRange = 0
-    twoPercent = 0.0
-    topTwo = 0.0
-    bottomTwo = 0.0
+def countValues(newValues, target):
+    """Count house prices that match the target"""
+    
+    # Initialise local variable
+    count = 0
 
-    # Calculate range of values
-    priceRange = highest - lowest
+    # Loop for each house price
+    for index in range(len(newValues)):
 
-    # Calculate 2% of range
-    twoPercent = priceRange * 0.02
+        # Check postcode
+        if newValues[index] == target:
+            
+            # Increment count
+            count = count + 1
 
-    # Calculate highest 2% value
-    topTwo = highest - twoPercent
+    return count
 
-    # Calculate lowest 2% value
-    bottomTwo = lowest + twoPercent
+
+def writeSummary(badCodes, lowest, highest, lowCount, highCount, postcodes, newValues):
+    """Write summary information to file."""
+
+    # Initialise local variables
 
     # Make a connection to the file
-    file = open("extremes.txt", "w")
+    file = open("summary.txt", "w")
     
-    # Write results to file
-    file.write("The most expensive house cost ")
-    file.write("£" + str(highest) + ".\n")
-    file.write("The least expensive house cost ")
-    file.write("£" + str(lowest) + ".\n\n")
+    # Header
+    file.write("Summary\n")
+    file.write("-------\n\n")
+    
+    # HS0 errors
+    file.write("HS0 errors: " + str(badCodes) + "\n\n")
+    
+    # Highest and lowest prices
+    file.write("Lowest value:  £" + str(lowest) + "\n")
+    file.write("Highest value: £" + str(highest) + "\n\n")
+    
+    # Lowest count
+    file.write("Lowest value houses: " + str(lowCount) + "\n")
+    
+    # Loop for each house price
+    for index in range(len(postcodes)):
+        
+        # Check
+        if newValues[index] == lowest:
+            
+            # Write postcode to file
+            file.write("\t" + postcodes[index] + "\n")
+    
+    # Highest count
+    file.write("\nHighest value houses: " + str(highCount) + "\n")
+    
+    # Loop for each house price
+    for index in range(len(postcodes)):
+        
+        # Check
+        if newValues[index] == highest:
+            
+            # Write postcode to file
+            file.write("\t" + postcodes[index] + "\n")
+    
+    # Footer
+    file.write("\n=======\n")
+    
+    # Close connection to file
+    file.close()
 
-    file.write("The top 2% of properties are:\n\n")
-    
-    # Loop for each property - top 2 percent
+
+def writeData(postcodes, origValues, newValues):
+    """Write data to file."""
+
+    # Make a connection to the file
+    file = open("updatedPrices.csv", "w")
+
+    # Loop for each house
     for index in range(len(postcodes)):
 
-        # Check value
-        if newValues[index] >= topTwo:
-
-            # Write a line of data
-            file.write(postcodes[index] + ",")
-            file.write(str(newValues[index]) + "\n")
-
-    file.write("\nThe bottom 2% of properties are:\n\n")
-
-    # Loop for each property - top 2 %
-    for index in range(len(postcodes)):
-
-        # Check value
-        if newValues[index] <= bottomTwo:
-
-            # Write a line of data
-            file.write(postcodes[index] + ",")
-            file.write(str(newValues[index]) + "\n")
+        # Write a line of data
+        file.write(postcodes[index] + ",")
+        file.write(str(origValues[index]) + ",")
+        file.write(str(newValues[index]) + "\n")
 
     # Close connection to file
     file.close()
 
-#
-# Main Program
-#
 
-# Declare global variables
-postcodes = [""] * 1000
-origValues = [0] * 1000
-newValues = [0] * 1000
-lowest = 0
-highest = 0
+def main():
+    """Main program."""
 
-# 1. Read in the postcodes and current house prices
-postcodes, origValues = readData()
+    # Initialise variables
+    badCodes = 0
+    postcodes = [""] * 1000
+    origValues = [0] * 1000
+    newValues = [0] * 1000
+    lowest = 0
+    highest = 0
+    lowCount = 0
+    highCount = 0
 
-# 2. Find and count all HS0 postcodes
-countHS0(postcodes)
+    # 1. Read values from file
+    postcodes, origValues = readData()
 
-# 3. Amend all HS0 postcodes to HS1
-postcodes = updatePostcodes(postcodes)
+    # 2. Count HS0 postcodes
+    badCodes = countHS0(postcodes)
 
-# 4. Calculate the new house prices
-newValues = newPrices(postcodes, origValues)
+    # 3. Correct HS0 postcodes
+    postcodes = fixHS0(postcodes)
 
-# 5. Write postcodes, old prices, and new prices to file
-writeData(postcodes, origValues, newValues)
+    # 4. Calculate new house prices
+    newValues = newPrices(postcodes, origValues)
 
-# 6. Find the lowest and highest house prices.
-lowest, highest = findMinMax(newValues)
+    # 5. Find the lowest house price
+    lowest = findLowest(newValues)
 
-# 7. Find and write highest 2% and lowest 2% of properties
-findExtremes(postcodes, newValues, lowest, highest)
+    # 6. Find the highest house price
+    highest = findHighest(newValues)
+
+    # 7. Count houses with lowest price
+    lowCount = countValues(newValues, lowest)
+
+    # 8. Count houses with highest price
+    highCount = countValues(newValues, highest)
+
+    # 9. Write summary information to file
+    writeSummary(badCodes, lowest, highest, lowCount, highCount, postcodes, newValues)
+
+    # 10. Write data to file
+    writeData(postcodes, origValues, newValues)
+
+
+# Call main()
+main()

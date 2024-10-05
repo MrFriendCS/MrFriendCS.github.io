@@ -66,17 +66,19 @@ Summary
 
 HS0 errors: 6
 
-Lowest:  £25000
-Highest: £250000
+Lowest value:  £25000
+Highest value: £250000
 
-Lowest postcodes: 3
-  HS1 2AB
-  HS3 4CD
-  HS5 6EF
+Lowest value houses: 3
+    HS1 2AB
+    HS3 4CD
+    HS5 6EF
   
-Highest postcodes: 2
-  HS7 6XW
-  HS9 8ZY
+Highest value houses: 2
+    HS7 6XW
+    HS9 8ZY
+
+=======
 ```
 
 ### updatedPrices.csv
