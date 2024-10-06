@@ -1,8 +1,6 @@
-.print
-.print Task 17
+-- Task 17
 
-.print
-.print Q1
+-- Q1
 SELECT title, hotelName, kmFromAirport, 
         kmFromAirport - 2.8 [New km]
     FROM Hotel, Holiday
@@ -10,8 +8,7 @@ SELECT title, hotelName, kmFromAirport,
         AND city = "Madrid";
 
 
-.print
-.print Q2
+-- Q2
 SELECT hotelName, 
        pricePerNight + 7.25 [ppn+Tax],     
        ROUND((pricePerNight + 7.25) * 1.13, 2) AS [Euros]
@@ -20,5 +17,4 @@ SELECT hotelName,
     ORDER BY Euros DESC;
 
 
-.print
-.print Q3
+-- Q3
