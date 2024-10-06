@@ -21,6 +21,8 @@ getMake()
 getModel(make="")
 getColour()
 getGift()
+getHair()
+getEye()
 """
 
 def getForename():
@@ -359,3 +361,42 @@ def getGift():
     gift = random.choice(gifts)
     
     return gift
+
+
+def getHair():
+    """Pick a random hair colour."""
+    
+    # Initialise local variable
+    colours = ["Black", "Blond", "Brown", "Grey", "None", "Red", "White"]
+
+    # Pick colour
+    colour = random.choice(colours)
+  
+    return colour
+
+
+def getEye():
+    """Pick a random eye colour."""
+    
+    # Initialise local variable
+    colours = ["Amber", "Black", "Blue", "Brown", "Green", "Hazel", "Grey"]
+
+    # Pick colour
+    colour = random.choice(colours)
+  
+    return colour
+
+
+def getConviction():
+    """Pick a random eye colour."""
+    
+    # Initialise local variable
+    convictions = ["Arson", "Assault", "Bribery", "Burglary", "Cyberbullying",
+                   "Drugs", "Extortion", "Forgery", "Fraud", "Hacking",
+                   "Kidnapping", "Robbery", "Shoplifting", "Theft", "Vandalism"]
+
+    # Pick colour
+    conviction = random.choice(convictions)
+  
+    return conviction
+

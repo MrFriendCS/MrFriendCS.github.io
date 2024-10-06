@@ -2,7 +2,7 @@
 
 ## Entity Relationship Diagram
 
-![ERD](assets/ERD.png "ERD")
+![ERD](assets/erd.png "ERD")
 
 
 ## Data Dictionary
