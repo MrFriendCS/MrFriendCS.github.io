@@ -77,7 +77,7 @@ sqarl = SQA Reference Language
 | Title              | Description                    | Concepts                          | Comments |
 | -----              | -----------                    | --------                          | -------- |
 | N5-CS-Old-Task-2   | 'Capturing Olympus' board game | fl, iv, lo, t1d, rt, rd, if1, if4 | Basic MI, fc |
-| N5-CS-2018-Task-2B | Scotven mobile wi-fi service   | fl, iv, rd, t1d, if3, cat         | sd |
+| N5-CS-2018-Task-2  | Scotven mobile wi-fi service   | fl, iv, rd, t1d, if3, cat         | sd |
 | N5-CS-2019-Task-2B | School wi-fi user names        | 1d, ip, fl, iv, rnd, cat, if1     | pc |
 | N5-CS-2020-Task-2B | Coffee shop bill and lottery   | ip, fl, iv, if3, rt, rnd, if1, rd | fc |
 | N5-CS-2021-Task-1C | | | |
