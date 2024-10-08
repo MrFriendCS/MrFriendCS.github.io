@@ -4,7 +4,8 @@
 
 The Marine Conservation Society collects data on the amount of pollution on UK beaches and gives each beach a rating.
 
-![Ratings](assets/ratings.png)
+![Ratings](assets/sd5.png)
+
 
 ## Program analysis
 
@@ -14,6 +15,7 @@ When run, the program should:
 
 * display the average rating for all beaches tested
 * prompt the user to select a rating and display the names of all beaches with that rating
+
 
 ## Assumptions
 
@@ -30,17 +32,21 @@ Aberdaron Beach,1
 ...
 ```
 
+
 ## Functional requirements
 
 ### Inputs
+
 * data from the file (name of beach and rating)
 * user enters rating for the beaches to be displayed
 
 ### Processes
+
 * calculate the average rating for all beaches tested (those with a rating between 1 and 4)
 * only display names of beaches with a rating entered by the user
 
 ### Outputs
+
 * the average beach rating for all beaches tested
 * the name of all beaches with a rating entered by the user
 
@@ -49,20 +55,22 @@ Aberdaron Beach,1
 
 Top level design with data flow
 
-![Top level design](assets/top.png)
+![Top level design](assets/sd1.png)
 
 Refinement of 'Calculate and return the average rating for all beaches tested'
 
-![Calculate average function](assets/average.png)
+![Calculate average function](assets/sd2.png)
 
 Refinement of 'Display all the beaches with a rating entered by the user'
 
-![Display beaches procedure](assets/display1.png)
+![Display beaches procedure](assets/sd3.png)
+
 
 ___2a___ Using the program analysis and design, identify two boundaries in this problem. __(2 marks)__
 
 * Boundary 1
 * Boundary 2
+
 
 ___2b (i)___ Using the program analysis and design, implement the program in a language of your choice. Your program should:
 
@@ -73,6 +81,7 @@ ___2b (i)___ Using the program analysis and design, implement the program in a l
 
 Print evidence of your program code. __(12 marks)__
 
+
 ___2b (ii)___ The process 'display all the beaches with a rating entered by the user' currently
 displays the complete name of each beach.
 
@@ -82,17 +91,20 @@ For example: ___Aberdaron Beach___ becomes ___Aberdaron___
 
 A refinement of 'Display beach name' is shown on the following page. This finds the position of the first space character in the string and displays only the characters up to this position.
 
-![Refinement](assets/display2.png)
+![Refinement](assets/sd4.png)
 
 Using the above design, alter your program code so that only the first word in the beach name is displayed.
 
 Print evidence of your altered program code. __(3 marks)__
 
+
 ___2c___ Describe a comprehensive test plan that could be used to test the program inputs. __(2 marks)__
+
 
 ___2d___ Identify where a breakpoint could be used to test that only the beach names with a rating entered by the user are displayed.
 
 Mark this clearly on one of the printouts of your code. __(1 mark)__
+
 
 ___2e___ With reference to your own program code, evaluate:
 

@@ -1,0 +1,385 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17" pages="5">
+  <diagram id="8Ko_knHQRIUai97HUJXQ" name="sd1">
+    <mxGraphModel dx="882" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="6MXwMb472Ba8hpzd8eE3-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-1" value="Provide analysis on beach pollution" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;endArrow=block;endFill=1;" parent="1" source="6MXwMb472Ba8hpzd8eE3-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;startArrow=block;startFill=1;" parent="1" source="6MXwMb472Ba8hpzd8eE3-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="6MXwMb472Ba8hpzd8eE3-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-2" value="Calculate and return the average rating of all beaches tested" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="420" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;startArrow=block;startFill=1;endArrow=none;endFill=0;" parent="1" source="6MXwMb472Ba8hpzd8eE3-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="6MXwMb472Ba8hpzd8eE3-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-3" value="Display the average rating of all beaches tested" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;endArrow=block;endFill=1;" parent="1" source="6MXwMb472Ba8hpzd8eE3-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="6MXwMb472Ba8hpzd8eE3-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-4" value="Read in beach&lt;div&gt;names and ratings from file&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;startArrow=block;startFill=1;endArrow=none;endFill=0;" parent="1" source="6MXwMb472Ba8hpzd8eE3-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="6MXwMb472Ba8hpzd8eE3-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-5" value="Display all the beaches with a rating entered by the user" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="820" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-11" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="200" as="sourcePoint" />
+            <mxPoint x="880" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-17" value="beachData (name, rating)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="240" y="360" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-18" value="beachData (name, rating)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="380" y="399" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-19" value="beachData (name, rating)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="780" y="399" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-20" value="average rating" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="440" y="360" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6MXwMb472Ba8hpzd8eE3-21" value="average rating" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="580" y="399" width="140" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="y3yryzUlaL3xF4mGTD4W" name="sd2">
+    <mxGraphModel dx="1357" dy="1042" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="OQIqV6rDv0z3_rKgiIkS-0" />
+        <mxCell id="OQIqV6rDv0z3_rKgiIkS-1" parent="OQIqV6rDv0z3_rKgiIkS-0" />
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" source="sZ1JqiEuVWyJHiGJmZAO-0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="160.00000000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sZ1JqiEuVWyJHiGJmZAO-0" value="Calculate and return the average rating of all beaches tested" style="rounded=0;whiteSpace=wrap;html=1;" parent="OQIqV6rDv0z3_rKgiIkS-1" vertex="1">
+          <mxGeometry x="480" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L-aQ0jpaeqDVNCmx5HkQ-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="OQIqV6rDv0z3_rKgiIkS-1" source="hTLjSotA2A6DkIaSPNHa-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="219.9565217391305" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTLjSotA2A6DkIaSPNHa-0" value="Set total to 0" style="rounded=0;whiteSpace=wrap;html=1;" parent="OQIqV6rDv0z3_rKgiIkS-1" vertex="1">
+          <mxGeometry x="160" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L-aQ0jpaeqDVNCmx5HkQ-0" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="OQIqV6rDv0z3_rKgiIkS-1" source="hTLjSotA2A6DkIaSPNHa-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="379.9565217391305" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTLjSotA2A6DkIaSPNHa-1" value="Set counter to 0" style="rounded=0;whiteSpace=wrap;html=1;" parent="OQIqV6rDv0z3_rKgiIkS-1" vertex="1">
+          <mxGeometry x="320" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="160.00000000000006" as="targetPoint" />
+            <mxPoint x="540" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" source="geFPgHw_4AP6-MKbcpsg-0" target="hTLjSotA2A6DkIaSPNHa-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" source="hTLjSotA2A6DkIaSPNHa-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTLjSotA2A6DkIaSPNHa-3" value="Is rating of current&amp;nbsp;beach&lt;br&gt;not 5?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="OQIqV6rDv0z3_rKgiIkS-1" vertex="1">
+          <mxGeometry x="480" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" source="hTLjSotA2A6DkIaSPNHa-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTLjSotA2A6DkIaSPNHa-4" value="Add current beach rating onto total" style="rounded=0;whiteSpace=wrap;html=1;" parent="OQIqV6rDv0z3_rKgiIkS-1" vertex="1">
+          <mxGeometry x="400" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" source="hTLjSotA2A6DkIaSPNHa-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTLjSotA2A6DkIaSPNHa-5" value="Increment counter" style="rounded=0;whiteSpace=wrap;html=1;" parent="OQIqV6rDv0z3_rKgiIkS-1" vertex="1">
+          <mxGeometry x="560" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" source="hTLjSotA2A6DkIaSPNHa-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="160.00000000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTLjSotA2A6DkIaSPNHa-6" value="Set average =&lt;br&gt;total / counter" style="rounded=0;whiteSpace=wrap;html=1;" parent="OQIqV6rDv0z3_rKgiIkS-1" vertex="1">
+          <mxGeometry x="640" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" source="hTLjSotA2A6DkIaSPNHa-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="160.00000000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTLjSotA2A6DkIaSPNHa-7" value="Return average" style="rounded=0;whiteSpace=wrap;html=1;" parent="OQIqV6rDv0z3_rKgiIkS-1" vertex="1">
+          <mxGeometry x="800" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-0" value="" style="endArrow=none;html=1;rounded=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="160" as="sourcePoint" />
+            <mxPoint x="860" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-8" value="" style="endArrow=none;html=1;rounded=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="400" as="sourcePoint" />
+            <mxPoint x="620" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwSbSYo890QdJTGpG2CS-12" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="OQIqV6rDv0z3_rKgiIkS-1" vertex="1">
+          <mxGeometry x="540" y="360" width="35" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="geFPgHw_4AP6-MKbcpsg-0" value="Start loop for each beach" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="OQIqV6rDv0z3_rKgiIkS-1">
+          <mxGeometry x="480" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="-65MMJa98XR-SLxgQzdf" name="sd3">
+    <mxGraphModel dx="882" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="SK5PjooyzxlGsHFOmJS3-0" />
+        <mxCell id="SK5PjooyzxlGsHFOmJS3-1" parent="SK5PjooyzxlGsHFOmJS3-0" />
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="SK5PjooyzxlGsHFOmJS3-1" source="DG-KQx9kqPIrMwoJjBeH-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="160.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-1" value="Display all the beaches with a rating entered by the user" style="rounded=0;whiteSpace=wrap;html=1;" parent="SK5PjooyzxlGsHFOmJS3-1" vertex="1">
+          <mxGeometry x="580" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="SK5PjooyzxlGsHFOmJS3-1" source="DG-KQx9kqPIrMwoJjBeH-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="160.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-4" value="Get rating of&lt;div&gt;beaches to be displayed from user&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="SK5PjooyzxlGsHFOmJS3-1" vertex="1">
+          <mxGeometry x="480" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="SK5PjooyzxlGsHFOmJS3-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="160.0000000000001" as="targetPoint" />
+            <mxPoint x="740" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="SK5PjooyzxlGsHFOmJS3-1" source="AgqUIrG0IdePmLZ5QQ_V-0" target="DG-KQx9kqPIrMwoJjBeH-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-10" value="Is rating of&lt;div&gt;current beach = rating entered by user?&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="SK5PjooyzxlGsHFOmJS3-1" vertex="1">
+          <mxGeometry x="670" y="300" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="SK5PjooyzxlGsHFOmJS3-1" source="DG-KQx9kqPIrMwoJjBeH-12" target="DG-KQx9kqPIrMwoJjBeH-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-12" value="Display beach name" style="rounded=0;whiteSpace=wrap;html=1;" parent="SK5PjooyzxlGsHFOmJS3-1" vertex="1">
+          <mxGeometry x="680" y="414" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-19" value="" style="endArrow=none;html=1;rounded=0;" parent="SK5PjooyzxlGsHFOmJS3-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="160.0000000000001" as="sourcePoint" />
+            <mxPoint x="740" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DG-KQx9kqPIrMwoJjBeH-21" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="SK5PjooyzxlGsHFOmJS3-1" vertex="1">
+          <mxGeometry x="740" y="370" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AgqUIrG0IdePmLZ5QQ_V-0" value="Start loop for each beach" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="SK5PjooyzxlGsHFOmJS3-1">
+          <mxGeometry x="680" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="eElglvFw2ssS13DUvW9c" name="sd4">
+    <mxGraphModel dx="882" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="HdegINQqVdehJLrcX9un-0" />
+        <mxCell id="HdegINQqVdehJLrcX9un-1" parent="HdegINQqVdehJLrcX9un-0" />
+        <mxCell id="VH_MAagDwC2jwEN69QPw-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;fontColor=default;endArrow=none;endFill=0;strokeColor=default;fillColor=default;" parent="HdegINQqVdehJLrcX9un-1" target="Ci4gckJeBxcbUtghpgi0-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="200" as="sourcePoint" />
+            <mxPoint x="540" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="twLuSU5kZl1m0tZY_fVv-3" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="HdegINQqVdehJLrcX9un-1" source="t3ru6My8IMnPb4qOaEd8-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t3ru6My8IMnPb4qOaEd8-1" value="Display beach name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;" parent="HdegINQqVdehJLrcX9un-1" vertex="1">
+          <mxGeometry x="520" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t3ru6My8IMnPb4qOaEd8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;fillColor=default;strokeColor=default;labelBackgroundColor=default;fontColor=default;" parent="HdegINQqVdehJLrcX9un-1" source="t3ru6My8IMnPb4qOaEd8-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="200.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t3ru6My8IMnPb4qOaEd8-3" value="Set position of space character to 0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;labelBackgroundColor=default;fontColor=default;" parent="HdegINQqVdehJLrcX9un-1" vertex="1">
+          <mxGeometry x="320" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VH_MAagDwC2jwEN69QPw-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;fontColor=default;endArrow=none;endFill=0;strokeColor=default;fillColor=default;" parent="HdegINQqVdehJLrcX9un-1" source="Ci4gckJeBxcbUtghpgi0-1" target="VH_MAagDwC2jwEN69QPw-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VH_MAagDwC2jwEN69QPw-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;fontColor=default;endArrow=none;endFill=0;strokeColor=default;fillColor=default;" parent="HdegINQqVdehJLrcX9un-1" source="t3ru6My8IMnPb4qOaEd8-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="780" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="twLuSU5kZl1m0tZY_fVv-0" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="HdegINQqVdehJLrcX9un-1" source="t3ru6My8IMnPb4qOaEd8-7" target="t3ru6My8IMnPb4qOaEd8-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3ru6My8IMnPb4qOaEd8-7" value="is position = 0?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;" parent="HdegINQqVdehJLrcX9un-1" vertex="1">
+          <mxGeometry x="720" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t3ru6My8IMnPb4qOaEd8-9" value="Display whole&lt;div&gt;beach name&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;" parent="HdegINQqVdehJLrcX9un-1" vertex="1">
+          <mxGeometry x="640" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t3ru6My8IMnPb4qOaEd8-10" value="" style="endArrow=none;html=1;rounded=0;strokeColor=default;labelBackgroundColor=default;fontColor=default;fillColor=default;" parent="HdegINQqVdehJLrcX9un-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="200" as="sourcePoint" />
+            <mxPoint x="780" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VH_MAagDwC2jwEN69QPw-0" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;labelBackgroundColor=default;" parent="HdegINQqVdehJLrcX9un-1" vertex="1">
+          <mxGeometry x="820" y="310" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="twLuSU5kZl1m0tZY_fVv-1" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="HdegINQqVdehJLrcX9un-1" source="VH_MAagDwC2jwEN69QPw-3" target="t3ru6My8IMnPb4qOaEd8-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VH_MAagDwC2jwEN69QPw-3" value="Display beach name from the first character to the position of space" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;" parent="HdegINQqVdehJLrcX9un-1" vertex="1">
+          <mxGeometry x="800" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VH_MAagDwC2jwEN69QPw-9" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;labelBackgroundColor=default;" parent="HdegINQqVdehJLrcX9un-1" vertex="1">
+          <mxGeometry x="700" y="310" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VH_MAagDwC2jwEN69QPw-10" value="Update position if&lt;br&gt;first space character found" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;" parent="HdegINQqVdehJLrcX9un-1" vertex="1">
+          <mxGeometry x="480" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ci4gckJeBxcbUtghpgi0-1" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;repeat for&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;each character in&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;beach name&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="HdegINQqVdehJLrcX9un-1">
+          <mxGeometry x="480" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p2ESi20SA27pLVdW0gfn" name="sd5">
+    <mxGraphModel dx="882" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-0" />
+        <mxCell id="xt813f9rjwWbC4HTuN2M-1" parent="xt813f9rjwWbC4HTuN2M-0" />
+        <mxCell id="xt813f9rjwWbC4HTuN2M-8" value="(excellent water quality and local sewage treatment)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="270" y="260" width="290" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-9" value="(good water quality)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="270" y="280" width="290" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-10" value="(water quality meets minimum standards)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="270" y="300" width="290" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-11" value="(water quality below minimum standards)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="270" y="320" width="290" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-12" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="270" y="340" width="290" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-28" value="Rating" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;fontStyle=1" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="560" y="240" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-34" value="1" style="rounded=0;whiteSpace=wrap;html=1;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="560" y="260" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-35" value="2" style="rounded=0;whiteSpace=wrap;html=1;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="560" y="280" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-36" value="3" style="rounded=0;whiteSpace=wrap;html=1;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="560" y="300" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-37" value="4" style="rounded=0;whiteSpace=wrap;html=1;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="560" y="320" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-38" value="5" style="rounded=0;whiteSpace=wrap;html=1;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="560" y="340" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-41" value="Poor" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="210" y="300" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-42" value="Fail" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="210" y="320" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-43" value="Not tested" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="210" y="340" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-44" value="Excellent" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="210" y="260" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xt813f9rjwWbC4HTuN2M-45" value="Good" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="xt813f9rjwWbC4HTuN2M-1" vertex="1">
+          <mxGeometry x="210" y="280" width="60" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
