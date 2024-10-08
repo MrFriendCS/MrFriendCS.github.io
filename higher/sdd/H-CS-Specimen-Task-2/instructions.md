@@ -87,7 +87,7 @@ displays the complete name of each beach.
 
 The program is redesigned so that if the beach name is longer than one word, only the first word is displayed.
 
-For example: ___Aberdaron Beach___ becomes ___Aberdaron___
+For example: `Aberdaron Beach` becomes `Aberdaron`
 
 A refinement of 'Display beach name' is shown on the following page. This finds the position of the first space character in the string and displays only the characters up to this position.
 
