@@ -1,29 +1,26 @@
 # Title: H CS Specimen Task 2
 # Author: Mr Friend
-# Date: 15 Nov 2021
+# Date: 8 Oct 2024
 
-# Import code for records
+# Get extra code
 from dataclasses import dataclass
 
 
 # Define the record
 @dataclass
-class beach:
+class Beach:
+    """A record to represent a beach and its rating."""
     name: str = ""
     rating: int = 0
 
 
 def getBeachData():
-    '''
-    Read in beach names and ratings from file
-    '''
+    """Read in beach names and ratings from file."""
 
-    # Declare local variables and datatypes
+    # Initialise local variables and datatypes
     line = ""
-    name = ""
-    rating = 0
-    tempArray = [""] * 2
-    beaches = [beach()] * 973
+    data = [""] * 2
+    beaches = [Beach() for index in range (973)]
 
     # Connect to the file
     file = open("beachData.csv", "r")
@@ -34,25 +31,20 @@ def getBeachData():
         # Read a line from the file
         line = file.readline()
 
-        # Split line
-        tempArray = line.split(",")
-
-        # Get data
-        name = tempArray[0].strip()
-        rating = int(tempArray[1].strip())
+        # Split line at comma
+        data = line.split(",")
 
         # Add a record to array
-        beaches[index] = beach(name, rating)
+        beaches[index].name = data[0].strip()
+        beaches[index].rating = int(data[1].strip())
 
     return beaches
 
 
 def calcAverage(beaches):
-    '''
-    Calculate and return the average rating of the beaches tested
-    '''
+    """Calculate and return the average rating of the beaches tested."""
 
-    # Declare local variables
+    # Initialise local variables
     total = 0
     counter = 0
     average = 0.0
@@ -76,19 +68,15 @@ def calcAverage(beaches):
 
 
 def displayAverage(average):
-    '''
-    Display the average rating of all beaches tested
-    '''
+    """Display the average rating of all beaches tested."""
 
     print("The average rating for all beaches tested is " + str(average))
 
 
 def displayBeaches(beaches):
-    '''
-    Display all the beaches with a rating entered by the user
-    '''
+    """Display all the beaches with a rating entered by the user."""
 
-    # Declare local variables
+    # Initialise local variables
     userRating = 0
 
     # Get rating from user
@@ -133,22 +121,25 @@ def displayBeaches(beaches):
                 beaches[index].name[0:position]
 
 
-#
-## Main program
-#
+def main():
+    """Main program."""
+    
+    # Variables and datatypes
+    averageRating = 0.0
+    beachData = [Beach() for index in range(973)]
 
-# Declare global variables and datatypes
-averageRating = 0.0
-beachData = [beach()] * 973  # Array of record
+    # Read in beach names and ratings from file
+    beachData = getBeachData()
 
-# Read in beach names and ratings from file
-beachData = getBeachData()
+    # Calculate and return the average rating of the beaches tested
+    averageRating = calcAverage(beachData)
 
-# Calculate and return the average rating of the beaches tested
-averageRating = calcAverage(beachData)
+    # Display the average rating of all beaches tested
+    displayAverage(averageRating)
 
-# Display the average rating of all beaches tested
-displayAverage(averageRating)
+    # Display all the beaches with a rating entered by the user
+    displayBeaches(beachData)
 
-# Display all the beaches with a rating entered by the user
-displayBeaches(beachData)
+
+# Call main()
+main()
