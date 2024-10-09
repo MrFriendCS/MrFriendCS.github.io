@@ -31,10 +31,30 @@ The grades are to be stored so they can be used later.
 
 ### Example user interface
 
+#### Input
+
 ```
+Grade Calculator
+----------------
+
+Mark 1: 65
+Mark 2: 45
+Mark 3: 85
+Mark 4: 20
+Mark 5: 55
+```
+
+#### Output
+
+```
+Grades
+------
+
 Grade 1: B
 Grade 2: D
 Grade 3: A
 Grade 4: No Award
 Grade 5: C
+
+=====
 ```
