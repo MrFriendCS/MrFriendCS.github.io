@@ -27,3 +27,14 @@ The grades are to be stored so they can be used later.
 ### Top level design (Structure diagram)
 
 ![Structure Diagram](assets/sd4.png)
+
+
+### Example user interface
+
+```
+Grade 1: B
+Grade 2: D
+Grade 3: A
+Grade 4: No Award
+Grade 5: C
+```
