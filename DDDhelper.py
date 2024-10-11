@@ -25,7 +25,7 @@ getHair()
 getEye()
 """
 
-def getForename():
+def getForename() -> str:
     """Pick a random forename."""
     
     forenames = ["Alan", "Alanna", "Andrew", "Angus", "Anthony", "Callum",
@@ -39,7 +39,7 @@ def getForename():
     return forename
 
 
-def getSurname():
+def getSurname() -> str:
     """Pick a random surname."""
     
     surnames = ["Blake", "Blackie", "Brown", "Campbell", "Clark", "Davidson",
@@ -56,7 +56,7 @@ def getSurname():
     return surname
 
 
-def getPhone(percentMobile=50):
+def getPhone(percentMobile=50) -> str:
     """Pick a random phone number - landline and mobile."""
     
     phoneNo = ""
@@ -73,7 +73,7 @@ def getPhone(percentMobile=50):
     return phoneNo
 
 
-def getEmail(forename="", surname="", percentNull=0):
+def getEmail(forename="", surname="", percentNull=0) -> str:
     """Create a random email address."""
     
     if forename == "":
@@ -110,7 +110,7 @@ def getEmail(forename="", surname="", percentNull=0):
     return email
 
 
-def getDate(min=2024, max=2024):
+def getDate(min=2024, max=2024) -> str:
     """Create a random date (yyyy-mm-dd)."""
     
     day = random.randint(1, 30)
@@ -137,7 +137,7 @@ def getDate(min=2024, max=2024):
     return date
 
 
-def getNights(min=1, max=14):
+def getNights(min=1, max=14) -> int:
     """Pick random number of nights."""
     
     nights = random.randint(min, max)
@@ -145,7 +145,7 @@ def getNights(min=1, max=14):
     return nights
 
 
-def getPrice(min=1, max=10, pence=True):
+def getPrice(min=1, max=10, pence=True) -> float:
     """Pick a random price, with pence"""
     
     price = random.randint(int(min * 100), int(max * 100))
@@ -159,7 +159,7 @@ def getPrice(min=1, max=10, pence=True):
     return price
 
 
-def getTrue(percentTrue=50):
+def getTrue(percentTrue=50) -> bool:
     """Pick a random Boolean value."""
     
     chance = random.randint(1, 100)
@@ -172,7 +172,7 @@ def getTrue(percentTrue=50):
     return result
 
 
-def getNumber(min=0, max=100):
+def getNumber(min=0, max=100) -> int:
     """Pick a random number."""
     
     number = random.randint(min, max)
@@ -180,7 +180,7 @@ def getNumber(min=0, max=100):
     return number
 
 
-def getVRN():
+def getVRN() -> str:
     """Pick a random vehicle registration number."""
    
     # Declare local variables
@@ -224,7 +224,7 @@ def getVRN():
     return vehReg
 
 
-def getMake():
+def getMake() -> str:
     """Pick a random vehicle make."""
     
     # Initialise local variables
@@ -238,7 +238,7 @@ def getMake():
     return make
 
 
-def getModel(make=""):
+def getModel(make="") -> str:
     """Pick a random vehicle model."""
     
     # Initialise local variables
@@ -333,7 +333,7 @@ def getModel(make=""):
     return model
 
 
-def getColour():
+def getColour() -> str:
     """Pick a random colour."""
     
     # Initialise local variable
@@ -345,7 +345,7 @@ def getColour():
     return colour
 
 
-def getGift():
+def getGift() -> str:
     """Pick a random gift."""
     
     # Initialise local variable
@@ -363,7 +363,7 @@ def getGift():
     return gift
 
 
-def getHair():
+def getHair() -> str:
     """Pick a random hair colour."""
     
     # Initialise local variable
@@ -375,7 +375,7 @@ def getHair():
     return colour
 
 
-def getEye():
+def getEye() -> str:
     """Pick a random eye colour."""
     
     # Initialise local variable
@@ -387,7 +387,7 @@ def getEye():
     return colour
 
 
-def getConviction():
+def getConviction() -> str:
     """Pick a random eye colour."""
     
     # Initialise local variable
