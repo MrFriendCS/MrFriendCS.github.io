@@ -1,13 +1,14 @@
+/*
 -- Don't change lines 1 to 5
 .open WestFifeWalkers.db
 .headers on
 .mode column
 -- Don't change lines 1 to 5
+*/
 
-.print H CS 2022 Task 2B
+-- H CS 2022 Task 2B
 
-.print
-.print Q2b
+-- Q2b
 SELECT forename, surname, Planner.plannerNo,
         COUNT(walkID) AS [Total participants]
     FROM Planner, Route, Walk
@@ -17,14 +18,13 @@ SELECT forename, surname, Planner.plannerNo,
     ORDER BY [Total participants] DESC;
 
 
-.print
-.print Q2c
+-- Q2c
+-- Find longest
 CREATE TEMP VIEW longest (maxDistance) AS
     SELECT MAX(distance)
     FROM Route;
 
-.print
-
+-- Use most longest
 SELECT Walker.walkerNo, forename, surname, telNo
     FROM Walker, Walk, Route, longest
     WHERE Walker.walkerNo = Walk.walkerNo
@@ -34,8 +34,7 @@ SELECT Walker.walkerNo, forename, surname, telNo
         Walker.surname, Walker.telNo;
 
 
-.print
-.print Q2d
+-- Q2d
 
 SELECT Route.routeID, woodName, description 
     FROM Route 
@@ -43,11 +42,7 @@ SELECT Route.routeID, woodName, description
         OR footwear = "Waterproof shoes" 
         OR footwear = "Walking shoes";
 
-.print
 
 SELECT Route.routeID, woodName, description 
     FROM Route 
     WHERE footwear LIKE "%shoes";
-
-
-.print
