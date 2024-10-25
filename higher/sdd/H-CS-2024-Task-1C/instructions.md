@@ -117,7 +117,7 @@ __1d__	Step 2 of the program is tested with the following sample test data.
 Grap,724,375000
 Ver,163,1031000
 Meto,728,816000
-TelTo,252, 1031000
+TelTo,252,1031000
 Selop,555,842000
 Sever,307,569000
 Lehar,805,564000
