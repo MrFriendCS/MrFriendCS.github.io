@@ -7,7 +7,7 @@ A research organisation currently gathers and stores data on the salaries paid t
 
 ## Purpose
 
-A CSV file stores the following data about the 100 companies:
+A CSV file (![companies.csv](assets/companies.csv "Companies data")) stores the following data about the 100 companies:
 
 * company name
 * number of employees
@@ -37,10 +37,6 @@ The highest number of employees employed by a single company is 888.
 
 * the external file is current and updated regularly 
 
-A copy of the data is in the file below:
-
-![Companies data](assets/companies.csv "Companies data")
- 
 
 ## Design
 
