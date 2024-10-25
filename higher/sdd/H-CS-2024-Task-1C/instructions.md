@@ -7,7 +7,7 @@ A research organisation currently gathers and stores data on the salaries paid t
 
 ## Purpose
 
-A CSV file (![companies.csv](assets/companies.csv "Companies data")) stores the following data about the 100 companies:
+A CSV file ([companies.csv](assets/companies.csv "Download")) stores the following data about the 100 companies:
 
 * company name
 * number of employees
