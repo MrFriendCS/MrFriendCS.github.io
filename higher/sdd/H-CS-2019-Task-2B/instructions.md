@@ -2,7 +2,7 @@
 
 ## Problem description 
 
-Once a year a walking club asks all its members to submit the total number of miles they have walked.  The club collates this information in a text file.  A section of the .txt file, which includes the names of members and the total miles they walked, is shown below. 
+Once a year a walking club asks all its members to submit the total number of miles they have walked.  The club collates this information in a text file.  A section of the [members.txt](assets/members.txt "Download file") file, which includes the names of members and the total miles they walked, is shown below. 
  
 ```
 … 
@@ -23,12 +23,12 @@ The design for the walking club program is shown below.
 
 ## Program top-level design (pseudocode)
 
-| Step | Data Flow |
-| :--- | :-------- |
+| Step                                                  | Data Flow |
+| :---                                                  | :-------- |
 | 1. Read members’ data from file into array of records | __OUT__: members(forename,surname,distance) |
-| 2. Find the furthest distance walked | __IN__: members(forename,surname,distance) <br> __OUT__: furthest |
-| 3. Display the furthest distance walked | __IN__: furthest |
-| 4. Write club prize winners to file | __IN__: members(forename,surname,distance), furthest |
+| 2. Find the furthest distance walked                  | __IN__: members(forename,surname,distance) <br> __OUT__: furthest |
+| 3. Display the furthest distance walked               | __IN__: furthest |
+| 4. Write club prize winners to file                   | __IN__: members(forename,surname,distance), furthest |
 
 ### Refinements
 
