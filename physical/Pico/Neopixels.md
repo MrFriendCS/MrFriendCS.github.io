@@ -1,7 +1,5 @@
 # Neopixels
 
-Using Picozero to control a strip of Neopixels.
-
 ## Layout
 
 ![Servo Layout](media/neopixel.png)
@@ -9,74 +7,83 @@ Using Picozero to control a strip of Neopixels.
 ## Code
 
 ``` python
+# Title: Neopixel Example
+# Author: Mr Friend
+# Date: 8 Nov 2024
+
+# Note: Kitronik ZIP Stick, 35129 - 5 LEDS
+
+# Get extra code
+import machine
 import time
-from neopixel import Neopixel
-# https://github.com/blaz-r/pi_pico_neopixel
+from neopixel import NeoPixel
 
-# Kitronik ZIP Stick, 35129 - 5 LEDS
-numOfPixels = 5
-mode = "GRB"
+# Connection values
+gpio = machine.Pin(28)
+noOfPixels = 5
 
-gpio = 28  # Data In
+# Setup LEDs
+pixels = NeoPixel(gpio, noOfPixels)
 
-pixels = Neopixel(numOfPixels, 0, gpio, mode)
-  
-red = (255, 0, 0)
-green = (0, 255, 0)
-blue = (0, 0, 255)
-yellow = (225, 225, 0)
-cyan = (0, 255, 255)
-black = (0, 0, 0)  # Fully off
-white = (255, 255, 255)  # Fully on
+# Colours - Quarter brightness
+red =    (64, 0, 0)
+green =  (0, 64, 0)
+blue =   (0, 0, 64)
+yellow = (64, 64, 0)
+cyan =   (0, 64, 64)
+black =  (0, 0, 0) 
+white =  (64, 64, 64)
 
-pixels.brightness(25)
+colours = [red, yellow, green, cyan, blue, white]
 
-colours = [red, yellow, green, cyan, blue]
 
+# Display each colour in turn
+for index in range(len(colours)):
+    
+    # All LEDs the same colour
+    pixels.fill(colours[index])
+    
+    # Display LEDs
+    pixels.write()
+    
+    # Short pause
+    time.sleep(1)
+
+
+# Set individual LED colours
+pixels[0] = blue
+pixels[1] = yellow
+pixels[2] = green
+pixels[3] = cyan
+pixels[4] = red
+
+# Display LEDs
+pixels.write()
+
+
+# Loop forever
 while True:
-    
-    # Turn each LED on - various colours
-    for index in range(5):
-        pixels.set_pixel(index, colours[index])
-        pixels.show()
-        time.sleep(0.5)
-    
-    # Rotate right 4 times
-    for counter in range(4):
-        pixels.rotate_right()
-        pixels.show()
-        time.sleep(0.5)
-    
-    # Rotate left 4 times
-    for counter in range(4):
-        pixels.rotate_left()
-        pixels.show()
-        time.sleep(0.5)
-    
-    # Switch LEDs between two colours
-    for counter in range(3):
-        # Turn all LEDs white (fully on)
-        pixels.fill(white)
-        pixels.show()
-        time.sleep(0.5)
-        
-        # Turn all LEDs black (fully off)
-        pixels.fill(black)
-        pixels.show()
-        time.sleep(0.5)
-        
-    # Display a gradient between two colours 
-    pixels.set_pixel_line_gradient(0, 4, yellow, red)
-    pixels.show()
-    time.sleep(1)
-    
-    # Fill a section
-    pixels.set_pixel_line(1, 3, green)
-    pixels.show()
-    time.sleep(1)
-        
-    # Turn all LEDs off
-    pixels.clear()
-    pixels.show()
-    time.sleep(1)
+
+    # Rotate LEDs
+    for counter in range(noOfPixels):
+
+        # Short pause
+        time.sleep(1)
+
+        # Get colour of first LED
+        tempPixel = pixels[0]
+
+        # Loop for reamining LEDs
+        for index in range(noOfPixels-1):
+            
+            # Move colour from one LED to next
+            pixels[index] = pixels[index+1]
+            
+        # Set colour of last LED    
+        pixels[noOfPixels-1] = tempPixel
+
+        # Display LEDs
+        pixels.write()
+
+
 ```
