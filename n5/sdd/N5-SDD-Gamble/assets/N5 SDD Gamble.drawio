@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram id="k8fjhn-RSbzLbYJLMaBn" name="sd">
-    <mxGraphModel dx="882" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="245" dy="188" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="g5B5vSVlvZt4Q3H2A_YF-0" />
         <mxCell id="g5B5vSVlvZt4Q3H2A_YF-1" parent="g5B5vSVlvZt4Q3H2A_YF-0" />
@@ -64,7 +64,7 @@
         <mxCell id="wKgI8id6guEbUg2TfhM8-31" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.375;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="g5B5vSVlvZt4Q3H2A_YF-1" source="wKgI8id6guEbUg2TfhM8-14" target="wKgI8id6guEbUg2TfhM8-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wKgI8id6guEbUg2TfhM8-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.625;exitY=1;exitDx=0;exitDy=0;entryX=0.482;entryY=-0.049;entryDx=0;entryDy=0;endArrow=none;endFill=0;entryPerimeter=0;" parent="g5B5vSVlvZt4Q3H2A_YF-1" source="wKgI8id6guEbUg2TfhM8-14" target="wKgI8id6guEbUg2TfhM8-30" edge="1">
+        <mxCell id="wKgI8id6guEbUg2TfhM8-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.625;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="g5B5vSVlvZt4Q3H2A_YF-1" source="wKgI8id6guEbUg2TfhM8-14" target="wKgI8id6guEbUg2TfhM8-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wKgI8id6guEbUg2TfhM8-14" value="Is&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;die = 2?&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="g5B5vSVlvZt4Q3H2A_YF-1" vertex="1">
