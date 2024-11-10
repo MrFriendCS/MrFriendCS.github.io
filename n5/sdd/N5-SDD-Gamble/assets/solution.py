@@ -14,11 +14,11 @@ total = 0.0
 
 
 # Header
-print("\nPadula's Lucky Die")
-print("------------------")
+print("\nPadula's 10-Sided Lucky Die")
+print("---------------------------")
 print("Only play if you can afford to lose.")
 print("Throw a 2 and pay double!")
-print("------------------")
+print("---------------------------")
 
 
 # Get valid price

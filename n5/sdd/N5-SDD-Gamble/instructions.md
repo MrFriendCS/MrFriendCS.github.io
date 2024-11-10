@@ -28,11 +28,11 @@ A small program is now needed to replace the physical die.
 ## User experience
 
 ```
-Padula's Lucky Die
-------------------
+Padula's 10-Sided Lucky Die
+---------------------------
 Only play if you can afford to lose.
 Throw a 2 and pay double!
-------------------
+---------------------------
 
 Price: £2.94
 
