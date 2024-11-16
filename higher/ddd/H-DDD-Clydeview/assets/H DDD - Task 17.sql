@@ -1,4 +1,4 @@
--- Task 17
+-- H SDD - Task 17
 
 -- Q1
 SELECT title, hotelName, kmFromAirport, 

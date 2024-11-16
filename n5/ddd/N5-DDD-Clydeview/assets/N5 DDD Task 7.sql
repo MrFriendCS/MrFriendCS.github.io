@@ -1,4 +1,4 @@
--- Task 7
+-- N5 DDD - Task 7
 
 -- Q1
 SELECT forename, surname
