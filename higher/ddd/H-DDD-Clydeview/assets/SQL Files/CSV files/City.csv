@@ -1,0 +1,3112 @@
+CityID,cityName,countryCode,Population,Longitude,Latitude
+1,Tirane,AL,192000,19.8,41.3
+2,Shkoder,AL,62000,19.2,42.2
+3,Durres,AL,60000,19.3,41.3
+4,Vlore,AL,56000,19.3,40.3
+5,Elbasan,AL,53000,20.1,41.1
+6,Korce,AL,52000,20.5,40.4
+7,Komotini,GR,,,
+8,Kavalla,GR,56705,,
+9,Athens,GR,885737,23.7167,37.9667
+10,Piraeus,GR,196389,,
+11,Patrai,GR,142163,,
+12,Kozani,GR,,,
+13,Korfu,GR,,,
+14,Ioannina,GR,,,
+15,Thessaloniki,GR,406413,22.95,40.6167
+16,Iraklion,GR,102398,,
+17,Ermoupoli,GR,,,
+18,Tripoli,GR,,,
+19,Lamia,GR,,,
+20,Larisa,GR,102426,,
+21,Volos,GR,71378,,
+22,Mytilini,GR,,,
+23,Skopje,MK,506926,21.4,42
+24,Belgrade,SRB,1407073,20.4667,44.8
+25,Podgorica,MNE,169132,19.16,42.26
+26,Pristina,KOS,,21.1,42.4
+27,Andorra la Vella,AND,15600,1.3,42.3
+28,Strasbourg,F,252338,7.76667,48.5833
+29,Mulhouse,F,108357,,
+30,Bordeaux,F,210336,-0.4,44.51
+31,Clermont Ferrand,F,136181,3.4,45.5
+32,Caen,F,112846,-0.2,49.3
+33,Rennes,F,197536,-1.4,48.1
+34,Brest,F,147956,,
+35,Dijon,F,146703,5.2,47.2
+36,Orleans,F,105111,1.5,47.5
+37,Tours,F,129509,,
+38,Reims,F,180620,4.5,49.1
+39,Chalons en Champagne,F,,4.4,49
+40,Ajaccio,F,53500,8.4,41.4
+41,Besancon,F,113828,6.2,47.1
+42,Rouen,F,102723,1.5,49.3
+43,Le Havre,F,195854,,
+44,Paris,F,2152423,2.48333,48.8167
+45,Boulogne Billancourt,F,101743,,
+46,Montpellier,F,207996,3.5,43.3
+47,Nimes,F,128471,,
+48,Perpignan,F,105983,,
+49,Limoges,F,133464,1.2,45.5
+50,Metz,F,119594,6.2,49.1
+51,Nancy,F,99351,6.1,48.4
+52,Toulouse,F,358688,1.2,43.4
+53,Lille,F,172142,3.3,50.37
+54,Nantes,F,244995,-1.56667,47.25
+55,Angers,F,141404,,
+56,Le Mans,F,145502,,
+57,Amiens,F,131872,2.19,49.55
+58,Poitiers,F,79300,0.2,46.4
+59,Marseille,F,800550,5.2,43.2
+60,Nice,F,342439,7.26667,43.7
+61,Toulon,F,167619,,
+62,Aix en Provence,F,123842,,
+63,Lyon,F,415487,4.78333,45.7
+64,Grenoble,F,150758,,
+65,Saint Etienne,F,199396,,
+66,Villeurbanne,F,116872,,
+67,Sevilla,E,714148,,
+68,Almeria,E,167361,,
+69,Cadiz,E,155438,-6.2,36.3
+70,Cordoba,E,315948,,
+71,Granada,E,271180,,
+72,Huelva,E,145049,,
+73,Malaga,E,531443,,
+74,Jerez de la Frontera,E,190390,,
+75,Jaen,E,112772,,
+76,Algeciras,E,103787,,
+77,Zaragoza,E,606620,,
+78,Oviedo,E,201712,,
+79,Gijon,E,269644,,
+80,Palma de Mallorca,E,322008,,
+81,Vitoria Gasteiz,E,214148,,
+82,Bilbao,E,371876,,
+83,Baracaldo,E,103594,,
+84,Donostia,E,177929,,
+85,Santa Cruz de Tenerife,E,203929,,
+86,Las Palmas de Gran Canari,E,371787,,
+87,La Laguna,E,125183,,
+88,Santander,E,194822,,
+89,Valladolid,E,336917,,
+90,Burgos,E,166251,,
+91,Leon,E,147311,,
+92,Salamanca,E,167382,,
+93,Toledo,E,,,
+94,Albacete,E,141179,,
+95,Barcelona,E,1630867,2.15,41.4
+96,Lleida,E,114234,,
+97,Tarragona,E,114630,,
+98,Hospitalet de Llobregat,E,266242,,
+99,Badalona,E,219340,,
+100,Sabadell,E,189006,,
+101,Terrassa,E,161428,,
+102,Santa Coloma de Gramanet,E,131764,,
+103,Mataro,E,102117,,
+104,Badajoz,E,130153,,
+105,Merida,E,,,
+106,La Coruna,E,255087,,
+107,Vigo,E,288573,,
+108,Orense,E,108547,,
+109,Santiago de Compostella,E,,,
+110,Madrid,E,3041101,-3.68333,40.4167
+111,Mostoles,E,199141,,
+112,Leganes,E,178162,,
+113,Alcala de Henares,E,166250,,
+114,Fuenlabrada,E,158212,,
+115,Getafe,E,144368,,
+116,Alcorcon,E,142165,,
+117,Murcia,E,341531,,
+118,Cartagena,E,179659,,
+119,Pamplona,E,182465,,
+120,Logrono,E,124823,,
+121,Valencia,E,764293,-0.383333,39.4667
+122,Alicante,E,274964,,
+123,Elx,E,191305,,
+124,Castellon de la Plana,E,139094,,
+125,Eisenstadt,A,10102,16,48
+126,Klagenfurt,A,87321,14.21,46.38
+127,Bregenz,A,,9.45,47.3
+128,Vienna,A,1583000,16.3667,48.2
+129,Linz,A,203000,14.18,48.18
+130,Innsbruck,A,118000,11.22,47.17
+131,Graz,A,238000,15.26,47.4
+132,Salzburg,A,144000,13.2,47.49
+133,St. Polten,A,51102,15.38,48.13
+134,Ceske Budejovice,CZ,174000,,
+135,Brno,CZ,393000,,
+136,Zlin,CZ,198000,,
+137,Liberec,CZ,160000,,
+138,Usti nad Labem,CZ,,,
+139,Ostrava,CZ,332000,,
+140,Olomouc,CZ,225000,,
+141,Prague,CZ,1215000,14.4167,50.0833
+142,Hradec Kralove,CZ,164000,,
+143,Pardubice,CZ,163000,,
+144,Plzen,CZ,175000,,
+145,Stuttgart,D,588482,9.1,48.7
+146,Mannheim,D,316223,8.46667,49.5667
+147,Karlsruhe,D,277011,,
+148,Freiburg im Breisgau,D,198496,,
+149,Heidelberg,D,138964,,
+150,Heilbronn,D,122253,,
+151,Pforzheim,D,117960,,
+152,Ulm,D,115123,,
+153,Reutlingen,D,107782,,
+154,Munich,D,1290079,11.5667,48.15
+155,Nurnberg,D,495845,,
+156,Augsburg,D,262110,,
+157,Wurzburg,D,127946,,
+158,Regensburg,D,125608,,
+159,Ingolstadt,D,110910,,
+160,Furth,D,107799,,
+161,Erlangen,D,101450,,
+162,Berlin,D,3472009,13.3,52.45
+163,Potsdam,D,138268,13.1,52.4
+164,Cottbus,D,125643,,
+165,Bremen,D,549182,8.5,53.7
+166,Bremerhaven,D,130847,,
+167,Hamburg,D,1705872,9.96667,53.55
+168,Wiesbaden,D,266081,8.17,50.07
+169,Frankfurt am Main,D,652412,,
+170,Kassel,D,201789,,
+171,Darmstadt,D,139063,,
+172,Offenbach am Main,D,116482,,
+173,Schwerin,D,118291,11.5,53.9
+174,Rostock,D,232634,12.1,54.1
+175,Hannover,D,525763,9.66667,52.4
+176,Braunschweig,D,254130,,
+177,Osnabruck,D,168050,,
+178,Oldenburg,D,149691,,
+179,Gottingen,D,127519,,
+180,Wolfsburg,D,126965,,
+181,Salzgitter,D,117842,,
+182,Hildesheim,D,106095,,
+183,Dusseldorf,D,572638,6.8,51.2
+184,Koln,D,963817,,
+185,Essen,D,617955,,
+186,Dortmund,D,600918,,
+187,Duisburg,D,536106,,
+188,Bochum,D,401129,,
+189,Wuppertal,D,383776,,
+190,Bielefeld,D,324067,,
+191,Gelsenkirchen,D,293542,,
+192,Bonn,D,293072,7.5,50.4
+193,Monchengladbach,D,266073,,
+194,Munster,D,264887,,
+195,Krefeld,D,249662,,
+196,Aachen,D,247113,,
+197,Oberhausen,D,225443,,
+198,Hagen,D,213747,,
+199,Hamm,D,184020,,
+200,Herne,D,180029,,
+201,Mulheim an der Ruhr,D,176513,,
+202,Solingen,D,165973,,
+203,Leverkusen,D,161832,,
+204,Neuss,D,148870,,
+205,Paderborn,D,131513,,
+206,Recklinghausen,D,127139,,
+207,Remscheid,D,123069,,
+208,Bottrop,D,119669,,
+209,Siegen,D,111541,,
+210,Moers,D,107011,,
+211,Witten,D,105423,,
+212,Bergisch Gladbach,D,105122,,
+213,Mainz,D,184627,8.1,50
+214,Ludwigshafen,D,167883,,
+215,Koblenz,D,109550,,
+216,Kaiserslautern,D,101910,,
+217,Saarbrucken,D,183945,6.6,49.1
+218,Dresden,D,474443,13.7,51.05
+219,Leipzig,D,481121,,
+220,Chemnitz,D,274162,,
+221,Zwickau,D,104921,,
+222,Magdeburg,D,265379,11.6,52.1
+223,Halle,D,290051,,
+224,Kiel,D,246586,10.7,54.2
+225,Lubeck,D,216854,,
+226,Erfurt,D,213472,11,51
+227,Gera,D,126035,,
+228,Jena,D,102204,,
+229,Kecskemet,H,105000,,
+230,Bekescaba,H,,,
+231,Hodmezovasarhely,H,,,
+232,Szekesfehervar,H,109000,,
+233,Eger,H,,,
+234,Tatabanya,H,,,
+235,Salgotarjan,H,,,
+236,Kaposvar,H,,,
+237,Nyiregyhaza,H,115000,,
+238,Szolnok,H,,,
+239,Szekszard,H,,,
+240,Szombathely,H,,,
+241,Veszprem,H,,,
+242,Zalaegerszeg,H,,,
+243,Budapest,H,2016000,19.0333,47.5167
+244,Debrecen,H,216000,,
+245,Gyor,H,130000,,
+246,Miskolc,H,192000,,
+247,Pecs,H,171000,,
+248,Szeged,H,178000,,
+249,Novara,I,103349,,
+250,Turin,I,991870,7.39,45.5
+251,Aosta,I,,7.22,45.45
+252,Bergamo,I,117886,,
+253,Brescia,I,196766,,
+254,Milan,I,1432184,9.28333,45.45
+255,Monza,I,123188,,
+256,Bolzano,I,100380,11.5,46
+257,Trento,I,102124,11.5,46
+258,Padova,I,218186,,
+259,Verona,I,258946,,
+260,Vicenza,I,109333,,
+261,Venice,I,317837,12.2,45.27
+262,Trieste,I,231047,13.45,45.39
+263,La Spezia,I,103008,,
+264,Genua,I,701032,8.58,44.25
+265,Bologna,I,411803,11.22,44.3
+266,Ferrara,I,140600,,
+267,Forli,I,109755,,
+268,Modena,I,177501,,
+269,Parma,I,173991,,
+270,Piacenza,I,103536,,
+271,Ravenna,I,136724,,
+272,Reggio nellEmilia,I,131880,,
+273,Rimini,I,130896,,
+274,Livorno,I,171265,,
+275,Pisa,I,101500,,
+276,Firenze,I,408403,11.17,43.48
+277,Prato,I,166688,,
+278,Perugia,I,150576,12.2,43.1
+279,Terni,I,109809,,
+280,Ancona,I,103268,13.28,43.38
+281,Rome,I,2791354,12.6,41.8
+282,Latina,I,103630,,
+283,Pescara,I,128553,,
+284,LAquila,I,,13.2,42.24
+285,Campobasso,I,,14.5,41.5
+286,Salerno,I,151374,,
+287,Napoli,I,1206013,14.15,40.5
+288,Torre del Greco,I,102647,,
+289,Bari,I,353032,16.5,41.8
+290,Foggia,I,159541,,
+291,Lecce,I,102344,,
+292,Taranto,I,244033,,
+293,Potenza,I,,15.47,40.4
+294,Catanzaro,I,103802,16.35,38.55
+295,Cosenza,I,104483,,
+296,Reggio di Calabria,I,178496,,
+297,Palermo,I,734238,13.2,38.1
+298,Messina,I,274846,,
+299,Catania,I,364176,,
+300,Siracusa,I,125444,,
+301,Cagliari,I,211719,9.5,39.15
+302,Sassari,I,120011,,
+303,Vaduz,FL,27714,9.3,47.08
+304,Bratislava,SK,,17.1,48.1
+305,Ljubljana,SLO,,14.5,46.05
+306,Aarau,CH,,,
+307,Herisau,CH,,,
+308,Appenzell,CH,,,
+309,Liestal,CH,,,
+310,Basel,CH,172768,,
+311,Bern,CH,134393,7.3,46.6
+312,Biel,CH,53308,,
+313,Fribourg,CH,,,
+314,Geneva,CH,167697,6.9,46.12
+315,Glarus,CH,,,
+316,Chur,CH,,,
+317,Delemont,CH,,,
+318,Luzern,CH,59811,,
+319,Neuchatel,CH,,,
+320,Stans,CH,,,
+321,Sarnen,CH,,,
+322,Sankt Gallen,CH,74106,,
+323,Schaffhausen,CH,,,
+324,Schwyz,CH,,,
+325,Solothurn,CH,,,
+326,Frauenfeld,CH,,,
+327,Bellinzona,CH,,,
+328,Altdorf,CH,,,
+329,Sion,CH,,,
+330,Lausanne,CH,123149,,
+331,Zug,CH,,,
+332,Zurich,CH,343106,,
+333,Winterthur,CH,86340,,
+334,Minsk,BY,1540000,27.55,53.9
+335,Riga,LV,900000,24.1,57
+336,Vilnius,LT,566000,25.3,54.4
+337,Warsaw,PL,1655000,21.0333,52.2167
+338,Biala Podlaska,PL,,,
+339,Bialystok,PL,268000,,
+340,Bielsko Biala,PL,180000,,
+341,Bydgoszcz,PL,380000,,
+342,Chelm,PL,,,
+343,Ciechanow,PL,,,
+344,Czestochowa,PL,258000,,
+345,Elblag,PL,125000,,
+346,Gdansk,PL,465000,,
+347,Gdynia,PL,251000,,
+348,Gorzow Wielkopolski,PL,123000,,
+349,Gorzow Wielkopolskie,PL,,,
+350,Jelenia Gora,PL,,,
+351,Kalisz,PL,106000,,
+352,Katowice,PL,367000,,
+353,Jastrzebie Zdroj,PL,103000,,
+354,Sosnowiec,PL,259000,,
+355,Dabrowa Gornicza,PL,136000,,
+356,Bytom,PL,230000,,
+357,Gliwice,PL,216000,,
+358,Zabrze,PL,203000,,
+359,Tychy,PL,190000,,
+360,Ruda Slaska,PL,170000,,
+361,Rybnik,PL,143000,,
+362,Chorzow,PL,133000,,
+363,Wodzilaw Slaski,PL,111000,,
+364,Kielce,PL,213000,,
+365,Konin,PL,,,
+366,Koszalin,PL,108000,,
+367,Krakow,PL,748000,19.95,50.0667
+368,Krosno,PL,,,
+369,Legnica,PL,104000,,
+370,Leszno,PL,,,
+371,Lublin,PL,350000,,
+372,Lomza,PL,,,
+373,Lodz,PL,852000,,
+374,Nowy Sacz,PL,,,
+375,Olsztyn,PL,161000,,
+376,Opole,PL,128000,,
+377,Ostroleka,PL,,,
+378,Pila,PL,,,
+379,Piotrkow Trybunalski,PL,,,
+380,Plock,PL,122000,,
+381,Poznan,PL,589000,,
+382,Przemysl,PL,,,
+383,Radom,PL,226000,,
+384,Rzeszow,PL,151000,,
+385,Siedlce,PL,,,
+386,Sieradz,PL,,,
+387,Skierniewice,PL,,,
+388,Slupsk,PL,,,
+389,Suwalki,PL,,,
+390,Szczecin,PL,412000,,
+391,Tarnobrzeg,PL,,,
+392,Tarnow,PL,120000,,
+393,Torun,PL,201000,,
+394,Grudziadz,PL,101000,,
+395,Walbrzych,PL,141000,,
+396,Wloclawek,PL,121000,,
+397,Wroclaw,PL,642000,,
+398,Zamosc,PL,,,
+399,Zielona Gora,PL,113000,,
+400,Cherkasy,UA,297000,,
+401,Chernihiv,UA,301000,,
+402,Chernivtsi,UA,257000,,
+403,Dnipropetrovsk,UA,1187000,,
+404,Kryvyy Rih,UA,717000,,
+405,Dniprodzerzhynsk,UA,284000,,
+406,Donetsk,UA,1117000,,
+407,Mariupol,UA,520000,,
+408,Makiyivka,UA,427000,,
+409,Horlivka,UA,338000,,
+410,Ivano Frankivsk,UA,220000,,
+411,Kharkiv,UA,1618000,36.2333,50
+412,Kherson,UA,361000,,
+413,Khmelnytskyy,UA,241000,,
+414,Kiev,UA,2616000,30.5,50.45
+415,Kirovohrad,UA,274000,,
+416,Luhansk,UA,501000,,
+417,Lviv,UA,798000,,
+418,Mykolayiv,UA,508000,,
+419,Odesa,UA,1106000,30.7333,46.4833
+420,Poltava,UA,317000,,
+421,Kremenchuk,UA,238000,,
+422,Rivne,UA,233000,,
+423,Sumy,UA,296000,,
+424,Ternopil,UA,212000,,
+425,Vinnytsya,UA,379000,,
+426,Lutsk,UA,204000,,
+427,Uzhhorod,UA,,,
+428,Zaporizhzhya,UA,891000,,
+429,Zhytomyr,UA,296000,,
+430,Simferopol,UA,349000,,
+431,Sevastopol,UA,361000,,
+432,Petrozavodsk,R,280000,,
+433,Syktyvkar,R,229000,,
+434,Ukhta,R,106000,,
+435,Vorkuta,R,104000,,
+436,Arkhangelsk,R,374000,40.5333,64.55
+437,Severodvinsk,R,241000,,
+438,Vologda,R,299000,,
+439,Cherepovets,R,320000,,
+440,Murmansk,R,407000,,
+441,Kaliningrad,R,419000,20.5,54.7167
+442,Sankt Peterburg,R,4838000,,
+443,Kolpino,R,143000,,
+444,Novgorod,R,233000,,
+445,Pskov,R,207000,,
+446,Velikiye Luki,R,116000,,
+447,Bryansk,R,462000,,
+448,Vladimir,R,339000,,
+449,Kovrov,R,162000,,
+450,Murom,R,126000,,
+451,Ivanovo,R,474000,,
+452,Kineshma,R,103000,,
+453,Kaluga,R,347000,,
+454,Obninsk,R,108000,,
+455,Kostroma,R,285000,,
+456,Moscow,R,8717000,37.6667,55.7667
+457,Podolsk,R,202000,,
+458,Zelenograd,R,191000,,
+459,Lyubertsy,R,166000,,
+460,Kolomna,R,154000,,
+461,Mytishchi,R,152000,,
+462,Elektrostal,R,150000,,
+463,Serpukhov,R,139000,,
+464,Balashikha,R,136000,,
+465,Khimki,R,134000,,
+466,Odintsovo,R,129000,,
+467,Orekhovo Zuyevo,R,126000,,
+468,Noginsk,R,119000,,
+469,Shchyolkovo,R,108000,,
+470,Zagorsk,R,114000,,
+471,Orel,R,348000,,
+472,Ryazan,R,536000,,
+473,Smolensk,R,355000,,
+474,Tver,R,455000,,
+475,Tula,R,532000,,
+476,Novomoskovsk,R,144000,,
+477,Yaroslavl,R,629000,,
+478,Rybinsk,R,248000,,
+479,Yoshkar Ola,R,251000,,
+480,Saransk,R,320000,,
+481,Cheboksary,R,450000,,
+482,Novocheboksarsk,R,123000,,
+483,Kirov,R,464000,,
+484,Nizhniy Novgorod,R,1383000,44,56.3
+485,Dzerzhinsk,R,285000,,
+486,Arzamas,R,112000,,
+487,Belgorod,R,322000,,
+488,Stary Oskol,R,198000,,
+489,Voronezh,R,908000,,
+490,Kursk,R,442000,,
+491,Lipetsk,R,474000,,
+492,Yelets,R,119000,,
+493,Tambov,R,316000,,
+494,Michurinsk,R,108000,,
+495,Elista,R,,,
+496,Kazan,R,1085000,,
+497,Naberezhnye Chelny,R,526000,,
+498,Nizhnekamsk,R,210000,,
+499,Almetyevsk,R,138000,,
+500,Zelenodolysk,R,101000,,
+501,Astrakhan,R,486000,,
+502,Volgograd,R,1003000,44.5167,48.7
+503,Volzhsky,R,288000,,
+504,Kamyshin,R,128000,,
+505,Penza,R,534000,,
+506,Kuznetsk,R,100000,,
+507,Samara,R,1184000,,
+508,Tolyatti,R,702000,,
+509,Syzran,R,177000,,
+510,Novokuybyshevsk,R,115000,,
+511,Saratov,R,895000,,
+512,Balakovo,R,206000,,
+513,Engels,R,186000,,
+514,Simbirsk,R,678000,,
+515,Dimitrovgrad,R,135000,,
+516,Rostov na Donu,R,1026000,,
+517,Taganrog,R,292000,,
+518,Shakhty,R,230000,,
+519,Novocherkassk,R,190000,,
+520,Volgodonsk,R,183000,,
+521,Novoshakhtinsk,R,107000,,
+522,Rostov no Donu,R,,,
+523,Ufa,R,1094000,,
+524,Sterlitamak,R,259000,,
+525,Salavat,R,156000,,
+526,Oktyabrsky,R,110000,,
+527,Izhevsk,R,654000,,
+528,Sarapul,R,109000,,
+529,Glazov,R,107000,,
+530,Votkinsk,R,104000,,
+531,Orenburg,R,532000,,
+532,Orsk,R,275000,,
+533,Novotroitsk,R,110000,,
+534,Perm,R,1032000,,
+535,Berezniki,R,184000,,
+536,Solikamsk,R,108000,,
+537,Maykop,R,165000,,
+538,Makhachkala,R,339000,,
+539,Nazran,R,,,
+540,Nalchik,R,239000,,
+541,Cherkessk,R,119000,,
+542,Vladikavkaz,R,312000,,
+543,Grozny,R,364000,,
+544,Krasnodar,R,646000,,
+545,Sochi,R,355000,,
+546,Novorossiysk,R,202000,,
+547,Armavir,R,164000,,
+548,Stavropol,R,342000,,
+549,Pyatigorsk,R,133000,,
+550,Nevinnomyssk,R,131000,,
+551,Kislovodsk,R,120000,,
+552,Neftekamsk,R,117000,,
+553,Kurgan,R,363000,,
+554,Yekaterinburg,R,1280000,,
+555,Nizhniy Tagil,R,409000,,
+556,Kamensk Uralskiy,R,197000,,
+557,Pervouralsk,R,137000,,
+558,Serov,R,100000,,
+559,Chelyabinsk,R,1086000,,
+560,Magnitogorsk,R,427000,,
+561,Zlatoust,R,203000,,
+562,Miass,R,167000,,
+563,Gorno Altaysk,R,,,
+564,Barnaul,R,596000,,
+565,Biysk,R,228000,,
+566,Rubtsovsk,R,170000,,
+567,Kemerovo,R,503000,,
+568,Novokuznetsk,R,572000,,
+569,Prokopyevsk,R,253000,,
+570,Leninsk Kuznetskiy,R,121000,,
+571,Kiselyovsk,R,116000,,
+572,Mezhdurechensk,R,105000,,
+573,Anzhero Sudzhensk,R,101000,,
+574,Novosibirsk,R,1369000,,
+575,Omsk,R,1163000,,
+576,Tomsk,R,470000,,
+577,Seversk,R,110000,,
+578,Tyumen,R,494000,,
+579,Surgut,R,263000,,
+580,Nizhnevartovsk,R,238000,,
+581,Ulan Ude,R,366000,,
+582,Kyzyl,R,,,
+583,Abakan,R,161000,,
+584,Krasnoyarsk,R,869000,92.95,56.0167
+585,Norilsk,R,159000,,
+586,Achinsk,R,123000,,
+587,Kansk,R,109000,,
+588,Irkutsk,R,585000,,
+589,Angarsk,R,267000,,
+590,Bratsk,R,257000,,
+591,Ust Ilimsk,R,110000,,
+592,Usolye Sibirskoye,R,106000,,
+593,Chita,R,322000,,
+594,Yakutsk,R,192000,,
+595,Birobidzhan,R,,,
+596,Anadyr,R,,,
+597,Vladivostok,R,632000,131.917,43.1167
+598,Nakhodka,R,163000,,
+599,Ussuriysk,R,162000,,
+600,Khabarovsk,R,618000,,
+601,Komsomolsk na Amure,R,309000,,
+602,Blagoveshchensk,R,214000,,
+603,Petropavlovsk Kamchatsky,R,210000,,
+604,Magadan,R,128000,,
+605,Okhotsk,R,4900,,
+606,Yuzhno Sakhalinsk,R,160000,,
+607,Antwerp,B,459072,4.23,51.1
+608,Brussels,B,951580,4.35,50.85
+609,Ghent,B,227483,3.75,51.054
+610,Charleroi,B,206491,,
+611,Mons,B,90720,4.5,50.4
+612,Liege,B,192393,5.6,50.5
+613,Hasselt,B,65348,5.2,50.9
+614,Arlon,B,23150,5.8,49.7
+615,Namur,B,105014,4.9,50.4
+616,Brugge,B,117799,3.2,51.1
+617,Luxembourg,L,76600,6.08,49.4
+618,Groningen,NL,210708,,
+619,Leeuwarden,NL,,,
+620,Assen,NL,,,
+621,Enschede,NL,254480,,
+622,Zwolle,NL,,,
+623,Lelystad,NL,,,
+624,Arnhem,NL,314159,,
+625,Nijmegen,NL,249490,,
+626,Utrecht,NL,547070,,
+627,Amsterdam,NL,1101407,4.91667,52.3833
+628,Haarlem,NL,212631,,
+629,Zaanstreek,NL,147917,,
+630,Velsen,NL,134973,,
+631,Hilversum,NL,102023,,
+632,s Gravenhage,NL,694249,,
+633,Rotterdam,NL,1078747,,
+634,Dordrecht,NL,213963,,
+635,Leiden,NL,194935,,
+636,Middelburg,NL,,,
+637,s Hertogenbosch,NL,199127,,
+638,Eindhoven,NL,395612,,
+639,Tilburg,NL,237958,,
+640,Breda,NL,166616,,
+641,Maastricht,NL,164701,,
+642,Heerlen,NL,270952,,
+643,Geleen,NL,186011,,
+644,Sarajevo,BIH,,18.4,43.9
+645,Zagreb,HR,,16,45.8
+646,Sofia,BG,1300000,23.3333,42.7
+647,Alba Iulia,RO,,,
+648,Arad,RO,191000,,
+649,Pitesti,RO,162000,,
+650,Bacau,RO,193000,,
+651,Oradea,RO,225000,,
+652,Bistrita,RO,,,
+653,Botosani,RO,,,
+654,Braila,RO,243000,,
+655,Brasov,RO,353000,,
+656,Bucharest,RO,2037000,26.1,44.4167
+657,Buzau,RO,145000,,
+658,Calarasi,RO,,,
+659,Resita,RO,,,
+660,Cluj Napoca,RO,318000,,
+661,Constanta,RO,316000,,
+662,Sfintu Gheorghe,RO,,,
+663,Tirgoviste,RO,,,
+664,Craiova,RO,300000,,
+665,Galati,RO,307000,,
+666,Giurgiu,RO,,,
+667,Tirgu Jiu,RO,,,
+668,Miercurea Ciuc,RO,,,
+669,Deva,RO,,,
+670,Slobozia,RO,,,
+671,Iasi,RO,330000,,
+672,Baia Mare,RO,150000,,
+673,Drobeta Turnu Severin,RO,,,
+674,Tirgu Mures,RO,165000,,
+675,Piatra Neamt,RO,,,
+676,Slatina,RO,,,
+677,Ploiesti,RO,,,
+678,Zalau,RO,,,
+679,Satu Mare,RO,137000,,
+680,Sibiu,RO,184000,,
+681,Suceava,RO,,,
+682,Alexandria,RO,,,
+683,Timisoara,RO,333000,,
+684,Tulcea,RO,,,
+685,Vaslui,RO,,,
+686,Rimnicu Vilcea,RO,,,
+687,Focsani,RO,,,
+688,Adana,TR,1047300,35.3,36.9833
+689,Osmaniye,TR,138000,,
+690,Adiyaman,TR,128000,,
+691,Afyon,TR,,,
+692,Agri,TR,,,
+693,Aksaray,TR,,,
+694,Amasya,TR,,,
+695,Ankara,TR,2782200,32.8833,39.95
+696,Antalya,TR,497200,,
+697,Artvin,TR,,,
+698,Aydin,TR,121200,,
+699,Balikesir,TR,187600,,
+700,Batman,TR,182800,,
+701,Bayburt,TR,,,
+702,Bilecik,TR,,,
+703,Bingol,TR,,,
+704,Bitlis,TR,,,
+705,Bolu,TR,,,
+706,Burdur,TR,,,
+707,Bursa,TR,996600,,
+708,Canakkale,TR,,,
+709,Cankiri,TR,,,
+710,Corum,TR,,,
+711,Denizli,TR,234500,,
+712,Diyarbakir,TR,448300,,
+713,Edirne,TR,115500,,
+714,Elazig,TR,222800,,
+715,Erzincan,TR,,,
+716,Erzurum,TR,250100,41.3,49.9
+717,Eskisehir,TR,451000,,
+718,Gaziantep,TR,716000,,
+719,Giresun,TR,,,
+720,Gumushane,TR,,,
+721,Hakkari,TR,,,
+722,Iskenderun,TR,156800,,
+723,Antakya,TR,137200,,
+724,Mersin,TR,523000,,
+725,Tarsus,TR,225000,,
+726,Isparta,TR,120900,,
+727,Istanbul,TR,7615500,28.8333,40.9667
+728,Izmir,TR,1985300,27.1667,38.4333
+729,Karaman,TR,,,
+730,Karaman Maras,TR,242200,,
+731,Kars,TR,,,
+732,Kastamonu,TR,,,
+733,Kayseri,TR,454000,,
+734,Kirikkale,TR,170300,,
+735,Kirklareli,TR,,,
+736,Kirsehir,TR,,,
+737,Izmit,TR,275800,,
+738,Kocaeli,TR,256882,,
+739,Gebze,TR,237300,,
+740,Adapazari,TR,186000,,
+741,Konya,TR,576000,,
+742,Kutahya,TR,140700,,
+743,Malatya,TR,319700,,
+744,Manisa,TR,187500,,
+745,Mardin,TR,,,
+746,Mugla,TR,,,
+747,Mus,TR,,,
+748,Nevsehir,TR,,,
+749,Nigde,TR,,,
+750,Ordu,TR,121300,,
+751,Rize,TR,,,
+752,Sakarya,TR,,,
+753,Samsun,TR,326900,,
+754,Urfa,TR,357900,,
+755,Siirt,TR,,,
+756,Sinop,TR,,,
+757,Sirnak,TR,,,
+758,Sivas,TR,240100,,
+759,Tekirdag,TR,,,
+760,Tokat,TR,,,
+761,Trabzon,TR,145400,,
+762,Tunceli,TR,,,
+763,Usak,TR,119900,,
+764,Van,TR,194600,,
+765,Yozgat,TR,,,
+766,Zonguldak,TR,115900,,
+767,Karabuk,TR,113900,,
+768,Copenhagen,DK,1358540,12.55,55.6833
+769,Aarhus,DK,194345,10.1,56.1
+770,Odense,DK,136803,10.2,55.3
+771,Aalborg,DK,113865,10,57
+772,Esbjerg,DK,70975,8.3,55.3
+773,Randers,DK,55780,10,56.3
+774,Tallinn,EW,478000,25,59.3
+775,Torshavn,FARX,,-7,62
+776,Mariehamn,SF,9500,19.5,60.1
+777,Tampere,SF,170097,23.5,61.3
+778,Lahti,SF,94234,25.2,60.5
+779,Haemeenlinna,SF,42000,24.3,61
+780,Kuopio,SF,78571,27.4,62.5
+781,Lappeenrenta,SF,53922,26.5,60.5
+782,Kotka,SF,58345,26.5,60.3
+783,Rovaniemi,SF,31000,24.4,66.3
+784,Mikkeli,SF,28000,27.2,61.4
+785,Jyvaeskylae,SF,65511,25.2,62.1
+786,Joensuu,SF,44000,29.5,62.4
+787,Oulu,SF,97898,25.2,65.3
+788,Pori,SF,77763,21.2,61.3
+789,Turku,SF,161292,22.1,60.3
+790,Helsinki,SF,487428,24.95,60.1667
+791,Espoo,SF,160480,24.3,60.2
+792,Vaasa,SF,54275,21.3,63
+793,Oslo,N,449337,10.7333,59.9333
+794,Moss,N,24517,10.4,59.3
+795,Hamar,N,15685,11.5,60.5
+796,Lillehammer,N,22118,10.3,61.1
+797,Drammen,N,50855,10.1,59.4
+798,Toensberg,N,8984,10.2,59.2
+799,Skien,N,47010,9.4,59.1
+800,Arendal,N,12174,8.4,58.3
+801,Kristiansand,N,62640,8,58.1
+802,Stavanger,N,95089,5.5,59
+803,Bergen,N,207916,5.2,60.2
+804,Hermannsverk,N,706,6.5,61.1
+805,Molde,N,21448,7.1,62.5
+806,Trondheim,N,134426,10.2,63.3
+807,Steinkjer,N,20480,11.3,64
+808,Svolvaer,N,4500,14.3,68.2
+809,Narvik,N,18754,17.3,68.3
+810,Bodoe,N,34479,14.2,67.2
+811,Tromsoe,N,48109,19,69.4
+812,Hammerfest,N,7089,23.4,70.4
+813,Vadsoe,N,5961,29.5,70.5
+814,Vanersborg,S,35804,12.2,58.2
+815,Karlskrona,S,59007,15.3,56.1
+816,Gavle,S,87431,17,60.4
+817,Goteborg,S,449189,12,57.4
+818,Visby,S,20000,18.2,57.3
+819,Halmstad,S,77601,13,56.4
+820,Ostersund,S,56662,14.3,63.2
+821,Jonkoping,S,115429,14,57.4
+822,Kalmar,S,54554,16.3,56.4
+823,Falun,S,51900,15.3,60.3
+824,Kristianstad,S,69941,14,56
+825,Vaxjo,S,66925,15,56.5
+826,Malmo,S,245699,13,55.3
+827,Helsingborg,S,114339,,
+828,Lulea,S,66526,22.1,65.4
+829,Jokkmokk,S,6822,19.5,66.1
+830,Orebro,S,119635,15,59.2
+831,Linkoping,S,131370,15.3,58.3
+832,Norrkoping,S,123795,,
+833,Mariestad,S,24255,13.5,58.4
+834,Nykoping,S,64199,17,58.5
+835,Stockholm,S,711119,18.0667,59.35
+836,Uppsala,S,183472,17.4,59.5
+837,Karlstad,S,74669,13.5,59.4
+838,Umea,S,85698,20.1,63.5
+839,Harnosand,S,27287,18,62.4
+840,Vasteras,S,123728,16.3,59.4
+841,Monaco,MC,1234,7.2,43.7
+842,Gibraltar,GBZ,,-5.2,36.15
+843,Saint Peter Port,GBG,,-2.6,49.6
+844,Vatican City,V,392,12.3,41.5
+845,Reykjavik,IS,84000,-21.9333,64.1333
+846,Keflavik,IS,6600,-22.5,64
+847,Hafnarfjoerdur,IS,12000,-22,64
+848,Akureyri,IS,13000,-18.3,65.4
+849,Dublin,IRL,502337,-6.35,53.3667
+850,San Marino,RSM,4416,12.2,43.5
+851,Saint Helier,GBJ,,-2.1,49.2
+852,Valletta,M,9302,14.5,35.9
+853,Victoria,M,6414,14.25,36.05
+854,Douglas,GBM,,-4.6,54.15
+855,Chisinau,MD,663000,28.1,47.2
+856,Aveiro,P,,,
+857,Beja,P,,,
+858,Braga,P,63033,,
+859,Braganca,P,,,
+860,Castelo Branco,P,,,
+861,Coimbra,P,74616,,
+862,Evora,P,,,
+863,Faro,P,,,
+864,Guarda,P,,,
+865,Leiria,P,,,
+866,Lisbon,P,807937,-9.13333,38.7167
+867,Amadora,P,95518,,
+868,Barreiro,P,50863,,
+869,Almada,P,42607,,
+870,Portalegre,P,,,
+871,Porto,P,327368,,
+872,Vila Nova de Gaia,P,62468,,
+873,Santarem,P,,,
+874,Setubal,P,77885,,
+875,Viana do Castelo,P,,,
+876,Vila Real,P,,,
+877,Viseu,P,,,
+878,Ponta Delgada,P,46102,-27.1,38.35
+879,Funchal,P,44111,-15.9,31
+880,Longyearbyen,SVAX,,15.33,78.13
+881,Bristol,GB,399200,,
+882,Bedford,GB,137300,,
+883,Luton,GB,178600,,
+884,Reading,GB,137700,,
+885,Wokingham,GB,142900,,
+886,Newbury,GB,141000,,
+887,Windsor,GB,136700,,
+888,Slough,GB,103500,,
+889,Bracknell,GB,101900,,
+890,Aylesbury,GB,151600,,
+891,Milton Keynes,GB,184400,,
+892,Wycombe,GB,161400,,
+893,Cambridge,GB,113800,,
+894,Peterborough,GB,156400,,
+895,Huntingdon,GB,148800,,
+896,Chester,GB,120800,,
+897,Warrington,GB,185000,,
+898,Macclesfield,GB,151400,,
+899,Crewe,GB,109500,,
+900,Middlesbrough,GB,145800,,
+901,Stockton on Tees,GB,177800,,
+902,Truro,GB,,,
+903,Carlisle,GB,102900,,
+904,Derby,GB,230500,,
+905,Sutton in Ashfield,GB,109800,,
+906,Chesterfield,GB,101200,,
+907,Matlock,GB,,,
+908,Plymouth,GB,255800,,
+909,Exeter,GB,105100,,
+910,Bournemouth,GB,159900,,
+911,Poole,GB,137200,,
+912,Dorchester,GB,,,
+913,Darlington,GB,100200,,
+914,Durham,GB,,,
+915,Brighton,GB,154400,,
+916,Lewes,GB,,,
+917,Chelmsford,GB,155700,,
+918,Southend on Sea,GB,167500,,
+919,Basildon,GB,161700,,
+920,Colchester,GB,149100,,
+921,Braintree,GB,121800,,
+922,Epping Forest,GB,118200,,
+923,Cheltenham,GB,106700,,
+924,Stroud,GB,105400,,
+925,Gloucester,GB,104800,,
+926,London,GB,6967500,0,51.4833
+927,Manchester,GB,431100,,
+928,Wigan,GB,310000,,
+929,Stockport,GB,291400,,
+930,Bolton,GB,265200,,
+931,Salford,GB,230700,,
+932,Tameside,GB,221800,,
+933,Oldham,GB,220400,,
+934,Trafford,GB,218100,,
+935,Rochdale,GB,207100,,
+936,Bury,GB,181400,,
+937,Winchester,GB,100500,,
+938,Southampton,GB,211700,,
+939,Portsmouth,GB,189100,,
+940,Basingstoke,GB,146500,,
+941,Havant,GB,117500,,
+942,Eastleigh,GB,109600,,
+943,Fareham,GB,101000,,
+944,Worcester,GB,,,
+945,Saint Albans,GB,127700,,
+946,Hertford,GB,,,
+947,Kingston upon Hull,GB,269100,,
+948,Beverley,GB,115800,,
+949,Hull,GB,,,
+950,Maidstone,GB,138500,,
+951,Rochester upon Medway,GB,148200,,
+952,Canterbury,GB,132400,,
+953,Swale,GB,117200,,
+954,Sevenoaks,GB,109400,,
+955,Dover,GB,106100,,
+956,Tonbridge,GB,102100,,
+957,Tunbridge Wells,GB,101800,,
+958,Preston,GB,132200,,
+959,Blackpool,GB,153600,,
+960,Blackburn,GB,139500,,
+961,Lancaster,GB,133600,,
+962,Leichester,GB,293400,,
+963,Lincoln,GB,,,
+964,Liverpool,GB,474000,,
+965,Wiral,GB,331100,,
+966,Sefton,GB,292400,,
+967,Saint Helens,GB,180200,,
+968,Knowsley,GB,155300,,
+969,Norwich,GB,128100,,
+970,Kings Lynn,GB,131600,,
+971,Northampton,GB,187200,,
+972,Harrogate,GB,146500,,
+973,Scarborough,GB,108700,,
+974,York,GB,104000,,
+975,Northallerton,GB,,,
+976,Nottingham,GB,282400,,
+977,Newark on Trent,GB,104400,,
+978,Mansfield,GB,102100,,
+979,Oxford,GB,132000,,
+980,Shrewsbury,GB,,,
+981,Taunton,GB,,,
+982,Barnsley,GB,226500,,
+983,Sheffield,GB,530100,,
+984,Doncaster,GB,292500,,
+985,Rotherham,GB,256300,,
+986,Stafford,GB,121500,,
+987,Stoke on Trent,GB,254200,,
+988,Newcastle under Lyme,GB,123000,,
+989,Ipswich,GB,114800,,
+990,Guildford,GB,126200,,
+991,Reigate,GB,118800,,
+992,Elmbridge,GB,117300,,
+993,Kingston,GB,,,
+994,Sunderland,GB,292200,,
+995,Newcastle upon Tyne,GB,283600,,
+996,Gateshead,GB,202400,,
+997,Warwick,GB,118600,,
+998,Nuneaton,GB,118500,,
+999,Stratford on Avon,GB,108600,,
+1000,Birmingham,GB,1008400,-1.93333,52.4833
+1001,Dudley,GB,312200,,
+1002,Coventry,GB,302500,,
+1003,Walsall,GB,263900,,
+1004,Wolverhampton,GB,245100,,
+1005,Solihull,GB,202000,,
+1006,West Bromwich,GB,154500,,
+1007,Sandwell,GB,293700,,
+1008,Chichester,GB,102500,,
+1009,Horsham,GB,112300,,
+1010,Wakefield,GB,317300,,
+1011,Leeds,GB,724400,,
+1012,Bradford,GB,481700,,
+1013,Kirklees,GB,386900,,
+1014,Huddersfield,GB,148500,,
+1015,Salisbury,GB,109800,,
+1016,Trowbridge,GB,,,
+1017,Newtown St. Boswells,GB,,,
+1018,Stirling,GB,,,
+1019,Dumfries,GB,,,
+1020,Glenrothes,GB,,,
+1021,Aberdeen,GB,219100,,
+1022,Inverness,GB,,,
+1023,Edinburgh,GB,447600,-3.18333,55.9167
+1024,Glasgow,GB,674800,-4.28333,55.8667
+1025,Renfrew,GB,201700,,
+1026,Dundee,GB,167600,,
+1027,Colwyn Bay,GB,,,
+1028,Llangefni,GB,,,
+1029,Ebbw Vale,GB,,,
+1030,Bridgend,GB,,,
+1031,Ystrad Fawr,GB,,,
+1032,Cardiff,GB,300000,-3.16667,51.4667
+1033,Carmarthen,GB,,,
+1034,Aberystwyth,GB,,,
+1035,Ruthin,GB,,,
+1036,Mold,GB,,,
+1037,Caernarfon,GB,,,
+1038,Merthyr Tydfil,GB,,,
+1039,Cwmbran,GB,,,
+1040,Port Talbot,GB,,,
+1041,Newport,GB,137000,,
+1042,Haverfordwest,GB,,,
+1043,Llandrindod Wells,GB,,,
+1044,Rhondda,GB,,,
+1045,Swansea,GB,189300,,
+1046,Pontypool,GB,,,
+1047,Rhymney Valley,GB,104300,,
+1048,Barry,GB,,,
+1049,Wrexham,GB,117100,,
+1050,Belfast,GB,297100,-5.91667,54.6
+1051,Kirkwall,GB,6330,-3,59
+1052,Stornoway,GB,8000,-6.4,58.2
+1053,Lerwick,GB,6570,-1.15,60.15
+1054,Kabul,AFG,892000,69.2,34.5833
+1055,Hefei,TJ,1000000,117,32
+1056,Huainan,TJ,1200000,,
+1057,Suzhou,TJ,151862,,
+1058,Bengbu,TJ,449245,,
+1059,Wuhu,TJ,425740,,
+1060,Huaibei,TJ,366549,,
+1061,Maanshan,TJ,305421,,
+1062,Anqing,TJ,250718,,
+1063,Tongling,TJ,228017,,
+1064,Fuyang,TJ,179572,,
+1065,Luan,TJ,144248,,
+1066,Chuxian,TJ,125341,,
+1067,Chaoxian,TJ,123676,,
+1068,Xuancheng,TJ,112673,,
+1069,Fuzhou,TJ,874809,119,26
+1070,Xiamen,TJ,368786,,
+1071,Nanping,TJ,195064,,
+1072,Quanzhou,TJ,185154,,
+1073,Zhangzhou,TJ,181424,,
+1074,Sanming,TJ,160691,,
+1075,Longyan,TJ,134481,,
+1076,Yongan,TJ,111762,,
+1077,Lanzhou,TJ,1510000,104,36
+1078,Tianshui,TJ,244974,,
+1079,Baiyin,TJ,204970,,
+1080,Wuwei,TJ,133101,,
+1081,Yumen,TJ,109234,,
+1082,Guangzhou,TJ,3580000,114,23
+1083,Shantou,TJ,578630,,
+1084,Zhanjiang,TJ,400997,,
+1085,Shenzhen,TJ,350727,,
+1086,Shaoguan,TJ,350043,,
+1087,Chaozhou,TJ,313469,,
+1088,Dongguan,TJ,308669,,
+1089,Foshan,TJ,303160,,
+1090,Zhongshan,TJ,278829,,
+1091,Jiangmen,TJ,230587,,
+1092,Yangjiang,TJ,215196,,
+1093,Zhaoqing,TJ,194784,,
+1094,Maoming,TJ,178683,,
+1095,Zhuhai,TJ,164747,,
+1096,Huizhou,TJ,161023,,
+1097,Meixian,TJ,132156,,
+1098,Heyuan,TJ,120101,,
+1099,Shanwei,TJ,107847,,
+1100,Guiyang,TJ,1530000,106,26
+1101,Liupanshui,TJ,363954,,
+1102,Zunyi,TJ,261862,,
+1103,Anshun,TJ,174142,,
+1104,Duyun,TJ,132971,,
+1105,Kaili,TJ,113958,,
+1106,Haikou,TJ,280153,110.3,20.05
+1107,Sanya,TJ,102820,,
+1108,Shijiazhuang,TJ,1320000,114.5,38
+1109,Tangshan,TJ,1500000,,
+1110,Handan,TJ,1110000,,
+1111,Zhangjiakou,TJ,529136,,
+1112,Baoding,TJ,483155,,
+1113,Qinhuangdao,TJ,364972,,
+1114,Xingtai,TJ,302789,,
+1115,Chengde,TJ,246799,,
+1116,Renqiu,TJ,114256,,
+1117,Quzhou,TJ,112373,,
+1118,Hengshui,TJ,104269,,
+1119,Harbin,TJ,2830000,126.4,45.4
+1120,Qiqihar,TJ,1380000,,
+1121,Yichun,TJ,795789,,
+1122,Jixi,TJ,683885,,
+1123,Daqing,TJ,657297,,
+1124,Mudanjiang,TJ,571705,,
+1125,Hegang,TJ,522747,,
+1126,Jiamusi,TJ,493409,,
+1127,Shuangyashan,TJ,386081,,
+1128,Suihua,TJ,227881,,
+1129,Shangzhi,TJ,215373,,
+1130,Qitaihe,TJ,214957,,
+1131,Beian,TJ,204899,,
+1132,Acheng,TJ,197595,,
+1133,Zhaodong,TJ,179976,,
+1134,Fuling,TJ,173878,,
+1135,Shuangcheng,TJ,142659,,
+1136,Anda,TJ,136446,,
+1137,Mishan,TJ,132744,,
+1138,Zhengzhou,TJ,1710000,114,34.5
+1139,Luoyang,TJ,1190000,,
+1140,Kaifeng,TJ,507763,,
+1141,Xinxiang,TJ,473762,,
+1142,Anyang,TJ,420332,,
+1143,Pingdingshan,TJ,410775,,
+1144,Jiaozuo,TJ,409100,,
+1145,Nanyang,TJ,243303,,
+1146,Hebi,TJ,212976,,
+1147,Xuchang,TJ,208815,,
+1148,Xinyang,TJ,192509,,
+1149,Puyang,TJ,175988,,
+1150,Shangqiu,TJ,164880,,
+1151,Zhoukou,TJ,146288,,
+1152,Luohe,TJ,126438,,
+1153,Zhumadian,TJ,123232,,
+1154,Sanmenxia,TJ,120523,,
+1155,Wuhan,TJ,3750000,114.15,30.45
+1156,Huangshi,TJ,457601,,
+1157,Xiangfan,TJ,410407,,
+1158,Yichang,TJ,371601,,
+1159,Shashi,TJ,281352,,
+1160,Shiyan,TJ,273786,,
+1161,Cangzhou,TJ,242708,,
+1162,Honghu,TJ,190772,,
+1163,Echeng,TJ,190123,,
+1164,Tianmen,TJ,186332,,
+1165,Xiaogan,TJ,166280,,
+1166,Zaoyang,TJ,162198,,
+1167,Xianning,TJ,136811,,
+1168,Laohekou,TJ,123366,,
+1169,Puqi,TJ,117264,,
+1170,Shishou,TJ,104571,,
+1171,Guangshui,TJ,102770,,
+1172,Changsha,TJ,1330000,113.5,28.1
+1173,Hengyang,TJ,487148,,
+1174,Xiangtan,TJ,441968,,
+1175,Zhuzhou,TJ,409924,,
+1176,Yueyang,TJ,302800,,
+1177,Changde,TJ,301276,,
+1178,Shaoyang,TJ,247227,,
+1179,Yiyang,TJ,185818,,
+1180,Lengshuijiang,TJ,137994,,
+1181,Leiyang,TJ,130115,,
+1182,Loudi,TJ,128418,,
+1183,Huaihua,TJ,126785,,
+1184,Zixing,TJ,110048,,
+1185,Liling,TJ,108504,,
+1186,Yuanjiang,TJ,107004,,
+1187,Nanjing,TJ,2500000,119,32.5
+1188,Wuxi,TJ,826833,,
+1189,Xuzhou,TJ,805695,,
+1190,Suzhou,TJ,706459,,
+1191,Changzhou,TJ,531470,,
+1192,Zhenjiang,TJ,368316,,
+1193,Lianyungang,TJ,354139,,
+1194,Nantong,TJ,343341,,
+1195,Yangzhou,TJ,312892,,
+1196,Yancheng,TJ,296831,,
+1197,Huaiyin,TJ,239675,,
+1198,Jiangyin,TJ,213659,,
+1199,Yixing,TJ,200824,,
+1200,Dongtai,TJ,192247,,
+1201,Changshu,TJ,181805,,
+1202,Danyang,TJ,169603,,
+1203,Xinghua,TJ,161910,,
+1204,Taizhou,TJ,152442,,
+1205,Huaian,TJ,131149,,
+1206,Liyang,TJ,109520,,
+1207,Yizheng,TJ,109268,,
+1208,Suqian,TJ,105021,,
+1209,Kunshan,TJ,102052,,
+1210,Nanchang,TJ,1350000,115.5,28.4
+1211,Fuzhou,TJ,1290000,,
+1212,Yichun,TJ,151585,,
+1213,Pingxiang,TJ,425579,,
+1214,Jiujiang,TJ,291187,,
+1215,Jingdezhen,TJ,281183,,
+1216,Ganzhou,TJ,220129,,
+1217,Xinyu,TJ,173524,,
+1218,Shangrao,TJ,132455,,
+1219,Jilin,TJ,1270000,,
+1220,Changchun,TJ,2110000,125.15,43.5
+1221,Hunjiang,TJ,482043,,
+1222,Liaoyuan,TJ,354141,,
+1223,Tonghua,TJ,324600,,
+1224,Siping,TJ,317223,,
+1225,Dunhua,TJ,235100,,
+1226,Yanji,TJ,230892,,
+1227,Gongzhuling,TJ,226569,,
+1228,Baicheng,TJ,217987,,
+1229,Meihekou,TJ,209038,,
+1230,Fuyu,TJ,192981,,
+1231,Jiutai,TJ,180130,,
+1232,Huadian,TJ,175873,,
+1233,Longjing,TJ,139417,,
+1234,Daan,TJ,138963,,
+1235,Shenyang,TJ,4540000,123.3,42
+1236,Dalian,TJ,2400000,,
+1237,Anshan,TJ,1390000,,
+1238,Fushun,TJ,1350000,,
+1239,Benxi,TJ,768778,,
+1240,Fuxin,TJ,635473,,
+1241,Jinzhou,TJ,569518,,
+1242,Dandong,TJ,523699,,
+1243,Liaoyang,TJ,492559,,
+1244,Yingkou,TJ,421589,,
+1245,Panshan,TJ,362773,,
+1246,Jinxi,TJ,357052,,
+1247,Tieling,TJ,254842,,
+1248,Wafangdian,TJ,251733,,
+1249,Chaoyang,TJ,222394,,
+1250,Haicheng,TJ,205560,,
+1251,Beipiao,TJ,194301,,
+1252,Fengcheng,TJ,193784,,
+1253,Xingcheng,TJ,102384,,
+1254,Xining,TJ,551776,102,37
+1255,Yushu,TJ,131861,,
+1256,Xian,TJ,2760000,109,34
+1257,Xianyang,TJ,352125,,
+1258,Baoji,TJ,337765,,
+1259,Tongchuan,TJ,280657,,
+1260,Hanzhong,TJ,169930,,
+1261,Ankang,TJ,142170,,
+1262,Weinan,TJ,140169,,
+1263,Yanan,TJ,113277,,
+1264,Jinan,TJ,2320000,117,36.5
+1265,Zibo,TJ,2460000,,
+1266,Qingdao,TJ,2060000,,
+1267,Yantai,TJ,452127,,
+1268,Weifang,TJ,428522,,
+1269,Zaozhuang,TJ,380846,,
+1270,Taian,TJ,350696,,
+1271,Linyi,TJ,324720,,
+1272,Tengxian,TJ,315083,,
+1273,Dongying,TJ,281728,,
+1274,Xintai,TJ,281248,,
+1275,Jining,TJ,265248,,
+1276,Laiwu,TJ,246833,,
+1277,Liaocheng,TJ,207844,,
+1278,Dezhou,TJ,195485,,
+1279,Heze,TJ,189293,,
+1280,Rizhao,TJ,185048,,
+1281,Liancheng,TJ,156307,,
+1282,Jiaoxian,TJ,153364,,
+1283,Pingdu,TJ,150123,,
+1284,Longkou,TJ,148362,,
+1285,Laiyang,TJ,137080,,
+1286,Wendeng,TJ,133910,,
+1287,Weihai,TJ,128888,,
+1288,Linqing,TJ,123958,,
+1289,Jiaonan,TJ,121397,,
+1290,Zhucheng,TJ,102134,,
+1291,Taiyuan,TJ,1960000,112.3,38
+1292,Datong,TJ,1110000,,
+1293,Yangquan,TJ,362268,,
+1294,Changzhi,TJ,317144,,
+1295,Yuci,TJ,191356,,
+1296,Linfen,TJ,187309,,
+1297,Jincheng,TJ,136396,,
+1298,Chengdu,TJ,2810000,107.15,33.15
+1299,Chongqing,TJ,2980000,,
+1300,Dukou,TJ,415466,,
+1301,Zigong,TJ,393184,,
+1302,Leshan,TJ,341128,,
+1303,Mianyang,TJ,262947,,
+1304,Luzhou,TJ,262892,,
+1305,Neijiang,TJ,256012,,
+1306,Yibin,TJ,241019,,
+1307,Qianjiang,TJ,205504,,
+1308,Daxian,TJ,188101,,
+1309,Deyang,TJ,182488,,
+1310,Guangyuan,TJ,182241,,
+1311,Nanchong,TJ,180273,,
+1312,Jiangyou,TJ,175753,,
+1313,Wanxian,TJ,156823,,
+1314,Xichang,TJ,134419,,
+1315,Kunming,TJ,1520000,102.4,25.5
+1316,Gejiu,TJ,214294,,
+1317,Qujing,TJ,178669,,
+1318,Hangzhou,TJ,1340000,125.5,30.2
+1319,Ningbo,TJ,1090000,,
+1320,Wenzhou,TJ,401871,,
+1321,Huzhou,TJ,218071,,
+1322,Jiaxing,TJ,211526,,
+1323,Shaoxing,TJ,179818,,
+1324,Xiaoshan,TJ,162930,,
+1325,Ruian,TJ,156468,,
+1326,Zhoushan,TJ,156317,,
+1327,Jinhua,TJ,144280,,
+1328,Yuyao,TJ,114056,,
+1329,Cixi,TJ,107329,,
+1330,Haining,TJ,100478,,
+1331,Nanning,TJ,1070000,108.5,22.5
+1332,Liuzhou,TJ,609320,,
+1333,Guilin,TJ,364130,,
+1334,Wuzhou,TJ,210452,,
+1335,Qinzhou,TJ,114586,,
+1336,Guixian,TJ,114025,,
+1337,Beihai,TJ,112673,,
+1338,Hohhot,TJ,652534,113,41
+1339,Baotou,TJ,1200000,,
+1340,Yakeshi,TJ,377869,,
+1341,Chifeng,TJ,350077,,
+1342,Jining,TJ,163552,,
+1343,Wuhai,TJ,264081,,
+1344,Tongliao,TJ,255129,,
+1345,Hailar,TJ,180650,,
+1346,Ulanhot,TJ,159538,,
+1347,Linhe,TJ,133183,,
+1348,Manzhouli,TJ,120023,,
+1349,Yinchuan,TJ,356652,106.2,38.3
+1350,Shizuishan,TJ,257862,,
+1351,Urumqi,TJ,1160000,88,44
+1352,Shihezi,TJ,299676,,
+1353,Karamay,TJ,197602,,
+1354,Yining,TJ,177193,,
+1355,Kashi,TJ,174570,,
+1356,Aksu,TJ,164092,,
+1357,Hami,TJ,161315,,
+1358,Korla,TJ,159344,,
+1359,Lhasa,TJ,106885,91,29.5
+1360,Beijing,TJ,7000000,116.2,39.5
+1361,Shanghai,TJ,7830000,121.433,31.2
+1362,Tianjin,TJ,5770000,117.2,39.1
+1363,Orumiyeh,IR,396392,45,37.3
+1364,Khvoy,IR,137885,,
+1365,Maragheh,IR,117388,,
+1366,Tabriz,IR,1166203,46.2,38.1
+1367,Ardabil,IR,329869,,
+1368,Bakhtaran,IR,665636,47.1,34.2
+1369,Yasuj,IR,,,
+1370,Bandar e Bushehr,IR,132824,,
+1371,Bushehr,IR,,,
+1372,Shahr e Kord,IR,,,
+1373,Esfahan,IR,1220595,51.4,32.4
+1374,Najafabad,IR,160004,,
+1375,Khomeynishahr,IR,118348,,
+1376,Shiraz,IR,1042801,52.3,29.4
+1377,Rasht,IR,374475,49.4,37.2
+1378,Hamadan,IR,406070,48.3,34.5
+1379,Malayer,IR,130458,,
+1380,Bandar Abbas,IR,383515,,
+1381,Ilam,IR,116428,,
+1382,Kerman,IR,349626,,
+1383,Sirjan,IR,107887,,
+1384,Mashhad,IR,1964489,59.4,36.2
+1385,Sabzevar,IR,148065,,
+1386,Neyshabur,IR,135681,,
+1387,Bojnurd,IR,112426,,
+1388,Birjand,IR,101177,,
+1389,Ahvaz,IR,828380,48.4,31.2
+1390,Khorramshahr,IR,197241,,
+1391,Dezful,IR,181309,,
+1392,Masjed e Soleyman,IR,107539,,
+1393,Sanandaj,IR,277314,,
+1394,Khorramabad,IR,277370,,
+1395,Borujerd,IR,201016,,
+1396,Arak,IR,378597,,
+1397,Sari,IR,167602,,
+1398,Gorgan,IR,162468,,
+1399,Amol,IR,139923,,
+1400,Babol,IR,137348,,
+1401,Qaemshahr,IR,123684,,
+1402,Gonbad e Kavus,IR,102768,,
+1403,Semnan,IR,,,
+1404,Zahedan,IR,419886,,
+1405,Tehran,IR,6750043,51.4167,35.6833
+1406,Qom,IR,780453,50.5,34.4
+1407,Karaj,IR,588287,,
+1408,Mehrshahr,IR,413299,,
+1409,Rajaishahr,IR,160362,,
+1410,Qazvin,IR,298705,,
+1411,Kashan,IR,155188,,
+1412,Islamshahr,IR,239715,,
+1413,Yazd,IR,306268,,
+1414,Zanjan,IR,280691,,
+1415,Islamabad,PK,204364,73,34
+1416,Hyderabad,PK,1107000,,
+1417,Quetta,PK,285719,,
+1418,Peshawar,PK,1676000,,
+1419,Lahore,PK,5085000,74.33,31.58
+1420,Karachi,PK,9863000,66.98,24.8
+1421,Lyallpur,PK,1875000,,
+1422,Gujranwala,PK,1663000,,
+1423,Rawalpindi,PK,1290000,,
+1424,Multan,PK,1257000,,
+1425,Sialkot,PK,302009,,
+1426,Sargodha,PK,291362,,
+1427,Lahore Cantonment,PK,237000,,
+1428,Jhang,PK,195558,,
+1429,Sukkur,PK,190551,,
+1430,Bahawalpur,PK,180263,,
+1431,Kasur,PK,155523,,
+1432,Gujrat,PK,155058,,
+1433,Okara,PK,153483,,
+1434,Sahiwal,PK,150954,,
+1435,Mardan,PK,147977,,
+1436,Sheikhupura,PK,141168,,
+1437,Mirpur Khas,PK,124371,,
+1438,Larkana,PK,123890,,
+1439,Wah Cantonment,PK,122335,,
+1440,Rahim Yar Khan,PK,119036,,
+1441,Jhelum,PK,106462,,
+1442,Chiniot,PK,105559,,
+1443,Nawabshah,PK,102139,,
+1444,Dera Ghazi Khan,PK,102007,,
+1445,Khujand,TAD,164500,,
+1446,Kulob,TAD,79300,,
+1447,Qurghonteppa,TAD,58400,,
+1448,Khorugh,TAD,,,
+1449,Dushanbe,TAD,582400,68.48,38.3
+1450,Ashgabat,TM,416400,58.2,37.58
+1451,Nebitdag,TM,89100,,
+1452,Tashauz,TM,117000,,
+1453,Charjew,TM,166400,,
+1454,Mary,TM,94900,,
+1455,Andijon,UZB,303000,,
+1456,Bukhoro,UZB,236000,,
+1457,Farghona,UZB,191000,,
+1458,Quqon,UZB,184000,,
+1459,Marghilon,UZB,129000,,
+1460,Jizzakh,UZB,116000,,
+1461,Urganch,UZB,135000,,
+1462,Namangan,UZB,341000,,
+1463,Nawoiy,UZB,115000,,
+1464,Qarshi,UZB,177000,,
+1465,Samarqand,UZB,368000,,
+1466,Guliston,UZB,,,
+1467,Termiz,UZB,,,
+1468,Tashkent,UZB,2106000,69.3,41.3333
+1469,Chirchiq,UZB,156000,,
+1470,Angren,UZB,132000,,
+1471,Olmaliq,UZB,116000,,
+1472,Nukus,UZB,185000,,
+1473,Yerevan,ARM,1200000,44.4,40.1
+1474,Tbilisi,GE,1200000,44.8,41.7167
+1475,Baku,AZ,1740000,49.5,40.3
+1476,Manama,BRN,145000,50.5,26
+1477,Dhaka,BD,3839000,90.5,24
+1478,Khulna,BD,731000,,
+1479,Rajshahi,BD,318000,,
+1480,Narayanganj,BD,296000,,
+1481,Rangpur,BD,207000,,
+1482,Mymensingh,BD,202000,,
+1483,Barisal,BD,188000,,
+1484,Tongi,BD,181000,,
+1485,Comilla,BD,156000,,
+1486,Jessore,BD,154000,,
+1487,Nawabganj,BD,141000,,
+1488,Dinajpur,BD,138000,,
+1489,Bogra,BD,130000,,
+1490,Brahmanbaria,BD,125000,,
+1491,Savar,BD,115000,,
+1492,Tangail,BD,114000,,
+1493,Pabna,BD,112000,,
+1494,Jamalpur,BD,111000,,
+1495,Naogaon,BD,110000,,
+1496,Sylhet,BD,109000,,
+1497,Sirajganj,BD,108000,,
+1498,Narsinghdi,BD,106000,,
+1499,Saidpur,BD,105000,,
+1500,Gazipur,BD,104000,,
+1501,Chittagong,BD,1599000,91.8333,22.35
+1502,Pathein,MYA,144100,,
+1503,Magway,MYA,,,
+1504,Mandalay,MYA,532900,96.1,21.9833
+1505,Bago,MYA,150500,,
+1506,Rangoon,MYA,2513000,96.15,16.7833
+1507,Monywa,MYA,106800,,
+1508,Sagaing,MYA,,,
+1509,Tavoy,MYA,,,
+1510,Hakha,MYA,,,
+1511,Myitkyina,MYA,,,
+1512,Hpa an,MYA,,,
+1513,Loikaw,MYA,,,
+1514,Moulmein,MYA,220000,,
+1515,Akyab,MYA,107600,,
+1516,Taunggyi,MYA,108200,,
+1517,Hyderabad,IND,3145939,78.2,17.1
+1518,Vishakhapatnam,IND,752037,,
+1519,Vijayawada,IND,701827,,
+1520,Guntur,IND,471051,,
+1521,Warangal,IND,447653,,
+1522,Rajahmundry,IND,324881,,
+1523,Itanagar,IND,,93.4,27.1
+1524,Gauhati,IND,584342,,
+1525,Dispur,IND,,91.5,26
+1526,Patna,IND,917243,85,25.4
+1527,Ranchi,IND,599306,,
+1528,Jamshedpur,IND,478950,,
+1529,Bokara Steel City,IND,333683,,
+1530,Panaji,IND,,74,15.4
+1531,Ahmadabad,IND,2954526,,
+1532,Surat,IND,1505872,,
+1533,Vadodara,IND,1061598,,
+1534,Rajkot,IND,612458,,
+1535,Bhavnagar,IND,402338,,
+1536,Jamnagar,IND,350544,,
+1537,Gandhinagar,IND,,72.2,23.2
+1538,Simla,IND,,77.1,31
+1539,Srinagar,IND,594775,74.3,34
+1540,Jammu,IND,,74.3,32.2
+1541,Bangalore,IND,3302296,77.6167,12.95
+1542,Hubli,IND,648298,,
+1543,Mysore,IND,606755,,
+1544,Trivandrum,IND,699872,77,8.2
+1545,Cochin,IND,582588,,
+1546,Kozhikode,IND,456618,,
+1547,Bhopal,IND,1062771,77.4,23.1
+1548,Indore,IND,1091674,,
+1549,Jabalpur,IND,764586,,
+1550,Gwalior,IND,690765,,
+1551,Raipur,IND,438639,,
+1552,Bhilai,IND,395360,,
+1553,Ujjain,IND,362633,,
+1554,Bhatpara,IND,315976,,
+1555,Mumbai,IND,9925891,72.5,19
+1556,Nagpur,IND,1624752,79.1167,21.15
+1557,Pune,IND,1566651,,
+1558,Kalyan,IND,1014557,,
+1559,Thane,IND,803389,,
+1560,Nasik,IND,656925,,
+1561,Sholapur,IND,604215,,
+1562,Aurangabad,IND,573272,,
+1563,Amravati,IND,421576,,
+1564,Kolhapur,IND,406370,,
+1565,Bhiwandi,IND,392214,,
+1566,Ulhasnagar,IND,369077,,
+1567,New Bombay,IND,307724,,
+1568,Bombay,IND,,72.8167,18.9
+1569,Pimpri Chinchwad,IND,517083,,
+1570,Imphal,IND,,94,24.5
+1571,Shillong,IND,,91.5,25.4
+1572,Aijal,IND,,92.4,23.4
+1573,Kohima,IND,,94.1,25.5
+1574,Bhubaneswar,IND,411542,85.5,20.2
+1575,Cuttack,IND,403418,,
+1576,Ludhiana,IND,1042740,,
+1577,Amritsar,IND,708835,,
+1578,Jalandhar,IND,509510,,
+1579,Jaipur,IND,1458183,75.5,27
+1580,Jodhpur,IND,666279,,
+1581,Kota,IND,537371,,
+1582,Bikaner,IND,416289,,
+1583,Ajmer,IND,402700,,
+1584,Gangtok,IND,,88.3,27.3
+1585,Madras,IND,3841396,80.25,13.0667
+1586,Madurai,IND,940989,,
+1587,Coimbatore,IND,816321,,
+1588,Tiruchchirappalli,IND,387223,,
+1589,Salem,IND,366712,,
+1590,Agartala,IND,,91.2,23.5
+1591,Lucknow,IND,1619115,81,27
+1592,Kanpur,IND,1879420,,
+1593,Varanasi,IND,932399,,
+1594,Agra,IND,891790,,
+1595,Allahabad,IND,806486,,
+1596,Meerut,IND,753778,,
+1597,Faridabad,IND,617717,,
+1598,Bareilly,IND,590661,,
+1599,Gorakhpur,IND,505566,,
+1600,Aligarh,IND,480520,,
+1601,Moradabad,IND,429214,,
+1602,Saharanpur,IND,374945,,
+1603,Jhansi,IND,313491,,
+1604,Calcutta,IND,4399819,88.3333,22.5333
+1605,Haora,IND,950435,,
+1606,Durgapur,IND,425836,,
+1607,Port Blair,IND,,92.5,11.4
+1608,Chandigarh,IND,510565,76.5,30.5
+1609,Silvassa,IND,,73.1,20.2
+1610,Daman,IND,,,
+1611,New Delhi,IND,7206704,77.2,28.5833
+1612,Ghaziabad,IND,454156,,
+1613,Kavaratti,IND,,72.6,10.6
+1614,Pondicherry,IND,,79.5,12
+1615,Thimphu,BHT,20000,90,27
+1616,Bandar Seri Begawan,BRU,56300,115,5
+1617,Johor Baharu,MAL,328646,,
+1618,Alor Setar,MAL,125026,,
+1619,Kota Baharu,MAL,219713,,
+1620,Melaka,MAL,295999,,
+1621,Seremban,MAL,182584,,
+1622,Kuantan,MAL,198356,,
+1623,Ipoh,MAL,382633,,
+1624,Taiping,MAL,183165,,
+1625,Kangar,MAL,,,
+1626,Penang,MAL,219376,,
+1627,Kota Kinabalu,MAL,208484,,
+1628,Tawai,MAL,244765,,
+1629,Sandakan,MAL,223432,,
+1630,Kuching,MAL,147729,,
+1631,Sibu,MAL,126384,,
+1632,Shah Alam,MAL,101733,,
+1633,Kelang,MAL,243698,,
+1634,Selayang Baru,MAL,124606,,
+1635,Kuala Terengganu,MAL,228654,,
+1636,Kuala Lumpur,MAL,1145075,101.7,3.11667
+1637,Petaling Jaya,MAL,254849,,
+1638,Labuan,MAL,,,
+1639,Vientiane,LAO,377409,102.45,18
+1640,Chiang Mai,THA,167000,,
+1641,Nakhon Sawan,THA,152000,,
+1642,Khon Kaen,THA,206000,,
+1643,Nakhon Ratchasima,THA,278000,,
+1644,Ubon Ratchathani,THA,137000,,
+1645,Bangkok,THA,5876000,100.5,13.7333
+1646,Nonthaburi,THA,233000,,
+1647,Saraburi,THA,107000,,
+1648,Nakhon si Thammarat,THA,112000,,
+1649,Songkhla,THA,243000,,
+1650,Phnom Penh,K,400000,104.85,11.55
+1651,Hanoi,VN,3056146,105.867,21.0333
+1652,Haiphong,VN,1447523,,
+1653,Can Tho,VN,284306,,
+1654,Saigon,VN,3924435,106.5,10.5
+1655,Da Nang,VN,369734,108.217,16.0667
+1656,Nha Trang,VN,263093,,
+1657,Hue,VN,260489,,
+1658,Nam Dinh,VN,219615,,
+1659,Long Xuyen,VN,214037,,
+1660,Qui Nhon,VN,201912,,
+1661,Thai Nguyen,VN,171815,,
+1662,Vung Tau,VN,133558,,
+1663,Hong Gai,VN,129394,,
+1664,Cam Pha,VN,127408,,
+1665,Viet Tri,VN,116084,,
+1666,Aqmola,KAZ,280200,,
+1667,Aqtobe,KAZ,258900,,
+1668,Atyrau,KAZ,146900,,
+1669,Oral,KAZ,219100,,
+1670,Kokchetau,KAZ,141400,,
+1671,Aqtau,KAZ,151300,,
+1672,Shymkent,KAZ,397600,,
+1673,Pavlodar,KAZ,340700,,
+1674,Ekibastuz,KAZ,141100,,
+1675,Karaganda,KAZ,573700,,
+1676,Temirtau,KAZ,206100,,
+1677,Qostanay,KAZ,232100,,
+1678,Rudny,KAZ,125700,,
+1679,Qyzylorda,KAZ,162000,,
+1680,Semey,KAZ,320200,,
+1681,Oskemen,KAZ,326300,,
+1682,Petropavl,KAZ,239000,,
+1683,Taldyqorghan,KAZ,116100,,
+1684,Arqalyq,KAZ,,,
+1685,Dzhambul,KAZ,130600,,
+1686,Zhambyl,KAZ,,,
+1687,Zhezqazghan,KAZ,108700,,
+1688,Zhezkazghan,KAZ,,,
+1689,Almaty,KAZ,1172400,76.8833,43.2333
+1690,Leninsk,KAZ,,,
+1691,Pyongyang,NOK,2335000,125.683,39.0333
+1692,Hamhung Hungnam,NOK,701000,,
+1693,Chongjin,NOK,520000,,
+1694,Nampo,NOK,370000,,
+1695,Sunchon,NOK,356000,,
+1696,Sinuiju,NOK,289000,,
+1697,Tanchon,NOK,284000,,
+1698,Wonsan,NOK,274000,,
+1699,Tokchon,NOK,217000,,
+1700,Kanggye,NOK,211000,,
+1701,Haeju,NOK,195000,,
+1702,Anju,NOK,186000,,
+1703,Songjin,NOK,179000,,
+1704,Kusong,NOK,177000,,
+1705,Huichon,NOK,163000,,
+1706,Sinpo,NOK,158000,,
+1707,Kaesong,NOK,120000,,
+1708,Bishkek,KGZ,630000,74.5,42.4
+1709,Hong Kong,HONX,7055071,114.2,22.3
+1710,Macau,MACX,,113.55,22.2
+1711,Ulaanbaatar,MNG,479500,107,48
+1712,Kathmandu,NEP,393494,85.25,27.45
+1713,Flying Fish Cove,XMAS,,105.43,-10.25
+1714,West Island,COCO,,96.5,-12.1
+1715,Nicosia,CY,161100,33.2,35.4
+1716,Gaza,GAZA,409680,34.5,31.5
+1717,Jerusalem,IL,468900,35.2167,31.7833
+1718,Ramla,IL,,,
+1719,Haifa,IL,,,
+1720,Nazareth,IL,,,
+1721,Tel Aviv,IL,,34.7833,32.1
+1722,Beer Sheva,IL,,,
+1723,Hurghada,ET,,,
+1724,Marsa Matruh,ET,,,
+1725,El Tur,ET,,,
+1726,El Arish,ET,,,
+1727,El Kharga,ET,,,
+1728,Damanhur,ET,226000,,
+1729,Kafr el Dauwar,ET,161000,,
+1730,El Mansura,ET,358000,,
+1731,Dumyat,ET,121000,,
+1732,Tanta,ET,374000,,
+1733,El Mahalla el Kubra,ET,385000,,
+1734,Ismailiya,ET,236000,,
+1735,Kafr el Sheikh,ET,,,
+1736,Shibin el Kom,ET,136000,,
+1737,Benha,ET,120000,,
+1738,Shubra el Kheima,ET,533000,,
+1739,Zagazig,ET,274000,,
+1740,Aswan,ET,196000,,
+1741,Asyut,ET,291000,,
+1742,Beni Suef,ET,163000,,
+1743,El Faiyum,ET,227000,,
+1744,El Giza,ET,1671000,,
+1745,El Minya,ET,203000,,
+1746,Qena,ET,142000,,
+1747,El Uqsur,ET,148000,,
+1748,Sohag,ET,142000,,
+1749,Bur Said,ET,382000,,
+1750,Alexandria,ET,2917000,30,31
+1751,Cairo,ET,6053000,31.3333,29.8667
+1752,Helwan,ET,352000,,
+1753,El Suweiz,ET,265000,,
+1754,Jakarta,RI,8259266,106.5,-6.1
+1755,Bandung,RI,2058649,107.4,-6.58
+1756,Semarang,RI,1250971,,
+1757,Surabaya,RI,2483871,112.717,-7.21667
+1758,Yogyakarta,RI,412392,,
+1759,Banda Aceh,RI,184699,,
+1760,Bengkulu,RI,170327,,
+1761,Jambi,RI,339944,,
+1762,Bandar Lampung,RI,636706,,
+1763,Padang,RI,631543,,
+1764,Palembang,RI,1144279,104.767,-3
+1765,Medan,RI,1730752,98.6833,3.58333
+1766,Pontianak,RI,397343,,
+1767,Banjarmasin,RI,481371,,
+1768,Palangkaraya,RI,112562,,
+1769,Samarinda,RI,407339,,
+1770,Ujung Pandang,RI,944685,,
+1771,Ambon,RI,276955,,
+1772,Malang,RI,695618,,
+1773,Surakarta,RI,504176,,
+1774,Pekan Baru,RI,398694,,
+1775,Balikpapan,RI,344405,,
+1776,Manado,RI,320990,,
+1777,Bogor,RI,271711,,
+1778,Cirebon,RI,254878,,
+1779,Kediri,RI,249807,,
+1780,Pekalongan,RI,242874,,
+1781,Tegal,RI,229713,,
+1782,Pematang Siantar,RI,219328,,
+1783,Binjai,RI,181904,,
+1784,Probolinggo,RI,177120,,
+1785,Madiun,RI,170242,,
+1786,Pasuruan,RI,152409,,
+1787,Magelang,RI,123213,,
+1788,Sukabumi,RI,119981,,
+1789,Gorontalo,RI,119780,,
+1790,Blitar,RI,119011,,
+1791,Tebing Tinggi,RI,116767,,
+1792,Pangkal Pinang,RI,113163,,
+1793,Tanjung Balai,RI,108202,,
+1794,Batam,RI,106667,,
+1795,Pare Pare,RI,101527,,
+1796,Dili,TL,59069,125.6,-8.6
+1797,Port Moresby,PNG,141500,147.15,-9.48333
+1798,Ar Ramadi,IRQ,192556,,
+1799,Al Hillah,IRQ,268834,,
+1800,Baghdad,IRQ,4478000,44.4,33.3333
+1801,Al Basrah,IRQ,406296,,
+1802,An Nasiriyah,IRQ,265937,,
+1803,Baqubah,IRQ,114516,,
+1804,Karbala,IRQ,296705,,
+1805,Al Amarah,IRQ,208797,,
+1806,As Samawah,IRQ,,,
+1807,An Najaf,IRQ,309010,,
+1808,Mosul,IRQ,664221,43.15,36.3167
+1809,Diwaniyah,IRQ,196519,,
+1810,Samarra,IRQ,,,
+1811,Kirkuk,IRQ,418624,,
+1812,Al Kut,IRQ,183183,,
+1813,Dahuk,IRQ,,,
+1814,Arbil,IRQ,485968,,
+1815,As Sulaymaniyah,IRQ,364096,,
+1816,Amman,JOR,777500,35.95,31.95
+1817,Kuwait,KWT,167768,47.3,29.3
+1818,Riyadh,SA,1250000,46.7,24.65
+1819,Jeddah,SA,,,
+1820,Damascus,SYR,1500000,36.3333,33.5
+1821,Aleppo,SYR,976727,36,36
+1822,Homs,SYR,354508,36,35
+1823,Beirut,RL,702000,35.4667,33.9
+1824,Nablus,WEST,104000,35.3,32.2
+1825,Sapporo,J,1748000,141.35,43.0667
+1826,Hakodate,J,287691,140.7,41.8
+1827,Aomori,J,,,
+1828,Morioka,J,,,
+1829,Sendai,J,967000,,
+1830,Akita,J,,,
+1831,Yamagata,J,,,
+1832,Fukushima,J,,,
+1833,Mito,J,,,
+1834,Utsonomiya,J,,,
+1835,Maebashi,J,,,
+1836,Urawa,J,,,
+1837,Chiba,J,843000,,
+1838,Tokyo,J,7843000,139.767,35.6833
+1839,Yokohama,J,3256000,139.32,35.3
+1840,Kawasaki,J,1187000,,
+1841,Niigata,J,,,
+1842,Toyama,J,,,
+1843,Kanazawa,J,,,
+1844,Fukui,J,,,
+1845,Kofu,J,,,
+1846,Nagano,J,,,
+1847,Gifu,J,,,
+1848,Shizuoka,J,,,
+1849,Nagoya,J,2108000,,
+1850,Tsu,J,,,
+1851,Otsu,J,,,
+1852,Kyoto,J,1415000,135.45,35
+1853,Osaka,J,2492000,,
+1854,Kobe,J,1388000,,
+1855,Nara,J,,,
+1856,Wakayama,J,,,
+1857,Tottori,J,,,
+1858,Matsue,J,,,
+1859,Okayama,J,,,
+1860,Hiroshima,J,1099000,132.3,34.3
+1861,Yamaguchi,J,,,
+1862,Tokushima,J,,,
+1863,Takamatsu,J,,,
+1864,Matsuyama,J,,,
+1865,Kochi,J,,,
+1866,Fukuoka,J,1273000,130.45,33.5833
+1867,Kita Kyushu,J,1012000,,
+1868,Saga,J,,,
+1869,Nagasaki,J,,,
+1870,Kumamoto,J,,,
+1871,Oita,J,,,
+1872,Miyazaki,J,,,
+1873,Kagoshima,J,,,
+1874,Naha,J,,,
+1875,Seoul,ROK,10229262,126.967,37.5667
+1876,Pusan,ROK,3813814,,
+1877,Taegu,ROK,2449139,,
+1878,Inchon,ROK,2307618,,
+1879,Kwangju,ROK,1257504,,
+1880,Taejon,ROK,1272143,,
+1881,Ulsan,ROK,967394,,
+1882,Suwon,ROK,755502,,
+1883,Songnam,ROK,869243,,
+1884,Chonju,ROK,563406,,
+1885,Masan,ROK,441358,,
+1886,Chongju,ROK,531195,,
+1887,Chinju,ROK,329913,,
+1888,Mokpo,ROK,247524,,
+1889,Cheju,ROK,258509,,
+1890,Kunsan,ROK,266517,,
+1891,Chunchon,ROK,235067,,
+1892,Yosu,ROK,183557,,
+1893,Male,MV,46334,72,2
+1894,Muscat,OM,30000,58.5,23.5
+1895,Abu Dhabi,UAE,363432,54.36,24.27
+1896,Al Ayn,UAE,176441,,
+1897,Dubai,UAE,585189,55,25
+1898,Sharjah,UAE,125123,,
+1899,Sanaa,YE,427185,44.11,15.21
+1900,Aden,YE,550744,45,12.8
+1901,Manila,RP,1655000,120.983,14.5833
+1902,Quezon,RP,1989000,,
+1903,Kalookan,RP,1023000,,
+1904,Davao,RP,1007000,,
+1905,Cebu,RP,662000,,
+1906,Zamboanga,RP,511000,,
+1907,Makati,RP,484000,,
+1908,Pasig,RP,471000,,
+1909,Cagayan de Oro,RP,428000,,
+1910,Pasay,RP,409000,,
+1911,Doha,Q,217294,51,25
+1912,Rayyan,Q,91996,50.5,25.5
+1913,Wakrah,Q,23682,50.7,25.2
+1914,Singapore,SGP,2558000,103.833,1.3
+1915,Colombo,CL,643000,79.8667,6.9
+1916,Changhua,RC,221090,,
+1917,Hualien,RC,107824,,
+1918,Fengshan,RC,301374,,
+1919,Pingtung,RC,214728,,
+1920,Fengyuan,RC,157548,,
+1921,Panchiao,RC,539115,,
+1922,Chungho,RC,387123,,
+1923,Sanchuung,RC,382880,,
+1924,Hsinchuang,RC,328758,,
+1925,Yungho,RC,241104,,
+1926,Hsintien,RC,248822,,
+1927,Taitung,RC,109189,,
+1928,Taoyuan,RC,260680,,
+1929,Chungli,RC,295825,,
+1930,Chiai,RC,261941,,
+1931,Chilung,RC,370049,,
+1932,Hsinchu,RC,341128,,
+1933,Kaohsiung,RC,1426518,,
+1934,Taichung,RC,857590,,
+1935,Tainan,RC,707658,120.2,22.95
+1936,Taipei,RC,2626138,121.517,25.0333
+1937,The Valley,AXA,,-63.03,18.13
+1938,Saint Johns,AG,36000,-61.5,17.3
+1939,Oranjestad,ARU,,-70.02,12.31
+1940,Nassau,BS,140000,-77.35,25.0833
+1941,Bridgetown,BDS,10000,-59.4,13.1
+1942,Belmopan,BZ,3000,-88.5,17.1
+1943,Guatemala City,GCA,823301,-90.5167,14.6167
+1944,Mixco,GCA,209791,,
+1945,Villa Nueva,GCA,101295,,
+1946,Aguascalientes,MEX,440425,-102.2,21.5
+1947,Mexicali,MEX,438377,-115.3,32.4
+1948,Tijuana,MEX,698752,,
+1949,Ensenada,MEX,169426,,
+1950,La Paz,MEX,137641,-100.5,24.1
+1951,Campeche,MEX,150518,-90.3,19.5
+1952,Tuxtla Gutierrez,MEX,289626,-93.1,16.5
+1953,Nezahualcoyotl,MEX,1255456,,
+1954,Tonala,MEX,151190,,
+1955,Tapachula,MEX,138858,,
+1956,Chihuahua,MEX,516153,-106.1,28.4
+1957,Ciudad Juarez,MEX,789522,,
+1958,Saltillo,MEX,420947,-101,25.3
+1959,Torreon,MEX,439436,,
+1960,Monclova,MEX,177792,,
+1961,Colima,MEX,106967,-103.4,19.1
+1962,Victoria de Durango,MEX,348036,,
+1963,Gomez Palacio,MEX,164092,,
+1964,Durango,MEX,182600,-104.4,24
+1965,Leon,MEX,758279,,
+1966,Salamanca,MEX,123190,,
+1967,Irapuato,MEX,265042,,
+1968,Celaya,MEX,214856,,
+1969,Guanajuato,MEX,36809,-101.2,21
+1970,Acapulco,MEX,515374,,
+1971,Chilpancingo,MEX,36193,-99.3,17.3
+1972,Pachuca,MEX,174013,,
+1973,Pachuca de Soto,MEX,83892,-98.4,20.1
+1974,Guadalajara,MEX,1650042,-103.333,20.6833
+1975,Zapopan,MEX,668323,,
+1976,Tlaquepaque,MEX,328031,,
+1977,Cuautla,MEX,110242,,
+1978,Toluca,MEX,327865,,
+1979,Toluca de Lerdo,MEX,136100,-99.4,19.2
+1980,Atizapan de Zaragoza,MEX,315059,,
+1981,Morelia,MEX,428486,-101.1,19.4
+1982,Uruapan,MEX,187623,,
+1983,Zamora,MEX,109751,,
+1984,Cuernavaca,MEX,279187,-99.2,19
+1985,Tepic,MEX,206967,-104.5,21.3
+1986,Monterrey,MEX,1068996,-100.3,25.6667
+1987,Guadalupe,MEX,535332,,
+1988,San Nicolas de los Garza,MEX,436603,,
+1989,Ciudad Santa Catarina,MEX,162707,,
+1990,San Pedro Garza Garcia,MEX,113017,,
+1991,Ciudad Apodaca,MEX,103364,,
+1992,Oaxaca,MEX,212818,-96.4,17
+1993,Puebla,MEX,1007170,-98.1,19
+1994,Tehuacan,MEX,139450,,
+1995,Queretaro,MEX,385503,-100.2,20.4
+1996,Cancun,MEX,167730,,
+1997,Chetumal,MEX,23685,-88.2,18.3
+1998,San Luis Potosi,MEX,488238,-101,22.1
+1999,Soledad de Graciano Sanch,MEX,123943,,
+2000,Culiacan,MEX,415046,-107.4,24.5
+2001,Mazatlan,MEX,262705,,
+2002,Los Mochis,MEX,162659,,
+2003,Hermosillo,MEX,406417,-111,29
+2004,Ciudad Obregon,MEX,219980,,
+2005,Heroica Nogales,MEX,105873,,
+2006,Villahermosa,MEX,261231,-93,18
+2007,Ciudad Victoria,MEX,194996,-99.1,23.4
+2008,Tampico,MEX,272690,,
+2009,Matamoros,MEX,266055,,
+2010,Reynosa,MEX,265663,,
+2011,Nuevo Laredo,MEX,218413,,
+2012,Ciudad Madero,MEX,160331,,
+2013,Tlaxcala,MEX,116800,-98.1,19.2
+2014,Cordoba,MEX,130695,,
+2015,Xalapa Enriquez,MEX,279451,,
+2016,Coatzacoalcos,MEX,198817,,
+2017,Poza Rica,MEX,151739,,
+2018,Minatitlan,MEX,142060,,
+2019,Orizaba,MEX,114216,,
+2020,Jalapa,MEX,161400,-97,19.3
+2021,Veracruz Llave,MEX,438821,,
+2022,Merida,MEX,523422,-89.6333,20.9667
+2023,Zacatecas,MEX,100051,-102.4,22.5
+2024,Mexico City,MEX,9815795,-99.2,19.4
+2025,Hamilton,BERM,,-64.47,32.17
+2026,Road Town,BVIR,,-64.37,18.27
+2027,Edmonton,CDN,616741,-113.517,53.5667
+2028,Calgary,CDN,710677,-114.017,51.1
+2029,Vancouver,CDN,471844,-122.4,48.5
+2030,Burnaby,CDN,158858,,
+2031,Victoria,CDN,263180,-123.317,48.4167
+2032,Surrey,CDN,245173,,
+2033,Winnipeg,CDN,616790,-97.1,49.5
+2034,Fredericton,CDN,45248,-52.5,45.5
+2035,Saint Johns,CDN,143390,-52.5,47.3
+2036,Yellowknife,CDN,8256,-114.45,62.4667
+2037,Halifax,CDN,114455,-63.4,44.4
+2038,Ottawa,CDN,313987,-75.5,45.3
+2039,Gloucester,CDN,101677,,
+2040,Vaughan,CDN,111359,,
+2041,London,CDN,303165,-81.15,43.0333
+2042,Hamilton,CDN,318499,-79.9,43.2667
+2043,Scarborough,CDN,524598,,
+2044,York,CDN,140525,,
+2045,Toronto,CDN,635395,-79.5,43.5
+2046,Kitchener,CDN,168282,-80.5,43.4333
+2047,Windsor,CDN,191435,-82.9667,42.2667
+2048,Oshawa,CDN,129344,-78.8667,43.9
+2049,North York,CDN,562564,,
+2050,Mississauga,CDN,463388,,
+2051,Etobicoke,CDN,309993,,
+2052,Brampton,CDN,234445,,
+2053,Markham,CDN,153811,,
+2054,Burlington,CDN,129575,,
+2055,Saint Catharines,CDN,129300,,
+2056,Thunder Bay,CDN,113746,-89.3167,48.3667
+2057,Nepean,CDN,107627,,
+2058,East York,CDN,102696,,
+2059,Charlottetown,CDN,24837,-63.2,46.2
+2060,Laval,CDN,314398,,
+2061,Montreal,CDN,1017666,-73.5,45.3
+2062,Quebec,CDN,167517,-71.3833,46.8
+2063,Longueuil,CDN,129874,,
+2064,Richmond,CDN,126624,,
+2065,Regina,CDN,179178,-104.667,50.4333
+2066,Saskatoon,CDN,186058,-107,52
+2067,Whitehorse,CDN,13311,-135,60.4
+2068,Birmingham,USA,265347,-86.75,33.5667
+2069,Mobile,USA,196263,-88.25,30.6833
+2070,Montgomery,USA,190350,-86.3667,32.3833
+2071,Huntsville,USA,159880,-86.5833,34.7
+2072,Anchorage,USA,226338,-150.017,61.1667
+2073,Juneau,USA,19528,-134.583,58.3667
+2074,Phoenix,USA,984310,-112.2,33.2
+2075,Tucson,USA,411480,,
+2076,Mesa,USA,289199,,
+2077,Glendale,USA,147864,,
+2078,Scottsdale,USA,130075,,
+2079,Tempe,USA,141993,,
+2080,Chandler,USA,89862,,
+2081,Little Rock,USA,175727,-92.3,34.4
+2082,Los Angeles,USA,3485557,-118,34
+2083,San Diego,USA,1110623,-117.167,32.7333
+2084,San Jose,USA,782224,-121.933,37.3667
+2085,San Francisco,USA,723959,-122.383,37.6167
+2086,Long Beach,USA,429321,-118.15,33.8167
+2087,Fresno,USA,354091,,
+2088,Sacramento,USA,369365,-121.5,38.5167
+2089,Oakland,USA,372242,-122.317,37.8167
+2090,Santa Ana,USA,293827,-117.867,33.75
+2091,Anaheim,USA,266406,,
+2092,Riverside,USA,226546,,
+2093,Stockton,USA,210943,-121.25,37.9
+2094,Bakersfield,USA,176264,-119.05,35.4167
+2095,Huntington Beach,USA,181519,,
+2096,Fremont,USA,173339,,
+2097,Glendale,USA,180038,,
+2098,San Bernardino,USA,170036,,
+2099,Modesto,USA,164746,-121,37.65
+2100,Chula Vista,USA,135160,,
+2101,Oxnard,USA,142560,-119.183,34.2
+2102,Garden Grove,USA,142965,,
+2103,Oceanside,USA,128090,-117.417,33.2333
+2104,Ontario,USA,133179,-117.6,34.05
+2105,Moreno Valley,USA,118779,,
+2106,Torrance,USA,133107,,
+2107,Pomona,USA,131700,-117.75,34.05
+2108,Pasadena,USA,131586,-118.15,34.15
+2109,Irvine,USA,110330,,
+2110,Sunnyvale,USA,117324,,
+2111,Santa Clarita,USA,120050,,
+2112,Santa Rosa,USA,113261,-122.817,38.5167
+2113,Hayward,USA,114705,,
+2114,Fullerton,USA,114144,,
+2115,Orange,USA,110658,,
+2116,Rancho Cucamonga,USA,101409,,
+2117,Escondido,USA,108648,-117.083,33.1167
+2118,Lancaster,USA,97300,,
+2119,Concord,USA,111308,-121.983,37.9667
+2120,Thousand Oaks,USA,104381,,
+2121,Salinas,USA,108777,-121.6,36.6667
+2122,Inglewood,USA,109602,,
+2123,El Monte,USA,106162,,
+2124,Vallejo,USA,109199,,
+2125,Simi Valley,USA,100218,,
+2126,Palmdale,USA,70262,-118.1,34.6333
+2127,Fontana,USA,87535,,
+2128,Berkeley,USA,102724,,
+2129,West Covina,USA,96226,,
+2130,Costa Mesa,USA,96357,,
+2131,Norwalk,USA,94279,,
+2132,Corona,USA,75943,,
+2133,Denver,USA,467610,-104.867,39.75
+2134,Colorado Springs,USA,280430,-104.717,38.8167
+2135,Aurora,USA,222103,,
+2136,Lakewood,USA,126475,,
+2137,Fort Collins,USA,87491,-105.083,40.75
+2138,Bridgeport,USA,141686,-73.1833,41.1833
+2139,Hartford,USA,139739,-72.4,41.3
+2140,New Haven,USA,130474,-73.9167,41.3167
+2141,Stamford,USA,108056,,
+2142,Waterbury,USA,108961,-73.0667,41.5833
+2143,Dover,USA,23512,-75.4667,39.1333
+2144,Jacksonville,USA,635230,-81.7,30.5
+2145,Miami,USA,358648,-80.1,25.4
+2146,Tampa,USA,280015,,
+2147,St. Petersburg,USA,240318,-83.3333,27.7667
+2148,Hialeah,USA,188008,,
+2149,Orlando,USA,164674,-81.3833,28.55
+2150,Fort Lauderdale,USA,149238,,
+2151,Tallahassee,USA,124773,-84.1,30.2
+2152,Hollywood,USA,121720,,
+2153,Coral Springs,USA,78864,,
+2154,Pembroke Pines,USA,65566,,
+2155,Clearwater,USA,98669,,
+2156,Atlanta,USA,393929,-84.4,33.4
+2157,Columbus,USA,178683,,
+2158,Savannah,USA,137812,-81.2,32.1333
+2159,Macon,USA,107365,-83.65,32.7
+2160,Honolulu,USA,377059,-157.917,21.3333
+2161,Hilo,USA,,-165,20
+2162,Boise,USA,126685,-116.2,43.4
+2163,Chicago,USA,2783726,-87.6333,41.8833
+2164,Rockford,USA,141787,-89.05,42.35
+2165,Aurora,USA,99672,-88.3333,41.75
+2166,Springfield,USA,105417,-89.6667,39.8333
+2167,Peoria,USA,113513,-89.6833,40.6667
+2168,Naperville,USA,85806,,
+2169,Indianapolis,USA,731278,-86.2833,39.7333
+2170,Fort Wayne,USA,191839,-85.2,41
+2171,Evansville,USA,126272,-87.5333,38.05
+2172,Gary,USA,116646,,
+2173,South Bend,USA,105511,-86.3167,41.7
+2174,Des Moines,USA,193189,-93.65,41.5333
+2175,Cedar Rapids,USA,108772,-91.7,41.8833
+2176,Wichita,USA,304017,-97.4167,37.65
+2177,Kansas City,USA,151521,,
+2178,Overland Park,USA,111790,,
+2179,Topeka,USA,119883,-95.6333,39.0667
+2180,Louisville,USA,269555,-85.7333,38.1833
+2181,Lexington Fayette,USA,225366,,
+2182,Frankfort,USA,25973,-84.5,38.1
+2183,New Orleans,USA,496938,-90.25,29.9833
+2184,Baton Rouge,USA,219531,-91.15,30.5333
+2185,Shreveport,USA,198525,,
+2186,Lafayette,USA,101852,-92,30.2
+2187,Augusta,USA,21819,-69.8,44.3167
+2188,Baltimore,USA,736014,-76.4167,39.3333
+2189,Annapolis,USA,31740,-76.3,39
+2190,Boston,USA,574283,-71.0333,42.3667
+2191,Worcester,USA,169759,-71.8667,42.2667
+2192,Springfield,USA,156983,,
+2193,Lowell,USA,103439,-71.3167,42.65
+2194,Detroit,USA,1027974,-83.0167,42.4167
+2195,Grand Rapids,USA,189126,-85.5167,42.8833
+2196,Warren,USA,144864,,
+2197,Flint,USA,140925,-83.7333,42.9667
+2198,Lansing,USA,127321,-84.6,42.7833
+2199,Sterling Heights,USA,117810,,
+2200,Ann Arbor,USA,109608,,
+2201,Livonia,USA,100850,,
+2202,Minneapolis,USA,368383,,
+2203,St. Paul,USA,272235,-93,45
+2204,Jackson,USA,202062,-90.0833,32.3167
+2205,Kansas City,USA,434829,-94.5833,39.1167
+2206,St. Louis,USA,396685,-90.3833,38.75
+2207,Springfield,USA,140494,-93.3833,37.2333
+2208,Independence,USA,112301,,
+2209,Jefferson City,USA,33619,-92.1833,38.5667
+2210,Helena,USA,23938,-112,46.6
+2211,Omaha,USA,342862,-95.9,41.3
+2212,Lincoln,USA,191972,-96.4,40.5
+2213,Las Vegas,USA,258204,-115.2,36.2
+2214,Reno,USA,133850,-119.783,39.5
+2215,Henderson,USA,64948,,
+2216,Carson City,USA,32022,-119.767,39.1667
+2217,Manchester,USA,99332,,
+2218,Concord,USA,30400,-71.5,43.2
+2219,Newark,USA,275221,-74.1667,40.7
+2220,Jersey City,USA,228517,,
+2221,Paterson,USA,140891,-74.15,40.9
+2222,Elizabeth,USA,110002,,
+2223,Trenton,USA,92124,-74.7667,40.2167
+2224,Albuquerque,USA,384915,,
+2225,Santa Fe,USA,48899,-106,35.4
+2226,New York,USA,7322564,-74,40.4
+2227,Buffalo,USA,328175,-78.7333,42.9333
+2228,Rochester,USA,230356,-77.6667,43.1167
+2229,Yonkers,USA,188082,,
+2230,Syracuse,USA,163860,-76.1167,43.1167
+2231,Albany,USA,100031,-73.75,42.65
+2232,Charlotte,USA,419539,-80.9333,35.2167
+2233,Raleigh,USA,212092,-78.4,35.5
+2234,Greensboro,USA,183894,,
+2235,Winston Salem,USA,150958,,
+2236,Durham,USA,138894,-78.7833,35.8667
+2237,Bismarck,USA,44485,-100.5,46.4
+2238,Columbus,USA,632945,-83,39.5
+2239,Cleveland,USA,505616,,
+2240,Cincinnati,USA,364114,-84.5167,39.15
+2241,Toledo,USA,332943,-83.8,41.6
+2242,Akron,USA,223019,,
+2243,Dayton,USA,182005,-84.2167,39.9
+2244,Oklahoma City,USA,444724,-97.3,35.3
+2245,Tulsa,USA,367302,-95.9,36.2
+2246,Portland,USA,463634,-122.6,45.6
+2247,Eugene,USA,112733,-123.217,44.1167
+2248,Salem,USA,107793,-123.017,44.9167
+2249,Philadelphia,USA,1585577,-75.25,39.8833
+2250,Pittsburgh,USA,369879,-80,40.45
+2251,Erie,USA,108718,-80.1833,42.0833
+2252,Allentown,USA,105301,-75.4333,40.65
+2253,Harrisburg,USA,53264,-76.7667,40.2
+2254,Providence,USA,160728,-71.4333,41.7333
+2255,Columbia,USA,110734,-81.1167,33.95
+2256,Sioux Falls,USA,100836,-96.7333,43.5667
+2257,Pierre,USA,11973,-100.283,44.3833
+2258,Memphis,USA,618652,-90,35.05
+2259,Nashville Davidson,USA,488366,,
+2260,Knoxville,USA,169761,-83.9833,35.8167
+2261,Chattanooga,USA,152393,-85.2,35.0333
+2262,Nashville,USA,455657,-86.4,36.1
+2263,Houston,USA,1637859,-95.35,29.9667
+2264,San Antonio,USA,959295,-98.4,29.3
+2265,Dallas,USA,1007618,-96.85,32.85
+2266,El Paso,USA,515342,,
+2267,Austin,USA,472020,-97.7,30.3
+2268,Fort Worth,USA,447619,-97.1,32.4
+2269,Arlington,USA,261717,,
+2270,Corpus Christi,USA,257453,-97.5,27.7667
+2271,Lubbock,USA,186206,-101.817,33.65
+2272,Plano,USA,127885,,
+2273,Garland,USA,180635,,
+2274,Irving,USA,155037,,
+2275,Amarillo,USA,157571,-100.7,35.2333
+2276,Laredo,USA,122899,-99.45,27.5333
+2277,Brownsville,USA,107027,,
+2278,Pasadena,USA,119604,,
+2279,Mesquite,USA,101484,,
+2280,Beaumont,USA,114323,-94.0167,29.95
+2281,Grand Prairie,USA,99606,,
+2282,Abilene,USA,106707,-99.6833,32.4167
+2283,Waco,USA,103590,-97.2167,31.6167
+2284,McAllen,USA,84021,,
+2285,Wichita Falls,USA,96259,-98.4833,33.9667
+2286,Salt Lake City,USA,159928,-112,40.4
+2287,Montpelier,USA,8241,-72.4,44.2
+2288,Virginia Beach,USA,393089,,
+2289,Norfolk,USA,261250,-76.2,36.9
+2290,Richmond,USA,202798,-77.3333,37.5
+2291,Chesapeake,USA,151982,,
+2292,Newport News,USA,171439,,
+2293,Arlington,USA,170897,,
+2294,Hampton,USA,133811,,
+2295,Alexandria,USA,111182,,
+2296,Portsmouth,USA,103910,,
+2297,Seattle,USA,516259,,
+2298,Spokane,USA,177165,,
+2299,Tacoma,USA,176664,,
+2300,Olympia,USA,27447,-122.9,46.9667
+2301,Charleston,USA,63968,-81.6,38.3667
+2302,Milwaukee,USA,628088,-87.9,42.95
+2303,Madison,USA,190766,-89.2,43
+2304,Green Bay,USA,96466,-88.1333,44.4833
+2305,Cheyenne,USA,47283,-104.817,41.15
+2306,Washington,USA,606900,-77,38.5
+2307,George Town,CAYM,,-81.23,19.18
+2308,San Jose,CR,296600,-84.2,10
+2309,Alajuela,CR,158300,,
+2310,Cartago,CR,109000,,
+2311,Heredia,CR,67400,,
+2312,Liberia,CR,36400,,
+2313,Puntarenas,CR,92400,-84.8,10
+2314,Limon,CR,67800,-83,10
+2315,Managua,NIC,1195000,-86.25,12.1667
+2316,Leon,NIC,171375,,
+2317,Chinandega,NIC,101211,,
+2318,Masaya,NIC,100646,,
+2319,Granada,NIC,79418,-86,11.9
+2320,Bocas del Toro,PA,,,
+2321,Penonome,PA,61000,,
+2322,Colon,PA,140900,,
+2323,El Porvenir,PA,,,
+2324,David,PA,102700,,
+2325,La Palma,PA,,,
+2326,Chitre,PA,34700,,
+2327,Las Tablas,PA,21100,,
+2328,Panama City,PA,594800,-79.55,8.96667
+2329,San Miguelito,PA,243000,,
+2330,Santiago,PA,61000,,
+2331,Camaguey,C,293961,,
+2332,Ciego de Avila,C,,,
+2333,Cienfuegos,C,132038,,
+2334,Havana,C,2241000,-82.35,23.1333
+2335,Bayamo,C,137663,,
+2336,Manzanillo,C,107650,,
+2337,Guantanamo,C,207796,,
+2338,Holguin,C,242085,,
+2339,Victoria de las Tunas,C,126930,,
+2340,Matanzas,C,123843,,
+2341,Pinar del Rio,C,128570,,
+2342,Sancti Spiritus,C,,,
+2343,Santiago de Cuba,C,440084,,
+2344,Santa Clara,C,205400,,
+2345,Nueva Gerona,C,,,
+2346,Roseau,WD,11000,-61.3,15.2
+2347,Santo Domingo,DOM,1400000,-69.9,18.4833
+2348,Port-au-Prince,RH,800000,-72.2,18.4
+2349,Nueva San Salvador,ES,116575,,
+2350,San Salvador,ES,422570,-89.2167,13.7
+2351,Soyapango,ES,251811,,
+2352,Mejicanos,ES,145000,,
+2353,Delgado,ES,104790,,
+2354,Apopa,ES,100763,,
+2355,Santa Ana,ES,202337,,
+2356,La Ceiba,HCA,77100,,
+2357,Tela,HCA,24000,,
+2358,Trujillo,HCA,,,
+2359,Comayagua,HCA,44300,,
+2360,Santa Rosa de Copan,HCA,21500,,
+2361,San Pedro Sula,HCA,325900,,
+2362,Puerto Cortes,HCA,32500,,
+2363,Choluteca,HCA,63200,,
+2364,Danli,HCA,35500,,
+2365,Yuscaran,HCA,,,
+2366,Tegucigalpa,HCA,670100,-87.2167,14.1
+2367,Siguatepeque,HCA,32200,,
+2368,Puerto Lempira,HCA,,,
+2369,La Esperanza,HCA,,,
+2370,Roatan,HCA,,,
+2371,La Paz,HCA,,,
+2372,Gracias,HCA,,,
+2373,Ocotepeque,HCA,,,
+2374,Jutigalpa,HCA,22500,,
+2375,Santa Barbara,HCA,,,
+2376,Nacaome,HCA,,,
+2377,El Progreso,HCA,70000,,
+2378,Olanchito,HCA,15900,,
+2379,Yoro,HCA,,,
+2380,Nuuk,GROX,,-51.7,64.2
+2381,Saint Georges,WG,30000,-61.4,12.4
+2382,Basse-Terre,GUAD,,-61.8,16.15
+2383,Kingston,JA,101000,-76.5,18
+2384,Fort-de-France,MART,100000,-61,14.6
+2385,Plymouth,MNTS,0,-62.13,16.42
+2386,Willemstad,NA,125000,-68.9,12.1
+2387,Marigot,SMAR,5700,-63.1,18.1
+2388,Leticia,CO,,,
+2389,Medellin,CO,1621356,-75.6,6.21667
+2390,Bello,CO,304819,,
+2391,Itagui,CO,169374,,
+2392,Turbo,CO,127045,,
+2393,Envigado,CO,109240,,
+2394,Arauca,CO,,,
+2395,Barranquilla,CO,1064255,-74.8,10.95
+2396,Soledad,CO,264583,,
+2397,Malambo,CO,112289,,
+2398,Cartagena,CO,745689,,
+2399,Mangangue,CO,104496,,
+2400,Tunja,CO,120210,,
+2401,Manizales,CO,335125,,
+2402,Florencia,CO,118027,,
+2403,Yopal,CO,,,
+2404,Popayan,CO,223128,,
+2405,Valledupar,CO,265505,,
+2406,Quibdo,CO,130921,,
+2407,Monteria,CO,276074,,
+2408,Soacha,CO,266817,,
+2409,Puerto Inirida,CO,,,
+2410,Cienaga,CO,144340,,
+2411,Riohacha,CO,142455,,
+2412,San Jose del Guaviare,CO,,,
+2413,Neiva,CO,248178,,
+2414,Santa Marta,CO,309372,,
+2415,Villavicencio,CO,252711,,
+2416,Pasto,CO,325540,,
+2417,Tumaco,CO,114802,,
+2418,Cucuta,CO,479309,,
+2419,Mocoa,CO,,,
+2420,Armenia,CO,220303,,
+2421,Pereira,CO,352530,,
+2422,Dosquebradas,CO,163599,,
+2423,San Andres,CO,,,
+2424,Bogota,CO,5237635,-74.0833,4.6
+2425,Bucaramanga,CO,351737,,
+2426,Floridablanca,CO,246834,,
+2427,Barrancabermeja,CO,180653,,
+2428,Sincelejo,CO,180076,,
+2429,Ibague,CO,346632,,
+2430,Cali,CO,1718871,-76.5,3.41667
+2431,Buenaventura,CO,266988,,
+2432,Palmira,CO,256823,,
+2433,Tulua,CO,138124,,
+2434,Cartago,CO,117166,,
+2435,Mitu,CO,,,
+2436,Puerto Carreno,CO,,,
+2437,San Juan,PR,,-66.12,18.49
+2438,Basseterre,KN,14700,-62.3,17
+2439,Castries,WL,49000,-60.5,14
+2440,Saint-Pierre,SPMI,5618,-56,47
+2441,Kingstown,WV,33694,-61.1,13.1
+2442,Port-of-Spain,TT,150000,-61.2,10.4
+2443,Grand Turk,TUCA,,-71.08,21.28
+2444,Charlotte Amalie,VIRG,,-64.9,18.3
+2445,Pago Pago,AMSA,,-170.42,-14.16
+2446,Newcastle,AUS,429000,,
+2447,Sydney,AUS,3657000,151.2,-33.8667
+2448,Wollongong,AUS,238000,,
+2449,Sunshine Coast,AUS,110000,,
+2450,Darwin,AUS,68500,130.85,-12.4667
+2451,Brisbane,AUS,1302000,153.033,-27.4667
+2452,Gold Coast,AUS,266000,,
+2453,Townsville,AUS,114000,,
+2454,Adelaide,AUS,1050000,138.583,-34.9333
+2455,Hobart,AUS,184000,147.14,-42.5
+2456,Melbourne,AUS,3081000,144.967,-37.8167
+2457,Geelong,AUS,151000,,
+2458,Perth,AUS,1193000,115.85,-31.95
+2459,Albany,AUS,,118,-35
+2460,Canberra,AUS,310000,149.08,-35.1
+2461,Avarua,COOK,,-159.46,-21.12
+2462,Suva,FJI,69481,178,-19
+2463,Papeete,FPOL,,-149.34,-17.32
+2464,Agana,GUAM,,144.44,13.28
+2465,Dededo,GUAM,46000,144.8,13.5
+2466,Tarawa,KIR,2100,173,1.4
+2467,Majuro,MH,7600,171.3,7.1
+2468,Kolonia,FSM,5500,158.2,7
+2469,Palikir,FSM,6444,158.15,6.9
+2470,Yaren,NAU,,167,-1
+2471,Noumea,NCA,,166.27,-22.16
+2472,Wellington,NZ,352030,174.767,-41.2833
+2473,Auckland,NZ,952600,175,-36
+2474,Christchurch,NZ,952600,172.66,-43.5
+2475,Alofi,NIUE,,-169.9,-19.05
+2476,Kingston,NORF,,168,-29
+2477,Saipan,NMIS,,145.45,15.12
+2478,Koror,PAL,7685,134.5,7.3
+2479,Melekeok,PAL,391,134.6,7.5
+2480,Adamstown,PITC,,-130.05,-25.04
+2481,Honiara,SLB,26000,160,-9.5
+2482,Nukualofa,TO,28899,-175.2,-21.1
+2483,Funafuti,TUV,2120,178,-8
+2484,Port-Vila,VU,15759,168.3,-17.75
+2485,Mata-Utu,WAFU,,-171.56,-13.57
+2486,Apia,WS,36000,-171,-12
+2487,La Plata,RA,642979,-58,-35
+2488,La Matanza,RA,1111811,,
+2489,Moron,RA,641541,,
+2490,Lomas de Zamoras,RA,572769,,
+2491,Mar del Plata,RA,512880,,
+2492,Quilmes,RA,509445,,
+2493,Lanus,RA,466755,,
+2494,General San Martin,RA,407506,,
+2495,Avellaneda,RA,346620,,
+2496,San Isidro,RA,299022,,
+2497,Vicente Lopez,RA,289142,,
+2498,Bahia Blanca,RA,260096,,
+2499,San Nicolas de los Arroyo,RA,119302,,
+2500,San Fernando del Valle de,RA,132626,-65.5,-28.3
+2501,Resistencia,RA,292350,-59,-27.3
+2502,Comodoro Rivadavia,RA,124104,,
+2503,Rawson,RA,52000,-65,-43.1
+2504,Cordoba,RA,1208713,-64.25,-31.3667
+2505,Rio Cuarto,RA,138853,,
+2506,Corrientes,RA,258103,-58.4,-27.3
+2507,Parana,RA,211936,-60,-32
+2508,Concordia,RA,116485,,
+2509,Formosa,RA,148074,-58.1,-26.5
+2510,San Salvador de Jujuy,RA,180102,-65.2,-24.1
+2511,Santa Rosa,RA,107000,-64.2,-36.4
+2512,La Rioja,RA,103727,-67,-29.3
+2513,Mendoza,RA,773113,-69,-33
+2514,Posadas,RA,210755,-56,-27.3
+2515,Neuquen,RA,243803,-68,-39
+2516,Viedma,RA,25000,-63.1,-40.5
+2517,Salta,RA,370904,-65.3,-24.5
+2518,San Juan,RA,352691,-68.3,-31.3
+2519,San Luis,RA,110136,-66.2,-33.2
+2520,Rio Gallegos,RA,43000,-69.2,-51.4
+2521,Santa Fe,RA,406388,-60.5,-31.5
+2522,Rosario,RA,1118984,-60.5,-33
+2523,Santiago del Estero La Ba,RA,263471,,
+2524,Santiago del Estero,RA,148000,-64.2,-28
+2525,Ushuaia,RA,3000,-68.3,-54.5
+2526,San Miguel de Tucuman,RA,622324,-65.2,-26.5
+2527,Buenos Aires,RA,2988006,-58.4833,-34.5833
+2528,La Paz,BOL,953400,-68.15,-16.5
+2529,Sucre,BOL,110000,-65.1,-19
+2530,Cochabamba,BOL,304000,-66,-17.1
+2531,Rio Branco,BR,228907,-67.5,-9.5
+2532,Maceio,BR,723156,-35.5,-9.3
+2533,Macapa,BR,214197,-52,0.5
+2534,Manaus,BR,1158265,-60,-3.1
+2535,Salvador,BR,2209465,-38.5,-13
+2536,Feira de Santana,BR,449960,,
+2537,Ilheus,BR,242589,,
+2538,Vitoria da Conquista,BR,241776,,
+2539,Itabuna,BR,183237,,
+2540,Juazeiro,BR,171904,,
+2541,Jequie,BR,165361,,
+2542,Camacari,BR,134768,,
+2543,Alagoinhas,BR,122882,,
+2544,Barreiras,BR,113544,,
+2545,Fortaleza,BR,1967365,-38.55,-3.76667
+2546,Caucaia,BR,208902,,
+2547,Juazeiro do Norte,BR,186490,,
+2548,Maracanau,BR,160088,,
+2549,Sobral,BR,138274,,
+2550,Cariacica,BR,300085,,
+2551,Vila Velha,BR,297052,,
+2552,Serra,BR,266851,,
+2553,Vitoria,BR,263708,-40.3,-20.2
+2554,Cachoeiro de Itapemirim,BR,147283,,
+2555,Colatina,BR,103621,,
+2556,Linhares,BR,103030,,
+2557,Goiania,BR,998520,-49.2,-16.3
+2558,Anapolis,BR,264873,,
+2559,Araguaina,BR,105000,,
+2560,Luziania,BR,104840,,
+2561,Rio Verde,BR,100223,,
+2562,Sao Luis,BR,781068,-44.1,-2.3
+2563,Imperatriz,BR,227731,,
+2564,Caxias,BR,133710,,
+2565,Timon,BR,118332,,
+2566,Codo,BR,104825,,
+2567,Parnaiba,BR,124641,,
+2568,Cuiaba,BR,433101,-56,-15.3
+2569,Varzea Grande,BR,190374,,
+2570,Rondonopolis,BR,142221,,
+2571,Campo Grande,BR,598216,,
+2572,Dourados,BR,153165,,
+2573,Belo Horizonte,BR,2091770,-43.95,-19.9333
+2574,Contagem,BR,491268,,
+2575,Betim,BR,249795,,
+2576,Ribeirao das Neves,BR,197147,,
+2577,Ibirite,BR,106773,,
+2578,Uberlandia,BR,437111,,
+2579,Juiz de Fora,BR,423913,,
+2580,Montes Claros,BR,271324,,
+2581,Uberaba,BR,232134,,
+2582,Governador Valadares,BR,231077,,
+2583,Ipatinga,BR,195736,,
+2584,Divinopolis,BR,171562,,
+2585,Sete Lagoas,BR,167112,,
+2586,Teofilo Otoni,BR,127214,,
+2587,Pocos de Caldas,BR,121845,,
+2588,Patos de Minas,BR,112690,,
+2589,Itapecerica da Serra,BR,110362,,
+2590,Barbacena,BR,107843,,
+2591,Sabara,BR,100570,,
+2592,Varginha,BR,100079,,
+2593,Belem,BR,1142258,-48.4833,-1.45
+2594,Abaetetuba,BR,106753,,
+2595,Ananindeua,BR,342905,,
+2596,Santarem,BR,242765,,
+2597,Maraba,BR,147030,,
+2598,Castanhal,BR,117747,,
+2599,Itaituba,BR,104896,,
+2600,Joao Pessoa,BR,549270,-35,-7.1
+2601,Campina Grande,BR,340412,,
+2602,Santa Luzia,BR,152682,,
+2603,Santa Rita,BR,105584,,
+2604,Curitiba,BR,1465698,-49.2833,-25.4167
+2605,Sao Jose dos Pinhais,BR,167286,,
+2606,Londrina,BR,412894,,
+2607,Maringa,BR,267878,,
+2608,Ponta Grossa,BR,252674,,
+2609,Foz do Iguacu,BR,231596,,
+2610,Cascavel,BR,219623,,
+2611,Colombo,BR,153583,,
+2612,Guarapuava,BR,149158,,
+2613,Paranagua,BR,115394,,
+2614,Apucarana,BR,101005,,
+2615,Recife,BR,1342877,-34.8833,-8.06667
+2616,Cabo de Santo Agostinho,BR,137295,,
+2617,Jaboatao dos Guararapes,BR,528973,,
+2618,Paulista,BR,234706,,
+2619,Caruaru,BR,231874,,
+2620,Gravatai,BR,205657,,
+2621,Petrolina,BR,190453,,
+2622,Vitoria de Santo Antao,BR,111575,,
+2623,Camaragibe,BR,111190,,
+2624,Garanhuns,BR,110190,,
+2625,Teresina,BR,653994,-42.5,-5
+2626,Rio de Janeiro,BR,5533011,-43.2,-23
+2627,Campos dos Goytacazes,BR,391299,,
+2628,Sao Goncalo,BR,827967,,
+2629,Novo Iguacu,BR,801036,,
+2630,Duque de Caxias,BR,712370,,
+2631,Niteroi,BR,450129,,
+2632,Sao Joao de Meriti,BR,433713,,
+2633,Belfort Roxo,BR,393520,,
+2634,Olinda,BR,355741,,
+2635,Petropolis,BR,267604,,
+2636,Volta Redonda,BR,228939,,
+2637,Mage,BR,180550,,
+2638,Nova Friburgo,BR,169218,,
+2639,Barra Mansa,BR,164768,,
+2640,Itaborai,BR,156631,,
+2641,Nilopolis,BR,155190,,
+2642,Teresopolis,BR,122614,,
+2643,Macae,BR,112966,,
+2644,Queimados,BR,108531,,
+2645,Cabo Frio,BR,101142,,
+2646,Natal,BR,656244,-35.1,-5.5
+2647,Mossoro,BR,205732,,
+2648,Porto Alegre,BR,1286251,-51.2167,-30.0333
+2649,Alvorada,BR,160671,,
+2650,Sapucaia do Sul,BR,113992,,
+2651,Caxias do Sul,BR,326222,,
+2652,Pelotas,BR,304285,,
+2653,Canoas,BR,284114,,
+2654,Santa Maria,BR,226226,,
+2655,Novo Hamburgo,BR,225082,,
+2656,Viamao,BR,195880,,
+2657,Sao Leopoldo,BR,180741,,
+2658,Rio Grande,BR,178223,,
+2659,Passo Fundo,BR,156352,,
+2660,Uruguaiana,BR,121825,,
+2661,Bage,BR,114091,,
+2662,Santa Cruz do Sul,BR,100562,,
+2663,Porto Velho,BR,293815,-63.5,-8.5
+2664,Boa Vista,BR,154166,-60.4,2.5
+2665,Joinvile,BR,397987,,
+2666,Florianopolis,BR,268551,-58.3,-27.3
+2667,Blumenau,BR,230988,,
+2668,Criciuma,BR,159033,,
+2669,Praia Grande,BR,150574,,
+2670,Sao Jose,BR,147490,,
+2671,Lages,BR,140005,,
+2672,Itajai,BR,134797,,
+2673,Chapeco,BR,130458,,
+2674,Sao Paulo,BR,9811776,-46.6333,-23.55
+2675,Santa Barbara dOeste,BR,161020,,
+2676,Sumare,BR,167751,,
+2677,Hortolandia,BR,114885,,
+2678,Guarulhos,BR,972766,,
+2679,Campinas,BR,907996,,
+2680,Sao Bernardo do Campo,BR,658791,,
+2681,Santo Andre,BR,625294,,
+2682,Osasco,BR,622374,,
+2683,Sao Jose dos Campos,BR,485780,,
+2684,Ribeirao Preto,BR,452804,,
+2685,Sorocaba,BR,431370,,
+2686,Santos,BR,412288,,
+2687,Maua,BR,344684,,
+2688,Carapicuiba,BR,328015,,
+2689,Sao Jose do Rio Preto,BR,323418,,
+2690,Diadema,BR,323221,,
+2691,Moji das Cruzes,BR,314947,,
+2692,Piracicaba,BR,302605,,
+2693,Jundiai,BR,293237,,
+2694,Bauru,BR,293026,,
+2695,Sao Vicente,BR,279620,,
+2696,Franca,BR,266909,,
+2697,Aparecida de Goiania,BR,265446,,
+2698,Limeira,BR,230292,,
+2699,Itaquaquecetuba,BR,228533,,
+2700,Guaruja,BR,226185,,
+2701,Taubate,BR,220179,,
+2702,Embu,BR,195676,,
+2703,Taboao da Serra,BR,182441,,
+2704,Suzano,BR,180703,,
+2705,Marilia,BR,177503,,
+2706,Presidente Prudente,BR,177236,,
+2707,Barueri,BR,176740,,
+2708,Sao Carlos,BR,175295,,
+2709,Jacarei,BR,168030,,
+2710,Americana,BR,167901,,
+2711,Araraquara,BR,163831,,
+2712,Aracatuba,BR,162546,,
+2713,Rio Claro,BR,153025,,
+2714,Sao Caetano do Sul,BR,140808,,
+2715,Itapevi,BR,133769,,
+2716,Cotia,BR,127047,,
+2717,Itu,BR,122544,,
+2718,Indaiatuba,BR,122159,,
+2719,Ferraz de Vasconcelos,BR,121992,,
+2720,Moji Guacu,BR,114555,,
+2721,Pindamonhangaba,BR,114092,,
+2722,Itapetininga,BR,111909,,
+2723,Braganca Paulista,BR,109863,,
+2724,Francisco Morato,BR,106328,,
+2725,Barretos,BR,104782,,
+2726,Jau,BR,103605,,
+2727,Catanduva,BR,100913,,
+2728,Botucatu,BR,100826,,
+2729,Ribeirao Pires,BR,100335,,
+2730,Aracaju,BR,426580,-37.1,-11
+2731,Arapiraca,BR,173351,,
+2732,Nossa Senhora do Socorro,BR,103496,,
+2733,Palmas,BR,,,
+2734,Brasilia,BR,1817001,-47.9167,-15.8667
+2735,Santiago,RCH,4318000,-70.7,-33.45
+2736,Valparaiso,RCH,267000,-71.3,-33.1
+2737,Asuncion,PY,729307,-57.3,-25.5
+2738,Montevideo,ROU,1247000,-56.2167,-34.85
+2739,Chachapoyas,PE,,,
+2740,Chimbote,PE,268979,,
+2741,Huaraz,PE,,,
+2742,Abancay,PE,,,
+2743,Arequipa,PE,619156,,
+2744,Ayacucho,PE,105918,,
+2745,Cajamarca,PE,92447,,
+2746,Callao,PE,,,
+2747,Cuzco,PE,255568,-72,-13.2
+2748,Huancavelica,PE,,,
+2749,Huanuco,PE,118814,,
+2750,Ica,PE,161406,,
+2751,Chincha Alta,PE,110016,,
+2752,Huancayo,PE,258209,,
+2753,Trujillo,PE,509312,,
+2754,Chiclayo,PE,411536,,
+2755,Lima,PE,6321173,-77.05,-12.0833
+2756,Iquitos,PE,274759,-73.2,-3.4
+2757,Puerto Maldonado,PE,,,
+2758,Moquegua,PE,,,
+2759,Cerro de Pasco,PE,,,
+2760,Piura,PE,277964,,
+2761,Sullana,PE,147361,,
+2762,Talara,PE,82228,,
+2763,Puno,PE,91877,,
+2764,Juliaca,PE,142576,,
+2765,Moyobamba,PE,,,
+2766,Tacna,PE,174336,,
+2767,Tumbes,PE,,,
+2768,Pucallpa,PE,172286,,
+2769,Cayenne,FGU,38155,-52.45,4.93333
+2770,Georgetown,GUY,170000,-58.2,6.83333
+2771,Paramaribo,SME,150000,-55.15,5.81667
+2772,Puerto Ayacucho,YV,,,
+2773,Barcelona,YV,221792,,
+2774,Puerto La Cruz,YV,155731,,
+2775,San Fernando,YV,,,
+2776,Maracay,YV,354196,,
+2777,Turmero,YV,174280,,
+2778,Barinas,YV,153630,,
+2779,Ciudad Bolivar,YV,225340,,
+2780,Ciudad Guayana,YV,453047,,
+2781,Valencia,YV,903621,,
+2782,Puerto Cabello,YV,128825,,
+2783,Guacara,YV,100766,,
+2784,San Carlos,YV,,,
+2785,Tucupita,YV,,,
+2786,Coro,YV,,,
+2787,San Juan,YV,,,
+2788,Barquisimeto,YV,625450,,
+2789,Merida,YV,170902,,
+2790,Los Teques,YV,140617,,
+2791,Petare,YV,338417,,
+2792,Baruta,YV,182941,,
+2793,Guarenas,YV,134158,,
+2794,Maturin,YV,206654,,
+2795,La Ascuncion,YV,,,
+2796,Acarigua,YV,116551,,
+2797,Guanare,YV,,,
+2798,Cumana,YV,212432,,
+2799,San Cristobal,YV,220675,,
+2800,Trujillo,YV,,,
+2801,San Felipe,YV,,,
+2802,Maracaibo,YV,1249670,-71.6,10.65
+2803,Cabimas,YV,165755,,
+2804,Caracas,YV,1822465,-66.9333,10.5
+2805,Catia La Mar,YV,100104,,
+2806,Quito,EC,1200000,-78.5333,-0.216667
+2807,Guayaquil,EC,1300868,-80,-2
+2808,Stanley,FALK,,-57.51,-51.42
+2809,Algier,DZ,1507241,3.05,36.7667
+2810,Annaba,DZ,222518,,
+2811,Batna,DZ,181601,,
+2812,Bechar,DZ,107311,,
+2813,Sidi bel Abbes,DZ,152778,,
+2814,Skikda,DZ,128747,,
+2815,Tebessa,DZ,107559,,
+2816,Oran,DZ,609823,0.4,35.4
+2817,Constantine,DZ,440842,,
+2818,Setif,DZ,170182,,
+2819,Blida,DZ,127284,,
+2820,Bejaia,DZ,114534,,
+2821,Mostaganem,DZ,114037,,
+2822,Tlemcen,DZ,107632,,
+2823,Tripoli,LAR,,22.3,37.3
+2824,Bengasi,LAR,,20,32
+2825,Bamako,RMM,,-7.6,12.3
+2826,Nouakchott,RIM,,-16,18
+2827,Rabat,MA,1385872,-6.5,33.6
+2828,Agadir,MA,550200,,
+2829,Fes,MA,774754,,
+2830,Kenitra,MA,448785,,
+2831,Khouribga,MA,294680,,
+2832,Marrakech,MA,745541,,
+2833,Meknes,MA,530171,,
+2834,Oujda,MA,678778,,
+2835,Safi,MA,376038,,
+2836,Tanger,MA,526215,,
+2837,Casablanca,MA,2940623,-7.65,33.5833
+2838,Beni Mellal,MA,386505,,
+2839,Tetouan,MA,367349,,
+2840,Niamey,RN,,2.1,13.2
+2841,Tunis,TN,,10.2,36.7833
+2842,El Aaiun,WSA,,-13.2,27.05
+2843,Cabinda,ANG,,,
+2844,Mbanza Congo,ANG,,,
+2845,Uige,ANG,,,
+2846,Luanda,ANG,,13.2,-8.6
+2847,Ndalatando,ANG,,,
+2848,Sumbe,ANG,,,
+2849,Malanje,ANG,,,
+2850,Lucapa,ANG,,,
+2851,Saurimo,ANG,,,
+2852,Benguela,ANG,,,
+2853,Huambo,ANG,,,
+2854,Bie,ANG,,,
+2855,Luena,ANG,,,
+2856,Menongue,ANG,,,
+2857,Namibe,ANG,,,
+2858,Lubango,ANG,,,
+2859,Caxito,ANG,,,
+2860,Ngiva,ANG,,,
+2861,Brazzaville,RCB,,15.25,-4.25
+2862,Windhoek,NAM,,17.2,-22.3
+2863,Kikwit,ZRE,182142,,
+2864,Bandundu,ZRE,,17.4,3.3
+2865,Matadi,ZRE,172730,,
+2866,Boma,ZRE,135284,,
+2867,Mbandaka,ZRE,169841,,
+2868,Kisangani,ZRE,417517,25.2,0.5
+2869,Kananga,ZRE,393030,,
+2870,Tshikapa,ZRE,180860,,
+2871,Mbuji Mayi,ZRE,806475,,
+2872,Mwene Ditu,ZRE,137459,,
+2873,Bukavu,ZRE,201569,,
+2874,Uvira,ZRE,115590,,
+2875,Butembo,ZRE,109406,,
+2876,Goma,ZRE,109094,,
+2877,Lubumbashi,ZRE,851381,,
+2878,Kolwezi,ZRE,417810,,
+2879,Likasi,ZRE,299118,,
+2880,Kalemie,ZRE,101309,29.2,-5.9
+2881,Kinshasa,ZRE,4655313,15.2,-4.3
+2882,Kabwe,Z,166519,,
+2883,Ndola,Z,376311,,
+2884,Kitwe,Z,338207,,
+2885,Chingola,Z,167954,,
+2886,Mufulira,Z,152944,,
+2887,Luanshya,Z,146275,,
+2888,Chipata,Z,,,
+2889,Mansa,Z,,,
+2890,Lusaka,Z,982362,28.2,-15.3
+2891,Kasama,Z,,,
+2892,Solwezi,Z,,,
+2893,Livingstone,Z,,,
+2894,Mongu,Z,,,
+2895,Porto-Novo,BEN,,2.4,6.3
+2896,Ouagadougou,BF,,-2,12
+2897,Abuja,WAN,182418,7.5,9.05
+2898,Makurdi,WAN,109000,,
+2899,Maiduguri,WAN,282000,,
+2900,Calabar,WAN,154000,,
+2901,Benin City,WAN,203000,,
+2902,Enugu,WAN,279000,,
+2903,Kaduna,WAN,302000,,
+2904,Kano,WAN,595000,,
+2905,Katsina,WAN,182000,,
+2906,Ilorin,WAN,420000,,
+2907,Lagos,WAN,5686000,3.4,6.45
+2908,Minna,WAN,120000,,
+2909,Abeokuta,WAN,377000,,
+2910,Ondo,WAN,150000,,
+2911,Akure,WAN,143000,,
+2912,Oshogbo,WAN,421000,,
+2913,Oyo,WAN,226000,,
+2914,Ibadan,WAN,1263000,,
+2915,Jos,WAN,182000,,
+2916,Port Harcourt,WAN,362000,,
+2917,Sokoto,WAN,181000,,
+2918,Ogbomosho,WAN,644000,,
+2919,Zaria,WAN,335000,,
+2920,Ilesha,WAN,334000,,
+2921,Onitsha,WAN,328000,,
+2922,Iwo,WAN,320000,,
+2923,Ado Ekiti,WAN,317000,,
+2924,Mushin,WAN,294000,,
+2925,Ede,WAN,271000,,
+2926,Aba,WAN,264000,,
+2927,Ife,WAN,262000,,
+2928,Ila,WAN,233000,,
+2929,Ikerre,WAN,216000,,
+2930,Iseyin,WAN,192000,,
+2931,Ilobu,WAN,176000,,
+2932,Offa,WAN,175000,,
+2933,Ikorodu,WAN,163000,,
+2934,Ilawe Ekiti,WAN,163000,,
+2935,Owo,WAN,162000,,
+2936,Ikirun,WAN,160000,,
+2937,Shaki,WAN,154000,,
+2938,Gusau,WAN,139000,,
+2939,Ijebu Ode,WAN,138000,,
+2940,Effon Alaiye,WAN,135000,,
+2941,Kumo,WAN,131000,,
+2942,Shomolu,WAN,130000,,
+2943,Oka,WAN,126000,,
+2944,Ikare,WAN,124000,,
+2945,Sapele,WAN,123000,,
+2946,Deba Habe,WAN,122000,,
+2947,Aarri,WAN,111000,,
+2948,Bida,WAN,111000,,
+2949,Ikire,WAN,109000,,
+2950,Lafia,WAN,108000,,
+2951,Inisa,WAN,106000,,
+2952,Shagamu,WAN,104000,,
+2953,Lome,RT,,1.1,6.1
+2954,Gaborone,RB,,25.6,-24.5
+2955,Port Elizabeth,RSA,303000,,
+2956,East London,RSA,102000,,
+2957,Bisho,RSA,93288,,
+2958,Bloemfontein,RSA,127000,,
+2959,Pretoria,RSA,526000,28.2333,-25.75
+2960,Johannesburg,RSA,713000,28.05,-26.1833
+2961,Soweto,RSA,597000,,
+2962,Tembisa,RSA,209000,,
+2963,Boksburg,RSA,120000,,
+2964,Carletonville,RSA,119000,,
+2965,Benoni,RSA,114000,,
+2966,Pietermaritzburg,RSA,156000,,
+2967,Durban,RSA,716000,,
+2968,Nelspruit,RSA,,,
+2969,Kimberley,RSA,,,
+2970,Pietersburg,RSA,,,
+2971,Mmabatho,RSA,,,
+2972,Cape Town,RSA,855000,18.4833,-33.9333
+2973,Harare,ZW,,31.2,-17.5
+2974,Yamoussoukro,CI,200659,-5.3,6.8
+2975,Abidjan,CI,,-4,5.3
+2976,Accra,GH,867459,-0.2,5.55
+2977,Kumasi,GH,376249,,
+2978,Cape Coast,GH,57224,,
+2979,Tamale,GH,135952,,
+2980,Tema,GH,131528,,
+2981,Takoradi,GH,61484,,
+2982,Sekondi,GH,31916,,
+2983,Bujumbura,BI,,29,-4
+2984,Kigali,RWA,,29.6,-1.6
+2985,Dodoma,EAT,203833,,
+2986,Arusha,EAT,134708,,
+2987,Moshi,EAT,,,
+2988,Tanga,EAT,187155,,
+2989,Morogoro,EAT,117760,,
+2990,Dar es Salaam,EAT,1360850,39.3,-6.83333
+2991,Lindi,EAT,,,
+2992,Mtwara Mikandani,EAT,,,
+2993,Songea,EAT,,,
+2994,Iringa,EAT,,,
+2995,Mbeya,EAT,152844,,
+2996,Singida,EAT,,,
+2997,Tabora,EAT,,,
+2998,Sumbawanga,EAT,,,
+2999,Kigoma Ujiji,EAT,,,
+3000,Shinyanga,EAT,100724,,
+3001,Bukoba,EAT,,,
+3002,Mwanza,EAT,223013,,
+3003,Musoma,EAT,,,
+3004,Mkokotoni,EAT,,,
+3005,Koani,EAT,,,
+3006,Zanzibar,EAT,157634,,
+3007,Wete,EAT,,,
+3008,Chake Cahke,EAT,,,
+3009,Ngaoundere,CAM,,,
+3010,Yaounde,CAM,750000,12,3.5
+3011,Bertoua,CAM,,,
+3012,Maroua,CAM,143000,,
+3013,Douala,CAM,884000,10,3.5
+3014,Garoua,CAM,177000,,
+3015,Bamenda,CAM,138000,,
+3016,Bafoussam,CAM,131000,,
+3017,Ebolowa,CAM,,,
+3018,Buea,CAM,,,
+3019,Bangui,RCA,,18.5,4.3
+3020,NDjamena,TCH,,15,12
+3021,Malabo,GQ,33000,9,4
+3022,Libreville,G,,9.3,0.3
+3023,Praia,CV,105000,-23,16
+3024,Malakal,SUD,,,
+3025,Waw,SUD,,,
+3026,Nyala,SUD,228778,,
+3027,al Fasher,SUD,,,
+3028,Juba,SUD,114980,,
+3029,Khartoum,SUD,924505,32.55,15.6167
+3030,Omdurman,SUD,1267077,,
+3031,Khartoum North,SUD,879105,,
+3032,al Ubayyid,SUD,228096,,
+3033,ad Damir,SUD,,,
+3034,Kassala,SUD,234270,,
+3035,Port Sudan,SUD,305385,,
+3036,al Qadarif,SUD,189384,,
+3037,Wad Madani,SUD,218714,,
+3038,Moroni,COM,,43,-12
+3039,Conakry,RG,,-13.5,9.3
+3040,Monrovia,LB,,-10.8,6.3
+3041,Djibouti,DJI,,43.1,11.5
+3042,Asmara,ER,,38.9167,15.2833
+3043,Addis Ababa,ETH,2316400,38.75,9
+3044,Dire Dawa,ETH,194587,,
+3045,Gonder,ETH,166593,,
+3046,Nazret,ETH,147088,,
+3047,Harer,ETH,122932,,
+3048,Mekele,ETH,119779,,
+3049,Jima,ETH,119717,,
+3050,Dese,ETH,117268,,
+3051,Bahir Dar,ETH,115531,,
+3052,Debrezit,ETH,105963,,
+3053,Mogadishu,SP,,45.3,2.2
+3054,Nyeri,EAK,88600,,
+3055,Thika,EAK,57100,,
+3056,Mombasa,EAK,465000,39.4,-4
+3057,Malindi,EAK,35200,,
+3058,Machakos,EAK,116100,,
+3059,Meru,EAK,78100,,
+3060,Embu,EAK,,,
+3061,Nairobi,EAK,1346000,36.8,-1.26667
+3062,Garissa,EAK,,,
+3063,Kisumu,EAK,185100,,
+3064,Kisii,EAK,44000,,
+3065,Nakuru,EAK,162800,,
+3066,Eldoret,EAK,104900,,
+3067,Kitale,EAK,53000,,
+3068,Kericho,EAK,40000,,
+3069,Kakamega,EAK,47300,,
+3070,Banjul,WAG,,-17,13.5
+3071,Dakar,SN,1382000,-17.4833,14.7
+3072,Diourbel,SN,,,
+3073,Fatick,SN,,,
+3074,Kaolack,SN,132000,,
+3075,Kolda,SN,,,
+3076,Louga,SN,,,
+3077,Saint Louis,SN,122000,,
+3078,Tambacounda,SN,,,
+3079,Thies,SN,156000,,
+3080,Ziguinchor,SN,107000,,
+3081,Bissau,GNB,,-15.5,11.5
+3082,Freetown,WAL,,-13.1,8.2
+3083,Kampala,EAU,,32.3,0.2
+3084,Maseru,LS,75000,27.5,-29.3
+3085,Antsiranana,RM,220000,,
+3086,Antananarivo,RM,1250000,47.4,-18.6
+3087,Antsirabe,RM,100000,,
+3088,Fianarantsoa,RM,300000,,
+3089,Majunga,RM,200000,,
+3090,Tamatave,RM,230000,,
+3091,Toliara,RM,150000,,
+3092,Lilongwe,MW,,34,-14
+3093,Pemba,MOC,,,
+3094,Xai Xai,MOC,,34,-25.2
+3095,Inhambane,MOC,,,
+3096,Chimoio,MOC,108818,,
+3097,Nacala,MOC,125208,,
+3098,Matala,MOC,337239,,
+3099,Nampula,MOC,250473,,
+3100,Lichinga,MOC,,,
+3101,Beira,MOC,298847,,
+3102,Tete,MOC,112221,,
+3103,Quelimane,MOC,146206,,
+3104,Maputo,MOC,931591,33,-26
+3105,Port Louis,MS,,57.3,-20.3
+3106,Mamoutzou,MAYO,,45.13,-12.46
+3107,Mbabane,SD,,31.1,-25
+3108,Saint-Denis,REUN,158139,55.5,-20.9
+3109,Jamestown,HELX,,-5.44,-15.56
+3110,Sao Tome,STP,,7,0
+3111,Victoria,SY,24570,55.5,-4.65
