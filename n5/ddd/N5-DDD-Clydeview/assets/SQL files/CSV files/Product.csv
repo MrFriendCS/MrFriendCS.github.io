@@ -1,0 +1,9 @@
+productName,productCode,numberInStock,onOrder,costPrice,manufacturerID
+Claw Hammer,CH20,2,1,4.99,531
+Combi Drill,CMBD,12,1,148.77,627
+Mallet,MA16,7,0,5.50,531
+Medium Paint Brush (Size 2),MPB2,34,1,5.65,531
+Metal File,MTF5,9,0,8.49,441
+Pliers,PLS6,5,1,11.99,441
+Saw,SW22,4,0,9.99,531
+Top Handled Jigsaw,JIG4,2,1,165,627

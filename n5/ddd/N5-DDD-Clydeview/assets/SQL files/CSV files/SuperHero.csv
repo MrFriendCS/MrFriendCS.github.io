@@ -1,0 +1,77 @@
+characterID,name,role,mainAbility,ability2,ability3,originOfPower,alterEgo
+1,Batman,Super Hero,Martial arts,Gadgets,Acrobatics,Training,Bruce Wayne
+2,Superman,Super Hero,Flight,Super-strength,Super-speed,Alien,Clark Kent
+3,The Hulk,Super Hero,Strength,Regeneration,,Radiation,Bruce Banner
+4,Wonder Woman,Super Hero,Flight,Super-strength,Super-speed,Magic,Princess Diana of Themyscira
+5,Green Lantern,Super Hero,Flight,Super-strength,Super-speed,Technology,Hal Jordan
+6,Spider-Man,Super Hero,Acrobatics,Martial arts,Super-strength,Radiation,Peter Parker
+7,Captain America,Super Hero,Martial arts,Super-strength,,Chemicals,Steve Rogers
+8,Iron Man,Super Hero,Flight,Armour,Super-strength,Technology,Tony Stark
+9,Daredevil,Super Hero,Martial arts,Acrobatics,,Chemicals,Matt Murdock
+10,Judge Dredd,Super Hero,Marksman,Martial arts,,Training,Joe Dredd
+11,Captain Marvel,Super Hero,Flight,Super-strength,Super-speed,Magic,Billy Batson
+12,Doctor Who,Super Hero,Time travel,Gadgets,,Alien,
+13,Asterix,Super Hero,Strength,Super-speed,,Chemicals,
+14,Harry Potter,Super Hero,Magic,,,Training,
+15,Thor,Super Hero,Strength,Weather control,Flight,Magic,Thor Odinson
+16,Buffy the Vampire Slayer,Super Hero,Strength,Martial arts,Acrobatics,Magic,Buffy Summers
+17,The Joker,Super Villain,Intelligence,,,Chemicals,
+18,Doctor Doom,Super Villain,Intelligence,Gadgets,Armour,Technology,Victor von Doom
+19,Green Goblin,Super Villain,Strength,Gadgets,Regeneration,Chemicals,Norman Osborn
+20,The Kingpin,Super Villain,Intelligence,Martial arts,,Training,Wilson Fisk
+21,Magneto,Super Villain,Flight,Telekinesis,,Mutant powers,Erik Magnus
+22,Lex Luthor,Super Villain,Intelligence,Gadgets,,Training,
+23,The Penguin,Super Villain,Intelligence,Gadgets,,Inheritance,Oswald Copperpot
+24,The Riddler,Super Villain,Intelligence,,,Training,Edward Nigma
+25,Lord Voldemort,Super Villain,Magic,,,Training,Tom Marvelo Riddle
+26,Loki,Super Villain,Strength,Magic,,Magic,Loki Laufeyson
+27,Angelis,Super Villain,Strength,Martial arts,Acrobatics,Magic,Angel
+28,Sauron,Super Villain,Mind control,Magic,Intelligence,Magic,
+29,Mastermancer,Team member,Magic,Intelligence,,Magic,
+30,The Bombadier,Team member,Gadgets,Flight,,Inheritance,
+31,Minda,Team member,Intelligence,Magic,,Training,
+32,Fission Woman,Team member,Strength,Electrical Control,,Radiation,
+33,Turbogal,Team member,Speed,Flight,,Mutant powers,
+34,Organogirl,Team member,Regeneration,Water breathing,,Technology,
+35,Snapshot,Team member,Marksman,Strength,,Chemicals,
+36,Trapezoid,Team member,Acrobatics,Magic,,Alien,
+37,Knife Edge,Team member,Martial arts,Time travel,,Training,
+38,The Doorman,Team member,Teleportation,Strength,,Chemicals,
+39,Psychoman,Team member,Telepathy,Invisibility,,Alien,
+40,Psipriest,Team member,Telekinesis,Marksman,,Radiation,
+41,Ember,Team member,Fire control,Magic,,Magic,
+42,Winterfall,Team member,Ice control,Strength,,Mutant powers,
+43,Blizzard,Team member,Weather control,Plasticity,,Technology,
+44,Whale Woman,Team member,Water breathing,Fire control,,Mutant powers,
+45,Dark Shadow,Team member,Invisibility,Teleportation,,Chemicals,
+46,Idea,Team member,Mind control,Flight,,Alien,
+47,Stretcho,Team member,Plasticity,Magic,,Magic,
+48,Master Wing,Team member,Flight,Gadgets,,Radiation,
+49,Mistress Falcon,Team member,Animal control,Strength,,Training,
+50,Tankman,Team member,Armour,Telekinesis,,Mutant powers,
+51,Oracle,Team member,Precognition,Invisibility,,Chemicals,
+52,Chronos,Team member,Time travel,Water breathing,,Technology,
+53,Xenoa,Henchman,Magic,Weather control,,Training,
+54,Computrace,Henchman,Gadgets,Strength,,Training,
+55,Black Ice,Henchman,Intelligence,Invisibility,,Radiation,
+56,The Iron Avenger,Henchman,Strength,Flight,,Alien,
+57,The Dart,Henchman,Speed,Strength,,Mutant powers,
+58,Broodborn,Henchman,Regeneration,Teleportation,,Alien,
+59,Cobalt Assassin,Henchman,Marksman,Ice control,,Training,
+60,Morax,Henchman,Acrobatics,Gadgets,,Training,
+61,Agares,Henchman,Martial arts,Strength,,Mutant powers,
+62,Hellgate,Henchman,Teleportation,Flight,,Radiation,
+63,Ziminiar,Henchman,Telepathy,Animal control,,Magic,
+64,Doctor Pseudonym,Henchman,Telekinesis,Strength,,Mutant powers,
+65,Nucleocinder,Henchman,Fire control,Magic,,Alien,
+66,Coldsnap,Henchman,Ice control,Flight,,Chemicals,
+67,The Tempest,Henchman,Weather control,Speed,,Magic,
+68,Dark Wave,Henchman,Water breathing,Telekinesis,,Technology,
+69,Knightmare,Henchman,Invisibility,Speed,,Radiation,
+70,The Minean,Henchman,Mind control,Gadgets,,Mutant powers,
+71,Wara,Henchman,Plasticity,Strength,,Magic,
+72,Droidraven,Henchman,Flight,Martial arts,,Chemicals,
+73,Fang,Henchman,Animal control,Water breathing,,Technology,
+74,Carapace,Henchman,See Invisibility,Armour,,Inheritance,
+75,Bloodseer,Henchman,Precognition,Strength,,Technology,
+76,Titor,Henchman,Time travel,Magic,,Chemicals,
