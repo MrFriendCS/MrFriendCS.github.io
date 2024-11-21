@@ -61,6 +61,6 @@ SELECT
 | hair       |       | Text    | 6     | N     | restricted choice: Auburn, Black, Blond, Brown, Grey, None, Red, White |
 | eyes       |       | Text    | 5     | N     | restricted choice: Amber, Black, Blue, Brown, Green, Hazel, Grey |
 | height     |       | Number  |       | Y     | range: >= 1.3 and <= 2.5 |
-| conviction |       | text    | 20    | Y     |            |       
+| conviction |       | Text    | 20    | Y     |            |       
 | open       |       | Boolean |       | Y     |            |
 | dob        |       | Date    |       | Y     |            |
