@@ -1,11 +1,11 @@
 CREATE TABLE Question4 (
-    ProductID INT NOT NULL,
+    productID INT NOT NULL,
     productName VARCHAR(12) NOT NULL,
     buyingPrice INT NOT NULL
         CHECK(buyingPrice >= 0),
     sellingPrice INT NOT NULL
         CHECK(sellingPrice >= 0),
-    PRIMARY KEY (ProductID)
+    PRIMARY KEY (productID)
 );
 
 INSERT INTO Question4 VALUES (1,"Mars Bar",27,42);

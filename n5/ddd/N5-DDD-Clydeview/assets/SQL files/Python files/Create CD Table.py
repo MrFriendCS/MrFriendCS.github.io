@@ -1,20 +1,23 @@
-# Create CD Table
+# Title: CD Table
+# Author: Mr Friend
+# Date: 21 Nov 2024
 
-fileIn = open("CD.csv", "r")
-fileOut = open("CD.sql", "w")
+# Files
+fileIn = open("../CSV Files/CD.csv", "r")
+fileOut = open("../CD.sql", "w")
 
-line = fileIn.readline()  # Ignore heading row
-line = fileIn.readline()
 
-tableCD = """CREATE TABLE CD (
-    CDCode VARCHAR(4) NOT NULL 
-        CHECK(LENGTH(CDCode) = 4),
+# Create table
+
+table = """CREATE TABLE CD (
+    code VARCHAR(4) NOT NULL 
+        CHECK(LENGTH(code) = 4),
     title VARCHAR(40) NOT NULL,
     artist VARCHAR(40) NOT NULL,
     label VARCHAR(20) NOT NULL,
-    numberOfTracks INT 
-        CHECK (numberOfTracks >= 10 
-           AND numberOfTracks <= 60),
+    tracks INT 
+        CHECK (tracks >= 10 
+           AND tracks <= 60),
     cost REAL NOT NULL 
         CHECK(cost >= 6.99 
           AND cost <= 15.00),
@@ -22,11 +25,18 @@ tableCD = """CREATE TABLE CD (
         CHECK (genre IN ("Choral", "Country", "Garage", "Indie", 
                          "Opera", "Pop", "R&B", "R&R", "Soul")),
     FOREIGN KEY (label)
-        REFERENCES Label (label),
-    PRIMARY KEY (CDCode)
+        REFERENCES Label(label),
+    PRIMARY KEY (code)
 );"""
 
-fileOut.write(tableCD + "\n\n")
+fileOut.write(table + "\n\n")
+
+
+# Insert data
+
+line = fileIn.readline()  # Ignore heading row
+line = fileIn.readline()
+
 
 while line != "":
     
@@ -34,11 +44,11 @@ while line != "":
     
     fileOut.write("INSERT INTO CD VALUES ")
     
-    fileOut.write("(\"" + data[0].strip() + "\",")  # CDCode
+    fileOut.write("(\"" + data[0].strip() + "\",")  # code
     fileOut.write( "\"" + data[1].strip() + "\",")  # title
     fileOut.write( "\"" + data[2].strip() + "\",")  # artist
     fileOut.write( "\"" + data[3].strip() + "\",")  # label
-    fileOut.write(        data[4].strip() + ",")  # numberOfTracks
+    fileOut.write(        data[4].strip() + ",")  # tracks
     fileOut.write(        data[5].strip() + ",")  # cost
     fileOut.write( "\"" + data[6].strip() + "\");\n")  # genre
 

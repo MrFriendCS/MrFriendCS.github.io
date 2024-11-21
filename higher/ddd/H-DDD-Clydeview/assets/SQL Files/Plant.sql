@@ -1,15 +1,15 @@
 CREATE TABLE Plant (
-    Category VARCHAR(10),
+    category VARCHAR(10),
     plantName VARCHAR(20) NOT NULL,
-    Variety VARCHAR(20) NOT NULL,
+    variety VARCHAR(20) NOT NULL,
     code VARCHAR(3) NOT NULL,
     referenceID VARCHAR(3) NOT NULL,
-    Unit INT 
-        CHECK(Unit >= 0),
-    Price FLOAT 
-        CHECK(Price >= 0),
-    Height VARCHAR(1) 
-        CHECK(Height IN("S","M","T")),
+    unit INT 
+        CHECK(unit >= 0),
+    price FLOAT 
+        CHECK(price >= 0),
+    height VARCHAR(1) 
+        CHECK(height IN("S","M","T")),
     PRIMARY KEY (referenceID)
 );
 

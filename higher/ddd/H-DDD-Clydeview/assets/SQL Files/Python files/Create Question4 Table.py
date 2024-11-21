@@ -2,19 +2,21 @@
 # Author: Mr Friend
 # Date: 14 Nov 2024
 
-# Create table
-
+# Files
 fileIn = open("../CSV Files/Question4.csv", "r")
 fileOut = open("../Question4.sql", "w")
 
+
+# Create table
+
 table = """CREATE TABLE Question4 (
-    ProductID INT NOT NULL,
+    productID INT NOT NULL,
     productName VARCHAR(12) NOT NULL,
     buyingPrice INT NOT NULL
         CHECK(buyingPrice >= 0),
     sellingPrice INT NOT NULL
         CHECK(sellingPrice >= 0),
-    PRIMARY KEY (ProductID)
+    PRIMARY KEY (productID)
 );"""
 
 fileOut.write(table + "\n\n")
@@ -31,7 +33,7 @@ while line != "":
     
     fileOut.write("INSERT INTO Question4 VALUES ")
     
-    fileOut.write("("   + data[0].strip() + ",")  # ProductID
+    fileOut.write("("   + data[0].strip() + ",")  # productID
     fileOut.write( "\"" + data[1].strip() + "\",")  # productName
     fileOut.write(        data[2].strip() + ",")  # buyingPrice
     fileOut.write(        data[3].strip() + ");\n")  # sellingPrice

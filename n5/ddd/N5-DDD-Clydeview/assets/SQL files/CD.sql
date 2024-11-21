@@ -1,12 +1,12 @@
 CREATE TABLE CD (
-    CDCode VARCHAR(4) NOT NULL 
-        CHECK(LENGTH(CDCode) = 4),
+    code VARCHAR(4) NOT NULL 
+        CHECK(LENGTH(code) = 4),
     title VARCHAR(40) NOT NULL,
     artist VARCHAR(40) NOT NULL,
     label VARCHAR(20) NOT NULL,
-    numberOfTracks INT 
-        CHECK (numberOfTracks >= 10 
-           AND numberOfTracks <= 60),
+    tracks INT 
+        CHECK (tracks >= 10 
+           AND tracks <= 60),
     cost REAL NOT NULL 
         CHECK(cost >= 6.99 
           AND cost <= 15.00),
@@ -14,8 +14,8 @@ CREATE TABLE CD (
         CHECK (genre IN ("Choral", "Country", "Garage", "Indie", 
                          "Opera", "Pop", "R&B", "R&R", "Soul")),
     FOREIGN KEY (label)
-        REFERENCES Label (label),
-    PRIMARY KEY (CDCode)
+        REFERENCES Label(label),
+    PRIMARY KEY (code)
 );
 
 INSERT INTO CD VALUES ("42AM","The Best of","Eva Cassidy","Blix Street",20,9.99,"Pop");

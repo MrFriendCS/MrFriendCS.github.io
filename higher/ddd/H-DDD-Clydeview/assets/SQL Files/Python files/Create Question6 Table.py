@@ -2,10 +2,12 @@
 # Author: Mr Friend
 # Date: 14 Nov 2024
 
-# Create table
-
+# Files
 fileIn = open("../CSV Files/Question6.csv", "r")
 fileOut = open("../Question6.sql", "w")
+
+
+# Create table
 
 table = """CREATE TABLE Question6 (
     fishType VARCHAR(12) NOT NULL,

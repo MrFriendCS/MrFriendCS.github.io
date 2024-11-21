@@ -1,7 +1,7 @@
 CREATE TABLE Question3 (
-    StudentID INT NOT NULL,
-    Forename VARCHAR(50) NOT NULL,
-    Surname VARCHAR(50) NOT NULL,
+    studentID INT NOT NULL,
+    forename VARCHAR(50) NOT NULL,
+    surname VARCHAR(50) NOT NULL,
     test1 INT NOT NULL
         CHECK(test1 >= 0 AND test1 <= 20),
     test2 INT NOT NULL
@@ -12,7 +12,7 @@ CREATE TABLE Question3 (
         CHECK(test4 >= 0 AND test4 <= 20),
     test5 INT NOT NULL
         CHECK(test5 >= 0 AND test5 <= 20),
-    PRIMARY KEY (StudentID)
+    PRIMARY KEY (studentID)
 );
 
 INSERT INTO Question3 VALUES (1,"Bill","Johnstone",15,12,12,13,14);

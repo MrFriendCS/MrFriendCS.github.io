@@ -1,6 +1,11 @@
 # Title: Plant Table
 # Author: Mr Friend
-# Date: 13 Nov 2024
+# Date: 21 Nov 2024
+
+# Files
+fileIn = open("../CSV Files/Plant.csv", "r")
+fileOut = open("../Plant.sql", "w")
+
 
 # Create table
 
@@ -33,14 +38,14 @@ while line != "":
     
     fileOut.write("INSERT INTO Plant VALUES ")
     
-    fileOut.write("(\"" + data[0].strip() + "\",")  # Category
+    fileOut.write("(\"" + data[0].strip() + "\",")  # category
     fileOut.write( "\"" + data[1].strip() + "\",")  # plantName
-    fileOut.write( "\"" + data[2].strip() + "\",")  # Variety
+    fileOut.write( "\"" + data[2].strip() + "\",")  # variety
     fileOut.write( "\"" + data[3].strip() + "\",")  # code
     fileOut.write( "\"" + data[4].strip() + "\",")  # referenceID
-    fileOut.write(        data[5].strip() + ",")  # Unit
-    fileOut.write(        data[6].strip() + ",")  # Price
-    fileOut.write( "\"" + data[7].strip() + "\");\n")  # Height
+    fileOut.write(        data[5].strip() + ",")  # unit
+    fileOut.write(        data[6].strip() + ",")  # price
+    fileOut.write( "\"" + data[7].strip() + "\");\n")  # height
 
     line = fileIn.readline()
     

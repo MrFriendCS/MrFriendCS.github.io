@@ -2,15 +2,17 @@
 # Author: Mr Friend
 # Date: 14 Nov 2024
 
-# Create table
-
+# Files
 fileIn = open("../CSV Files/Question1.csv", "r")
 fileOut = open("../Question1.sql", "w")
 
+
+# Create table
+
 table = """CREATE TABLE Question1 (
-    PupilID INT NOT NULL,
-    Forename VARCHAR(12) NOT NULL,
-    Surname VARCHAR(12) NOT NULL,
+    pupilID INT NOT NULL,
+    forename VARCHAR(12) NOT NULL,
+    surname VARCHAR(12) NOT NULL,
     test1 INT NOT NULL
         CHECK(test1 >= 0 AND test1 <= 10),
     test2 INT NOT NULL
@@ -19,10 +21,11 @@ table = """CREATE TABLE Question1 (
         CHECK(test3 >= 0 AND test3 <= 10),
     test4 INT NOT NULL
         CHECK(test4 >= 0 AND test4 <= 10),
-    PRIMARY KEY (PupilID)
+    PRIMARY KEY (pupilID)
 );"""
 
 fileOut.write(table + "\n\n")
+
 
 # Insert data
 
@@ -35,9 +38,9 @@ while line != "":
     
     fileOut.write("INSERT INTO Question1 VALUES ")
     
-    fileOut.write("("   + data[0].strip() + ",")  # PupilID
-    fileOut.write( "\"" + data[1].strip() + "\",")  # Forename
-    fileOut.write( "\"" + data[2].strip() + "\",")  # Surname
+    fileOut.write("("   + data[0].strip() + ",")  # pupilID
+    fileOut.write( "\"" + data[1].strip() + "\",")  # forename
+    fileOut.write( "\"" + data[2].strip() + "\",")  # surname
     fileOut.write(        data[3].strip() + ",")  # test1
     fileOut.write(        data[4].strip() + ",")  # test2
     fileOut.write(        data[5].strip() + ",")  # test3

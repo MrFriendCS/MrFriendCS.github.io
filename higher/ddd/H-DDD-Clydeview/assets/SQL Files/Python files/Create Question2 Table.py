@@ -2,20 +2,22 @@
 # Author: Mr Friend
 # Date: 14 Nov 2024
 
-# Create table
-
+# Files
 fileIn = open("../CSV Files/Question2.csv", "r")
 fileOut = open("../Question2.sql", "w")
 
+
+# Create table
+
 table = """CREATE TABLE Question2 (
-    StaffID INT NOT NULL,
-    Forename VARCHAR(12) NOT NULL,
-    Surname VARCHAR(12) NOT NULL,
+    staffID INT NOT NULL,
+    forename VARCHAR(12) NOT NULL,
+    surname VARCHAR(12) NOT NULL,
     hourlyRate FLOAT NOT NULL
         CHECK(hourlyRate >= 0),
     hoursWorked INT NOT NULL
         CHECK(hoursWorked >= 0),
-    PRIMARY KEY (StaffID)
+    PRIMARY KEY (staffID)
 );"""
 
 fileOut.write(table + "\n\n")

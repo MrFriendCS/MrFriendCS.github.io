@@ -2,8 +2,8 @@ CREATE TABLE Label (
     label VARCHAR(20) NOT NULL,
     founded INT NOT NULL,
     parentCompany VARCHAR(30),
-    countryOfOrigin VARCHAR(7) NOT NULL 
-        CHECK (countryOfOrigin IN ("Germany", "Japan", "UK", "USA")),
+    country VARCHAR(7) NOT NULL 
+        CHECK (country IN ("Germany", "Japan", "UK", "USA")),
     website VARCHAR(50),
     PRIMARY KEY (label)
 );

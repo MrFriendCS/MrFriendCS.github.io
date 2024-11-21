@@ -1,12 +1,12 @@
 CREATE TABLE Question2 (
-    StaffID INT NOT NULL,
-    Forename VARCHAR(12) NOT NULL,
-    Surname VARCHAR(12) NOT NULL,
+    staffID INT NOT NULL,
+    forename VARCHAR(12) NOT NULL,
+    surname VARCHAR(12) NOT NULL,
     hourlyRate FLOAT NOT NULL
         CHECK(hourlyRate >= 0),
     hoursWorked INT NOT NULL
         CHECK(hoursWorked >= 0),
-    PRIMARY KEY (StaffID)
+    PRIMARY KEY (staffID)
 );
 
 INSERT INTO Question2 VALUES (1,"Kenneth","Brown",7.50,20);
