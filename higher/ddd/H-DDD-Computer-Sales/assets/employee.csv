@@ -1,0 +1,5 @@
+employee_id,first_name,surname,address_number,address_1,address_2,locality,region,postal_code,phone_number,days_per_week
+mhogan,Matt,Hogan,21,Street Lane,,Mytown,Countyshire,CX2 2TT,098 987 7899,2.5
+hpatel,Hitesh,Patel,1,Avenue Place,,Mytown,Countyshire,CX1 9BT,098 345 5784,5.0
+mohanlon,Martin,O'Hanlon,78,Square Gardens,,Yourillage,Countyshire,CX6 3EF,098 564 4177,4.0
+lsach,Laura,Sach,,The house,Uplands Hill,Cutting,Countyshire,CX8 9OP,098 474 9988,3.0

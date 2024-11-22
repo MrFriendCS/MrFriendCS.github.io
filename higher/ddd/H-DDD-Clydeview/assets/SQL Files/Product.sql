@@ -9,8 +9,8 @@ CREATE TABLE Product (
     PRIMARY KEY (productID)
 );
 
-INSERT INTO Product VALUES ("BNBG01","DLL01","Fish bean bag toy",3.49,"Fish bean bag toy");
-INSERT INTO Product VALUES ("BNBG02","DLL01","Bird bean bag toy",3.49,"Bird bean bag toy");
+INSERT INTO Product VALUES ("BNBG01","DLL01","Fish bean bag toy",5.49,"Fish bean bag toy");
+INSERT INTO Product VALUES ("BNBG02","DLL01","Bird bean bag toy",4.49,"Bird bean bag toy");
 INSERT INTO Product VALUES ("BNBG03","DLL01","Rabbit bean bag toy",3.49,"Rabbit bean bag toy");
 INSERT INTO Product VALUES ("BR01","BRS01","8 inch teddy bear",5.99,"8 inch teddy bear");
 INSERT INTO Product VALUES ("BR02","BRS01","12 inch teddy bear",8.99,"12 inch teddy bear");

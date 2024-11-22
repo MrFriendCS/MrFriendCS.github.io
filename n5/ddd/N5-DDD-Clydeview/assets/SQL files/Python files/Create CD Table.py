@@ -1,9 +1,9 @@
 # Title: CD Table
 # Author: Mr Friend
-# Date: 21 Nov 2024
+# Date: 22 Nov 2024
 
 # Files
-fileIn = open("../CSV Files/CD.csv", "r")
+fileIn = open("../CSV Files/Label-CD/CD.csv", "r")
 fileOut = open("../CD.sql", "w")
 
 

@@ -1,12 +1,15 @@
-# Create Author Table
+# Title: Author Table
+# Author: Mr Friend
+# Date: 22 Nov 2024
 
-fileIn = open("Author.csv", "r")
-fileOut = open("Author.sql", "w")
+# Files
+fileIn = open("../CSV files/Author-Book/Author.csv", "r")
+fileOut = open("../Author.sql", "w")
 
-line = fileIn.readline()  # Ignore heading row
-line = fileIn.readline()
 
-tableAuthor = """CREATE TABLE Author (
+# Create table
+
+table = """CREATE TABLE Author (
     authorRef INT NOT NULL,
     firstName VARCHAR(20),
     surname VARCHAR(20),
@@ -16,7 +19,13 @@ tableAuthor = """CREATE TABLE Author (
     PRIMARY KEY (authorRef)
 );"""
 
-fileOut.write(tableAuthor + "\n\n")
+fileOut.write(table + "\n\n")
+
+
+# Insert data
+
+line = fileIn.readline()  # Ignore heading row
+line = fileIn.readline()
 
 while line != "":
     

@@ -1,4 +1,4 @@
-customerID,shopName,address,city,postcode,contactName,email
+customerID,name,address,city,postcode,contactName,email
 1000000001,Village Toys,200 Maple Lane,Dundee,DD21 1YX,John Smith,sales@villagetoys.com
 1000000002,Kids Place,333 South Lake Drive,Clydebank,G81 1KL,Michelle Green,
 1000000003,Fun4All,1 Sunny Place,Montrose,DD10 9ZW,Jim Jones,jjones@fun4all.com

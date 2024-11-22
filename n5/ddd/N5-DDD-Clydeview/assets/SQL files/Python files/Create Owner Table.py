@@ -1,13 +1,15 @@
-# Create Owner Table
+# Title: Owner Table
+# Author: Mr Friend
+# Date: 22 Nov 2024
 
-fileIn = open("Owner.csv", "r")
-fileOut = open("Owner.sql", "w")
-
-line = fileIn.readline()  # Ignore heading row
-line = fileIn.readline()
+# Files
+fileIn = open("../CSV files/Owner-Pet/Owner.csv", "r")
+fileOut = open("../Owner.sql", "w")
 
 
-tableOwner = """CREATE TABLE Owner (
+# Create table
+
+table = """CREATE TABLE Owner (
     ownerID INTEGER NOT NULL,
     firstName VARCHAR(20) NOT NULL,
     surname VARCHAR(20) NOT NULL,
@@ -18,7 +20,13 @@ tableOwner = """CREATE TABLE Owner (
     PRIMARY KEY (ownerID)
 );"""
 
-fileOut.write(tableOwner + "\n\n")
+fileOut.write(table + "\n\n")
+
+
+# Insert data
+
+line = fileIn.readline()  # Ignore heading row
+line = fileIn.readline()
 
 while line != "":
     

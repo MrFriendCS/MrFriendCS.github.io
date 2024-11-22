@@ -1,6 +1,6 @@
 CREATE TABLE Customer (
     customerID INT NOT NULL,
-    shopName VARCHAR(30) NOT NULL,
+    name VARCHAR(30) NOT NULL,
     address VARCHAR(30) NOT NULL,
     city VARCHAR(20) NOT NULL,
     postcode VARCHAR(8) NOT NULL,

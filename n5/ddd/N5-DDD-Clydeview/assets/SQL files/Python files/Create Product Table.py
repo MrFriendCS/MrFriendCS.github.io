@@ -1,14 +1,15 @@
-# Title: SuperHero Table
+# Title: Product Table
 # Author: Mr Friend
-# Date: 20 Nov 2024
+# Date: 22 Nov 2024
 
 # Files
-fileIn = open("../CSV files/Product.csv", "r")
+fileIn = open("../CSV Files/Manufacturer-Product/Product.csv", "r")
 fileOut = open("../Product.sql", "w")
 
 
-# Table
-tableProduct = """CREATE TABLE Product (
+# Create table
+
+table = """CREATE TABLE Product (
     productName VARCHAR(40) NOT NULL,
     productCode VARCHAR(40),
     numberInStock INT,
@@ -20,9 +21,10 @@ tableProduct = """CREATE TABLE Product (
     PRIMARY KEY (productCode)
 );"""
               
-fileOut.write(tableProduct + "\n\n")
+fileOut.write(table + "\n\n")
 
-# Data
+
+# Insert data
 
 line = fileIn.readline()  # Ignore heading row
 line = fileIn.readline()

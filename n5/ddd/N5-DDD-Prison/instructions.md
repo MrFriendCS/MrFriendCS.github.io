@@ -11,6 +11,7 @@ SELECT
     FROM
 ```
 
+{:start="2"}
 2. Write a SQL statement to show first name, last name, and prison ID.
 
 3. Add a query to show only the hair colour, eye colour, and height of each prisoner.

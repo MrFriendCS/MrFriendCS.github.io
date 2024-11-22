@@ -1,12 +1,15 @@
-# Create Book Table
+# Title: Book Table
+# Author: Mr Friend
+# Date: 22 Nov 2024
 
-fileIn = open("Book.csv", "r")
-fileOut = open("Book.sql", "w")
+# Files
+fileIn = open("../CSV files/Author-Book/Book.csv", "r")
+fileOut = open("../Book.sql", "w")
 
-line = fileIn.readline()  # Ignore heading row
-line = fileIn.readline()
 
-tableBook = """CREATE TABLE Book (
+# Create table
+
+table = """CREATE TABLE Book (
     category VARCHAR(5) NOT NULL 
         CHECK (category IN ("Adult", "Child")),
     genre VARCHAR(13) NOT NULL 
@@ -26,7 +29,13 @@ tableBook = """CREATE TABLE Book (
     PRIMARY KEY (title)
 );"""
 
-fileOut.write(tableBook + "\n\n")
+fileOut.write(table + "\n\n")
+
+
+# Insert data
+
+line = fileIn.readline()  # Ignore heading row
+line = fileIn.readline()
 
 while line != "":
     

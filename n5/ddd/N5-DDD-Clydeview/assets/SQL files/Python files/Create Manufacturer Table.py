@@ -1,13 +1,15 @@
-# Create Manufacturer Table
+# Title: Manufacturer Table
+# Author: Mr Friend
+# Date: 22 Nov 2024
 
-fileIn = open("Manufacturer.csv", "r")
-fileOut = open("Manufacturer.sql", "w")
-
-line = fileIn.readline()  # Ignore heading row
-line = fileIn.readline()
+# Files
+fileIn = open("../CSV Files/Manufacturer-Product/Manufacturer.csv", "r")
+fileOut = open("../Manufacturer.sql", "w")
 
 
-tableManufacturer = """CREATE TABLE Manufacturer (
+# Create table
+
+table = """CREATE TABLE Manufacturer (
     manufacturerID INT NOT NULL,
     name VARCHAR(40),
     address VARCHAR(40),
@@ -16,7 +18,13 @@ tableManufacturer = """CREATE TABLE Manufacturer (
     PRIMARY KEY (manufacturerID)
 );"""
 
-fileOut.write(tableManufacturer + "\n\n")
+fileOut.write(table + "\n\n")
+
+
+# Insert data
+
+line = fileIn.readline()  # Ignore heading row
+line = fileIn.readline()
 
 while line != "":
     

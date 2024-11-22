@@ -1,12 +1,15 @@
-# Create Pet Table
+# Title: Pet Table
+# Author: Mr Friend
+# Date: 22 Nov 2024
 
-fileIn = open("Pet.csv", "r")
-fileOut = open("Pet.sql", "w")
+# Files
+fileIn = open("../CSV files/Owner-Pet/Pet.csv", "r")
+fileOut = open("../Pet.sql", "w")
 
-line = fileIn.readline()  # Ignore heading row
-line = fileIn.readline()
 
-tablePet = """CREATE TABLE Pet (
+# Create table
+
+table = """CREATE TABLE Pet (
     petCode VARCHAR(5) NOT NULL 
         CHECK(LENGTH(petCode) = 5),
     petName VARCHAR(20),
@@ -19,7 +22,13 @@ tablePet = """CREATE TABLE Pet (
     PRIMARY KEY (petCode)
 );"""
 
-fileOut.write(tablePet + "\n\n")
+fileOut.write(table + "\n\n")
+
+
+# Insert data
+
+line = fileIn.readline()  # Ignore heading row
+line = fileIn.readline()
 
 while line != "":
     
