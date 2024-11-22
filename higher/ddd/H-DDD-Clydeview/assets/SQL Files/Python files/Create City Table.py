@@ -3,7 +3,7 @@
 # Date: 20 Nov 2024
 
 # Files
-fileIn = open("../CSV Files/City.csv", "r")
+fileIn = open("../CSV files/Country-City/City.csv", "r")
 fileOut = open("../City.sql", "w")
 
 

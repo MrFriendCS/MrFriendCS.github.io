@@ -5,6 +5,8 @@ CREATE TABLE Holiday (
     dateOfDeparture DATE NOT NULL,
     nights INT,
     hotelRef VARCHAR(4),
+    FOREIGN KEY (hotelRef)
+        REFERENCES Hotel(hotelRef),
     PRIMARY KEY (title)
 );
 
@@ -25,7 +27,7 @@ INSERT INTO Holiday VALUES ("French Attractions","Ile De France","France","2013-
 INSERT INTO Holiday VALUES ("French Experience","Ile De France","France","2013-07-14","6","H113");
 INSERT INTO Holiday VALUES ("Geloland","Windsor","England","2013-07-23","4","H118");
 INSERT INTO Holiday VALUES ("Germany Afresh","Brandenburg","Germany","2013-08-12","5","H108");
-INSERT INTO Holiday VALUES ("Glorious Paris","Champs Ã‰lysÃ©es","France","2013-07-15","4","H114");
+INSERT INTO Holiday VALUES ("Glorious Paris","Champs Élysées","France","2013-07-15","4","H114");
 INSERT INTO Holiday VALUES ("Glorious Spain","Madrid","Spain","2013-07-14","5","H109");
 INSERT INTO Holiday VALUES ("Green Ireland","Dublin Bay","Ireland","2013-08-23","4","H137");
 INSERT INTO Holiday VALUES ("Irish Glory","County Dublin","Ireland","2013-08-17","4","H139");
@@ -33,7 +35,7 @@ INSERT INTO Holiday VALUES ("Italy Glory","Trastevere-Rome","Italy","2013-07-03"
 INSERT INTO Holiday VALUES ("Italy Heaven","Lazio","Italy","2013-08-03","4","H121");
 INSERT INTO Holiday VALUES ("Italy Luxury","Trastevere-Rome","Italy","2013-07-04","3","H123");
 INSERT INTO Holiday VALUES ("Italy Package","Fiumicino","Italy","2013-06-05","5","H125");
-INSERT INTO Holiday VALUES ("La vie franÃ§aise","Ile De France","France","2013-08-03","5","H113");
+INSERT INTO Holiday VALUES ("La vie française","Ile De France","France","2013-08-03","5","H113");
 INSERT INTO Holiday VALUES ("Lisbon Package","Sintra","Portugal","2013-06-13","6","H130");
 INSERT INTO Holiday VALUES ("London Attractions","Kensington","England","2013-08-04","2","H115");
 INSERT INTO Holiday VALUES ("London Highlights","Kensington","England","2013-07-07","4","H119");
@@ -41,12 +43,12 @@ INSERT INTO Holiday VALUES ("London on a budget","Islington","England","2013-07-
 INSERT INTO Holiday VALUES ("London Package","Hammersmith","England","2013-07-01","3","H116");
 INSERT INTO Holiday VALUES ("London Traveller","Greenwich","England","2013-08-15","4","H116");
 INSERT INTO Holiday VALUES ("Lovely Lisbon","Lisbon","Portugal","2013-06-06","3","H130");
-INSERT INTO Holiday VALUES ("Madrid Attractions","ArgÃ¼elles","Spain","2013-08-14","5","H109");
+INSERT INTO Holiday VALUES ("Madrid Attractions","Argüelles","Spain","2013-08-14","5","H109");
 INSERT INTO Holiday VALUES ("Madrid City Break","Madrid","Spain","2013-07-03","2","H109");
-INSERT INTO Holiday VALUES ("Madrid Summer Madness","ArgÃ¼elles","Spain","2013-08-15","7","H110");
+INSERT INTO Holiday VALUES ("Madrid Summer Madness","Argüelles","Spain","2013-08-15","7","H110");
 INSERT INTO Holiday VALUES ("Old England","Canary Wharf","England","2013-07-20","4","H117");
 INSERT INTO Holiday VALUES ("Paris and Surroundings","Ile De France","France","2013-07-01","3","H112");
-INSERT INTO Holiday VALUES ("Paris Luxury","Champs Ã‰lysÃ©es","France","2013-08-23","2","H114");
+INSERT INTO Holiday VALUES ("Paris Luxury","Champs Élysées","France","2013-08-23","2","H114");
 INSERT INTO Holiday VALUES ("Paris on a budget","Ile De France","France","2013-08-01","3","H111");
 INSERT INTO Holiday VALUES ("Paris Package","Quartier Latin","France","2013-08-02","5","H113");
 INSERT INTO Holiday VALUES ("Paris Paradise","Paris","France","2013-06-05","3","H114");

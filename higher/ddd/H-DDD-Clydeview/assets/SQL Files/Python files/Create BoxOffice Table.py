@@ -3,7 +3,7 @@
 # Date: 19 Nov 2024
 
 # Files
-fileIn = open("../CSV Files/BoxOffice.csv", "r")
+fileIn = open("../CSV files/Movie-BoxOffice/BoxOffice.csv", "r")
 fileOut = open("../BoxOffice.sql", "w")
 
 
