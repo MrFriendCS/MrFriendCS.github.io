@@ -23,7 +23,8 @@ SELECT
     FROM
     WHERE
 ```
-        
+     
+{:start="5"}	 
 5. Add a query to show prison ID, conviction, and date of birth for all prisoner born on or after 1st Jan 2000.
 
 6. Display the eye colour and date of birth for every prisoner convicted of cyberbullying.
@@ -37,6 +38,7 @@ SELECT
         (AND / OR)
 ```
 
+{:start="8"}
 8. Display the eyes, hair, and prison IDs for all prisoner with either black eyes or black hair.
 
 9. Display the eyes, hair, and  prison IDs for all prisoner with either black eyes and black hair.
