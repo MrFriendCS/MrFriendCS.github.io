@@ -1,12 +1,12 @@
 CREATE TABLE Country (
-    countryName VARCHAR(35) NOT NULL,
-    countryCode VARCHAR(4) NOT NULL,
+    name VARCHAR(35) NOT NULL,
+    code VARCHAR(4) NOT NULL,
     capital VARCHAR(20) NOT NULL,
     area INT 
         CHECK(area >= 0),
     population INT
         CHECK(population >= 0),
-    PRIMARY KEY (countryCode)
+    PRIMARY KEY (code)
 );
 
 INSERT INTO Country VALUES ("Austria","A","Vienna",83850,8023244);

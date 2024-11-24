@@ -1,13 +1,13 @@
 CREATE TABLE City (
     cityID INT NOT NULL,
-    cityName VARCHAR(20) NOT NULL,
+    name VARCHAR(20) NOT NULL,
     countryCode VARCHAR(4) NOT NULL,
     population INT 
         CHECK(population >= 0),
     longitude FLOAT,
     latitude FLOAT,
     FOREIGN KEY (countryCode)
-        REFERENCES Country(countryCode),
+        REFERENCES Country(code),
     PRIMARY KEY (cityID)
 );
 

@@ -9,14 +9,14 @@ fileOut = open("../Country.sql", "w")
 
 # Table
 table = """CREATE TABLE Country (
-    countryName VARCHAR(35) NOT NULL,
-    countryCode VARCHAR(4) NOT NULL,
+    name VARCHAR(35) NOT NULL,
+    code VARCHAR(4) NOT NULL,
     capital VARCHAR(20) NOT NULL,
     area INT 
         CHECK(area >= 0),
     population INT
         CHECK(population >= 0),
-    PRIMARY KEY (countryCode)
+    PRIMARY KEY (code)
 );"""
 
 fileOut.write(table + "\n\n")
@@ -33,8 +33,8 @@ while line != "":
     
     fileOut.write("INSERT INTO Country VALUES ")
     
-    fileOut.write("(\"" + data[0].strip() + "\",")  # countryName
-    fileOut.write("\"" +  data[1].strip() + "\",")  # countryCode
+    fileOut.write("(\"" + data[0].strip() + "\",")  # name
+    fileOut.write("\"" +  data[1].strip() + "\",")  # code
     fileOut.write("\"" +  data[2].strip() + "\",")  # capital
     fileOut.write(        data[3].strip() + ",")  # area
     fileOut.write(        data[4].strip() + ");\n")  # population

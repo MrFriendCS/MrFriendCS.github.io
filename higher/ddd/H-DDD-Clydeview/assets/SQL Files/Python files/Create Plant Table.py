@@ -10,16 +10,16 @@ fileOut = open("../Plant.sql", "w")
 # Create table
 
 table = """CREATE TABLE Plant (
-    category VARCHAR(10),
-    plantName VARCHAR(20) NOT NULL,
+    category VARCHAR(10) NOT NULL,
+    name VARCHAR(20) NOT NULL,
     variety VARCHAR(20) NOT NULL,
     code VARCHAR(3) NOT NULL,
     referenceID VARCHAR(3) NOT NULL,
-    unit INT 
+    unit INT NOT NULL 
         CHECK(unit >= 0),
-    price FLOAT 
+    price FLOAT NOT NULL
         CHECK(price >= 0),
-    height VARCHAR(1) 
+    height VARCHAR(1) NOT NULL 
         CHECK(height IN("S","M","T")),
     PRIMARY KEY (referenceID)
 );"""

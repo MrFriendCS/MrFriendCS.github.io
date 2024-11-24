@@ -10,14 +10,14 @@ fileOut = open("../City.sql", "w")
 # Table
 table = """CREATE TABLE City (
     cityID INT NOT NULL,
-    cityName VARCHAR(20) NOT NULL,
+    name VARCHAR(20) NOT NULL,
     countryCode VARCHAR(4) NOT NULL,
     population INT 
         CHECK(population >= 0),
     longitude FLOAT,
     latitude FLOAT,
     FOREIGN KEY (countryCode)
-        REFERENCES Country(countryCode),
+        REFERENCES Country(code),
     PRIMARY KEY (cityID)
 );"""
 
@@ -36,7 +36,7 @@ while line != "":
     fileOut.write("INSERT INTO City VALUES ")
     
     fileOut.write("(" +  data[0].strip() + ",")  # cityID
-    fileOut.write("\"" + data[1].strip() + "\",")  # cityName
+    fileOut.write("\"" + data[1].strip() + "\",")  # name
     fileOut.write("\"" + data[2].strip() + "\",")  # countryCode
     
     if data[3].strip() == "":
