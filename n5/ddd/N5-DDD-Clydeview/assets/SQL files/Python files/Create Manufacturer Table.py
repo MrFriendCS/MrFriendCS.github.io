@@ -13,8 +13,8 @@ table = """CREATE TABLE Manufacturer (
     manufacturerID INT NOT NULL,
     name VARCHAR(40),
     address VARCHAR(40),
-    telephoneNumber VARCHAR(11) 
-        CHECK (LENGTH(telephoneNumber) = 11),
+    telephone VARCHAR(11) 
+        CHECK (LENGTH(telephone) = 11),
     PRIMARY KEY (manufacturerID)
 );"""
 
@@ -35,7 +35,7 @@ while line != "":
     fileOut.write("("   + data[0].strip() + ",")  # manufacturerID
     fileOut.write( "\"" + data[1].strip() + "\",")  # name
     fileOut.write( "\"" + data[2].strip() + "\",")  # address
-    fileOut.write( "\"" + data[3].strip() + "\");\n")  # telephoneNumber
+    fileOut.write( "\"" + data[3].strip() + "\");\n")  # telephone
 
     line = fileIn.readline()
     

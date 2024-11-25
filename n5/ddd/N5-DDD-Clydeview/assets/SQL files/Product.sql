@@ -1,13 +1,14 @@
 CREATE TABLE Product (
-    productName VARCHAR(40) NOT NULL,
-    productCode VARCHAR(40),
-    numberInStock INT,
+    name VARCHAR(40) NOT NULL,
+    code VARCHAR(40),
+    stock INT NOT NULL
+        CHECK (stock >= 0),
     onOrder BOOL,
-    costPrice REAL,
+    price REAL,
     manufacturerID INT NOT NULL,
     FOREIGN KEY (manufacturerID) 
         REFERENCES Manufacturer (manufacturerID),
-    PRIMARY KEY (productCode)
+    PRIMARY KEY (code)
 );
 
 INSERT INTO Product VALUES ("Claw Hammer","CH20",2,TRUE,4.99,531);

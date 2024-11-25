@@ -10,15 +10,16 @@ fileOut = open("../Product.sql", "w")
 # Create table
 
 table = """CREATE TABLE Product (
-    productName VARCHAR(40) NOT NULL,
-    productCode VARCHAR(40),
-    numberInStock INT,
+    name VARCHAR(40) NOT NULL,
+    code VARCHAR(40),
+    stock INT NOT NULL
+        CHECK (stock >= 0),
     onOrder BOOL,
-    costPrice REAL,
+    price REAL,
     manufacturerID INT NOT NULL,
     FOREIGN KEY (manufacturerID) 
         REFERENCES Manufacturer (manufacturerID),
-    PRIMARY KEY (productCode)
+    PRIMARY KEY (code)
 );"""
               
 fileOut.write(table + "\n\n")
@@ -35,14 +36,14 @@ while line != "":
     
     fileOut.write("INSERT INTO Product VALUES ")
     
-    fileOut.write("(\"" + data[0].strip() + "\",")  # productName
-    fileOut.write( "\"" + data[1].strip() + "\",")  # productCode
-    fileOut.write(        data[2].strip() + ",")  # numberInStock
+    fileOut.write("(\"" + data[0].strip() + "\",")  # name
+    fileOut.write( "\"" + data[1].strip() + "\",")  # code
+    fileOut.write(        data[2].strip() + ",")  # stock
     if bool(int(data[3].strip())):  # onOrder
         fileOut.write("TRUE,")
     else:
         fileOut.write("FALSE,")
-    fileOut.write(        data[4].strip() + ",")  # costPrice
+    fileOut.write(        data[4].strip() + ",")  # price
     fileOut.write(        data[5].strip() + ");\n")  # manufacturerID
 
     line = fileIn.readline()

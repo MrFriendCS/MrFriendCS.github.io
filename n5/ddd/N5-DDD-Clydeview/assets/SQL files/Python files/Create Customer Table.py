@@ -1,12 +1,15 @@
-# Create Customer Table
+# Title: Manufacturer Table
+# Author: Mr Friend
+# Date: 25 Nov 2024
 
-fileIn = open("Customer.csv", "r")
-fileOut = open("Customer.sql", "w")
+# Files
+fileIn = open("../CSV Files/Customer.csv", "r")
+fileOut = open("../Customer.sql", "w")
 
-line = fileIn.readline()  # Ignore heading row
-line = fileIn.readline()
 
-tableCustomer = """CREATE TABLE Customer (
+# Create table
+
+table = """CREATE TABLE Customer (
     customerNo INT NOT NULL,
     forename VARCHAR(20) NOT NULL,
     surname VARCHAR(30) NOT NULL,
@@ -15,11 +18,17 @@ tableCustomer = """CREATE TABLE Customer (
     package VARCHAR(10) NOT NULL CHECK (package IN 
         ("Standard", "Large", "Premier")),
     directDebit BOOL NOT NULL,
-    paymentDueDate DATE,
+    paymentDue DATE,
     PRIMARY KEY (customerNo)
 );"""
 
-fileOut.write(tableCustomer + "\n\n")
+fileOut.write(table + "\n\n")
+
+
+# Insert data
+
+line = fileIn.readline()  # Ignore heading row
+line = fileIn.readline()
 
 while line != "":
     
@@ -37,7 +46,7 @@ while line != "":
         fileOut.write("TRUE,")
     else:
         fileOut.write("FALSE,")
-    fileOut.write( "\"" + data[7].strip() + "\");\n")  # paymentDueDate
+    fileOut.write( "\"" + data[7].strip() + "\");\n")  # paymentDue
 
     line = fileIn.readline()
     

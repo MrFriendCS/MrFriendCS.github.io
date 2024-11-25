@@ -7,7 +7,7 @@ CREATE TABLE Customer (
     package VARCHAR(10) NOT NULL CHECK (package IN 
         ("Standard", "Large", "Premier")),
     directDebit BOOL NOT NULL,
-    paymentDueDate DATE,
+    paymentDue DATE,
     PRIMARY KEY (customerNo)
 );
 

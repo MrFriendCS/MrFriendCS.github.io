@@ -2,8 +2,8 @@ CREATE TABLE Manufacturer (
     manufacturerID INT NOT NULL,
     name VARCHAR(40),
     address VARCHAR(40),
-    telephoneNumber VARCHAR(11) 
-        CHECK (LENGTH(telephoneNumber) = 11),
+    telephone VARCHAR(11) 
+        CHECK (LENGTH(telephone) = 11),
     PRIMARY KEY (manufacturerID)
 );
 
