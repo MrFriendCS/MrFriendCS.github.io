@@ -9,7 +9,7 @@ CREATE TABLE Book (
     publisher VARCHAR(30) NOT NULL,
     ISBN VARCHAR(10) NOT NULL 
         CHECK (LENGTH(ISBN) = 10),
-    dateOfPublication DATE,
+    dateOfPublication DATE NOT NULL,
     numberOfPages INT NOT NULL 
         CHECK(numberOfPages >=26 
           AND numberOfPages <= 950),

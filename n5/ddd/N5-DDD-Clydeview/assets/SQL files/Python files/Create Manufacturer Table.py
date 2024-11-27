@@ -11,7 +11,7 @@ fileOut = open("../Manufacturer.sql", "w")
 
 table = """CREATE TABLE Manufacturer (
     manufacturerID INT NOT NULL,
-    name VARCHAR(40),
+    name VARCHAR(20),
     address VARCHAR(40),
     telephone VARCHAR(11) 
         CHECK (LENGTH(telephone) = 11),

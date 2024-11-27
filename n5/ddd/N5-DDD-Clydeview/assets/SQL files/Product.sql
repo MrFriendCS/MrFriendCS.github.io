@@ -1,8 +1,8 @@
 CREATE TABLE Product (
-    name VARCHAR(40) NOT NULL,
-    code VARCHAR(40),
+    name VARCHAR(30) NOT NULL,
+    code VARCHAR(4) NOT NULL,
     stock INT NOT NULL
-        CHECK (stock >= 0),
+        CHECK (stock >= 0 AND stock <= 50),
     onOrder BOOL,
     price REAL,
     manufacturerID INT NOT NULL,

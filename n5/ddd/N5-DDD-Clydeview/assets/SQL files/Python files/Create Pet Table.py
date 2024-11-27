@@ -10,16 +10,17 @@ fileOut = open("../Pet.sql", "w")
 # Create table
 
 table = """CREATE TABLE Pet (
-    petCode VARCHAR(5) NOT NULL 
-        CHECK(LENGTH(petCode) = 5),
-    petName VARCHAR(20),
-    petType VARCHAR(8),
+    code VARCHAR(5) NOT NULL 
+        CHECK(LENGTH(code) = 5),
+    name VARCHAR(20),
+    type VARCHAR(8)
+        CHECK (type IN("Budgie", "Cat", "Dog", "Gerbil", "Tortoise")),
     dateOfBirth DATE,
     vaccination BOOL,
     ownerID INT NOT NULL,
     FOREIGN KEY (ownerID)
         REFERENCES Owner (ownerID),
-    PRIMARY KEY (petCode)
+    PRIMARY KEY (code)
 );"""
 
 fileOut.write(table + "\n\n")
@@ -36,9 +37,9 @@ while line != "":
     
     fileOut.write("INSERT INTO Pet VALUES ")
     
-    fileOut.write("(\"" + data[0].strip() + "\",")  # petCode
-    fileOut.write( "\"" + data[1].strip() + "\",")  # petName
-    fileOut.write( "\"" + data[2].strip() + "\",")  # petType
+    fileOut.write("(\"" + data[0].strip() + "\",")  # code
+    fileOut.write( "\"" + data[1].strip() + "\",")  # name
+    fileOut.write( "\"" + data[2].strip() + "\",")  # type
     fileOut.write( "\"" + data[3].strip() + "\",")  # dateOfBirth
     if bool(int(data[4].strip())):  # vaccination
         fileOut.write( "TRUE,")

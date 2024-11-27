@@ -1,7 +1,7 @@
 petCode,petName,petType,dateOfBirth,vaccination,ownerID
-P0123,Misty,cat,2012-01-23,1,2356
-P0345,Rover,dog,2010-12-12,1,3821
-P0887,Foggy,cat,2012-01-23,1,1277
-P1559,Gladys,gerbil,2010-04-16,0,1277
-P1985,Slinky,tortoise,2016-09-24,0,3510
-P2233,Speedy,tortoise,2013-06-09,1,1277
+P0123,Misty,Cat,2020-01-21,1,2356
+P0345,Rover,Dog,2018-12-10,1,3821
+P0887,Foggy,Cat,2020-01-21,1,1277
+P1559,Gladys,Gerbil,2018-04-14,0,1277
+P1985,Slinky,Tortoise,2024-09-22,0,3510
+P2233,Speedy,Tortoise,2021-06-07,1,1277
