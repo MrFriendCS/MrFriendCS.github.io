@@ -56,22 +56,22 @@ SELECT
 
 ### Table: company
 
-| Attribute | Key   | Type     | Size  | Req'd | Validation |
-| --------- | :---: | ----     | :---: | :---: | ---------- |
-| name      | PK    | VARCHAR  | 20    | Y     |            |
-| country   |       | VARCHAR  | 20    | Y     |            |
-| founded   |       | DATE     |       | Y     | range: >= 1 Jan 1970 |
-| website   |       | VARCHAR  | 30    | N     |            |
-| profit    |       | INT      |       | Y     |            |
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| name      | PK    | Text   | 20    | Y     | |
+| country   |       | Text   | 20    | Y     | |
+| founded   |       | Date   |       | Y     | Range: >= 1 Jan 1970 |
+| website   |       | Text   | 30    | N     | |
+| profit    |       | Number |       | Y     | |
 
 ### Table: game
 
-| Attribute    | Key   | Type    | Size  | Req'd | Validation |
-| ---------    | :---: | ----    | :---: | :---: | ---------- |
-| title        | PK    | VARCHAR | 30    | Y     |            |
-| company      | FK    | VARCHAR | 20    | Y     | Exists in company table |
-| genre        |       | VARCHAR | 15    | Y     |            |
-| age          |       | INT     |       | Y     | restricted choice: 3, 7, 12, 16, 18 |
-| price        |       | FLOAT   |       | Y     | range: >= 0 and <= 100 |
-| released     |       | DATE    |       | Y     | range: >= 1 Jan 1970 |
-| copies_sold  |       | INT     |       | Y     | range: >= 0 |
+| Attribute    | Key   | Type   | Size  | Req'd | Validation |
+| ---------    | :---: | ----   | :---: | :---: | ---------- |
+| title        | PK    | Text   | 30    | Y     | |
+| company      | FK    | Text   | 20    | Y     | Exists in company table |
+| genre        |       | Text   | 15    | Y     | |
+| age          |       | Number |       | Y     | Restricted choice: 3, 7, 12, 16, 18 |
+| price        |       | Number |       | Y     | Range: >= 0.00 and <= 100.00 |
+| released     |       | Date   |       | Y     | Range: >= 1 Jan 1970 |
+| copies_sold  |       | Number |       | Y     | Range: >= 0 |
