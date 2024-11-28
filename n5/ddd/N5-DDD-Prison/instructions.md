@@ -43,7 +43,7 @@ SELECT
 
 9. Display the eyes, hair, and  prison IDs for all prisoner with either black eyes and black hair.
 
-10. Find all MacNeils who are not in an open prison. display their forename, conviction, and date of birth.
+10. Find all MacNeils who are not in an open prison. Display their forename, conviction, and date of birth.
     
 11. Find all redheads convited of assault.  Display their names and eye colour.
 
