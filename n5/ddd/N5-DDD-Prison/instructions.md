@@ -54,16 +54,16 @@ SELECT
 
 ## Data dictionary
 
-### Table: prisoner
+### Table: Prisoner
 
 | Attribute  | Key   | Type    | Size  | Req'd | Validation |
 | ---------  | :---: | ----    | :---: | :---: | ---------- |
-| prison_id  | PK    | Number  |       | Y     |            |
-| surname    |       | Text    | 30    | Y     | length: >= 3 |
-| forename   |       | Text    | 20    | Y     | length: >= 3 |
-| hair       |       | Text    | 6     | N     | restricted choice: Auburn, Black, Blond, Brown, Grey, None, Red, White |
-| eyes       |       | Text    | 5     | N     | restricted choice: Amber, Black, Blue, Brown, Green, Hazel, Grey |
-| height     |       | Number  |       | Y     | range: >= 1.3 and <= 2.5 |
-| conviction |       | Text    | 20    | Y     |            |       
-| open       |       | Boolean |       | Y     |            |
-| dob        |       | Date    |       | Y     |            |
+| prison_id  | PK    | Number  |       | Y     | |
+| surname    |       | Text    | 30    | Y     | Length >= 3 |
+| forename   |       | Text    | 20    | Y     | Length: >= 3 |
+| hair       |       | Text    | 6     | N     | Restricted choice: Auburn, Black, Blond, Brown, Grey, None, Red, White |
+| eyes       |       | Text    | 5     | N     | Restricted choice: Amber, Black, Blue, Brown, Green, Hazel, Grey |
+| height     |       | Number  |       | Y     | Range: >= 1.3 and <= 2.5 |
+| conviction |       | Text    | 20    | Y     | |       
+| open       |       | Boolean |       | Y     | |
+| dob        |       | Date    |       | Y     | |

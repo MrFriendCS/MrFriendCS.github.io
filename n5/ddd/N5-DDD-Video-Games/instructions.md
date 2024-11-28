@@ -54,7 +54,7 @@ SELECT
 
 ## Data dictionary
 
-### Table: company
+### Table: Company
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
@@ -64,7 +64,7 @@ SELECT
 | website   |       | Text   | 30    | N     | |
 | profit    |       | Number |       | Y     | |
 
-### Table: game
+### Table: Game
 
 | Attribute    | Key   | Type   | Size  | Req'd | Validation |
 | ---------    | :---: | ----   | :---: | :---: | ---------- |
