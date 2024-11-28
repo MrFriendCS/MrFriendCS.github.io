@@ -25,6 +25,7 @@ SELECT
     WHERE
 ```
 
+{:start="5"}
 5. Create a query that returns the details of all games that are suitable for those aged 5 or younger.
 
 6. Display all the records for games that have sold more than 18,000 copies.
@@ -43,6 +44,7 @@ SELECT
     ORDER BY   (ASC / DESC)
 ```
 
+{:start="11"}
 11. Display all the company details and order by website address.
 
 12. Create a query to display all the games sold with the highest number displayed first.
