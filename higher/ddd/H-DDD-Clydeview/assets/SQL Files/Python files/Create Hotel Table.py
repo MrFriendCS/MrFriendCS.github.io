@@ -11,7 +11,7 @@ fileOut = open("../Hotel.sql", "w")
 
 table = """CREATE TABLE Hotel (
     hotelRef VARCHAR(4) NOT NULL,
-    hotelName VARCHAR(30) NOT NULL,
+    name VARCHAR(30) NOT NULL,
     city VARCHAR(20),
     starRating INT NOT NULL
         CHECK (starRating >= 0 AND starRating <= 5),
@@ -35,7 +35,7 @@ while line != "":
     fileOut.write("INSERT INTO Hotel VALUES ")
     
     fileOut.write("(\"" + data[0].strip() + "\",")  # hotelRef
-    fileOut.write( "\"" + data[1].strip() + "\",")  # hotelName
+    fileOut.write( "\"" + data[1].strip() + "\",")  # name
     fileOut.write( "\"" + data[2].strip() + "\",")  # city
     fileOut.write(        data[3].strip() + ",")  # starRating
     fileOut.write(        data[4].strip() + ",")  # pricePerNight

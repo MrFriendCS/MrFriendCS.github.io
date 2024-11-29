@@ -1,6 +1,6 @@
 CREATE TABLE Hotel (
     hotelRef VARCHAR(4) NOT NULL,
-    hotelName VARCHAR(30) NOT NULL,
+    name VARCHAR(30) NOT NULL,
     city VARCHAR(20),
     starRating INT NOT NULL
         CHECK (starRating >= 0 AND starRating <= 5),
