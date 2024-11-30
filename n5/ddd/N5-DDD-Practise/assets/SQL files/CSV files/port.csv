@@ -1,0 +1,167 @@
+port_code,port_name,local_authority,marine_region,service_type
+ABA,Aberdeen,Aberdeen City,North East,Lifeline
+ADL,Ardleish,Argyll and Bute,Clyde,Commercial
+ADT,Knoydart (Ardintigh),Highlands,West Highlands,Commercial
+AHB,Barra (Aird Mhor),Na h-Eileanan an Iar,Outer Hebrides,Lifeline
+ALU,Ardlui,Argyll and Bute,Clyde,Commercial
+AMH,Gigha,Argyll and Bute,Argyll,Lifeline
+ARD,Ardrossan,North Ayrshire,Clyde,Lifeline
+ARG,Ardgour,Highland,West Highlands,Lifeline
+ARI,Arisaig,Highland,West Highlands,Lifeline
+ARM,Skye (Armadale),Highland,West Highlands,Lifeline
+AYR,Ayr (Compass Pier),South Ayrshire,Clyde,Commercial
+BAD,Badluarach,Highland,West Highlands,Lifeline
+BLM,Blairmore,Argyll and Bute,Clyde,Commercial
+BLV,Balloch Village,West Dunbartonshire,Clyde,Commercial
+BMH,Balmaha,Stirling,Clyde,Commercial
+BMT,Unst (Belmont),Shetland Islands,Shetland Isles,Lifeline
+BNY,North Uist (Berneray),Na h-Eileanan an Iar,Outer Hebrides,Lifeline
+BRB,Arran (Brodick),North Ayrshire,Clyde,Lifeline
+BWC,South Ronaldsay (Burwick),Orkney Islands,Orkney Islands,Lifeline
+CAM,Camusnagaul,Highland,West Highlands,Lifeline
+CAN,Canna,Highland,West Highlands,Lifeline
+CBA,Barra (Castlebay),Na h-Eileanan an Iar,Outer Hebrides,Lifeline
+CJU,Jura (Craighouse),Argyll and Bute,Argyll,Lifeline
+CLB,Claonaig,Argyll and Bute,Clyde,Lifeline
+CNU,Mull (Craignure),Argyll and Bute,Argyll,Lifeline
+COL,Coll,Argyll and Bute,Argyll,Lifeline
+COT,Colintraive,Argyll and Bute,Clyde,Lifeline
+CPB,Campbeltown,Argyll and Bute,Clyde,Lifeline
+CRN,Cromarty,Highland,Moray Firth,Lifeline
+CRR,Nether Lochaber,Highland,West Highlands,Lifeline
+CSL,Barra (Castle Slip),Na h-Eileanan an Iar,Outer Hebrides,Commercial
+CSY,Colonsay,Argyll and Bute,Argyll,Lifeline
+CUM,Great Cumbrae (Cumbrae Slip),North Ayrshire,Clyde,Lifeline
+CUN,Seil (Cuan),Argyll and Bute,Argyll,Lifeline
+CWR,Cape Wrath,Highland,North Coast,Commercial
+CYN,Cairnryan,Dumfries and Galloway,Solway,Commercial
+CYS,Cairnryan (Loch Ryan),Dumfries and Galloway,Solway,Commercial
+DNU,Dunoon,Argyll and Bute,Clyde,Lifeline
+DRM,Drimnin,Highland,West Highlands,Lifeline
+DUR,Durness (Keoldale),Highland,North Coast,Commercial
+EAI,Seil (Ellenabeich),Argyll and Bute,Argyll,Lifeline
+EAS,Easdale,Argyll and Bute,Argyll,Lifeline
+EDY,Eday,Orkney Islands,Orkney Islands,Lifeline
+EGI,Egilsay,Orkney Islands,Orkney Islands,Lifeline
+ERI,Eriskay (Ceann a Gharaidh),Na h-Eileanan an Iar,Outer Hebrides,Lifeline
+FEO,Jura (Feolin),Argyll and Bute,Argyll,Lifeline
+FIB,Mull (Fishnish),Argyll and Bute,Argyll,Lifeline
+FIE,Fair Isle,Shetland Islands,Shetland Isles,Lifeline
+FIO,Mull (Fionnphort),Argyll and Bute,Argyll,Lifeline
+FLH,Flotta,Orkney Islands,Orkney Islands,Lifeline
+FOA,Foula,Shetland Islands,Shetland Isles,Lifeline
+FWL,Fort William,Highland,West Highlands,Lifeline
+GAE,Graemsay,Orkney Islands,Orkney Islands,Lifeline
+GAL,Eigg (Galmisdale),Highland,West Highlands,Lifeline
+GCH,Greenock (Customs House Quay),Inverclyde,Clyde,Commercial
+GIL,Gills Bay,Highland,North Coast,Lifeline
+GLE,Glenelg,Highland,West Highlands,Lifeline
+GNQ,Glasgow Science Centre North Quay,Glasgow City,Clyde,Commercial
+GUR,Gourock,Inverclyde,Clyde,Lifeline
+GUT,Yell (Gutcher),Shetland Islands,Shetland Isles,Lifeline
+HAN,Handa Island,Highland,West Highlands,Commercial
+HEL,Helensburgh,Argyll and Bute,Clyde,Lifeline
+HLI,Holy Isle,North Ayrshire,Clyde,Commercial
+HTN,Houton,Orkney Islands,Orkney Islands,Lifeline
+HUN,Dunoon (Hunter's Quay),Argyll and Bute,Clyde,Lifeline
+INC,Inchcolm,Fife,Forth and Tay,Commercial
+IOA,Iona (Baile Mor),Argyll and Bute,Argyll,Lifeline
+IPB,Inchcailloch (Port Bawn),Stirling,Clyde,Commercial
+IVE,Inverie,Highland,West Highlands,Lifeline
+IVS,Inversnaid,Stirling,Clyde,Commercial
+IVU,Inveruglas,Argyll and Bute,Clyde,Commercial
+JOG,John O' Groats,Highland,North Coast,Lifeline
+KEN,Kennacraig,Argyll and Bute,Argyll,Lifeline
+KER,Kerrera,Argyll and Bute,Argyll,Lifeline
+KGN,Kilcreggan,Argyll and Bute,Clyde,Lifeline
+KLB,Ardnamurchan (Kilchoan),Highland,West Highlands,Lifeline
+KLH,Rum (Kinloch),Highland,West Highlands,Lifeline
+KRS,Kinross,Perth and Kinross,Forth and Tay,Commercial
+KSM,Kisimul Castle,Na h-Eileanan an Iar,Outer Hebrides,Commercial
+KWH,Kirkwall (Hatston),Orkney Islands,Orkney Islands,Lifeline
+KWL,Kirkwall,Orkney Islands,Orkney Islands,Lifeline
+KWS,Kirkwall (Shapinsay Pier),Orkney Islands,Orkney Islands,Lifeline
+KYL,Skye (Kylerhea),Highland,West Highlands,Lifeline
+LAG,Laga Bay,Highland,West Highlands,Lifeline
+LAM,Arran (Lamlash),North Ayrshire,Clyde,Commercial
+LAX,Laxo,Shetland Islands,Shetland Isles,Lifeline
+LBS,South Uist (Lochboisdale),Na h-Eileanan an Iar,Outer Hebrides,Lifeline
+LCR,Arran (Lochranza),North Ayrshire,Clyde,Lifeline
+LCS,Loch Leven Castle,Perth and Kinross,Forth and Tay,Commercial
+LCT,Tarbert,Argyll and Bute,Clyde,Lifeline
+LEV,Harris (Leverburgh),Na h-Eileanan an Iar,Outer Hebrides,Lifeline
+LGS,Largs,North Ayrshire,Clyde,Lifeline
+LHL,Lochaline,Highland,West Highlands,Lifeline
+LHM,Lerwick (Holmsgarth),Shetland Islands,Shetland Isles,Lifeline
+LHP,South Walls (Longhope),Orkney Islands,Orkney Islands,Lifeline
+LMA,North Uist (Lochmaddy),Na h-Eileanan an Iar,Outer Hebrides,Lifeline
+LMR,Lismore (Achnacroish),Argyll and Bute,Argyll,Lifeline
+LRK,Lerwick (Esplanade),Shetland Islands,Shetland Isles,Lifeline
+LUI,Luing (South Cuan),Argyll and Bute,Argyll,Lifeline
+LUS,Luss Pier,Argyll and Bute,Clyde,Commercial
+LYS,Hoy (Lyness),Orkney Islands,Orkney Islands,Lifeline
+MCP,Gourock (McInroy's Point),Inverclyde,Clyde,Lifeline
+MGK,Mallaig (Knoydart Pier),Highland,West Highlands,Lifeline
+MLG,Mallaig,Highland,West Highlands,Lifeline
+MPT,Great Cumbrae (Millport),North Ayrshire,Clyde,Commercial
+MYF,Bressay (Maryfield House),Shetland Islands,Shetland Isles,Lifeline
+NDY,Sanday,Orkney Islands,Orkney Islands,Lifeline
+NGG,Nigg,Highland,Moray Firth,Lifeline
+NHY,Hoy (Moaness),Orkney Islands,Orkney Islands,Lifeline
+NRO,North Ronaldsay,Orkney Islands,Orkney Islands,Lifeline
+OBA,Oban,Argyll and Bute,Argyll,Lifeline
+ODD,Fetlar (Hamars Ness),Shetland Islands,Shetland Isles,Lifeline
+OKF,Oban (Gallanach),Argyll and Bute,Argyll,Lifeline
+OUT,Out Skerries (Bruray),Shetland Islands,Shetland Isles,Lifeline
+PAK,Islay (Port Askaig),Argyll and Bute,Argyll,Lifeline
+PAP,Port Appin,Argyll and Bute,Argyll,Lifeline
+PAV,Portavadie,Argyll and Bute,Clyde,Lifeline
+PLN,Islay (Port Ellen),Argyll and Bute,Argyll,Lifeline
+PRA,Lismore (Port Ramsay),Argyll and Bute,Argyll,Lifeline
+PST,Papa Stour,Shetland Islands,Shetland Isles,Lifeline
+PTM,Muck (Port Mor),Highland,West Highlands,Lifeline
+PWL,Westray (Pierowall),Orkney Islands,Orkney Islands,Lifeline
+PWY,Papa Westray (Moclett),Orkney Islands,Orkney Islands,Lifeline
+RAA,Raasay (Churchton Bay),Highland,West Highlands,Lifeline
+RAP,Westray (Rapness),Orkney Islands,Orkney Islands,Lifeline
+RAY,Bute (Rothesay),Argyll and Bute,Clyde,Lifeline
+RFW,Renfrew,Renfrewshire,Clyde,Lifeline
+RHU,Bute (Rhubodach),Argyll and Bute,Clyde,Lifeline
+ROU,Rousay,Orkney Islands,Orkney Islands,Lifeline
+ROW,Rowardennan,Stirling,Clyde,Commercial
+SCG,Scoraig,Highland,West Highlands,Lifeline
+SCO,Skye (Sconser),Highland,West Highlands,Lifeline
+SCR,Scrabster,Highland,North Coast,Lifeline
+SCY,Scalloway,Shetland Islands,Shetland Isles,Lifeline
+SMH,South Ronaldsay (St Margaret's Hope),Orkney Islands,Orkney Islands,Lifeline
+SNS,Stromness,Orkney Islands,Orkney Islands,Lifeline
+SPY,Shapinsay,Orkney Islands,Orkney Islands,Lifeline
+SQF,South Queensferry,City of Edinburgh,Forth and Tay,Commercial
+STL,Stronachlachar (Loch Katrine),Stirling,Clyde,Commercial
+STO,Lewis (Stornoway),Na h-Eileanan an Iar,Outer Hebrides,Lifeline
+STY,Stronsay,Orkney Islands,Orkney Islands,Lifeline
+SUM,Grutness,Shetland Islands,Shetland Isles,Lifeline
+SYM,Whalsay (Symbister),Shetland Islands,Shetland Isles,Lifeline
+TAB,Harris (Tarbert),Na h-Eileanan an Iar,Outer Hebrides,Lifeline
+TAR,Tarbet (Loch Lomond),Argyll and Bute,Clyde,Commercial
+TAV,Tayvallich,Argyll and Bute,Argyll,Lifeline
+TIG,Tighnabruaich,Argyll and Bute,Clyde,Commercial
+TLN,Tarbet (Loch Nevis),Highland,West Highlands,Lifeline
+TOB,Mull (Tobermory),Argyll and Bute,Argyll,Lifeline
+TOF,Toft,Shetland Islands,Shetland Isles,Lifeline
+TRE,Tiree,Argyll and Bute,Argyll,Lifeline
+TRO,Trossachs (Loch Katrine),Stirling,Clyde,Commercial
+TSC,Tarbet (Scourie),Highland,West Highlands,Commercial
+TWL,Tingwall,Orkney Islands,Orkney Islands,Lifeline
+TYL,Tayinloan,Argyll and Bute,Argyll,Lifeline
+UFU,Ulva,Argyll and Bute,Argyll,Lifeline
+UIG,Skye (Uig),Highland,West Highlands,Lifeline
+ULL,Ullapool,Highland,West Highlands,Lifeline
+ULS,Yell (Ulsta),Shetland Islands,Shetland Isles,Lifeline
+ULV,Mull (Sound of Ulva),Argyll and Bute,Argyll,Lifeline
+VID,Vidlin,Shetland Islands,Shetland Isles,Lifeline
+WBU,West Burrafirth,Shetland Islands,Shetland Isles,Lifeline
+WLS,Walls,Shetland Islands,Shetland Isles,Lifeline
+WMB,Wemyss Bay,Inverclyde,Clyde,Lifeline
+WYR,Wyre,Orkney Islands,Orkney Islands,Lifeline
+YOK,Yoker,Glasgow City,Clyde,Lifeline

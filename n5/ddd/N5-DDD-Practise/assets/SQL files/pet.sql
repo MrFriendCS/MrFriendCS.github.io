@@ -1,0 +1,17 @@
+CREATE TABLE Pet (
+    name VARCHAR(20) NOT NULL,
+    type VARCHAR(30) NOT NULL,
+    age INT NOT NULL,
+    insured BOOL NOT NULL,
+    lastVisit DATE NOT NULL,
+    PRIMARY KEY (name)
+);
+
+INSERT INTO Pet VALUES ("Pepper","Cat",16,"FALSE","2024-01-15");
+INSERT INTO Pet VALUES ("Cindy","Dog",4,"TRUE","2023-02-14");
+INSERT INTO Pet VALUES ("Snowy","Cat",7,"FALSE","2023-11-03");
+INSERT INTO Pet VALUES ("Micky","Mouse",1,"FALSE","2023-05-24");
+INSERT INTO Pet VALUES ("Minnie","Mouse",1,"FALSE","2023-05-24");
+INSERT INTO Pet VALUES ("Kitty","Cat",9,"TRUE","2023-01-06");
+INSERT INTO Pet VALUES ("Bonzo","Dog",6,"FALSE","2023-12-07");
+INSERT INTO Pet VALUES ("Roger","Rabbit",3,"TRUE","2023-01-08");

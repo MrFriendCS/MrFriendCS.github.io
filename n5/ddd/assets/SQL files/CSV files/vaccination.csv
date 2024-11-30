@@ -1,0 +1,26 @@
+vax_id,pet_id,date,type,reaction
+1,13,2020-09-05,Distemper,TRUE
+2,5,2020-06-25,Canine hepatitis,FALSE
+3,1,2016-01-20,Cat Flu,FALSE
+4,17,2012-10-07,Cat Flu,FALSE
+5,6,2017-12-23,Feline parvovirus,FALSE
+6,16,2013-05-15,Distemper,FALSE
+7,21,2017-12-13,Myxomatosis,FALSE
+8,19,2012-12-23,Feline Leukaemia Virus,FALSE
+9,19,2022-07-09,Cat Flu,FALSE
+10,8,2021-10-21,Parvovirus,FALSE
+11,14,2018-06-24,Parvovirus,FALSE
+12,14,2018-04-07,Kennel cough,FALSE
+13,14,2021-06-06,Distemper,FALSE
+14,9,2018-08-10,Myxomatosis,FALSE
+15,9,2022-03-08,Myxomatosis,FALSE
+16,7,2012-07-10,Distemper,FALSE
+17,20,2016-11-21,Canine hepatitis,FALSE
+18,5,2015-10-29,Leptospirosis,FALSE
+19,19,2020-05-06,Canine hepatitis,FALSE
+20,15,2016-03-17,Distemper,FALSE
+21,20,2022-09-08,Parvovirus,FALSE
+22,9,2012-07-18,Rabbit Haemorrhagic Disease,TRUE
+23,7,2018-05-19,Parvovirus,FALSE
+24,2,2015-11-09,Feline Leukaemia Virus,FALSE
+25,21,2021-10-29,Myxomatosis,FALSE

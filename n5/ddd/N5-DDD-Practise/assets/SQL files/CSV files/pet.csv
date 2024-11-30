@@ -1,0 +1,9 @@
+name,type,age,insured,lastVisit
+Pepper,Cat,16,FALSE,2024-01-15
+Cindy,Dog,4,TRUE,2023-02-14
+Snowy,Cat,7,FALSE,2023-11-03
+Micky,Mouse,1,FALSE,2023-05-24
+Minnie,Mouse,1,FALSE,2023-05-24
+Kitty,Cat,9,TRUE,2023-01-06
+Bonzo,Dog,6,FALSE,2023-12-07
+Roger,Rabbit,3,TRUE,2023-01-08

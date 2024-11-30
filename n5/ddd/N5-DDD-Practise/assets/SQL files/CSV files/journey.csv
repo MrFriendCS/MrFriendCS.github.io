@@ -1,0 +1,201 @@
+journey_id,taxi_id,pick_up_date,pick_up_time,pax,pick_up_loc,drop_off_loc
+1,10,2023-11-13,19:54:18,5,57 Transport Plaza,62272 Arapahoe Way
+2,19,2023-11-15,8:19:56,4,5 Debra Pass,02 Mosinee Drive
+3,20,2023-11-14,2:51:34,4,12953 Sloan Lane,404 Truax Parkway
+4,1,2023-11-12,8:19:00,2,88642 Browning Alley,8547 Packers Point
+5,12,2023-11-12,12:26:38,2,669 Vermont Road,1 Mcbride Center
+6,14,2023-11-16,14:55:07,1,88686 Summer Ridge Drive,969 Burrows Road
+7,5,2023-11-14,21:04:27,2,4841 Saint Paul Avenue,192 Thackeray Court
+8,14,2023-11-14,4:22:41,4,19 Summerview Lane,14 Atwood Lane
+9,2,2023-11-14,10:08:30,5,59 Mendota Way,52856 Eggendart Plaza
+10,8,2023-11-14,13:50:09,5,80120 Kim Place,058 Union Park
+11,6,2023-11-14,8:48:26,4,8 Blaine Drive,52156 Mcguire Terrace
+12,5,2023-11-14,4:44:37,4,02535 Emmet Street,56 Fuller Center
+13,13,2023-11-13,16:07:33,2,8056 High Crossing Place,3 Dorton Court
+14,18,2023-11-15,18:37:13,5,8203 Brown Way,150 Golf Course Parkway
+15,20,2023-11-13,15:22:59,1,200 Ronald Regan Crossing,1 Swallow Parkway
+16,19,2023-11-16,22:22:03,1,06179 Autumn Leaf Point,75366 Troy Junction
+17,14,2023-11-14,16:44:58,3,8282 Jackson Plaza,5 Valley Edge Road
+18,19,2023-11-14,7:17:44,4,041 Kim Road,77473 Sachs Junction
+19,5,2023-11-17,6:14:44,1,610 Nelson Lane,97108 Independence Place
+20,16,2023-11-12,8:51:30,3,587 Canary Hill,8 Shasta Circle
+21,11,2023-11-14,4:34:06,2,36958 Shelley Alley,9077 Dahle Center
+22,14,2023-11-15,3:59:51,4,353 Judy Trail,833 Arizona Crossing
+23,11,2023-11-15,8:08:11,2,4 Warner Road,81538 Dunning Park
+24,11,2023-11-15,1:24:33,5,4004 Butternut Alley,7838 Moose Circle
+25,9,2023-11-16,20:38:43,4,30 Golf Course Way,2387 Waubesa Plaza
+26,14,2023-11-12,18:18:02,3,3 International Crossing,9852 Waxwing Drive
+27,3,2023-11-14,11:36:30,2,471 Burrows Drive,20 Burrows Park
+28,5,2023-11-17,17:16:50,4,82 Dakota Plaza,002 Nancy Crossing
+29,3,2023-11-12,18:18:00,1,59 Morning Hill,3 Blaine Drive
+30,16,2023-11-12,16:30:16,5,2 Anderson Lane,429 Grim Street
+31,19,2023-11-15,8:15:38,5,61 Bayside Alley,8 Bunting Place
+32,15,2023-11-14,20:14:02,5,48452 Barby Court,7619 Huxley Alley
+33,7,2023-11-12,3:15:57,1,24202 Logan Point,10 Hayes Junction
+34,12,2023-11-16,21:23:09,1,8 Claremont Avenue,9004 Vernon Avenue
+35,19,2023-11-16,23:45:31,1,77569 Armistice Drive,0446 Bunker Hill Park
+36,6,2023-11-15,12:46:39,4,66 Sunfield Crossing,107 Red Cloud Circle
+37,14,2023-11-12,9:40:04,3,6843 Brickson Park Crossing,842 Gale Hill
+38,10,2023-11-17,9:40:06,4,12 Pennsylvania Center,23030 Mcbride Junction
+39,12,2023-11-15,1:19:53,1,189 Harper Crossing,63 Springs Avenue
+40,4,2023-11-12,21:55:33,1,2 Becker Circle,7733 Old Shore Point
+41,14,2023-11-12,18:02:25,2,65 Redwing Plaza,413 Waywood Drive
+42,20,2023-11-14,11:33:13,5,35 Northport Park,42 Prentice Plaza
+43,19,2023-11-13,9:28:48,2,45 Sloan Circle,201 Crest Line Center
+44,20,2023-11-15,8:47:16,4,05 Coleman Terrace,422 Grasskamp Road
+45,17,2023-11-17,4:56:26,3,797 Brown Trail,9 Mallory Plaza
+46,2,2023-11-15,22:55:00,3,77426 Burrows Circle,20878 Nevada Alley
+47,12,2023-11-17,21:19:41,5,36 Bluejay Crossing,2682 Pond Alley
+48,14,2023-11-17,23:02:57,2,7 Larry Junction,69 American Road
+49,3,2023-11-14,19:09:37,3,517 Bayside Drive,074 Briar Crest Park
+50,6,2023-11-16,7:42:36,4,21970 Messerschmidt Drive,02539 Heffernan Lane
+51,3,2023-11-17,5:22:13,5,95238 Stuart Hill,97856 Spohn Pass
+52,1,2023-11-12,13:59:55,4,08891 Oxford Street,7 Sachtjen Point
+53,11,2023-11-15,20:45:18,2,0 Elmside Plaza,5193 Green Ridge Lane
+54,7,2023-11-16,23:02:28,2,26 Rieder Parkway,526 Norway Maple Drive
+55,20,2023-11-12,23:32:01,3,685 Hintze Lane,2944 Northridge Crossing
+56,4,2023-11-15,10:16:49,4,9 Weeping Birch Trail,2 Muir Point
+57,20,2023-11-12,22:25:52,5,59228 Continental Crossing,14 Oak Place
+58,12,2023-11-14,19:57:03,2,225 Starling Parkway,7360 Farwell Point
+59,14,2023-11-13,1:11:50,1,73973 Oakridge Way,79375 Waywood Court
+60,6,2023-11-12,8:57:03,4,966 Kropf Point,0031 Shelley Court
+61,13,2023-11-15,7:44:45,5,2233 Caliangt Parkway,44 Arapahoe Terrace
+62,4,2023-11-15,9:09:27,5,48 Northwestern Road,49 Schmedeman Circle
+63,6,2023-11-12,20:54:58,1,0004 Westport Place,428 Cottonwood Way
+64,8,2023-11-17,13:32:24,3,8 Hanover Avenue,36112 Dixon Parkway
+65,4,2023-11-17,8:05:28,5,6847 Warbler Circle,66151 Lerdahl Junction
+66,4,2023-11-17,20:28:51,4,2 Hoffman Circle,95 Prentice Alley
+67,8,2023-11-15,9:52:19,5,9 Lakewood Circle,8 Caliangt Junction
+68,3,2023-11-13,3:42:56,1,8 Orin Junction,6962 Russell Circle
+69,11,2023-11-14,17:44:09,4,2416 Jenna Alley,7111 Mosinee Terrace
+70,19,2023-11-12,2:35:59,1,329 Sugar Way,02 Lerdahl Point
+71,1,2023-11-13,0:00:33,1,78 Bowman Crossing,4778 Utah Plaza
+72,8,2023-11-13,15:11:49,3,7147 Del Mar Trail,6 Summerview Point
+73,17,2023-11-16,13:51:39,1,224 Mcbride Trail,8776 Waxwing Trail
+74,4,2023-11-14,6:28:32,1,8033 Declaration Street,423 Victoria Street
+75,10,2023-11-12,3:49:22,2,98 Sugar Pass,9 Nelson Pass
+76,15,2023-11-12,17:20:15,4,2 Melvin Alley,2 Sloan Hill
+77,19,2023-11-14,14:58:19,1,41950 Golf View Junction,3 Butternut Way
+78,2,2023-11-17,22:51:59,3,56539 Delaware Lane,99 Service Circle
+79,7,2023-11-17,18:54:41,2,233 Eagle Crest Terrace,61130 Fairfield Way
+80,18,2023-11-15,20:18:38,2,10 Acker Center,338 Cascade Junction
+81,2,2023-11-15,15:40:13,4,40391 Service Street,84321 Harper Center
+82,4,2023-11-16,16:25:12,2,42992 Gateway Court,9839 Fallview Plaza
+83,14,2023-11-16,22:31:05,4,8464 Sage Place,72585 Summit Trail
+84,16,2023-11-12,0:25:18,1,4 Heffernan Pass,5181 Dayton Plaza
+85,10,2023-11-15,20:03:27,5,164 Kingsford Way,29 Butterfield Alley
+86,20,2023-11-16,17:38:37,4,558 Twin Pines Street,38 Erie Trail
+87,16,2023-11-12,12:22:23,1,7111 Forster Pass,70 Hagan Avenue
+88,11,2023-11-14,18:00:53,5,234 Laurel Terrace,6 Gina Trail
+89,19,2023-11-16,7:35:11,3,775 Nevada Avenue,64 Rusk Alley
+90,18,2023-11-13,1:54:00,1,5913 Thackeray Alley,423 Service Lane
+91,20,2023-11-15,13:52:02,4,88297 Ohio Point,7 Forest Dale Crossing
+92,11,2023-11-14,10:11:32,3,116 Prairie Rose Hill,7150 Morning Way
+93,19,2023-11-17,3:42:34,5,8 Westport Circle,41 Derek Drive
+94,10,2023-11-14,10:14:01,5,360 Pearson Pass,88172 Fuller Crossing
+95,5,2023-11-12,23:04:07,2,94851 Montana Trail,17422 Carpenter Crossing
+96,4,2023-11-13,18:13:50,3,3 Jackson Hill,5753 Merry Place
+97,8,2023-11-12,0:51:46,1,12 Dottie Lane,144 Schmedeman Way
+98,16,2023-11-17,8:01:56,5,252 Leroy Center,45 Sycamore Trail
+99,14,2023-11-12,23:30:38,2,601 Messerschmidt Center,39 Oxford Junction
+100,12,2023-11-16,10:13:39,1,115 Nova Lane,43 Barby Plaza
+101,12,2023-11-14,7:23:55,4,32 Debra Pass,4464 Monica Center
+102,20,2023-11-12,6:01:33,3,20 Grover Lane,000 Dexter Plaza
+103,20,2023-11-14,2:08:56,3,3 Miller Way,10149 Beilfuss Circle
+104,6,2023-11-16,14:17:44,4,76 Hoffman Parkway,993 Hovde Park
+105,6,2023-11-13,6:17:36,5,07230 Arizona Park,33 Stuart Pass
+106,18,2023-11-12,17:59:06,4,95 2nd Hill,3 Westridge Center
+107,10,2023-11-13,6:26:38,1,1 Jenna Circle,264 Manitowish Junction
+108,16,2023-11-12,19:22:14,5,88976 International Terrace,320 Florence Terrace
+109,5,2023-11-13,0:16:02,1,08 Toban Avenue,363 Blackbird Drive
+110,5,2023-11-17,8:21:24,5,06013 Bluestem Way,9 3rd Hill
+111,11,2023-11-14,11:45:55,2,637 Goodland Pass,6978 Sachtjen Center
+112,2,2023-11-17,18:10:57,4,79935 Orin Lane,27 Vera Way
+113,17,2023-11-12,18:14:31,2,468 Veith Pass,1 Bunker Hill Court
+114,3,2023-11-12,6:38:08,1,6 Prairieview Avenue,5711 Anniversary Point
+115,11,2023-11-13,1:01:56,5,44505 Dixon Court,92300 Jay Road
+116,13,2023-11-12,17:02:02,4,812 Hayes Parkway,41298 Kipling Point
+117,5,2023-11-16,16:33:27,5,0 Spaight Trail,875 Summerview Park
+118,7,2023-11-13,4:53:01,1,733 Thompson Plaza,06 Waywood Street
+119,9,2023-11-12,1:13:52,2,41 Annamark Road,5 Everett Pass
+120,13,2023-11-14,9:59:47,4,14 Jenifer Plaza,9 Bunker Hill Circle
+121,18,2023-11-15,8:54:56,4,911 Spenser Park,509 Bashford Junction
+122,4,2023-11-16,7:15:24,3,4452 Evergreen Hill,4187 Brickson Park Plaza
+123,16,2023-11-17,4:05:09,5,6035 Lerdahl Terrace,87958 Manitowish Pass
+124,13,2023-11-14,7:42:57,5,1 Glacier Hill Crossing,8758 Pennsylvania Lane
+125,11,2023-11-15,22:15:15,5,901 Roxbury Alley,627 Almo Crossing
+126,18,2023-11-12,7:11:03,2,22 Stuart Pass,0258 Petterle Plaza
+127,2,2023-11-15,18:32:32,2,55616 Buhler Trail,3 Westport Alley
+128,14,2023-11-12,17:47:08,1,29790 Killdeer Center,32 Kedzie Alley
+129,17,2023-11-12,5:02:45,5,82849 Lakewood Avenue,93 Bunker Hill Parkway
+130,12,2023-11-13,0:47:09,1,64942 Hansons Court,7876 Delladonna Street
+131,16,2023-11-17,19:05:57,2,1395 Bowman Avenue,9 Anniversary Lane
+132,5,2023-11-16,16:49:09,4,1089 Spenser Terrace,88 Londonderry Center
+133,10,2023-11-16,5:16:30,4,69 Sherman Trail,4 Pine View Place
+134,14,2023-11-13,15:53:23,3,95 Bunker Hill Road,5 Crest Line Terrace
+135,12,2023-11-17,15:20:51,2,17771 Bay Alley,9524 Oakridge Road
+136,15,2023-11-17,2:50:57,2,41 Service Point,050 Hallows Way
+137,20,2023-11-17,22:27:11,3,44825 Pleasure Junction,6 Raven Parkway
+138,1,2023-11-13,11:44:39,5,501 Wayridge Crossing,03309 Hazelcrest Junction
+139,10,2023-11-13,7:23:43,2,93248 Myrtle Court,32503 Burning Wood Circle
+140,2,2023-11-15,11:42:32,4,13022 Coolidge Plaza,9503 Hoffman Parkway
+141,18,2023-11-12,8:34:41,4,01 Crest Line Lane,28 Vernon Crossing
+142,11,2023-11-15,2:17:26,3,5 Summit Parkway,71262 Troy Lane
+143,12,2023-11-16,15:32:38,5,08 Lotheville Crossing,89 Anniversary Parkway
+144,18,2023-11-12,14:43:50,1,85296 Division Center,999 Southridge Crossing
+145,18,2023-11-15,18:33:35,3,0021 Fairfield Park,3501 Cascade Court
+146,9,2023-11-17,0:23:25,3,3 Weeping Birch Drive,80 Donald Parkway
+147,16,2023-11-14,12:27:26,4,69567 Sauthoff Point,04405 Kropf Park
+148,17,2023-11-12,2:37:45,4,7567 Schmedeman Trail,8692 Linden Point
+149,9,2023-11-15,22:25:19,1,795 Sugar Trail,46496 Tennyson Point
+150,11,2023-11-13,7:32:21,2,8 Hagan Hill,5 Coolidge Circle
+151,12,2023-11-12,8:53:50,5,8 Center Terrace,02628 Hansons Lane
+152,18,2023-11-13,5:56:34,3,4 Milwaukee Lane,57589 Stephen Alley
+153,13,2023-11-16,15:10:43,2,4242 Clemons Circle,131 Loomis Center
+154,17,2023-11-13,2:29:47,1,58 Lien Alley,331 Canary Avenue
+155,18,2023-11-17,16:58:48,3,04 Kings Park,4 Anthes Terrace
+156,4,2023-11-15,13:46:50,4,95634 Namekagon Crossing,94 Haas Junction
+157,20,2023-11-14,23:53:28,1,02877 Clarendon Street,26 Oak Crossing
+158,15,2023-11-12,6:10:29,3,681 Del Sol Court,83811 Milwaukee Place
+159,17,2023-11-16,17:01:56,4,00 Springs Hill,558 Clemons Pass
+160,6,2023-11-13,9:34:47,2,85488 Dottie Park,3 Prentice Terrace
+161,1,2023-11-16,10:14:03,5,57519 Chive Court,360 Arkansas Drive
+162,6,2023-11-12,8:54:43,2,41202 Mallard Avenue,297 Veith Trail
+163,14,2023-11-12,12:42:30,5,62 Bonner Center,654 Elmside Junction
+164,1,2023-11-14,0:41:57,3,367 Loeprich Alley,62930 Messerschmidt Alley
+165,18,2023-11-15,21:51:27,2,1 Killdeer Avenue,7435 Moland Avenue
+166,2,2023-11-13,15:13:18,1,58903 Rigney Street,5120 Steensland Junction
+167,6,2023-11-15,15:21:52,2,3967 Mesta Terrace,1 Kenwood Crossing
+168,5,2023-11-15,14:49:01,2,397 Gerald Hill,421 Northland Circle
+169,10,2023-11-13,3:50:24,1,35838 Little Fleur Park,09507 Roth Avenue
+170,18,2023-11-16,12:30:12,2,5 Dovetail Street,37963 Warbler Alley
+171,3,2023-11-14,10:07:34,4,7661 Petterle Alley,39423 Emmet Way
+172,9,2023-11-16,19:21:25,5,0514 Orin Way,9886 Mockingbird Junction
+173,8,2023-11-15,22:42:07,2,1310 Melvin Lane,6493 Forster Avenue
+174,9,2023-11-13,4:18:59,2,971 Ryan Road,90900 Cordelia Pass
+175,15,2023-11-17,16:27:42,5,5 Charing Cross Terrace,989 Corscot Junction
+176,8,2023-11-13,13:26:05,4,57908 Sunfield Way,64510 Atwood Circle
+177,6,2023-11-15,22:54:57,4,4 Lighthouse Bay Avenue,07555 Stang Trail
+178,12,2023-11-13,18:25:49,4,7 Rusk Court,30 Marquette Junction
+179,7,2023-11-14,2:39:48,2,33 Nova Plaza,6392 American Ash Plaza
+180,8,2023-11-12,2:14:13,5,899 Farmco Trail,42019 John Wall Park
+181,15,2023-11-13,12:35:28,2,06 Service Center,22 Hoard Parkway
+182,13,2023-11-13,0:59:14,1,72174 Boyd Parkway,87 Badeau Junction
+183,19,2023-11-16,3:28:01,3,78033 Canary Terrace,50 Schmedeman Terrace
+184,10,2023-11-13,2:06:47,4,16 Burning Wood Street,0 Chinook Crossing
+185,11,2023-11-15,22:38:54,1,70156 Center Plaza,1 Reinke Plaza
+186,5,2023-11-16,20:12:55,2,6 Lyons Plaza,47 Rieder Drive
+187,20,2023-11-16,23:50:28,1,41 Grover Terrace,27 Messerschmidt Court
+188,2,2023-11-16,14:51:28,1,85643 Sachs Pass,634 Butterfield Alley
+189,5,2023-11-13,2:15:52,4,458 Michigan Avenue,21 Banding Center
+190,4,2023-11-13,11:33:01,2,7572 Tennyson Hill,3 Prentice Alley
+191,18,2023-11-13,18:56:13,5,075 Melody Hill,99176 Portage Avenue
+192,14,2023-11-14,3:10:45,3,1 Gale Avenue,05497 Orin Street
+193,6,2023-11-14,15:35:33,2,9 Basil Street,0516 Debs Place
+194,15,2023-11-14,12:07:51,4,4099 Lien Court,770 Ronald Regan Lane
+195,9,2023-11-14,13:40:01,4,3 Northridge Avenue,6330 Hermina Avenue
+196,20,2023-11-16,18:55:18,1,2 Dwight Street,9456 Spaight Road
+197,16,2023-11-15,22:37:13,2,9461 Lillian Court,8661 Delaware Street
+198,5,2023-11-15,13:38:06,4,8537 Arkansas Circle,827 Petterle Avenue
+199,12,2023-11-16,18:44:44,3,800 Sauthoff Road,0 Esch Hill
+200,16,2023-11-17,22:42:13,2,425 Burrows Plaza,69383 Sauthoff Way

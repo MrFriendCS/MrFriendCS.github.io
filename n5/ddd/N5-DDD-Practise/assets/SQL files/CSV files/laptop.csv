@@ -1,0 +1,13 @@
+laptop,make,model,value,working
+1,HP,Spectre,1700,TRUE
+2,Dell,Latitude,800,TRUE
+3,Microsoft,Surface,1350,FALSE
+4,Dell,Inspiron,350,FALSE
+5,Microsoft,Surface Pro,1850,TRUE
+6,Apple,MacBook Air,1300,TRUE
+7,HP,Envy,1200,TRUE
+8,Microsoft,Surface,1850,TRUE
+9,Microsoft,Surface Pro,1400,TRUE
+10,Dell,Inspiron,450,TRUE
+11,Dell,Spectre,1350,FALSE
+12,Microsoft,Surface,1350,FALSE

@@ -1,0 +1,9 @@
+clubID,clubName,location,clubType,dateOpened,personalTrainer,roomsForHire
+SP107,Well Life,Allentown,Leisure Centre,2015-05-24,FALSE,2
+SP128,KickAbout,Brockton,Astroturf,1999-11-22,FALSE,2
+SP197,Puddles,Baldwin,Swimming Pool,2009-01-18,FALSE,3
+SP324,Trim,Allentown,Gym,2010-05-11,TRUE,5
+SP345,Living Fit,Lowhall,Leisure Centre,2002-07-05,TRUE,1
+SP365,Shape Up,Baldwin,Gym,2005-08-04,TRUE,1
+SP433,Waves,Brockton,Swimming Pool,1996-05-16,TRUE,2
+SP487,Toners,Lowhall,Gym,1996-08-15,FALSE,3
