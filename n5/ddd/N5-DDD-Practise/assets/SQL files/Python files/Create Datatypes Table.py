@@ -1,4 +1,4 @@
-# Title: N5-DDD-Practise - datatypes
+# Title: Create Datatypes
 # Author: Mr Friend
 # Date: 28 Sep 2024
 
@@ -178,12 +178,12 @@ def getBooleans(noOfRows):
 
 def writeTable(a, b, c, d, e, f, g):
     
-    file = open("datatypes.sql", "w")
+    file = open("..\\Datatypes.sql", "w")
     
     # SQL - Create table
     
-    file.write("CREATE TABLE datatypes (\n")
-    file.write("    row_id INT NOT NULL UNIQUE,\n")
+    file.write("CREATE TABLE Datatypes (\n")
+    file.write("    rowID INT NOT NULL UNIQUE,\n")
     file.write("    colour VARCHAR(10)\n")
     file.write("        CHECK(LENGTH(colour) >= 3),\n")
     file.write("    score INT\n")
@@ -195,14 +195,14 @@ def writeTable(a, b, c, d, e, f, g):
     file.write("    start TIME\n")
     file.write("        CHECK(start >= \"08:00:00\" AND start <= \"16:00:00\"),\n")
     file.write("    nice BOOLEAN NOT NULL,\n")
-    file.write("    PRIMARY KEY (row_id)\n")
+    file.write("    PRIMARY KEY (rowID)\n")
     file.write(");\n\n")
     
     # SQL - Create values
     
     # Loop for each prisoner
     for index in range(len(a)):
-        file.write("INSERT INTO datatypes VALUES (")
+        file.write("INSERT INTO Datatypes VALUES (")
         file.write(str(a[index]) + ",")
         file.write("\"" + b[index] + "\",")
         file.write(str(c[index]) + ",")

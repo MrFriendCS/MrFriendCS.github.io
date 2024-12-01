@@ -2,8 +2,10 @@
 # Author: Mr Friend
 # Date: 3 Oct 2024
 
+# Import extra code
 import sys
 
+# Determine where the DDDhelper file is
 shool = "C:\\Users\\afriend1r\\AppData\\Local\\Programs\\Thonny"
 
 start1 = "C:\\Users\\afriend1r"
@@ -21,94 +23,97 @@ else:
     sys.path.append(start2 + end)
 
 
+# Get extra code
 import DDDhelper
-
 from dataclasses import dataclass
+
+
+@dataclass
+class Customer:
+    """A record to represent a hotel customer."""
+    custNo: int = 0
+    firstName: str = ""
+    lastName: str = ""
+    phone: str = ""
+    email: str = ""
+    
+
+@dataclass
+class Booking:
+    """A record to represent a hotel booking."""
+    reservation: int = 0
+    arrive: str = ""
+    nights: int = 0
+    ppn: float = 0.0
+    prepaid: bool = False
+    custNo: int = 0
 
 
 def createCustomers(count):
     """Create customer data and table."""
     
-    
-    @dataclass
-    class Customer:
-        """A record to represent a hotel customer."""
-    
-        custNo: int = 0
-        first_name: str = ""
-        last_name: str = ""
-        phone: str = ""
-        email: str = ""
-    
-    
     customers = [Customer() for i in range(count)]
 
-    # Create customer data
+    fileOut = open("..\\Customer.sql", "w")
 
-    customerTable = """CREATE TABLE customer (
+    # Create table
+
+    table = """CREATE TABLE Customer (
         custNo INT NOT NULL,
-        first_name VARCHAR(20),
-        last_name VARCHAR(30),
+        firstName VARCHAR(20),
+        lastName VARCHAR(30),
         phone VARCHAR(11) NOT NULL
             CHECK(LENGTH(phone) = 11),
         email VARCHAR(30),
         PRIMARY KEY (custNo)
     );"""
-
-    for index in range(len(customers)):
-
-        customers[index].custNo = index + 1
-        first_name = DDDhelper.getForename()
-        customers[index].first_name = first_name
-        last_name = DDDhelper.getSurname()
-        customers[index].last_name = last_name
-        customers[index].phone = DDDhelper.getPhone()
-        customers[index].email = DDDhelper.getEmail(first_name, last_name)
     
-    # Write customer data to file
-
-    file = open("customer.sql", "w")
-
-    file.write(customerTable + "\n\n")
+    fileOut.write(table + "\n\n")
+    
+    
+    # Create data
 
     for index in range(len(customers)):
         
-        file.write("INSERT INTO customer VALUES ")
-        file.write("(")
-        file.write(    str(customers[index].custNo) + ",")
-        file.write( "\"" + customers[index].first_name + "\",")
-        file.write( "\"" + customers[index].last_name + "\",")
-        file.write( "\"" + customers[index].phone + "\",")
+        firstName = DDDhelper.getForename()
+        lastName = DDDhelper.getSurname()
+        
+        customers[index].custNo = index + 1
+        customers[index].firstName = firstName
+        customers[index].lastName = lastName
+        customers[index].phone = DDDhelper.getPhone()
+        customers[index].email = DDDhelper.getEmail(firstName, lastName)
+    
+    
+    # Insert data
+    
+    for index in range(len(customers)):
+        
+        fileOut.write("INSERT INTO Customer VALUES ")
+        fileOut.write("(")
+        fileOut.write(    str(customers[index].custNo) + ",")
+        fileOut.write( "\"" + customers[index].firstName + "\",")
+        fileOut.write( "\"" + customers[index].lastName + "\",")
+        fileOut.write( "\"" + customers[index].phone + "\",")
         
         if customers[index].email != "":
-            file.write( "\"" + customers[index].email + "\");\n")
+            fileOut.write( "\"" + customers[index].email + "\");\n")
         else:
-            file.write("NULL);\n")
+            fileOut.write("NULL);\n")
 
-    file.close()
+    fileOut.close()
 
 
 def createBookings(count):
-    """Create booking data and table."""
-    
-    
-    @dataclass
-    class Booking:
-        """A record to represent a hotel booking."""
-        
-        reservation: int = 0
-        arrive: str = ""
-        nights: int = 0
-        ppn: float = 0.0
-        prepaid: bool = False
-        custNo: int = 0
-    
+    """Create booking data and table."""  
     
     bookings = [Booking() for i in range(count)]
     
-    # Create booking data
+    fileOut = open("../Booking.sql", "w")
+    
+    # Create table
 
-    bookingTable = """CREATE TABLE booking (
+    table = """CREATE TABLE booking (
         reservation INT NOT NULL,
         arrive DATE NOT NULL,
         nights INT NOT NULL CHECK(nights >= 1),
@@ -120,6 +125,11 @@ def createBookings(count):
         PRIMARY KEY (reservation)
     );"""
 
+    fileOut.write(table + "\n\n")
+    
+    
+    # Create data
+
     for index in range(len(bookings)):
         
         bookings[index].reservation = 750 + index
@@ -129,25 +139,22 @@ def createBookings(count):
         bookings[index].custNo = DDDhelper.getNumber(int(count/4))
         bookings[index].prepaid = DDDhelper.getTrue(20)
 
-    # Write booking data to file
 
-    file = open("booking.sql", "w")
-
-    file.write(bookingTable + "\n\n")
+    ## Insert data
 
     for index in range(len(bookings)):
 
-        file.write("INSERT INTO booking VALUES ")
-        file.write("(")
-        file.write(    str(bookings[index].reservation) + ",")
-        file.write( "\"" + bookings[index].arrive + "\",")
-        file.write(    str(bookings[index].nights) + ",")
-        file.write(    str(bookings[index].ppn) + ",")
-        file.write(    str(bookings[index].prepaid) + ",")
-        file.write(    str(bookings[index].custNo))
-        file.write(");\n")
+        fileOut.write("INSERT INTO Booking VALUES ")
+        fileOut.write("(")
+        fileOut.write(    str(bookings[index].reservation) + ",")
+        fileOut.write( "\"" + bookings[index].arrive + "\",")
+        fileOut.write(    str(bookings[index].nights) + ",")
+        fileOut.write(    str(bookings[index].ppn) + ",")
+        fileOut.write(    str(bookings[index].prepaid) + ",")
+        fileOut.write(    str(bookings[index].custNo))
+        fileOut.write(");\n")
 
-    file.close()
+    fileOut.close()
 
 
 def main():
