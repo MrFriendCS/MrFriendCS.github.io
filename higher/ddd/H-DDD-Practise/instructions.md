@@ -6,7 +6,7 @@ File: [Practise.db](../../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download
 
 ## Data Dictionary 1
 
-### Table: datatypes
+### Table: Datatypes
 
 | Attribute | Key   | Req'd | Type    | Validation |
 | --------- | :---: | :---: | ----    | ---------- |
@@ -18,7 +18,7 @@ File: [Practise.db](../../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download
 | boolean   |       |       | Boolean | |
 
 
-### Table: marathon
+### Table: Marathon
 
 | Attribute | Key   | Req'd | Type   | Validation |
 | --------- | :---: | :---: | ----   | ---------- |
@@ -33,7 +33,7 @@ File: [Practise.db](../../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download
 
 ## Data Dictionary 2
 
-### Table: pupil
+### Table: Pupil
 
 | Attribute | Key   | Req'd | Type    | Validation |
 | --------- | :---: | :---: | ----    | ---------- |
@@ -46,7 +46,7 @@ File: [Practise.db](../../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download
 | enrolled  |       | Y     | Boolean | |
 
 
-### Table: address
+### Table: Address
 
 | Attribute | Key   | Req'd | Type    | Validation |
 | --------- | :---: | :---: | ----    | ---------- |
@@ -57,7 +57,7 @@ File: [Practise.db](../../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download
 | phone     |       |       | Text    | Length = 12 |
 
 
-### Table: staff
+### Table: Staff
 
 | Attribute | Key   | Req'd | Type   | Validation |
 | --------- | :---: | :---: | ----   | ---------- |
@@ -67,7 +67,7 @@ File: [Practise.db](../../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download
 | role      |       | Y     | Text   | |
 
 
-### Table: subject
+### Table: Subject
 
 | Attribute | Key   | Req'd | Type   | Validation |
 | --------- | :---: | :---: | ----   | ---------- |
@@ -75,7 +75,7 @@ File: [Practise.db](../../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download
 | subject   |       | Y     | Text   | |
 
 
-### Table: teacher
+### Table: Teacher
 
 | Attribute | Key     | Req'd | Type   | Validation |
 | --------- | :---:   | :---: | ----   | ---------- |
@@ -85,7 +85,7 @@ File: [Practise.db](../../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download
 
 ## Data Dictionary 3
 
-### Table: port
+### Table: Port
 
 | Attribute      | Key   | Req'd | Type | Validation |
 | ---------      | :---: | :---: | ---- | ---------- |
@@ -96,7 +96,7 @@ File: [Practise.db](../../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download
 | serviceType    |       | Y     | Text | |
 
 
-### Table: route
+### Table: Route
 
 | Attribute       | Key   | Req'd | Type   | Validation |
 | ---------       | :---: | :---: | ----   | ---------- |
