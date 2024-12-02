@@ -1,7 +1,7 @@
 # H DDD Practise
 
 
-File: [Practise.db](assets/Practise.db "Download file")
+File: [Practise.db](../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download file")
 
 
 ## Data Dictionary 1
@@ -10,11 +10,11 @@ File: [Practise.db](assets/Practise.db "Download file")
 
 | Attribute | Key   | Req'd | Type    | Validation |
 | --------- | :---: | :---: | ----    | ---------- |
-| rowID     | PK    | Y     | text    | |
-| integer   |       |       | number  | range: >= 1 and <= 100 |
-| real      |       |       | number  | range: >= 1 and <= 100 |
-| date      |       |       | date    | range: >= 1900 and <= 2023 |
-| time      |       |       | time    | |
+| rowID     | PK    | Y     | Text    | |
+| integer   |       |       | Number  | Range: >= 1 and <= 100 |
+| real      |       |       | Number  | Range: >= 1 and <= 100 |
+| Date      |       |       | Date    | Range: >= 1900 and <= 2023 |
+| Time      |       |       | Time    | |
 | boolean   |       |       | Boolean | |
 
 
@@ -22,96 +22,96 @@ File: [Practise.db](assets/Practise.db "Download file")
 
 | Attribute | Key   | Req'd | Type   | Validation |
 | --------- | :---: | :---: | ----   | ---------- |
-| forename  |       | Y     | text   | |
-| surname   |       | Y     | text   | |
-| country   |       |       | text   | length = 3 |
-| number    | PK    | Y     | number | range: > 0 |
-| gender    |       | Y     | text   | restricted choice: Men, Women |
-| half      |       | Y     | time   | |
-| finish    |       | Y     | time   | |
+| forename  |       | Y     | Text   | |
+| surname   |       | Y     | Text   | |
+| country   |       |       | Text   | Length = 3 |
+| Number    | PK    | Y     | Number | Range: > 0 |
+| gender    |       | Y     | Text   | Restricted choice: Men, Women |
+| half      |       | Y     | Time   | |
+| finish    |       | Y     | Time   | |
 
 
 ## Data Dictionary 2
 
 ### Table: pupil
 
-| Attribute  | Key   | Req'd | Type    | Validation |
-| ---------  | :---: | :---: | ----    | ---------- |
-| pupil_id   | PK    | Y     | number  | range: > 0 |
-| home_id    | FK    |       | number  | Exists in address table |
-| first_name |       | Y     | text    | |
-| last_name  |       | Y     | text    | |
-| dob        |       | Y     | date    | |
-| age        |       | Y     | number  | range: >= 0 |
-| enrolled   |       | Y     | Boolean | |
+| Attribute | Key   | Req'd | Type    | Validation |
+| --------- | :---: | :---: | ----    | ---------- |
+| pupilID   | PK    | Y     | Number  | Range: > 0 |
+| homeID    | FK    |       | Number  | Exists in address table |
+| firstName |       | Y     | Text    | |
+| lastName  |       | Y     | Text    | |
+| dob       |       | Y     | Date    | |
+| age       |       | Y     | Number  | Range: >= 0 |
+| enrolled  |       | Y     | Boolean | |
 
 
 ### Table: address
 
-| Attribute  | Key   | Req'd | Type    | Validation |
-| ---------  | :---: | :---: | ----    | ---------- |
-| address_id | PK    | Y     | integer | |
-| first_line |       | Y     | text    | |
-| town       |       | Y     | text    | |
-| postcode   |       | Y     | text    | |
-| phone      |       |       | text    | length = 12 |
+| Attribute | Key   | Req'd | Type    | Validation |
+| --------- | :---: | :---: | ----    | ---------- |
+| addressID | PK    | Y     | integer | |
+| firstLine |       | Y     | Text    | |
+| town      |       | Y     | Text    | |
+| postcode  |       | Y     | Text    | |
+| phone     |       |       | Text    | Length = 12 |
 
 
 ### Table: staff
 
 | Attribute | Key   | Req'd | Type   | Validation |
 | --------- | :---: | :---: | ----   | ---------- |
-| staff_id  | PK    | Y     | number | |
-| title     |       | Y     | text   | |
-| last_name |       | Y     | text   | |
-| role      |       | Y     | text   | |
+| staffID   | PK    | Y     | Number | |
+| title     |       | Y     | Text   | |
+| lastName  |       | Y     | Text   | |
+| role      |       | Y     | Text   | |
 
 
 ### Table: subject
 
-| Attribute  | Key   | Req'd | Type   | Validation |
-| ---------  | :---: | :---: | ----   | ---------- |
-| subject_id | PK    | Y     | number | |
-| subject    |       | Y     | text   | |
+| Attribute | Key   | Req'd | Type   | Validation |
+| --------- | :---: | :---: | ----   | ---------- |
+| subjectID | PK    | Y     | Number | |
+| subject   |       | Y     | Text   | |
 
 
 ### Table: teacher
 
 | Attribute | Key     | Req'd | Type   | Validation |
 | --------- | :---:   | :---: | ----   | ---------- |
-| staff_id  | PK / FK | Y     | number | Exists in staff table |
-| subject   | PK / FK | Y     | text   | Exists in subject table |
+| staffID   | PK / FK | Y     | Number | Exists in staff table |
+| subject   | PK / FK | Y     | Text   | Exists in subject table |
 
 
 ## Data Dictionary 3
 
 ### Table: port
 
-| Attribute       | Key   | Req'd | Type | Validation |
-| ---------       | :---: | :---: | ---- | ---------- |
-| port_code       | PK    | Y     | text | length = 3 |
-| port_name       |       | Y     | text | |
-| local_authority |       | Y     | text | |
-| marine_region   |       | Y     | text | |
-| service_type    |       | Y     | text | |
+| Attribute      | Key   | Req'd | Type | Validation |
+| ---------      | :---: | :---: | ---- | ---------- |
+| portCode       | PK    | Y     | Text | Length = 3 |
+| portName       |       | Y     | Text | |
+| localAuthority |       | Y     | Text | |
+| marineRegion   |       | Y     | Text | |
+| serviceType    |       | Y     | Text | |
 
 
 ### Table: route
 
-| Attribute        | Key   | Req'd | Type   | Validation |
-| ---------        | :---: | :---: | ----   | ---------- |
-| route_id         | PK    | Y     | text   | |
-| depart_code      | FK    | Y     | text   | Exists in port table |
-| arrive_code      | FK    | Y     | text   | Exists in port table |
-| route            |       | Y     | text   | |
-| service          |       | Y     | text   | |
-| ferry_type       |       | Y     | text   | |
-| seasonal         |       | Y     | text   | |
-| operator         |       | Y     | text   | |
-| service_id       |       | Y     | text   | |
-| service_code     |       | Y     | text   | |
-| operator_url     |       |       | text   | |
-| subsidy_type     |       |       | text   | |
-| subsidy_provider |       |       | text   | |
-| distance_miles   |       |       | number | |
-| duration_hours   |       |       | number | |
+| Attribute       | Key   | Req'd | Type   | Validation |
+| ---------       | :---: | :---: | ----   | ---------- |
+| routeID         | PK    | Y     | Text   | |
+| departCode      | FK    | Y     | Text   | Exists in port table |
+| arriveCode      | FK    | Y     | Text   | Exists in port table |
+| route           |       | Y     | Text   | |
+| service         |       | Y     | Text   | |
+| ferryType       |       | Y     | Text   | |
+| seasonal        |       | Y     | Text   | |
+| operator        |       | Y     | Text   | |
+| serviceID       |       | Y     | Text   | |
+| serviceCode     |       | Y     | Text   | |
+| operatorUrl     |       |       | Text   | |
+| subsidyType     |       |       | Text   | |
+| subsidyProvider |       |       | Text   | |
+| distanceMiles   |       |       | Number | |
+| durationHours   |       |       | Number | |
