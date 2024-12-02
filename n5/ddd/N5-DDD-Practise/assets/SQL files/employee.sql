@@ -6,7 +6,7 @@ CREATE TABLE Employee (
     PRIMARY KEY (id)
 );
 
-INSERT INTO employee VALUES (1,"Annie","Developer",34);
-INSERT INTO employee VALUES (2,"Chris","Tester",26);
-INSERT INTO employee VALUES (3,"Dan","Designer",35);
-INSERT INTO employee VALUES (4,"Erin","Developer",24);
+INSERT INTO Employee VALUES (1,"Annie","Developer",34);
+INSERT INTO Employee VALUES (2,"Chris","Tester",26);
+INSERT INTO Employee VALUES (3,"Dan","Designer",35);
+INSERT INTO Employee VALUES (4,"Erin","Developer",24);

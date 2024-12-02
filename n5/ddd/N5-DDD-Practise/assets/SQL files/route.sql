@@ -1,0 +1,22 @@
+CREATE TABLE route (
+	route_id TEXT NOT NULL,
+	depart_code TEXT NOT NULL CHECK(LENGTH(depart_code) = 3),
+	arrive_code TEXT NOT NULL CHECK(LENGTH(arrive_code) = 3),
+	route NUMERIC NOT NULL,
+	service TEXT NOT NULL,
+	ferry_type TEXT NOT NULL,
+	seasonal TEXT NOT NULL,
+	operator TEXT NOT NULL,
+	service_id TEXT NOT NULL,
+	service_code TEXT NOT NULL,
+	service_type TEXT NOT NULL,
+	operator_code TEXT NOT NULL,
+	operator_url TEXT,
+	subsidy_type TEXT,
+	subsidy_provider TEXT,
+	distance_miles REAL,
+	duration_hours REAL,
+	FOREIGN KEY(depart_code) REFERENCES port(port_code),
+	FOREIGN KEY(arrive_code) REFERENCES port(port_code),
+	PRIMARY KEY(route_id)
+);
