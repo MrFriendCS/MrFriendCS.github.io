@@ -6,6 +6,9 @@ File: [Membership.db](assets/Membership.db "Download file")
 
 ## Tasks
 
+
+### Part 1
+
 1. Create a query to display the club name and club ID of all clubs.
 
 2. Display the first name, surname, and gender of all adult members.
@@ -23,6 +26,8 @@ File: [Membership.db](assets/Membership.db "Download file")
 8. Display the first name, surname, and the member number of each Puddles club member.  Order by forename and then surname.
 
 
+### Part 2
+
 ``` sql
 INSERT INTO
     VALUES
@@ -30,13 +35,16 @@ INSERT INTO
 
 {:start="9"}
 9. Insert a new club using these details:
-    
+
 ``` sql
 SP488, Vital Spark, Brockton, Gym, 2017-03-03, FALSE, 2
 ```
- 
+
+{:start="10"}
 10. Create a query to show the details of the club that was added.
 
+
+### Part 3
 
 ``` sql
 UPDATE
@@ -49,6 +57,8 @@ UPDATE
 
 12. Display the member number, forename, and last name of all members who have a renewal date of November.
 
+
+### Part 4
 
 ``` sql
 DELETE FROM
@@ -63,30 +73,31 @@ DELETE FROM
 
 ## Data dictionary
 
-### Table: club
+### Entity: Club
 
 | Attribute | Key   | Type    | Size  | Req'd | Validation |
 | --------- | :---: | ----    | :---: | :---: | ---------- |
-| id        | PK    | VARCHAR | 6     | Y     |            |
-| name      |       | VARCHAR | 30    | Y     |            |
-| location  |       | VARCHAR | 30    | Y     |            |
-| type      |       | VARCHAR | 20    | Y     |            |
-| opened    |       | DATE    |       | N     |            |
-| trainer   |       | BOOLEAN |       | Y     |            |
-| rooms     |       | INT     |       | Y     | range: >= 0 |
+| clubID    | PK    | Text    | 6     | Y     |            |
+| name      |       | Text    | 30    | Y     |            |
+| location  |       | Text    | 30    | Y     |            |
+| type      |       | Text    | 20    | Y     |            |
+| opened    |       | Date    |       | N     |            |
+| trainer   |       | Boolean |       | Y     |            |
+| rooms     |       | Number  |       | Y     | Range: >= 0 |
 
-### Table: member
 
-| Attribute  | Key   | Type    | Size  | Req'd | Validation |
-| ---------  | :---: | ----    | :---: | :---: | ---------- |
-| member_no  | PK    | VARCHAR | 8     | Y     |            |
-| club_id    | FK    | VARCHAR | 6     | Y     | Exists in Club table |
-| first_name |       | VARCHAR | 20    | Y     |            |
-| last_name  |       | VARCHAR | 30    | Y     |            |
-| address    |       | VARCHAR | 30    | N     |            |
-| town       |       | VARCHAR | 20    | N     |            |
-| postcode   |       | VARCHAR | 8     | N     |            |
-| dob        |       | DATE    |       | Y     | range: >= 1 Jan 1925 |
-| renew      |       | INT     |       | Y     | range: >= 1 and <= 12 |
-| gender     |       | VARCHAR | 2     | N     | restricted choice: F, M, ND |
-| type       |       | VARCHAR | 8     | Y     | restricted choice: Adult, Child, Guest, Senior, Student  |
+### Entity: Member
+
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| memberNo  | PK    | Text   | 8     | Y     |            |
+| clubID    | FK    | Text   | 6     | Y     | Exists in Club table |
+| firstName |       | Text   | 20    | Y     |            |
+| lastName  |       | Text   | 30    | Y     |            |
+| address   |       | Text   | 30    | N     |            |
+| town      |       | Text   | 20    | N     |            |
+| postcode  |       | Text   | 8     | N     |            |
+| dob       |       | Date   |       | Y     | Range: >= 1 Jan 1925 |
+| renew     |       | Number |       | Y     | Range: >= 1 and <= 12 |
+| gender    |       | Text   | 2     | N     | Restricted choice: F, M, ND |
+| type      |       | Text   | 8     | Y     | Restricted choice: Adult, Child, Guest, Senior, Student |
