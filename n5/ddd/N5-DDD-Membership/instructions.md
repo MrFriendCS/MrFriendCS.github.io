@@ -28,6 +28,7 @@ INSERT INTO
     VALUES
 ```
 
+{:start="9"}
 9. Insert a new club using these details:
     
 ``` sql
@@ -43,6 +44,7 @@ UPDATE
     WHERE
 ```
 
+{:start="11"}
 11. Update every member who has December as a renewal date to November.
 
 12. Display the member number, forename, and last name of all members who have a renewal date of November.
@@ -53,6 +55,7 @@ DELETE FROM
     WHERE
 ```
 
+{:start="13"}
 13. Delete all members with a guest account.
 
 14. Display the first name, surname, and memebership type of each member, with the membership type alphabetical.
