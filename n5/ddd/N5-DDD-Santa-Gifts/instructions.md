@@ -69,4 +69,4 @@ The elves have decided to modernise to help keep track of the data that's needed
 
 ### ERD
 
-![ERD](assets/Diagrams/ERD-childGift.png)
+![ERD 1:M](assets/Diagrams/ERD-ChildGift.png)
