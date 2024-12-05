@@ -1,10 +1,13 @@
 # N5 DDD - Santa Gifts
 
+File: [Santa.db](assets/Santa.db "Download file")
+
 ## Introduction
 
 For as long as anyone can remember, Santa has been keeping lists on paper.  This causes the elves no end of problems when they get nibbled by a reindeer or Mrs Claus has a tidy up and throws out an old scrap of paper that Santa still needs.
 
 The elves have decided to modernise to help keep track of the data that's needed for such a massive operation.  They are starting with a small database, to help Santa with the transition, with just tables of who's been nice, or naughty, and the gifts that Santa will deliver.
+
 
 ## Tasks
 
@@ -18,11 +21,12 @@ The elves have decided to modernise to help keep track of the data that's needed
 401,98,"PS5"
 ```
 
+{:start="4"}
 4. Child 172 has been very naughty.  Change their `nice` status in the `child` table.
 
 5. Child 172 will no longer be getting their original gift.  Make sure they now get a `Lump of coal`.
 
-6. Display the child ID, forename, and surname of everyone who will recieve a `Chad Valley Wooden Pizza` from Santa.
+6. Display the child ID, forename, and surname of everyone who will receive a `Chad Valley Wooden Pizza` from Santa.
 
 7. Display the forename of everyone who shares your surname and show what gifts they will receive.  Order the names alphbetically.
 
@@ -30,7 +34,9 @@ The elves have decided to modernise to help keep track of the data that's needed
 
 9. When the elves aren't looking, add a couple of presents for yourself to the gift table.  Don't steal somebody else's!
 
-10. The elves want a delivery list for Santa.  It is to be sorted alphabetically by surname and then forename.  The elves are insistent that ___only___ nice children are to appear on this list.  An example of the output is shown below:
+10. Show what you will be getting from Santa.
+
+11. The elves want a delivery list for Santa.  It is to be sorted alphabetically by surname and then forename.  The elves are insistent that ___only___ nice children are to appear on this list.  An example of the output is shown below:
 
 | Forename | Surname    | Item |
 | -------- | -------    | ---- |
@@ -38,23 +44,25 @@ The elves have decided to modernise to help keep track of the data that's needed
 | Bianca   | Brotherton | Playdoh |
 | Billy    | Brotherton | Maths set |
 
-11. Make sure you are on Santa's delivery list!
+{:start="12"}
+12. Make sure you are on Santa's delivery list!
+
 
 ## Data Dictionary
 
-### Entity: child
+### Entity: Child
 
-| Attribute  | Key   | Type    | Size  | Req'd | Validation |
-| ---------  | :---: | ----    | :---: | :---: | ---------- |
-| child_id   | PK    | number  |       | Y     |            |
-| first_name |       | text    | 20    | N     |            |
-| last_name  |       | text    | 30    | N     |            |
-| nice       |       | boolean |       | N     |            |
+| Attribute | Key   | Type    | Size  | Req'd | Validation |
+| --------- | :---: | ----    | :---: | :---: | ---------- |
+| childID   | PK    | Number  |       | Y     |            |
+| firstName |       | Text    | 20    | N     |            |
+| lastName  |       | Text    | 30    | N     |            |
+| nice      |       | Boolean |       | N     |            |
 
-### Entity: gift
+### Entity: Gift
 
-| Attribute  | Key   | Type   | Size  | Req'd | Validation |
-| ---------  | :---: | ----   | :---: | :---: | ---------- |
-| gift_id    | PK    | number |       | Y     |            |
-| child_id   | FK    | number |       | N     | Exists in child table |
-| item       |       | text   | 50    | N     |            |
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| giftID    | PK    | Number |       | Y     |            |
+| childID   | FK    | Number |       | N     | Exists in child table |
+| item      |       | Text   | 50    | N     |            |
