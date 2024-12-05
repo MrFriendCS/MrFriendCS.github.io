@@ -28,8 +28,9 @@ table = """CREATE TABLE journey (
         CHECK (pax >= 1),
     pickUpLoc VARCHAR(30),
     dropOffLoc VARCHAR(30),
-    FOREIGN KEY("taxiID") REFERENCES "taxi"("taxiID")
-    PRIMARY KEY("journeyID")
+    PRIMARY KEY (journeyID),
+    FOREIGN KEY (taxiID)
+        REFERENCES taxi (taxiID)
 );"""
 
 fileOut.write(table + "\n\n")

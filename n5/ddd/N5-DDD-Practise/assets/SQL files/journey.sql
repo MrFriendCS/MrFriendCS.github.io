@@ -7,8 +7,9 @@ CREATE TABLE journey (
         CHECK (pax >= 1),
     pickUpLoc VARCHAR(30),
     dropOffLoc VARCHAR(30),
-    FOREIGN KEY("taxiID") REFERENCES "taxi"("taxiID")
-    PRIMARY KEY("journeyID")
+    PRIMARY KEY (journeyID),
+    FOREIGN KEY (taxiID)
+        REFERENCES taxi (taxiID)
 );
 
 INSERT INTO Journey VALUES (1,10,"2023-11-13","19:54:18",5,"57 Transport Plaza","62272 Arapahoe Way");

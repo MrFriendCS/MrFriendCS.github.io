@@ -4,7 +4,7 @@ CREATE TABLE Taxi (
     make VARCHAR(20),
     model VARCHAR(20),
     colour VARCHAR(15),
-    PRIMARY KEY(taxiID)
+    PRIMARY KEY (taxiID)
 );
 
 INSERT INTO Taxi VALUES (1,"AZ68 KOS","Mercury","Grand Marquis","Goldenrod");

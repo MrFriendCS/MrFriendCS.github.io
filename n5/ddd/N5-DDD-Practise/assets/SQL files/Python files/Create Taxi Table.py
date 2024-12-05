@@ -15,7 +15,7 @@ table = """CREATE TABLE Taxi (
     make VARCHAR(20),
     model VARCHAR(20),
     colour VARCHAR(15),
-    PRIMARY KEY(taxiID)
+    PRIMARY KEY (taxiID)
 );"""
 
 fileOut.write(table + "\n\n")

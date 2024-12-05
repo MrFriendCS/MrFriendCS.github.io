@@ -1,9 +1,9 @@
 # Title: Create Pet Table
 # Author: Mr Friend
-# Date: 30 Nov 2024
+# Date: 5 Dec 2024
 
 # Files
-fileIn = open("../CSV files/Pet.csv", "r")
+fileIn = open("../CSV files/Insurer/Pet.csv", "r")
 fileOut = open("../Pet.sql", "w")
 
 
@@ -13,9 +13,10 @@ table = """CREATE TABLE Pet (
     name VARCHAR(20) NOT NULL,
     type VARCHAR(30) NOT NULL,
     age INT NOT NULL,
-    insured BOOL NOT NULL,
-    lastVisit DATE NOT NULL,
-    PRIMARY KEY (name)
+    insurer INT NOT NULL,
+    PRIMARY KEY (name),
+    FOREIGN KEY (insurer)
+        REFERENCES Insurer (id)
 );"""
 
 fileOut.write(table + "\n\n")
@@ -35,8 +36,7 @@ while line != "":
     fileOut.write( "(\"" + data[0].strip() + "\",")  # name
     fileOut.write( "\"" +  data[1].strip() + "\",")  # type
     fileOut.write(         data[2].strip() + ",")  # age
-    fileOut.write( "\"" +  data[3].strip() + "\",")  # insured
-    fileOut.write( "\"" +  data[4].strip() + "\");\n")  # lastVisit
+    fileOut.write(         data[3].strip() + ");\n")  # insurer
 
     line = fileIn.readline()
     
