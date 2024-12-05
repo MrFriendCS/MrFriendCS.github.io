@@ -1,0 +1,35 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Owner" id="FLNJFZZRnlY_quxtT60L">
+    <mxGraphModel dx="1034" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="htKi9lpGefzoFyEpu0ph-0" />
+        <mxCell id="htKi9lpGefzoFyEpu0ph-1" parent="htKi9lpGefzoFyEpu0ph-0" />
+        <mxCell id="htKi9lpGefzoFyEpu0ph-2" value="&lt;b&gt;Child&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=1;whiteSpace=wrap;html=1;fillColor=none;" parent="htKi9lpGefzoFyEpu0ph-1" vertex="1">
+          <mxGeometry x="320" y="360" width="120" height="110" as="geometry">
+            <mxRectangle x="170" y="370" width="80" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="htKi9lpGefzoFyEpu0ph-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;u style=&quot;&quot;&gt;childID&lt;/u&gt;&lt;br&gt;firstName&lt;br&gt;lastName&lt;br&gt;nice&lt;/font&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="htKi9lpGefzoFyEpu0ph-2" vertex="1">
+          <mxGeometry y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="htKi9lpGefzoFyEpu0ph-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="htKi9lpGefzoFyEpu0ph-2" source="htKi9lpGefzoFyEpu0ph-3" target="htKi9lpGefzoFyEpu0ph-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htKi9lpGefzoFyEpu0ph-5" value="&lt;b&gt;Gift&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=1;whiteSpace=wrap;html=1;fillColor=none;" parent="htKi9lpGefzoFyEpu0ph-1" vertex="1">
+          <mxGeometry x="600" y="360" width="120" height="110" as="geometry">
+            <mxRectangle x="170" y="370" width="80" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="htKi9lpGefzoFyEpu0ph-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;u style=&quot;&quot;&gt;giftID&lt;br&gt;&lt;/u&gt;childID*&lt;br&gt;item&lt;/font&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="htKi9lpGefzoFyEpu0ph-5" vertex="1">
+          <mxGeometry y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="htKi9lpGefzoFyEpu0ph-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;endSize=20;" parent="htKi9lpGefzoFyEpu0ph-1" source="htKi9lpGefzoFyEpu0ph-3" target="htKi9lpGefzoFyEpu0ph-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IsI6CdP_r68CARXCBPHi-0" value="Receives" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="htKi9lpGefzoFyEpu0ph-1" vertex="1">
+          <mxGeometry x="490" y="399" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
