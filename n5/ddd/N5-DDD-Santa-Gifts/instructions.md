@@ -28,7 +28,7 @@ The elves have decided to modernise to help keep track of the data that's needed
 
 6. Display the child ID, forename, and surname of everyone who will receive a `Chad Valley Wooden Pizza` from Santa.
 
-7. Display the forename of everyone who shares your surname and show what gifts they will receive.  Order the names alphbetically.
+7. Display the ID and forename of everyone who shares your surname and show what gifts they will receive.  Order the names alphbetically.
 
 8. Using the `Gift` table, show what you will be getting from Santa.
 
