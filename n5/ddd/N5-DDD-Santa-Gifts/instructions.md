@@ -67,6 +67,7 @@ The elves have decided to modernise to help keep track of the data that's needed
 | childID   | FK    | Number |       | N     | Exists in child table |
 | item      |       | Text   | 50    | N     |            |
 
-### ERD
+
+## ERD
 
 ![ERD 1:M](assets/Diagrams/ERD-ChildGift.png)
