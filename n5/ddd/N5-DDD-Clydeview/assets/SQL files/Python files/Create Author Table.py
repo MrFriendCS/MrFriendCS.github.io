@@ -11,7 +11,7 @@ fileOut = open("../Author.sql", "w")
 
 table = """CREATE TABLE Author (
     authorRef INT NOT NULL,
-    firstName VARCHAR(20),
+    forename VARCHAR(20),
     surname VARCHAR(20),
     nationality VARCHAR(20),
     dob DATE,
@@ -34,7 +34,7 @@ while line != "":
     fileOut.write("INSERT INTO Author VALUES ")
     
     fileOut.write("("   + data[0].strip() + ",")  # authorRef
-    fileOut.write( "\"" + data[1].strip() + "\",")  # firstName
+    fileOut.write( "\"" + data[1].strip() + "\",")  # forename
     fileOut.write( "\"" + data[2].strip() + "\",")  # surname
     fileOut.write( "\"" + data[3].strip() + "\",")  # nationality
     if data[4].strip() == "":  # dob

@@ -20,13 +20,13 @@ table = """CREATE TABLE Book (
     publisher VARCHAR(30) NOT NULL,
     ISBN VARCHAR(10) NOT NULL 
         CHECK (LENGTH(ISBN) = 10),
-    dateOfPublication DATE NOT NULL,
-    numberOfPages INT NOT NULL 
-        CHECK(numberOfPages >=26 
-          AND numberOfPages <= 950),
+    published DATE NOT NULL,
+    pages INT NOT NULL 
+        CHECK(pages >=26 
+          AND pages <= 950),
+    PRIMARY KEY (title),
     FOREIGN KEY (authorRef) 
-        REFERENCES Author (authorRef),
-    PRIMARY KEY (title)
+        REFERENCES Author (authorRef)
 );"""
 
 fileOut.write(table + "\n\n")
@@ -49,8 +49,8 @@ while line != "":
     fileOut.write( "\"" + data[3].strip() + "\",")  # authorRef
     fileOut.write( "\"" + data[4].strip() + "\",")  # publisher
     fileOut.write( "\"" + data[5].strip() + "\",")  # ISBN
-    fileOut.write( "\"" + data[6].strip() + "\",")  # dateOfPublication
-    fileOut.write(        data[7].strip() + ");\n")  # numberOfPages
+    fileOut.write( "\"" + data[6].strip() + "\",")  # published
+    fileOut.write(        data[7].strip() + ");\n")  # pages
 
     line = fileIn.readline()
     
