@@ -48,3 +48,22 @@
 | 2015 | [QP](N5-LS-2015-QP-2.pdf "2015 QP") | [MI](N5-LS-2015-MI-2.pdf "2015 MI") |
 | 2016 | [QP](N5-LS-2016-QP-2.pdf "2016 QP") | [MI](N5-LS-2016-MI-2.pdf "2016 MI") |
 | 2017 | [QP](N5-LS-2017-QP-2.pdf "2017 QP") | [MI](N5-LS-2017-MI-2.pdf "2017 MI") |
+
+
+
+## Specimen Papers
+
+### Paper 1
+
+| Year | QP                              | MI  |
+| ---- | ---                             | --- |
+| AoM  | [QP](N5-AoM-SQP-1.pdf "AoM QP") | [MI](N5-AoM-SMI-1.pdf "AoM MI") |
+| LS   | [QP](N5-LS-SQP-1.pdf "LS QP")   | [MI](N5-LS-SMI-1.pdf "LS MI") |
+
+
+### Paper 2
+
+| Year | QP                              | MI  |
+| ---- | ---                             | --- |
+| AoM  | [QP](N5-AoM-SQP-2.pdf "AoM QP") | [MI](N5-AoM-SMI-2.pdf "AoM MI") |
+| LS   | [QP](N5-LS-SQP-2.pdf "LS QP")   | [MI](N5-LS-SMI-2.pdf "LS MI") |
