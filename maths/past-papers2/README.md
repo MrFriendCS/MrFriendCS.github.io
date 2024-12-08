@@ -55,19 +55,19 @@
 
 ### Paper 1
 
-| Year | QP                                      | MI  |
-| ---- | ---                                     | --- |
-| 2023 | [QP](N5-Maths-2023-SQP-1.pdf "2023 QP") | [MI](N5-Maths-2023-SMI-1.pdf "2023 MI") |
-| 2019 | [QP](N5-Maths-2019-SQP-1.pdf "2019 QP") | [MI](N5-Maths-2013-SMI-1.pdf "2019 MI") |
-| 2016 | [QP](N5-Maths-2016-SQP-1.pdf "2016 QP") | [MI](N5-Maths-2013-SMI-1.pdf "2016 MI") |
-| 2013 | [QP](N5-Maths-2013-SQP-1.pdf "2013 QP") | [MI](N5-Maths-2013-SMI-1.pdf "2013 MI") |
+| Year | QP                                               | MI  |
+| ---- | ---                                              | --- |
+| 2023 | [QP](N5-Maths-2023-SQP-1.pdf "2023 Specimen QP") | [MI](N5-Maths-2023-SMI-1.pdf "2023 Specimen MI") |
+| 2019 | [QP](N5-Maths-2019-SQP-1.pdf "2019 Specimen QP") | [MI](N5-Maths-2013-SMI-1.pdf "2019 Specimen MI") |
+| 2016 | [QP](N5-Maths-2016-SQP-1.pdf "2016 Specimen QP") | [MI](N5-Maths-2013-SMI-1.pdf "2016 Specimen MI") |
+| 2013 | [QP](N5-Maths-2013-SQP-1.pdf "2013 Specimen QP") | [MI](N5-Maths-2013-SMI-1.pdf "2013 Specimen MI") |
 
 
 ### Paper 2
 
-| Year | QP                                      | MI  |
-| ---- | ---                                     | --- |
-| 2023 | [QP](N5-Maths-2023-SQP-2.pdf "2023 QP") | [MI](N5-Maths-2023-SMI-2.pdf "2023 MI") |
-| 2019 | [QP](N5-Maths-2019-SQP-2.pdf "2019 QP") | [MI](N5-Maths-2019-SMI-2.pdf "2019 MI") |
-| 2016 | [QP](N5-Maths-2016-SQP-2.pdf "2016 QP") | [MI](N5-Maths-2016-SMI-2.pdf "2016 MI") |
-| 2013 | [QP](N5-Maths-2013-SQP-2.pdf "2013 QP") | [MI](N5-Maths-2013-SMI-2.pdf "2013 MI") |
+| Year | QP                                               | MI  |
+| ---- | ---                                              | --- |
+| 2023 | [QP](N5-Maths-2023-SQP-2.pdf "2023 Specimen QP") | [MI](N5-Maths-2023-SMI-2.pdf "2023 Specimen MI") |
+| 2019 | [QP](N5-Maths-2019-SQP-2.pdf "2019 Specimen QP") | [MI](N5-Maths-2019-SMI-2.pdf "2019 Specimen MI") |
+| 2016 | [QP](N5-Maths-2016-SQP-2.pdf "2016 Specimen QP") | [MI](N5-Maths-2016-SMI-2.pdf "2016 Specimen MI") |
+| 2013 | [QP](N5-Maths-2013-SQP-2.pdf "2013 Specimen QP") | [MI](N5-Maths-2013-SMI-2.pdf "2013 Specimen MI") |
