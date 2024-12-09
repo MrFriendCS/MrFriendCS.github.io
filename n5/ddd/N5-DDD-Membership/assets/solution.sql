@@ -15,104 +15,104 @@ Date: 28 Sep 2024
 
 
 -- Task 1
-SELECT club_id, club_name
-    FROM club;
+SELECT clubID, clubName
+    FROM Club;
 
 
 -- Task 2
-SELECT first_name, surname, gender
-    FROM member
-    WHERE member_type = "Adult";
+SELECT firstName, LastName, gender
+    FROM Member
+    WHERE type = "Adult";
 
 
 -- Task 3
-SELECT first_name, surname, gender
-    FROM member
-    WHERE member_type = "Adult"
-    ORDER BY surname;
+SELECT firstName, LastName, gender
+    FROM Member
+    WHERE type = "Adult"
+    ORDER BY LastName ASC;
 
 
 -- Task 4
 SELECT *
-    FROM club
+    FROM Club
     WHERE trainer = TRUE
     ORDER BY rooms DESC;
 
 
 -- Task 5 -- Order by two fields
-SELECT town, dob, first_name, surname
-    FROM member
+SELECT town, dob, firstName, LastName
+    FROM Member
     ORDER BY town ASC,
         dob DESC;
 
 
 -- Task 6 -- Filter: AND
-SELECT surname, address, postcode
-    FROM member
+SELECT LastName, address, postcode
+    FROM Member
     WHERE gender = "M"
         AND renewal = 5;
 
 
 -- Task 7 -- Equi-join
-SELECT first_name, surname, club_type
-    FROM club, member
-    WHERE club.club_id = member.club_id;
+SELECT firstName, LastName, Club.type
+    FROM Club, Member
+    WHERE Club.clubID = Member.clubID;
 
 
 -- Task 8 -- Equi-join and filter
-SELECT first_name, surname, member_no
-    FROM club, member
-    WHERE club.club_id = member.club_id
-        AND club_name = "Puddles"
-    ORDER BY first_name ASC,
-        surname ASC;
+SELECT firstName, LastName, memberNo
+    FROM Club, Member
+    WHERE Club.clubID = Member.clubID
+        AND clubName = "Puddles"
+    ORDER BY firstName ASC,
+        LastName ASC;
 
 
--- Task 9 (Will return an error when run again) -- No output, unless it fails
-INSERT INTO club
+-- Task 9 (Will return an error when run again) -- Not much to see
+INSERT INTO Club
     Values ("SP488", "Vital Spark", "Brockton", "Gym", "2017-03-03", FALSE, 2);
 
 
--- Task 10 -- Check new member has been added
+-- Task 10 -- Check new Member has been added
 SELECT *
-    FROM club
-    WHERE club_id = "SP488";
+    FROM Club
+    WHERE clubID = "SP488";
 
 
 -- Task 11
-UPDATE member
+UPDATE Member
     SET renewal = 11
     WHERE renewal = 12;
 
 
 -- Task 12
-SELECT member_no, first_name, surname
-    FROM member
+SELECT memberNo, firstName, LastName
+    FROM Member
     WHERE renewal = 11;
 
 
--- Task 13 - Delete -- No output, unless it fails
-DELETE FROM member
-    WHERE member_type = "Guest";
+-- Task 13 - Delete -- Not much to see
+DELETE FROM Member
+    WHERE type = "Guest";
 
 
 -- Task 14 -- Check that 'Guest' members all removed 
-SELECT first_name, surname, member_type
-    FROM member
-    ORDER BY member_type;
+SELECT firstName, LastName, type
+    FROM Member
+    ORDER BY type;
 
 
 /*
 Return db to start state.
 */
 
-UPDATE member
+UPDATE Member
     SET renewal = 12
     WHERE renewal = 11;
 
-DELETE FROM club
-    WHERE club_id = "SP488";
+DELETE FROM Club
+    WHERE clubID = "SP488";
 
-INSERT INTO member
+INSERT INTO Member
     VALUES ("AVC243", "SP487", "Wallace", "Blevins", "13 Euismod Avenue", "Lowhall", "C76 6FO", "1955-12-02", 8 , "M", "Guest");
 	

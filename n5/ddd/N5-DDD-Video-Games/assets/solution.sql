@@ -17,77 +17,77 @@ Date: 28 Sep 2024
 
 -- Question 1 -- Select everything
 SELECT *
-    FROM company;
+    FROM Company;
 
 
 -- Question 2 -- Select everything
 SELECT *
-    FROM game;
+    FROM Game;
 
 
 -- Question 3
 SELECT name, country
-    FROM company;
+    FROM Company;
 
 
 -- Question 4
 SELECT title, genre
-    FROM game;
+    FROM Game;
 
 
 -- Question 5 -- Filter: Number
 SELECT *
-    FROM game
+    FROM Game
     WHERE age <= 5;
 
 
 -- Question 6
 SELECT *
-    FROM game
-    WHERE copies_sold > 18000;
+    FROM Game
+    WHERE copiesSold > 18000;
 
 
--- Question 7 -- Filter: Number
+-- Question 7 -- Filter: Date
 SELECT *
-    FROM company
+    FROM Company
     WHERE founded > "1991-01-01";
 
 
 -- Question 8 -- Filter: Complex
 SELECT *
-    FROM game
+    FROM Game
     WHERE genre = "Action"
        OR genre = "Adventure";
 
 
 -- Question 9 -- Filter: Complex
 SELECT *
-    FROM game
+    FROM Game
     WHERE price < 20
       AND age >= 16;
 
 
 -- Question 10
 SELECT *
-    FROM game
+    FROM Game
     WHERE title = "Elite"
       AND genre = "Action";
 
 
 -- Question 11 -- Order results: Small to Big
 SELECT *
-    FROM company
+    FROM Company
     ORDER BY website ASC;
 
 
 -- Question 12 -- Order results: Big to Small
 SELECT *
-    FROM game
-    ORDER BY copies_sold DESC;
+    FROM Game
+    ORDER BY copiesSold DESC;
 
 
 -- Question 13 -- Order results: Multiple fields
 SELECT *
-    FROM game
-    ORDER BY name ASC,
+    FROM Game
+    ORDER BY company ASC,
              age ASC;

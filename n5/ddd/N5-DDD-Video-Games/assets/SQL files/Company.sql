@@ -1,8 +1,8 @@
-CREATE TABLE Company (
-    name VARCHAR(20) NOT NULL UNIQUE,
+CREATE TABLE Company ( 
+    name VARCHAR(20) NOT NULL,
     country VARCHAR(20) NOT NULL,
-    founded DATE NOT NULL
-        CHECK(founded >= "1970-01-01"),
+    founded DATE NOT NULL 
+        CHECK (founded >= "1970-01-01"),
     website VARCHAR(30),
     profit INT NOT NULL,
     PRIMARY KEY (name)

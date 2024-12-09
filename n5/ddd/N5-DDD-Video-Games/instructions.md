@@ -66,12 +66,12 @@ SELECT
 
 ### Table: Game
 
-| Attribute    | Key   | Type   | Size  | Req'd | Validation |
-| ---------    | :---: | ----   | :---: | :---: | ---------- |
-| title        | PK    | Text   | 30    | Y     | |
-| company      | FK    | Text   | 20    | Y     | Exists in company table |
-| genre        |       | Text   | 15    | Y     | |
-| age          |       | Number |       | Y     | Restricted choice: 3, 7, 12, 16, 18 |
-| price        |       | Number |       | Y     | Range: >= 0.00 and <= 100.00 |
-| released     |       | Date   |       | Y     | Range: >= 1 Jan 1970 |
-| copies_sold  |       | Number |       | Y     | Range: >= 0 |
+| Attribute  | Key   | Type   | Size  | Req'd | Validation |
+| ---------  | :---: | ----   | :---: | :---: | ---------- |
+| title      | PK    | Text   | 30    | Y     | |
+| company    | FK    | Text   | 20    | Y     | Exists in company table |
+| genre      |       | Text   | 15    | Y     | |
+| age        |       | Number |       | Y     | Restricted choice: 3, 7, 12, 16, 18 |
+| price      |       | Number |       | Y     | Range: >= 0.00 and <= 100.00 |
+| released   |       | Date   |       | Y     | Range: >= 1 Jan 1970 |
+| copiesSold |       | Number |       | Y     | Range: >= 0 |

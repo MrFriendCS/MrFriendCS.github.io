@@ -41,18 +41,20 @@ while line != "":
     
     data = line.split(",")
     
-    fileOut.write("INSERT INTO Book VALUES ")
+    fileOut.write("INSERT INTO Book VALUES (")
     
-    fileOut.write("(\"" + data[0].strip() + "\",")  # category
-    fileOut.write( "\"" + data[1].strip() + "\",")  # genre
-    fileOut.write( "\"" + data[2].strip() + "\",")  # title
-    fileOut.write( "\"" + data[3].strip() + "\",")  # authorRef
-    fileOut.write( "\"" + data[4].strip() + "\",")  # publisher
-    fileOut.write( "\"" + data[5].strip() + "\",")  # ISBN
-    fileOut.write( "\"" + data[6].strip() + "\",")  # published
-    fileOut.write(        data[7].strip() + ");\n")  # pages
+    fileOut.write("\"" + data[0].strip() + "\",")  # category
+    fileOut.write("\"" + data[1].strip() + "\",")  # genre
+    fileOut.write("\"" + data[2].strip() + "\",")  # title
+    fileOut.write("\"" + data[3].strip() + "\",")  # authorRef
+    fileOut.write("\"" + data[4].strip() + "\",")  # publisher
+    fileOut.write("\"" + data[5].strip() + "\",")  # ISBN
+    fileOut.write("\"" + data[6].strip() + "\",")  # published
+    fileOut.write(       data[7].strip() + ");")  # pages
+    fileOut.write("\n")
 
     line = fileIn.readline()
-    
+
+
 fileIn.close()
 fileOut.close()

@@ -1,16 +1,16 @@
-CREATE TABLE Game (
-    title VARCHAR(30) NOT NULL UNIQUE,
+CREATE TABLE Game ( 
+    title VARCHAR(30) NOT NULL,
     company VARCHAR(20) NOT NULL,
     genre VARCHAR(15) NOT NULL,
-    age INT NOT NULL
-        CHECK(age IN (3, 7, 12, 16, 18)),
-    price FLOAT NOT NULL
-        CHECK(price >= 0 AND price <= 100),
-    released DATE NOT NULL
-        CHECK(released >= "1970-01-01"),
-    copies_sold INT NOT NULL
-        CHECK(copies_sold >= 0),
-    PRIMARY KEY (title)
+    age INT NOT NULL 
+        CHECK (age IN (3, 7, 12, 16, 18)),
+    price FLOAT NOT NULL 
+        CHECK (price >= 0 AND price <= 100),
+    released DATE NOT NULL 
+        CHECK (released >= "1970-01-01"),
+    copiesSold INT NOT NULL 
+        CHECK (copiesSold >= 0),
+    PRIMARY KEY (title),
     FOREIGN KEY (company)
         REFERENCES company(name)
 );
@@ -124,7 +124,7 @@ INSERT INTO Game VALUES ("Strike Fleet","Victory","Adventure",7,19.99,"1998-05-1
 INSERT INTO Game VALUES ("The Eden Project","Station Games","Strategy",16,5.99,"2000-12-19",22852);
 INSERT INTO Game VALUES ("The Great Escape","Victory","Adventure",7,19.99,"2014-08-09",14193);
 INSERT INTO Game VALUES ("Till the death","TB Games","Fighting",18,5.99,"1997-08-24",13992);
-INSERT INTO Game VALUES ("WarGames","Station Games","Fighting",12,5.99,"2006-08-27",4366);
+INSERT INTO Game VALUES ("Wargames","Station Games","Fighting",12,5.99,"2006-08-27",4366);
 INSERT INTO Game VALUES ("Winter Games","Elite","Sports",16,9.99,"2006-01-10",18502);
 INSERT INTO Game VALUES ("World Baseball","Victory","Sports",12,14.99,"1997-10-16",14606);
 INSERT INTO Game VALUES ("World Basketball","Victory","Sports",3,9.99,"2001-02-24",13893);

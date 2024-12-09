@@ -234,17 +234,17 @@ def writePrisonerTable(a, b, c, d, e, f, g, h, i):
     # SQL - Create table
     
     table = """CREATE TABLE Prisoner (
-    prison_id INT NOT NULL,
+    prisonID INT NOT NULL,
     surname VARCHAR(30) NOT NULL
-        CHECK(LENGTH(surname) >= 3),
+        CHECK (LENGTH(surname) >= 3),
     forename VARCHAR(20) NOT NULL
-        CHECK(LENGTH(forename) >= 3),
+        CHECK (LENGTH(forename) >= 3),
     hair VARCHAR(6)
-        CHECK(hair IN ("Black", "Blond", "Brown", "Grey", "None", "Red", "White")),
+        CHECK (hair IN ("Black", "Blond", "Brown", "Grey", "None", "Red", "White")),
     eyes VARCHAR(5)
-        CHECK(eyes IN ("Amber", "Black", "Blue", "Brown", "Green", "Hazel", "Grey")),
+        CHECK (eyes IN ("Amber", "Black", "Blue", "Brown", "Green", "Hazel", "Grey")),
     height FLOAT NOT NULL
-        CHECK(height >= 1.3 AND height <= 2.5),
+        CHECK (height >= 1.3 AND height <= 2.5),
     conviction VARCHAR(20) NOT NULL,
     open BOOLEAN NOT NULL,
     dob DATE NOT NULL,

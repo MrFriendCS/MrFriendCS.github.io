@@ -49,7 +49,7 @@ SELECT
 
 12. Show the dates of birth and prison IDs of all prisoners born in 1999.
 
-13. Display details for all the prisoners who are bald and have amber eyes.
+13. Display details for all the prisoners who are bald and have grey eyes.
 
 
 ## Data dictionary

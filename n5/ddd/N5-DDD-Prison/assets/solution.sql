@@ -8,81 +8,81 @@
 
 -- Task 1 -- Select everything -- Useful for inspecting the table
 SELECT *
-    FROM prisoner;
+    FROM Prisoner;
 
 
 -- Task 2 -- Select specific fields
-SELECT forename, surname, prison_id
-    FROM prisoner;
+SELECT forename, surname, prisonID
+    FROM Prisoner;
 
 
 -- Task 3 -- Select specific fields
 SELECT hair, eyes, height
-    FROM prisoner;
+    FROM Prisoner;
 
 
 -- Task 4 -- Filter: Text (Select all fields)
 SELECT *
-    FROM prisoner
+    FROM Prisoner
     WHERE hair = "Black";
 
 
 -- Task 5 -- Filter: Date
-SELECT prison_id, conviction, dob
-    FROM prisoner
+SELECT prisonID, conviction, dob
+    FROM Prisoner
     WHERE dob >= "2000-01-01";
 
 
 -- Task 6 -- Filter: Text
 SELECT eyes, dob
-    FROM prisoner
+    FROM Prisoner
     WHERE conviction = "Cyberbullying";
 
 
 -- Task 7 -- Filter: Complex + Boolean
 SELECT *
-    FROM prisoner
+    FROM Prisoner
     WHERE conviction = "Kidnapping"
-        AND open = TRUE;
+      AND open = TRUE;
 
 
 -- Task 8 -- Filter: Complex
-SELECT eyes, hair, prison_id
-    FROM prisoner
+SELECT eyes, hair, prisonID
+    FROM Prisoner
     WHERE eyes = "Black"
-        OR hair = "Black";
+       OR hair = "Black";
 
 
 -- Task 9 -- Filter: Complex
-SELECT eyes, hair, prison_id
-    FROM prisoner
+SELECT eyes, hair, prisonID
+    FROM Prisoner
     WHERE eyes = "Black"
-        AND hair = "Black";
+      AND hair = "Black";
 
 
 -- Task 10 -- Filter: Complex with text and Boolean
 SELECT forename, conviction, dob
-    FROM prisoner
+    FROM Prisoner
     WHERE surname = "MacNeil"
-        AND open = FALSE;
+      AND open = FALSE;
 
 
 -- Task 11 -- Filter: Complex
 SELECT forename, surname, eyes
-    FROM prisoner
+    FROM Prisoner
     WHERE conviction = "Assault"
-        AND hair = "Red";
+      AND hair = "Red";
 
 
 -- Task 12 -- Filter: Complex with dates
-SELECT dob, prison_id
-    FROM prisoner
+SELECT dob, prisonID
+    FROM Prisoner
     WHERE dob >= "1999-01-01"
-        AND dob <= "1999-12-31";
+      AND dob <= "1999-12-31";
 
 
 -- Task 13 -- Filter: Complex
 SELECT *
-    FROM prisoner
+    FROM Prisoner
     WHERE hair = "None"
-        AND eyes = "Amber";
+      AND eyes = "Amber";

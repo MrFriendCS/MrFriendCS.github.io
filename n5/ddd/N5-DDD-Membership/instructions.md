@@ -21,7 +21,7 @@ File: [Membership.db](assets/Membership.db "Download file")
 
 6. Create a query to display the last name, address, and postcode of all males who must renew their membership in May.
 
-7. Link the tables using the relationship created by `club_id`.  Display the first name, surname, and the type of club they attend.
+7. Link the tables using the relationship created by `clubID`.  Display the first name, surname, and the type of club they attend.
 
 8. Display the first name, surname, and the member number of each Puddles club member.  Order by forename and then surname.
 

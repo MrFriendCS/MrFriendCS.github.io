@@ -182,34 +182,41 @@ def writeTable(a, b, c, d, e, f, g):
     
     # SQL - Create table
     
-    file.write("CREATE TABLE Datatypes (\n")
-    file.write("    rowID INT NOT NULL UNIQUE,\n")
-    file.write("    colour VARCHAR(10)\n")
-    file.write("        CHECK(LENGTH(colour) >= 3),\n")
-    file.write("    score INT\n")
-    file.write("        CHECK(score >= 0 AND score <= 100),\n")
-    file.write("    height FLOAT NOT NULL\n")
-    file.write("        CHECK(height >= 1.0 AND height <= 2.5),\n")
-    file.write("    dob DATE\n")
-    file.write("        CHECK(dob >= \"1900-01-01\" AND dob <= \"2024-12-31\"),\n")
-    file.write("    start TIME\n")
-    file.write("        CHECK(start >= \"08:00:00\" AND start <= \"16:00:00\"),\n")
-    file.write("    nice BOOLEAN NOT NULL,\n")
-    file.write("    PRIMARY KEY (rowID)\n")
-    file.write(");\n\n")
+    table = """CREATE TABLE Datatypes ( 
+        rowID INT NOT NULL,
+        colour VARCHAR(10) 
+            CHECK(LENGTH(colour) >= 3),
+        score INT 
+            CHECK(score >= 0 AND score <= 100),
+        height FLOAT NOT NULL 
+            CHECK(height >= 1.0 
+              AND height <= 2.5),
+        dob DATE 
+            CHECK(dob >= \"1900-01-01\" 
+              AND dob <= \"2024-12-31\"),
+        start TIME 
+            CHECK(start >= \"08:00:00\" 
+              AND start <= \"16:00:00\"),
+        nice BOOLEAN NOT NULL,
+        PRIMARY KEY (rowID)
+    );\n\n"""
+    
+    file.write(table)
+    
     
     # SQL - Create values
     
     # Loop for each prisoner
     for index in range(len(a)):
         file.write("INSERT INTO Datatypes VALUES (")
-        file.write(str(a[index]) + ",")
+        
+        file.write(   str(a[index]) + ",")
         file.write("\"" + b[index] + "\",")
-        file.write(str(c[index]) + ",")
-        file.write(str(d[index]) + ",")
+        file.write(   str(c[index]) + ",")
+        file.write(   str(d[index]) + ",")
         file.write("\"" + e[index] + "\",")
         file.write("\"" + f[index] + "\",")
-        file.write(str(g[index]) + ");\n")
+        file.write(   str(g[index]) + ");\n")
         
     file.close()
 
