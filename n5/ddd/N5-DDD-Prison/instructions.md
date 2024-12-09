@@ -1,6 +1,6 @@
 # N5 DDD Prison
 
-File: [prison.db](assets/prison.db "Download file")
+File: [prison.db](assets/Prison.db "Download file")
 
 ## Tasks
 
