@@ -185,18 +185,19 @@ def writeTable(a, b, c, d, e, f, g):
     table = """CREATE TABLE Datatypes ( 
         rowID INT NOT NULL,
         colour VARCHAR(10) 
-            CHECK(LENGTH(colour) >= 3),
+            CHECK (LENGTH(colour) >= 3),
         score INT 
-            CHECK(score >= 0 AND score <= 100),
-        height FLOAT NOT NULL 
-            CHECK(height >= 1.0 
-              AND height <= 2.5),
+            CHECK (score >= 0
+              AND score <= 100),
+        height FLOAT 
+            CHECK (height >= 1.0 
+               AND height <= 2.5),
         dob DATE 
-            CHECK(dob >= \"1900-01-01\" 
-              AND dob <= \"2024-12-31\"),
+            CHECK (dob >= \"1900-01-01\" 
+               AND dob <= \"2024-12-31\"),
         start TIME 
-            CHECK(start >= \"08:00:00\" 
-              AND start <= \"16:00:00\"),
+            CHECK (start >= \"08:00:00\" 
+               AND start <= \"16:00:00\"),
         nice BOOLEAN NOT NULL,
         PRIMARY KEY (rowID)
     );\n\n"""
