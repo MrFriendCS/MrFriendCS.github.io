@@ -55,15 +55,15 @@
 
 ### Paper 1
 
-| Course | QP                              | MI  |
-| ------ | ---                             | --- |
-| AoM    | [QP](N5-AoM-SQP-1.pdf "AoM QP") | [MI](N5-AoM-SMI-1.pdf "AoM MI") |
-| LS     | [QP](N5-LS-SQP-1.pdf "LS QP")   | [MI](N5-LS-SMI-1.pdf "LS MI") |
+| Course | QP                                       | MI  |
+| ------ | ---                                      | --- |
+| AoM    | [QP](N5-AoM-SQP-1.pdf "AoM Specimen QP") | [MI](N5-AoM-SMI-1.pdf "AoM Specimen MI") |
+| LS     | [QP](N5-LS-SQP-1.pdf "LS Specimen QP")   | [MI](N5-LS-SMI-1.pdf "LS Specimen MI") |
 
 
 ### Paper 2
 
-| Course | QP                              | MI  |
-| ------ | ---                             | --- |
-| AoM    | [QP](N5-AoM-SQP-2.pdf "AoM QP") | [MI](N5-AoM-SMI-2.pdf "AoM MI") |
-| LS     | [QP](N5-LS-SQP-2.pdf "LS QP")   | [MI](N5-LS-SMI-2.pdf "LS MI") |
+| Course | QP                                       | MI  |
+| ------ | ---                                      | --- |
+| AoM    | [QP](N5-AoM-SQP-2.pdf "AoM Specimen QP") | [MI](N5-AoM-SMI-2.pdf "AoM Specimen MI") |
+| LS     | [QP](N5-LS-SQP-2.pdf "LS Specimen QP")   | [MI](N5-LS-SMI-2.pdf "LS Specimen MI") |
