@@ -4,7 +4,7 @@
 
 # Files
 fileIn = open("../CSV files/Child.csv", "r")
-fileOut = open("../Child1.sql", "w")
+fileOut = open("../Child.sql", "w")
 
 
 # Create Table
