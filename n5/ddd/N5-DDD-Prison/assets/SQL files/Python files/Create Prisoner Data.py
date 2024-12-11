@@ -3,7 +3,7 @@
 # Date: 6 Oct 2024
 
 """
-Create the data and export as SQL statements to build tables.
+Create the data and export as CSV file.
 Seperate list of convicts used to overwrite random records.
 """
 
@@ -226,47 +226,23 @@ def updateNames(forenames, surnames, pupilFirsts, pupilLasts):
     return forenames, surnames
 
 
-def writePrisonerTable(a, b, c, d, e, f, g, h, i):
-    """Create prisoner table, with definition and data."""
+def writeCSV(a, b, c, d, e, f, g, h, i):
+    """Create prisoner CSV file."""
     
-    file = open("Prisoner.sql", "w")
+    file = open("../CSV files/Prisoner.csv", "w")
     
-    # SQL - Create table
-    
-    table = """CREATE TABLE Prisoner (
-    prisonID INT NOT NULL,
-    surname VARCHAR(30) NOT NULL
-        CHECK (LENGTH(surname) >= 3),
-    forename VARCHAR(20) NOT NULL
-        CHECK (LENGTH(forename) >= 3),
-    hair VARCHAR(6)
-        CHECK (hair IN ("Black", "Blond", "Brown", "Grey", "None", "Red", "White")),
-    eyes VARCHAR(5)
-        CHECK (eyes IN ("Amber", "Black", "Blue", "Brown", "Green", "Hazel", "Grey")),
-    height FLOAT NOT NULL
-        CHECK (height >= 1.3 AND height <= 2.5),
-    conviction VARCHAR(20) NOT NULL,
-    open BOOLEAN NOT NULL,
-    dob DATE NOT NULL,
-    PRIMARY KEY (prison_id)
-);"""
-    
-    file.write(table + "\n\n")
-    
-    # SQL - Create values
     
     # Loop for each prisoner
     for index in range(len(a)):
-        file.write("INSERT INTO Prisoner VALUES (")
         file.write(str(a[index]) + ",")
-        file.write("\"" + b[index] + "\",")
-        file.write("\"" + c[index] + "\",")
-        file.write("\"" + d[index] + "\",")
-        file.write("\"" + e[index] + "\",")
-        file.write(   str(f[index]) + ",")
-        file.write("\"" + g[index] + "\",")
-        file.write(   str(h[index]) + ",")
-        file.write("\"" + i[index] + "\");\n")
+        file.write(    b[index] + ",")
+        file.write(    c[index] + ",")
+        file.write(    d[index] + ",")
+        file.write(    e[index] + ",")
+        file.write(str(f[index]) + ",")
+        file.write(    g[index] + ",")
+        file.write(str(h[index]) + ",")
+        file.write(    i[index] + "\n")
         
     file.close()
 
@@ -305,13 +281,13 @@ def main():
     dobs = getDOBs(noOfPrisoners)
 
     # 10 - Get pupil names
-    pupilFirsts, pupilLasts = getPupils()
+    #pupilFirsts, pupilLasts = getPupils()
     
     # 11 = Update names
-    forenames, surnames = updateNames(forenames, surnames, pupilFirsts, pupilLasts)
+    #forenames, surnames = updateNames(forenames, surnames, pupilFirsts, pupilLasts)
 
     # 12 - Write prisoner table
-    writePrisonerTable(ids, surnames, forenames, hairs, eyes,
+    writeCSV(ids, surnames, forenames, hairs, eyes,
                        heights, convictions, opens, dobs)
 
 

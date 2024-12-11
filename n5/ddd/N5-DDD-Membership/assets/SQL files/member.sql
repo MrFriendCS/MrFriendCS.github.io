@@ -217,6 +217,6 @@ INSERT INTO Member VALUES ("ZFZ272","SP487","Thomas","Riggs","37 Sociis Street",
 INSERT INTO Member VALUES ("ZKD102","SP365","Maggy","Stevenson","31 Tortor Road","Baldwin","E5W 6JV","1964-12-29",11,"F","Senior");
 INSERT INTO Member VALUES ("ZKF121","SP345","Tamara","Wade","95 Ace Road","Lowhall","F3P 3JH","1969-07-23",6,"F","Senior");
 INSERT INTO Member VALUES ("ZNE161","SP197","Irene","Landry","46 Eu Avenue","Baldwin","MI7 5MA","1953-10-31",11,"F","Child");
-INSERT INTO Member VALUES ("ZSA143","SP128","Donovan","Flynn","82 Vel Street","Allentown","D2F 0CT","1998-02-23",11,"M","Adult");
-INSERT INTO Member VALUES ("ZTB103","SP487","Hollee","Ward","39 Orci Road","Muncie","VF88 5CX","1966-02-25",12,"F","Adult");
+INSERT INTO Member VALUES ("ZSA143","SP128","Donovan","Flynn","82 Vel Street","Allentown","D2F 0CT","1998-02-23",11,"M","Guest");
+INSERT INTO Member VALUES ("ZTB103","SP487","Hollee","Ward","39 Orci Road","Muncie","VF88 5CX","1966-02-25",12,"F","Guest");
 INSERT INTO Member VALUES ("ZTK164","SP107","Dexter","Ward","64 Diam Road","Lowhall","O3E 3HO","1979-07-25",2,"M","Student");
