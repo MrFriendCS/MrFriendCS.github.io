@@ -43,14 +43,14 @@ SELECT *
 SELECT town, dob, firstName, LastName
     FROM Member
     ORDER BY town ASC,
-        dob DESC;
+             dob DESC;
 
 
 -- Task 6 -- Filter: AND
 SELECT LastName, address, postcode
     FROM Member
     WHERE gender = "M"
-        AND renewal = 5;
+      AND renewal = 5;
 
 
 -- Task 7 -- Equi-join
@@ -63,9 +63,9 @@ SELECT firstName, LastName, Club.type
 SELECT firstName, LastName, memberNo
     FROM Club, Member
     WHERE Club.clubID = Member.clubID
-        AND clubName = "Puddles"
+      AND clubName = "Puddles"
     ORDER BY firstName ASC,
-        LastName ASC;
+             LastName ASC;
 
 
 -- Task 9 (Will return an error when run again) -- Not much to see
@@ -99,7 +99,7 @@ DELETE FROM Member
 -- Task 14 -- Check that 'Guest' members all removed 
 SELECT firstName, LastName, type
     FROM Member
-    ORDER BY type;
+    ORDER BY type ASC;
 
 
 /*
