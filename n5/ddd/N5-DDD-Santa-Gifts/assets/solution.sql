@@ -1,102 +1,121 @@
-/* -- Don't touch lines 1 to 6
-.open santa.db
-.headers ON
-.mode column
-PRAGMA foreign_keys = on;
--- Don't touch lines 1 to 6 */
+/*
+Title: N5 DDD Santa Gifts
+Author: Mr Friend
+Date: 12 Dec 2024
+*/
 
--- Title: N5 DDD Santa Gifts
--- Author: Mr Friend
--- Date: 9 Dec 2023
+-- Task 1 - All Child table data
+SELECT *
+    FROM Child;
 
--- Task 1 - Nice Children
 
-SELECT first_name, last_name
-    FROM child
+-- Task 2 - Nice Children
+SELECT firstName, lastName
+    FROM Child
     WHERE nice = TRUE;
 
 
--- Task 2 - Gift Table Data
--- Get a 'feel' for the data
+-- Task 3 - All Gift table data
 SELECT *
-    FROM gift
+    FROM Gift;
+
+
+-- Task 4 - Gift Table Data
+SELECT *
+    FROM Gift
     WHERE item = "LEGO Technic Lamborghini";
 
 
--- Task 3 - Extra Gift
-
-INSERT INTO gift
+-- Task 5 - Extra Gift
+INSERT INTO Gift
     VALUES(401,98,"PS5");
 
 
--- Task 4 - Naughty Child
+-- Task 6 - Show new record
+SELECT *
+    FROM Gift
+    WHERE giftID = 401;
 
-UPDATE child
+
+-- Task 7 - Naughty Child
+UPDATE Child
     SET nice = FALSE
-    WHERE child_id = 172;
+    WHERE childID = 172;
 
 
--- Task 5 - Naughty Gift
+-- Task 8 - Show updated record
+SELECT *
+    FROM Child
+    WHERE childID = 172;
 
-UPDATE gift
+
+-- Task 9 - Naughty Gift
+UPDATE Gift
     SET item = "Lump of Coal"
-    WHERE child_id = 172;
+    WHERE childID = 172;
 
 
--- Task 6 - Specific Gift
-
-SELECT child.child_id, first_name, last_name
-    FROM child, gift
-    WHERE child.child_id = gift.child_id
-        AND item = "Chad Valley Wooden Pizza";
+-- Task 10 - Show updated records(s)
+SELECT *
+    FROM Gift
+    WHERE childID = 172;
 
 
--- Task 7 - Same Surname Gifts
-
-SELECT first_name, item
-    FROM child, gift
-    WHERE child.child_id = gift.child_id
-        AND last_name = "Friend"
-    ORDER BY first_name ASC;
+-- Task 11 - Specific Gift
+SELECT Child.childID, firstName, lastName
+    FROM Child, Gift
+    WHERE Child.childID = Gift.childID
+      AND item = "Chad Valley Wooden Pizza";
 
 
--- Task 8 - My Santa Gift
+-- Task 12 - Same Surname Gifts
+SELECT childID, firstName
+    FROM Child
+    WHERE lastName = "Friend"
+    ORDER BY firstName ASC;
+	
 
-SELECT first_name, item
-    FROM child, gift
-    WHERE child.child_id = gift.child_id
-        AND child_id = 19;
+-- Task 13 - Surname and gifts
+SELECT childID, firstName, item
+    FROM Child, Gift
+    WHERE Child.childID = Gift.childID
+      AND lastName = "Friend"
+    ORDER BY firstName ASC;
 
 
--- Task 9 - Add My Gifts
-
--- Add gifts
-INSERT INTO gift
+-- Task 14 - Add Own Gifts (childID will be different)
+INSERT INTO Gift
     VALUES (402,19,"Bell 525 Relentless"),
            (403,19,"Continental GTC Mulliner W12");
 
 
--- Task 10 - Delivery List - Nice children
-
-SELECT first_name, last_name, item
-    FROM child, gift
-    WHERE child.child_id = gift.child_id
-        AND nice = TRUE
-    ORDER BY last_name ASC,
-        first_name ASC;
+-- Task 15 - Show new records
+SELECT childID, firstName, item
+    FROM Child, Gift
+    WHERE Child.childID = Gift.childID
+      AND Child.childID = 19
+	ORDER BY item;
 
 
--- "Task 11 - On Santa's Delivery List"
+-- Task 16 - Delivery List - Nice children
+SELECT firstName, lastName, item
+    FROM Child, Gift
+    WHERE Child.childID = Gift.childID
+      AND nice = TRUE
+    ORDER BY lastName ASC,
+             firstName ASC;
 
-UPDATE child
+
+-- Task 17 - On Santa's Delivery List
+UPDATE Child
     SET nice = TRUE
-    WHERE child_id = 19;
+    WHERE childID = 19;
 
-SELECT first_name, last_name, item
-FROM child, gift
-WHERE child.child_id = gift.child_id
-    AND nice = TRUE
-    AND child.child_id = 19;
+SELECT firstName, lastName, item
+    FROM Child, Gift
+    WHERE Child.childID = Gift.childID
+      AND nice = TRUE
+      AND Child.childID = 19;
 
 
 /*
@@ -104,24 +123,24 @@ Revert database to original state
 */
 
 -- Undo Task 3 - Extra Gift
-DELETE FROM gift
-    WHERE gift_id = 401;
+DELETE FROM Gift
+    WHERE giftID = 401;
 
 -- Undo Task 4 - Naughty Child
-UPDATE child
+UPDATE Child
     SET nice = True
-    WHERE child_id = 172;
+    WHERE childID = 172;
 
 -- Undo Task 5 - Naughty Gift
-UPDATE gift
+UPDATE Gift
     SET item = "Gabby's Dollhouse Cat Friendship Cruise Ship Playset"
-    WHERE child_id = 172;
+    WHERE childID = 172;
 
 -- Undo Task 8 - My gifts
-DELETE FROM gift
-    WHERE child_id = 19;
+DELETE FROM Gift
+    WHERE childID = 19;
 
 -- Undo Task 11 - Off the Delivery List
-UPDATE child
+UPDATE Child
     SET nice = FALSE
-    WHERE child_id = 19;
+    WHERE childID = 19;
