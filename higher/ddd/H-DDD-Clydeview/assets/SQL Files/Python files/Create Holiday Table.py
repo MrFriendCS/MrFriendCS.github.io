@@ -1,6 +1,6 @@
 # Title: Holiday Table
 # Author: Mr Friend
-# Date: 22 Nov 2024
+# Date: 13 Dec 2024
 
 # Files
 fileIn = open("../CSV files/Hotel-Holiday/Holiday.csv", "r")
@@ -10,7 +10,7 @@ fileOut = open("../Holiday.sql", "w")
 # Create table
 
 table = """CREATE TABLE Holiday (
-    title VARCHAR(30) NOT NULL,
+    name VARCHAR(30) NOT NULL,
     destination VARCHAR(30) NOT NULL,
     country VARCHAR(20),
     dateOfDeparture DATE NOT NULL,
@@ -33,14 +33,15 @@ while line != "":
     
     data = line.split(",")
     
-    fileOut.write("INSERT INTO Holiday VALUES ")
+    fileOut.write("INSERT INTO Holiday VALUES (")
     
-    fileOut.write("(\"" + data[0].strip() + "\",")  # title
-    fileOut.write( "\"" + data[1].strip() + "\",")  # destination
-    fileOut.write( "\"" + data[2].strip() + "\",")  # country
-    fileOut.write( "\"" + data[3].strip() + "\",")  # dateOfDeparture
-    fileOut.write( "\"" + data[4].strip() + "\",")  # nights
-    fileOut.write( "\"" + data[5].strip() + "\");\n")  # hotelRef
+    fileOut.write("\"" + data[0].strip() + "\",")  # title
+    fileOut.write("\"" + data[1].strip() + "\",")  # destination
+    fileOut.write("\"" + data[2].strip() + "\",")  # country
+    fileOut.write("\"" + data[3].strip() + "\",")  # dateOfDeparture
+    fileOut.write("\"" + data[4].strip() + "\",")  # nights
+    fileOut.write("\"" + data[5].strip() + "\");")  # hotelRef
+    fileOut.write("\n")
 
     line = fileIn.readline()
     
