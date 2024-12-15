@@ -14,6 +14,14 @@ SELECT COUNT(*) AS Gifts
     FROM Gift;
 
 
+-- Task 3 - Mac or Mc
+SELECT firstName, lastName
+    FROM Child
+    WHERE lastName LIKE "Mac%" 
+       OR lastName LIKE "Mc%"
+    ORDER BY firstName;
+
+
 -- Task 3 - 
 SELECT SUM(cost) AS [Cost (£)]
     FROM Gift;
