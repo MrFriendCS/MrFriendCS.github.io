@@ -1,6 +1,6 @@
 # Title: Create Santa Gifts Data
 # Author: Mr Friend
-# Date: 11 Dec 2024
+# Date: 15 Dec 2024
 
 """
 Create the data and export as CSV.
@@ -11,6 +11,7 @@ Naughty children are removed from the gift list, as they don't deserve them!
 # Import Extra Code
 import sys
 from dataclasses import dataclass
+import random
 
 
 # Find DDDhelper file
@@ -72,27 +73,53 @@ def getGiftData(noOfGifts, noOfKids):
         giftID: int = 0
         childID: int = 0
         gift: str = ""
-    
+        cost: float = 0.0
+        
     # Initialise local variables
+    listOfGifts = []
+    listOfCosts = []
     gifts = [Gift() for index in range(noOfGifts)]
+    
+        
+    # Get Gift data
+    
+    fileIn = open("../CSV files/GiftList.csv", "r")
+    
+    line = fileIn.readline()  # Ignore heading row
+    line = fileIn.readline()
+
+
+    while line != "":
+    
+        data = line.split(",")
+        
+        listOfGifts = listOfGifts + [data[0].strip()]
+        listOfCosts = listOfCosts + [data[1].strip()]
+        
+        line = fileIn.readline()
+        
+    fileIn.close()
+    
     
     # Loop for each gift
     for index in range(noOfGifts):
         gifts[index].giftID = index + 1
         gifts[index].childID = DDDhelper.getNumber(1, noOfKids)
-        gifts[index].gift = DDDhelper.getGift()
+        
+        giftIndex = random.randint(0, len(listOfGifts)-1)
+        
+        gifts[index].gift = listOfGifts[giftIndex]
+        gifts[index].cost = listOfCosts[giftIndex]
     
     return gifts
 
 
 def naughtyKids(children, gifts):
-    """Insert naughty children and remove all their gifts."""
-    
-    # Get extra code
-    import random
+    """Insert naughty children and update all their gifts."""
     
     # Naughty children - 2D array
-    naughty = []
+    naughtyFirst = []
+    naughtyLast = []
     
     if school:
         location = start1 + folder2
@@ -108,36 +135,51 @@ def naughtyKids(children, gifts):
         
         data = line.split(",")
         
-        naughty = naughty + [[data[0].strip(), data[1].strip()]]
+        naughtyFirst = naughtyFirst + [data[0].strip()]
+        naughtyLast = naughtyLast + [data[1].strip()]
         
         line = file.readline()
     
-    # List of even numbers 
-    naughtyNumbers = [index for index in range(0, len(children), 2)]
+    # List of numbers 
+    naughtyNumbers = [index for index in range(1, len(children)-1)]
     
     # Pick index positions of naughty children
-    naughtyIDs = random.sample(naughtyNumbers, k=len(naughty))
+    naughtyIDs = random.sample(naughtyNumbers, k=len(naughtyFirst))
+
+    # Loop for each naughty child
+    for index in range(len(naughtyFirst)):
+        
+        children[naughtyIDs[index]].first = naughtyFirst[index]
+        children[naughtyIDs[index]].last = naughtyLast[index]
+        children[naughtyIDs[index]].nice = False
+
+    """
+    pointer = 0
     
     # Loop for each naughty child
-    for index in range(len(naughty)):
+    for index in range(len(children)):
         
-        children[naughtyIDs[index]].first = naughty[index][0]
-        children[naughtyIDs[index]].last = naughty[index][1]
-        children[naughtyIDs[index]].nice = False
-     
-    # Convert index positions to numbers
-    for index in range(len(naughty)):
-        naughtyIDs[index] = naughtyIDs[index] + 1    
+        if children[index].childID in naughtyIDs:
+            children[index].first = naughtyFirst[pointer]
+            children[index].last = naughtyLast[pointer]
+            children[index].nice = False
+            
+            pointer = pointer + 1
+    """
     
-    # Loop for each gift - remove naughty kids
+    
+    # Convert index positions to numbers
+    for index in range(len(naughtyFirst)):
+        naughtyIDs[index] = naughtyIDs[index] + 1 
+    
+    
+    # Loop for each gift - Set to coal
     for index in range(len(gifts)):
         
         if gifts[index].childID in naughtyIDs:
-            gifts[index].childID = gifts[index].childID + 1
+            gifts[index].gift = "Lump of coal"
+            gifts[index].cost = 0.50
             
-            # Catch out of range
-            if gifts[index].childID == len(children) + 1:
-                gifts[index].childID = 1
                       
     return children, gifts
 
@@ -148,7 +190,7 @@ def writeChildCSV(children):
     file = open("../CSV files/Child.csv", "w")
     
     # Headers
-    file.write("giftID,firstName,lastName,nice\n")
+    file.write("childID,firstName,lastName,nice\n")
 
     # Loop for each child
     for child in children:
@@ -167,13 +209,14 @@ def writeGiftCSV(gifts):
     file = open("../CSV files/Gift.csv", "w")
     
     # Headers
-    file.write("giftID,childID,gift\n")
+    file.write("giftID,childID,gift,cost\n")
     
     # Loop for each gift
     for gift in gifts:
         file.write(str(gift.giftID) + ",")
         file.write(str(gift.childID) + ",")
-        file.write(    gift.gift + "\n")
+        file.write(    gift.gift + ",")
+        file.write(str(gift.cost) + "\n")
         
     file.close()
 
@@ -191,8 +234,8 @@ def main():
     # 2 - Get gift entity data
     gifts = getGiftData(noOfGifts, noOfKids)
     
-    # 3 - Update with 'naughty' children (maybe)
-    if input("Add naughty children (y/n)? ") == "y":
+    # 3 - Add 'naughty' children (maybe)
+    if input("Include naughty children (y/n)? ") == "y":
         
         children, gifts = naughtyKids(children, gifts)
     

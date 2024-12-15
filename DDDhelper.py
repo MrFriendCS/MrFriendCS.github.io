@@ -44,10 +44,10 @@ def getSurname() -> str:
     
     surnames = ["Blake", "Blackie", "Brown", "Campbell", "Clark", "Davidson",
                 "Docherty", "Ferguson", "Friend", "Galbraith", "Grant",
-                "Henderson", "Irving", "Jones", "MacArthur", "MacDonald",
-                "MacDougall", "MacIain", "MacKinnon", "MacLean", "MacLeod",
-                "MacNeil", "McGuire", "Millar", "Mitchell", "Monk",
-                "O'Carroll", "Paterson", "Robertson", "Simpson", "Small",
+                "Henderson", "Irving", "Johnson", "Jones", "MacArthur",
+                "MacDonald", "MacDougall", "MacIain", "MacKinnon", "MacLean",
+                "MacLeod", "MacNeil", "McGuire", "Millar", "Mitchell", "Monk",
+                "Paterson", "Robertson", "Simpson", "Small",
                 "Smiley", "Smith", "Smyth", "Stewart", "Thomson", "Walker",
                 "Wilson", "Young"]
     

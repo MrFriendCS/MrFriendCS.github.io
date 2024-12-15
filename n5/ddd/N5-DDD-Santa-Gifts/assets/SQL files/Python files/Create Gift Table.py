@@ -11,8 +11,9 @@ fileOut = open("../Gift.sql", "w")
 
 table = """CREATE TABLE Gift (
     giftID INT NOT NULL,
-    childID INT,
-    item VARCHAR(50),
+    childID INT NOT NULL,
+    item VARCHAR(50) NOT NULL,
+    cost FLOAT NOT NULL,
     PRIMARY KEY (giftID),
     FOREIGN KEY (childID)
         REFERENCES child(childID)
@@ -34,11 +35,11 @@ while line != "":
     
     fileOut.write(       data[0].strip() + ",")  # giftID
     fileOut.write(       data[1].strip() + ",")  # childID
-    fileOut.write("\"" + data[2].strip() + "\")")  # item
+    fileOut.write("\"" + data[2].strip() + "\",")  # item
+    fileOut.write(       data[3].strip() + ")")  # cost
     fileOut.write(";\n")
 
     line = fileIn.readline()
     
 fileIn.close()
 fileOut.close()
-

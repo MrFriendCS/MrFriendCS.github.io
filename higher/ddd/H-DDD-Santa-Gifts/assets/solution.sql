@@ -4,143 +4,57 @@ Author: Mr Friend
 Date: 12 Dec 2024
 */
 
--- Task 1 - All Child table data
-SELECT *
+-- Task 1 - Number of children
+SELECT COUNT(*) AS Children
     FROM Child;
 
 
--- Task 2 - Nice Children
-SELECT firstName, lastName
-    FROM Child
-    WHERE nice = TRUE;
-
-
--- Task 3 - All Gift table data
-SELECT *
+-- Task 2 - Number of Gifts
+SELECT COUNT(*) AS Gifts
     FROM Gift;
 
 
--- Task 4 - Gift Table Data
-SELECT *
-    FROM Gift
-    WHERE item = "LEGO Technic Lamborghini";
+-- Task 3 - 
+SELECT SUM(cost) AS [Cost (£)]
+    FROM Gift;
 
 
--- Task 5 - Extra Gift
-INSERT INTO Gift
-    VALUES(401,98,"PS5");
+-- Task 4 - 
+SELECT ROUND(SUM(cost) * 14.079458, 0) 
+       AS [Cost (NOK)]
+    FROM Gift;
 
 
--- Task 6 - Show new record
-SELECT *
-    FROM Gift
-    WHERE giftID = 401;
+-- Task 5 - 
+SELECT ROUND(AVG(cost), 2) As Average
+    FROM Gift;
 
 
--- Task 7 - Naughty Child
-UPDATE Child
-    SET nice = FALSE
-    WHERE childID = 172;
-
-
--- Task 8 - Show updated record
-SELECT *
+-- Task 5 - 
+SELECT lastName, COUNT(*) AS Children
     FROM Child
-    WHERE childID = 172;
+    GROUP BY lastName;
 
 
--- Task 9 - Naughty Gift
-UPDATE Gift
-    SET item = "Lump of Coal"
-    WHERE childID = 172;
-
-
--- Task 10 - Show updated records(s)
-SELECT *
-    FROM Gift
-    WHERE childID = 172;
-
-
--- Task 11 - Specific Gift
-SELECT Child.childID, firstName, lastName
-    FROM Child, Gift
-    WHERE Child.childID = Gift.childID
-      AND item = "Chad Valley Wooden Pizza";
-
-
--- Task 12 - Same Surname Gifts
-SELECT childID, firstName
+-- Task 6 - 
+SELECT nice, COUNT(*) AS Children
     FROM Child
-    WHERE lastName = "Friend"
-    ORDER BY firstName ASC;
-	
-
--- Task 13 - Surname and gifts
-SELECT childID, firstName, item
-    FROM Child, Gift
-    WHERE Child.childID = Gift.childID
-      AND lastName = "Friend"
-    ORDER BY firstName ASC;
+    GROUP BY nice;
 
 
--- Task 14 - Add Own Gifts (childID will be different)
-INSERT INTO Gift
-    VALUES (402,19,"Bell 525 Relentless"),
-           (403,19,"Continental GTC Mulliner W12");
+-- Task 7 - 
+SELECT lastName, nice, COUNT(*) AS Children
+    FROM Child
+    GROUP BY lastName, nice;
 
 
--- Task 15 - Show new records
-SELECT childID, firstName, item
-    FROM Child, Gift
-    WHERE Child.childID = Gift.childID
-      AND Child.childID = 19
-	ORDER BY item;
+-- Task 8 - 
 
 
--- Task 16 - Delivery List - Nice children
-SELECT firstName, lastName, item
-    FROM Child, Gift
-    WHERE Child.childID = Gift.childID
-      AND nice = TRUE
-    ORDER BY lastName ASC,
-             firstName ASC;
+
+-- Task9 - 
 
 
--- Task 17 - On Santa's Delivery List
-UPDATE Child
-    SET nice = TRUE
-    WHERE childID = 19;
-
-SELECT firstName, lastName, item
-    FROM Child, Gift
-    WHERE Child.childID = Gift.childID
-      AND nice = TRUE
-      AND Child.childID = 19;
+-- Task 10 - 
 
 
-/*
-Revert database to original state
-*/
-
--- Undo Task 3 - Extra Gift
-DELETE FROM Gift
-    WHERE giftID = 401;
-
--- Undo Task 4 - Naughty Child
-UPDATE Child
-    SET nice = True
-    WHERE childID = 172;
-
--- Undo Task 5 - Naughty Gift
-UPDATE Gift
-    SET item = "Gabby's Dollhouse Cat Friendship Cruise Ship Playset"
-    WHERE childID = 172;
-
--- Undo Task 8 - My gifts
-DELETE FROM Gift
-    WHERE childID = 19;
-
--- Undo Task 11 - Off the Delivery List
-UPDATE Child
-    SET nice = FALSE
-    WHERE childID = 19;
