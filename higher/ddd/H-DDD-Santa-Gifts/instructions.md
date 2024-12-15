@@ -19,35 +19,33 @@ Ensure that all column names are meaningful.
 
 3. Display the full names of all children whose surnames start with `Mac` or `Mc`.  Forenames are to be alphabetical.
 
-3. Calculate the total cost of the all the gifts.
+4. Calculate the total cost of the all the gifts.
 
-4. Santa's local currency is Norwegian Kroner, with £1 = 14.079458 kr.  Display the total cost in Kroner, rounded to 0 decimal places.
+5. Santa's local currency is Norwegian Kroner, with £1 = 14.079458 kr.  Display the total cost in Kroner, rounded to 0 decimal places.
 
-5. Santa estimates that it costs £15 to make each toy, but Mrs Claus thinks it's more.  Calculate the correct value.
+6. Santa estimates that it costs £15 to make each toy, but Mrs Claus thinks it's more.  Calculate the correct value.
 
-6. For each surname, display how many children there are with that surname.
+7. For each surname, display how many children there are with that surname.
 
-6. Display only the most popular surname.
+8. Display how many children have been naughty or nice.
 
-7. Display how many children have been naughty or nice.
+9. By surname, display how many children have been naughty or nice.
 
-8. By surname, display how many children have been naughty or nice.
+10. Due to increased productivity, all of the costs have decreased by 5%.  Change the price of all the gifts.
 
-10. Due to increased productivity, all of the costs have been decreased by 5%.  Change the price of all the gifts.
+11. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
 
-9. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
-
-10. Ensure that all the naughty children only get a `Lump of coal` that costs `50p`.  Some useful code is shwon below.
+12. Using a sub-query, ensure that all the naughty children only get a `Lump of coal` that costs `50p`.  Some useful code is shwon below.
 
 ``` sql
 ...
     WHERE childID IN 
         (SELECT childID
-             FROM Naughty);
+             FROM ...
 ```
 
-{:start="11"}
-11. Add a filter to the previous query so that it only shows what will be delivered to you.  Make any other changes that are necessary.
+{:start="13"}
+13. Add a filter to the previous query so that it only shows what will be delivered to you.  Make any other changes that are necessary.
 
 
 ## Data Dictionary

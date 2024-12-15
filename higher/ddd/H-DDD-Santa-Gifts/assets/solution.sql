@@ -22,41 +22,41 @@ SELECT firstName, lastName
     ORDER BY firstName;
 
 
--- Task 3 - 
+-- Task 4 - Cost of all goods
 SELECT SUM(cost) AS [Cost (£)]
     FROM Gift;
 
 
--- Task 4 - 
+-- Task 5 - Cost in Kroner
 SELECT ROUND(SUM(cost) * 14.079458, 0) 
        AS [Cost (NOK)]
     FROM Gift;
 
 
--- Task 5 - 
+-- Task 6 - Check estimated cost
 SELECT ROUND(AVG(cost), 2) As Average
     FROM Gift;
 
 
--- Task 5 - 
+-- Task 7 - Surnames with count
 SELECT lastName, COUNT(*) AS Children
     FROM Child
     GROUP BY lastName;
 
 
--- Task 6 - 
+-- Task 8 - Naughty / Nice with count
 SELECT nice, COUNT(*) AS Children
     FROM Child
     GROUP BY nice;
 
 
--- Task 7 - 
+-- Task 9 - Suranems and naughty / nice with count
 SELECT lastName, nice, COUNT(*) AS Children
     FROM Child
     GROUP BY lastName, nice;
 
 
--- Task 8 - 
+-- Task 10 - 
 
 
 
@@ -67,15 +67,11 @@ UPDATE Child
 
 
 -- Task 10 - 
-CREATE TEMP VIEW Naughty (childID) AS
-    SELECT childID
-    FROM Child
-    WHERE lastName = "Friend";
-
 UPDATE Gift
     SET item = "Lump of coal",
         cost = 0.50
     WHERE childID IN 
         (SELECT childID
-             FROM Naughty);
+             FROM Child
+             WHERE nice = FALSE);
 
