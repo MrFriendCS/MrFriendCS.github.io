@@ -21,7 +21,7 @@ Ensure that all column names are meaningful.
 
 4. Santa's local currency is Norwegian Kroner, and £1 = 14.079458 kr.  Display the total cost in Kroner, rounded to 0 decimal places.
 
-5. Santa estimates that it costs £15.76 to make each toy, but Mrs Claus thinks it's more.  Calculate the correct value.
+5. Santa estimates that it costs £15 to make each toy, but Mrs Claus thinks it's more.  Calculate the correct value.
 
 6. For each surname, display how many children there are with that surname.
 
@@ -33,7 +33,14 @@ Ensure that all column names are meaningful.
 
 9. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
 
-10. Ensure that all the naughty children only get a `Lump of coal` that costs `50p`.
+10. Ensure that all the naughty children only get a `Lump of coal` that costs `50p`.  Someuseful code is shwon below.
+
+``` sql
+...
+    WHERE childID IN 
+        (SELECT childID
+             FROM Naughty);
+```
 
 
 

@@ -52,9 +52,22 @@ SELECT lastName, nice, COUNT(*) AS Children
 
 
 
--- Task9 - 
+-- Task 9 - 
+UPDATE Child
+    SET nice = FALSE
+    WHERE lastName = "Friend";
 
 
 -- Task 10 - 
+CREATE TEMP VIEW Naughty (childID) AS
+    SELECT childID
+    FROM Child
+    WHERE lastName = "Friend";
 
+UPDATE Gift
+    SET item = "Lump of coal",
+        cost = 0.50
+    WHERE childID IN 
+        (SELECT childID
+             FROM Naughty);
 
