@@ -22,12 +22,19 @@ SELECT firstName, lastName
     ORDER BY firstName;
 
 
--- Task 4 - Cost of all goods
+-- Task 4 - Lego gifts
+SELECT item
+    FROM Gift
+    WHERE item LIKE "%LEGO%"
+	GROUP BY item;
+
+
+-- Task 5 - Cost of all goods
 SELECT SUM(cost) AS [Cost (£)]
     FROM Gift;
 
 
--- Task 5 - Cost in Kroner
+-- Task 6 - Cost in Kroner
 SELECT ROUND(SUM(cost) * 14.079458, 0) 
        AS [Cost (NOK)]
     FROM Gift;
@@ -63,7 +70,7 @@ SELECT lastName, nice, COUNT(*) AS Children
 -- Task 9 - 
 UPDATE Child
     SET nice = FALSE
-    WHERE lastName = "Friend";
+    WHERE lastName = "MacNeil";
 
 
 -- Task 10 - 
@@ -73,5 +80,6 @@ UPDATE Gift
     WHERE childID IN 
         (SELECT childID
              FROM Child
-             WHERE nice = FALSE);
+             WHERE nice = FALSE
+               AND lastName = "MacNeil");
 

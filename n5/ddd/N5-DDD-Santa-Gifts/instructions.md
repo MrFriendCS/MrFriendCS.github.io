@@ -65,16 +65,16 @@ The elves have decided to modernise to help keep track of the data that's needed
 | Attribute | Key   | Type    | Size  | Req'd | Validation |
 | --------- | :---: | ----    | :---: | :---: | ---------- |
 | childID   | PK    | Number  |       | Y     | |
-| firstName |       | Text    | 20    | N     | |
-| lastName  |       | Text    | 30    | N     | |
-| nice      |       | Boolean |       | N     | |
+| firstName |       | Text    | 20    | Y     | |
+| lastName  |       | Text    | 30    | Y     | |
+| nice      |       | Boolean |       | Y     | |
 
 ### Entity: Gift
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
 | giftID    | PK    | Number |       | Y     | |
-| childID   | FK    | Number |       | Y     | Exists in child table |
+| childID   | FK    | Number |       | Y     | Exists in Child table |
 | item      |       | Text   | 50    | Y     | |
 | cost      |       | Number |       | Y     | |
 

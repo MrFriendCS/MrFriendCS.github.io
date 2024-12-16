@@ -1,8 +1,8 @@
 CREATE TABLE Child (
     childID INT NOT NULL,
-    firstName VARCHAR(20),
-    lastName VARCHAR(30),
-    nice BOOLEAN,
+    firstName VARCHAR(20) NOT NULL,
+    lastName VARCHAR(30) NOT NULL,
+    nice BOOLEAN NOT NULL,
     PRIMARY KEY (childID)
 );
 

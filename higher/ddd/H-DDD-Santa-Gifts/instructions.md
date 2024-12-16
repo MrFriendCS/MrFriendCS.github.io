@@ -19,23 +19,29 @@ Ensure that all column names are meaningful.
 
 3. Display the full names of all children whose surnames start with `Mac` or `Mc`.  Forenames are to be alphabetical.
 
-4. Calculate the total cost of the all the gifts.
+4. Display only the LEGO gifts.  Display each type only once.
 
-5. Santa's local currency is Norwegian Kroner, with £1 = 14.079458 kr.  Display the total cost in Kroner, rounded to 0 decimal places.
+5. Calculate the total cost of the all the gifts.
 
-6. Santa estimates that it costs £15 to make each toy, but Mrs Claus thinks it's more.  Calculate the correct value.
+6. Santa's local currency is Norwegian Kroner, with £1 = 14.079458 kr.  Display the total cost in Kroner, rounded to 0 decimal places.
 
-7. For each surname, display how many children there are with that surname.
+7. Santa estimates that overall it costs about £15 to make a toy, but Mrs Claus thinks it's more.  Calculate the correct value.
 
-8. Display how many children have been naughty or nice.
+8. For each surname, display how many children there are with that surname.
 
-9. By surname, display how many children have been naughty or nice.
+9. Display how many children have been naughty or nice.
 
-10. Due to increased productivity, all of the costs have decreased by 5%.  Change the price of all the gifts.
+10. By surname, display how many children have been naughty or nice.
 
-11. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
+11. Due to increased productivity, all of the costs have decreased by 5%.  Change the price of all the gifts accordingly.
 
-12. Using a sub-query, ensure that all the naughty children only get a `Lump of coal` that costs `50p`.  Some useful code is shwon below.
+12. Some lucky children get more presents than others. Who is getting the most, and how many will they get?
+
+    __NB.__ The result of one VIEW can be used in another VIEW.
+
+13. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
+
+14. Using a sub-query, ensure that all the newly regsitered naughty children only get a `Lump of coal` that costs `50p`.  Some useful code is shwon below.
 
 ``` sql
 ...
@@ -44,8 +50,8 @@ Ensure that all column names are meaningful.
              FROM ...
 ```
 
-{:start="13"}
-13. Add a filter to the previous query so that it only shows what will be delivered to you.  Make any other changes that are necessary.
+{:start="14"}
+15. Who is getting the most `coal`?  How many lumps will the get?
 
 
 ## Data Dictionary
@@ -55,20 +61,20 @@ Ensure that all column names are meaningful.
 | Attribute | Key   | Type    | Size  | Req'd | Validation |
 | --------- | :---: | ----    | :---: | :---: | ---------- |
 | childID   | PK    | Number  |       | Y     | |
-| firstName |       | Text    | 20    | N     | |
-| lastName  |       | Text    | 30    | N     | |
-| nice      |       | Boolean |       | N     | |
+| firstName |       | Text    | 20    | Y     | |
+| lastName  |       | Text    | 30    | Y     | |
+| nice      |       | Boolean |       | Y     | |
 
 ### Entity: Gift
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
 | giftID    | PK    | Number |       | Y     | |
-| childID   | FK    | Number |       | Y     | Exists in child table |
+| childID   | FK    | Number |       | Y     | Exists in Child table |
 | item      |       | Text   | 50    | Y     | |
 | cost      |       | Number |       | Y     | |
 
 
 ## ERD
 
-![ERD 1:M](assets/Diagrams/ERD-ChildGift.png)
+![ERD 1:M](../../../n5/ddd/N5-DDD-Santa-Gifts/assets/Diagrams/ERD-ChildGift.png)
