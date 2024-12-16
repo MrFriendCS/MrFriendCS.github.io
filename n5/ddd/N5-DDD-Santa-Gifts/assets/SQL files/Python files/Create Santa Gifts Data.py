@@ -110,6 +110,23 @@ def getGiftData(noOfGifts, noOfKids):
         
         gifts[index].gift = listOfGifts[giftIndex]
         gifts[index].cost = listOfCosts[giftIndex]
+        
+        
+    # Check childID 172 has at least two gifts
+    # Used for an update task
+    
+    count = 0
+    
+    for index in range(len(gifts)):
+        
+        if gifts[index].childID == 172:
+            count = count + 1
+    
+    if count < 2:
+        
+        for counter in range(2-count):
+            
+            gifts[random.randint(0, len(gifts)-1)].childID = 172
     
     return gifts
 
