@@ -40,44 +40,28 @@ SELECT ROUND(SUM(cost) * 14.079458, 0)
     FROM Gift;
 
 
--- Task 6 - Check estimated cost
+-- Task 7 - Check estimated cost
 SELECT ROUND(AVG(cost), 2) As Average
     FROM Gift;
 
 
--- Task 7 - Surnames with count
+-- Task 8 - Surnames with count
 SELECT lastName, COUNT(*) AS Children
     FROM Child
     GROUP BY lastName;
 
 
--- Task 8 - Naughty / Nice with count
+-- Task 9 - Naughty / Nice with count
 SELECT nice, COUNT(*) AS Children
     FROM Child
     GROUP BY nice;
 
 
--- Task 9 - Suranems and naughty / nice with count
+-- Task 10 - Suranems and naughty / nice with count
 SELECT lastName, nice, COUNT(*) AS Children
     FROM Child
     GROUP BY lastName, nice;
 
-
--- Task 9 - 
-UPDATE Child
-    SET nice = FALSE
-    WHERE lastName = "MacNeil";
-
-
--- Task 10 - 
-UPDATE Gift
-    SET item = "Lump of coal",
-        cost = 0.50
-    WHERE childID IN 
-        (SELECT childID
-             FROM Child
-             WHERE nice = FALSE
-               AND lastName = "MacNeil");
 
 -- Task 12 - Most gifts
 
@@ -98,4 +82,43 @@ SELECT firstName, lastName, maxGift AS Gifts
       AND NiceKids.giftCount = maxGift
     ORDER BY firstName ASC, 
 	         lastName ASC;
+
+
+-- Task 13 - Naughty children!
+UPDATE Child
+    SET nice = FALSE
+    WHERE lastName = "MacNeil";
+
+
+-- Task 14 - Coal for naughty children
+UPDATE Gift
+    SET item = "Lump of coal",
+        cost = 0.50
+    WHERE childID IN 
+        (SELECT childID
+             FROM Child
+             WHERE nice = FALSE
+               AND lastName = "MacNeil");
+
+
+
+-- Task 15 - Swap for most expensive for cheaper gifts
+
+CREATE TEMP VIEW GiftList (item, cost) AS
+    SELECT item, cost
+    FROM Gift
+    WHERE item NOT LIKE "%Coal%"
+    GROUP BY item, cost;
+	
+CREATE TEMP VIEW Cost (most) AS
+    SELECT MAX(cost)
+    FROM GiftList;
+
+UPDATE Gift
+    SET item = "Squishmallows Squish-a-Longs - 14 Pack", 
+        cost = 18.00
+    WHERE giftID IN
+        (SELECT giftID
+             FROM Gift, Cost
+             WHERE cost = most);
 

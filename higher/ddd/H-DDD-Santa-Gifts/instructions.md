@@ -19,7 +19,7 @@ Ensure that all column names are meaningful.
 
 3. Display the full names of all children whose surnames start with `Mac` or `Mc`.  Forenames are to be alphabetical.
 
-4. Display only the LEGO gifts.  Display each type only once.
+4. Display only the LEGO gifts.  Display each g only once.
 
 5. Calculate the total cost of the all the gifts.
 
@@ -38,7 +38,7 @@ Ensure that all column names are meaningful.
 12. Some lucky children get more presents than others. Who is getting the most, and how many will they get?
 
     __NB.__ The result of one VIEW can be used in another VIEW.
-
+	
 13. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
 
 14. Using a sub-query, ensure that all the newly regsitered naughty children only get a `Lump of coal` that costs `50p`.  Some useful code is shwon below.
@@ -47,11 +47,20 @@ Ensure that all column names are meaningful.
 ...
     WHERE childID IN 
         (SELECT childID
-             FROM ...
+             FROM 
+
+                         );
 ```
 
-{:start="14"}
-15. Who is getting the most `coal`?  How many lumps will the get?
+{:start="15"}
+15. Mrs Claus feels that Santa has been too generous again this year.  Replace the most expensive gifts with the following gift:
+
+| gift                                   | cost |
+| ----                                   | ---- |
+| Squishmallows Squish-a-Longs - 14 Pack | 18.00 |
+
+
+
 
 
 ## Data Dictionary
