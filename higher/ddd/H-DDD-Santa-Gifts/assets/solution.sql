@@ -63,10 +63,6 @@ SELECT lastName, nice, COUNT(*) AS Children
     GROUP BY lastName, nice;
 
 
--- Task 10 - 
-
-
-
 -- Task 9 - 
 UPDATE Child
     SET nice = FALSE
@@ -82,4 +78,24 @@ UPDATE Gift
              FROM Child
              WHERE nice = FALSE
                AND lastName = "MacNeil");
+
+-- Task 12 - Most gifts
+
+CREATE TEMP VIEW NiceKids (childID, giftCount) AS
+    SELECT Child.childID, COUNT(*)
+    FROM Child, Gift
+    WHERE Child.childID = Gift.childID
+	  AND nice = TRUE
+	GROUP BY Child.childID;
+
+CREATE TEMP VIEW MaxGift (maxGift) AS
+	SELECT MAX(giftCount)
+    FROM NiceKids;
+
+SELECT firstName, lastName, maxGift AS Gifts
+    FROM Child, Nicekids, MaxGift
+    WHERE Child.childID = NiceKids.childID
+      AND NiceKids.giftCount = maxGift
+    ORDER BY firstName ASC, 
+	         lastName ASC;
 
