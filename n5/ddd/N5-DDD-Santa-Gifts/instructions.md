@@ -13,7 +13,7 @@ The elves have decided to modernise to help keep track of the data that's needed
 
 1. Display all the data in the `Child` table.
 
-2. Display the names of all the nice children.  Sort the results alphabetically for both forename and surname.
+2. Display the full names of all the nice children.  Sort the results alphabetically for both forename and surname.
 
 3. Display all the data in the `Gift` table.
 
