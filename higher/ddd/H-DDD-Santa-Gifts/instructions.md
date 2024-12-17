@@ -60,9 +60,6 @@ Ensure that all column names are meaningful.
 | Squishmallows Squish-a-Longs - 14 Pack | 18.00 |
 
 
-
-
-
 ## Data Dictionary
 
 ### Entity: Child
