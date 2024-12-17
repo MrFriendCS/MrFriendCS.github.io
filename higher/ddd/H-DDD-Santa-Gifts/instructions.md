@@ -38,10 +38,12 @@ Ensure that all column names are meaningful.
 12. Some lucky children get more presents than others. Who is getting the most, and how many will they get?
 
     __NB.__ The result of one VIEW can be used in another VIEW.
-	
-13. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
 
-14. Using a sub-query, ensure that all the newly regsitered naughty children only get a `Lump of coal` that costs `50p`.  Some useful code is shwon below.
+13. Will every child get a gift?  Display how many children will get a gift.
+
+14. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
+
+15. Using a sub-query, ensure that all the newly regsitered naughty children only get a `Lump of coal` that costs `50p`.  Some useful code is shwon below.
 
 ``` sql
 ...
@@ -53,7 +55,7 @@ Ensure that all column names are meaningful.
 ```
 
 {:start="15"}
-15. Mrs Claus feels that Santa has been too generous again this year.  Replace the most expensive gifts with the following gift:
+16. Mrs Claus feels that Santa has been too generous again this year.  Replace the most expensive gifts with the following gift:
 
 | gift                                   | cost |
 | ----                                   | ---- |

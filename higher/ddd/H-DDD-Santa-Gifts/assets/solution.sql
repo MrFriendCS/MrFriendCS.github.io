@@ -81,16 +81,26 @@ SELECT firstName, lastName, maxGift AS Gifts
     WHERE Child.childID = NiceKids.childID
       AND NiceKids.giftCount = maxGift
     ORDER BY firstName ASC, 
-	         lastName ASC;
+             lastName ASC;
+
+-- Task 14 - Everyone gets a gift?
+
+CREATE TEMP VIEW Present (childID) AS
+    SELECT childID
+    FROM Gift
+    GROUP BY childID;
+
+SELECT COUNT(*) AS Recipients
+    FROM Present;
 
 
--- Task 13 - Naughty children!
+-- Task 15 - Naughty children!
 UPDATE Child
     SET nice = FALSE
     WHERE lastName = "MacNeil";
 
 
--- Task 14 - Coal for naughty children
+-- Task 16 - Coal for naughty children
 UPDATE Gift
     SET item = "Lump of coal",
         cost = 0.50
@@ -101,8 +111,7 @@ UPDATE Gift
                AND lastName = "MacNeil");
 
 
-
--- Task 15 - Swap for most expensive for cheaper gifts
+-- Task 17 - Swap for most expensive for cheaper gifts
 
 CREATE TEMP VIEW GiftList (item, cost) AS
     SELECT item, cost
