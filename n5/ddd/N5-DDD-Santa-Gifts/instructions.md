@@ -32,7 +32,7 @@ The elves have decided to modernise to help keep track of the data that's needed
 
 8. Create a query to show the record has been changed.
 
-9. Child 172 will no longer be getting their original gift, or gifts.  Change anything they would have got to a `Lump of coal`, and change the cost to `50p`.
+9. Child 172 will no longer be getting their original gift, or gifts.  Change everything they would have got to a `Lump of coal`, and change the cost to `50p`.
 
 10. Create a query to show all records that have changed.
 
