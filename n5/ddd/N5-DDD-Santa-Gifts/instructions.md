@@ -42,9 +42,9 @@ The elves have decided to modernise to help keep track of the data that's needed
 
 13. Display the ID, forename, and gift(s) they will receive of everyone who shares your surname.  Order the names alphbetically.
 
-14. When the elves aren't looking, add a couple of presents for yourself to the `Gift` table.  Don't steal somebody else's!
+14. When the elves aren't looking, make sure there are at least three presents for yourself in the `Gift` table.  Don't steal somebody else's!
 
-15. Create a query to show your full name and the gifts that you have added.  Ensure the gifts are alphabetical.
+15. Create a query to show your full name and all your gifts.  Ensure the gifts are alphabetical.
 
 16. The elves want a delivery list for Santa.  It is to be sorted alphabetically by surname and then forename.  The elves are insistent that ___only___ nice children are to appear on this list, as they will be on their own 'special' list.  An example of the output is shown below:
 
