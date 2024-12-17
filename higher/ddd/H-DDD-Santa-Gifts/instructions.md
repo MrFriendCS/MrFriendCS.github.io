@@ -74,16 +74,22 @@ Ensure that all column names are meaningful.
 | lastName  |       | Text    | 30    | Y     | |
 | nice      |       | Boolean |       | Y     | |
 
-### Entity: Gift
+### Entity: Item
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
-| giftID    | PK    | Number |       | Y     | |
-| childID   | FK    | Number |       | Y     | Exists in Child table |
+| itemID    | PK    | Number |       | Y     | |
 | item      |       | Text   | 50    | Y     | |
 | cost      |       | Number |       | Y     | |
+
+### Entity: Present
+
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| childID   | PK/FK | Number |       | Y     | Exists in Child table |
+| itemID    | PK/FK | Number |       | Y     | Exists in Item table |
 
 
 ## ERD
 
-![ERD 1:M](../../../n5/ddd/N5-DDD-Santa-Gifts/assets/Diagrams/ERD-ChildGift.png)
+![ERD 1:M](assets/Diagrams/ERD-ChildItem.png)
