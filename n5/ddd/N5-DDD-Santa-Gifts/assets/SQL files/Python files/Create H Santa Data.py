@@ -38,7 +38,7 @@ else:
 import DDDhelper
 
 
-def getChildData(count):
+def createChildData(count):
     """Create the data, apart from nice, for the child entity."""
     
     
@@ -63,7 +63,7 @@ def getChildData(count):
     return children
 
 
-def getGiftData(noOfGifts, noOfKids):
+def createGiftData(noOfGifts, noOfKids):
     """Create the data for the gift entity."""
     
     
@@ -246,10 +246,10 @@ def main():
     noOfGifts = 400
     
     # 1 - Get child entity data
-    children = getChildData(noOfKids)
+    children = createChildData(noOfKids)
     
     # 2 - Get gift entity data
-    gifts = getGiftData(noOfGifts, noOfKids)
+    gifts = createGiftData(noOfGifts, noOfKids)
     
     # 3 - Add 'naughty' children (maybe)
     if input("Include naughty children (y/n)? ") == "y":
