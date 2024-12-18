@@ -77,11 +77,12 @@ CREATE TEMP VIEW MaxGift (maxGift) AS
     FROM NiceKids;
 
 SELECT firstName, lastName, maxGift AS Gifts
-    FROM Child, Nicekids, MaxGift
+    FROM Child, NiceKids, MaxGift
     WHERE Child.childID = NiceKids.childID
       AND NiceKids.giftCount = maxGift
     ORDER BY firstName ASC, 
              lastName ASC;
+
 
 -- Task 14 - Everyone gets a gift?
 
@@ -109,6 +110,27 @@ UPDATE Gift
              FROM Child
              WHERE nice = FALSE
                AND lastName = "MacNeil");
+
+
+-- Task 16 - Most coal
+
+CREATE TEMP VIEW CoalKids (childID, coalCount) AS
+    SELECT Child.childID, COUNT(*)
+    FROM Child, Gift
+    WHERE Child.childID = Gift.childID
+	  AND item LIKE "%coal%"
+	GROUP BY Child.childID;
+
+CREATE TEMP VIEW MaxCoal (maxCoal) AS
+	SELECT MAX(coalCount)
+    FROM CoalKids;
+
+SELECT firstName, lastName, maxCoal AS Lumps
+    FROM Child, CoalKids, MaxCoal
+    WHERE Child.childID = CoalKids.childID
+      AND CoalKids.coalCount = maxCoal
+    ORDER BY firstName ASC, 
+             lastName ASC;
 
 
 -- Task 17 - Swap for most expensive for cheaper gifts

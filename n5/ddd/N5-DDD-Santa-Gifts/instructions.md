@@ -42,11 +42,13 @@ The elves have decided to modernise to help keep track of the data that's needed
 
 13. Display the ID, forename, and gift(s) they will receive of everyone who shares your surname.  Order the names alphbetically.
 
-14. When the elves aren't looking, make sure there are at least three presents for yourself in the `Gift` table.  Don't steal somebody else's!
+14. When the elves aren't looking, change your presents in the `Gift` table to something you want, be sure to change the costs at the same time.
 
-15. Create a query to show your full name and all your gifts.  Ensure the gifts are alphabetical.
+15. Without getting caught, make sure there are at least three presents for yourself in the `Gift` table.  Don't steal somebody else's!
 
-16. The elves want a delivery list for Santa.  It is to be sorted alphabetically by surname and then forename.  The elves are insistent that ___only___ nice children are to appear on this list, as they will be on their own 'special' list.  An example of the output is shown below:
+16. Create a query to show your full name and all your gifts.  Ensure the gifts are alphabetical.
+
+17. The elves want a delivery list for Santa.  It is to be sorted alphabetically by surname and then forename.  The elves are insistent that ___only___ nice children are to appear on this list.  Naughty children will be on their own 'special' list.  An example of the output is shown below:
 
 | childId | firstName | lastName   | item |
 | ------- | --------  | -------    | ---- |
@@ -54,8 +56,8 @@ The elves have decided to modernise to help keep track of the data that's needed
 | 7       | Bianca    | Brotherton | Playdoh |
 | 91      | Billy     | Brotherton | Maths set |
 
-{:start="17"}
-17. Add an additional filter to the previous query so that it only shows what will be delivered to you.  Make any other changes that are necessary.
+{:start="18"}
+18. Add an additional filter to the previous query so that it only shows what will be delivered to you.  Another query might be required to make this work as you expect!
 
 
 ## Data Dictionary

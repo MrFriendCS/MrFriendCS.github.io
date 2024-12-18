@@ -27,7 +27,7 @@ Ensure that all column names are meaningful.
 
 7. Santa estimates that overall it costs about £15 to make a toy, but Mrs Claus thinks it's more.  Calculate the correct value.
 
-8. For each surname, display how many children there are with that surname.
+8. For each surname, display how many children have that surname.
 
 9. Display how many children have been naughty or nice.
 
@@ -35,7 +35,7 @@ Ensure that all column names are meaningful.
 
 11. Due to increased productivity, all of the costs have decreased by 5%.  Change the price of all the gifts accordingly.
 
-12. Some lucky children get more presents than others. Who is getting the most, and how many will they get?
+12. By chance, some children get more presents than others. Who is getting the most, and how many will they get?  Only include nice children.
 
     __NB.__ The result of one VIEW can be used in another VIEW.
 
@@ -55,7 +55,9 @@ Ensure that all column names are meaningful.
 ```
 
 {:start="16"}
-16. Mrs Claus feels that Santa has been too generous again this year.  Replace the most expensive gifts with the following gift:
+16. Naugthy children get a lump of coal.  Who is getting the most, and how many lumps will they get?
+
+17. Mrs Claus feels that Santa has been too generous again this year.  Replace the most expensive gifts with the following gift:
 
 | gift                                   | cost |
 | ----                                   | ---- |
