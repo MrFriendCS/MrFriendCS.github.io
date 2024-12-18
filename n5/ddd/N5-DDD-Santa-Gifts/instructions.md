@@ -26,27 +26,27 @@ The elves have decided to modernise to help keep track of the data that's needed
 ```
 
 {:start="6"}
-6. Create a query to show that the record has been added.
+6. Create a query to show the new record.
 
 7. Child 172 has been very naughty.  Change their `nice` status in the `Child` table.
 
 8. Create a query to show the record has been changed.
 
-9. Child 172 will no longer be getting their original gift, or gifts.  Change everything they would have got to a `Lump of coal`, and change the cost to `50p`.
+9. Child 172 will no longer be getting their original gifts.  Change everything they would have got to a `Lump of coal`, and change the cost to `50p`.
 
-10. Create a query to show all records that have changed.
+10. Create a query to show all the records that have changed.
 
-11. Display the child ID, forename, and surname of everyone who will receive a `Chad Valley Wooden Pizza` from Santa.
+11. Display the child ID, forename, and surname of everyone who will receive a `Chad Valley Wooden Pizza` from Santa.  Sort the child ID from largest to smallest.
 
 12. Display the ID and forename of everyone who shares your surname.  Order the names alphbetically.
 
-13. Display the ID, forename, and gift(s) they will receive of everyone who shares your surname.  Order the names alphbetically.
+13. Display the ID, forename, and gifts they will receive of everyone who shares your surname.  Order the names alphbetically.
 
 14. When the elves aren't looking, change your presents in the `Gift` table to something you want, be sure to change the costs at the same time.
 
 15. Without getting caught, make sure there are at least three presents for yourself in the `Gift` table.  Don't steal somebody else's!
 
-16. Create a query to show your full name and all your gifts.  Ensure the gifts are alphabetical.
+16. Create a query to show your full name and all your gifts, and their cost.  Ensure the gifts are sorted from most to least expensive.
 
 17. The elves want a delivery list for Santa.  It is to be sorted alphabetically by surname and then forename.  The elves are insistent that ___only___ nice children are to appear on this list.  Naughty children will be on their own 'special' list.  An example of the output is shown below:
 

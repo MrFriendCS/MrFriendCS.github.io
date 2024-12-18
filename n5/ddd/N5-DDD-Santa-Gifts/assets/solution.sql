@@ -28,7 +28,7 @@ SELECT *
 
 -- Task 5 - Extra Gift
 INSERT INTO Gift
-    VALUES(401,98,"PS5");
+    VALUES(401,98,"PS5",479.00);
 
 
 -- Task 6 - Show new record
@@ -65,7 +65,8 @@ SELECT *
 SELECT Child.childID, firstName, lastName
     FROM Child, Gift
     WHERE Child.childID = Gift.childID
-      AND item = "Chad Valley Wooden Pizza";
+      AND item = "Chad Valley Wooden Pizza"
+    ORDER BY childID DESC;
 
 
 -- Task 12 - Same Surname Gifts
@@ -83,18 +84,24 @@ SELECT childID, firstName, item
     ORDER BY firstName ASC;
 
 
--- Task 14 - Add Own Gifts (childID will be different)
+-- Task 14 - Change own gifts (childID will be different)
+UPDATE Gifts
+    SET item = "Steak and chips",
+        cost = 35.00
+    WHERE childID = 19;
+
+
+-- Task 15 - Add Own Gift (childID will be different)
 INSERT INTO Gift
-    VALUES (402,19,"Bell 525 Relentless"),
-           (403,19,"Continental GTC Mulliner W12");
+    VALUES (402,19,"Bell 525 Relentless", 20000000)
 
 
--- Task 15 - Show new records
+-- Task 16 - Show modified and new records (childID will be different)
 SELECT childID, firstName, item
     FROM Child, Gift
     WHERE Child.childID = Gift.childID
       AND Child.childID = 19
-	ORDER BY item;
+	ORDER BY cost DESC;
 
 
 -- Task 16 - Delivery List - Nice children
