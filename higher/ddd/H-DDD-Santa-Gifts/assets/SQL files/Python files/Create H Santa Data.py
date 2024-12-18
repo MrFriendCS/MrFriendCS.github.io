@@ -1,6 +1,6 @@
 # Title: Create H Santa Data
 # Author: Mr Friend
-# Date: 15 Dec 2024
+# Date: 18 Dec 2024
 
 """
 Create the data and export as CSV.
@@ -23,6 +23,7 @@ start2 = "D:\\OneDrive - Glow Scotland\\"
 folder1 = "GitHub\\MrFriendCS.github.io\\"
 folder2 = "SQA - CS - N5\\DDD\\Database Files\\"  # Definately N5 folder
 
+
 # Check if directory exists
 if shool in sys.path:
     # School laptop
@@ -34,12 +35,43 @@ else:
     sys.path.append(start2 + folder1)
     school = False
 
+
 # Get extra code
 import DDDhelper
 
 
-def createChildData(count):
-    """Create the data, apart from nice, for the child entity."""
+def getNaughtyList():
+    """Read in forenames and surnames of naughty children."""
+    
+    # Initialise local variables
+    naughtyFirst = []
+    naughtyLast = []
+    
+    if school:
+        location = start1 + folder2
+    else:
+        location = start2 + folder2
+        
+    file = open(location + "naughtyList.csv", "r")
+    
+    line = file.readline()  # ignore header
+    line = file.readline()
+    
+    while line != "":
+        
+        data = line.split(",")
+        
+        naughtyFirst = naughtyFirst + [data[0].strip()]
+        naughtyLast = naughtyLast + [data[1].strip()]
+        
+        line = file.readline()
+    
+    return naughtyFirst, naughtyLast
+
+
+def createChildData(count, naughtyfirst):
+    """Create the data for the child table,
+apart from nice as all children are nice."""
     
     
     @dataclass
@@ -63,8 +95,8 @@ def createChildData(count):
     return children
 
 
-def createGiftData(noOfGifts, noOfKids):
-    """Create the data for the gift entity."""
+def createGiftData(noOfKids):
+    """Create the data for the gift entity.  Two gifts each."""
     
     
     @dataclass
@@ -78,7 +110,7 @@ def createGiftData(noOfGifts, noOfKids):
     # Initialise local variables
     listOfGifts = []
     listOfCosts = []
-    gifts = [Gift() for index in range(noOfGifts)]
+    gifts = [Gift() for index in range(noOfKids * 2)]
     
         
     # Get Gift data
@@ -101,62 +133,48 @@ def createGiftData(noOfGifts, noOfKids):
     fileIn.close()
     
     
-    # Loop for each gift
-    for index in range(noOfGifts):
-        gifts[index].giftID = index + 1
-        gifts[index].childID = DDDhelper.getNumber(1, noOfKids)
+    # Set initial giftID value    
+    giftID = 1
         
-        giftIndex = random.randint(0, len(listOfGifts)-1)
-        
-        gifts[index].gift = listOfGifts[giftIndex]
-        gifts[index].cost = listOfCosts[giftIndex]
-        
-        
-    # Check childID 172 has at least two gifts
-    # Used for an update task
+    # First half of gifts
+    offset = 0
     
-    count = 0
-    
-    for index in range(len(gifts)):
+    # Loop twice - two gifts each child
+    for loop in range(2):
         
-        if gifts[index].childID == 172:
-            count = count + 1
-    
-    if count < 2:
+        childIDs = [index for index in range(1, noOfKids+1)]
         
-        for counter in range(2-count):
+        # Loop for each child
+        for index in range(offset, offset+noOfKids):
             
-            gifts[random.randint(0, len(gifts)-1)].childID = 172
-    
+            # Pick a random child
+            childID = random.choice(childIDs)
+            
+            # Remove childID from list
+            childIDs.remove(childID)
+            
+            # Pick a random gift
+            giftIndex = random.randint(0, len(listOfGifts)-1)
+            
+            # Populate record
+            gifts[index].giftID = giftID
+            gifts[index].childID = childID
+            gifts[index].gift = listOfGifts[giftIndex]
+            gifts[index].cost = listOfCosts[giftIndex]
+            
+            # Increment giftID
+            giftID = giftID + 1
+        
+        # Second half of gifts
+        offset = noOfKids
+
+
     return gifts
 
 
-def naughtyKids(children, gifts):
+def naughtyKids(children, gifts, naughtyFirst, naughtyLast):
     """Insert naughty children and update all their gifts."""
-    
-    # Naughty children - 2D array
-    naughtyFirst = []
-    naughtyLast = []
-    
-    if school:
-        location = start1 + folder2
-    else:
-        location = start2 + folder2
-        
-    file = open(location + "naughtyList.csv", "r")
-    
-    line = file.readline()  # ignore header
-    line = file.readline()
-    
-    while line != "":
-        
-        data = line.split(",")
-        
-        naughtyFirst = naughtyFirst + [data[0].strip()]
-        naughtyLast = naughtyLast + [data[1].strip()]
-        
-        line = file.readline()
-    
+     
     # List of numbers 
     naughtyNumbers = [index for index in range(1, len(children)-1)]
     
@@ -243,18 +261,20 @@ def main():
 
     # Initialise variables
     noOfKids = 200
-    noOfGifts = 400
     
-    # 1 - Get child entity data
-    children = createChildData(noOfKids)
+    # 0 - Get names of naughty children
+    naughtyFirst, naughtyLast = getNaughtyList()
     
-    # 2 - Get gift entity data
-    gifts = createGiftData(noOfGifts, noOfKids)
+    # 1 - Create child table data
+    children = createChildData(noOfKids, naughtyFirst)
+    
+    # 2 - Create gift table data
+    gifts = createGiftData(noOfKids)
     
     # 3 - Add 'naughty' children (maybe)
     if input("Include naughty children (y/n)? ") == "y":
         
-        children, gifts = naughtyKids(children, gifts)
+        children, gifts = naughtyKids(children, gifts, naughtyFirst, naughtyLast)
     
     # 4 - Write child table
     writeChildCSV(children)

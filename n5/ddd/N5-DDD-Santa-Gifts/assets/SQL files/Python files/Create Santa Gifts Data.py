@@ -1,6 +1,6 @@
-# Title: Create Santa Gifts Data
+# Title: Create N5 Santa Data
 # Author: Mr Friend
-# Date: 15 Dec 2024
+# Date: 18 Dec 2024
 
 """
 Create the data and export as CSV.
@@ -21,7 +21,8 @@ start1 = "C:\\Users\\afriend1r\\OneDrive - Glow Scotland\\"
 start2 = "D:\\OneDrive - Glow Scotland\\"
 
 folder1 = "GitHub\\MrFriendCS.github.io\\"
-folder2 = "SQA - CS - N5\\DDD\\Database Files\\"
+folder2 = "SQA - CS - N5\\DDD\\Database Files\\"  # Definately N5 folder
+
 
 # Check if directory exists
 if shool in sys.path:
@@ -34,12 +35,43 @@ else:
     sys.path.append(start2 + folder1)
     school = False
 
+
 # Get extra code
 import DDDhelper
 
 
-def getChildData(count):
-    """Create the data, apart from nice, for the child entity."""
+def getNaughtyList():
+    """Read in forenames and surnames of naughty children."""
+    
+    # Initialise local variables
+    forenames = []
+    surnames = []
+    
+    if school:
+        location = start1 + folder2
+    else:
+        location = start2 + folder2
+        
+    file = open(location + "naughtyList.csv", "r")
+    
+    line = file.readline()  # ignore header
+    line = file.readline()
+    
+    while line != "":
+        
+        data = line.split(",")
+        
+        forenames = forenames + [data[0].strip()]
+        surnames = surnames + [data[1].strip()]
+        
+        line = file.readline()
+    
+    return forenames, surnames
+
+
+def createChildData(count, naughtyFirst, naughtyLast):
+    """Create the data for the child table,
+apart from nice as all children are nice."""
     
     
     @dataclass
@@ -59,12 +91,17 @@ def getChildData(count):
         children[index].childID = index + 1
         children[index].first = DDDhelper.getForename()
         children[index].last = DDDhelper.getSurname()
-    
+        
+        while (children[index].first in naughtyFirst and
+               children[index].last in naughtyLast):
+            children[index].first = DDDhelper.getForename()
+            children[index].last = DDDhelper.getSurname()
+     
     return children
 
 
-def getGiftData(noOfGifts, noOfKids):
-    """Create the data for the gift entity."""
+def createGiftData(noOfKids):
+    """Create the data for the gift entity.  Two gifts each."""
     
     
     @dataclass
@@ -78,7 +115,7 @@ def getGiftData(noOfGifts, noOfKids):
     # Initialise local variables
     listOfGifts = []
     listOfCosts = []
-    gifts = [Gift() for index in range(noOfGifts)]
+    gifts = [Gift() for index in range(noOfKids * 2)]
     
         
     # Get Gift data
@@ -101,74 +138,62 @@ def getGiftData(noOfGifts, noOfKids):
     fileIn.close()
     
     
-    # Loop for each gift
-    for index in range(noOfGifts):
-        gifts[index].giftID = index + 1
-        gifts[index].childID = DDDhelper.getNumber(1, noOfKids)
+    # Set initial giftID value    
+    giftID = 1
         
-        giftIndex = random.randint(0, len(listOfGifts)-1)
-        
-        gifts[index].gift = listOfGifts[giftIndex]
-        gifts[index].cost = listOfCosts[giftIndex]
-        
-        
-    # Check childID 172 has at least two gifts
-    # Used for an update task
+    # First half of gifts
+    offset = 0
     
-    count = 0
-    
-    for index in range(len(gifts)):
+    # Loop twice - two gifts each child
+    for loop in range(2):
         
-        if gifts[index].childID == 172:
-            count = count + 1
-    
-    if count < 2:
+        childIDs = [index for index in range(1, noOfKids+1)]
         
-        for counter in range(2-count):
+        # Loop for each child
+        for index in range(offset, offset+noOfKids):
             
-            gifts[random.randint(0, len(gifts)-1)].childID = 172
-    
+            # Pick a random child
+            childID = random.choice(childIDs)
+            
+            # Remove childID from list
+            childIDs.remove(childID)
+            
+            # Pick a random gift
+            giftIndex = random.randint(0, len(listOfGifts)-1)
+            
+            # Populate record
+            gifts[index].giftID = giftID
+            gifts[index].childID = childID
+            gifts[index].gift = listOfGifts[giftIndex]
+            gifts[index].cost = listOfCosts[giftIndex]
+            
+            # Increment giftID
+            giftID = giftID + 1
+        
+        # Second half of gifts
+        offset = noOfKids
+
+
     return gifts
 
 
-def naughtyKids(children, gifts):
-    """Insert naughty children and update all their gifts."""
-    
-    # Naughty children - 2D array
-    naughtyFirst = []
-    naughtyLast = []
-    
-    if school:
-        location = start1 + folder2
-    else:
-        location = start2 + folder2
-        
-    file = open(location + "naughtyList.csv", "r")
-    
-    line = file.readline()  # ignore header
-    line = file.readline()
-    
-    while line != "":
-        
-        data = line.split(",")
-        
-        naughtyFirst = naughtyFirst + [data[0].strip()]
-        naughtyLast = naughtyLast + [data[1].strip()]
-        
-        line = file.readline()
-    
+def naughtyKids(children, gifts, naughtyFirst, naughtyLast):
+    """Find naughty children and update all their gifts."""
+     
     # List of numbers 
-    naughtyNumbers = [index for index in range(1, len(children)-1)]
+    naughtyIDs = []
     
     # Pick index positions of naughty children
-    naughtyIDs = random.sample(naughtyNumbers, k=len(naughtyFirst))
+    #naughtyIDs = random.sample(naughtyNumbers, k=len(naughtyFirst))
 
     # Loop for each naughty child
-    for index in range(len(naughtyFirst)):
+    for index in range(len(children)):
         
-        children[naughtyIDs[index]].first = naughtyFirst[index]
-        children[naughtyIDs[index]].last = naughtyLast[index]
-        children[naughtyIDs[index]].nice = False
+        if children[index].first in naughtyFirst:
+            children[index].nice = False
+            naughtyIDs = naughtyIDs + [index+1]
+    
+    print(naughtyIDs)
 
     """
     pointer = 0
@@ -184,10 +209,6 @@ def naughtyKids(children, gifts):
             pointer = pointer + 1
     """
     
-    
-    # Convert index positions to numbers
-    for index in range(len(naughtyFirst)):
-        naughtyIDs[index] = naughtyIDs[index] + 1 
     
     
     # Loop for each gift - Set to coal
@@ -243,18 +264,21 @@ def main():
 
     # Initialise variables
     noOfKids = 200
-    noOfGifts = 400
     
-    # 1 - Get child entity data
-    children = getChildData(noOfKids)
+    # 0 - Get names of naughty children
+    naughtyFirst, naughtyLast = getNaughtyList()
+
     
-    # 2 - Get gift entity data
-    gifts = getGiftData(noOfGifts, noOfKids)
+    # 1 - Create child table data
+    children = createChildData(noOfKids, naughtyFirst, naughtyLast)
+    
+    # 2 - Create gift table data
+    gifts = createGiftData(noOfKids)
     
     # 3 - Add 'naughty' children (maybe)
     if input("Include naughty children (y/n)? ") == "y":
         
-        children, gifts = naughtyKids(children, gifts)
+        children, gifts = naughtyKids(children, gifts, naughtyFirst, naughtyLast)
     
     # 4 - Write child table
     writeChildCSV(children)
