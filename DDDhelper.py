@@ -28,11 +28,17 @@ getEye()
 def getForename() -> str:
     """Pick a random forename."""
     
-    forenames = ["Alan", "Alanna", "Andrew", "Angus", "Anthony", "Callum",
-                 "Calum", "Ciara", "Darren", "Domhnall", "Dominic", "Donald",
-                 "Erin", "Findlay", "James", "John", "Julia", "Kieran", "Liam",
-                 "Micheal", "Miyah", "Robbie", "Roderick", "Ruairidh", "Ryan",
-                 "Seumas", "Shelly", "Simon", "Stewart", "Vincent", "Wendy"]
+    forenames = ["Aimee", "Alan", "Alanna", "Alexander", "Andrew", "Aonghas", 
+                 "Angus", "Anthony", "Ava", "Caitlin", "Callum", "Calum",
+                 "Caralisa", "Ciara", "Craig", "Darren", "Domhnall",
+                 "Dominic", "Donald", "Erin", "Ethan", "Findlay", "Iain",
+                 "Ian", "India", "Innes", "James", "Jamie", "John", "Julia",
+                 "Kieran", "Lacey", "Lewis", "Liam", "Lincoln", "Maddison",
+                 "Mairi", "Mason", "Micheal", "Miyah", "Oliver", "Owen",
+                 "Patrick", "Niamh", "Rachel", "Robbie", "Roderick", "Ross",
+                 "Rowan", "Ruairidh", "Ryan", "Sam", "Seonaidh", "Seumas",
+                 "Shelly", "Simon", "Sophie", "Stewart", "Thomas", "Vincent",
+                 "Wendy"]
     
     forename = random.choice(forenames)
     
@@ -42,14 +48,15 @@ def getForename() -> str:
 def getSurname() -> str:
     """Pick a random surname."""
     
-    surnames = ["Blake", "Blackie", "Brown", "Campbell", "Clark", "Davidson",
-                "Docherty", "Ferguson", "Friend", "Galbraith", "Grant",
-                "Henderson", "Irving", "Johnson", "Jones", "MacArthur",
-                "MacDonald", "MacDougall", "MacIain", "MacKinnon", "MacLean",
-                "MacLeod", "MacNeil", "McGuire", "Millar", "Mitchell", "Monk",
-                "Paterson", "Robertson", "Simpson", "Small",
-                "Smiley", "Smith", "Smyth", "Stewart", "Thomson", "Walker",
-                "Wilson", "Young"]
+    surnames = ["Blake", "Blackie", "Boyd", "Brown", "Campbell", "Clark",
+                "Daly", "Davidson", "Docherty", "Ferguson", "Friend",
+                "Galbraith", "Grant", "Henderson", "Irving", "Johnson",
+                "Jones", "Kearney", "MacArthur", "MacDonald", "MacDougall",
+                "MacIain", "MacIsaac", "MacKinnon", "MacLean", "MacLeod",
+                "MacNeil", "McGuire", "McIntyre", "Millar", "Mitchell",
+                "Monk", "Nicholson", "Paterson", "Robertson", "Simpson",
+                "Small", "Smiley", "Smith", "Smyth", "Stewart", "Thomson",
+                "Walker", "Wilson", "Young"]
     
     surname = random.choice(surnames)
     

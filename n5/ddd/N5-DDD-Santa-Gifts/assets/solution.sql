@@ -9,7 +9,7 @@ SELECT *
     FROM Child;
 
 
--- Task 2 - Nice Children
+-- Task 2 - Nice children
 SELECT firstName, lastName
     FROM Child
     WHERE nice = TRUE;
@@ -20,13 +20,13 @@ SELECT *
     FROM Gift;
 
 
--- Task 4 - Gift Table Data
+-- Task 4 - Gift table data
 SELECT *
     FROM Gift
     WHERE item = "LEGO Technic Lamborghini";
 
 
--- Task 5 - Extra Gift
+-- Task 5 - Extra gift
 INSERT INTO Gift
     VALUES(401,98,"PS5",479.00);
 
@@ -37,7 +37,7 @@ SELECT *
     WHERE giftID = 401;
 
 
--- Task 7 - Naughty Child
+-- Task 7 - Naughty child
 UPDATE Child
     SET nice = FALSE
     WHERE childID = 172;
@@ -49,19 +49,20 @@ SELECT *
     WHERE childID = 172;
 
 
--- Task 9 - Naughty Gift
+-- Task 9 - Naughty gift
 UPDATE Gift
-    SET item = "Lump of Coal"
+    SET item = "Lump of Coal",
+        cost = 0.50
     WHERE childID = 172;
 
 
--- Task 10 - Show updated records(s)
+-- Task 10 - Show updated records
 SELECT *
     FROM Gift
     WHERE childID = 172;
 
 
--- Task 11 - Specific Gift
+-- Task 11 - Specific gift
 SELECT Child.childID, firstName, lastName
     FROM Child, Gift
     WHERE Child.childID = Gift.childID
@@ -69,12 +70,12 @@ SELECT Child.childID, firstName, lastName
     ORDER BY childID DESC;
 
 
--- Task 12 - Same Surname Gifts
+-- Task 12 - Same surname gifts
 SELECT childID, firstName
     FROM Child
     WHERE lastName = "Friend"
     ORDER BY firstName ASC;
-	
+
 
 -- Task 13 - Surname and gifts
 SELECT childID, firstName, item

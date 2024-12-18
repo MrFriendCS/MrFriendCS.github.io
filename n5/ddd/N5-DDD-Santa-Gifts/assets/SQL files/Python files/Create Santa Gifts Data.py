@@ -194,8 +194,6 @@ def naughtyKids(children, gifts, naughtyList):
     # Pick index positions of naughty children
     naughtyIDs = random.sample(naughtyNumbers, k=len(naughtyList))
     
-    print(naughtyList)
-    
     # Replace 'nice' children with 'naughty' children
     for index in range(len(naughtyIDs)):
         
@@ -262,9 +260,17 @@ def main():
 
     # Initialise variables
     noOfKids = 200
+    naughtyList = []
+    naughty = False
     
-    # 0 - Get names of naughty children
-    naughtyList = getNaughtyList()
+    
+    if input("Include naughty children (y/n)? ") == "y":
+        naughty = True
+    
+    # 0 - Get names of naughty children (maybe)
+    if naughty:
+        
+        naughtyList = getNaughtyList()
 
     
     # 1 - Create child table data
@@ -274,7 +280,7 @@ def main():
     gifts = createGiftData(noOfKids)
     
     # 3 - Add 'naughty' children (maybe)
-    if input("Include naughty children (y/n)? ") == "y":
+    if naughty:
         
         children, gifts = naughtyKids(children, gifts, naughtyList)
     
