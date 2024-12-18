@@ -19,9 +19,9 @@ Ensure that all column names are meaningful.
 
 3. Display the full names of all children whose surnames start with `Mac` or `Mc`.  Forenames are to be alphabetical.
 
-4. Display only the LEGO gifts.  Display each g only once.
+4. Display only the LEGO gifts.  Ensure there are no duplicates in the displayed list.
 
-5. Calculate the total cost of the all the gifts.
+5. Calculate the total cost of all the gifts.
 
 6. Santa's local currency is Norwegian Kroner, with £1 = 14.079458 kr.  Display the total cost in Kroner, rounded to 0 decimal places.
 
@@ -54,7 +54,7 @@ Ensure that all column names are meaningful.
                          );
 ```
 
-{:start="15"}
+{:start="16"}
 16. Mrs Claus feels that Santa has been too generous again this year.  Replace the most expensive gifts with the following gift:
 
 | gift                                   | cost |
