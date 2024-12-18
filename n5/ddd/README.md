@@ -14,11 +14,11 @@
 
 ### Abbreviations
 
-del = delete
-eq = equi-join
-in = insert
-ob = order by
-sl = select
+del = delete,
+eq = equi-join,
+in = insert,
+ob = order by,
+sl = select,
 up = update
 
 
