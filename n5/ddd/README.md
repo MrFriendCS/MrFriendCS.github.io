@@ -3,12 +3,23 @@
 
 ## DDD Tasks
 
-| Title         | Description | Concepts | Comments |
-| -----         | ----------- | -------- | -------- |
-| | | | |
+| Title              | Description                        | Concepts            | Comments | 
+| -----              | -----------                        | --------            | -------- |
+| N5-DDD-Prison      |                                    | sl, lo              | |
+| N5-DDD-Video-Games |                                    | sl, ob              | |
+| N5-DDD-Membership  |                                    | sl, eq, in, up, del | |
+| N5-DDD-Santa-Gifts | Xmas themed tasks                  | sl, eq, in, up      | |
+| N5-DDD-Clydeview   | Multiple tasks in a single db file | Everything          | |
 
 
 ### Abbreviations
+
+del = delete
+eq = equi-join
+in = insert
+ob = order by
+sl = select
+up = update
 
 
 ## DDD Assignment Tasks
