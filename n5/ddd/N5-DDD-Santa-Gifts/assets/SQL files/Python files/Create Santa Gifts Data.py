@@ -192,6 +192,7 @@ def createGiftData(noOfKids):
             
             if gifts[index].childID in removeIDs:
                 gifts[index].childID = extraID
+                print(extraID)
         
         # Next batch of children
         removeIDs = [119, 158]
