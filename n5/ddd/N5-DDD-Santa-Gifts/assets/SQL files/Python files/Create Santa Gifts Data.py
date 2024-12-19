@@ -212,6 +212,10 @@ def naughtyKids(children, gifts, naughtyList):
     # Pick index positions of naughty children
     naughtyIDs = random.sample(naughtyNumbers, k=len(naughtyList))
     
+    # childID 172 used in a task
+    while 171 in naughtyIDs:
+        naughtyIDs = random.sample(naughtyNumbers, k=len(naughtyList))
+    
     # Replace 'nice' children with 'naughty' children
     for index in range(len(naughtyIDs)):
         
