@@ -2,99 +2,78 @@
 
 ## Entity Relationship Diagram
 
-![ERD](assets/erd.png "ERD")
+![ERD](assets/erd.png "ERD-HousePupil")
 
 
 ## Data Dictionary
 
 ### Entity: House
 
-| Attribute        | Key   | Typ  | Size  | Req'd | Validation |
-| ---------        | :---: | ---- | :---: | :---: | ---------- |
-| house            | PK    | text | 15    | Y     |            |
-| guidance_teacher |       | text | 30    | N     |            |
-| colour           |       | text | 15    | Y     |            |
+| Attribute       | Key   | Typ  | Size  | Req'd | Validation |
+| ---------       | :---: | ---- | :---: | :---: | ---------- |
+| name           | PK    | Text | 15    | Y     |            |
+| guidanceTeacher |       | Text | 30    | N     |            |
+| colour          |       | Text | 15    | Y     |            |
 
 
 ### Entity: Pupil
 
-| Attribute  | Key   | Type   | Size  | Req'd | Validation |
-| ---------  | :---: | ----   | :---: | :---: | ---------- |
-| id         | PK    | text   | 10    | Y     |            |
-| last_name  |       | text   | 30    | Y     |            |
-| first_name |       | text   | 20    | Y     |            |
-| gender     |       | text   | 10    | N     |            |
-| house      | FK    | text   | 15    | Y     | Exists in House table |
-| year       |       | text   | 5     | Y     |            |
-| age        |       | number |       | Y     |            |
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| id        | PK    | Text   | 10    | Y     |            |
+| lastName  |       | Text   | 30    | Y     |            |
+| firstName |       | Text   | 20    | Y     |            |
+| gender    |       | Text   | 10    | N     |            |
+| house     | FK    | Text   | 15    | Y     | Exists as name in House table |
+| year      |       | Text   | 5     | Y     |            |
+| age       |       | Number |       | Y     |            |
 
 
-## Tasks
+### Tasks
 
-After completing a task, cut and paste the SQL into a seperate file.  The first 2 files have already been created.
+1. Write the SQL to show all records from the `Pupil` table.
 
-### Task 1
+2. Display all records from the `House` table.
 
-Write SQL statements for the following:
+3. Show the `house` field and the `colour` field from the House table.
 
-a)	Write SQL to show all records from the Pupil table
+4. Display the full names, `firstName` and `lastName`, of all pupils from the Pupil table.
 
-b)	Select all records from the House table
+5. Write the SQL to show all the pupil data for only the S3 pupils.
 
-c)	Select the `house` field and the `colour` field from the House table
+6. For the full names of the S1 pupils.
 
-d)	Select `first_name` and `last_name` from the Pupil table
+7. Show `firstName`, `lastName`, `house` for pupils in Clyde house.
 
+8. Using the `House` table, show all the details of the `Forth` house.
 
-### Task 2
+9. Write a statment to show `firstName`, `lastName` and `house` from the Pupil table for pupils aged less than 12.
 
-a)	Write SQL to show records from the Pupil table for pupils in S3
+10. Show `firstName`, `lastName` and `gender` from the Pupil table for pupils who are 16 or under.
 
-b)	Show `first_name` and `last_name` from the Pupil table for pupils in S1
+11. Show `firstName`, `lastName` from the Pupil table for pupils who are 13.
 
-c)	Show `first_name`, `last_name`, 'house' from the Pupil table for pupils in Clyde house
+12.	Show `firstName` and `house` from the Pupil table for pupils who are 14.
 
-d)	Show the `guidance_teacher` from the House table where the house is Forth
+13.	Show `firstName` and `lastName` from the Pupil table for pupils in Kelvin and S1.
 
+14.	Write a statement to show `firstName`, `lastName` and `house` from the Pupil table for pupils in Kelvin or Clyde.
 
-### Task 3
+15.	Show `firstName` and `lastName` from the Pupil table for pupils in S4 or S5.
 
-a)	Write a statment to show 'first_name', 'last_name' and 'house' from the Pupil table for pupils aged less than 12
+16.	show `firstName`, `lastName`, `house` and `year` from the Pupil table for pupils from S3 pupils who are in Forth house.
 
-b)	Show 'first_name', 'last_name' and 'gender' from the Pupil table for pupils who are 16 or under
+17.	Write a statement to show everything from the Pupil table for pupils in Forth or Kelvin, sorted by year descending, and age ascending.
 
-c)	Show 'first_name', 'last_name' from the Pupil table for pupils who are 13
+18.	Show `firstName`, `lastName` and `age` from the Pupil table for boys in Clyde, sorted by surname ascending, and age ascending .
 
-d)	Show 'first_name' and 'house' from the Pupil table for pupils who are 14
+19.	Show everything from the Pupil table for girls in Kelvin, sorted by year ascending, and age ascending.
 
+20.	Show everything from the Pupil table for pupils in Forth and S3, sorted by surname ascending, and then first name ascending .
 
-### Task 4
+21.	Add a new record to the House table. There is a new house called `Paisley` house with `Mrs Hunter` as the guidance teacher. Its colour is `black`.
 
-a)	Show `first_name` and `last_name` from the Pupil table for pupils in Kelvin and S1
-
-b)	Write a statement to show `first_name`, `last_name` and `house` from the Pupil table for pupils in Kelvin or Clyde
-
-c)	Show `first_name` and `last_name` from the Pupil table for pupils in S4 or S5 
-
-d)	show `first_name`, `last_name`, `house` and `year` from the Pupil table for pupils from S3 pupils who are in Forth house
-
-
-### Task 5
-
-a)	Write a statement to show everything from the Pupil table for pupils in Forth or Kelvin, sorted by year descending, and age ascending
-
-b)	Show `first_name`, `last_name` and `age` from the Pupil table for boys in Clyde, sorted by surname ascending, and age ascending 
-
-c)	Show everything from the Pupil table for girls in Kelvin, sorted by year ascending, and age ascending
-
-d)	Show everything from the Pupil table for pupils in Forth and S3, sorted by surname ascending, and then first name ascending 
-
-
-### Task 6
-
-a)	Add a new record to the House table. There is a new house called ‘Paisley’ house with ‘Mrs Hunter” as the guidance teacher. Its colour is ‘black’
-
-b)	Add a new record to the Pupil table.  The details are:
+22.	Add a new record to the Pupil table.  The details are:
 
 ```
 id: 08-8774112
@@ -106,7 +85,7 @@ year: S3
 age: 13
 ```
 
-c)	Add a new record to the Pupil table.  The details are:
+23.	Add a new record to the Pupil table.  The details are:
 
 ```
 id: 20-2111447
@@ -118,7 +97,7 @@ year: S1
 age: 11
 ```
 
-d)	Add a new record to the Pupil table.  The details are:
+24.	Add a new record to the Pupil table.  The details are:
 
 ```
 ID: 05-1328078
@@ -130,34 +109,26 @@ Year: S5
 Age: 17
 ```
 
-### Task 7
+25.	From now on, Mr N. Craven wishes to be known as DJ Nicky Cray and has changed his house colour to rainbow.  Write a statement to update the record in the House table.
 
-a)	From now on, Mr N. Craven wishes to be known as DJ Nicky Cray and has changed his house colour to rainbow.  Write a statement to update the record in the House table
+26.	Write a statement to update the record for Suellen Wrigley to Kelvin.
 
-b)	Write a statement to update the record for Suellen Wrigley to Kelvin
+27.	Write a statement to update the record for Mary Cawdron to Mary Lawrie.
 
-c)	Write a statement to update the record for Mary Cawdron to Mary Lawrie
+28.	Write a statement to update the record for Nora Coil to Clyde.
 
-d)	Write a statement to update the record for Nora Coil to Clyde
+29.	It was decided that the Paisley house was a terrible idea. Write a SQL statement to delete this house from the database.
 
+30.	Write a SQL statement to delete Ernie Dawson from the Pupil table.
 
-### Task 8
+31.	Write a statement to delete Barry Wales from the Pupil table.
 
-a)	It was decided that the Paisley house was a terrible idea. Write a SQL statement to delete this house from the database
+32.	Delete Ben Barry from the Pupil table.
 
-b)	Write a SQL statement to delete Ernie Dawson from the Pupil table
+33.	Write a statement that shows `firstName`, `lastName` and `guidanceTeacher` for all pupils.
 
-c)	Write a statement to delete Barry Wales from the Pupil table
+34.	Shows first name, surname , age and guidance teacher for girls in the year group S3, ordered by age ascending, surname ascending.
 
-d)	Delete Ben Barry from the Pupil table
+35.	Show forename, surname and year for all pupils in Forth, order by surname ascending.
 
-
-### Task 9
-
-a)	Write a statement that shows `first_name`, `last_name` and `guidance_teacher` for all pupils
-
-b)	Shows first name, surname , age and guidance teacher for girls in the year group S3, ordered by age ascending, surname ascending
-
-c)	Show forename, surname and year for all pupils in Forth, order by surname ascending
-
-d)	Shows forename, surname and guidance teacher for Pupils in the year group S5 and gender male, ordered by age descending, surname ascending
+36.	Shows forename, surname and guidance teacher for Pupils in the year group S5 and gender male, ordered by age descending, surname ascending.

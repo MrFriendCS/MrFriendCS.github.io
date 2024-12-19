@@ -1,8 +1,8 @@
 CREATE TABLE House (
-    house VARCHAR(15) NOT NULL,
-    guidance_teacher VARCHAR(30),
+    name VARCHAR(15) NOT NULL,
+    guidanceTeacher VARCHAR(30),
     colour VARCHAR(15) NOT NULL,
-    PRIMARY KEY (house)
+    PRIMARY KEY (name)
 );
 
 INSERT INTO House VALUES ("Clyde","Mr D. Connelly","Red");

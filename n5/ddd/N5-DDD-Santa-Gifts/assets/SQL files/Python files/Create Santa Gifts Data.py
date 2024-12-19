@@ -1,6 +1,6 @@
 # Title: Create N5 Santa Data
 # Author: Mr Friend
-# Date: 18 Dec 2024
+# Date: 19 Dec 2024
 
 """
 Create the data and export as CSV.
@@ -178,6 +178,24 @@ def createGiftData(noOfKids):
         
         # Second half of gifts
         offset = noOfKids
+        
+    
+    # Remove 4 children and give their gifts to two other children
+    removeIDs = [47, 73]
+    extraID = 56
+    
+    # Loop twice
+    for loop in range(2):
+    
+        # Loop for each gift
+        for index in range(len(gifts)):
+            
+            if gifts[index].childID in removeIDs:
+                gifts[index].childID = extraID
+        
+        # Next batch of children
+        removeIDs = [119, 158]
+        extraID = 81
 
 
     return gifts
@@ -293,3 +311,5 @@ def main():
 
 # Call main()
 main()
+
+

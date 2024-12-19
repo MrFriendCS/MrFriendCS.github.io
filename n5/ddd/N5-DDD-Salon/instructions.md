@@ -6,21 +6,21 @@
 
 | Attribute     | Key   | Type   | Size  | Req'd | Validation |
 | ---------     | :---: | ----   | :---: | :---: | ---------- |
-| hairdresserid | PK    | number |       | Y     |            |
-| firstname     |       | text   | 20    | N     |            |
-| lastname      |       | text   | 30    | N     |            |
-| contactnumber |       | text   | 13    | Y     | length: >= 11 |
-| salon         |       | text   | 30    | N     |            |
+| hairdresserid | PK    | Number |       | Y     |            |
+| firstname     |       | Text   | 20    | N     |            |
+| lastname      |       | Text   | 30    | N     |            |
+| contactnumber |       | Text   | 13    | Y     | Length: >= 11 |
+| salon         |       | Text   | 30    | N     |            |
 
 ### Entity: Client
 
 | Attribute     | Key   | Type   | Size  | Req'd | Validation |
 | ---------     | :---: | ----   | :---: | :---: | ---------- |
-| clientid      | PK    | number |       | Y     |            |
-| hairdresserid | FK    | number |       | Y     | Exists in Hairdresser table |
-| firstname     |       | text   | 20    | N     |            |
-| lastname      |       | text   | 30    | N     |            |
-| contactnumber |       | text   | 13    | Y     | length: >= 11 |
+| clientid      | PK    | Number |       | Y     |            |
+| hairdresserid | FK    | Number |       | Y     | Exists in Hairdresser table |
+| firstname     |       | Text   | 20    | N     |            |
+| lastname      |       | Text   | 30    | N     |            |
+| contactnumber |       | Text   | 13    | Y     | Length: >= 11 |
 
 ## Tasks
 
