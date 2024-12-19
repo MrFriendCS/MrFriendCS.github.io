@@ -180,24 +180,19 @@ def createGiftData(noOfKids):
         offset = noOfKids
         
     
-    # Remove 4 children and give their gifts to two other children
-    removeIDs = [47, 73]
-    extraID = 56
+    # Remove children and give their gifts to other children
+    removeIDs = [[47, 73], [119, 158]]
+    extraIDs = [56, 81]
     
     # Loop twice
-    for loop in range(2):
+    for loop in range(len(extraIDs)):
     
         # Loop for each gift
         for index in range(len(gifts)):
             
-            if gifts[index].childID in removeIDs:
-                gifts[index].childID = extraID
-                print(extraID)
+            if gifts[index].childID in removeIDs[loop]:
+                gifts[index].childID = extraIDs[loop]
         
-        # Next batch of children
-        removeIDs = [119, 158]
-        extraID = 81
-
 
     return gifts
 

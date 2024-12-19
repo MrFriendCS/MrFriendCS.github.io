@@ -55,9 +55,11 @@ Ensure that all column names are meaningful.
 ```
 
 {:start="16"}
-16. Naugthy children get a lump of coal.  Who is getting the most, and how many lumps will they get?
+16. Display the full details from `Child` and `Gift` of the newly naughty children.  Sort forenames alphabetically, and then childID from smallest to largest.
 
-17. Mrs Claus feels that Santa has been too generous again this year.  Replace the most expensive gifts with the following gift:
+17. Naugthy children get a lump of coal.  Who is getting the most, and how many lumps will they get?
+
+18. Mrs Claus feels that Santa has been too generous again this year.  Replace the most expensive gifts with the following gift:
 
 | gift                                   | cost |
 | ----                                   | ---- |
