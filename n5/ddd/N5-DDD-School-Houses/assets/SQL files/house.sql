@@ -1,10 +1,13 @@
 CREATE TABLE House (
-    name VARCHAR(15) NOT NULL,
+    id INT NOT NULL,
+    name VARCHAR(20) NOT NULL,
     guidanceTeacher VARCHAR(30),
-    colour VARCHAR(15) NOT NULL,
-    PRIMARY KEY (name)
+    emblem VARCHAR(10) NOT NULL,
+    colour VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id)
 );
 
-INSERT INTO House VALUES ("Clyde","Mr D. Connelly","Red");
-INSERT INTO House VALUES ("Forth","Mr N. Craven","Green");
-INSERT INTO House VALUES ("Kelvin","Mrs A. MacInnes","Yellow");
+INSERT INTO House VALUES (1,"Gryffindor","Prof McGonagall","Lion","Scarlett and Gold");
+INSERT INTO House VALUES (2,"Hufflepuff","Prof Sprout","Badger","Yellow and Black");
+INSERT INTO House VALUES (3,"Ravenclaw","Prof Flitwick","Eagle","Blue and Bronze");
+INSERT INTO House VALUES (4,"Slytherin","Prof Snape","Snake","Green and Silver");

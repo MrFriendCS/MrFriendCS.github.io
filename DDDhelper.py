@@ -23,6 +23,7 @@ getColour()
 getGift()
 getHair()
 getEye()
+getSchoolYear(primary=False)
 """
 
 def getForename() -> str:
@@ -407,3 +408,21 @@ def getConviction() -> str:
   
     return conviction
 
+
+
+
+def getSchoolYear(primary=False) -> str:
+    """Pick a school year model."""
+    
+    # Initialise list
+    if primary:
+        years = ["P1", "P2", "P3", "P4", "P5", "P6", "P7"]
+    else:
+        years = ["S1", "S2", "S3", "S4", "S5", "S6"]
+        
+    # Pick year
+    year = random.choice(years)
+  
+    return year
+
+    

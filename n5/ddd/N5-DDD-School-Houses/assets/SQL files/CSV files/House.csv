@@ -1,4 +1,5 @@
-house,guidance_teacher,colour
-Clyde,Mr D. Connelly,Red
-Forth,Mr N. Craven,Green
-Kelvin,Mrs A. MacInnes,Yellow
+id,house,guidanceTeacher,emblem,colour
+1,Gryffindor,Prof McGonagall,Lion,Scarlett and Gold
+2,Hufflepuff,Prof Sprout,Badger,Yellow and Black
+3,Ravenclaw,Prof Flitwick,Eagle,Blue and Bronze
+4,Slytherin,Prof Snape,Snake,Green and Silver

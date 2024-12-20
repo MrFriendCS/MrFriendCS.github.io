@@ -14,10 +14,12 @@ fileOut = open("../House.sql", "w")
 
 # Create table
 table = """CREATE TABLE House (
-    name VARCHAR(15) NOT NULL,
+    id INT NOT NULL,
+    name VARCHAR(20) NOT NULL,
     guidanceTeacher VARCHAR(30),
-    colour VARCHAR(15) NOT NULL,
-    PRIMARY KEY (name)
+    emblem VARCHAR(10) NOT NULL,
+    colour VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id)
 );"""
               
 fileOut.write(table + "\n\n")
@@ -34,9 +36,11 @@ while line != "":
     
     fileOut.write("INSERT INTO House VALUES (")
     
-    fileOut.write("\"" + data[0].strip() + "\",")  # hairdresserid
-    fileOut.write("\"" + data[1].strip() + "\",")  # guidance_teacher
-    fileOut.write("\"" + data[2].strip() + "\"")  # colour
+    fileOut.write(       data[0].strip() + ",")  # id
+    fileOut.write("\"" + data[1].strip() + "\",")  # name
+    fileOut.write("\"" + data[2].strip() + "\",")  # guidanceTeacher
+    fileOut.write("\"" + data[3].strip() + "\",")  # emblem
+    fileOut.write("\"" + data[4].strip() + "\"")  # colour
     fileOut.write(");\n")
  
     line = fileIn.readline()
