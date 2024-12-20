@@ -1,31 +1,32 @@
-# N5 DDD School Houses Part 2
+# N5 DDD School Houses
 
 
 ## Entity Relationship Diagram (ERD)
 
-![ERD](assets/erd.png "ERD-HousePupil")
+![ERD](assets/Diagrams/ERD-HousePupil.png)
 
 
 ## Data Dictionary
 
 ### Entity: House
 
-| Attribute       | Key   | Type | Size  | Req'd | Validation |
-| ---------       | :---: | ---- | :---: | :---: | ---------- |
-| name            | PK    | Text | 15    | Y     |            |
-| guidanceTeacher |       | Text | 30    | N     |            |
-| colour          |       | Text | 15    | Y     |            |
+| Attribute       | Key   | Type   | Size  | Req'd | Validation |
+| ---------       | :---: | ----   | :---: | :---: | ---------- |
+| id              | PK    | Number |       | Y     | |
+| name            |       | Text   | 20    | Y     | |
+| guidanceTeacher |       | Text   | 30    | N     | |
+| emblem          |       | Text   | 10    | Y     | |
+| colour          |       | Text   | 20    | Y     | |
 
 
 ### Entity: Pupil
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
-| id        | PK    | Text   | 10    | Y     |            |
-| lastName  |       | Text   | 30    | Y     |            |
-| firstName |       | Text   | 20    | Y     |            |
-| gender    |       | Text   | 10    | N     | Restricted choice: Female, Male, Not disclosed |
-| house     | FK    | Text   | 15    | Y     | Exists as name in House table |
+| id        | PK    | Text   | 10    | Y     | |
+| lastName  |       | Text   | 30    | Y     | |
+| firstName |       | Text   | 20    | Y     | |
+| house     | FK    | Number |       | Y     | Exists as id in House table |
 | year      |       | Text   | 5     | Y     | Restricted choice: S1, S2, S3, S4, S5, S6 |
 | age       |       | Number |       | Y     | Range: >= 11 and <= 18 |
 
