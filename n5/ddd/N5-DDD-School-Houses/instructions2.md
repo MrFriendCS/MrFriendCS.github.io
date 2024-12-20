@@ -57,6 +57,4 @@ Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 
 11. Show the emblem, house colour, forename, and year group.  Sort the results by emblem alphabetically, and year group from  youngest to oldest.
 
-12. Shows first name, surname, age and guidance teacher for pupils in the year group S3, ordered by age increasing, and surname alphabetically.
-
-13. Display the full names and guidance teacher of S5 pupils.  Sort the results by age, oldest to youngest, and then surname alphabetically.
+12. Display the forename, surname, age, and guidance teacher for pupils in S3, sort by age decreasing, surname alphabetically, then forename alphabetically.
