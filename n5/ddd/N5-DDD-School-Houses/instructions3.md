@@ -63,7 +63,7 @@ house: Slytherin
 
 5. Write a SQL statement to display everything in the house table.
 
-6. There is a new house called `Berneray` house with `Prof MacNeil` as the guidance teacher. Its emblem is a `Sheep` and the house colour is `Green and Black`.  Use the next available `id` to add it to the house table.
+6. There is a new house called `Berneray` house. Its emblem is a `Sheep` and the house colour is `Green and Black`.  Unfortunately, there no one has volunteered to be the guidance teacher.  Use the next available `id` to add the available data to the house table.
 
 7. Display the new house record.
 
@@ -77,30 +77,14 @@ house: Slytherin
 
 12. Sally Holby's age has been incorrectly recorded.  Using her pupil id, change her age to 15.
 
-13. Colin Fifth should really be Colin Forth, also he's in S1.  Using his pupil id, update his record.
+13. Colin Fifth should really be Colin Forth, also he should be in S1.  Using his pupil id, update his record.
 
-12. Display all of your details from the pupil and house table.
+14. Display all of your details from the pupil and house table.
 
-13. Change your record and move to a different house.
+15. Using your pupil id, change your record and move to a different house.
 
-14. Display the updated record.
+16. Display the updated record.
 
-7. Write a statement to update the record for Mary Cawdron to Mary Lawrie.
+17. Berneray house was a short lived idea. Write a SQL statement to remove this house from the database.
 
-8. Write a statement to update the record for Nora Coil to Clyde.
-
-9. Write a SQL statement to remove Ernie Dawson from the Pupil table.
-
-10. Berneray house was a short lived idea. Write a SQL statement to remove this house from the database.
-
-1. Write a statement to delete Barry Wales from the Pupil table.
-
-2. Delete Ben Barry from the Pupil table.
-
-3. Write a statement that shows `firstName`, `lastName` and `guidanceTeacher` for all pupils.
-
-4. Shows first name, surname, age and guidance teacher for pupils in the year group S3, ordered by age increasing, and surname alphabetically.
-
-5. Show forename, surname and year for all pupils in Forth, order by surname ascending.
-
-6. Display the names and guidance teacher for S5 pupils who are male.  Sort the results by age, oldest to youngest, and surname alphabetically.
+18. John Bull is a Muggle!  He should never have been enrolled, and has now been expelled.  Remove him from the database.

@@ -108,17 +108,23 @@ def createPupilData(count, localPupils):
         pupils[index].age = 11 + int(pupils[index].year[-1])
     
     
-    # pupilID 93 used in a task
+    # pupilID 93 used in a task - wrong age
     pupils[92].forename = "Sally"
     pupils[92].surname = "Holby"
     pupils[92].year = "S4"
     pupils[92].age = 11
     
-    # pupilID 205 used in a task
+    # pupilID 205 used in a task - wrong name and year
     pupils[204].forename = "Colin"
     pupils[204].surname = "Fifth"
     pupils[204].year = "S5"
     pupils[204].age = 13
+    
+    # pupilID 278 used in a task - a Muggle!
+    pupils[277].forename = "John"
+    pupils[277].surname = "Bull"
+    pupils[277].year = "S1"
+    pupils[277].age = 11
         
      
     return pupils
@@ -136,7 +142,7 @@ def addPupils(pupils, localPupils):
     pupilIDs = random.sample(pupilNumbers, k=len(localPupils))
     
     # pupilID 93 and 205 used in a task
-    while 92 in pupilIDs or 204 in pupilIDs:
+    while 92 in pupilIDs or 204 in pupilIDs or 277 in pupilIDs:
         pupilIDs = random.sample(pupilNumbers, k=len(localPupils))
     
     # Replace 'nice' children with 'naughty' children
