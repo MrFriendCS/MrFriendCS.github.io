@@ -1,4 +1,4 @@
-# N5 DDD School Houses Part 1
+# N5 DDD School Houses
 
 
 ## Entity Relationship Diagram (ERD)
@@ -65,10 +65,10 @@
 
 16.	Show all the details of pupils who have the same surname as you, and are at least 14 years old.
 
-17.	Write a statement to show all the pupil records, sorted by surname and then forename, both alphabetically..
+17.	Write a statement to show all the pupil records, sorted by surname and then forename, both alphabetically.
 
-18.	Show `firstName`, `lastName` and `age` from the Pupil table for boys in Clyde, sorted by surname ascending, and age ascending .
+18.	Show name and age of all pupils, sorted by age, oldest to youngest, and then surname alphbetically.
 
-19.	Show everything from the Pupil table for girls in Kelvin, sorted by year ascending, and age ascending.
+19.	Display the name and year of all S5 and S6 pupils sorted by year, lowest first, and then forename and surname alphbetically.
 
 20.	Show everything from the Pupil table for pupils in Forth and S3, sorted by surname ascending, and then first name ascending .

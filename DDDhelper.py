@@ -1,6 +1,6 @@
 # Title: DDD Helper
 # Author: Mr Friend
-# Date: 6 Oct 2024
+# Date: 20 dec 2024
 
 """Functions to help create data for N5 and Higher DDD tasks.""" 
 
@@ -409,8 +409,6 @@ def getConviction() -> str:
     return conviction
 
 
-
-
 def getSchoolYear(primary=False) -> str:
     """Pick a school year model."""
     
@@ -424,5 +422,3 @@ def getSchoolYear(primary=False) -> str:
     year = random.choice(years)
   
     return year
-
-    
