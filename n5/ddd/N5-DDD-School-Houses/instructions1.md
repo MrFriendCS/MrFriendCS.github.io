@@ -29,7 +29,7 @@ Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 | lastName  |       | Text   | 30    | Y     | |
 | firstName |       | Text   | 20    | Y     | |
 | house     | FK    | Number |       | Y     | Exists as id in House table |
-| year      |       | Text   | 5     | Y     | Restricted choice: S1, S2, S3, S4, S5, S6 |
+| year      |       | Text   | 2     | Y     | Restricted choice: S1, S2, S3, S4, S5, S6 |
 | age       |       | Number |       | Y     | Range: >= 11 and <= 18 |
 
 

@@ -29,60 +29,34 @@ Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 | lastName  |       | Text   | 30    | Y     | |
 | firstName |       | Text   | 20    | Y     | |
 | house     | FK    | Number |       | Y     | Exists as id in House table |
-| year      |       | Text   | 5     | Y     | Restricted choice: S1, S2, S3, S4, S5, S6 |
+| year      |       | Text   | 2     | Y     | Restricted choice: S1, S2, S3, S4, S5, S6 |
 | age       |       | Number |       | Y     | Range: >= 11 and <= 18 |
 
 
 ### Tasks
 
-1. Add a new pupil to the school.  The details are:
+1. Write a SQL statement to display everything in the pupil table.
 
-```
-id: 301
-lastName: Potter
-firstName: Harry
-house: Gryffindor
-year: S1
-age: 11
-```
+2. Display everything in the house table.
 
-2. Add a another new pupil.  The details are:
+3. Create a single SQL statement to display everything in the pupil and house tables. 
 
-```
-id: 302
-firstName: Draco 
-surname: Malfoy
-house: Slytherin
-age: 11
-year: S1
-```
+4. Display the forename, age, and house of all pupils.
 
-3. Write the SQL to display the new pupil records.
+5. Write a statement that shows `firstName`, `lastName` and `guidanceTeacher` for all pupils.
 
-4. There is a new house called `Berneray` house with `Prof MacNeil` as the guidance teacher. Its emblem is a `Sheep` and the house colour is `Green and White`.  Use the next available `id` to add it to the House table.
+6. Display the forename, surname, and year group for all pupils in Slytherin house.
 
-5. Write the SQL to display the new house record.
+7. Using both tables, display all of your details.
 
-5. From now on, Mr N. Craven wishes to be known as DJ Nicky Cray and has changed his house colour to crimson.  Write a statement to make this change in the House table.
+8. Display the details of all pupils with the same surname as you whose house emblem is an eagle.
 
-6. Display full names and house
+9. Show forename, surname and year for all pupils in Hufflepuff, order by surname ascending.
 
-7. Write a statement to update the record for Mary Cawdron to Mary Lawrie.
+10. Show the surname, forename, year group, and guidance teacher of each pupil.  Sort by year group, oldest to youngest, and surname alphabetically.
 
-8. Write a statement to update the record for Nora Coil to Clyde.
+11. Show the emblem, house colour, forename, and year group.  Sort the results by emblem alphabetically, and year group from  youngest to oldest.
 
-9. Write a SQL statement to remove Ernie Dawson from the Pupil table.
+12. Shows first name, surname, age and guidance teacher for pupils in the year group S3, ordered by age increasing, and surname alphabetically.
 
-10. Berneray house was a short lived idea. Write a SQL statement to delete this house from the database.
-
-1. Write a statement to delete Barry Wales from the Pupil table.
-
-2. Delete Ben Barry from the Pupil table.
-
-3. Write a statement that shows `firstName`, `lastName` and `guidanceTeacher` for all pupils.
-
-4. Shows first name, surname, age and guidance teacher for girls in the year group S3, ordered by age ascending, surname ascending.
-
-5. Show forename, surname and year for all pupils in Forth, order by surname ascending.
-
-6. Display the names and guidance teacher for S5 pupils who are male.  Sort the results by age, oldest to youngest, and surname alphabetically.
+13. Display the full names and guidance teacher of S5 pupils.  Sort the results by age, oldest to youngest, and then surname alphabetically.

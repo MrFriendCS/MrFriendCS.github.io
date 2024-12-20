@@ -106,6 +106,19 @@ def createPupilData(count, localPupils):
         pupils[index].house = DDDhelper.getNumber(1, 4)
         pupils[index].year = DDDhelper.getSchoolYear()
         pupils[index].age = 11 + int(pupils[index].year[-1])
+    
+    
+    # pupilID 93 used in a task
+    pupils[92].forename = "Sally"
+    pupils[92].surname = "Holby"
+    pupils[92].year = "S4"
+    pupils[92].age = 11
+    
+    # pupilID 205 used in a task
+    pupils[204].forename = "Colin"
+    pupils[204].surname = "Fifth"
+    pupils[204].year = "S5"
+    pupils[204].age = 13
         
      
     return pupils
@@ -122,9 +135,9 @@ def addPupils(pupils, localPupils):
     # Pick index positions of naughty children
     pupilIDs = random.sample(pupilNumbers, k=len(localPupils))
     
-    # childID 172 used in a task
-    #while 171 in naughtyIDs:
-        #naughtyIDs = random.sample(naughtyNumbers, k=len(naughtyList))
+    # pupilID 93 and 205 used in a task
+    while 92 in pupilIDs or 204 in pupilIDs:
+        pupilIDs = random.sample(pupilNumbers, k=len(localPupils))
     
     # Replace 'nice' children with 'naughty' children
     for index in range(len(pupilIDs)):
@@ -171,23 +184,19 @@ def main():
     if input("Include local pupils (y/n)? ") == "y":
         addLocal = True
     
-    # 0 - Get names of pupils (maybe)
+    # 1 - Get names of pupils (maybe)
     if addLocal:
-        
-        localPupils = getLocalPupils()
+       localPupils = getLocalPupils()
 
-    
-    # 1 - Create child table data
+    # 2 - Create child table data
     pupils = createPupilData(noOfPupils, localPupils)
     
     # 3 - Add 'naughty' children (maybe)
-    if addLocal:
-        
+    if addLocal: 
         pupils = addPupils(pupils, localPupils)
     
     # 4 - Write child table
     writeChildCSV(pupils)
-
 
 
 # Call main()

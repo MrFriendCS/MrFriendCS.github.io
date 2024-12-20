@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDD Implementation</title>
+    <style>
+        * {font-family: sans-serif;}
+    </style>
+</head>
+
+<body>
+<h1>N5 DDD Implementation Tasks</h1>
+<h2>Display data</h2>
+    <form>
+        <fieldset>
+            <legend>Single table</legend>
+            
+            <label>
+                <input type="checkbox" name="option" value="select_all_fields">
+                All fields from a table
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="select_some_fields">
+                Some fields from a table
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="filter_simple">
+                Filter results (simple)
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="filter_complex">
+                Filter results (complex)
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="sort_by_field">
+                Sort using a single field
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="sort_by_multiple_fields">
+                Sort using multiple fields
+            </label><br>
+        </fieldset>
+    </form>
+	
+    <form>
+        <fieldset>
+            <legend>Two tables</legend>
+            
+            <label>
+                <input type="checkbox" name="option" value="select_all_fields">
+                All fields from two tables
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="select_some_fields">
+                Some fields from two tables
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="filter_simple">
+                Filter results (simple)
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="filter_complex">
+                Filter results (complex) using fields from different tables
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="sort_by_field">
+                Sort using fields from one table
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="sort_by_multiple_fields">
+                Sort using fields from two tables
+            </label><br>
+        </fieldset>
+    </form>
+	
+<h2>Add data</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+            
+            <label>
+                <input type="checkbox" name="option" value="select_all_fields">
+                Single record – all fields
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="select_some_fields">
+                Single record – some fields
+            </label><br>
+        </fieldset>
+    </form>
+
+<h2>Change data</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+            
+            <label>
+                <input type="checkbox" name="option" value="select_all_fields">
+                Single record – change single field
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="select_some_fields">
+                Single record – change multiple fields
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="select_some_fields">
+                Multiple records
+            </label><br>
+        </fieldset>
+    </form>
+
+<h2>Remove data</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+            
+            <label>
+                <input type="checkbox" name="option" value="select_all_fields">
+                Single record – using single condition
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="select_some_fields">
+                Single record – using multiple conditions
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="option" value="select_some_fields">
+                Multiple records
+            </label><br>
+        </fieldset>
+    </form>
+	
+</body>
+</html>
