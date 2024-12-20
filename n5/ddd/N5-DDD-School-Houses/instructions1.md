@@ -3,7 +3,7 @@
 
 ## Entity Relationship Diagram (ERD)
 
-![ERD](assets/erd.png "ERD-HousePupil")
+![ERD](assets/ERD-HousePupil.png)
 
 
 ## Data Dictionary
