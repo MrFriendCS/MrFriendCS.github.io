@@ -1,6 +1,6 @@
 # N5 DDD - Santa Gifts
 
-File: [Santa.db](assets/Santa.db "Download file")
+Database file: [Santa.db](assets/Santa.db "Download file")
 
 ## Introduction
 

@@ -1,5 +1,7 @@
 # N5 DDD School Houses
 
+Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
+
 
 ## Entity Relationship Diagram (ERD)
 

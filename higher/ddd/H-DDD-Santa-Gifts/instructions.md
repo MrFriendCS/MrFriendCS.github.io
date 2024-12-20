@@ -1,6 +1,33 @@
 # H DDD - Santa Gifts
 
-File: [Santa.db](../../../n5/ddd/N5-DDD-Santa-Gifts/assets/Santa.db "Download file")
+Database file: [Santa.db](../../../n5/ddd/N5-DDD-Santa-Gifts/assets/Santa.db "Download file")
+
+
+## Data Dictionary
+
+### Entity: Child
+
+| Attribute | Key   | Type    | Size  | Req'd | Validation |
+| --------- | :---: | ----    | :---: | :---: | ---------- |
+| childID   | PK    | Number  |       | Y     | |
+| firstName |       | Text    | 20    | Y     | |
+| lastName  |       | Text    | 30    | Y     | |
+| nice      |       | Boolean |       | Y     | |
+
+### Entity: Gift
+
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| giftID    | PK    | Number |       | Y     | |
+| childID   | FK    | Number |       | Y     | Exists in Child table |
+| item      |       | Text   | 50    | Y     | |
+| cost      |       | Number |       | Y     | |
+
+
+## ERD
+
+![ERD 1:M](../../../n5/ddd/N5-DDD-Santa-Gifts/assets/Diagrams/ERD-ChildGift.png)
+
 
 ## Introduction
 
@@ -55,7 +82,7 @@ Ensure that all column names are meaningful.
 ```
 
 {:start="16"}
-16. Display the full details from `Child` and `Gift` of the newly naughty children.  Sort forenames alphabetically, and then childID from smallest to largest.
+16. Display all the details from `Child` and `Gift` of the newly naughty children.  Sort forenames alphabetically, and then childID from smallest to largest.
 
 17. Naugthy children get a lump of coal.  Who is getting the most, and how many lumps will they get?
 
@@ -65,28 +92,4 @@ Ensure that all column names are meaningful.
 | ----                                   | ---- |
 | Squishmallows Squish-a-Longs - 14 Pack | 18.00 |
 
-
-## Data Dictionary
-
-### Entity: Child
-
-| Attribute | Key   | Type    | Size  | Req'd | Validation |
-| --------- | :---: | ----    | :---: | :---: | ---------- |
-| childID   | PK    | Number  |       | Y     | |
-| firstName |       | Text    | 20    | Y     | |
-| lastName  |       | Text    | 30    | Y     | |
-| nice      |       | Boolean |       | Y     | |
-
-### Entity: Gift
-
-| Attribute | Key   | Type   | Size  | Req'd | Validation |
-| --------- | :---: | ----   | :---: | :---: | ---------- |
-| giftID    | PK    | Number |       | Y     | |
-| childID   | FK    | Number |       | Y     | Exists in Child table |
-| item      |       | Text   | 50    | Y     | |
-| cost      |       | Number |       | Y     | |
-
-
-## ERD
-
-![ERD 1:M](../../../n5/ddd/N5-DDD-Santa-Gifts/assets/Diagrams/ERD-ChildGift.png)
+19. Write the SQL to show tthe modified gift records.

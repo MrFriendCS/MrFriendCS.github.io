@@ -1,4 +1,6 @@
-# N5 DDD School Houses
+# N5 DDD School Houses - Part 2
+
+Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 
 
 ## Entity Relationship Diagram (ERD)
@@ -33,42 +35,33 @@
 
 ### Tasks
 
-1. Add a new record to the House table. There is a new house called `Paisley` house with `Mrs Hunter` as the guidance teacher. Its colour is `black`.
-
-2. Add a new record to the Pupil table.  The details are:
+1. Add a new pupil to the school.  The details are:
 
 ```
-id: 08-8774112
-lastName: Smith
-firstName: Rachel
-gender: Female
-house: Forth
-year: S3
-age: 13
+id: 301
+lastName: Potter
+firstName: Harry
+house: Gryffindor
+year: S1
+age: 11
 ```
 
-3. Add a new pupil.  The details are:
+2. Add a another new pupil.  The details are:
 
 ```
-id: 20-2111447
-firstName: James
-surname: Clark
-gender: Male
-house: Clyde
+id: 302
+firstName: Draco 
+surname: Malfoy
+house: Slytherin
 age: 11
 year: S1
 ```
 
-4. Add another pupil.  The details are:
+3. Write the SQL to display the new pupil records.
 
-```
-ID: 05-1328078
-Surname: Taylor
-Forename: Amy
-House: Kelvin
-Year: S5
-Age: 17
-```
+4. Add a new record to the House table. There is a new house called `Berneray` house with `Prof MacNeil` as the guidance teacher. Its emblem is a `Sheep` and the house colour is `Green and White`.  Use the next available `id`.
+
+5. 
 
 5. From now on, Mr N. Craven wishes to be known as DJ Nicky Cray and has changed his house colour to crimson.  Write a statement to make this change in the House table.
 
@@ -80,4 +73,4 @@ Age: 17
 
 9. Write a SQL statement to remove Ernie Dawson from the Pupil table.
 
-10. Paisley house was a short lived idea. Write a SQL statement to delete this house from the database.
+10. Berneray house was a short lived idea. Write a SQL statement to delete this house from the database.
