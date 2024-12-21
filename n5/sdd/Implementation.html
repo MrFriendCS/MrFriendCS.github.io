@@ -28,108 +28,128 @@
 </head>
 
 <body>
-
-<h1>N5 DDD Implementation Tasks</h1>
+<h1>N5 SDD Implementation Tasks</h1>
 
 <div class="row">
-<div class="column">
+  <div class="column">
 
-<h2>Display data</h2>
-
-<h3>Single table</h3>
+<h2>Data</h2>
     <form>
         <fieldset>
-            <legend>SELECT / FROM</legend>
+            <!--legend></legend-->
             
             <label>
                 <input type="checkbox">
-                All fields from a table
+                Assignment: =
             </label><br>
-
-            <label>
-                <input type="checkbox">
-                Some fields from a table
-            </label><br>
-        </fieldset>
-    </form>
-
-    <form>
-        <fieldset>
-            <legend>WHERE</legend>
-
-            <label>
-                <input type="checkbox">
-                Filter results (simple)
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Filter results (complex)
-            </label><br>
-        </fieldset>
-    </form>
-
-    <form>
-        <fieldset>
-            <legend>ORDER BY</legend>
-
-            <label>
-                <input type="checkbox">
-                Sort using a single field
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Sort using multiple fields
-            </label><br>
-        </fieldset>
-    </form>
-
-<h3>Two tables: Equi-join</h3>
-    <form>
-        <fieldset>
-            <legend>SELECT / FROM</legend>
             
             <label>
                 <input type="checkbox">
-                All fields from two tables
+                Variable
             </label><br>
 
             <label>
                 <input type="checkbox">
-                Some fields from two tables
-            </label><br>
-        </fieldset>
-    </form>
-
-    <form>
-        <fieldset>
-            <legend>WHERE</legend>
-
-            <label>
-                <input type="checkbox">
-                Filter results (simple)
+                Array: [ ]
             </label><br>
 
             <label>
                 <input type="checkbox">
-                Filter results (complex) using fields from different tables
+                Exponentiation: **
             </label><br>
         </fieldset>
     </form>
 
+<h2>Strings</h2>
     <form>
         <fieldset>
-            <legend>ORDER BY</legend>
+            <!--legend></legend-->
 
             <label>
                 <input type="checkbox">
-                Sort using field from one table
+                User input: input()
             </label><br>
 
             <label>
                 <input type="checkbox">
-                Sort using fields from two tables
+                String to integer: int()
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                String to floating point: float()
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Non-string to string: str()
+            </label><br>
+        </fieldset>
+    </form>
+
+
+<h2>Concatenation: +</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+
+            <label>
+                <input type="checkbox">
+                String
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Array: + [ ]
+            </label><br>
+        </fieldset>
+    </form>
+
+<h2>Selection</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+            
+            <label>
+                <input type="checkbox">
+                Simple
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Complex
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Nested: elif
+            </label><br>
+        </fieldset>
+    </form>
+
+<h2>Logical operators</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+
+            <label>
+                <input type="checkbox">
+                And
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Or
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Not
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Mixture
             </label><br>
         </fieldset>
     </form>
@@ -137,96 +157,74 @@
   </div>
   <div class="column">
 
-<h2>Add data</h2>
-    <form>
-        <fieldset>
-            <legend>INSERT INTO / VALUES</legend>
-            
-            <label>
-                <input type="checkbox">
-                Single record – all fields
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Single record – some fields
-            </label><br>
-        </fieldset>
-    </form>
-
-<h2>Change data</h2>
-    <form>
-        <fieldset>
-            <legend>UPDATE / SET</legend>
-            
-            <label>
-                <input type="checkbox">
-                Single record – change single field
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Single record – change multiple fields
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Multiple records
-            </label><br>
-        </fieldset>
-    </form>
-
-<h2>Remove data</h2>
-    <form>
-        <fieldset>
-            <legend>DELETE FROM</legend>
-            
-            <label>
-                <input type="checkbox">
-                Single record – using single condition
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Single record – using multiple conditions
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Multiple records
-            </label><br>
-        </fieldset>
-    </form>
-
-<h2>Modify table</h2>
+<h2>Loops</h2>
     <form>
         <fieldset>
             <!--legend></legend-->
             
             <label>
                 <input type="checkbox">
-                Add validation: Not Null
+                Fixed: for
             </label><br>
 
             <label>
                 <input type="checkbox">
-                Add validation: Range
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Add validation: Length
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Add foreign key
+                Conditional: while
             </label><br>
         </fieldset>
     </form>
 
+<h2>Predefined functions</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+            
+            <label>
+                <input type="checkbox">
+                Random: random.randint(x, y)
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Round: round(x.y, z)
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Length: len(string)
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Length: len(array)
+            </label><br>
+        </fieldset>
+    </form>
+
+<h2>Standard algorithms</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+            
+            <label>
+                <input type="checkbox">
+                Input validation
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Running total
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Traversing a 1-D array
+            </label><br>
+        </fieldset>
+    </form>
+    
   </div>
-  </div>
+</div>
 
 </body>
 </html>

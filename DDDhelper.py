@@ -24,6 +24,7 @@ getGift()
 getHair()
 getEye()
 getSchoolYear(primary=False)
+getGrade()
 """
 
 def getForename() -> str:
@@ -92,8 +93,9 @@ def getEmail(forename="", surname="", percentNull=0) -> str:
     
     if random.randint(1, 100) > percentNull:
     
-        domains = ["aol.com", "bt.com", "gmail.com", "gmx.com", "hotmail.com", "icloud.com", 
-                   "mailchimp.com", "outlook.com", "protonmail.com", "yahoomail.com"]
+        domains = ["aol.com", "bt.com", "gmail.com", "gmx.com", "hotmail.com",
+                   "icloud.com", "mailchimp.com", "outlook.com",
+                   "protonmail.com", "yahoomail.com"]
         
         if random.randint(1, 100) > 80:  # 20% chance
             number = ""
@@ -422,3 +424,59 @@ def getSchoolYear(primary=False) -> str:
     year = random.choice(years)
   
     return year
+
+
+def getGrade() -> str:
+    """Pick a SQA grade."""
+    
+    # Local variable
+    grade = ""
+        
+    # Pick score
+    score = random.normalvariate(100, 15)
+    
+    # Determine grade
+    if score >= 125:
+        grade = "A"
+    elif score >= 110:
+        grade = "B"
+    elif score >= 85:
+        grade = "C"
+    elif score >= 75:
+        grade = "D"
+    else:
+        grade = "No Award"
+  
+    return grade
+
+
+def getBand() -> int:
+    """Pick a SQA band."""
+    
+    # Local variable
+    band = 0
+        
+    # Pick score
+    score = random.normalvariate(100, 15)
+    
+    # Determine grade
+    if score >= 130:
+        band = 1
+    if score >= 125:
+        band = 2
+    elif score >= 117:
+        band = 3
+    elif score >= 110:
+        band = 4
+    elif score >= 97:
+        band = 5
+    elif score >= 85:
+        band = 6
+    elif score >= 80:
+        band = 7
+    elif score >= 75:
+        band = 8
+    else:
+        band = 9
+  
+    return band

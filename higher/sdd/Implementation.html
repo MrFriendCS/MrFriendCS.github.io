@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N5 SDD Tasks</title>
+    <title>H SDD Tasks</title>
     <style>
         * {
             font-family: sans-serif;
@@ -28,205 +28,162 @@
 </head>
 
 <body>
-
-<h1>N5 DDD Implementation Tasks</h1>
+<h1>Higher SDD Implementation Tasks</h1>
 
 <div class="row">
-<div class="column">
-
-<h2>Display data</h2>
-
-<h3>Single table</h3>
-    <form>
-        <fieldset>
-            <legend>SELECT / FROM</legend>
-            
-            <label>
-                <input type="checkbox">
-                All fields from a table
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Some fields from a table
-            </label><br>
-        </fieldset>
-    </form>
-
-    <form>
-        <fieldset>
-            <legend>WHERE</legend>
-
-            <label>
-                <input type="checkbox">
-                Filter results (simple)
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Filter results (complex)
-            </label><br>
-        </fieldset>
-    </form>
-
-    <form>
-        <fieldset>
-            <legend>ORDER BY</legend>
-
-            <label>
-                <input type="checkbox">
-                Sort using a single field
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Sort using multiple fields
-            </label><br>
-        </fieldset>
-    </form>
-
-<h3>Two tables: Equi-join</h3>
-    <form>
-        <fieldset>
-            <legend>SELECT / FROM</legend>
-            
-            <label>
-                <input type="checkbox">
-                All fields from two tables
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Some fields from two tables
-            </label><br>
-        </fieldset>
-    </form>
-
-    <form>
-        <fieldset>
-            <legend>WHERE</legend>
-
-            <label>
-                <input type="checkbox">
-                Filter results (simple)
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Filter results (complex) using fields from different tables
-            </label><br>
-        </fieldset>
-    </form>
-
-    <form>
-        <fieldset>
-            <legend>ORDER BY</legend>
-
-            <label>
-                <input type="checkbox">
-                Sort using field from one table
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Sort using fields from two tables
-            </label><br>
-        </fieldset>
-    </form>
-
-  </div>
   <div class="column">
 
-<h2>Add data</h2>
-    <form>
-        <fieldset>
-            <legend>INSERT INTO / VALUES</legend>
-            
-            <label>
-                <input type="checkbox">
-                Single record – all fields
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Single record – some fields
-            </label><br>
-        </fieldset>
-    </form>
-
-<h2>Change data</h2>
-    <form>
-        <fieldset>
-            <legend>UPDATE / SET</legend>
-            
-            <label>
-                <input type="checkbox">
-                Single record – change single field
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Single record – change multiple fields
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Multiple records
-            </label><br>
-        </fieldset>
-    </form>
-
-<h2>Remove data</h2>
-    <form>
-        <fieldset>
-            <legend>DELETE FROM</legend>
-            
-            <label>
-                <input type="checkbox">
-                Single record – using single condition
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Single record – using multiple conditions
-            </label><br>
-
-            <label>
-                <input type="checkbox">
-                Multiple records
-            </label><br>
-        </fieldset>
-    </form>
-
-<h2>Modify table</h2>
+<h2>Sub-routines</h2>
     <form>
         <fieldset>
             <!--legend></legend-->
             
             <label>
                 <input type="checkbox">
-                Add validation: Not Null
+                Function
             </label><br>
 
             <label>
                 <input type="checkbox">
-                Add validation: Range
+                Procedure
+            </label><br>
+        </fieldset>
+
+<h2>Predefined functions</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+
+            <label>
+                <input type="checkbox">
+                ASCII to character: chr()
             </label><br>
 
             <label>
                 <input type="checkbox">
-                Add validation: Length
+                Character to ASCII: ord()
             </label><br>
 
             <label>
                 <input type="checkbox">
-                Add foreign key
+                Floating point to integer: int()
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+               Modulos division: %
             </label><br>
         </fieldset>
     </form>
 
+
+<h2>Sub-strings</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+
+            <label>
+                <input type="checkbox">
+                Left: [ :x]
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Right: [-x: ]
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Mid: [x, y]
+            </label><br>
+        </fieldset>
+    </form>
+	
   </div>
+  
+  <div class="column">
+
+<h2>Data</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+            
+            <label>
+                <input type="checkbox">
+                Parallel arrays
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Array of records
+            </label><br>
+        </fieldset>
+    </form>
+
+<h2>File handling</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+
+            <label>
+                <input type="checkbox">
+                Reading from file
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Reading parallel arrays from file
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Reading array of records from file
+            </label><br>
+                <input type="checkbox">
+                Writing to file
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Writing parallel arrays to file
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Writing array of records to file
+            </label><br>
+        </fieldset>
+    </form>
+
+<h2>Standard algorithms</h2>
+    <form>
+        <fieldset>
+            <!--legend></legend-->
+            
+            <label>
+                <input type="checkbox">
+                Linear search
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Find min
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Find max
+            </label><br>
+
+            <label>
+                <input type="checkbox">
+                Count
+            </label><br>
+        </fieldset>
+    </form>
+    
   </div>
+</div>
 
 </body>
 </html>

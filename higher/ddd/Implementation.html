@@ -3,31 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DDD Implementation</title>
+    <title>N5 SDD Tasks</title>
     <style>
-        * {font-family: sans-serif;}
-    </style>
+        * {
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 100%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+</style>
 </head>
 
 <body>
 <h1>Higher DDD Implementation Tasks</h1>
+
+<div class="row">
+<div class="column">
+
 <h2>Wildcards</h2>
     <form>
         <fieldset>
             <!--legend></legend-->
             
             <label>
-                <input type="checkbox" name="option" value="select_all_fields">
-                Multiple characters
+                <input type="checkbox">
+                Multiple characters: %
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="select_some_fields">
-                Single character
+                <input type="checkbox">
+                Single character: _
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="filter_simple">
+                <input type="checkbox">
                 Variations
             </label><br>
         </fieldset>
@@ -39,33 +61,36 @@
             <!--legend></legend-->
             
             <label>
-                <input type="checkbox" name="option" value="select_all_fields">
+                <input type="checkbox">
                 Single field
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="select_some_fields">
+                <input type="checkbox">
                 Multiple fields
             </label><br>
         </fieldset>
     </form>
 
-<h2>Aliases</h2>
+<h2>Aliases: AS</h2>
     <form>
         <fieldset>
             <!--legend></legend-->
             
             <label>
-                <input type="checkbox" name="option" value="select_all_fields">
+                <input type="checkbox">
                 Single field
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="select_some_fields">
+                <input type="checkbox">
                 Multiple fields
             </label><br>
         </fieldset>
     </form>
+
+  </div>
+  <div class="column">
 
 <h2>Aggregate functions</h2>
     <form>
@@ -73,28 +98,28 @@
             <!--legend></legend-->
             
             <label>
-                <input type="checkbox" name="option" value="select_all_fields">
-                Minimum
+                <input type="checkbox">
+                Minimum: MIN()
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="select_some_fields">
-                Maximum
+                <input type="checkbox">
+                Maximum: MAX()
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="select_some_fields">
-                Average
+                <input type="checkbox">
+                Average: AVG()
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="select_some_fields">
-                Sum
+                <input type="checkbox">
+                Sum: SUM()
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="select_some_fields">
-                Count
+                <input type="checkbox">
+                Count: COUNT()
             </label><br>
         </fieldset>
     </form>
@@ -105,17 +130,17 @@
             <!--legend></legend-->
             
             <label>
-                <input type="checkbox" name="option" value="select_all_fields">
+                <input type="checkbox">
                 Single field
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="select_some_fields">
+                <input type="checkbox">
                 Multiple fields
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="select_some_fields">
+                <input type="checkbox">
                 Undisplayed field
             </label><br>
         </fieldset>
@@ -124,19 +149,22 @@
 <h2>Double query</h2>
     <form>
         <fieldset>
-            <!--legend></legend-->
+            <legend>CREATE TEMP VIEW</legend>
             
             <label>
-                <input type="checkbox" name="option" value="select_all_fields">
+                <input type="checkbox">
                 Single field
             </label><br>
 
             <label>
-                <input type="checkbox" name="option" value="select_some_fields">
+                <input type="checkbox">
                 Multiple fields
             </label><br>
         </fieldset>
     </form>
-	
+
+  </div>
+  </div>
+
 </body>
 </html>
