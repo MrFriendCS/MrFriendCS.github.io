@@ -39,7 +39,7 @@ Database file: [Santa.db](../../../n5/ddd/N5-DDD-School-Houses/assets/SchoolHous
 | --------- | :---: | ----   | :---: | :---: | ---------- |
 | pupilID   | PK    | Number |       | Y     | Exists as id in Pupil table |
 | subjectID | PK    | Text   | 5     | Y     | Exists as id in Subject table |
-| result    |       | Text   | 10    | Y     | Restricted choice: A, B, C, D, No Award |
+| grade     |       | Text   | 10    | Y     | Restricted choice: A, B, C, D, No Award |
 
 
 ### Entity: Subject
