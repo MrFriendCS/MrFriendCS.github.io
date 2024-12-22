@@ -78,5 +78,3 @@ Ensure that all column names are meaningful.
 8. Which pupil(s) have the most `A` grades?  Display them alphabetically.
 
 9. Which house has the most `No Award` grades?  Display the house name, guidance teacher, and the number of no awards.
-
-10. 
