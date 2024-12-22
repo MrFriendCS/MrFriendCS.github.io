@@ -3,11 +3,6 @@
 Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 
 
-## Entity Relationship Diagram (ERD)
-
-![ERD](assets/Diagrams/ERD-HousePupil.png)
-
-
 ## Data Dictionary
 
 ### Entity: House
@@ -25,7 +20,7 @@ Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
-| id        | PK    | Text   | 10    | Y     | |
+| id        | PK    | Number |       | Y     | |
 | lastName  |       | Text   | 30    | Y     | |
 | firstName |       | Text   | 20    | Y     | |
 | house     | FK    | Number |       | Y     | Exists as id in House table |
@@ -81,7 +76,7 @@ house: Slytherin
 
 14. Display all of your details from the pupil and house table.
 
-15. Using your pupil id, change your record and move to a different house.
+15. The sorting hat has made a mistake.  Using your pupil id, change your record and move to a different house.
 
 16. Display the updated record.
 

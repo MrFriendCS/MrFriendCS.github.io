@@ -2,13 +2,13 @@ CREATE TABLE Pupil (
     id INT NOT NULL,
     lastName VARCHAR(30) NOT NULL,
     firstName VARCHAR(20) NOT NULL,
-    house INT NOT NULL,
+    houseID INT NOT NULL,
     year VARCHAR(2) NOT NULL
         CHECK (year IN ("S1", "S2", "S3", "S4", "S5", "S6")),
     age INT NOT NULL
         CHECK (age >= 11 AND age <= 18),
     PRIMARY KEY (id),
-    FOREIGN KEY (house)
+    FOREIGN KEY (houseID)
         REFERENCES House (id)
 );
 

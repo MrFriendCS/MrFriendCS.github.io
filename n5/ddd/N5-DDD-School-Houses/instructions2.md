@@ -25,7 +25,7 @@ Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
-| id        | PK    | Text   | 10    | Y     | |
+| id        | PK    | Number |       | Y     | |
 | lastName  |       | Text   | 30    | Y     | |
 | firstName |       | Text   | 20    | Y     | |
 | house     | FK    | Number |       | Y     | Exists as id in House table |
