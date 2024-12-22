@@ -39,7 +39,7 @@ else:
 import DDDhelper
 
 
-def getLocalPupils():
+def getLocalPupils():  # Note: getLocalPupils()
     """Read in forenames and surnames of pupils."""
     
     # Initialise local variables
@@ -50,7 +50,7 @@ def getLocalPupils():
     else:
         location = start2 + folder2
         
-    file = open(location + "naughtyList.csv", "r")
+    file = open(location + "pupilList.csv", "r")
     
     line = file.readline()  # ignore header
     line = file.readline()
@@ -61,15 +61,45 @@ def getLocalPupils():
         
         forename = data[0].strip()
         surname =  data[1].strip()
+        year = data[2].strip()
         
-        pupils = pupils + [[forename, surname]]
+        pupils = pupils + [[forename, surname, year]]
         
         line = file.readline()
+        
+    file.close()
     
     return pupils
 
 
-def createPupilData(count, localPupils):
+def getSubjects():  # Note: getSubjects()
+    """Read in id and name of subjects."""
+    
+    # Initialise local variables
+    subjects = []
+    
+    file = open("../CSV files/Subject.csv", "r")
+    
+    line = file.readline()  # ignore header
+    line = file.readline()
+    
+    while line != "":
+        
+        data = line.split(",")
+        
+        id = data[0].strip()
+        subject =  data[1].strip()
+        
+        subjects = subjects + [[id, subject]]
+        
+        line = file.readline()
+        
+    file.close()
+    
+    return subjects
+
+
+def createPupilData(count, localPupils):   # Note: createPupilData()
     """Create the data for the pupil table."""
     
     
@@ -96,15 +126,17 @@ def createPupilData(count, localPupils):
         
         forename = DDDhelper.getForename()
         surname = DDDhelper.getSurname()
+        year = DDDhelper.getSchoolYear()
         
-        while [forename, surname] in localPupils:
+        while [forename, surname, year] in localPupils:
             forename = DDDhelper.getForename()
             surname = DDDhelper.getSurname()
+            year = DDDhelper.getSchoolYear()
             
         pupils[index].forename = forename
         pupils[index].surname = surname
         pupils[index].house = DDDhelper.getNumber(1, 4)
-        pupils[index].year = DDDhelper.getSchoolYear()
+        pupils[index].year = year
         pupils[index].age = 11 + int(pupils[index].year[-1])
     
     
@@ -130,7 +162,7 @@ def createPupilData(count, localPupils):
     return pupils
 
 
-def addPupils(pupils, localPupils):
+def addPupils(pupils, localPupils):   # Note: addPupils()
     """Find naughty children and update all their gifts."""
      
     # Initialise local variables
@@ -150,13 +182,14 @@ def addPupils(pupils, localPupils):
         
         pupils[pupilIDs[index]].forename = localPupils[index][0]
         pupils[pupilIDs[index]].surname = localPupils[index][1]
+        pupils[pupilIDs[index]].year = localPupils[index][2]
         pupils[pupilIDs[index]].house = 4
             
                       
     return pupils
 
 
-def writeChildCSV(pupils):
+def writeChildCSV(pupils):   # Note: writeChildCSV()
     """Create CSV file for data."""
     
     file = open("../CSV files/Pupil.csv", "w")
@@ -176,9 +209,90 @@ def writeChildCSV(pupils):
         file.write("\n")
         
     file.close()
-        
 
-def main():
+
+def createResultData(pupils, subjects, localPupils):   # Note: createResultData()
+    """Create the data for the result table."""
+    
+    
+    @dataclass
+    class Result:
+        """Record to represent a result."""
+        pupilID: int = 0
+        subjectID: str = ""
+        grade: str = ""        
+    
+    # Initialise local variables
+    forename = ""
+    surname = ""
+    year = ""
+    s3up = 0
+    
+    # Get number of S3, S4, S5, S6 pupils
+    for pupil in pupils:
+        
+        if pupil.year in ["S3", "S4", "S5", "S6"]:
+            
+            # Increment
+            s3up = s3up + 1
+    
+    # Enough results
+    results = [Result() for index in range(s3up * 6)]
+    
+    # Results index
+    index = 0
+    
+    # Loop for each child
+    for pupil in pupils:
+        
+        if pupil.year in ["S3", "S4", "S5", "S6"]:
+            
+            offset = 0
+            
+            if pupil.year == "S4":
+                offset = 6
+            elif pupil.year == "S5" or pupil.year == "S6":
+                offset = 12
+            
+            for subject in range(offset, offset + 6):
+                
+                results[index].pupilID = pupil.id
+                results[index].subjectID = subjects[subject][0]
+            
+                if [pupil.forename, pupil.surname, pupil.year] in localPupils:
+                    
+                    results[index].grade = "No Award"
+                
+                else:
+                    results[index].grade = DDDhelper.getGrade()
+            
+                # Increment
+                index = index + 1
+    
+
+    return results
+
+
+def writeResultCSV(results):   # Note: writeResultCSV()
+    """Create CSV file for data."""
+    
+    file = open("../CSV files/Result.csv", "w")
+    
+    # Headers
+    file.write("pupilID,subjectID,grade\n")
+
+    # Loop for each child
+    for result in results:
+        
+        file.write(str(result.pupilID) + ",")
+        file.write(    result.subjectID + ",")
+        file.write(    result.grade)
+        file.write("\n")
+        
+    file.close()
+  
+
+def main():   # Note: main()
     """Main program."""
 
     # Initialise variables
@@ -201,11 +315,24 @@ def main():
     if addLocal: 
         pupils = addPupils(pupils, localPupils)
     
-    # 4 - Write child table
+    # 4 - Write child table data
     writeChildCSV(pupils)
+    
+    # 5 - Get subjects
+    subjects = getSubjects()
+    
+    # 6 - Create results table data - Higher
+    results = createResultData(pupils, subjects, localPupils)
+    
+    # 7 - Write results table data - Higher
+    writeResultCSV(results)
 
 
 # Call main()
 main()
 
 
+import CreateHouseTable
+import CreatePupilTable
+import CreateSubjectTable
+import CreateResultTable

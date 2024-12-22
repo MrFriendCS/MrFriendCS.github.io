@@ -51,7 +51,7 @@ def getNaughtyList():
     else:
         location = start2 + folder2
         
-    file = open(location + "naughtyList.csv", "r")
+    file = open(location + "pupilList.csv", "r")
     
     line = file.readline()  # ignore header
     line = file.readline()
