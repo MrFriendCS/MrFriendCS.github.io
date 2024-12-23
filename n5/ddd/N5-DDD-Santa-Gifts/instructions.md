@@ -26,7 +26,7 @@ The elves have decided to modernise to help keep track of the data that's needed
 ```
 
 {:start="6"}
-6. Create a query to show the new record.
+6. Create a query to show just the new record.
 
 7. Child 172 has been very naughty.  Change their `nice` status in the `Child` table.
 
@@ -40,13 +40,13 @@ The elves have decided to modernise to help keep track of the data that's needed
 
 12. Display the ID and forename of everyone who shares your surname.  Order the names alphbetically.
 
-13. Display the ID, forename, and gifts they will receive of everyone who shares your surname.  Order the names alphbetically.
+13. Display the child ID, forename, gift, and gift ID everyone who shares your surname.  Order the names alphbetically.
 
-14. When the elves aren't looking, change your presents in the `Gift` table to something you want, be sure to change the costs at the same time.
+14. When the elves aren't looking, change your presents in the `Gift` table to something you want, each gift must be different, be sure to change the costs at the same time.
 
 15. Without getting caught, make sure there are at least three presents for yourself in the `Gift` table.  Don't steal somebody else's!
 
-16. Create a query to show your full name and all your gifts, and their cost.  Ensure the gifts are sorted from most to least expensive.
+16. Create a query to show all your details from the two tables.  Gifts are sorted from most to least expensive.
 
 17. The elves want a delivery list for Santa.  It is to be sorted alphabetically by surname and then forename.  The elves are insistent that ___only___ nice children are to appear on this list.  Naughty children will be on their own 'special' list.  An example of the output is shown below:
 
@@ -57,7 +57,7 @@ The elves have decided to modernise to help keep track of the data that's needed
 | 91      | Billy     | Brotherton | Maths set |
 
 {:start="18"}
-18. Add an additional filter to the previous query so that it only shows what will be delivered to you.  Another query might be required to make this work as you expect!
+18. Add an additional filter to the previous query so that it only shows what will be delivered to you.  Another query might be required to make this work as you expect!  If it is, include that SQL as well.
 
 
 ## Data Dictionary

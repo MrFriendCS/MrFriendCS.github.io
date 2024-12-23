@@ -62,15 +62,22 @@ Ensure that all column names are meaningful.
 
 11. Due to increased productivity, all of the costs have decreased by 5%.  Change the price of all the gifts accordingly.
 
-12. By chance, some children get more presents than others. Who is getting the most, and how many will they get?  Only include nice children.
+14. Show the details of all the gifts to show that this change has been made.
 
-    __NB.__ The result of one VIEW can be used in another VIEW.
+15. By chance, some children get more presents than others. Who is getting the most, and how many will they get?  Only include nice children to create an output similar to the one below.
 
-13. Will every child get a gift?  Display how many children will get a gift.
+| childID | Forename | Surname | No of Presents |
+| ------- | -------- | ------- | -------------- |
+| 894     | Billy    | Bragg   | 7              |
 
-14. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
+__NB.__ The result of one VIEW can be used in another VIEW.
 
-15. Using a sub-query, ensure that all the newly regsitered naughty children only get a `Lump of coal` that costs `50p`.  Some useful code is shwon below.
+{:start="16"}
+16. Will every child get a gift?  Display how many children will get a gift of some description.
+
+17. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
+
+18. Using a sub-query, ensure that all the newly regsitered naughty children only get a `Lump of coal` that costs `50p`.  Some useful code is shwon below.
 
 ``` sql
 ...
@@ -82,14 +89,15 @@ Ensure that all column names are meaningful.
 ```
 
 {:start="16"}
-16. Display all the details from `Child` and `Gift` of the newly naughty children.  Sort forenames alphabetically, and then childID from smallest to largest.
+19. Display all the details from `Child` and `Gift` of the newly naughty children.  Sort forenames alphabetically, and then childID from smallest to largest.
 
-17. Naugthy children get a lump of coal.  Who is getting the most, and how many lumps will they get?
+20. Some children will get a lump of coal.  Who is getting the most, and how many lumps will they get?  Sort the names, forename and surname, alphabetically.
 
-18. Mrs Claus feels that Santa has been too generous again this year.  Replace the most expensive gifts with the following gift:
+21. Mrs Claus feels that Santa has been too generous again this year.  Replace the most expensive gift(s) with the following gift:
 
 | gift                                   | cost |
 | ----                                   | ---- |
 | Squishmallows Squish-a-Longs - 14 Pack | 18.00 |
 
-19. Write the SQL to show tthe modified gift records.
+{:start="22"}
+22. Write the SQL to show the modified gift records.

@@ -12,7 +12,9 @@ SELECT *
 -- Task 2 - Nice children
 SELECT firstName, lastName
     FROM Child
-    WHERE nice = TRUE;
+    WHERE nice = TRUE
+    ORDER BY firstName ASC, 
+             lastName ASC;
 
 
 -- Task 3 - All Gift table data
@@ -67,18 +69,18 @@ SELECT Child.childID, firstName, lastName
     FROM Child, Gift
     WHERE Child.childID = Gift.childID
       AND item = "Chad Valley Wooden Pizza"
-    ORDER BY childID DESC;
+    ORDER BY Child.childID DESC;
 
 
--- Task 12 - Same surname gifts
+-- Task 12 - Same surname gifts - Surname will be different
 SELECT childID, firstName
     FROM Child
     WHERE lastName = "Friend"
     ORDER BY firstName ASC;
 
 
--- Task 13 - Surname and gifts
-SELECT childID, firstName, item
+-- Task 13 - Surname and gifts - Surname will be different
+SELECT Child.childID, firstName, item
     FROM Child, Gift
     WHERE Child.childID = Gift.childID
       AND lastName = "Friend"
@@ -98,15 +100,15 @@ INSERT INTO Gift
 
 
 -- Task 16 - Show modified and new records (childID will be different)
-SELECT childID, firstName, item
+SELECT Child.childID, firstName, item, cost
     FROM Child, Gift
     WHERE Child.childID = Gift.childID
       AND Child.childID = 19
-	ORDER BY cost DESC;
+    ORDER BY cost DESC;
 
 
--- Task 16 - Delivery List - Nice children
-SELECT firstName, lastName, item
+-- Task 17 - Delivery List - Nice children
+SELECT Child.childID, firstName, lastName, item
     FROM Child, Gift
     WHERE Child.childID = Gift.childID
       AND nice = TRUE
@@ -114,7 +116,7 @@ SELECT firstName, lastName, item
              firstName ASC;
 
 
--- Task 17 - On Santa's Delivery List
+-- Task 18 - On Santa's Delivery List
 UPDATE Child
     SET nice = TRUE
     WHERE childID = 19;

@@ -19,7 +19,7 @@ SELECT firstName, lastName
     FROM Child
     WHERE lastName LIKE "Mac%" 
        OR lastName LIKE "Mc%"
-    ORDER BY firstName;
+    ORDER BY firstName ASC;
 
 
 -- Task 4 - Lego gifts
@@ -63,17 +63,27 @@ SELECT lastName, nice, COUNT(*) AS Children
     GROUP BY lastName, nice;
 
 
+-- Task 11 - 5% decrease in gift Cost
+UPDATE Gift
+    SET cost = ROUND((cost * 0.95),2);
+
+
+-- Task 12 - 5% decrease in gift Cost
+SELECT *
+    FROM Gift;
+
+
 -- Task 12 - Most gifts
 
 CREATE TEMP VIEW NiceKids (childID, giftCount) AS
     SELECT Child.childID, COUNT(*)
     FROM Child, Gift
     WHERE Child.childID = Gift.childID
-	  AND nice = TRUE
-	GROUP BY Child.childID;
+      AND nice = TRUE
+    GROUP BY Child.childID;
 
 CREATE TEMP VIEW MaxGift (maxGift) AS
-	SELECT MAX(giftCount)
+SELECT MAX(giftCount)
     FROM NiceKids;
 
 SELECT firstName, lastName, maxGift AS Gifts
@@ -108,9 +118,16 @@ UPDATE Gift
     WHERE childID IN 
         (SELECT childID
              FROM Child
-             WHERE nice = FALSE
-               AND lastName = "MacNeil");
+             WHERE lastName = "MacNeil");
 
+
+-- Task  - Show changes
+SELECT *
+    FROM Child, Gift
+    WHERE Child.childID = Gift.childID
+      AND lastName = "MacNeil"
+    ORDER BY firstName ASC, 
+             childID ASC;
 
 -- Task 16 - Most coal
 
@@ -135,21 +152,19 @@ SELECT firstName, lastName, maxCoal AS Lumps
 
 -- Task 17 - Swap for most expensive for cheaper gifts
 
-CREATE TEMP VIEW GiftList (item, cost) AS
-    SELECT item, cost
-    FROM Gift
-    WHERE item NOT LIKE "%Coal%"
-    GROUP BY item, cost;
-	
-CREATE TEMP VIEW Cost (most) AS
+CREATE TEMP VIEW Cost (maxCost) AS
     SELECT MAX(cost)
-    FROM GiftList;
+    FROM Gift;
 
 UPDATE Gift
     SET item = "Squishmallows Squish-a-Longs - 14 Pack", 
         cost = 18.00
-    WHERE giftID IN
-        (SELECT giftID
-             FROM Gift, Cost
-             WHERE cost = most);
+    WHERE cost IN
+        (SELECT maxCost
+             FROM Cost);
 
+
+-- Task 19 - Show changes
+SELECT *
+    FROM Gift
+    WHERE item = "Squishmallows Squish-a-Longs - 14 Pack";
