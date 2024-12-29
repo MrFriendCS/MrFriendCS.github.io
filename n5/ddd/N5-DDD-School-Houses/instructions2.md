@@ -55,6 +55,6 @@ Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 
 10. Show the surname, forename, year group, and guidance teacher of each pupil.  Sort by year group, oldest to youngest, and surname alphabetically.
 
-11. Show the emblem, house colour, forename, and year group.  Sort the results by emblem alphabetically, and year group from  youngest to oldest.
+11. Show the emblem, house colour, forename, and year group.  Sort the results by emblem alphabetically, and year group from youngest to oldest.
 
 12. Display the forename, surname, age, and guidance teacher for pupils in S3, sort by age decreasing, surname alphabetically, then forename alphabetically.

@@ -163,7 +163,7 @@ def createPupilData(count, localPupils):   # Note: createPupilData()
 
 
 def addPupils(pupils, localPupils):   # Note: addPupils()
-    """Find naughty children and update all their gifts."""
+    """Add local pupils."""
      
     # Initialise local variables
     pupilIDs = []
@@ -184,6 +184,7 @@ def addPupils(pupils, localPupils):   # Note: addPupils()
         pupils[pupilIDs[index]].surname = localPupils[index][1]
         pupils[pupilIDs[index]].year = localPupils[index][2]
         pupils[pupilIDs[index]].house = 4
+        pupils[pupilIDs[index]].age = 11 + int(pupils[pupilIDs[index]].year[-1])
             
                       
     return pupils
