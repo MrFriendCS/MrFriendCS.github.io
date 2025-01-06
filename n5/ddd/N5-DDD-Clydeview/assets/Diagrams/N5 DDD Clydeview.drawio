@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17" pages="13">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2" pages="15">
   <diagram name="E-C" id="TPjnC1sg1m8ZVuqo8Jls">
     <mxGraphModel dx="882" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -166,6 +166,77 @@
         </mxCell>
         <mxCell id="5Nxf2ofHw9S__iksPNC7-10" value="Stores" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="5Nxf2ofHw9S__iksPNC7-1" vertex="1">
           <mxGeometry x="490" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Author" id="Tx9pfx887Ui23lpr-6-f">
+    <mxGraphModel dx="774" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="mDBaG8ICeJ8UEcX4cOrD-0" />
+        <mxCell id="mDBaG8ICeJ8UEcX4cOrD-1" parent="mDBaG8ICeJ8UEcX4cOrD-0" />
+        <mxCell id="mDBaG8ICeJ8UEcX4cOrD-2" value="&lt;b&gt;Book&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="mDBaG8ICeJ8UEcX4cOrD-1">
+          <mxGeometry x="600" y="360" width="120" height="180" as="geometry">
+            <mxRectangle x="170" y="370" width="80" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mDBaG8ICeJ8UEcX4cOrD-3" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;category&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;genre&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;title&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;authorRef*&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;publisher&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;isbn&lt;/u&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;published&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;pages&lt;/span&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="mDBaG8ICeJ8UEcX4cOrD-2">
+          <mxGeometry y="30" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="mDBaG8ICeJ8UEcX4cOrD-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="mDBaG8ICeJ8UEcX4cOrD-2" source="mDBaG8ICeJ8UEcX4cOrD-3" target="mDBaG8ICeJ8UEcX4cOrD-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mDBaG8ICeJ8UEcX4cOrD-5" value="&lt;b&gt;Author&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="mDBaG8ICeJ8UEcX4cOrD-1">
+          <mxGeometry x="320" y="360" width="120" height="180" as="geometry">
+            <mxRectangle x="170" y="370" width="80" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mDBaG8ICeJ8UEcX4cOrD-6" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;authorRef&lt;/u&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;firstName&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;surname&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;nationality&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;dob&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;website&lt;/span&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="mDBaG8ICeJ8UEcX4cOrD-5">
+          <mxGeometry y="30" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="mDBaG8ICeJ8UEcX4cOrD-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=ERmany;startFill=0;startSize=20;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="mDBaG8ICeJ8UEcX4cOrD-1" source="mDBaG8ICeJ8UEcX4cOrD-3" target="mDBaG8ICeJ8UEcX4cOrD-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="465" as="sourcePoint" />
+            <mxPoint x="440" y="465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mDBaG8ICeJ8UEcX4cOrD-8" value="writes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="mDBaG8ICeJ8UEcX4cOrD-1">
+          <mxGeometry x="480" y="435" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Book" id="Pel29FkkyTNcfcZwryx9">
+    <mxGraphModel dx="447" dy="461" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="O3eVW2aL7HveSJNxo-_Q-0" />
+        <mxCell id="O3eVW2aL7HveSJNxo-_Q-1" parent="O3eVW2aL7HveSJNxo-_Q-0" />
+        <mxCell id="O3eVW2aL7HveSJNxo-_Q-2" value="&lt;b&gt;Book&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="O3eVW2aL7HveSJNxo-_Q-1">
+          <mxGeometry x="320" y="360" width="120" height="180" as="geometry">
+            <mxRectangle x="170" y="370" width="80" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O3eVW2aL7HveSJNxo-_Q-3" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;category&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;genre&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;title&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;authorRef*&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;publisher&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;isbn&lt;/u&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;published&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;pages&lt;/span&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="O3eVW2aL7HveSJNxo-_Q-2">
+          <mxGeometry y="30" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="O3eVW2aL7HveSJNxo-_Q-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="O3eVW2aL7HveSJNxo-_Q-2" source="O3eVW2aL7HveSJNxo-_Q-3" target="O3eVW2aL7HveSJNxo-_Q-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O3eVW2aL7HveSJNxo-_Q-5" value="&lt;b&gt;Author&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="O3eVW2aL7HveSJNxo-_Q-1">
+          <mxGeometry x="600" y="360" width="120" height="180" as="geometry">
+            <mxRectangle x="170" y="370" width="80" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O3eVW2aL7HveSJNxo-_Q-6" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;authorRef&lt;/u&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;firstName&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;surname&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;nationality&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;dob&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;website&lt;/span&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="O3eVW2aL7HveSJNxo-_Q-5">
+          <mxGeometry y="30" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="O3eVW2aL7HveSJNxo-_Q-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=ERmany;startFill=0;startSize=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="O3eVW2aL7HveSJNxo-_Q-1" source="O3eVW2aL7HveSJNxo-_Q-3" target="O3eVW2aL7HveSJNxo-_Q-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="440" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O3eVW2aL7HveSJNxo-_Q-8" value="written by" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O3eVW2aL7HveSJNxo-_Q-1">
+          <mxGeometry x="480" y="435" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
