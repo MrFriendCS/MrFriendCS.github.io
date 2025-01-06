@@ -43,6 +43,7 @@ year: S1
 age: 11
 ```
 
+{:start="2"}
 3. Add a another new pupil.  The details are:
 
 ```
@@ -54,6 +55,7 @@ surname: Malfoy
 house: Slytherin
 ```
 
+{:start="4"}
 4. Write the SQL to display the new pupil records.
 
 5. Write a SQL statement to display everything in the house table.
