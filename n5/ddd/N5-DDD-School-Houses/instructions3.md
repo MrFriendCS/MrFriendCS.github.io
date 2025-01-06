@@ -60,7 +60,7 @@ house: Slytherin
 
 5. Write a SQL statement to display everything in the house table.
 
-6. There is a new house called `Berneray` house. Its emblem is a `Sheep` and the house colour is `Green and Black`.  Unfortunately, there no one has volunteered to be the guidance teacher.  Use the next available `id` to add the available data to the house table.
+6. There is a new house called `Berneray` house. Its emblem is a `Sheep` and the house colour is `Green and Black`.  Unfortunately, no one has volunteered to be the guidance teacher.  Use the next available `id` to add the available data to the house table.
 
 7. Display the new house record.
 
