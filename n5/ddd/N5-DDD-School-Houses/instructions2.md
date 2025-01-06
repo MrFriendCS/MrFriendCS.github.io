@@ -41,9 +41,9 @@ Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 
 3. Create a single SQL statement to display everything in the pupil and house tables. 
 
-4. Display the forename, age, and house of all pupils.
+4. Display the forename, age, and house name of all pupils.
 
-5. Write a statement that shows `firstName`, `lastName` and `guidanceTeacher` for all pupils.
+5. Write a statement that shows the fullname, forename and suranme, and the name of the guidance teacher for all pupils.
 
 6. Display the forename, surname, and year group for all pupils in Slytherin house.
 
