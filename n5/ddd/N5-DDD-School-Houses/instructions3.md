@@ -43,7 +43,7 @@ year: S1
 age: 11
 ```
 
-{:start="2"}
+{:start="3"}
 3. Add a another new pupil.  The details are:
 
 ```
