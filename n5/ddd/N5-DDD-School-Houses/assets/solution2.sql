@@ -1,5 +1,5 @@
 /*
-Title: N5 DDD School Houses Part 3
+Title: N5 DDD School Houses Part 2
 Author: Mr Friend
 Date: 6 Jan 2025
 */
@@ -9,100 +9,81 @@ SELECT *
     FROM Pupil;
 
 
--- Task 2 - Add a pupil
-INSERT INTO Pupil
-    VALUES (301, "Potter", "Harry", 1, "S1", 11);
-
-
--- Task 3 - Add another pupil
-INSERT INTO Pupil
-    VALUES (302, "Malfoy", "Daco", 1, "S1", 11);
-
-
--- Task 4 - Display new pupils
-SELECT *
-    FROM Pupil
-    WHERE id = 301 
-       OR id = 302;
-
-
--- Task 5 - All House table data
+-- Task 2 - All House table data
 SELECT *
     FROM House;
 
 
--- Task 6 - Add new house
-INSERT INTO House (id, name, emblem, colour)
-    VALUES (5, "Berneray", "Sheep", "Green and Black");
-
--- Task 7 - Display new house
+-- Task 3 - All Pupil and House table data
 SELECT *
-    FROM House
-    WHERE id = 5;
+    FROM Pupil, House
+    WHERE Pupil.houseID = House.id;
 
 
--- Task 8 - Update house
-UPDATE House
-    SET colour = "Green and White"
-    WHERE id = 5;
+-- Task 4 - forename, age, and house of all pupils
+SELECT firstName, age, name
+    FROM Pupil, House
+    WHERE Pupil.houseID = House.id;
 
 
--- Task 9 - Display updated house
+-- Task 5 - 
+SELECT firstName, lastName, guidanceTeacher
+    FROM Pupil, House
+    WHERE Pupil.houseID = House.id;
+
+
+-- Task 6 - 
+SELECT firstName, lastName, year
+    FROM Pupil, House
+    WHERE Pupil.houseID = House.id
+      AND name = "Slytherin";
+
+
+-- Task 7 - 
 SELECT *
-    FROM House
-    WHERE id = 5;
+    FROM Pupil, House
+    WHERE Pupil.houseID = House.id
+      AND firstName = "James"
+      AND lastName = "Friend";
 
 
--- Task 10 - Update house record
-UPDATE House
-    SET guidanceTeacher = "Prof Carrot", 
-        emblem = "Rabbit"
-    WHERE id = 2;
-
-
--- Task 11 - Display updated record
+-- Task 8 - 
 SELECT *
-    FROM House
-    WHERE id = 2;
+    FROM Pupil, House
+    WHERE Pupil.houseID = House.id
+      AND lastName = "Friend"
+      AND emblem = "Eagle";
 
 
--- Task 12 - Update pupil record
-UPDATE Pupil
-    SET age = 15
-    WHERE id = 93;
-
-SELECT *
-    FROM Pupil
-    WHERE id = 93;
+-- Task 9 - 
+SELECT firstName, lastName, year
+    FROM Pupil, House
+    WHERE Pupil.houseID = House.id
+      AND name = "Hufflepuff"
+    ORDER BY lastName ASC;
 
 
--- Task 13 -  Update pupil record
-UPDATE Pupil
-    SET lastName = "Forth",
-        year  = "S1"
-    WHERE id = 205;
-
-SELECT *
-    FROM Pupil
-    WHERE id = 205;
+-- Task 10 - 
+SELECT firstName, lastName, year, guidanceTeacher
+    FROM Pupil, House
+    WHERE Pupil.houseID = House.id
+    ORDER BY year DESC,
+             lastName ASC;
 
 
--- Task 14 - 
+-- Task 11 - 
+SELECT emblem, colour, firstName, year
+    FROM Pupil, House
+    WHERE Pupil.houseID = House.id
+    ORDER BY emblem ASC,
+             year ASC;
 
 
-
--- Task 15 - 
-
-
-
--- Task 16 - 
-
-
-
--- Task 17 - 
-
-
-
--- Task 18 - 
-
-
+-- Task 12 - 
+SELECT firstName, lastName, age, guidanceTeacher
+    FROM Pupil, House
+    WHERE Pupil.houseID = House.id
+      AND year = "S3"
+    ORDER BY age DESC,
+             lastName ASC,
+             year ASC;
