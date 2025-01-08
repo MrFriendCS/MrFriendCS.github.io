@@ -2,11 +2,11 @@
 
 ## Introduction
 
-People currently become eligible for the State Pension when they turn 68.
+People will become eligible for the State Pension when they turn 68.
 
 ## Task
 
-Write a short program that will ask the user for their name and a valid age, and then display how many years they have left to before becoming eligible for their pension.  There are different responses depending how many years until retirement.
+Write a short program that will ask the user for their name and a valid age, and then display how many years they have left before becoming eligible for their pension.  There are different responses depending how many years until retirement.
 
 ### User Interface Example 1
 

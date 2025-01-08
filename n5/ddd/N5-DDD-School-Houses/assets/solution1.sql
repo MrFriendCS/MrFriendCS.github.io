@@ -82,23 +82,51 @@ SELECT firstName, lastName, year
       AND (year = "S1"
         OR year = "S2");
 
--- Task 14 - 
+-- Task 14 - Guidance teacher: Slytherin / Gryffindor
+SELECT guidanceTeacher
+    FROM House
+    WHERE name = "Slytherin"
+       OR name = "Gryffindor";
 
 
--- Task 15 - 
+-- Task 15 - S5 / S6 pupils
+SELECT firstName, lastName, age
+    FROM Pupil
+    WHERE year = "S5"
+       OR year = "S6";
 
 
--- Task 16 - 
+-- Task 16 - Same surname and at least 14
+SELECT *
+    FROM Pupil
+    WHERE lastName = "Friend"
+      AND age >= 14;
 
 
--- Task 17 - 
+-- Task 17 - Pupil records sorted by surname and forename
+SELECT *
+    FROM Pupil
+    ORDER BY lastName ASC, 
+             firstName ASC;
+
+-- Task 18 - Name and id, sorted by age and surname
+SELECT firstName, lastName, id
+    FROM Pupil
+    ORDER BY age DESC,
+             lastName ASC;
 
 
--- Task 18 - 
+-- Task 19 - S5 / S6 names and year, sorted
+SELECT firstName, lastName, year
+    FROM Pupil
+    WHERE year = "S5"
+       OR year = "S6"
+    ORDER BY year DESC,
+             firstName ASC,
+             lastName ASC;
 
 
--- Task 19 - 
-
-
--- Task 20 - 
-
+-- Task 20 - Houses sorted by colour
+SELECT colour, emblem, name
+    FROM House
+    ORDER BY colour ASC;
