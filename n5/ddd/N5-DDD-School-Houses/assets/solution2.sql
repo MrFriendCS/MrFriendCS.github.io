@@ -16,74 +16,87 @@ SELECT *
 
 -- Task 3 - All Pupil and House table data
 SELECT *
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id;
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID;
 
 
--- Task 4 - forename, age, and house of all pupils
+-- Task 4 - forename, age, and house name
 SELECT firstName, age, name
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id;
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID;
 
 
 -- Task 5 - 
 SELECT firstName, lastName, guidanceTeacher
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id;
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID;
 
 
 -- Task 6 - 
 SELECT firstName, lastName, year
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
       AND name = "Slytherin";
+
+-- or
+
+SELECT firstName, lastName, year
+    FROM Pupil
+    WHERE houseID = 4;
 
 
 -- Task 7 - 
 SELECT *
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
       AND firstName = "James"
       AND lastName = "Friend";
 
 
 -- Task 8 - 
 SELECT *
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
       AND lastName = "Friend"
       AND emblem = "Eagle";
 
 
 -- Task 9 - 
 SELECT firstName, lastName, year
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
       AND name = "Hufflepuff"
+    ORDER BY lastName ASC;
+
+-- or
+
+SELECT firstName, lastName, year
+    FROM Pupil 
+    WHERE houseID = 2
     ORDER BY lastName ASC;
 
 
 -- Task 10 - 
 SELECT firstName, lastName, year, guidanceTeacher
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
     ORDER BY year DESC,
              lastName ASC;
 
 
 -- Task 11 - 
 SELECT emblem, colour, firstName, year
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
     ORDER BY emblem ASC,
              year ASC;
 
 
 -- Task 12 - 
 SELECT firstName, lastName, age, guidanceTeacher
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
       AND year = "S3"
     ORDER BY age DESC,
              lastName ASC,
-             year ASC;
+             firstName ASC;

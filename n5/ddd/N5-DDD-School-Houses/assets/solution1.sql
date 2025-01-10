@@ -77,10 +77,9 @@ SELECT firstName, name
 
 -- Task 13 - Name and year group of S1 / S2 pupils
 SELECT firstName, lastName, year
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID
-      AND (year = "S1"
-        OR year = "S2");
+    FROM Pupil
+    WHERE year = "S1"
+       OR year = "S2";
 
 -- Task 14 - Guidance teacher: Slytherin / Gryffindor
 SELECT guidanceTeacher

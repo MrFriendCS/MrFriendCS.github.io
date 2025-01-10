@@ -16,7 +16,7 @@ INSERT INTO Pupil
 
 -- Task 3 - Add another pupil
 INSERT INTO Pupil
-    VALUES (302, "Malfoy", "Daco", 1, "S1", 11);
+    VALUES (302, "Malfoy", "Daco", 4, "S1", 11);
 
 
 -- Task 4 - Display new pupils

@@ -37,6 +37,7 @@ def getData():
     # Return arrays
     return forenames, surnames, ages
 
+
 def makeUsernames(forenames, surnames, ages):
     """Generate an array of usernames using forenames, and surname if needed"""
 
@@ -80,6 +81,7 @@ def makeUsernames(forenames, surnames, ages):
     # Return usernames
     return usernames
 
+
 def findOldest(ages):
     """Finds the oldest age in an array of ages"""
 
@@ -99,6 +101,7 @@ def findOldest(ages):
 
     # Return oldest age
     return oldest
+
 
 def summary(forenames, surnames, ages, oldest):
     """Display a list of the oldest pupils in the batch"""
@@ -121,6 +124,7 @@ def summary(forenames, surnames, ages, oldest):
         # 4.6 End if
     # 4.7 End loop
 
+
 def writeData(usernames, forenames, surnames):
 
     # Create a file
@@ -137,6 +141,7 @@ def writeData(usernames, forenames, surnames):
 
     # Close file
     file.close()
+
 
 def u2l(upper):
     """Converts an uppercase character to lowercase"""
@@ -159,6 +164,7 @@ def u2l(upper):
     # Return character
     return lower
 
+
 def getDigit(age):
     """Returns remainder plus 1 of number divided by 9"""
 
@@ -174,6 +180,7 @@ def getDigit(age):
 
     # Return result
     return plus1
+
 
 def getLetter(upper):
     """Returns next lower lowercase letter in alphabet"""
