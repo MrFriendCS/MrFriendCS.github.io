@@ -56,7 +56,7 @@ house: Slytherin
 ```
 
 {:start="4"}
-4. Write the SQL to display the new pupil records.
+4. Write a single SQL statement to display the new records.
 
 5. Write a SQL statement to display everything in the house table.
 

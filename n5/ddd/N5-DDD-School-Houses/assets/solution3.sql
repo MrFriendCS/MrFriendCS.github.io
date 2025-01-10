@@ -35,6 +35,7 @@ SELECT *
 INSERT INTO House (id, name, emblem, colour)
     VALUES (5, "Berneray", "Sheep", "Green and Black");
 
+
 -- Task 7 - Display new house
 SELECT *
     FROM House
@@ -95,15 +96,15 @@ SELECT *
       AND lastName = "Friend";
 
 
--- Task 15 - Change house
+-- Task 15 - Change house - id will be different
 UPDATE Pupil
     SET houseID = 1
     WHERE id = 132;
 
 
--- Task 16 - Display updated record
-UPDATE Pupil
-    SET houseID = 1
+-- Task 16 - Display updated record - id will be different
+SELECT *
+    FROM Pupil
     WHERE id = 132;
 
 
@@ -111,7 +112,17 @@ UPDATE Pupil
 DELETE FROM House
     WHERE id = 5;
 
+-- or
+
+DELETE FROM House
+    WHERE name = "Berneray";
+
 
 -- Task 18 - Remove John Bull
+SELECT *
+    FROM Pupil
+    WHERE firstName ="John"
+      AND lastName = "Bull";
+
 DELETE FROM Pupil
     WHERE id = 278;
