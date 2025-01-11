@@ -1,6 +1,6 @@
 # H DDD - School Houses
 
-Database file: [Santa.db](../../../n5/ddd/N5-DDD-School-Houses/assets/SchoolHouses.db "Download file")
+Database file: [SchoolHouses.db](../../../n5/ddd/N5-DDD-School-Houses/assets/SchoolHouses.db "Download file")
 
 
 ## Entity Relationship Diagram (ERD)
@@ -28,7 +28,7 @@ Database file: [Santa.db](../../../n5/ddd/N5-DDD-School-Houses/assets/SchoolHous
 | id        | PK    | Number |       | Y     | |
 | lastName  |       | Text   | 30    | Y     | |
 | firstName |       | Text   | 20    | Y     | |
-| houseID   | FK    | Number |       | Y     | Exists as id in House table |
+| houseID   | FK    | Number |       | Y     | Exists as `id` in House table |
 | year      |       | Text   | 2     | Y     | Restricted choice: S1, S2, S3, S4, S5, S6 |
 | age       |       | Number |       | Y     | Range: >= 11 and <= 18 |
 

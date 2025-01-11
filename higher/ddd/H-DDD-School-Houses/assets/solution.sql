@@ -19,7 +19,10 @@ SELECT guidanceTeacher, firstName, lastName, year, grade
     FROM House, Pupil, Result
     WHERE House.id = Pupil.houseID
       AND Pupil.id = Result.pupilID
-      AND grade = "No Award";
+      AND grade = "No Award"
+    ORDER BY guidanceTeacher ASC,
+             firstName ASC,
+             lastName ASC;
 
 
 -- Task 4 - Subject: Studies
