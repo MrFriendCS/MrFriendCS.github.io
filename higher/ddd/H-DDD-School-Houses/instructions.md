@@ -73,7 +73,7 @@ Ensure that all column names are meaningful.
 | ...   | ... |
 
 {:start="7"}
-7. Display each house name, and the number of S4 and S5 pupils in each house.  Display the number of pupils from largest to smallest.
+7. Display each house name, and the number of S4 and S5 pupils in each house.  Display the total number of pupils from largest to smallest (one result per house).
 
 8. Which pupil(s) have the most `A` grades?  Display them alphabetically.
 
