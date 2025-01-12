@@ -74,14 +74,20 @@ house: Slytherin
 
 12. Sally Holby's age has been incorrectly recorded.  Using her pupil id, change her age to 15.
 
-13. Colin Fifth should really be Colin Forth, also he should be in S1.  Using his pupil id, update his record.
+13. Display the updated record.
 
-14. Display all of your details from the pupil and house table.
+14. Colin Fifth should really be Colin Forth, also he should be in S1.  Using his pupil id, update his record.
 
-15. The sorting hat has made a mistake.  Using your pupil id, change your record and move to a different house.
+15. Display the updated record.
 
-16. Display the updated record.
+16. Display all of your details from the pupil and house table.
 
-17. Berneray house was a short lived idea. Write a SQL statement to remove this house from the database.
+17. The sorting hat has made a mistake.  Using your pupil id, change your record and move to a different house.
 
-18. John Bull is a Muggle!  He should never have been enrolled, and has now been expelled.  Remove him from the database.
+18. Display the updated record.
+
+19. Berneray house was a short lived idea. Write a SQL statement to remove this house from the database.
+
+20. Find the details of John Bull.
+
+21. John Bull is a Muggle!  He should never have been enrolled, and has now been expelled.  Using his pupil id, remove him from the database.

@@ -72,23 +72,27 @@ UPDATE Pupil
     SET age = 15
     WHERE id = 93;
 
+
+-- Task 13 - Display updated record
 SELECT *
     FROM Pupil
     WHERE id = 93;
 
 
--- Task 13 -  Change pupil record
+-- Task 14 -  Change pupil record
 UPDATE Pupil
     SET lastName = "Forth",
         year  = "S1"
     WHERE id = 205;
 
+
+-- Task 15 - Display updated record
 SELECT *
     FROM Pupil
     WHERE id = 205;
 
 
--- Task 14 - Display 'own' details
+-- Task 16 - Display 'own' details
 SELECT *
     FROM Pupil, House
     WHERE Pupil.houseID = House.id
@@ -96,19 +100,19 @@ SELECT *
       AND lastName = "Friend";
 
 
--- Task 15 - Change house - id will be different
+-- Task 17 - Change house - id will be different
 UPDATE Pupil
     SET houseID = 1
     WHERE id = 132;
 
 
--- Task 16 - Display updated record - id will be different
+-- Task 18 - Display updated record - id will be different
 SELECT *
     FROM Pupil
     WHERE id = 132;
 
 
--- Task 17 - Remove Berneray house record
+-- Task 19 - Remove Berneray house record
 DELETE FROM House
     WHERE id = 5;
 
@@ -118,11 +122,13 @@ DELETE FROM House
     WHERE name = "Berneray";
 
 
--- Task 18 - Remove John Bull
+-- Task 20 - Find John Bull
 SELECT *
     FROM Pupil
     WHERE firstName ="John"
       AND lastName = "Bull";
 
+
+-- Task 21 - Remove Bull
 DELETE FROM Pupil
     WHERE id = 278;
