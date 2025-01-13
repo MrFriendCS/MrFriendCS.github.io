@@ -71,6 +71,6 @@ Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 
 18.	Show name and `id` of all pupils, sorted by age, oldest to youngest, and then surname alphbetically.
 
-19.	Display the name and year of all S5 and S6 pupils sorted by year, lowest first, and then forename and surname alphbetically.
+19.	Display the name and year of all S5 and S6 pupils sorted by year, lowest first, and then surname and forename alphbetically.
 
 20.	Write the SQL to show the  `colour`, `emblem`, and name of all of the houses.  Sort the data by colour aplabetically.

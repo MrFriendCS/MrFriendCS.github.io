@@ -1,7 +1,7 @@
 /*
 Title: N5 DDD School Houses Part 1
 Author: Mr Friend
-Date: 7 Jan 2025
+Date: 13 Jan 2025
 */
 
 -- Task 1 - Display all house records
@@ -120,9 +120,9 @@ SELECT firstName, lastName, year
     FROM Pupil
     WHERE year = "S5"
        OR year = "S6"
-    ORDER BY year DESC,
-             firstName ASC,
-             lastName ASC;
+    ORDER BY year ASC,
+             lastName ASC,
+             firstName ASC;
 
 
 -- Task 20 - Houses sorted by colour
