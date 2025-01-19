@@ -3,10 +3,29 @@
 
 File: [Vlogger.db](assets/Vlogger.db "Download file")
 
+## Data Dictionary
 
-## Data dictionary
+### Entity: Vlogger
 
-![Data dictionary](assets/dd.png)
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| vloggerID | PK    | Number |       | Y     | |
+| forename  |       | Text   | 20    | Y     | |
+| surname   |       | Text   | 20    | Y     | |
+| username  |       | Text   | 6     | Y     | |
+| expertise |       | Text   | 15    | Y     | |
+
+### Entity: Video
+
+| Attribute   | Key   | Type   | Size  | Req'd | Validation |
+| ---------   | :---: | ----   | :---: | :---: | ---------- |
+| videoID     | PK    | Number |       | Y     | |
+| vloggerID   | FK    | Number |       | Y     | Exists in Video table |
+| videoName   |       | Text   | 50    | Y     | |
+| duration    |       | Number |       | Y     | |
+| dateCreated |       | Date   |       | Y     | |
+| content     |       | Text   | 40    | Y     | |
+| rating      |       | Number |       | Y     | Range: >=1 and <=5|
 
 
 ## Tasks
