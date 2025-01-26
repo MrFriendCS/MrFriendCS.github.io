@@ -1,11 +1,11 @@
 # Title: N5 CS 2019 Task 2B
-# Date: 19 Jan 2019
+# Date: 23 Jan 2025
 # Author: Mr Friend
 
-# import random module
+# Getr extra code
 import random
 
-# Declare variables
+# Initialise variables
 endingsIndex = 0
 noOfStudents = 0
 studentName = ""
