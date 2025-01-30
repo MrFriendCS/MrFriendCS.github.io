@@ -1,5 +1,5 @@
 # Title: H CS 2023 Task 1B
-# Author: 
+# Author: Mr Friend
 # Date: 5 Feb 2023
 
 #
@@ -40,6 +40,9 @@ def getData():
         visitors[index] = int(tempArray[2].strip())
         daysOpen[index] = int(tempArray[3].strip())
         heights[index] = tempArray[4].strip()
+        
+    # Close file
+    file.close()
 
     # Return data
     return attractions, categories, visitors, daysOpen, heights

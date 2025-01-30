@@ -1,23 +1,17 @@
--- Don't touch lines 1 to 5
-.open WhitestarAmps.db
-.headers on
-.mode column
--- Don't touch lines 1 to 5
- 
-.print N5 CS Specimen Task 1B
+-- Title: N5 CS 2021S Task 1 Part B
+-- Author: Mr Friend
+-- Date: 30 Jan 2025
 
-.print
-.print Q1d
+-- Q1d
 INSERT INTO Employee
 VALUES (1599, "Jeremy", "May", "67 Red Lane", "07923782534", "TRUE");
 
-.print
-.print Evidence
+-- Evidence
 SELECT *
 FROM Employee
 WHERE employeeNumber = 1599;
 
-.print
-.print Remove employee
+
+-- Remove employee
 DELETE FROM Employee
 WHERE employeeNumber = 1599;

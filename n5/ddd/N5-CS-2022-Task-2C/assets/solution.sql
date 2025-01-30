@@ -1,18 +1,6 @@
-/*
--- Don't touch lines 1 to 6
-.open AuctionDatabase.db
-.headers on
-.mode column
-PRAGMA foreign_keys = on;
--- Don't touch lines 1 to 6
-*/
-
-
-/*
-Title: N5 CS 2022 Task 2 Part C
-Author: Mr Friend
-Date: 28 Sep 2024
-*/
+-- Title: N5 CS 2022 Task 2 Part C
+-- Author: Mr Friend
+-- Date: 28 Sep 2024
 
 
 -- Q2c(i)  - Change property price
@@ -41,15 +29,3 @@ SELECT email, telephoneNumber, postcode
     WHERE seller.sellerID = property.sellerID
         AND numberOfBedrooms = 3
         AND askingPrice < 150000;
-
-
-
-
-/*
-Not required to answer assignment questions.
-Used to revert database back to start state.
-*/
-
--- Q2c(ii) - Add seller
-DELETE FROM seller
-    WHERE sellerID = 1502;

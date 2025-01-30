@@ -1,16 +1,6 @@
--- Don't touch lines 1 to 6
-.open football.db
-.headers ON
-.mode column
-PRAGMA foreign_keys = on;
--- Don't touch lines 1 to 6
-
-
-/*
-Title: N5 CS 2023 Specimen Task 2 Part C
-Author: Mr Friend
-Date: 23 Nov 2023
-*/
+-- Title: N5 CS 2023 Specimen Task 2 Part C
+-- Author: Mr Friend
+-- Date: 23 Nov 2023
 
 .print
 .print N5 CS Specimen Task 2 Part C

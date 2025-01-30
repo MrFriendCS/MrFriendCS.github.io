@@ -17,7 +17,7 @@ CREATE TEMP VIEW HighestDosage (maxDosage) AS
     SELECT MAX(dosage)
     FROM Drug;
 
--- use highest dosage
+-- Use highest dosage
 SELECT patientID, datePrescribed
     FROM PrescribedDrug, Drug, HighestDosage
     WHERE PrescribedDrug.drugID = Drug.drugID
@@ -28,14 +28,3 @@ SELECT patientID, datePrescribed
 SELECT forename, surname, patientID
     FROM Patient
     WHERE address LIKE '%EH12%';
-
-
-
--- Infor only
-
--- Q1c (ii) - implemented as a single query
-SELECT patientID, datePrescribed
-    FROM PrescribedDrug, Drug
-    WHERE PrescribedDrug.DrugID = drug.drugID 
-        AND dosage = (SELECT MAX(dosage)
-    FROM Drug);
