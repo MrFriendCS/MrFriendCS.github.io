@@ -1,8 +1,8 @@
 # Title: N5 CS 2020 Task 2B
 # Author: Mr Friend
-# Date: 18 Jan 2020
+# Date: 27 Jan 2025
 
-# Import random module
+# Get extra code
 import random
 
 # Declare variables
@@ -20,9 +20,12 @@ for counter in range(numberOfItems):
     
     # Get valid item type from user
     itemType = input("Enter the item type:")
+    
     while itemType != "c" and itemType != "b" and itemType != "t":
+        
         # Display error message
         print("Item type must be: c, b, or t")
+        
         # Re-enter item type
         itemType = input("Enter the item type:")
     
