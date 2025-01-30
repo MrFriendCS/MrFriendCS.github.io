@@ -124,6 +124,7 @@ def serviceDue(attractions, categories, daysOpen):
     # 3.10  Close ‘service.csv’ file
     file.close()
 
+
 def findHeight(heights):
     '''
     Find attarctions with a height restriction of 1.0m and above

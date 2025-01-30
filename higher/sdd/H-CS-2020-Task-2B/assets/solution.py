@@ -6,7 +6,6 @@
 # Subprograms
 #
 
-# 1 - Procedure to get a new member
 def newMember():
 
     """
@@ -35,11 +34,11 @@ def newMember():
     return newFirstName, newSurname, newCategory, newPassword
 
 
-# 1.4 - Function to get a valid password
 def getPassword():
 
     """
-    Get a valid password.  Starts with a Capital letter, finishes with #, $, or %.
+    Get a valid password.
+    Starts with a Capital letter, finishes with #, $, or %.
     OUT: password
     """
 
@@ -73,7 +72,9 @@ def getPassword():
 def getCategory(newFirstName, newSurname, newCategory, newPassword):
 
     """
-    Read existing member data from file to parallel arrays. Add new member data to parallel arrays. Display first name, surname and category of all members.
+    Read existing member data from file to parallel arrays.
+    Add new member data to parallel arrays.
+    Display first name, surname and category of all members.
     """
 
     # Declare local variables
@@ -86,7 +87,8 @@ def getCategory(newFirstName, newSurname, newCategory, newPassword):
     passwords = [""] * 50
     data = [""] * 4
 
-    # 2.1 Read existing member data from file into four parallel arrays: firstName(), surname(), category(), password()
+    # 2.1 Read existing member data from file into four parallel arrays:
+    #     firstName(), surname(), category(), password()
 
     # Connect to the file
     file = open("members.txt", "r")
@@ -115,7 +117,8 @@ def getCategory(newFirstName, newSurname, newCategory, newPassword):
     # Close connection to file
     file.close()
 
-    # 2.2 Add the new member data to the existing member data in the parallel arrays
+    # 2.2 Add the new member data to the existing member data
+    #     in the parallel arrays
 
     firstNames[counter] = newFirstName
     surnames[counter] = newSurname
@@ -136,7 +139,8 @@ def getCategory(newFirstName, newSurname, newCategory, newPassword):
 def displayInfo(categories):
 
     """
-    Find and display the number of members in each category and the total number of members.
+    Find and display the number of members in each category
+    and the total number of members.
     """
 
     # Declare local variables

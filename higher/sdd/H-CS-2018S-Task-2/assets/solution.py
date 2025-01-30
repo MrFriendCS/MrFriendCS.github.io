@@ -1,4 +1,4 @@
-# Title: H CS Specimen Task 2
+# Title: H CS 2018S Task 2
 # Author: Mr Friend
 # Date: 8 Oct 2024
 
@@ -121,25 +121,22 @@ def displayBeaches(beaches):
                 beaches[index].name[0:position]
 
 
-def main():
-    """Main program."""
-    
-    # Variables and datatypes
-    averageRating = 0.0
-    beachData = [Beach() for index in range(973)]
+#
+# Main program
+#
 
-    # Read in beach names and ratings from file
-    beachData = getBeachData()
+# Global variables
+averageRating = 0.0
+beachData = [Beach() for index in range(973)]
 
-    # Calculate and return the average rating of the beaches tested
-    averageRating = calcAverage(beachData)
+# Read in beach names and ratings from file
+beachData = getBeachData()
 
-    # Display the average rating of all beaches tested
-    displayAverage(averageRating)
+# Calculate and return the average rating of the beaches tested
+averageRating = calcAverage(beachData)
 
-    # Display all the beaches with a rating entered by the user
-    displayBeaches(beachData)
+# Display the average rating of all beaches tested
+displayAverage(averageRating)
 
-
-# Call main()
-main()
+# Display all the beaches with a rating entered by the user
+displayBeaches(beachData)
