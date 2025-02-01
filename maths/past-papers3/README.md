@@ -4,7 +4,7 @@
 ## Current Course
 
 | Year | QP 1                                    | MI 1                                    | QP 2                                    | MI 2 |
-| ---- | ---_                                    | ----                                    | ----                                    | ---- |
+| ---- | ----                                    | ----                                    | ----                                    | ---- |
 | 2024 | [QP](H-Maths-2024-QP-1.pdf "2024 QP 1") | [MI](H-Maths-2024-MI-1.pdf "2024 MI 1") | [QP](H-Maths-2024-QP-2.pdf "2024 QP 2") | [MI](H-Maths-2024-MI-2.pdf "2024 MI 2") |
 | 2023 | [QP](H-Maths-2023-QP-1.pdf "2023 QP 1") | [MI](H-Maths-2023-MI-1.pdf "2023 MI 1") | [QP](H-Maths-2023-QP-2.pdf "2023 QP 2") | [MI](H-Maths-2023-MI-2.pdf "2023 MI 2") |
 | 2022 | [QP](H-Maths-2022-QP-1.pdf "2022 QP 1") | [MI](H-Maths-2022-MI-1.pdf "2022 MI 1") | [QP](H-Maths-2022-QP-2.pdf "2022 QP 2") | [MI](H-Maths-2022-MI-2.pdf "2022 MI 2") |
