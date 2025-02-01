@@ -15,8 +15,6 @@
 
 ## Previous Course
 
-### Paper 1
-
 | Year | QP 1                                  | MI 1                                  | QP 2                                  | MI 2                                  |
 | ---- | ----                                  | ----                                  | ----                                  | ----                                  |
 | 2017 | [QP](N5-LS-2017-QP-1.pdf "2017 QP 1") | [MI](N5-LS-2017-MI-1.pdf "2017 MI 1") | [QP](N5-LS-2017-QP-2.pdf "2017 QP 2") | [MI](N5-LS-2017-MI-2.pdf "2017 MI 2") |
@@ -26,8 +24,6 @@
 
 
 ## Specimen Papers
-
-### Paper 1
 
 | Course | QP 1                                       | MI 1                                       | QP 2                                       | MI 2                                       |
 | ------ | ----                                       | ----                                       | ----                                       | ----                                       |
