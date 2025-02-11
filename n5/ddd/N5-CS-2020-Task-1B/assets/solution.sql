@@ -1,16 +1,6 @@
-/*
-.open anyTimeFlowers.db
-.headers on
-.mode column
-PRAGMA foreign_keys = on;
-*/
-
-
-/*
-Title: N5 CS 2020 Task 1 Part B
-Author: Mr Friend
-Date: 28 Sep 2024
-*/
+-- Title: N5 CS 2020 Task 1 Part B
+-- Author: Mr Friend
+-- Date: 28 Sep 2024
 
 
 -- Q1b - Add validation

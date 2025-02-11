@@ -1,17 +1,6 @@
-/*
-.open Gardening.db
-.headers on
-.mode column
-PRAGMA foreign_keys = on;
-/*
-
-
-/*
-Title: N5 CS 2018 Task 1 Part B
-Author: Mr Friend
-Date: 25 Nov 2023
-*/
-
+-- Title: N5 CS 2018 Task 1 Part B
+-- Author: Mr Friend
+-- Date: 25 Nov 2023
 
 -- Q1c - Create Job table
 CREATE TABLE Job(

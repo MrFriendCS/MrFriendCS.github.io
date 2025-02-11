@@ -1,5 +1,5 @@
-# Title: N5 CS 2023 Task 1B
-# Author: 
+# Title: N5 CS 2023 Task 1 Part B
+# Author: Mr Friend
 # Date: 5 Feb 2023
 
 # Declare variable and arrays
