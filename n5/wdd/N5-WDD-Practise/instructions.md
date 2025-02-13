@@ -3,20 +3,20 @@
 
 ## Images
 
-![cat.gif](assets/cat.gif)
+[cat.gif](assets/cat.gif)
 
-![cat.jpg](assets/cat.jpg)
+[cat.jpg](assets/cat.jpg)
 
-![cat.png](assets/cat.png)
+[cat.png](assets/cat.png)
 
 
 ## Audio
 
-![cat.wav](assets/cat.wav)
+[cat.wav](assets/cat.wav)
 
-![cat.mp3](assets/cat.mp3)
+[cat.mp3](assets/cat.mp3)
 
 
 ## Video
 
-![cat.mp4](assets/cat.mp4)
+[cat.mp4](assets/cat.mp4)
