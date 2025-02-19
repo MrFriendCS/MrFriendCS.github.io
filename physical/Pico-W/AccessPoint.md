@@ -2,12 +2,14 @@
 ``` python
 # Title: Access Point / Web Server
 # Author: Mr Friend
-# Date: 18 Feb 2025
+# Date: 19 Feb 2025
 
 # Import extra code
-import network  # https://docs.micropython.org/en/latest/library/network.html
-import socket   # https://docs.micropython.org/en/latest/library/socket.html
-#import time
+# https://docs.micropython.org/
+from machine import RTC
+import network
+import socket
+import time
 
 
 def webPage():
@@ -36,48 +38,95 @@ def webPage():
     <h1>Pico W</h1>
     <h2>CSV file data</h2>
     
-    <table>
-    <thead>
-    <tr><th>Date</th><th>Time</th><th>Option</th></tr>
-    </thead>
-    <tbody>
+    <!-- Data from data.csv file (Python) -->
+    """
     
-    <!-- Data from data.csv file (Python) -->"""
+    html = html + addDataTable()
     
+    html = html + addForm()
     
-    file = open("data.csv", "r")
-    line = file.readline()  # Ignore headers
-    line = file.readline()
+    html = html + addDateTime()
     
-    while line:
-        
-        data = line.split(",")
-        
-        html = html + "<tr><td>" + data[0] + "</td><td>"
-        html = html + data[1] + "</td><td>" + data[2].strip() + "</td></tr>"
-        
-        line = file.readline()
-        
-    file.close()
-    
-    html = html + """
-    </tbody>
-    </table>
-    
-    <h2>Array data</h2>
-    
-    <!-- Data from an array (Python) -->"""
-    
-    for index in range(len(days)):
-        
-        html = html + "<p>" + str(index + 1) + " - " + days[index] + "</p>"
-        
     html = html + """
     </body>
     </html>
     """
     
     return html
+
+def addDataTable():
+    
+    table = """
+    <table>
+    <thead>
+    """
+    
+    file = open("data.csv", "r")
+    line = file.readline()  # Get headers
+    
+    data = line.split(",")
+
+    table = table + "<tr><th>" + data[0] + "</th><th>"
+    table = table + data[1] + "</th><th>" + data[2].strip() + "</th></tr>"
+    
+    table = table + """
+    </thead>
+    <tbody>
+    """
+    
+    line = file.readline()
+    
+    while line:
+        
+        data = line.split(",")
+        
+        table = table + "<tr><td>" + data[0] + "</td><td>"
+        table = table + data[1] + "</td><td>" + data[2].strip() + "</td></tr>"
+        
+        line = file.readline()
+        
+    file.close()
+    
+    table = table + """
+    </tbody>
+    </table>
+    """
+
+    return table
+
+
+def addForm():
+    form = """
+    <form action="/rtc?"><br>
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year" value="2025" min="2025" max="2035"><br>
+    <label for="month">Month:</label>
+    <input type="number" id="month" name="month" value="6" min="1" max="12"><br>
+    <label for="day">Day:</label>
+    <input type="number" id="day" name="day" value="15" min="1" max="31"><br><br>
+    <label for="day">Hour:</label>
+    <input type="number" id="hour" name="hour" value="13" min="0" max="23"><br>
+    <label for="minute">Minute:</label>
+    <input type="number" id="minute" name="minute" value="30" min="0" max="59"><br>
+    <label for="second">Second:</label>
+    <input type="number" id="second" name="second" value="00" min="0" max="59"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+    """
+
+    return form
+
+
+def addDateTime():
+    
+    rtc = RTC()
+    
+    now = rtc.datetime()
+    
+    time = str(now[0]) + "-" + str(now[1]) + "-" + str(now[2])
+    time = time + " @ " + str(now[4]) + ":" + str(now[5]) + ":" + str(now[6])
+    
+    return str(str(time))
 
 
 def apMode(ssid, password):
@@ -89,7 +138,7 @@ def apMode(ssid, password):
 
     # Wait until AP is active
     while ap.active() == False:
-        pass
+        time.sleep(1)
     
     # Display local IP address
     print('\nIP Address To Connect to: ' + ap.ifconfig()[0])
@@ -116,7 +165,10 @@ def apMode(ssid, password):
         request = conn.recv(1024)
         
         # Display received data
-        print("\nContent = " + str(request))
+        try:
+            print("\nContent = " + str(request).split()[1])
+        except:
+            print("\nContent = " + str(request))
 
         # Get web page
         response = webPage()
