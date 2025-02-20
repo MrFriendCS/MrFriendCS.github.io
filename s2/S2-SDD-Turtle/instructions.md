@@ -2,14 +2,22 @@
 
 ## Introduction
 
-The turtle can be given instructions.  If the turtle understands an instruction it will carry it out.  It carrys them out in order, starting at `Line 1`.  Blank lines are allowed, even encourage to make it easier to read.
+The turtle can be given instructions.  If the turtle understands an instruction it will carry it out.  It carrys them out in order, starting at `Line 1`.  Blank lines are allowed, even encouraged to make the instructions easier to read.
 
 As the turtle moves it will draw a line on the screen, unless it has been told not to.
 
-## Starting
+## Comments
 
-In the file `main.py` there are some comments, which are ignored by the computer. 
+Comments can be added to the code, but they are ignored by the computer. 
  Comments have a `#` symbol at the start of them.
+
+``` python
+# This is a comment.  It is ignored.
+
+# Comments are for humans!
+```
+
+## Starting
 
 After the appropriate comment, enter the following code to be able to use a turtle.
 
