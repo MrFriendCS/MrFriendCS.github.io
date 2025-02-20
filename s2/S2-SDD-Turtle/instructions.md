@@ -19,7 +19,7 @@ Comments can be added to the code, but they are ignored by the computer.
 
 ## Starting
 
-After the appropriate comment, enter the following code to be able to use a turtle.
+After an appropriate comment, enter the following code to be able to use a turtle.
 
 ``` python
 import turtle
