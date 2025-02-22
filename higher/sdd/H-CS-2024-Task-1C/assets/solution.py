@@ -16,7 +16,7 @@ def getData():
     names = [""] * 100
     workers = [0] * 100
     incomes = [0] * 100
-    tempData = [""] * 3
+    data = [""] * 3
     line = ""
     index = 0
 
@@ -33,9 +33,9 @@ def getData():
         tempData = line.split(",")
 
         # Assign data to parallel arrays
-        names[index] = tempData[0].strip()
-        workers[index] = int(tempData[1].strip())
-        incomes[index] = int(tempData[2].strip())
+        names[index] = data[0].strip()
+        workers[index] = int(data[1].strip())
+        incomes[index] = int(data[2].strip())
 
         # Read next line from file
         line = file.readline()
@@ -75,7 +75,8 @@ def findMaxPos(localArray):
     
 
 def findSalaryDiff(names, incomes):
-    """Find and display the difference between the chosen company’s CEO salary and the highest CEO salary."""
+    """Find and display the difference between the chosen
+       company’s CEO salary and the highest CEO salary."""
 
     # Initialise local variables
     company = ""

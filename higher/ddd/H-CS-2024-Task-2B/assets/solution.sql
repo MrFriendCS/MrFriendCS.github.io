@@ -1,4 +1,4 @@
--- Title: 2024 H CS Task 2 Part C
+-- Title: 2024 H CS Task 2 Part B
 -- Author: Mr Friend
 -- Date: 30 Jan 2025
 
@@ -14,7 +14,7 @@
 -- 2d
 
 -- Find fastest
-CREATE TEMP VIEW fast (fastest) AS
+CREATE TEMP VIEW Fast (fastest) AS
     SELECT MIN(raceTime)
     FROM Result
     WHERE lane = 1
@@ -27,7 +27,7 @@ SELECT initial, surname, teamName, city, eventDate
       AND Swimmer.swimmerID = Result.swimmerID
       AND Event.eventID = Race.eventID
       AND Race.raceNumber = Result.raceNumber
-      AND result.raceTime = fast.fastest;
+      AND Result.raceTime = Fast.fastest;
 
 
 -- 2e
@@ -36,4 +36,5 @@ SELECT teamName, COUNT(position) AS [Total medals won]
     WHERE Result.swimmerID = Swimmer.swimmerID
       AND Swimmer.teamRef = Team.teamRef
       AND position <= 3  -- Added to make query fit for purpose
-    GROUP BY teamName;
+    GROUP BY teamName
+    ORDER BY [Total medals won] DESC;
