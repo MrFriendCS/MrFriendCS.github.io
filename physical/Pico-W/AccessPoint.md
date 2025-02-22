@@ -1,8 +1,7 @@
-
 ``` python
 # Title: Access Point / Web Server
 # Author: Mr Friend
-# Date: 19 Feb 2025
+# Date: 22 Feb 2025
 
 # Import extra code
 # https://docs.micropython.org/
@@ -43,9 +42,9 @@ def webPage():
     
     html = html + addDataTable()
     
-    html = html + addForm()
+    #html = html + addForm()
     
-    html = html + addDateTime()
+    html = html + getDateTime()
     
     html = html + """
     </body>
@@ -55,7 +54,7 @@ def webPage():
     return html
 
 def addDataTable():
-    
+    """Read data from file to create HTML table."""
     table = """
     <table>
     <thead>
@@ -96,6 +95,8 @@ def addDataTable():
 
 
 def addForm():
+    """HTML form."""
+    
     form = """
     <form action="/rtc?"><br>
     <label for="year">Year:</label>
@@ -117,13 +118,14 @@ def addForm():
     return form
 
 
-def addDateTime():
+def getDateTime():
+    """Get RTC value and create HTML."""
     
     rtc = RTC()
     
     now = rtc.datetime()
     
-    time = str(now[0]) + "-" + str(now[1]) + "-" + str(now[2])
+    time = "<br>" + str(now[0]) + "-" + str(now[1]) + "-" + str(now[2])
     time = time + " @ " + str(now[4]) + ":" + str(now[5]) + ":" + str(now[6])
     
     return str(str(time))
@@ -138,10 +140,11 @@ def apMode(ssid, password):
 
     # Wait until AP is active
     while ap.active() == False:
+        print("AP starting.")
         time.sleep(1)
     
     # Display local IP address
-    print('\nIP Address To Connect to: ' + ap.ifconfig()[0])
+    print('\nIP Address To Connect to:', ap.ifconfig()[0])
 
     # Create TCP socket
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -149,26 +152,51 @@ def apMode(ssid, password):
     # Bind socket to an address [ip, port]
     s.bind(('', 80))
     
-    # Number of backlog connections allowed
-    s.listen(5)
+    # Allow socket to accept connections - backlog connections not specified
+    s.listen()
 
-
+    # Forever
     while True:
         
-        # Accept a connection
-        conn, addr = s.accept()  # local, remote
+        # Wait to accept a connection
+        conn, addr = s.accept()  # socket object: rx, tx, remote address
 
         # Display remote IP address
-        print("\nGot a connection from " + str(addr))
+        print("\nGot a connection from", str(addr))
 
         # Receive data from the socket (bytes)
-        request = conn.recv(1024)
+        request = conn.recv(1024).decode("utf-8")
         
-        # Display received data
-        try:
-            print("\nContent = " + str(request).split()[1])
-        except:
-            print("\nContent = " + str(request))
+        data = request.split()
+ 
+        # Example: http://192.168.4.1/rtc?y=2020&m=1&d=2&h=18&m=45
+           
+        if len(data) > 1 and data[1][0:4] == "/rtc":
+            
+            field = data[1].split("?")[1]
+            fields = field.split("&")
+            
+            if len(fields) == 5:
+                
+                v = [0] * 5
+                
+                for index in range(5):
+                    
+                    v[index] = int(fields[index].split("=")[1])
+                
+                try:
+                    
+                    rtc = RTC()
+                    
+                    # [y,m,d], day of week, [h,m], seconds, microseconds
+                    rtc.datetime((v[0], v[1], v[2], 0, v[3], v[4], 0, 0))
+                    
+                    print("RTC updated.")
+        
+                except:
+                    
+                    print("RTC update failed:", request)
+    
 
         # Get web page
         response = webPage()
@@ -180,7 +208,10 @@ def apMode(ssid, password):
         conn.close()
 
 
-days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+def main():
+    
+    apMode('Pico W', 'Password')
 
-apMode('Pico W', 'Password')
+
+main()
 ```
