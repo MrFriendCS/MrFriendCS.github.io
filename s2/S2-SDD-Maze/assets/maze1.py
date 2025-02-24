@@ -11,7 +11,7 @@ screen = turtle.Screen()
 # Name the screen
 screen.title("Maze 1")
 
-# Add the maze asa background image
+# Add the maze background image
 screen.bgpic("Maze1.png")
 
 # Create the turtle
