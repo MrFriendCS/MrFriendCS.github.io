@@ -8,18 +8,28 @@ import turtle
 # Create a turtle and give it a name
 tim = turtle.Turtle()
 tim.shape("turtle")
-tim.color("red")
+tim.color("brown")
 
-# draw outline of house
+# Walls
 tim.goto(150, 0)
 tim.goto(150, 125)
+
+# Roof
+tim.color("black")
 tim.goto(0, 200)
-
-tim.penup()
-
 tim.goto(-150, 125)
 
-tim.pendown()
-
+# Walls
+tim.color("brown")
 tim.goto(-150, 0)
 tim.home()
+
+# Front door
+tim.color("blue")
+tim.left(90)
+tim.fd(75)
+tim.right(90)
+tim.fd(50)
+tim.right(90)
+tim.fd(75)
+
