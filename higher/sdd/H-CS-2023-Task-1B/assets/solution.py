@@ -32,14 +32,14 @@ def getData():
         line = file.readline()
 
         # Split the line
-        tempArray = line.split(",")
+        data = line.split(",")
 
         # Assign values to parallel arrays
-        attractions[index] = tempArray[0].strip()
-        categories[index] = tempArray[1].strip()
-        visitors[index] = int(tempArray[2].strip())
-        daysOpen[index] = int(tempArray[3].strip())
-        heights[index] = tempArray[4].strip()
+        attractions[index] = data[0].strip()
+        categories[index] = data[1].strip()
+        visitors[index] = int(data[2].strip())
+        daysOpen[index] = int(data[3].strip())
+        heights[index] = data[4].strip()
         
     # Close file
     file.close()

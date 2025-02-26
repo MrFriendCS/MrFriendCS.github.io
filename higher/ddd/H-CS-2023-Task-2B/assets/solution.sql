@@ -1,14 +1,9 @@
-/*
--- Don't change lines 1 to 5
-.open gnomeSales.db
-.headers on
-.mode column
--- Don't change lines 1 to 5
-*/
+-- Title: H CS 2023 Task 2 Part B
+-- Author: Mr Friend
+-- Date: 26 Feb 2025
 
--- H CS 2023 Task 2B
 
--- Q2b
+-- Q2(b)
 SELECT gnomeName, SUM(Quantity) AS [Total gnomes sold]
     FROM Gnome, GnomePurchase
     WHERE Gnome.gnomeID = GnomePurchase.gnomeID
@@ -17,15 +12,15 @@ SELECT gnomeName, SUM(Quantity) AS [Total gnomes sold]
     ORDER BY [Total gnomes sold] DESC;
 
 
--- Q2c
+-- Q2(c)
 -- Find most expensive
-CREATE TEMP VIEW expensive(maximum) AS
+CREATE TEMP VIEW Expensive(maximum) AS
     SELECT MAX(unitPrice)
     FROM Gnome;
 
 -- Use most expensive
 SELECT emailAddress, CustOrder.orderID, Quantity
-    FROM Customer, CustOrder, GnomePurchase, Gnome, expensive
+    FROM Customer, CustOrder, GnomePurchase, Gnome, Expensive
     WHERE Customer.customerID = CustOrder.customerID
         AND CustOrder.orderID = GnomePurchase. orderID
         AND GnomePurchase.gnomeID = Gnome.gnomeID
@@ -33,8 +28,8 @@ SELECT emailAddress, CustOrder.orderID, Quantity
         AND quantity >= 3;
 
 
--- Q2d
-SELECT forename, surname, SUM(quantity*unitPrice*1.2) AS [Total to Pay £]
+-- Q2(d)
+SELECT forename, surname, SUM(quantity * unitPrice * 1.2) AS [Total to Pay £]
     FROM Customer, Gnome, GnomePurchase, CustOrder
     WHERE CustOrder.orderID = "ord0024" 
         AND Customer.customerID = CustOrder.customerID 

@@ -1,31 +1,26 @@
 # Title: H 2019 Task 2 Part B
 # Author: Mr Friend
-# Date: 18 Feb 2022
+# Date: 26 Feb 2025
 
 # Import module
 from dataclasses import dataclass
 
-# Declare record
+
 @dataclass
-class member:
+class Member:
+    """A record to represent a member."""
     forename: str = ""
     surname: str = ""
     distance: float = 0.0
 
 
-def membersRead():
-    '''
-    Read members’ data from file into array of records
-    '''
+def getData():
+    """Read members’ data from file into array of records"""
 
-    # Declare local variables and arrays
+    # Initialise local variable and arrays
     line = ""
-    tempArray = []
-    firstName = ""
-    lastName = ""
-    dist = ""
-    tempRecord = member
-    membersArray = [member] * 20
+    data = [""] * 3
+    membersArray = [Member() for i in range(20)]
     
     # 1.1 Open members.txt file
     file = open("members.txt", "r")
@@ -33,26 +28,16 @@ def membersRead():
     # 1.2 Start loop for each member
     for index in range(len(membersArray)):
 
-        # Read next line from the file
+        # 1.3-4 Get member forename, surname, distance
         line = file.readline()
 
         # Split the line
-        tempArray = line.split(",")
-
-        # 1.3 Get member forename
-        firstName = tempArray[0].strip()
-
-        # 1.4 Get member surname
-        lastName = tempArray[1].strip()
-
-        # 1.5 Get member distance
-        dist = float(tempArray[2].strip())
-
+        data = line.split(",")
+        
         # 1.6 Store member forename, surname and distance in members() array
-        tempMember = member(firstName, lastName, dist)
-
-        # Add record to array
-        membersArray[index] = tempMember
+        membersArray[index].forename = data[0].strip()
+        membersArray[index].surname = data[1].strip()
+        membersArray[index].distance = float(data[2].strip())
 
     # 1.7 End loop
 
@@ -64,11 +49,9 @@ def membersRead():
 
 
 def findFurthest(membersData):
-    '''
-    Find the furthest distance walked
-    '''
+    """Find the furthest distance walked."""
 
-    # Declare local variables and arrays
+    # Initialise local variable
     furthestWalked = 0.0
 
     # 2.1 Set furthest to distance stored for first member in members() array
@@ -92,27 +75,22 @@ def findFurthest(membersData):
 
 
 def displayFurthest(furthestWalked):
-    '''
-    Display the furthest distance walked
-    '''
+    """Display the furthest distance walked."""
 
     print("The furthest distance walked was " + str(furthestWalked) + " miles.")
 
 
 def writePrizeWinnersFile(membersArray, furthestWalked):
-    '''
-    Write club prize winners to file
-    '''
+    """Write club prize winners to file."""
     
-    # Declare local variables and arrays
-    fileWinners = ""
+    # Initialise local variable
     wholeMarathons = 0
     
     # 4.1 Open results.txt file
-    fileWinners = open("results.txt", "w")
+    file = open("results.txt", "w")
 
     # 4.2 Write “The prize winning members are:” to the results.txt file
-    fileWinners.write("The prize winning members are:\n")
+    file.write("The prize winning members are:\n")
 
     # 4.3 Start loop for each record in members() array
     for index in range(len(membersArray)):
@@ -121,14 +99,16 @@ def writePrizeWinnersFile(membersArray, furthestWalked):
         if membersArray[index].distance > 0.7 * furthestWalked:
 
             # 4.5 write the forename and surname to the results.txt file
-            fileWinners.write(membersArray[index].forename + "," + membersArray[index].surname + "\n")
+            file.write(membersArray[index].forename + ",")
+            file.write(membersArray[index].surname + "\n")
         
         # 4.6 End if
 
     # 4.7 End loop
 
-    # 4.8 Write “The number of whole marathons walked by each member is” to the results.txt file
-    fileWinners.write("The number of whole marathons walked by each member is:\n")
+    # 4.8 Write “The number of whole marathons walked by each member is”
+    #     to the results.txt file
+    file.write("The number of whole marathons walked by each member is:\n")
 
     # 4.9 Start loop for each record in members() array
     for index in range(len(membersArray)):
@@ -136,25 +116,28 @@ def writePrizeWinnersFile(membersArray, furthestWalked):
         # 4.10 Calculate the number of whole marathons walked
         wholeMarathons = int(membersArray[index].distance / 26.22)
 
-        # 4.11  Write the forename, surname and the number of whole marathons to the results.txt file
-        fileWinners.write(membersArray[index].forename + "," + membersArray[index].surname + "," + str(wholeMarathons) + "\n")
+        # 4.11  Write the forename, surname and the number of
+        #       whole marathons to the results.txt file
+        file.write(membersArray[index].forename + ",")
+        file.write(membersArray[index].surname + ",")
+        file.write(str(wholeMarathons) + "\n")
 
     # 4.12 End loop
 
     # 4.13 Close the results.txt file
-    fileWinners.close()
+    file.close()
 
 
 #
 ## Main Program
 #
 
-# Declare global variables and arrays
+# Initialise global variables and arrays
 furthest = 0.0
-members = [member] * 20
+members = [Member() for i in range(20)]
 
 # 1. Read members' data into an array of records
-members = membersRead()
+members = getData()
 
 # 2. Find the furthest distance walked
 furthest = findFurthest(members)

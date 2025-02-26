@@ -1,13 +1,15 @@
 # Title: H CS 2022 Task 1 Part B
 # Author: Mr Friend
-# Date: 16 Feb 2022
+# Date: 26 Feb 2025
 
 # Import code for records
 from dataclasses import dataclass
 
-# Define the record
+
 @dataclass
-class sighting:
+class Sighting:
+    """A record to represent a sighting."""
+    
     town: str = ""
     mammal: str = ""
     date: str = ""
@@ -15,16 +17,15 @@ class sighting:
 
 
 def getSightings():
-    '''
-    Read from text file into sightings array of records
-    '''
-    # Declare local variables
+    """Read from text file into sightings array of records."""
+    
+    # Initialise local variables
     town = ""
     mammal = ""
     date = ""
     age = 0
-    tempArray = [""] * 4
-    sightingsData = [sighting()]* 200
+    data = [""] * 4
+    sightingsData = [Sighting() for i in range(200)]
 
     # Connect to the file
     file = open("mammals.txt", "r")
@@ -36,26 +37,21 @@ def getSightings():
         line = file.readline()
 
         # Split line
-        tempArray = line.split(",")
+        data = line.split(",")
 
-        # Get data
-        town = tempArray[0].strip()
-        mammal = tempArray[1].strip()
-        date = tempArray[2].strip()
-        age = int(tempArray[3].strip())
-
-        # Add a record to array
-        sightingsData[index] = sighting(town, mammal, date, age)
+        # Assign data to record
+        sightingsData[index].town = data[0].strip()
+        sightingsData[index].mammal = data[1].strip()
+        sightingsData[index].date = data[2].strip()
+        sightingsData[index].age = int(data[3].strip())
 
     return sightingsData
 
 
 def displayOldest(sightingsData):
-    '''
-    Find and display the age of the oldest walker
-    in the sightings data
-    '''
-    # Declare local variables
+    """Find and display the age of the oldest walker in the sightings data."""
+    
+    # Initialise local variables
     oldest = 0
     
     # Set furthest to first value
@@ -71,24 +67,25 @@ def displayOldest(sightingsData):
 
 
 def displaySightings(sightingsData):
-    '''
-    Find and display the dates of sightings of a
-    chosen mammal in a particular town
-    '''
-    # Declare local variables
+    """Find and display the dates of sightings of a 
+    chosen mammal in a particular town."""
+    
+    # Initialise local variables
     town = ""
     mammal = ""
 
     # 3.1 Ask user to enter town
     town = input("Which town? ")
 
-    # 3.2 Call a function to return a string input that starts with an upper-case character
+    # 3.2 Call a function to return a string input
+    #     that starts with an upper-case character
     town = upperChr(town)
 
     # 3.3 Ask user to enter mammal
     mammal = input("Which mammal? ")
 
-    # 3.4 Call a function to return a string input that starts with an upper-case character
+    # 3.4 Call a function to return a string input
+    #     that starts with an upper-case character
     mammal = upperChr(mammal)
 
     # 3.5 Display “The dates of sightings were:”
@@ -109,9 +106,8 @@ def displaySightings(sightingsData):
 
 
 def upperChr(word):
-    '''
-    Return a string that starts with an upper-case character
-    '''
+    """Return a string that starts with an upper-case character."""
+    
     # Declare local variables
     firstChar = 0
 
@@ -134,10 +130,9 @@ def upperChr(word):
 
 
 def countSightings(sightingsData):
-    '''
-    Count and display the number of sightings for
-    each date in the text file
-    '''
+    """Count and display the number of sightings
+    for each date in the text file."""
+    
     # Declare local variables
     dayToCount = ""
     count = 0
@@ -182,7 +177,7 @@ def countSightings(sightingsData):
 #
 
 # Declare global variables
-sightings = [sighting()] * 200
+sightings = [Sighting() for i in range(200)]
 
 # 1 Read from text file into sightings array
 #   of records
