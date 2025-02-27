@@ -2,9 +2,6 @@
 # Author: 
 # Date: 3 Feb 2024
 
-# Import code
-from dataclasses import dataclass
-
 #
 # Sub-programs
 #
@@ -84,7 +81,7 @@ def findSalaryDiff(names, incomes):
     difference = 0
 
     # 2.1  Ask user to enter the name of chosen company
-    name = input("Which comapny are you interest in? ")
+    name = input("Which company are you interest in? ")
     
     # 2.2  Set found to false
     found = False

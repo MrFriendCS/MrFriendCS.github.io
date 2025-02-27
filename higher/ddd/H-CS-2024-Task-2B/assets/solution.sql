@@ -27,7 +27,8 @@ SELECT initial, surname, teamName, city, eventDate
       AND Swimmer.swimmerID = Result.swimmerID
       AND Event.eventID = Race.eventID
       AND Race.raceNumber = Result.raceNumber
-      AND Result.raceTime = Fast.fastest;
+      AND Result.raceTime = Fast.fastest
+      AND (lane = 1 OR lane = 8);
 
 
 -- 2e
