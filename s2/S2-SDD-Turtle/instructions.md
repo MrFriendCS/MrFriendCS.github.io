@@ -156,4 +156,4 @@ tim = turtle.Turtle()
 
 Just for info.
 
-![Compass Rose](assets/Compass.png "Compass Rose")
+![CTurtle Bearings](assets/Bearings.png "Bearings")
