@@ -40,7 +40,7 @@ tim.color("red")
 
 Save the above code as `maze1.py`.  You can rename the turtle.
 
-Download the maze image.  It must be saved in the same folder as the code.
+Download the maze image (Right click, `Save image as...`).  It must be saved in the same folder as the code.
 
 When your turtle escapes the first maze create a new file with the starter code called `maze2.py`, and change the image to `maze2.png`.
 
