@@ -7,12 +7,13 @@ import turtle
 
 # Create the screen
 screen = turtle.Screen()
+screen.setup(650, 650)
 
 # Name the screen
 screen.title("Maze 3")
 
 # Add the maze background image
-screen.bgpic("maze3.png")
+screen.bgpic("maze3-1.png")
 
 # Create the turtle
 tim = turtle.Turtle()

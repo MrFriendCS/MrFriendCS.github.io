@@ -18,6 +18,7 @@ import turtle
 
 # Create the screen
 screen = turtle.Screen()
+screen.setup(650, 650)
 
 # Name the screen
 screen.title("Maze 1")
