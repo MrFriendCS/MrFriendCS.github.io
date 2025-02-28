@@ -36,11 +36,19 @@ tim.color("red")
 
 ### Mazes
 
-Maze 1: ![maze1.png](assets/maze1.png)
+#### Maze 1
 
-Maze 2: ![maze2.png](assets/maze2.png)
+![maze1.png](assets/maze1.png)
 
-Maze 3: ![maze3.png](assets/maze3.png)
+#### Maze 2
+
+![maze2.png](assets/maze2.png)
+
+#### Maze 3
+
+![maze3.png](assets/maze3.png)
+
+
 
 When your turtle escapes the first maze create a new file called `maze2.py`, and change the image to `maze2.png`.
 
