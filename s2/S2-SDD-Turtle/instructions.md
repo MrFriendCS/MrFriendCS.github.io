@@ -154,4 +154,4 @@ tim = turtle.Turtle()
 
 ## Headings
 
-![Turtle Headings](assets/Bearings.png "Headings")
+![Turtle Headings](assets/Headings.png "Headings")
