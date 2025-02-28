@@ -13,7 +13,7 @@ screen.setup(650, 650)
 screen.title("Maze 3")
 
 # Add the maze background image
-screen.bgpic("maze3-1.png")
+screen.bgpic("maze3.png")
 
 # Create the turtle
 tim = turtle.Turtle()
