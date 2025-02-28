@@ -44,7 +44,7 @@ Download the maze image (Right click, `Save image as...`).  It must be saved in 
 
 When your turtle escapes the first maze create a new file with the starter code called `maze2.py`, and change the image to `maze2.png`.
 
-___Note:___ Note the different file extensions, __.py__ and __.png__
+___Note:___ There are different file extensions, __.py__ and __.png__
 
 Can you complete all three mazes?
 
@@ -85,3 +85,8 @@ Can you complete all three mazes?
 | dot()       | tim.dot(5)<br>tim.dot(5, "red") | dot with size<br>dot with size and colour |
 | stamp()     | tim.stamp()                     | stamps the turtles shape |
 | color()     | tim.color("green")              | change colour |
+
+
+### Headings
+
+![Turtle Headings](assets/Headings.png "Headings")
