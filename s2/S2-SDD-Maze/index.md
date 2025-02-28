@@ -75,7 +75,7 @@ Can you complete all three mazes?
 | right()<br>rt()        | tim.right(75)<br>tim.rt(75)        | turn right (degrees) |
 | left()<br>lt()         | tim.left(75)<br>tim.lt(75)         | turn left (degrees) |
 | speed()                | tim.speed(5)                       | speed: 0 to 10 |
-| setheading()<br>seth() | tim.setheading(45)<br>tim.seth(45) | direction: 0 = East |
+| setheading()<br>seth() | tim.setheading(45)<br>tim.seth(45) | 0 = Right<br>90 = Up |
 
 
 ### Drawing
