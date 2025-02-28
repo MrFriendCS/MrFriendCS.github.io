@@ -152,8 +152,6 @@ tim = turtle.Turtle()
 ```
 
 
-## Compass Rose
+## Headings
 
-Just for info.
-
-![CTurtle Bearings](assets/Bearings.png "Bearings")
+![Turtle Headings](assets/Bearings.png "Headings")
