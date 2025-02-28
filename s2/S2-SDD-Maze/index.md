@@ -5,6 +5,7 @@
 
 How quickly can your turtle escape the maze?  No cheating, the turtle can't go through, over, or under the walls!
 
+
 ### Starter code
 
 ``` pyhton
@@ -21,8 +22,8 @@ screen = turtle.Screen()
 # Name the screen
 screen.title("Maze 1")
 
-# Add the maze asa background image
-screen.bgpic("Maze1.png")
+# Add the maze background image
+screen.bgpic("maze1.png")
 
 # Create the turtle
 tim = turtle.Turtle()
@@ -32,6 +33,19 @@ tim.color("red")
 # Code to escape goes below here
 
 ```
+
+
+### Instructions
+
+Save the above code as `maze1.py`.  You can rename the turtle.
+
+Download the maze image.  It must be saved in the same folder as the code.
+
+When your turtle escapes the first maze create a new file with the starter code called `maze2.py`, and change the image to `maze2.png`.
+
+___Note:___ Note the different file extensions, __.py__ and __.png__
+
+Can you complete all three mazes?
 
 
 ### Mazes
@@ -47,14 +61,6 @@ tim.color("red")
 #### Maze 3
 
 ![maze3.png](assets/maze3.png)
-
-
-
-When your turtle escapes the first maze create a new file called `maze2.py`, and change the image to `maze2.png`.
-
-___Note:___ Note the different file extensions, __.py__ and __.png__
-
-Can you complete all three mazes?
 
 
 ## Turtle Instructions
