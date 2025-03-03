@@ -70,8 +70,8 @@ Can you complete all three mazes?
 
 | Instruction            | Example                            | Comment |
 | -----------            | -------                            | ------- |
-| forward()<br>fd()      | tim.forward(75)<br>tim.fd(75)      | move forward |
-| backward()<br>bk()     | tim.backward(25)<br>tim.bk(25)     | move backward |
+| forward()<br>fd()      | tim.forward(75)<br>tim.fd(75)      | move forward (pixels) |
+| backward()<br>bk()     | tim.backward(25)<br>tim.bk(25)     | move backward (pixels) |
 | right()<br>rt()        | tim.right(75)<br>tim.rt(75)        | turn right (degrees) |
 | left()<br>lt()         | tim.left(75)<br>tim.lt(75)         | turn left (degrees) |
 | speed()                | tim.speed(5)                       | speed: 0 to 10 |
@@ -83,7 +83,7 @@ Can you complete all three mazes?
 | Instruction | Example                         | Comment |
 | ----------- | -------                         | ------- |
 | dot()       | tim.dot(5)<br>tim.dot(5, "red") | dot with size<br>dot with size and colour |
-| stamp()     | tim.stamp()                     | stamps the turtles shape |
+| stamp()     | tim.stamp()                     | stamps the turtle's shape |
 | color()     | tim.color("green")              | change colour |
 
 
