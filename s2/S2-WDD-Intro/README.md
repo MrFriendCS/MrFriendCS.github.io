@@ -1,4 +1,4 @@
-# S2 HTML
+# S2 WDD - HTML
 
 Hypertext Markup Language (HTML) is used to create webpages.  The content is displayed on the page, and _tags_ are used to describe (_markup_) what the content is.  The content could be a heading, a paragraph, an image, etc.
 
@@ -107,7 +107,7 @@ ___No end tag!___
 There are two attributes.  File name, and a short description of the image.
 
 ``` html
-<img src="cat.gif" alt="cat on mat">
+<img src="cat.gif" alt="Cat sat on a mat.">
 ```
 
 #### audio
@@ -132,6 +132,8 @@ Text only displayed if there is a problem.
 ```
 
 ## Media
+
+Use the links below to download the required media files.
 
 * Image: [Cat image](assets/cat.gif)
 * Audio: [Cat sound](assets/cat.mp3)
