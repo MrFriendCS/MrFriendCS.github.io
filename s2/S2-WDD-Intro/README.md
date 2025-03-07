@@ -19,8 +19,8 @@ The content of an element is often other elements.  An element in an element is 
 ## Basic Webpage
 
 ``` html
-<!DOCTYPE HTML> 
-<html lang="en-gb">
+<!DOCTYPE html> 
+<html lang="en-gb" >
     <head>
     </head>
     
