@@ -20,7 +20,7 @@ The content of an element is often other elements.  An element in an element is 
 
 ``` html
 <!DOCTYPE html> 
-<html lang="en-gb" >
+<html lang="en-gb">
     <head>
     </head>
     
@@ -130,3 +130,9 @@ Text only displayed if there is a problem.
     No video player available
 </video>
 ```
+
+## Media
+
+* Image: [Cat image](assets/cat.gif)
+* Audio: [Cat sound](assets/cat.mp3)
+* Video: [Cat video](assets/cat.mp4)
