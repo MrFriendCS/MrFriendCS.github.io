@@ -1,4 +1,6 @@
-# N5 CS Specimen Task 1C
+# N5 CS 2024 Specimen Task 1C
+
+[Orignally 2021 ==> 2021 Specimen ==> 2024 Specimen]: # 
 
 The measurement of how easy a sentence is to read is called the reading age.  One method of calculating this is to use the average length of the words in the sentence.
 
