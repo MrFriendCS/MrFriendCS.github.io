@@ -1,8 +1,8 @@
 # N5 CS 2024 Specimen Task 2 Part C
 
-[Originally 2021 ==> 2021S ==> 2024S] #
+[Originally 2021 ==> 2021S ==> 2024S]: #
 
-[Database needs looking at as Player fields in a different order] #
+[Database needs looking at as Player fields in a different order]: #
 
 ## Data Dictionary
 
