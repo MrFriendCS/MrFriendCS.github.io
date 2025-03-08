@@ -3,29 +3,37 @@
 
 File: [Vlogger.db](assets/Vlogger.db "Download file")
 
+## Introduction
+
+Video bloggers (vloggers) create videos to upload to social media websites.  Mirren 
+promotes vloggers across Scotland.  She keeps a record of vloggers and the details of their 
+videos.  Mirren names each video and rates them on a scale of 1 to 5 (one being the worst 
+and five being the best).  Videos may be up to 300 seconds in length. 
+
+
 ## Data Dictionary
 
 ### Entity: Vlogger
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
-| vloggerID | PK    | Number |       | Y     | |
-| forename  |       | Text   | 20    | Y     | |
-| surname   |       | Text   | 20    | Y     | |
-| username  |       | Text   | 6     | Y     | |
-| expertise |       | Text   | 15    | Y     | |
+| vloggerID | PK    | number |       | Y     | |
+| forename  |       | text   | 20    | Y     | |
+| surname   |       | text   | 20    | Y     | |
+| username  |       | text   | 6     | Y     | |
+| expertise |       | text   | 15    | Y     | |
 
 ### Entity: Video
 
 | Attribute   | Key   | Type   | Size  | Req'd | Validation |
 | ---------   | :---: | ----   | :---: | :---: | ---------- |
-| videoID     | PK    | Number |       | Y     | |
-| vloggerID   | FK    | Number |       | Y     | Exists in Video table |
-| videoName   |       | Text   | 50    | Y     | |
-| duration    |       | Number |       | Y     | |
-| dateCreated |       | Date   |       | Y     | |
-| content     |       | Text   | 40    | Y     | |
-| rating      |       | Number |       | Y     | Range: >=1 and <=5|
+| videoID     | PK    | number |       | Y     | |
+| vloggerID   | FK    | number |       | Y     | Exists in Video table |
+| videoName   |       | text   | 50    | Y     | |
+| duration    |       | number |       | Y     | |
+| dateCreated |       | date   |       | Y     | |
+| content     |       | text   | 40    | Y     | |
+| rating      |       | number |       | Y     | Range: >=1 and <=5 |
 
 
 ## Tasks
@@ -39,8 +47,7 @@ Implement the SQL statement that will output usernames and videoNames from the V
 Print evidence of your SQL statement and the output from the query after it has been implemented. (__4 marks__)
 
 
-___1c (ii)___ One of the videos called “Slime” contains a recipe for slime which does not work.
-It should be removed from the database.
+___1c (ii)___ One of the videos called “Slime” contains a recipe for slime which does not work.  It should be removed from the database.
 
 Implement the SQL statement that will delete the Slime video which has a videoID of 3.
 
