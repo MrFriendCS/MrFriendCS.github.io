@@ -16,43 +16,50 @@ The _start_ and _end_ tags are in angle brackets `< >` and the _end_ tag also ha
 
 The content of an element is often other elements.  An element in an element is said to be a _child_ element.
 
+
 ## Basic Webpage
 
 ``` html
 <!DOCTYPE html> 
 <html lang="en-gb">
     <head>
+        <!-- Head elements go here -->
+
     </head>
     
     <body>
+        <!-- Body elements go here -->
+
     </body>
 </html>
 ```
 
 Every other HTML element goes inside the `html` element _start_ and and _end_ tags.  Information about the webpage goes in the `head` element.  Anything to be displayed goes in the `body` element.
 
+
 ## Head Elements
 
-| Tag | Meaning | Comment |
-| --- | ------- | ------- |
+| Tag   | Meaning                  | Comment |
+| ---   | -------                  | ------- |
 | title | Displayed on browser tab | Required on every page |
 
 ``` html
 <title>My first page</title>
 ```
 
+
 ## Body Elements
 
 ### Normal
 
-| Tag | Meaning | Comment |
-| --- | ------- | ------- |
-| h1 | Heading | Largest |
-| h6 | Heading | Smallest |
-| p | paragraph | |
-| ol | Ordered list | Numbers |
-| ul | Unordered list | Bullet points| 
-| li | List item | used in `ol` and `ul` ||
+| Tag | Meaning        | Comment |
+| --- | -------        | ------- |
+| h1  | Heading        | Largest |
+| h6  | Heading        | Smallest |
+| p   | paragraph      | |
+| ol  | Ordered list   | Numbers |
+| ul  | Unordered list | Bullet points| 
+| li  | List item      | used in `ol` and `ul` ||
 
 #### h1
 
@@ -63,21 +70,21 @@ Every other HTML element goes inside the `html` element _start_ and and _end_ ta
 #### h2
 
 ``` html
-<h2>My first page</h2>
+<h2>A Subheading</h2>
 ```
 
 #### p
 
 ``` html
-<p>My first page</p>
+<p>A paragrapgh of text.</p>
 ```
 
 #### ol
 
 ``` html
 <ol>
-    <li>My first page</li>
-    <li>My first page</li>
+    <li>A list item</li>
+    <li>Another item</li>
 </ol>
 ```
 
@@ -87,10 +94,10 @@ ___Change `ol` to `ul` for an unordered list.___
 
 This elements also include attributes in the start tag.
 
-| Tag | Meaning | Comment |
-| --- | ------- | ------- |
-| a | Anchor | Hyperlinks |
-| img | Add an image | No end tag<br>Must have `alt` attribute |
+| Tag   | Meaning          | Comment |
+| ---   | -------          | ------- |
+| a     | Anchor           | Hyperlinks |
+| img   | Add an image     | No end tag<br>Must have `alt` attribute |
 | audio | Add a sound file | |
 | video | Add a video file | |
 
@@ -104,7 +111,8 @@ This elements also include attributes in the start tag.
 
 ___No end tag!___
 
-There are two attributes.  File name, and a short description of the image.
+There are two attributes.  The file name, and a short description of the image.
+The image file is in the same folder as the webpage file.
 
 ``` html
 <img src="cat.gif" alt="Cat sat on a mat.">
@@ -113,6 +121,7 @@ There are two attributes.  File name, and a short description of the image.
 #### audio
 
 Text only displayed if there is a problem.
+The audio file is in the same folder as the webpage file.
 
 ``` html
 <audio controls src="cat.mp3">
@@ -124,6 +133,7 @@ Text only displayed if there is a problem.
 #### video
 
 Text only displayed if there is a problem.
+The video file is in the same folder as the webpage file.
 
 ``` html
 <video controls src="cat.mp4">
@@ -131,7 +141,8 @@ Text only displayed if there is a problem.
 </video>
 ```
 
-## Media
+
+## Media Files
 
 Use the links below to download the required media files.
 
