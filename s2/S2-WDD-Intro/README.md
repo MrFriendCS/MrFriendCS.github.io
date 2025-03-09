@@ -88,7 +88,7 @@ Every other HTML element goes inside the `html` element _start_ and and _end_ ta
 </ol>
 ```
 
-___Change `ol` to `ul` for an unordered list.___
+Change `ol` to `ul` for an unordered list.
 
 ### Special
 
