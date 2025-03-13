@@ -11,7 +11,7 @@ A HTML element has three parts:
 The _start_ and _end_ tags are in angle brackets `< >` and the _end_ tag also has a forward slash `/`.  An example is shown below.
 
 ``` html
-<tag>Content</tag>
+<exampleTag>Content to be displayed</exampleTag>
 ```
 
 The content of an element is often other elements.  An element in an element is said to be a _child_ element.
