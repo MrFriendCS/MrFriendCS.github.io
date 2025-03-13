@@ -34,7 +34,7 @@ Using SVG, create an image similar to the one below.
 
 ## Basic Page
 
-Just in case!
+Starter code.
 
 ``` html
 <!DOCTYPE html>
@@ -46,7 +46,7 @@ Just in case!
 
 <body>
 
-    <!-- Ensure canvas is big enough for image -->
+    <!-- Ensure the canvas is big enough for the image -->
     <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
 
     <!-- Add the SVG shapes below here -->
