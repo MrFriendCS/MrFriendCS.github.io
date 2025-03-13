@@ -38,7 +38,7 @@ Just in case!
 
 ``` html
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
 
 <head>
   <title>SVG Practise</title>
@@ -48,6 +48,9 @@ Just in case!
 
     <!-- Ensure canvas is big enough for image -->
     <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Add the SVG shapes below here -->
+
 
     </svg>
 
