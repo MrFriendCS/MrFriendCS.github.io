@@ -23,12 +23,14 @@ The content of an element is often other elements.  An element in an element is 
 <!DOCTYPE html> 
 <html lang="en-gb">
     <head>
-        <!-- Head elements go here -->
+        <!-- Head elements go below this comment -->
+
 
     </head>
     
     <body>
-        <!-- Body elements go here -->
+        <!-- Body elements go below this comment -->
+
 
     </body>
 </html>
@@ -59,7 +61,7 @@ Every other HTML element goes inside the `html` element _start_ and and _end_ ta
 | p   | paragraph      | |
 | ol  | Ordered list   | Numbers |
 | ul  | Unordered list | Bullet points| 
-| li  | List item      | used in `ol` and `ul` ||
+| li  | List item      | used in `ol` and `ul` |
 
 #### h1
 
