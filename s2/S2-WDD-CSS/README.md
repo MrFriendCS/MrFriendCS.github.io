@@ -56,13 +56,20 @@ CSS rules are declared in the `head` of a webpage using the `style` tag.
 <!DOCTYPE HTML> 
 <html>
     <head>
+        <!-- Head elements go below this HTML comment -->
+
+
         <style>
-            /* CSS rules go here */
+            /* CSS rules go below this CSS comment */
+
 
         </style>
     </head>
 
     <body>
+        <!-- Body elements go below this HTML comment -->
+
+
     </body>
 </html>
 ```
@@ -71,13 +78,15 @@ CSS rules are declared in the `head` of a webpage using the `style` tag.
 
 CSS uses ___American___ spelling.
 
-| Property | Example Values | Comment |
-| -------- | ----- | ------- |
-| color | red, green, blue | Text colour: [more](https://www.w3schools.com/colors/colors_names.asp) |
-| background-color | red, green, blue | Background colour: [more](https://www.w3schools.com/colors/colors_names.asp) |
-| text-align | left, center, right, justify | |
-| font-family | sans-serif, monospaced | [More](https://www.w3schools.com/css/css_font.asp) |
-| font-size | x-small, large, xx-large | [More](https://www.w3schools.com/cssref/pr_font_font-size.php) |
-| width | 320px, 15% | [More](https://www.w3schools.com/cssref/pr_dim_width.php) | 
-| height | 240px, 15% | [More](https://www.w3schools.com/cssref/pr_dim_height.php) |
-
+| Property         | Example Values           | Comment |
+| --------         | --------------           | ------- |
+| color            | red, green, blue         | Text colour: 
+[more colours](https://www.w3schools.com/colors/colors_names.asp) |
+| background-color | red, green, blue         | Background colour: 
+[more colours](https://www.w3schools.com/colors/colors_names.asp) |
+| text-align       | left, center, right, justify | |
+| font-family      | sans-serif, monospaced   | [More font-families](https://www.w3schools.com/css/css_font.asp) |
+| font-size        | x-small, large, xx-large | 
+[More font-sizes](https://www.w3schools.com/cssref/pr_font_font-size.php) |
+| width            | 320px, 15%               | [More info](https://www.w3schools.com/cssref/pr_dim_width.php) | 
+| height           | 240px, 15%               | [More info](https://www.w3schools.com/cssref/pr_dim_height.php) |
