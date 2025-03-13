@@ -23,13 +23,13 @@ The content of an element is often other elements.  An element in an element is 
 <!DOCTYPE html> 
 <html lang="en-gb">
     <head>
-        <!-- Head elements go below this comment -->
+        <!-- Head elements go below this HTML comment -->
 
 
     </head>
     
     <body>
-        <!-- Body elements go below this comment -->
+        <!-- Body elements go below this HTML comment -->
 
 
     </body>

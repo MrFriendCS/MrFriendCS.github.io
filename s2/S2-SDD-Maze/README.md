@@ -31,7 +31,8 @@ tim = turtle.Turtle()
 tim.shape("turtle")
 tim.color("red")
 
-# Code to escape goes below here
+# Code to escape the maze goes below this Python comment
+
 
 ```
 
