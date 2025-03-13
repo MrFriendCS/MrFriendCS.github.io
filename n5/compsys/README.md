@@ -6,4 +6,4 @@
 | ----                  | -----------                              | -------- |
 | [ASCII](ascii.html)   | View different extended ASCII characters | |
 | [Binary](binary.html) | Convert binary to denary, or vice versa  | |
-| [Float](binary.html)  | Identify the mantissa and exponent       | |
+| [Float](float.html)   | Identify the mantissa and exponent       | |
