@@ -107,13 +107,13 @@ This elements also include attributes in the start tag.
 
 The `href` attribute has the address of the link, and the content of the element is displayed as a link.
 
-To link to a different page within the same website.
+To link to a different page within the same website:
 
 ``` html
 <a href="page2.html">Visit the other page.</a>
 ```
 
-To link to a different website.
+To link to a different website:
 
 ``` html
 <a href="https://www.bbc.co.uk/">Visit the BBC.</a>
