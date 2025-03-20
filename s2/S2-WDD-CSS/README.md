@@ -2,15 +2,10 @@
 
 ## Introduction
 
-Cascading Style Sheets (CSS) are used to format webpages.  The content is displayed on the page, and _tags_ are used to describe (_markup_) what the content is.  The content could be a heading, a paragraph, an image, etc.
+Cascading Style Sheets (CSS) are used to format webpages.  The content is displayed on the page, and HTML _tags_ are used to describe (_markup_) what the content is.  The content could be a heading, a paragraph, an image, etc.
 
-CSS is used to change how the content is fomatted.
+CSS is used to change how the content is formatted (looks).
 
-## Task
-
-All the content that is needed has been added to the webpage, but it still needs to be formatted.
-
-Using only CSS, format the webpage.
 
 ## CSS Rules
 
@@ -33,6 +28,7 @@ selector {property: value;
           property: value;}
 ```
 
+
 ## CSS Examples
 
 ### Single property
@@ -52,9 +48,9 @@ p {color: blue;
 
 CSS rules are declared in the `head` of a webpage using the `style` tag.
 
-``` html
-<!DOCTYPE HTML> 
-<html>
+```
+<!DOCTYPE html> 
+<html lang="en-gb">
     <head>
         <!-- Head elements go below this HTML comment -->
 
