@@ -76,13 +76,10 @@ CSS uses ___American___ spelling.
 
 | Property         | Example Values           | Comment |
 | --------         | --------------           | ------- |
-| color            | red, green, blue         | Text colour: 
-[more colours](https://www.w3schools.com/colors/colors_names.asp) |
-| background-color | red, green, blue         | Background colour: 
-[more colours](https://www.w3schools.com/colors/colors_names.asp) |
+| color            | red, green, blue         | Text colour: [more colours](https://www.w3schools.com/colors/colors_names.asp) |
+| background-color | red, green, blue         | Background colour: [more colours](https://www.w3schools.com/colors/colors_names.asp) |
 | text-align       | left, center, right, justify | |
 | font-family      | sans-serif, monospaced   | [More font-families](https://www.w3schools.com/css/css_font.asp) |
-| font-size        | x-small, large, xx-large | 
-[More font-sizes](https://www.w3schools.com/cssref/pr_font_font-size.php) |
+| font-size        | x-small, large, xx-large | [More font-sizes](https://www.w3schools.com/cssref/pr_font_font-size.php) |
 | width            | 320px, 15%               | [More info](https://www.w3schools.com/cssref/pr_dim_width.php) | 
 | height           | 240px, 15%               | [More info](https://www.w3schools.com/cssref/pr_dim_height.php) |
