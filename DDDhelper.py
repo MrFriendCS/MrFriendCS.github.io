@@ -4,8 +4,6 @@
 
 """Functions to help create data for N5 and Higher DDD tasks.""" 
 
-import random
-
 """
 getForename()
 getSurname()
@@ -26,6 +24,10 @@ getEye()
 getSchoolYear(primary=False)
 getGrade()
 """
+
+# Get extra code
+import random
+
 
 def getForename() -> str:
     """Pick a random forename."""
@@ -276,21 +278,25 @@ def getModel(make="") -> str:
              "Probe", "Puma", "Scorpio", "Sierra", "Sierra Sapphire", "S-MAX",
              "StreetKa", "Tourneo Connect", "Tourneo Courier",
              "Transit Courier Kombi", "Transit Custom"]
+    
     hondas = ["Accord", "Ballade", "Civic", "Concerto", "CR-V", "CRX", "CR-Z",
               "e", "FR-V", "HR-V", "Insight", "Integra", "Integra Type-R",
               "Jazz", "Legend", "Logo", "NSX", "Prelude", "S2000", "Shuttle",
               "Stream"]
+    
     hyundais = ["Accent", "Amica", "Atoz", "Bayon", "Coupe", "Elantra",
                 "Genesis", "Getz", "Grandeur", "i10", "i20", "i30", "i40",
                 "i800", "Ioniq", "Ioniq 5", "Ioniq 6", "Ioniq Electric",
                 "ix20", "ix35", "Kona", "Kona Electric", "Lantra", "Matrix",
                 "Pony", "Pony X2", "Santa Fe", "S-Coupe", "Sonata", "Stellar",
                 "Terracan", "Trajet", "Tucson", "Veloster", "XG30"]
+    
     kias = ["Carens", "Ceed", "Cerato", "Clarus", "e-Niro", "EV6", "Magentis",
             "Mentor", "Niro", "Niro EV", "Optima", "Picanto", "Pride",
             "ProCeed", "Rio", "Sedona", "Shuma", "Shuma II", "Sorento",
             "Soul", "Soul EV", "Sportage", "Stinger", "Stonic", "Venga",
             "Xceed"]
+    
     nissans = ["100 NX", "200 SX", "280C", "300C", "300 ZX", "350Z", "370Z",
                "Almera", "Almera Tino", "Ariya", "Bluebird", "Cherry", "Cube",
                "GT-R", "Juke", "Laurel", "Leaf", "Maxima", "Maxima QX",
@@ -298,6 +304,7 @@ def getModel(make="") -> str:
                "Patrol", "Pixo", "Prairie", "Primera", "Pulsar", "Qashqai",
                "Qashqai+2", "QX", "Serena", "Silvia", "Skyline R33",
                "Skyline R34", "Stanza", "Sunny", "Terrano", "X-Trail"]
+    
     renaults = ["4", "5", "9", "11", "18", "19", "21", "25", "Arkana",
                 "Avantime", "Captur", "Clio", "Espace", "Fluence",
                 "Grand Espace", "Grand Modus", "Grand Scenic", "GTA", "A610",
@@ -305,9 +312,11 @@ def getModel(make="") -> str:
                 "Megane E-Tech", "Megane Scenic", "Modus", "Safrane",
                 "Scenic", "Sport Spider", "Twingo", "Twizy", "Vel Satis",
                 "Wind", "Zoe"]
+    
     skodas = ["Citigo", "Citigo-e", "Enyaq", "Estelle", "Fabia", "Favorit",
               "Felicia", "Kamiq", "Karoq", "Kodiaq", "Octavia", "Rapid",
               "Roomster", "Scala", "Superb", "Yeti"]
+    
     toyotas = ["4-Runner", "Auris", "Avensis", "Avensis Verso", "Aygo", "bZ4X",
                "Camry", "Carina", "Carina E", "Celica", "C-HR", "Corolla",
                "GR Supra", "GR86", "GT86", "Highlander", "IQ", "Land Cruiser",
@@ -316,6 +325,7 @@ def getModel(make="") -> str:
                "Proace City Verso", "RAV4", "Space Cruiser", "Starlet",
                "Supra", "Tercel", "Urban Cruiser", "Verso", "Yaris",
                "Yaris Cross"]
+    
     vauxhalls = ["Adam", "Agila", "Ampera", "Antara", "Astra", "Astra Belmont",
                  "Calibra", "Carlton", "Cascada", "Cavalier", "Combo",
                  "Combo Tour", "Combo-e Life", "Corsa", "Corsa-e", "Crossland",
@@ -324,6 +334,7 @@ def getModel(make="") -> str:
                  "Monterey", "Nova", "Omega", "Senator", "Signum", "Sintra",
                  "Tigra", "Vectra", "Viva", "Vivaro", "Vivaro Life",
                  "Vivaro Tourer", "Vivaro-e Life", "VX220", "VXR8", "Zafira"]
+    
     volkswagens = ["Arteon", "Beetle", "Beetle Dune", "Bora", "Caddy",
                    "Caddy Life", "Caddy Maxi", "Caddy Maxi Camper",
                    "Caddy Maxi Life", "California", "Caravelle", "CC",
