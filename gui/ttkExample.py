@@ -1,27 +1,37 @@
 # https://www.youtube.com/watch?v=mop6g-c5HEY
 
+# Get extra code
 import tkinter as tk
 from tkinter import ttk
 
-root = tk.Tk()
-root.title("Convert")
+def convert():
+    km.set(str(miles.get() * 1.61))
 
-mainLabel = ttk.Label(master=root, text="Hello", font="Calibri 24 bold")
+# Create GUI
+window = tk.Tk()
+window.title("Convert")
+window.geometry("240x160")
+
+# Title
+mainLabel = ttk.Label(master=window, text="Miles to km", font="Calibri 24 bold")
 mainLabel.pack()
 
-inputFrame = ttk.Frame(master=root)
+# Input
+inputFrame = ttk.Frame(master=window)
 
-entryInt = tk.IntVar()
-entry = ttk.Entry(master=inputFrame, textvariable=entryInt)
-
-button = ttk.Button(master=inputFrame, text="Convert")
-
+miles = tk.IntVar()
+entry = ttk.Entry(master=inputFrame, textvariable=miles)
 entry.pack(side="left", padx=10)
+
+button = ttk.Button(master=inputFrame, text="Convert", command=convert)
 button.pack(side="left", padx=10)
 
-inputFrame.pack()
+inputFrame.pack(pady=10)
 
-outputLabel = ttk.Label(master=root, text="Output", font="Calibri 24")
+# Output
+km = tk.StringVar()
+outputLabel = ttk.Label(master=window, textvariable=km, font="Calibri 24")
 outputLabel.pack()
 
-root.mainloop()
+# Display GUI
+window.mainloop()
