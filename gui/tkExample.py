@@ -2,35 +2,34 @@
 
 # Get extra code
 import tkinter as tk
-from tkinter import ttk
 
 def convert():
     km.set(str(round(miles.get() * 1.609344, 2)))
 
 # Create GUI
 window = tk.Tk()
-window.title("ttk Convert")
+window.title("tk Convert")
 window.geometry("240x160")
 
 # Title
-mainLabel = ttk.Label(master=window, text="Miles to km", font="Calibri 24 bold")
+mainLabel = tk.Label(master=window, text="Miles to km", font="Calibri 24 bold")
 mainLabel.pack()
 
 # Input
-inputFrame = ttk.Frame(master=window)
+inputFrame = tk.Frame(master=window)
 
 miles = tk.IntVar()
-entry = ttk.Entry(master=inputFrame, textvariable=miles)
+entry = tk.Entry(master=inputFrame, textvariable=miles)
 entry.pack(side="left", padx=10)
 
-button = ttk.Button(master=inputFrame, text="Convert", command=convert)
+button = tk.Button(master=inputFrame, text="Convert", command=convert)
 button.pack(side="left", padx=10)
 
 inputFrame.pack(pady=10)
 
 # Output
 km = tk.StringVar()
-outputLabel = ttk.Label(master=window, textvariable=km, font="Calibri 24")
+outputLabel = tk.Label(master=window, textvariable=km, font="Calibri 24")
 outputLabel.pack()
 
 # Display GUI
