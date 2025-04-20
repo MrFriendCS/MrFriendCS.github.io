@@ -49,26 +49,16 @@ The `pack()` method adds the widgets in order, working down the screen.
 
 The `grid()` method adds widgets at a specific location, using rows and columns.
 
+The same method must be used to add widgets to the window.
 
 ### Add a Label
 
 ``` python
-# Get extra code
-from tkinter import *
-
-# Create a window - First task
-window = Tk()
-
-
 # Create a Label
 label = Label(master=window, text="A label")
 
 # Add the label to the window
 label.pack()
-
-
-# Display the window - Last task
-window.mainloop()
 ```
 
 ![Label](assets/label.png "GUI with a label")
