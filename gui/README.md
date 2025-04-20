@@ -52,3 +52,5 @@ label.pack()
 # Display the window - Last task
 window.mainloop()
 ```
+
+![Label](assets/label.png "Label")
