@@ -26,10 +26,28 @@ Widgets are added to the GUI in two stages:
 
 ### Creating a Widget
 
+Widgets are created with a number of parameters:
+
+* master: what it will be added to.  Can be another widget.
+* text: the text to be displayed.
+* padx: extra padding to left and right.
+* padx: extra padding above and below.
+* fg: text colour.
+* bg: background colour.
+* width: widget width.
+* borderwidth: border width.
+* command: function to be called.
+
+Not every parameter work with every widget.
 
 
 ### Adding a Widget
 
+Widgets can be added using either the `pack()` or `grid()` method.
+
+The `pack()` method adds the widgets in order, working down the screen.
+
+The `grid()` method adds widgets at a specific location, using rows and columns.
 
 
 ### Add a Label
@@ -53,4 +71,5 @@ label.pack()
 window.mainloop()
 ```
 
-![Label](assets/label.png "Label")
+![Label](assets/label.png "GUI with a label")
+
