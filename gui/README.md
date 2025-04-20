@@ -14,7 +14,7 @@ window = Tk()
 window.mainloop()
 ```
 
-![Blank GUI](/assets/window.png "Blank GUI")
+![Blank GUI](assets/window.png "Blank GUI")
 
 
 ## Widgets
