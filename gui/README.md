@@ -10,6 +10,12 @@ from tkinter import *
 # Create a window - First task
 window = Tk()
 
+
+#
+# Widget(s) go here
+#
+
+
 # Display the window - Last task
 window.mainloop()
 ```
