@@ -93,7 +93,7 @@ label.pack()
 
 ``` python
 # Create an entry field
-entry = Entry(master=window)
+entry = tk.Entry(master=window, fg="blue", bg="pink")
 
 # Add the entry field to the window 
 entry.pack()

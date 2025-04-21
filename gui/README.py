@@ -1,5 +1,5 @@
 # Get extra code
-from tkinter import *
+import tkinter as tk
 
 def buttonClick():
     """Copies text from the entry field to the label."""
@@ -12,7 +12,7 @@ def buttonClick():
     
 
 # Create a window - First task
-window = Tk()
+window = tk.Tk()
 
 # Set the initial height and width
 window.geometry("220x100")
@@ -22,19 +22,19 @@ window.title("Action")
 
 
 # Create a Label
-label = Label(master=window, text="A label", font="Calibri 24 bold")
+label = tk.Label(master=window, text="A label", font="Calibri 24 bold")
 
 # Add the label to the window
 label.pack()
 
 # Create an entry field
-entry = Entry(master=window)
+entry = tk.Entry(master=window, fg="blue", bg="pink")
 
 # Add the entry field to the window 
 entry.pack()
 
 # Create a button
-button = Button(master=window, text="Click me!", border=5, command=buttonClick)
+button = tk.Button(master=window, text="Click me!", border=5, command=buttonClick)
 
 # Add the button to the window 
 button.pack(pady=5)
