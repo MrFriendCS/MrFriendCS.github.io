@@ -5,13 +5,13 @@
 
 ``` python
 # Get extra code
-from tkinter import *
+import tkinter as tk
 
 # Create a window - First task
-window = Tk()
+window = tk.Tk()
 
 # Set the initial height and width
-window.geometry("320x240")
+window.geometry("220x100")
 
 # Name the window
 window.title("Blank GUI")
@@ -80,7 +80,7 @@ Widgets can be added with a number of parameters:
 
 ``` python
 # Create a Label
-label = Label(master=window, text="A label", font="Calibri 24 bold")
+label = tk.Label(master=window, text="A label", font="Calibri 24 bold")
 
 # Add the label to the window
 label.pack()
@@ -105,7 +105,7 @@ entry.pack()
 
 ``` python
 # Create a button
-button = Button(master=window, text="Click me!", border=5)
+button = tk.Button(master=window, text="Click me!", border=5)
 
 # Add the button to the window 
 button.pack(pady=5)
@@ -131,7 +131,7 @@ def buttonClick():
 Update the button to add the function.
 
 ``` python
-button = Button(master=window, text="Click me!", border=5, command=buttonClick)
+button = tk.Button(master=window, text="Click me!", border=5, command=buttonClick)
 ```
 
 ![Label](assets/action.png "GUI with an action")
