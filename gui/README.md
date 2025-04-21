@@ -33,19 +33,19 @@ window.mainloop()
 
 Widgets are added to the GUI in two stages:
 
-1 Create the widget
-2 Add the widget
+1. Create the widget
+2. Add the widget
 
 ### Creating a Widget
 
 Widgets can be created with a number of parameters:
 
-* master: what it will be added to.  Can be another widget.
-* text: the text to be displayed.
-* font: text style and size
-* fg: text colour.
-* bg: background colour.
-* command: function to be called.
+* `master`: what it will be added to.  Can be another widget.
+* `text`: the text to be displayed.
+* `font`: text style and size
+* `fg`: text colour.
+* `bg`: background colour.
+* `command`: function to be called.
 
 Not every parameter works with every widget.
 
@@ -62,19 +62,19 @@ Only one method can be used to add widgets to the window.
 
 Widgets can be added with a number of parameters:
 
-* padx: extra padding to the left and right.
-* padx: extra padding above and below.
+* `padx`: extra padding to the left and right.
+* `padx`: extra padding above and below.
 
 `pack()` method parameters:
 
-* side: where the widget goes - left, right, bottom, top (default)
+* `side`: where the widget goes - left, right, bottom, top (default)
 
 `grid()` method parameters:
 
-* row: position
-* column: position
-* rowspan: how many rows to be used, if more than 1.
-* columnspan: how many columns to be used, if more than 1.
+* `row`: position
+* `column`: position
+* `rowspan`: how many rows to be used, if more than 1.
+* `columnspan`: how many columns to be used, if more than 1.
 
 ### Add a Label
 
@@ -113,7 +113,7 @@ button.pack(pady=5)
 
 ![Label](assets/button.png "GUI with a button")
 
-### Add 
+### Add an Action to the Button
 
 Create a function.
 
@@ -128,10 +128,9 @@ def buttonClick():
     label["text"] = text
 ```
 
-Add the function the button.
+Update the button to add the function.
 
 ``` python
-# Create a button
 button = Button(master=window, text="Click me!", border=5, command=buttonClick)
 ```
 
