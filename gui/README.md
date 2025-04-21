@@ -10,6 +10,12 @@ from tkinter import *
 # Create a window - First task
 window = Tk()
 
+# Set the initial height and width
+window.geometry("320x240")
+
+# Name the window
+window.title("Blank GUI")
+
 
 #
 # Widget(s) go here
@@ -27,8 +33,8 @@ window.mainloop()
 
 Widgets are added to the GUI in two stages:
 
-* Create the widget
-* Add the widget
+1 Create the widget
+2 Add the widget
 
 ### Creating a Widget
 
@@ -36,27 +42,27 @@ Widgets can be created with a number of parameters:
 
 * master: what it will be added to.  Can be another widget.
 * text: the text to be displayed.
-* font: style and size
+* font: text style and size
 * fg: text colour.
 * bg: background colour.
 * command: function to be called.
 
-Not every parameter work with every widget.
+Not every parameter works with every widget.
 
 
 ### Adding a Widget
 
 Widgets can be added using either the `pack()` or `grid()` method.
 
-The `pack()` method adds the widgets in order, working down the screen.
+The `pack()` method adds the widgets in order, from top to bottom.
 
 The `grid()` method adds widgets at a specific location, using rows and columns.
 
-The same method must be used to add widgets to the window.
+Only one method can be used to add widgets to the window.
 
 Widgets can be added with a number of parameters:
 
-* padx: extra padding to left and right.
+* padx: extra padding to the left and right.
 * padx: extra padding above and below.
 
 `pack()` method parameters:
@@ -74,7 +80,7 @@ Widgets can be added with a number of parameters:
 
 ``` python
 # Create a Label
-label = Label(master=window, text="A label")
+label = Label(master=window, text="A label", font="Calibri 24 bold")
 
 # Add the label to the window
 label.pack()
@@ -82,3 +88,51 @@ label.pack()
 
 ![Label](assets/label.png "GUI with a label")
 
+
+### Add an Entry Field
+
+``` python
+# Create an entry field
+entry = Entry(master=window)
+
+# Add the entry field to the window 
+entry.pack()
+```
+
+![Label](assets/entry.png "GUI with entry field")
+
+### Add a Button
+
+``` python
+# Create a button
+button = Button(master=window, text="Click me!", border=5)
+
+# Add the button to the window 
+button.pack(pady=5)
+```
+
+![Label](assets/button.png "GUI with a button")
+
+### Add 
+
+Create a function.
+
+``` python
+def buttonClick():
+    """Copies text from the entry field to the label."""
+    
+    # Get the entry field text
+    text = entry.get()
+    
+    # Change the label text
+    label["text"] = text
+```
+
+Add the function the button.
+
+``` python
+# Create a button
+button = Button(master=window, text="Click me!", border=5, command=buttonClick)
+```
+
+![Label](assets/action.png "GUI with an action")
