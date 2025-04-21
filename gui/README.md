@@ -26,7 +26,7 @@ window.title("Blank GUI")
 window.mainloop()
 ```
 
-![Blank GUI](assets/window.png "Blank GUI")
+![Blank GUI](assets/blank.png "Blank GUI")
 
 
 ## Widgets
