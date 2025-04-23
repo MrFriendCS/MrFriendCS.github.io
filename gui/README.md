@@ -10,7 +10,7 @@ import tkinter as tk
 # Create a window - First task
 window = tk.Tk()
 
-# Set the initial height and width
+# Set the initial width and height
 window.geometry("220x100")
 
 # Name the window

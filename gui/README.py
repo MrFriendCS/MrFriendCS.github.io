@@ -1,3 +1,7 @@
+# Title: Tkinter - Pack
+# Author: Mr Friend
+# Date: 23 Apr 2025
+
 # Get extra code
 import tkinter as tk
 
