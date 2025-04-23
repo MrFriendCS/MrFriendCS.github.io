@@ -61,6 +61,8 @@ entry.grid(row=1, column=0, columnspan=2)
 
 ### Add a Button
 
+When lines of code become too long, they can be broken up over different lines, if within brackets `( )`.
+
 ``` python
 # Create C to F button
 buttonC = tk.Button(master=window,
