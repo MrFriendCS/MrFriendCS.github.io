@@ -53,16 +53,12 @@ Not every parameter works with every widget.
 
 ### Adding a Widget
 
-The `pack()` method adds the widgets in order, from top to bottom.
-
-Widgets can be added with a number of parameters:
+There are different methods to add widgets to the GUI, and some parameters can be used with all of them:
 
 * `padx`: extra padding to the left and right.
 * `padx`: extra padding above and below.
 
-`pack()` method parameters:
-
-* `side`: where the widget goes - left, right, bottom, top (default)
+The `pack()` method is a specific way to add the widgets, which is from top to bottom.
 
 
 ## Code
