@@ -26,7 +26,7 @@ window.title("Blank GUI")
 window.mainloop()
 ```
 
-![Blank GUI](assets/blank.png "Blank GUI")
+![Blank GUI](assets/pack1.png "Blank GUI")
 
 
 ## Widgets
@@ -35,6 +35,7 @@ Widgets are added to the GUI in two stages:
 
 1. Create the widget
 2. Add the widget
+
 
 ### Creating a Widget
 
@@ -52,13 +53,7 @@ Not every parameter works with every widget.
 
 ### Adding a Widget
 
-Widgets can be added using either the `pack()` or `grid()` method.
-
 The `pack()` method adds the widgets in order, from top to bottom.
-
-The `grid()` method adds widgets at a specific location, using rows and columns.
-
-Only one method can be used to add widgets to the window.
 
 Widgets can be added with a number of parameters:
 
@@ -69,12 +64,8 @@ Widgets can be added with a number of parameters:
 
 * `side`: where the widget goes - left, right, bottom, top (default)
 
-`grid()` method parameters:
 
-* `row`: position
-* `column`: position
-* `rowspan`: how many rows to be used, if more than 1.
-* `columnspan`: how many columns to be used, if more than 1.
+## Code
 
 ### Add a Label
 
@@ -86,7 +77,7 @@ label = tk.Label(master=window, text="A label", font="Calibri 24 bold")
 label.pack()
 ```
 
-![Label](assets/label.png "GUI with a label")
+![Label added](assets/pack2.png "GUI with a label")
 
 
 ### Add an Entry Field
@@ -99,7 +90,8 @@ entry = tk.Entry(master=window, fg="blue", bg="pink")
 entry.pack()
 ```
 
-![Label](assets/entry.png "GUI with entry field")
+![Entry field added](assets/pack3.png "GUI with entry field")
+
 
 ### Add a Button
 
@@ -111,7 +103,8 @@ button = tk.Button(master=window, text="Click me!", border=5)
 button.pack(pady=5)
 ```
 
-![Label](assets/button.png "GUI with a button")
+![Button added](assets/pack4.png "GUI with a button")
+
 
 ### Add an Action to the Button
 
@@ -134,4 +127,4 @@ Update the button to add the function.
 button = tk.Button(master=window, text="Click me!", border=5, command=buttonClick)
 ```
 
-![Label](assets/action.png "GUI with an action")
+![App running](assets/pack5.png "GUI with an action")
