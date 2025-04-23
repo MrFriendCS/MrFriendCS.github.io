@@ -23,7 +23,7 @@ window.title("Convert")
 window.mainloop()
 ```
 
-![Blank GUI](assets/convert1.png "Convert")
+![Blank GUI](assets/grid1.png "Convert")
 
 
 ## Widgets
@@ -56,7 +56,7 @@ entry = tk.Entry(master=window, fg="blue", bg="pink", font="Consolas 14")
 entry.grid(row=1, column=0, columnspan=2)
 ```
 
-![Label and entry field](assets/convert2.png "GUI with a label and entry")
+![Label and entry field](assets/grid2.png "GUI with a label and entry")
 
 
 ### Add a Button
@@ -92,7 +92,7 @@ def convertC():
     label["text"] = degF
 ```
 
-![First button added](assets/convert3.png "GUI with a button")
+![First button added](assets/grid3.png "GUI with a button")
 
 
 ### Add a Another Button
@@ -125,4 +125,4 @@ def convertF():
     label["text"] = degC
 ```
 
-![Second button added](assets/convert4.png "GUI with buttons")
+![Second button added](assets/grid4.png "GUI with buttons")
