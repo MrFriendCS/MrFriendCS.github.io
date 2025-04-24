@@ -35,8 +35,8 @@ def convertF():
 # Create a window - First task
 window = tk.Tk()
 
-# Set the initial height and width
-#window.geometry("220x100")
+# Set the initial position: x and y
+window.geometry("+400+300")
 
 # Name the window
 window.title("Convert")

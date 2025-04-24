@@ -13,6 +13,9 @@ window = tk.Tk()
 # Name the window
 window.title("Convert")
 
+# Set the initial position: x and y
+window.geometry("+400+300")
+
 
 #
 # Widget(s) go here
