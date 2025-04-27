@@ -37,7 +37,7 @@ Widgets are added to the GUI in two stages:
 2. Add the widget
 
 
-### Creating a Widget
+### Creating a widget
 
 Widgets can be created with a number of parameters:
 
@@ -51,7 +51,7 @@ Widgets can be created with a number of parameters:
 Not every parameter works with every widget.
 
 
-### Adding a Widget
+### Adding a widget
 
 There are different methods to add widgets to the GUI, and some parameters can be used with all of them:
 
@@ -63,7 +63,7 @@ The `pack()` method is a specific way to add the widgets, which is from top to b
 
 ## Code
 
-### Add a Label
+### Add a label
 
 ``` python
 # Create a Label
@@ -76,7 +76,7 @@ label.pack()
 ![Label added](assets/pack2.png "GUI with a label")
 
 
-### Add an Entry Field
+### Add an entry field
 
 ``` python
 # Create an entry field
@@ -89,7 +89,7 @@ entry.pack()
 ![Entry field added](assets/pack3.png "GUI with entry field")
 
 
-### Add a Button
+### Add a button
 
 ``` python
 # Create a button
@@ -102,7 +102,7 @@ button.pack(pady=5)
 ![Button added](assets/pack4.png "GUI with a button")
 
 
-### Add an Action to the Button
+### Add an action to the button
 
 Create a function.
 

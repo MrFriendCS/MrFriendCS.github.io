@@ -32,21 +32,19 @@ window.mainloop()
 
 ## Widgets
 
-### Adding a Widget
+### Adding a widget
 
-`grid()` method parameters:
+`pack()` method parameters:
 
-* `row`: position
-* `column`: position
-* `rowspan`: how many rows to be used, if more than 1.
-* `columnspan`: how many columns to be used, if more than 1.
+* `side`: position - left, right, top (default), bottom
+* `anchor`: reference point (compass) - n, ne, e, se, etc.
 
 
 ## Code
 
-### Add a Notebook
+### Add a notebook
 
-A notebook is used as tabs can be added to it.
+Tabs are added to a notebook.
 
 ``` python
 # Create notebook for tabs
@@ -57,7 +55,7 @@ notebook.pack(side="left", anchor="nw")
 ```
 
 
-### Add First Tab
+### Add first tab
 
 ``` python
 # Create first tab and add to notebook
@@ -69,7 +67,7 @@ notebook.add(m2kTab, text="m2km")
 ![Tab 1](assets/tabs2.png "Tab 1")
 
 
-### Add Labels to Tab
+### Add labels to tab
 
 ``` python
 # Create title label and add to 1st tab
@@ -92,7 +90,7 @@ kmOutput.pack()
 ![Tab 1 labels](assets/tabs3.png "Tab 1 labels")
 
 
-### Add an Input Area
+### Add an input area
 
 ``` python
 # Create input area and add to 1st tab
@@ -102,7 +100,7 @@ m2kFrame.pack()
 ```
 
 
-### Add Entry Field and Button
+### Add entry field and button
 
 ``` python
 # Create entry field and add to input area
@@ -144,7 +142,7 @@ def convertm2km():
 ![Tab 1 working](assets/tabs5.png "Tab 1 working")
 
 
-### Add Second Tab
+### Add second tab
 
 ``` python
 # Create second tab 2 and add to notebook
@@ -156,7 +154,7 @@ notebook.add(tab2, text="km2m")
 ![Tab 2](assets/tabs6.png "Tab 2")
 
 
-### Add Labels to Tab
+### Add labels to tab
 
 ``` python
 # Create title label and add to 2nd tab
@@ -179,7 +177,7 @@ milesOutput.pack()
 ![Tab 2 labels](assets/tabs7.png "Tab 2 labels")
 
 
-### Add an Input Area
+### Add an input area
 
 ``` python
 # Create input area and add to 2nd tab
@@ -189,7 +187,7 @@ inputArea2.pack()
 ```
 
 
-### Add Entry Field and Button
+### Add entry field and button
 
 ``` python
 # Create entry field and add to input area

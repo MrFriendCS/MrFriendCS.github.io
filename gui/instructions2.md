@@ -31,11 +31,11 @@ window.mainloop()
 
 ## Widgets
 
-### Adding a Widget
+### Adding a widget
 
 `grid()` method parameters:
 
-* `row`: position
+* `side`: position
 * `column`: position
 * `rowspan`: how many rows to be used, if more than 1.
 * `columnspan`: how many columns to be used, if more than 1.
@@ -43,7 +43,7 @@ window.mainloop()
 
 ## Code
 
-### Add a Label and Entry Field
+### Add a label and entry field
 
 ``` python
 # Create a Label
@@ -62,7 +62,7 @@ entry.grid(row=1, column=0, columnspan=2)
 ![Label and entry field](assets/grid2.png "GUI with a label and entry")
 
 
-### Add a Button
+### Add a button
 
 When lines of code become too long, they can be broken up over different lines, if within brackets `( )`.
 
@@ -98,7 +98,7 @@ def convertC():
 ![First button added](assets/grid3.png "GUI with a button")
 
 
-### Add a Another Button
+### Add a another button
 
 ``` python
 # Create F to C button
