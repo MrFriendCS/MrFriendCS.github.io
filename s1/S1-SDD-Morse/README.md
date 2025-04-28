@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This uses the micro:bit V2 to produce the dash and dot sounds, but will work on the micro:bit V1 without the sound.
+This code uses the micro:bit V2 to produce the Morse Code dash and dot sounds, but will work on the micro:bit V1 without the sounds.
 
 
 ## On start
@@ -81,6 +81,6 @@ The micro:bit V2 has a built in speaker that can be used to hear the 'dots' and 
 ![Radio received 1](assets/morse10.png "Dot received")
 
 
-#### Other
+#### End
 
 ![Radio received 2](assets/morse11.png "End received")
