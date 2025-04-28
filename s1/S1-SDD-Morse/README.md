@@ -44,4 +44,4 @@ When a number is received use logic to show the correct symbol.
 
 When the number 0 is received, show a dash on the screen.
 
-![Radio received 0](assets/morse5.png "Dash received")
+![Radio received 0](assets/morse6.png "Dash received")
