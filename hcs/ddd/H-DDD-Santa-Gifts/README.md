@@ -1,6 +1,6 @@
 # H DDD - Santa Gifts
 
-Database file: [Santa.db](../../../n5/ddd/N5-DDD-Santa-Gifts/assets/Santa.db "Download file")
+Database file: [Santa.db](../../../n5cs/ddd/N5-DDD-Santa-Gifts/assets/Santa.db "Download file")
 
 
 ## Data Dictionary
@@ -26,7 +26,7 @@ Database file: [Santa.db](../../../n5/ddd/N5-DDD-Santa-Gifts/assets/Santa.db "Do
 
 ## ERD
 
-![ERD 1:M](../../../n5/ddd/N5-DDD-Santa-Gifts/assets/Diagrams/ERD-ChildGift.png)
+![ERD 1:M](../../../n5cs/ddd/N5-DDD-Santa-Gifts/assets/Diagrams/ERD-ChildGift.png)
 
 
 ## Introduction
