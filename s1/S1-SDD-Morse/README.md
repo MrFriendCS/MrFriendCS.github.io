@@ -38,7 +38,7 @@ Send the number `2` to represent the end of a letter, and display something on t
 ![Radio send 2](assets/morse4.png "on button A+B")
 
 
-## On radio receive
+## On radio received
 
 When a number is received use logic to show the correct symbol.
 
