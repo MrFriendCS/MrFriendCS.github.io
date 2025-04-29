@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This code uses the micro:bit V2 to produce the Morse Code dash and dot sounds, but will work on the micro:bit V1 without the sounds.
+Two micro:bits are needed to send and receive [Morse Code](https://morsecode.world/Titanic.html) dots and dashes.  If micro:bit V2 is used then the sounds can be heard using the built in speaker.  With a micro:bit V1, the dots and dashes can still be seen on the screen.
 
 
 ## On start
@@ -68,7 +68,7 @@ When a number that is not a `0` or a `1` is received, show a symbol on the scree
 
 ### Sound
 
-The micro:bit V2 has a built in speaker that can be used to hear the 'dots' and 'dashes'
+The micro:bit V2 has a built in speaker that can be used to hear the 'dots' and 'dashes'.  This part can be missed out if a micro:bit V1 is being used. 
 
 
 #### Dash
