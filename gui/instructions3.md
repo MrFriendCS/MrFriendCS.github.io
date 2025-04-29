@@ -69,6 +69,8 @@ notebook.add(m2kTab, text="m2km")
 
 ### Add labels to tab
 
+#### Title label
+
 ``` python
 # Create title label and add to 1st tab
 m2kLbl = tk.Label(master=m2kTab,
@@ -77,7 +79,12 @@ m2kLbl = tk.Label(master=m2kTab,
                   font="Calibri 24 bold")
 
 m2kLbl.pack()
+```
 
+
+#### Output label
+
+``` python
 # Create output label and add to 1st tab
 kmOutput = tk.Label(master=m2kTab,
                     text="0",
@@ -102,13 +109,19 @@ m2kFrame.pack()
 
 ### Add entry field and button
 
+#### Entry field
+
 ``` python
 # Create entry field and add to input area
 milesInput = tk.Entry(master=m2kFrame)
 
 milesInput.pack(side="left")
+```
 
 
+#### Button
+
+``` python
 # Create button and add to input area
 m2kBtn = tk.Button(master=m2kFrame,
                    text="Convert",
@@ -156,6 +169,8 @@ notebook.add(tab2, text="km2m")
 
 ### Add labels to tab
 
+#### Title label
+
 ``` python
 # Create title label and add to 2nd tab
 title2 = tk.Label(master=tab2,
@@ -164,7 +179,13 @@ title2 = tk.Label(master=tab2,
                   font="Calibri 24 bold")
 
 title2.pack()
+```
 
+
+#### Output label
+
+
+``` python
 # Create output label and add to 2nd tab
 milesOutput = tk.Label(master=tab2,
                        text="0",
@@ -189,13 +210,20 @@ inputArea2.pack()
 
 ### Add entry field and button
 
+
+#### Entry field
+
 ``` python
 # Create entry field and add to input area
 kmInput = tk.Entry(master=inputArea2)
 
 kmInput.pack(side="left")
+```
 
 
+#### Button
+
+``` python
 # Create button and add to input area
 k2mBtn = tk.Button(master=inputArea2,
                      text="Convert",
