@@ -130,8 +130,6 @@ m2kBtn = tk.Button(master=m2kFrame,
 m2kBtn.pack(side="left")
 ```
 
-![Tab 1 entry](assets/tabs4.png "Tab 1 entry")
-
 
 #### Create the function
 
@@ -231,8 +229,6 @@ k2mBtn = tk.Button(master=inputArea2,
 
 k2mBtn.pack(side="left")
 ```
-
-![Tab 2 entry](assets/tabs8.png "Tab 2 entry")
 
 
 #### Create the function
