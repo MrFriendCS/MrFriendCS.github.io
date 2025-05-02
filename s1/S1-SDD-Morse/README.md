@@ -6,16 +6,16 @@
 Two micro:bits are needed to send and receive [Morse Code](https://morsecode.world/Titanic.html) dots and dashes.  If micro:bit V2 is used then the sounds can be heard using the built in speaker.  With a micro:bit V1, the dots and dashes can still be seen on the screen.
 
 
-## On start
+## Set up
 
-### Set up the radio
+### On start
 
 Pick a radio group to send and receive messages on.  It can be from `0` to `255`.
 
 ![Radio group](assets/morse1.png "on start")
 
 
-## Transmit
+## Send
 
 ### On button A pressed
 
@@ -38,9 +38,9 @@ Send the number `2` to represent the end of a letter, and display something on t
 ![Radio send 2](assets/morse4.png "on button A+B")
 
 
-## On radio received
+## Receive
 
-When a number is received use logic to show the correct symbol.
+When a number is received use logic to show the correct symbol, and then clear the screen ready for the next symbol.
 
 ![Number received](assets/morse5.png "Number received")
 
