@@ -84,3 +84,8 @@ The micro:bit V2 has a built in speaker that can be used to hear the 'dots' and 
 #### End
 
 ![Radio received 2](assets/morse11.png "End received")
+
+
+## Morse Code
+
+[Morse Code sheet](assets/MorseCode.docx)
