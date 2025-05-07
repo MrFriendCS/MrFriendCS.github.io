@@ -1,8 +1,10 @@
 # Neopixels
 
+
 ## Layout
 
-![Servo Layout](media/neopixel.png)
+![Pico with Neopixel strip](assets/neopixel.png)
+
 
 ## Code
 
@@ -84,6 +86,4 @@ while True:
 
         # Display LEDs
         pixels.write()
-
-
 ```
