@@ -1,10 +1,17 @@
 # Servo
 
-Using Picozero to control a servo.
+Using picozero to control a servo.
+
+
+## Install picozero library
+
+[Instructions](https://projects.raspberrypi.org/en/projects/introduction-to-the-pico/4 "RPi website"). 
+
 
 ## Layout
 
-![Servo Layout](media/servo.png)
+![Servo layout](assets/servo.png)
+
 
 ## Code
 

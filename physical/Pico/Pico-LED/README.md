@@ -1,6 +1,11 @@
 # RGB LED
 
-Using Picozero to control a RGB LED.
+Uses the Picozero to control a RGB LED.
+
+
+## Install picozero library
+
+[Instructions](https://projects.raspberrypi.org/en/projects/introduction-to-the-pico/4 "RPi website"). 
 
 
 ## Layout
