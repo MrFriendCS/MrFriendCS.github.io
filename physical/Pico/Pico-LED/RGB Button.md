@@ -2,9 +2,11 @@
 
 Using Picozero to to sense a button press to control a RGB LED.
 
+
 ## Layout
 
-![RGB Button Layout](media/rgbButton.png)
+![RGB Button Layout](assets/rgbButton.png)
+
 
 ## Code
 
@@ -52,4 +54,3 @@ while True:
     rgb.color = colours[colour]
 
 ```
- 

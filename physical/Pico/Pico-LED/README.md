@@ -2,9 +2,11 @@
 
 Using Picozero to control a RGB LED.
 
+
 ## Layout
 
-![RGB LED Layout](media/rgbLED.png)
+![RGB LED Layout](assets/rgbLED.png)
+
 
 ## Code
 
@@ -46,4 +48,3 @@ while True:
         
     sleep(0.5)
  ```
- 
