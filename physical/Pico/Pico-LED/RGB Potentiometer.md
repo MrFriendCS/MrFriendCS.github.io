@@ -1,11 +1,12 @@
-
 # RGB Potentiometer
 
-Using Picozero to control the brightness of a RGB LED with a potentiometer.
+Using the picozero library to control the brightness of a RGB LED with a potentiometer.
+
 
 ## Layout
 
-![RGB Pot Layout](media/rgbPot.png)
+![RGB Pot Layout](assets/rgbPot.png)
+
 
 ## Code
 

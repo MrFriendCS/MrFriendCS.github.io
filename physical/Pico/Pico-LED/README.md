@@ -1,6 +1,6 @@
 # RGB LED
 
-Uses the Picozero to control a RGB LED.
+Uses the picozero library to control a RGB LED.
 
 
 ## Install picozero library

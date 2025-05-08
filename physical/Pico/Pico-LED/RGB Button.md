@@ -1,6 +1,6 @@
 # RGB LED
 
-Using Picozero to to sense a button press to control a RGB LED.
+Using the picozero library to sense a button press to control a RGB LED.
 
 
 ## Layout
