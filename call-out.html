@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang="en-gb">
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Call-out</title>
+        
         <style>
 
             /* For mobile phones: */
@@ -75,12 +77,13 @@
         <div class="right">
             <form>
                 <label for="startTime">Start time:</label>
-                <input type="time" id="startTime" value="12:00" onchange="changeTime()" height="5vw">
+                <input type="time" id="startTime" value="12:00" onchange="changeTime()">
                 <br>
                 <label for="endTime" >End time:</label>
                 <input type="time" id="endTime" class="topMargin" value="12:00" onchange="changeTime()">
-            </div>
-        </form>
+            </form>
+        </div>
+        
 
         <script>
             function changeTime(){
