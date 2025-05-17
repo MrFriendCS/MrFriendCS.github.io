@@ -8,4 +8,4 @@
 
 ## Maths
 
-* [Maths Practise](https://mrfriendcs.github.io/maths/ "Maths Practise")
+* [AoM Practise](https://mrfriendcs.github.io/n5-aom/ "AoM Practise")
