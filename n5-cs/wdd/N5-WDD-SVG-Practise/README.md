@@ -11,25 +11,25 @@ Using SVG, create an image similar to the one below.
 ### Line
 
 ``` html
-<line x1="20" y1="20" x2="180" y2="180" style="stroke:red;stroke-width:2" />
+<line x1="20" y1="20" x2="180" y2="180" style="stroke:red; stroke-width:2;" />
 ```
 
 ### Rectangle
 
 ``` html
-<rect x="110" y="110" width="60" height="40" fill="blue" style="stroke-width:3;stroke:red"/>
+<rect x="110" y="110" width="60" height="40" fill="blue" style="stroke-width:3; stroke:red;"/>
 ```
 
 ### Ellipse
 
 ``` html
-<ellipse cx="100" cy="100" rx="40" ry="50"  fill="yellow" style="stroke:green;stroke-width:3" />
+<ellipse cx="100" cy="100" rx="40" ry="50"  fill="yellow" style="stroke:green; stroke-width:3;" />
 ```
 
 ### Polygon
 
 ``` html
-<polygon points="100,10 150,150 50,150" fill="blue" style="stroke:purple;stroke-width:3" />
+<polygon points="100,10 150,150 50,150" fill="blue" style="stroke:purple; stroke-width:3;" />
 ```
 
 ## Basic Page
