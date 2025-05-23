@@ -19,13 +19,23 @@ Comments can be added to the code, but they are ignored by the computer.
 
 ## Starting
 
-After an appropriate comment, enter the following code to be able to use a turtle.
+Add and complete the following comments.
+
+``` python
+# Title: Python Turtle
+# Author: 
+# Date: 
+``` 
+
+Add a blank line or two, to make the code easier to read, and enter the following code to be able to use a turtle.
 
 ``` python
 import turtle
 ```
 
 Now create a new turtle and give it a name.  This one will be called `tim`.  Any name came be used but spaces are not allowed.
+
+__Tip__: A short name saves lots of typing! 
 
 ``` python
 tim = turtle.Turtle()
