@@ -5,6 +5,7 @@ Uses the picozero library to control a RGB LED.
 
 ## Install picozero library
 
+Install the picozero library, if not already installed:
 [Instructions](https://projects.raspberrypi.org/en/projects/introduction-to-the-pico/4 "RPi website"). 
 
 
@@ -16,12 +17,14 @@ Uses the picozero library to control a RGB LED.
 ## Code
 
 ``` python
-# Import code
+# Get extra code
 from picozero import RGBLED
 from time import sleep
 
+
 # GPIO pins for RGB LED
 rgb = RGBLED(13, 14, 15)
+
 
 # Declare RGB Colours
 black = (0, 0, 0)  # All off
@@ -33,6 +36,7 @@ white = (255, 255, 255)  # All on
 # Declare array
 colours = [red, green, blue, white, black]
 
+
 # Loop forever
 while True:
     
@@ -41,10 +45,12 @@ while True:
         rgb.color = colour
         sleep(0.5)
     
+    
     # Get brighter
     for counter in range(256):
         rgb.color = (counter, counter, counter)
         sleep(0.005)
+    
     
     # Get dimmer
     for counter in range(256):

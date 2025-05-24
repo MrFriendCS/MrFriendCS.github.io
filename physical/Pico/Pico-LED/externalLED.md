@@ -1,6 +1,6 @@
-# Pico - Internal LED
+# Pico - External LED
 
-Uses the picozero library to control the onboard LED.
+Uses the picozero library to control a LED.
 
 
 ## Install picozero library
@@ -11,15 +11,19 @@ Install the picozero library, if not already installed:
 
 ## Layout
 
-![RGB LED Layout](assets/internalLED.png)
+![RGB LED Layout](assets/externalLED.png)
 
 
 ## Code
 
 ``` python
 # Get extra code
-from picozero import pico_led
+from picozero import LED
 from time import sleep
+
+
+# Setup the pin to control the LED
+led = LED(15)
 
 
 # Loop forever
@@ -27,14 +31,14 @@ while True:
     
     
     # Turn LED on
-    pico_led.on()
+    led.on()
     
     # Pause
     sleep(0.5)
     
     
     # Turn LED off
-    pico_led.off()
+    led.off()
     
     # Pause
     sleep(0.5)
