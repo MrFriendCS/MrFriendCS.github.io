@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Barra Ski Slopes (BSS) design ski slopes for all around the world.  The when designing a slope for a client, BSS is provided with the maximum height and length that the slope can be.  BSS then calculates the following values:
+Barra Ski Slopes (BSS) design ski slopes for all around the world.  When designing a new slope BSS is provided with the maximum height and length that the slope can be.  BSS then calculates the following values:
 
 * Slope length
 * Slope gradient
