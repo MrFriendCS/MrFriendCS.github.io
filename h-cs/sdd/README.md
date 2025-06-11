@@ -5,6 +5,7 @@
 
 | Title                    | Description                    | Concepts                    | Comments |
 | -----                    | -----------                    | --------                    | -------- |
+| H-SDD-Maths-Functions    | Simple functions to practise   | sp                          | Tests    |
 | H-SDD-Summer             | For summer break               | asc, chr, int, mod, sp, ss  | |
 | H-SDD-Add                | Add two values                 | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%    | sp, r, w                    | sd |
