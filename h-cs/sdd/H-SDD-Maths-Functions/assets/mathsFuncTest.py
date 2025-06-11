@@ -69,7 +69,7 @@ def testMultiply():
     # Test 2
     try:
         
-        assert add(-2, -3) == 6
+        assert multiply(-2, -3) == 6
         
     except:
         
@@ -78,7 +78,7 @@ def testMultiply():
     # Test 3
     try:
         
-        assert add(-2, -3) == 6
+        assert multiply(-2, 3) == -6
         
     except:
         
