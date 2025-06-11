@@ -12,7 +12,7 @@ Create a file called `mathsFunc.py`.  The file will contain the code for the fol
 
 ## Functions
 
-### Add function
+### add
 
 This function will add two values together and return the result.
 
@@ -28,7 +28,7 @@ print(add(2, 3))
 5
 ```
 
-### Multiply function
+### multiply
 
 This function will multiply two values together and return the result.
 
@@ -45,7 +45,7 @@ print(multiply(2, 3))
 ```
 
 
-### Subtract function
+### subtract
 
 This function will subtract the second value from the first and return the result.
 
@@ -61,7 +61,7 @@ print(subtract(5, 2))
 3
 ```
 
-### Divide function
+### divide
 
 This function will divide the first value by the second and return the result.
 
