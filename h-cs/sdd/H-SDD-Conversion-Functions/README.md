@@ -11,7 +11,7 @@ Create a file called `conversionFuncs.py`.  The file will contain the code for t
 * _cmToMcm_
 * _mToKMm_
 * _inchesToFeetInches_
-* _feetToYardsInches_
+* _feetToYardsFeet_
 
 
 ## Assumptions
