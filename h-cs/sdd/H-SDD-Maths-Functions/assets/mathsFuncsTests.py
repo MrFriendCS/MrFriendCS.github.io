@@ -3,7 +3,7 @@
 # Date: 11 Jun 2025
 
 # Get functions to be tested
-from mathsFunc import *
+from mathsFuncs import *
 
 #
 # Sub-programs

@@ -18,7 +18,7 @@ Create a file called `conversionFuncs.py`.  The file will contain the code for t
 
 The decimal part of any values passed to a function will be ignored.
 
-The functions will return a value of -1 if passed invalid values.
+The functions will return values of `(-1, -1)` if passed invalid values.
 
 
 ## Functions
