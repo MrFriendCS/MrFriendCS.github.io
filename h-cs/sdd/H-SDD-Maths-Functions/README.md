@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Create a file called `mathsFunc.py`.  The file will contain the code for the following functions:
+Create a file called `mathsFuncs.py`.  The file will contain the code for the following functions:
 
 * _add_
 * _multiply_
@@ -81,4 +81,4 @@ print(divide(6, 3))
 
 Test the functions to ensure they work.  Apart from TAD, remove any code that is not in the functions.
 
-Save the file [`mathsFuncTest.py`](assets/mathsFuncTest.py) to the same folder as `mathsFunc.py`.  Open and run `mathsFuncTest.py`.
+Save the file [`mathsFuncsTest.py`](assets/mathsFuncTest.py) to the same folder as `mathsFuncs.py`.  Open and run `mathsFuncsTest.py`.
