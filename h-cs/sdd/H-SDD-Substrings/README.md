@@ -12,17 +12,15 @@ Create a file called `substrings.py`.  The file will contain the code for the fo
 
 ## Assumptions
 
-The decimal part of any values passed to a function will be ignored.
-
-The functions will return values of `(-1, -1)` if passed invalid values.
+If invalid values are passed to a substring, then the original string is returned.
 
 
 ## Functions
 
 
-### left
+### left()
 
-This function return a substring, starting with the first character on the right.
+This function returns a substring, starting with the first character on the left.
 
 #### Example code
 
@@ -37,9 +35,9 @@ print(left("Hello world", 4))
 ```
 
 
-### right
+### right()
 
-This function will convert whole hours to days and hours.
+This function returns a substring, starting with the last character on the right.
 
 #### Example code
 
@@ -54,9 +52,9 @@ print(right("Hello world", 5))
 ```
 
 
-### mid
+### mid()
 
-This function will convert whole minutes to hours and minutes.
+This function returns a substring, starting a number of characters from the left.
 
 #### Example code
 

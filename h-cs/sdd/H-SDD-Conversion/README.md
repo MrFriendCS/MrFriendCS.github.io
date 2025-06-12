@@ -24,7 +24,7 @@ The functions will return values of `(-1, -1)` if passed invalid values.
 ## Functions
 
 
-### secToMinSec
+### secToMinSec()
 
 This function will convert whole seconds to minutes and seconds.
 
@@ -41,7 +41,7 @@ print(secToMinSec(100))
 ```
 
 
-### minToHourMin
+### minToHourMin()
 
 This function will convert whole minutes to hours and minutes.
 
@@ -58,7 +58,7 @@ print(minToHourMin(189))
 ```
 
 
-### hourToDayHour
+### hourToDayHour()
 
 This function will convert whole hours to days and hours.
 
@@ -75,7 +75,7 @@ print(hourToDayHour(56))
 ```
 
 
-### mmToCMmm
+### mmToCMmm()
 
 This function will convert whole millimetres to centimetres and millimetres.
 
@@ -92,7 +92,7 @@ print(mmToCMmm(115))
 ```
 
 
-### cmToMcm
+### cmToMcm()
 
 This function will convert whole centimetres to metres and centimetres.
 
@@ -109,7 +109,7 @@ print(cmToMcm(72))
 ```
 
 
-### mToKMm
+### mToKMm()
 
 This function will convert whole metres to kilometres and metres.
 
@@ -126,7 +126,7 @@ print(mToKMm(2567))
 ```
 
 
-### inchesToFeetInches
+### inchesToFeetInches()
 
 This function will convert whole inches to feet and inches.
 
@@ -143,7 +143,7 @@ print(inchesToFeetInches(62))
 ```
 
 
-### feetToYardsFeet
+### feetToYardsFeet()
 
 This function will convert whole feet to yards and feet.
 

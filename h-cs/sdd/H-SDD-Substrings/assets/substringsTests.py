@@ -37,480 +37,224 @@ def testLeft():
         failCount = failCount + 1
         
         print("\tFailed: \"12345\", 3 = \"123\"")
+
+    # Test 3
+    try:
         
-        
-        
-        print("Test " + str(test) +
-              ": 'Hello!', 4 --> ", end="")
-        assert substring.left("Hello!", 4) == "Hell"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '12345', 3 --> ", end="")
-        assert substring.left("12345", 3) == "123"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '£1.26p', 5 --> ", end="")
-        assert substring.left("£1.26p", 5) == "£1.26"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 'Hello!', -17 --> ", end="")
-        assert substring.left("Hello!", -1) == "Hello!"
-        print("Passed")
-                     
-        print("\nPASSED: left()")
-        print("==============\n")
-        
-        return 1
+        assert left("£1.26p", 5) == "£1.26"
         
     except:
-        print("Failed")
-        print("\nFAILED: left()")
-        print("==============\n")
         
-        return 0
+        failCount = failCount + 1
+        
+        print("\tFailed: \"£1.26p\", 5) == \"£1.26\"")
+
+    # Test 4
+    try:
+        
+        assert left("Hello!", 0) == "Hello!"
+        
+    except:
+        
+        failCount = failCount + 1
+        
+        print("\tFailed: \"Hello!\", 0) == \"Hello!\"")
+
+    # Test 5
+    try:
+        
+        assert left("Hello!", -1) == "Hello!"
+        
+    except:
+        
+        failCount = failCount + 1
+        
+        print("\tFailed: \"Hello!\", 0) == \"Hello!\"")
+
+    # Test 6
+    try:
+        
+        assert left("Hello!", 7) == "Hello!"
+        
+    except:
+        
+        failCount = failCount + 1
+        
+        print("\tFailed: \"Hello!\", 7) == \"Hello!\"")
+    
+    # Display final message
+    if failCount == 0:
+        
+        print("\tAll tests passed.")
 
 
 def testRight():
-    """Tests the right() function"""
+    """Test the funcationality of the right() function."""
     
-    # Local variable
-    test = 1
+    # Initialise variable
+    failCount = 0
     
-    print("\nright() Tests")
-    print("-------------\n")
+    # Display message
+    print("\nTesting: right() function")
     
+    # Test 1
     try:
         
-        print("Test " + str(test) +
-              ": 'Hello!', 5 --> ", end="")
-        assert substring.right("Hello!", 5) == "ello!"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '12345', 3 --> ", end="")
-        assert substring.right("12345", 3) == "345"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '£1.26p', 3 --> ", end="")
-        assert substring.right("£1.26p", 3) == "26p"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 'Hello!', -17 --> ", end="")
-        assert substring.right("Hello!", -1) == "Hello!"
-        print("Passed")
-                     
-        print("\nPASSED: right()")
-        print("===============\n")
-        
-        return 1
+        assert right("Hello!", 4) == "llo!"
         
     except:
-        print("Failed")
-        print("\nFAILED: right()")
-        print("===============\n")
         
-        return 0
+        failCount = failCount + 1
+        
+        print("\tFailed: \"Hello\", 4 = \"llo!\"")
+    
+    # Test 2
+    try:
+        
+        assert right("12345", 3) == "345"
+        
+    except:
+        
+        failCount = failCount + 1
+        
+        print("\tFailed: \"12345\", 3 = \"345\"")
+
+    # Test 3
+    try:
+        
+        assert right("£1.26p", 5) == "1.26p"
+        
+    except:
+        
+        failCount = failCount + 1
+        
+        print("\tFailed: \"£1.26p\", 5) == \"1.26p\"")
+
+    # Test 4
+    try:
+        
+        assert right("Hello!", 0) == "Hello!"
+        
+    except:
+        
+        failCount = failCount + 1
+        
+        print("\tFailed: \"Hello!\", 0) == \"Hello!\"")
+
+    # Test 5
+    try:
+        
+        assert right("Hello!", -1) == "Hello!"
+        
+    except:
+        
+        failCount = failCount + 1
+        
+        print("\tFailed: \"Hello!\", 0) == \"Hello!\"")
+
+    # Test 6
+    try:
+        
+        assert right("Hello!", 7) == "Hello!"
+        
+    except:
+        
+        failCount = failCount + 1
+        
+        print("\tFailed: \"Hello!\", 7) == \"Hello!\"")
+    
+    # Display final message
+    if failCount == 0:
+        
+        print("\tAll tests passed.")
 
 
 def testMid():
-    """Tests the mid() function"""
+    """Test the funcationality of the mid() function."""
     
-    # Local variable
-    test = 1
+    # Initialise variable
+    failCount = 0
     
-    print("\nmid() Tests")
-    print("-----------\n")
+    # Display message
+    print("\nTesting: mid() function")
     
+    # Test 1
     try:
         
-        print("Test " + str(test) +
-              ": 'Hello world!', 4, 5 --> ", end="")
-        assert substring.mid("Hello world!", 4, 5) == "lo wo"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '12345', 2, 3 --> ", end="")
-        assert substring.mid("12345", 2, 3) == "234"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '£1.26p', 2, 3 --> ", end="")
-        assert substring.mid("£1.26p", 2, 3) == "1.2"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 'Hello!', -1, 2 --> ", end="")
-        assert substring.mid("Hello!", -1, 2) == "Hello!"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 'Hello!', 4, 2 --> ", end="")
-        assert substring.mid("Hello!", 3, -1) == "Hello!"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 'Hello!', -17, 4 --> ", end="")
-        assert substring.mid("Hello!", 3, -1) == "Hello!"
-        print("Passed")
-                
-        print("\nPASSED: mid()")
-        print("=============\n")
-        
-        return 1
+        assert mid("Hello!", 2, 3) == "ell"
         
     except:
-        print("Failed")
-        print("\nFAILED: mid()")
-        print("=============\n")
         
-        return 0
-
-
-def testLower():
-    """Tests the lower() function"""
+        failCount = failCount + 1
+        
+        print("\tFailed: \"Hello\", 2, 3 = \"ello\"")
     
-    # Local variable
-    test = 1
-    
-    print("\nlower() Tests")
-    print("-------------\n")
-    
+    # Test 2
     try:
         
-        print("Test " + str(test) +
-              ": 'Hello!' --> ", end="")
-        assert substring.lower("Hello!") == "hello!"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '12 34' --> ", end="")
-        assert substring.lower("12 34") == "12 34"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '£1.26p' --> ", end="")
-        assert substring.lower("£1.26p") == "£1.26p"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 'AB-cd-wx-YZ' --> ", end="")
-        assert substring.lower("AB-cd-wx-YZ") == "ab-cd-wx-yz"
-        print("Passed")
-                
-        print("\nPASSED: lower()")
-        print("===============\n")
-        
-        return 1
+        assert mid("12345", 3, 2) == "34"
         
     except:
-        print("Failed")
-        print("\nFAILED: lower()")
-        print("===============\n")
         
-        return 0
+        failCount = failCount + 1
+        
+        print("\tFailed: \"12345\", 3, 2 = \"34\"")
 
-
-def testUpper():
-    """Tests the upper() function"""
-    
-    # Local variable
-    test = 1
-    
-    print("\nupper() Tests")
-    print("-------------\n")
-    
+    # Test 3
     try:
         
-        print("Test " + str(test) +
-              ": 'Hello!' --> ", end="")
-        assert substring.upper("Hello!") == "HELLO!"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '12 34' --> ", end="")
-        assert substring.upper("12 34") == "12 34"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '£1.26p' --> ", end="")
-        assert substring.upper("£1.26p") == "£1.26P"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 'ab-CD-WX-yza' --> ", end="")
-        assert substring.upper("ab-CD-WX-yz") == "AB-CD-WX-YZ"
-        print("Passed")
-                
-        print("\nPASSED: upper()")
-        print("===============\n")
-        
-        return 1
+        assert mid("£1.26p", 2, 3) == "1.2"
         
     except:
-        print("Failed")
-        print("\nFAILED: upper()")
-        print("===============\n")
         
-        return 0
+        failCount = failCount + 1
         
+        print("\tFailed: \"£1.26p\", 2, 3) == \"1.2\"")
 
-def testReverse():
-    """Tests the reverse() function"""
-    
-    # Local variable
-    test = 1
-    
-    print("\nreverse() Tests")
-    print("---------------\n")
-    
+    # Test 4
     try:
         
-        print("Test " + str(test) +
-              ": 'Hello!' --> ", end="")
-        assert substring.reverse("Hello!") == "!olleH"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '12 34' --> ", end="")
-        assert substring.reverse("12 34") == "43 21"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '£1.26p' --> ", end="")
-        assert substring.reverse("£1.26p") == "p62.1£"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 'AB-cd-wx-YZ' --> ", end="")
-        assert substring.reverse("AB-cd-wx-YZ") == "ZY-xw-dc-BA"
-        print("Passed")
-                
-        print("\nPASSED: reverse()")
-        print("=================\n")
-        
-        return 1
+        assert mid("Hello!", 4, 0) == "Hello!"
         
     except:
-        print("Failed")
-        print("\nFAILED: reverse()")
-        print("=================\n")
         
-        return 0
+        failCount = failCount + 1
+        
+        print("\tFailed: \"Hello!\", 4, 0) == \"Hello!\"")
 
-
-def testSwap():
-    """Tests the swap() function"""
-    
-    # Local variable
-    test = 1
-    
-    print("\nswap() Tests")
-    print("------------\n")
-    
+    # Test 5
     try:
         
-        print("Test " + str(test) +
-              ": 'Hello!' --> ", end="")
-        assert substring.swap("Hello!") == "hELLO!"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '12 34' --> ", end="")
-        assert substring.swap("12 34") == "12 34"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '£1.26p' --> ", end="")
-        assert substring.swap("£1.26p") == "£1.26P"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 'AB-cd-wx-YZ' --> ", end="")
-        assert substring.swap("AB-cd-wx-YZ") == "ab-CD-WX-yz"
-        print("Passed")
-                
-        print("\nPASSED: swap()")
-        print("==============\n")
-        
-        return 1
+        assert mid("Hello!", -1, 3) == "Hello!"
         
     except:
-        print("Failed")
-        print("\nFAILED: swap()")
-        print("==============\n")
         
-        return 0
+        failCount = failCount + 1
         
+        print("\tFailed: \"Hello!\", -1, 3) == \"Hello!\"")
 
-def testRemove():
-    """Tests the remove() function"""
-    
-    # Local variable
-    test = 1
-    
-    print("\nremove() Tests")
-    print("--------------\n")
-    
+    # Test 6
     try:
         
-        print("Test " + str(test) +
-              ": 'Hello!' --> ", end="")
-        assert substring.remove("Hello!") == "Hello"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '12 34' --> ", end="")
-        assert substring.remove("12 34") == ""
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": '£1.26p' --> ", end="")
-        assert substring.remove("£1.26p") == "p"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": 'AB-cd-wx-YZ' --> ", end="")
-        assert substring.remove("AB-cd-wx-YZ") == "ABcdwxYZ"
-        print("Passed")
-                
-        print("\nPASSED: remove()")
-        print("================\n")
-        
-        return 1
+        assert mid("Hello!", 3, 5) == "Hello!"
         
     except:
-        print("Failed")
-        print("\nFAILED: remove()")
-        print("================\n")
         
-        return 0
-
-
-def testAll():
-    """Tests all functions"""
+        failCount = failCount + 1
+        
+        print("\tFailed: \"Hello!\", 3, 5) == \"Hello!\"")
     
-    # Local variable
-    passed = 0
+    # Display final message
+    if failCount == 0:
+        
+        print("\tAll tests passed.")
     
-    print("\nRun All Tests")
-    print("--------------\n")
-    
-    try:
-        
-        passed += testLeft()
-        passed += testRight()
-        passed += testMid()
-        passed += testLower()
-        passed += testUpper()
-        passed += testReverse()
-        passed += testSwap()
-        passed += testRemove()
-        
-        if passed == 8:
-            print("\nTesting of all functions: PASSED!")
-            print("=================================\n")
-        else:
-            1/0  # Throws an exception
-        
-    except:
-            print("\nTesting of all functions: FAILED!")
-            print("=================================\n")
-        
 
 #
 # Main program
 #
 
-# Initialise global variables
-test = ""
-run = True
-
-while run:
-    print("\nConvert Tests")
-    print("-------------")
-
-    print("\n1. left() tests")
-    print("2. right() tests")
-    print("3. mid() tests")
-    print("4. lower() tests")
-    print("5. upper() tests")
-    print("6. reverse() tests")
-    print("7. swap() tests")
-    print("8. reverse() tests")
-    print("9. remove() tests")
-    print("\na. All tests")
-    print("x. Exit")
-
-    # Get text value from user
-    test = input("\nTest: ")
-
-    if test == "1":
-        # 
-        testLeft()
+testLeft()
+testRight()
+testMid()
         
-    elif test == "2":
-        # 
-        testRight()
-        
-    elif test == "3":
-        # 
-        testMid()
-        
-    elif test == "4":
-        # 
-        testLower()
-        
-    elif test == "5":
-        # 
-        testUpper()
-        
-    elif test == "6":
-        # 
-        testReverse()
-        
-    elif test == "7":
-        # 
-        testSwap()
-        
-    elif test == "8":
-        # 
-        testRemove()
-        
-    elif test == "a":
-        # Run all tests
-        testAll()
-        
-    elif test == "x":
-        # Exit tests
-        run = False
