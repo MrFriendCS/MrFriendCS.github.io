@@ -1,4 +1,4 @@
-# H SDD - Substring
+# H SDD - Strings
 
 
 ## Task

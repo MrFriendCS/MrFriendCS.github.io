@@ -10,13 +10,13 @@ from mathsFuncs import *
 #
 
 def testAdd():
-    """Test the funcationality of the add function."""
+    """Test the funcationality of the add() function."""
     
     # Initialise variable
     failCount = 0
     
     # Display message
-    print("\nTesting: add function")
+    print("\nTesting: add() function")
 
     # Test 1
     try:
@@ -47,7 +47,7 @@ def testAdd():
 
 
 def testMultiply():
-    """Test the funcationality of the multiply function."""
+    """Test the funcationality of the multiply() function."""
     
     # Initialise variable
     failCount = 0
@@ -93,7 +93,7 @@ def testMultiply():
 
 
 def testSubtract():
-    """Test the funcationality of the subtract function."""
+    """Test the funcationality of the subtract() function."""
     
     # Initialise variable
     failCount = 0
@@ -118,7 +118,7 @@ def testSubtract():
         
 
 def testDivide():
-    """Test the funcationality of the divide function."""
+    """Test the funcationality of the divide() function."""
     
     # Initialise variable
     failCount = 0

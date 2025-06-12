@@ -5,7 +5,9 @@
 
 | Title                    | Description                    | Concepts                    | Comments |
 | -----                    | -----------                    | --------                    | -------- |
-| H-SDD-Maths-Functions    | Simple functions to practise   | sp                          | Tests    |
+| H-SDD-Maths-Functions    | Simple functions to practise   | sp                          | Tests |
+| H-SDD-Conversion         | Conversion of different units  | sp, mod                     | Tests |
+| H-SDD-Substrings         | Substring functions            | sp, ss                      | Tests |
 | H-SDD-Summer             | For summer break               | asc, chr, int, mod, sp, ss  | |
 | H-SDD-Add                | Add two values                 | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%    | sp, r, w                    | sd |
@@ -16,7 +18,7 @@
 | H-SDD-Caesar-Cipher Pt 1 | Plaintext to ciphertext        | sp, mod, ss, asc, chr       | Tests |
 | H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext        | sp, mod, ss, asc, chr       | Tests |
 | H-SDD-Convert            | Multiple conversions of units  | sp, int, mod                | Tests |
-| H-SDD-Substring          | Multiple string manipulations  | sp, ss, asc, chr            | Tests |
+| H-SDD-Strings            | Multiple string manipulations  | sp, ss, asc, chr            | Tests |
 | H-SDD-Write-Data Pt 1    | Create and write random data   | sp, pa, chr, w              | Tests |
 | H-SDD-Calculation        | Multiple calculations          | sp, ss, asc, chr            | Tests |
 | H-SDD-Algorithm          | Standard algorithms            | sp, ls, co, min, max        | Tests |
