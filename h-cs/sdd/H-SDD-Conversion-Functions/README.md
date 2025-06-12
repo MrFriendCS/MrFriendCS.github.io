@@ -143,14 +143,14 @@ print(inchesToFeetInches(62))
 ```
 
 
-### feetToYardsInches
+### feetToYardsFeet
 
 This function will convert whole feet to yards and feet.
 
 #### Example code
 
 ``` python
-print(feetToYardsInches(31))
+print(feetToYardsFeet(31))
 ```
 
 #### Example output

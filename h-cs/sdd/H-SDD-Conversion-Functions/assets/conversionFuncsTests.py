@@ -1,145 +1,73 @@
-# Title: Testing Functions in mathsFunc.py
+# Title: Testing Functions in conversionFuncs.py
 # Author: Mr Friend
-# Date: 11 Jun 2025
+# Date: 12 Jun 2025
 
 # Get functions to be tested
-from mathsFunc import *
+from conversionFuncs import *
 
 #
 # Sub-programs
 #
 
-def testAdd():
-    """Test the funcationality of the add function."""
+def testSecToMinSec():
+    """Test the funcationality of the secToMinSec function."""
     
     # Initialise variable
     failCount = 0
     
     # Display message
-    print("\nTesting: add function")
+    print("\nTesting: secToMinSec function")
 
     # Test 1
     try:
         
-        assert add(2, 3) == 5
+        assert secToMinSec(81) == (1, 21)
         
     except:
         
         failCount = failCount + 1
         
-        print("\tFailed: 2 + 3 = 5")
+        print("\tFailed: 81 = (1, 21)")
     
     # Test 2
     try:
         
-        assert add(-2, -3) == -5
+        assert secToMinSec(81.9) == (1, 21)
         
     except:
         
         failCount = failCount + 1
         
-        print("\tFailed: -2 + (-3) = -5")
-
-    # Display final message
-    if failCount == 0:
+        print("\tFailed: 81.9 = (1, 21)")
         
-        print("\tAll tests passed.")
-
-
-def testMultiply():
-    """Test the funcationality of the multiply function."""
-    
-    # Initialise variable
-    failCount = 0
-    
-    # Display message
-    print("\nTesting: multiply function")
-
-    # Test 1
-    try:
-        
-        assert multiply(2, 3) == 6
-        
-    except:
-        
-        failCount = failCount + 1
-        
-        print("\tFailed: 2 * 3 = 6")
-    
-    # Test 2
-    try:
-        
-        assert multiply(-2, -3) == 6
-        
-    except:
-        
-        failCount = failCount + 1
-    
     # Test 3
     try:
         
-        assert multiply(-2, 3) == -6
+        assert secToMinSec(0) == (0, 0)
         
     except:
         
         failCount = failCount + 1
         
-        print("\tFailed: -2 + (-3) = -5")
-
-    # Display final message
-    if failCount == 0:
+        print("\tFailed: 0 = (0, 0)")
         
-        print("\tAll tests passed.")
-
-
-def testSubtract():
-    """Test the funcationality of the subtract function."""
-    
-    # Initialise variable
-    failCount = 0
-    
-    # Display message
-    print("\nTesting: subtract function")
-
+    # Test 4
     try:
         
-        assert subtract(5, 2) == 3
+        assert secToMinSec(-1) == (-1, -1)
         
     except:
         
         failCount = failCount + 1
         
-        print("\tFailed: 5 - 2 = 3")
+        print("\tFailed: -1 = (-1, -1)")
 
     # Display final message
     if failCount == 0:
         
         print("\tAll tests passed.")
-        
 
-def testDivide():
-    """Test the funcationality of the divide function."""
-    
-    # Initialise variable
-    failCount = 0
-    
-    # Display message
-    print("\nTesting: divide function")
 
-    try:
-        
-        assert divide(6, 3) == 2.0
-        
-    except:
-        
-        failCount = failCount + 1
-        
-        print("\tFailed: 6 / 3 = 2.0")
-
-    # Display final message
-    if failCount == 0:
-        
-        print("\tAll tests passed.")
 
 
 #
@@ -147,7 +75,5 @@ def testDivide():
 #
 
 # Run tests
-testAdd()
-testMultiply()
-testSubtract()
-testDivide()
+testSecToMinSec()
+
