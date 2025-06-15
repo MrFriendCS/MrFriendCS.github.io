@@ -106,7 +106,7 @@ def testRight():
         
         failCount = failCount + 1
         
-        print("\tFailed: \"Hello\", 4 = \"llo!\"")
+        print("\tFailed: \"Hello!\", 4 = \"llo!\"")
     
     # Test 2
     try:
