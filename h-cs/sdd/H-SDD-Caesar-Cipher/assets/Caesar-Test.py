@@ -1,192 +1,85 @@
 # Title: Caesar Cipher Tests
 # Author: Mr Friend
-# Date: 4 Sep 2024
+# Date: 17 Jun 2025
 
 """Tests the functions in caesar.py"""
 
-import caesar
-
+from caesar import *
 
 def testEncode():
-    """Tests the encode() function"""
+    """Test the funcationality of the encode() function."""
     
-    # Local variable
-    test = 1
+    # Initialise local variables
+    failCount = 0
+    inputs = ["abcd", "wxyz", "abcd", "wxyz", "!a b-c,", "ABCD",
+              "WXYZ", "ABCD", "WXYZ", "!A B-C,", "abcd", "ABCD"]
+    shifts = [1, 1, 25, 25, 3, 1,
+              1, 25, 25, 3, 55, 55]
+    outputs = ["bcde", "xyza", "zabc", "vwxy", "def", "bcde",
+               "xyza", "zabc", "vwxy", "def", "defg", "defg"]
     
-    print("\nEncode Tests")
-    print("------------\n")
+    # Display function being tested
+    print("\nTesting: encode() function")
     
-    try:
+    # Loop through tests
+    for index in range(len(inputs)):
+    
+        try:
+            
+            assert encode(inputs[index], shifts[index]) == outputs[index]
+            
+        except:
+            
+            # Increment failure count
+            failCount = failCount + 1
+            
+            # Display failure message
+            print("\tFailed Test " + str(index+1) + ": encode(\""
+                  + inputs[index] + "\", " + str(shifts[index])
+                  + ") = '" + outputs[index] + "'")
+    
+    # Display success message
+    if failCount == 0:
         
-        print("Test " + str(test) +
-              ": Lower case, small shift: ", end="")
-        assert caesar.encode("abcd", 1) == "bcde"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Lower case, small wrap: ", end="")
-        assert caesar.encode("wxyz", 1) == "xyza"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Lower case, big shift: ", end="")
-        assert caesar.encode("abcd", 25) == "zabc"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Lower case, big wrap: ", end="")
-        assert caesar.encode("wxyz", 25) == "vwxy"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Lower case, symbols: ", end="")
-        assert caesar.encode("!a b-c,", 3) == "def"
-        print("Passed")
-        
-        test += 11
-        print("Test " + str(test) +
-              ": Upper case, small shift: ", end="")
-        assert caesar.encode("ABCD", 1) == "bcde"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, small wrap: ", end="")
-        assert caesar.encode("WXYZ", 1) == "xyza"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, big shift: ", end="")
-        assert caesar.encode("ABCD", 25) == "zabc"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, big wrap: ", end="")
-        assert caesar.encode("WXYZ", 25) == "vwxy"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, symbols: ", end="")
-        assert caesar.encode("!A B-C,", 3) == "def"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Lower case, shift > 26: ", end="")
-        assert caesar.encode("abcd", 55) == "defg"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, shift > 26: ", end="")
-        assert caesar.encode("ABCD", 55) == "defg"
-        print("Passed")
-                
-        print("\nAll encode tests passed!")
-        print("========================\n")
-        
-    except:
-        print("FAILED")
-        print("\nEncode testing ended")
-        print("=================1===\n")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
 def testDecode():
-    """Tests the decode() function"""
+    """Test the funcationality of the decode() function."""
     
-    # Local variable
-    test = 1
+    # Initialise local variables
+    failCount = 0
+    inputs = ["bcde", "xyza", "zabc", "vwxy", "!D E-F,", "BCDE",
+              "XYZA", "ZABC", "VWXY", "!D E-F,", "defg", "DEFG"]
+    shifts = [1, 1, 25, 25, 3, 1,
+              1, 25, 25, 3, 55, 55]
+    outputs = ["abcd", "wxyz", "abcd", "wxyz", "!A B-C,", "ABCD",
+               "WXYZ", "ABCD", "WXYZ", "!A B-C,", "abcd", "ABCD"]
     
-    print("\nDecode Tests")
-    print("------------\n")
+    # Display function being tested
+    print("\nTesting: decode() function")
     
-    try:
+    # Loop through tests
+    for index in range(len(inputs)):
+    
+        try:
+            
+            assert decode(inputs[index], shifts[index]) == outputs[index]
+            
+        except:
+            
+            # Increment failure count
+            failCount = failCount + 1
+            
+            # Display failure message
+            print("\tFailed Test " + str(index+1) + ": decode(\""
+                  + inputs[index] + "\", " + str(shifts[index])
+                  + ") = '" + outputs[index] + "'")
+    
+    # Display success message
+    if failCount == 0:
         
-        print("Test " + str(test) +
-              ": Lower case, small shift: ", end="")
-        assert caesar.decode("bcde", 1) == "abcd"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Lower case, small wrap: ", end="")
-        assert caesar.decode("xyza", 1) == "wxyz"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Lower case, big shift: ", end="")
-        assert caesar.decode("zabc", 25) == "abcd"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Lower case, big wrap: ", end="")
-        assert caesar.decode("vwxy", 25) == "wxyz"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Lower case, symbols: ", end="")
-        assert caesar.decode("!D E-F,", 3) == "!A B-C,"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, small shift: ", end="")
-        assert caesar.decode("BCDE", 1) == "ABCD"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, small wrap: ", end="")
-        assert caesar.decode("XYZA", 1) == "WXYZ"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, big shift: ", end="")
-        assert caesar.decode("ZABC", 25) == "ABCD"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, big wrap: ", end="")
-        assert caesar.decode("VWXY", 25) == "WXYZ"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, symbols: ", end="")
-        assert caesar.decode("!D E-F,", 3) == "!A B-C,"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Lower case, shift > 26: ", end="")
-        assert caesar.decode("defg", 55) == "abcd"
-        print("Passed")
-        
-        test += 1
-        print("Test " + str(test) +
-              ": Upper case, shift > 26: ", end="")
-        assert caesar.decode("DEFG", 55) == "ABCD"
-        print("Passed")
-                
-        print("\nAll decode tests passed!")
-        print("========================\n")
-        
-    except:
-        print("FAILED")
-        print("\nDecode testing ended")
-        print("====================\n")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
 #
@@ -217,4 +110,3 @@ while run:
     elif test == "x":
         # Exit tests
         run = False
-
