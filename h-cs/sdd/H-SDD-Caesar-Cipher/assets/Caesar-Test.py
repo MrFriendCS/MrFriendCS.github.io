@@ -50,11 +50,11 @@ def testDecode():
     # Initialise local variables
     failCount = 0
     inputs = ["bcde", "xyza", "zabc", "vwxy", "!D E-F,", "BCDE",
-              "XYZA", "ZABC", "VWXY", "!D E-F,", "defg", "DEFG"]
+              "XYZA", "ZABC", "VWXY", "!D E-F,", "defg", "DEFG", "def DEF"]
     shifts = [1, 1, 25, 25, 3, 1,
-              1, 25, 25, 3, 55, 55]
+              1, 25, 25, 3, 55, 55 3]
     outputs = ["abcd", "wxyz", "abcd", "wxyz", "!A B-C,", "ABCD",
-               "WXYZ", "ABCD", "WXYZ", "!A B-C,", "abcd", "ABCD"]
+               "WXYZ", "ABCD", "WXYZ", "!A B-C,", "abcd", "ABCD", "abc ABC"]
     
     # Display function being tested
     print("\nTesting: decode() function")
