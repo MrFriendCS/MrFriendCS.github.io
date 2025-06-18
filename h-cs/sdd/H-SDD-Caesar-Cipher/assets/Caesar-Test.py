@@ -94,9 +94,9 @@ while run:
     print("\nCaesar Cipher Tests")
     print("-------------------")
 
-    print("\n1. Encode tests")
-    print("2. Decode tests")
-    print("x. Exit")
+    print("\n1  Encode tests")
+    print("2  Decode tests")
+    print("x  Exit")
 
     # Get text value from user
     test = input("\nTest: ")
