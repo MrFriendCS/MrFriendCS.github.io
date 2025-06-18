@@ -52,7 +52,7 @@ def testDecode():
     inputs = ["bcde", "xyza", "zabc", "vwxy", "!D E-F,", "BCDE",
               "XYZA", "ZABC", "VWXY", "!D E-F,", "defg", "DEFG", "def DEF"]
     shifts = [1, 1, 25, 25, 3, 1,
-              1, 25, 25, 3, 55, 55 3]
+              1, 25, 25, 3, 55, 55, 3]
     outputs = ["abcd", "wxyz", "abcd", "wxyz", "!A B-C,", "ABCD",
                "WXYZ", "ABCD", "WXYZ", "!A B-C,", "abcd", "ABCD", "abc ABC"]
     

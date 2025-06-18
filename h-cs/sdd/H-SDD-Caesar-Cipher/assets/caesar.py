@@ -55,6 +55,9 @@ def decode(cipherText, shift):
     # Loop for each letter in message
     for index in range(len(cipherText)):
         
+        # Reset variable
+        lowerCase = False
+        
         # Get ASCII value
         ascii = ord(cipherText[index])
         
