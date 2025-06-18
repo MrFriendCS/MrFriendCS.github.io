@@ -33,7 +33,7 @@ decode("Ifmmp!", 1)
 
 #### Code
 ``` python
-encode("def ABC", 29)
+decode("def ABC", 29)
 ```
 
 #### Output
