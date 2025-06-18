@@ -17,10 +17,10 @@ def testSecToMinSec():
     inputs = [81, 81.9, 0, -1]
     outputs = [(1, 21), (1, 21), (0, 0), (-1, -1)]
     
-    # Display message
+    # Display function being tested
     print("\nTesting: secToMinSec() function")
 
-    # Test 1
+    # Loop through tests
     for index in range(len(inputs)):
         
         try:
@@ -29,15 +29,17 @@ def testSecToMinSec():
             
         except:
             
+            # Increment failure count
             failCount = failCount + 1
             
-            print("\tFailed: " + str(inputs[index]) + " = "
-                  + str(outputs[index]))
+            # Display failure message
+            print("\tFailed Test " + str(index+1) + ": secToMinSec("
+                  + str(inputs[index]) + ") = " + str(outputs[index]))
     
-    # Display final message
+    # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
         
 
 def testMinToHourMin():
@@ -48,10 +50,10 @@ def testMinToHourMin():
     inputs = [81, 81.9, 0, -1]
     outputs = [(1, 21), (1, 21), (0, 0), (-1, -1)]
     
-    # Display message
+    # Display function being tested
     print("\nTesting: minToHourMin() function")
 
-    # Tests
+    # Loop through tests
     
     for index in range(len(inputs)):
         
@@ -61,15 +63,17 @@ def testMinToHourMin():
             
         except:
             
+            # Increment failure count
             failCount = failCount + 1
             
-            print("\tFailed: " + str(inputs[index]) + " = "
-                  + str(outputs[index]))
+            # Display failure message
+            print("\tFailed Test " + str(index+1) + ": minToHourMin("
+                  + str(inputs[index]) + ") = " + str(outputs[index]))
 
-    # Display final message
+    # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
 def testHourToDayHour():
@@ -80,10 +84,10 @@ def testHourToDayHour():
     inputs = [81, 81.9, 0, -1]
     outputs = [(3, 9), (3, 9), (0, 0), (-1, -1)]
     
-    # Display message
+    # Display function being tested
     print("\nTesting: hourToDayHour() function")
 
-    # Tests
+    # Loop through tests
     for index in range(len(inputs)):
         
         try:
@@ -92,15 +96,17 @@ def testHourToDayHour():
             
         except:
             
+            # Increment failure count
             failCount = failCount + 1
             
-            print("\tFailed: " + str(inputs[index]) + " = "
-                  + str(outputs[index]))
+            # Display failure message
+            print("\tFailed Test " + str(index+1) + ": hourToDayHour("
+                  + str(inputs[index]) + ") = " + str(outputs[index]))
 
-    # Display final message
+    # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
 def testMMtoCMmm():
@@ -111,10 +117,10 @@ def testMMtoCMmm():
     inputs = [81, 81.9, 0, -1]
     outputs = [(8, 1), (8, 1), (0, 0), (-1, -1)]
     
-    # Display message
+    # Display function being tested
     print("\nTesting: mmToCMmm() function")
 
-    # Tests
+    # Loop through tests
     for index in range(len(inputs)):
         
         try:
@@ -123,15 +129,17 @@ def testMMtoCMmm():
             
         except:
             
+            # Increment failure count
             failCount = failCount + 1
             
-            print("\tFailed: " + str(inputs[index]) + " = "
-                  + str(outputs[index]))
+            # Display failure message
+            print("\tFailed Test " + str(index+1) + ": mmToCMmm("
+                  + str(inputs[index]) + ") = " + str(outputs[index]))
 
-    # Display final message
+    # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
 def testCMtoMcm():
@@ -142,10 +150,10 @@ def testCMtoMcm():
     inputs = [81, 181.9, 0, -1]
     outputs = [(0, 81), (1, 81), (0, 0), (-1, -1)]
     
-    # Display message
+    # Display function being tested
     print("\nTesting: cmToMcm() function")
 
-    # Tests
+    # Loop through tests
     for index in range(len(inputs)):
         
         try:
@@ -154,15 +162,17 @@ def testCMtoMcm():
             
         except:
             
+            # Increment failure count
             failCount = failCount + 1
             
-            print("\tFailed: " + str(inputs[index]) + " = "
-                  + str(outputs[index]))
+            # Display failure message
+            print("\tFailed Test " + str(index+1) + ": cmToMcm("
+                  + str(inputs[index]) + ") = " + str(outputs[index]))
         
-    # Display final message
+    # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
         
 
 def testMtoKMm():
@@ -173,10 +183,10 @@ def testMtoKMm():
     inputs = [81, 1081.9, 0, -1]
     outputs = [(0, 81), (1, 81), (0, 0), (-1, -1)]
     
-    # Display message
+    # Display function being tested
     print("\nTesting: mToKMm() function")
 
-    # Tests
+    # Loop through tests
     for index in range(len(inputs)):
         
         try:
@@ -185,15 +195,17 @@ def testMtoKMm():
             
         except:
             
+            # Increment failure count
             failCount = failCount + 1
             
-            print("\tFailed: " + str(inputs[index]) + " = "
-                  + str(outputs[index]))
+            # Display failure message
+            print("\tFailed Test " + str(index+1) + ": mToKMm("
+                  + str(inputs[index]) + ") = " + str(outputs[index]))
 
-    # Display final message
+    # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
         
 
 def testInchesToFeetInches():
@@ -204,10 +216,10 @@ def testInchesToFeetInches():
     inputs = [81, 81.9, 0, -1]
     outputs = [(6, 9), (6, 9), (0, 0), (-1, -1)]
     
-    # Display message
+    # Display function being tested
     print("\nTesting: inchesToFeetInches() function")
 
-    # Tests
+    # Loop through tests
     for index in range(len(inputs)):
         
         try:
@@ -216,15 +228,17 @@ def testInchesToFeetInches():
             
         except:
             
+            # Increment failure count
             failCount = failCount + 1
             
-            print("\tFailed: " + str(inputs[index]) + " = "
-                  + str(outputs[index]))
+            # Display failure message
+            print("\tFailed Test " + str(index+1) + ": inchesToFeetInches("
+                  + str(inputs[index]) + ") = " + str(outputs[index]))
 
-    # Display final message
+    # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
 def testFeetToYardsFeet():
@@ -235,10 +249,10 @@ def testFeetToYardsFeet():
     inputs = [82, 82.9, 0, -1]
     outputs = [(27, 1), (27, 1), (0, 0), (-1, -1)]
     
-    # Display message
+    # Display function being tested
     print("\nTesting: feetToYardsFeet() function")
 
-    # Tests
+    # Loop through tests
     for index in range(len(inputs)):
         
         try:
@@ -247,15 +261,17 @@ def testFeetToYardsFeet():
             
         except:
             
+            # Increment failure count
             failCount = failCount + 1
             
-            print("\tFailed: " + str(inputs[index]) + " = "
-                  + str(outputs[index]))
+            # Display failure message
+            print("\tFailed Test " + str(index+1) + ": feetToYardsFeet("
+                  + str(inputs[index]) + ") = " + str(outputs[index]))
 
-    # Display final message
+    # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
 #

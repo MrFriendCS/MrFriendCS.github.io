@@ -21,24 +21,24 @@ Save the code as `caesar.py`.
 
 #### Code
 ``` python
-print(decode("Ifmmp!", 1))
+decode("Ifmmp!", 1)
 ```
 
 #### Output
 ```
-Hello!
+'Hello!'
 ```
 
 ### Example 2
 
 #### Code
 ``` python
-print(encode("def ABC", 29))
+encode("def ABC", 29)
 ```
 
 #### Output
 ```
-abc XYZ
+'abc XYZ'
 ```
 
 ## Testing

@@ -25,7 +25,7 @@ This function returns a substring, starting with the first character on the left
 #### Example code
 
 ``` python
-print(left("Hello world", 4))
+left("Hello world", 4)
 ```
 
 #### Example output
@@ -42,7 +42,7 @@ This function returns a substring, starting with the last character on the right
 #### Example code
 
 ``` python
-print(right("Hello world", 5))
+right("Hello world", 5)
 ```
 
 #### Example output
@@ -59,7 +59,7 @@ This function returns a substring, starting a number of characters from the left
 #### Example code
 
 ``` python
-print(mid("Hello world", 2, 4))
+mid("Hello world", 2, 4)
 ```
 
 #### Example output

@@ -31,7 +31,7 @@ This function will convert whole seconds to minutes and seconds.
 #### Example code
 
 ``` python
-print(secToMinSec(100))
+secToMinSec(100)
 ```
 
 #### Example output
@@ -48,7 +48,7 @@ This function will convert whole minutes to hours and minutes.
 #### Example code
 
 ``` python
-print(minToHourMin(189))
+minToHourMin(189)
 ```
 
 #### Example output
@@ -65,7 +65,7 @@ This function will convert whole hours to days and hours.
 #### Example code
 
 ``` python
-print(hourToDayHour(56))
+hourToDayHour(56)
 ```
 
 #### Example output
@@ -82,7 +82,7 @@ This function will convert whole millimetres to centimetres and millimetres.
 #### Example code
 
 ``` python
-print(mmToCMmm(115))
+mmToCMmm(115)
 ```
 
 #### Example output
@@ -99,7 +99,7 @@ This function will convert whole centimetres to metres and centimetres.
 #### Example code
 
 ``` python
-print(cmToMcm(72))
+cmToMcm(72)
 ```
 
 #### Example output
@@ -116,7 +116,7 @@ This function will convert whole metres to kilometres and metres.
 #### Example code
 
 ``` python
-print(mToKMm(2567))
+mToKMm(2567)
 ```
 
 #### Example output
@@ -133,7 +133,7 @@ This function will convert whole inches to feet and inches.
 #### Example code
 
 ``` python
-print(inchesToFeetInches(62))
+inchesToFeetInches(62)
 ```
 
 #### Example output
@@ -150,7 +150,7 @@ This function will convert whole feet to yards and feet.
 #### Example code
 
 ``` python
-print(feetToYardsFeet(31))
+feetToYardsFeet(31)
 ```
 
 #### Example output

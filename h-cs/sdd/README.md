@@ -8,6 +8,7 @@
 | H-SDD-Maths-Functions    | Simple functions to practise   | sp                          | Tests |
 | H-SDD-Conversion         | Conversion of different units  | sp, mod                     | Tests |
 | H-SDD-Substrings         | Substring functions            | sp, ss                      | Tests |
+| H-SDD-Ski-Slope          | Calculations and results       | sp                          | pc |
 | H-SDD-Summer             | For summer break               | asc, chr, int, mod, sp, ss  | |
 | H-SDD-Add                | Add two values                 | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%    | sp, r, w                    | sd |

@@ -30,24 +30,24 @@ Save the code as `caesar.py`.
 
 #### Code
 ``` python
-print(encode("Hello!", 1))
+encode("Hello!", 1)
 ```
 
 #### Output
 ```
-ifmmp
+'ifmmp'
 ```
 
 ### Example 2
 
 #### Code
 ``` python
-print(encode("abc XYZ", 29))
+encode("abc XYZ", 29)
 ```
 
 #### Output
 ```
-defabc
+'defabc'
 ```
 
 ## Testing

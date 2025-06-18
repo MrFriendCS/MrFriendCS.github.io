@@ -32,13 +32,14 @@ def testLeft():
             failCount = failCount + 1
             
             # Display failure message
-            print("\tFailed: \"" + inputs[index] + "\", "
-                  + str(chars[index]) + " = \"" + outputs[index] + "\"")
+            print("\tFailed Test " + str(index+1) + ": left(\""
+                  + inputs[index] + "\", " + str(chars[index])
+                  + ") = '" + outputs[index] + "'")
     
     # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
 def testRight():
@@ -72,7 +73,7 @@ def testRight():
     # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
 def testMid():
@@ -108,7 +109,7 @@ def testMid():
     # Display success message
     if failCount == 0:
         
-        print("\tAll tests passed.")
+        print("\tAll " + str(len(inputs)) + " tests passed.")
     
 
 #
