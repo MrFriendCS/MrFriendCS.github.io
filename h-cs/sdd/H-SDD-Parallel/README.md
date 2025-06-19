@@ -1,4 +1,4 @@
-# # H SDD - Parallel Arrays
+# H SDD - Parallel Arrays
 
 
 ## Skeleton code

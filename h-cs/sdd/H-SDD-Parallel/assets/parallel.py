@@ -6,10 +6,22 @@
 # Sub-programs
 #
 
-
-
-
-
+def left(inputs):
+    """Creates an array of strings with the first three characters of each supplied string.  Returns an array."""
+    
+    # Local variables
+    outputs = [""] * len(inputs)
+    
+    # Loop for each string in array
+    for index in range(len(inputs)):
+        
+        # Create and store substring
+        outputs[index] = inputs[index][ :3]
+    
+    # Return array of strings
+    return outputs
+    
+    
 #
 # Main program
 #
