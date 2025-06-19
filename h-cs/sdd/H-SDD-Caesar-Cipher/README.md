@@ -52,4 +52,4 @@ encode("abc XYZ", 29)
 
 ## Testing
 
-Run the file [Caesar-Test.py](assets/Caesar-Test.py "Download file") and choose 'Encode test'.  The file must be in the same folder as `caesar.py`.
+Run the file [caesarTest.py](assets/caesarTest.py "Download file") and choose 'Encode test'.  The file must be in the same folder as `caesar.py`.
