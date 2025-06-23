@@ -1,6 +1,6 @@
 # Title: Testing Functions in summmer1.py
 # Author: Mr Friend
-# Date: 21 Jun 2025
+# Date: 23 Jun 2025
 
 # Get functions to be tested
 from summer1 import *
@@ -89,13 +89,13 @@ def testRadius():
     # Initialise variable
     failCount = 0
     inputs1 = [1, 2, 20, 100,
-               3.1415, 25.132, 100, 0.5,
+               3.1415, 25.132, 1, 2,
                0, -0.1, 1, 1]
     inputs2 = ["d", "d", "d", "d",
                "c", "c", "c", "c",
                "d", "d", "a", ""]
     outputs = [0.5, 1.0, 10.0, 50,
-               0.5, 4, 314.15, 1.5708,
+               0.5, 4, 0.1592, 0.3183,
                0.0, -1.0, -1.0, -1.0]
     
     # Display function being tested
@@ -163,14 +163,14 @@ def testDiameter():
     # Initialise variable
     failCount = 0
     inputs1 = [1, 2, 20, 100,
-               3.1415, 3.1415, 100, 0.5,
+               3.1415, 6.283, 1, 0.5,
                0, -0.1, 1, 1]
     inputs2 = ["r", "r", "r", "r",
                "c", "c", "c", "c",
-               "d", "d", "a", ""]
-    outputs = [0.5, 1.0, 10.0, 628.3,
-               0.5, 31.415, 314.15, 1.5708,
-               0.0, 0.0, 0.0, 0.0]
+               "r", "d", "a", ""]
+    outputs = [2.0, 4.0, 40.0, 200.0,
+               1.0, 2.0, 0.3183, 0.1592,
+               0.0, -1.0, -1.0, -1.0]
     
     # Display function being tested
     print("\nTesting: diameter() function")
@@ -203,8 +203,8 @@ def stretchDiameter():
     
     # Initialise variable
     failCount = 0
-    inputs = [1, 2, 0.001, 0.0001, -0.1]
-    outputs = [0.5, 1.0, 0.0005, 0.0001, 0.0]
+    inputs = [1, 2, 0.0001, 0.000025, -0.1]
+    outputs = [2.0, 4.0, 0.0002, 0.0001, -1.0]
     
     # Display function being tested
     print("\nStretch tests: diameter() function")
@@ -236,15 +236,18 @@ def testArea():
     
     # Initialise variable
     failCount = 0
-    inputs1 = [1, 4, 31.415, 100,
-               3.1415, 3.1415, 100, 0.5,
+    inputs1 = [1, 2, 40, 0.5,
+               1, 2, 40, 0.5,
+               3.1415, 6.283, 31.415, 1.5708,
                0, -0.1, 1, 1]
-    inputs2 = ["r", "d", "c", "d",
+    inputs2 = ["r", "r", "r", "r",
+               "d", "d", "d", "d",
                "c", "c", "c", "c",
                "d", "d", "a", ""]
-    outputs = [3.1415, 12.566, 314.15, 628.3,
-               0.5, 31.415, 314.15, 1.5708,
-               0.0, 0.0, 0.0, 0.0]
+    outputs = [3.1415, 12.566, 5026.4, 0.7854,
+               0.7854, 3.1415, 1256.6, 0.1963,
+               0.7854, 3.1415, 78.5375, 0.1964,
+               0.0, -1.0, -1.0, -1.0]
     
     # Display function being tested
     print("\nTesting: area() function")
@@ -277,8 +280,8 @@ def stretchArea():
     
     # Initialise variable
     failCount = 0
-    inputs = [1, 2, 0.001, 0.0001, -0.1]
-    outputs = [0.5, 1.0, 0.0005, 0.0001, 0.0]
+    inputs = [1, 2, 40, 0.5, -0.1]
+    outputs = [3.1415, 12.566, 5026.4, 0.7854, -1.0]
     
     # Display function being tested
     print("\nStretch tests: area() function")
