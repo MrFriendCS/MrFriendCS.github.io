@@ -10,8 +10,11 @@
 | H-SDD-Substrings         | Substring functions            | sp, ss                      | Tests |
 | H-SDD-Caesar-Cipher Pt 1 | Plaintext to ciphertext        | sp, mod, ss, asc, chr       | Tests |
 | H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext        | sp, mod, ss, asc, chr       | Tests |
+| H-SDD-Parallel           | Skelton parallel arrays        | pa                          | |
 | H-SDD-Ski-Slope          | Calculations and results       | sp                          | pc |
-| H-SDD-Summer             | For summer break               | asc, chr, int, mod, sp, ss  | |
+| H-SDD-Summer Pt 1        | For summer break               | asc, chr, int, mod, sp, ss  | |
+| H-SDD-Summer Pt 2        | For summer break               | asc, chr, int, mod, sp, ss  | |
+| H-SDD-Summer Pt 3        | For summer break               | asc, chr, int, mod, sp, ss  | |
 | H-SDD-Add                | Add two values                 | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%    | sp, r, w                    | sd |
 | H-SDD-Walking            | Write data to file             | w                           | |

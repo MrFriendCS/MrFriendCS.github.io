@@ -10,7 +10,7 @@ from conversionFuncs import *
 #
 
 def testSecToMinSec():
-    """Test the funcationality of the secToMinSec() function."""
+    """Test the functionality of the secToMinSec() function."""
     
     # Initialise variable
     failCount = 0
@@ -43,7 +43,7 @@ def testSecToMinSec():
         
 
 def testMinToHourMin():
-    """Test the funcationality of the minToHourMin() function."""
+    """Test the functionality of the minToHourMin() function."""
     
     # Initialise variable
     failCount = 0
@@ -77,7 +77,7 @@ def testMinToHourMin():
 
 
 def testHourToDayHour():
-    """Test the funcationality of the hourToDayHour() function."""
+    """Test the functionality of the hourToDayHour() function."""
     
     # Initialise variable
     failCount = 0
@@ -110,7 +110,7 @@ def testHourToDayHour():
 
 
 def testMMtoCMmm():
-    """Test the funcationality of the mmToCMmm() function."""
+    """Test the functionality of the mmToCMmm() function."""
     
     # Initialise variable
     failCount = 0
@@ -143,7 +143,7 @@ def testMMtoCMmm():
 
 
 def testCMtoMcm():
-    """Test the funcationality of the cmToMcm() function."""
+    """Test the functionality of the cmToMcm() function."""
     
     # Initialise variable
     failCount = 0
@@ -176,7 +176,7 @@ def testCMtoMcm():
         
 
 def testMtoKMm():
-    """Test the funcationality of the mToKMm() function."""
+    """Test the functionality of the mToKMm() function."""
     
     # Initialise variable
     failCount = 0
@@ -209,7 +209,7 @@ def testMtoKMm():
         
 
 def testInchesToFeetInches():
-    """Test the funcationality of the inchesToFeetInches() function."""
+    """Test the functionality of the inchesToFeetInches() function."""
     
     # Initialise variable
     failCount = 0
@@ -242,7 +242,7 @@ def testInchesToFeetInches():
 
 
 def testFeetToYardsFeet():
-    """Test the funcationality of the feetToYardsFeet() function."""
+    """Test the functionality of the feetToYardsFeet() function."""
     
     # Initialise variable
     failCount = 0

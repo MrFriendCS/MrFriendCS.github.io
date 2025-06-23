@@ -8,7 +8,7 @@ from substrings import *
 
 
 def testLeft():
-    """Test the funcationality of the left() function."""
+    """Test the functionality of the left() function."""
     
     # Initialise local variables
     failCount = 0
@@ -43,7 +43,7 @@ def testLeft():
 
 
 def testRight():
-    """Test the funcationality of the right() function."""
+    """Test the functionality of the right() function."""
        
     # Initialise local variables
     failCount = 0
@@ -77,7 +77,7 @@ def testRight():
 
 
 def testMid():
-    """Test the funcationality of the mid() function."""
+    """Test the functionality of the mid() function."""
     
     # Initialise local variables"Hello!", 2, 3) == "ell"
     failCount = 0

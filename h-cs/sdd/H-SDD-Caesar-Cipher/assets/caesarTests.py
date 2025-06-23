@@ -7,7 +7,7 @@
 from caesar import *
 
 def testEncode():
-    """Test the funcationality of the encode() function."""
+    """Test the functionality of the encode() function."""
     
     # Initialise local variables
     failCount = 0
@@ -45,7 +45,7 @@ def testEncode():
 
 
 def testDecode():
-    """Test the funcationality of the decode() function."""
+    """Test the functionality of the decode() function."""
     
     # Initialise local variables
     failCount = 0

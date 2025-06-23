@@ -43,4 +43,4 @@ decode("def ABC", 29)
 
 ## Testing
 
-Run the file [caesarTest.py](assets/caesarTest.py "Download file") and choose 'Decode test'.  The file must be in the same folder as `caesar.py`.
+Run the file [caesarTests.py](assets/caesarTests.py "Download file") and choose 'Decode test'.  The file must be in the same folder as `caesar.py`.
