@@ -1,322 +1,80 @@
-# H SDD - Summer Part 3
+# H SDD - Summer Part 2
 
 ## Introduction
 
-There are nearly eight weeks between classes in June and August.  There are eight tasks below, just one a week, to complete over the break.  Replit will switch off the Education element at the end of July, so make sure your code is still accessible when this happens.  An option would be to use [Thonny ](https://thonny.org/) or the [RPF Code Editor](https://editor.raspberrypi.org/en/) and save your code to OneDrive or OneNote.
+Create a file called `summer2.py`. The file will contain the code for the following functions:
 
-## Task 1
+* _makeUsername_
+* _reverse_
+* _diamter_
+* _area_
 
-Create a function (`inchesToFeet`) that will accept an integer.  The actual parameter will represent a length in inches.  The function is to convert this value into feet and inches and return these values.
 
-### Example 1
+## Assumptions
 
-#### Code
+1. Pi is `3.1415`.
+2. If invalid values are passed to a function, then `-1.0` will be returned.
 
-``` python
-inchesToFeet(36)
-```
 
-#### Output
+## Functions
 
-```
-(3, 0)
-```
 
-### Example 2
+### circumference()
 
-#### Code
+Create a function (`circumference`) that will accept a real value and a character.  The real value will represent the size of the radius or diameter, and the character will clarify which it is.  The function will calculate and return the circumference of a circle, rounded to 4 decimal places.
 
-``` python
-inchesToFeet(78)
-```
+__Stretch task__: If only a single parameter is passed to the function, it will calculate the circumference with the value used as the diameter.
 
-#### Output
+#### Examples
 
-```
-(6, 6)
-```
+| Input                 | Output | Comment |
+| -----                 | ------ | ------- |
+| circumference(1, "d") | 3.1415 | |
+| circumference(1, "r") | 6.283  | |
+| circumference(10)     | 31.415 | Stretch task |
 
-## Task 2
 
-Create a function (`makeUsername`) that will accept a string.  It will use the string to create a username and return it as a lowercase string, in the format:
+### radius()
 
-* Characters: es
-* Characters: first 4 characters of actual parameter, if long enough
-* Integer: random single digit (1 to 9)
-* Character: random single character (a to z)
+Create a function (`radius`) that will accept a real value and a character.  The real value will represent the size of the diameter or circumference, and the character will clarify which it is.  The function will calculate and return the radius of a circle, rounded to 4 decimal places.
 
-### Example 3
+__Stretch task__: If only a single parameter is passed to the function, it will calculate the radius with the value used as the diameter.
 
-#### Code
+#### Examples
 
-``` python
-makeUsername("William")
-```
+| Input              | Output | Comment |
+| -----              | ------ | ------- |
+| radius(1, "d")     | 0.5    | |
+| radius(6.283, "c") | 1.0    | |
+| radius(10)         | 5.0    | Stretch task |
 
-#### Output
 
-```
-'eswill2f'
-```
+### diameter()
 
-### Example 4
+Create a function (`diameter`) that will accept a real value and a character.  The real value will represent the size of the radius or circumference, and the character will clarify which it is.  The function will calculate and return the diameter of a circle, rounded to 4 decimal places.
 
-#### Code
+__Stretch task__: If only a single parameter is passed to the function, it will calculate the diameter with the value used as the radius.
 
-``` python
-makeUsername("SUE")
-```
+#### Examples
 
-#### Output
+| Input                | Output | Comment |
+| -----                | ------ | ------- |
+| diameter(2, "r")     | 4.0    | |
+| diameter(6.283, "c") | 5.0    | |
+| diameter(10)         | 20.0   | Stretch task |
 
-```
-'essue5t'
-```
 
-## Task 3
+### area()
 
-Create a function (`reverse`) that will reverse the characters in a string.
+Create a function (`area`) that will accept a real value and a character.  The real value will represent the size of the radius, diameter, or circumference.  The character will clarify which it is.  The function will calculate and return the area of a circle, rounded to 4 decimal places.
 
-### Example 5
+__Stretch task__: If only a single parameter is passed to the function, it will calculate the area with the value used as the radius.
 
-#### Code
+#### Examples
 
-``` python
-reverse("William")
-```
-
-#### Output
-
-```
-'mailliW'
-```
-
-### Example 6
-
-#### Code
-
-``` python
-reverse("How are you m8?")
-```
-
-#### Output
-
-```
-'?8m uoy era woH'
-```
-
-## Task 4
-
-Create a function (`shift`) that will accept a letter (lower or uppercase) and return the next letter (uppercase).  If the letter is `z` or `Z` then `A` is returned.  Any other characters are returned unchanged.
-
-### Example 7
-
-#### Code
-
-``` python
-shift("a")
-```
-
-#### Output
-
-```
-'B'
-```
-
-### Example 8
-
-#### Code
-
-``` python
-shift("?")
-```
-
-#### Output
-
-```
-'?'
-```
-
-## Task 5
-
-Create a function (`contains`) that will accept a string and a character.  If the character is anywhere in the string the function will return `True`, otherwise it will return `False`.  The function is not case sensitive.
-
-### Example 9
-
-#### Code
-
-``` python
-contains("Help!", "!")
-```
-
-#### Output
-
-```
-True
-```
-
-### Example 10
-
-#### Code
-
-``` python
-contains("Help!", "h")
-```
-
-#### Output
-
-```
-True
-```
-
-### Example 11
-
-#### Code
-
-``` python
-contains("Help!", "a")
-```
-
-#### Output
-
-```
-False
-```
-
-## Task 6
-
-Create a function (`letterTypes`) that will accept a string.  The function will count the number of uppercase and lowercase characters and return the values.
-
-### Example 12
-
-#### Code
-
-``` python
-letterTypes("Ada Lovelace was the first programmer!")
-```
-
-#### Output
-
-```
-(2, 30)
-```
-
-### Example 13
-
-#### Code
-
-``` python
-letterTypes("####! ####!")
-```
-
-#### Output
-
-```
-(0, 0)
-```
-
-## Task 7
-
-Create a function (`checkIBSN13`) that will check if a 13-digit [ISBN](https://en.wikipedia.org/wiki/ISBN#ISBN-13_check_digit_calculation) is valid.  It will accept a string, and return a Boolean value.  The function must be able to accept ISBNs with and without dashes that separate the values.
-
-The book 'The Computers That Made Britain: The Home Computer Revolution of the 1980s' has an ISBN-13 of 9781912047857.  There are 12 digits plus the final check digit.  The check digit is calculated using the other 12 digits.
-
-Each digit is multiplied by either 1 or 3, depending on its position.
-
-| 1st, 3rd, ...   | 2nd, 4th, ... |
-| -------------   | ------------- |
-| 9 &times; 1 = 9 | 7 &times; 3 = 21 |
-| 8 &times; 1 = 8 | 1 &times; 3 = 3 |
-| 9 &times; 1 = 9 | 1 &times; 3 = 3 |
-| 2 &times; 1 = 2 | 0 &times; 3 = 0 |
-| 4 &times; 1 = 4 | 7 &times; 3 = 21 |
-| 8 &times; 1 = 8 | 5 &times; 3 = 15 |
-
-Calculate the sum (example of working):
-
-```
-Sum = 9 + 21 + 8 + 3 + 9 + 3 + 2 + 0 + 4 + 21 + 8 + 15
-Sum = 103
-```
-
-Calculate the remainder (example of working):
-
-```
-Remainder = Sum mod 10
-Remainder = 103 mod 10
-Remainder = 3
-```
-
-Calculate the sum digit (example of working):
-
-```
-Check digit = 10 - Remainder
-Check digit = 10 - 3
-Check digit = 7
-```
-
-### Example 14
-
-#### Code
-
-``` python
-checkIBSN13("9781916868076")
-```
-
-#### Output
-
-```
-True
-```
-
-### Example 15
-
-#### Code
-
-``` python
-checkIBSN13("978-0-306-40615-7")
-```
-
-#### Output
-
-```
-True
-```
-
-## Task 8
-
-Create a procedure (`circleStuff`) that will accept a number that represents a radius.  It will calculate and display various values, rounded to 2 decimal points:
-
-* Diameter
-* Circumference
-* [Area of a circle](https://www.mathsisfun.com/geometry/circle-area.html)
-* [Volume of a sphere](https://www.mathsisfun.com/geometry/sphere-volume-area.html)
-
-Any results that have no decimal part will be shown as an integer.
-
-### Using pi Example
-
-``` python
-# Import math Library
-import math
-
-# Print the value of pi
-print (math.pi)
-```
-
-### Example 16
-
-#### Code
-
-``` python
-circleStuff(10.5)
-```
-
-#### Output
-
-```
-Diameter: 21 units
-Circumference: 65.97 units
-Area: 346.36 units squared
-Volume: 4849.05 units cubed
-```
+| Input        | Output | Comment |
+| -----        | ------ | ------- |
+| area(1, "r") | 3.1415 | |
+| area(6, "d") | 0.5    | |
+| area(6, "c") | 0.5    | |
+| area(2)      | 12.566 | Stretch task |

@@ -25,7 +25,7 @@ Create a function (`circumference`) that will accept a real value and a characte
 
 __Stretch task__: If only a single parameter is passed to the function, it will calculate the circumference with the value used as the diameter.
 
-### Examples
+#### Examples
 
 | Input                 | Output | Comment |
 | -----                 | ------ | ------- |
@@ -40,7 +40,7 @@ Create a function (`radius`) that will accept a real value and a character.  The
 
 __Stretch task__: If only a single parameter is passed to the function, it will calculate the radius with the value used as the diameter.
 
-### Examples
+#### Examples
 
 | Input              | Output | Comment |
 | -----              | ------ | ------- |
@@ -55,7 +55,7 @@ Create a function (`diameter`) that will accept a real value and a character.  T
 
 __Stretch task__: If only a single parameter is passed to the function, it will calculate the diameter with the value used as the radius.
 
-### Examples
+#### Examples
 
 | Input                | Output | Comment |
 | -----                | ------ | ------- |
@@ -70,7 +70,7 @@ Create a function (`area`) that will accept a real value and a character.  The r
 
 __Stretch task__: If only a single parameter is passed to the function, it will calculate the area with the value used as the radius.
 
-### Examples
+#### Examples
 
 | Input        | Output | Comment |
 | -----        | ------ | ------- |
