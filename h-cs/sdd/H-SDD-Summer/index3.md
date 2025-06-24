@@ -2,12 +2,10 @@
 
 ## Introduction
 
-Create a file called `summer2.py`. The file will contain the code for the following functions:
+Create a file called `summer3.py`. The file will contain the code for the following functions:
 
-* _makeUsername_
-* _reverse_
-* _diamter_
-* _area_
+* _letterTypes_
+* _checkIBSN13_
 
 
 ## Assumptions
@@ -19,62 +17,70 @@ Create a file called `summer2.py`. The file will contain the code for the follow
 ## Functions
 
 
-### circumference()
+### letterTypes()
 
-Create a function (`circumference`) that will accept a real value and a character.  The real value will represent the size of the radius or diameter, and the character will clarify which it is.  The function will calculate and return the circumference of a circle, rounded to 4 decimal places.
-
-__Stretch task__: If only a single parameter is passed to the function, it will calculate the circumference with the value used as the diameter.
+Create a function (`letterTypes`) that will accept a real value and a character.  The real value will represent the size of the radius or diameter, and the character will clarify which it is.  The function will calculate and return the circumference of a circle, rounded to 4 decimal places.
 
 #### Examples
 
 | Input                 | Output | Comment |
 | -----                 | ------ | ------- |
-| circumference(1, "d") | 3.1415 | |
-| circumference(1, "r") | 6.283  | |
-| circumference(10)     | 31.415 | Stretch task |
+| letterTypes(1, "d") | 3.1415 | |
+| letterTypes(1, "r") | 6.283  | |
+| letterTypes(10)     | 31.415 | Stretch task |
 
 
-### radius()
+### checkIBSN13()
 
-Create a function (`radius`) that will accept a real value and a character.  The real value will represent the size of the diameter or circumference, and the character will clarify which it is.  The function will calculate and return the radius of a circle, rounded to 4 decimal places.
+Create a function (`checkIBSN13`) that will check if a 13-digit [ISBN](https://en.wikipedia.org/wiki/ISBN#ISBN-13_check_digit_calculation) is valid.  It will accept a string, and return a Boolean value.  The function must be able to accept ISBNs with and without dashes that separate the values.
 
-__Stretch task__: If only a single parameter is passed to the function, it will calculate the radius with the value used as the diameter.
+The book 'The Computers That Made Britain: The Home Computer Revolution of the 1980s' has an ISBN-13 of 9781912047857.  There are 12 digits plus the final check digit.  The check digit is calculated using the other 12 digits.
+
+Each digit is multiplied by either 1 or 3, depending on its position.
+
+| 1st, 3rd, ...   | 2nd, 4th, ... |
+| -------------   | ------------- |
+| 9 &times; 1 = 9 | 7 &times; 3 = 21 |
+| 8 &times; 1 = 8 | 1 &times; 3 = 3 |
+| 9 &times; 1 = 9 | 1 &times; 3 = 3 |
+| 2 &times; 1 = 2 | 0 &times; 3 = 0 |
+| 4 &times; 1 = 4 | 7 &times; 3 = 21 |
+| 8 &times; 1 = 8 | 5 &times; 3 = 15 |
+
+Calculate the sum (example of working):
+
+```
+Sum = 9 + 21 + 8 + 3 + 9 + 3 + 2 + 0 + 4 + 21 + 8 + 15
+Sum = 103
+```
+
+Calculate the remainder (example of working):
+
+```
+Remainder = Sum mod 10
+Remainder = 103 mod 10
+Remainder = 3
+```
+
+Calculate the check digit (example of working):
+
+```
+Check digit = 10 - Remainder
+Check digit = 10 - 3
+Check digit = 7
+```
+
 
 #### Examples
 
-| Input              | Output | Comment |
-| -----              | ------ | ------- |
-| radius(1, "d")     | 0.5    | |
-| radius(6.283, "c") | 1.0    | |
-| radius(10)         | 5.0    | Stretch task |
+| Input                            | Output | Comment |
+| -----                            | ------ | ------- |
+| checkIBSN13("9780306406157")     | True   | |
+| checkIBSN13("978-0-306-40615-7") | True   | |
 
 
-### diameter()
+## Testing
 
-Create a function (`diameter`) that will accept a real value and a character.  The real value will represent the size of the radius or circumference, and the character will clarify which it is.  The function will calculate and return the diameter of a circle, rounded to 4 decimal places.
+Test the functions to ensure they work.  Apart from TAD, remove any code that is not in the functions.
 
-__Stretch task__: If only a single parameter is passed to the function, it will calculate the diameter with the value used as the radius.
-
-#### Examples
-
-| Input                | Output | Comment |
-| -----                | ------ | ------- |
-| diameter(2, "r")     | 4.0    | |
-| diameter(6.283, "c") | 5.0    | |
-| diameter(10)         | 20.0   | Stretch task |
-
-
-### area()
-
-Create a function (`area`) that will accept a real value and a character.  The real value will represent the size of the radius, diameter, or circumference.  The character will clarify which it is.  The function will calculate and return the area of a circle, rounded to 4 decimal places.
-
-__Stretch task__: If only a single parameter is passed to the function, it will calculate the area with the value used as the radius.
-
-#### Examples
-
-| Input        | Output | Comment |
-| -----        | ------ | ------- |
-| area(1, "r") | 3.1415 | |
-| area(6, "d") | 0.5    | |
-| area(6, "c") | 0.5    | |
-| area(2)      | 12.566 | Stretch task |
+Save the file [`summer3Tests.py`](assets/summer1Tests.py) to the same folder as `summer3.py`.  Open and run `summer3Tests.py`.

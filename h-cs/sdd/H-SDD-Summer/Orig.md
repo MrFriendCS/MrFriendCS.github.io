@@ -247,7 +247,7 @@ Remainder = 103 mod 10
 Remainder = 3
 ```
 
-Calculate the sum digit (example of working):
+Calculate the check digit (example of working):
 
 ```
 Check digit = 10 - Remainder
