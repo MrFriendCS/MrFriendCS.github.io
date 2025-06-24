@@ -12,8 +12,8 @@ Create a file called `standard.py`.  The file will contain the code for the foll
 
 ## Assumptions
 
-1. The array of values is not empty
-2. Target datatypes are the same as the array of values datatype
+1. The array of `values` is not empty
+2. Tthe `target` datatype is the same as the array of `values` datatype
 
 
 ## Functions
