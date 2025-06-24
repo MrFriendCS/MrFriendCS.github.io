@@ -69,3 +69,10 @@ Create a function (`count`) that will accept an array and a search value.  The f
 | count([3, 1, 2, 3], 3)       | 2      | |
 | count((["a", "b", "c"], "d") | 0      | |
 | count(([1.3, 2.2, 3.1], 2.2) | 1      | |
+
+
+## Testing
+
+Test the functions to ensure they work.  Apart from TAD, remove any code that is not in the functions.
+
+Save the file [`standardTests.py`](assets/standardTests.py) to the same folder as `standard.py`.  Open and run `standardTests.py`.

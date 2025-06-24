@@ -78,3 +78,10 @@ __Stretch task__: If only a single parameter is passed to the function, it will 
 | area(6, "d") | 0.5    | |
 | area(6, "c") | 0.5    | |
 | area(2)      | 12.566 | Stretch task |
+
+
+## Testing
+
+Test the functions to ensure they work.  Apart from TAD, remove any code that is not in the functions.
+
+Save the file [`summer1Tests.py`](assets/summer1Tests.py) to the same folder as `summer1.py`.  Open and run `summer1Tests.py`.
