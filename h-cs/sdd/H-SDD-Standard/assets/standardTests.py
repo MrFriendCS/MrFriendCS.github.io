@@ -14,6 +14,7 @@ def testSearch():
     
     # Initialise local variables
     failCount = 0
+    errorText = ""
     
     values1 = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
     values2 = ["A", "S", "A", "J", "K", "C", "D"]
@@ -21,7 +22,7 @@ def testSearch():
     values4 = [17, 14, 16, 17, 13, 14, 12]
     
     inputs1 = [values1, values2, values3, values4]
-    inputs2 = [66.8, "J", "Robertson", 11]
+    inputs2 = [66.8, "K", "Robertson", 11]
     outputs = [True, True, True, False]
     
     # Display function being tested
@@ -39,9 +40,20 @@ def testSearch():
             # Increment failure count
             failCount = failCount + 1
             
+            # Error text dependent on type
+            if isinstance(inputs2[index], str):
+                
+                # String
+                errorText = ", \"" + str(inputs2[index]) + "\") = "
+            
+            else:
+                
+                # Non-string
+                errorText = ", " + str(inputs2[index]) + ") = "
+            
             # Display failure message
             print("\tFailed Test " + str(index+1) + ": search("
-                  + str(inputs1[index]) + ", \"" + str(inputs2[index]) + "\") = "
+                  + str(inputs1[index]) + errorText
                   + str(outputs[index]))
     
     # Display success message
@@ -79,9 +91,20 @@ def testFindMin():
             # Increment failure count
             failCount = failCount + 1
             
+            # Error text dependent on type
+            if isinstance(outputs[index], str):
+                
+                # String
+                errorText = ") = \'" + str(outputs[index]) + "\'"
+            
+            else:
+                
+                # Non-string
+                errorText = ") = " + str(outputs[index])
+            
             # Display failure message
             print("\tFailed Test " + str(index+1) + ": findMin("
-                  + str(inputs[index])  + ") = " + str(outputs[index]))
+                  + str(inputs[index]) + errorText)
     
     # Display success message
     if failCount == 0:
@@ -118,9 +141,20 @@ def testFindMax():
             # Increment failure count
             failCount = failCount + 1
             
+            # Error text dependent on type
+            if isinstance(outputs[index], str):
+                
+                # String
+                errorText = ") = \'" + str(outputs[index]) + "\'"
+            
+            else:
+                
+                # Non-string
+                errorText = ") = " + str(outputs[index])
+            
             # Display failure message
             print("\tFailed Test " + str(index+1) + ": findMax("
-                  + str(inputs[index])  + ") = " + str(outputs[index]))
+                  + str(inputs[index]) + errorText)
     
     # Display success message
     if failCount == 0:
@@ -158,9 +192,20 @@ def testCount():
             # Increment failure count
             failCount = failCount + 1
             
+            # Error text dependent on type
+            if isinstance(inputs2[index], str):
+                
+                # String
+                errorText = ", \"" + str(inputs2[index]) + "\") = "
+            
+            else:
+                
+                # Non-string
+                errorText = ", " + str(inputs2[index]) + ") = "
+            
             # Display failure message
             print("\tFailed Test " + str(index+1) + ": count("
-                  + str(inputs1[index]) + ", \"" + str(inputs2[index]) + "\") = "
+                  + str(inputs1[index]) + errorText
                   + str(outputs[index]))
     
     # Display success message
