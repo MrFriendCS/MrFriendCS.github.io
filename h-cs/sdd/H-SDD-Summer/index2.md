@@ -52,4 +52,4 @@ Create a function (`makeUsername`) that will accept a string.  It will use the s
 
 Test the functions to ensure they work.  Apart from TAD, remove any code that is not in the functions.
 
-Save the file [`summer2Tests.py`](assets/summer1Tests.py) to the same folder as `summer2.py`.  Open and run `summer2Tests.py`.
+Save the file [`summer2Tests.py`](assets/summer2Tests.py) to the same folder as `summer2.py`.  Open and run `summer2Tests.py`.
