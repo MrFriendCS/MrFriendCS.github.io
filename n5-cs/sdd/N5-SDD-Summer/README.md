@@ -1,99 +1,33 @@
-# N5 SDD - Summer Tasks
+# N5 SDD - Summer Part 1
+
 
 ## Introduction
 
-There are over seven weeks between classes in June and August.  There are four tasks below, about one every other week, to complete over the break.
+Create a file called `summer1.py`.
 
-Use [Thonny](https://thonny.org/) or the [RPF Code Editor](https://editor.raspberrypi.org/en/) and save your code to OneDrive or OneNote.
 
-## Task 1
+## Task
 
-Ask the user to enter two values.  Use the values to do a number of calculations.
+Write a program to ask the user for a value and then display the square root of the value.  Only positive values are acceptable.  If the square root is an integer display it with no trailing zeros, otherwise round it to 3 decimal places.
 
-### Example 1
+__Note__:  9 to the power of `0.5` = 3
 
-#### Input
 
-```
-Enter first value: 3
-Enter second value: 2
-```
+### Example UI
 
-#### Output
-
-```
-3 add 2 = 5
-3 minus 2 = 1
-3 times 2 = 6
-3 divided by 2 = 1.5
-3 to the power of 2 = 9
-```
-
-## Task 2
-
-Ask the use for the base and height of a triangle.  Use these values to calculate the area.
-
-Link: [Maths is Fun](https://www.mathsisfun.com/algebra/trig-area-triangle-without-right-angle.html)
-
-### Example 2
-
-#### Input
-
-```
-Enter the base: 10
-Enter the height: 5
-```
-
-#### Output
-
-```
-Area: 25 units squared
-```
-
-## Task 3
-
-Ask the user for a value.  Use the value to calculate its square root.
-
-`Note:` Raise a value to the power of `0.5` to find it's square root.
-
-### Example 3
-
-#### Input
+#### Example 1
 
 ```
 Enter a value: 25
+
+The square 25 root is 5
 ```
 
-#### Output
+
+#### Example 2
 
 ```
-The square root of 25 is 5.0
-```
+Enter a value: 26
 
-## Task 4
-
-Ask the user their name, year of birth (4 digits), and the current year (4 digits).  Use the information provided to calculate the years that some milestone ages are reached.
-
-### Example 4
-
-#### Input
-```
-Enter your name: Bob
-Enter your birth year (4 digits): 2000
-Enter the current year (4 digits): 2024
-```
-
-#### Output
-```
-Hi Bob, you are 24 this year.
-
-Here are some significant birthdays:
-16 - 2016
-18 - 2018
-21 - 2021
-40 - 2040
-60 - 2060
-68 - 2068
-
-If you retire at 68, you have 44 years to go.
+The square of 26 root is 5.099
 ```
