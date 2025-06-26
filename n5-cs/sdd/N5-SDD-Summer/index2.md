@@ -14,8 +14,10 @@ Create and display a list of random numbers that meet the criteria.
 
 Ask the user for the sum of the values, and display an appropriate message.
 
-__Note 1__: `"\n"` = new line
-__Note 2__: `"\t"` = tab
+__Notes__
+
+* `"\n"` = new line
+* `"\t"` = tab
 
 
 ### Example UI
