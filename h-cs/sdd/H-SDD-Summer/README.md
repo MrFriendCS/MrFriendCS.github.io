@@ -13,7 +13,7 @@ Create a file called `summer1.py`. The file will contain the code for the follow
 ## Assumptions
 
 1. Pi is `3.1415`.
-2. If invalid values are passed to a function, then `-1.0` (zero) will be returned.
+2. If invalid values are passed to a function, then `-1.0` (Minus one) will be returned.
 
 
 ## Functions
