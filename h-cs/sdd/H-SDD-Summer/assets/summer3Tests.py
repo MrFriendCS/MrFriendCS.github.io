@@ -1,6 +1,6 @@
 # Title: Testing Functions in summmer3.py
 # Author: Mr Friend
-# Date: 25 Jun 2025
+# Date: 17 Aug 2025
 
 # Get functions to be tested
 from summer3 import *
@@ -16,13 +16,13 @@ def testContains():
     failCount = 0
     inputs1 = ["hello", "HELLO", "hello", "HELLO",
                "hello", "HELLO", "hello", "HELLO",
-               "h3!!0", "H3!!0", "h3!!0", "H3!!0"]
+               "h3!!0", "H3!!0", "(3!!)", "H3!!0"]
     inputs2 = ["h", "e", "L", "L",
                "a", "b", "A", "B",
-               "3", "!", "0", "9"]
+               "3", "!", "H", "9"]
     outputs = [True, True, True, True,
                False, False, False, False,
-               True, True, True, False]
+               True, True, False, False]
     
     # Display function being tested
     print("\nTesting: contains() function")
@@ -92,4 +92,3 @@ def testLetterTypes():
 # Tests
 testContains()
 testLetterTypes()
-
