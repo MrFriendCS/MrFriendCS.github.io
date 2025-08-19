@@ -3,9 +3,14 @@
 
 ## Task
 
-Create a small app to record how far someone has walked over a four week period.  The app will calculate the total distance, and the average distance walked to 1 decimal point.
+Create a modular program to record how far someone has walked over a four week period.  The app will calculate the total distance, and the average distance walked to 1 decimal point.
 
 The data and the results will be written to the file `walking.txt`.
+
+
+## Program top-level design (Structure Diagram)
+
+![Structure diagram](assets/sd.png "Structure diagram")
 
 
 ### Example: User Interface
