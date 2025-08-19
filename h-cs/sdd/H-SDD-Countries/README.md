@@ -11,7 +11,7 @@ capitals = ["London", "Paris", "Berlin", "Oslo", "Madrid", "Rome"]
 population = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
 ```
 
-The content of `countries.csv` is shown below.
+The expected content of `countries.csv` is shown below.
 
 ```
 UK,London,66.8
