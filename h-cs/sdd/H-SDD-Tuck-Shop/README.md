@@ -19,7 +19,7 @@ Increase the prices by 10%, update the names of the items so each starts with a 
 4. Write data to `pricelist.txt`
 ```
 
-## Refinements
+### Refinements
 
 ```
 4.1   If price is less than a pound
@@ -29,7 +29,19 @@ Increase the prices by 10%, update the names of the items so each starts with a 
 4.1.4 End if
 ```
 
-### Example pricelist.txt
+
+### Example: tuckshop.csv
+
+```
+...
+Haribo Giant Stawbs,16  ,0.30
+nutella & Go!,48,1.30
+Walkers Ready Salted Crisps,45,1.00
+...
+```
+
+
+### Example: pricelist.txt
 
 ```
 Tuck Shop Price List

@@ -17,7 +17,9 @@
 | H-SDD-Summer Pt 3        | For summer break               | asc, chr, int, mod, sp, ss  | |
 | H-SDD-Add                | Add two values                 | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%    | sp, r, w                    | sd |
-| H-SDD-Walking            | Write data to file             | w                           | |
+| H-SDD-Walking Pt 1       | Write data to file             | w                           | |
+| H-SDD-Walking Pt 2       | Write data to file             | Walking + sp                | sd |
+| H-SDD-Countries          | Write parallel arrays to file  | w, pa                       | |
 | H-SDD-Tuck-Shop Pt 1     | Create a price list            | r, pa, ss, asc, chr, w      | pc |
 | H-SDD-Tuck-Shop Pt 2     | Create a price list            | Tuck Shop + sp              | sd |
 | H-SDD-Temperature-v2     | Convert F to C                 | sp, r, pa, w                | |

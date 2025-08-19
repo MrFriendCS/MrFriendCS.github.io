@@ -1,9 +1,9 @@
-# H SDD - Walking
+# H SDD - Walking Part 2
 
 
 ## Task
 
-Create a modular program to record how far someone has walked over a four week period.  The app will calculate the total distance, and the average distance walked to 1 decimal point.
+Create a modular program to record how far someone has walked over a four week period.  The program will calculate the total distance, and the average distance walked to 1 decimal point.
 
 The data and the results will be written to the file `walking.txt`.
 

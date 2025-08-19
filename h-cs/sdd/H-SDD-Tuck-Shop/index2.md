@@ -1,4 +1,4 @@
-# H SDD - Tuck Shop
+# H SDD - Tuck Shop Part 2
 
 ## Introduction
 
@@ -14,7 +14,19 @@ Write a modular program that will increase the prices by 10%, update the names o
 
 ![Structure diagram](assets/sd.png "Structure diagram")
 
-## Example pricelist.txt
+
+### Example: tuckshop.csv
+
+```
+...
+Haribo Giant Stawbs,16  ,0.30
+nutella & Go!,48,1.30
+Walkers Ready Salted Crisps,45,1.00
+...
+```
+
+
+### Example: pricelist.txt
 
 ```
 Tuck Shop Price List
