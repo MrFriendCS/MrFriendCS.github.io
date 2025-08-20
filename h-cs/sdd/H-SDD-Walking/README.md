@@ -11,7 +11,7 @@ The data and the results will be written to the file `walking.txt`.
 ### Example: User Interface
 
 ```
-Enter the distance walked each week:
+Enter the number of miles walked each week:
 
 Week 1: 12.3
 Week 2: 9.7
