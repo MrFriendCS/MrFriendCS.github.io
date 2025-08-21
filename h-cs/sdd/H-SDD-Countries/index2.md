@@ -5,7 +5,7 @@
 
 Create a short program to read the data from `countries.csv` into parallel arrays.
 
-Use the data to create the following output.
+Use the data to produce the following output.
 
 ```
 Country : Population : Capital
