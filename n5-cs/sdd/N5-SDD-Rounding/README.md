@@ -12,7 +12,7 @@ Write a program that will be be given the radius of a circle.  The program will 
 
 * diameter (2 &#215; r)
 * circumference (&#8508; &#215; d)
-* area (&#8508; &#215;&#178; )
+* area (&#8508; &#215; r&#178; )
 
 All values are to be correct to 2 decimal places.
 
