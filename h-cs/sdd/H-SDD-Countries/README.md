@@ -6,7 +6,7 @@
 Create a short program to write the following parallel arrays to `countries.csv`.
 
 ``` python
-countries = ["UK", "France", "Berlin", "Norway", "Spain", "Italy"]
+countries = ["UK", "France", "Germany", "Norway", "Spain", "Italy"]
 capitals = ["London", "Paris", "Berlin", "Oslo", "Madrid", "Rome"]
 populations = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
 ```
