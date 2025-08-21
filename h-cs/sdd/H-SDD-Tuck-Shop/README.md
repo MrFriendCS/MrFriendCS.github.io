@@ -8,7 +8,7 @@ The Youth Cafe sells the items at a small profit (10%).  A price list is created
 
 ## Task
 
-Increase the prices by 10%, update the names of the items so each starts with a capital letter, and then save the data in a new file called `pricelist.txt`.  The information is to be written so the file can be printed and used in the tuck shop.
+Using the data in `tuckshop.csv`, increase the prices by 10%, update the names of the items so each starts with a capital letter, and then save the data in a new file called `pricelist.txt`.  The information is to be written so the file can be printed and used in the tuck shop.
 
 ## Program top-level design (pseudocode)
 
