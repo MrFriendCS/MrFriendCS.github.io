@@ -8,7 +8,7 @@ Create a short program to write the following parallel arrays to `countries.csv`
 ``` python
 countries = ["UK", "France", "Berlin", "Norway", "Spain", "Italy"]
 capitals = ["London", "Paris", "Berlin", "Oslo", "Madrid", "Rome"]
-population = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
+populations = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
 ```
 
 The expected content of `countries.csv` is shown below.
