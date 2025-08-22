@@ -4,10 +4,10 @@
 
 # Initialise variables
 pi = 3.1415
+radius = 5
 diameter = 0.0
 circumference = 0.0
 area = 0.0
-radius = 5
 
 # Calculations
 diameter = 2 * radius
@@ -36,5 +36,5 @@ print("units")
 print()
 
 print("The area is")
-print("78.73")
+print(area)
 print("units squared")
