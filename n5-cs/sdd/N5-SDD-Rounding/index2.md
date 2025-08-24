@@ -22,11 +22,11 @@ __Note__:  &#8508; = 3.1415
 ### Example UI
 
 ```
-Given a radius of 5 units
+Given a radius of 5 units.
 
-The diameter is 10 units
+The diameter is 10 units.
 
-The circumference is 31.42 units
+The circumference is 31.42 units.
 
-The area is 78.54 units squared
+The area is 78.54 units squared.
 ```
