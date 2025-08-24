@@ -2,27 +2,29 @@
 
 ## SDD Tasks
 
-| Title                    | Description                          | Concepts              | Comments |
-| -----                    | -----------                          | --------              | -------- |
-| N5-SDD-Rectangle-Calcs   | Calculate perimeter and area         | ip, maths, cat        |  |
-| N5-SDD-Number-Madness    | Two values, various results          | ip, maths, cat        |  |
-| N5-SDD-Gradient Pt 1     | Calculate gradient from rise and run | ip, maths, cat        |  |
-| N5-SDD-Summer Pt 1       | For summer break                     |                       |  |
-| N5-SDD-Average           | Calculate mean                       | ip, rt, maths         |  |
-| N5-SDD-Boccia Pt 1       | Records scores, gives result         | ip                    |  |
-| N5-SDD-Book-Shop Pt 1    | Calculate student book price         | ip, if1               |  |
-| N5-SDD-Negative          | Determine if a value is negative     | ip, if2               |  |
-| N5-SDD-The-Chase         | Quiz questions                       | if2, if3              |  |
-| N5-SDD-Retirement        | Calculate years to retirement        | ip, if3               |  |
-| N5-SDD-School-Lunches    | Calculate cost of 5 lunches          | fl, ip, t1d           | sqarl |
-| N5-SDD-Cat-Food          | Cat's age decides the food type      | ip, if3               |  |
-| N5-SDD-Book-Shop Pt 2    | Calculate student/staff price        | ip, if4, lo, maths    |  |
-| N5-SDD-Gradient Pt 2     | Calculate gradient from rise and run | ip, if2, maths, cat   |  |
-| N5-SDD-Gradient Pt 3     | Calculate gradient from rise and run | iv, maths, cat        |  |
-| N5-SDD-Pontoon Part 1    | Play a single hand of pontoon        | rnd, ip, cl, lo, if2  | pc |
-| N5-SDD-Result Pt 3       | Convert exam mark to grade           | iv, if3               | sd |
-| N5-SDD-Result Pt 4       | Convert mark to grade and store      | fl, iv, if3, t1d      | sd |
-| N5-SDD-Checkout          | Shop checkout system                 | cl, iv, if1, rt       | User interface |
+| Title                    | Description                          | Concepts                     | Comments |
+| -----                    | -----------                          | --------                      | -------- |
+| N5-SDD-Rounding Pt 1     | Calculations using radius and pi     | maths, rd                     |  |
+| N5-SDD-Rounding Pt 2     | Calculations using radius and pi     | maths, rd, cat                |  |
+| N5-SDD-Rectangle-Calcs   | Calculate perimeter and area         | ip, maths, cat                |  |
+| N5-SDD-Number-Madness    | Two values, various results          | ip, maths, cat                |  |
+| N5-SDD-Gradient Pt 1     | Calculate gradient from rise and run | ip, maths, cat                |  |
+| N5-SDD-Summer Pt 1       | For summer break                     |                               |  |
+| N5-SDD-Average           | Calculate mean                       | ip, rt, maths                 |  |
+| N5-SDD-Boccia Pt 1       | Records scores, gives result         | ip                            |  |
+| N5-SDD-Book-Shop Pt 1    | Calculate student book price         | ip, if1                       |  |
+| N5-SDD-Negative          | Determine if a value is negative     | ip, if2                       |  |
+| N5-SDD-The-Chase         | Quiz questions                       | if2, if3                      |  |
+| N5-SDD-Retirement        | Calculate years to retirement        | ip, if3                       |  |
+| N5-SDD-School-Lunches    | Calculate cost of 5 lunches          | fl, ip, t1d                   | sqarl |
+| N5-SDD-Cat-Food          | Cat's age decides the food type      | ip, if3                       |  |
+| N5-SDD-Book-Shop Pt 2    | Calculate student/staff price        | ip, if4, lo, maths            |  |
+| N5-SDD-Gradient Pt 2     | Calculate gradient from rise and run | ip, if2, maths, cat           |  |
+| N5-SDD-Gradient Pt 3     | Calculate gradient from rise and run | iv, maths, cat                |  |
+| N5-SDD-Pontoon Part 1    | Play a single hand of pontoon        | rnd, ip, cl, lo, if2          | pc |
+| N5-SDD-Result Pt 3       | Convert exam mark to grade           | iv, if3                       | sd |
+| N5-SDD-Result Pt 4       | Convert mark to grade and store      | fl, iv, if3, t1d              | sd |
+| N5-SDD-Checkout          | Shop checkout system                 | cl, iv, if1, rt               | User interface |
 | N5-SDD-Ask-Questions     | | |  |
 | N5-SDD-Looperty-Loop     | | |  |
 | N5-SDD-Poem-Generator    | | |  |
