@@ -1,6 +1,6 @@
 # Title: H SDD Tuck Shop
 # Author: Mr Friend
-# Date 23 Aug 2024
+# Date 25 Aug 2025
 
 # Declare global variables and arrays
 names = [""] * 11
@@ -8,7 +8,7 @@ weights = [0] * 11
 prices = [0.0] * 11
 newPrices = [0.0] * 11
 line = ""
-temp = [""] * 3
+data = [""] * 3
 firstLetter = ""
 ascii = 0
 
@@ -21,12 +21,12 @@ for index in range(len(names)):
     line = file.readline()
 
     # Split line - array
-    temp = line.split(",")
+    data = line.split(",")
 
     # Assign values to arrays
-    names[index] = temp[0].strip()
-    weights[index] = int(temp[1].strip())
-    prices[index] = float(temp[2].strip())
+    names[index] = data[0].strip()
+    weights[index] = int(data[1].strip())
+    prices[index] = float(data[2].strip())
     
 # close connection to file
 file.close()
@@ -67,7 +67,7 @@ for index in range(len(names)):
     if prices[index] >= 1:
         file.write("£" + str(prices[index]) + "\n")
     else:
-        file.write(str(prices[index]) + "p" + "\n")
+        file.write(str(round(prices[index] * 100)) + "p" + "\n")
 
 file.write("\nEnd of price list!")
 

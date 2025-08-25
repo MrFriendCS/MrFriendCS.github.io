@@ -12,14 +12,14 @@ def getData():
     # Declare local variable and arrays
     line = ""
     
-    subNames = [""] * 7
-    subWeights = [""] * 7
-    subPrices = [0.0] * 7
+    subNames = [""] * 11
+    subWeights = [""] * 11
+    subPrices = [0.0] * 11
     
-    temp = [""] * 4
+    data = [""] * 3
     
     # Open connection to file
-    file = open("costs.csv", "r")
+    file = open("tuckshop.csv", "r")
 
     # Loop for each line of data
     for index in range(len(subNames)):
@@ -27,12 +27,12 @@ def getData():
         line = file.readline()
 
         # Split line - array
-        temp = line.split(",")
+        data = line.split(",")
 
         # Assign values to arrays
-        subNames[index] = temp[0].strip()
-        subWeights[index] = int(temp[1].strip())
-        subPrices[index] = float(temp[2].strip())
+        subNames[index] = data[0].strip()
+        subWeights[index] = int(data[1].strip())
+        subPrices[index] = float(data[2].strip())
         
 
     # close connection to file
@@ -88,10 +88,10 @@ def saveData(subNames, subWeights, subPrices):
 #
 
 # Declare global variables and arrays
-names = [""] * 7
-weights = [0] * 7
-prices = [0.0] * 7
-newPrices = [0.0] * 7
+names = [""] * 11
+weights = [0] * 11
+prices = [0.0] * 11
+newPrices = [0.0] * 11
 
 # Get data
 names, weights, prices = getData()
