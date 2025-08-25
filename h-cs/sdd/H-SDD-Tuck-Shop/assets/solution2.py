@@ -67,11 +67,35 @@ def increase(subPrices):
     return subNewPrices
 
 
+def firstLetter(subNames):
+    """Return array of strings.  Each starts with a cpital letter."""
+
+    # Declare local variables and array
+    firstChr = ""
+    newPrice = 0.0
+    
+    # Loop for each name
+    for index in range(len(subNames)):
+
+        # Get first letter
+        firstChr = subNames[index][0]
+        
+        # ASCII value
+        ascii = ord(firstChr)
+        
+        if ascii >= 97 and ascii <= 122:
+            firstChr = chr(ascii-32)
+            subNames[index] = firstChr + subNames[index][1: ]
+    
+    # Return values
+    return subNames
+
+
 def saveData(subNames, subWeights, subPrices):
-    """Save parallel arrays to updated.csv"""
+    """Save parallel arrays to saleprices.csv"""
     
     # Open connection to file
-    file = open("updated.csv", "w")
+    file = open("saleprices.csv", "w")
 
     # Loop for each line of data
     for index in range(len(subNames)):
@@ -92,6 +116,7 @@ names = [""] * 11
 weights = [0] * 11
 prices = [0.0] * 11
 newPrices = [0.0] * 11
+newNames = [""] * 11
 
 # Get data
 names, weights, prices = getData()
@@ -99,5 +124,8 @@ names, weights, prices = getData()
 # Increase population
 newPrices = increase(prices)
 
+# Increase population
+newNames = firstLetter(names)
+
 # Save data
-saveData(names, weights, newPrices)
+saveData(newNames, weights, newPrices)
