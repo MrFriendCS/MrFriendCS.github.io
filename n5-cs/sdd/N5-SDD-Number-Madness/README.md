@@ -24,6 +24,8 @@ Second value: 2
 
 10 multiplied by 2 is 20
 10 divided by 2 is 5.0
+
+The square of 10 minus the square of 2 is 96
 ```
 
 
