@@ -8,7 +8,7 @@ Write a short program that will use two numbers.  The program will then show the
 2. Subtracted
 3. Multiplied
 4. Divided
-5. The difference of two squares
+5. Squared and subtracted
 
 
 ### Example User Interface
