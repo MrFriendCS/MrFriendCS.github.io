@@ -38,14 +38,14 @@ Second value: 2
 
 ## Readability
 
-Ensure that your program is easy to understand.
+Ensure that your program is easy to understand.  Use:
 
 1. Meaningful identifiers (variable names)
 2. Internal commentary (comments)
 3. Whitespace (blank lines)
 
 
-## Top Tips
+## Reminders
 
 1. Division creates a real value.
 2. Only strings can be concatenated.
