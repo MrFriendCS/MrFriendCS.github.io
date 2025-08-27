@@ -4,6 +4,8 @@
 
 Write a short program that will add two fractions together.  There is no need to simplify the result.
 
+Ensure equivalent fractions are shown.
+
 *Tip:* Just use smile and a kiss
 
 
@@ -37,4 +39,3 @@ Ensure that your program is easy to understand.  Use:
 1. Meaningful identifiers (variable names)
 2. Internal commentary (comments)
 3. Whitespace (blank lines)
-

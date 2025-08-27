@@ -1,6 +1,6 @@
 # Title: N5 Gradient Calculator
 # Author: Mr Friend
-# Date: 10 Sep 2024
+# Date: 27 Aug 2025
 
 # Initialise variables
 rise = 2.5
