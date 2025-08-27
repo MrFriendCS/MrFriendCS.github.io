@@ -1,4 +1,4 @@
-# H SDD - Temperature Dates v1
+# H SDD - Temperature Dates
 
 ## Introduction
 
@@ -20,8 +20,8 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
 
 Example date: 1st August 2022
 
-* US: mm/dd/yyyy **/** 08/01/2022
-* ISO: yyyy-mm-dd **/** 2022-08-01
+* US: 08/01/2022 (mm/dd/yyyy)
+* ISO: 2022-08-01 (yyyy-mm-dd)
 
 
 ### Temperature Conversion
