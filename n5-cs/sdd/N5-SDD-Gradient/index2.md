@@ -1,4 +1,4 @@
-# N5 SDD - Gradient Calculator - Part 2
+# N5 SDD - Gradient Calculator
 
 
 ## Task
@@ -8,14 +8,23 @@ Use the structure diagram to implement a program that will calculate the gradien
 
 ### Top level design (Structure diagram)
 
-![Structure diagram](assets/sd2.png)
+![Structure diagram](assets/sd1.png)
 
 
-#### Calculate gradient
+### Calculate gradient
 
 ![Gradient calculation](assets/diagram.png)
 
 
-### Assumptions
+### Example use interface
 
-* The __rise__ and __run__ values will have a maximum of 1 decimal places.
+``` python
+Gradient Calculator
+-------------------
+
+Rise: 2.5
+Run: 10.0
+
+Gradient: 0.25
+=============
+```

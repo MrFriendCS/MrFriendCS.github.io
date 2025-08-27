@@ -3,23 +3,35 @@
 # Date: 10 Sep 2024
 
 # Initialise variables
-rise = 0.0
-run = 0.0
+rise = 2.5
+run = 10
 gradient = 0.0
 
 # Display header
 print("Gradient Calculator")
-print("-------------------\n")
-
-# Get rise from user
-rise = float(input("Rise: "))
-
-# Get run from user
-run = float(input("Run: "))
+print("-------------------")
+print()
+print("                   .")
+print("               .   |")
+print("           .       |")
+print("       .           | Rise")
+print("   .               |")
+print("___________________|")
+print("       Run")
+print()
+print("           Rise")
+print("Gradient = ----")
+print("           Run")
+print()
 
 # Calculate the gradient
-gradient = rise / run
+gradient = round(rise / run, 2)
+
+# Display the rise and run
+print("Rise: : " + str(rise))
+print("Run: : " + str(run))
+print
 
 # Display the gradient
-print("\nGradient: " + str(gradient))
-print("=============")
+print("Gradient: " + str(gradient))
+print("==============")

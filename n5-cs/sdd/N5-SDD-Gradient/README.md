@@ -1,30 +1,33 @@
 # N5 SDD - Gradient Calculator
 
-
 ## Task
 
-Use the structure diagram to implement a program that will calculate the gradient when a user enters the __rise__ and the __run__.
+Calculate the gradient of a slope when given values for the **rise** and the **run**.  Round the result to 2 decimal places.
+
+Ensure that the diagram and equation are included in the output
 
 
-### Top level design (Structure diagram)
-
-![Structure diagram](assets/sd1.png)
-
-
-### Calculate gradient
-
-![Gradient calculation](assets/diagram.png)
-
-
-### Example use interface
+### Example user interface
 
 ``` python
 Gradient Calculator
 -------------------
 
+                   .
+               .   |
+           .       |
+       .           | Rise
+   .               |
+___________________|
+       Run
+
+           Rise
+Gradient = ----
+           Run
+
 Rise: 2.5
 Run: 10.0
 
 Gradient: 0.25
-=============
+==============
 ```
