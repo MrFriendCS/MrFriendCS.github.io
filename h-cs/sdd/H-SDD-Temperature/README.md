@@ -1,30 +1,69 @@
-# H SDD - Temperature v1
+# H SDD - Temperature Dates v1
 
 ## Introduction
 
-There are a year's worth of temperature readings in a csv file: 8,759 readings.  All of the readings are in Fahrenheit and need to be converted to Celsius, rounded to 1 decimal place.
+Barra Data Solutions (BDS) is hoping to break into the market for providing data services to other companies.
+
+If a company has a problem with data, BDS intends to be the solution!
+
+The local heritage centre has some histrorical temperature records that it wishes to use.  There is a year's worth of temperature readings, hour by hour, in a csv file: 8,759 readings.
+
+Unfortunately, the dates are in the US format, and all of the temperatures are in Fahrenheit.
+
+
+## Task
+
+Convert all of the dates from US to ISO format.  Convert all of the temperatures from Fahrenheit to Celsius.  Write the data to a new csv file.
+
+
+### Date Format
+
+Example date: 1st August 2022
+
+* US: mm/dd/yyyy **/** 08/01/2022
+* ISO: yyyy-mm-dd **/** 2022-08-01
+
+
+### Temperature Conversion
+
+C = (F - 32) * 5/9
+
 
 ## Steps
 
 1. Read the data from a csv file: `tempF.csv`
-2. Convert the temperatures
-3. Write the data to a csv file: `tempC.csv`
+2. Convert the temperatures from Fahrenheit to Centigrade
+3. Convert the dates from US to ISO format
+5. Write the data to a csv file: `tempC.csv`
+
 
 ## Structure diagram
 
-![Structure diagram](assets/Temperatures-v1.png)
+![Structure diagram](assets/sd.png)
 
-## Data
 
-The supplied data is in the format:
+## Example Data
 
-* Date: YYYY-MM-DD
-* Time: HH:MM:SS
-* Temperature: 1 decimal place
+
+### tempF.csv
 
 ```
-2010-01-01,01:00:00,34.5
-2010-01-01,02:00:00,34.2
-2010-01-01,03:00:00,33.9
+...
+01/31/1910,22:00:00,33.9
+01/31/1910,23:00:00,33.4
+02/01/1910,00:00:00,33
+02/01/1910,01:00:00,32.4
+...
+```
+
+
+### tempC.csv
+
+```
+...
+1910-01-31,22:00:00,1.1
+1910-01-31,23:00:00,0.8
+1910-02-01,00:00:00,0.6
+1910-02-01,01:00:00,0.2
 ...
 ```
