@@ -1,6 +1,6 @@
 # H SDD - Tuck Shop
 
-## Introduction 
+## Introduction
 
 The Youth Cafe runs a tuck shop that sells sweets, crisps, drinks etc. The details of how much each item costs to buy from the Co-op are kept in the file [tuckshop.csv](assets/tuckshop.csv "CSV file").  There are three fields in the file: Name, Weight, and Price.
 
