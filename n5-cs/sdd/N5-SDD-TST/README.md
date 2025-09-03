@@ -16,8 +16,8 @@ At the end of the day the overall takings are calculated from the tickets sold, 
 ### Inputs
 
 * Number of tours
-* Number of passengers on a tour
-* Passenger type
+* Number of passengers on each tour
+* Passenger type for every passenger
 
 
 ### Processes
