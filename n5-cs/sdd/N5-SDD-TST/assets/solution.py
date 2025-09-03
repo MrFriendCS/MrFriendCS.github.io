@@ -1,6 +1,6 @@
 # Title: N5 SDD TST
 # Author: Mr Friend
-# Date: 24 Sep 2024
+# Date: 3 Sep 2024
 
 # Initalise variables
 noOfTours = 0
@@ -11,8 +11,13 @@ tourCosts = [0] * 4
 totalCost = 0
 averageCost = 0.0
 
+
+# Display header
+print("\n TST")
+print("-----\n")
+
 # Get valid number of tours
-while noOfTours <1 or noOfTours > 4:
+while noOfTours < 1 or noOfTours > 4:
     
     # Get number of tours
     noOfTours = int(input("Number of tours: "))
@@ -23,6 +28,7 @@ while noOfTours <1 or noOfTours > 4:
         # Error message
         print("\nInvalid:  Enter a value of 1 to 4")
 
+
 #Loop for each tour
 for index in range(noOfTours):
 
@@ -30,7 +36,7 @@ for index in range(noOfTours):
     while noOfPassengers < 1 or noOfPassengers > 5:
         
         # Get valid number of passengers
-        noOfPassengers = int(input("\nTour " +str(index+1) + " passengers: "))
+        noOfPassengers = int(input("\nNumber passengers on tour " +str(index+1) + ": "))
         
         # Check if valid
         if noOfPassengers < 1 or noOfPassengers > 5:
@@ -42,20 +48,20 @@ for index in range(noOfTours):
     for count in range(noOfPassengers):
     
         # Get valid passengers type
-        while passengerType != "adult" and  passengerType != "child":
+        while passengerType != "a" and  passengerType != "c":
             
             # Get passengers type
-            passengerType = input("Tour " +str(index+1)
-                                  + " passenger " + str(count+1) + ": ")
+            passengerType = input("Tour " + str(index+1)
+                                  + " passenger " + str(count+1) + " type: ")
             
             # Check if valid
-            if passengerType != "adult" and  passengerType != "child":
+            if passengerType != "a" and  passengerType != "c":
                 
                 # Error message
-                print("\nInvalid: Enter a value of 'adult' or 'child'")
+                print("\nInvalid: Enter a value of 'a' for addult or 'c' for child")
 
         # Is passenger an adult?
-        if passengerType == "adult":
+        if passengerType == "a":
             
             # Increase tour cost by £25
             tourCost = tourCost + 25
@@ -77,6 +83,7 @@ for index in range(noOfTours):
     # Reset noOfPassangers
     noOfPassengers = 0
 
+
 # Calculate total cost of tours
 for index in range(noOfTours):
     
@@ -92,7 +99,8 @@ average = round(average, 2)
 # Display header
 print("\nTours")
 print("-----\n")
-    
+
+
 # Display cost of tours
 for index in range(noOfTours):
     

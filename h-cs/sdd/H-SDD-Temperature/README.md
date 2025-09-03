@@ -8,8 +8,6 @@ If a company has a problem with data, BDS intends to be the solution!
 
 The local heritage centre has some histrorical temperature records that it wishes to use.  There is a year's worth of temperature readings, hour by hour, in the file [tempF.csv](assets/tempF.csv "CSV file").  There are 8,759 readings in total.
 
-
-
 Unfortunately, the dates are in the US format, and all of the temperatures are in Fahrenheit.
 
 
@@ -36,7 +34,7 @@ C = (F - 32) * 5/9
 1. Read the data from a csv file: `tempF.csv`
 2. Convert the temperatures from Fahrenheit to Centigrade
 3. Convert the dates from US to ISO format
-5. Write the data to a csv file: `tempC.csv`
+4. Write the data to a csv file: `tempC.csv`
 
 
 ## Structure diagram
@@ -45,7 +43,6 @@ C = (F - 32) * 5/9
 
 
 ## Example Data
-
 
 ### tempF.csv
 

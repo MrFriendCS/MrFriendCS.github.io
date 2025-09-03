@@ -131,8 +131,8 @@
         <mxCell id="4M8uOC0VbAmZNsjh5Trg-6" value="Read data from&lt;div&gt;csv file&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;labelBackgroundColor=default;fontColor=default;spacingLeft=4;spacingRight=4;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
           <mxGeometry x="120" y="320" width="120" height="70.82" as="geometry" />
         </mxCell>
-        <mxCell id="4M8uOC0VbAmZNsjh5Trg-7" value="tempData(dateUS, time, tempF)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
-          <mxGeometry x="120" y="411.64" width="180" height="28.36" as="geometry" />
+        <mxCell id="4M8uOC0VbAmZNsjh5Trg-7" value="hourlyValues(dateUS, time, tempF)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
+          <mxGeometry x="110" y="411.64" width="200" height="28.36" as="geometry" />
         </mxCell>
         <mxCell id="4M8uOC0VbAmZNsjh5Trg-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;fontColor=default;endArrow=none;endFill=0;strokeColor=default;" parent="4M8uOC0VbAmZNsjh5Trg-1" source="4M8uOC0VbAmZNsjh5Trg-10" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -147,8 +147,8 @@
         <mxCell id="4M8uOC0VbAmZNsjh5Trg-10" value="Write data to&lt;div&gt;csv file&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;labelBackgroundColor=default;fontColor=default;spacingLeft=4;spacingRight=4;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
           <mxGeometry x="760" y="319.18" width="120" height="70.82" as="geometry" />
         </mxCell>
-        <mxCell id="4M8uOC0VbAmZNsjh5Trg-11" value="tempData(dateUS, time, tempF)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=default;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
-          <mxGeometry x="220" y="450" width="180" height="30" as="geometry" />
+        <mxCell id="4M8uOC0VbAmZNsjh5Trg-11" value="hourlyValues(dateUS, time, tempF)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=default;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
+          <mxGeometry x="210" y="450" width="200" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4M8uOC0VbAmZNsjh5Trg-12" value="" style="endArrow=none;html=1;strokeColor=default;labelBackgroundColor=default;fontColor=default;" parent="4M8uOC0VbAmZNsjh5Trg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -197,8 +197,8 @@
         <mxCell id="4M8uOC0VbAmZNsjh5Trg-21" value="Convert dates from US to ISO format" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;spacingLeft=4;spacingRight=4;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
           <mxGeometry x="440" y="320" width="120" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="4M8uOC0VbAmZNsjh5Trg-22" value="tempData(dateUS, time, tempF)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=default;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
-          <mxGeometry x="380" y="480" width="180" height="30" as="geometry" />
+        <mxCell id="4M8uOC0VbAmZNsjh5Trg-22" value="hourlyValues(dateUS, time, tempF)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=default;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
+          <mxGeometry x="370" y="480" width="200" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4M8uOC0VbAmZNsjh5Trg-23" value="datesISO()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=default;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
           <mxGeometry x="500" y="410" width="60" height="30" as="geometry" />
@@ -219,8 +219,8 @@
         <mxCell id="DfVuXbKDSlaz79RYDZ5v-2" value="Extract times" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;spacingLeft=4;spacingRight=4;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
           <mxGeometry x="600" y="320" width="120" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="DfVuXbKDSlaz79RYDZ5v-3" value="tempData(dateUS, time, tempF)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=default;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
-          <mxGeometry x="540" y="450" width="180" height="30" as="geometry" />
+        <mxCell id="DfVuXbKDSlaz79RYDZ5v-3" value="hourlyValues(dateUS, time, tempF)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=default;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
+          <mxGeometry x="530" y="450" width="200" height="30" as="geometry" />
         </mxCell>
         <mxCell id="DfVuXbKDSlaz79RYDZ5v-4" value="times()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=default;" parent="4M8uOC0VbAmZNsjh5Trg-1" vertex="1">
           <mxGeometry x="660" y="410" width="60" height="30" as="geometry" />
