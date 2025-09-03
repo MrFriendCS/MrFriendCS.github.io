@@ -1,45 +1,69 @@
-# H SDD - Temperature v2
+# H SDD - Temperature Dates Part 2
 
-## Overview
+## Introduction
 
-A year's worth of temperature readings are in a [csv file](assets/tempF.csv "data file"), 8,759 readings in total.  All of the temperature readings are in Fahrenheit and need to be converted to Celsius, rounded to 1 decimal place.
+Barra Data Solutions (BDS) is hoping to break into the market for providing data services to other companies.
 
-## Top Level Design (Pseudocode)
+If a company has a problem with data, BDS intends to be the solution!
 
-1. Read the data from the csv file: `tempF.csv`
-2. [Convert](https://www.mathsisfun.com/temperature-conversion.html "Maths is Fun!") the temperatures to Celsius
-3. Write the data to the text file: `tempC.txt`
+The local heritage centre has some histrorical temperature records that it wishes to use.  There is a year's worth of temperature readings, hour by hour, in the file [tempF.csv](assets/tempF.csv "CSV file").  There are 8,759 readings in total.
 
-## Top Level Design (Structure diagram)
+Unfortunately, the dates are in the US format, and all of the temperatures are in Fahrenheit.
 
-![Structure diagram](assets/sd.png)
 
-### Data: tempF.csv
+## Task
 
-The supplied data is in the format:
+Convert all of the dates from US to ISO format.  Convert all of the temperatures from Fahrenheit to Celsius.  Write the data to a new csv file.
 
-* Date: YYYY-MM-DD
-* Time: HH:MM:SS
-* Temperature: 1 decimal place
+
+### Date Format
+
+Example date: 1st August 2022
+
+* US: 08/01/2022 (mm/dd/yyyy)
+* ISO: 2022-08-01 (yyyy-mm-dd)
+
+
+### Temperature Conversion
+
+C = (F - 32) * 5/9
+
+
+## Steps
+
+1. Read the data into an array of records from a csv file: `tempF.csv`
+2. Convert the temperatures from Fahrenheit to Centigrade
+3. Convert the dates from US to ISO format
+4. Extract the times
+5. Write the parallel arrays to a csv file: `tempC.csv`
+
+
+## Structure diagram
+
+![Structure diagram](assets/sd2.png)
+
+
+## Example Data
+
+### tempF.csv
 
 ```
-2010-01-01,01:00:00,34.5
-2010-01-01,02:00:00,34.2
-2010-01-01,03:00:00,33.9
+...
+01/31/1910,22:00:00,33.9
+01/31/1910,23:00:00,33.4
+02/01/1910,00:00:00,33
+02/01/1910,01:00:00,32.4
 ...
 ```
 
-### Data: tempF.txt
 
-The exported data is to be in the format:
-
-* Date: YYYY-MM-DD
-* Time: HH:MM:SS
-* Temperature: 1 decimal place
+### tempC.csv
 
 ```
-2010-01-01,01:00:00,1.4
-2010-01-01,02:00:00,1.2
-2010-01-01,03:00:00,1.1
+...
+1910-01-31,22:00:00,1.1
+1910-01-31,23:00:00,0.8
+1910-02-01,00:00:00,0.6
+1910-02-01,01:00:00,0.2
 ...
 ```
