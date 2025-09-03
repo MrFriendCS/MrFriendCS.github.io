@@ -38,7 +38,9 @@ An example of the expected output is shown below.
 
 ### Assumption
 
-* Passenger type is lowercase
+* Passenger type is a single lowercase character:
+    * a = adult
+    * c = child
 
 
 ### Design (Structure diagram)
