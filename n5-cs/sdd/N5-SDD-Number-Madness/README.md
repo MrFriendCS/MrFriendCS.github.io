@@ -7,7 +7,7 @@ Write a short program that will use two numbers.  The program will then show the
 1. Added
 2. Subtracted
 3. Multiplied
-4. Divided
+4. Divided (rounded to 2 decimal places)
 5. Squared and subtracted
 
 

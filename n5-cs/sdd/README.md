@@ -6,9 +6,13 @@
 | -----                      | -----------                          | --------                      | -------- |
 | N5-SDD-Rounding Pt 1       | Calculations using radius and pi     | maths, rd                     |  |
 | N5-SDD-Rounding Pt 2       | Calculations using radius and pi     | maths, rd, cat                |  |
+| N5-SDD-Number-Madness Pt 1 | Two values, various results          | maths, rd, cat                |  |
+| N5-SDD-Gradient Pt 1       | Calculate gradient from rise and run | maths, rd, cat                |  |
+| N5-SDD-Fractions-Fun       | Add two fractions together           | maths, cat                    |  |
+| N5-SDD-Number-Madness Pt 2 | Two values, various results          | ip, maths, rd, cat            |  |
 | N5-SDD-Rectangle-Calcs     | Calculate perimeter and area         | ip, maths, cat                |  |
-| N5-SDD-Number-Madness Pt 1 | Two values, various results          | ip, maths, cat                |  |
-| N5-SDD-Gradient Pt 1       | Calculate gradient from rise and run | ip, maths, cat                |  |
+| N5-SDD-Number-Madness Pt ? | Two values, various results          | ip, maths, cat                |  |
+| N5-SDD-Gradient Pt ?       | Calculate gradient from rise and run | ip, maths, cat                |  |
 | N5-SDD-Average             | Calculate mean                       | ip, rt, maths                 |  |
 | N5-SDD-Boccia Pt 1         | Records scores, gives result         | ip                            |  |
 | N5-SDD-Book-Shop Pt 1      | Calculate student book price         | ip, if1                       |  |
