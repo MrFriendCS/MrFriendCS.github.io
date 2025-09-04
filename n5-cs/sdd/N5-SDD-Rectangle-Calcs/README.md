@@ -30,10 +30,10 @@ All inputs are whole numbers.
 
 ## User Experience
 
-An example of the expected inputs and outputs are shown below.
+An example of the expected inputs and outputs is shown below.
 
 
-### User Interface Example 1
+### User Interface Example
 
 ```
 Rectangle Calculations
@@ -47,20 +47,9 @@ The area is 20 units squared
 ```
 
 
-### User Interface Example 2
-
-```
-What is the width? 6
-What is the height? 2
-
-The perimeter is 16 units
-The area is 12 units squared
-```
-
-
 ## Readability
 
-Ensure that the program helps the next person that looks at it.
+Ensure that the program is written to help the next person who looks at it.
 
 Use:
 
