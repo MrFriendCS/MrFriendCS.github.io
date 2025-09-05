@@ -39,8 +39,18 @@ An example of the expected inputs and outputs is shown below.
 Rectangle Calculations
 ----------------------
 
-What is the width? 5
-What is the height? 4
+   width
+  -------
+ h|     |
+ e|     |
+ i|     |
+ g|     |
+ h|     |
+ t|     |
+  -------
+
+What is the width? 4
+What is the height? 5
 
 The perimeter is 18 units
 The area is 20 units squared
