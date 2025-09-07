@@ -4,11 +4,15 @@
 
 | Title                      | Description                          | Concepts                      | Comments |
 | -----                      | -----------                          | --------                      | -------- |
+| N5-SDD-Hello Pt 1          | Produce an output using variables    |                               |  |
 | N5-SDD-Rounding Pt 1       | Calculations using radius and pi     | maths, rd                     |  |
+| N5-SDD-Hello Pt 2          | Produce an output using variables    | cat                           |  |
 | N5-SDD-Rounding Pt 2       | Calculations using radius and pi     | maths, rd, cat                |  |
 | N5-SDD-Number-Madness Pt 1 | Two values, various results          | maths, rd, cat                |  |
 | N5-SDD-Gradient Pt 1       | Calculate gradient from rise and run | maths, rd, cat                |  |
 | N5-SDD-Fractions-Fun       | Add two fractions together           | maths, cat                    |  |
+| N5-SDD-Hello Pt 3          | Produce an output using inputs       | ip, cat                       |  |
+| N5-SDD-Hello Pt 4          | Produce an output using inputs       | ip, maths, cat                |  |
 | N5-SDD-Number-Madness Pt 2 | Two values, various results          | ip, maths, rd, cat            |  |
 | N5-SDD-Rectangle-Calcs     | Calculate perimeter and area         | ip, maths, cat                |  |
 | N5-SDD-Number-Madness Pt ? | Two values, various results          | ip, maths, cat                |  |
