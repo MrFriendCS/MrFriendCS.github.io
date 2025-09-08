@@ -49,7 +49,7 @@ Ensure that your program is easy to understand.  Use:
 
 - Meaningful identifiers (variable names)
 - Internal commentary (comments)
-- Whitespace (blank lines)
+- White space (blank lines)
 
 
 ## Reminders
