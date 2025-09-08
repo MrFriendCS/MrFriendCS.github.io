@@ -47,12 +47,13 @@ The values entered by the user will be integers.
 
 Ensure that your program is easy to understand.  Use:
 
-1. Meaningful identifiers (variable names)
-2. Internal commentary (comments)
-3. Whitespace (blank lines)
+- Meaningful identifiers (variable names)
+- Internal commentary (comments)
+- Whitespace (blank lines)
 
 
 ## Reminders
 
-1. Division creates a real value.
-2. Only strings can be concatenated.
+- Everything from the keyboard is a string.
+- Division creates a real value.
+- Only strings can be concatenated.
