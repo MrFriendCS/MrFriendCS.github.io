@@ -1,26 +1,38 @@
-# Title: H SDD Temperature v2
-# Date: 12 Sep 2023
+# Title: H SDD Temperature Part 2
+# Date: 9 Sep 2025
 # Author: Mr Friend
+
+# Get extra code
+from dataclasses import dataclass
+
+
+@dataclass
+class HourlyValue:
+    """A record to hold temperature data."""
+    
+    # Fields
+    date: str = ""
+    time: str = ""
+    temp: float = 0.0
+
 
 # 
 # Subprograms
 #
 
-def getData():
-    """Read data from csv file and return parallel arrays"""
+def readData():
+    """Read data from csv file and return an array of records."""
 
     # Declare local varaibles and arrays
     line = ""
     data = [""] * 3
-    dates = [""] * 8759
-    times = [""] * 8759
-    temps = [0.0] * 8759
+    hourlyValues = [HourlyValue() for index in range(8759)]
     
     # Open connection to file
     file = open("tempF.csv", "r")
     
     # Loop for each row of data
-    for index in range(len(dates)):
+    for index in range(len(hourlyValues)):
     
         # Read row of data
         line = file.readline()
@@ -29,46 +41,82 @@ def getData():
         data = line.split(",")
     
         # Assign data to arrays
-        dates[index] = data[0].strip()
-        times[index] = data[1].strip()
-        temps[index] = float(data[2].strip())
+        hourlyValues[index].date = data[0].strip()
+        hourlyValues[index].time = data[1].strip()
+        hourlyValues[index].temp = float(data[2].strip())
     
     # Close connection to file
     file.close()
 
-    # Return parallel arrays
-    return dates, times, temps
+    # Return array of records
+    return hourlyValues
 
 
-def convert(oldTemps):
-    """Convert fahrenheit to centigrade"""
+def convertTemps(hourlyValues):
+    """Convert fahrenheit to centigrade, to 1 dp, and return an array."""
 
-    # Declare local varaiables and array
-    tempF = 0.0
-    tempC = 0.0
-    newTemps = [0.0] * len(oldTemps)
+    # Declare local variables
+    newTemps = [0.0] * len(hourlyValues)
     
     # Loop for each temperature
-    for index in range(len(oldTemps)):
+    for index in range(len(hourlyValues)):
     
-        # Get fahrenheit
-        tempF = oldTemps[index]
+        # Calculate centigrade and assign to array
+        newTemps[index] = round((hourlyValues[index].temp - 32) * (5 / 9), 1)
     
-        # Calculate centigrade
-        tempC = (tempF - 32) * (5 / 9)
-    
-        # Assign centigrade value
-        newTemps[index]  = round(tempC, 1)
-
     # Return values
     return newTemps
 
 
+def convertDates(hourlyValues):
+    """Convert US dates to ISO dates and return an array."""
+
+    # Declare local variables
+    newDates = [0.0] * len(hourlyValues)
+    tempDate = ""
+    year = ""
+    month = ""
+    day = ""
+    
+    # Loop for each date
+    for index in range(len(hourlyValues)):
+    
+        # Get current US date
+        tempDate = hourlyValues[index].date
+        
+        # Extract month, day, year
+        month = tempDate[ :2]
+        day = tempDate[3:5]
+        year = tempDate[6: ]
+        
+        # Create ISO date and assign to array
+        newDates[index] = year + "-" + month + "-" + day
+    
+    # Return ISO dates
+    return newDates
+
+
+def extractTimes(hourlyValues):
+    """Extract times and return an array."""
+
+    # Declare local variables
+    newTimes = [0.0] * len(hourlyValues)
+    
+    # Loop for each time
+    for index in range(len(hourlyValues)):
+    
+        # Calculate centigrade and assign to array
+        newTimes[index] = hourlyValues[index].time
+    
+    # Return times
+    return newTimes
+    
+
 def writeData(dates, times, temps):
-    """Write data to text file"""
+    """Write data to text file."""
     
     # Open connection to file
-    file = open("tempC.txt", "w")
+    file = open("tempC.csv", "w")
     
     # Loop for each row of data
     for index in range(len(dates)):
@@ -86,17 +134,28 @@ def writeData(dates, times, temps):
 # Main program
 #
 
-# Declare global variables and arrays
-dates = [""] * 8759
-times = [""] * 8759
-tempFs = [0.0] * 8759
-tempCs = [0.0] * 8759
+def main():
+    
+    # Declare global variables and arrays
+    hourlyValues = [HourlyValue() for index in range(8759)]
+    tempsC = [0.0] * len(hourlyValues)
+    datesISO = [""] * len(hourlyValues)
+    times = [""] * len(hourlyValues)
 
-# Read data from csv file
-dates, times, tempFs = getData()
+    # Read data from csv file
+    hourlyValues = readData()
 
-# Convert temperatures
-tempCs = convert(tempFs)
+    # Convert temperatures from F to C (1 dp)
+    tempsC = convertTemps(hourlyValues)
+    
+    # Convert dates from US to ISO format
+    datesISO = convertDates(hourlyValues)
+    
+    # Extract times
+    times = extractTimes(hourlyValues)
 
-# Write data to txt file
-writeData(dates, times, tempCs)
+    # Write data to csv file
+    writeData(datesISO, times, tempsC)
+    
+# Call main()
+main()

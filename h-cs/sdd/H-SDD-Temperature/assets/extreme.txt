@@ -1,0 +1,16 @@
+The minimum temperature was -1.7 deg C on the following dates:
+
+	1910-01-21 at 05:00
+	1910-01-21 at 06:00
+	1910-01-21 at 07:00
+	1910-01-22 at 06:00
+	1910-01-22 at 07:00
+	1910-01-23 at 06:00
+	1910-01-23 at 07:00
+
+The maximum temperature was 28.7 deg C on the following dates:
+
+	1910-07-14 at 14:00
+	1910-07-14 at 15:00
+	1910-07-15 at 14:00
+	1910-07-15 at 15:00
