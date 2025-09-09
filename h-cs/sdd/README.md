@@ -13,29 +13,28 @@
 | H-SDD-Standard           | Standard algorithms             | sp, ls, co, min, max        | Tests |
 | H-SDD-Parallel           | Skelton parallel arrays         | pa                          | |
 | H-SDD-Ski-Slope          | Calculations and results        | sp                          | pc |
-| H-SDD-Summer Pt 1        | For summer break                | asc, chr, int, mod, sp, ss  | |
-| H-SDD-Summer Pt 2        | For summer break                | asc, chr, int, mod, sp, ss  | |
-| H-SDD-Summer Pt 3        | For summer break                | asc, chr, int, mod, sp, ss  | |
+| H-SDD-Summer Pt 1        | Pi related functions            | sp                          | |
+| H-SDD-Summer Pt 2        | Text related functions          | sp, ss, chr                 | |
+| H-SDD-Summer Pt 3        | Text related functions          | sp, ss, asc, ls             | |
 | H-SDD-Add                | Add two values                  | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%     | sp, r, w                    | sd |
 | H-SDD-Walking Pt 1       | Write data to file              | w                           | |
-| H-SDD-Walking Pt 2       | Write data to file              | Walking + sp                | sd |
+| H-SDD-Walking Pt 2       | Write data to file              | sp, w                       | sd |
 | H-SDD-Countries          | Write parallel arrays to file   | w, pa                       | |
 | H-SDD-Tuck-Shop Pt 1     | Create a price list             | r, pa, ss, asc, chr, w      | pc |
-| H-SDD-Tuck-Shop Pt 2     | Create a price list             | Tuck Shop + sp              | sd |
+| H-SDD-Tuck-Shop Pt 2     | Create a price list             | sp, r, pa, ss, asc, chr, w  | sd |
 | H-SDD-Temperature Pt 1   | Convert F to C, US to ISO dates | sp, r, pa, w                | sd |
 | H-SDD-Temperature Pt 2   | Convert F to C, US to ISO dates | sp, r, ar, w                | sd |
+| H-SDD-Temperature Pt 3   | Convert F to C, US to ISO dates | sp, r, pa, min, max, ls+, w | sd |
+| H-SDD-Temperature Pt 4   | Convert F to C, US to ISO dates | sp+, r, ar, ss, r           | pc+ |
 | H-SDD-Convert            | Multiple conversions of units   | sp, int, mod                | Tests |
 | H-SDD-Strings            | Multiple string manipulations   | sp, ss, asc, chr            | Tests |
 | H-SDD-Write-Data Pt 1    | Create and write random data    | sp, pa, chr, w              | Tests |
 | H-SDD-Calculation        | Multiple calculations           | sp, ss, asc, chr            | Tests |
 | H-SDD-Algorithm          | Standard algorithms             | sp, ls, co, min, max        | Tests |
 | H-SDD-Bearings Pt 1      | Check size of bearings          | sp, r, min, max, co+, w     | Tests |
-| H-SDD-Hot-Cold           | Find hottest and coldest days   | sp, r, pa, min, max, ls+, w | sd |
 | H-SDD-House-Prices       | Update house prices             | sp, r, co, ls+, min, max, w | |
-| H-SDD-Temp-Dates Pt 1    | Convert temperatures and dates  | sp+, r, pa, ss, r           | pc+ |
 | H-SDD-People             | Read and write with records     | sp, r, ar, co, max, ls+     | |
-| H-SDD-Temp-Dates Pt 2    | Convert temperatures and dates  | sp+, r, ar, ss, r           | pc+ |
 | H-SDD-Runners            | Find qualifying runners         | sp, r, ar, ls+              | pc |
 | H-SDD-Bearings Pt 2      | | | |
 | H-SDD-Password-Generator | | | |
