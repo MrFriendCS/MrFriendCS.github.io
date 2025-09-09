@@ -39,9 +39,6 @@
 | H-SDD-Bearings Pt 2      | | | |
 | H-SDD-Password-Generator | | | |
 | H-SDD-Straight-Line      | | | |
-| H-SDD-Temperature Pt 1   | | | |
-| H-SDD-Temperature Pt 2   | | | |
-| H-SDD-Temperature Pt 3   | | | |
 | H-SDD-Usernames Pt 1     | | | |
 | H-SDD-Usernames Pt 2     | | | |
 | H-SDD-Usernames Pt 3     | | | |
