@@ -40,17 +40,17 @@ Pontoon uses standard decks of 52 playing cards.  Each player is dealt two cards
 
 ## Task
 
-Using the Structure diagram below, implement code to create a simplified version of the Pontoon.
+Using the structure diagram below, implement code to create a simplified version of the Pontoon.
 
 
-### Top leve design (Structure diagram)
+### Top leve design (structure diagram)
 
 ![Structure diagram](assets/sd2.png)
 
 
 ### Example user interface
 
-#### Input
+#### Start
 
 ```
 Pontoon
@@ -65,7 +65,27 @@ Player 2: Jo
 ```
 
 
-#### Output
+#### Game
+
+```
+Game
+----
+
+Jim: 13
+Stick or twist? twist
+Card value: 10
+Bust!
+
+Jo: 9
+Stick or twist? twist
+Card value: 2
+Stick or twist? twist
+Card value: 10
+Stick or twist? stick
+```
+
+
+#### End
 
 ```
 Results
