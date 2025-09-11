@@ -2,7 +2,7 @@
 
 ## Problem
 
-The customer wants a solution that will calculate the perimeter and area of a rectangle.
+A pupil wants a program that will calculate the perimeter and area of a rectangle, so they can 'check' their homework answers.
 
 
 ### Inputs
