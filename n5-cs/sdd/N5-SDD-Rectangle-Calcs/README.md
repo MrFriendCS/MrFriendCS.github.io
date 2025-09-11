@@ -7,8 +7,8 @@ A pupil wants a program that will calculate the perimeter and area of a rectangl
 
 ### Inputs
 
-* A value representing the width of the rectangle
-* A value representing the height of the rectangle
+* A value representing the width of the rectangle, from the user
+* A value representing the height of the rectangle, from the user
 
 
 ### Processes
