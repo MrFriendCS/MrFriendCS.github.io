@@ -9,8 +9,6 @@ If a company has a problem with data, BDS intends to be the solution!
 
 The local heritage centre has some histrorical temperature records that it wishes to use.  There is a year's worth of temperature readings, hour by hour, in the file [tempF.csv](assets/tempF.csv "CSV file").  There are 8,759 readings in total.
 
-The heritage centre wants to know what the highest and lowest temperatures were, in Centigrade, and the dates and times they occurred.
-
 Unfortunately, the dates are in the US format, and all of the temperatures are in Fahrenheit.
 
 
