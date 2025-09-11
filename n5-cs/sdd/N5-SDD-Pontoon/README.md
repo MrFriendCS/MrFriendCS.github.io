@@ -21,7 +21,7 @@ Initialise total score
 initialise twist answer
 
 Loop 2 times
-    Pick a random card value from 2 to 11
+    Pick a random card value from 1 to 13
     Display card value
     Add card value to total score
 End loop
@@ -45,6 +45,8 @@ Start conditional loop for twist and total < 21
     Else
         Display "Bust!"
     End if
+    
+    Get stick or twist from user
 
 End conditional loop
 
