@@ -3,16 +3,20 @@
 
 ## Introduction
 
-Barra Data Solutions (BDS) is hoping to break into the market for providing data services to other companies.  If a company has a problem with data, BDS intends to be the solution!
+Barra Data Solutions (BDS) is hoping to break into the market for providing data services to other companies.
 
-The local heritage centre has some histrorical temperature records that it wishes to use.  There is a year's worth of temperature readings, hour by hour, in a csv file ([dataUS.csv](assets/dataUS.csv "Download file")).  There 8,759 records in the file.
+If a company has a problem with data, BDS intends to be the solution!
+
+The local heritage centre has some histrorical temperature records that it wishes to use.  There is a year's worth of temperature readings, hour by hour, in the file [tempF.csv](assets/tempF.csv "CSV file").  There are 8,759 readings in total.
+
+The heritage centre wants to know what the highest and lowest temperatures were, in Centigrade, and the dates and times they occurred.
 
 Unfortunately, the dates are in the US format, and all of the temperatures are in Fahrenheit.
 
 
 ## Task
 
-Convert all of the dates from US to ISO format.  Convert all of the temperatures from Fahrenheit to Celsius.  Write the data to a new csv file, `dataISO.csv`.
+Convert all of the dates from US to ISO format.  Convert all of the temperatures from Fahrenheit to Celsius.  Write the data to a new csv file.
 
 
 ## Top level design (Pseudocode)
@@ -50,13 +54,14 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
 
 ## Data Formats
 
-### Dates
+### Date Format
 
-Example date: 1st August 2024
+Example date: 1st August 2022
 
-* US: mm-dd-yyyy __/__ 08-01-2024
-* ISO: yyyy-mm-dd __/__ 2024-08-01
+* US: 08/01/2022 (mm/dd/yyyy)
+* ISO: 2022-08-01 (yyyy-mm-dd)
 
-### Temperatures
+
+### Temperature Conversion
 
 C = (F - 32) * 5/9
