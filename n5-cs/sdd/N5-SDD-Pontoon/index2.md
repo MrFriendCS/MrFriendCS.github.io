@@ -19,8 +19,8 @@ Pontoon uses standard decks of 52 playing cards.  Each player is dealt two cards
 
 ### Inputs
 
-* Number of players - minimum of 2 letters
-* Names of players
+* Number of players
+* Names of players - minimum of 2 letters
 * Stick or twist
 
 ### Processes
