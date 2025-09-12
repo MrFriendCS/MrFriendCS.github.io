@@ -3,12 +3,12 @@
 
 ## Introduction
 
-Walking is a popular hobby / exercise for many people.  There are different apps, both paid and free, that will record what someone has done.  Often, the data is then used in a way that the user is unaware of.
+Walking is a popular hobby / exercise for many people.  There are different apps, both paid and free, that will record what someone has done.  Often, the data is then shared in a way that the user is unaware of.
 
 
 ## Task
 
-Create a small program for those who do not want to share their data that will calculate the distance walk over a four week period.  It will also calculate the mean distance walked.  All results are to be rounded to 1 decimal place.
+Create a small program for those who do not want to share their data.  It will calculate the total distance and the mean distance walked, over a four week period.  All results are to be rounded to 1 decimal place.
 
 
 ## Example User Interface
