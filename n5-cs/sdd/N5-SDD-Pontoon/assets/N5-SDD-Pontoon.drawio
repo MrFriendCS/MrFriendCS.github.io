@@ -200,7 +200,7 @@
           <mxGeometry x="480" y="620" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="O8PprKsM1skhI8_brBI8-0" value="Set finished to True" style="rounded=0;whiteSpace=wrap;html=1;" parent="YYdIqWu0XJPtPmmvYkwn-1" vertex="1">
-          <mxGeometry x="960" y="620" width="120" height="60" as="geometry" />
+          <mxGeometry x="960" y="590" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="O8PprKsM1skhI8_brBI8-2" value="No" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="YYdIqWu0XJPtPmmvYkwn-1" vertex="1">
           <mxGeometry x="950" y="540" width="40" height="30" as="geometry" />
