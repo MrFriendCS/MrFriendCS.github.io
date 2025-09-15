@@ -30,12 +30,17 @@ Gradient Calculator
 ___________________|
        Run
 
+
+What is the rise? 2.5
+What is the run? 10
+
            Rise
 Gradient = ----
            Run
 
-Rise? 2.5
-Run? 10
+           2.5
+Gradient = ----
+           10
 
 Gradient: 0.25
 ==============
