@@ -176,7 +176,6 @@ def main():
     
     # 1. Read the student data from a csv file
     students = readData()
-    print(students[-1])
     
     # 2. Create the usernames
     usernames = createUsernames(students)
