@@ -7,6 +7,8 @@ Each year, only 100 students are able to enrol at the prestigous Barra School of
 
 Each student is issued with a username.  Usernames are created from a student's first name, last name, and National Insurance (NI) number.  A NI number is made up of 2 letters, 6 numbers and a final letter.
 
+The students' data is in the file [students.csv](assets/students.csv "CSV file").
+
 
 ## Task
 
