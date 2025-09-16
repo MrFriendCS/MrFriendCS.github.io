@@ -65,7 +65,7 @@ Usernames are always lowercase.
 
 ## Example Data
 
-### rawData.csv
+### students.csv
 
 ```
 Barbra,Newhouse,ZQ018158G
