@@ -26,6 +26,7 @@
 | H-SDD-Temperature Pt 1   | Convert F to C, US to ISO dates | sp, r, pa, w                | sd |
 | H-SDD-Temperature Pt 2   | Convert F to C, US to ISO dates | sp, r, ar, w                | sd |
 | H-SDD-Temperature Pt 3   | Convert F to C, US to ISO dates | sp, r, pa, min, max, ls+, w | sd |
+| H-SDD-Usernames Pt 4     | Create usernames                | sp+, r, ss, chr, asc, w     | pc |
 | H-SDD-Temperature Pt 4   | Convert F to C, US to ISO dates | sp+, r, ar, ss, w           | pc+ |
 | H-SDD-Convert            | Multiple conversions of units   | sp, int, mod                | Tests |
 | H-SDD-Strings            | Multiple string manipulations   | sp, ss, asc, chr            | Tests |
