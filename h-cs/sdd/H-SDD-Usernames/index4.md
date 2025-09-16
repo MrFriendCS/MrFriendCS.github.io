@@ -63,6 +63,20 @@ Usernames are always lowercase.
 2. The data in the file is correctly formatted.
 
 
+## Tips
+
+1. Create the following functions, and test them, first:
+
+| Function           | Output |
+| --------           | ------ |
+| left("Hello", 4)   | "Hell" |
+| right("Hello", 4)  | "ello" |
+| mid("Hello", 2, 3) | "ell" |
+| lower("Hi 2 You!)  | "hi 2 you!" |
+
+2. Use these functions in step 2.
+
+
 ## Example Data
 
 ### students.csv
