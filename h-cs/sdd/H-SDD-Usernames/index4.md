@@ -72,7 +72,7 @@ Usernames are always lowercase.
 | left("Hello", 4)   | "Hell" |
 | right("Hello", 4)  | "ello" |
 | mid("Hello", 2, 3) | "ell" |
-| lower("Hi 2 You!)  | "hi 2 you!" |
+| lower("Hi 2 You!") | "hi 2 you!" |
 
 2. Use these functions in step 2.
 
