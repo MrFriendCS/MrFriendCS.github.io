@@ -2,7 +2,7 @@
 # Author: Mr Friend
 # Date: 1 Oct 2024
 
-# import module
+# import extra code
 import random
 
 # Initialise variables
@@ -11,6 +11,10 @@ name = ""
 card = 0
 twist = ""
 bust = False
+
+# Initialise arrays
+names = [""] * 8
+scores = [0] * 8
 
 # Display header
 print("Pontoon")
@@ -29,9 +33,7 @@ while noOfPlayers < 2 or noOfPlayers > 8:
         print("\nOnly 2 to 8 players allowed.")
 
 
-# Initialise arrays
-names = [""] * noOfPlayers
-scores = [0] * noOfPlayers
+
 
 # Get players' names
 print("\nEnter names")
