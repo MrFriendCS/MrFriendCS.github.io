@@ -3,7 +3,7 @@
 ## Task
 
 Create a small program that will ask the user which times table they would like to see.
-Display the requersted times table.
+Display the requested times table.
 
 
 ### Example User Interface
@@ -38,8 +38,8 @@ Look at the expected interface.  Identify:
 - Output that is fixed, i.e. text that does not change
 - User input, and the appropriate data type
 - Output that changes.  Does it:
-    - Change as the user input changes
-    - Change as part of a sequence
+    - Change as the user input changes?
+    - Change as part of a sequence?
 
 
 ## Testing
