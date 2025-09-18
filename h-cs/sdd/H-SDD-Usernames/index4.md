@@ -65,7 +65,7 @@ Usernames are always lowercase.
 
 ## Tips
 
-1. Create the following functions, and test them, first:
+Create the following functions, and test them, first:
 
 | Function           | Output |
 | --------           | ------ |
@@ -74,7 +74,7 @@ Usernames are always lowercase.
 | mid("Hello", 2, 3) | "ell" |
 | lower("Hi 2 You!") | "hi 2 you!" |
 
-2. Use these functions in step 2.
+Use these functions in step 2.
 
 
 ## Example Data

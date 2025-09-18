@@ -3,7 +3,7 @@
 ## Task
 
 Create a small program that will ask the user which times table they would like to see.
-Display the requersted times table (1 to 10).
+Display the requersted times table.
 
 
 ### Example User Interface
@@ -31,13 +31,24 @@ Times table:
 ```
 
 
+## Tips
+
+Look at the expected interface.  Identify:
+
+- Output that is fixed, i.e. text that does not change
+- User input, and the appropriate data type
+- Output that changes.  Does it:
+    - Change as the user input changes
+    - Change as part of a sequence
+
+
 ## Testing
 
-1. Pick values that you can calculate the answers to.
+1. Pick input values that you can calculate the answers to.
 2. Calculate the answers.
-3. Use the values in the program.
+3. Use the input values in the program.
 4. Check the answers the computer gives.
-5. If the same, use another set of values, otherwise work out what is wrong.
+5. If the your answers and the computer's answers are the same, use another set of values, otherwise work out what is wrong.
 
 
 ## Readability
