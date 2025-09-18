@@ -26,9 +26,9 @@ Usernames are always lowercase.
 ## Top level design (Pseudocode)
 
 ```
-1. Read the student data from a csv file    OUT: student(firstName, lastName, insuranceNo)
+1. Read the student data from a csv file    OUT: students(firstName, lastName, insuranceNo)
 
-2. Create the usernames                     IN: student(firstName, lastName, insuranceNo)
+2. Create the usernames                     IN: students(firstName, lastName, insuranceNo)
                                             OUT: usernames()  
    
 3. Write the usernames to a text file       IN: usernames()
