@@ -42,6 +42,8 @@
 | N5-SDD-School-Enrollment   |  |  |  |
 | N5-SDD-SnapTok             |  |  |  |
 | N5-SDD-Swimming            |  |  |  |
+| N5-SDD-Coin-Flipper Pt 1   | Simulate a coin, guess result (0, 1) | rnd, ip, if2                  | sd, no instructions |
+| N5-SDD-Coin-Flipper Pt 2   | Simulate a coin, guess result        | rnd, iv, if2                  | no instructions |
 | N5-SDD-Food-Cost           | Calculate cost of 3, 4, or 5 items   | rt, iv, t1d x 2               |  |
 | N5-SDD-Boccia Pt 2         | Records scores, gives result         | rt x 2, iv, if3               |  |
 | N5-SDD-Tip-Calculator      | Calculate cost, tip, total, share    | rt, iv                        | sd |
