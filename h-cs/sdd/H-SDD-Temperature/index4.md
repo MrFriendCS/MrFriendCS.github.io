@@ -1,4 +1,4 @@
-# H SDD - Temperature Dates
+# H SDD - Temperature Dates Part 4
 
 
 ## Introduction
@@ -23,7 +23,7 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
 1. Read the data from a csv file              OUT: dates(), times(), temps()
 
 2. Convert the temperatures from              IN: temps()
-   Fahrenheit to Centigrade                   OUT: temps()  
+   Fahrenheit to Centigrade (1 dp)            OUT: temps()  
    
 3. Convert the dates from US to ISO format    IN: dates()
                                               OUT: dates()
