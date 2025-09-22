@@ -12,7 +12,12 @@ Often, the data is then shared in a way that the user is unaware of.
 
 Create a small program for those who do not want to share their data.
 It will ask the user how many weeks of data they have, and then allow them to enter a distance for each of the weeks.
-It display the total distance and the mean distance, to 1 decimal place.
+It will display the total distance, to 0 decimal places, and the mean distance, to 1 decimal place.
+
+
+## Top level design (Structure diagram)
+
+![Structure diagram](assets/sd2.png)
 
 
 ## Example User Interface
@@ -28,8 +33,8 @@ Week 2 distance? 7.5
 Week 3 distance? 9
 Week 4 distance? 11.5
 
-Total: 40.0 units
-Average: 10.0 units per Week
+Total: 40 units
+Average: 10.0 units per week
 
 ==================
 ```

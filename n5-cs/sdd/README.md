@@ -18,6 +18,7 @@
 | N5-SDD-Walking Calculator  | Calculate total and mean distance    | ip, maths, cat                |  |
 | N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, maths, cat                | sd |
 | N5-SDD-Tames-Tables Pt 1   | Display a times table                | fl, ip, maths, cat            |  |
+| N5-SDD-Walking Calc Pt 2   | Calculate total and mean distance    | rt                            |  |
 | N5-SDD-Average             | Calculate mean                       | ip, maths, rd, cat            |  |
 | N5-SDD-Boccia Pt 1         | Records scores, gives result         | ip, if1                       |  |
 | N5-SDD-Book-Shop Pt 1      | Calculate student book price         | ip, if1                       |  |

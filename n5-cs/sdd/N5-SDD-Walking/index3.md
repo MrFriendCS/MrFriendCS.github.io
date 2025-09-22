@@ -18,5 +18,5 @@ To improve the readability of the program, use:
 
 ## Structure diagram
 
-  ![Structure diagram](assets/Walking.png)
+  ![Structure diagram](assets/sd3.png)
 
