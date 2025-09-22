@@ -3,7 +3,8 @@
 
 ## Introduction
 
-Walking is a popular hobby / exercise for many people.  There are different apps, both paid and free, that will record what someone has done.  
+Walking is a popular hobby / exercise for many people.
+There are different apps, both paid and free, that will record what someone has done.
 Often, the data is then shared in a way that the user is unaware of.
 
 
