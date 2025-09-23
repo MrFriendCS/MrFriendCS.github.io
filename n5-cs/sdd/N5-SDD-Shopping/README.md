@@ -45,7 +45,7 @@ Loyalty card? yes
 
 Discount: £1.0
 
-Amount to pay: £9.0
+Final amount: £9.0
 ====================
 ```
 
@@ -59,6 +59,6 @@ Total amount: £7.25
 
 Loyalty card? no
 
-Amount to pay: £7.25
+Final amount: £7.25
 ====================
 ```
