@@ -1,10 +1,12 @@
 # N5 SDD - Book Shop
 
+
 ## Introduction
 
 The University of Barra (UoB) bookshop wants to update how it calculates the 10% discount that students get when they buy something.  A £10 gift voucher can be used to pay for all or some of the purchase, but only one gift voucher can be used per purchase.  When using a voucher, no change is given if the amount to pay is less than £10.
 
 Currently, the total is rung up using an old till with any discount or vouchers being calculated by hand, and there have been some embarrassing mistakes!  
+
 
 ## Task
 
@@ -12,9 +14,11 @@ Create a program that will accept a non-discounted amount, calculate the discoun
 
 A structure diagram of the design is provided below.
 
+
 ### Top Level Design (Structure diagram)
 
-![Diagram](assets/sd.png)
+![Diagram](assets/sd1.png)
+
 
 ## Assumptions
 
@@ -25,11 +29,11 @@ A structure diagram of the design is provided below.
 
 2. Any text entered is lower case.
 
-3. Any rounding of amounts will be done by the UoB bookshop staff.
 
 ## Examples
 
 Examples of the expected user interface are shown below with some possible input and output values.
+
 
 ### User Interface - Example 1
 ```
@@ -51,6 +55,7 @@ Final amount to pay: £0.0
 ====================
 ```
 
+
 ### User Interface - Example 2
 ```
 UoB Book Shop
@@ -65,6 +70,7 @@ Voucher? no
 Final amount to pay: £7.25
 ====================
 ```
+
 
 ### User Interface - Example 3
 ```
