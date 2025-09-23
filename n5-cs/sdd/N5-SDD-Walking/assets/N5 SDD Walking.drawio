@@ -189,22 +189,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="UX" id="xi9xU0pWGq3P5OKUEAas">
-    <mxGraphModel dx="870" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
-      <root>
-        <mxCell id="P6TlU-wPTZ_5G9GFOR1F-0" />
-        <mxCell id="P6TlU-wPTZ_5G9GFOR1F-1" parent="P6TlU-wPTZ_5G9GFOR1F-0" />
-        <mxCell id="P6TlU-wPTZ_5G9GFOR1F-30" value="&lt;b&gt;Input&lt;/b&gt;&lt;br&gt;&lt;br&gt;Week 1: 5.5&lt;br&gt;Week 2: 10&lt;br&gt;Week 3: 6&lt;br&gt;Week 4: 20" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="P6TlU-wPTZ_5G9GFOR1F-1" vertex="1">
-          <mxGeometry x="320" y="160" width="90" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="P6TlU-wPTZ_5G9GFOR1F-31" value="&lt;b&gt;Output&lt;/b&gt;&lt;br&gt;&lt;br&gt;Total: 42 miles&lt;br&gt;Average: 10.5 miles" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="P6TlU-wPTZ_5G9GFOR1F-1" vertex="1">
-          <mxGeometry x="440" y="160" width="110" height="70" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram name="2" id="7ZXIt8HD00hRuN5GzJby">
-    <mxGraphModel dx="870" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <diagram name="sd4" id="7ZXIt8HD00hRuN5GzJby">
+    <mxGraphModel dx="786" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="553evjpsUlIiXzdNVCEH-0" />
         <mxCell id="553evjpsUlIiXzdNVCEH-1" parent="553evjpsUlIiXzdNVCEH-0" />
@@ -332,6 +318,20 @@
         </mxCell>
         <mxCell id="553evjpsUlIiXzdNVCEH-34" value="Display average" style="rounded=0;whiteSpace=wrap;html=1;" parent="553evjpsUlIiXzdNVCEH-1" vertex="1">
           <mxGeometry x="800" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ux" id="xi9xU0pWGq3P5OKUEAas">
+    <mxGraphModel dx="786" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="P6TlU-wPTZ_5G9GFOR1F-0" />
+        <mxCell id="P6TlU-wPTZ_5G9GFOR1F-1" parent="P6TlU-wPTZ_5G9GFOR1F-0" />
+        <mxCell id="P6TlU-wPTZ_5G9GFOR1F-30" value="&lt;b&gt;Input&lt;/b&gt;&lt;br&gt;&lt;br&gt;Week 1: 5.5&lt;br&gt;Week 2: 10&lt;br&gt;Week 3: 6&lt;br&gt;Week 4: 20" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="P6TlU-wPTZ_5G9GFOR1F-1" vertex="1">
+          <mxGeometry x="320" y="160" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="P6TlU-wPTZ_5G9GFOR1F-31" value="&lt;b&gt;Output&lt;/b&gt;&lt;br&gt;&lt;br&gt;Total: 42 miles&lt;br&gt;Average: 10.5 miles" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="P6TlU-wPTZ_5G9GFOR1F-1" vertex="1">
+          <mxGeometry x="440" y="160" width="110" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
