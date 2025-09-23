@@ -170,7 +170,7 @@ def writeData(usernames):
 
 def main():
     
-    # Intialise global variables
+    # Initialise global variables
     students = [Student() for index in range(100)]
     usernames = [""] * len(students)
     
