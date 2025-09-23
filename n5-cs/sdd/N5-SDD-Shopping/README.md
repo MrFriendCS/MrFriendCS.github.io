@@ -1,4 +1,4 @@
-# N5 SDD - Baldi 
+# N5 SDD - Shopping 
 
 
 ## Introduction
@@ -14,14 +14,14 @@ Create a program that ask for the total amount to pay, calculate a discount if a
 A structure diagram of the design is provided below.
 
 
-### Top Level Design (Structure diagram)
+### Top level design (Structure diagram)
 
 ![Diagram](assets/sd1.png)
 
 
 ## Assumptions
 
-1. The initial amount will be entered as pounds:
+1. The amount to pay will be entered as pounds:
 
 * £10 as 10
 * 50p as 0.50
@@ -57,8 +57,8 @@ Baldi
 
 Total amount: £7.25
 
-Loyalty card? yes
+Loyalty card? no
 
-Final amount to pay: £7.25
+Amount to pay: £7.25
 ====================
 ```
