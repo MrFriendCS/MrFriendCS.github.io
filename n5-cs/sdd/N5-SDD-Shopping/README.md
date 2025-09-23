@@ -50,7 +50,7 @@ Final amount: £9.0
 ```
 
 
-### User Interface - Example 2
+### Example 2
 ```
 Baldi
 -----
