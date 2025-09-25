@@ -28,55 +28,155 @@ Create a file called `functions.py`. The file will contain the code for the foll
 
 ### gradient()
 
-Create a function (`gradient`) that will accept two real values.  The real values will represent `dy` (rise) and `dx` (run).
-The function will calculate and return the gradient, rounded to 2 decimal places.
+Create a function to calculate and return the gradient, rounded to 2 decimal places.
 
-#### Examples
+#### Starter Code
 
-| Input               | Output |
-| -----               | ------ |
-| gradient(10, 5)     | 2.0    |
-| gradient(5, 10)     | 0.5    |
-| gradient(0.23, 5.5) | 0.42   |
+``` python
+def gradient(dy, dx):
+    """"Calculates dy/dx, to 2 dp.  Returns the result."""
+    
+    
+    return gradient
+```
 
 
 ### hypontenuse()
 
-Create a function (`hypontenuse`) that will accept two real values.  The real values will represent the length of the short sides of a right angle triangle.
-The function will calculate and return the length of the hypotenuse, rounded to 2 decimal places.
+Create a function to calculate and return the length of the hypotenuse, rounded to 2 decimal places.
 
-#### Examples
+#### Starter Code
 
-| Input                   | Output |
-| -----                   | ------ |
-| hypontenuse(3, 4)       | 5.0    |
-| hypontenuse(6, 8)       | 10.0   |
-| hypontenuse(3.75, 10.2) | 10.87  |
+``` python
+def hypontenuse(a, b):
+    """"Calculates the long side of a right angled triangle, to 2 dp.  Returns the result."""
+    
+    
+    return c
+```
 
 
 ### areaCircle()
 
-Create a function (`areaCircle`) that will accept a real value.  The real value will represent the radius of a circle.
-The function will calculate and return the area of a circle, rounded to 2 decimal places.
+Create a function to calculate and return the area of a circle, rounded to 2 decimal places.
 
-#### Examples
+#### Starter Code
 
-| Input           | Output |
-| -----           | ------ |
-| areaCircle(1)   | 3.14   |
-| areaCircle(10)  | 314.15 |
-| areaCircle(7.5) | 176.71 |
+``` python
+def areaCircle(radius):
+    """"Calculates the area of a circle, to 2 dp.  Returns the result."""
+    
+    
+    return area
+```
 
 
 ### areaTriangle()
 
-Create a function (`areaTriangle`) that will accept two real values.  The real values will represent the base and the height of triangle.
-The function will calculate and return the area of the triangle, rounded to 2 decimal places.
+Create a function to calculate and return the area of the triangle, rounded to 2 decimal places.
 
-#### Examples
+#### Starter Code
 
-| Input                    | Output |
-| -----                    | ------ |
-| areaTriangle(3, 4)       | 6.0    |
-| areaTriangle(10, 2)      | 10.0   |
-| areaTriangle(3.75, 10.2) | 19.13 |
+``` python
+def areaTriangle(base, height):
+    """"Calculates the area of a triangle, to 2 dp.  Returns the result."""
+    
+    
+    return area
+```
+
+
+### areaSquare()
+
+Create a function to calculate and return the area of the square, rounded to 2 decimal places.
+
+#### Starter Code
+
+``` python
+def areaSquare(side):
+    """"Calculates the area of a square, to 2 dp.  Returns the result."""
+    
+    
+    return area
+```
+
+
+### areaRectangle()
+
+Create a function to calculate and return the area of the rectangle, rounded to 2 decimal places.
+
+#### Starter Code
+
+``` python
+def areaRectangle(width, height):
+    """"Calculates the area of a rectangle, to 2 dp.  Returns the result."""
+    
+    
+    return area
+```
+
+
+### volPrism()
+
+Create a function to calculate and return the volume of the prism, rounded to 2 decimal places.
+
+#### Starter Code
+
+``` python
+def volPrism(csa, height):
+    """"Calculates the volume of a prism, to 2 dp.  Returns the result."""
+    
+    
+    return area
+```
+
+
+### volCylinder()
+
+Create a function to calculate and return the volume of the prism, rounded to 2 decimal places.
+
+#### Starter Code
+
+``` python
+def volCylinder(radius, height):
+    """"Calculates the volume of a cylinder, to 2 dp.  Returns the result."""
+    
+    
+    return volume
+```
+
+
+### volCone()
+
+Create a function to calculate and return the volume of the cone, rounded to 2 decimal places.
+
+#### Starter Code
+
+``` python
+def volCone(radius, height):
+    """"Calculates the volume of a cone, to 2 dp.  Returns the result."""
+ 
+    
+    return volume
+```
+
+
+### volSphere()
+
+Create a function to calculate and return the volume of the sphere, rounded to 2 decimal places.
+
+#### Starter Code
+
+``` python
+def volSphere(radius):
+    """"Calculates the volume of a sphere, to 2 dp.  Returns the result."""
+    
+    
+    return volume
+```
+
+
+## Links
+
+- [Area](https://www.mathsisfun.com/area.html)
+- [Volume](https://www.mathsisfun.com/geometry/volume.html)
