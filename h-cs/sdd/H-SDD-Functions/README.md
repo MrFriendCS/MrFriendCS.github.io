@@ -34,7 +34,7 @@ Create a function to calculate and return the gradient, rounded to 2 decimal pla
 
 ``` python
 def gradient(dy, dx):
-    """"Calculates dy/dx, to 2 dp.  Returns the result."""
+    """Calculates dy/dx, to 2 dp.  Returns the result."""
     
     
     return gradient
@@ -49,7 +49,7 @@ Create a function to calculate and return the length of the hypotenuse, rounded 
 
 ``` python
 def hypontenuse(a, b):
-    """"Calculates the long side of a right angled triangle, to 2 dp.  Returns the result."""
+    """Calculates the long side of a right angled triangle, to 2 dp.  Returns the result."""
     
     
     return c
@@ -64,7 +64,7 @@ Create a function to calculate and return the area of a circle, rounded to 2 dec
 
 ``` python
 def areaCircle(radius):
-    """"Calculates the area of a circle, to 2 dp.  Returns the result."""
+    """Calculates the area of a circle, to 2 dp.  Returns the result."""
     
     
     return area
@@ -79,7 +79,7 @@ Create a function to calculate and return the area of the triangle, rounded to 2
 
 ``` python
 def areaTriangle(base, height):
-    """"Calculates the area of a triangle, to 2 dp.  Returns the result."""
+    """Calculates the area of a triangle, to 2 dp.  Returns the result."""
     
     
     return area
@@ -94,7 +94,7 @@ Create a function to calculate and return the area of the square, rounded to 2 d
 
 ``` python
 def areaSquare(side):
-    """"Calculates the area of a square, to 2 dp.  Returns the result."""
+    """Calculates the area of a square, to 2 dp.  Returns the result."""
     
     
     return area
@@ -109,7 +109,7 @@ Create a function to calculate and return the area of the rectangle, rounded to 
 
 ``` python
 def areaRectangle(width, height):
-    """"Calculates the area of a rectangle, to 2 dp.  Returns the result."""
+    """Calculates the area of a rectangle, to 2 dp.  Returns the result."""
     
     
     return area
@@ -124,7 +124,7 @@ Create a function to calculate and return the volume of the prism, rounded to 2 
 
 ``` python
 def volPrism(csa, height):
-    """"Calculates the volume of a prism, to 2 dp.  Returns the result."""
+    """Calculates the volume of a prism, to 2 dp.  Returns the result."""
     
     
     return area
@@ -139,7 +139,7 @@ Create a function to calculate and return the volume of the prism, rounded to 2 
 
 ``` python
 def volCylinder(radius, height):
-    """"Calculates the volume of a cylinder, to 2 dp.  Returns the result."""
+    """Calculates the volume of a cylinder, to 2 dp.  Returns the result."""
     
     
     return volume
@@ -154,7 +154,7 @@ Create a function to calculate and return the volume of the cone, rounded to 2 d
 
 ``` python
 def volCone(radius, height):
-    """"Calculates the volume of a cone, to 2 dp.  Returns the result."""
+    """Calculates the volume of a cone, to 2 dp.  Returns the result."""
  
     
     return volume
@@ -169,7 +169,7 @@ Create a function to calculate and return the volume of the sphere, rounded to 2
 
 ``` python
 def volSphere(radius):
-    """"Calculates the volume of a sphere, to 2 dp.  Returns the result."""
+    """Calculates the volume of a sphere, to 2 dp.  Returns the result."""
     
     
     return volume
