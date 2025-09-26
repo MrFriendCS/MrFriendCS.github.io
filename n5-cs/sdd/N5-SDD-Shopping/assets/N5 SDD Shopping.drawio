@@ -33,7 +33,7 @@
             <mxPoint x="500" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2BwgFsl3VLa_b2nYBKN8-21" value="Display final&lt;div&gt;amount to pay&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="2BwgFsl3VLa_b2nYBKN8-21" value="Display total&lt;div&gt;amount to pay&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="240" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2BwgFsl3VLa_b2nYBKN8-23" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
@@ -86,7 +86,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="uFCa1QzRlU-jExEB5yJH-12" value="Calculate final amount to pay" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="uFCa1QzRlU-jExEB5yJH-12" value="Subtract discount&lt;div&gt;from total&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="460" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LHiGsDkiX16LsYTKpYVU-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="LHiGsDkiX16LsYTKpYVU-1" edge="1">

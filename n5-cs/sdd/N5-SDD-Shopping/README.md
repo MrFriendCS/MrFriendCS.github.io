@@ -21,12 +21,12 @@ A structure diagram of the design is provided below.
 
 ## Assumptions
 
-1. The amount to pay will be entered as pounds:
+- The amount to pay will be entered as pounds:
 
-* £10 as 10
-* 50p as 0.50
+	- £10 as 10
+	- 50p as 0.50
 
-2. Any text entered is lower case.
+- Any text entered is lower case.
 
 
 ## User Experience
