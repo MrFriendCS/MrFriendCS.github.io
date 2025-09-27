@@ -41,7 +41,7 @@ def gradient(dy, dx):
 ```
 
 
-### hypontenuse()
+### hypotenuse()
 
 Create a function to calculate and return the length of the hypotenuse, rounded to 2 decimal places.
 
