@@ -13,9 +13,9 @@
 | H-SDD-Standard           | Standard algorithms             | sp, ls, co, min, max        | Tests |
 | H-SDD-Parallel           | Skelton parallel arrays         | pa                          | |
 | H-SDD-Ski-Slope          | Calculations and results        | sp                          | pc |
-| H-SDD-Summer Pt 1        | Pi related functions            | sp                          | |
-| H-SDD-Summer Pt 2        | Text related functions          | sp, ss, chr                 | |
-| H-SDD-Summer Pt 3        | Text related functions          | sp, ss, asc, ls             | |
+| H-SDD-Summer Pt 1        | Pi related functions            | sp                          | Tests |
+| H-SDD-Summer Pt 2        | Text related functions          | sp, ss, chr                 | Tests |
+| H-SDD-Summer Pt 3        | Text related functions          | sp, ss, asc, ls             | Tests |
 | H-SDD-Add                | Add two values                  | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%     | sp, r, w                    | sd |
 | H-SDD-Walking Pt 1       | Write data to file              | w                           | |
@@ -27,6 +27,7 @@
 | H-SDD-Temperature Pt 2   | Convert F to C, US to ISO dates | sp, r, ar, w                | sd |
 | H-SDD-Temperature Pt 3   | Convert F to C, US to ISO dates | sp, r, pa, min, max, ls+, w | sd |
 | H-SDD-Usernames Pt 4     | Create usernames                | sp+, r, ss, chr, asc, w     | pc |
+| H-SDD-Functions          | Various functions               | sp                          | Tests, Starter code |
 | H-SDD-Temperature Pt 4   | Convert F to C, US to ISO dates | sp+, r, ar, ss, w           | pc+ |
 | H-SDD-Convert            | Multiple conversions of units   | sp, int, mod                | Tests |
 | H-SDD-Strings            | Multiple string manipulations   | sp, ss, asc, chr            | Tests |
