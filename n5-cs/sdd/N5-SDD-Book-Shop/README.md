@@ -22,12 +22,12 @@ A structure diagram of the design is provided below.
 
 ## Assumptions
 
-1. The initial amount will be entered as pounds:
+- The initial amount will be entered as pounds:
 
-* £10 as 10
-* 50p as 0.50
+    - £10 as 10
+    - 50p as 0.50
 
-2. Any text entered is lower case.
+- Any text entered is lower case.
 
 
 ## Examples
@@ -36,6 +36,7 @@ Examples of the expected user interface are shown below with some possible input
 
 
 ### User Interface - Example 1
+
 ```
 UoB Book Shop
 -------------
