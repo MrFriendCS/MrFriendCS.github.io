@@ -9,7 +9,7 @@ The latest idea is to give a 10% discount to everyone who has a Baldi loyalty ca
 
 ## Task
 
-Create a program that ask for the total amount to pay, calculate a discount if appropriate, and display the final price.
+Create a program that will ask for the total amount to pay, calculate a discount if appropriate, and display the final price.
 
 A structure diagram of the design is provided below.
 
