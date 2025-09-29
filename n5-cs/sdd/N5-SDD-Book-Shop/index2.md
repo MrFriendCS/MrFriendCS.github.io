@@ -81,7 +81,7 @@ UoB Book Shop
 
 Total amount: £25.50
 
-Discount: staff
+Discount? staff
 
 Discount: £5.1
 Amount to pay: £20.4

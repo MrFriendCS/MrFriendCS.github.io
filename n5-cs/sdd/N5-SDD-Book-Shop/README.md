@@ -80,7 +80,7 @@ UoB Book Shop
 
 Total amount: £25.50
 
-Student: yes
+Student? yes
 
 Discount: £2.55
 Amount to pay: £22.95
