@@ -307,8 +307,8 @@ def testSphere():
     
     # Initialise variables
     failCount = 0
-    inputs =  [ 0, 0.01, 1,    1,    5,      10]
-    outputs = [-1, 0,    4.19, 4.19, 523.58, 4188.67]
+    inputs =  [ 0, 0.01, 1,    5,      10]
+    outputs = [-1, 0,    4.19, 523.58, 4188.67]
     
     # Display function being tested
     print("\nStretch tests: volSphere() function")
