@@ -42,7 +42,7 @@ If there is no winning customer, a suitable message will be written to the file.
 - The data in the text file is in chronological order. 
 - The data is formatted correctly and is error-free.
 
-A text file `[orders.txt](assets/orders.txt "Download")` is used when the program is being created.
+A text file [orders.txt](assets/orders.txt "Download") is used when the program is being created.
 This file contains data for the 505 orders that were made in October, November 
 and December 2024.
 A sample of this data is shown below.
@@ -128,7 +128,7 @@ language of your choice.
 
 Your program should:
 
-- read data from the `[orders.txt](assets/orders.txt "Download")` file 
+- read data from the [orders.txt](assets/orders.txt "Download") file 
 and store into an array of records
 - use procedures to:
 	- write details of winner or ‘no winner’ message to file
