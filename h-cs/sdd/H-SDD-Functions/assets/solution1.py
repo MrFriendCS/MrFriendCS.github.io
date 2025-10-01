@@ -1,10 +1,10 @@
 # Title: H SDD - Functions
 # Author: Mr Friend
-# Date: 26 Sep 2025
+# Date: 1 Oct 2025
 
 
 def gradient(dy, dx):
-    """Calculates dy/dx, to 2 dp.  Returns the result."""  
+    """Calculates dy/dx, to 2 dp.  Returns the result.""" 
     
     # Initialise local variable
     gradient = 0.0
@@ -235,7 +235,6 @@ def volCone(radius, height):
 def volSphere(radius):
     """Calculates the volume of a sphere, to 2 dp.  Returns the result."""
 
-        
     # Initialise local variable
     pi = 3.1415
     volume = 0.0
@@ -257,3 +256,35 @@ def volSphere(radius):
     
     # Return result
     return volume
+
+
+def compoundInt(initial, rate, periods):
+    """Calculates the compound interest, to 2 dp.  Returns the result."""
+    
+    # Initialise local variable
+    final = 0.0
+    interest = 0.0
+    multiplier = 0.0
+    
+    # Check for invalid values
+    if initial <= 0 or periods <= 0:
+        
+        # Set compound interest to -1.0
+        interest = -1.0
+    
+    else:
+        
+        # Calculate multiplier
+        multiplier = 1 + (rate / 100)
+        
+        # Calculate final amount
+        final = initial * multiplier ** periods
+        
+        # Calculate compund interest
+        interest = final - initial
+        
+        # Round compund interest to 2 dp
+        interest = round(compoundInterest, 2)
+    
+    # Return result
+    return interest
