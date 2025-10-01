@@ -85,7 +85,7 @@ def testHypotenuse():
 
 
 def testAreaCircle():
-    """Test the stretch functionality of the areaCircle() function."""
+    """Test the functionality of the areaCircle() function."""
     
     # Initialise variables
     failCount = 0
@@ -93,7 +93,7 @@ def testAreaCircle():
     outputs = [-1, 0,    0.79, 3.14, 78.54, 314.15]
     
     # Display function being tested
-    print("\nStretch tests: areaCircle() function")
+    print("\nTesting: areaCircle() function")
 
     # Loop through tests
     for index in range(len(inputs)):
@@ -157,7 +157,7 @@ def testAreaTriangle():
 
 
 def testAreaSquare():
-    """Test the stretch functionality of the areaSquare() function."""
+    """Test the functionality of the areaSquare() function."""
     
     # Initialise variables
     failCount = 0
@@ -165,7 +165,7 @@ def testAreaSquare():
     outputs = [-1, 0,    1, 100, 0.25, 0.06]
     
     # Display function being tested
-    print("\nStretch tests: areaSquare() function")
+    print("\nTesting: areaSquare() function")
 
     # Loop through tests
     for index in range(len(inputs)):
@@ -303,7 +303,7 @@ def testVolCone():
 
 
 def testSphere():
-    """Test the stretch functionality of the volSphere() function."""
+    """Test the functionality of the volSphere() function."""
     
     # Initialise variables
     failCount = 0
@@ -311,7 +311,7 @@ def testSphere():
     outputs = [-1, 0,    4.19, 523.58, 4188.67]
     
     # Display function being tested
-    print("\nStretch tests: volSphere() function")
+    print("\nTesting: volSphere() function")
 
     # Loop through tests
     for index in range(len(inputs)):
