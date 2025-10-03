@@ -6,7 +6,7 @@
 Create a file called `functions.py`. The file will contain the code for the following functions:
 
 - _gradient_
-- _hypontenuse_
+- _hypotenuse_
 - _areaCircle_
 - _areaTriangle_
 - _areaSquare_

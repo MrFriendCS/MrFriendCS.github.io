@@ -265,6 +265,43 @@ def testVolPrism():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
+def testVolCylinder():
+    """Test the functionality of the volCylinder() function."""
+    
+    # Initialise variables
+    failCount = 0
+    inputs1 = [ 0,  1, 0.01, 10,   1,    10,     1]
+    inputs2 = [ 1,  0, 100,  0.01, 3,    30,     1]
+    outputs = [-1, -1, 0.03, 3.14, 9.42, 9424.5, 3.14]
+    
+    # Display function being tested
+    print("\nTesting: volCylinder() function")
+
+    # Loop through tests
+    for index in range(len(inputs1)):
+        
+        try:
+            
+            assert volCylinder(inputs1[index], inputs2[index]) == outputs[index]
+            
+        except:
+            
+            # Increment failure count
+            failCount = failCount + 1
+            
+            # Display failure message
+            print("\tFailed Test " +
+                  str(index+1) + ": volCylinder(" +
+                  str(inputs1[index]) + ", " +
+                  str(inputs2[index]) + ") = " +
+                  str(outputs[index]))
+    
+    # Display success message
+    if failCount == 0:
+        
+        print("\tAll " + str(len(inputs1)) + " tests passed.")
+
+
 def testVolCone():
     """Test the functionality of the volCone() function."""
     
@@ -352,5 +389,6 @@ testAreaSquare()
 testAreaRectangle()
 
 testVolPrism()
+testVolCylinder()
 testVolCone()
 testSphere()
