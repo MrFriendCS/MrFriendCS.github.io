@@ -24,12 +24,12 @@ or all, of the amount.
 
 ## Assumptions
 
-1. The initial amount will be entered as pounds:
+- The initial amount will be entered as pounds:
 
-* £10 as 10
-* 50p as 0.50
+	- £10 as 10
+	- 50p as 0.50
 
-2. Any text entered is lower case, i.e. yes
+- Any text entered is lower case, i.e. yes
 
 
 ### User Interface - Example 1
