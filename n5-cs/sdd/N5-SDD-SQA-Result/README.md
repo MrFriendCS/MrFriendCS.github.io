@@ -3,7 +3,7 @@
 
 ## Introduction
 
-SQA National Qualifications (NQs) are graded.  The gerades are determined by the percentage achieved:
+SQA National Qualifications (NQs) are graded.  The grades are determined by the percentage achieved:
 
 | Percentage | Grade |
 | :--------: | :---: |
@@ -28,7 +28,7 @@ A flowchart of the design is provided below.
 
 ### Assumptions
 
-All scores are whole numbers.
+All percentages are whole numbers.
 
 
 ## User Interface
@@ -40,7 +40,7 @@ Examples of the expected user interface are shown below with some possible input
 
 Below is an example of the expected user experience.
 
-```Python
+```
 SQA Result Calculator
 ---------------------
 
@@ -56,7 +56,7 @@ Grade: A
 
 Below is an example of the expected user experience.
 
-```Python
+```
 SQA Result Calculator
 ---------------------
 

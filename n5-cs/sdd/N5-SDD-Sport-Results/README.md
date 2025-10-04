@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The Barra Broadcationg Company (BBC) wants to upgrade how the sport results are produced.
+The Barra Broadcasting Company (BBC) wants to upgrade how the sport results are produced.
 Currently, the results are produced by hand but some of the handwriting is difficult to read which has led to some embarrassing mistakes!
 
 
