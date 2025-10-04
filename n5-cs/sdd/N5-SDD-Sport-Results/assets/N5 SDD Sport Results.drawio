@@ -20,7 +20,7 @@
         <mxCell id="s-0zhnvZnYQeyoZnMPvm-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="2BwgFsl3VLa_b2nYBKN8-2" target="s-0zhnvZnYQeyoZnMPvm-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2BwgFsl3VLa_b2nYBKN8-2" value="Get name of&lt;div&gt;Team A&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="2BwgFsl3VLa_b2nYBKN8-2" value="Get name of&lt;div&gt;Team 1&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2BwgFsl3VLa_b2nYBKN8-23" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
@@ -35,16 +35,16 @@
             <mxPoint x="460" y="250" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s-0zhnvZnYQeyoZnMPvm-1" value="Get name of&lt;div&gt;Team B&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s-0zhnvZnYQeyoZnMPvm-1" value="Get name of&lt;div&gt;Team 2&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s-0zhnvZnYQeyoZnMPvm-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" source="s-0zhnvZnYQeyoZnMPvm-2" target="s-0zhnvZnYQeyoZnMPvm-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s-0zhnvZnYQeyoZnMPvm-2" value="Get Team&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;A&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;score&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s-0zhnvZnYQeyoZnMPvm-2" value="Get Team 1&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;score&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="250" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="s-0zhnvZnYQeyoZnMPvm-3" value="Get Team B&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;score&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s-0zhnvZnYQeyoZnMPvm-3" value="Get Team 2&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;score&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PToGuFZ58IsCTM8ixenj-1" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.375;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" parent="1" source="PToGuFZ58IsCTM8ixenj-2" target="PToGuFZ58IsCTM8ixenj-4" edge="1">
@@ -61,13 +61,13 @@
             <mxPoint x="699.8571428571429" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PToGuFZ58IsCTM8ixenj-4" value="Is Team A&lt;div&gt;score&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;same as&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Team B&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;score?&lt;/span&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+        <mxCell id="PToGuFZ58IsCTM8ixenj-4" value="Is Team 1&lt;div&gt;score&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;same as&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Team 2&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;score?&lt;/span&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="640" y="250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PToGuFZ58IsCTM8ixenj-5" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.625;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" parent="1" source="PToGuFZ58IsCTM8ixenj-6" target="PToGuFZ58IsCTM8ixenj-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PToGuFZ58IsCTM8ixenj-6" value="Is Team A&lt;div&gt;score more than&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Team B&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;score?&lt;/span&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+        <mxCell id="PToGuFZ58IsCTM8ixenj-6" value="Is Team 1&lt;div&gt;score more than&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Team 2&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;score?&lt;/span&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="720" y="370" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PToGuFZ58IsCTM8ixenj-7" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;spacing=2;spacingRight=3;" parent="1" vertex="1">
@@ -78,7 +78,7 @@
             <mxPoint x="770" y="450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PToGuFZ58IsCTM8ixenj-9" value="Display Team A&lt;div&gt;wins message&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="PToGuFZ58IsCTM8ixenj-9" value="Display Team 1&lt;div&gt;wins message&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="640" y="490" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PToGuFZ58IsCTM8ixenj-10" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;spacing=2;spacingRight=3;" parent="1" vertex="1">
@@ -93,15 +93,15 @@
         <mxCell id="PToGuFZ58IsCTM8ixenj-13" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;spacing=2;spacingRight=3;" parent="1" vertex="1">
           <mxGeometry x="820" y="430" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="PToGuFZ58IsCTM8ixenj-14" value="Display Team B&lt;div&gt;wins message&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="PToGuFZ58IsCTM8ixenj-14" value="Display Team 2&lt;div&gt;wins message&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="01oxkoBT-wRBFzRAXUii-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="01oxkoBT-wRBFzRAXUii-1">
+        <mxCell id="01oxkoBT-wRBFzRAXUii-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="01oxkoBT-wRBFzRAXUii-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="860" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="01oxkoBT-wRBFzRAXUii-1" value="Display scores" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="01oxkoBT-wRBFzRAXUii-1" value="Display scores" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="250" width="120" height="60" as="geometry" />
         </mxCell>
       </root>

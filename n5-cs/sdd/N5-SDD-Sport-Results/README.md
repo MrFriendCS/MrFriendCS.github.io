@@ -30,8 +30,8 @@ Examples of the expected user interface are shown below with some possible input
 BBC Sport Results
 -----------------
 
-Team A name: Barra FC
-Team A name: Iochdar Saints
+Team 1 name: Barra FC
+Team 2 name: Iochdar Saints
 
 Barra FC score: 6
 Iochdar Saints score: 2
@@ -52,8 +52,8 @@ Barra FC 6:2 Iochdar Saints
 BBC Sport Results
 -----------------
 
-Team A name: Celtic
-Team A name: Caley Thistle
+Team 1 name: Celtic
+Team 2 name: Caley Thistle
 
 Celtic score: 2
 Caley Thistle score: 3
