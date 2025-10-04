@@ -25,16 +25,17 @@
 | N5-SDD-Book-Shop Pt 1      | Calculate student book price         | ip, if1                       | |
 | N5-SDD-Negative            | Determine if a value is negative     | ip, if2                       | |
 | N5-SDD-Book-Shop Pt 2      | Calculate student book price         | ip, if2                       | |
-| N5-SDD-The-Chase           | Quiz questions                       | if2, if3                      | |
-| N5-SDD-Retirement          | Calculate years to retirement        | ip, if3                       | |
+| N5-SDD-Sport-Results Pt 1  | Use results from two teams           | ip, if3                       | |
+| N5-SDD-The-Chase           | Quiz questions                       | if2, if4                      | |
+| N5-SDD-Retirement          | Calculate years to retirement        | ip, if4                       | |
 | N5-SDD-School-Lunches      | Calculate cost of 5 lunches          | fl, ip, t1d                   | sqarl |
-| N5-SDD-Cat-Food            | Cat's age decides the food type      | ip, if3                       | |
+| N5-SDD-Cat-Food            | Cat's age decides the food type      | ip, if4                       | |
 | N5-SDD-Book-Shop Pt 3      | Calculate student/staff price        | ip, if4, lo, maths            | |
 | N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, if2, maths, cat           | |
 | N5-SDD-Gradient Pt 3       | Calculate gradient from rise and run | iv, maths, cat                | |
 | N5-SDD-Pontoon Part 1      | Play a single hand of pontoon        | rnd, ip, cl, lo, if2          | pc |
-| N5-SDD-Result Pt 3         | Convert exam mark to grade           | iv, if3                       | sd |
-| N5-SDD-Result Pt 4         | Convert mark to grade and store      | fl, iv, if3, t1d              | sd |
+| N5-SDD-Result Pt 3         | Convert exam mark to grade           | iv, if4                       | sd |
+| N5-SDD-Result Pt 4         | Convert mark to grade and store      | fl, iv, if4, t1d              | sd |
 | N5-SDD-Checkout            | Shop checkout system                 | cl, iv, if1, rt               | User interface |
 | N5-SDD-Ask-Questions       |  |  |  |
 | N5-SDD-Looperty-Loop       |  |  |  |
@@ -48,7 +49,7 @@
 | N5-SDD-Coin-Flipper Pt 1   | Simulate a coin, guess result (0, 1) | rnd, ip, if2                  | sd, no instructions |
 | N5-SDD-Coin-Flipper Pt 2   | Simulate a coin, guess result        | rnd, iv, if2                  | no instructions |
 | N5-SDD-Food-Cost           | Calculate cost of 3, 4, or 5 items   | rt, iv, t1d x 2               | |
-| N5-SDD-Boccia Pt 2         | Records scores, gives result         | rt x 2, iv, if3               | |
+| N5-SDD-Boccia Pt 2         | Records scores, gives result         | rt x 2, iv, if4               | |
 | N5-SDD-Tip-Calculator      | Calculate cost, tip, total, share    | rt, iv                        | sd |
 | N5-SDD-Number-Game         | Guess random number, 3 chances       | rnd, cl, iv, lo, if2          | sd |
 | N5-SDD-Triathlon           | Calculate triathlon time - 5 times   | t1d, rt, iv                   | sd |
@@ -71,8 +72,9 @@ cl = Conditional loop,
 fl = Fixed loop,
 if1 = if,
 if2 = if/else,
-if3 = if/elif/else,
-if4 = if/elif,
+if3 = nested if
+if4 = if/elif/else,
+if5 = if/elif,
 ip = User input,
 iv = Input validation,
 len = Length,
