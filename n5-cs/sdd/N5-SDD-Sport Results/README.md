@@ -19,12 +19,12 @@ A structure diagram of the design is provided below.
 ![Diagram](assets/sd1.png)
 
 
-## Examples
+## User Interface
 
 Examples of the expected user interface are shown below with some possible input and output values.
 
 
-### User Interface - Example 1
+### Example 1
 
 ```
 BBC Sport Results
@@ -46,7 +46,7 @@ Barra FC 6:2 Iochdar Saints
 ```
 
 
-### User Interface - Example 2
+### Example 2
 
 ```
 BBC Sport Results

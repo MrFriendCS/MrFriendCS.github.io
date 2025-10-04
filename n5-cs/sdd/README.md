@@ -25,7 +25,8 @@
 | N5-SDD-Book-Shop Pt 1      | Calculate student book price         | ip, if1                       | |
 | N5-SDD-Negative            | Determine if a value is negative     | ip, if2                       | |
 | N5-SDD-Book-Shop Pt 2      | Calculate student book price         | ip, if2                       | |
-| N5-SDD-Sport-Results Pt 1  | Use results from two teams           | ip, if3                       | |
+| N5-SDD-Sport-Results Pt 1  | Use score from two teams             | ip, if3                       | |
+| N5-SDD-SQA-Result Pt 1     | Use mark to produce a grade          | ip, if3                       | |
 | N5-SDD-The-Chase           | Quiz questions                       | if2, if4                      | |
 | N5-SDD-Retirement          | Calculate years to retirement        | ip, if4                       | |
 | N5-SDD-School-Lunches      | Calculate cost of 5 lunches          | fl, ip, t1d                   | sqarl |
