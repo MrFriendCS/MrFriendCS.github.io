@@ -16,7 +16,7 @@ SQA National Qualifications (NQs) are graded.  The grades are determined by the 
 
 ## Task
 
-Create a program that will ask for the percentage achieved, and display the grade depending on the percentage.
+Using nested if statements, create a program that will ask for the percentage achieved, and display the grade depending on the percentage.
 
 A flowchart of the design is provided below.
 
