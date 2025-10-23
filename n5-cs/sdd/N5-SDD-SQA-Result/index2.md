@@ -10,7 +10,7 @@ SQA National Qualifications (NQs) are graded.  The grades are determined by the 
 | 70 - 100   | A |
 | 60 - 69    | B |
 | 50 - 59    | C |
-| 40 - 50    | D |
+| 40 - 49    | D |
 | 0 - 39     | No Award |
 
 
