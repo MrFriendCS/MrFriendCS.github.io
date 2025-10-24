@@ -38,8 +38,6 @@ Examples of the expected user interface are shown below with some possible input
 
 ### Example 1
 
-Below is an example of the expected user experience.
-
 ```
 SQA Result Calculator
 ---------------------
@@ -53,8 +51,6 @@ Grade: A
 
 
 ### Example 2
-
-Below is an example of the expected user experience.
 
 ```
 SQA Result Calculator

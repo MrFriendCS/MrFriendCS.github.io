@@ -16,7 +16,7 @@ SQA National Qualifications (NQs) are graded.  The grades are determined by the 
 
 ## Task
 
-Using nested if statements, create a program that will ask for the percentage achieved, and display the grade depending on the percentage.
+Using nested `if` statements, create a program that will ask for the percentage achieved, and display the grade depending on the percentage.
 
 A flowchart of the design is provided below.
 
@@ -38,8 +38,6 @@ Examples of the expected user interface are shown below with some possible input
 
 ### Example 1
 
-Below is an example of the expected user experience.
-
 ```
 SQA Result Calculator
 ---------------------
@@ -53,8 +51,6 @@ Grade: A
 
 
 ### Example 2
-
-Below is an example of the expected user experience.
 
 ```
 SQA Result Calculator

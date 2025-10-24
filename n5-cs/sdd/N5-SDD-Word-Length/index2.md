@@ -1,16 +1,16 @@
-# N5 SDD - Word Length
+# N5 SDD - Word Length Part 2
 
 
 ## Task
 
-Using nested `if` statements, create a short program to ask the user for a word, and then classify it as short, medium, or long.
+Using `else if`, create a short program to ask the user for a word, and then classify it as short, medium, or long.
 
 A structure diagram of the design is provided below.
 
 
 ### Top Level Design (Structure diagram)
 
-![Diagram](assets/sd1.png)
+![Diagram](assets/fc2.png)
 
 
 ## User Interface
