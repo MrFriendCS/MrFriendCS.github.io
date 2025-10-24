@@ -1,0 +1,44 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8" pages="3">
+  <diagram id="rixkyah6m9kLtBdBK0iV" name="tt">
+    <mxGraphModel dx="874" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="edKIq7crGZylfQP5pC1n-1" value="Normal" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="280" y="240" width="100" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-2" value="Selection 1:&lt;div&gt;&lt;b&gt;lemon&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Selection 2:&lt;div&gt;&lt;b&gt;pear&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Selection 3:&lt;div&gt;&lt;b&gt;peach&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Selection 4:&lt;div&gt;&lt;b&gt;orange&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="370" y="240" width="120" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-3" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="490" y="240" width="280" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-15" value="&lt;div&gt;Type of test&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="280" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-16" value="User input" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="370" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edKIq7crGZylfQP5pC1n-17" value="&lt;div&gt;Expected output&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacing=2;spacingLeft=4;spacingRight=4;strokeColor=default;fillColor=#d4d4d4;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="490" y="200" width="280" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="UnCF6rD-unlMhEpgZadB" name="fc1">
+    <mxGraphModel dx="874" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="EeAadzVx2FTEmuIalZis" name="fc2">
+    <mxGraphModel dx="874" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
