@@ -8,16 +8,20 @@ import random
 #Initialise variables
 fruit = ""
 counter = 0
-decision = "Yes"
+decision = "yes"
 randomNumber = 0
+
+# initialise a data structure and store the mystery fruits
 mysteryFruits = ["apple", "banana", "blueberry", "kiwi",
                  "mango", "orange", "peach", "pineapple",
                  "raspberry", "strawberry"]
+
+# initialise a data structure to store the user's fruit selections
 userFruits = [""] * 6
 
 
 # Get and store valid fruit selection
-while decision == "Yes" and counter < 6:
+while decision == "yes" and counter < 6:
     
     # Get fruit
     fruit = input("\nEnter a fruit for the drink: ")
