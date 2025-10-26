@@ -10,8 +10,10 @@ They need a computer program that will tell their customers if selected fruits w
 ## Program description
 
 Shake-Shake wants a computer program that allows users to enter the names of up to 6 fruits.
+
 The user enters the name of each fruit they want in their drink.
 The program will validate each fruit name by checking it is at least 4 characters long.
+
 The program then adds a mystery fruit, which it randomly selects from these options:
 
 - apple
@@ -26,8 +28,10 @@ The program then adds a mystery fruit, which it randomly selects from these opti
 - strawberry
 
 Once the user enters all their fruit options, the program adds the mystery fruit and uses the total number of fruits to determine whether it recommends a milkshake, smoothie or fruit juice.
-Shake-Shake recommends that less than 3 fruits should be a milkshake, 3 or 4 fruits should be a smoothie, and more than 4 fruits should be a fruit juice.  
-The program will output a summary of the user’s fruit choice, including the mystery fruit, and a message advising what type of drink to make.  
+
+Shake-Shake recommends that less than 3 fruits should be a milkshake, 3 or 4 fruits should be a smoothie, and more than 4 fruits should be a fruit juice.
+
+The program will output a summary of the user’s fruit choice, including the mystery fruit, and a message advising what type of drink to make.
 
 
 ## Program design (Flowchart)
