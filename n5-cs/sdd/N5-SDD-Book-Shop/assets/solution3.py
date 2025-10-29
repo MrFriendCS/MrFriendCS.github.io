@@ -32,6 +32,7 @@ if discountType == "student" or discountType == "STUDENT":
 elif discountType == "staff" or discountType == "STAFF":
     discountRate = 20
 
+
 # Is discount to be applied?
 if discountRate != 0:
     #Calculate discount
@@ -45,7 +46,8 @@ if discountRate != 0:
 
     # Display amount to pay
     print("Amount to pay: £" + str(total))
-    
+
+
 # Got a voucher?
 voucher = input("\nVoucher? ")
 
@@ -64,6 +66,7 @@ if total < 0:
 
     # Message
     print("No change given when using a voucher")
+
 
 # Display final amount to pay
 print("\nFinal amount to pay: £" + str(total))

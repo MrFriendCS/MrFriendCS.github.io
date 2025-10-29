@@ -30,12 +30,12 @@ A structure diagram of the design is provided below.
 - Any text entered is lower case.
 
 
-## Examples
+## User Interface
 
 Examples of the expected user interface are shown below with some possible input and output values.
 
 
-### User Interface - Example 1
+### Example 1
 
 ```
 UoB Book Shop
@@ -57,7 +57,7 @@ Final amount to pay: £0.0
 ```
 
 
-### User Interface - Example 2
+### Example 2
 ```
 UoB Book Shop
 -------------
@@ -73,7 +73,7 @@ Final amount to pay: £7.25
 ```
 
 
-### User Interface - Example 3
+### Example 3
 ```
 UoB Book Shop
 -------------
