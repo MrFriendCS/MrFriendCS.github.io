@@ -30,25 +30,29 @@ if wordLength == 0:
     print()
     print("Nothing entered!") 
 
-# Less than 5 letters in word?
-elif wordLength < 5:
-    
-    # Display short word message
-    print()
-    print("'" + word + "' is a short word.")
-
-# Less than 10 letters in word?
-elif wordLength < 10:
-    
-    # Display medium word message
-    print()
-    print("'" + word + "' is a medium word.")
-
 else:
     
-    # Display medium word message
-    print()
-    print("'" + word + "' is a long word.")
+    # Less than 5 letters in word?
+    if wordLength < 5:
+        
+        # Display short word message
+        print()
+        print("'" + word + "' is a short word.")
+
+    else:
+        
+        # Less than 10 letters in word?
+        if wordLength < 10:
+            
+            # Display medium word message
+            print()
+            print("'" + word + "' is a medium word.")
+
+        else:
+            
+            # Display medium word message
+            print()
+            print("'" + word + "' is a long word.")
 
 
 # Display footer

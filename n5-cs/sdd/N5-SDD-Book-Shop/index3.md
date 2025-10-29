@@ -28,7 +28,7 @@ Use the structure diagram to implement a program that will accept a non-discount
 * £10 as 10
 * 50p as 0.50
 
-2. Any text entered is lower or upper case, i.e. yes, YES, staff, STAFF, ...
+2. Any text entered is either lower case or upper case, i.e. yes, YES, staff, STAFF, ...
 
 3. Any rounding will be done by the UoB bookshop staff.
 

@@ -1,10 +1,17 @@
 # N5 SDD - Menu Options
 
-A group task!
+
+## Task
+
+Create a menu system.  The user will enter the number of an option, and the appropriate code will run.
+If the user enters nothing or something that is not an option, the program will require a valid response.
 
 Where appropiate, values are to be valid.
 
-## Menu
+Tabs (4 spaces) can be created using `'\t'`.
+
+
+## Main Menu
 
 ```
 Menu
@@ -19,7 +26,8 @@ Menu
 Option: 
 ```
 
-## Option 1
+
+### Option 1
 
 ```
 Option: 1
@@ -30,7 +38,8 @@ Enter second value: 3
     2.0 + 3.0 = 5.0
 ```
 
-## Option 2
+
+### Option 2
 
 ```
 Option: 2
@@ -42,7 +51,8 @@ Decimal places: 2
     11.0 / 3.0 = 3.67 (2 dp)
 ```
 
-## Option 3
+
+### Option 3
 
 ```
 Option: 3
@@ -53,7 +63,8 @@ Enter the exponent: 3
     2.0 ** 3.0 = 8.0
 ```
 
-## Option 4
+
+### Option 4
 
 ```
 Option: 4
@@ -63,7 +74,8 @@ Enter word / phrase: Hello World!
     The length of 'Hello World!' is 12 characters
 ```
 
-## Option 5
+
+### Option 5
 
 ```
 Option: 5
@@ -74,7 +86,8 @@ Enter maximum value: 6
     A random value from 1 to 6 is 4
 ```
 
-## Option 6
+
+### Option 6
 
 ```
 Option: 6
