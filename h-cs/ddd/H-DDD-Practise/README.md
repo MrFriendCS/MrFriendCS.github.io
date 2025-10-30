@@ -1,7 +1,7 @@
 # H DDD Practise
 
 
-File: [Practise.db](../../../n5/ddd/N5-DDD-Practise/assets/Practise.db "Download file")
+File: [Practise.db](../../../n5-cs/ddd/N5-DDD-Practise/assets/Practise.db "Download file")
 
 
 ## Data Dictionary 1
