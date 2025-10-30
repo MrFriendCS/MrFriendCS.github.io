@@ -1,4 +1,4 @@
-# N5 SDD - Menu Options
+# N5 SDD - School Club
 
 
 ## Task
@@ -6,7 +6,7 @@
 Create a menu system.  The user will enter the number of an option, and the appropriate code will run.
 If the user enters nothing or something that is not an option, the program will require a valid response.
 
-Where appropriate, values are to be valid.
+Where appropiate, values are to be valid.
 
 Tabs (4 spaces) can be created using `'\t'`.
 
