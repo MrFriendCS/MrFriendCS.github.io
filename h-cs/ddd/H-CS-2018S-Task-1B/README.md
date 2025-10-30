@@ -1,14 +1,19 @@
-# H CS Specimen Task 1 Part B
+# H CS 2018S - Task 1 Part B
 
-### Database design and development
+
+[Doctors surgery database](assets/Surgery.db)
+
 
 ![Doctors surgery database](assets/HSpecimenTask1PartB.png)
 
-___1c(i)___ The surgery wants to create a list of drugIDs showing how many times each drugID is prescribed. The list should be sorted from the most prescribed drug to the least.
+
+___1c(i)___ The surgery wants to create a list of drugIDs showing how many times each drugID is prescribed.
+The list should be sorted from the most prescribed drug to the least.
 
 Implement the SQL statement that will produce this output.
 
 Print evidence of both the implemented SQL statement and the output it produced. (__3 marks__)
+
 
 ___1c(ii)___ The surgery wants to identify a list of patients who have been prescribed the drug with the highest dosage.
 
@@ -25,7 +30,8 @@ below.
 Implement two SQL statements that will produce this output.
 
 Print evidence of both the implemented SQL statements and the outputs they produced. (__4 marks__)
- 
+
+
 ___1d___ The five patients listed below live in the postcode area EH12:
 
 * Susan Lamb

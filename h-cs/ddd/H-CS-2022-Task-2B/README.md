@@ -1,4 +1,8 @@
-# H CS 2021 Task 2 Part B
+# H CS 2022 - Task 2 Part B
+
+
+[West Fife Walkers database](assets/WestFifeWalkers.db)
+
 
 The entity-occurrence diagram is used to draw the entity-relationship diagram for the Walkers database shown below.
 
@@ -6,9 +10,13 @@ The entity-occurrence diagram is used to draw the entity-relationship diagram fo
 
 The design is then implemented.
 
-___2b___ West Fife Walkers wants the most successful planner to design a new route. The most successful planner is the person whose route(s) have been walked more than other routes.
 
-A query is required to display details of the four planners, along with the total number of times their route(s) have been walked. The most successful planner should be displayed at the top.
+___2b___ West Fife Walkers wants the most successful planner to design a new route. 
+The most successful planner is the person whose route(s) have been walked more than other routes.
+
+A query is required to display details of the four planners,
+along with the total number of times their route(s) have been walked.
+The most successful planner should be displayed at the top.
 
 Implement the SQL statement to produce the following output.
 
@@ -24,10 +32,15 @@ Implement the SQL statement to produce the following output.
 _Print evidence of the implemented SQL statement and the output produced._
 
 _Include your name and candidate number on all evidence._
- 
-___2c___ The most successful planner begins to design the new route. As this route will be longer than the current longest route, West Fife Walkers would like to produce a list of all walkers who have walked the current longest route to ask them questions.
+
+
+___2c___ The most successful planner begins to design the new route. 
+As this route will be longer than the current longest route, 
+West Fife Walkers would like to produce a list of all walkers 
+who have walked the current longest route to ask them questions.
 	
-Implement the SQL statement(s) required to produce the list. The expected output is partially shown below.
+Implement the SQL statement(s) required to produce the list. 
+The expected output is partially shown below.
 
 (__5 marks__)
 
@@ -45,6 +58,7 @@ Implement the SQL statement(s) required to produce the list. The expected output
 _Print evidence of the implemented SQL statement(s) and the output produced._
 
 _Include your name and candidate number on all evidence._
+
 
 ___2d___ The footwear field in the Route table contains suitable footwear for the routes:
 
@@ -75,7 +89,8 @@ The actual output from this SQL statement matches the expected output and is sho
 | Dev002  | Devilla   | This walk completes the circuit round the end of the squirrel walk passing seats and nice picnic areas. On the way back a connecting path is taken to join one of the forestry roads. |
 | Bal001  | Balgownie | The Balgownie side of the walk is a mixture of open forestry road and woodland paths. The eastern edge has a well-established path through a community wood. |
 
-West Fife Walkers will add new routes to the database in the future. These new routes may include additional types of shoes.
+West Fife Walkers will add new routes to the database in the future. 
+These new routes may include additional types of shoes.
 
 Re-write the query so that it will always produce the expected output even if additional types of shoes are added.
 
@@ -86,6 +101,7 @@ Test that your amended query still produces the above output.
 _Print evidence of the amended SQL statement and the output produced._
 
 _Include your name and candidate number on all evidence._
+
 
 ___2e___ Initial analysis identified the following functional requirements:
 

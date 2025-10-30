@@ -1,10 +1,13 @@
-# H CS 2021 Task 2 Part B
+# H CS 2021S - Task 2 Part B
 
-### Database design and development
+
+[MyTreat database](assets/MyTreat.db)
+
 
 The entity relationship diagram for the MyTreat database is shown below.
 
 ![MyTreat database](assets/ERD.png)
+
 
 ___2c___ MyTreat would like to know how much money is being spent on the different types of escape room vouchers.
 
@@ -22,6 +25,7 @@ Implement the SQL statement to produce the following output.
 | Chukka    | Radebe  | V890      | 86 |
 | Becky     | Bennett | V890      | 344 |
 
+
 ___2d___ MyTreat would like to know how many vouchers are still available for voucher ID V543.
 
 Implement the SQL statement(s) to produce the following output.
@@ -38,6 +42,7 @@ For 2c and 2d print evidence of:
 * the output produced
 
 _Include your name and candidate number on all evidence._
+
 
 ___2e___ A query is designed to find the number of customers who bought a voucher from the ‘Family’ category that costs less than £15.00.
 
@@ -70,6 +75,7 @@ Amend the query to produce the expected output as shown above.
 _Print evidence of the amended SQL statement._
 
 _Include your name and candidate number on all evidence._
+
 
 ___2f___ The `Voucher` table has no validation.
 

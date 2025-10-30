@@ -1,3 +1,9 @@
+# H CS 2023 - Task 2 Part B
+
+
+[Gnome sales database](assets/GnomeSales.db)
+
+
 ___2d___
 
 ``` sql
