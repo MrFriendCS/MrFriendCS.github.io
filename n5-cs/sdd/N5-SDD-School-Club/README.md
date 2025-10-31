@@ -66,3 +66,18 @@ You can join the eSports club!
 
 ======================
 ```
+
+### Example 3
+
+```
+Castlebay eSports Club
+Eligibility Checker
+----------------------
+
+How old are you? 12
+Do you have teacher permission? no
+
+You can't join the club just now.
+
+======================
+```
