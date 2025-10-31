@@ -1,6 +1,6 @@
-# Title: N5 Gradient Calculator
+# Title: N5 Gradient Calculator Part 2
 # Author: Mr Friend
-# Date: 10 Sep 2024
+# Date: 31 Oct 2025
 
 # Initialise variables
 rise = 0.0
@@ -9,17 +9,37 @@ gradient = 0.0
 
 # Display header
 print("Gradient Calculator")
-print("-------------------\n")
+print("-------------------")
+print()
+print("                   .")
+print("               .   |")
+print("           .       |")
+print("       .           | Rise")
+print("   .               |")
+print("___________________|")
+print("       Run")
+print()
+print("           Rise")
+print("Gradient = ----")
+print("           Run")
+print()
 
-# Get rise from user
-rise = float(input("Rise: "))
+# Get the rise
+rise = float(input("What is the rise? "))
 
-# Get run from user
-run = float(input("Run: "))
+# Get the run
+run = float(input("What is the run? "))
+
+# Display the equeation
+print()
+print("           Rise   " + str(rise))
+print("Gradient = ---- = ----")
+print("           Run    " + str(run))
 
 # Calculate the gradient
-gradient = rise / run
+gradient = round(rise / run, 2)
 
 # Display the gradient
-print("\nGradient: " + str(gradient))
-print("=============")
+print()
+print("Gradient = " + str(gradient))
+print("===================")

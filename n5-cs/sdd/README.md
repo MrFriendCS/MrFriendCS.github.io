@@ -1,6 +1,8 @@
 # N5 CS
 
+
 ## SDD Tasks
+
 
 | Title                      | Description                          | Concepts                      | Comments |
 | -----                      | -----------                          | --------                      | -------- |
@@ -18,23 +20,24 @@
 | N5-SDD-Walking Calculator  | Calculate total and mean distance    | ip, maths, cat                | |
 | N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, maths, cat                | sd |
 | N5-SDD-Times-Tables Pt 1   | Display a times table                | fl, ip, maths, cat            | |
-| N5-SDD-Walking Calc Pt 2   | Calculate total and mean distance    | rt, ip, rnd                   | |
+| N5-SDD-Walking Calc Pt 2   | Calculate total and mean distance    | rt, ip, rnd                   | sd |
 | N5-SDD-Shopping            | Calculate a discount, if appropriate | ip, if1, rnd                  | sd |
 | N5-SDD-Average             | Calculate mean                       | ip, maths, rd, cat            | |
 | N5-SDD-Boccia Pt 1         | Records scores, gives result         | ip, if1                       | |
-| N5-SDD-Book-Shop Pt 1      | Calculate student book price         | ip, if1                       | |
+| N5-SDD-Book-Shop Pt 1      | Calculate student book price         | ip, if1                       | sd |
 | N5-SDD-Negative            | Determine if a value is negative     | ip, if2                       | |
-| N5-SDD-Book-Shop Pt 2      | Calculate student book price         | ip, if2                       | |
-| N5-SDD-Sport-Results Pt 1  | Use score from two teams             | ip, if3                       | |
-| N5-SDD-SQA-Result Pt 1     | Use mark to produce a grade          | ip, if3                       | |
-| N5-SDD-Word-Length Pt 1    | Classify the length of a word        | ip, len, if3                  | |
-| N5-SDD-SQA-Result Pt 2     | Use mark to produce a grade          | ip, if4                       | |
-| N5-SDD-Word-Length Pt 2    | Classify the length of a word        | ip, len, if4                  | |
+| N5-SDD-Book-Shop Pt 2      | Calculate student book price         | ip, if2                       | sd |
+| N5-SDD-Sport-Results Pt 1  | Use score from two teams             | ip, if3                       | sd |
+| N5-SDD-SQA-Result Pt 1     | Use mark to produce a grade          | ip, if3                       | fc |
+| N5-SDD-Word-Length Pt 1    | Classify the length of a word        | ip, len, if3                  | sd |
+| N5-SDD-SQA-Result Pt 2     | Use mark to produce a grade          | ip, if4                       | sd |
+| N5-SDD-Word-Length Pt 2    | Classify the length of a word        | ip, len, if4                  | fc |
 | N5-SDD-The-Chase           | Quiz questions                       | if2, if4                      | |
 | N5-SDD-Retirement          | Calculate years to retirement        | ip, if4                       | |
 | N5-SDD-School-Lunches      | Calculate cost of 5 lunches          | fl, ip, t1d                   | sqarl |
 | N5-SDD-Cat-Food            | Cat's age decides the food type      | ip, if4                       | |
-| N5-SDD-Book-Shop Pt 3      | Calculate student/staff price        | ip, if4, lo, maths            | |
+| N5-SDD-Book-Shop Pt 3      | Calculate student/staff price        | ip, if4, lo, maths            | sd |
+| N5-SDD-School-Club         | Check eSports club eligibility       | ip, if5, lo                   | sd |
 | N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, if2, maths, cat           | |
 | N5-SDD-Gradient Pt 3       | Calculate gradient from rise and run | iv, maths, cat                | |
 | N5-SDD-Pontoon Part 1      | Play a single hand of pontoon        | rnd, ip, cl, lo, if2          | pc |
