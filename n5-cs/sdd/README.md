@@ -37,7 +37,7 @@
 | N5-SDD-School-Lunches      | Calculate cost of 5 lunches          | fl, ip, t1d                   | sqarl |
 | N5-SDD-Cat-Food            | Cat's age decides the food type      | ip, if4                       | |
 | N5-SDD-Book-Shop Pt 3      | Calculate student/staff price        | ip, if4, lo, maths            | sd |
-| N5-SDD-School-Club         | Check eSports club eligibility       | ip, if5, lo                   | sd |
+| N5-SDD-School-Club         | Check eSports club eligibility       | ip, if5, lo                   | sd, tricky |
 | N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, if2, maths, cat           | |
 | N5-SDD-Gradient Pt 3       | Calculate gradient from rise and run | iv, maths, cat                | |
 | N5-SDD-Pontoon Part 1      | Play a single hand of pontoon        | rnd, ip, cl, lo, if2          | pc |
@@ -101,7 +101,7 @@ sqarl = SQA Reference Language
 
 | Title              | Description                    | Concepts                           | Comments |
 | -----              | -----------                    | --------                           | -------- |
-| N5-CS-2018S-Task-2 | 'Capturing Olympus' board game | fl, iv, lo, t1d, rt, rd, if1, if4  | Basic MI, fc |
+| N5-CS-2017S-Task-2 | 'Capturing Olympus' board game | fl, iv, lo, t1d, rt, rd, if1, if4  | Basic MI, fc |
 | N5-CS-2018-Task-2  | Scotven mobile wi-fi service   | fl, iv, rd, t1d, if4, cat          | sd |
 | N5-CS-2019-Task-2B | School wi-fi user names        | 1d, ip, fl, iv, rnd, cat, if1      | pc |
 | N5-CS-2020-Task-2B | Coffee shop bill and lottery   | ip, fl, iv, if4, rt, rnd, if1, rd  | fc |
