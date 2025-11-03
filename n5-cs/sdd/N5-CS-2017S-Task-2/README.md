@@ -1,4 +1,4 @@
-# N5 CS 2018 Specimen Task 2
+# N5 CS 2017 Specimen Task 2
 
 In the board game ‘Capturing Olympus’, six players work as a team to earn points. One point is earned if the six players score a combined total of more than 50 hits. An additional point is earned if the average number of hits is greater than or equal to 10.
 
