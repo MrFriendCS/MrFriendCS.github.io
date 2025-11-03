@@ -1,4 +1,4 @@
-# N5 SDD - Dice
+# N5 SDD - Dice Game
 
 
 ## Introduction
