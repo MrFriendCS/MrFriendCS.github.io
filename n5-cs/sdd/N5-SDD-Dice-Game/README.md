@@ -35,6 +35,7 @@ What is your guess (1-6)? 3
 Your guessed too low!
 
 The computer throw a 6.
+=======================
 ```
 
 
@@ -49,4 +50,5 @@ What is your guess (1-6)? 3
 Your guessed too high!
 
 The computer throw a 1.
+=======================
 ```
