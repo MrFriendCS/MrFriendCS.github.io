@@ -41,26 +41,28 @@ The table called Table2 stores the hours worked and hourly rate of some staff me
  with their total wage.
 4.	Use a SQL query to list the full name of all members of staff whose wage is over £200.
  
-The table called Table3 stores the details of students and the marks they achieved in monthly tests (each test was out of 16 marks).
+The table called Table3 stores the details of students and the marks they achieved in monthly tests 
+(each test was out of 16 marks).
 
 
 ## Table: Table3
 
-| Name     | Key | Type   | Size | Req'd | Validation |
-| ----     | --- | ----   | ---- | ----- | ---------- |
-studentID	PK	Number		Y	
-forename		Text	50	Y	
-surname		Text	50	Y	
-test1		Number		Y	Range: >= 0 and <=20
-test2		Number		Y	Range: >= 0 and <=20
-test3		Number		Y	Range: >= 0 and <=20
-test4		Number		Y	Range: >= 0 and <=20
-Test5		Number		Y	Range: >= 0 and <=20
+| Name      | Key | Type   | Size | Req'd | Validation |
+| ----      | --- | ----   | ---- | ----- | ---------- |
+| studentID | PK  | Number |      | Y     | |
+| forename  |     | Text   | 50   | Y     | |
+| surname   |     | Text   | 50   | Y     | |
+| test1     |     | Number |      | Y     | Range: >= 0 and <=20 |
+| test2     |     | Number |      | Y     | Range: >= 0 and <=20 |
+| test3     |     | Number |      | Y     | Range: >= 0 and <=20 |
+| test4     |     | Number |      | Y     | Range: >= 0 and <=20 |
+| test5     |     | Number |      | Y     | Range: >= 0 and <=20 |
 
 5.	Use a SQL query to list each test mark as a percentage.
 NB: To generate the percentages, divide each mark by 16 and multiply by 100.
 6.	Use a SQL query to list the full name of each student together with the
-student's total mark as a percentage.  These details should be listed from smallest percentage to largest; students with the same percentage should be listed in alphabetical order of surname.
+student's total mark as a percentage.  These details should be listed from smallest percentage to largest; 
+students with the same percentage should be listed in alphabetical order of surname.
 
 
 ## Table: Table4
@@ -76,7 +78,8 @@ The table called Table4 stores details of items for sale in the school tuckshop.
 
 7.	Use a SQL query to list the name of each item, its buying price, selling price and the profit or loss for that item.
 NB: Profit = Sale price – Cost Price
-8.	Use a SQL query to list the name of each loss-making item with the amount of its loss.  The items should be arranged so that the item with the smallest loss is listed first.
+8.	Use a SQL query to list the name of each loss-making item with the amount of its loss.  
+The items should be arranged so that the item with the smallest loss is listed first.
  
 
 ## Table: Table5
@@ -93,7 +96,8 @@ The table called Table5 stores details of products and their prices.
 Notes:	(1) £1 buys €1.13
 (2) use the round() function to round the results to 2 decimal places
 10.	Use a SQL query to list the ID of any products that cost most than $40 dollars. 
-The query should show the UK prices as well as the equivalent prices in US Dollars.  The products should be listed with the cheapest displayed first; products that cost the same should be listed with the highest productID shown first.
+The query should show the UK prices as well as the equivalent prices in US Dollars.  
+The products should be listed with the cheapest displayed first; products that cost the same should be listed with the highest productID shown first.
 
 Note:	£1 buys $1.39
 
