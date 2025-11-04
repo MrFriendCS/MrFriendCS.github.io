@@ -1,46 +1,115 @@
-# H DDD Wildcards Task 3
+# H DDD Computed Values
 
 File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 
-## Data Dictionary
+## Table: Table1
 
-### Table: Plant
+| Name     | Key | Type   | Size | Req'd | Validation |
+| ----     | --- | ----   | ---- | ----- | ---------- |
+| pupilID  | PK  | Number |      | Y     |  |
+| forename |     | Text   | 12   | Y     |  |
+| surname  |     | Text   | 12   | Y     |  |
+| test1    |     | Number |      | Y     | Range: >= 0 and <=10 |
+| test2    |     | Number |      | Y     | Range: >= 0 and <=10 |
+| test3    |     | Number |      | Y     | Range: >= 0 and <=10 |
+| test4    |     | Number |      | Y     | Range: >= 0 and <=10 |
 
-| Attribute   | Key   | Type   | Req'd | Size  | Validation |
-| ---------   | :---: | -----  | :---: | :---: | ---------- |
-| Category    |       | text   |       | 10    | |
-| plantName   |       | text   | Y     | 20    | |
-| Variety     |       | text   | Y     | 20    | |
-| code        |       | text   | Y     | 3     | |
-| referenceID | PK    | text   | Y     | 3     | |
-| Unit        |       | number |       |       | Range: >= 0 |
-| Price       |       | number |       |       | Range: >= 0.00 |
-| Height      |       | text   |       | 1     | Restricted choice: S, M, T |
+The table called Table1 stores the test results of several pupils.
+
+1.	Use a SQL query to add 1 to each of the test 3 results.
 
 
-Create SQL queries to display the required details.
+## Table: Table2
 
-1.	List the name and variety of any plant that has the letter `x` somewhere
- in the name of its variety.  These details should be listed in alphabetical
- order of plant name.
-2.	List the category, name, plant code and price of any plant with a plant
- code that has exactly 2 characters.
-3.	List the name of any plant, together with its plant code and height, with
- a code that contains the letter 'P' and a plant name that contains the letters
- 'a' and 't' separated by exactly one character.
-4.	List the name, reference ID and price of all plants with an `a` in the name
- which also end with the letter 'a'.  The dearest plant should be listed first;
- plants with the same price should be listed in alphabetical order of referenceID.
-5.	List the plant code, referenceID and category of any plant that has a `3` in
- the middle of its referenceID (each referenceID has 3 characters) and the letter
- 'r' anywhere in its plant code.  These plants should be listed in alphabetical
- order of category.
-6.	List the plant name, unit size and price of any plant with the letters `a`
- and `n` (separated by exactly 2 other letters) in its name.  Arrange these plant
- details so that the largest unit size is listed first; plants with the same unit
- size should be arranged so that the cheapest plant is listed first.
-7.	List the referenceID, plant name, variety and height of any plant with the
- letter `e` as the second letter of its plant name.  Only plants the belong to
- a variety that starts with the letter 'C' and ends with the letter 'e' should be listed.
+| Name        | Key | Type   | Size | Req'd | Validation |
+| ----        | --- | ----   | ---- | ----- | ---------- |
+| staffID     | PK  | Number |      | Y     | | 
+| forename    |     | Text   | 12   | Y     | | 
+| surname     |     | Text   | 12   | Y     | | 
+| hourlyRate  |     | Number |      | Y     | Range: >= 0 | 
+| hoursWorked |     | Number |      | Y     | Range: >= 0 | 
+
+The table called Table2 stores the hours worked and hourly rate of some staff members.
+
+Members of staff who earn less than £7 per hour are due to receive a 10% pay rise.
+
+{:start="2"}
+2.	Use a SQL query to amend the required details of the relevant records.
+
+ 
+
+## Table: Table3
+
+| Name      | Key | Type   | Size | Req'd | Validation |
+| ----      | --- | ----   | ---- | ----- | ---------- |
+| studentID | PK  | Number |      | Y     | |
+| forename  |     | Text   | 50   | Y     | |
+| surname   |     | Text   | 50   | Y     | |
+| test1     |     | Number |      | Y     | Range: >= 0 and <=20 |
+| test2     |     | Number |      | Y     | Range: >= 0 and <=20 |
+| test3     |     | Number |      | Y     | Range: >= 0 and <=20 |
+| test4     |     | Number |      | Y     | Range: >= 0 and <=20 |
+| test5     |     | Number |      | Y     | Range: >= 0 and <=20 |
+
+The table called Table3 stores the details of students and the marks they achieved in monthly tests 
+(each test was out of 16 marks).
+
+Both students whose surname starts with the letter `J` have found errors in their test results for test 2 and test 4.
+
+{:start="3"}
+3.	Use a single SQL query to increase each of their test 2 results by 2 marks and each of their test 4 results by 1 mark.
+
+
+
+## Table: Table4
+
+| Name         | Key | Type   | Size | Req'd | Validation |
+| ----         | --- | ----   | ---- | ----- | ---------- |
+| product      | PK  | Number |      | Y     | |
+| productName  |     | Text   | 12   | Y     | |
+| buyingPrice  |     | Number | 50   | Y     | Range: >= 0 |
+| sellingPrice |     | Number |      | Y     | Range: >= 0 |
+
+The table called Table4 stores details of items for sale in the school tuckshop.
+
+The buying price of the product with a product name ending in `e`, has been reduced by 2 pence.
+Also, the selling price is being updated to make a profit of 40% of the revised buying price.
+
+{:start="4"}
+4.	Use two SQL queries to alter the buying price and selling price of the relevant product.
+ 
+
+## Table: Table5
+
+| Name        | Key | Type   | Size | Req'd | Validation |
+| ----        | --- | ----   | ---- | ----- | ---------- |
+| productName |     | Text   | 20   | Y     | |
+| productID   | PK  | Text   | 50   | Y     | |
+| priceUK     |     | Number |      | Y     | Range: >= 0.00 |
+
+The table called Table5 stores details of products and their prices.
+
+Some of the product names in this table contain the letter `a` followed by another letter which in turn, is followed by a space.
+The price of these products is to be increased by 12%.
+
+{:start="5"}
+5.	Use a SQL query to amend the relevant records.
+
+
+## Table6
+
+| Name          | Key | Type   | Size | Req'd | Validation |
+| ----          | --- | ----   | ---- | ----- | ---------- |
+| fishType      | PK  | Text   | 12   | Y     | |
+| pricePerKilo  |     | Number |      | Y     | Range: >= 0.00 |
+| numberOfKilos |     | Number |      | Y     | Range: >= 0.0 |
+
+The table called Table6 stores details of fish sales for a fish wholesaler.
+
+Every week, the wholesaler reduces the price of some of the fish.
+This week, the second letter of each type of fish reduced is the letter `o` and each type of reduced fish has at least 4 letters.
+
+{:start="6"}
+6.	Use a single SQL query to reduce the price of these fish by 10% but at the same time,  double the number of kilos of the fish sold.
 
