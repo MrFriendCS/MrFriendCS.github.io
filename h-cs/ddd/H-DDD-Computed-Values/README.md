@@ -37,6 +37,7 @@ average mark is listed first.
 
 The table called Table2 stores the hours worked and hourly rate of some staff members.
 
+{:start="3"}
 3.	Use a SQL query to list the full name of each member of staff together
  with their total wage.
 4.	Use a SQL query to list the full name of all members of staff whose wage is over £200.
@@ -58,6 +59,7 @@ The table called Table3 stores the details of students and the marks they achiev
 | test4     |     | Number |      | Y     | Range: >= 0 and <=20 |
 | test5     |     | Number |      | Y     | Range: >= 0 and <=20 |
 
+{:start="5"}
 5.	Use a SQL query to list each test mark as a percentage.
 NB: To generate the percentages, divide each mark by 16 and multiply by 100.
 6.	Use a SQL query to list the full name of each student together with the
@@ -76,6 +78,7 @@ sellingPrice |     | Number |      | Y     | Range: >= 0 |
 
 The table called Table4 stores details of items for sale in the school tuckshop.
 
+{:start="7"}
 7.	Use a SQL query to list the name of each item, its buying price, selling price and the profit or loss for that item.
 NB: Profit = Sale price – Cost Price
 8.	Use a SQL query to list the name of each loss-making item with the amount of its loss.  
@@ -92,6 +95,7 @@ The items should be arranged so that the item with the smallest loss is listed f
 
 The table called Table5 stores details of products and their prices.
 
+{:start="9"}
 9.	Use a SQL query to list the products name, UK price and the equivalent prices in Euros.
 Notes:	(1) £1 buys €1.13
 (2) use the round() function to round the results to 2 decimal places
@@ -112,6 +116,8 @@ Note:	£1 buys $1.39
 
 The table called Table6 stores details of fish sales for a fish wholesaler.
 
+
+{:start="11"}
 11.	Use a SQL query to list the full details of each type of fish together
  with the total cost of each sale.
 12.	Use a SQL query to list the name of type of fish that has sales between
