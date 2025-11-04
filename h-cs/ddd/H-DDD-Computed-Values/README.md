@@ -96,7 +96,7 @@ __Notes__:
 
 - £1 buys €1.13
 - £1 buys $1.39
-- use the round() function to round the results to 2 decimal places
+- use the `round()` function to round the results to 2 decimal places
 
 
 ## Table6
