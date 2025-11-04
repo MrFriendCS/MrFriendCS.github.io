@@ -1,4 +1,4 @@
-# H DDD Wildcards Task 3
+# H DDD Wildcards Part 3
 
 File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 
@@ -43,4 +43,3 @@ Create SQL queries to display the required details.
 7.	List the referenceID, plant name, variety and height of any plant with the
  letter `e` as the second letter of its plant name.  Only plants the belong to
  a variety that starts with the letter 'C' and ends with the letter 'e' should be listed.
-
