@@ -69,20 +69,21 @@ students with the same percentage should be listed in alphabetical order of surn
 
 ## Table: Table4
 
-| Name       | Key | Type   | Size | Req'd | Validation |
-| ----       | --- | ----   | ---- | ----- | ---------- |
-product      | PK  | Number |      | Y     | |
-productName  |     | Text   | 12   | Y     | |
-buyingPrice  |     | Number | 50   | Y     | Range: >= 0 |
-sellingPrice |     | Number |      | Y     | Range: >= 0 |
+| Name         | Key | Type   | Size | Req'd | Validation |
+| ----         | --- | ----   | ---- | ----- | ---------- |
+| product      | PK  | Number |      | Y     | |
+| productName  |     | Text   | 12   | Y     | |
+| buyingPrice  |     | Number | 50   | Y     | Range: >= 0 |
+| sellingPrice |     | Number |      | Y     | Range: >= 0 |
 
 The table called Table4 stores details of items for sale in the school tuckshop.
 
 {:start="7"}
 7.	Use a SQL query to list the name of each item, its buying price, selling price and the profit or loss for that item.
-NB: Profit = Sale price – Cost Price
 8.	Use a SQL query to list the name of each loss-making item with the amount of its loss.  
 The items should be arranged so that the item with the smallest loss is listed first.
+
+NB: Profit = Sale price – Cost Price
  
 
 ## Table: Table5
@@ -97,16 +98,18 @@ The table called Table5 stores details of products and their prices.
 
 {:start="9"}
 9.	Use a SQL query to list the products name, UK price and the equivalent prices in Euros.
-Notes:	(1) £1 buys €1.13
-(2) use the round() function to round the results to 2 decimal places
 10.	Use a SQL query to list the ID of any products that cost most than $40 dollars. 
 The query should show the UK prices as well as the equivalent prices in US Dollars.  
 The products should be listed with the cheapest displayed first; products that cost the same should be listed with the highest productID shown first.
 
-Note:	£1 buys $1.39
+Notes:
+
+- £1 buys €1.13
+- £1 buys $1.39
+- use the round() function to round the results to 2 decimal places
 
 
-## Table: Table6
+## Table6
 
 | Name          | Key | Type   | Size | Req'd | Validation |
 | ----          | --- | ----   | ---- | ----- | ---------- |
@@ -115,7 +118,6 @@ Note:	£1 buys $1.39
 | numberOfKilos |     | Number |      | Y     | Range: >= 0.0 |
 
 The table called Table6 stores details of fish sales for a fish wholesaler.
-
 
 {:start="11"}
 11.	Use a SQL query to list the full details of each type of fish together
