@@ -7,7 +7,7 @@ File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 The tables called `Movie` and `BoxOffice` are shown below.
 
-    ![ERD](assets/erd3.png)
+![ERD](assets/erd3.png)
 
 
 ## Tasks
