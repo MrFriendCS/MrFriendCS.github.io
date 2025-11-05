@@ -1,4 +1,4 @@
-# H DDD Aggregrate Functions
+# H DDD Aggregate Functions
 
 File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 

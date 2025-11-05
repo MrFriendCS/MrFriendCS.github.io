@@ -1,4 +1,4 @@
-# H DDD Aggregrate Functions Part 2
+# H DDD Aggregate Functions Part 2
 
 File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 
@@ -21,8 +21,7 @@ Use SQL queries to display each set of required details, with appropriate aliase
 1.  Display the name of each category and the average price of plants in that category.  Round the average price to 2 decimal places.
 2.  Display the plant codes together with the number of plants that share the same code.  The code with the most plants should be listed first; codes that have the same number of plants must be listed in alphabetical order of code.
 3.  Display the list of plant heights and the range of the prices for each plant height (the range of prices is the difference between the dearest and the cheapest plant).
-4.  Display the number of plants that have the letter 'p' in their name together with the total cost of those plants.
-5.  Display the largest and average unit size, of all plants that have a referenceID beginning with the letter 'B'.  Round the average size to 1 decimal place.
+4.  Display the number of plants that have the letter `p` in their name together with the total cost of those plants.
+5.  Display the largest and average unit size, of all plants that have a referenceID beginning with the letter `B`.  Round the average size to 1 decimal place.
 6.  Display the list of unit sizes together with the number of plants and the cheapest plant sold in those units.  The most populous unit size should be listed first; where the number of plants is the same, the plants should be listed from smallest to largest unit size.
 7.  Display the list of categories and heights together with the average price of the plants in each sub-category of height.
-
