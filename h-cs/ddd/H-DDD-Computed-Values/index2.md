@@ -1,4 +1,4 @@
-# H DDD Computed Values
+# H DDD Computed Values Part 2
 
 File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 
@@ -17,7 +17,7 @@ File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 The table called Table1 stores the test results of several pupils.
 
-1.	Use a SQL query to add 1 to each of the test 3 results.
+1.  Update the records using a SQL query to add 1 to each of the test 3 results.
 
 
 ## Table: Table2
@@ -52,13 +52,13 @@ Members of staff who earn less than £7 per hour are due to receive a 10% pay ri
 | test4     |     | Number |      | Y     | Range: >= 0 and <=20 |
 | test5     |     | Number |      | Y     | Range: >= 0 and <=20 |
 
-The table called Table3 stores the details of students and the marks they achieved in monthly tests 
-(each test was out of 16 marks).
+The table called Table3 stores the details of students and the marks they achieved in monthly tests (each test was out of 16 marks).
 
 Both students whose surname starts with the letter `J` have found errors in their test results for test 2 and test 4.
 
 {:start="3"}
-3.	Use a single SQL query to increase each of their test 2 results by 2 marks and each of their test 4 results by 1 mark.
+3.	Use a single SQL query to changed the required records. 
+Increase each of their test 2 results by 2 marks and each of their test 4 results by 1 mark.
 
 
 
@@ -77,7 +77,7 @@ The buying price of the product with a product name ending in `e`, has been redu
 Also, the selling price is being updated to make a profit of 40% of the revised buying price.
 
 {:start="4"}
-4.	Use two SQL queries to alter the buying price and selling price of the relevant product.
+4.	Use two SQL queries to alter the buying price and selling price of the relevant product records.
  
 
 ## Table: Table5
@@ -112,4 +112,3 @@ This week, the second letter of each type of fish reduced is the letter `o` and 
 
 {:start="6"}
 6.	Use a single SQL query to reduce the price of these fish by 10% but at the same time,  double the number of kilos of the fish sold.
-
