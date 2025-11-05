@@ -3,13 +3,19 @@
 
 ## Tasks
 
-| Title                   | Description                        | Concepts            | Comments |
-| -----                   | -----------                        | --------            | -------- |
-| N5-DDD-Wildcards Task 2 | Single table task                  | wc                  |  |
-| N5-DDD-Wildcards Task 3 | Single table task                  | wc                  |  |
-| N5-DDD-Clydeview        | Multiple tasks in a single db file | Everything          | Word document |
-| N5-DDD-Santa-Gifts      | Xmas themed tasks                  | wc, cv, af, gb, 2q  | |
-| N5-DDD-Computer-Sales   |                                    |                     | |
+| Title                             | Description                        | Concepts            | Comments |
+| -----                             | -----------                        | --------            | -------- |
+| N5-DDD-Wildcards Part 2           | Single table task                  | wc                  | |
+| N5-DDD-Wildcards Part 3           | Single table task                  | wc                  | |
+| N5-DDD-Computed-Values Part 1     | Single table task                  | cv                  | |
+| N5-DDD-Computed-Values Part 2     | Single table task                  | cv                  | |
+| N5-DDD-Computed-Values Part 3     | Single table task                  | cv                  | |
+| N5-DDD-Aggregate-Functions Part 1 | Single table task                  | af                  | |
+| N5-DDD-Aggregate-Functions Part 2 | Single table task                  | af                  | |
+| N5-DDD-Aggregate-Functions Part 3 | Single table task                  | af                  | |
+| N5-DDD-Clydeview                  | Multiple tasks in a single db file | Everything          | Word document |
+| N5-DDD-Santa-Gifts                | Xmas themed tasks                  | wc, cv, af, gb, 2q  | |
+| N5-DDD-Computer-Sales             |                                    |                     | |
 
 
 ### Abbreviations
