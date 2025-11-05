@@ -37,6 +37,3 @@ For example:
 
 {:start="5"}
 5.  List the title of each movie, the name of each director and its rating as a percentage (the maximum rating is 10).  The movie with the highest rating should be listed first; movies with the same rating should be listed in alphabetical order of title.
-
-
-
