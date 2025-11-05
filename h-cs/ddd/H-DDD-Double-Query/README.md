@@ -12,8 +12,6 @@ The tables called `Country` and `City` are shown below.
 
 ## Tasks
 
-Use SQL queries to display each set of required details, with appropriate aliases.
-
 Create SQL queries to display the required details.
 An alias should be used to display a meaningful heading for any computed values displayed.
 
@@ -25,4 +23,3 @@ The city that is furthest north should be listed first.
 4.	Display the name and population of any city in the United Kingdom that has a population which is more than the average population of all the cities in Bolivia.
 Arrange these details from smallest to largest population.
 5.	Display the total number of countries with an area less than 1% of that of the country with the largest area.
-
