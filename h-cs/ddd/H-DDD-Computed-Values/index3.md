@@ -30,7 +30,7 @@ The duration should also be shown in separate hours and minutes.
 For example:
 
 | title | Hours | Minutes |
-! ----- | ----- | ------- |
+| ----- | ----- | ------- |
 | Cars  | 1     | 57 |
 
 The movies should be listed in decreasing order of hours; movies that last for the same number of hours should be listed in decreasing order of minutes.
