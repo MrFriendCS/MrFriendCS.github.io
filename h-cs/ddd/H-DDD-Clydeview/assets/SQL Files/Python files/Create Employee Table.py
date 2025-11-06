@@ -14,8 +14,8 @@ table = """CREATE TABLE Employee (
     jobTitle VARCHAR(8) NOT NULL,
     name VARCHAR(20),
     building VARCHAR(2),
-    yearsEmployeed INT NOT NULL
-        CHECK(yearsEmployeed >= 0),
+    yearsEmployed INT NOT NULL
+        CHECK(yearsEmployed >= 0),
     PRIMARY KEY (employeeID)
 );"""
 
