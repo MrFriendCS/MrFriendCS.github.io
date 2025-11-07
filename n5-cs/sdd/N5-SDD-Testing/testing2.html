@@ -12,18 +12,18 @@
 		}
 
 		h1 {
-			font-size: 5vw;
+			font-size: 4vw;
 			padding-left: 2vw;
 		}
 
-        h2 {
-			font-size: 4vw;
+		h2 {
+			font-size: 3vw;
 			padding-left: 2vw;
 		}
 
 		p {
 			font-size: 3vw;
-            font-weight: bold;
+			font-weight: bold;
 		}
 
 		main section div {
@@ -34,18 +34,18 @@
 			border: 1px solid burlywood;
 		}
 
-        label {
+		label {
 			font-size: 3vw;
-            font-weight: bold;
+			font-weight: bold;
 			height: 4vw;
-        }
-        
-        input {
+		}
+		
+		input {
 			font-size: 3vw;
-            font-weight: bold;
+			font-weight: bold;
 			height: 4vw;
-            width: 8vw;
-        }
+			width: 8vw;
+		}
 
 		.info {
 			text-align: center;
@@ -62,21 +62,21 @@
 			padding-right: 2vw;
 		}
 
-        .para {
+		.para {
 			padding-left: 2vw;
 		}
-    
+	
 
 		.button {
-            clear: both;
+			clear: both;
 			width: 20vw;
 			text-align: center;
-		    /* margin-top: 4vh; */
-            border: 1px solid red;
+			/* margin-top: 4vh; */
+			border: 1px solid red;
 			background-color: lightgray;
 		}
 
-        .row {
+		.row {
 			clear: both;
 		}
 
@@ -84,23 +84,23 @@
 			background-color: burlywood;
 		}
 
-        .answer {
+		.answer {
 			margin-top: 1vh;
-            border: 1px solid burlywood;
-            border-top: 4px solid black;
-            border-bottom: 8px double black;
-        }
+			border: 1px solid burlywood;
+			border-top: 4px solid black;
+			border-bottom: 8px double black;
+		}
 
-        /* mouse over add */
-        .click:hover {
-            background-color: lightblue;
-        }
-        
-        /* selected add */
-        .click:active {
-            background-color: red;
-        }
-        
+		/* mouse over add */
+		.click:hover {
+			background-color: lightblue;
+		}
+		
+		/* selected add */
+		.click:active {
+			background-color: red;
+		}
+		
 	</style>
 
 </head>
@@ -110,55 +110,55 @@
 	<header>
 		<h1>N5 SDD - Extreme Testing</h1>
 
-        <h2>Height Checker</h2>
+		<h2>Height Checker</h2>
 	</header>
 
 	<main>
 
-        <p class="para">Minimum height: 1.2 m</p>
+		<p class="para">Minimum height: 1.2 m</p>
 
 		<section class="left">
 
-        <form>
-            <label for="height">Height: </label>
-            <input type="number" id="height" value="0" step="0.01"><br>
-        </form>
+		<form>
+			<label for="height">Height: </label>
+			<input type="number" id="height" value="0" step="0.01"><br>
+		</form>
 
-        <div class="button answer" id="answer">
-            <p>?</p>
+		<div class="button answer" id="answer">
+			<p>?</p>
 		</div>
 
-    </section>
+	</section>
 
-    <section class="left">
-        <div class="button click" id="button" onclick="decide()">
-            <p>Decide</p>
+	<section class="left">
+		<div class="button click" id="button" onclick="decide()">
+			<p>Decide</p>
 		</div>
-    </section>
+	</section>
 
 	</main>
 
-    
+	
 	<script>
 
-        function decide(){
-            // Declare local variables
-            var height = 0.0
-            var decision ="?"
-            
-            // Get height
-            height = document.getElementById("height").value;
+		function decide(){
+			// Declare local variables
+			var height = 0.0
+			var decision ="?"
+			
+			// Get height
+			height = document.getElementById("height").value;
 
-            // Decide if tall enough (error is intentional!)
-            if (height > 1.2) {
-              decision = "Tall enough";
-            } else {
-              decision = "Too short";
-            }
+			// Decide if tall enough (error is intentional!)
+			if (height > 1.2) {
+			  decision = "Tall enough";
+			} else {
+			  decision = "Too short";
+			}
 
-            // Display answer
-            document.getElementById("answer").innerHTML = '<p>' + decision + '</p>';;
-        }
+			// Display answer
+			document.getElementById("answer").innerHTML = '<p>' + decision + '</p>';;
+		}
 
 	</script>
 
