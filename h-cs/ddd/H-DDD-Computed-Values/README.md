@@ -111,4 +111,4 @@ The table called Table6 stores details of fish sales for a fish wholesaler.
 
 {:start="11"}
 11.  Use a SQL query to list the full details of each type of fish together with the total cost of each sale.
-12.  Use a SQL query to list the name of type of fish that has sales between £20 and £50.  The results should be listed with the dearest sales displayed first.
+12.  Use a SQL query to list the type of fish and the sales, of all sales £20 and £50.  The results should be listed with the dearest sales displayed first.
