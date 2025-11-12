@@ -18,8 +18,8 @@ Example output is shown for each answer.
 
 1.  List the name of each city in Ethiopia together with the population of the city which should be displayed in thousands.
 
-    | city        | ?    |
-    | ----        | ---- |
+    | City        | Population (1000s) |
+    | ----        | ------------------ |
     | Addis Ababa | 2316 |
     | Dire Dawa   | 194 |
     | Gonder      | 166 |
@@ -31,8 +31,8 @@ Example output is shown for each answer.
 The only countries listed should be those with a country code that starts with the letter 'M'. 
 These should be listed from highest density to lowest.
 
-    | country  | code | ?    |
-    | -------  | ---- | ---- |
+    | Country  | code | Population Density |
+    | -------  | ---- | ------------------ |
     | Monaco   | MC   | 31719 |
     | Macau    | MACX | 31052 |
     | Malta    | M    | 1173 |
@@ -41,15 +41,15 @@ These should be listed from highest density to lowest.
 
 Note:
 
-    * population density is calculated by dividing the total population of the country by its area
+* population density is calculated by dividing the total population of the country by its area
 
 {:start="3"}
 3.  List the name of the capital cities that have a population of more than 2,000,000 together with the area of their countries in square miles. 
 The only cities shown should be those in countries that have an area over 500,000 square miles. 
 These details should be listed with the smallest area in square miles first.
 
-    | capital     | ?    |
-    | -------     | ---- |
+    | capital     | Area (Sq Miles) |
+    | -------     | --------------- |
     | Lima        | 501235.8 |
     | Tehran      | 642720.0 |
     | Jakarta     | 748581.6 |
@@ -58,14 +58,14 @@ These details should be listed with the smallest area in square miles first.
 
 Note:
 
-    * the area of each country is currently in square kilometres.  To convert to square miles, multiply by 0.39
+* the area of each country is currently in square kilometres.  To convert to square miles, multiply by 0.39
 
 {:start="4"}
 4.  List each capital city that is east of London with the name of its country and the time difference in hours between it and London. 
 This first countries listed should be those that have the greatest time difference from the UK; countries with the same time difference should be listed alphabetically.
 
-    | capital    | country     | ?    |
-    | -----      | -----       | ---- |
+    | capital    | Country     | Time Diff |
+    | -----      | -----       | --------- |
     | Suva       | Fiji        | 12 |
     | Funafuti   | Tuvalu      | 12 |
     | Wellington | New Zealand | 12 |
@@ -74,17 +74,17 @@ This first countries listed should be those that have the greatest time differen
 
 Notes:
 
-    * the UK has a longitude of 0 and all countries east of the UK have a longitude > 0
-    * each degree of longitude is equivalent to 4 minutes of time
-    * generate the time difference in hours by dividing the longitude by 15
-    * display time difference to the nearest whole hour
+* the UK has a longitude of 0 and all countries east of the UK have a longitude > 0
+* each degree of longitude is equivalent to 4 minutes of time
+* generate the time difference in hours by dividing the longitude by 15
+* display time difference to the nearest whole hour
 
 {:start="5"}
 5.  List the name of each European capital city north of London with its latitudinal distance north of London. 
 Cities further away should be shown first.
 
-    | capital   | ?    |
-    | -------   | ---- |
+    | capital   | LAT Distance (km) |
+    | -------   | ----------------- |
     | Helsinki  | 979 |
     | Oslo      | 953 |
     | Stockholm | 887 |
@@ -93,6 +93,6 @@ Cities further away should be shown first.
 
 Notes:
 
-    * European cities have a longitude between -6·5 and 30 degrees east
-    * cities north of London have a latitude between 51·5 and 61 degrees north
-    * each degree of difference in latitude if equivalent to 113 kilometres
+* European cities have a longitude between -6·5 and 30 degrees east
+* cities north of London have a latitude between 51·5 and 61 degrees north
+* each degree of difference in latitude is equivalent to 113 kilometres
