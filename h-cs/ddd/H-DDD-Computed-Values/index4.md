@@ -24,7 +24,7 @@ Example output is shown for each answer.
     | Dire Dawa   | 194 |
     | Gonder      | 166 |
     | Nazret      | 147 |
-    | …           | … |
+    | ...         | ... |
 
 {:start="2"}
 2.  List the name of each country together with its country code and population density (this tells us how many people live in each square kilometre of the country). 
@@ -37,9 +37,10 @@ These should be listed from highest density to lowest.
     | Macau    | MACX | 31052 |
     | Malta    | M    | 1173 |
     | Maldives | MV   | 902 |
-    | …        | …    | … |
+    | ...      | ...  | ... |
 
 Note:
+
     * population density is calculated by dividing the total population of the country by its area
 
 {:start="3"}
@@ -53,9 +54,10 @@ These details should be listed with the smallest area in square miles first.
     | Tehran      | 642720.0 |
     | Jakarta     | 748581.6 |
     | Mexico City | 769294.5 |
-    | …           | … |
+    | ...         | ... |
 
 Note:
+
     * the area of each country is currently in square kilometres.  To convert to square miles, multiply by 0.39
 
 {:start="4"}
@@ -68,9 +70,10 @@ This first countries listed should be those that have the greatest time differen
     | Funafuti   | Tuvalu      | 12 |
     | Wellington | New Zealand | 12 |
     | Tarawa     | Kiribati    | 12 |
-    | …          | …           | … |
+    | ...        | ...         | ... |
 
 Notes:
+
     * the UK has a longitude of 0 and all countries east of the UK have a longitude > 0
     * each degree of longitude is equivalent to 4 minutes of time
     * generate the time difference in hours by dividing the longitude by 15
@@ -86,9 +89,10 @@ Cities further away should be shown first.
     | Oslo      | 953 |
     | Stockholm | 887 |
     | Tallinn   | 881 |
-    | …         | … |
+    | ...       | ... |
 
 Notes:
+
     * European cities have a longitude between -6·5 and 30 degrees east
     * cities north of London have a latitude between 51·5 and 61 degrees north
     * each degree of difference in latitude if equivalent to 113 kilometres
