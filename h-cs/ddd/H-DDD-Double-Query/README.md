@@ -12,7 +12,7 @@ The tables called `Country` and `City` are shown below.
 
 ## Tasks
 
-Create SQL queries using the designs from Task 24 to display the required details.
+Create SQL queries to display the required details.
 An alias should be used to display a meaningful heading for any computed values displayed.
 
 1.  Display the name, capital city and total population of the country with the largest total population.
