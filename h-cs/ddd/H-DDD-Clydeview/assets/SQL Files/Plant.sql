@@ -4,8 +4,8 @@ CREATE TABLE Plant (
     variety VARCHAR(20) NOT NULL,
     code VARCHAR(3) NOT NULL,
     referenceID VARCHAR(3) NOT NULL,
-    unit INT NOT NULL
-        CHECK(unit >= 0),
+    quantity INT NOT NULL
+        CHECK(quantity >= 0),
     price FLOAT NOT NULL
         CHECK(price >= 0),
     height VARCHAR(1) NOT NULL

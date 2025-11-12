@@ -1,51 +1,51 @@
-Category,plantName,Variety,code,referenceID,Unit,Price,Height
-Patio,Eunonymous,Mixed,VY,B07,12,12.50,S
-Patio,Hebe,Varigatum,P,B11,1,12.00,M
-Patio,Pieris,Carnival,B,B17,1,12.00,M
-Patio,Begonia,Cocunut Ice,Y,B21,1,4.50,S
-Patio,Begonia,Cocunut Ice,Y,B22,3,9.00,S
-Patio,Begonia,Cocunut Ice,Y,B23,9,19.50,S
-Patio,Dahlia,Moonfire,B,B24,1,5.50,M
+category,plantName,variety,code,referenceID,quantitynit,price,height
+Patio,Eunonymous,Mixed,VY,B07,12,12.5,S
+Patio,Hebe,Varigatum,P,B11,1,12,M
+Patio,Pieris,Carnival,B,B17,1,12,M
+Patio,Begonia,Cocunut Ice,Y,B21,1,4.5,S
+Patio,Begonia,Cocunut Ice,Y,B22,3,9,S
+Patio,Begonia,Cocunut Ice,Y,B23,9,19.5,S
+Patio,Dahlia,Moonfire,B,B24,1,5.5,M
 Patio,Carnation,Trailing,RP,B35,5,8.25,M
-Patio,Bamboo,Pleioblastus,N,B43,1,6.00,M
-Climber,Clematis,Bouchard,P,C02,1,5.00,T
-Climber,Rose,Compassion,Y,C11,1,8.00,T
-Climber,Vine,Crimson Glory,P,C26,1,10.50,T
+Patio,Bamboo,Pleioblastus,N,B43,1,6,M
+Climber,Clematis,Bouchard,P,C02,1,5,T
+Climber,Rose,Compassion,Y,C11,1,8,T
+Climber,Vine,Crimson Glory,P,C26,1,10.5,T
 Climber,Honeysuckle,Belgica,YP,C51,1,8.25,M
-Climber,Jasmin,Winter,YPB,C59,1,7.50,T
-Climber,Wisteria,Wonder,B,C64,1,15.00,T
-Fruit,Apple,Bramley,G,F17,1,16.50,T
-Fruit,Apple,Cox,R,F19,1,16.30,T
+Climber,Jasmin,Winter,YPB,C59,1,7.5,T
+Climber,Wisteria,Wonder,B,C64,1,15,T
+Fruit,Apple,Bramley,G,F17,1,16.5,T
+Fruit,Apple,Cox,R,F19,1,16.3,T
 Fruit,Apple,Discovery,G,F26,1,16.25,T
-Fruit,Cherry,June,R,F31,1,16.00,T
-Fruit,Pear,Conference,G,F32,1,16.00,T
+Fruit,Cherry,June,R,F31,1,16,T
+Fruit,Pear,Conference,G,F32,1,16,T
 Fruit,Plum,Victoria,P,F48,1,16.25,T
-Fruit,Peach,Nancy,O,F72,1,16.00,M
-Hedge,Berberis,Barberry,Y,H25,5,35.00,M
-Hedge,Holly,Common,G,H29,1,50.00,T
-Hedge,Bamboo,Blue Zion,B,H59,10,149.00,T
-Hedge,Pyracantha,Orat,O,H60,5,30.00,M
-Hedge,Dog Wood,Red Doa,R,H64,10,50.00,T
-Perennial,Aconitem,Monkshood,B,P24,1,3.00,M
-Perennial,Anemone,Pink Star,P,P29,3,8.50,S
-Perennial,Astilbe,Regal,WP,P32,1,3.50,M
+Fruit,Peach,Nancy,O,F72,1,16,M
+Hedge,Berberis,Barberry,Y,H25,5,35,M
+Hedge,Holly,Common,G,H29,1,50,T
+Hedge,Bamboo,Blue Zion,B,H59,10,149,T
+Hedge,Pyracantha,Orat,O,H60,5,30,M
+Hedge,Dog Wood,Red Doa,R,H64,10,50,T
+Perennial,Aconitem,Monkshood,B,P24,1,3,M
+Perennial,Anemone,Pink Star,P,P29,3,8.5,S
+Perennial,Astilbe,Regal,WP,P32,1,3.5,M
 Perennial,Echinops,Blue Wing,B,P38,1,3.25,M
-Perennial,Hosta,Albo,V,P41,1,3.50,S
-Perennial,Iris,Sibirica,Y,P42,3,6.00,M
-Perennial,Phlox,Edward,RW,P46,1,3.30,S
-Shrub,Acer,Purple Mood,P,S08,1,18.00,T
-Shrub,Buddleia,White Will,W,S14,1,7.50,M
-Shrub,Hebe,Varigata,VR,S21,3,20.50,S
-Shrub,Daphne,Purple Haze,P,S38,1,16.50,S
-Shrub,Camellia,Sure Red,R,S60,1,13.00,M
+Perennial,Hosta,Albo,V,P41,1,3.5,S
+Perennial,Iris,Sibirica,Y,P42,3,6,M
+Perennial,Phlox,Edward,RW,P46,1,3.3,S
+Shrub,Acer,Purple Mood,P,S08,1,18,T
+Shrub,Buddleia,White Will,W,S14,1,7.5,M
+Shrub,Hebe,Varigata,VR,S21,3,20.5,S
+Shrub,Daphne,Purple Haze,P,S38,1,16.5,S
+Shrub,Camellia,Sure Red,R,S60,1,13,M
 Shrub,Hydrangea,Regal,P,S68,1,7.75,T
-Shrub,Hydrangea,Elizabeth,B,S69,1,7.00,T
-Shrub,Magnolia,Soulang,WP,S73,1,15.00,M
-Shrub,Magnolia,Paul,W,S79,1,15.00,M
-Shrub,Bay Tree,Standard,G,S81,1,70.00,M
-Shrub,Bay Tree,Pyramid,G,S83,1,40.00,S
+Shrub,Hydrangea,Elizabeth,B,S69,1,7,T
+Shrub,Magnolia,Soulang,WP,S73,1,15,M
+Shrub,Magnolia,Paul,W,S79,1,15,M
+Shrub,Bay Tree,Standard,G,S81,1,70,M
+Shrub,Bay Tree,Pyramid,G,S83,1,40,S
 Fuchsia,Annabel,Erne,W,U17,6,6.95,S
-Fuchsia,Darkeyes,Bann,RW,U21,6,6.50,S
+Fuchsia,Darkeyes,Bann,RW,U21,6,6.5,S
 Fuchsia,Dancing Flame,Lagan,R,U25,6,6.95,M
-Fuchsia,Thalia,Strule,PR,U37,6,6.50,S
+Fuchsia,Thalia,Strule,PR,U37,6,6.5,S
 Fuchsia,Swingtime,Shimna,PW,U52,6,6.25,M

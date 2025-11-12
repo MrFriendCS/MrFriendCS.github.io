@@ -15,8 +15,8 @@ table = """CREATE TABLE Plant (
     variety VARCHAR(20) NOT NULL,
     code VARCHAR(3) NOT NULL,
     referenceID VARCHAR(3) NOT NULL,
-    unit INT NOT NULL 
-        CHECK(unit >= 0),
+    quantity INT NOT NULL 
+        CHECK(quantity >= 0),
     price FLOAT NOT NULL
         CHECK(price >= 0),
     height VARCHAR(1) NOT NULL 
@@ -43,7 +43,7 @@ while line != "":
     fileOut.write( "\"" + data[2].strip() + "\",")  # variety
     fileOut.write( "\"" + data[3].strip() + "\",")  # code
     fileOut.write( "\"" + data[4].strip() + "\",")  # referenceID
-    fileOut.write(        data[5].strip() + ",")  # unit
+    fileOut.write(        data[5].strip() + ",")  # quantity
     fileOut.write(        data[6].strip() + ",")  # price
     fileOut.write( "\"" + data[7].strip() + "\");\n")  # height
 
