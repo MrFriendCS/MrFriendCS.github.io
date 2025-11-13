@@ -54,7 +54,7 @@ Members of staff who earn less than £7 per hour are due to receive a 10% pay ri
 
 The table called Table3 stores the details of students and the marks they achieved in monthly tests (each test was out of 16 marks).
 
-Both students whose surname starts with the letter `J` have found errors in their test results for test 2 and test 4.
+Both students whose surname starts with the letter `S` have found errors in their test results for test 2 and test 4.
 
 {:start="3"}
 3.  Use a single SQL query to changed the required records. 
