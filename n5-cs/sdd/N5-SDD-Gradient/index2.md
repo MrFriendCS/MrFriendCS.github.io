@@ -8,7 +8,7 @@ Calculate the gradient of a slope when the user enters values for the **rise** a
 
 ### Top level design (Structure diagram)
 
-![Structure diagram](assets/sd1.png)
+![Structure diagram](assets/sd2.png)
 
 
 ### Calculate gradient
