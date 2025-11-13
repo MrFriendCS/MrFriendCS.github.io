@@ -36,7 +36,7 @@ Sample data stored in each table is shown below.
 
 ## Tasks
 
-1.  Complete a data dictionary for the Member entity.
-2.  Complete a data dictionary for the Post entity.
+1.  Create a data dictionary for the Member entity.
+2.  Create a data dictionary for the Post entity.
 3.  Create an Entity Relationship Diagram, including attributes, to represent the relationship between the Member and Post entities.
 4.  Describe the type of relationship that exists between the Member and Post entities.
