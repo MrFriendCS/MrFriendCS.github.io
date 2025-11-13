@@ -12,8 +12,8 @@ The tables called `Holiday` and `Hotel` are shown below.
 
 ## Tasks
 
-Create SQL queries to display the required details.
-An alias should be used to display a meaningful heading for any computed values displayed.
+Create SQL queries to display the required details. 
+Aliases should be used to display meaningful headings.
 
 1.  Display the name, destination, country and distance from the airport of the hotel that is furthest from the airport.
 2.  Display the name and star rating of any hotel with a rating that is poorer than the average star rating of all the holidays that have the word `Break` or `Package` in their title.
