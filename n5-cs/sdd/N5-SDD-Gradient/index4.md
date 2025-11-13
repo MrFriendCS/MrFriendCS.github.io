@@ -1,4 +1,4 @@
-# N5 SDD - Gradient Calculator - Part 3
+# N5 SDD - Gradient Calculator - Part 4
 
 
 ## Task
@@ -8,7 +8,7 @@ Use the structure diagram to implement a program that will calculate the gradien
 
 ### Top level design (Structure diagram)
 
-![Structure diagram](assets/sd3.png)
+![Structure diagram](assets/sd4.png)
 
 
 #### Calculate gradient
