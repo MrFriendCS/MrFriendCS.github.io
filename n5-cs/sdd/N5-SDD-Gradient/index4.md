@@ -18,4 +18,4 @@ Use the structure diagram to implement a program that will calculate the gradien
 
 ### Assumptions
 
-* The __rise__ and __run__ values will have a maximum of 1 decimal places.
+* The __rise__ and __run__ values can be real values.
