@@ -111,4 +111,4 @@ Every week, the wholesaler reduces the price of some of the fish.
 This week, the second letter of each type of fish reduced is the letter `o` and each type of reduced fish has at least 4 letters.
 
 {:start="6"}
-6.  Use a single SQL query to reduce the price of these fish by 10% but at the same time, double the number of kilos of the fish sold.
+6.  Use a single SQL query to reduce the price of these fish by 10% but at the same time, double the number of kilos of fish.
