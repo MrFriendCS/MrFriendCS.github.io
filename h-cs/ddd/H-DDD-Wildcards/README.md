@@ -10,11 +10,11 @@ File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 | Attribute        | Key   | Type  | Req'd | Size  | Validation |
 | ---------        | :---: | ----- | :---: | :---: | ---------- |
 | membershipNumber | PK    | text  | Y     | 6     | |
-| Firstname        |       | text  | Y     | 30    | |
-| Surname          |       | text  | Y     | 30    | |
-| Address          |       | text  | Y     | 50    | |
-| Town             |       | text  | Y     | 50    | |
-| Postcode         |       | text  |       | 10    | |
+| firstName        |       | text  | Y     | 30    | |
+| surname          |       | text  | Y     | 30    | |
+| address          |       | text  | Y     | 50    | |
+| town             |       | text  | Y     | 50    | |
+| postcode         |       | text  |       | 10    | |
 | dateOfBirth      |       | date  |       |       | |
 | monthOfRenewal   |       | text  |       | 15    | |
 | typeOfMembership |       | text  |       | 7     | Restricted choice: Adult, Child, Senior, Student |
