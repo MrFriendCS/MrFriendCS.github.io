@@ -1,6 +1,6 @@
 # Title: DDD Helper
 # Author: Mr Friend
-# Date: 20 dec 2024
+# Date: 13 Nov 2025
 
 """Functions to help create data for N5 and Higher DDD tasks.""" 
 
@@ -32,17 +32,20 @@ import random
 def getForename() -> str:
     """Pick a random forename."""
     
-    forenames = ["Aimee", "Alan", "Alanna", "Alexander", "Andrew", "Aonghas", 
-                 "Angus", "Anthony", "Ava", "Caitlin", "Callum", "Calum",
-                 "Caralisa", "Ciara", "Craig", "Darren", "Domhnall",
-                 "Dominic", "Donald", "Erin", "Ethan", "Findlay", "Iain",
-                 "Ian", "India", "Innes", "James", "Jamie", "John", "Julia",
-                 "Kieran", "Lacey", "Lewis", "Liam", "Lincoln", "Maddison",
-                 "Mairi", "Mason", "Micheal", "Miyah", "Oliver", "Owen",
-                 "Patrick", "Niamh", "Rachel", "Robbie", "Roderick", "Ross",
-                 "Rowan", "Ruairidh", "Ryan", "Sam", "Seonaidh", "Seumas",
-                 "Shelly", "Simon", "Sophie", "Stewart", "Thomas", "Vincent",
-                 "Wendy"]
+    forenames = ["Aiden", "Aimee", "Alan", "Alanna", "Alexander", "Amy", "Andrew",
+                 "Angus", "Anthony", "Aonghas", "Ava", "Caitlin", "Callum",
+                 "Calum", "Caralisa", "Ciara", "Charlie", "Charlotte", "Copper",
+                 "Craig", "Danieal", "Daniel", "Danielle", "Darren", "Domhnall",
+                 "Dominic", "Donald", "Ealasaid", "Eilidh", "Ella", "Emily",
+                 "Erin", "Ethan", "Fay", "Finlay", "Hannah", "Holly", "Hudson",
+                 "Iain", "Iain Ruairidh", "Ian", "India", "Innes", "Isabella", "James",
+                 "Jamie", "John", "Julia", "Katie", "Kieran", "Lacey", "Laura", "Lewis",
+                 "Liam", "Lily", "Lincoln", "Maddison", "Mairead", "Mairi", "Maria",
+                 "Mason", "Michael", "Micheal", "Mirren", "Miyah", "Niamh", "Oliver",
+                 "Olivia", "Owen", "Patrick", "Niamh", "Rachel", "Robbie", "Roderick",
+                 "Ross", "Rowan", "Ruairidh", "Ryan", "Sam", "Seonaidh", "Seumas",
+                 "Scott", "Shelly", "Simon", "Sophia", "Sophie", "Stewart", "Summer",
+                 "Thomas", "Vincent", "Wendy", "Zoey"]
     
     forename = random.choice(forenames)
     
@@ -52,15 +55,18 @@ def getForename() -> str:
 def getSurname() -> str:
     """Pick a random surname."""
     
-    surnames = ["Blake", "Blackie", "Boyd", "Brown", "Campbell", "Clark",
-                "Daly", "Davidson", "Docherty", "Ferguson", "Friend",
-                "Galbraith", "Grant", "Henderson", "Irving", "Johnson",
-                "Jones", "Kearney", "MacArthur", "MacDonald", "MacDougall",
-                "MacIain", "MacIsaac", "MacKinnon", "MacLean", "MacLeod",
-                "MacNeil", "McGuire", "McIntyre", "Millar", "Mitchell",
-                "Monk", "Nicholson", "Paterson", "Robertson", "Simpson",
-                "Small", "Smiley", "Smith", "Smyth", "Stewart", "Thomson",
-                "Walker", "Wilson", "Young"]
+    surnames = ["Allan", "Beaton", "Blake", "Blackie", "Boyd", "Brown",
+                "Campbell", "Clark", "Daly", "Davidson", "Docherty",
+                "Ferguson", "Friend", "Galbraith", "Gillies", "Grant",
+                "Henderson", "Howart", "Irving", "Johnson", "Jones",
+                "Kearney", "MacArthur", "MacDonald", "MacDougall",
+                "Macpherson", "MacIain", "MacIsaac", "MacKechnie",
+                "MacKinnon", "MacLean", "MacLeod", "MacNeil", "Manford",
+                "McGuire", "McIntyre", "Millar", "Mitchell", "Monk",
+                "Nicholson", "O'Brien", "O'Carroll", "Osborne", "Paterson",
+                "Peters", "Robinson", "Robertson", "Scott", "Simpson",
+                "Small", "Smiley", "Smith", "Smyth", "Stewart", "Stokes",
+                "Swinney", "Thomson", "Walker", "Wilson", "Young"]
     
     surname = random.choice(surnames)
     

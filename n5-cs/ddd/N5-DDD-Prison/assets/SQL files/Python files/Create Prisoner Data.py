@@ -182,7 +182,7 @@ def getPupils():
     surnames = []
     
     # Open file
-    file = open("pupilList.csv", "r")
+    file = open("../../../../../../../pupilList.csv", "r")
     
     # Read first line
     line = file.readline()
@@ -281,10 +281,10 @@ def main():
     dobs = getDOBs(noOfPrisoners)
 
     # 10 - Get pupil names
-    #pupilFirsts, pupilLasts = getPupils()
+    pupilFirsts, pupilLasts = getPupils()
     
     # 11 = Update names
-    #forenames, surnames = updateNames(forenames, surnames, pupilFirsts, pupilLasts)
+    forenames, surnames = updateNames(forenames, surnames, pupilFirsts, pupilLasts)
 
     # 12 - Write prisoner table
     writeCSV(ids, surnames, forenames, hairs, eyes,
