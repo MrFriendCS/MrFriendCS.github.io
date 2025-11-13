@@ -34,33 +34,9 @@ Sample data stored in each table is shown below.
     | 5       | Broch Open Surf Competition      | 2016/08/15 | 4         | 73 |
 
 
-## Design
+## Tasks
 
-### Member entity
-
-1.  Complete the data dictionary for the Member entity.
-
-    | Field | Key  | Type | Size | Req’d | Validation |
-    | ----- | ---- | ---- | ---- | ----- | ---------- |
-    |       |      |      |      |       | |
-    |       |      |      |      |       | |
-    |       |      |      |      |       | |
-    |       |      |      |      |       | |
-    |       |      |      |      |       | |
-
-
-### Post entity
-
-2.  Complete the data dictionary for the Post entity.
-
-    | Field | Key  | Type | Size | Req’d | Validation |
-    | ----- | ---- | ---- | ---- | ----- | ---------- |
-    |       |      |      |      |       | |
-    |       |      |      |      |       | |
-    |       |      |      |      |       | |
-    |       |      |      |      |       | |
-    |       |      |      |      |       | |
-
+1.  Complete a data dictionary for the Member entity.
+2.  Complete a data dictionary for the Post entity.
 3.  Create an Entity Relationship Diagram, including attributes, to represent the relationship between the Member and Post entities.
-
 4.  Describe the type of relationship that exists between the Member and Post entities.
