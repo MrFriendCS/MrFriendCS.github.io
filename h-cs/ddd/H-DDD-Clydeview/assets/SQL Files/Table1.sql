@@ -1,4 +1,4 @@
-CREATE TABLE Question1 (
+CREATE TABLE Table1 (
     pupilID INT NOT NULL,
     forename VARCHAR(12) NOT NULL,
     surname VARCHAR(12) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE Question1 (
     PRIMARY KEY (pupilID)
 );
 
-INSERT INTO Table1 VALUES (1,"Jane","Smith",9,7,8,6);
+INSERT INTO Table1 (VALUES (1,"Jane","Smith",9,7,8,6);
 INSERT INTO Table1 VALUES (2,"Duncan","Scott",10,8,9,8);
 INSERT INTO Table1 VALUES (3,"James","Webster",8,6,7,9);
 INSERT INTO Table1 VALUES (4,"Julie","O'Brian",7,6,9,5);

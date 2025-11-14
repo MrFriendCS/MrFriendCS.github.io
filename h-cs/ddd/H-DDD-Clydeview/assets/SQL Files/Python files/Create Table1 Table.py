@@ -9,7 +9,7 @@ fileOut = open("../Table1.sql", "w")
 
 # Create table
 
-table = """CREATE TABLE Question1 (
+table = """CREATE TABLE Table1 (
     pupilID INT NOT NULL,
     forename VARCHAR(12) NOT NULL,
     surname VARCHAR(12) NOT NULL,

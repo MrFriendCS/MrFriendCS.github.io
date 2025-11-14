@@ -15,23 +15,23 @@ Sample data stored in each table is shown below.
 
 ### Member Table
 
-    | Member ID | Last Name | First Name | Age in Years | Email |
-    | --------- | --------- | ---------- | ------------ | ----- |
-    | 1         | Davies    | Jim        | 27           | jimbo31@scotmail.co.uk |
-    | 2         | McKay     | Ann        | 28           | mckaya218@hotmail.com |
-    | 3         | Roberts   | Carol      | 35           | croberts123@teachers.com |
-    | 4         | Singh     | Hardeep    | 24           | singh832@scotmail.co.uk |
+| Member ID | Last Name | First Name | Age in Years | Email |
+| --------- | --------- | ---------- | ------------ | ----- |
+| 1         | Davies    | Jim        | 27           | jimbo31@scotmail.co.uk |
+| 2         | McKay     | Ann        | 28           | mckaya218@hotmail.com |
+| 3         | Roberts   | Carol      | 35           | croberts123@teachers.com |
+| 4         | Singh     | Hardeep    | 24           | singh832@scotmail.co.uk |
 
 
 ### Post Table
 
-    | Post ID | Title                            | Date       | Member ID | Number of Words |
-    | ------- | -----                            | ----       | --------- | --------------- |
-    | 1       | Welcome to the SurfScotland blog | 2016/08/01 | 1         | 228 |
-    | 2       | Belhaven Bay Dunbar              | 2016/08/08 | 1         | 176 |
-    | 3       | Coldingham Bay Scottish Borders  | 2016/08/13 | 1         | 58 |
-    | 4       | Hebridean Surf Lewis             | 2016/08/15 | 2         | 145 |
-    | 5       | Broch Open Surf Competition      | 2016/08/15 | 4         | 73 |
+| Post ID | Title                            | Date       | Member ID | Number of Words |
+| ------- | -----                            | ----       | --------- | --------------- |
+| 1       | Welcome to the SurfScotland blog | 2016/08/01 | 1         | 228 |
+| 2       | Belhaven Bay Dunbar              | 2016/08/08 | 1         | 176 |
+| 3       | Coldingham Bay Scottish Borders  | 2016/08/13 | 1         | 58 |
+| 4       | Hebridean Surf Lewis             | 2016/08/15 | 2         | 145 |
+| 5       | Broch Open Surf Competition      | 2016/08/15 | 4         | 73 |
 
 
 ## Tasks
