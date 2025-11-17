@@ -10,7 +10,7 @@ File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 | Attribute   | Key   | Type   | Req'd | Size  | Validation |
 | ---------   | :---: | -----  | :---: | :---: | ---------- |
 | category    |       | text   |       | 10    | |
-| plantName   |       | text   | Y     | 20    | |
+| name        |       | text   | Y     | 20    | |
 | variety     |       | text   | Y     | 20    | |
 | code        |       | text   | Y     | 3     | |
 | referenceID | PK    | text   | Y     | 3     | |

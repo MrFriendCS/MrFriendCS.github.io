@@ -1,4 +1,4 @@
-category,plantName,variety,code,referenceID,quantitynit,price,height
+category,name,variety,code,referenceID,quantity,price,height
 Patio,Eunonymous,Mixed,VY,B07,12,12.5,S
 Patio,Hebe,Varigatum,P,B11,1,12,M
 Patio,Pieris,Carnival,B,B17,1,12,M
