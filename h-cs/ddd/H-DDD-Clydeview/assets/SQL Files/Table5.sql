@@ -1,8 +1,8 @@
 CREATE TABLE Table5 (
     productName VARCHAR(20) NOT NULL,
     productID VARCHAR(50) NOT NULL,
-    priceUK FLOAT NOT NULL
-        CHECK(priceUK >= 0.00),
+    pricePounds FLOAT NOT NULL
+        CHECK(pricePounds >= 0.00),
     PRIMARY KEY (productID)
 );
 

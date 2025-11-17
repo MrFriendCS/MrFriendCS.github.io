@@ -1,6 +1,6 @@
 # Title: Table5 Table
 # Author: Mr Friend
-# Date: 14 Nov 2024
+# Date: 17 Nov 2025
 
 # Files
 fileIn = open("../CSV Files/Table5.csv", "r")
@@ -12,8 +12,8 @@ fileOut = open("../Table5.sql", "w")
 table = """CREATE TABLE Table5 (
     productName VARCHAR(20) NOT NULL,
     productID VARCHAR(50) NOT NULL,
-    priceUK FLOAT NOT NULL
-        CHECK(priceUK >= 0.00),
+    pricePounds FLOAT NOT NULL
+        CHECK(pricePounds >= 0.00),
     PRIMARY KEY (productID)
 );"""
 
@@ -32,8 +32,8 @@ while line != "":
     fileOut.write("INSERT INTO Table5 VALUES ")
     
     fileOut.write("(\""   + data[0].strip() + "\",")  # productName
-    fileOut.write( "\"" + data[1].strip() + "\",")  # ProductID
-    fileOut.write(        data[2].strip() + ");\n")  # priceUK
+    fileOut.write( "\"" + data[1].strip() + "\",")  # productID
+    fileOut.write(        data[2].strip() + ");\n")  # pricePounds
 
     line = fileIn.readline()
     

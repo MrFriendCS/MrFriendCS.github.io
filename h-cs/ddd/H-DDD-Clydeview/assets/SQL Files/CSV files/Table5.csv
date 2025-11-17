@@ -1,7 +1,7 @@
-productName,productID,priceUK
-Basic Keyboard,001,7.00
-Network Card,002,13.50
-Optical Mouse,017,7.50
-Monitor,034,30.00
-3D Graphics Card,097,30.00
-Flat Screen Monitor,102,75.00
+productName,productID,pricePounds
+Basic Keyboard,1,7
+Network Card,2,13.5
+Optical Mouse,17,7.5
+Monitor,34,30
+3D Graphics Card,97,30
+Flat Screen Monitor,102,75

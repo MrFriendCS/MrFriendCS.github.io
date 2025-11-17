@@ -32,7 +32,7 @@ The table called Table1 stores the test results of several pupils.
 
 The table called Table2 stores the hours worked and hourly rate of some staff members.
 
-Members of staff who earn less than £7 per hour are due to receive a 10% pay rise.
+Members of staff who earn less than £7 per hour are due to receive a 11% pay rise.
 
 {:start="2"}
 2.  Use a SQL query to amend the required details of the relevant records.
@@ -57,19 +57,19 @@ The table called Table3 stores the details of students and the marks they achiev
 Both students whose surname starts with the letter `S` have found errors in their test results for test 2 and test 4.
 
 {:start="3"}
-3.  Use a single SQL query to changed the required records. 
+3.  Use a single SQL query to change the required records. 
 Increase each of their test 2 results by 2 marks and each of their test 4 results by 1 mark.
 
 
 
 ## Table: Table4
 
-| Name         | Key | Type   | Size | Req'd | Validation |
-| ----         | --- | ----   | ---- | ----- | ---------- |
-| product      | PK  | Number |      | Y     | |
-| productName  |     | Text   | 12   | Y     | |
-| buyingPrice  |     | Number | 50   | Y     | Range: >= 0 |
-| sellingPrice |     | Number |      | Y     | Range: >= 0 |
+| Name            | Key | Type   | Size | Req'd | Validation |
+| ----            | --- | ----   | ---- | ----- | ---------- |
+| product         | PK  | Number |      | Y     | |
+| productName     |     | Text   | 12   | Y     | |
+| buyingPrice(p)  |     | Number | 50   | Y     | Range: >= 0 |
+| sellingPrice(p) |     | Number |      | Y     | Range: >= 0 |
 
 The table called Table4 stores details of items for sale in the school tuckshop.
 
@@ -86,7 +86,7 @@ Also, the selling price is being updated to make a profit of 40% of the revised 
 | ----        | --- | ----   | ---- | ----- | ---------- |
 | productName |     | Text   | 20   | Y     | |
 | productID   | PK  | Text   | 50   | Y     | |
-| priceUK     |     | Number |      | Y     | Range: >= 0.00 |
+| price(£)    |     | Number |      | Y     | Range: >= 0.00 |
 
 The table called Table5 stores details of products and their prices.
 
