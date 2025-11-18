@@ -8,7 +8,7 @@ MyPhotoSpace is an online photo gallery stores details of photos displayed on th
 To minimise data entry errors, MyPhotoSpace applies the following restrictions:
 
 * Each album can store a maximum of 120 photos
-* Five different categories of album are available on the gallery: animals, cars, castles, surfing, and towns
+* Five different categories of album are available in the gallery: animals, cars, castles, surfing, and towns
 
 Sample data stored in each table is shown below.
 
