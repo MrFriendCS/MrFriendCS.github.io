@@ -20,7 +20,7 @@ Aliases should be used to display meaningful headings.
 The hotel with the highest star rating should be listed first; hotels with the same star rating should be listed in alphabetical order of hotel name.
 3.  Display the name, city and price per night of any hotel which is dearer that the dearest hotel in Edinburgh.
 List the hotel details with the dearest hotel first; hotels with the same price should be listed in alphabetical order of city.
-4.  Display the number of holidays that have the same star rating as that of the `Der Wald` hotel.
-5.  Display the name, city, and distance from the airport of any holiday to Lisbon that is closer to the airport than the average distance from the airport of all the hotels in Spain.
+4.  Display the number of hotels that have the same star rating as the `Der Wald` hotel.
+5.  Display the name and distance from the airport of any hotel in Lisbon that is closer to the airport than the average distance from the airport of all the hotels in Spain.
 6.  Display the name, departure date and duration of any holiday that has the same duration as the longest holiday to a city with the letter `o` as the second character of the city name.
 Arrange these details so that the most recent holiday is listed first.
