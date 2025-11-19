@@ -20,10 +20,10 @@ Display the movie with the largest profit first.
 
     __NB__:  profit = international sales – movie budget
 
-2.  List the name of the director of each movie with value of the combined US and international sales.
-Display the details in alphabetical order of director; movies by the same director should be listed in order of total income, from least to most.
+2.  List each movie, its director, and the value of the combined US and international sales.
+Display the details in alphabetical order of director; movies by the same director should be listed in order of total income, from most to least.
 3.  List the name of each movie with the year it was released and its rating.
-The international sales for each movie should be shown in millions.
+The international sales for each movie should be shown in millions, to one decimal place.
 Only movies with international sales over 150 million that have a rating of at least 8 should be included in the list.
 4.  List the title of each movie together with its duration.
 The duration should also be shown in separate hours and minutes.
