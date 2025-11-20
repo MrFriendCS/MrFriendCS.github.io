@@ -1,39 +1,55 @@
 # N5 SDD - Result Part 3
 
+
 ## Introduction
 
-A user wants an automatic grading system that will classify a test score using the table below.  Only scores from ___0___ to ___100___ are acceptable.
+A teacher wants an automatic grading system that will classify a test score using the table below.
 
-| Mark    | Grade |
-| ----    | :---: |
-| 70+     | A |
-| 60 - 69 | B |
-| 50 - 59 | C |
-| 40 - 49 | D |
-| 0 - 39  | No Award |
+    | Score    | Result |
+    | :----:   | :----: |
+    | 50-100   | Pass |
+    | 0-49     | Fail |
 
-## Tasks
+Only scores from ___0___ to ___100___ are acceptable.
 
-1. Create a comprehensive test plan for the program.  Use OneNote.
 
-2. Implement a program that matches the structure diagram below. Ensure the code is efficient.
+### Top level design (structure diagram)
 
-3. Use the test plan to check that the program works correctly.
+![Structure diagram](assets/sd3.png)
 
-4. Ensure the code is readable by using:
 
-   1. Meanigful identifiers.
-   2. Internal commentary.
-   3. Whitespace.
+## User Interface
 
-## User Experience
+Examples of the expected user interface are shown below, with some possible input and output values.
 
-Below is an example of the expected user experience.
 
-```Python
-  Enter test score: 70  
-  Grade: A  
+### Example 1
+
+```
+Test Result
+-----------
+
+Score: 75
+
+Result: Pass
+
+============
 ```
 
-## Structure Diagram
-![Structure Diagram](assets/sd3.png)
+
+### Example 2
+
+```
+Test Result
+-----------
+
+Score: 101
+
+Only scores from 0 to 100 can be used.
+
+Score: 1
+
+Result: Fail
+
+============
+```

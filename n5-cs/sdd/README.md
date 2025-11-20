@@ -40,6 +40,7 @@
 | N5-SDD-School-Club         | Check eSports club eligibility       | ip, if5, lo                   | sd, tricky |
 | N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, if2, maths, cat           | |
 | N5-SDD-Gradient Pt 3       | Calculate gradient from rise and run | iv, maths, cat                | |
+| N5-SDD-Coin-Flipper Pt 2   | Simulate heads and tails game        | rnd, iv, if4                  | sd |
 | N5-SDD-Pontoon Part 1      | Play a single hand of pontoon        | rnd, ip, cl, lo, if2          | pc |
 | N5-SDD-Result Pt 3         | Convert exam mark to grade           | iv, if4                       | sd |
 | N5-SDD-Result Pt 4         | Convert mark to grade and store      | fl, iv, if4, t1d              | sd |

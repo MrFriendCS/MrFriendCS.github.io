@@ -6,7 +6,7 @@
 Create a small program that will simulate a coin being flipped.  It will use `0` and `1` instead of `Heads` and `Tails`.
 
 
-### Top leve design (structure diagram)
+### Top level design (structure diagram)
 
 ![Structure diagram](assets/sd1.png)
 

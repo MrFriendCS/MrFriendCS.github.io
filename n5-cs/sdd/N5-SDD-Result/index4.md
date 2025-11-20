@@ -1,4 +1,4 @@
-# Test Result v4
+# N5 SDD - Result Part 3
 
 ## Introduction
 
@@ -12,46 +12,28 @@ A user wants an automatic grading system that will classify a test score using t
 | 40 - 49 | D |
 | 0 - 39  | No Award |
 
-The grades are to be stored so they can be used later.
-
-
 ## Tasks
 
-1. Create a comprehensive test plan for the program.
+1. Create a comprehensive test plan for the program.  Use OneNote.
 
-2. Implement a program that matches the structure diagram below.
+2. Implement a program that matches the structure diagram below. Ensure the code is efficient.
 
 3. Use the test plan to check that the program works correctly.
 
+4. Ensure the code is readable by using:
 
-### Top level design (Structure diagram)
+   1. Meanigful identifiers.
+   2. Internal commentary.
+   3. Whitespace.
 
-![Structure Diagram](assets/sd4.png)
+## User Experience
 
+Below is an example of the expected user experience.
 
-### Example user interface
-
-#### Input
-
-```
-Grade Calculator
-----------------
-Mark 1: 65
-Mark 2: 45
-Mark 3: 85
-Mark 4: 20
-Mark 5: 55
+```Python
+  Enter test score: 70  
+  Grade: A  
 ```
 
-#### Output
-
-```
-Grades
-------
-Grade 1: B
-Grade 2: D
-Grade 3: A
-Grade 4: No Award
-Grade 5: C
-==========
-```
+## Structure Diagram
+![Structure Diagram](assets/sd3.png)
