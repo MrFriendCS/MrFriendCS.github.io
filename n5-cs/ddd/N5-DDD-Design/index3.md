@@ -23,7 +23,7 @@ Sample data stored in each table is shown below.
 | FDP1002   | Floral dungarees playsuit          | 10   | 1970s | B2 |
 | BSC2103   | Brown swing coat                   | 16   | 1960s | B5 |
 | CSP3204   | Circle skirt black white polka dot | 12   | 1950s | B4 |
-| FPD3225   | Floral print hostess dress         | 10   | 1970s | B5v
+| FPD3225   | Floral print hostess dress         | 10   | 1970s | B5 |
 
 
 ### Brand Table
