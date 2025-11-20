@@ -5,10 +5,10 @@
 
 A teacher wants an automatic grading system that will classify a test score using the table below.
 
-    | Score    | Result |
-    | :----:   | :----: |
-    | 50-100   | Pass |
-    | 0-49     | Fail |
+| Score    | Result |
+| :----:   | :----: |
+| 50-100   | Pass |
+| 0-49     | Fail |
 
 Only scores from ___0___ to ___100___ are acceptable.
 
