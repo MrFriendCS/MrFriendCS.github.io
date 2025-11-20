@@ -21,7 +21,7 @@ The value the computer threw will then be shown, so there's no cheating!
 
 ## User Interface
 
-Examples of the expected user interface are shown below with some possible input and output values.
+Examples of the expected user interface are shown below, with some possible input and output values.
 
 
 ### Example 1

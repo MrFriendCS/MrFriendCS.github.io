@@ -1,4 +1,4 @@
-# N5 DDD Query Implementation - Equi-join
+# N5 DDD Equi-join
 
 File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
