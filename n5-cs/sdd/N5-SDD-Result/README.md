@@ -12,7 +12,7 @@ A user wants an automatic decision system that will classify a test score as eit
 
 ## Tasks
 
-1. Implement a program that matches the flowchart below.
+1. Implement a program that matches the design.
 2. Ensure the code is efficient.
 
 
