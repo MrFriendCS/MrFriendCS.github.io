@@ -43,7 +43,7 @@ Score Classifier
 
 Enter test score: 101
 
-Only score from 0 to 100 are valid.
+Only scores from 0 to 100 are valid.
 
 Enter test score: 11
 
