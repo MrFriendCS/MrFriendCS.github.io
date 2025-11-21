@@ -37,13 +37,13 @@
 | N5-SDD-School-Lunches      | Calculate cost of 5 lunches          | fl, ip, t1d                   | sqarl |
 | N5-SDD-Cat-Food            | Cat's age decides the food type      | ip, if4                       | |
 | N5-SDD-Book-Shop Pt 3      | Calculate student/staff price        | ip, if4, lo, maths            | sd |
-| N5-SDD-Dice-Game           | Simulate a dice game                 | rnd, if4                      | sd |
+| N5-SDD-Chance Pt 1         | Simulate a dice game                 | rnd, if4                      | sd |
 | N5-SDD-School-Club         | Check eSports club eligibility       | ip, if5, lo                   | sd, tricky |
 | N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, if2, maths, cat           | |
 | N5-SDD-Gradient Pt 3       | Calculate gradient from rise and run | iv, maths, cat                | |
-| N5-SDD-Coin-Flipper Pt 1   | Simulate heads and tails game        | rnd, if2                      | sd |
+| N5-SDD-Chance Pt 2         | Simulate heads and tails game        | rnd, if2                      | sd |
 | N5-SDD-Result Pt 3         | Convert test score to pass / fail    | iv, if2                       | sd |
-| N5-SDD-Coin-Flipper Pt 2   | Simulate heads and tails game        | rnd, iv, if4                  | sd |
+| N5-SDD-Chance Pt 3         | Simulate heads and tails game        | rnd, iv, if4                  | sd |
 | N5-SDD-Pontoon Part 1      | Play a single hand of pontoon        | rnd, ip, cl, lo, if2          | pc |
 | N5-SDD-Result Pt 4         | Convert exam mark to grade           | iv, if4                       | sd |
 | N5-SDD-Result Pt 5         | Convert mark to grade and store      | fl, iv, if4, t1d              | sd |
@@ -57,12 +57,10 @@
 | N5-SDD-School-Enrollment   |  |  |  |
 | N5-SDD-SnapTok             |  |  |  |
 | N5-SDD-Swimming            |  |  |  |
-| N5-SDD-Coin-Flipper Pt 1   | Simulate a coin, guess result (0, 1) | rnd, ip, if2                  | sd, no instructions |
-| N5-SDD-Coin-Flipper Pt 2   | Simulate a coin, guess result        | rnd, iv, if2                  | no instructions |
 | N5-SDD-Food-Cost           | Calculate cost of 3, 4, or 5 items   | rt, iv, t1d x 2               | |
 | N5-SDD-Boccia Pt 2         | Records scores, gives result         | rt x 2, iv, if4               | |
 | N5-SDD-Tip-Calculator      | Calculate cost, tip, total, share    | rt, iv                        | sd |
-| N5-SDD-Number-Game         | Guess random number, 3 chances       | rnd, cl, iv, lo, if2          | sd |
+| N5-SDD-Chance Pt 4         | Guess random number, 3 chances       | rnd, cl, iv, lo, if2          | sd |
 | N5-SDD-Triathlon           | Calculate triathlon time - 5 times   | t1d, rt, iv                   | sd |
 | N5-SDD-Task-Picker         | Pick random person for random task   | 1d &times; 2, iv, rnd         | fc |
 | N5-SDD-Summer Pt 1         | Calculate square root                | ip, maths                     | |

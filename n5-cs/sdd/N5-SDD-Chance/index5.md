@@ -12,7 +12,7 @@ Implement a solution that matches the design shown below.
 
 ### Top Level Design (Stucture diagram)
 
-![Structure diagram](assets/sd.png)
+![Structure diagram](assets/sd5.png)
 
 
 ### User Interface

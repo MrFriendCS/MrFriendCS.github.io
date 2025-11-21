@@ -39,7 +39,7 @@ An appropriate message should be displayed, and the correct answer given if inco
 
 ## Design
 
-![Structure diagram](assets/sd.png "Structure diagram")
+![Structure diagram](assets/sd4.png "Structure diagram")
 
 
 ## Implementation
