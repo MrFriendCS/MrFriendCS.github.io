@@ -1,6 +1,6 @@
-# Title: N5 SDD Number Guess
+# Title: N5 SDD Chance Part 5
 # Author: Mr Friend
-# Date: 3 Sep 2024
+# Date: 21 Nov 2025
 
 # Import module
 import random
@@ -10,7 +10,7 @@ compValue = 0
 guess = 0
 found = False
 life = 3
-guesses = ["last", "second", "first"]
+counter = 1
 
 # Pick random number
 compValue = random.randint(1, 10)
@@ -18,18 +18,23 @@ compValue = random.randint(1, 10)
 # Display header
 print("Number Guess")
 print("------------")
+
+print()
 print("I've picked a number between 1 and 10.")
 
 # Repeat until guess is correct or no lives left
 while life > 0 and found != True:
     
     #Get valid guess
-    guess = int(input("\nWhat is your " + guesses[life-1] + " guess? "))
+    print()
+    guess = int(input("What is guess " + str(counter) + ": "))
 
     # Only accept 1 to 10 as guesses
     while guess < 1 or guess > 10:
+        
+        print()
         print("Only values from 1 to 10 are accepted.")
-        userValue = int(input("\nWhat is your " + guesses[life] + " guess? "))
+        guess = int(input("What is guess " + str(counter) + ": "))
     
     # Is guess correct?
     if guess == compValue:
