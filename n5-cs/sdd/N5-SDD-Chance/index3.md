@@ -1,4 +1,4 @@
-# N5 SDD - Coin Flipper Part 2
+# N5 SDD - Chance Part 3
 
 
 ## Task

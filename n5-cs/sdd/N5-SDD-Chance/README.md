@@ -1,4 +1,4 @@
-# N5 SDD - Dice Game
+# N5 SDD - Chance
 
 
 ## Introduction
