@@ -29,13 +29,13 @@ Number Guess
 
 I've picked a number between 1 and 10.
 
-What is your first guess? 8
+What is guess 1? 8
 Too high!
 
-What is your second guess? 2
+What is guess 2? 2
 Too low!
 
-What is your last guess? 4
+What is guess 3? 4
 Too high!
 
 The correct value was 3.
@@ -52,7 +52,7 @@ Number Guess
 
 I've picked a number between 1 and 10.
 
-What is your first guess? 5
+What is guess 1? 5
 Correct!
 
 ============
