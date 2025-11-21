@@ -10,7 +10,7 @@ compValue = 0
 guess = 0
 found = False
 life = 3
-counter = 1
+go = 1
 
 # Pick random number
 compValue = random.randint(1, 10)
@@ -27,7 +27,7 @@ while life > 0 and found != True:
     
     #Get valid guess
     print()
-    guess = int(input("What is guess " + str(counter) + ": "))
+    guess = int(input("What is guess " + str(go) + ": "))
 
     # Only accept 1 to 10 as guesses
     while guess < 1 or guess > 10:
@@ -44,6 +44,7 @@ while life > 0 and found != True:
     else:
         # No
         life = life - 1
+        go = go + 1
         
         # Is guess too high?
         if guess > compValue:
