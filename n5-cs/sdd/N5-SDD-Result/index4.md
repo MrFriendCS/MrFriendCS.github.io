@@ -30,9 +30,15 @@ A user wants an automatic grading system that will classify a test score using t
 
 Below is an example of the expected user experience.
 
-```Python
-  Enter test score: 70  
-  Grade: A  
+```
+Test Classifier
+---------------
+
+Enter test score: 70  
+
+Grade: A  
+
+===============
 ```
 
 ## Structure Diagram
