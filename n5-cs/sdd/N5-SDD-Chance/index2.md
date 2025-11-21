@@ -8,7 +8,7 @@ Create a small program that will simulate a coin being flipped.  It will use `0`
 
 ### Top level design (structure diagram)
 
-![Structure diagram](assets/sd1.png)
+![Structure diagram](assets/sd2.png)
 
 
 ## User Interface
