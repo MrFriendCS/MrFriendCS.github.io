@@ -1,5 +1,6 @@
 # N5 SDD - Chance Part 5
 
+
 ## Introduction
 
 A player has a maximum of three chances to guess the random number (1-10) that the computer has picked.
@@ -15,9 +16,12 @@ Implement a solution that matches the design shown below.
 ![Structure diagram](assets/sd5.png)
 
 
-### User Interface
+## User Interface
 
-An example of the user interface is shown below.
+Examples of the expected user interface are shown below, with some possible input and output values.
+
+
+### Example 1
 
 ```
 Number Guess
@@ -35,4 +39,21 @@ What is your last guess? 4
 Too high!
 
 The correct value was 3.
+
+============
+```
+
+
+### Example 2
+
+```
+Number Guess
+------------
+
+I've picked a number between 1 and 10.
+
+What is your first guess? 5
+Correct!
+
+============
 ```
