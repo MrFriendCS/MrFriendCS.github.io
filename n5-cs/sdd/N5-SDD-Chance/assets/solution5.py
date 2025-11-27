@@ -1,6 +1,6 @@
 # Title: N5 SDD Chance Part 5
 # Author: Mr Friend
-# Date: 21 Nov 2025
+# Date: 27 Nov 2025
 
 # Import module
 import random
@@ -14,6 +14,9 @@ go = 1
 
 # Pick random number
 compValue = random.randint(1, 10)
+
+# NOTE: Only used for testing
+compValue = 5
 
 # Display header
 print("Number Guess")
@@ -34,7 +37,7 @@ while life > 0 and found != True:
         
         print()
         print("Only values from 1 to 10 are accepted.")
-        guess = int(input("What is guess " + str(counter) + ": "))
+        guess = int(input("What is guess " + str(go) + ": "))
     
     # Is guess correct?
     if guess == compValue:
