@@ -63,6 +63,7 @@
 | N5-SDD-Tip-Calculator      | Calculate cost, tip, total, share    | rt, iv                        | sd |
 | N5-SDD-Chance Pt 5         | Guess random number, 3 chances       | rnd, cl, iv, lo, if2          | sd |
 | N5-SDD-Chance Pt 6         | Rock, Paper, Scissors                | rnd, cl, iv, lo, if2          | sd |
+| N5-SDD-Chance Pt 7         | Rock, Paper, Scissors                | 1d, rnd, cl, iv, lo, if2      | sd |
 | N5-SDD-Triathlon           | Calculate triathlon time - 5 times   | t1d, rt, iv                   | sd |
 | N5-SDD-Task-Picker         | Pick random person for random task   | 1d &times; 2, iv, rnd         | fc |
 | N5-SDD-Summer Pt 1         | Calculate square root                | ip, maths                     | |
