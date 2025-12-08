@@ -8,7 +8,7 @@ Homework reinforces and extends the learning that happens in school.  Without ke
 
 ## Task
 
-Implement a solution that matches the design shown below.
+Implement a solution that matches the design shown below.  Fours hours of homework is enough for a single day.
 
 
 ### Top Level Design (Stucture diagram)
