@@ -28,11 +28,11 @@ How many mintues did you do on:
 
 Monday: 5
 Tuesday: 5
-Wednesday: 30
+Wednesday: 20
 Thursday: 15
 Friday: 5
-Saturday: 40
-Sunday: 25
+Saturday: 10
+Sunday: 65
 
 You did a total of 125 minutes last week.
 
