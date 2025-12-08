@@ -26,17 +26,17 @@ Homework Calculator
 
 How many mintues did you do on:
 
-Monday: 0
-Tuesday: 0
+Monday: 5
+Tuesday: 5
 Wednesday: 30
 Thursday: 15
-Friday: 0
+Friday: 5
 Saturday: 40
-Sunday: 200
+Sunday: 25
 
-You did a total of 285 minutes last week.
+You did a total of 125 minutes last week.
 
-You did a average of 41 minutes a day.
+You did an average of 18 minutes a day.
 
 ===================
 ```

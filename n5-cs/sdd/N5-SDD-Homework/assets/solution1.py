@@ -44,7 +44,7 @@ print("You did a total of " + str(total) + " minutes last week.")
 
 # Dsiplay average
 print()
-print("You did a average of " + str(average) + " minutes a day.")
+print("You did an average of " + str(average) + " minutes a day.")
 
 # Footer
 print()
