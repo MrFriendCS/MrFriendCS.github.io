@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Homework helps to practise and deepen the learning that takes place in school.
+Homework reinforces and extends the learning that happens in school.  Without keeping a homework record, it's easy to overestimate how much has actually been done.
 
 
 ## Task
@@ -18,7 +18,7 @@ Implement a solution that matches the design shown below.
 
 ## User Interface
 
-An example of the expected user interface are shown below, with some possible input and output values.
+An example of the expected user interface is shown below, with some possible input and output values.
 
 ```
 Homework Calculator
