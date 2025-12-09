@@ -211,6 +211,55 @@ def star(x=0, y=0, colour="", scale=1):
     turtle.end_fill()
     
 
+def tree(x=0, y=0, scale=1, fir="", trunk=""):
+    """Draws a tree."""
+    
+    # Set up
+    start(x, y)
+
+    # Trunk
+    
+    # Set trunk colour
+    if trunk != "":
+        turtle.color(trunk)
+    else:
+        turtle.color("brown")
+    
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()-30*scale)
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()+30*scale)
+    turtle.end_fill()
+    
+    # Branches
+    
+    # Set fir colour
+    if fir != "":
+        turtle.color(fir)
+    else:
+        turtle.color("green")
+
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor()-40*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()+40*scale, turtle.ycor()+20*scale)
+    turtle.goto(turtle.xcor()-30*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()+30*scale, turtle.ycor()+20*scale)
+    turtle.goto(turtle.xcor()-20*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()+20*scale, turtle.ycor()+20*scale)
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()+15*scale, turtle.ycor()+20*scale)    
+    turtle.goto(turtle.xcor()+15*scale, turtle.ycor()-20*scale)
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()+20*scale, turtle.ycor()-20*scale)
+    turtle.goto(turtle.xcor()-20*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()+30*scale, turtle.ycor()-20*scale)
+    turtle.goto(turtle.xcor()-30*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()+40*scale, turtle.ycor()-20*scale)
+    turtle.goto(turtle.xcor()-50*scale, turtle.ycor())
+    turtle.end_fill()
+
+
 def message(x=0, y=0, text="Merry Xmas!", size=14, colour=""):
     """Write a message."""
      
@@ -232,6 +281,7 @@ def grid():
     
 
 def background(colour="lightgreen"):
+    """Set the background colour."""
     
     turtle.Screen().bgcolor(colour)
 
