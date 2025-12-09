@@ -3,6 +3,10 @@ import xmas
 xmas.grid()
 
 xmas.background()
+
+xmas.santa()
+xmas.santa(-50, -50, 0.5, "green")
+xmas.santa(50, 50, 2, "blue", "yellow")
 """
 xmas.rectangle()
 xmas.rectangle(100, 25)
@@ -35,6 +39,6 @@ xmas.rightTri(100, 25, 100, 25, "yellow", 8, "red")
 xmas.circle()
 xmas.circle(100, 50, 20, "blue")
 xmas.circle(-100, 50, 20, "blue", 8, "green")
-"""
-xmas.tree()
+
 xmas.tree(50, 50, 2, "red", "blue")
+"""

@@ -4,27 +4,39 @@
 
 # Get turtle code
 import turtle
-   
-   
+
+# Initial turtle settings
+turtle.hideturtle()
+turtle.shape("turtle")
+
+
 def start(x, y):
     """Move to start position and get ready."""
+    
     turtle.color("red")
     turtle.width(2)
     turtle.penup()
     turtle.goto(x, y)
     turtle.setheading(0)
     turtle.pendown()
+    turtle.showturtle()
 
 
-def rectangle(x=0, y=0, w=40, h=0, colour="", width=0, fill=""):
+def end():
+    """Hides the turtle."""
+    
+    turtle.hideturtle()
+
+
+def rectangle(x=0, y=0, width=40, height=0, colour="", thickness=0, fill=""):
     """Draws a rectangle."""
 
     # Set up
     start(x, y)
     
     # Draw a square
-    if h == 0:
-        h = w
+    if height == 0:
+        height = width
     
     # Set pen colour
     if colour != "":
@@ -36,32 +48,34 @@ def rectangle(x=0, y=0, w=40, h=0, colour="", width=0, fill=""):
         turtle.begin_fill()
     
     # Set pen width
-    if width != 0:
-        turtle.width(width)
+    if thickness != 0:
+        turtle.width(thickness)
     
     # Draw the rectangle / square
-    turtle.forward(w)
+    turtle.forward(width)
     turtle.left(90)
-    turtle.forward(h)
+    turtle.forward(height)
     turtle.left(90)
-    turtle.forward(w)
+    turtle.forward(width)
     turtle.left(90)
-    turtle.forward(h)
+    turtle.forward(height)
     
     # End fill
     if fill != "":
         turtle.end_fill()
+        
+    end()
 
 
-def triangle(x=0, y=0, w=40, h=0, colour="", width=0, fill=""):
+def triangle(x=0, y=0, width=40, height=0, colour="", thickness=0, fill=""):
     """Draws a triangle."""
 
     # Set up
     start(x, y)
     
     # Set the height
-    if h == 0:
-        h = w/2
+    if height == 0:
+        height = width/2
     
     # Set pen colour
     if colour != "":
@@ -73,28 +87,30 @@ def triangle(x=0, y=0, w=40, h=0, colour="", width=0, fill=""):
         turtle.begin_fill()
     
     # Set pen width
-    if width != 0:
-        turtle.width(width)
+    if thickness != 0:
+        turtle.width(thickness)
     
     # Draw the triangle
-    turtle.forward(w)
-    turtle.goto(turtle.position()[0]-w/2, turtle.position()[1]+h)
-    turtle.goto(turtle.position()[0]-w/2, turtle.position()[1]-h)
+    turtle.forward(width)
+    turtle.goto(turtle.position()[0]-width/2, turtle.position()[1]+height)
+    turtle.goto(turtle.position()[0]-width/2, turtle.position()[1]-height)
     
     # End fill
     if fill != "":
         turtle.end_fill()
+        
+    end()
 
 
-def leftTri(x=0, y=0, w=40, h=0, colour="", width=0, fill=""):
+def leftTri(x=0, y=0, width=40, height=0, colour="", thickness=0, fill=""):
     """Draws a left sided right-angle triangle."""
 
     # Set up
     start(x, y)
     
     # Set the height
-    if h == 0:
-        h = w/2
+    if height == 0:
+        height = width
     
     # Set pen colour
     if colour != "":
@@ -105,29 +121,31 @@ def leftTri(x=0, y=0, w=40, h=0, colour="", width=0, fill=""):
         turtle.fillcolor(fill)
         turtle.begin_fill()
     
-    # Set pen width
-    if width != 0:
-        turtle.width(width)
+    # Set pen thickness
+    if thickness != 0:
+        turtle.width(thickness)
     
     # Draw the triangle
-    turtle.forward(w)
-    turtle.goto(turtle.position()[0]-w, turtle.position()[1]+h)
-    turtle.goto(turtle.position()[0], turtle.position()[1]-h)
+    turtle.forward(width)
+    turtle.goto(turtle.position()[0]-width, turtle.position()[1]+height)
+    turtle.goto(turtle.position()[0], turtle.position()[1]-height)
     
     # End fill
     if fill != "":
         turtle.end_fill()
         
+    end()
+        
 
-def rightTri(x=0, y=0, w=40, h=0, colour="", width=0, fill=""):
+def rightTri(x=0, y=0, width=40, height=0, colour="", thickness=0, fill=""):
     """Draws a right sided right-angle triangle."""
 
     # Set up
     start(x, y)
     
     # Set the height
-    if h == 0:
-        h = w/2
+    if height == 0:
+        height = width/2
     
     # Set pen colour
     if colour != "":
@@ -140,19 +158,21 @@ def rightTri(x=0, y=0, w=40, h=0, colour="", width=0, fill=""):
     
     # Set pen width
     if width != 0:
-        turtle.width(width)
+        turtle.width(thickness)
     
     # Draw the triangle
-    turtle.forward(w)
-    turtle.goto(turtle.position()[0], turtle.position()[1]+h)
-    turtle.goto(turtle.position()[0]-w, turtle.position()[1]-h)
+    turtle.forward(width)
+    turtle.goto(turtle.position()[0], turtle.position()[1]+height)
+    turtle.goto(turtle.position()[0]-width, turtle.position()[1]-height)
     
     # End fill
     if fill != "":
         turtle.end_fill()
+        
+    end()
 
 
-def circle(x=0, y=0, r=20, colour="", width=0, fill=""):
+def circle(x=0, y=0, radius=20, colour="", thickness=0, fill=""):
     """Draws a circle."""
 
     # Set up
@@ -168,15 +188,17 @@ def circle(x=0, y=0, r=20, colour="", width=0, fill=""):
         turtle.begin_fill()
     
     # Set pen width
-    if width != 0:
-        turtle.width(width)
+    if thickness != 0:
+        turtle.width(thickness)
     
     # Draw the circle
-    turtle.circle(r)
+    turtle.circle(radius)
     
     # End fill
     if fill != "":
         turtle.end_fill()
+        
+    end()
 
 
 def star(x=0, y=0, colour="", scale=1):
@@ -209,6 +231,8 @@ def star(x=0, y=0, colour="", scale=1):
     
     # End fill
     turtle.end_fill()
+        
+    end()
     
 
 def tree(x=0, y=0, scale=1, fir="", trunk=""):
@@ -258,6 +282,175 @@ def tree(x=0, y=0, scale=1, fir="", trunk=""):
     turtle.goto(turtle.xcor()+40*scale, turtle.ycor()-20*scale)
     turtle.goto(turtle.xcor()-50*scale, turtle.ycor())
     turtle.end_fill()
+        
+    end()
+    
+
+def santa(x=0, y=0, scale=1, suit="", hat=""):
+    """Draws Santa."""
+    
+    start(x, y)
+    
+    # Left boot
+    turtle.pendown()
+    turtle.color("black")
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor(), turtle.ycor()+10*scale)
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()-10*scale)
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor(), turtle.ycor()+10*scale)
+    
+    # Left boot fur
+    turtle.pendown()
+    turtle.color("black", "white")
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()+5*scale)
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()-5*scale)
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor()-10*scale)
+    
+    # Right boot
+    turtle.pendown()
+    turtle.color("black")
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor(), turtle.ycor()+10*scale)
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()-10*scale)
+    turtle.end_fill()
+      
+    turtle.penup()
+    turtle.goto(turtle.xcor(), turtle.ycor()+10*scale)
+    
+    # Right boot fur
+    turtle.pendown()
+    turtle.color("black", "white")
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()+5*scale)
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()-5*scale)
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor(), turtle.ycor()+5*scale)
+    
+    # Body
+    if suit != "":
+        turtle.color(suit)
+    else:
+        turtle.color("red")
+        
+    turtle.pendown()
+    
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor(), turtle.ycor()+25*scale)
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor()-10*scale)
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()-20*scale, turtle.ycor()+20*scale)
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()+10*scale)
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()-10*scale)
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()-20*scale, turtle.ycor()-20*scale)
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor()+10*scale)
+    turtle.goto(turtle.xcor(), turtle.ycor()-25*scale) # bottom left
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()+10*scale)
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()-10*scale)
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor()+20*scale)
+    
+    # Belt
+    turtle.pendown()
+    turtle.color("black")
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor(), turtle.ycor()-5*scale)
+    turtle.goto(turtle.xcor()-30*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()+5*scale)
+    turtle.end_fill()
+
+    turtle.penup()
+    turtle.goto(turtle.xcor()-15*scale, turtle.ycor()-10*scale)
+
+    # Left hand
+    turtle.pendown()
+    turtle.color("black")
+    turtle.begin_fill()
+    turtle.circle(5*scale)
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor()+60*scale, turtle.ycor())
+
+    # Right hand
+    turtle.pendown()
+    turtle.color("black")
+    turtle.begin_fill()
+    turtle.circle(5*scale)
+    turtle.end_fill()
+        
+    turtle.penup()
+    turtle.goto(turtle.xcor()-30*scale, turtle.ycor()+35*scale)
+
+    # Head
+    turtle.pendown()
+    turtle.color("black", "white")
+    turtle.begin_fill()
+    turtle.circle(10*scale)
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor()-5*scale, turtle.ycor()+7*scale)
+
+    # Left eye
+    turtle.pendown()
+    turtle.color("black")
+    turtle.begin_fill()
+    turtle.circle(2*scale)
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+
+    # Right eye
+    turtle.pendown()
+    turtle.color("black")
+    turtle.begin_fill()
+    turtle.circle(2*scale)
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor()-5*scale, turtle.ycor()+10*scale)
+    
+    # Hat
+    if hat != "":
+        turtle.color(hat)
+    elif suit != "":
+        turtle.color(suit)
+    else:
+        turtle.color("red")
+        
+    turtle.pendown()
+    
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor()+10*scale)
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor()-10*scale)
+    turtle.end_fill()
+    
+    end()
 
 
 def message(x=0, y=0, text="Merry Xmas!", size=14, colour=""):
@@ -272,16 +465,22 @@ def message(x=0, y=0, text="Merry Xmas!", size=14, colour=""):
     
     # Write message
     turtle.write(text, True, align="left", font=("Arial", size, "bold"))
+        
+    end()
 
 
 def grid():
     """Shows a 50x50 grid."""
     
     turtle.Screen().bgpic("grid.png")
+        
+    end()
     
 
 def background(colour="lightgreen"):
     """Set the background colour."""
     
     turtle.Screen().bgcolor(colour)
+        
+    end()
 

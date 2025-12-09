@@ -3,6 +3,8 @@
 
 ## Introduction
 
+'Tis the season to create festive scenes!
+
 The turtle can be given instructions.  If the turtle understands an instruction it will carry it out.  It carrys them out in order, starting at `Line 1`.  Blank lines are allowed, even encouraged to make the instructions easier to read.
 
 
@@ -10,16 +12,34 @@ The turtle can be given instructions.  If the turtle understands an instruction 
 
 Turtles understand quite a few instructions.
 
-| Instruction            | Example                            | Comment |
-| -----------            | -------                            | ------- |
-| forward()<br>fd()      | tim.forward(75)<br>tim.fd(75)      | move forward (pixels) |
-| backward()<br>bk()     | tim.backward(25)<br>tim.bk(25)     | move backward (pixels) |
-| right()<br>rt()        | tim.right(75)<br>tim.rt(75)        | turn right (degrees) |
-| left()<br>lt()         | tim.left(75)<br>tim.lt(75)         | turn left (degrees) |
-| speed()                | tim.speed(5)                       | speed: 0 to 10 |
-| home()                 | tim.home()                         | move to centre of screen |
-| setheading()<br>seth() | tim.setheading(45)<br>tim.seth(45) | direction: 0 = East |
-| goto()                 | tim.goto(20, 40)                   | move to a position (x, y) |
+| Instruction       | Comment |
+| -----------       | ------- |
+| xmas.rectangle()  | Draws a rectangle |
+| xmas.triangle()   | Draws a triangle |
+| xmas.leftTri()    | Draws a triangle |
+| xmas.rightTri()   | Draws a triangle |
+| xmas.circle()     | Draws a circle |
+| xmas.star()       | Draws a star |
+| xmas.tree()       | Draws a tree |
+| xmas.santa()      | Draws a Santa |
+| xmas.message()    | Writes a Message |
+| xmas.background() | Changes the background colour |
+| xmas.grid()       | Displays a grid |
+
+
+### rectangle()
+
+The following values can be sent to the `rectangle()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| width     | the width of the rectangle |
+| height    | the height of the rectangle |
+| colour    | the colour of the rectangle perimeter |
+| thickness | the thickness of the perimeter |
+| fill      | the colour of the inside of the ractangle |
 
 
 ### Colours
