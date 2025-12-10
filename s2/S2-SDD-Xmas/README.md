@@ -216,7 +216,7 @@ The following values can be sent to the `reindeer()` command:
 #### Example
 
 ```python
-xmas.snowman(50, -25, 1.5, "yellow", "blue", "red")
+xmas.reindeer(50, -25, 1.5, "yellow", "blue", "red")
 ```
 
 
