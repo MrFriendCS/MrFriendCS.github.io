@@ -6,6 +6,8 @@ import xmas
 
 xmas.image(1)
 
+xmas.line(50, 25, -50, -25, "purple", 6)
+
 xmas.rectangle(50, 25, 100, 40, "red", 6, "blue")
 
 xmas.triangle(-50, 25, 100, 40, "red", 6, "blue")

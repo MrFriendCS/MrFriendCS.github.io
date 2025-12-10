@@ -201,6 +201,26 @@ def circle(x=0, y=0, radius=20, colour="", thickness=0, fill=""):
     end()
 
 
+def line(x1=0, y1=0, x2=50, y2=50, colour="", thickness=0):
+    """Draws a line."""
+    
+    # Set up
+    start(x1, y1)
+    
+    # Set pen colour
+    if colour != "":
+        turtle.color(colour)
+    
+    # Set pen width
+    if thickness != 0:
+        turtle.width(thickness)
+    
+    # Draw the line
+    turtle.goto(x2, y2)
+    
+    end()
+    
+
 def star(x=0, y=0, colour="", scale=1):
     """Draws a star."""
     
@@ -337,7 +357,6 @@ def snowman(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
     turtle.goto(turtle.xcor()-5*scale, turtle.ycor()+10*scale)
     turtle.pendown()
     
-    turtle.pendown
     turtle.begin_fill()
     turtle.circle(2*scale)
     turtle.end_fill()
@@ -348,12 +367,11 @@ def snowman(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
     turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
     turtle.pendown()
       
-    turtle.pendown
     turtle.begin_fill()
     turtle.circle(2*scale)
     turtle.end_fill()
     
-    # Buttons
+    # Buttons colour
     if buttons != "":
         turtle.pencolor(buttons)
         turtle.fillcolor(buttons)
@@ -365,8 +383,7 @@ def snowman(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
     turtle.penup()
     turtle.goto(turtle.xcor()-5*scale, turtle.ycor()-20*scale)
     turtle.pendown()
-        
-    turtle.pendown
+    
     turtle.begin_fill()
     turtle.circle(2*scale)
     turtle.end_fill()
@@ -376,7 +393,6 @@ def snowman(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
     turtle.goto(turtle.xcor(), turtle.ycor()-10*scale)
     turtle.pendown()
     
-    turtle.pendown
     turtle.begin_fill()
     turtle.circle(2*scale)
     turtle.end_fill()
@@ -386,7 +402,6 @@ def snowman(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
     turtle.goto(turtle.xcor(), turtle.ycor()-10*scale)
     turtle.pendown()
     
-    turtle.pendown
     turtle.begin_fill()
     turtle.circle(2*scale)
     turtle.end_fill()
@@ -419,10 +434,15 @@ def reindeer(x=0, y=0, scale=1, fur="", legs="", eye=""):
     # Set up
     start(x, y)
     
-    
-    # Reindeer
-    turtle.pendown()
     turtle.begin_fill()
+    
+    # Legs colour
+    if legs != "":
+        turtle.pencolor(legs)
+        turtle.fillcolor(legs)
+    else:
+        turtle.pencolor("black")
+        turtle.fillcolor("black")
     
     # Back Leg
     turtle.begin_fill()
@@ -445,7 +465,15 @@ def reindeer(x=0, y=0, scale=1, fur="", legs="", eye=""):
     turtle.end_fill()
     
     #Body & Head
-    turtle.color("brown")
+    
+    # Fur colour
+    if fur != "":
+        turtle.pencolor(fur)
+        turtle.fillcolor(fur)
+    else:
+        turtle.pencolor("brown")
+        turtle.fillcolor("brown")
+    
     turtle.begin_fill()
     turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
     turtle.goto(turtle.xcor(), turtle.ycor()+30*scale)
@@ -462,8 +490,16 @@ def reindeer(x=0, y=0, scale=1, fur="", legs="", eye=""):
     turtle.goto(turtle.xcor(), turtle.ycor()+40*scale)
     
     # Eye
+    
+    # Eye colour
+    if eye != "":
+        turtle.pencolor(eye)
+        turtle.fillcolor(eye)
+    else:
+        turtle.pencolor("black")
+        turtle.fillcolor("black")
+    
     turtle.pendown()
-    turtle.color("black")
     turtle.begin_fill()
     turtle.circle(5*scale)
     turtle.end_fill()
@@ -478,7 +514,6 @@ def santa(x=0, y=0, scale=1, suit="", hat=""):
     start(x, y)
     
     # Left boot
-    turtle.pendown()
     turtle.color("black")
     turtle.begin_fill()
     turtle.goto(turtle.xcor(), turtle.ycor()+10*scale)

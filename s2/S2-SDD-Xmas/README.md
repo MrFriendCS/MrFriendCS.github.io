@@ -15,16 +15,17 @@ Turtles understand quite a few instructions.
 | Instruction       | Comment |
 | -----------       | ------- |
 | xmas.rectangle()  | Draws a rectangle |
-| xmas.triangle()   | Draws a triangle |
-| xmas.leftTri()    | Draws a triangle |
-| xmas.rightTri()   | Draws a triangle |
+| xmas.triangle()   | Draws a triangle - peak in the middle |
+| xmas.leftTri()    | Draws a triangle - peak on the left |
+| xmas.rightTri()   | Draws a triangle - peak on the right |
 | xmas.circle()     | Draws a circle |
+| xmas.line()       | Draws a line |
 | xmas.star()       | Draws a star |
 | xmas.tree()       | Draws a tree |
 | xmas.snowman()    | Draws a snowman |
 | xmas.reindeer()   | Draws a reindeer |
 | xmas.santa()      | Draws a Santa |
-| xmas.message()    | Writes a Message |
+| xmas.message()    | Writes a message |
 | xmas.background() | Changes the background colour |
 | xmas.image()      | Displays an image |
 
@@ -135,6 +136,27 @@ The following values can be sent to the `circle()` command:
 
 ```python
 xmas.circle(50, -25, 50, "red", 6, "blue")
+```
+
+
+### line()
+
+The following values can be sent to the `line()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x1        | _x_ value of the start coordinate |
+| y1        | _y_ value of the start coordinate |
+| x2        | _x_ value of the end coordinate |
+| y2        | _y_ value of the end coordinate |
+| colour    | the colour of the line |
+| thickness | the thickness of the line |
+
+
+#### Example
+
+```python
+xmas.line(50, 25, -50, -25, "purple", 6)
 ```
 
 
