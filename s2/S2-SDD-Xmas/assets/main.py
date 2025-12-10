@@ -1,3 +1,7 @@
+# Title: Xmas Scene
+# Author:
+# Date:
+
 import xmas
 
 xmas.image()
@@ -6,7 +10,7 @@ xmas.background()
 
 xmas.snowman()
 
-xmas.snowman(100, 100, 2)
+xmas.snowman(100, 100, 2, "green", "yellow", "brown", "black")
 
 """
 xmas.reindeer()

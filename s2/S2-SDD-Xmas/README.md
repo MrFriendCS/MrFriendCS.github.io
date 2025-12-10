@@ -21,10 +21,12 @@ Turtles understand quite a few instructions.
 | xmas.circle()     | Draws a circle |
 | xmas.star()       | Draws a star |
 | xmas.tree()       | Draws a tree |
+| xmas.snowman()    | Draws a snowman |
+| xmas.reindeer()   | Draws a reindeer |
 | xmas.santa()      | Draws a Santa |
 | xmas.message()    | Writes a Message |
 | xmas.background() | Changes the background colour |
-| xmas.grid()       | Displays a grid |
+| xmas.image()      | Displays an image |
 
 
 ### rectangle()
@@ -39,7 +41,52 @@ The following values can be sent to the `rectangle()` command:
 | height    | the height of the rectangle |
 | colour    | the colour of the rectangle perimeter |
 | thickness | the thickness of the perimeter |
-| fill      | the colour of the inside of the ractangle |
+| fill      | the colour of the inside the perimeter |
+
+
+### triangle()
+
+The following values can be sent to the `triangle()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| width     | the width of the triangle |
+| height    | the height of the triangle |
+| colour    | the colour of the rectangle perimeter |
+| thickness | the thickness of the perimeter |
+| fill      | the colour of the inside the perimeter |
+
+
+### leftTri()
+
+The following values can be sent to the `leftTri()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| width     | the width of the triangle |
+| height    | the height of the triangle |
+| colour    | the colour of the rectangle perimeter |
+| thickness | the thickness of the perimeter |
+| fill      | the colour of the inside the perimeter |
+
+
+### rightTri()
+
+The following values can be sent to the `rightTri()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| width     | the width of the triangle |
+| height    | the height of the triangle |
+| colour    | the colour of the rectangle perimeter |
+| thickness | the thickness of the perimeter |
+| fill      | the colour of the inside the perimeter |
 
 
 ### Colours

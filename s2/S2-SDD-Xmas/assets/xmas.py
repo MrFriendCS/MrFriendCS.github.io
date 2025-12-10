@@ -1,6 +1,6 @@
 # Title: Xmas Shapes
 # Author: Mr Friend
-# Date: 5 Dec 2025
+# Date: 10 Dec 2025
 
 # Get turtle code
 import turtle
@@ -286,32 +286,173 @@ def tree(x=0, y=0, scale=1, fir="", trunk=""):
     end()
     
 
-def snowman(x=0, y=0, scale=1, radius=20):
+def snowman(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
     """Draws a snowman."""
     
     # Set up
     start(x, y)
     
+    # Set pen colour
     turtle.color("black")
-    turtle.fillcolor("white")
     
     # Body
+    
+    # Set body fill colour
+    if body != "":
+        turtle.fillcolor(body)
+    else:
+        turtle.fillcolor("white")
+    
     turtle.begin_fill()
-    turtle.circle(radius*scale)
+    turtle.circle(20*scale)
     turtle.end_fill()
     
     turtle.penup()
-    turtle.goto(turtle.xcor(), turtle.ycor()+radius*2*scale)
+    turtle.goto(turtle.xcor(), turtle.ycor()+40*scale)
     turtle.pendown()
     
     # Head
+    
+    # Set body fill colour
+    if head != "":
+        turtle.fillcolor(head)
+    elif body != "":
+        turtle.fillcolor(body)
+    else:
+        turtle.fillcolor("white")
+    
     turtle.begin_fill()
-    turtle.circle(radius/2*scale)
+    turtle.circle(10*scale)
     turtle.end_fill()
+    
+    # Left eye
+    if eyes != "":
+        turtle.pencolor(eyes)
+        turtle.fillcolor(eyes)
+    else:
+        turtle.pencolor("black")
+        turtle.fillcolor("black")
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor()-5*scale, turtle.ycor()+10*scale)
+    turtle.pendown()
+    
+    turtle.pendown
+    turtle.begin_fill()
+    turtle.circle(2*scale)
+    turtle.end_fill()
+    
+    # Right eye
+        
+    turtle.penup()
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
+    turtle.pendown()
+      
+    turtle.pendown
+    turtle.begin_fill()
+    turtle.circle(2*scale)
+    turtle.end_fill()
+    
+    # Buttons
+    if buttons != "":
+        turtle.pencolor(buttons)
+        turtle.fillcolor(buttons)
+    else:
+        turtle.pencolor("red")
+        turtle.fillcolor("red")
+    
+    # Top button
+    turtle.penup()
+    turtle.goto(turtle.xcor()-5*scale, turtle.ycor()-20*scale)
+    turtle.pendown()
+        
+    turtle.pendown
+    turtle.begin_fill()
+    turtle.circle(2*scale)
+    turtle.end_fill()
+    
+    # Middle button   
+    turtle.penup()
+    turtle.goto(turtle.xcor(), turtle.ycor()-10*scale)
+    turtle.pendown()
+    
+    turtle.pendown
+    turtle.begin_fill()
+    turtle.circle(2*scale)
+    turtle.end_fill()
+    
+    # Bottom button   
+    turtle.penup()
+    turtle.goto(turtle.xcor(), turtle.ycor()-10*scale)
+    turtle.pendown()
+    
+    turtle.pendown
+    turtle.begin_fill()
+    turtle.circle(2*scale)
+    turtle.end_fill()
+    
     
     end()
 
 
+def reindeer(x=0, y=0, scale=1, fur="", legs="", eye=""):
+    """Draws a reindeer."""
+    
+    # Set up
+    start(x, y)
+    
+    
+    # Reindeer
+    turtle.pendown()
+    turtle.begin_fill()
+    
+    # Back Leg
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor(), turtle.ycor()-20*scale)
+    turtle.goto(turtle.xcor()-5*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()+20*scale)
+    turtle.goto(turtle.xcor()+5*scale, turtle.ycor())
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor()-25*scale, turtle.ycor())
+    
+    # Front leg
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor(), turtle.ycor()-20*scale)
+    turtle.goto(turtle.xcor()-5*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()+20*scale)
+    turtle.goto(turtle.xcor()+5*scale, turtle.ycor())
+    turtle.end_fill()
+    
+    #Body & Head
+    turtle.color("brown")
+    turtle.begin_fill()
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()+30*scale)
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()+20*scale)
+    turtle.goto(turtle.xcor()+20*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()-30*scale)    
+    turtle.goto(turtle.xcor()+30*scale, turtle.ycor())
+    turtle.goto(turtle.xcor(), turtle.ycor()-20*scale)
+    turtle.goto(turtle.xcor()-40*scale, turtle.ycor())
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor(), turtle.ycor()+40*scale)
+    
+    # Eye
+    turtle.pendown()
+    turtle.color("black")
+    turtle.begin_fill()
+    turtle.circle(5*scale)
+    turtle.end_fill()
+    
+    end()
+    
+    
 def santa(x=0, y=0, scale=1, suit="", hat=""):
     """Draws Santa."""
     
@@ -475,64 +616,6 @@ def santa(x=0, y=0, scale=1, suit="", hat=""):
     turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
     turtle.goto(turtle.xcor()-10*scale, turtle.ycor()+10*scale)
     turtle.goto(turtle.xcor()-10*scale, turtle.ycor()-10*scale)
-    turtle.end_fill()
-    
-    end()
-
-
-def reindeer(x=0, y=0, scale=1, fur="", legs="", eye=""):
-    """Draws a reindeer."""
-    
-    # Set up
-    start(x, y)
-    
-    
-    # Reindeer
-    turtle.pendown()
-    turtle.begin_fill()
-    
-    # Back Leg
-    turtle.begin_fill()
-    turtle.goto(turtle.xcor(), turtle.ycor()-20*scale)
-    turtle.goto(turtle.xcor()-5*scale, turtle.ycor())
-    turtle.goto(turtle.xcor(), turtle.ycor()+20*scale)
-    turtle.goto(turtle.xcor()+5*scale, turtle.ycor())
-    turtle.end_fill()
-    
-    turtle.penup()
-    turtle.goto(turtle.xcor()-25*scale, turtle.ycor())
-    
-    # Front leg
-    turtle.pendown()
-    turtle.begin_fill()
-    turtle.goto(turtle.xcor(), turtle.ycor()-20*scale)
-    turtle.goto(turtle.xcor()-5*scale, turtle.ycor())
-    turtle.goto(turtle.xcor(), turtle.ycor()+20*scale)
-    turtle.goto(turtle.xcor()+5*scale, turtle.ycor())
-    turtle.end_fill()
-    
-    #Body & Head
-    turtle.color("brown")
-    turtle.begin_fill()
-    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
-    turtle.goto(turtle.xcor(), turtle.ycor()+30*scale)
-    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
-    turtle.goto(turtle.xcor(), turtle.ycor()+20*scale)
-    turtle.goto(turtle.xcor()+20*scale, turtle.ycor())
-    turtle.goto(turtle.xcor(), turtle.ycor()-30*scale)    
-    turtle.goto(turtle.xcor()+30*scale, turtle.ycor())
-    turtle.goto(turtle.xcor(), turtle.ycor()-20*scale)
-    turtle.goto(turtle.xcor()-40*scale, turtle.ycor())
-    turtle.end_fill()
-    
-    turtle.penup()
-    turtle.goto(turtle.xcor(), turtle.ycor()+40*scale)
-    
-    # Eye
-    turtle.pendown()
-    turtle.color("black")
-    turtle.begin_fill()
-    turtle.circle(5*scale)
     turtle.end_fill()
     
     end()
