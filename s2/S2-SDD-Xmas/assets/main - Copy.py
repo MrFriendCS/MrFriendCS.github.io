@@ -6,9 +6,12 @@ import xmas
 
 xmas.image()
 
-xmas.background()
 
-xmas.snowperson()
+xmas.background("pink")
+
+xmas.message(-50, 25, "Hello World!", 24, "red")
+
+xmas.tree(50, 25, 0.5, "yellow", "black")
 
 xmas.snowchild(100, 100, 2, "green", "yellow", "brown", "black")
 
