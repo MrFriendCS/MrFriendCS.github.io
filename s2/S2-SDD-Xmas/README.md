@@ -144,6 +144,64 @@ The following values can be sent to the `snowman()` command:
 | head      | the colour of the head |
 
 
+### reindeer()
+
+The following values can be sent to the `reindeer()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| scale     | scale the size of the tree |
+| fur       | the colour of the fur |
+| legs      | the colour of the legs |
+| eye       | the colour of the eye |
+
+
+### santa()
+
+The following values can be sent to the `santa()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| scale     | scale the size of the tree |
+| suit      | the colour of the suit |
+| hat       | the colour of the hat |
+
+
+### message()
+
+The following values can be sent to the `message()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| text      | the text to be displayed |
+| size      | the font size |
+| colour    | the colour of the text |
+
+
+### image()
+
+The following values can be sent to the `image()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| option    | selects a different image |
+
+
+### background()
+
+The following values can be sent to the `background()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| colour    | the colour of the background |
+
+
 ## Colours
 
 Turtles can draw with lots of different colours, such as `red`, `green`, `blue`, `yellow`, etc.
