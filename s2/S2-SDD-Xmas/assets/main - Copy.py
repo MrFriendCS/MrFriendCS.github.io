@@ -6,6 +6,18 @@ import xmas
 
 xmas.image(1)
 
+xmas.rectangle(50, 25, 100, 40, "red", 6, "blue")
+
+xmas.triangle(-50, 25, 100, 40, "red", 6, "blue")
+
+xmas.leftTri(-50, -25, 100, 40, "red", 6, "blue")
+
+xmas.rightTri(50, 25, 100, 40, "red", 6, "blue")
+
+xmas.circle(50, -25, 50, "red", 6, "blue")
+
+xmas.star(50, 25, "red", 2)
+
 
 xmas.background("pink")
 
