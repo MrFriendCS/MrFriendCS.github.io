@@ -35,13 +35,20 @@ The following values can be sent to the `rectangle()` command:
 
 | Value     | Meaning |
 | -----     | ------- |
-| x         | `x` value of the start coordinate |
+| x         | _x_ value of the start coordinate |
 | y         | `y` value of the start coordinate |
 | width     | the width of the rectangle |
 | height    | the height of the rectangle |
 | colour    | the colour of the perimeter |
 | thickness | the thickness of the perimeter |
 | fill      | the colour inside the perimeter |
+
+
+#### Example
+
+```python
+xmas.rectangle(50, 25, 100, 40, "red", 6, "blue")
+```
 
 
 ### triangle()
@@ -137,7 +144,7 @@ The following values can be sent to the `snowman()` command:
 | -----     | ------- |
 | x         | `x` value of the start coordinate |
 | y         | `y` value of the start coordinate |
-| scale     | scale the size of the tree |
+| scale     | scale the size of the snowman |
 | buttons   | the colour of the buttons |
 | eyes      | the colour of the eyes |
 | body      | the colour of the body |

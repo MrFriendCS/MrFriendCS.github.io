@@ -395,6 +395,24 @@ def snowman(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
     end()
 
 
+def snowwoman(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
+    """Draws a snowwoman."""
+    
+    snowman(x, y, scale, buttons, eyes, body, head)
+    
+    
+def snowperson(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
+    """Draws a snowperson."""
+    
+    snowman(x, y, scale, buttons, eyes, body, head)
+    
+
+def snowchild(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
+    """Draws a snowperson."""
+    
+    snowman(x, y, scale/2, buttons, eyes, body, head)
+    
+
 def reindeer(x=0, y=0, scale=1, fur="", legs="", eye=""):
     """Draws a reindeer."""
     

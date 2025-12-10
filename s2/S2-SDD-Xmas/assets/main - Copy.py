@@ -8,9 +8,9 @@ xmas.image()
 
 xmas.background()
 
-xmas.snowman()
+xmas.snowperson()
 
-xmas.snowman(100, 100, 2, "green", "yellow", "brown", "black")
+xmas.snowchild(100, 100, 2, "green", "yellow", "brown", "black")
 
 """
 xmas.reindeer()
