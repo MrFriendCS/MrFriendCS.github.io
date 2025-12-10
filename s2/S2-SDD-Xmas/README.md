@@ -39,9 +39,9 @@ The following values can be sent to the `rectangle()` command:
 | y         | `y` value of the start coordinate |
 | width     | the width of the rectangle |
 | height    | the height of the rectangle |
-| colour    | the colour of the rectangle perimeter |
+| colour    | the colour of the perimeter |
 | thickness | the thickness of the perimeter |
-| fill      | the colour of the inside the perimeter |
+| fill      | the colour inside the perimeter |
 
 
 ### triangle()
@@ -54,9 +54,9 @@ The following values can be sent to the `triangle()` command:
 | y         | `y` value of the start coordinate |
 | width     | the width of the triangle |
 | height    | the height of the triangle |
-| colour    | the colour of the rectangle perimeter |
+| colour    | the colour of the perimeter |
 | thickness | the thickness of the perimeter |
-| fill      | the colour of the inside the perimeter |
+| fill      | the colour inside the perimeter |
 
 
 ### leftTri()
@@ -71,7 +71,7 @@ The following values can be sent to the `leftTri()` command:
 | height    | the height of the triangle |
 | colour    | the colour of the rectangle perimeter |
 | thickness | the thickness of the perimeter |
-| fill      | the colour of the inside the perimeter |
+| fill      | the colour inside the perimeter |
 
 
 ### rightTri()
@@ -84,12 +84,67 @@ The following values can be sent to the `rightTri()` command:
 | y         | `y` value of the start coordinate |
 | width     | the width of the triangle |
 | height    | the height of the triangle |
-| colour    | the colour of the rectangle perimeter |
+| colour    | the colour of the perimeter |
 | thickness | the thickness of the perimeter |
-| fill      | the colour of the inside the perimeter |
+| fill      | the colour inside the perimeter |
 
 
-### Colours
+### circle()
+
+The following values can be sent to the `circle()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| radius    | the width of the circle |
+| height    | the height of the circle |
+| colour    | the colour of the circumference |
+| thickness | the thickness of the circumference |
+| fill      | the colour inside the circumference |
+
+
+### star()
+
+The following values can be sent to the `star()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| colour    | the colour of the star |
+| scale     | scale the size of the star |
+
+
+### tree()
+
+The following values can be sent to the `tree()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| scale     | scale the size of the tree |
+| fir       | the colour of the fir |
+| trunk     | the colour of the trunk |
+
+
+### snowman()
+
+The following values can be sent to the `snowman()` command:
+
+| Value     | Meaning |
+| -----     | ------- |
+| x         | `x` value of the start coordinate |
+| y         | `y` value of the start coordinate |
+| scale     | scale the size of the tree |
+| buttons   | the colour of the buttons |
+| eyes      | the colour of the eyes |
+| body      | the colour of the body |
+| head      | the colour of the head |
+
+
+## Colours
 
 Turtles can draw with lots of different colours, such as `red`, `green`, `blue`, `yellow`, etc.
 
