@@ -4,16 +4,20 @@
 
 import xmas
 
-xmas.image()
+xmas.image(1)
 
 
 xmas.background("pink")
 
 xmas.message(-50, 25, "Hello World!", 24, "red")
 
-xmas.tree(50, 25, 0.5, "yellow", "black")
+xmas.santa(50, 25, 1, "green", "red")
 
-xmas.snowchild(100, 100, 2, "green", "yellow", "brown", "black")
+xmas.reindeer(50, -25, 1.5, "yellow", "blue", "red")
+
+xmas.snowman(-50, -25, 0.5, "yellow", "blue", "red", "green")
+
+xmas.tree(-50, 25, 0.5, "yellow", "black")
 
 """
 xmas.reindeer()
