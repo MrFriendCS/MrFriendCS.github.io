@@ -6,6 +6,8 @@ import xmas
 
 xmas.image(1)
 
+xmas.background("pink")
+"""
 xmas.line(50, 25, -50, -25, "purple", 6)
 
 xmas.rectangle(50, 25, 100, 40, "red", 6, "blue")
@@ -20,16 +22,17 @@ xmas.circle(50, -25, 50, "red", 6, "blue")
 
 xmas.star(50, 25, "red", 2)
 
-
-xmas.background("pink")
+"""
 
 xmas.message(-50, 25, "Hello World!", 24, "red")
 
-xmas.santa(50, 25, 1, "green", "red")
+xmas.santa(50, 25, 2, "green", "red", "pink", "purple", "blue")
 
 xmas.reindeer(50, -25, 1.5, "yellow", "blue", "red")
 
-xmas.snowman(-50, -25, 0.5, "yellow", "blue", "red", "green")
+xmas.snowwoman(-50, -25, 1, "yellow", "blue", "red", "green")
+
+xmas.snowchild()
 
 xmas.tree(-50, 25, 0.5, "yellow", "black")
 

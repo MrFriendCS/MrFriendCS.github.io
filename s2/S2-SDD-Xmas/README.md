@@ -253,12 +253,14 @@ The following values can be sent to the `santa()` command:
 | scale     | scale the size of the tree |
 | suit      | the colour of the suit |
 | hat       | the colour of the hat |
+| gloves    | the colour of the gloves |
+| boots     | the colour of the boots |
 
 
 #### Example
 
 ```python
-xmas.santa(50, 25, 1, "green", "red")
+xmas.santa(50, 25, 2, "green", "red", "pink", "purple", "blue")
 ```
 
 

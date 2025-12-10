@@ -507,14 +507,18 @@ def reindeer(x=0, y=0, scale=1, fur="", legs="", eye=""):
     end()
     
     
-def santa(x=0, y=0, scale=1, suit="", hat=""):
+def santa(x=0, y=0, scale=1, suit="", hat="", gloves="", boots="", eyes=""):
     """Draws Santa."""
     
     # Set up
     start(x, y)
     
     # Left boot
-    turtle.color("black")
+    if boots != "":
+        turtle.color(boots)
+    else:
+        turtle.color("black")
+        
     turtle.begin_fill()
     turtle.goto(turtle.xcor(), turtle.ycor()+10*scale)
     turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
@@ -538,8 +542,13 @@ def santa(x=0, y=0, scale=1, suit="", hat=""):
     turtle.goto(turtle.xcor()+10*scale, turtle.ycor()-10*scale)
     
     # Right boot
+    if boots != "":
+        turtle.color(boots)
+    else:
+        turtle.color("black")
+    
     turtle.pendown()
-    turtle.color("black")
+    
     turtle.begin_fill()
     turtle.goto(turtle.xcor(), turtle.ycor()+10*scale)
     turtle.goto(turtle.xcor()+10*scale, turtle.ycor())
@@ -605,9 +614,14 @@ def santa(x=0, y=0, scale=1, suit="", hat=""):
     turtle.penup()
     turtle.goto(turtle.xcor()-15*scale, turtle.ycor()-10*scale)
 
-    # Left hand
+    # Left glove
+    if gloves != "":
+        turtle.color(gloves)
+    else:
+        turtle.color("black")
+        
     turtle.pendown()
-    turtle.color("black")
+    
     turtle.begin_fill()
     turtle.circle(5*scale)
     turtle.end_fill()
@@ -615,9 +629,9 @@ def santa(x=0, y=0, scale=1, suit="", hat=""):
     turtle.penup()
     turtle.goto(turtle.xcor()+60*scale, turtle.ycor())
 
-    # Right hand
+    # Right glove
     turtle.pendown()
-    turtle.color("black")
+    
     turtle.begin_fill()
     turtle.circle(5*scale)
     turtle.end_fill()
@@ -636,8 +650,13 @@ def santa(x=0, y=0, scale=1, suit="", hat=""):
     turtle.goto(turtle.xcor()-5*scale, turtle.ycor()+7*scale)
 
     # Left eye
+    if eyes != "":
+        turtle.color(eyes)
+    else:
+        turtle.color("black")
+        
     turtle.pendown()
-    turtle.color("black")
+    
     turtle.begin_fill()
     turtle.circle(2*scale)
     turtle.end_fill()
