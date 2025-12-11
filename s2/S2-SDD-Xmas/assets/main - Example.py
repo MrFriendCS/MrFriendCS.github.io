@@ -4,7 +4,7 @@
 
 import xmas
 
-xmas.image(1)
+xmas.image(2)
 
 xmas.background("pink")
 """

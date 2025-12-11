@@ -712,7 +712,7 @@ def message(x=0, y=0, text="Merry Xmas!", size=14, colour=""):
 def image(option=0):
     """Shows an grid."""
     
-    noOfImages = 2
+    noOfImages = 3
     
     choice = "image" + str(option % noOfImages) + ".png"
     
