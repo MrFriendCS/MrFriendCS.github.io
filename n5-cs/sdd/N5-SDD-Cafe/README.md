@@ -3,10 +3,11 @@
 
 ## Introduction
 
-Cafe Tangasdale is a new business that will provide refreshments to visitors of Halaman Bay.  It hopes to keep costs, and mistakes, to a minimum by using technology.
+Cafe Tangasdale is a new business that will provide refreshments to visitors of Halaman Bay.
+It hopes to keep costs, and mistakes, to a minimum by using technology.
 
 
-###
+### Menu
 
 The menu will be kept simple to being with:
 
@@ -22,7 +23,7 @@ The menu will be kept simple to being with:
 ## Task
 
 Implement a solution that matches the design shown below.
-A maximum of six of each item can be ordered at a time.
+A maximum of six of each item can be ordered at a time, more would be unsafe for the staff to carry.
 
 
 ### Top Level Design (Stucture diagram)
