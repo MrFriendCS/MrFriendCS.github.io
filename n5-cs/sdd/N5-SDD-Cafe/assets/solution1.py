@@ -5,6 +5,7 @@
 # Initialise variables
 noOfItems = 0
 itemNumber = 0.0
+quantity = 0
 cost = 0.0
 total = 0.0
 
@@ -34,10 +35,12 @@ print()
 print("Enter a number for each item:")
 print(" 1 = Tea, 2 = Coffee, 3 = Can")
 print(" 4 = Toastie, 5 = Cake")
-print()
 
 # Loop for each item
 for index in range(numberOfItems):
+    
+    # Blank line
+    print()
     
     # Enter item number
     itemNumber = int(input(items[index] + " item: "))
@@ -52,11 +55,24 @@ for index in range(numberOfItems):
         # Re-enter item number
         itemNumber = int(input(items[index] + " item: "))
     
+    # Enter how many
+    quantity = int(input("How many: "))
+    
+    # Check if item number is valid
+    while quantity < 1 or quantity > 6:
+        
+        # Display error message
+        print()
+        print("Invalid. Please enter a number between 1 and 6.")
+        
+        # Re-enter how many
+        quantity = int(input("How many: "))
+    
     # Look up cost
     cost = costs[itemNumber - 1]
     
     # Update total
-    total = total + cost
+    total = total + cost * quantity
 
 # Display total
 print()
