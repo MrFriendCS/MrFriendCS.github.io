@@ -28,6 +28,9 @@ The xmas turtle understands quite a few instructions.
 | xmas.message()    | Writes a message |
 | xmas.background() | Changes the background colour |
 | xmas.image()      | Displays an image |
+| xmas.fast()       | Turtle draws quickly |
+| xmas.medium()     | Turtle draws at a medium speed |
+| xmas.slow()       | Turtle draws slowly |
 
 
 ### rectangle()
@@ -38,11 +41,11 @@ The following values can be sent to the `rectangle()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| width     | the width of the rectangle |
-| height    | the height of the rectangle |
-| colour    | the colour of the perimeter |
-| thickness | the thickness of the perimeter |
-| fill      | the colour inside the perimeter |
+| width     | Width of the rectangle |
+| height    | Height of the rectangle |
+| colour    | Colour of the perimeter |
+| thickness | Thickness of the perimeter |
+| fill      | Colour inside the perimeter |
 
 
 #### Example
@@ -60,11 +63,11 @@ The following values can be sent to the `triangle()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| width     | the width of the triangle |
-| height    | the height of the triangle |
-| colour    | the colour of the perimeter |
-| thickness | the thickness of the perimeter |
-| fill      | the colour inside the perimeter |
+| width     | Width of the triangle |
+| height    | Height of the triangle |
+| colour    | Colour of the perimeter |
+| thickness | Thickness of the perimeter |
+| fill      | Colour inside the perimeter |
 
 
 #### Example
@@ -82,11 +85,11 @@ The following values can be sent to the `leftTri()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| width     | the width of the triangle |
-| height    | the height of the triangle |
-| colour    | the colour of the rectangle perimeter |
-| thickness | the thickness of the perimeter |
-| fill      | the colour inside the perimeter |
+| width     | Width of the triangle |
+| height    | Height of the triangle |
+| colour    | Colour of the rectangle perimeter |
+| thickness | Thickness of the perimeter |
+| fill      | Colour inside the perimeter |
 
 
 #### Example
@@ -104,11 +107,11 @@ The following values can be sent to the `rightTri()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| width     | the width of the triangle |
-| height    | the height of the triangle |
-| colour    | the colour of the perimeter |
-| thickness | the thickness of the perimeter |
-| fill      | the colour inside the perimeter |
+| width     | Width of the triangle |
+| height    | Height of the triangle |
+| colour    | Colour of the perimeter |
+| thickness | Thickness of the perimeter |
+| fill      | Colour inside the perimeter |
 
 
 #### Example
@@ -126,10 +129,10 @@ The following values can be sent to the `circle()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| radius    | the width of the circle |
-| colour    | the colour of the circumference |
-| thickness | the thickness of the circumference |
-| fill      | the colour inside the circumference |
+| radius    | Width of the circle |
+| colour    | Colour of the circumference |
+| thickness | Thickness of the circumference |
+| fill      | Colour inside the circumference |
 
 
 #### Example
@@ -149,8 +152,8 @@ The following values can be sent to the `line()` command:
 | y1        | _y_ value of the start coordinate |
 | x2        | _x_ value of the end coordinate |
 | y2        | _y_ value of the end coordinate |
-| colour    | the colour of the line |
-| thickness | the thickness of the line |
+| colour    | Colour of the line |
+| thickness | Thickness of the line |
 
 
 #### Example
@@ -168,8 +171,8 @@ The following values can be sent to the `star()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| colour    | the colour of the star |
-| scale     | scale the size of the star |
+| colour    | Colour of the star |
+| scale     | Scale the size of the star |
 
 
 #### Example
@@ -187,9 +190,9 @@ The following values can be sent to the `tree()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| scale     | scale the size of the tree |
-| fir       | the colour of the fir |
-| trunk     | the colour of the trunk |
+| scale     | Scale the size of the tree |
+| fir       | Colour of the fir |
+| trunk     | Colour of the trunk |
 
 
 #### Example
@@ -207,11 +210,11 @@ The following values can be sent to the `snowman()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| scale     | scale the size of the snowman |
-| buttons   | the colour of the buttons |
-| eyes      | the colour of the eyes |
-| body      | the colour of the body |
-| head      | the colour of the head |
+| scale     | Scale the size of the snowman |
+| buttons   | Colour of the buttons |
+| eyes      | Colour of the eyes |
+| body      | Colour of the body |
+| head      | Colour of the head |
 
 
 #### Example
@@ -229,16 +232,17 @@ The following values can be sent to the `reindeer()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| scale     | scale the size of the tree |
-| fur       | the colour of the fur |
-| legs      | the colour of the legs |
-| eye       | the colour of the eye |
+| scale     | Scale the size of the tree |
+| fur       | Colour of the fur |
+| legs      | Colour of the legs |
+| eye       | Colour of the eye |
+| nose      | Colour of the nose |
 
 
 #### Example
 
 ```python
-xmas.reindeer(50, -25, 1.5, "yellow", "blue", "red")
+xmas.reindeer(50, -25, 1.5, "yellow", "blue", "red", "green")
 ```
 
 
@@ -250,11 +254,11 @@ The following values can be sent to the `santa()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| scale     | scale the size of the tree |
-| suit      | the colour of the suit |
-| hat       | the colour of the hat |
-| gloves    | the colour of the gloves |
-| boots     | the colour of the boots |
+| scale     | Scale the size of the tree |
+| suit      | Colour of the suit |
+| hat       | Colour of the hat |
+| gloves    | Colour of the gloves |
+| boots     | Colour of the boots |
 
 
 #### Example
@@ -272,9 +276,9 @@ The following values can be sent to the `message()` command:
 | -----     | ------- |
 | x         | _x_ value of the start coordinate |
 | y         | _y_ value of the start coordinate |
-| text      | the text to be displayed |
-| size      | the font size |
-| colour    | the colour of the text |
+| text      | Text to be displayed |
+| size      | Font size |
+| colour    | Colour of the text |
 
 
 #### Example
@@ -290,7 +294,7 @@ The following values can be sent to the `image()` command:
 
 | Value     | Meaning |
 | -----     | ------- |
-| option    | selects a different image |
+| option    | Selects a different image |
 
 
 #### Example
@@ -306,7 +310,7 @@ The following values can be sent to the `background()` command:
 
 | Value     | Meaning |
 | -----     | ------- |
-| colour    | the colour of the background |
+| colour    | Colour of the background |
 
 
 #### Example

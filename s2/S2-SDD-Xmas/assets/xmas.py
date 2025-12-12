@@ -428,7 +428,7 @@ def snowchild(x=0, y=0, scale=1, buttons="", eyes="", body="", head=""):
     snowman(x, y, scale/2, buttons, eyes, body, head)
     
 
-def reindeer(x=0, y=0, scale=1, fur="", legs="", eye=""):
+def reindeer(x=0, y=0, scale=1, fur="", legs="", eye="", nose=""):
     """Draws a reindeer."""
     
     # Set up
@@ -503,6 +503,27 @@ def reindeer(x=0, y=0, scale=1, fur="", legs="", eye=""):
     turtle.begin_fill()
     turtle.circle(5*scale)
     turtle.end_fill()
+    
+    # Nose
+    
+    turtle.penup()
+    turtle.goto(turtle.xcor()-10*scale, turtle.ycor()-6*scale)
+    
+    # Nose colour
+    if nose != "":
+        turtle.pencolor(nose)
+        turtle.fillcolor(nose)
+    else:
+        turtle.pencolor("black")
+        turtle.fillcolor("black")
+    
+    
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.circle(3*scale)
+    turtle.end_fill()
+    
+    
     
     end()
     
@@ -734,11 +755,16 @@ def fast():
     turtle.speed(10)
 
 
+def medium():
+    """Set the turtle speed to normal."""
+    turtle.speed(6)
+
+
 def slow():
     """Set the turtle speed to slow."""
     turtle.speed(1)
 
 
-def normal():
+def medium():
     """Set the turtle speed to normal."""
     turtle.speed(6)
