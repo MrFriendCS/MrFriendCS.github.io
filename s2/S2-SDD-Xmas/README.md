@@ -5,12 +5,12 @@
 
 'Tis the season to create festive scenes!
 
-The turtle can be given instructions.  If the turtle understands an instruction it will carry it out.  It carrys them out in order, starting at `Line 1`.  Blank lines are allowed, even encouraged to make the instructions easier to read.
+A Python turtle can be given instructions to draw on the screen.  If the turtle understands an instruction it will carry it out.  It carrys them out in order, starting at `Line 1`.  Blank lines are allowed, even encouraged to make the instructions easier to read.
 
 
-## Turtle Instructions
+## Xmas Turtle Instructions
 
-Turtles understand quite a few instructions.
+The xmas turtle understands quite a few instructions.
 
 | Instruction       | Comment |
 | -----------       | ------- |
@@ -24,7 +24,7 @@ Turtles understand quite a few instructions.
 | xmas.tree()       | Draws a tree |
 | xmas.snowman()    | Draws a snowman |
 | xmas.reindeer()   | Draws a reindeer |
-| xmas.santa()      | Draws a Santa |
+| xmas.santa()      | Draws Santa |
 | xmas.message()    | Writes a message |
 | xmas.background() | Changes the background colour |
 | xmas.image()      | Displays an image |
@@ -296,7 +296,7 @@ The following values can be sent to the `image()` command:
 #### Example
 
 ```python
-xmas.message(1)
+xmas.image(1)
 ```
 
 
@@ -320,10 +320,23 @@ xmas.background("pink")
 
 Turtles can draw with lots of different colours, such as `red`, `green`, `blue`, `yellow`, etc.
 
-For longer list of colours visit: [Turtle Colours](https://cs111.wellesley.edu/reference/colors "Turtle colors")
+For longer list of colours visit:
+[Turtle Colours](https://cs111.wellesley.edu/reference/colors "Turtle colours")
 
 
 ## Grid
 
 The grid uses cooridinates in the form __(__ ___x___, ___y___ __)__.
 The centre of the grid is __(__ ___0___, ___0___ __)__.
+
+
+## Starter Code
+
+```python
+# Title: Xmas Scene
+# Author: 
+# Date: 
+
+import xmas
+
+```
