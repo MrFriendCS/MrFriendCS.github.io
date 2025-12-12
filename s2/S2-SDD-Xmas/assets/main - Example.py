@@ -4,6 +4,8 @@
 
 import xmas
 
+xmas.fast()
+
 xmas.image(2)
 
 xmas.background("pink")

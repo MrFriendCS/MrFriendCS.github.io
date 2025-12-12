@@ -666,7 +666,7 @@ def santa(x=0, y=0, scale=1, suit="", hat="", gloves="", boots="", eyes=""):
 
     # Right eye
     turtle.pendown()
-    turtle.color("black")
+    
     turtle.begin_fill()
     turtle.circle(2*scale)
     turtle.end_fill()
@@ -728,3 +728,17 @@ def background(colour="lightgreen"):
         
     end()
 
+
+def fast():
+    """Set the turtle speed to fast."""
+    turtle.speed(10)
+
+
+def slow():
+    """Set the turtle speed to slow."""
+    turtle.speed(1)
+
+
+def normal():
+    """Set the turtle speed to normal."""
+    turtle.speed(6)
