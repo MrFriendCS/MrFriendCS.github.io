@@ -1,6 +1,6 @@
 # Title: Xmas Shapes
 # Author: Mr Friend
-# Date: 10 Dec 2025
+# Date: 14 Dec 2025
 
 # Get turtle code
 import turtle
@@ -434,8 +434,6 @@ def reindeer(x=0, y=0, scale=1, fur="", legs="", eye="", nose=""):
     # Set up
     start(x, y)
     
-    turtle.begin_fill()
-    
     # Legs colour
     if legs != "":
         turtle.pencolor(legs)
@@ -474,20 +472,23 @@ def reindeer(x=0, y=0, scale=1, fur="", legs="", eye="", nose=""):
         turtle.pencolor("brown")
         turtle.fillcolor("brown")
     
-    turtle.begin_fill()
-    turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
-    turtle.goto(turtle.xcor(), turtle.ycor()+30*scale)
+    turtle.begin_fill()    
+    
+    turtle.goto(turtle.xcor()-5*scale, turtle.ycor())
+    turtle.circle(10, -180)
+    turtle.goto(turtle.xcor()*scale, turtle.ycor()+10*scale)
+    
     turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
     turtle.goto(turtle.xcor(), turtle.ycor()+20*scale)
     turtle.goto(turtle.xcor()+20*scale, turtle.ycor())
-    turtle.goto(turtle.xcor(), turtle.ycor()-30*scale)    
-    turtle.goto(turtle.xcor()+30*scale, turtle.ycor())
-    turtle.goto(turtle.xcor(), turtle.ycor()-20*scale)
+    turtle.goto(turtle.xcor(), turtle.ycor()-30*scale)       
+    turtle.goto(turtle.xcor()+20*scale, turtle.ycor())
+    turtle.circle(10, -180)    
     turtle.goto(turtle.xcor()-40*scale, turtle.ycor())
     turtle.end_fill()
     
     turtle.penup()
-    turtle.goto(turtle.xcor(), turtle.ycor()+40*scale)
+    turtle.goto(turtle.xcor()+10*scale, turtle.ycor()+40*scale)
     
     # Eye
     
@@ -517,13 +518,10 @@ def reindeer(x=0, y=0, scale=1, fur="", legs="", eye="", nose=""):
         turtle.pencolor("black")
         turtle.fillcolor("black")
     
-    
     turtle.pendown()
     turtle.begin_fill()
     turtle.circle(3*scale)
     turtle.end_fill()
-    
-    
     
     end()
     
@@ -763,8 +761,3 @@ def medium():
 def slow():
     """Set the turtle speed to slow."""
     turtle.speed(1)
-
-
-def medium():
-    """Set the turtle speed to normal."""
-    turtle.speed(6)
