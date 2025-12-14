@@ -34,7 +34,7 @@ Database file: [Santa.db](../../../n5-cs/ddd/N5-DDD-Santa-Gifts/assets/Santa.db 
 For as long as anyone can remember, Santa has been keeping lists on paper.
 This causes the elves no end of problems when they get nibbled by a reindeer or Mrs Claus has a tidy up and throws out an old scrap of paper that Santa still needs.
 
-The elves have decided to modernise to help keep track of the data that's needed for such a massive operation.
+The elves have decided that to help keep track of the data that's needed for such a massive operation they need to help Santa modernise.
 They are starting with a small database, to help Santa with the transition, with just tables of who's been nice, or naughty, and the gifts that Santa will deliver.
 
 
@@ -42,7 +42,7 @@ They are starting with a small database, to help Santa with the transition, with
 
 Ensure that all column names are meaningful.
 
-1. Display the number of children.
+1. Display the total number of children.
 
 2. Display the number of gifts.
 
@@ -54,14 +54,14 @@ Forenames are to be alphabetical.
 5. Calculate the total cost of all the gifts.
 
 6. Santa's local currency is Norwegian Kroner, with £1 = 14.079458 kr.
-Display the total cost in Kroner, rounded to 0 decimal places.
+Display the cost of all the toys in Kroner, rounded to 0 decimal places.
 
 7. Santa estimates that overall it costs about £15 to make a toy, but Mrs Claus thinks it's more.
 Calculate the correct value.
 
 8. For each surname, display how many children have that surname.
 
-9. Display how many children have been naughty or nice.
+9. Display how many children have been nice, and how many have not.
 
 10. By surname, display how many children have been naughty or nice.
 
@@ -84,19 +84,8 @@ __NB.__ The result of one VIEW can be used in another VIEW.
 
 17. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
 
-18. Using a sub-query, ensure that all the newly regsitered naughty children only get a `Lump of coal` that costs `50p`.
-Some useful code is shwon below.
+18. Ensure that all the newly regsitered naughty children only get a `Lump of coal` that costs `50p`.
 
-``` sql
-...
-    WHERE childID IN 
-        (SELECT childID
-             FROM 
-
-                         );
-```
-
-{:start="16"}
 19. Display all the details from `Child` and `Gift` of the newly naughty children.
 Sort forenames alphabetically, and then childID from smallest to largest.
 
