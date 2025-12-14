@@ -475,20 +475,20 @@ def reindeer(x=0, y=0, scale=1, fur="", legs="", eye="", nose=""):
     turtle.begin_fill()    
     
     turtle.goto(turtle.xcor()-5*scale, turtle.ycor())
-    turtle.circle(10, -180)
-    turtle.goto(turtle.xcor()*scale, turtle.ycor()+10*scale)
+    turtle.circle(10*scale, -180)
+    turtle.goto(turtle.xcor(), turtle.ycor()+10*scale)
     
     turtle.goto(turtle.xcor()-10*scale, turtle.ycor())
     turtle.goto(turtle.xcor(), turtle.ycor()+20*scale)
     turtle.goto(turtle.xcor()+20*scale, turtle.ycor())
     turtle.goto(turtle.xcor(), turtle.ycor()-30*scale)       
     turtle.goto(turtle.xcor()+20*scale, turtle.ycor())
-    turtle.circle(10, -180)    
-    turtle.goto(turtle.xcor()-40*scale, turtle.ycor())
+    turtle.circle(10*scale, -180)    
+    turtle.goto(turtle.xcor()-30*scale, turtle.ycor())
     turtle.end_fill()
     
     turtle.penup()
-    turtle.goto(turtle.xcor()+10*scale, turtle.ycor()+40*scale)
+    turtle.goto(turtle.xcor(), turtle.ycor()+40*scale)
     
     # Eye
     
@@ -502,7 +502,7 @@ def reindeer(x=0, y=0, scale=1, fur="", legs="", eye="", nose=""):
     
     turtle.pendown()
     turtle.begin_fill()
-    turtle.circle(5*scale)
+    turtle.circle(4*scale)
     turtle.end_fill()
     
     # Nose
