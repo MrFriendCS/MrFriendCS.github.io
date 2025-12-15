@@ -3,6 +3,11 @@
 Database file: [Santa.db](../../../n5-cs/ddd/N5-DDD-Santa-Gifts/assets/Santa.db "Download file")
 
 
+## ERD
+
+![ERD 1:M:1](../../../n5-cs/ddd/N5-DDD-Santa-Gifts/assets/erd1.png)
+
+
 ## Data Dictionary
 
 ### Entity: Child
@@ -31,11 +36,6 @@ Database file: [Santa.db](../../../n5-cs/ddd/N5-DDD-Santa-Gifts/assets/Santa.db 
 | toyID     | PK    | Number |       | Y     | |
 | item      |       | Text   | 50    | Y     | |
 | cost      |       | Number |       | Y     | |
-
-
-## ERD
-
-![ERD 1:M](../../../n5-cs/ddd/N5-DDD-Santa-Gifts/assets/Diagrams/ERD-ChildGift.png)
 
 
 ## Introduction
