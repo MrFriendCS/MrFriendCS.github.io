@@ -20,16 +20,16 @@ Database file: [Santa.db](assets/Santa.db "Download file")
 | nice      |       | Boolean |       | Y     | |
 
 
-### Entity: Present
+### Entity: Gift
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
-| presentID | PK    | Number |       | Y     | |
+| giftID    | PK    | Number |       | Y     | |
 | childID   | FK    | Number |       | Y     | Exists in Child table |
-| giftID    | FK    | Number |       | Y     | Exists in Gift table |
+| giftID    | FK    | Number |       | Y     | Exists in Toy table |
 
 
-### Entity: Gift
+### Entity: Toy
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |

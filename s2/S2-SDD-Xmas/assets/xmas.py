@@ -750,7 +750,7 @@ def background(colour="lightgreen"):
 
 def fast():
     """Set the turtle speed to fast."""
-    turtle.speed(10)
+    turtle.speed(0)
 
 
 def medium():
