@@ -64,6 +64,7 @@ Sort the results alphabetically for both forename and surname.
 20,"PS5",299.00
 ```
 
+{:start="6"}
 6. Display all the records in the `Gift` table if the gift is a `LEGO Technic Lamborghini`.
 
 7. Child 98 has been very nice and will get an extra gift.
@@ -91,18 +92,18 @@ Sort the child ID from largest to smallest.
 
 14. Display the ID and forename of everyone who shares your surname.  Order the names alphbetically.
 
-13. Display the child ID, forename, gift, and gift ID everyone who shares your surname.
+15. Display the child ID, forename, gift, and gift ID everyone who shares your surname.
 Order the names alphbetically.
 
-14. When the elves aren't looking, change your presents in the `Gift` table to something you want.
+16. When the elves aren't looking, change your presents in the `Gift` table to something you want.
 Each gift must be different, be sure to change the costs at the same time.
 
-15. Without getting caught, make sure there are at least three presents for yourself in the `Gift` table.
+17. Without getting caught, make sure there are at least three presents for yourself in the `Gift` table.
 Don't steal somebody else's!
 
-16. Create a query to show all your details from the two tables.  Gifts are sorted from most to least expensive.
+18. Create a query to show all your details from the two tables.  Gifts are sorted from most to least expensive.
 
-17. The elves want a delivery list for Santa.
+19. The elves want a delivery list for Santa.
 It is to be sorted alphabetically by surname and then forename.
 The elves are insistent that ___only___ nice children are to appear on this list.
 Naughty children will be on their own 'special' list.
@@ -114,7 +115,7 @@ An example of the output is shown below:
 | 7       | Bianca    | Brotherton | Playdoh |
 | 91      | Billy     | Brotherton | Maths set |
 
-{:start="18"}
-18. Add an additional filter to the previous query so that it only shows what will be delivered to you.
+{:start="20"}
+20. Add an additional filter to the previous query so that it only shows what will be delivered to you.
 Another query might be required to make this work as you expect!
 If it is, include that SQL as well.

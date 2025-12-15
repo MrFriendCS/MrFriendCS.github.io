@@ -58,11 +58,11 @@ Ensure that all column names are meaningful.
 3. Display the full names of all children whose surnames start with `Mac` or `Mc`.
 Forenames are to be alphabetical.
 
-4. Display only the LEGO gifts.  Ensure there are no duplicates in the displayed list.
+4. Display only the LEGO gifts.
 
 5. Calculate the total cost of all the gifts.
 
-6. Santa's local currency is Norwegian Kroner, with £1 = 14.079458 kr.
+6. Santa's local currency is Norwegian Kroner, with £1 = 13.57 kr.
 Display the cost of all the toys in Kroner, rounded to 0 decimal places.
 
 7. Santa estimates that overall it costs about £15 to make a toy, but Mrs Claus thinks it's more.
@@ -75,11 +75,12 @@ Calculate the correct value.
 10. By surname, display how many children have been naughty or nice.
 
 11. Due to increased productivity, all of the costs have decreased by 5%.
-Change the price of all the gifts accordingly.
+Change the price of all the toys accordingly.
 
 14. Show the details of all the gifts to show that this change has been made.
 
-15. By chance, some children get more presents than others. Who is getting the most, and how many will they get?
+15. By chance, some children get more presents than others.
+Who is getting the most, and how many will they get?
 Only include nice children to create an output similar to the one below.
 
 | childID | Forename | Surname | No of Presents |
@@ -89,16 +90,19 @@ Only include nice children to create an output similar to the one below.
 __NB.__ The result of one VIEW can be used in another VIEW.
 
 {:start="16"}
-16. Will every child get a gift?  Display how many children will get a gift of some description.
+16. Will every child get a gift?
+Display how many children will get a gift of some description.
 
-17. Santa's elves have been watching!  Change everyone with your surname to show they've been naughty.
+17. Santa's elves have been watching!
+Change everyone with your surname to show they've been naughty.
 
-18. Ensure that all the newly regsitered naughty children only get a `Lump of coal` that costs `50p`.
+18. Ensure that all the newly regsitered naughty children only get a `Lump of coal`.
 
 19. Display all the details from `Child` and `Gift` of the newly naughty children.
 Sort forenames alphabetically, and then childID from smallest to largest.
 
-20. Some children will get a lump of coal.  Who is getting the most, and how many lumps will they get?
+20. Some children will get a lump of coal.
+Who is getting the most, and how many lumps will they get?
 Sort the names, forename and surname, alphabetically.
 
 21. Mrs Claus feels that Santa has been too generous again this year.
