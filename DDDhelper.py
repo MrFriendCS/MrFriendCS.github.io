@@ -35,17 +35,17 @@ def getForename() -> str:
     forenames = ["Aiden", "Aimee", "Alan", "Alanna", "Alexander", "Amy", "Andrew",
                  "Angus", "Anthony", "Aonghas", "Ava", "Caitlin", "Callum",
                  "Calum", "Caralisa", "Ciara", "Charlie", "Charlotte", "Copper",
-                 "Craig", "Danieal", "Daniel", "Danielle", "Darren", "Domhnall",
-                 "Dominic", "Donald", "Ealasaid", "Eilidh", "Ella", "Emily",
+                 "Craig", "Danieal", "Daniel", "Danielle", "Darren", "David",
+                 "Domhnall", "Dominic", "Donald", "Ealasaid", "Eilidh", "Ella", "Emily",
                  "Erin", "Ethan", "Fay", "Finlay", "Hannah", "Holly", "Hudson",
                  "Iain", "Iain Ruairidh", "Ian", "India", "Innes", "Isabella", "James",
-                 "Jamie", "John", "Julia", "Katie", "Kieran", "Lacey", "Laura", "Lewis",
-                 "Liam", "Lily", "Lincoln", "Maddison", "Mairead", "Mairi", "Maria",
-                 "Mason", "Michael", "Micheal", "Mirren", "Miyah", "Niamh", "Oliver",
-                 "Olivia", "Owen", "Patrick", "Niamh", "Rachel", "Robbie", "Roderick",
-                 "Ross", "Rowan", "Ruairidh", "Ryan", "Sam", "Seonaidh", "Seumas",
-                 "Scott", "Shelly", "Simon", "Sophia", "Sophie", "Stewart", "Summer",
-                 "Thomas", "Vincent", "Wendy", "Zoey"]
+                 "Jamie", "Jason", "John", "Julia", "Katie", "Kieran", "Lacey", "Laura",
+                 "Lewis", "Liam", "Lily", "Lincoln", "Maddison", "Mairead", "Mairi",
+                 "Maria", "Mason", "Michael", "Micheal", "Mirren", "Miyah", "Niamh",
+                 "Oliver", "Olivia", "Owen", "Patrick", "Niamh", "Rachel", "Robbie",
+                 "Roderick", "Ross", "Rowan", "Ruairidh", "Ryan", "Sam", "Seonaidh",
+                 "Seumas", "Scott", "Shelly", "Simon", "Sophia", "Sophie", "Stewart",
+                 "Summer", "Thomas", "Vincent", "Wendy", "Zoey"]
     
     forename = random.choice(forenames)
     

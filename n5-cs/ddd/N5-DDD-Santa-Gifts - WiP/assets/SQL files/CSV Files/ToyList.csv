@@ -1,21 +1,21 @@
-toy,price
-Lump of Coal,0.5
-Beast Lab Core Line Shark Playset,45
-Furby Purple Interactive Toy Plush,44.99
-Barbie Estate Dolls House and 3 Dolls,150
-Bitzee Interactive Digital Pet,26.15
-DesignaFriend Connie Fashion Designer Doll,30
-LEGO Star Wars Ahsoka Clone Trooper,15.2
-Nerf Elite 2.0 Double Punch Blaster,14.99
-Gabby's Dollhouse Cat Friendship Cruise Ship Playset,34.99
-MGA's Miniverse - Make it Mini Food: Dine,24.99
-Teenage Mutant Ninja Turtles Pizza Delivery Van,29.99
-Chad Valley Wooden 2 in 1 Café,25
-Chad Valley Trevor Talk Back Dino,7.5
-Little Live Pets - My Puppy's Home Dalmatian Edition,42.4
-Squishmallows Drew the Mint Dragon,40.66
-LEGO Technic Lamborghini,46.99
-LEGO Harry Potter Dobby the House-Elf Figure,18.49
-Chad Valley Wooden Pizza,5.33
-Fingerlings Monkey Pink - Harmony,11.25
-Hot Wheels Monster Trucks Ultimate Crush Yard Playset,29.99
+toyID,toy,price
+0,Lump of Coal,0.5
+1,Beast Lab Core Line Shark Playset,45
+2,Furby Purple Interactive Toy Plush,44.99
+3,Barbie Estate Dolls House and 3 Dolls,150
+4,Bitzee Interactive Digital Pet,26.15
+5,DesignaFriend Connie Fashion Designer Doll,30
+6,LEGO Star Wars Ahsoka Clone Trooper,15.2
+7,Nerf Elite 2.0 Double Punch Blaster,14.99
+8,Gabby's Dollhouse Cat Friendship Cruise Ship Playset,34.99
+9,MGA's Miniverse - Make it Mini Food: Dine,24.99
+10,Teenage Mutant Ninja Turtles Pizza Delivery Van,29.99
+11,Chad Valley Wooden 2 in 1 Café,25
+12,Chad Valley Trevor Talk Back Dino,7.5
+13,Little Live Pets - My Puppy's Home Dalmatian Edition,42.4
+14,Squishmallows Drew the Mint Dragon,40.66
+15,LEGO Technic Lamborghini,46.99
+16,LEGO Harry Potter Dobby the House-Elf Figure,18.49
+17,Chad Valley Wooden Pizza,5.33
+18,Fingerlings Monkey Pink - Harmony,11.25
+19,Hot Wheels Monster Trucks Ultimate Crush Yard Playset,29.99
