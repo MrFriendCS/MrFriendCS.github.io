@@ -40,9 +40,11 @@ Database file: [Santa.db](assets/Santa.db "Download file")
 
 ## Introduction
 
-For as long as anyone can remember, Santa has been keeping lists on paper.  This causes the elves no end of problems when they get nibbled by a reindeer or Mrs Claus has a tidy up and throws out an old scrap of paper that Santa still needs.
+For as long as anyone can remember, Santa has been keeping lists on paper.
+This causes the elves no end of problems when they get nibbled by a reindeer or Mrs Claus has a tidy up and throws out an old scrap of paper that Santa still needs.
 
-The elves have decided to modernise to help keep track of the data that's needed for such a massive operation.  They are starting with a small database, to help Santa with the transition, with just tables of who's been nice, or naughty, and the gifts that Santa will deliver.
+The elves have decided to modernise to help keep track of the data that's needed for such a massive operation.
+They are starting with a small database, to help Santa with the transition, with just tables of who's been nice, or naughty, and the gifts that Santa will deliver.
 
 
 ## Tasks
