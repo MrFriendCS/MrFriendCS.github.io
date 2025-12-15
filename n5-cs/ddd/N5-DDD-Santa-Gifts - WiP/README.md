@@ -5,11 +5,10 @@ Database file: [Santa.db](assets/Santa.db "Download file")
 
 ## ERD
 
-![ERD 1:M:1](assets/Diagrams/erd1.png)
+![ERD 1:M:1](assets/erd1.png)
 
 
 ## Data Dictionary
-
 
 ### Entity: Child
 
