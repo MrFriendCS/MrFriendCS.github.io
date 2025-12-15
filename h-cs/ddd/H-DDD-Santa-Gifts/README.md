@@ -34,7 +34,7 @@ Database file: [Santa.db](../../../n5-cs/ddd/N5-DDD-Santa-Gifts/assets/Santa.db 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
 | toyID     | PK    | Number |       | Y     | |
-| item      |       | Text   | 50    | Y     | |
+| name      |       | Text   | 50    | Y     | |
 | cost      |       | Number |       | Y     | |
 
 

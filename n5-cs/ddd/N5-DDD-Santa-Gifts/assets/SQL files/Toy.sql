@@ -1,6 +1,6 @@
 CREATE TABLE Toy (
     toyID INT NOT NULL,
-    item VARCHAR(50) NOT NULL,
+    name VARCHAR(50) NOT NULL,
     cost FLOAT NOT NULL,
     PRIMARY KEY (toyID)
 );

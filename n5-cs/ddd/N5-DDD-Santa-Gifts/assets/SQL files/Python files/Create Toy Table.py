@@ -11,7 +11,7 @@ fileOut = open("../Toy.sql", "w")
 
 table = """CREATE TABLE Toy (
     toyID INT NOT NULL,
-    item VARCHAR(50) NOT NULL,
+    name VARCHAR(50) NOT NULL,
     cost FLOAT NOT NULL,
     PRIMARY KEY (toyID)
 );"""
@@ -33,7 +33,7 @@ while line != "":
     fileOut.write("INSERT INTO Toy VALUES (")
     
     fileOut.write(       str(toyID)      + ",")  # toyID
-    fileOut.write("\"" + data[0].strip() + "\",")  # item
+    fileOut.write("\"" + data[0].strip() + "\",")  # name
     fileOut.write(       data[1].strip() + ")")  # cost
     fileOut.write(";\n")
 
