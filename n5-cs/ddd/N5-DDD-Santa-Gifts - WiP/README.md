@@ -26,14 +26,14 @@ Database file: [Santa.db](assets/Santa.db "Download file")
 | --------- | :---: | ----   | :---: | :---: | ---------- |
 | giftID    | PK    | Number |       | Y     | |
 | childID   | FK    | Number |       | Y     | Exists in Child table |
-| giftID    | FK    | Number |       | Y     | Exists in Toy table |
+| toyID     | FK    | Number |       | Y     | Exists in Toy table |
 
 
 ### Entity: Toy
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
-| giftID    | PK    | Number |       | Y     | |
+| toyID     | PK    | Number |       | Y     | |
 | item      |       | Text   | 50    | Y     | |
 | cost      |       | Number |       | Y     | |
 

@@ -1,6 +1,6 @@
-# Title: Create N5 Santa Data
+# Title: Create Santa Data
 # Author: Mr Friend
-# Date: 19 Dec 2024
+# Date: 15 Dec 2025
 
 """
 Create the data and export as CSV.
@@ -18,10 +18,9 @@ import random
 shool = "C:\\Users\\afriend1r\\AppData\\Local\\Programs\\Thonny"
 
 start1 = "C:\\Users\\afriend1r\\OneDrive - Glow Scotland\\"
-start2 = "D:\\OneDrive - Glow Scotland\\"
+start2 = "C:\\Users\\alfri\\OneDrive - Glow Scotland\\"
 
 folder1 = "GitHub\\MrFriendCS.github.io\\"
-#folder2 = "SQA - CS - N5\\DDD\\Database Files\\"  # Definitely N5 folder
 folder2 = "GitHub\\"
 
 
@@ -127,7 +126,7 @@ def createGiftData(noOfKids):
         
     # Get Gift data
     
-    fileIn = open("../CSV files/GiftList.csv", "r")
+    fileIn = open("../CSV files/ToyList.csv", "r")
     
     line = fileIn.readline()  # Ignore heading row
     line = fileIn.readline()
