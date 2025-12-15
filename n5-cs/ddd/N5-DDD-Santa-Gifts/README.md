@@ -2,6 +2,42 @@
 
 Database file: [Santa.db](assets/Santa.db "Download file")
 
+
+## ERD
+
+![ERD 1:M:1](assets/erd1.png)
+
+
+## Data Dictionary
+
+### Entity: Child
+
+| Attribute | Key   | Type    | Size  | Req'd | Validation |
+| --------- | :---: | ----    | :---: | :---: | ---------- |
+| childID   | PK    | Number  |       | Y     | |
+| firstName |       | Text    | 20    | Y     | |
+| lastName  |       | Text    | 30    | Y     | |
+| nice      |       | Boolean |       | Y     | |
+
+
+### Entity: Gift
+
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| giftID    | PK    | Number |       | Y     | |
+| childID   | FK    | Number |       | Y     | Exists in Child table |
+| toyID     | FK    | Number |       | Y     | Exists in Toy table |
+
+
+### Entity: Toy
+
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| toyID     | PK    | Number |       | Y     | |
+| item      |       | Text   | 50    | Y     | |
+| cost      |       | Number |       | Y     | |
+
+
 ## Introduction
 
 For as long as anyone can remember, Santa has been keeping lists on paper.  This causes the elves no end of problems when they get nibbled by a reindeer or Mrs Claus has a tidy up and throws out an old scrap of paper that Santa still needs.
@@ -58,29 +94,3 @@ The elves have decided to modernise to help keep track of the data that's needed
 
 {:start="18"}
 18. Add an additional filter to the previous query so that it only shows what will be delivered to you.  Another query might be required to make this work as you expect!  If it is, include that SQL as well.
-
-
-## Data Dictionary
-
-### Entity: Child
-
-| Attribute | Key   | Type    | Size  | Req'd | Validation |
-| --------- | :---: | ----    | :---: | :---: | ---------- |
-| childID   | PK    | Number  |       | Y     | |
-| firstName |       | Text    | 20    | Y     | |
-| lastName  |       | Text    | 30    | Y     | |
-| nice      |       | Boolean |       | Y     | |
-
-### Entity: Gift
-
-| Attribute | Key   | Type   | Size  | Req'd | Validation |
-| --------- | :---: | ----   | :---: | :---: | ---------- |
-| giftID    | PK    | Number |       | Y     | |
-| childID   | FK    | Number |       | Y     | Exists in Child table |
-| item      |       | Text   | 50    | Y     | |
-| cost      |       | Number |       | Y     | |
-
-
-## ERD
-
-![ERD 1:M](assets/Diagrams/ERD-ChildGift.png)

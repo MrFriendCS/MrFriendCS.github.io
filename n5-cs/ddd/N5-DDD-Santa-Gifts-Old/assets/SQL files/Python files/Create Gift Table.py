@@ -1,6 +1,6 @@
 # Title: Create Gift Table
 # Author: Mr Friend
-# Date: 15 Dec 2025
+# Date: 11 Dec 2024
 
 # Files
 fileIn = open("../CSV files/Gift.csv", "r")
@@ -12,12 +12,11 @@ fileOut = open("../Gift.sql", "w")
 table = """CREATE TABLE Gift (
     giftID INT NOT NULL,
     childID INT NOT NULL,
-    toyID INT NOT NULL,
+    item VARCHAR(50) NOT NULL,
+    cost FLOAT NOT NULL,
     PRIMARY KEY (giftID),
     FOREIGN KEY (childID)
-        REFERENCES Child(childID),
-    FOREIGN KEY (toyID)
-        REFERENCES Toy(toyID)
+        REFERENCES child(childID)
 );"""
 
 fileOut.write(table + "\n\n")
@@ -36,7 +35,8 @@ while line != "":
     
     fileOut.write(       data[0].strip() + ",")  # giftID
     fileOut.write(       data[1].strip() + ",")  # childID
-    fileOut.write(       data[2].strip() + ")")  # toyID
+    fileOut.write("\"" + data[2].strip() + "\",")  # item
+    fileOut.write(       data[3].strip() + ")")  # cost
     fileOut.write(";\n")
 
     line = fileIn.readline()

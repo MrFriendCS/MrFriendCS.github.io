@@ -1,6 +1,6 @@
-# Title: Create Santa Data
+# Title: Create N5 Santa Data
 # Author: Mr Friend
-# Date: 15 Dec 2025
+# Date: 19 Dec 2024
 
 """
 Create the data and export as CSV.
@@ -18,9 +18,10 @@ import random
 shool = "C:\\Users\\afriend1r\\AppData\\Local\\Programs\\Thonny"
 
 start1 = "C:\\Users\\afriend1r\\OneDrive - Glow Scotland\\"
-start2 = "C:\\Users\\alfri\\OneDrive - Glow Scotland\\"
+start2 = "D:\\OneDrive - Glow Scotland\\"
 
 folder1 = "GitHub\\MrFriendCS.github.io\\"
+#folder2 = "SQA - CS - N5\\DDD\\Database Files\\"  # Definitely N5 folder
 folder2 = "GitHub\\"
 
 
@@ -72,7 +73,7 @@ def getNaughtyList():
 
 def createChildData(count, naughtyList):
     """Create the data for the child table,
-    apart from nice as all children are nice."""
+apart from nice as all children are nice."""
     
     
     @dataclass
@@ -115,11 +116,35 @@ def createGiftData(noOfKids):
         """A record to represent a gift."""
         giftID: int = 0
         childID: int = 0
-        toyID: int = 0
+        gift: str = ""
+        cost: float = 0.0
         
     # Initialise local variables
+    listOfGifts = []
+    listOfCosts = []
     gifts = [Gift() for index in range(noOfKids * 2)]
+    
         
+    # Get Gift data
+    
+    fileIn = open("../CSV files/GiftList.csv", "r")
+    
+    line = fileIn.readline()  # Ignore heading row
+    line = fileIn.readline()
+
+
+    while line != "":
+    
+        data = line.split(",")
+        
+        listOfGifts = listOfGifts + [data[0].strip()]
+        listOfCosts = listOfCosts + [data[1].strip()]
+        
+        line = fileIn.readline()
+        
+    fileIn.close()
+    
+    
     # Set initial giftID value    
     giftID = 1
         
@@ -141,12 +166,13 @@ def createGiftData(noOfKids):
             childIDs.remove(childID)
             
             # Pick a random gift
-            toyID = random.randint(1, 19)
+            giftIndex = random.randint(0, len(listOfGifts)-1)
             
             # Populate record
             gifts[index].giftID = giftID
             gifts[index].childID = childID
-            gifts[index].toyID = toyID
+            gifts[index].gift = listOfGifts[giftIndex]
+            gifts[index].cost = listOfCosts[giftIndex]
             
             # Increment giftID
             giftID = giftID + 1
@@ -204,7 +230,8 @@ def naughtyKids(children, gifts, naughtyList):
     for index in range(len(gifts)):
         
         if gifts[index].childID in naughtyIDs:
-            gifts[index].toyID = 0
+            gifts[index].gift = "Lump of coal"
+            gifts[index].cost = 0.50
             
                       
     return children, gifts
@@ -235,13 +262,14 @@ def writeGiftCSV(gifts):
     file = open("../CSV files/Gift.csv", "w")
     
     # Headers
-    file.write("giftID,childID,toyID\n")
+    file.write("giftID,childID,gift,cost\n")
     
     # Loop for each gift
     for gift in gifts:
         file.write(str(gift.giftID) + ",")
         file.write(str(gift.childID) + ",")
-        file.write(str(gift.toyID) + "\n")
+        file.write(    gift.gift + ",")
+        file.write(str(gift.cost) + "\n")
         
     file.close()
 
