@@ -14,12 +14,21 @@ Database file: [Santa.db](../../../n5-cs/ddd/N5-DDD-Santa-Gifts/assets/Santa.db 
 | lastName  |       | Text    | 30    | Y     | |
 | nice      |       | Boolean |       | Y     | |
 
+
 ### Entity: Gift
 
 | Attribute | Key   | Type   | Size  | Req'd | Validation |
 | --------- | :---: | ----   | :---: | :---: | ---------- |
 | giftID    | PK    | Number |       | Y     | |
 | childID   | FK    | Number |       | Y     | Exists in Child table |
+| toyID     | FK    | Number |       | Y     | Exists in Toy table |
+
+
+### Entity: Toy
+
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| toyID     | PK    | Number |       | Y     | |
 | item      |       | Text   | 50    | Y     | |
 | cost      |       | Number |       | Y     | |
 
