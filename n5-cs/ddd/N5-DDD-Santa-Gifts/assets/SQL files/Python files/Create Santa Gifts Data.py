@@ -21,7 +21,8 @@ start1 = "C:\\Users\\afriend1r\\OneDrive - Glow Scotland\\"
 start2 = "D:\\OneDrive - Glow Scotland\\"
 
 folder1 = "GitHub\\MrFriendCS.github.io\\"
-folder2 = "SQA - CS - N5\\DDD\\Database Files\\"  # Definately N5 folder
+#folder2 = "SQA - CS - N5\\DDD\\Database Files\\"  # Definitely N5 folder
+folder2 = "GitHub\\"
 
 
 # Check if directory exists

@@ -54,7 +54,7 @@ How many: 1
 Third item: 4
 How many: 3
 
-Order total: £12.25
+Order total: £12.75
 
 Only Bitcoin accepted
 =====================
