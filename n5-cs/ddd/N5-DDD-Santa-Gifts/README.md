@@ -96,12 +96,12 @@ Sort the child ID from largest to smallest.
 Order the names alphbetically.
 
 16. When the elves aren't looking, change your presents in the `Gift` table to something you want.
-Each gift must be different, be sure to change the costs at the same time.
 
 17. Without getting caught, make sure there are at least three presents for yourself in the `Gift` table.
 Don't steal somebody else's!
 
-18. Create a query to show all your details from the two tables.  Gifts are sorted from most to least expensive.
+18. Create a query to show all your details from all the tables.
+Toys are to be sorted from most to least expensive.
 
 19. The elves want a delivery list for Santa.
 It is to be sorted alphabetically by surname and then forename.
@@ -109,7 +109,7 @@ The elves are insistent that ___only___ nice children are to appear on this list
 Naughty children will be on their own 'special' list.
 An example of the output is shown below:
 
-| childId | firstName | lastName   | item |
+| childId | firstName | lastName   | name |
 | ------- | --------  | -------    | ---- |
 | 173     | David     | Best       | Marbles |
 | 7       | Bianca    | Brotherton | Playdoh |
