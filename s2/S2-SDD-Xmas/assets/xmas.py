@@ -733,9 +733,15 @@ def image(option=0):
     
     noOfImages = 3
     
-    choice = "image" + str(option % noOfImages) + ".png"
+    if option >= 0:
     
-    turtle.Screen().bgpic(choice)
+        choice = "image" + str(option % noOfImages) + ".png"
+        
+        turtle.Screen().bgpic(choice)
+    
+    else:
+        
+        turtle.Screen().bgpic("nopic")
         
     end()
     
@@ -761,3 +767,8 @@ def medium():
 def slow():
     """Set the turtle speed to slow."""
     turtle.speed(1)
+    
+    
+def startAgain():
+    """Clears the screen."""
+    turtle.clear()

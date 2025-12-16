@@ -9,7 +9,7 @@ xmas.fast()
 xmas.image(2)
 
 xmas.background("pink")
-"""
+
 xmas.line(50, 25, -50, -25, "purple", 6)
 
 xmas.rectangle(50, 25, 100, 40, "red", 6, "blue")
@@ -24,7 +24,8 @@ xmas.circle(50, -25, 50, "red", 6, "blue")
 
 xmas.star(50, 25, "red", 2)
 
-"""
+xmas.startAgain()
+xmas.image(-1)
 
 xmas.message(-50, 25, "Hello World!", 24, "red")
 

@@ -31,6 +31,7 @@ The xmas turtle understands quite a few instructions.
 | xmas.fast()       | Turtle draws quickly |
 | xmas.medium()     | Turtle draws at a medium speed |
 | xmas.slow()       | Turtle draws slowly |
+| xmas.startAgain() | Clears the screen |
 
 
 ### rectangle()
@@ -294,7 +295,7 @@ The following values can be sent to the `image()` command:
 
 | Value     | Meaning |
 | -----     | ------- |
-| option    | Selects a different image |
+| option    | Selects a different image: -1 removes image |
 
 
 #### Example
