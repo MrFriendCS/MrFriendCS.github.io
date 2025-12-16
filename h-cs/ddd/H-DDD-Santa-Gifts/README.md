@@ -58,7 +58,7 @@ Ensure that all column names are meaningful.
 3. Display the full names of all children whose surnames start with `Mac` or `Mc`.
 Forenames are to be alphabetical.
 
-4. Display only the LEGO gifts.
+4. Display only the LEGO toys.
 
 5. Calculate the total cost of all the gifts.
 
