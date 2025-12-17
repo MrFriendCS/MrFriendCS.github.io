@@ -3,9 +3,13 @@
 
 ## Introduction
 
-Pontoon is a popular card game, which is also known as Spanish 21 and Blackjack. It’s usually played with between two and eight players.
+Pontoon is a popular card game, which is also known as Spanish 21 and Blackjack. 
+It’s usually played with between two and eight players.
 
-Pontoon uses standard decks of 52 playing cards and the aim is to beat the dealer by having a hand closer to 21 than the dealer without going bust.  A total of more than 21 is bust.
+Pontoon uses a standard deck of playing cards: 2-10, Jack, Queen, King, and Ace.
+Picture cards are worth 10, and an ace can be 1 or 11.
+The aim is to beat the dealer by having a hand closer to 21 than the dealer, without going bust.
+A more than 21 is bust!
 
 
 ## Task
@@ -25,6 +29,7 @@ Loop 2 times
     Pick a random card value from 2 to 11
 
     If card value is 11 and total score > 10
+
         Set card value to 1
 
     End if
@@ -48,13 +53,17 @@ Start conditional loop for twist and total < 21
     End if
 
     Display card value
-    
+
     Add card value to total score
 
     If total score > 21
+
         Display "Bust!"
+
     Else
+
         Get valid stick or twist from user
+
     End if
 
 End conditional loop
