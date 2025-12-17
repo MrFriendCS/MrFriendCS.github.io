@@ -22,49 +22,67 @@ initialise twist answer
 
 Loop 2 times
 
-    Pick a random card value from 1 to 13
-    
-    If card value is > 10
-        Set card value to 10
-    
-    Else if card value is 1 and total score <= 10
-        Set card value to 11
-        
+    Pick a random card value from 2 to 11
+
+    If card value is 11 and total score > 10
+        Set card value to 1
+
     End if
-    
+
     Display card value
-    
+
     Add card value to total score
-    
+
 End loop
 
 Get valid stick or twist from user
 
 Start conditional loop for twist and total < 21
 
-    Pick a random card value from 1 to 13
-    
-    If card value is > 10
-        Set card value to 10
-    
-    Else if card value is 1 and total score <= 10
-        Set card value to 11
-        
+    Pick a random card value from 2 to 11
+
+    If card value is 11 and total score > 10
+
+        Set card value to 1
+
     End if
 
     Display card value
-
+    
     Add card value to total score
 
-    If total score <= 21
-        Get stick or twist from user
-    Else
+    If total score > 21
         Display "Bust!"
+    Else
+        Get valid stick or twist from user
     End if
-    
-    Get valid stick or twist from user
 
 End conditional loop
 
 Display total score
+```
+
+
+## User Interface
+
+An example of the expected user interface is shown below, with some possible input and output values.
+
+```
+Craigston Casino
+    Pontoon!
+----------------
+
+Card 1: 10
+Card 2: 2
+
+Stick or twist? t
+
+You drew a 9
+
+Stick or twist? s
+
+You scored 21
+
+www.gambleaware.org
+===================
 ```

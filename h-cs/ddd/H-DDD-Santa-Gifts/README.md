@@ -77,9 +77,9 @@ Calculate the correct value.
 11. Due to increased productivity, all of the costs have decreased by 5%.
 Change the price of all the toys accordingly.
 
-14. Show the details of all the gifts to show that this change has been made.
+12. Show the details of all the gifts to show that this change has been made.
 
-15. By chance, some children get more presents than others.
+13. By chance, some children get more presents than others.
 Who is getting the most, and how many will they get?
 Only include nice children to create an output similar to the one below.
 
@@ -89,28 +89,28 @@ Only include nice children to create an output similar to the one below.
 
 __NB.__ The result of one VIEW can be used in another VIEW.
 
-{:start="16"}
-16. Will every child get a gift?
+{:start="14"}
+14. Will every child get a gift?
 Display how many children will get a gift of some description.
 
-17. Santa's elves have been watching!
+15. Santa's elves have been watching!
 Change everyone with your surname to show they've been naughty.
 
-18. Ensure that all the newly regsitered naughty children only get a `Lump of coal`.
+16. Ensure that all the newly regsitered naughty children only get a `Lump of coal`.
 
-19. Display all the details from `Child` and `Gift` of the newly naughty children.
+17. Display all the details from `Child` and `Gift` of the newly naughty children.
 Sort forenames alphabetically, and then childID from smallest to largest.
 
-20. Some children will get a lump of coal.
+18. Some children will get a lump of coal.
 Who is getting the most, and how many lumps will they get?
 Sort the names, forename and surname, alphabetically.
 
-21. Mrs Claus feels that Santa has been too generous again this year.
+19. Mrs Claus feels that Santa has been too generous again this year.
 Replace the most expensive gift(s) with the following gift:
 
 | gift                                   | cost |
 | ----                                   | ---- |
 | Squishmallows Squish-a-Longs - 14 Pack | 18.00 |
 
-{:start="22"}
-22. Write the SQL to show the modified gift records.
+{:start="20"}
+20. Write the SQL to show the modified gift records.
