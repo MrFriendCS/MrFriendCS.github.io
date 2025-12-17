@@ -9,7 +9,7 @@ It’s usually played with between two and eight players.
 Pontoon uses a standard deck of playing cards: 2-10, Jack, Queen, King, and Ace.
 Picture cards are worth 10, and an ace can be 1 or 11.
 The aim is to beat the dealer by having a hand closer to 21 than the dealer, without going bust.
-A more than 21 is bust!
+A score of more than 21 is bust!
 
 
 ## Task
