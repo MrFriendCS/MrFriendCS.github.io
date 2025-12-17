@@ -74,7 +74,10 @@ Display total score
 
 ## User Interface
 
-An example of the expected user interface is shown below, with some possible input and output values.
+Examples of the expected user interface are shown below, with some possible input and output values.
+
+
+### Example 1
 
 ```
 Craigston Casino
@@ -91,6 +94,33 @@ You drew a 9
 Stick or twist? s
 
 You scored 21
+
+www.gambleaware.org
+===================
+```
+
+
+### Example 2
+
+```
+Craigston Casino
+    Pontoon!
+----------------
+
+Card 1: 4
+Card 2: 9
+
+Stick or twist? t
+
+You drew a 1
+
+Stick or twist? t
+
+You drew a 8
+
+Bust!
+
+You scored 22
 
 www.gambleaware.org
 ===================
