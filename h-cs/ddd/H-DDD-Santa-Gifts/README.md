@@ -73,7 +73,14 @@ Calculate the correct value.
 9. Display how many children have been nice, and how many have not.
 
 10. By surname, display how many children have been naughty or nice.
+Create an output similar to the one below.
 
+| Naughty / Nice | Number of Children |
+| -------------- | ------------------ |
+| 0              | 17 |
+| 1              | 183 |
+
+{:start="11"}
 11. Due to increased productivity, all of the costs have decreased by 5%.
 Change the price of all the toys accordingly.
 

@@ -52,13 +52,13 @@ SELECT lastName, COUNT(*) AS Children
 
 
 -- Task 9 - Naughty / Nice with count
-SELECT nice, COUNT(*) AS Children
+SELECT nice AS [Naughty / Nice], COUNT(*) AS [Number of Children]
     FROM Child
     GROUP BY nice;
 
 
 -- Task 10 - Suranems and naughty / nice with count
-SELECT lastName, nice, COUNT(*) AS Children
+SELECT lastName AS Surname, nice AS [Naughty / Nice], COUNT(*) AS [Number of Children]
     FROM Child
     GROUP BY lastName, nice;
 
