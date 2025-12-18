@@ -110,8 +110,8 @@ Some useful code is shwon below.
 ...
     WHERE childID IN 
         (SELECT childID
-             FROM 
-             ...         );
+            FROM ...
+                        );
 ```
 
 {:start="17"}
