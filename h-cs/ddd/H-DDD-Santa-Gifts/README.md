@@ -106,9 +106,8 @@ Change everyone with your surname to show they've been naughty.
 16. Ensure that all the newly regsitered naughty children only get a `Lump of coal`.
 Some useful code is shwon below.
 
-``` sql
+```sql
 ...
-    ...
     WHERE childID IN 
         (SELECT childID
              FROM 
