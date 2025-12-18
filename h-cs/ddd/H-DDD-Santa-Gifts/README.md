@@ -99,6 +99,7 @@ __NB.__ The result of one VIEW can be used in another VIEW.
 {:start="14"}
 14. Will every child get a gift?
 Display how many children will get a gift of some description.
+Coal is not a gift!
 
 15. Santa's elves have been watching!
 Change everyone with your surname to show they've been naughty.
