@@ -105,7 +105,7 @@ Coal is not a gift!
 Change everyone with your surname to show they've been naughty.
 
 16. Ensure that all the newly regsitered naughty children only get a `Lump of coal`.
-Some useful code is shwon below.
+Some useful code, for a sub-query, is shown below.
 
 ```sql
 ...

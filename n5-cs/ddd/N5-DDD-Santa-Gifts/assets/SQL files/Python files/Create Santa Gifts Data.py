@@ -88,18 +88,36 @@ def createChildData(count, naughtyList):
     children = [Child() for index in range(count)]
     forename = ""
     surname = ""
+    validName = False
     
     # Loop for each child
     for index in range(count):
         children[index].childID = index + 1
         
-        forename = DDDhelper.getForename()
-        surname = DDDhelper.getSurname()
+        # Ensure forename and surname are not the same
+        while not validName:
         
-        while [forename, surname] in naughtyList:
             forename = DDDhelper.getForename()
             surname = DDDhelper.getSurname()
             
+            if forename != surname:
+                
+                validName = True
+        
+        while [forename, surname] in naughtyList:
+            
+            validName = False
+            
+            # Ensure forename and surname are not the same
+            while not validName:
+                
+                forename = DDDhelper.getForename()
+                surname = DDDhelper.getSurname()
+                
+                if forename != surname:
+                
+                    validName = True
+        
         children[index].first = forename
         children[index].last = surname
      

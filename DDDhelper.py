@@ -1,6 +1,6 @@
 # Title: DDD Helper
 # Author: Mr Friend
-# Date: 13 Nov 2025
+# Date: 18 Dec 2025
 
 """Functions to help create data for N5 and Higher DDD tasks.""" 
 
@@ -32,20 +32,31 @@ import random
 def getForename() -> str:
     """Pick a random forename."""
     
-    forenames = ["Aiden", "Aimee", "Alan", "Alanna", "Alexander", "Amy", "Andrew",
-                 "Angus", "Anthony", "Aonghas", "Ava", "Caitlin", "Callum",
-                 "Calum", "Caralisa", "Ciara", "Charlie", "Charlotte", "Copper",
-                 "Craig", "Danieal", "Daniel", "Danielle", "Darren", "David",
-                 "Domhnall", "Dominic", "Donald", "Ealasaid", "Eilidh", "Ella", "Emily",
-                 "Erin", "Ethan", "Fay", "Finlay", "Hannah", "Holly", "Hudson",
-                 "Iain", "Iain Ruairidh", "Ian", "India", "Innes", "Isabella", "James",
-                 "Jamie", "Jason", "John", "Julia", "Katie", "Kieran", "Lacey", "Laura",
-                 "Lewis", "Liam", "Lily", "Lincoln", "Maddison", "Mairead", "Mairi",
-                 "Maria", "Mason", "Michael", "Micheal", "Mirren", "Miyah", "Niamh",
-                 "Oliver", "Olivia", "Owen", "Patrick", "Niamh", "Rachel", "Robbie",
-                 "Roderick", "Ross", "Rowan", "Ruairidh", "Ryan", "Sam", "Seonaidh",
-                 "Seumas", "Scott", "Shelly", "Simon", "Sophia", "Sophie", "Stewart",
-                 "Summer", "Thomas", "Vincent", "Wendy", "Zoey"]
+    forenames = ["Adam", "Aiden", "Aimee", "Alan", "Alanna", "Alexander",
+                 "Alison", "Alistair", "Amy", "Andrew", "Angela", "Angus",
+                 "Anne", "Anthony", "Aonghas", "Ava", "Barbara", "Brian",
+                 "Caitlin", "Callum", "Calum", "Caralisa", "Carol", "Catherine",
+                 "Charles", "Charlie", "Charlotte", "Christ", "Christine", "Ciara",
+                 "Claire", "Colin", "Copper", "Craig", "Danieal", "Daniel",
+                 "Danielle", "Darren", "David", "Derek", "Domhnall", "Dominic",
+                 "Donald", "Douglas", "Ealasaid", "Eilidh", "Elaine", "Elizabeth",
+                 "Ella", "Emily", "Emma", "Erin", "Ethan", "Fay", "Finlay",
+                 "Fiona", "Gary", "George", "Gillian", "Gordon", "Graham",
+                 "Hannah", "Heather", "Helen", "Holly", "Hudson", "Hugh", "Iain",
+                 "Iain Ruairidh", "Ian", "India", "Innes", "Isabella", "James",
+                 "Jamie", "Jane", "Janet", "Jason", "Jean", "Jennifer", "Joan",
+                 "John", "JosephJulia", "Julie", "Karen", "Katie", "Keith", "Kevin",
+                 "Kieran", "Lacey", "Laura", "Lewis", "Liam", "Lily", "Lincoln",
+                 "Linda", "Lisa", "Lorna", "Louise", "Lynn", "Maddison", "Mairead",
+                 "Mairi", "Margaret", "Maria", "Mark", "Martin", "Mary", "Mason",
+                 "Matthew", "Maureen", "Michael", "Micheal", "Michelle", "Mirren",
+                 "Miyah", "Neil", "Niamh", "Nicola", "Oliver", "Olivia", "Owen",
+                 "Pamela", "Patricia", "Patrick", "Paul", "Peter", "Philip",
+                 "Rachel", "Richard", "Robbie", "Robert", "Roderick", "Ross",
+                 "Rowan", "Ruairidh", "Ryan", "Sam", "Sandra", "Sarah", "Scott",
+                 "Seonaidh", "Seumas", "Sharon", "Shelly", "Simon", "Sophia",
+                 "Sophie", "Stephen", "Steven", "Stewart", "Stuart", "Summer",
+                 "Susan", "Thomas", "Vincent", "Wendy", "William", "Zoey"]
     
     forename = random.choice(forenames)
     
@@ -55,18 +66,27 @@ def getForename() -> str:
 def getSurname() -> str:
     """Pick a random surname."""
     
-    surnames = ["Allan", "Beaton", "Blake", "Blackie", "Boyd", "Brown",
-                "Campbell", "Clark", "Daly", "Davidson", "Docherty",
-                "Ferguson", "Friend", "Galbraith", "Gillies", "Grant",
-                "Henderson", "Howart", "Irving", "Johnson", "Jones",
-                "Kearney", "MacArthur", "MacDonald", "MacDougall",
-                "Macpherson", "MacIain", "MacIsaac", "MacKechnie",
-                "MacKinnon", "MacLean", "MacLeod", "MacNeil", "Manford",
-                "McGuire", "McIntyre", "Millar", "Mitchell", "Monk",
-                "Nicholson", "O'Brien", "O'Carroll", "Osborne", "Paterson",
-                "Peters", "Robinson", "Robertson", "Scott", "Simpson",
-                "Small", "Smiley", "Smith", "Smyth", "Stewart", "Stokes",
-                "Swinney", "Thomson", "Walker", "Wilson", "Young"]
+    forenames = ["Allan", "Anderson", "Austin", "Baker", "Barton", "Beaton",
+                 "Bell", "Berry", "Black", "Blackie", "Blake", "Boyd", "Brown",
+                 "Burgess", "Cameron", "Campbell", "Clark", "Coleman", "Cooper",
+                 "Daly", "Davidson", "Davies", "Docherty", "Duncan", "Edwards",
+                 "Evans", "Ferguson", "Fraser", "Friend", "Frost", "Galbraith",
+                 "Gibson", "Gillies", "Goodwin", "Graham", "Grant", "Gray",
+                 "Green", "Griffin", "Hamilton", "Hardy", "Hawkings", "Henderson",
+                 "Hewitt", "Higgins", "Hill", "Howart", "Hughes", "Hunter",
+                 "Irving", "Jackson", "Johnston", "Jones", "Kearney", "Kelly",
+                 "Kennedy", "Kerr", "Lambert", "MacArthur", "MacDonald",
+                 "MacDougall", "MacIain", "MacIsaac", "MacKechnie", "MacKenzie",
+                 "MacKinnon", "MacLean", "MacLeod", "MacNeil", "Mackay",
+                 "Macpherson", "Manford", "Marshall", "Martin", "McGuire",
+                 "McIntyre", "Miller", "Mitchell", "Monk", "Moore", "Morrison",
+                 "Murray", "Newton", "Nicholson", "O'Brien", "O'Carroll",
+                 "Osborne", "Paterson", "Peters", "Porter", "Reid", "Roberts",
+                 "Robertson", "Robinson", "Ross", "Russell", "Scott", "Sharp",
+                 "Shepherd", "Simpson", "Small", "Smiley", "Smith", "Smyth",
+                 "Stewart", "Stokes", "Stone", "Swinney", "Taylor", "Thomas",
+                 "Thompson", "Thomson", "Turner", "Walker", "Wallace", "Ward",
+                 "Warren", "Watson", "Wilson", "Wood", "Wright", "Yates", "Young"]
     
     surname = random.choice(surnames)
     
