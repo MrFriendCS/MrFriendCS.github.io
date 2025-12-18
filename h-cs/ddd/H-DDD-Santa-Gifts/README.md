@@ -104,7 +104,18 @@ Display how many children will get a gift of some description.
 Change everyone with your surname to show they've been naughty.
 
 16. Ensure that all the newly regsitered naughty children only get a `Lump of coal`.
+Some useful code is shwon below.
 
+``` sql
+...
+    ...
+    WHERE childID IN 
+        (SELECT childID
+             FROM 
+             ...         );
+```
+
+{:start="17"}
 17. Display all the details from `Child` and `Gift` of the newly naughty children.
 Sort forenames alphabetically, and then childID from smallest to largest.
 
