@@ -12,7 +12,7 @@ File: [Practise.db](assets/Practise.db "Download file")
 | Attribute | Key   | Type    | Size  | Req'd | Validation |
 | --------- | :---: | ----    | :---: | :---: | ---------- |
 | rowID     | PK    | Number  |       | Y     |            |
-| colour    |       | Text    | 10    | N     | Length: >= 3 |
+| colour    |       | Text    | 10    | N     | Length >= 3 |
 | score     |       | Number  |       | N     | Range: >= 0 and <= 100 |
 | height    |       | Number  |       | Y     | Range: >= 1.0 and <= 2.5 |
 | Date      |       | Date    |       | N     | Range: >= 1900-01-01 and <= 2024-12-31 |
@@ -25,7 +25,7 @@ File: [Practise.db](assets/Practise.db "Download file")
 | Attribute | Key   | Type    | Size  | Req'd | Validation |
 | --------- | :---: | ----    | :---: | :---: | ---------- |
 | pupilID   | PK    | Number  |       | Y     |            |
-| addressID | FK    | Number  |       | N     | Exists in address table |
+| addressID | FK    | Number  |       | N     | Exists addressID in address table |
 | firstName |       | Text    | 20    | Y     |            |
 | lastName  |       | Text    | 30    | Y     |            |
 | dob       |       | Date    |       | Y     |            |
@@ -40,7 +40,7 @@ File: [Practise.db](assets/Practise.db "Download file")
 | addressID | PK    | Number |       | Y     |            |
 | firstLine |       | Text   | 30    | Y     |            |
 | town      |       | Text   | 30    | Y     |            |
-| postcode  |       | Text   | 8     | Y     | Length: >= 6 |
+| postcode  |       | Text   | 8     | Y     | Length >= 6 |
 | phone     |       | Text   | 12    | N     |            |
 
 
@@ -74,7 +74,7 @@ File: [Practise.db](assets/Practise.db "Download file")
 | Attribute  | Key   | Type   | Size  | Req'd | Validation |
 | ---------  | :---: | ----   | :---: | :---: | ---------- |
 | journeyID  | PK    | Number |       | Y     |            |
-| taxiID     | FK    | Number |       | Y     | Exists in taxi |
+| taxiID     | FK    | Number |       | Y     | Exists taxiID in taxi |
 | pickUpDate |       | Date   |       | N     |            |
 | pickUpTime |       | Time   |       | N     |            |
 | pax        |       | Number |       | N     |            |
