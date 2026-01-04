@@ -15,7 +15,7 @@ File: [Practise.db](assets/Practise.db "Download file")
 | colour    |       | Text    | 10    | N     | Length >= 3 |
 | score     |       | Number  |       | N     | Range: >= 0 and <= 100 |
 | height    |       | Number  |       | Y     | Range: >= 1.0 and <= 2.5 |
-| Date      |       | Date    |       | N     | Range: >= 1900-01-01 and <= 2024-12-31 |
+| Date      |       | Date    |       | N     | Range: >= 1900-01-01 and <= 2025-12-31 |
 | Time      |       | Time    |       | N     | Range: >= 08:00:00 and <= 16:00:00 |
 | nice      |       | Boolean |       | Y     |            |
 
