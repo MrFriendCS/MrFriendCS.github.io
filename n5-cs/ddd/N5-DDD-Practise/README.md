@@ -22,26 +22,26 @@ File: [Practise.db](assets/Practise.db "Download file")
 
 ### Entity: pupil
 
-| Attribute  | Key   | Type    | Size  | Req'd | Validation |
-| ---------  | :---: | ----    | :---: | :---: | ---------- |
-| pupil_id   | PK    | Number  |       | Y     |            |
-| address_id | FK    | Number  |       | N     | Exists in address table |
-| first_name |       | Text    | 20    | Y     |            |
-| last_name  |       | Text    | 30    | Y     |            |
-| dob        |       | Date    |       | Y     |            |
-| age        |       | Number  |       | Y     | Range: >= 0 |
-| enrolled   |       | Boolean |       | Y     |            |
+| Attribute | Key   | Type    | Size  | Req'd | Validation |
+| --------- | :---: | ----    | :---: | :---: | ---------- |
+| pupilID   | PK    | Number  |       | Y     |            |
+| addressID | FK    | Number  |       | N     | Exists in address table |
+| firstName |       | Text    | 20    | Y     |            |
+| lastName  |       | Text    | 30    | Y     |            |
+| dob       |       | Date    |       | Y     |            |
+| age       |       | Number  |       | Y     | Range: >= 0 |
+| enrolled  |       | Boolean |       | Y     |            |
 
 
 ### Entity: address
 
-| Attribute  | Key   | Type   | Size  | Req'd | Validation |
-| ---------  | :---: | ----   | :---: | :---: | ---------- |
-| address_id | PK    | Number |       | Y     |            |
-| first_line |       | Text   | 30    | Y     |            |
-| town       |       | Text   | 30    | Y     |            |
-| postcode   |       | Text   | 8     | Y     | Length: >= 6 |
-| phone      |       | Text   | 12    | N     |            |
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| addressID | PK    | Number |       | Y     |            |
+| firstLine |       | Text   | 30    | Y     |            |
+| town      |       | Text   | 30    | Y     |            |
+| postcode  |       | Text   | 8     | Y     | Length: >= 6 |
+| phone     |       | Text   | 12    | N     |            |
 
 
 ### Entity: marathon
