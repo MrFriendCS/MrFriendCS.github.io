@@ -26,4 +26,4 @@ and sort these details into descending order of `paymentDueDate`.
 7. Display the `forename`, `surname` and `customerNo` of all the customers with a `customerNo` 
 greater than _110_.  Sort the details into alphabetical order of `forename`.
 8. Search the database to display the full name and `town` of all the customers who live in 
-_Kilmacolm_.  Sort the details into alphabetical order of `surname`.
+_Kilmacolm_.  Sort the details into alphabetical order of `surname` and then by `forename`.
