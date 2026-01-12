@@ -10,11 +10,11 @@ File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 ## Tasks
 
-Use SQL queries to display each set of required details.
+Using SQL queries:
 
 1. Search the database to display the full name (`forename` and `surname`) of the customer 
-with the surname "Rice".
-2. Search the database to display the full name and town of all customers who live in Inverkip.
+with the surname _Rice_.
+2. Search the database to display the full name and `town` of all customers who live in _Inverkip_.
 3. Search the database to display the `surname`, `package` and `town` of all the customers 
 who are on the _Large_ package.
 4. Search the database to display the `surname`, `town` and `street` of all the customers 
