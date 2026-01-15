@@ -140,7 +140,7 @@ Complete the table below by entering:
 
 | Line of code from your program | Value of the maximum number of jumps |
 | ----------------------------   | --- |
-| &nbsp                          | &nbsp |
+| &nbsp;                         | &nbsp; |
 
 (__3 marks__)
 
