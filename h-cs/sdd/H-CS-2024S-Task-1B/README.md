@@ -1,4 +1,4 @@
-# H CS 2021 Task 1 Part B
+# H CS 2024S Task 1 Part B
 
 
 File: [athletes.csv](assets/athletes.csv "Download file")
