@@ -1,6 +1,9 @@
 # H CS 2019 - Task 2 Part B
 
 
+File: [members.txt](assets/members.txt "Download file")
+
+
 ## Problem description 
 
 Once a year a walking club asks all its members to submit the total number of miles they have walked.

@@ -1,12 +1,15 @@
 # H CS 2021 Task 1 Part B
 
 
+File: [athletes.csv](assets/athletes.csv "Download file")
+
+
 ### Problem description
 
 Thirty athletes have qualified for the final of the Scottish Jumping Jacks competition. 
 Qualifying events were held at four locations, where each athlete performed as many jumping jacks as they could in 1 minute.
 
-The following details are stored in a CSV file, for each athlete who qualified for the final:
+The following details are stored in a [CSV file](assets/athletes.csv "Download file"), for each athlete who qualified for the final:
 
 * Entry ID
 * Qualifying location
