@@ -81,12 +81,12 @@ sd = Structure diagram
 
 ## SDD Assignment Tasks
 
-| Title                | Description         | Concepts                             | Comments |
-| -----                | -----------         | --------                             | -------- |
-| H-CS-Specimen-Task-2 | Beach water quality | sp, r, ar, ls+                       | sd |
-| H-CS-2019-Task-2B    | Walking club        | sp, r, ar, max, ls+, w               | pc |
-| H-CS-2020-Task-2B    | Golf club           | sp+, ss, asc, r, pa, ss, asc, r, co+ | pc |
-| H-CS-2021-Task-1B    | Jumping Jacks       | sp, r, pa, ss, asc, max, ls+, w      | pc |
-| H-CS-2022-Task-1B    | Mammals             | sp+, r, ar, max, ls+, co+            | pc |
-| H-CS-2023-Task-1B    | Theme Park          | sp, r, pa, min+, max+, ls+, mod, w   | pc |
-| H-CS-2024-Task-1C    | CEO salaries        | sp+, r, pa, max, ls+, co             | pc |
+| Title              | Description         | Concepts                             | Comments |
+| -----              | -----------         | --------                             | -------- |
+| H-CS-2018S-Task-2  | Beach water quality | sp, r, ar, ls+                       | sd |
+| H-CS-2019-Task-2B  | Walking club        | sp, r, ar, max, ls+, w               | pc |
+| H-CS-2020-Task-2B  | Golf club           | sp+, ss, asc, r, pa, ss, asc, r, co+ | pc |
+| H-CS-2022-Task-1B  | Mammals             | sp+, r, ar, max, ls+, co+            | pc |
+| H-CS-2023-Task-1B  | Theme Park          | sp, r, pa, min+, max+, ls+, mod, w   | pc |
+| H-CS-2024-Task-1C  | CEO salaries        | sp+, r, pa, max, ls+, co             | pc |
+| H-CS-2024S-Task-1C | Jumping Jacks       | sp, r, pa, ss, asc, max, ls+, w      | pc |

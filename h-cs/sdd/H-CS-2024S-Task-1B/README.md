@@ -1,8 +1,10 @@
 # H CS 2021 Task 1 Part B
 
-### Software design and development
 
-Thirty athletes have qualified for the final of the Scottish Jumping Jacks competition. Qualifying events were held at four locations, where each athlete performed as many jumping jacks as they could in 1 minute.
+### Problem description
+
+Thirty athletes have qualified for the final of the Scottish Jumping Jacks competition. 
+Qualifying events were held at four locations, where each athlete performed as many jumping jacks as they could in 1 minute.
 
 The following details are stored in a CSV file, for each athlete who qualified for the final:
 
@@ -12,9 +14,12 @@ The following details are stored in a CSV file, for each athlete who qualified f
 * Surname
 * Number of jumping jacks completed
 
+
 ## Purpose
 
-A program is required to read each of the athlete’s data from the existing CSV file. A bib value for each of the finalists will be generated and stored in a new CSV file along with the entry ID. The program will also display the full name of the athlete(s) who completed the highest number of jumping jacks.
+A program is required to read each of the athlete’s data from the existing CSV file. 
+A bib value for each of the finalists will be generated and stored in a new CSV file along with the entry ID. 
+The program will also display the full name of the athlete(s) who completed the highest number of jumping jacks.
 
 An example of the bib value generated for the athlete Daniel Currie, who qualified at the 
 Inverness event, is shown below. Note that 73 is the ASCII value of ‘I’, the first character 
@@ -23,6 +28,7 @@ of Inverness.
 ```
 DCurrie73
 ```
+
 
 ## Assumptions
 
@@ -38,6 +44,7 @@ f05,Coatbridge,Max,Hughes,113
 ...
 ```
 
+
 ## Program top-level design (pseudocode)
 
 | Step | Data Flow |
@@ -46,6 +53,7 @@ f05,Coatbridge,Max,Hughes,113
 | 2. Generate bib values and write to new file with entry IDs | IN: entryID(), location(), forename(), surname() |
 | 3. Find the highest number of jumping jacks completed | IN: jumps()<br> OUT: maxJumps |
 | 4. Display the full name of the athlete(s) who completed the highest number of jumping jacks | IN: maxJumps,forename(), surname(), jumps() |
+
 
 ### Refinements
 
@@ -128,8 +136,8 @@ Complete the table below by entering:
 * the value of the maximum number of jumps variable when the watchpoint is triggered
 
 | Line of code from your program | Value of the maximum number of jumps |
-| --- | --- |
-|     |     |
+| ----------------------------   | --- |
+| &nbsp                          | &nbsp |
 
 (__3 marks__)
 
