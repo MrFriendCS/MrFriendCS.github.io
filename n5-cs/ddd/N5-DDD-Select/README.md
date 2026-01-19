@@ -3,7 +3,7 @@
 File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 
-## Entity: Customer
+## Table: Customer
 
 ![ERD](assets/erd1.png)
 
