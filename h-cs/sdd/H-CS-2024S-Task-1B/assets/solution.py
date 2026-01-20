@@ -1,6 +1,6 @@
-# Title: H CS 2021 Task 1 Part B
+# Title: H CS 2024S Task 1 Part B
 # Author: Mr Friend
-# Date: 9 Feb 2023
+# Date: 20 Jan 2025
 
 
 #
@@ -171,6 +171,7 @@ def countLocations(location):
     print("Kirkcaldy has " + str(kirkcaldy) + " finalists")
     print("Motherwell has " + str(motherwell) + " finalists\n")
 
+    # Not really needed
     if other != 0:
         print("There are " + str(other) + "other finalists")
 
