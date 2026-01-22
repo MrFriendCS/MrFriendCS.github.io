@@ -1,7 +1,7 @@
 # H CS 2022 Task 1 Part B
 
 
-File: [mammals.txt](assets/mammals.txt "Download file")
+File: [mammals.txt](assets/mammals.txt "Download file") (Right click: `Save link as ...`)
 
 
 ## Problem description
