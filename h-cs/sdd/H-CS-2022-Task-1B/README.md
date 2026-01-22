@@ -1,5 +1,9 @@
 # H CS 2022 Task 1 Part B
 
+
+File: [mammals.txt](assets/mammals.txt "Download file")
+
+
 ## Problem description
 
 During the month of September, West Fife Walkers asked their walkers to enter sightings of different Scottish mammals into an existing app. When the user selects the ‘add sighting’ button, the app checks the data is valid and either:
@@ -12,6 +16,7 @@ The app’s user interface is shown below.
 
 ![App's user interface](assets/userinterface.png "App's user interface")
 
+
 ## Purpose
 
 A program is now required to analyse the data stored in the text file. The program should:
@@ -22,11 +27,11 @@ A program is now required to analyse the data stored in the text file. The progr
 
 A top-level design for the main steps and partial refinements of the sightings program is shown below. Data read from the text file is stored in an array of records in the program.
 
+
 ## Program top-level design (pseudocode)
 
 <table>
 <tr>
-    <td
 <td>1 Read from text file into sightings array of records</td>
 <td>OUT: sightings(town,mammal,date,age)</td>
 </tr>
@@ -44,6 +49,7 @@ A top-level design for the main steps and partial refinements of the sightings p
 </tr>
 </table>
 
+
 ## Refinements
 
 ```
@@ -58,6 +64,7 @@ A top-level design for the main steps and partial refinements of the sightings p
 3.9    End if
 3.10 End loop
 ```
+
 
 ## Refinement of function for steps 3.2 and 3.4
 
@@ -83,6 +90,7 @@ Return the string
 4.12 Display dayToCount and count
 ```
 
+
 ___1c___ Using the problem description and design, implement the program in a language of your choice. Your program should:
 
 * use a procedure to:
@@ -103,11 +111,13 @@ Print evidence of:
 
 Include your name and candidate number on all evidence.
 
+
 ___1d___ Step 4 of the main algorithm counts the number of sightings for each date in the file. There are six sightings on 1 September 2021.
 
 Describe how a watchpoint could be used to test that these sightings are counted correctly.
 
 (__2 marks__)
+
 
 ___1e___ With reference to your own program code, evaluate:
 
