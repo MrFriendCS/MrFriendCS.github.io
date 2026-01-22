@@ -1,6 +1,6 @@
 # Title: N5-DDD-Prison
 # Author: Mr Friend
-# Date: 6 Oct 2024
+# Date: 22 Jan 2025
 
 """
 Create the data and export as CSV file.
@@ -15,19 +15,24 @@ from dataclasses import dataclass
 # Find DDDhelper file
 shool = "C:\\Users\\afriend1r\\AppData\\Local\\Programs\\Thonny"
 
-start1 = "C:\\Users\\afriend1r"
-start2 = "D:"
+start1 = "C:\\Users\\afriend1r\\OneDrive - Glow Scotland\\"
+start2 = "C:\\Users\\alfri\\OneDrive - Glow Scotland\\"
 
-end = "\\OneDrive - Glow Scotland\\GitHub\\MrFriendCS.github.io"
+folder1 = "GitHub\\MrFriendCS.github.io\\"
+folder2 = "GitHub\\"
+
 
 # Check if directory exists
 if shool in sys.path:
     # School laptop
-    sys.path.append(start1 + end)
+    sys.path.append(start1 + folder1)
+    school = True
     
 else:
-    # Personel laptop
-    sys.path.append(start2 + end)
+    # Personal laptop
+    sys.path.append(start2 + folder1)
+    school = False
+
 
 # Get extra code
 import DDDhelper
@@ -181,8 +186,12 @@ def getPupils():
     forenames = []
     surnames = []
     
-    # Open file
-    file = open("../../../../../../../pupilList.csv", "r")
+    if school:
+        location = start1 + folder2
+    else:
+        location = start2 + folder2
+        
+    file = open(location + "pupilList.csv", "r")
     
     # Read first line
     line = file.readline()

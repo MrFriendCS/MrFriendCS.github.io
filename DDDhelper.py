@@ -66,7 +66,7 @@ def getForename() -> str:
 def getSurname() -> str:
     """Pick a random surname."""
     
-    forenames = ["Allan", "Anderson", "Austin", "Baker", "Barton", "Beaton",
+    surnames = ["Allan", "Anderson", "Austin", "Baker", "Barton", "Beaton",
                  "Bell", "Berry", "Black", "Blackie", "Blake", "Boyd", "Brown",
                  "Burgess", "Cameron", "Campbell", "Clark", "Coleman", "Cooper",
                  "Daly", "Davidson", "Davies", "Docherty", "Duncan", "Edwards",

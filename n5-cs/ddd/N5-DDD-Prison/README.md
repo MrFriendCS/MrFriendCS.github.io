@@ -1,10 +1,28 @@
 # N5 DDD Prison
 
-File: [prison.db](assets/Prison.db "Download file")
+File: [Prison.db](assets/Prison.db "Download file")
+
+
+## Data dictionary
+
+### Table: Prisoner
+
+| Attribute  | Key   | Type    | Size  | Req'd | Validation |
+| ---------  | :---: | ----    | :---: | :---: | ---------- |
+| prison_id  | PK    | Number  |       | Y     | |
+| surname    |       | Text    | 30    | Y     | Length >= 3 |
+| forename   |       | Text    | 20    | Y     | Length: >= 3 |
+| hair       |       | Text    | 6     | N     | Restricted choice: Auburn, Black, Blond, Brown, Grey, None, Red, White |
+| eyes       |       | Text    | 5     | N     | Restricted choice: Amber, Black, Blue, Brown, Green, Hazel, Grey |
+| height     |       | Number  |       | Y     | Range: >= 1.3 and <= 2.5 |
+| conviction |       | Text    | 20    | Y     | |       
+| open       |       | Boolean |       | Y     | |
+| dob        |       | Date    |       | Y     | |
+
 
 ## Tasks
 
-1. Select everything from the prisoner table. Keywords needed:
+1. Select everything from the `prisoner` table. Keywords needed:
 
 ``` SQL
 SELECT
@@ -23,7 +41,7 @@ SELECT
     FROM
     WHERE
 ```
-     
+
 {:start="5"}	 
 5. Add a query to show prison ID, conviction, and date of birth for all prisoner born on or after 1st Jan 2000.
 
@@ -50,20 +68,3 @@ SELECT
 12. Show the dates of birth and prison IDs of all prisoners born in 1999.
 
 13. Display details for all the prisoners who are bald and have grey eyes.
-
-
-## Data dictionary
-
-### Table: Prisoner
-
-| Attribute  | Key   | Type    | Size  | Req'd | Validation |
-| ---------  | :---: | ----    | :---: | :---: | ---------- |
-| prison_id  | PK    | Number  |       | Y     | |
-| surname    |       | Text    | 30    | Y     | Length >= 3 |
-| forename   |       | Text    | 20    | Y     | Length: >= 3 |
-| hair       |       | Text    | 6     | N     | Restricted choice: Auburn, Black, Blond, Brown, Grey, None, Red, White |
-| eyes       |       | Text    | 5     | N     | Restricted choice: Amber, Black, Blue, Brown, Green, Hazel, Grey |
-| height     |       | Number  |       | Y     | Range: >= 1.3 and <= 2.5 |
-| conviction |       | Text    | 20    | Y     | |       
-| open       |       | Boolean |       | Y     | |
-| dob        |       | Date    |       | Y     | |
