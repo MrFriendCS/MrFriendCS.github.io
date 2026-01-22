@@ -14,13 +14,13 @@ SELECT forename, surname, Planner.plannerNo,
 
 -- Q2c
 -- Find longest
-CREATE TEMP VIEW longest (maxDistance) AS
+CREATE TEMP VIEW Longest (maxDistance) AS
     SELECT MAX(distance)
     FROM Route;
 
 -- Use most longest
 SELECT Walker.walkerNo, forename, surname, telNo
-    FROM Walker, Walk, Route, longest
+    FROM Walker, Walk, Route, Longest
     WHERE Walker.walkerNo = Walk.walkerNo
       AND Walk.routeID = Route.routeID
       AND distance = maxDistance

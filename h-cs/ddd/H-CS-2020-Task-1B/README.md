@@ -19,6 +19,7 @@ Implement the SQL statement that will produce an output with the headings:
 
 | garageName | Total sales |
 | ---------- | ----------- |
+|            | |
 
 (__4 marks__)
 
@@ -36,6 +37,7 @@ Implement two SQL statements that will find the highest number of days, the regi
 
 | Number of days | regNo | garageName |
 | -------------- | ----- | ---------- |
+|                |       | |
 
 (__4 marks__)
 
