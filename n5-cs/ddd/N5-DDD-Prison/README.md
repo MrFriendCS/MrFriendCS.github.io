@@ -9,7 +9,7 @@ File: [Prison.db](assets/Prison.db "Download file")
 
 | Attribute  | Key   | Type    | Size  | Req'd | Validation |
 | ---------  | :---: | ----    | :---: | :---: | ---------- |
-| prison_id  | PK    | Number  |       | Y     | |
+| prisonID   | PK    | Number  |       | Y     | |
 | surname    |       | Text    | 30    | Y     | Length >= 3 |
 | forename   |       | Text    | 20    | Y     | Length: >= 3 |
 | hair       |       | Text    | 6     | N     | Restricted choice: Auburn, Black, Blond, Brown, Grey, None, Red, White |
