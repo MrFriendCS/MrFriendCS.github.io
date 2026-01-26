@@ -4,6 +4,33 @@
 File: [VideoGames.db](assets/VideoGames.db "Download file")
 
 
+## Data dictionary
+
+
+### Table: Company
+
+| Attribute | Key   | Type   | Size  | Req'd | Validation |
+| --------- | :---: | ----   | :---: | :---: | ---------- |
+| name      | PK    | Text   | 20    | Y     | |
+| country   |       | Text   | 20    | Y     | |
+| founded   |       | Date   |       | Y     | Range: >= 1 Jan 1970 |
+| website   |       | Text   | 30    | N     | |
+| profit    |       | Number |       | Y     | |
+
+
+### Table: Game
+
+| Attribute  | Key   | Type   | Size  | Req'd | Validation |
+| ---------  | :---: | ----   | :---: | :---: | ---------- |
+| title      | PK    | Text   | 30    | Y     | |
+| company    | FK    | Text   | 20    | Y     | Exists in company table |
+| genre      |       | Text   | 15    | Y     | |
+| age        |       | Number |       | Y     | Restricted choice: 3, 7, 12, 16, 18 |
+| price      |       | Number |       | Y     | Range: >= 0.00 and <= 100.00 |
+| released   |       | Date   |       | Y     | Range: >= 1 Jan 1970 |
+| copiesSold |       | Number |       | Y     | Range: >= 0 |
+
+
 ## Tasks
 
 ``` sql
@@ -50,28 +77,3 @@ SELECT
 12. Create a query to display all the games sold with the highest number displayed first.
 
 13. Show all the information about the games.  Order it by company name, then order of age guidance.
-
-
-## Data dictionary
-
-### Table: Company
-
-| Attribute | Key   | Type   | Size  | Req'd | Validation |
-| --------- | :---: | ----   | :---: | :---: | ---------- |
-| name      | PK    | Text   | 20    | Y     | |
-| country   |       | Text   | 20    | Y     | |
-| founded   |       | Date   |       | Y     | Range: >= 1 Jan 1970 |
-| website   |       | Text   | 30    | N     | |
-| profit    |       | Number |       | Y     | |
-
-### Table: Game
-
-| Attribute  | Key   | Type   | Size  | Req'd | Validation |
-| ---------  | :---: | ----   | :---: | :---: | ---------- |
-| title      | PK    | Text   | 30    | Y     | |
-| company    | FK    | Text   | 20    | Y     | Exists in company table |
-| genre      |       | Text   | 15    | Y     | |
-| age        |       | Number |       | Y     | Restricted choice: 3, 7, 12, 16, 18 |
-| price      |       | Number |       | Y     | Range: >= 0.00 and <= 100.00 |
-| released   |       | Date   |       | Y     | Range: >= 1 Jan 1970 |
-| copiesSold |       | Number |       | Y     | Range: >= 0 |
