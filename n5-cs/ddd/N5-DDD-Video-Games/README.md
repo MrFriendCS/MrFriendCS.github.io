@@ -44,7 +44,7 @@ File: [VideoGames.db](assets/VideoGames.db "Download file")
 8. Show all games that are action or adventure genre
 9. Display all games that cost less than £20 and have an age guidance suitable for those at least 16 years old.
 10. Show all games created by the Elite company, and are of the action genre.
-11. Display all the company details and order by website address.
+11. Display all the company details and sort the websites alphabetically.
 12. Create a query to display all the games sold with the highest number displayed first.
 13. Show all the information about the games.
-Order it by company name, then order of age guidance.
+Order it by age guidance, with the highest rating first, and then the company name sorted alphabetically.
