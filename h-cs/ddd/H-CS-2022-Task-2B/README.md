@@ -6,7 +6,7 @@
 
 The entity-occurrence diagram is used to draw the entity-relationship diagram for the Walkers database shown below.
 
-![ERD](assets/ERD.png "ERD")
+![ERD](assets/erd.png "ERD")
 
 The design is then implemented.
 
