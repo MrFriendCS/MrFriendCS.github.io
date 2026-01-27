@@ -73,8 +73,7 @@ The following query is designed to count and display the number of medals won by
 ```
 SELECT teamName, COUNT(position) AS [Total medals won]
 FROM Result, Swimmer, Team
-WHERE Result.swimmerID = Swimmer.swimmerID AND Swimmer.teamRef = 
-Team.teamRef
+WHERE Result.swimmerID = Swimmer.swimmerID AND Swimmer.teamRef = Team.teamRef
 GROUP BY teamName;
 ```
 
