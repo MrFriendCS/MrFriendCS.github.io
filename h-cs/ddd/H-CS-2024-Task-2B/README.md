@@ -76,7 +76,7 @@ FROM Result, Swimmer, Team
 WHERE Result.swimmerID = Swimmer.swimmerID AND Swimmer.teamRef = 
 Team.teamRef
 GROUP BY teamName;
-``
+```
 
 The query to test the above SQL statement is provided with the database.
 When run, the actual output does not match the expected output.
