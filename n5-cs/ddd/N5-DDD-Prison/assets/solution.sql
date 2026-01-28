@@ -1,10 +1,9 @@
 /*
--- Don't change lines 1 to 5
-.open prison.db
-.headers on
-.mode column
--- Don't change lines 1 to 5
+Title: N5 DDD Prison
+Author: Mr Friend
+Date: 28 Jan 2026
 */
+
 
 -- Task 1 -- Select everything -- Useful for inspecting the table
 SELECT *
@@ -70,8 +69,8 @@ SELECT forename, conviction, dob
 -- Task 11 -- Filter: Complex
 SELECT forename, surname, eyes
     FROM Prisoner
-    WHERE conviction = "Assault"
-      AND hair = "Red";
+    WHERE hair = "Red"
+      AND conviction = "Assault";
 
 
 -- Task 12 -- Filter: Complex with dates
@@ -85,4 +84,4 @@ SELECT dob, prisonID
 SELECT *
     FROM Prisoner
     WHERE hair = "None"
-      AND eyes = "Amber";
+      AND eyes = "Grey";

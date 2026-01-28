@@ -1,17 +1,7 @@
 /*
--- Don't change lines 1 to 6
-.open VideoGames.db
-.headers on
-.mode column
-PRAGMA foreign_keys = on;
--- Don't change lines 1 to 6
-*/
-
-
-/*
 Title: N5-DDD-Video-Games
 Author: Mr Friend
-Date: 28 Sep 2024
+Date: 28 Jan 2025
 */
 
 
@@ -89,5 +79,5 @@ SELECT *
 -- Question 13 -- Order results: Multiple fields
 SELECT *
     FROM Game
-    ORDER BY company ASC,
-             age ASC;
+    ORDER BY age DESC,
+             company ASC;
