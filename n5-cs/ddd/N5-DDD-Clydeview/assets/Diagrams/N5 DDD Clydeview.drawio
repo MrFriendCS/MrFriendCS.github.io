@@ -311,12 +311,12 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Manufacturer" id="eXDZq0nMSX7AYcZeoudn">
-    <mxGraphModel dx="882" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="786" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="413" math="0" shadow="0">
       <root>
         <mxCell id="8Xbo-KBunyf081U47HyO-0" />
         <mxCell id="8Xbo-KBunyf081U47HyO-1" parent="8Xbo-KBunyf081U47HyO-0" />
         <mxCell id="2s74ZnK_1RXyBK84bkd0-0" value="&lt;b&gt;Product&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=1;whiteSpace=wrap;html=1;fillColor=none;" parent="8Xbo-KBunyf081U47HyO-1" vertex="1">
-          <mxGeometry x="320" y="360" width="120" height="150" as="geometry">
+          <mxGeometry x="80" y="120" width="120" height="150" as="geometry">
             <mxRectangle x="170" y="370" width="80" height="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -327,7 +327,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2s74ZnK_1RXyBK84bkd0-8" value="&lt;b&gt;Manufacturer&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=1;whiteSpace=wrap;html=1;fillColor=none;" parent="8Xbo-KBunyf081U47HyO-1" vertex="1">
-          <mxGeometry x="600" y="360" width="120" height="150" as="geometry">
+          <mxGeometry x="360" y="120" width="120" height="150" as="geometry">
             <mxRectangle x="170" y="370" width="80" height="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -337,8 +337,8 @@
         <mxCell id="2s74ZnK_1RXyBK84bkd0-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=ERmany;startFill=0;startSize=20;" parent="8Xbo-KBunyf081U47HyO-1" source="2s74ZnK_1RXyBK84bkd0-1" target="2s74ZnK_1RXyBK84bkd0-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Zk-P5OUFj1vzXNd75s1p-0" value="Created by" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="8Xbo-KBunyf081U47HyO-1">
-          <mxGeometry x="480" y="420" width="80" height="30" as="geometry" />
+        <mxCell id="Zk-P5OUFj1vzXNd75s1p-0" value="Created by" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="8Xbo-KBunyf081U47HyO-1" vertex="1">
+          <mxGeometry x="240" y="180" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,9 +1,16 @@
-# N5 Select Queries (Complex)
+# N5 Select Queries (Equi-join: 1)
+
 
 File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 
-## Entity Relationship Diagram (ERD)
+## Introduction
+
+ClydeVet veterinary practice uses a relational database store details pets and their owners in two separate tables called `Owner` and `Pet`.
+The structure of the tables is shown below.
+
+
+### Entity Relationship Diagram (ERD)
 
 ![ERD](assets/erd3.png)
 
