@@ -1,4 +1,4 @@
-# N5 Select Queries (Equi-join: 1)
+# N5 Select Queries (Equi-join 1)
 
 
 File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
