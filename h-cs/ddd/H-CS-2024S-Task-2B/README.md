@@ -1,4 +1,4 @@
-# H CS 2021S - Task 2 Part B
+# H CS 2024S - Task 2 Part B
 
 
 [MyTreat database](assets/MyTreat.db)
