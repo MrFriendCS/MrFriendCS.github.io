@@ -50,12 +50,13 @@ f05,Coatbridge,Max,Hughes,113
 
 ## Program top-level design (pseudocode)
 
-| Step | Data Flow |
-| :--- | :-------- |
-| 1. Get qualifying athletes’ data | OUT: entryID(), location(), forename(), surname(), jumps() |
-| 2. Generate bib values and write to new file with entry IDs | IN: entryID(), location(), forename(), surname() |
-| 3. Find the highest number of jumping jacks completed | IN: jumps()<br> OUT: maxJumps |
-| 4. Display the full name of the athlete(s) who completed the highest number of jumping jacks | IN: maxJumps,forename(), surname(), jumps() |
+| Step                                                         | Data Flow |
+| :---                                                         | :-------- |
+| 1. Get qualifying athletes’ data                             | OUT: entryID(), location(), forename(), surname(), jumps() |
+| 2. Generate bib values and write to new file with entry IDs  | IN: entryID(), location(), forename(), surname() |
+| 3. Find the highest number of jumping jacks completed        | IN: jumps()<br> OUT: maxJumps |
+| 4. Display the full name of the athlete(s) who completed the 
+highest number of jumping jacks                                | IN: maxJumps,forename(), surname(), jumps() |
 
 
 ### Refinements

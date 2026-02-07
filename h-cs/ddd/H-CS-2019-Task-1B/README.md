@@ -1,6 +1,7 @@
 # H CS 2019 - Task 1 Part B
 
-[Flight booking database](assets/FlightBooking.db)
+
+File: [Flight booking database](assets/FlightBooking.db "Download")
 
 
 Following further analysis the entity-relationship diagram below is created.

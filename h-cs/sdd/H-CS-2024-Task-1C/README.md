@@ -1,5 +1,9 @@
 # H CS 2024 - Task 1 Part C
 
+
+File: [companies.csv](assets/companies.csv "Download")
+
+
 ## Problem description
 
 A research organisation currently gathers and stores data on the salaries paid to the chief executive officers (CEOs) of the top 100 technology companies in the country.  They want a program to help them use this data effectively.
@@ -7,7 +11,7 @@ A research organisation currently gathers and stores data on the salaries paid t
 
 ## Purpose
 
-A CSV file ([companies.csv](assets/companies.csv "Download")) stores the following data about the 100 companies:
+A CSV file (companies.csv) stores the following data about the 100 companies:
 
 * company name
 * number of employees

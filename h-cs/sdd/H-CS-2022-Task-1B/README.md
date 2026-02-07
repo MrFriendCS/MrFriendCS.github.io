@@ -1,15 +1,17 @@
 # H CS 2022 Task 1 Part B
 
 
-File: [mammals.txt](assets/mammals.txt "Download file") (Right click: `Save link as ...`)
+File: [mammals.txt](assets/mammals.txt "Download") (Right click: `Save link as ...`)
 
 
 ## Problem description
 
 During the month of September, West Fife Walkers asked their walkers to enter sightings of different Scottish mammals into an existing app. When the user selects the ‘add sighting’ button, the app checks the data is valid and either:
 
-* adds the valid sighting as a new line in a single text file stored on a server 
+* adds the valid sighting as a new line in a single text file stored on a server
+
 or
+
 * responds with an error stating the inputs are missing or invalid 
 
 The app’s user interface is shown below.
@@ -94,10 +96,10 @@ Return the string
 ___1c___ Using the problem description and design, implement the program in a language of your choice. Your program should:
 
 * use a procedure to:
-  * read data from the file to an array of records
-  * find and display the age of oldest walker
-  * find and display dates of sightings
-  * count and display sightings for each date in the file
+    * read data from the file to an array of records
+    * find and display the age of oldest walker
+    * find and display dates of sightings
+    * count and display sightings for each date in the file
 * use a function to validate upper-case characters
 * be maintainable and modular
 * follow the design and the refinements provided

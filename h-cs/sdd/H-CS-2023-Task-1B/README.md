@@ -1,8 +1,12 @@
 # H CS 2023 - Task 1 Part B
 
+File: [attractions.csv](assets/attractions.csv "Download file")
+
+
 ## Problem description
 
 The manager of a theme park would like a program to provide him with data on the park’s 26 attractions.
+
 
 ## Purpose
 
@@ -12,6 +16,7 @@ The program will find the names of the least visited attraction(s) and the most 
 
 Attractions in the category ‘Roller Coaster’ are serviced every 90 days. The program is required to calculate the number of days until the next service. It will use this information to produce an output that identifies all roller coasters that need to be serviced within the next 7 days.
 
+
 ## Assumptions
 
 * the CSV data file is formatted correctly, is error-free and is updated every day
@@ -20,6 +25,7 @@ An example of the data in the file is shown below:
 
 ![Example data](assets/data.png "Example data")
  
+
 ## Design
 
 The design for the program is shown below.
@@ -30,16 +36,16 @@ __1c(i)__ Using the problem description and design, implement the program in a l
 
 Your program should:
 
-*	read data from the ‘attractions.csv’ file and store into parallel arrays
-*	find and display the name(s) of the:
-    *	least visited attraction(s)
-    *	most visited attraction(s)
-*	write the names of roller coasters that require a service within 7 days to ‘service.csv’
-*	be maintainable and modular
+* read data from the `attractions.csv` file and store into parallel arrays
+* find and display the name(s) of the:
+    * least visited attraction(s)
+    * most visited attraction(s)
+* write the names of roller coasters that require a service within 7 days to ‘service.csv’
+* be maintainable and modular
 
 (___12 marks___)
 
-__1c(ii)__	The theme park’s manager wants an update on attractions with a height restriction of 1.0m and above. Height restrictions range from 0.9m to 1.4m. 
+__1c(ii)__ The theme park’s manager wants an update on attractions with a height restriction of 1.0m and above. Height restrictions range from 0.9m to 1.4m. 
 
 Implement a new sub-program to count and display the number of attractions with a height restriction beginning with the character ‘1’.
 

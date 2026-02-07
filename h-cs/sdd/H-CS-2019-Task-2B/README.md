@@ -1,14 +1,14 @@
 # H CS 2019 - Task 2 Part B
 
 
-File: [members.txt](assets/members.txt "Download file")
+File: [members.txt](assets/members.txt "Download file") (Right click: `Save link as ...`)
 
 
 ## Problem description 
 
 Once a year a walking club asks all its members to submit the total number of miles they have walked.
 The club collates this information in a text file.
-A section of the [members.txt](assets/members.txt "Download file") file, which includes the names of members and the total miles they walked, is shown below. 
+A section of the `members.txt` file, which includes the names of members and the total miles they walked, is shown below. 
  
 ```
 … 

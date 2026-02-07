@@ -1,7 +1,7 @@
 # H CS 2022 - Task 2 Part B
 
 
-[West Fife Walkers database](assets/WestFifeWalkers.db)
+File: [West Fife Walkers database](assets/WestFifeWalkers.db "Download")
 
 
 The entity-occurrence diagram is used to draw the entity-relationship diagram for the Walkers database shown below.

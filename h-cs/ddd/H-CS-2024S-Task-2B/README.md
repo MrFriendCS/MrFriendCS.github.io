@@ -1,7 +1,7 @@
 # H CS 2024S - Task 2 Part B
 
 
-[MyTreat database](assets/MyTreat.db)
+File: [MyTreat database](assets/MyTreat.db "Download")
 
 
 The entity relationship diagram for the MyTreat database is shown below.

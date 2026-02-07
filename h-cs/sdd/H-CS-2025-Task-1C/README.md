@@ -1,5 +1,6 @@
 # H CS 2025 - Task 1 Part C
 
+File: [orders.txt](assets/orders.txt "Download")
 
 ## Problem description
 
@@ -42,7 +43,7 @@ If there is no winning customer, a suitable message will be written to the file.
 - The data in the text file is in chronological order. 
 - The data is formatted correctly and is error-free.
 
-A text file [orders.txt](assets/orders.txt "Download") is used when the program is being created.
+A text file (orders.txt) is used when the program is being created.
 This file contains data for the 505 orders that were made in October, November 
 and December 2024.
 A sample of this data is shown below.

@@ -1,7 +1,7 @@
 # H CS 2024 - Task 2 Part B
 
 
-[Swimming Association database](assets/SwimmingAssociation.db)
+File: [Swimming Association database](assets/SwimmingAssociation.db "Download")
 
 
 ## Introduction
