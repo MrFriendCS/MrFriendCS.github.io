@@ -6,6 +6,7 @@ File: [Gardening.db](assets/Gardening.db "Download file")
 
 ## Data Dictionary
 
+
 ### Table: Staff
 
 | Attribute  | Key   | Type   | Size  | Req'd | Validation |
@@ -48,4 +49,6 @@ Implement an SQL statement that will change the address of this member of staff 
 
 * 99 Willow Way, Falkirk, FA87 6FE
 
-Print evidence of your SQL statement and the Staff table (clearly showing the new address) once the SQL statement has been implemented.  (__2 marks__)
+Print evidence of your SQL statement and the Staff table (clearly showing the new address) once the SQL statement has been implemented.
+
+(__2 marks__)

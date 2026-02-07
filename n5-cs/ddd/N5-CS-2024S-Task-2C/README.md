@@ -1,10 +1,13 @@
 # N5 CS 2024 Specimen Task 2 Part C
 
+
 [Originally 2021 ==> 2021S ==> 2024S]: #
 
 [Database needs looking at as Player fields in a different order]: #
 
+
 ## Data Dictionary
+
 
 ### Entity: Club
 
@@ -31,26 +34,33 @@
 | shirtNumber  |       | number |       | Y     | Range: >= 1 and <= 25 |
 
 
-___2c___ Using the data dictionary above, complete the relational database by adding the required validation to the shirtNumber field.  (__1 mark__)
+___2c___ Using the data dictionary above, complete the relational database by adding the required validation to the shirtNumber field.
+
+(__1 mark__)
 
 Print evidence to show that you have added the validation to the database, to match the data dictionary requirements.
 
 
-___2d(i)___ Noreen Glass, registration number 814209, has moved teams from Aviemore Aces to Dundee North. She will play in the number 24 shirt at her new club.
+___2d(i)___ Noreen Glass, registration number 814209, has moved teams from Aviemore Aces to Dundee North.
+She will play in the number 24 shirt at her new club.
 
-Implement __one__ SQL statement that will make the required changes to Noreen’s information.  (__3 marks__)
+Implement __one__ SQL statement that will make the required changes to Noreen’s information.
+
+(__3 marks__)
 
 Print evidence of the SQL statement and the ‘Player’ table, clearly showing the change you have implemented.
 
 
 ___(ii)___ The Association would like to invite suitable players to a goalkeeper coaching day.
 
-Implement an SQL statement that will only display a list of club names, players’ full names and mobile phone numbers for all league 1 goalkeepers.  (__4 marks__)
+Implement an SQL statement that will only display a list of club names, players' full names and mobile phone numbers for all league 1 goalkeepers.
+
+(__4 marks__)
 
 Print evidence of the SQL statement and the output.
 
 
-___2e___ The Association’s rules state that players who play in the ‘Striker’ position are given a shirt number between 10 and 15.
+___2e___ The Association’s rules state that players who play in the `Striker` position are given a shirt number between 10 and 15.
 
 Test the following SQL statement, which is intended to identify strikers who do not have the correct shirt number:
 
@@ -61,7 +71,9 @@ SELECT forename, surname
        OR shirtNumber > 15;
 ```
 
-Explain why the output is not correct.  (__1 mark__)
+Explain why the output is not correct.
+
+(__1 mark__)
 
 
 ___2f___ The following SQL statement produces an error when executed.
@@ -69,11 +81,15 @@ ___2f___ The following SQL statement produces an error when executed.
 ```sql
 INSERT INTO Player
     VALUES (220745,"Unknown","Erin","Smith","07993 874657",
-	        "1999-05-31","Striker",23);
+            "1999-05-31","Striker",23);
 ```
 
 
-___(i)___ Identify the value in the SQL statement that produces an error.  (__1 mark__)
+___(i)___ Identify the value in the SQL statement that produces an error.
+
+(__1 mark__)
 
 
-___(ii)___ Explain why this error is expected if the database is fit for purpose.  (__1 mark__)
+___(ii)___ Explain why this error is expected if the database is fit for purpose.
+
+(__1 mark__)

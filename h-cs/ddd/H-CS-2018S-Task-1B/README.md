@@ -1,7 +1,7 @@
 # H CS 2018S - Task 1 Part B
 
 
-File: [Doctors surgery database](assets/Surgery.db "Download")
+File: [Surgery.db](assets/Surgery.db "Download")
 
 
 A doctors surgery uses a database to store information about their doctors, patients and appointments. 

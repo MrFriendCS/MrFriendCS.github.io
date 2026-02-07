@@ -19,7 +19,8 @@ A property cannot be listed for sale without the seller’s details being record
 
 ## Tasks
 
-___2c(i)___ The asking price for propertyRef DUN-101 has not been recorded correctly. This should be changed from £105500 to £112000.
+___2c(i)___ The asking price for propertyRef DUN-101 has not been recorded correctly.
+This should be changed from £105500 to £112000.
 
 Implement an SQL statement that will make the required change to the asking price.
 
@@ -43,7 +44,8 @@ telephoneNumber: 0131 279100
 _Print evidence of the SQL statement and the Seller table, clearly showing that the change has been implemented._
 
 
-___(iii)___ ScotAuction is running a workshop to give sellers advice on how to achieve a higher sale price. Due to the limited spaces available, ScotAuction is only inviting selected sellers to attend. 
+___(iii)___ ScotAuction is running a workshop to give sellers advice on how to achieve a higher sale price.
+Due to the limited spaces available, ScotAuction is only inviting selected sellers to attend. 
 
 Implement an SQL statement that will display the seller’s email address and telephone number along with the property’s postcode for properties that have three bedrooms and an asking price of less than £150000.
 

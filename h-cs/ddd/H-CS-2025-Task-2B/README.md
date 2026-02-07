@@ -1,7 +1,7 @@
 # H CS 2025 - Task 2 Part B
 
 
-File: [Nora's comics database](assets/NorasComics.db "Download")
+File: [NorasComics.db](assets/NorasComics.db "Download")
 
 
 An entity-relationship diagram for the database was created and is shown below.

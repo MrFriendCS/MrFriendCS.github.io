@@ -1,7 +1,7 @@
 # H CS 2023 - Task 2 Part B
 
 
-File: [Gnome sales database](assets/GnomeSales.db "Download")
+File: [GnomeSales.db](assets/GnomeSales.db "Download")
 
 
 ## Introduction

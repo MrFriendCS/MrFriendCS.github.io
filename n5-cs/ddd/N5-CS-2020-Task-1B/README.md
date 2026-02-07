@@ -6,6 +6,7 @@ File: [AnyTimeFlowers.db](assets/AnyTimeFlowers.db "Download file")
 
 ## Data Dictionary
 
+
 ### Table: Customer
 
 | Attribute   | Key   | Type   | Size  | Req'd | Validation  |
@@ -15,6 +16,7 @@ File: [AnyTimeFlowers.db](assets/AnyTimeFlowers.db "Download file")
 | surname     |       | text   | 50    | Y     |             |
 | address     |       | text   | 100   | N     |             |
 | telephoneNo |       | text   | 11    | N     | Length = 11 |
+
 
 ### Table: FlowerOrder
 
@@ -37,12 +39,17 @@ ___1b___ Using the data dictionary, complete the relational database by:
 * identifying two fields where the validation shown below has yet to be applied
 * adding the validation to the two identified fields
 
-Print evidence to show that you have added the validation to the database to match the data dictionary requirements.  (__2 marks__)
+Print evidence to show that you have added the validation to the database to match the data dictionary requirements.
+
+(__2 marks__)
 
 
-___1c (i)___ A customer would like to change their order from ‘rose’ to ‘tulip’. The price of the order will change from £34 to £17. The orderID is CHQ3848.
+___1c (i)___ A customer would like to change their order from ‘rose’ to ‘tulip’.
+The price of the order will change from £34 to £17. The orderID is CHQ3848.
 
-Implement __one__ SQL statement that will make the required changes to the order. (__4 marks__)
+Implement __one__ SQL statement that will make the required changes to the order.
+
+(__4 marks__)
 
 Print evidence of the SQL statement and the FlowerOrder table, clearly showing that the changes have been implemented.
 
@@ -58,4 +65,6 @@ Implement an SQL statement that will add their details to the database.
 Assign them customerID — 2986
 ```
 
-Print evidence of the SQL statement and the Customer table, clearly showing that the changes have been implemented.  (__2 marks__)
+Print evidence of the SQL statement and the Customer table, clearly showing that the changes have been implemented.
+
+(__2 marks__)

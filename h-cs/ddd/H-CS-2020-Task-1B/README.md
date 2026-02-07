@@ -1,7 +1,7 @@
 # H CS 2020 - Task 1 Part B
 
 
-File: [Car services database](assets/CarServices.db "Download")
+File: [CarServices.db](assets/CarServices.db "Download")
 
 
 After further analysis, the developer creates the entity-relationship diagram shown below.

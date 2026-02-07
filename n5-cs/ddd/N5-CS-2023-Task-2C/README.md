@@ -6,6 +6,7 @@ File: [Maintenance.db](assets/Maintenance.db "Download file")
 
 ## Data Dictionary
 
+
 ### Entity: Staff
 
 | Attribute  | Key   | Type | Size  | Req'd | Validation |
@@ -14,6 +15,7 @@ File: [Maintenance.db](assets/Maintenance.db "Download file")
 | surname    |       | text | 60    | N     |            |
 | department |       | text | 10    | N     | restricted choice: admin, sales and management |
 | email      | PK    | text | 100   | Y     |            |
+
 
 ### Entity: Problem
 
@@ -29,8 +31,9 @@ File: [Maintenance.db](assets/Maintenance.db "Download file")
 
 ___2c___ Using the data dictionary above, complete the relational database by adding the required validation to the department field.
 
-Print evidence of the implemented department field validation. 
- (__1 mark__)
+Print evidence of the implemented department field validation.
+
+(__1 mark__)
 
 Eva Livingstone has moved from sales to management.
 
@@ -44,7 +47,9 @@ department: management
 email: eliv123@email.net 
 ```
 
-Print evidence of the SQL statement and the Staff table, clearly showing that the change has been implemented.  (__2 marks__)
+Print evidence of the SQL statement and the Staff table, clearly showing that the change has been implemented.
+
+(__2 marks__)
 
 
 ___2d(ii)___ The support team notice that a lot of issues were raised on 7th July 2022.
@@ -66,7 +71,11 @@ DELETE *
 ```
 
 
-___2e(i)___ Explain why this query is not fit for purpose.  (__1 mark__)
+___2e(i)___ Explain why this query is not fit for purpose.
+
+(__1 mark__)
 
 
-___2e(ii)___ Describe how this query could be improved to ensure it is fit for purpose.  (__1 mark__)
+___2e(ii)___ Describe how this query could be improved to ensure it is fit for purpose.
+
+(__1 mark__)
