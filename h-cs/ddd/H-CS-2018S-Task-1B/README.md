@@ -7,6 +7,13 @@
 ![Doctors surgery database](assets/HSpecimenTask1PartB.png)
 
 
+## Doctors surgery database
+
+| Doctor     | Patient      | Drug     | Appiontment | PrescribedDrug |
+| ------     | -------      | ----     | ----------- | -------------- |
+| _doctorID_ | _patientID _ | _drugID_ | _appDate_   | _drugID_* |
+
+
 ___1c(i)___ The surgery wants to create a list of drugIDs showing how many times each drugID is prescribed.
 The list should be sorted from the most prescribed drug to the least.
 
