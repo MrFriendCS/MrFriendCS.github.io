@@ -9,9 +9,17 @@
 
 ## Doctors surgery database
 
-| Doctor     | Patient      | Drug     | Appiontment | PrescribedDrug |
-| ------     | -------      | ----     | ----------- | -------------- |
-| _doctorID_ | _patientID _ | _drugID_ | _appDate_   | _drugID_* |
+| Doctor        | Patient     | Drug         | Appiontment | PrescribedDrug |
+| ------        | -------     | ----         | ----------- | -------------- |
+| _doctorID_    | _patientID_ | _drugID_     | _appDate_   | _drugID_* | 
+| forename      | forename    | drugName     | _appTime_   | _patientID_* |
+| surname       | surname     | manufacturer | _doctorID_* | _datePrescribed_ |
+| street        | dateOfBirth | dosage       | patientID*  | |
+| town          | address     | cost         |             | |
+| postcode      | contactNo   |              |             | |
+| telNo         |             |              |             | |
+| dateQualified |             |              |             | |
+
 
 
 ___1c(i)___ The surgery wants to create a list of drugIDs showing how many times each drugID is prescribed.
