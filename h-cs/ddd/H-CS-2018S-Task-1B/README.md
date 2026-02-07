@@ -9,16 +9,16 @@
 
 ## Doctors surgery database
 
-| Doctor        | Patient     | Drug         | Appiontment | PrescribedDrug |
-| ------        | -------     | ----         | ----------- | -------------- |
-| _doctorID_    | _patientID_ | _drugID_     | _appDate_   | _drugID_* | 
-| forename      | forename    | drugName     | _appTime_   | _patientID_* |
-| surname       | surname     | manufacturer | _doctorID_* | _datePrescribed_ |
-| street        | dateOfBirth | dosage       | patientID*  | |
-| town          | address     | cost         |             | |
-| postcode      | contactNo   |              |             | |
-| telNo         |             |              |             | |
-| dateQualified |             |              |             | |
+| Doctor        | Patient       | Drug         | Appiontment   | PrescribedDrug |
+| ------        | -------       | ----         | -----------   | -------------- |
+| __doctorID__  | __patientID__ | __drugID__   | __appDate__   | __drugID__* | 
+| forename      | forename      | drugName     | __appTime__   | __patientID__* |
+| surname       | surname       | manufacturer | __doctorID__* | __datePrescribed__ |
+| street        | dateOfBirth   | dosage       | patientID*    | |
+| town          | address       | cost         |               | |
+| postcode      | contactNo     |              |               | |
+| telNo         |               |              |               | |
+| dateQualified |               |              |               | |
 
 
 
