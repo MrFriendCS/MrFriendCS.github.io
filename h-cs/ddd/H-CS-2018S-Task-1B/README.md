@@ -4,7 +4,7 @@
 [Doctors surgery database](assets/Surgery.db)
 
 
-![Doctors surgery database](assets/HSpecimenTask1PartB.png)
+A doctors surgery uses a database to store information about their doctors, patients and appointments. 
 
 
 ## Doctors surgery database
