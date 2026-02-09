@@ -19,11 +19,11 @@ The structure of the tables is shown below.
 
 Using SQL queries:
 
-1. List the full name and address, and name of their pets, for all of the cat owners.
+1. List the name (forename and surname) and address (inc town) for all of the cat owners, and name of their pets.
 
 2. List the full name and contact telephone number, with the codes of their pets, for all tortoise owners.
 
-3. List the full name and address, and the name of their pets, of all owners who have pets that have not yet received their vaccinations.
+3. List the name and address, and the name of their pets, of all owners who have pets that have not yet received their vaccinations.
 
 4. List the name, type of each pet and town of any pet whose owner lives in Greenock.
 
