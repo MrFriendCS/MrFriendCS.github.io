@@ -32,7 +32,7 @@ Using SQL queries:
 6. Display the full names of all of the owners with the name and type of their pets.
 These details should be displayed in alphabetical order of owner surname.
 
-7. Display the name and full address (inc town) of each pet.
+7. Display the name and full address of each pet.
 These details should be arranged in alphabetical order of town; pets who live in the same town should be arranged in alphabetical order of pet type.
 
 8. Display the name, pet type, town, and date of birth of all the cats; details of the youngest pet should be displayed first.
