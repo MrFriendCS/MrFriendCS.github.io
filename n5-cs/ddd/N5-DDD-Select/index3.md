@@ -27,7 +27,8 @@ Using SQL queries:
 
 4. List the name, type of each pet and town of any pet whose owner lives in Greenock.
 
-5. List the name, vaccination details and contact telephone number of their owner, of all pets whose owners live in Gourock.
+5. List the name and vaccination details of all pets whose owners live in Gourock.
+Include the contact telephone number of their owners.
 
 6. Display the full names of all of the owners with the name and type of their pets.
 These details should be displayed in alphabetical order of owner surname.
