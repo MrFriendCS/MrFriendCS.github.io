@@ -1,6 +1,8 @@
--- Title: N5 CS 2018S Task 1 Part B
--- Author: Mr Friend
--- Date: 9 Feb 2025
+/*
+Title: N5 CS 2017S Task 1 Part B
+Author: Mr Friend
+Date: 9 Feb 2025
+*/
 
 -- Q1d
 INSERT INTO Employee

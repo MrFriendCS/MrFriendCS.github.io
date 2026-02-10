@@ -1,3 +1,9 @@
+/*
+Title: 2025 CS Task 2 Part B
+Author: Mr Friend
+Date: 24 Oct 2025
+*/
+
 -- Q2(d)(i)
 INSERT INTO Climate
     VALUES (105, "Temperate Oceanic", "15-20", "70-80");
