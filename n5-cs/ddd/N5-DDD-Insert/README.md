@@ -51,6 +51,7 @@ Using SQL queries:
 | Vaccinated?   | True |
 | Owner ID      | 3821 |
 
+{:start="2"}
 2. Add the following details of a new owner and their pet to the database.
 
 | Field    | Value |
@@ -71,6 +72,7 @@ Using SQL queries:
 | Vaccinated?   | False |
 | Owner ID      | 3905 |
 
+{:start="3"}
 3. Add the following details of a pet and their owner to the database.
 
 | Field         | Value |
