@@ -1,6 +1,10 @@
 # N5 DDD Insert Queries
 
+
 File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
+
+
+## Database
 
 
 ### Table: Owner
@@ -71,9 +75,9 @@ Using SQL queries:
 
 | Field         | Value |
 | -----         | ----- |
-| Pet Code      | P0438 |
-| Pet Name      | Arnie |
-| Pet Type      | Budgie |
+| Pet code      | P0438 |
+| Pet name      | Arnie |
+| Pet type      | Budgie |
 | Date of Birth | 13 March 2017 |
 | Vaccinated?   | No |
 
