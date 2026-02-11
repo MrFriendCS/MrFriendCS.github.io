@@ -3,7 +3,31 @@
 File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 
-## Table: Customer
+### Table: Owner
+
+| Field     | Key | Type   | Size | Req’d | Validation |
+| -----     | --- | ----   | ---- | ----- | ---------- |
+| ownerID   | PK  | Number |      | Y     | |
+| firstName |     | Text   | 20   |       | |
+| surname   |     | Text   | 30   |       | |
+| address   |     | Text   | 50   |       | | 
+| town      |     | Text   | 20   |       | |
+| telephone |     | Text   | 13   |       | |
+
+
+### Table: Pet
+
+| Field       | Key | Type    | Size | Req’d | Validation |
+| -----       | --- | ----    | ---- | ----- | ---------- |
+| code        | PK  | Text    |      | Y     | |
+| name        |     | Text    | 20   |       | |
+| type        |     | Text    | 8    |       | Restricted choice: Cat, Dog, Budgie, Gerbil, Tortoise |
+| dob         |     | Date    |      |       | |
+| vaccination |     | Boolean |      |       | |
+| ownerID     | FK  | Number  |      | Y     | ownerID exists in Owner table |
+
+
+### Entity Relationship Diagram (ERD)
 
 ![ERD](assets/erd1.png)
 
