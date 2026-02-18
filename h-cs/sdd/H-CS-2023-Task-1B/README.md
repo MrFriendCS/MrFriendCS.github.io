@@ -97,13 +97,15 @@ Print evidence of:
 
 __1d__ The sub-program 'Write to file the names of roller coasters that need a service within 7 days' is tested using the sample data below. 
 
-![Test data](assets/test.png "Test data")
+```
+Aftershock,Roller Coaster,510324,695,1.2m
+Aqua Loop,Water,57288,542,0.9m
+Asteroid Belt,Roller Coaster,551218,623,1.4m
+```
 
 Complete the trace table below to show the values up to the end of the third iteration. 
 
 (___3 marks___)
-
-![Trace table](assets/TT.png "Trace table")
 
 |  &nbsp;       | If current category is 'Roller Coaster' | days   | If (90 – days) is less than or equal to 7 |
 | -------       | --------------------------------------- | ----   | ------ |
