@@ -107,7 +107,7 @@ Complete the trace table below to show the values up to the end of the third ite
 
 (___3 marks___)
 
-|  &nbsp;       | If current category is 'Roller Coaster' | days   | If (90 – days) is less than or equal to 7 |
+|  &nbsp;       | If current category is <br> 'Roller Coaster' | days   | If (90 – days) is less than or <br> equal to 7 |
 | -------       | --------------------------------------- | ----   | ------ |
 | 1st iteration | &nbsp;                                  | &nbsp; | &nbsp; |
 | 2nd iteration | &nbsp;                                  | &nbsp; | &nbsp; |
