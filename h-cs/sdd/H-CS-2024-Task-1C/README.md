@@ -111,7 +111,7 @@ Print evidence of:
 * program outputs from 1(c)
 
 
-__1d__	Step 2 of the program is tested with the following sample test data.
+__1d__ Step 2 of the program is tested with the following sample test data.
 
 ```
 Grap,724,375000

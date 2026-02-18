@@ -1,5 +1,6 @@
 # H CS 2023 - Task 1 Part B
 
+
 File: [attractions.csv](assets/attractions.csv "Download file")
 
 
@@ -23,14 +24,51 @@ Attractions in the category ‘Roller Coaster’ are serviced every 90 days. The
 
 An example of the data in the file is shown below:
 
-![Example data](assets/data.png "Example data")
+```
+Aftershock,Roller Coaster,510324,695,1.2m 
+Aqua Loop,Water,157288,542,0.9m
+Asteroid Belt,Roller Coaster,551218,623,1.4m
+Attack of the Smartphones,Simulation,548630,663,1.0m
+Beaver Falls,Water,95970,695,1.2m
+Bug Blaster,Simulation,293033,542,0.9m
+Bumblebee Flyer,Kids,104010,715,0.9m
+Candyfloss Carousel,Kids,95970,663,0.9m
+```
  
 
 ## Design
 
 The design for the program is shown below.
 
-![Psuedocode](assets/PC.png "Psuedocode")
+```
+1 Read data from file into     OUT attraction(), category(), visitors(), daysOpen(), height()
+  parallel arrays
+
+2 Find and display the names   IN  attraction(), visitors() 
+  of the least visited and
+  most visited attractions
+
+3 Write to file the names of   IN  attraction(), category(), daysOpen()
+  roller coasters that need
+  a service within 7 days
+```
+
+
+### Refinements
+
+```
+3.1  Create 'service.csv' file
+3.2  Loop for each attraction
+3.3      If current category is 'Roller Coaster' then
+3.4          Set days to current daysOpen modulus 90
+3.5          If (90 – days) is less than or equal to 7 then
+3.6              Write current attraction to file
+3.7          End if
+3.8      End if
+3.9  End loop
+3.10 Close 'service.csv' file
+```
+
 
 __1c(i)__ Using the problem description and design, implement the program in a language of your choice.
 
@@ -55,9 +93,9 @@ Print evidence of:
 
 * your program code
 * program outputs from __1c(i)__ and __1c(ii)__
-* the ‘service.csv’ file
+* the 'service.csv' file
 
-__1d__ The sub-program ‘Write to file the names of roller coasters that need a service within 7 days’ is tested using the sample data below. 
+__1d__ The sub-program 'Write to file the names of roller coasters that need a service within 7 days' is tested using the sample data below. 
 
 ![Test data](assets/test.png "Test data")
 
@@ -65,10 +103,17 @@ Complete the trace table below to show the values up to the end of the third ite
 
 (___3 marks___)
 
-![Trace table](assets/TT.png "Trace table")		
+![Trace table](assets/TT.png "Trace table")
 
-__1e__	A new attraction is added to the theme park and the CSV file now has data for 27 attractions. 
+|  &nbsp;       | If current category is 'Roller Coaster' | days   | If (90 – days) is less than or equal to 7 |
+| -------       | --------------------------------------- | ----   | ------ |
+| 1st iteration | &nbsp;                                  | &nbsp; | &nbsp; |
+| 2nd iteration | &nbsp;                                  | &nbsp; | &nbsp; |
+| 3rd iteration | &nbsp;                                  | &nbsp; | &nbsp; |
 
-Evaluate the maintainability of your first sub-program ‘Read data from file into parallel arrays’, with reference to data structures and loops, based on this change. 
+
+__1e__  A new attraction is added to the theme park and the CSV file now has data for 27 attractions. 
+
+Evaluate the maintainability of your first sub-program 'Read data from file into parallel arrays', with reference to data structures and loops, based on this change. 
 
 (___2 marks___)
