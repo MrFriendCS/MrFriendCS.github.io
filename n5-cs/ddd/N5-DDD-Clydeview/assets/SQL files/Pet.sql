@@ -4,8 +4,10 @@ CREATE TABLE Pet (
     name VARCHAR(20),
     type VARCHAR(8)
         CHECK (type IN("Budgie", "Cat", "Dog", "Gerbil", "Tortoise")),
-    dateOfBirth DATE,
-    vaccination BOOL,
+    dateOfBirth DATE
+        CHECK (dateOfBirth LIKE "____-__-__"),
+    vaccination BOOL
+        CHECK (vaccination = TRUE OR vaccination = FALSE),
     ownerID INT NOT NULL,
     FOREIGN KEY (ownerID)
         REFERENCES Owner (ownerID),
