@@ -1,4 +1,4 @@
-# N5 DDD Update Queries
+# N5 DDD Insert Queries
 
 
 File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
@@ -40,15 +40,58 @@ File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 Using SQL queries:
 
-1. The pet with Pet Code P1559 has just received its vaccination.
-Edit the correct record of the database.
+1. Add the details of Goldie the dog to the Pet table.
 
-2. The owner with Owner ID 2356 has changed her contact number to 07723456789.
-Edit the correct record of the database.
+| Field         | Value |
+| -----         | ----- |
+| Pet code      | P4821 |
+| Pet name      | Goldie |
+| Pet type      | Dog |
+| Date of birth | 2016-10-26 |
+| Vaccinated?   | True |
+| Owner ID      | 3821 |
 
-3. The owner called Sally Chan has moved house.
-Her new address is 64 Lochview Road, Gourock.
-Edit the correct record of the database.
+{:start="2"}
+2. Add the following details of a new owner and their pet to the database.
 
-4. The date of birth of Gladys the gerbil has been stored incorrectly; it should be 16/10/2004.
-Edit the correct record of the database.
+| Field    | Value |
+| -----    | ----- |
+| Owner ID | 3905 |
+| Forename | Gary |
+| Surname  | Hughes |
+| Address  | 13 Juniper Place |
+| Town     | Wemyss Bay |
+| Phone    | 07998765432 |
+
+| Field         | Value |
+| -----         | ----- |
+| Pet code      | P2751 |
+| Pet name      | Usain |
+| Pet type      | Tortoise |
+| Date of birth | 2006-10-28 |
+| Vaccinated?   | False |
+| Owner ID      | 3905 |
+
+{:start="3"}
+3. Add the following details of a pet and their owner to the database.
+
+| Field         | Value |
+| -----         | ----- |
+| Pet code      | P0438 |
+| Pet name      | Arnie |
+| Pet type      | Budgie |
+| Date of Birth | 13 March 2017 |
+| Vaccinated?   | No |
+
+| Field     | Value |
+| -----     | ----- |
+| Owner ID  | 2664 |
+| Forename  | Hannah |
+| Surname   | Black |
+| Address   | 47 High Road |
+| Town      | Greenock |
+| Telephone | 01475633633 |
+
+{:start="4"}
+4. Owner 3905 has a new pet cat called Bruno with date of birth 14/05/2017 and pet code P1678 (Bruno hasn't had any vaccinations yet).
+Add Bruno’s details to the database.

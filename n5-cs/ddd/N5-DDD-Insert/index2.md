@@ -1,4 +1,4 @@
-# N5 DDD Update Queries Part 2
+# N5 DDD Insert Queries Part 2
 
 
 File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
@@ -38,13 +38,53 @@ File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 Using SQL queries:
 
-1. The stock level of the product with Product Code MA16 has fallen to 1 and the product is now on order.
-Edit the correct record of the database.
+1. Add details of this new product to the database.
 
-2. The manufacturer called Tool Makers has moved.
-Its new address is: Unit 6, Avon Industrial Estate, Bath and its new phone number is: 01789334456.
-Edit the correct record of the database.
+| Field           | Value |
+| -----           | ----- |
+| Product name    | Spirit Level |
+| Product code    | SPL3 |
+| Number in stock | 14 |
+| On order?       | False |
+| Price (£)       | 17.99 |
+| Manufacturer ID | 531 |
 
-3. Manufacturer 327 has a new product called Tin Snips Left-handed and costs £9.67.
-The code of this new product is TSL1, there are 5 in stock and none on order.
-Add details of this new product to the database.
+
+{:start="2"}
+2. Add the following manufacturer and product details to the database.
+
+| Field             | Value |
+| -----             | ----- |
+| Manufacturer ID   | 327 |
+| Manufacturer name | CVA Group |
+| Address           | 35 Lomond Way Paisley |
+| Telephone         | 01414141414 |
+
+
+| Field           | Value |
+| -----           | ----- |
+| Product name    | Circular Saw |
+| Product code    | CSW2 |
+| Number in stock | 3 |
+| On order?       | No |
+| Price (£)       | 99.00 |
+| Manufacturer ID | 327 |
+
+{:start="3"}
+3. Add the following product and manufacturer details to the database.
+
+| Field           | Value |
+| -----           | ----- |
+| Product name    | 6 piece Chisel Set |
+| Product code    | CSP6 |
+| Number in stock | 8 |
+| On order?       | Yes |
+| Price (£)       | 43.51 |
+| Manufacturer ID | 408 |
+
+| Field             | Value |
+| -----             | ----- |
+| Manufacturer ID   | 408 |
+| Manufacturer name | Cabinet Makers |
+| Address           | 158 Hawthorn Road Carlisle |
+| Telephone         | 03217329124 |
