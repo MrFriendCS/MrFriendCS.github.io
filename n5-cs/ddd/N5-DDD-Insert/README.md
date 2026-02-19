@@ -91,3 +91,7 @@ Using SQL queries:
 | Address   | 47 High Road |
 | Town      | Greenock |
 | Telephone | 01475633633 |
+
+{:start="4"}
+4. Owner 3905 has a new pet cat called Bruno with date of birth 14/05/2017 and pet code P1678 (Bruno hasn't had any vaccinations yet).
+Add Bruno’s details to the database.
