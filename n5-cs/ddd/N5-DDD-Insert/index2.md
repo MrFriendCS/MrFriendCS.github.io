@@ -88,3 +88,8 @@ Using SQL queries:
 | Manufacturer name | Cabinet Makers |
 | Address           | 158 Hawthorn Road Carlisle |
 | Telephone         | 03217329124 |
+
+{:start="4"}
+4. Manufacturer 327 has a new product called Tin Snips Left-handed and costs £9.67.
+The code of this new product is TSL1, there are 5 in stock and none on order.
+Add details of this new product to the database.

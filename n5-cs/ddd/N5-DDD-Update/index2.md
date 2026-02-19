@@ -44,7 +44,3 @@ Edit the correct record of the database.
 2. The manufacturer called Tool Makers has moved.
 Its new address is: Unit 6, Avon Industrial Estate, Bath and its new phone number is: 01789334456.
 Edit the correct record of the database.
-
-3. Manufacturer 327 has a new product called Tin Snips Left-handed and costs £9.67.
-The code of this new product is TSL1, there are 5 in stock and none on order.
-Add details of this new product to the database.
