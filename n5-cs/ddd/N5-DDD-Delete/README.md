@@ -40,9 +40,8 @@ File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 Using SQL queries:
 
-1. Remove details of Slinky the tortoise from the database.
+1. Remove details of Misty the cat from the database.
 
 2. Remove the details of the owner with Owner ID 2356 from the database.
 
 3. Remove the details of the pet called Speedy from the database.
-
