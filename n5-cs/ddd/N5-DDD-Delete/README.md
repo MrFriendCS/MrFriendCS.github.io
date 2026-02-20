@@ -42,7 +42,7 @@ Using SQL queries:
 
 1. Remove details of Slinky the tortoise from the database.
 
-2. Remove the details of the owner with Owner ID 3510 from the database.
+2. Remove the details of the owner with Owner ID 2356 from the database.
 
-3. Remove the details of the pet called Usain from the database.
+3. Remove the details of the pet called Speedy from the database.
 
