@@ -5,7 +5,7 @@ File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 ## Table: Customer
 
-![ERD](assets/erd1.png)
+![ERD](../N5-DDD-Clydeview/assets/Diagrams/Entity-Customer.png)
 
 
 ## Tasks

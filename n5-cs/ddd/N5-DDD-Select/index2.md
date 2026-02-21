@@ -5,7 +5,7 @@ File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 ## Table: SuperHero
 
-![ERD](assets/erd2.png)
+![ERD](../N5-DDD-Clydeview/assets/Diagrams/Entity-SuperHero.png)
 
 
 ## Tasks
@@ -13,8 +13,8 @@ File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 Using SQL queries:
 
 1. Search the database to find a character who played the role of _Super Hero_ with _Acrobatics_ as his/her main ability.
-
 Display the character’s name, role and main ability.
+
 2. Search the database to find a character who played the role of _Henchman_ whose main ability is _Strength_.
 Display the character’s name, role and main ability.
 
