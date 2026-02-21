@@ -31,7 +31,7 @@ File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 ### Entity Relationship Diagram (ERD)
 
-![ERD](assets/erd2.png)
+![ERD](../N5-DDD-Clydeview/assets/Diagrams/ERD-ManufacturerProduct.png)
 
 
 ## Tasks
