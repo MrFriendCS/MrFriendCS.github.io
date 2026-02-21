@@ -12,7 +12,7 @@ The structure of the tables is shown below.
 
 ### Entity Relationship Diagram (ERD)
 
-![ERD](assets/erd3.png)
+![ERD](../N5-DDD-Clydeview/assets/Diagrams/ERD-OwnerPet.png)
 
 
 ## Tasks
