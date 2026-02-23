@@ -9,15 +9,15 @@ File: [Membership.db](assets/Membership.db "Download file")
 
 ### Entity: Club
 
-| Attribute | Key   | Type    | Size  | Req'd | Validation |
-| --------- | :---: | ----    | :---: | :---: | ---------- |
-| clubID    | PK    | Text    | 6     | Y     | |
-| name      |       | Text    | 30    | Y     | |
-| location  |       | Text    | 30    | Y     | |
-| type      |       | Text    | 20    | Y     | |
-| opened    |       | Date    |       | N     | |
-| trainer   |       | Boolean |       | Y     | |
-| rooms     |       | Number  |       | Y     | Range: >= 0 |
+| Attribute | Key | Type    | Size | Req'd | Validation |
+| --------- | --- | ----    | ---- | :---: | ---------- |
+| clubID    | PK  | Text    | 6    | Y     | |
+| name      |     | Text    | 30   | Y     | |
+| location  |     | Text    | 30   | Y     | |
+| type      |     | Text    | 20   | Y     | |
+| opened    |     | Date    |      | N     | |
+| trainer   |     | Boolean |      | Y     | |
+| rooms     |     | Number  |      | Y     | Range: >= 0 |
 
 
 ### Entity: Member
@@ -25,7 +25,7 @@ File: [Membership.db](assets/Membership.db "Download file")
 | Attribute | Key | Type   | Size | Req'd | Validation |
 | --------- | --- | ----   | ---- | :---: | ---------- |
 | memberNo  | PK  | Text   | 8    | Y     | |
-| clubID    | FK  | Text   | 6    | Y     | Exists in Club table |
+| clubID    | FK  | Text   | 6    | Y     | clubID exists in Club table |
 | firstName |     | Text   | 20   | Y     | |
 | lastName  |     | Text   | 30   | Y     | |
 | address   |     | Text   | 30   | N     | |
