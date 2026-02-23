@@ -1,13 +1,4 @@
 /*
--- Don't change lines 1 to 5
-.open membership.db
-.headers on
-.mode column
--- Don't change lines 1 to 5
-*/
-
-
-/*
 Title: N5-DDD-Membership
 Author: Mr Friend
 Date: 28 Sep 2024
@@ -114,5 +105,5 @@ DELETE FROM Club
     WHERE clubID = "SP488";
 
 INSERT INTO Member
-    VALUES ("AVC243", "SP487", "Wallace", "Blevins", "13 Euismod Avenue", "Lowhall", "C76 6FO", "1955-12-02", 8 , "M", "Guest");
-	
+    VALUES ("AVC243", "SP487", "Wallace", "Blevins", "13 Euismod Avenue",
+            "Lowhall", "C76 6FO", "1955-12-02", 8 , "M", "Guest");

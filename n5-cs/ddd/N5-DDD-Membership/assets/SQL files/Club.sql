@@ -3,8 +3,10 @@ CREATE TABLE Club (
     name VARCHAR(30) NOT NULL,
     location VARCHAR(30) NOT NULL,
     type VARCHAR(20) NOT NULL,
-    opened DATE,
-    trainer BOOLEAN,
+    opened DATE
+        CHECK (opened LIKE "____-__-__"),
+    trainer BOOLEAN
+        CHECK (trainer = TRUE OR trainer = FALSE),
     rooms INT
         CHECK(rooms >= 0),
     PRIMARY KEY (clubID)

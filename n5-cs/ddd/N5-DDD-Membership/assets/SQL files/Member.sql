@@ -7,9 +7,11 @@ CREATE TABLE Member (
     town VARCHAR(20),
     postcode VARCHAR(8),
     dob DATE NOT NULL 
-        CHECK(dob >= "1925-01-01"),
+        CHECK(dob >= "1925-01-01" AND
+              dob LIKE "____-__-__"),
     renew INT NOT NULL 
-        CHECK(renew >=1 AND renew <= 12),
+        CHECK(renew >=1 AND
+              renew <= 12),
     gender VARCHAR(15) 
         CHECK(gender IN ("F", "M", "ND")),
     type VARCHAR(15) NOT NULL 
