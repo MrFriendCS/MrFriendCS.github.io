@@ -57,7 +57,7 @@ Order by town (alphabetical), then date of birth (youngest first)
 Display the first name, surname, and the type of club they attend.
 
 8. Display the first name, surname, and the member number of each Puddles club member.
-Order by forename and then surname.
+Order by forename and then surname, both alphabetically.
 
 9. Create a new club using these details:
 
