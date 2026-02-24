@@ -12,7 +12,7 @@
 | H-CS-2023-Task-1B  | Theme Park          | sp, r, pa, min+, max+, ls+, mod, w   | pc |
 | H-CS-2024-Task-1C  | CEO salaries        | sp+, r, pa, max, ls+, co             | pc |
 | H-CS-2024S-Task-1C | Jumping Jacks       | sp, r, pa, ss, asc, max, ls+, w      | pc |
-| H-CS-2025-Task-1C  |                     |                                      | |
+| H-CS-2025-Task-1C  | Fast food outlet    | sp+, r, ar, ls+, w, co               | pc |
 
 
 ### SDD Abbreviations
