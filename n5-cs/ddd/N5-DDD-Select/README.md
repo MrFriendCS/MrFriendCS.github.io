@@ -1,4 +1,5 @@
-# N5 DDD Select Queries (Simple)
+# N5 DDD Select Queries
+
 
 File: [Clydeview.db](../N5-DDD-Clydeview/assets/Clydeview.db "Download file")
 
