@@ -3,7 +3,7 @@
 
 ## Tasks
 
-| Title                | Description                        | Concepts                | Comments | 
+| Title                | Description                        | Concepts                | Comments |
 | -----                | -----------                        | --------                | -------- |
 | N5-DDD-Select Pt 1   | Simple conditions, single table    | sl, ob                  | Clydeview tasks |
 | N5-DDD-Select Pt 2   | Complex conditions, single table   | sl, lo, ob              | Clydeview tasks |
