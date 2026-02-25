@@ -1,4 +1,5 @@
-# N5 DDD School Houses - Part 2
+# N5 DDD Hogwarts - Part 2
+
 
 Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 

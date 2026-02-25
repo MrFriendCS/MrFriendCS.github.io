@@ -1,6 +1,12 @@
-# N5 DDD School Houses - Part 3
+# N5 DDD Hogwarts - Part 3
+
 
 Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
+
+
+## Entity Relationship Diagram (ERD)
+
+![ERD](assets/Diagrams/ERD-HousePupil.png)
 
 
 ## Data Dictionary
