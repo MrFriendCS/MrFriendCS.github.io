@@ -74,4 +74,4 @@ SP488, Vital Spark, Brockton, Gym, 2017-03-03, FALSE, 2
 
 13. Delete all members with a guest account.
 
-14. Display the first name, surname, and memebership type of each member, with the membership type alphabetical.
+14. Display the first name, surname, and memebership type of each member, sorted by membership number in reverse alphabetical order..
