@@ -1,4 +1,4 @@
-# N5 DDD Membership
+# N5 DDD Membership Part 2
 
 
 File: [Membership.db](assets/Membership.db "Download file")
@@ -39,22 +39,25 @@ File: [Membership.db](assets/Membership.db "Download file")
 
 ## Tasks
 
-1. Create a query to display the club name and club ID of all clubs.
+1. Create a new club using these details:
 
-2. Display the first name, surname, and gender of all adult members.
+```
+Club name: Vital Spark
+Type:      Gym
+Rooms:     2
+Trainer:   No
+Location:  Brockton
+Opened:    3rd March 2017
+Club code: SP488
+```
 
-3. Display the first name, surname, and gender of all adult members, with surnames in alphabetical order.
+{:start="2"}
+2. Create a query to show the details of the club that was added.
 
-4. Display all information of clubs that offer personal trainers.
-Order by the number of rooms for hire, highest first.
+3. For every member with a renewal date of Decemeber, change it to November.
 
-5. Show the town, date of birth, first name, and last name.
-Order by town (alphabetical), then date of birth (youngest first)
+4. Display the member number, forename, and last name of all members who have a renewal date of November.
 
-6. Create a query to display the last name, address, and postcode of all males who must renew their membership in May.
+5. Delete all members with a guest account.
 
-7. Link the tables using the relationship created by `clubID`.
-Display the first name, surname, and the type of club they attend.
-
-8. Display the first name, surname, and the member number of each Puddles club member.
-Order by forename and then surname, both alphabetically.
+6. Display the first name, surname, and memebership type of each member, sorted by membership number in reverse alphabetical order..
