@@ -54,25 +54,4 @@ Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 
 9. Show the names of all pupils who are 13.
 
-10.	Show the name and year group for pupils in S1 or S2.
-
-11.	Write a statement to show the name of the guidance teachers of Slytherin and Gryffindor houses.
-
-12.	Display the name and age of all S5 and S6 pupils.
-
-13.	Show all the details of pupils who have the same surname as you, and are at least 14 years old.
-
-14.	Write a statement to show all the pupil records, sorted by surname and then forename, both alphabetically.
-
-15.	Show name and `id` of all pupils, sorted by age, oldest to youngest, and then surname alphbetically.
-
-16.	Display the name and year of all S5 and S6 pupils sorted by year, lowest first, and then surname and forename alphbetically.
-
-17.	Write the SQL to show the  `colour`, `emblem`, and name of all of the houses.
-Sort the data by colour aplabetically.
-
-18. Show the full name and `house` for pupils in S5.
-
-19. Write a SQL statment to show the names and house for pupils younger than 13.
-
-20.	Display the forename and `house` of pupils who are 14.
+10. Show the name and year group for pupils in S1 or S2.

@@ -1,4 +1,4 @@
-# N5 DDD Hogwarts - Part 2
+# N5 DDD Hogwarts
 
 
 Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
@@ -36,26 +36,23 @@ Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
 
 ### Tasks
 
-1. Write a SQL statement to display everything in the pupil table.
+1. Write a statement to show the name of the guidance teachers of Slytherin and Gryffindor houses.
 
-2. Display everything in the house table.
+2. Display the name and age of all S5 and S6 pupils.
 
-3. Create a single SQL statement to display everything in the pupil and house tables. 
+3. Show all the details of pupils who have the same surname as you, and are at least 14 years old.
 
-4. Display the forename, age, and house name of all pupils.
+4. Write a statement to show all the pupil records, sorted by surname and then forename, both alphabetically.
 
-5. Write a statement that shows the full name, forename and suranme, and the name of the guidance teacher for all pupils.
+5. Show name and `id` of all pupils, sorted by age, oldest to youngest, and then surname alphbetically.
 
-6. Display the forename, surname, and year group for all pupils in Slytherin house.
+6. Display the name and year of all S5 and S6 pupils sorted by year, lowest first, and then surname and forename alphbetically.
 
-7. Using both tables, display all of your details.
+7. Write the SQL to show the  `colour`, `emblem`, and name of all of the houses.
+Sort the data by colour aplabetically.
 
-8. Display the details of all pupils with the same surname as you whose house emblem is an eagle.
+8. Show the full name and `house` for pupils in S5.
 
-9. Show forename, surname and year for all pupils in Hufflepuff, order by surname ascending.
+9. Write a SQL statment to show the names and house for pupils younger than 13.
 
-10. Show the surname, forename, year group, and guidance teacher of each pupil.  Sort by year group, oldest to youngest, and surname alphabetically.
-
-11. Show the emblem, house colour, forename, and year group.  Sort the results by emblem alphabetically, and year group from youngest to oldest.
-
-12. Display the forename, surname, age, and guidance teacher for pupils in S3, sort by age decreasing, surname alphabetically, then forename alphabetically.
+10. Display the forename and `house` of pupils who are 14.
