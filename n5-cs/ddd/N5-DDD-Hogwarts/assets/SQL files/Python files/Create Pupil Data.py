@@ -14,7 +14,7 @@ import random
 
 
 # Find DDDhelper file
-shool = "C:\\Users\\afriend1r\\AppData\\Local\\Programs\\Thonny"
+school = "C:\\Users\\afriend1r\\AppData\\Local\\Programs\\Thonny"
 
 start1 = "C:\\Users\\afriend1r\\OneDrive - Glow Scotland\\"
 start2 = "C:\\Users\\alfri\\OneDrive - Glow Scotland\\"
@@ -24,7 +24,7 @@ folder2 = "GitHub\\"
 
 
 # Check if directory exists
-if shool in sys.path:
+if school in sys.path:
     # School laptop
     sys.path.append(start1 + folder1)
     school = True

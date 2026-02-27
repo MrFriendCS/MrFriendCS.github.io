@@ -1,134 +1,96 @@
 /*
 Title: N5 DDD Hogwarts Part 3
 Author: Mr Friend
-Date: 7 Jan 2025
+Date: 6 Jan 2025
 */
 
--- Task 1 - Display all Pupil table data
+-- Task 1 - All Pupil table data
 SELECT *
     FROM Pupil;
 
 
--- Task 2 - Add a pupil
-INSERT INTO Pupil
-    VALUES (301, "Potter", "Harry", 1, "S1", 11);
-
-
--- Task 3 - Add another pupil
-INSERT INTO Pupil
-    VALUES (302, "Malfoy", "Daco", 4, "S1", 11);
-
-
--- Task 4 - Display new pupils
-SELECT *
-    FROM Pupil
-    WHERE id = 301 
-       OR id = 302;
-
-
--- Task 5 - Display all House table data
+-- Task 2 - All House table data
 SELECT *
     FROM House;
 
 
--- Task 6 - Add new house
-INSERT INTO House (id, name, emblem, colour)
-    VALUES (5, "Berneray", "Sheep", "Green and Black");
+-- Task 3 - forename, age, and house name
+SELECT firstName, age, name
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID;
 
 
--- Task 7 - Display new house
-SELECT *
-    FROM House
-    WHERE id = 5;
+-- Task 4 - 
+SELECT firstName, lastName, guidanceTeacher
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID;
 
 
--- Task 8 - Change house
-UPDATE House
-    SET colour = "Green and White"
-    WHERE id = 5;
-
-
--- Task 9 - Display updated house
-SELECT *
-    FROM House
-    WHERE id = 5;
-
-
--- Task 10 - Change house record
-UPDATE House
-    SET guidanceTeacher = "Prof Carrot", 
-        emblem = "Rabbit"
-    WHERE id = 2;
-
-
--- Task 11 - Display updated record
-SELECT *
-    FROM House
-    WHERE id = 2;
-
-
--- Task 12 - Change pupil record
-UPDATE Pupil
-    SET age = 15
-    WHERE id = 93;
-
-
--- Task 13 - Display updated record
-SELECT *
-    FROM Pupil
-    WHERE id = 93;
-
-
--- Task 14 -  Change pupil record
-UPDATE Pupil
-    SET lastName = "Forth",
-        year  = "S1"
-    WHERE id = 205;
-
-
--- Task 15 - Display updated record
-SELECT *
-    FROM Pupil
-    WHERE id = 205;
-
-
--- Task 16 - Display 'own' details
-SELECT *
-    FROM Pupil, House
-    WHERE Pupil.houseID = House.id
-      AND firstName ="James"
-      AND lastName = "Friend";
-
-
--- Task 17 - Change house - id will be different
-UPDATE Pupil
-    SET houseID = 1
-    WHERE id = 132;
-
-
--- Task 18 - Display updated record - id will be different
-SELECT *
-    FROM Pupil
-    WHERE id = 132;
-
-
--- Task 19 - Remove Berneray house record
-DELETE FROM House
-    WHERE id = 5;
+-- Task 5 - 
+SELECT firstName, lastName, year
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
+      AND name = "Slytherin";
 
 -- or
 
-DELETE FROM House
-    WHERE name = "Berneray";
-
-
--- Task 20 - Find John Bull
-SELECT *
+SELECT firstName, lastName, year
     FROM Pupil
-    WHERE firstName ="John"
-      AND lastName = "Bull";
+    WHERE houseID = 4;
 
 
--- Task 21 - Remove Bull
-DELETE FROM Pupil
-    WHERE id = 278;
+-- Task 6 - 
+SELECT *
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
+      AND firstName = "James"
+      AND lastName = "Friend";
+
+
+-- Task 7 - 
+SELECT *
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
+      AND lastName = "Friend"
+      AND emblem = "Eagle";
+
+
+-- Task 8 - 
+SELECT firstName, lastName, year
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
+      AND name = "Hufflepuff"
+    ORDER BY lastName ASC;
+
+-- or
+
+SELECT firstName, lastName, year
+    FROM Pupil 
+    WHERE houseID = 2
+    ORDER BY lastName ASC;
+
+
+-- Task 9 - 
+SELECT firstName, lastName, year, guidanceTeacher
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
+    ORDER BY year DESC,
+             lastName ASC;
+
+
+-- Task 10 - 
+SELECT emblem, colour, firstName, year
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
+    ORDER BY emblem ASC,
+             year ASC;
+
+
+-- Task 11 - 
+SELECT firstName, lastName, age, guidanceTeacher
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
+      AND year = "S3"
+    ORDER BY age DESC,
+             lastName ASC,
+             firstName ASC;

@@ -1,102 +1,77 @@
 /*
 Title: N5 DDD Hogwarts Part 2
 Author: Mr Friend
-Date: 6 Jan 2025
+Date: 13 Jan 2025
 */
 
--- Task 1 - All Pupil table data
-SELECT *
-    FROM Pupil;
+
+-- Task 1 - Guidance teacher: Slytherin / Gryffindor
+SELECT guidanceTeacher
+    FROM House
+    WHERE name = "Slytherin"
+       OR name = "Gryffindor";
 
 
--- Task 2 - All House table data
-SELECT *
-    FROM House;
-
-
--- Task 3 - All Pupil and House table data
-SELECT *
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID;
-
-
--- Task 4 - forename, age, and house name
-SELECT firstName, age, name
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID;
-
-
--- Task 5 - 
-SELECT firstName, lastName, guidanceTeacher
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID;
-
-
--- Task 6 - 
-SELECT firstName, lastName, year
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID
-      AND name = "Slytherin";
-
--- or
-
-SELECT firstName, lastName, year
+-- Task 2 - S5 / S6 pupils
+SELECT firstName, lastName, age
     FROM Pupil
-    WHERE houseID = 4;
+    WHERE year = "S5"
+       OR year = "S6";
 
 
--- Task 7 - 
+-- Task 3 - Same surname and at least 14
 SELECT *
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID
-      AND firstName = "James"
-      AND lastName = "Friend";
+    FROM Pupil
+    WHERE lastName = "Friend"
+      AND age >= 14;
 
 
--- Task 8 - 
+-- Task 4 - Pupil records sorted by surname and forename
 SELECT *
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID
-      AND lastName = "Friend"
-      AND emblem = "Eagle";
+    FROM Pupil
+    ORDER BY lastName ASC, 
+             firstName ASC;
 
 
--- Task 9 - 
-SELECT firstName, lastName, year
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID
-      AND name = "Hufflepuff"
-    ORDER BY lastName ASC;
-
--- or
-
-SELECT firstName, lastName, year
-    FROM Pupil 
-    WHERE houseID = 2
-    ORDER BY lastName ASC;
-
-
--- Task 10 - 
-SELECT firstName, lastName, year, guidanceTeacher
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID
-    ORDER BY year DESC,
+-- Task 5 - Name and id, sorted by age and surname
+SELECT firstName, lastName, id
+    FROM Pupil
+    ORDER BY age DESC,
              lastName ASC;
 
 
--- Task 11 - 
-SELECT emblem, colour, firstName, year
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID
-    ORDER BY emblem ASC,
-             year ASC;
-
-
--- Task 12 - 
-SELECT firstName, lastName, age, guidanceTeacher
-    FROM House, Pupil
-    WHERE House.id = Pupil.houseID
-      AND year = "S3"
-    ORDER BY age DESC,
+-- Task 6 - S5 / S6 names and year, sorted
+SELECT firstName, lastName, year
+    FROM Pupil
+    WHERE year = "S5"
+       OR year = "S6"
+    ORDER BY year ASC,
              lastName ASC,
              firstName ASC;
+
+
+-- Task 7 - Houses sorted by colour
+SELECT colour, emblem, name
+    FROM House
+    ORDER BY colour ASC;
+
+
+-- Task 8 - Display full name and house of S5 pupils
+SELECT firstName, lastName, name
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
+      AND year = "S5";
+
+
+-- Task 9 - Full name and house younger than 13
+SELECT firstName, lastName, name
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
+      AND age < 13;
+
+
+-- Task 10 - Forename and house of pupils who are 14
+SELECT firstName, name
+    FROM House, Pupil
+    WHERE House.id = Pupil.houseID
+      AND age = 14;
