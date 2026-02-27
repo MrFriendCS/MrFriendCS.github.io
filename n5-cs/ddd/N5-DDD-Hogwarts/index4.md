@@ -1,7 +1,7 @@
 # N5 DDD Hogwarts - Part 4
 
 
-Database file: [SchoolHouses.db](assets/SchoolHouses.db "Download file")
+Database file: [Hogwarts.db](assets/Hogwarts.db "Download file")
 
 
 ## Entity Relationship Diagram (ERD)
