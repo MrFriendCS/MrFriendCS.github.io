@@ -1,4 +1,4 @@
-# N5 DDD Hogwarts - Part 4
+# N5 DDD Hogwarts - Part 5
 
 
 Database file: [Hogwarts.db](assets/Hogwarts.db "Download file")
@@ -36,44 +36,22 @@ Database file: [Hogwarts.db](assets/Hogwarts.db "Download file")
 
 ### Tasks
 
-1. Write a SQL statement to display everything in the pupil table.
+1. Sally Holby's age has been incorrectly recorded.  Using her pupil id, change her age to 15.
 
-2. Add a new pupil to the school.  The details are:
+2. Display the updated record.
 
-```
-id: 301
-lastName: Potter
-firstName: Harry
-house: Gryffindor
-year: S1
-age: 11
-```
+3. Colin Fifth should really be Colin Forth, also he should be in S1.  Using his pupil id, update his record.
 
-{:start="3"}
-3. Add a another new pupil.  The details are:
+4. Display the updated record.
 
-```
-id: 302
-year: S1
-age: 11
-forename: Draco 
-surname: Malfoy
-house: Slytherin
-```
+5. Display all of your details from the pupil and house table.
 
-{:start="4"}
-4. Write a single SQL statement to display the new records.
+6. The sorting hat has made a mistake.  Using your pupil id, change your record and move to a different house.
 
-5. Write a SQL statement to display everything in the house table.
+7. Display the updated record.
 
-6. There is a new house called `Berneray` house. Its emblem is a `Sheep` and the house colour is `Green and Black`.  Unfortunately, no one has volunteered to be the guidance teacher.  Use the next available `id` to add the available data to the house table.
+8. Berneray house was a short lived idea. Write a SQL statement to remove this house from the database.
 
-7. Display the new house record.
+9. Find the details of John Bull.
 
-8. Berneray's house colour should be `Green and White`.  Modify the record to make this change.
-
-9. Display the updated record.
-
-10. From now on, Prof Sprout wishes to be known as `Prof Carrot` and has changed her house cemblem to a `Rabbit`.  Write a single statement to make these changes.
-
-11. Display the updated record.
+10. John Bull is a Muggle!  He should never have been enrolled, and has now been expelled.  Using his pupil id, remove him from the database.

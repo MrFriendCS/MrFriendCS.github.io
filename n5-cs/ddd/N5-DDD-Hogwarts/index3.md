@@ -42,7 +42,7 @@ Database file: [Hogwarts.db](assets/Hogwarts.db "Download file")
 
 3. Display the forename, age, and house name of all pupils.
 
-4. Write a statement that shows the full name, forename and suranme, and the name of the guidance teacher for all pupils.
+4. Write a statement that shows the full name, forename and surname, and the name of the guidance teacher for all pupils.
 
 5. Display the forename, surname, and year group for all pupils in Slytherin house.
 Pupils should be in year groups, with senior pupils first.
