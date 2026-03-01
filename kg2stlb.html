@@ -1,101 +1,106 @@
-<!DOCTYPE html> 
-<html lang="en-gb">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kg to Stones & Pounds</title>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>Kilos to Stones</title>
-        
-        <style>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        text-align: center;
+        background-color: #f5f5f5;
+    }
 
-            /* For mobile phones: */
+    .output {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 40px;
+    }
 
-            * {
-                margin: 0;
-            }
+    .input-section {
+        margin: 20px;
+    }
 
-            body {
-                background-color: burlywood;
-                font-family: sans-serif;
-                margin: 2vw 5vw;
-            }
+    input {
+        font-size: 2rem;
+        width: 60%;
+        padding: 10px;
+        text-align: center;
+    }
 
-            h1 {
-                font-size: 7.5vw;
-                margin-top: 2vw;
-                margin-bottom: 5vw;
-            }
+    .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
 
-            input, label {
-                font-size: 4vw;
-            }
+    button {
+        font-size: 1.8rem;
+        padding: 25px;
+        border: none;
+        border-radius: 12px;
+        background-color: #2c7be5;
+        color: white;
+    }
 
-            p {
-                font-size: 5vw;
-            }
+    button:active {
+        background-color: #1a5fc1;
+    }
+</style>
+</head>
+<body>
 
-            .topMargin {
-                margin-top: 2vw;
-                margin-bottom: 10vw;
-            }
+<div class="output" id="result">0 st 0 lb</div>
 
-            #callout {
-                font-weight: bold;
-            }
+<div class="input-section">
+    <input type="number" id="kgInput" step="0.1" value="75.0">
+    <div>kilograms</div>
+</div>
 
-            /* For desktop: */
-            @media only screen and (min-width: 600px) {
-                
-                .left {
-                    float: left;
-                    width: 40vw;
-                    margin-top: 2vw;
-                    margin-left: 2vw;
-                }
+<div class="buttons">
+    <button onclick="changeKg(-1)">-1 kg</button>
+    <button onclick="changeKg(1)">+1 kg</button>
+    <button onclick="changeKg(-0.1)">-0.1 kg</button>
+    <button onclick="changeKg(0.1)">+0.1 kg</button>
+</div>
 
-                .right {
-                    float: right;
-                    width: 40vw;
-                    margin-top: 2vw;
-                    margin-right: 2vw;
-                }
+<script>
+const kgInput = document.getElementById("kgInput");
+const result = document.getElementById("result");
 
-            }
-        </style>
-        
-    </head>
+function convert() {
+    let kg = parseFloat(kgInput.value);
+    if (isNaN(kg) || kg < 0) kg = 0;
 
-    <body>
-        <h1>Kilograms to Stones</h1>
+    const totalPounds = kg * 2.2046226218;
+    const stones = Math.floor(totalPounds / 14);
+    const pounds = Math.round(totalPounds % 14);
 
-        <div class="left">
-            <form>
-                <label for="kilos">Kg:</label>
-                <!--input type="number" id="kilos" min="60" max="120" value="75.0" step="0.1" onchange="convert()"-->
-                <input type="range" id="kilos" min="60" max="80" value="75.0" step="0.1" onchange="convert()">
-            </form>
-        </div>
+    result.textContent = stones + " st " + pounds + " lb";
+}
 
-        <div class="right">
-            <p>Weight: <span id="weight">11 st 11 lb</span></p>
-        </div>
-        
+function changeKg(amount) {
+    let current = parseFloat(kgInput.value);
+    if (isNaN(current)) current = 0;
 
-        <script>
-            function convert(){
+    current += amount;
+    if (current < 0) current = 0;
 
-                var kg = document.getElementById("kilos").value;
+    kgInput.value = current.toFixed(1);
+    convert();
+}
 
-                var realKG = parseFloat(kg);
+kgInput.addEventListener("input", convert);
 
-                var stones = parseInt(realKG / 6.35029318);
-                var pounds = Math.round(((realKG % 6.35029318) / 6.35029318 ) * 14);
+convert();
+</script>
 
-                document.getElementById("weight").innerHTML = String(stones) + " st " + String(pounds) + " lbs";
-
-                }
-        </script>
-    </body>
-
+</body>
 </html>
