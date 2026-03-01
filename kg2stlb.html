@@ -80,11 +80,27 @@ function convert() {
     let kg = parseFloat(kgInput.value);
     if (isNaN(kg) || kg < 0) kg = 0;
 
-    const totalPounds = kg * 2.2046226218;
-    const stones = Math.floor(totalPounds / 14);
-    const pounds = Math.round(totalPounds % 14);
+    // Convert kg to total ounces
+    const totalOunces = kg * 35.27396195; // 1 kg = 35.27396195 oz
 
-    result.textContent = stones + " st " + pounds + " lb";
+    let stones = Math.floor(totalOunces / (14 * 16));
+    let remainingOunces = totalOunces - (stones * 14 * 16);
+
+    let pounds = Math.floor(remainingOunces / 16);
+    let ounces = Math.round(remainingOunces % 16);
+
+    // Handle rounding overflow
+    if (ounces === 16) {
+        ounces = 0;
+        pounds += 1;
+    }
+
+    if (pounds === 14) {
+        pounds = 0;
+        stones += 1;
+    }
+
+    result.textContent = stones + " st " + pounds + " lb " + ounces + " oz";
 }
 
 function changeKg(amount) {
