@@ -1,13 +1,13 @@
 CREATE TABLE Client (
     clientid INT NOT NULL,
-    hairdresserid INT NOT NULL,
+    hairdresserID INT NOT NULL,
     firstname VARCHAR(20),
     lastname VARCHAR(30),
     contactnumber VARCHAR(13) NOT NULL
         CHECK(LENGTH(contactnumber >= 11)),
-    FOREIGN KEY (hairdresserid)
-        REFERENCES Hairdresser (hairdresserid),
-    PRIMARY KEY (clientid)
+    FOREIGN KEY (hairdresserID)
+        REFERENCES Hairdresser (hairdresserID),
+    PRIMARY KEY (clientID)
 );
 
 INSERT INTO Client VALUES (10290,1928,"Wen","Qiu","0141 496 0536");

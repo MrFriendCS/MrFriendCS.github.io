@@ -4,23 +4,23 @@
 
 ### Entity: Hairdresser
 
-| Attribute     | Key   | Type   | Size  | Req'd | Validation |
-| ---------     | :---: | ----   | :---: | :---: | ---------- |
-| hairdresserid | PK    | Number |       | Y     |            |
-| firstname     |       | Text   | 20    | N     |            |
-| lastname      |       | Text   | 30    | N     |            |
-| contactnumber |       | Text   | 13    | Y     | Length: >= 11 |
-| salon         |       | Text   | 30    | N     |            |
+| Attribute     | Key | Type   | Size | Req'd | Validation |
+| ---------     | --- | ----   | ---- | :---: | ---------- |
+| hairdresserID | PK  | Number |      | Y     |            |
+| firstname     |     | Text   | 20   | N     |            |
+| lastname      |     | Text   | 30   | N     |            |
+| contactnumber |     | Text   | 13   | Y     | Length: >= 11 |
+| salon         |     | Text   | 30   | N     |            |
 
 ### Entity: Client
 
-| Attribute     | Key   | Type   | Size  | Req'd | Validation |
-| ---------     | :---: | ----   | :---: | :---: | ---------- |
-| clientid      | PK    | Number |       | Y     |            |
-| hairdresserid | FK    | Number |       | Y     | Exists in Hairdresser table |
-| firstname     |       | Text   | 20    | N     |            |
-| lastname      |       | Text   | 30    | N     |            |
-| contactnumber |       | Text   | 13    | Y     | Length: >= 11 |
+| Attribute     | Key | Type   | Size | Req'd | Validation |
+| ---------     | --- | ----   | ---- | :---: | ---------- |
+| clientid      | PK  | Number |      | Y     |            |
+| hairdresserID | FK  | Number |      | Y     | hairdresserID exists in Hairdresser table |
+| firstname     |     | Text   | 20   | N     |            |
+| lastname      |     | Text   | 30   | N     |            |
+| contactnumber |     | Text   | 13   | Y     | Length: >= 11 |
 
 ## Tasks
 
@@ -45,4 +45,3 @@
 8. Add two more people as clients of the Barra / Vatersay hairdresser.  Use false phone numbers.
 
 9. Create a query that has the same columns as Question 6 but only show the information for the Barra / Vatersay hairdresser that you added.
-
