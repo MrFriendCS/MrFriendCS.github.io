@@ -58,7 +58,7 @@
 </head>
 <body>
 
-<div class="output" id="result">0 st 0 lb</div>
+<div class="output" id="result">0 st 0 lb 0 oz</div>
 
 <div class="input-section">
     <input type="number" id="kgInput" step="0.1" value="75.0">
@@ -66,6 +66,8 @@
 </div>
 
 <div class="buttons">
+    <button onclick="changeKg(-0.01)">-0.01 kg</button>
+    <button onclick="changeKg(0.01)">+0.01 kg</button>
     <button onclick="changeKg(-0.1)">-0.1 kg</button>
     <button onclick="changeKg(0.1)">+0.1 kg</button>
     <button onclick="changeKg(-1)">-1 kg</button>
@@ -110,7 +112,7 @@ function changeKg(amount) {
     current += amount;
     if (current < 0) current = 0;
 
-    kgInput.value = current.toFixed(1);
+    kgInput.value = current.toFixed(2);
     convert();
 }
 
