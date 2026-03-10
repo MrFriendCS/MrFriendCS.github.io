@@ -51,6 +51,6 @@ To change all the LEDs to a rainbow, `show rainbow` is used.
 ### On button A+B pressed
 
 To rotate all the LEDs on the strip, `rotate pixel by` is used.
-Nothing will until the `show` command is used.
+Nothing will happen until the `show` command is used.
 
 ![on button A+B](assets/neopixels6.png "on button A+B")
