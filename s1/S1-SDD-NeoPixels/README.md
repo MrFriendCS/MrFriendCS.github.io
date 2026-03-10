@@ -12,8 +12,11 @@ A micro:bit can be used to control [NeoPixels](https://www.adafruit.com/category
 ### Extra Code
 
 The `neopixel` extension needs to be installed.
+This is accessed via `Extensions`.
 
 ![Extension](assets/neopixels1.png "Extension")
+
+The required extension is then selected.
 
 ![Extension](assets/neopixels2.png "Extension")
 
