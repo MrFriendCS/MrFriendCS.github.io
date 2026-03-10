@@ -1,4 +1,4 @@
-# S1 SDD - neoPixels
+# S1 SDD - NeoPixels
 
 
 ## Introduction
