@@ -29,7 +29,7 @@ To set up the NeoPixel the `Neopixel at pin` block is used.  The default values 
 * pin for commands is `P0`
 * number of LEDs is 24
 
-The number of LEDs needs to be changed to the actual number.
+The number of LEDs needs to be changed to the number of actual LEDs.
 
 ![on start](assets/neopixels3.png "on start")
 
@@ -50,6 +50,9 @@ To change all the LEDs to a rainbow, `show rainbow` is used.
 
 ![on button B](assets/neopixels5.png "on button B")
 
+To only use part of a rainbow, adjust the numbers `1 to 360` to something else, e.g. `90 to 180`.
+
+![rainbow](assets/rainbow.png "rainbow")
 
 ### On button A+B pressed
 
