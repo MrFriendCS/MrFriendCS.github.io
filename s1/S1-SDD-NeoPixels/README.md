@@ -54,6 +54,7 @@ To only use part of a rainbow, adjust the numbers `1 to 360` to something else, 
 
 ![rainbow](assets/rainbow.png "rainbow")
 
+
 ### On button A+B pressed
 
 To rotate all the LEDs on the strip, `rotate pixels by` is used.

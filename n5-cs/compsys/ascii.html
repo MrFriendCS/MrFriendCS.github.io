@@ -1,142 +1,438 @@
 <!DOCTYPE html>
-<html lang="en-gb">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="n5.png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>ASCII</title>
+<title>ASCII Tables</title>
 
-    <style>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+    background:#f5f5f5;
+}
 
-        /* For mobile phones: */
+h1{
+    text-align:center;
+}
 
-        body {
-            background-color: burlywood;
-            font-family: sans-serif;            
-            font-size: 9vw;
-            margin: 2vw 5vw;
-        }
+h2{
+    margin-top:40px;
+}
 
-        h1 {
-            font-size: 12vw;
-        }
+table{
+    border-collapse:collapse;
+    width:100%;
+    background:white;
+}
 
-        p {
-            font-size: 6vw;
-            margin: 3vw 0vw;
-            font-family: Consolas, monospace;
-        }
+td{
+    border:1px solid #ccc;
+    padding:6px;
+    font-size:14px;
+}
 
-        #binary {
-            font-size: 0vw;
-        }
+.char{
+    font-weight:bold;
+    font-size:16px;
+}
 
-        /* Class - Clickable 'button' */
-        .button {
-            font-family: sans-serif;
-            font-size: 5vw;
-            display: inline-block;
-            border: 0.3vw solid black;
-            border-radius: 6vw;
-            padding: 2vw;
-        }
-
-        .button:hover {
-            background-color: lightblue;
-        }
-
-        .button:active {
-            background-color: blue;
-        }
-
-
-        /* Large devices (laptops/desktops, 992px and up) */
-        @media only screen and (min-width: 992px) {
-
-            body {           
-                font-size: 3vw;
-            }
-
-            h1 {
-                font-size: 4vw;
-            }
-
-            p {
-                font-size: 3vw;
-                margin: 1vw 0vw;
-            }
-
-            #binary {
-                font-size: inherit;
-            }
-
-            /* Class - Clickable 'button' */
-            .button {
-                font-size: 3vw;
-                border: 0.1vw solid black;
-                border-radius: 2vw;
-                padding: 1vw;
-            }
-
-        }
-
-    </style>
-
+.control{
+    color:#888;
+    font-style:italic;
+}
+</style>
 </head>
 
 <body>
 
-    <h1>Extended ASCII</h1>
+<h1>ASCII Character Tables</h1>
 
-    <p>ASCII:&nbsp;&nbsp;<span id="idAscii">A</span></p>
+<h2>ASCII (0–127)</h2>
+<table id="ascii"><tr><td>0 : <span class="control">NUL</span></td>
+<td>32 : <span class="control">SP</span></td>
+<td>64 : <span class="char">@</span></td>
+<td>96 : <span class="char">`</span></td>
+</tr>
+<tr>
+<td>1 : <span class="control">SOH</span></td>
+<td>33 : <span class="char">!</span></td>
+<td>65 : <span class="char">A</span></td>
+<td>97 : <span class="char">a</span></td>
+</tr>
+<tr>
+<td>2 : <span class="control">STX</span></td>
+<td>34 : <span class="char">"</span></td>
+<td>66 : <span class="char">B</span></td>
+<td>98 : <span class="char">b</span></td>
+</tr>
+<tr>
+<td>3 : <span class="control">ETX</span></td>
+<td>35 : <span class="char">#</span></td>
+<td>67 : <span class="char">C</span></td>
+<td>99 : <span class="char">c</span></td>
+</tr>
+<tr>
+<td>4 : <span class="control">EOT</span></td>
+<td>36 : <span class="char">$</span></td>
+<td>68 : <span class="char">D</span></td>
+<td>100 : <span class="char">d</span></td>
+</tr>
+<tr>
+<td>5 : <span class="control">ENQ</span></td>
+<td>37 : <span class="char">%</span></td>
+<td>69 : <span class="char">E</span></td>
+<td>101 : <span class="char">e</span></td>
+</tr>
+<tr>
+<td>6 : <span class="control">ACK</span></td>
+<td>38 : <span class="char">&amp;</span></td>
+<td>70 : <span class="char">F</span></td>
+<td>102 : <span class="char">f</span></td>
+</tr>
+<tr>
+<td>7 : <span class="control">BEL</span></td>
+<td>39 : <span class="char">'</span></td>
+<td>71 : <span class="char">G</span></td>
+<td>103 : <span class="char">g</span></td>
+</tr>
+<tr>
+<td>8 : <span class="control">BS</span></td>
+<td>40 : <span class="char">(</span></td>
+<td>72 : <span class="char">H</span></td>
+<td>104 : <span class="char">h</span></td>
+</tr>
+<tr>
+<td>9 : <span class="control">TAB</span></td>
+<td>41 : <span class="char">)</span></td>
+<td>73 : <span class="char">I</span></td>
+<td>105 : <span class="char">i</span></td>
+</tr>
+<tr>
+<td>10 : <span class="control">LF</span></td>
+<td>42 : <span class="char">*</span></td>
+<td>74 : <span class="char">J</span></td>
+<td>106 : <span class="char">j</span></td>
+</tr>
+<tr>
+<td>11 : <span class="control">VT</span></td>
+<td>43 : <span class="char">+</span></td>
+<td>75 : <span class="char">K</span></td>
+<td>107 : <span class="char">k</span></td>
+</tr>
+<tr>
+<td>12 : <span class="control">FF</span></td>
+<td>44 : <span class="char">,</span></td>
+<td>76 : <span class="char">L</span></td>
+<td>108 : <span class="char">l</span></td>
+</tr>
+<tr>
+<td>13 : <span class="control">CR</span></td>
+<td>45 : <span class="char">-</span></td>
+<td>77 : <span class="char">M</span></td>
+<td>109 : <span class="char">m</span></td>
+</tr>
+<tr>
+<td>14 : <span class="control">SO</span></td>
+<td>46 : <span class="char">.</span></td>
+<td>78 : <span class="char">N</span></td>
+<td>110 : <span class="char">n</span></td>
+</tr>
+<tr>
+<td>15 : <span class="control">SI</span></td>
+<td>47 : <span class="char">/</span></td>
+<td>79 : <span class="char">O</span></td>
+<td>111 : <span class="char">o</span></td>
+</tr>
+<tr>
+<td>16 : <span class="control">DLE</span></td>
+<td>48 : <span class="char">0</span></td>
+<td>80 : <span class="char">P</span></td>
+<td>112 : <span class="char">p</span></td>
+</tr>
+<tr>
+<td>17 : <span class="control">DC1</span></td>
+<td>49 : <span class="char">1</span></td>
+<td>81 : <span class="char">Q</span></td>
+<td>113 : <span class="char">q</span></td>
+</tr>
+<tr>
+<td>18 : <span class="control">DC2</span></td>
+<td>50 : <span class="char">2</span></td>
+<td>82 : <span class="char">R</span></td>
+<td>114 : <span class="char">r</span></td>
+</tr>
+<tr>
+<td>19 : <span class="control">DC3</span></td>
+<td>51 : <span class="char">3</span></td>
+<td>83 : <span class="char">S</span></td>
+<td>115 : <span class="char">s</span></td>
+</tr>
+<tr>
+<td>20 : <span class="control">DC4</span></td>
+<td>52 : <span class="char">4</span></td>
+<td>84 : <span class="char">T</span></td>
+<td>116 : <span class="char">t</span></td>
+</tr>
+<tr>
+<td>21 : <span class="control">NAK</span></td>
+<td>53 : <span class="char">5</span></td>
+<td>85 : <span class="char">U</span></td>
+<td>117 : <span class="char">u</span></td>
+</tr>
+<tr>
+<td>22 : <span class="control">SYN</span></td>
+<td>54 : <span class="char">6</span></td>
+<td>86 : <span class="char">V</span></td>
+<td>118 : <span class="char">v</span></td>
+</tr>
+<tr>
+<td>23 : <span class="control">ETB</span></td>
+<td>55 : <span class="char">7</span></td>
+<td>87 : <span class="char">W</span></td>
+<td>119 : <span class="char">w</span></td>
+</tr>
+<tr>
+<td>24 : <span class="control">CAN</span></td>
+<td>56 : <span class="char">8</span></td>
+<td>88 : <span class="char">X</span></td>
+<td>120 : <span class="char">x</span></td>
+</tr>
+<tr>
+<td>25 : <span class="control">EM</span></td>
+<td>57 : <span class="char">9</span></td>
+<td>89 : <span class="char">Y</span></td>
+<td>121 : <span class="char">y</span></td>
+</tr>
+<tr>
+<td>26 : <span class="control">SUB</span></td>
+<td>58 : <span class="char">:</span></td>
+<td>90 : <span class="char">Z</span></td>
+<td>122 : <span class="char">z</span></td>
+</tr>
+<tr>
+<td>27 : <span class="control">ESC</span></td>
+<td>59 : <span class="char">;</span></td>
+<td>91 : <span class="char">[</span></td>
+<td>123 : <span class="char">{</span></td>
+</tr>
+<tr>
+<td>28 : <span class="control">FS</span></td>
+<td>60 : <span class="char">&lt;</span></td>
+<td>92 : <span class="char">\</span></td>
+<td>124 : <span class="char">|</span></td>
+</tr>
+<tr>
+<td>29 : <span class="control">GS</span></td>
+<td>61 : <span class="char">=</span></td>
+<td>93 : <span class="char">]</span></td>
+<td>125 : <span class="char">}</span></td>
+</tr>
+<tr>
+<td>30 : <span class="control">RS</span></td>
+<td>62 : <span class="char">&gt;</span></td>
+<td>94 : <span class="char">^</span></td>
+<td>126 : <span class="char">~</span></td>
+</tr>
+<tr>
+<td>31 : <span class="control">US</span></td>
+<td>63 : <span class="char">?</span></td>
+<td>95 : <span class="char">_</span></td>
+<td>127 : <span class="control">DEL</span></td></tr></table>
 
-    <p>Denary:&nbsp;<span id="idDenary">65</span></p>
+<h2>Extended ASCII (128–255)</h2>
+<table id="extended">
+<tr>
+<td>128 : <span class="control">PAD</span></td>
+<td>160 : <span class="control">NBSP</span></td>
+<td>192 : <span class="char">À</span>
+</td>
+<td>224 : <span class="char">à</span></td>
+</tr>
+<tr>
+<td>129 : <span class="control">HOP</span></td>
+<td>161 : <span class="char">¡</span></td>
+<td>193 : <span class="char">Á</span></td>
+<td>225 : <span class="char">á</span></td>
+</tr>
+<tr>
+<td>130 : <span class="control">BPH</span></td>
+<td>162 : <span class="char">¢</span></td>
+<td>194 : <span class="char">Â</span></td>
+<td>226 : <span class="char">â</span></td>
+</tr>
+<tr><td>131 : <span class="control">NBH</span></td>
+<td>163 : <span class="char">£</span></td>
+<td>195 : <span class="char">Ã</span></td>
+<td>227 : <span class="char">ã</span></td>
+</tr>
+<tr>
+<td>132 : <span class="control">IND</span></td>
+<td>164 : <span class="char">¤</span></td>
+<td>196 : <span class="char">Ä</span></td>
+<td>228 : <span class="char">ä</span></td>
+</tr>
+<tr>
+<td>133 : <span class="control">NEL</span></td>
+<td>165 : <span class="char">¥</span></td>
+<td>197 : <span class="char">Å</span></td>
+<td>229 : <span class="char">å</span></td>
+</tr>
+<tr>
+<td>134 : <span class="control">SSA</span></td>
+<td>166 : <span class="char">¦</span></td>
+<td>198 : <span class="char">Æ</span></td>
+<td>230 : <span class="char">æ</span></td>
+</tr>
+<tr>
+<td>135 : <span class="control">ESA</span></td>
+<td>167 : <span class="char">§</span></td>
+<td>199 : <span class="char">Ç</span></td>
+<td>231 : <span class="char">ç</span></td>
+</tr>
+<tr>
+<td>136 : <span class="control">HTS</span></td>
+<td>168 : <span class="char">¨</span></td>
+<td>200 : <span class="char">È</span></td>
+<td>232 : <span class="char">è</span></td>
+</tr>
+<tr>
+<td>137 : <span class="control">HTJ</span></td>
+<td>169 : <span class="char">©</span></td>
+<td>201 : <span class="char">É</span></td>
+<td>233 : <span class="char">é</span></td>
+</tr>
+<tr>
+<td>138 : <span class="control">VTS</span></td>
+<td>170 : <span class="char">ª</span></td>
+<td>202 : <span class="char">Ê</span></td>
+<td>234 : <span class="char">ê</span></td>
+</tr>
+<tr>
+<td>139 : <span class="control">PLD</span></td>
+<td>171 : <span class="char">«</span></td>
+<td>203 : <span class="char">Ë</span></td>
+<td>235 : <span class="char">ë</span></td>
+</tr>
+<tr>
+<td>140 : <span class="control">PLU</span></td>
+<td>172 : <span class="char">¬</span></td>
+<td>204 : <span class="char">Ì</span></td>
+<td>236 : <span class="char">ì</span></td>
+</tr>
+<tr>
+<td>141 : <span class="control">RI</span></td>
+<td>173 : <span class="char">­</span></td>
+<td>205 : <span class="char">Í</span></td>
+<td>237 : <span class="char">í</span></td>
+</tr>
+<tr>
+<td>142 : <span class="control">SS2</span></td>
+<td>174 : <span class="char">®</span></td>
+<td>206 : <span class="char">Î</span></td>
+<td>238 : <span class="char">î</span></td>
+</tr>
+<tr>
+<td>143 : <span class="control">SS3</span></td>
+<td>175 : <span class="char">¯</span></td>
+<td>207 : <span class="char">Ï</span></td>
+<td>239 : <span class="char">ï</span></td>
+</tr>
+<tr>
+<td>144 : <span class="control">DCS</span></td>
+<td>176 : <span class="char">°</span></td>
+<td>208 : <span class="char">Ð</span></td>
+<td>240 : <span class="char">ð</span></td>
+</tr>
+<tr>
+<td>145 : <span class="control">PU1</span></td>
+<td>177 : <span class="char">±</span></td>
+<td>209 : <span class="char">Ñ</span></td>
+<td>241 : <span class="char">ñ</span></td>
+</tr>
+<tr>
+<td>146 : <span class="control">PU2</span></td>
+<td>178 : <span class="char">²</span></td>
+<td>210 : <span class="char">Ò</span></td>
+<td>242 : <span class="char">ò</span></td>
+</tr>
+<tr>
+<td>147 : <span class="control">STS</span></td>
+<td>179 : <span class="char">³</span></td>
+<td>211 : <span class="char">Ó</span></td>
+<td>243 : <span class="char">ó</span></td>
+</tr>
+<tr>
+<td>148 : <span class="control">CCH</span></td>
+<td>180 : <span class="char">´</span></td>
+<td>212 : <span class="char">Ô</span></td>
+<td>244 : <span class="char">ô</span></td>
+</tr>
+<tr>
+<td>149 : <span class="control">MW</span></td>
+<td>181 : <span class="char">µ</span></td>
+<td>213 : <span class="char">Õ</span></td>
+<td>245 : <span class="char">õ</span></td>
+</tr>
+<tr>
+<td>150 : <span class="control">SPA</span></td>
+<td>182 : <span class="char">¶</span></td>
+<td>214 : <span class="char">Ö</span></td>
+<td>246 : <span class="char">ö</span></td>
+</tr>
+<tr>
+<td>151 : <span class="control">EPA</span></td>
+<td>183 : <span class="char">·</span></td>
+<td>215 : <span class="char">×</span></td>
+<td>247 : <span class="char">÷</span></td>
+</tr>
+<tr>
+<td>152 : <span class="control">SOS</span></td>
+<td>184 : <span class="char">¸</span></td>
+<td>216 : <span class="char">Ø</span></td>
+<td>248 : <span class="char">ø</span></td>
+</tr>
+<tr>
+<td>153 : <span class="control">SGCI</span></td>
+<td>185 : <span class="char">¹</span></td>
+<td>217 : <span class="char">Ù</span></td>
+<td>249 : <span class="char">ù</span></td>
+</tr>
+<tr>
+<td>154 : <span class="control">SCI</span></td>
+<td>186 : <span class="char">º</span></td>
+<td>218 : <span class="char">Ú</span></td>
+<td>250 : <span class="char">ú</span></td>
+</tr>
+<tr>
+<td>155 : <span class="control">CSI</span></td>
+<td>187 : <span class="char">»</span></td>
+<td>219 : <span class="char">Û</span></td>
+<td>251 : <span class="char">û</span></td>
+</tr>
+<tr>
+<td>156 : <span class="control">ST</span></td>
+<td>188 : <span class="char">¼</span></td>
+<td>220 : <span class="char">Ü</span></td>
+<td>252 : <span class="char">ü</span></td>
+</tr>
+<tr>
+<td>157 : <span class="control">OSC</span></td>
+<td>189 : <span class="char">½</span></td>
+<td>221 : <span class="char">Ý</span></td>
+<td>253 : <span class="char">ý</span></td>
+</tr>
+<tr>
+<td>158 : <span class="control">PM</span></td>
+<td>190 : <span class="char">¾</span></td>
+<td>222 : <span class="char">Þ</span></td>
+<td>254 : <span class="char">þ</span></td>
+</tr>
+<tr>
+<td>159 : <span class="control">APC</span></td>
+<td>191 : <span class="char">¿</span></td>
+<td>223 : <span class="char">ß</span></td>
+<td>255 : <span class="char">ÿ</span></td></tr></table>
 
-    <p>Binary:
-        <span id="binary">
-            <span id="7" class="button" onclick="fnBinary(this)">0</span>
-            <span id="6" class="button" onclick="fnBinary(this)">1</span>
-            <span id="5" class="button" onclick="fnBinary(this)">0</span>
-            <span id="4" class="button" onclick="fnBinary(this)">0</span>
-            <span id="3" class="button" onclick="fnBinary(this)">0</span>
-            <span id="2" class="button" onclick="fnBinary(this)">0</span>
-            <span id="1" class="button" onclick="fnBinary(this)">0</span>
-            <span id="0" class="button" onclick="fnBinary(this)">1</span>
-        </span>
-    </p>
-
-    <script>
-
-        // Global variables
-        let intDenary = 65;
-
-        function fnBinary(element) {
-
-            // Local variables
-            let intChange = 0;
-            let index = parseInt(element.id);
-            let value = parseInt(element.innerHTML);
-
-            // Toggle binary value
-            if (value == 0) {
-                element.innerHTML = 1;
-                change = 2 ** index;
-            } else {
-                element.innerHTML = 0;
-                change = -(2 ** index);
-            }
-
-            // Update binary value
-            intDenary = intDenary + change;
-            document.getElementById('idDenary').innerHTML = intDenary;
-            document.getElementById('idAscii').innerHTML = String.fromCharCode(intDenary);
-
-        }
-
-    </script>
-</body>
-
-</html>
+</body></html>
