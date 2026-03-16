@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Binary Images - micro:bit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body {
+			background-color: burlywood;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			font-size: 5vw;
+		}
+
+		p {
+			font-size: 1.5vw;
+		}
+
+		main section div {
+			float: left;
+			height: 5vw;
+			width: 5vw;
+			background-color: black;
+			border: 1px solid burlywood;
+		}
+
+		.info {
+			text-align: center;
+            background-color: salmon;
+		}
+
+		.left {
+			float: left;
+			padding-left: 2vw;
+		}
+
+		.right {
+			float: right;
+			padding-right: 2vw;
+		}
+
+		.row {
+			clear: both;
+			text-align: center;
+            background-color: salmon;
+		}
+
+		.start {
+			background-color: burlywood;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<header>
+		<h1>Binary Images - micro:bit</h1>
+	</header>
+
+	<main>
+
+		<section class="left">
+			<div class="info start"></div>
+			<div class="info">
+				<p>16</p>
+			</div>
+			<div class="info">
+				<p>8</p>
+			</div>
+			<div class="info">
+				<p>4</p>
+			</div>
+			<div class="info">
+				<p>2</p>
+			</div>
+			<div class="info">
+				<p>1</p>
+			</div>
+
+			<div class="row">
+				<p>Row 1</p>
+			</div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+
+			<div class="row">
+				<p>Row 2</p>
+			</div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+
+			<div class="row">
+				<p>Row 3</p>
+			</div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+
+			<div class="row">
+				<p>Row 4</p>
+			</div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+
+			<div class="row">
+				<p>Row 5</p>
+			</div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+		</section>
+
+		<section class="right">
+			<div class="info start"></div>
+			<div class="info">
+				<p>16</p>
+			</div>
+			<div class="info">
+				<p>8</p>
+			</div>
+			<div class="info">
+				<p>4</p>
+			</div>
+			<div class="info">
+				<p>2</p>
+			</div>
+			<div class="info">
+				<p>1</p>
+			</div>
+
+			<div class="row">
+				<p>Row 1</p>
+			</div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+
+			<div class="row">
+				<p>Row 2</p>
+			</div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+
+			<div class="row">
+				<p>Row 3</p>
+			</div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+
+			<div class="row">
+				<p>Row 4</p>
+			</div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+
+			<div class="row">
+				<p>Row 5</p>
+			</div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+			<div onclick="toggle(this);"></div>
+		</section>
+
+	</main>
+
+	<script>
+		function toggle(targetSquare) {
+        
+        if (targetSquare.style.backgroundColor=='red')
+        {
+          targetSquare.style.backgroundColor='black';
+        }
+        else
+        {
+          targetSquare.style.backgroundColor='red';
+        }
+
+      }
+	</script>
+
+</body>
+
+</html>
