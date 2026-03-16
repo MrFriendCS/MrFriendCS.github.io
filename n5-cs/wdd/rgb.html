@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Colours</title>
+	<style>
+        * {font-family: sans-serif;}
+
+		#square {
+			width: 90%;
+			height: 200px;
+			margin: 20px;
+			border: 1px solid black;
+            background-color: black;
+		}
+
+        .colourSq {
+			width: 5%;
+			height: 50px;
+			margin: 0.25%;
+			border: 1px solid black;
+            float: left;
+		}
+
+        #redSq {
+            background-color: red;
+        }
+
+        #greenSq {
+            background-color: green;
+        }
+
+        #blueSq {
+            background-color: blue;
+        }
+	</style>
+</head>
+
+<body>
+	<form>
+
+		<table>
+            <tr>
+                <th>Colour</th>
+                <th>Slider</th>
+                <th>Value</th>
+            </tr>
+			<tr>
+				<td>Red</td>
+				<td>
+					<input onmouseup="updateColour()" id="redSlider" type="range" name="red" min="0" max="255" value="0">
+                </td>
+                <td id="redAmount">0</td>
+            </tr>
+            <tr>
+                <td>Green</td>
+                <td>
+                    <input onmouseup="updateColour()" id="greenSlider" type="range" name="green" min="0" max="255" value="0">
+                </td>
+                <td id="greenAmount">0</td>
+            </tr>
+            <tr>
+                <td>Blue</td>
+                <td>
+                    <input onmouseup="updateColour()" id="blueSlider" type="range" name="blue" min="0" max="255" value="0">
+                </td>
+                <td id="blueAmount">0</td>
+            </tr>
+        </table>
+
+    </form>
+
+	<div id="square">
+	</div>
+
+    <div class="colourSq" id="redSq" onclick="setColour(255, 0, 0)" >
+	</div>
+
+    <div class="colourSq" id="greenSq" onclick="setColour(0, 255, 0)" >
+	</div>
+
+    <div class="colourSq" id="blueSq" onclick="setColour(0, 0, 255)" >
+	</div>
+
+    
+
+    <script>
+    
+        function updateColour() {
+            // Declare variables
+            var redValue
+            var greenValue
+            var blueValue
+
+            // Get slider values
+            redValue = document.getElementById("redSlider").value;
+            greenValue = document.getElementById("greenSlider").value;
+            blueValue = document.getElementById("blueSlider").value;
+
+            // Change backbround colour
+            document.getElementById('square').style.backgroundColor = 'rgb(' + redValue + ',' +  + greenValue + ',' + blueValue + ')';
+
+            // Change Values on page
+            document.getElementById('redAmount').innerHTML = redValue;
+            document.getElementById('greenAmount').innerHTML = greenValue;
+            document.getElementById('blueAmount').innerHTML = blueValue;
+
+        }
+
+        function setColour(r, g, b) {
+            document.getElementById("redSlider").value = r;
+            document.getElementById("greenSlider").value = g;
+            document.getElementById("blueSlider").value = b;
+
+            updateColour();
+
+        }
+
+    </script>
+</body>
+
+</html>

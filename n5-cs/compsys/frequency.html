@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Frequency Analysis</title>
+	<style>
+		body {
+			margin: 5% 20%;
+			background-color: burlywood;
+		}
+
+		h1,
+		h2,
+		form {
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Frequency Analysis</h1>
+
+	<h2>Input</h2>
+
+	<form>
+		Enter text to analyse <br/>
+			<textarea id="inputText" rows="5" cols="40"></textarea>
+          <br/>
+          <input type="button" value="Analyse" onclick="analyse()">
+    </form>
+
+      <h2>Output</h2>
+
+      <form>
+          <textarea id="outputText" rows="27"></textarea>
+      </form>
+
+    <script>
+        function analyse(){
+            // Declare variables
+            var char = 0;
+            var outputText = ''
+
+            // Declare an array
+            var letters = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+            // Get the text to analyse
+            var text = document.getElementById('inputText').value;
+
+            // Calculate the length of the string
+            var textLength = text.length;
+            
+            // Loop through the text - letter at a time
+            for (counter = 0; counter < textLength; counter++) {
+                // Get ASCII value
+                char = text.charCodeAt(counter);
+
+                if (char > 90) {
+                    char = char - 32;
+                }
+
+                // Reduce value so A = 0
+                char = char - 65;
+
+                // Log only values for A to Z
+                if (char >= 0 && char <= 25) {
+                    letters[char] = letters[char] + 1;
+                }
+            }
+                
+            char = 65 // Start at A
+
+            // Loop through the results
+            for (counter = 0; counter < 26; counter++) {
+                char = counter + 65;
+
+                outputText = outputText + String.fromCharCode(counter + 65) + ' - ' + letters[counter] + '\n';
+
+            }
+
+            // Display the results
+            document.getElementById('outputText').value = outputText;
+
+        }
+    </script>
+
+  </body>
+</html>
