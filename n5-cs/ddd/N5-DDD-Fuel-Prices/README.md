@@ -7,16 +7,16 @@ File: [FuelPrices.db](assets/FuelPrices.db "Download file")
 ## Data dictionary
 
 
-### Table: Prisoner
+### Table: Station
 
 | Attribute   | Key   | Type    | Size  | Req'd | Validation |
 | ---------   | :---: | ----    | :---: | :---: | ---------- |
 | id          | PK    | Number  |       | Y     | |
-| name        |       | Text    | 30    | Y     | Length >= 3 |
-| postcode    |       | Text    | 8     | Y     | Length >= 3 |
-| motorway    |       | Boolean |       | N     | Restricted choice: Auburn, Black, Blond, Brown, Grey, None, Red, White |
-| supermarket |       | Boolean |       | N     | Restricted choice: Amber, Black, Blue, Brown, Green, Hazel, Grey |
-| latitude    |       | Number  |       | Y     | Range: >= 1.3 and <= 2.5 |
+| name        |       | Text    | 30    | Y     | |
+| postcode    |       | Text    | 8     | Y     | Length >= 5 |
+| motorway    |       | Boolean |       | N     | |
+| supermarket |       | Boolean |       | N     | |
+| latitude    |       | Number  |       | Y     | |
 | longitude   |       | Number  |       | Y     | |
 | e5          |       | Number  |       | Y     | |
 | e10         |       | Number  |       | Y     | |
@@ -30,14 +30,18 @@ File: [FuelPrices.db](assets/FuelPrices.db "Download file")
 | toilets     |       | Boolean |       | Y     | |
 
 
+# Introduction
+
+In the database there are two types of petrol Unleaded (E10) and Super Unleaded (E5), and two types of diesel, Standard (BP7S) and Premium (BP7P).
 
 ## Tasks
 
-1. 
+1. Display the postcode and name of all locations that have a carwash.
+Sort both the postcode and the name alphabetically.
 
 
 
-{:start="5"}	 
+{:start="5"}
 
 
 
