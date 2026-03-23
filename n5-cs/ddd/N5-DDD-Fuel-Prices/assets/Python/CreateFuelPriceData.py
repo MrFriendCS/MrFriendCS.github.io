@@ -266,8 +266,7 @@ def writeCSV(stations):
     
     
     # Headers
-    file.write("name,postcode,motorway,supermarket,latitude,longitude,e5,e10,b7s,b7p,open,close,\
-                ,openSun,closeSun,car wash, toilets\n")
+    file.write("name,postcode,motorway,supermarket,latitude,longitude,e5,e10,b7s,b7p,open,close,openSun,closeSun,car wash, toilets\n")
     
     # Loop for each station
     for station in stations:

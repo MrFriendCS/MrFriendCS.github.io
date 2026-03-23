@@ -1,4 +1,4 @@
-name,postcode,motorway,supermarket,latitude,longitude,e5,e10,b7s,b7p,open,close,                ,openSun,closeSun,car wash, toilets
+name,postcode,motorway,supermarket,latitude,longitude,e5,e10,b7s,b7p,open,close,openSun,closeSun,car wash, toilets
 TESCO,NP4 6JU,0,0,51.70007,-3.04025,NULL,135.9,154.9,NULL,00:00:00,00:00:00,00:00:00,00:00:00,0,1
 GULF,GL54 5NT,0,0,51.963227,-1.956052,NULL,142.7,165.7,NULL,00:00:00,23:59:00,00:00:00,23:59:00,0,0
 TOTAL,DL10 6AB,0,0,54.39353,-1.6168,169.9,146.9,169.9,189.9,07:00:00,22:00:00,07:00:00,22:00:00,1,1
