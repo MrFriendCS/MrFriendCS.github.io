@@ -16,18 +16,18 @@ File: [FuelPrices.db](assets/FuelPrices.db "Download file")
 | postcode    |       | Text    | 8     | Y     | Length >= 5 |
 | motorway    |       | Boolean |       | N     | |
 | supermarket |       | Boolean |       | N     | |
-| latitude    |       | Number  |       | Y     | |
-| longitude   |       | Number  |       | Y     | |
-| e5          |       | Number  |       | Y     | |
-| e10         |       | Number  |       | Y     | |
-| b7s         |       | Number  |       | Y     | |
-| b7p         |       | Number  |       | Y     | |
-| open        |       | Time    |       | Y     | |
-| close       |       | Time    |       | Y     | |
-| openSun     |       | Time    |       | Y     | |
-| closeSun    |       | Time    |       | Y     | |
-| carWash     |       | Boolean |       | Y     | |
-| toilets     |       | Boolean |       | Y     | |
+| latitude    |       | Number  |       | N     | |
+| longitude   |       | Number  |       | N     | |
+| e5          |       | Number  |       | N     | |
+| e10         |       | Number  |       | N     | |
+| b7s         |       | Number  |       | N     | |
+| b7p         |       | Number  |       | N     | |
+| open        |       | Time    |       | N     | |
+| close       |       | Time    |       | N     | |
+| openSun     |       | Time    |       | N     | |
+| closeSun    |       | Time    |       | N     | |
+| carWash     |       | Boolean |       | N     | |
+| toilets     |       | Boolean |       | N     | |
 
 
 # Introduction
