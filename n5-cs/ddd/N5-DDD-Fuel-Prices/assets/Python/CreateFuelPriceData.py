@@ -1,6 +1,6 @@
 # Title: N5-DDD-Fuel-Prices
 # Author: Mr Friend
-# Date: 14 Mar 2026
+# Date: 23 Mar 2026
 
 """
 Data source: https://www.developer.fuel-finder.service.gov.uk/access-latest-fuelprices
@@ -101,7 +101,7 @@ def boolean(value):
     return result
 
 def getName(name):
-    """Remove problem characters."""
+    """Remove problem characters, such as \".  Capitalise all names."""
     
     # Local variables
     newName = ""
@@ -114,10 +114,21 @@ def getName(name):
         ascii = ord(name[index])
         
         # Check valid
-        if ascii == 32 or (ascii >=65 and ascii <= 90) or (ascii >= 97 and ascii <= 122):
+        if (ascii == 32 or ascii == 38) or (ascii >= 65 and ascii <= 90) or (ascii >= 97 and ascii <= 122):
+            
+            # Lower case?
+            if ascii >= 97:
+                
+                # Change to upper case
+                ascii = ascii - 32
             
             # Create name
             newName = newName + chr(ascii)
+    
+    # Check if name is blank
+    if newName == "":
+        
+        newName = "No name supplied"
             
     return newName
 
