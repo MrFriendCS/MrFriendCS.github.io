@@ -114,7 +114,7 @@ def getName(name):
         ascii = ord(name[index])
         
         # Check valid
-        if (ascii == 32 or ascii == 38) or (ascii >= 65 and ascii <= 90) or (ascii >= 97 and ascii <= 122):
+        if (ascii == 32 or ascii == 38) or (ascii >= 48 and ascii <= 57) or (ascii >= 65 and ascii <= 90) or (ascii >= 97 and ascii <= 122):
             
             # Lower case?
             if ascii >= 97:
