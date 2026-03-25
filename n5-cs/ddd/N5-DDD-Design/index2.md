@@ -35,6 +35,9 @@ Sample data stored in each table is shown below.
 ## Tasks
 
 1.  Create a data dictionary for the Album entity.
+
 2.  Create a data dictionary for the Photo entity.
+
 3.  Create an Entity Relationship Diagram, including attributes, to represent the relationship between the Album and Photo entities.
+
 4.  Describe the type of relationship that exists between the Album and Photo entities.

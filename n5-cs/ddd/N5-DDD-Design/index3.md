@@ -41,6 +41,9 @@ Sample data stored in each table is shown below.
 ## Tasks
 
 1.  Create a data dictionary for the Item entity.
+
 2.  Create a data dictionary for the Brand entity.
+
 3.  Create an Entity Relationship Diagram, including attributes, to represent the relationship between the Item and Brand entities.
+
 4.  Describe the type of relationship that exists between the Item and Brand entities.

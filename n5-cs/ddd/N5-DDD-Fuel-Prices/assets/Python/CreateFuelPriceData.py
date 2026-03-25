@@ -1,6 +1,6 @@
 # Title: N5-DDD-Fuel-Prices
 # Author: Mr Friend
-# Date: 23 Mar 2026
+# Date: 24 Mar 2026
 
 """
 Data source: https://www.developer.fuel-finder.service.gov.uk/access-latest-fuelprices
@@ -271,39 +271,42 @@ def writeCSV(stations):
     # Loop for each station
     for station in stations:
         
-        file.write(station.name             + ",")
-        file.write(station.postcode         + ",")
-        file.write(str(station.motorway)    + ",")
-        file.write(str(station.supermarket) + ",")
-        file.write(str(station.lat)         + ",")
-        file.write(str(station.long)        + ",")
+        # Check postcode is valid
+        if station.postcode != "":
         
-        if station.e5 != 0:
-            file.write(str(station.e5)      + ",")
-        else:
-            file.write("NULL"               + ",")
-        
-        if station.e10 != 0:
-            file.write(str(station.e10)     + ",")
-        else:
-            file.write("NULL"               + ",")
+            file.write(station.name             + ",")
+            file.write(station.postcode         + ",")
+            file.write(str(station.motorway)    + ",")
+            file.write(str(station.supermarket) + ",")
+            file.write(str(station.lat)         + ",")
+            file.write(str(station.long)        + ",")
             
-        if station.b7s != 0:
-            file.write(str(station.b7s)     + ",")
-        else:
-            file.write("NULL"               + ",")
+            if station.e5 != 0:
+                file.write(str(station.e5)      + ",")
+            else:
+                file.write("NULL"               + ",")
             
-        if station.b7p != 0:
-            file.write(str(station.b7p)     + ",")
-        else:
-            file.write("NULL"               + ",")
-        
-        file.write(station.open1            + ",")
-        file.write(station.close1           + ",")
-        file.write(station.open7            + ",")
-        file.write(station.close7           + ",")
-        file.write(str(station.carWash)     + ",")
-        file.write(str(station.toilets)     + "\n")
+            if station.e10 != 0:
+                file.write(str(station.e10)     + ",")
+            else:
+                file.write("NULL"               + ",")
+                
+            if station.b7s != 0:
+                file.write(str(station.b7s)     + ",")
+            else:
+                file.write("NULL"               + ",")
+                
+            if station.b7p != 0:
+                file.write(str(station.b7p)     + ",")
+            else:
+                file.write("NULL"               + ",")
+            
+            file.write(station.open1            + ",")
+            file.write(station.close1           + ",")
+            file.write(station.open7            + ",")
+            file.write(station.close7           + ",")
+            file.write(str(station.carWash)     + ",")
+            file.write(str(station.toilets)     + "\n")
     
     # Close the connection to the file
     file.close()

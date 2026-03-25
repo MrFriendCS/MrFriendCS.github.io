@@ -1,0 +1,34 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="Compass" id="OhArQSCENtq-g7uLcYWl">
+    <mxGraphModel dx="533" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="291" pageHeight="413" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IE8PxJNsvOjk4aZh978N-1" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;endFill=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="120" y="240" as="sourcePoint" />
+            <mxPoint x="120" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IE8PxJNsvOjk4aZh978N-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;N&lt;/b&gt;&lt;div&gt;(+ Lat)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="40" x="100" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="IE8PxJNsvOjk4aZh978N-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;E&lt;/div&gt;(+ Long)" vertex="1">
+          <mxGeometry height="30" width="50" x="140" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="IE8PxJNsvOjk4aZh978N-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;W&lt;/div&gt;(- Long)" vertex="1">
+          <mxGeometry height="30" width="50" x="50" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="IE8PxJNsvOjk4aZh978N-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;S&lt;/div&gt;(- Lat)" vertex="1">
+          <mxGeometry height="30" width="40" x="100" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="IE8PxJNsvOjk4aZh978N-9" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="200" as="sourcePoint" />
+            <mxPoint x="140" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
