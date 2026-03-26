@@ -1,4 +1,4 @@
-# N5 DDD Fuel Price - WiP
+# N5 DDD Fuel Price
 
 
 File: [FuelPrices.db](assets/FuelPrices.db "Download file")
@@ -40,10 +40,10 @@ In the database there are two types of petrol, Unleaded (E10) and Super Unleaded
 1. Display the postcode and name of all locations that have a carwash.
 Sort both the postcode and the name alphabetically.
 
-2. Display the name, id and latitude, where the latitude is bigger than __52.0__.
+2. Display the name, id and latitude, where the latitude is bigger than `52.0`.
 Display the namea alphabetically
 
-3. Display the name of the station(s) with postcode _CO10 1GY_.
+3. Display the name of the station(s) with postcode `CO10 1GY`.
 
 4. Display the name, id, and the price of Super Unleade of all motorway stations that sell Super Unleaded for more than £1.50.
 Names are to be sorted descending.
@@ -55,10 +55,10 @@ Sort the postcodes alphabetically.
 6. Display the name, latitude and longitude of any stations that have toilets but no car wash.
 The names of the stations are to be displayed in reverse alphabetical order.
 
-7. The BP station, with the id of 54, has changed its name to __RL__.
+7. The BP station, with the postcode of IP28 6AE, has changed its name to `RL`.
 
-8. A new station has opened called "BARRAFFIN LTD".
-It is to use the next available id and has a postcode of "HS9 5YD".
+8. A new station has opened called `BARRAFFIN LTD`.
+It will have an id of `8000`, and has a postcode of `HS9 5YD`.
 This station sells Super Unleaded for £1.23 and Premium Diesel for £1.32.
 Add this new station to the database.
 
@@ -68,4 +68,6 @@ Add this new station to the database.
 
 9. Delete all stations to the west of __A&C MacLean__.
 
-Write an SQL query to display the id, name, postcode, motorway, supermarket, latitude, longitude, e5, e10, b7s, b7p, close, open, openSun, closeSun, toilets. It has to only display things where the id is less than 10, or the Sunday opening time is after 6am, or it does not have a supermarket, or it closes after 11pm, or it has a latitude under 50 and a longitude over 10. Order by closing time latest to earliest, opening time earliest to latest, opening Sunday latest to earliest, the name in reverse alphabetical order, e5 in price highest to lowest, postcode in alphabetical order and b7s in cheapest to most expensive.
+10. Write a query to display the id, name, postcode, latitude, longitude, openSun, closeSun.
+Only include stations that open after 9&nbsp;am on a Sunday and is not a supermarket, or it closes before 5&nbsp;pm and has a carwash, or does not have either toilets or is on a motorway.
+Order by latitude starting with the most northerly first.
