@@ -32,7 +32,7 @@ File: [FuelPrices.db](assets/FuelPrices.db "Download file")
 
 # Introduction
 
-In the database there are two types of petrol, Unleaded (E10) and Super Unleaded (E5), and two types of diesel, Standard (B7S) and Premium (B7P).
+In the database there are two types of petrol, Unleaded&nbsp;(E10) and Super Unleaded&nbsp;(E5), and two types of diesel, Standard&nbsp;(B7S) and Premium&nbsp;(B7P).
 
 Each of the stations has it location recorded with latitude (lat) and longitude (long).
 
