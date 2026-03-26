@@ -68,8 +68,8 @@ Add this new station to the database.
 
 9. Delete all stations to the west of A&C MacLean.
 
-10.  Display the names and prices of petrol and diesel of stations in postcode `GL7 5DS`.
+10. Display the names and prices of petrol and diesel of stations in postcode `GL7 5DS`.
 
-10. Write a query to display the id, name, postcode, latitude, longitude, and the Sunday opening times.
+11. Write a query to display the id, name, postcode, latitude, longitude, and the Sunday opening times.
 Only include stations that open after 9&nbsp;am on a Sunday and is not a supermarket, or it closes before 5&nbsp;pm and has a carwash, or does not have toilets and is not on a motorway.
 Sort the results with the most northerly latitude first.
