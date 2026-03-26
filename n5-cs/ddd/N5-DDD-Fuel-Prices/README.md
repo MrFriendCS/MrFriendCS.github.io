@@ -34,6 +34,10 @@ File: [FuelPrices.db](assets/FuelPrices.db "Download file")
 
 In the database there are two types of petrol, Unleaded (E10) and Super Unleaded (E5), and two types of diesel, Standard (B7S) and Premium (B7P).
 
+Each of the stations has it location recorded with latitude (lat) and longitude (long).
+
+![Compass](assets/Diagrams/Compass.png)
+
 
 ## Tasks
 
@@ -41,7 +45,7 @@ In the database there are two types of petrol, Unleaded (E10) and Super Unleaded
 Sort both the postcode and the name alphabetically.
 
 2. Display the name, id and latitude, where the latitude is bigger than `52.0`.
-Display the namea alphabetically
+Display the name alphabetically
 
 3. Display the name of the station(s) with postcode `CO10 1GY`.
 
@@ -62,12 +66,8 @@ It will have an id of `8000`, and has a postcode of `HS9 5YD`.
 This station sells Super Unleaded for £1.23 and Premium Diesel for £1.32.
 Add this new station to the database.
 
-![Compass](assets/Diagrams/Compass.png)
-
-{:start="9"}
-
 9. Delete all stations to the west of __A&C MacLean__.
 
 10. Write a query to display the id, name, postcode, latitude, longitude, openSun, closeSun.
 Only include stations that open after 9&nbsp;am on a Sunday and is not a supermarket, or it closes before 5&nbsp;pm and has a carwash, or does not have either toilets or is on a motorway.
-Order by latitude starting with the most northerly first.
+Sort the results with the most northerly latitude first.
