@@ -52,7 +52,7 @@ Display the name alphabetically
 4. Display the name, id, and the price of Super Unleade of all motorway stations that sell Super Unleaded for more than £1.50.
 Names are to be sorted descending.
 
-5. Display the name, postcode, the opening and closing times.
+5. Display the name, postcode, the normal opening and closing times.
 Only display stations that are part of a supermarket, and have toilets.
 Sort the postcodes alphabetically.
 
@@ -66,8 +66,10 @@ It will have an id of `8000`, and has a postcode of `HS9 5YD`.
 This station sells Super Unleaded for £1.23 and Premium Diesel for £1.32.
 Add this new station to the database.
 
-9. Delete all stations to the west of __A&C MacLean__.
+9. Delete all stations to the west of A&C MacLean.
 
-10. Write a query to display the id, name, postcode, latitude, longitude, openSun, closeSun.
+10.  Display the names and prices of petrol and diesel of stations in postcode `GL7 5DS`.
+
+10. Write a query to display the id, name, postcode, latitude, longitude, and the Sunday opening times.
 Only include stations that open after 9&nbsp;am on a Sunday and is not a supermarket, or it closes before 5&nbsp;pm and has a carwash, or does not have toilets and is not on a motorway.
 Sort the results with the most northerly latitude first.
