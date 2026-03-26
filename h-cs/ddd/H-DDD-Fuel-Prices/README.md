@@ -1,7 +1,7 @@
 # H DDD Fuel Price
 
 
-File: [FuelPrices.db](../../../n5-cs/N5-DDD-Fuel-Prices/assets/FuelPrices.db "Download file")
+File: [FuelPrices.db](../../../n5-cs/ddd/N5-DDD-Fuel-Prices/assets/FuelPrices.db "Download file")
 
 
 ## Data dictionary
@@ -36,7 +36,7 @@ In the database there are two types of petrol, Unleaded (E10) and Super Unleaded
 
 Each of the stations has it location recorded with latitude (lat) and longitude (long).
 
-![Compass](../../../n5-cs/N5-DDD-Fuel-Prices/assets/Diagrams/Compass.png)
+![Compass](../../../n5-cs/ddd/N5-DDD-Fuel-Prices/assets/Diagrams/Compass.png)
 
 
 ## Tasks
