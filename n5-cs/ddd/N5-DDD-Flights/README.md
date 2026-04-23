@@ -12,9 +12,9 @@ Every airport has a 3-letter code to identify it, i.e. `BRR` is the code for Bar
 
 The database contains a number of routes.  Every route holds the airport code for the depature airport (`depCode`) and the code for the arrival airport (`arrCode`).
 
-Some routes stop at other airports on the way.  If there are any stops, then `mid1code`, and possibly `mid2code` will contain airport codes.
+Some routes stop at other airports on the way.  If there are any stops, then `stop1code`, and possibly `stop2code` will contain airport codes.
 
-If there are no stops, then `mid1code` and `mid2code` will hold a special value of `NULL` to show that they are empty.
+If there are no stops, then `stop1code` and `stop2code` will hold a special value of `NULL` to show that they are empty.
 
 Loganair will use `routeID`s starting from 8000.
 
