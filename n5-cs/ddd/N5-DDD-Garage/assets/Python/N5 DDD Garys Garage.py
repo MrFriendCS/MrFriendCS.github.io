@@ -1,6 +1,6 @@
 # Title: Gary's Garage
 # Author: Mr Friend
-# Date: 6 Oct 2024
+# Date: 23 Apr 2026
 
 """
 Create the data and export as SQL statements to build tables.
@@ -171,17 +171,17 @@ def getRepairData(mots, count):
 def writeVehicleTable(vehicles):
     """Create vehicle.sql file with definition and data."""
     
-    file = open("vehicle.sql", "w")
+    file = open("../SQL/Vehicle.sql", "w", encoding="utf-8")
     
     # SQL - Create table
     
-    table = """CREATE TABLE vehicle (
-    veh_reg VARCHAR(8),
+    table = """CREATE TABLE Vehicle (
+    vehReg VARCHAR(8),
     make VARCHAR(20),
     model VARCHAR(20),
     colour VARCHAR(20),
-    PRIMARY KEY (veh_reg)
-);"""
+    PRIMARY KEY (vehReg)
+    );"""
     
     file.write(table + "\n\n")
     
@@ -196,25 +196,37 @@ def writeVehicleTable(vehicles):
         file.write("\"" + vehicle.colour + "\");\n")
         
     file.close()
+    
+    # CSV file
+    file = open("../CSV/Vehicle.csv", "w", encoding="utf-8")
+    
+    # Loop for each vehicle
+    for vehicle in vehicles:
+        file.write(vehicle.vrn + ",")
+        file.write(vehicle.make + ",")
+        file.write(vehicle.model + ",")
+        file.write(vehicle.colour + "\n")
+        
+    file.close()
         
 
-def writeMOTtable(mots):
+def writeMoTtable(mots):
     """Create mot.sql file with definition and data."""
 
-    file = open("mot.sql", "w")
+    file = open("../SQL/MoT.sql", "w", encoding="utf-8")
     
     # SQL - Create table
     
-    table = """CREATE TABLE mot (
-    mot_no INT NOT NULL,
-    veh_reg VARCHAR(8),
+    table = """CREATE TABLE MoT (
+    motNo INT NOT NULL,
+    vehReg VARCHAR(8),
     date DATE,
     pass BOOL,
     cost REAL,
-    FOREIGN KEY (veh_reg)  
-        REFERENCES vehicle(veh_reg),
-    PRIMARY KEY (mot_no)
-);"""
+    FOREIGN KEY (vehReg)  
+        REFERENCES Vehicle (vehReg),
+    PRIMARY KEY (motNo)
+    );"""
     
     file.write(table + "\n\n")
     
@@ -222,7 +234,7 @@ def writeMOTtable(mots):
     
     # Loop for each mot test
     for mot in mots:
-        file.write("INSERT INTO mot VALUES (")
+        file.write("INSERT INTO MoT VALUES (")
         file.write(    str(mot.no) + ",")
         file.write( "\"" + mot.vrn + "\",")
         file.write( "\"" + mot.date + "\",")
@@ -231,23 +243,41 @@ def writeMOTtable(mots):
         
     file.close()
 
+    # CSV file
+    file = open("../CSV/MoT.csv", "w", encoding="utf-8")
+    
+    # Loop for each MoT test
+    for mot in mots:
+        file.write(str(mot.no) + ",")
+        file.write(    mot.vrn + ",")
+        file.write(    mot.date + ",")
+        
+        if mot.result == True:
+            file.write("TRUE,")
+        else:
+            file.write("FALSE,")
+        
+        file.write(str(mot.cost) + "\n")
+        
+    file.close()
+
 
 def writeRepairTable(repairs):
     """Create repair.sql file with definition and data."""
     
-    file = open("repair.sql", "w")
+    file = open("../SQL/Repair.sql", "w", encoding="utf-8")
     
     # SQL - Create table
     
-    table = """CREATE TABLE repair (
-    mot_no INT NOT NULL,
-    veh_reg VARCHAR(8) NOT NULL,
+    table = """CREATE TABLE Repair (
+    repairID INT NOT NULL,
+    vehReg VARCHAR(8) NOT NULL,
     date DATE,
     cost REAL,
-    FOREIGN KEY (veh_reg)
-        REFERENCES vehicle(veh_reg),
-    PRIMARY KEY (mot_no)
-);"""
+    FOREIGN KEY (vehReg)
+        REFERENCES vehicle (vehReg),
+    PRIMARY KEY (repairID)
+    );"""
     
     file.write(table + "\n\n")
       
@@ -261,6 +291,19 @@ def writeRepairTable(repairs):
         file.write("\"" + repair.vrn + "\",")
         file.write("\"" + repair.date + "\",")
         file.write(   str(repair.cost) + ");\n")
+        
+    file.close()
+    
+    
+    # CSV file
+    file = open("../CSV/Repair.csv", "w", encoding="utf-8")
+    
+    # Loop for each mot test
+    for repair in repairs:
+        file.write(str(repair.no) + ",")
+        file.write(    repair.vrn + ",")
+        file.write(    repair.date + ",")
+        file.write(str(repair.cost) + "\n")
         
     file.close()
 
@@ -289,7 +332,7 @@ def main():
     writeVehicleTable(vehicles)
 
     # 6 - Write MOT table
-    writeMOTtable(mots)
+    writeMoTtable(mots)
 
     # 7 - Write repair table
     writeRepairTable(repairs)
