@@ -1,6 +1,6 @@
 # Title: N5 DDD Create Flights DB
 # Author: Mr Friend
-# Date: 22 Apr 2026
+# Date: 23 Apr 2026
 
 # Get extra code
 import sqlite3
@@ -40,7 +40,7 @@ def insertCustomerData():
     data = []
     values = ''
     
-    file = open('../CSV/Customer.csv', 'r')
+    file = open('../CSV/Customer.csv', 'r', encoding='utf-8')
     
     # Read header
     line = file.readline()
@@ -110,7 +110,7 @@ def insertAirportData():
     data = []
     values = ''
     
-    file = open('../CSV/Airport.csv', 'r')
+    file = open('../CSV/Airport.csv', 'r', encoding='utf-8')
     
     # Read header
     line = file.readline()
@@ -186,7 +186,7 @@ def insertRouteData():
     data = []
     values = ''
     
-    file = open('../CSV/Route.csv', 'r')
+    file = open('../CSV/Route.csv', 'r', encoding='utf-8')
     
     # Read header
     line = file.readline()
@@ -269,7 +269,7 @@ def insertFlightData():
     data = []
     values = ''
     
-    file = open('../CSV/Flight.csv', 'r')
+    file = open('../CSV/Flight.csv', 'r', encoding='utf-8')
     
     # Read header
     line = file.readline()
@@ -347,7 +347,7 @@ def insertBookingData():
     data = []
     values = ''
     
-    file = open('../CSV/Booking.csv', 'r')
+    file = open('../CSV/Booking.csv', 'r', encoding='utf-8')
     
     # Read header
     line = file.readline()
