@@ -6,7 +6,7 @@ Loganair has decided to expand where it flies to.  To save on costs it will work
 
 The design of the database is shown below.
 
-![ERD](assets/erd.png)
+![ERD](assets/Diagrams/erd.png)
 
 Every airport has a 3-letter code to identify it, i.e. `BRR` is the code for Barra , and `LHR` is the code for London Heathrow.
 
