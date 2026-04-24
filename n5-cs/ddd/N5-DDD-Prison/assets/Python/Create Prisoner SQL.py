@@ -25,7 +25,8 @@ table = """CREATE TABLE Prisoner (
         CHECK (height >= 1.3
            AND height <= 2.5),
     conviction VARCHAR(20) NOT NULL,
-    open BOOLEAN NOT NULL,
+    openPrison BOOLEAN NOT NULL
+        CHECK (openPrison IN (0, 1)),
     dob DATE NOT NULL,
     PRIMARY KEY (prisonID)
 );"""
