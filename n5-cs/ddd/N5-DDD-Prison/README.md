@@ -16,7 +16,7 @@ File: [Prison.db](assets/Prison.db "Download file")
 | eyes       |       | Text    | 5     | N     | Restricted choice: Amber, Black, Blue, Brown, Green, Hazel, Grey |
 | height     |       | Number  |       | Y     | Range: >= 1.3 and <= 2.5 |
 | conviction |       | Text    | 20    | Y     | |       
-| open       |       | Boolean |       | Y     | |
+| openPrison |       | Boolean |       | Y     | |
 | dob        |       | Date    |       | Y     | |
 
 
