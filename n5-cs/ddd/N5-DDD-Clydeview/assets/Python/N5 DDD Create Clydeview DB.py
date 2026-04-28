@@ -64,30 +64,28 @@ def insertSuperHeroData():
         ability3 = data[5].strip()
         originOfPower = data[6].strip()
         alterEgo = data[7].strip()
-        
-        # Create data
-        values = '(' + charID + ',"' + name + '","' + role + '","' + \
-            mainAbility + '",'
+             
+        values = f'({charID},"{name}","{role}","{mainAbility}",'
         
         if ability2 == '':
             values = values + 'NULL,'
         else:
-            values = values + '"' + ability2 + '",'
+            values = values + f'"{ability2}",'
         
         if ability3 == '':
             values = values + 'NULL,'
         else:
             values = values + '"' + ability3 + '",'
         
-        values = values + '"' + originOfPower + '",'
+        values = values + f'"{originOfPower}",'
         
         if alterEgo == '':
             values = values + 'NULL)'
         else:
-            values = values + '"' + alterEgo + '")'
+            values = values + f'"{alterEgo}")'
         
         # SQL to insert data
-        newData = 'INSERT INTO SuperHero VALUES' + values + ';'
+        newData = f'INSERT INTO SuperHero VALUES {values};'
         
         # Insert new data
         cursor.execute(newData)
@@ -159,18 +157,18 @@ def insertCustomerData():
         paymentDue = data[7].strip()
         
         # Create data
-        values = '(' + custNo + ',"' + forename + '","' + surname + '","' \
-                 + street + '","' + town + '","' + package + '",'
+        values = f'({custNo},"{forename}","{surname}","{street}",' \
+                 + f'"{town}","{package}",'
         
         if directDebit == '0':
             values = values + 'FALSE,'
         else:
             values = values + 'TRUE,'
         
-        values = values + '"' + paymentDue + '")'
+        values = values + f'"{paymentDue}")'
         
         # SQL to insert data
-        newData = 'INSERT INTO Customer VALUES' + values + ';'
+        newData = f'INSERT INTO Customer VALUES {values};'
         
         # Insert new data
         cursor.execute(newData)
@@ -238,21 +236,20 @@ def insertAuthorData():
         website = data[5].strip()
         
         # Create data
-        values = '(' + authorRef + ',"' + forename + '","' + surname \
-                 + '","' + nationality + '"'
+        values = f'({authorRef},"{forename}","{surname}","{nationality}"'
         
         if dob == '':
             values = values + ',NULL'
         else:
-            values = values + ',"' + dob + '"'
+            values = values + f',"{dob}"'
         
         if website == '':
             values = values + ',NULL)'
         else:
-            values = values + ',"' + website + '")'
+            values = values + f',"{website}")'
         
         # SQL to insert data
-        newData = 'INSERT INTO Author VALUES' + values + ';'
+        newData = f'INSERT INTO Author VALUES {values};'
         
         # Insert new data
         cursor.execute(newData)
@@ -332,12 +329,11 @@ def insertBookData():
         pages = data[7].strip()
         
         # Create data
-        values = '("' + category + '","' + genre + '","' + title + '","' \
-               + authorRef + '","' + publisher + '","' + ISBN + '","' \
-               + published + '",' + pages + ')'
+        values = f'("{category}","{genre}","{title}","{authorRef}","' \
+                 + f'{publisher}","{ISBN}","{published}",{pages})'
         
         # SQL to insert data
-        newData = 'INSERT INTO Book VALUES' + values + ';'
+        newData = f'INSERT INTO Book VALUES {values};'
         
         # Insert new data
         cursor.execute(newData)
@@ -404,11 +400,11 @@ def insertLabelData():
         website = data[4].strip()
         
         # Create data
-        values = '("' + label + '",' + founded + ',"' + \
-                 parentCompany + '","' + country + '","' + website + '")'
+        values = f'("{label}",{founded},"{parentCompany}","{country}",' \
+                 + f'"{website}")'
         
         # SQL to insert data
-        newData = 'INSERT INTO Label VALUES' + values + ';'
+        newData = f'INSERT INTO Label VALUES {values};'
         
         # Insert new data
         cursor.execute(newData)
@@ -487,11 +483,11 @@ def insertCDdata():
         genre = data[6].strip()
         
         # Create data
-        values = '("' + code + '","' + title + '","' + artist + '","' + \
-               label + '",' + tracks + ',' + cost + ',"' + genre + '")'
+        values = f'("{code}","{title}","{artist}","{label}",{tracks},' \
+                 + f'{cost},"{genre}")'
         
         # SQL to insert data
-        newData = 'INSERT INTO CD VALUES' + values + ';'
+        newData = f'INSERT INTO CD VALUES {values};'
         
         # Insert new data
         cursor.execute(newData)
@@ -560,11 +556,11 @@ def insertOwnerData():
         contactTele = data[5].strip()
         
         # Create data
-        values = '(' + ownerID + ',"' + first + '","' + last + '","' + \
-                 address + '","' + town + '","' + contactTele + '")'
+        values = f'({ownerID},"{first}","{last}","{address}","{town}",' \
+                 + f'"{contactTele}")'
         
         # SQL to insert data
-        newData = 'INSERT INTO Owner VALUES' + values + ';'
+        newData = f'INSERT INTO Owner VALUES {values};'
         
         # Insert new data
         cursor.execute(newData)
@@ -638,18 +634,17 @@ def insertPetData():
         ownerID = data[5].strip()
         
         # Create data
-        values = '("' + code + '","' + name + '","' + petType + '","' + \
-               dob + '",'
+        values = f'("{code}","{name}","{petType}","{dob}",'
         
         if vax == "0":
             values = values + 'FALSE'
         else:
             values = values + 'TRUE'
         
-        values = values + ',' + ownerID + ')'
+        values = values + f',{ownerID})'
         
         # SQL to insert data
-        newData = 'INSERT INTO Pet VALUES' + values + ';'
+        newData = f'INSERT INTO Pet VALUES {values};'
         
         # Insert new data
         cursor.execute(newData)
@@ -714,11 +709,10 @@ def insertManufacturerData():
         telephone = data[3].strip()
         
         # Create data
-        values = '(' + manID + ',"' + name + '","' + address + '","' + \
-                 telephone + '")'
+        values = f'({manID},"{name}","{address}","{telephone}")'
         
         # SQL to insert data
-        newData = 'INSERT INTO Manufacturer VALUES' + values + ';'
+        newData = f'INSERT INTO Manufacturer VALUES {values};'
         
         # Insert new data
         cursor.execute(newData)
@@ -789,17 +783,17 @@ def insertProductData():
         manID = data[5].strip()
         
         # Create data
-        values = '("' + name + '","' + code + '",' + stock + ','
+        values = f'("{name} ","{code}",{stock},'
         
         if onOrder == "0":
             values = values + 'FALSE'
         else:
             values = values + 'TRUE'
         
-        values = values + ',' + price + ',' + manID + ')'
+        values = values + f',{price},{manID})'
         
         # SQL to insert data
-        newData = 'INSERT INTO Product VALUES' + values + ';'
+        newData = f'INSERT INTO Product VALUES {values};'
         
         # Insert new data
         cursor.execute(newData)
