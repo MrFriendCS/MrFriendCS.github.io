@@ -34,7 +34,7 @@ while line != "":
     fileOut.write("INSERT INTO Label VALUES ")
     
     fileOut.write("(\"" + data[0].strip() + "\",")  # label
-    fileOut.write( "\"" + data[1].strip() + "\",")  # founded
+    fileOut.write( "" + data[1].strip() + ",")  # founded
     fileOut.write( "\"" + data[2].strip() + "\",")  # parentCompany
     fileOut.write( "\"" + data[3].strip() + "\",")  # country
     fileOut.write( "\"" + data[4].strip() + "\");\n")  # website

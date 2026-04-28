@@ -16,7 +16,8 @@ table = """CREATE TABLE Pet (
     type VARCHAR(8)
         CHECK (type IN("Budgie", "Cat", "Dog", "Gerbil", "Tortoise")),
     dateOfBirth DATE,
-    vaccination BOOL,
+    vaccination BOOL
+        CHECK (vaccination IN (TRUE, FALSE)),
     ownerID INT NOT NULL,
     FOREIGN KEY (ownerID)
         REFERENCES Owner (ownerID),
