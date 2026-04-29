@@ -66,23 +66,23 @@ def insertSuperHeroData():
         alterEgo = data[7].strip()
              
         values = f'({charID},"{name}","{role}","{mainAbility}",'
-        
+
         if ability2 == '':
-            values = values + 'NULL,'
+            ability2 = 'NULL'
         else:
-            values = values + f'"{ability2}",'
-        
+            ability2 = f'"{ability2}"'
+            
         if ability3 == '':
-            values = values + 'NULL,'
+            ability3 = 'NULL'
         else:
-            values = values + '"' + ability3 + '",'
-        
-        values = values + f'"{originOfPower}",'
-        
+            ability3 = f'"{ability3}"'
+            
         if alterEgo == '':
-            values = values + 'NULL)'
+            alterEgo = 'NULL'
         else:
-            values = values + f'"{alterEgo}")'
+            alterEgo = f'"{alterEgo}"'
+        
+        values = values + f'{ability2},{ability3},"{originOfPower}",{alterEgo})'
         
         # SQL to insert data
         newData = f'INSERT INTO SuperHero VALUES {values};'
@@ -160,12 +160,9 @@ def insertCustomerData():
         values = f'({custNo},"{forename}","{surname}","{street}",' \
                  + f'"{town}","{package}",'
         
-        if directDebit == '0':
-            values = values + 'FALSE,'
-        else:
-            values = values + 'TRUE,'
-        
-        values = values + f'"{paymentDue}")'
+        directDebit = f'{"FALSE" if directDebit=="0" else "TRUE"}'
+               
+        values = values + f'{directDebit},"{paymentDue}")'
         
         # SQL to insert data
         newData = f'INSERT INTO Customer VALUES {values};'
@@ -236,17 +233,19 @@ def insertAuthorData():
         website = data[5].strip()
         
         # Create data
-        values = f'({authorRef},"{forename}","{surname}","{nationality}"'
+        values = f'({authorRef},"{forename}","{surname}","{nationality}",'
         
         if dob == '':
-            values = values + ',NULL'
+            dob = 'NULL'
         else:
-            values = values + f',"{dob}"'
+            dob = f'"{dob}"'
         
         if website == '':
-            values = values + ',NULL)'
+            website = 'NULL'
         else:
-            values = values + f',"{website}")'
+            website = f'"{website}"'
+        
+        values = values + f'{dob},{website})'
         
         # SQL to insert data
         newData = f'INSERT INTO Author VALUES {values};'
@@ -637,11 +636,11 @@ def insertPetData():
         values = f'("{code}","{name}","{petType}","{dob}",'
         
         if vax == "0":
-            values = values + 'FALSE'
+            vax = 'FALSE'
         else:
-            values = values + 'TRUE'
+            vax = 'TRUE'
         
-        values = values + f',{ownerID})'
+        values = values + f'{vax},{ownerID})'
         
         # SQL to insert data
         newData = f'INSERT INTO Pet VALUES {values};'
@@ -785,12 +784,9 @@ def insertProductData():
         # Create data
         values = f'("{name} ","{code}",{stock},'
         
-        if onOrder == "0":
-            values = values + 'FALSE'
-        else:
-            values = values + 'TRUE'
-        
-        values = values + f',{price},{manID})'
+        onOrder = f'{"FALSE" if onOrder=="0" else "TRUE"}'
+
+        values = values + f'{onOrder},{price},{manID})'
         
         # SQL to insert data
         newData = f'INSERT INTO Product VALUES {values};'
