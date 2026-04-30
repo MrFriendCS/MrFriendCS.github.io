@@ -1,4 +1,4 @@
-vax_id,pet_id,date,type,reaction
+vaxID,petID,vaxDate,vaxType,reaction
 1,13,2020-09-05,Distemper,TRUE
 2,5,2020-06-25,Canine hepatitis,FALSE
 3,1,2016-01-20,Cat Flu,FALSE
