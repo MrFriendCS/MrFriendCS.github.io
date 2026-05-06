@@ -12,8 +12,8 @@ Database file: [Salon.db](assets/Salon.db "Download file")
 | Attribute     | Key | Type   | Size | Req'd | Validation |
 | ---------     | --- | ----   | ---- | :---: | ---------- |
 | hairdresserID | PK  | Number |      | Y     |            |
-| firstname     |     | Text   | 20   | N     |            |
-| lastname      |     | Text   | 30   | N     |            |
+| firstName     |     | Text   | 20   | N     |            |
+| lastName      |     | Text   | 30   | N     |            |
 | phone         |     | Text   | 13   | Y     | Length: >= 11 |
 | salon         |     | Text   | 30   | N     |            |
 

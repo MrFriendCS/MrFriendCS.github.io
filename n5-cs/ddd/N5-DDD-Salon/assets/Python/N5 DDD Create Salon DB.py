@@ -24,8 +24,8 @@ def hairdresserTable():
         # SQL query
         createTable = '''CREATE TABLE Hairdresser (
         hairdresserID INT NOT NULL,
-        firstname VARCHAR(20),
-        lastname VARCHAR(30),
+        firstName VARCHAR(20),
+        lastName VARCHAR(30),
         phone VARCHAR(13) NOT NULL
             CHECK (LENGTH(phone >= 11)),
         salon VARCHAR(30),
