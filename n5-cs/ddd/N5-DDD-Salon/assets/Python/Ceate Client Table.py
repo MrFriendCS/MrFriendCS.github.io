@@ -15,10 +15,10 @@ line = fileIn.readline()
 tableProduct = """CREATE TABLE Client (
     clientid INT NOT NULL,
     hairdresserID INT NOT NULL,
-    firstname VARCHAR(20),
-    lastname VARCHAR(30),
-    contactnumber VARCHAR(13) NOT NULL
-        CHECK(LENGTH(contactnumber >= 11)),
+    firstName VARCHAR(20),
+    lastName VARCHAR(30),
+    phone VARCHAR(13) NOT NULL
+        CHECK(LENGTH(phone >= 11)),
     FOREIGN KEY (hairdresserID)
         REFERENCES Hairdresser (hairdresserID),
     PRIMARY KEY (clientID)
@@ -34,9 +34,9 @@ while line != "":
     
     fileOut.write("("   + data[1].strip() + ",")  # clientID
     fileOut.write(        data[0].strip() + ",")  # hairdresserID
-    fileOut.write( "\"" + data[2].strip() + "\",")  # firstname
-    fileOut.write( "\"" + data[3].strip() + "\",")  # lastname
-    fileOut.write( "\"" + data[4].strip() + "\");\n")  # contactnumber
+    fileOut.write( "\"" + data[2].strip() + "\",")  # firstName
+    fileOut.write( "\"" + data[3].strip() + "\",")  # lastName
+    fileOut.write( "\"" + data[4].strip() + "\");\n")  # phone
  
     line = fileIn.readline()
     

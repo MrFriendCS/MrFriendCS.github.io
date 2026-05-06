@@ -1,7 +1,7 @@
 # N5 DDD - Clydeview
 
 
-File: [Clydeview.db](assets/Clydeview.db "Download file")
+Database file: [Clydeview.db](assets/Clydeview.db "Download file")
 
 ## Data dictionaries
 

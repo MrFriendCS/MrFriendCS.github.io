@@ -1,13 +1,14 @@
 CREATE TABLE Hairdresser (
     hairdresserID INT NOT NULL,
-    firstname VARCHAR(20),
-    lastname VARCHAR(30),
-    contactnumber VARCHAR(13) NOT NULL
-        CHECK(LENGTH(contactnumber >= 11)),
+    firstName VARCHAR(20),
+    lastName VARCHAR(30),
+    phone VARCHAR(13) NOT NULL
+        CHECK(LENGTH(phone >= 11)),
     salon VARCHAR(30),
     PRIMARY KEY (hairdresserID)
 );
 
+INSERT INTO Hairdresser VALUES (hairdresserID,"firstName","LastName","Phone","Salon");
 INSERT INTO Hairdresser VALUES (1928,"Phillip","Christie","07700 900142","Cuts & Co");
 INSERT INTO Hairdresser VALUES (2019,"Sharon","Watt","07700 900582","On The Corner");
 INSERT INTO Hairdresser VALUES (2210,"Huda","Quhshi","07700 900477","West Style");

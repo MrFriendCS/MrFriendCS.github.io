@@ -1,6 +1,11 @@
 # N5 DDD - Salon
 
+
+Database file: [Salon.db](assets/Salon.db "Download file")
+
+
 ## Data Dictionary
+
 
 ### Entity: Hairdresser
 
@@ -9,8 +14,9 @@
 | hairdresserID | PK  | Number |      | Y     |            |
 | firstname     |     | Text   | 20   | N     |            |
 | lastname      |     | Text   | 30   | N     |            |
-| contactnumber |     | Text   | 13   | Y     | Length: >= 11 |
+| phone         |     | Text   | 13   | Y     | Length: >= 11 |
 | salon         |     | Text   | 30   | N     |            |
+
 
 ### Entity: Client
 
@@ -18,9 +24,10 @@
 | ---------     | --- | ----   | ---- | :---: | ---------- |
 | clientid      | PK  | Number |      | Y     |            |
 | hairdresserID | FK  | Number |      | Y     | hairdresserID exists in Hairdresser table |
-| firstname     |     | Text   | 20   | N     |            |
-| lastname      |     | Text   | 30   | N     |            |
-| contactnumber |     | Text   | 13   | Y     | Length: >= 11 |
+| firstName     |     | Text   | 20   | N     |            |
+| lastName      |     | Text   | 30   | N     |            |
+| phone         |     | Text   | 13   | Y     | Length: >= 11 |
+
 
 ## Tasks
 
