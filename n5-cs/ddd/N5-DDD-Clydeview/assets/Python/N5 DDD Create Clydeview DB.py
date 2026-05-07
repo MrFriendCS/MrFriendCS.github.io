@@ -8,7 +8,7 @@ import sqlite3
 
 def superHeroTable():
 
-    def dropSuperHeroTable():
+    def dropTable():
         
         # SQL query
         dropTable = '''
@@ -19,7 +19,7 @@ def superHeroTable():
         cursor.execute(dropTable)
 
 
-    def createSuperHeroTable():
+    def createTable():
         
         # SQL query
         createTable = '''CREATE TABLE SuperHero (
@@ -38,7 +38,7 @@ def superHeroTable():
         cursor.execute(createTable)
 
 
-    def insertSuperHeroData():
+    def insertData():
         
         line = ''
         data = []
@@ -58,6 +58,7 @@ def superHeroTable():
             # Split data
             data = line.split(',')
             
+            # Extract values
             charID = data[0].strip()
             name = data[1].strip()
             role = data[2].strip()
@@ -66,9 +67,8 @@ def superHeroTable():
             ability3 = data[5].strip()
             originOfPower = data[6].strip()
             alterEgo = data[7].strip()
-                 
-            values = f'({charID},"{name}","{role}","{mainAbility}",'
-
+            
+            # Check for NULL values
             if ability2 == '':
                 ability2 = 'NULL'
             else:
@@ -84,7 +84,9 @@ def superHeroTable():
             else:
                 alterEgo = f'"{alterEgo}"'
             
-            values = values + f'{ability2},{ability3},"{originOfPower}",{alterEgo})'
+            # Create data            
+            values = f'({charID},"{name}","{role}","{mainAbility}",' \
+                     + f'{ability2},{ability3},"{originOfPower}",{alterEgo})'
             
             # SQL to insert data
             newData = f'INSERT INTO SuperHero VALUES {values};'
@@ -99,14 +101,14 @@ def superHeroTable():
             line = file.readline()
     
     
-    dropSuperHeroTable()
-    createSuperHeroTable()
-    insertSuperHeroData()
+    dropTable()
+    createTable()
+    insertData()
 
 
 def customerTable():
     
-    def dropCustomerTable():
+    def dropTable():
         
         # SQL query
         dropTable = '''
@@ -116,7 +118,7 @@ def customerTable():
         # Drop the table
         cursor.execute(dropTable)
 
-    def createCustomerTable():
+    def createTable():
         
         # SQL query
         createTable = '''CREATE TABLE Customer (
@@ -136,7 +138,7 @@ def customerTable():
         cursor.execute(createTable)
 
 
-    def insertCustomerData():
+    def insertData():
         
         line = ''
         data = []
@@ -156,6 +158,7 @@ def customerTable():
             # Split data
             data = line.split(',')
             
+            # Extract values
             custNo = data[0].strip()
             forename = data[1].strip()
             surname = data[2].strip()
@@ -165,13 +168,12 @@ def customerTable():
             directDebit = data[6].strip()
             paymentDue = data[7].strip()
             
+            # Check for boolean values
+            directDebit = f'{"FALSE" if directDebit=="0" else "TRUE"}'
+            
             # Create data
             values = f'({custNo},"{forename}","{surname}","{street}",' \
-                     + f'"{town}","{package}",'
-            
-            directDebit = f'{"FALSE" if directDebit=="0" else "TRUE"}'
-                   
-            values = values + f'{directDebit},"{paymentDue}")'
+                     + f'"{town}","{package}",{directDebit},"{paymentDue}")'
             
             # SQL to insert data
             newData = f'INSERT INTO Customer VALUES {values};'
@@ -186,14 +188,14 @@ def customerTable():
             line = file.readline()
     
     
-    dropCustomerTable()
-    createCustomerTable()
-    insertCustomerData()
+    dropTable()
+    createTable()
+    insertData()
 
 
 def authorTable():
     
-    def dropAuthorTable():
+    def dropTable():
         
         # SQL query
         dropTable = '''
@@ -204,7 +206,7 @@ def authorTable():
         cursor.execute(dropTable)
 
 
-    def createAuthorTable():
+    def createTable():
         
         # SQL query
         createTable = '''CREATE TABLE Author (
@@ -221,7 +223,7 @@ def authorTable():
         cursor.execute(createTable)
 
 
-    def insertAuthorData():
+    def insertData():
         
         line = ''
         data = []
@@ -241,6 +243,7 @@ def authorTable():
             # Split data
             data = line.split(',')
             
+            # Extract values
             authorRef = data[0].strip()
             forename = data[1].strip()
             surname = data[2].strip()
@@ -248,9 +251,7 @@ def authorTable():
             dob = data[4].strip()
             website = data[5].strip()
             
-            # Create data
-            values = f'({authorRef},"{forename}","{surname}","{nationality}",'
-            
+            # Check for NULL values
             if dob == '':
                 dob = 'NULL'
             else:
@@ -261,7 +262,9 @@ def authorTable():
             else:
                 website = f'"{website}"'
             
-            values = values + f'{dob},{website})'
+            # Create data
+            values = f'({authorRef},"{forename}","{surname}","{nationality}",' \
+                     + f'{dob},{website})'
             
             # SQL to insert data
             newData = f'INSERT INTO Author VALUES {values};'
@@ -276,14 +279,14 @@ def authorTable():
             line = file.readline()
     
     
-    dropAuthorTable()
-    createAuthorTable()
-    insertAuthorData()
+    dropTable()
+    createTable()
+    insertData()
 
 
 def bookTable():
     
-    def dropBookTable():
+    def dropTable():
         
         # SQL query
         dropTable = '''
@@ -294,7 +297,7 @@ def bookTable():
         cursor.execute(dropTable)
 
 
-    def createBookTable():
+    def createTable():
         
         # SQL query
         createTable = '''CREATE TABLE Book (
@@ -321,7 +324,7 @@ def bookTable():
         cursor.execute(createTable)
 
 
-    def insertBookData():
+    def insertData():
         
         line = ''
         data = []
@@ -341,6 +344,7 @@ def bookTable():
             # Split data
             data = line.split(',')
             
+            # Extract values
             category = data[0].strip()
             genre = data[1].strip()
             title = data[2].strip()
@@ -367,14 +371,14 @@ def bookTable():
             line = file.readline()
     
     
-    dropBookTable()
-    createBookTable()
-    insertBookData()
+    dropTable()
+    createTable()
+    insertData()
 
 
 def labelTable():
     
-    def dropLabelTable():
+    def dropTable():
         
         # SQL query
         dropTable = '''
@@ -385,7 +389,7 @@ def labelTable():
         cursor.execute(dropTable)
 
 
-    def createLabelTable():
+    def createTable():
         
         # SQL query
         createTable = '''CREATE TABLE Label (
@@ -402,7 +406,7 @@ def labelTable():
         cursor.execute(createTable)
 
 
-    def insertLabelData():
+    def insertData():
         
         line = ''
         data = []
@@ -422,6 +426,7 @@ def labelTable():
             # Split data
             data = line.split(',')
             
+            # Extract values
             label = data[0].strip()
             founded = data[1].strip()
             parentCompany = data[2].strip()
@@ -445,14 +450,14 @@ def labelTable():
             line = file.readline()
     
     
-    dropLabelTable()
-    createLabelTable()
-    insertLabelData()
+    dropTable()
+    createTable()
+    insertData()
 
 
 def cdTable():
     
-    def dropCDtable():
+    def dropTable():
         
         # SQL query
         dropTable = '''
@@ -463,7 +468,7 @@ def cdTable():
         cursor.execute(dropTable)
 
 
-    def createCDtable():
+    def createTable():
         
         # SQL query
         createTable = '''CREATE TABLE CD (
@@ -490,7 +495,7 @@ def cdTable():
         cursor.execute(createTable)
 
 
-    def insertCDdata():
+    def insertData():
         
         line = ''
         data = []
@@ -510,6 +515,7 @@ def cdTable():
             # Split data
             data = line.split(',')
             
+            # Extract values
             code = data[0].strip()
             title = data[1].strip()
             artist = data[2].strip()
@@ -535,14 +541,14 @@ def cdTable():
             line = file.readline()
     
     
-    dropCDtable()
-    createCDtable()
-    insertCDdata()
+    dropTable()
+    createTable()
+    insertData()
 
 
 def ownerTable():
     
-    def dropOwnerTable():
+    def dropTable():
         
         # SQL query
         dropTable = '''
@@ -553,7 +559,7 @@ def ownerTable():
         cursor.execute(dropTable)
 
 
-    def createOwnerTable():
+    def createTable():
         
         # SQL query
         createTable = '''CREATE TABLE Owner (
@@ -571,7 +577,7 @@ def ownerTable():
         cursor.execute(createTable)
 
 
-    def insertOwnerData():
+    def insertData():
         
         line = ''
         data = []
@@ -591,6 +597,7 @@ def ownerTable():
             # Split data
             data = line.split(',')
             
+            # Extract values
             ownerID = data[0].strip()
             first = data[1].strip()
             last = data[2].strip()
@@ -615,14 +622,14 @@ def ownerTable():
             line = file.readline()
     
     
-    dropOwnerTable()
-    createOwnerTable()
-    insertOwnerData()
+    dropTable()
+    createTable()
+    insertData()
 
 
 def petTable():
     
-    def dropPetTable():
+    def dropTable():
         
         # SQL query
         dropTable = '''
@@ -633,7 +640,7 @@ def petTable():
         cursor.execute(dropTable)
 
 
-    def createPetTable():
+    def createTable():
         
         # SQL query
         createTable = '''CREATE TABLE Pet (
@@ -656,7 +663,7 @@ def petTable():
         cursor.execute(createTable)
 
 
-    def insertPetData():
+    def insertData():
         
         line = ''
         data = []
@@ -676,6 +683,7 @@ def petTable():
             # Split data
             data = line.split(',')
             
+            # Extract values
             code = data[0].strip()
             name = data[1].strip()
             petType = data[2].strip()
@@ -683,15 +691,11 @@ def petTable():
             vax = data[4].strip()
             ownerID = data[5].strip()
             
+            # Check for boolean values
+            vax = f'{"FALSE" if vax=="0" else "TRUE"}'
+            
             # Create data
-            values = f'("{code}","{name}","{petType}","{dob}",'
-            
-            if vax == "0":
-                vax = 'FALSE'
-            else:
-                vax = 'TRUE'
-            
-            values = values + f'{vax},{ownerID})'
+            values = f'("{code}","{name}","{petType}","{dob}",{vax},{ownerID})'
             
             # SQL to insert data
             newData = f'INSERT INTO Pet VALUES {values};'
@@ -706,14 +710,14 @@ def petTable():
             line = file.readline()
     
     
-    dropPetTable()
-    createPetTable()
-    insertPetData()
+    dropTable()
+    createTable()
+    insertData()
 
 
 def manufacturerTable():
     
-    def dropManufacturerTable():
+    def dropTable():
         
         # SQL query
         dropTable = '''
@@ -724,7 +728,7 @@ def manufacturerTable():
         cursor.execute(dropTable)
 
 
-    def createManufacturerTable():
+    def createTable():
         
         # SQL query
         createTable = '''CREATE TABLE Manufacturer (
@@ -740,7 +744,7 @@ def manufacturerTable():
         cursor.execute(createTable)
 
 
-    def insertManufacturerData():
+    def insertData():
         
         line = ''
         data = []
@@ -760,6 +764,7 @@ def manufacturerTable():
             # Split data
             data = line.split(',')
             
+            # Extract values
             manID = data[0].strip()
             name = data[1].strip()
             address = data[2].strip()
@@ -781,14 +786,14 @@ def manufacturerTable():
             line = file.readline()
     
     
-    dropManufacturerTable()
-    createManufacturerTable()
-    insertManufacturerData()
+    dropTable()
+    createTable()
+    insertData()
 
 
 def productTable():
     
-    def dropProductTable():
+    def dropTable():
         
         # SQL query
         dropTable = '''
@@ -799,7 +804,7 @@ def productTable():
         cursor.execute(dropTable)
 
 
-    def createProductTable():
+    def createTable():
         
         # SQL query
         createTable = '''CREATE TABLE Product (
@@ -819,7 +824,7 @@ def productTable():
         cursor.execute(createTable)
 
 
-    def insertProductData():
+    def insertData():
         
         line = ''
         data = []
@@ -839,6 +844,7 @@ def productTable():
             # Split data
             data = line.split(',')
             
+            # Extract values
             name = data[0].strip()
             code = data[1].strip()
             stock = data[2].strip()
@@ -846,12 +852,11 @@ def productTable():
             price = data[4].strip()
             manID = data[5].strip()
             
-            # Create data
-            values = f'("{name} ","{code}",{stock},'
-            
+            # Check for NULL values            
             onOrder = f'{"FALSE" if onOrder=="0" else "TRUE"}'
-
-            values = values + f'{onOrder},{price},{manID})'
+            
+            # Create data
+            values = f'("{name} ","{code}",{stock},{onOrder},{price},{manID})'
             
             # SQL to insert data
             newData = f'INSERT INTO Product VALUES {values};'
@@ -866,9 +871,9 @@ def productTable():
             line = file.readline()
     
     
-    dropProductTable()
-    createProductTable()
-    insertProductData()
+    dropTable()
+    createTable()
+    insertData()
 
 
 #
@@ -884,46 +889,46 @@ cursor = conn.cursor()
 
 
 # SuperHero table
-print("1. SuperHero table")
+print(" 1. SuperHero table")
 superHeroTable()
 
 
 # Customer table
-print("2. Customer table")
+print(" 2. Customer table")
 customerTable()
 
 
 # Author table
-print("3. Author table")
+print(" 3. Author table")
 authorTable()
 
 # Book table
-print("4. Book table")
+print(" 4. Book table")
 bookTable()
 
 
 # Label table
-print("5. Label table")
+print(" 5. Label table")
 labelTable()
 
 
 # CD table
-print("6. CD table")
+print(" 6. CD table")
 cdTable()
 
 
 # Owner table
-print("7. Owner table")
+print(" 7. Owner table")
 ownerTable()
 
 
 # Pet table
-print("8. Pet table")
+print(" 8. Pet table")
 petTable()
 
 
 # Manufacturer table
-print("9. Manufacturer table")
+print(" 9. Manufacturer table")
 manufacturerTable()
 
 
