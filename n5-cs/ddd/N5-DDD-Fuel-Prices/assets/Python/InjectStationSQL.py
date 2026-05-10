@@ -13,7 +13,7 @@ conn = sqlite3.connect('../FuelPrices.db')
 cursor = conn.cursor()
 
 # Drop the existing table
-cursor.execute("DROP TABLE Station;")
+cursor.execute("DROP TABLE IF EXISTS Station;")
 
 
 # Get Station SQL

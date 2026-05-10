@@ -240,6 +240,10 @@ def writeCSV(a, b, c, d, e, f, g, h, i):
     
     file = open("../CSV/Prisoner.csv", "w")
     
+    # Write header row
+    file.write("prisonID," + "surname," + "forename," + "hair," + "eyes,")
+    file.write("height," + "conviction," + "openPrison," + "dob" + "\n")
+    
     
     # Loop for each prisoner
     for index in range(len(a)):

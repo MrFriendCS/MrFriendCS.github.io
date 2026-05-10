@@ -1,6 +1,6 @@
-# Title: Create Prisoner DB
+# Title: N5 DDD Prison Create DB
 # Author: Mr Friend
-# Date: 24 Apr 2026
+# Date: 10 May 2026
 
 # Get extra code
 import sqlite3
@@ -53,6 +53,9 @@ def insertPrisonerData():
     values = ''
     
     file = open('../CSV/Prisoner.csv', 'r', encoding='utf-8')
+        
+    # Read header
+    line = file.readline()
     
     # Read first line
     line = file.readline()
@@ -73,17 +76,12 @@ def insertPrisonerData():
         openPrison = data[7].strip()
         dob = data[8].strip()
         
-        # Create data
-        values = '("' + prisonID + '","' + surname + '","' + forename + '","' \
-                 + hair + '","' + eyes + '",' +  height + ',"' +  conviction \
-                 + '",'
+        # Check for boolean values
+        openPrison = f'{"TRUE" if openPrison.lower()=="true" else "FALSE"}'
         
-        if openPrison == "True":
-            values = values + "TRUE"
-        else:
-            values = values + "FALSE"
-            
-        values = values + ',"' + dob + '")'
+        # Create data
+        values = f'({prisonID},"{surname}","{forename}","{hair}",' \
+                 + f'"{eyes}",{height},"{conviction}",{openPrison},"{dob}")'
         
         # SQL to insert data
         newData = 'INSERT INTO Prisoner VALUES' + values + ';'

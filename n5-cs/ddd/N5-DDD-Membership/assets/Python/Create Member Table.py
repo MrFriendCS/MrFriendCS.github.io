@@ -1,6 +1,6 @@
 # Title: Create Member Table
 # Author: Mr Friend
-# Date: 4 Dec 2024
+# Date: 9 May 2026
 
 
 # Files
@@ -10,8 +10,8 @@ fileOut = open("../SQL/Member.sql", "w")
 
 # Create Table
 
-table = """CREATE TABLE Member ( 
-    memberNo VARCHAR(8) NOT NULL UNIQUE,
+table = """CREATE TABLE Member (
+    memberNo VARCHAR(8) NOT NULL,
     clubID VARCHAR(6) NOT NULL,
     firstName VARCHAR(20) NOT NULL,
     lastName VARCHAR(30) NOT NULL,
@@ -19,16 +19,15 @@ table = """CREATE TABLE Member (
     town VARCHAR(20),
     postcode VARCHAR(8),
     dob DATE NOT NULL 
-        CHECK(dob >= \"1925-01-01\"),
+        CHECK (dob >= '1925-01-01' AND dob LIKE '____-__-__'),
     renew INT NOT NULL 
-        CHECK(renew >=1 AND renew <= 12),
-    gender VARCHAR(15) 
-        CHECK(gender IN (\"F\", \"M\", \"ND\")),
+        CHECK (renew >=1 AND renew <= 12),
+    gender VARCHAR(2) NOT NULL
+        CHECK (gender IN ('F', 'M', 'ND')),
     type VARCHAR(15) NOT NULL 
-        CHECK(type IN (\"Adult\", \"Child\", \"Guest\",
-                       \"Senior\", \"Student\")),
+        CHECK (type IN ('Adult', 'Child', 'Guest', 'Senior', 'Student')),
     FOREIGN KEY (clubID) 
-        REFERENCES club(clubID),
+        REFERENCES Club (clubID),
     PRIMARY KEY (memberNo)
 );"""
 

@@ -1,4 +1,4 @@
-# Title: N5 DDD Create Video Games DB
+# Title: N5 DDD Video Games Create DB
 # Author: Mr Friend
 # Date: 7 May 2026
 
@@ -157,7 +157,8 @@ def gameTable():
             copiesSold = data[6].strip()
                      
             # Create data
-            values = f'("{title}","{company}","{genre}",{age},{price},"{released}",{copiesSold})'
+            values = f'("{title}","{company}","{genre}",{age},{price},' \
+                     + f'"{released}",{copiesSold})'
             
             # SQL to insert data
             newData = f'INSERT INTO Game VALUES {values};'

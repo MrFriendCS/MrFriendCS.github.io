@@ -1,18 +1,18 @@
-# Title: N5 DDD Create Garage DB
+# Title: N5 DDD Santa Gifts Create DB
 # Author: Mr Friend
-# Date: 9 May 2026
+# Date: 10 May 2026
 
 # Get extra code
 import sqlite3
 
 
-def vehicleTable():
+def childTable():
 
     def dropTable():
         
         # SQL query
         dropTable = '''
-        DROP TABLE IF EXISTS Vehicle;
+        DROP TABLE IF EXISTS Child;
         '''
 
         # Drop the table
@@ -22,12 +22,12 @@ def vehicleTable():
     def createTable():
         
         # SQL query
-        createTable = '''CREATE TABLE Vehicle (
-        vehReg VARCHAR(8) NOT NULL,
-        make VARCHAR(20) NOT NULL,
-        model VARCHAR(20),
-        colour VARCHAR(20),
-        PRIMARY KEY (vehReg)
+        createTable = '''CREATE TABLE Child (
+        childID INT NOT NULL,
+        firstName VARCHAR(20),
+        lastName VARCHAR(30),
+        nice BOOLEAN,
+        PRIMARY KEY (childID)
         );'''
 
         # Create the new table
@@ -40,7 +40,10 @@ def vehicleTable():
         data = []
         values = ''
         
-        file = open('../CSV/Vehicle.csv', 'r', encoding='utf-8')
+        file = open('../CSV/Child.csv', 'r', encoding='utf-8')
+        
+        # Read header
+        line = file.readline()
         
         # Read first line
         line = file.readline()
@@ -52,27 +55,19 @@ def vehicleTable():
             data = line.split(',')
             
             # Extract values
-            vehReg = data[0].strip()
-            make = data[1].strip()
-            model = data[2].strip()
-            colour = data[3].strip()
+            childID = data[0].strip()
+            first = data[1].strip()
+            last = data[2].strip()
+            nice = data[3].strip()
             
-            # Check for NULL values
-            if model == '':
-                model = 'NULL'
-            else:
-                model = f'"{model}"'
-            
-            if colour == '':
-                colour = 'NULL'
-            else:
-                colour = f'"{colour}"'
+            # Check for Boolean values
+            nice = f'{"TRUE" if nice.lower()=="true" else "FALSE"}'
             
             # Create data
-            values = f'("{vehReg}","{make}",{model},{colour})'
+            values = f'("{childID}","{first}","{last}",{nice})'
             
             # SQL to insert data
-            newData = f'INSERT INTO Vehicle VALUES {values};'
+            newData = f'INSERT INTO Child VALUES {values};'
             
             # Insert new data
             cursor.execute(newData)
@@ -89,13 +84,13 @@ def vehicleTable():
     insertData()
 
 
-def motTable():
+def toyTable():
 
     def dropTable():
         
         # SQL query
         dropTable = '''
-        DROP TABLE IF EXISTS MoT;
+        DROP TABLE IF EXISTS Toy;
         '''
 
         # Drop the table
@@ -104,15 +99,11 @@ def motTable():
     def createTable():
         
         # SQL query
-        createTable = '''CREATE TABLE MoT (
-        motNo INT NOT NULL,
-        vehReg VARCHAR(8) NOT NULL,
-        date DATE NOT NULL,
-        pass BOOL,
-        cost REAL,
-        FOREIGN KEY (vehReg)  
-            REFERENCES Vehicle (vehReg),
-        PRIMARY KEY (motNo)
+        createTable = '''CREATE TABLE Toy (
+        toyID INT NOT NULL,
+        name VARCHAR(50) NOT NULL,
+        cost FLOAT NOT NULL,
+        PRIMARY KEY (toyID)
         );'''
 
         # Create the new table
@@ -125,7 +116,86 @@ def motTable():
         data = []
         values = ''
         
-        file = open('../CSV/MoT.csv', 'r', encoding='utf-8')
+        file = open('../CSV/Toy.csv', 'r', encoding='utf-8')
+        
+        # Read header
+        line = file.readline()
+        
+        # Read first line
+        line = file.readline()
+        
+        # Loop for each record
+        while line != '':
+            
+            # Split data
+            data = line.split(',')
+            
+            # Extract values
+            toyID = data[0].strip()
+            name = data[1].strip()
+            cost = data[2].strip()
+            
+            # Create data
+            values = f'({toyID},"{name}",{cost})'
+            
+            # SQL to insert data
+            newData = f'INSERT INTO Toy VALUES {values};'
+            
+            # Insert new data
+            cursor.execute(newData)
+
+            # Commit the new data
+            conn.commit()
+            
+            # Read next line
+            line = file.readline()
+    
+    
+    dropTable()
+    createTable()
+    insertData()
+
+
+def giftTable():
+
+    def dropTable():
+        
+        # SQL query
+        dropTable = '''
+        DROP TABLE IF EXISTS Gift;
+        '''
+
+        # Drop the table
+        cursor.execute(dropTable)
+
+    def createTable():
+        
+        # SQL query
+        createTable = '''CREATE TABLE Gift (
+        giftID INT NOT NULL,
+        childID INT NOT NULL,
+        toyID INT NOT NULL,
+        PRIMARY KEY (giftID),
+        FOREIGN KEY (childID)
+            REFERENCES Child(childID),
+        FOREIGN KEY (toyID)
+            REFERENCES Toy(toyID)
+        );'''
+
+        # Create the new table
+        cursor.execute(createTable)
+
+
+    def insertData():
+        
+        line = ''
+        data = []
+        values = ''
+        
+        file = open('../CSV/Gift.csv', 'r', encoding='utf-8')
+        
+        # Read header
+        line = file.readline()
          
         # Read first line
         line = file.readline()
@@ -137,21 +207,15 @@ def motTable():
             data = line.split(',')
             
             # Extract values
-            motNo = data[0].strip()
-            vehReg = data[1].strip()
-            date = data[2].strip()
-            motPass = data[3].strip()
-            cost = data[4].strip()
-            
-            # Check for NULL values            
-            if cost == '':
-                cost = 'NULL'
+            giftID = data[0].strip()
+            childID = data[1].strip()
+            toyID = data[2].strip()
             
             # Create data
-            values = f'({motNo},"{vehReg}","{date}",{motPass},{cost})'
+            values = f'({giftID},{childID},{toyID})'
             
             # SQL to insert data
-            newData = f'INSERT INTO MoT VALUES {values};'
+            newData = f'INSERT INTO Gift VALUES {values};'
             
             # Insert new data
             cursor.execute(newData)
@@ -168,82 +232,32 @@ def motTable():
     insertData()
 
 
-def repairTable():
+def errorCheck():
+    """Check that only one of each 'naughty' pupil exists."""
+           
+    selectNames = '''SELECT firstName, lastName, COUNT(*) AS Pupils
+    FROM Child
+    WHERE nice = FALSE
+    GROUP BY firstName, lastName
+    HAVING Pupils > 1;'''
     
-    def dropTable():
-        
-        # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS Repair;
-        '''
-
-        # Drop the table
-        cursor.execute(dropTable)
-
-
-    def createTable():
-        
-        # SQL query
-        createTable = '''CREATE TABLE Repair (
-        repairID INT NOT NULL,
-        vehReg VARCHAR(8) NOT NULL,
-        date DATE NOT NULL,
-        cost REAL,
-        FOREIGN KEY (vehReg)
-            REFERENCES Vehicle (vehReg),
-        PRIMARY KEY (repairID)
-        );'''
-
-        # Create the new table
-        cursor.execute(createTable)
-
-
-    def insertData():
-        
-        line = ''
-        data = []
-        values = ''
-        
-        file = open('../CSV/Repair.csv', 'r', encoding='utf-8')
-        
-        # Read first line
-        line = file.readline()
-        
-        # Loop for each record
-        while line != '':
-            
-            # Split data
-            data = line.split(',')
-            
-            # Extract values
-            repairID = data[0].strip()
-            vehReg = data[1].strip()
-            date = data[2].strip()
-            cost = data[3].strip()
-            
-            # Check for NULL values            
-            if cost == '':
-                cost = 'NULL'
-            
-            # Create data
-            values = f'({repairID},"{vehReg}","{date}",{cost})'
-            
-            # SQL to insert data
-            newData = f'INSERT INTO Repair VALUES {values};'
-            
-            # Insert new data
-            cursor.execute(newData)
-
-            # Commit the new data
-            conn.commit()
-            
-            # Read next line
-            line = file.readline()
+    # Run query and store result
+    result = cursor.execute(selectNames)
     
+    rows = 0
     
-    dropTable()
-    createTable()
-    insertData()
+    # Dislay all rows
+    for row in result:
+
+        # Display row
+        print("\t", row)
+        
+        # Increment number of 
+        rows += 1
+    
+    if rows == 0:
+        print("\tNo duplicate names found.")
+
 
 
 #
@@ -252,25 +266,30 @@ def repairTable():
 
 # Create a connection to a database
 # Creates a new database file, if it doesn’t exist
-conn = sqlite3.connect('../Garage.db')
+conn = sqlite3.connect('../Santa.db')
 
 # Create a database cursor
 cursor = conn.cursor()
 
 
-# Vehicle table
-print("1. Vehicle table")
-vehicleTable()
+# Child table
+print("1. Child table")
+childTable()
 
 
-# MoT table
-print("2. MoT table")
-motTable()
+# Toy table
+print("2. Toy table")
+toyTable()
 
 
-# Repair table
-print("3. Repair table")
-repairTable()
+# Gift table
+print("3. Gift table")
+giftTable()
+
+
+# Check for errors
+print("4. Check for errors")
+errorCheck()
 
 
 # Close the connection to the database

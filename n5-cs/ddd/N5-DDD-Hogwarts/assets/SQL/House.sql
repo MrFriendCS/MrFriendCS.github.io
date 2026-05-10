@@ -1,10 +1,10 @@
 CREATE TABLE House (
-    id INT NOT NULL,
+    houseID INT NOT NULL,
     name VARCHAR(20) NOT NULL,
     guidanceTeacher VARCHAR(30),
     emblem VARCHAR(10) NOT NULL,
     colour VARCHAR(20) NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (houseID)
 );
 
 INSERT INTO House VALUES (1,"Gryffindor","Prof McGonagall","Lion","Scarlett and Gold");

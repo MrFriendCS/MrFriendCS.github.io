@@ -1,14 +1,14 @@
-CREATE TABLE Club ( 
-    clubID VARCHAR(6) NOT NULL UNIQUE,
+CREATE TABLE Club (
+    clubID VARCHAR(6) NOT NULL,
     name VARCHAR(30) NOT NULL,
     location VARCHAR(30) NOT NULL,
     type VARCHAR(20) NOT NULL,
     opened DATE
-        CHECK (opened LIKE "____-__-__"),
-    trainer BOOLEAN
-        CHECK (trainer = TRUE OR trainer = FALSE),
+        CHECK (opened LIKE '____-__-__'),
+    trainer BOOLEAN NOT NULL
+        CHECK (trainer IN (0, 1)),
     rooms INT
-        CHECK(rooms >= 0),
+        CHECK (rooms >= 0),
     PRIMARY KEY (clubID)
 );
 

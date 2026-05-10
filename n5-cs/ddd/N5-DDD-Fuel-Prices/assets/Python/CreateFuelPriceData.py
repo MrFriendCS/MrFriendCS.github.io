@@ -41,7 +41,6 @@ def getLatestFile():
     # Local variables
     directory = "../CSV"
     latestFile = ""
-    latestTime = 0
     
     # iterate over the files in the directory using os.scandir
     for entry in os.scandir(directory):
@@ -155,10 +154,10 @@ def readData():
     stations = []
     
     # Choose file to use
-    filename = "..\csv\\" + getLatestFile()
+    filename = "..\\csv\\" + getLatestFile()
     
     # Connect to the raw data
-    file = open(filename, "r")
+    file = open(filename, "r", encoding='utf-8')
     
     # Read and discard headers
     line = file.readline()
@@ -262,7 +261,7 @@ def writeCSV(stations):
     """Write fuel prices to CSV file."""
     
     # Create a connection to the file
-    file = open("../CSV/FuelPrice.csv", "w")
+    file = open("../CSV/FuelPrice.csv", "w", encoding='utf-8')
     
     
     # Headers

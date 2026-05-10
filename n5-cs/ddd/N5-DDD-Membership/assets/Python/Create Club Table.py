@@ -1,6 +1,6 @@
 # Title: Create Club Table
 # Author: Mr Friend
-# Date: 4 Dec 2024
+# Date: 9 May 2026
 
 
 # Files
@@ -10,15 +10,17 @@ fileOut = open("../SQL/Club.sql", "w")
 
 # Create Table
 
-table = """CREATE TABLE Club ( 
-    clubID VARCHAR(6) NOT NULL UNIQUE,
+table = """CREATE TABLE Club (
+    clubID VARCHAR(6) NOT NULL,
     name VARCHAR(30) NOT NULL,
     location VARCHAR(30) NOT NULL,
     type VARCHAR(20) NOT NULL,
-    opened DATE,
-    trainer BOOLEAN,
+    opened DATE
+        CHECK (opened LIKE '____-__-__'),
+    trainer BOOLEAN NOT NULL
+        CHECK (trainer IN (0, 1)),
     rooms INT
-        CHECK(rooms >= 0),
+        CHECK (rooms >= 0),
     PRIMARY KEY (clubID)
 );"""
 
