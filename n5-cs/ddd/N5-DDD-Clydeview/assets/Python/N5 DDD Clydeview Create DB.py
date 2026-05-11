@@ -1,23 +1,22 @@
 # Title: N5 DDD Clydeview Create DB
 # Author: Mr Friend
-# Date: 4 May 2026
+# Date: 11 May 2026
 
 # Get extra code
 import sqlite3
 
-
-def superHeroTable():
-
-    def dropTable():
+def dropTable(tableName=""):
+        
+    if tableName != "":
         
         # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS SuperHero;
-        '''
+        query = f'DROP TABLE IF EXISTS {tableName};'
 
         # Drop the table
-        cursor.execute(dropTable)
+        cursor.execute(query)
 
+
+def superHeroTable():
 
     def createTable():
         
@@ -101,22 +100,12 @@ def superHeroTable():
             line = file.readline()
     
     
-    dropTable()
+    dropTable("SuperHero")
     createTable()
     insertData()
 
 
 def customerTable():
-    
-    def dropTable():
-        
-        # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS Customer;
-        '''
-
-        # Drop the table
-        cursor.execute(dropTable)
 
     def createTable():
         
@@ -188,23 +177,12 @@ def customerTable():
             line = file.readline()
     
     
-    dropTable()
+    dropTable("Customer")
     createTable()
     insertData()
 
 
 def authorTable():
-    
-    def dropTable():
-        
-        # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS Author;
-        '''
-
-        # Drop the table
-        cursor.execute(dropTable)
-
 
     def createTable():
         
@@ -279,24 +257,13 @@ def authorTable():
             line = file.readline()
     
     
-    dropTable()
+    dropTable("Author")
     createTable()
     insertData()
 
 
 def bookTable():
     
-    def dropTable():
-        
-        # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS Book;
-        '''
-
-        # Drop the table
-        cursor.execute(dropTable)
-
-
     def createTable():
         
         # SQL query
@@ -371,24 +338,13 @@ def bookTable():
             line = file.readline()
     
     
-    dropTable()
+    dropTable("Book")
     createTable()
     insertData()
 
 
 def labelTable():
     
-    def dropTable():
-        
-        # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS Label;
-        '''
-
-        # Drop the table
-        cursor.execute(dropTable)
-
-
     def createTable():
         
         # SQL query
@@ -450,24 +406,13 @@ def labelTable():
             line = file.readline()
     
     
-    dropTable()
+    dropTable("Label")
     createTable()
     insertData()
 
 
 def cdTable():
     
-    def dropTable():
-        
-        # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS CD;
-        '''
-
-        # Drop the table
-        cursor.execute(dropTable)
-
-
     def createTable():
         
         # SQL query
@@ -541,23 +486,12 @@ def cdTable():
             line = file.readline()
     
     
-    dropTable()
+    dropTable("CD")
     createTable()
     insertData()
 
 
 def ownerTable():
-    
-    def dropTable():
-        
-        # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS Owner;
-        '''
-
-        # Drop the table
-        cursor.execute(dropTable)
-
 
     def createTable():
         
@@ -622,24 +556,13 @@ def ownerTable():
             line = file.readline()
     
     
-    dropTable()
+    dropTable("Owner")
     createTable()
     insertData()
 
 
 def petTable():
     
-    def dropTable():
-        
-        # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS Pet;
-        '''
-
-        # Drop the table
-        cursor.execute(dropTable)
-
-
     def createTable():
         
         # SQL query
@@ -710,24 +633,13 @@ def petTable():
             line = file.readline()
     
     
-    dropTable()
+    dropTable("Pet")
     createTable()
     insertData()
 
 
 def manufacturerTable():
     
-    def dropTable():
-        
-        # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS Manufacturer;
-        '''
-
-        # Drop the table
-        cursor.execute(dropTable)
-
-
     def createTable():
         
         # SQL query
@@ -786,24 +698,13 @@ def manufacturerTable():
             line = file.readline()
     
     
-    dropTable()
+    dropTable("Manufacturer")
     createTable()
     insertData()
 
 
 def productTable():
     
-    def dropTable():
-        
-        # SQL query
-        dropTable = '''
-        DROP TABLE IF EXISTS Product;
-        '''
-
-        # Drop the table
-        cursor.execute(dropTable)
-
-
     def createTable():
         
         # SQL query
@@ -871,7 +772,7 @@ def productTable():
             line = file.readline()
     
     
-    dropTable()
+    dropTable("Product")
     createTable()
     insertData()
 

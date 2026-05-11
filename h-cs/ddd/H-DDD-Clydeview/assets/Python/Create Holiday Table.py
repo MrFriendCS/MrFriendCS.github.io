@@ -39,7 +39,7 @@ while line != "":
     fileOut.write("\"" + data[1].strip() + "\",")  # destination
     fileOut.write("\"" + data[2].strip() + "\",")  # country
     fileOut.write("\"" + data[3].strip() + "\",")  # dateOfDeparture
-    fileOut.write("\"" + data[4].strip() + "\",")  # nights
+    fileOut.write(       data[4].strip() + ",")  # nights
     fileOut.write("\"" + data[5].strip() + "\");")  # hotelRef
     fileOut.write("\n")
 
