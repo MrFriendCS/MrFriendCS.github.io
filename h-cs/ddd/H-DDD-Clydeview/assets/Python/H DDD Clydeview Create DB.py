@@ -1107,6 +1107,344 @@ def boxOfficeTable():
     createTable()
     insertData()
 
+
+def customerTable():
+
+    def createTable():
+        
+        # SQL query
+        createTable = '''CREATE TABLE Customer (
+        customerID INT NOT NULL,
+        name VARCHAR(30) NOT NULL,
+        address VARCHAR(30) NOT NULL,
+        city VARCHAR(20) NOT NULL,
+        postcode VARCHAR(8) NOT NULL,
+        contactName VARCHAR(40) NOT NULL,
+        email VARCHAR(50),
+        PRIMARY KEY (customerID)
+        );'''
+
+        # Create the new table
+        cursor.execute(createTable)
+
+
+    def insertData():
+        
+        line = ''
+        data = []
+        values = ''
+        
+        file = open('../CSV/Customer-Supplier/Customer.csv', 'r', encoding='utf-8')
+        
+        # Read header
+        line = file.readline()
+        
+        # Read first line
+        line = file.readline()
+        
+        # Loop for each record
+        while line != '':
+            
+            # Split data
+            data = line.split(',')
+            
+            # Extract values
+            custID = data[0].strip()
+            name = data[1].strip()
+            address = data[2].strip()
+            city = data[3].strip()
+            postcode = data[4].strip()
+            contact = data[5].strip()
+            email = data[6].strip()
+            
+            # Check for NULL values
+            if email == '':
+                email = 'NULL'
+            else:
+                email = f'"{email}"'
+            
+            # Create data            
+            values = f'({custID},"{name}","{address}","{city}","{postcode}",' \
+                     + f'"{contact}",{email})'
+            
+            # SQL to insert data
+            newData = f'INSERT INTO Customer VALUES {values};'
+            
+            # Insert new data
+            cursor.execute(newData)
+
+            # Commit the new data
+            conn.commit()
+            
+            # Read next line
+            line = file.readline()
+    
+    
+    dropTable("Customer")
+    createTable()
+    insertData()
+
+
+def supplierTable():
+
+    def createTable():
+        
+        # SQL query
+        createTable = '''CREATE TABLE Supplier (
+        supplierID VARCHAR(5) NOT NULL,
+        name VARCHAR(30) NOT NULL,
+        address VARCHAR(30) NOT NULL,
+        city VARCHAR(20) NOT NULL,
+        postcode VARCHAR(8) NOT NULL,
+        PRIMARY KEY (supplierID)
+        );'''
+
+        # Create the new table
+        cursor.execute(createTable)
+
+
+    def insertData():
+        
+        line = ''
+        data = []
+        values = ''
+        
+        file = open('../CSV/Customer-Supplier/Supplier.csv', 'r', encoding='utf-8')
+        
+        # Read header
+        line = file.readline()
+        
+        # Read first line
+        line = file.readline()
+        
+        # Loop for each record
+        while line != '':
+            
+            # Split data
+            data = line.split(',')
+            
+            # Extract values
+            supplierID = data[0].strip()
+            name = data[1].strip()
+            address = data[2].strip()
+            city = data[3].strip()
+            postcode = data[4].strip()
+            
+            # Create data            
+            values = f'("{supplierID}","{name}","{address}","{city}",' \
+                     + f'"{postcode}")'
+            
+            # SQL to insert data
+            newData = f'INSERT INTO Supplier VALUES {values};'
+            
+            # Insert new data
+            cursor.execute(newData)
+
+            # Commit the new data
+            conn.commit()
+            
+            # Read next line
+            line = file.readline()
+    
+    
+    dropTable("Supplier")
+    createTable()
+    insertData()
+
+
+def customerOrderTable():
+
+    def createTable():
+        
+        # SQL query
+        createTable = '''CREATE TABLE CustomerOrder (
+        orderNumber INT NOT NULL,
+        orderDate DATE NOT NULL,
+        customerID INT NOT NULL,
+        FOREIGN KEY (customerID)
+            REFERENCES Customer (customerID),
+        PRIMARY KEY (orderNumber)
+        );'''
+
+        # Create the new table
+        cursor.execute(createTable)
+
+
+    def insertData():
+        
+        line = ''
+        data = []
+        values = ''
+        
+        file = open('../CSV/Customer-Supplier/CustomerOrder.csv', 'r', encoding='utf-8')
+        
+        # Read header
+        line = file.readline()
+        
+        # Read first line
+        line = file.readline()
+        
+        # Loop for each record
+        while line != '':
+            
+            # Split data
+            data = line.split(',')
+            
+            # Extract values
+            orderNo = data[0].strip()
+            date = data[1].strip()
+            custID = data[2].strip()
+            
+            # Create data            
+            values = f'({orderNo},"{date}",{custID})'
+            
+            # SQL to insert data
+            newData = f'INSERT INTO CustomerOrder VALUES {values};'
+            
+            # Insert new data
+            cursor.execute(newData)
+
+            # Commit the new data
+            conn.commit()
+            
+            # Read next line
+            line = file.readline()
+    
+    
+    dropTable("CustomerOrder")
+    createTable()
+    insertData()
+
+
+def productTable():
+
+    def createTable():
+        
+        # SQL query
+        createTable = '''CREATE TABLE Product (
+        productID VARCHAR(10) NOT NULL,
+        supplierID VARCHAR(5) NOT NULL,
+        name VARCHAR(30) NOT NULL,
+        price REAL NOT NULL,
+        description VARCHAR(100) NOT NULL,
+        FOREIGN KEY (supplierID)
+            REFERENCES Supplier (supplierID),
+        PRIMARY KEY (productID)
+        );'''
+
+        # Create the new table
+        cursor.execute(createTable)
+
+
+    def insertData():
+        
+        line = ''
+        data = []
+        values = ''
+        
+        file = open('../CSV/Customer-Supplier/Product.csv', 'r', encoding='utf-8')
+        
+        # Read header
+        line = file.readline()
+        
+        # Read first line
+        line = file.readline()
+        
+        # Loop for each record
+        while line != '':
+            
+            # Split data
+            data = line.split(',')
+            
+            # Extract values
+            productID = data[0].strip()
+            supplierID = data[1].strip()
+            name = data[2].strip()
+            price = data[3].strip()
+            desc = data[4].strip()
+            
+            # Create data            
+            values = f'("{productID}","{supplierID}","{name}",{price},"{desc}")'
+            
+            # SQL to insert data
+            newData = f'INSERT INTO Product VALUES {values};'
+            
+            # Insert new data
+            cursor.execute(newData)
+
+            # Commit the new data
+            conn.commit()
+            
+            # Read next line
+            line = file.readline()
+
+
+def orderProductTable():
+
+    def createTable():
+        
+        # SQL query
+        createTable = '''CREATE TABLE OrderProduct (
+        orderNumber INT NOT NULL,
+        productID VARCHAR(10) NOT NULL,
+        quantity INT NOT NULL
+            CHECK(quantity > 0),
+        FOREIGN KEY (orderNumber)
+            REFERENCES CustomerOrder (orderNumber),
+        FOREIGN KEY (productID)
+            REFERENCES Product (productID),
+        PRIMARY KEY (orderNumber, productID)
+        );'''
+
+        # Create the new table
+        cursor.execute(createTable)
+
+
+    def insertData():
+        
+        line = ''
+        data = []
+        values = ''
+        
+        file = open('../CSV/Customer-Supplier/OrderProduct.csv', 'r', encoding='utf-8')
+        
+        # Read header
+        line = file.readline()
+        
+        # Read first line
+        line = file.readline()
+        
+        # Loop for each record
+        while line != '':
+            
+            # Split data
+            data = line.split(',')
+            
+            # Extract values
+            orderNo = data[0].strip()
+            productID = data[1].strip()
+            quantity = data[2].strip()
+            
+            # Create data            
+            values = f'({orderNo},"{productID}",{quantity})'
+            
+            # SQL to insert data
+            newData = f'INSERT INTO OrderProduct VALUES {values};'
+            
+            # Insert new data
+            cursor.execute(newData)
+
+            # Commit the new data
+            conn.commit()
+            
+            # Read next line
+            line = file.readline()
+    
+    
+    dropTable("OrderProduct")
+    createTable()
+    insertData()
+
 '''           
 # Check for boolean values
 directDebit = f'{"FALSE" if directDebit=="0" else "TRUE"}'
@@ -1123,7 +1461,7 @@ conn = sqlite3.connect('../Clydeview.db')
 # Create a database cursor
 cursor = conn.cursor()
 
-'''
+
 print(" 1. Table1 table")
 table1Table()
 
@@ -1162,12 +1500,27 @@ countryTable()
 
 print("13. City table")
 cityTable()
-'''
+
 print("14. Movie table")
 movieTable()
 
 print("15. BoxOffice table")
 boxOfficeTable()
+
+print("16. Customer table")
+customerTable()
+
+print("17. Supplier table")
+supplierTable()
+
+print("18. CustomerOrder table")
+customerOrderTable()
+
+print("19. Product table")
+productTable()
+
+print("20. OrderProduct table")
+orderProductTable()
 
 
 # Close the connection to the database
