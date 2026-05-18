@@ -5,59 +5,65 @@
 
 Castlebay School of Computing plans to install a self-service kiosk system to allow pupils to borrow and return books without needing staff assistance.
 
-The new system should allow a pupil to:
-
-* Display basic information about a book
-* View whether a book is currently available
-* Scan a book to borrow it
-* Scan a book to return it
-* Calculate overdue fines for late returns
-
-Each book in the system has:
+Each book in the system will have:
 
 * A library number
 * A title
 * An author
 * A status showing whether it is currently borrowed
-* The date the book is due to be returned
+* The date the book was borrowed
 
-When a pupil borrows a book, the system should update its status so that other pupils can see that it is unavailable and record the due date.
+The new system should allow a pupil to:
 
-A book can be borrowed for 3 weeks.
-If a book is returned after the due date, the system should calculate a fine based on the number of overdue days.
+* View basic information about a book
+* View whether a book is currently available
+* Borrow a book
+* Return a book
+* View the days left / days late, as appropriate
+
+When a pupil borrows a book, the system should update its status so that other pupils can see that it is unavailable and record the date.
+
+A book can be borrowed for 3 weeks (21 days) before it is late.
 
 
-
-## Task
-
-Create a small app to record how far someone has walked over a four week period.  The app will calculate the total distance, and the average distance walked to 1 decimal point.
-
-The data and the results will be written to the file `walking.txt`.
+## Example User Interface
 
 
-### Example: User Interface
-
-```
-Enter the number of miles walked each week:
-
-Week 1: 12.3
-Week 2: 9.7
-Week 3: 11.1
-Week 4: 12.7
-```
-
-### Example: walking.txt
+### Basic information
 
 ```
-Walking Results - 4 Weeks
--------------------------
-
-Week 1: 12.3
-Week 2: 9.7
-Week 3: 11.1
-Week 4: 12.7
-
-Total: 45.8 miles
-
-Average: 11.4 miles (1 dp)
+Book ID: 1
+Title: The Gruffalo
+Author: Julia Donaldson
 ```
+
+
+### Book availability
+
+```
+The book is in the library
+```
+
+```
+The book has been borrowed.
+Date borrowed: 2026-05-18
+```
+
+### Days left / Days late
+
+```
+Days left: 21
+```
+
+```
+Days late: 9
+```
+
+
+## Tasks
+
+1. Create a UML class diagram for a book that has properties and methods to support the new system.
+
+2. Implement the new class.
+
+3. Test the class.
