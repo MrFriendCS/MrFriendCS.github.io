@@ -7,22 +7,21 @@ A new ferry operator, MacCal, is setting up in competition to a more establish r
 
 MacCal is going to be digital by design 
 
-[UN/LOCDE](https://unlocode.unece.org/directory/locodes/?country=GB)
-
 Each sailing has:
 
-* a unique sailing number
+* unique sailing number
 * port of departure
 * port of arrival
 * date of sailing (yyyy-mm-dd format)
 * time of sailing (hh:mm format)
 * duration of sailing, in minutes
-* number of passengers
-* number of cars
+* number of passenger tickets sold
+* number of cars tickets sold
 
 The system should allow staff to:
 
 * display the status of a sailing
+* increase passanger tickets sold by one or more
 * increase passanger tickets sold by one or more
 * display the arrival time
 
@@ -60,7 +59,7 @@ Arrive: 16:35
 ```
 
 
-## Tasks
+## Task
 
 1. Create a UML class diagram for a locker that has properties and methods to support the new system.
 
