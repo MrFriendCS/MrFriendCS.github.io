@@ -31,14 +31,18 @@ class Book:
     def available(self):
         '''Method to display the availability of a book.'''
         
+        # Local variable
+        bookInfo = f'Book {self.__id}, {self.__title} by ' \
+                   + f'{self.__author}'
+        
         if self.__loan == True:
             
-            print('The book has been borrowed.')
+            print(f'{bookInfo} has been borrowed.')
             print(f'Date borrowed: {self.__dateBorrowed}\n')
             
         else:
             
-            print('The book is in the library\n')
+            print(f'{bookInfo} is in the library\n')
             
     def borrowBook(self):
         '''Method to borrow a book.'''

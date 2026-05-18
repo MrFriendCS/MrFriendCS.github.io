@@ -25,6 +25,8 @@ When a pupil borrows a book, the system should update its status so that other p
 
 A book can be borrowed for 3 weeks (21 days) before it is late.
 
+When a pupil returns a book, the system should update its status so that other pupils can see that it is available.
+
 
 ## Example User Interface
 
@@ -41,11 +43,11 @@ Author: Julia Donaldson
 ### Book availability
 
 ```
-The book is in the library
+Book 1, The Gruffalo by Julia Donaldson, is in the library
 ```
 
 ```
-The book has been borrowed.
+Book 1, The Gruffalo by Julia Donaldson, has been borrowed.
 Date borrowed: 2026-05-18
 ```
 
