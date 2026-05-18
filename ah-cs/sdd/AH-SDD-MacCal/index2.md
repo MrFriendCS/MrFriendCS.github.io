@@ -1,4 +1,4 @@
-# AH SDD - MacCal Ferries
+# AH SDD - MacCal Ferries Part 2
 
 
 ## Introduction
@@ -10,7 +10,7 @@ MacCal is going to be digital by design
 
 ## UML Class Diagram
 
-[!UML class diagram](assets/Diagrams/class.png)
+![UML class diagram](assets/Diagrams/class.png)
 
 
 ## Example User Interface
