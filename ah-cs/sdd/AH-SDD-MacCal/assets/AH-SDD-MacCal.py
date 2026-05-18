@@ -31,30 +31,52 @@ class Sailing:
         print(f'From: {self.__pod}')
         print(f'To: {self.__poa}')
         print(f'Duration: {self.__duration}')
-        print(f'Passengers: {self.__passengers}')
-        print(f'Cars: {self.__cars}')
+        print(f'Passengers: {self.__pax}')
+        print(f'Cars: {self.__cars}\n')
         
-"""  
     def arrival(self):
         '''Method to calculate the arrival time.'''
         
-        # Update locked status
-        self.__isLocked = False
+        # Local variables
+        hours = 0
+        mins = 0
+        
+        # Extract departure time
+        hours = int(self.__time[ :2])
+        mins = int(self.__time[-2: ])
+        
+        # Add minutes
+        mins = mins + self.__duration
+        
+        # Check if mins are 60+
+        if mins >= 60:
             
+            # Update hours
+            hours = hours + mins // 60
+            
+            # Update minutes
+            mins = mins % 60
+        
+        # Check if hours are 24+
+        if hours >= 24:
+            
+            # Update hours
+            hours = hours % 24
+        
         # Display message
-        print(f'Locker {self.__id} has been unlocked.\n')
-"""           
-    def passengerTicket(self, noOfPax=1):
+        print(f'Arrival: {hours:02}:{mins:02}\n')
+        
+    def paxTicket(self, noOfPax=1):
         '''Method to update passenger numbers.'''
         
         # Local variable
         success = False
         
         # Can tickets be sold
-        if self.__pax - noOfPax <= 50:
+        if self.__pax + noOfPax <= 50:
             
             # Update number of passengers
-            self.__pax = self.__pax - noOfPax
+            self.__pax = self.__pax + noOfPax
             
             # Update success
             success = True
@@ -68,12 +90,24 @@ class Sailing:
         success = False
         
         # Can tickets be sold
-        if self.__cars - noOfPax <= 10:
+        if self.__cars + noOfCars <= 10:
             
             # Update number of passengers
-            self.__cars = self.__cars - noOfCars
+            self.__cars = self.__cars + noOfCars
             
             # Update success
             success = True
         
         return success
+
+newSailing = Sailing(7, '2026-05-18', '22:00', 'CBA', 'ADM', 192, 0, 0)
+
+newSailing.status()
+
+newSailing.paxTicket(5)
+
+newSailing.carTicket(2)
+
+newSailing.status()
+
+newSailing.arrival()
