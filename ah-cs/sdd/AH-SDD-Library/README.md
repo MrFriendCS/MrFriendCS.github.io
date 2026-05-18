@@ -7,19 +7,19 @@ Castlebay School of Computing plans to install a self-service kiosk system to al
 
 Each book in the system will have:
 
-* A library number
-* A title
-* An author
-* A status showing whether it is currently borrowed
-* The date the book was borrowed
+* a library number
+* a title
+* an author
+* a status showing whether it is currently borrowed
+* the date the book was borrowed (yyyy-mm-dd format)
 
 The new system should allow a pupil to:
 
-* View basic information about a book
-* View whether a book is currently available
-* Borrow a book
-* Return a book
-* View the days left / days late, as appropriate
+* view basic information about a book
+* view whether a book is currently available
+* borrow a book
+* return a book
+* view the days left / days late, as appropriate
 
 When a pupil borrows a book, the system should update its status so that other pupils can see that it is unavailable and record the date.
 
