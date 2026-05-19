@@ -62,20 +62,17 @@ def readData():
     # Connect to a file
     file = open('Lockers.csv', 'r', encoding='utf-8')
 
-    # Read contents
-    contents = file.read()
-
+    # Read contents, remove end \n
+    contents = file.read().strip()
+    
     # Close the connection to the file
     file.close()
 
     # Split at newlines
     temp = contents.split('\n')
 
-    # Create an array of objects - Ignore first and last rows
-    #arrayOfObjects = [Locker() for index in range(len(temp)-2)]
-
-    # Loop for each object - Ignore first and last rows
-    for index in range(1, len(temp)-1):
+    # Loop for each object - Ignore first row
+    for index in range(1, len(temp)):
         
         # Split data
         data = temp[index].split(',')
@@ -93,9 +90,10 @@ def readData():
         # Append new locker object to array
         arrayOfObjects.append(Locker(lockerNo, isLocked))
         
+    return arrayOfObjects
     
 
-readData()
+objects = readData()
 '''
 newLocker = Locker(1)
 
