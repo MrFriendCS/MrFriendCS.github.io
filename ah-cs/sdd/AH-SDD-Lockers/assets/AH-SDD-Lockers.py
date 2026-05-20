@@ -1,52 +1,60 @@
 # Title: AH SDD Locker
 # Author: Mr Friend
-# Date: 19 May 2026
+# Date: 20 May 2026
 
 
 class Locker:
     '''Declare a class to define a smart locker.'''
     
-    def __init__(self, number=0, locked=False):
+    def __init__(self, number: int=0, pupil: str="", locked: bool=False):
         '''Constructor method. ''' \
         '''Automatically called when an object is created.'''
     
         # Class properties - Private
         self.__lockerNo = number
+        self.__pupil = pupil
         self.__isLocked = locked
     
-    def lock(self):
+    def lock(self) -> bool:
         '''Method to lock a locker.'''
         
-        # Update locked status
-        self.__isLocked = True
+        # Local variable
+        success = False
+        
+        # Check locked status
+        if self.__isLocked == False:
             
-        # Display message
-        print(f'Locker {self.__lockerNo} has been locked.\n')
+            # Update locked status
+            self.__isLocked = True
+            
+            # Update success
+            success = True
+        
+        # Return result
+        return success
     
-    def unlock(self):
+    def unlock(self) -> bool:
         '''Method to unlock a locker.'''
         
-        # Update locked status
-        self.__isLocked = False
-            
-        # Display message
-        print(f'Locker {self.__lockerNo} has been unlocked.\n')
-            
-    def status(self):
-        '''Method to display the status of a locker.'''
-        
         # Local variable
-        status = ''
+        success = False
         
-        # Determine status
+        # Check locked status
         if self.__isLocked == True:
-            status = 'Locked'
-        else:
-            status = 'Unlocked'
             
-        # Display message
-        print(f'Locker: {self.__lockerNo}')
-        print(f'Status: {status}\n')
+            # Update locked status
+            self.__isLocked = False
+            
+            # Update success
+            success = True
+        
+        # Return result
+        return success
+            
+    def status(self) -> tuple:
+        '''Method to return the status of a locker.'''
+        
+        return self.__lockerNo, self.__pupil, self.__isLocked
     
     
 def readData():
@@ -88,22 +96,37 @@ def readData():
             isLocked = False
         
         # Append new locker object to array
-        arrayOfObjects.append(Locker(lockerNo, isLocked))
+        arrayOfObjects.append(Locker(lockerNo, '', isLocked))
         
     return arrayOfObjects
+
+
+def findLocked(arrayOfObjects):
+    '''Procedure to find locked lockers, and display their numbers.'''
     
+    # Loop for each locker
+    for index in range(arrayOfObjects):
+        '''Encapsulation!'''
+        if arrayOfObjects[index].__isLocked == True:
+            
+            arrayOfObjects[index].status()
+
+
+#
+# Main program
+#
 
 objects = readData()
-'''
-newLocker = Locker(1)
 
-newLocker.status()
+newLocker = Locker(1, 'Tom')
 
-newLocker.lock()
+print(newLocker.lock())
 
-newLocker.status()
+print(newLocker.lock())
 
-newLocker.unlock()
+print(newLocker.unlock())
 
-newLocker.status()
-'''
+print(newLocker.unlock())
+
+print(newLocker.status())
+
