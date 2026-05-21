@@ -16,9 +16,9 @@ Each locker has a small ePaper display on the locker to display the following in
 
 An example of a display is show below:
 
-    &#127380; 5<br>
-    &#129489; Pete Smith<br>
-    &#128273; Locked
+&#127380; 5
+&#129489; Pete Smith
+&#128273; Locked
 
 
 
