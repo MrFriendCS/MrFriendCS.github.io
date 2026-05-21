@@ -53,3 +53,5 @@ From the analysis, a class for Locker was designed.
 ## Tasks
 
 1. Implement the class.
+
+2. Implement functions for the search use cases.
