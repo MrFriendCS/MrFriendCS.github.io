@@ -1,0 +1,18 @@
+@startuml
+
+left to right direction
+
+actor Staff
+
+rectangle "Smart Locker System" {
+  usecase "View Locker Details"
+  usecase "Search Unlocked Lockers"
+  usecase "Lock Locker"
+  usecase "Unlock Locker"
+}
+
+Staff --> (View Locker Details)
+Staff --> (Search Unlocked Lockers)
+Staff --> (Lock Locker)
+Staff --> (Unlock Locker)
+@enduml

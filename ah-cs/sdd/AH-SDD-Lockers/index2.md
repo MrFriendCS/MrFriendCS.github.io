@@ -23,7 +23,7 @@ An example of a display is show below:
 
 ## UML Use Case Diagram
 
-![UML use case diagram](assets/Diagram/useCase.png)
+![UML use case diagram](assets/diagrams/useCase.png)
 
 
 The app should allow staffto:
