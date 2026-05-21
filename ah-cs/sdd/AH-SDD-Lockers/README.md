@@ -34,6 +34,7 @@ The app should allow staff to:
 * get the information about a locker (locker number, pupil name, and locked status)
 * search for unlocked lockers
 * search for the locker number of a specific pupil
+* assign a locker to a pupil
 
 
 ## Tasks

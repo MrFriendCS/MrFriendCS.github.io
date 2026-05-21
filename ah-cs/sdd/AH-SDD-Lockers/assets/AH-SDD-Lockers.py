@@ -52,7 +52,7 @@ class Locker:
         # Return result
         return success
             
-    def status(self) -> tuple:
+    def details(self) -> tuple:
         '''Method to return the status of a locker.'''
         
         return self.__lockerNo, self.__pupil, self.__isLocked
@@ -106,11 +106,26 @@ def findLocked(arrayOfObjects):
     '''Procedure to find locked lockers, and display their numbers.'''
     
     # Loop for each locker
-    for index in range(arrayOfObjects):
-        '''Encapsulation!'''
-        if arrayOfObjects[index].__isLocked == True:
+    for index in range(len(arrayOfObjects)):
+        
+        currentLocker = arrayOfObjects[index].details()
+        
+        if currentLocker[2] == True:
             
-            arrayOfObjects[index].status()
+            print(currentLocker[0])
+
+
+def findPupil(arrayOfObjects, pupilName):
+    '''Procedure to find a pupil's locker, and display the number.'''
+    
+    # Loop for each locker
+    for index in range(len(arrayOfObjects)):
+        
+        currentLocker = arrayOfObjects[index].details()
+        
+        if currentLocker[1] == pupilName:
+            
+            print(currentLocker[0])
 
 
 #
@@ -119,6 +134,11 @@ def findLocked(arrayOfObjects):
 
 objects = readData()
 
+findLocked(objects)
+
+findPupil(objects, 'Tom')
+
+'''
 newLocker = Locker(1, 'Tom')
 
 print(newLocker.status())
@@ -132,4 +152,4 @@ print(newLocker.unlock())
 print(newLocker.unlock())
 
 print(newLocker.status())
-
+'''
