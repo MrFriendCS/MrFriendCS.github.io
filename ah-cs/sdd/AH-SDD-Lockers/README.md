@@ -11,7 +11,16 @@ The school wants a program that will allow a member of staff to manage individua
 Each locker has:
 
 * a unique locker number
+* displays who it assigned to
 * a status showing whether the locker is currently locked or unlocked
+
+A small ePaper display on the locker displays information, such as:
+
+&#127380; 5
+&#129489; Pete Smith
+&#128273; Locked
+
+
 
 The system should allow staff to:
 
@@ -20,6 +29,8 @@ The system should allow staff to:
 * get the status of a locker
 
 The school has asked a Computing Science class to create a simple object-oriented solution to model a locker in software.
+
+When new lockers are installed they are locked.
 
 
 ## Example User Interface

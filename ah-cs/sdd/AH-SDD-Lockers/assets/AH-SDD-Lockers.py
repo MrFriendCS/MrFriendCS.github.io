@@ -1,18 +1,19 @@
 # Title: AH SDD Locker
 # Author: Mr Friend
-# Date: 20 May 2026
+# Date: 21 May 2026
 
 
 class Locker:
     '''Declare a class to define a smart locker.'''
     
-    def __init__(self, number: int=0, pupil: str="", locked: bool=False):
+    def __init__(self, lockerNo: int=0, pupilName: str="", \
+                 locked: bool=True):
         '''Constructor method. ''' \
         '''Automatically called when an object is created.'''
     
         # Class properties - Private
-        self.__lockerNo = number
-        self.__pupil = pupil
+        self.__lockerNo = lockerNo
+        self.__pupil = pupilName
         self.__isLocked = locked
     
     def lock(self) -> bool:
@@ -119,6 +120,8 @@ def findLocked(arrayOfObjects):
 objects = readData()
 
 newLocker = Locker(1, 'Tom')
+
+print(newLocker.status())
 
 print(newLocker.lock())
 
