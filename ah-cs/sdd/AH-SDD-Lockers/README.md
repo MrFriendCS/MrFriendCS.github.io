@@ -8,17 +8,17 @@ Each pupil is assigned a locker where they can safely store their belongings dur
 
 The school wants a program that will allow a member of staff to manage individual lockers via an app.
 
-Each locker has:
+Each locker has a small ePaper display on the locker to display the following information:
 
 * a unique locker number
 * displays who it assigned to
 * a status showing whether the locker is currently locked or unlocked
 
-A small ePaper display on the locker displays information, such as:
+An example of a display is show below:
 
-&#127380; 5
-&#129489; Pete Smith
-&#128273; Locked
+    &#127380; 5<br>
+    &#129489; Pete Smith<br>
+    &#128273; Locked
 
 
 
