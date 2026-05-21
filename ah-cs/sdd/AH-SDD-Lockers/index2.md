@@ -1,4 +1,4 @@
-# AH SDD - Lockers
+# AH SDD - Lockers Part 2
 
 
 ## Introduction
@@ -21,6 +21,10 @@ An example of a display is show below:
 &nbsp;&nbsp;&nbsp;&nbsp;&#129489; Pete Smith  
 &nbsp;&nbsp;&nbsp;&nbsp;&#128273; Locked
 
+## UML Use Case Diagram
+
+![UML use case diagram](assets/diagram/useCase.png)
+
 
 The app should allow staffto:
 
@@ -35,9 +39,7 @@ When new lockers are installed they are always locked.
 
 ## Tasks
 
-1. Create a UML use case diagram to represent the system.
-
-2. Create a UML class diagram for a locker that has properties and methods to support the new system.
+1. Create a UML class diagram for a locker that has properties and methods to support the new system.
 
 3. Implement the new class.
 
