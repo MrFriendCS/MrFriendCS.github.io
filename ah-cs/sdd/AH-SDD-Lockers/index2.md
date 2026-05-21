@@ -9,6 +9,9 @@ Each pupil will be assigned a locker where they can safely store their belonging
 The lockers will be smart, meaning that they can be controlled via software.
 A program will be required that will allow a member of staff to manage individual lockers via an app.
 
+
+### Lockers
+
 Each locker has a small ePaper display on the locker to display the following information:
 
 * a unique locker number
@@ -21,12 +24,10 @@ An example of a display is show below:
 &nbsp;&nbsp;&nbsp;&nbsp;&#129489; Pete Smith  
 &nbsp;&nbsp;&nbsp;&nbsp;&#128273; Locked
 
-## UML Use Case Diagram
 
-![UML use case diagram](assets/diagrams/useCase.png)
+### Staff
 
-
-The app should allow staffto:
+The app should allow staff to:
 
 * lock a locker
 * unlock a locker
@@ -34,13 +35,14 @@ The app should allow staffto:
 * search for unlocked lockers
 * search for the locker number of a specific pupil
 
-When new lockers are installed they are always locked.
+
+## UML Use Case Diagram
+
+The analysis of the proposed system allowed a UML use case diagram to be created.
+
+![UML use case diagram](assets/diagrams/useCase.png)
 
 
 ## Tasks
 
-1. Create a UML class diagram for a locker that has properties and methods to support the new system.
-
-3. Implement the new class.
-
-4. Test the class.
+1. Create a UML class diagram for a locker that has instance variables and methods to support the new system.

@@ -1,4 +1,4 @@
-# AH SDD - Lockers
+# AH SDD - Lockers Part 3
 
 
 ## Introduction
@@ -36,7 +36,20 @@ The app should allow staff to:
 * search for the locker number of a specific pupil
 
 
+## UML Use Case Diagram
+
+The analysis of the proposed system allowed a UML use case diagram to be created.
+
+![UML use case diagram](assets/diagrams/useCase.png)
+
+
+## UML Class Diagram
+
+From the analysis, a class for Locker was designed.
+
+![UML clase diagram](assets/diagrams/class.png)
+
+
 ## Tasks
 
-1. Create a UML use case diagram to represent the system.
-
+1. Implement the class.
