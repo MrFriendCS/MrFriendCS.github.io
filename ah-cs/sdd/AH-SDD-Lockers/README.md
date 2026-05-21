@@ -16,13 +16,12 @@ Each locker has a small ePaper display on the locker to display the following in
 
 An example of a display is show below:
 
-&#127380; 5
-&#129489; Pete Smith
+&#127380; 5  
+&#129489; Pete Smith  
 &#128273; Locked
 
 
-
-The system should allow staff to:
+The system should allow staff, via an app, to:
 
 * lock a locker
 * unlock a locker
@@ -31,31 +30,6 @@ The system should allow staff to:
 The school has asked a Computing Science class to create a simple object-oriented solution to model a locker in software.
 
 When new lockers are installed they are locked.
-
-
-## Example User Interface
-
-
-### Lock
-
-```
-Locker 3 has been locked.
-```
-
-
-### Unlock
-
-```
-Locker 3 has been unlocked.
-```
-
-
-### Locker status
-
-```
-Locker: 3
-Status: Unlocked
-```
 
 
 ## Tasks
