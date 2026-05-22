@@ -14,7 +14,7 @@ class Locker:
     
         # Instance variables - Private
         self.__lockerNo = lockerNo
-        self.__pupil = pupilName
+        self.__pupilName = pupilName
         self.__isLocked = locked
     
     
@@ -59,11 +59,11 @@ class Locker:
     def details(self) -> tuple:
         '''Method to return the details of a locker.'''
         
-        return self.__lockerNo, self.__pupil, self.__isLocked
+        return self.__lockerNo, self.__pupilName, self.__isLocked
     
     
     def assign(self, pupilName) -> None:
         '''Method to assign a locker to a pupil.'''
         
         # Assign locker to pupil
-        self.__pupil = pupilName
+        self.__pupilName = pupilName

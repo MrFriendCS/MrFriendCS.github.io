@@ -37,7 +37,8 @@ def readData():
         
         # Extract values
         lockerNo = int(data[0])
-        lock = int(data[1])
+        pupilName = data[1]
+        lock = int(data[2])
         
         # Check lock status
         if lock == 1:
@@ -46,7 +47,7 @@ def readData():
             isLocked = False
         
         # Append new locker object to array
-        arrayOfObjects.append(Locker(lockerNo, '', isLocked))
+        arrayOfObjects.append(Locker(lockerNo, pupilName, isLocked))
         
     return arrayOfObjects
 
@@ -64,7 +65,7 @@ def findLocked(arrayOfObjects):
             print(currentLocker[0])
 
 
-def findPupil(arrayOfObjects, pupilName):
+def findLocker(arrayOfObjects, pupilName):
     '''Procedure to find a pupil's locker, and display the number.'''
     
     # Loop for each locker
@@ -83,16 +84,18 @@ def findPupil(arrayOfObjects, pupilName):
 
 objects = readData()
 
-objects[1].assign('Tom')
 
-print(objects[1].details())
 
 findLocked(objects)
 
-findPupil(objects, 'Tom')
+findLocker(objects, 'Matt Baker')
+
+objects[14].assign('Tom')
+
+print(objects[1].details())
 
 '''
-newLocker = Locker(1, 'Tom')
+newLocker = Locker(1, 'Matta')
 
 print(newLocker.status())
 

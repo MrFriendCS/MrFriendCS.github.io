@@ -15,7 +15,7 @@ A program will be required that will allow a member of staff to manage individua
 Each locker has a small ePaper display on the locker to display the following information:
 
 * a unique locker number
-* who it assigned to
+* who it is assigned to
 * locked / unlocked
 
 An example of a display is show below:
@@ -37,35 +37,61 @@ The app should allow staff to:
 * assign a locker to a pupil
 
 
-## UML Use Case Diagram
+## Analysis
+
+
+### UML Use Case Diagram
 
 The analysis of the proposed system allowed a UML use case diagram to be created.
 
 ![UML use case diagram](assets/diagrams/useCase.png)
 
 
-## UML Class Diagram
+
+## Design
+
+
+### UML Class Diagram
 
 From the analysis, a class for Locker was designed.
 
 ![UML clase diagram](assets/diagrams/class.png)
 
 
-## Top Level Design
+### Top Level Design
 
 ![Structure diagram](assets/diagrams/sd.png)
 
 
-## Locker Class
+#### Example UI
+
+```
+Number of lockers read from file: 20
+
+The following lockers are unlocked:
+
+    5
+    19
+
+Locker 13 is assigned to Jodie Whittaker.
+
+Locker 14 has been assigned to Ncuti Gatwa.
+```
+
+
+## Implementation
+
+
+### Locker Class
 
 From UML class diagram, the Locker class was implemented.
 
 Class code: [Locker.py](assets/Locker.py "Download file")
 
 
-## Locker Data
+### Locker Data
 
-The details of the all the lockers have been saved to file.
+The details of the all the lockers have been saved to a file.
 
 Locker data: [Lockers.csv](assets/Lockers.csv "Download file")
 
@@ -73,4 +99,4 @@ Locker data: [Lockers.csv](assets/Lockers.csv "Download file")
 
 ## Tasks
 
-1. Using the class code provided, implement functions for the search use cases.
+1. Using the class and data provided, implement the top level design.
