@@ -3,7 +3,7 @@
 # Date: 22 May 2026
 
 
-# Get extra code
+# Locker class
 from Locker import Locker
     
     
@@ -65,17 +65,27 @@ def findLocked(arrayOfObjects):
             print(currentLocker[0])
 
 
-def findLocker(arrayOfObjects, pupilName):
-    '''Procedure to find a pupil's locker, and display the number.'''
+def findLocker(arrayOfObjects, pupilName) -> int:
+    '''Function find a pupil's locker number.'''
     
-    # Loop for each locker
-    for index in range(len(arrayOfObjects)):
+    # Local variables
+    lockerNo = -1
+    index = 0
+    
+    # Loop for each locker until found
+    while lockerNo == -1 and index < len(arrayOfObjects)-1:
         
         currentLocker = arrayOfObjects[index].details()
         
         if currentLocker[1] == pupilName:
             
-            print(currentLocker[0])
+            lockerNo = currentLocker[0]
+        
+        # Increment index
+        index += 1
+    
+    # Return result
+    return lockerNo
 
 
 #
@@ -88,11 +98,11 @@ objects = readData()
 
 findLocked(objects)
 
-findLocker(objects, 'Matt Baker')
+print(findLocker(objects, 'Jodie Whittaker'))
 
-objects[14].assign('Tom')
+objects[13].assign('Ncuti Gatwa')
 
-print(objects[1].details())
+print(objects[13].details())
 
 '''
 newLocker = Locker(1, 'Matta')
