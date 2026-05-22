@@ -51,11 +51,24 @@ From the analysis, a class for Locker was designed.
 ![UML clase diagram](assets/diagrams/class.png)
 
 
-## Loccker Class
+## Top Level Design
 
-From the design, the Locker class was implemented.
+![Structure diagram](assets/diagrams/sd.png)
+
+
+## Locker Class
+
+From UML class diagram, the Locker class was implemented.
 
 Class code: [Locker.py](assets/Locker.py "Download file")
+
+
+## Locker Data
+
+The details of the all the lockers have been saved to file.
+
+Locker data: [Lockers.csv](assets/Lockers.csv "Download file")
+
 
 
 ## Tasks
