@@ -1,4 +1,4 @@
-# AH SDD - Lockers Part 3
+# AH SDD - Lockers Part 4
 
 
 ## Introduction
@@ -51,6 +51,13 @@ From the analysis, a class for Locker was designed.
 ![UML clase diagram](assets/diagrams/class.png)
 
 
+## Loccker Class
+
+From the design, the Locker class was implemented.
+
+Class code: [Locker.py](assets/Locker.py "Download file")
+
+
 ## Tasks
 
-1. Implement the class.
+1. Using the class code provided, implement functions for the search use cases.
