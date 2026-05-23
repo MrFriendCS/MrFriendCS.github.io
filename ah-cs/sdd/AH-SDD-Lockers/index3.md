@@ -64,7 +64,7 @@ The following functional requiremnts were identified:
 * FR6 - The program shall search through lockers to find unlocked lockers.
 * FR7 - The program shall provide a method to retieve all the information about a locker.
 * FR8 - The program shall search through lockers to find the locker(s) assigned to a specific pupil.
-* FR9 - The program shall allow staff to assign a locker to a pupil.
+* FR9 - The program shall provide a method to allow staff to assign a locker to a pupil.
 * FR10 - The program shall store multiple locker objects in an array.
 
 
