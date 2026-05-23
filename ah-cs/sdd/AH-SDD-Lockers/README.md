@@ -15,7 +15,7 @@ A program will be required that will allow a member of staff to manage individua
 Each locker has a small ePaper display on the locker to display the following information:
 
 * a unique locker number
-* who it assigned to
+* who it is assigned to
 * locked / unlocked
 
 An example of a display is show below:
@@ -33,11 +33,15 @@ The app should allow staff to:
 * unlock a locker
 * get the information about a locker (locker number, pupil name, and locked status)
 * search for unlocked lockers
-* search for the locker number of a specific pupil
+* search for the locker number(s) of a specific pupil
 * assign a locker to a pupil
 
 
 ## Tasks
 
 1. Create a UML use case diagram to represent the system.
+
+2. Identify 3 end user requirements.
+
+3. Identify 3 functional requirements
 
