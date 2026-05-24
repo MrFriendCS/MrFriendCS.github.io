@@ -93,6 +93,9 @@ From the analysis, a class for Locker was designed.
 #### Example UI
 
 ```
+Smart Locker System
+-------------------
+
 Number of lockers read from file: 20
 
 The following lockers are unlocked:

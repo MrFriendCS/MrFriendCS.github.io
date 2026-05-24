@@ -39,9 +39,9 @@ The app should allow staff to:
 
 ## Tasks
 
-1. Create a UML use case diagram to represent the system.
+1. Identify 3 end user requirements.
 
-2. Identify 3 end user requirements.
+2. Identify 3 functional requirements.
 
-3. Identify 3 functional requirements
+3. Create a UML use case diagram to represent the system.
 

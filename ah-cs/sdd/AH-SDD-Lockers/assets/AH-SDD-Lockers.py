@@ -1,13 +1,13 @@
 # Title: AH SDD Locker
 # Author: Mr Friend
-# Date: 22 May 2026
+# Date: 24 May 2026
 
 
 # Locker class
 from Locker import Locker
-    
-    
-def readData():
+
+
+def readData() -> list:
     '''Read CSV data into an array of Locker objects.'''
 
     # Local variables
@@ -52,70 +52,91 @@ def readData():
     return arrayOfObjects
 
 
-def findLocked(arrayOfObjects):
-    '''Procedure to find locked lockers, and display their numbers.'''
+def findLocked(arrayOfObjects) -> list:
+    '''Procedure to find locked lockers, and return their numbers.'''
+    
+    # Local variable
+    lockers = []
     
     # Loop for each locker
-    for index in range(len(arrayOfObjects)):
+    for locker in arrayOfObjects:
         
-        currentLocker = arrayOfObjects[index].details()
+        currentLocker = locker.details()
         
         if currentLocker[2] == True:
             
-            print(currentLocker[0])
+            lockers = lockers + [currentLocker[0]]
+    
+    return lockers
 
 
-def findLocker(arrayOfObjects, pupilName) -> int:
-    '''Function find a pupil's locker number.'''
+def findLockerNo(arrayOfObjects, pupilName:str='') -> list:
+    '''Function find a pupil's locker number(s). ''' \
+    '''Returns the locker number(s), or an empty array.'''
+    
+    # Local variable
+    lockers = []
+    
+    # Loop for each locker
+    for locker in arrayOfObjects:
+        
+        # Get current locker details
+        details = locker.details()
+        
+        # Compare pupil name
+        if details[1] == pupilName:
+            
+            # Assign lock number to array
+            lockers = lockers + [details[1]]
+    
+    # Return locker number(s)
+    return lockers
+
+
+def assignLocker(arrayOfObjects, lockerNo=-1, pupilName='') -> bool:
+    '''Assigns a locker to a pupil. ''' \
+    '''Returns True if successful, else returns False.'''
     
     # Local variables
-    lockerNo = -1
+    assigned = False
     index = 0
     
     # Loop for each locker until found
-    while lockerNo == -1 and index < len(arrayOfObjects)-1:
+    while assigned == False and index < len(arrayOfObjects)-1:
         
+        # Get current locker details
         currentLocker = arrayOfObjects[index].details()
         
-        if currentLocker[1] == pupilName:
+        # Compare locker number
+        if currentLocker[0] == lockerNo:
             
-            lockerNo = currentLocker[0]
+            # Assign locker to pupil
+            arrayOfObjects[index].assign(pupilName)
+            
+            # Update assigned
+            assigned = True
         
         # Increment index
         index += 1
     
     # Return result
-    return lockerNo
+    return assigned
 
 
 #
 # Main program
 #
 
+# Read data from file
 objects = readData()
-
 
 
 findLocked(objects)
 
-print(findLocker(objects, 'Jodie Whittaker'))
+print(findLockerNo(objects, 'Jodie Whittaker'))
 
-objects[13].assign('Ncuti Gatwa')
+print(assignLocker(objects, 14,'Ncuti Gatwa'))
 
-print(objects[13].details())
+print(findLockerNo(objects, 'Ncuti Gatwa'))
 
-'''
-newLocker = Locker(1, 'Matta')
-
-print(newLocker.status())
-
-print(newLocker.lock())
-
-print(newLocker.lock())
-
-print(newLocker.unlock())
-
-print(newLocker.unlock())
-
-print(newLocker.status())
-'''
+print(findLocked(objects))

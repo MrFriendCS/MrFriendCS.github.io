@@ -7,8 +7,7 @@ class Locker:
     '''Declare a class to define a smart locker.'''
     
     
-    def __init__(self, lockerNo: int=0, pupilName: str='', \
-                 locked: bool=True):
+    def __init__(self, lockerNo: int=0, pupilName: str='', locked: bool=True):
         '''Constructor method. ''' \
         '''Automatically called when a locker object is created.'''
     
@@ -62,7 +61,7 @@ class Locker:
         return self.__lockerNo, self.__pupilName, self.__isLocked
     
     
-    def assign(self, pupilName) -> None:
+    def assign(self, pupilName:str='') -> None:
         '''Method to assign a locker to a pupil.'''
         
         # Assign locker to pupil
