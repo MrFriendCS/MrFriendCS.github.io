@@ -119,6 +119,13 @@ From UML class diagram, the Locker class was implemented.
 Class code: [Locker.py](assets/Locker.py "Download file")
 
 
+### Locker Class Testing
+
+The class was tested using the following code.
+
+Class test code: [lockerTest.py](assets/lockerTest.py "Download file")
+
+
 ### Locker Data
 
 The details of the all the lockers have been saved to a file.
