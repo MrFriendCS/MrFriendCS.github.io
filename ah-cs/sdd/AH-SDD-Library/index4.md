@@ -20,6 +20,8 @@ The new system should allow a pupil to:
 * borrow a book
 * return a book
 * view the days left / days late, as appropriate
+* search for books by an author
+
 
 When a pupil borrows a book, the system should update its status so that other pupils can see that it is unavailable and record the date.
 
@@ -99,14 +101,17 @@ From the analysis, a class for Locker was designed.
 Smart Locker System
 -------------------
 
-Number of lockers read from file: 20
+Number of books read from file: 20
 
 The following lockers are unlocked:
 
     5
     19
 
-Locker 13 is assigned to Jodie Whittaker.
+Books by Homer:
+
+    The Iliad
+    The Odyssey
 
 Locker 14 has been assigned to Ncuti Gatwa.
 ```
