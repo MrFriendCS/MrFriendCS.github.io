@@ -3,32 +3,19 @@
 
 ## SDD Tasks
 
-| Title                    | Description                     | Concepts                    | Comments |
-| -----                    | -----------                     | --------                    | -------- |
-| | | | |
+| Title                    | Description                   | Concepts                 | Comments |
+| -----                    | -----------                   | --------                 | -------- |
+| AH-SDD-Lockers Pt 1      | Identify requirements, UML uc | UML                      | |
+| AH-SDD-Lockers Pt 2      | Create UML cd                 | UML                      | + EU/FR, UML uc |
+| AH-SDD-Lockers Pt 3      | Implement and test class      | Objects, testing         | + UML cd  |
+| AH-SDD-Lockers Pt 4      | Implement code                | AoO                      | + sd, class, test, data|
 
 
 ### Abbreviations
 
-asc = Character to ASCII,
-chr = ASCII to character,
-int = Real to integer,
-mod = Modulus,
-pa = Parallel arrays,
-r = Read from file,
-ar = Array of records,
-sp = Sub-programs,
-sp+ = sp calls a sp,
-ss = Sub-strings,
-w = Write to file,
-ls = Linear search,
-ls+ = ls plus a twist,
-co = Count occurrences,
-co+ = co plus a twist,
-min = Find minimum,
-min+ = min plus a twist,
-max = Find maximum,
-max+ = max plus a twist
+AoO = array of objects
+cd = class diagram
+uc = use case diagram
 
 pc = Pseudocode,
 pc+ = pc plus refinements,
