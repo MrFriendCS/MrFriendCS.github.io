@@ -13,33 +13,6 @@ When an order is submitted, it is then paid.
 When an order has been paid for, canteen will serve it to the pupil and mark the order complete.
 
 
-### Lockers
-
-Each locker has a small ePaper display on the locker to display the following information:
-
-* a unique locker number
-* who it is assigned to
-* locked / unlocked
-
-An example of a display is show below:
-
-&nbsp;&nbsp;&nbsp;&nbsp;&#127380; 5  
-&nbsp;&nbsp;&nbsp;&nbsp;&#129489; Pete Smith  
-&nbsp;&nbsp;&nbsp;&nbsp;&#128273; Locked
-
-
-### Staff
-
-The app should allow staff to:
-
-* lock a locker
-* unlock a locker
-* get the information about a locker (locker number, pupil name, and locked status)
-* search for unlocked lockers
-* search for the locker number(s) of a specific pupil
-* assign a locker to a pupil
-
-
 ## Analysis
 
 
@@ -64,30 +37,30 @@ The app should allow staff to:
 
 #### Input
 
-FR1 - The system shall allow pupils to select items from a list of available canteen items.
-FR2 - The system shall allow pupils to specify quantities for selected items.
-FR3 - The system shall allow pupils to remove selected items from an order.
-FR4 - The system shall allow pupils to submit an order.
-FR5 - The system shall allow staff to access submitted orders.
+* FR1 - The system shall allow pupils to select items from a list of available canteen items.
+* FR2 - The system shall allow pupils to specify quantities for selected items.
+* FR3 - The system shall allow pupils to remove selected items from an order.
+* FR4 - The system shall allow pupils to submit an order.
+* FR5 - The system shall allow staff to access submitted orders.
 
 
 #### Process
  
-FR6 - The system shall store a list of available canteen items.
-FR7 - The system shall store items added to an order as a collection of objects.
-FR8 - The system shall calculate the cost of each order based on item price and quantity.
-FR9 - The system shall update an order when items are added or removed.
-FR10 - The system shall change the status of an order when it is submitted or processed.
-FR11 - The system shall maintain a collection of all submitted orders.
+* FR6 - The system shall store a list of available canteen items.
+* FR7 - The system shall store items added to an order as a collection of objects.
+* FR8 - The system shall calculate the cost of each order based on item price and quantity.
+* FR9 - The system shall update an order when items are added or removed.
+* FR10 - The system shall change the status of an order when it is submitted or processed.
+* FR11 - The system shall maintain a collection of all submitted orders.
 
 
 #### Output
 
-FR12 - The system shall display the list of available menu items.
-FR13 - The system shall display the current contents of an order.
-FR14 - The system shall display the total cost of an order.
-FR15 - The system shall display all submitted orders to staff.
-FR16 - The system shall display order details for staff processing (items, quantities, totals, status).
+* FR12 - The system shall display the list of available menu items.
+* FR13 - The system shall display the current contents of an order.
+* FR14 - The system shall display the total cost of an order.
+* FR15 - The system shall display all submitted orders to staff.
+* FR16 - The system shall display order details for staff processing (items, quantities, totals, status).
 
 
 ### UML Use Case Diagram
