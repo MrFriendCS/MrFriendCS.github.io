@@ -11,35 +11,34 @@ Each book in the system will have:
 * a title
 * an author
 * a status showing whether it is currently borrowed
-* the date the book was borrowed (yyyy-mm-dd format)
+* the name of the pupil who borrowed the book
+* a status showing whether it is currently reserved
 
-The new system should allow a pupil to:
 
-* view basic information about a book
+### Pupil
+
+The system should allow a pupil to:
+
+* search for books by title or author
+* view information about a book
 * view whether a book is currently available
 * borrow a book
 * return a book
-* view the days left / days late, as appropriate
-* search for books by an author
+* reserve a book if it is currently unavailable
 
+Before borrowing or returning a book, a pupil must enter their pupil ID.
 
-When a pupil borrows a book, the system should update its status so that other pupils can see that it is unavailable and record the date.
+When a pupil borrows a book, the system should:
 
-A book can be borrowed for 3 weeks (21 days) before it is late.
+* update the book status to unavailable
+* record the pupil's name
 
-When a pupil returns a book, the system should update its status so that other pupils can see that it is available.
+When a pupil returns a book, the system should:
 
+* update the book status to available
 
-### Staff
+If a book is unavailable, the system should allow a pupil to reserve it.
 
-The app should allow staff to:
-
-* lock a locker
-* unlock a locker
-* get the information about a locker (locker number, pupil name, and locked status)
-* search for unlocked lockers
-* search for the locker number(s) of a specific pupil
-* assign a locker to a pupil
 
 
 ## Analysis
@@ -49,28 +48,38 @@ The app should allow staff to:
 
 The following end user requiremnts were identified:
 
-* EU1 - Staff are able to lock a locker remotely.
-* EU2 - Staff are able to unlock a locker remotely.
-* EU3 - Staff are able to find all unlocked lockers.
-* EU4 - Staff are able to view all the information about a locker (locker number, pupil name, and locked status).
-* EU5 - Staff are able to find the locker(s) assigned to a specific pupil.
-* EU6 - Staff are able to assign a locker to a pupil.
+* EU1 - The system should allow pupils to search for books by title.
+* EU1 - The system should allow pupils to search for books by author.
+* EU1 - The system should allow pupils to view information about a book.
+* EU1 - The system should allow pupils to check whether a book is available.
+* EU1 - The system should allow pupils to borrow books.
+* EU1 - The system should allow pupils to return books.
+* EU1 - The system should allow pupils to reserve books that are unavailable.
+* EU1 - The system should require pupils to enter their pupil ID before borrowing a book.
+* EU1 - The system should require pupils to enter their pupil ID before returning a book.
 
 
 ### Functional Requiremnts
 
 The following functional requiremnts were identified:
 
-* FR1 - The program shall store a locker number for each locker.
-* FR2 - The program shall store the name of a pupil assigned to each locker.
-* FR3 - The program shall store whether a locker is locked or unlocked using a Boolean value.
-* FR4 - The program shall provide a method to lock a locker.
-* FR5 - The program shall provide a method to unlock a locker.
-* FR6 - The program shall search through lockers to find unlocked lockers.
-* FR7 - The program shall provide a method to retieve all the information about a locker.
-* FR8 - The program shall search through lockers to find the locker(s) assigned to a specific pupil.
-* FR9 - The program shall provide a method to allow staff to assign a locker to a pupil.
-* FR10 - The program shall store multiple locker objects in an array.
+* FR1 - The system shall store a library number for each book.
+* FR1 - The system shall store a title for each book.
+* FR1 - The system shall store an author for each book.
+* FR1 - The system shall store the availability status of each book.
+* FR1 - The system shall store the name of the pupil who borrowed a book.
+* FR1 - The system shall allow books to be searched by title.
+* FR1 - The system shall allow books to be searched by author.
+* FR1 - The system shall display information about a selected book.
+* FR1 - The system shall display whether a selected book is available.
+* FR1 - The system shall allow a pupil to enter their pupil ID.
+* FR1 - The system shall validate a pupil ID before a book can be borrowed.
+* FR1 - The system shall validate a pupil ID before a book can be returned.
+* FR1 - The system shall update a book's status to unavailable when it is borrowed.
+* FR1 - The system shall record the pupil's name when a book is borrowed.
+* FR1 - The system shall update a book's status to available when it is returned.
+* FR1 - The system shall allow a pupil to reserve a book if it is unavailable.
+* FR1 - The system shall record reservations for unavailable books.
 
 
 ### UML Use Case Diagram
