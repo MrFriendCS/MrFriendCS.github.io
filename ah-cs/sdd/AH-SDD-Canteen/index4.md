@@ -4,11 +4,11 @@
 ## Introduction
 
 A secondary school plans to introduce a new ordering system for the canteen.
-Pupils will use a large screen to view menu items.
+Pupils will use a large screen to view the menu.
 Required items can be added to an order.
 Pupils will be able to view their order, and the total will be displayed.
 Pupils can then chose to cancel the order or submit it.
-When an order is submitted, it is paid.
+When an order is submitted, it is then paid.
 
 When an order has been paid for, canteen will serve it to the pupil and mark the order complete.
 
@@ -45,30 +45,49 @@ The app should allow staff to:
 
 ### End-User Requirements
 
-The following end user requiremnts were identified:
 
-* EU1 - Staff are able to lock a locker remotely.
-* EU2 - Staff are able to unlock a locker remotely.
-* EU3 - Staff are able to find all unlocked lockers.
-* EU4 - Staff are able to view all the information about a locker (locker number, pupil name, and locked status).
-* EU5 - Staff are able to find the locker(s) assigned to a specific pupil.
-* EU6 - Staff are able to assign a locker to a pupil.
+#### Pupils
+
+* EU1 - Pupils must be able to view a list of available canteen items.
+* EU2 - Pupils must be able to add items to an order.
+* EU3 - Pupils must be able to remove items from an order.
+* EU4 - Pupils must be able to view the current order and total cost.
+* EU5 - Pupils must be able to submit their order for processing.
+
+
+#### Canteen Staff
+
+* EU6 - Staff must be able to mark orders as completed.
 
 
 ### Functional Requiremnts
 
-The following functional requiremnts were identified:
+#### Input
 
-* FR1 - The program shall store a locker number for each locker.
-* FR2 - The program shall store the name of a pupil assigned to each locker.
-* FR3 - The program shall store whether a locker is locked or unlocked using a Boolean value.
-* FR4 - The program shall provide a method to lock a locker.
-* FR5 - The program shall provide a method to unlock a locker.
-* FR6 - The program shall search through lockers to find unlocked lockers.
-* FR7 - The program shall provide a method to retieve all the information about a locker.
-* FR8 - The program shall search through lockers to find the locker(s) assigned to a specific pupil.
-* FR9 - The program shall provide a method to allow staff to assign a locker to a pupil.
-* FR10 - The program shall store multiple locker objects in an array.
+FR1 - The system shall allow pupils to select items from a list of available canteen items.
+FR2 - The system shall allow pupils to specify quantities for selected items.
+FR3 - The system shall allow pupils to remove selected items from an order.
+FR4 - The system shall allow pupils to submit an order.
+FR5 - The system shall allow staff to access submitted orders.
+
+
+#### Process
+ 
+FR6 - The system shall store a list of available canteen items.
+FR7 - The system shall store items added to an order as a collection of objects.
+FR8 - The system shall calculate the cost of each order based on item price and quantity.
+FR9 - The system shall update an order when items are added or removed.
+FR10 - The system shall change the status of an order when it is submitted or processed.
+FR11 - The system shall maintain a collection of all submitted orders.
+
+
+#### Output
+
+FR12 - The system shall display the list of available menu items.
+FR13 - The system shall display the current contents of an order.
+FR14 - The system shall display the total cost of an order.
+FR15 - The system shall display all submitted orders to staff.
+FR16 - The system shall display order details for staff processing (items, quantities, totals, status).
 
 
 ### UML Use Case Diagram
