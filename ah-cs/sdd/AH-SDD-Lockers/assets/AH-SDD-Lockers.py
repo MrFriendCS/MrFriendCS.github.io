@@ -4,7 +4,7 @@
 
 
 # Locker class
-from Locker import Locker
+from locker import Locker
 
 
 def read_data() -> list:
