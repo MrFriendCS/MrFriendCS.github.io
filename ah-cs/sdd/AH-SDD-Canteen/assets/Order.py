@@ -1,68 +1,54 @@
-# Title: Locker Class
+# Title: Order Class
 # Author: Mr Friend
-# Date: 22 May 2026
+# Date: 29 May 2026
 
 
-class Locker:
-    '''Declare a class to define a smart locker.'''
+class Order:
+    """Declare a class to define a canteen order."""
     
     
-    def __init__(self, lockerNo: int=0, pupilName: str='', locked: bool=True):
-        '''Constructor method. ''' \
-        '''Automatically called when a locker object is created.'''
+    def __init__(self):
+        """Constructor method. """ \
+          """Automatically called when an order object is created."""
     
         # Instance variables - Private
-        self.__lockerNo = lockerNo
-        self.__pupilName = pupilName
-        self.__isLocked = locked
+        self.__items = []
+        self.__status = 'In progress'
     
+    def add_item(self, item) -> None:
+        """Method to add an item to the order."""
+        
+        self.__items.append(item)
     
-    def lock(self) -> bool:
-        '''Method to lock a locker.'''
+    def get_status(self) -> str:
+        """Method to access the status of an order."""
+        
+        return self.__status
+    
+    def calculate_cost(self) -> float:
+        """Method to calculate the cost of the order."""
         
         # Local variable
-        success = False
+        cost = 0.0
         
-        # Check locked status
-        if self.__isLocked == False:
+        # Loop for each item
+        for item in self.__items:
             
-            # Update locked status
-            self.__isLocked = True
+            # Update cost
+            cost = cost + item.get_price()
+        
+        return cost
+    
+    def completeOrder(self) -> None:
+        """Method to update the status of the order."""
             
-            # Update success
-            success = True
-        
-        # Return result
-        return success
+        # Update status
+        self.__status = 'Compleleted'
     
-    
-    def unlock(self) -> bool:
-        '''Method to unlock a locker.'''
-        
-        # Local variable
-        success = False
-        
-        # Check locked status
-        if self.__isLocked == True:
+    def display_order(self) -> None:
+        """Method to display the order."""
+               
+        # Loop for each item
+        for item in self.__items:
             
-            # Update locked status
-            self.__isLocked = False
-            
-            # Update success
-            success = True
-        
-        # Return result
-        return success
-    
-    
-    def details(self) -> tuple:
-        '''Method to return the details of a locker.'''
-        
-        return self.__lockerNo, self.__pupilName, self.__isLocked
-    
-    
-    def assign(self, pupilName:str='') -> None:
-        '''Method to assign a locker to a pupil.'''
-        
-        # Assign locker to pupil
-        self.__pupilName = pupilName
+            print(f'{item.get_name()}\t£{item.get_price():.2f}')

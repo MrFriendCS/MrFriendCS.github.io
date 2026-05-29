@@ -1,10 +1,11 @@
-# Title: AH SDD Locker
+# Title: AH SDD Canteen
 # Author: Mr Friend
-# Date: 24 May 2026
+# Date: 29 May 2026
 
 
 # Locker class
-from Locker import Locker
+from order import Order
+from menu_item import Menu_Item
 
 
 def readData() -> list:
@@ -52,91 +53,18 @@ def readData() -> list:
     return arrayOfObjects
 
 
-def findLocked(arrayOfObjects) -> list:
-    '''Procedure to find locked lockers, and return their numbers.'''
-    
-    # Local variable
-    lockers = []
-    
-    # Loop for each locker
-    for locker in arrayOfObjects:
-        
-        currentLocker = locker.details()
-        
-        if currentLocker[2] == True:
-            
-            lockers = lockers + [currentLocker[0]]
-    
-    return lockers
-
-
-def findLockerNo(arrayOfObjects, pupilName:str='') -> list:
-    '''Function find a pupil's locker number(s). ''' \
-    '''Returns the locker number(s), or an empty array.'''
-    
-    # Local variable
-    lockers = []
-    
-    # Loop for each locker
-    for locker in arrayOfObjects:
-        
-        # Get current locker details
-        details = locker.details()
-        
-        # Compare pupil name
-        if details[1] == pupilName:
-            
-            # Assign lock number to array
-            lockers = lockers + [details[1]]
-    
-    # Return locker number(s)
-    return lockers
-
-
-def assignLocker(arrayOfObjects, lockerNo=-1, pupilName='') -> bool:
-    '''Assigns a locker to a pupil. ''' \
-    '''Returns True if successful, else returns False.'''
-    
-    # Local variables
-    assigned = False
-    index = 0
-    
-    # Loop for each locker until found
-    while assigned == False and index < len(arrayOfObjects)-1:
-        
-        # Get current locker details
-        currentLocker = arrayOfObjects[index].details()
-        
-        # Compare locker number
-        if currentLocker[0] == lockerNo:
-            
-            # Assign locker to pupil
-            arrayOfObjects[index].assign(pupilName)
-            
-            # Update assigned
-            assigned = True
-        
-        # Increment index
-        index += 1
-    
-    # Return result
-    return assigned
-
 
 #
 # Main program
 #
 
-# Read data from file
-objects = readData()
+item1 = Menu_Item('Sausage roll', 1.25)
+item2 = Menu_Item('Ketchup sachet', 0.25)
 
+order1 = Order()
+order1.add_item(item1)
+order1.add_item(item2)
 
-findLocked(objects)
+order1.display_order()
 
-print(findLockerNo(objects, 'Jodie Whittaker'))
-
-print(assignLocker(objects, 14,'Ncuti Gatwa'))
-
-print(findLockerNo(objects, 'Ncuti Gatwa'))
-
-print(findLocked(objects))
+print(f'£{order1.calculate_cost():.2f}')
