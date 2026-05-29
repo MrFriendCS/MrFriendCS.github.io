@@ -1,119 +1,119 @@
 # Title: Locker Class Tests
 # Author: Mr Friend
-# Date: 25 May 2026
+# Date: 29 May 2026
 
 
 # Import Locker class
 from Locker import Locker
 
 
-def testLockUnlock() -> None:
-    '''Test the lock() and unlock() methods.'''
+def test_lock_unlock() -> None:
+    """Test the lock() and unlock() methods."""
     
     # Use global variables
-    global testPassed
-    global testFailed
+    global test_passed
+    global test_failed
     
     try:
         # Test: lock a locked locker
-        assert testLocker.lock() == False
+        assert test_locker.lock() == False
         
         print('Pass: lock() - locked locker')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
         print('Fail: lock() - locked locker')
         
-        testFailed += 1
+        test_failed += 1
 
 
     try:
         # Test: unlock a locked locker
-        assert testLocker.unlock() == True
+        assert test_locker.unlock() == True
         
         print('Pass: unlock() - locked locker')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
         print('Fail: unlock() - locked locker')
         
-        testFailed += 1
+        test_failed += 1
 
 
     try:
         # Test: unlock an unlocked locker
-        assert testLocker.unlock() == False
+        assert test_locker.unlock() == False
         
         print('Pass: unlock() - unlocked locker')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
         print('Fail: unlock() - unlocked locker')
         
-        testFailed += 1
+        test_failed += 1
 
 
     try:
         # Test: lock an unlocked locker
-        assert testLocker.lock() == True
+        assert test_locker.lock() == True
         
         print('Pass: lock() - unlocked locker')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
         print('Fail: lock() - locked locker')
         
-        testFailed += 1
+        test_failed += 1
 
 
-def testDetails() -> None:
-    '''Test the details() method.'''
+def test_details() -> None:
+    """Test the details() method."""
     
     # Use global variables for assignment
-    global testPassed
-    global testFailed
+    global test_passed
+    global test_failed
     
     # Get locker details
-    details = testLocker.details()
+    details = test_locker.details()
     
     try:
         
         # Test: locker number
-        assert details[0] == lockerNo
+        assert details[0] == locker_no
         
         print('Pass: details() - locker name')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
         print('Fail: details() - locker name')
         
-        testFailed += 1
+        test_failed += 1
     
     
     try:
         
         # Test: pupil name
-        assert details[1] == pupilName
+        assert details[1] == pupil_name
         
         print('Pass: details() - pupil name')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
         print('Fail: details() - pupil name')
         
-        testFailed += 1
+        test_failed += 1
     
     
     try:
@@ -123,68 +123,68 @@ def testDetails() -> None:
         
         print('Pass: details() - locked status')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
         print('Fail: details() - locked status')
         
-        testFailed += 1
+        test_failed += 1
 
 
-def testAssign() -> None:
-    '''Test the assign() method.'''
+def test_assign() -> None:
+    """Test the assign() method."""
     
     # Use global variables for assignment
-    global testPassed
-    global testFailed
+    global test_passed
+    global test_failed
     
     # Local variable
-    newPupil = 'A Pupil'
+    new_pupil = 'A Pupil'
         
     #Assign locker
-    testLocker.assign(newPupil)
+    test_locker.assign(new_pupil)
     
     try:
               
         # Test: pupil name
-        assert testLocker.details()[1] == newPupil
+        assert test_locker.details()[1] == new_pupil
         
         print('Pass: details() - pupil name')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
         print('Fail: details() - pupil name')
         
-        testFailed += 1
+        test_failed += 1
     
 #
 # Main program
 #
 
 # Global variables
-testPassed = 0
-testFailed = 0
-lockerNo = 12
-pupilName = 'Test'
+test_passed = 0
+test_failed = 0
+locker_no = 12
+pupil_name = 'Test'
 
 # Create a locker
-testLocker = Locker(lockerNo, pupilName)
+test_locker = Locker(locker_no, pupil_name)
 
 # Display header
 print('Locker Class Tests')
 print('------------------\n')
 
 # Run tests
-testLockUnlock()
-testDetails()
-testAssign()
+test_lock_unlock()
+test_details()
+test_assign()
 
 # Display results
 print('\nResults')
 print('-------')
 
-print(f'Passed: {testPassed}')
-print(f'Failed: {testFailed}')
+print(f'Passed: {test_passed}')
+print(f'Failed: {test_failed}')

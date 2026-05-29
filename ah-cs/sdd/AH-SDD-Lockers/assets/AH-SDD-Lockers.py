@@ -1,21 +1,21 @@
 # Title: AH SDD Locker
 # Author: Mr Friend
-# Date: 24 May 2026
+# Date: 29 May 2026
 
 
 # Locker class
 from Locker import Locker
 
 
-def readData() -> list:
-    '''Read CSV data into an array of Locker objects.'''
+def read_data() -> list:
+    """Read CSV data into an array of Locker objects."""
 
     # Local variables
     contents = ''
     temp = []
     data = []
-    arrayOfObjects = []
-    isLocked = False
+    array_of_objects = []
+    islocked = False
 
     # Connect to a file
     file = open('Lockers.csv', 'r', encoding='utf-8')
@@ -36,55 +36,55 @@ def readData() -> list:
         data = temp[index].split(',')
         
         # Extract values
-        lockerNo = int(data[0])
-        pupilName = data[1]
+        locker_no = int(data[0])
+        pupil_name = data[1]
         lock = int(data[2])
         
         # Check lock status
         if lock == 1:
-            isLocked = True
+            islocked = True
         else:
-            isLocked = False
+            islocked = False
         
         # Append new locker object to array
-        arrayOfObjects.append(Locker(lockerNo, pupilName, isLocked))
+        array_of_objects.append(Locker(locker_no, pupil_name, islocked))
         
-    return arrayOfObjects
+    return array_of_objects
 
 
-def findLocked(arrayOfObjects) -> list:
-    '''Procedure to find locked lockers, and return their numbers.'''
+def find_locked(array_of_objects) -> list:
+    """Procedure to find locked lockers, and return their numbers."""
     
     # Local variable
     lockers = []
     
     # Loop for each locker
-    for locker in arrayOfObjects:
+    for locker in array_of_objects:
         
-        currentLocker = locker.details()
+        current_locker = locker.details()
         
-        if currentLocker[2] == True:
+        if current_locker[2] == True:
             
-            lockers = lockers + [currentLocker[0]]
+            lockers = lockers + [current_locker[0]]
     
     return lockers
 
 
-def findLockerNo(arrayOfObjects, pupilName:str='') -> list:
-    '''Function find a pupil's locker number(s). ''' \
-    '''Returns the locker number(s), or an empty array.'''
+def find_locker_no(array_of_objects, pupil_name:str='') -> list:
+    """Function find a pupil's locker number(s). """ \
+        """Returns the locker number(s), or an empty array."""
     
     # Local variable
     lockers = []
     
     # Loop for each locker
-    for locker in arrayOfObjects:
+    for locker in array_of_objects:
         
         # Get current locker details
         details = locker.details()
         
         # Compare pupil name
-        if details[1] == pupilName:
+        if details[1] == pupil_name:
             
             # Assign lock number to array
             lockers = lockers + [details[1]]
@@ -93,25 +93,26 @@ def findLockerNo(arrayOfObjects, pupilName:str='') -> list:
     return lockers
 
 
-def assignLocker(arrayOfObjects, lockerNo=-1, pupilName='') -> bool:
-    '''Assigns a locker to a pupil. ''' \
-    '''Returns True if successful, else returns False.'''
+def assign_locker(array_of_objects, locker_no=-1,
+                  pupil_name='') -> bool:
+    """Assigns a locker to a pupil. """ \
+        """Returns True if successful, else returns False."""
     
     # Local variables
     assigned = False
     index = 0
     
     # Loop for each locker until found
-    while assigned == False and index < len(arrayOfObjects)-1:
+    while assigned == False and index < len(array_of_objects)-1:
         
         # Get current locker details
-        currentLocker = arrayOfObjects[index].details()
+        current_locker = array_of_objects[index].details()
         
         # Compare locker number
-        if currentLocker[0] == lockerNo:
+        if current_locker[0] == locker_no:
             
             # Assign locker to pupil
-            arrayOfObjects[index].assign(pupilName)
+            array_of_objects[index].assign(pupil_name)
             
             # Update assigned
             assigned = True
@@ -128,15 +129,15 @@ def assignLocker(arrayOfObjects, lockerNo=-1, pupilName='') -> bool:
 #
 
 # Read data from file
-objects = readData()
+objects = read_data()
 
 
-findLocked(objects)
+find_locked(objects)
 
-print(findLockerNo(objects, 'Jodie Whittaker'))
+print(find_locker_no(objects, 'Jodie Whittaker'))
 
-print(assignLocker(objects, 14,'Ncuti Gatwa'))
+print(assign_locker(objects, 14,'Ncuti Gatwa'))
 
-print(findLockerNo(objects, 'Ncuti Gatwa'))
+print(find_locker_no(objects, 'Ncuti Gatwa'))
 
-print(findLocked(objects))
+print(find_locked(objects))

@@ -1,33 +1,35 @@
 # Title: Locker Class
 # Author: Mr Friend
-# Date: 22 May 2026
+# Date: 29 May 2026
 
 
 class Locker:
-    '''Declare a class to define a smart locker.'''
+    """Declare a class to define a smart locker."""
     
     
-    def __init__(self, lockerNo: int=0, pupilName: str='', locked: bool=True):
-        '''Constructor method. ''' \
-        '''Automatically called when a locker object is created.'''
+    def __init__(self, locker_no: int=0, pupil_name: str='',
+                 locked: bool=True):
+        """Constructor method.
+
+Automatically called when a locker object is created."""
     
         # Instance variables - Private
-        self.__lockerNo = lockerNo
-        self.__pupilName = pupilName
-        self.__isLocked = locked
+        self.__locker_no = locker_no
+        self.__pupil_name = pupil_name
+        self.__islocked = locked
     
     
     def lock(self) -> bool:
-        '''Method to lock a locker.'''
+        """Method to lock a locker."""
         
         # Local variable
         success = False
         
         # Check locked status
-        if self.__isLocked == False:
+        if self.__islocked == False:
             
             # Update locked status
-            self.__isLocked = True
+            self.__islocked = True
             
             # Update success
             success = True
@@ -37,16 +39,16 @@ class Locker:
     
     
     def unlock(self) -> bool:
-        '''Method to unlock a locker.'''
+        """Method to unlock a locker."""
         
         # Local variable
         success = False
         
         # Check locked status
-        if self.__isLocked == True:
+        if self.__islocked == True:
             
             # Update locked status
-            self.__isLocked = False
+            self.__islocked = False
             
             # Update success
             success = True
@@ -56,13 +58,13 @@ class Locker:
     
     
     def details(self) -> tuple:
-        '''Method to return the details of a locker.'''
+        """Method to return the details of a locker."""
         
-        return self.__lockerNo, self.__pupilName, self.__isLocked
+        return self.__locker_no, self.__pupil_name, self.__islocked
     
     
-    def assign(self, pupilName:str='') -> None:
-        '''Method to assign a locker to a pupil.'''
+    def assign(self, pupil_name:str='') -> None:
+        """Method to assign a locker to a pupil."""
         
         # Assign locker to pupil
-        self.__pupilName = pupilName
+        self.__pupil_name = pupil_name

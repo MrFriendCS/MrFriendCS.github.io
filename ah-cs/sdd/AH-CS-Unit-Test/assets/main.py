@@ -20,7 +20,8 @@ class Person:
     """Declare a class to define a person."""
 
     def __init__(self, name="", age=0):
-        """Object constructor method.  Automatically called when an object is created."""
+        """Object constructor method. """ \
+            """Automatically called when an object is created."""
         
         # Class properties - Private
         self.__name = name
