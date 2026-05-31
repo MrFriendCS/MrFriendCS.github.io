@@ -4,8 +4,7 @@
 
 
 class Order:
-    """Declare a class to define a canteen order."""
-    
+    """Declare a class to define a canteen order."""  
     
     def __init__(self):
         """Constructor method. """ \
@@ -20,10 +19,23 @@ class Order:
         
         self.__items.append(item)
     
+    def get_items(self) -> list:
+        """Method to access the menu items."""
+        
+        return self.__items
+    
     def get_status(self) -> str:
         """Method to access the status of an order."""
         
         return self.__status
+    
+    def display_order(self) -> None:
+        """Method to display the order."""
+               
+        # Loop for each item
+        for item in self.__items:
+            
+            print(f'{item.get_name()} - £{item.get_price():.2f}')
     
     def calculate_cost(self) -> float:
         """Method to calculate the cost of the order."""
@@ -39,16 +51,8 @@ class Order:
         
         return cost
     
-    def completeOrder(self) -> None:
+    def complete_order(self) -> None:
         """Method to update the status of the order."""
             
         # Update status
-        self.__status = 'Compleleted'
-    
-    def display_order(self) -> None:
-        """Method to display the order."""
-               
-        # Loop for each item
-        for item in self.__items:
-            
-            print(f'{item.get_name()}\t£{item.get_price():.2f}')
+        self.__status = 'Completed'

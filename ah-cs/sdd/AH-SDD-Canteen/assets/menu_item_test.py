@@ -1,190 +1,142 @@
-# Title: Locker Class Tests
+# Title: Menu Item Class Tests
 # Author: Mr Friend
-# Date: 25 May 2026
+# Date: 29 May 2026
 
 
-# Import Locker class
-from Locker import Locker
+# Import Menu Item class
+from menu_item import Menu_Item
 
 
-def testLockUnlock() -> None:
-    '''Test the lock() and unlock() methods.'''
+def test_get_name() -> None:
+    """Test the get_name() method."""
     
     # Use global variables
-    global testPassed
-    global testFailed
+    global test_passed
+    global test_failed
+    global name
     
     try:
-        # Test: lock a locked locker
-        assert testLocker.lock() == False
+        # Test: get the name of a menu item
+        assert test_menu_item.get_name() == name
         
-        print('Pass: lock() - locked locker')
+        print('Pass: get_name()')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
-        print('Fail: lock() - locked locker')
+        print('Fail: get_name()')
         
-        testFailed += 1
+        test_failed += 1
 
 
+def test_set_name() -> None:
+    """Test the set_name() method."""
+    
+    # Use global variables
+    global test_passed
+    global test_failed
+    
+    # Local vairable
+    new_name = 'Hamburger'
+    
     try:
-        # Test: unlock a locked locker
-        assert testLocker.unlock() == True
+    
+        # Set the name of a menu item
+        test_menu_item.set_name(new_name)
+    
+        # Test: get the name of a menu item
+        assert test_menu_item.get_name() == new_name
         
-        print('Pass: unlock() - locked locker')
+        print('Pass: set_name()')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
-        print('Fail: unlock() - locked locker')
+        print('Fail: set_name()')
         
-        testFailed += 1
+        test_failed += 1
 
 
+def test_get_price() -> None:
+    """Test the get_price() method."""
+    
+    # Use global variables
+    global test_passed
+    global test_failed
+    global price
+    
     try:
-        # Test: unlock an unlocked locker
-        assert testLocker.unlock() == False
+        # Test: get the price of a menu item
+        assert test_menu_item.get_price() == price
         
-        print('Pass: unlock() - unlocked locker')
+        print('Pass: get_price()')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
-        print('Fail: unlock() - unlocked locker')
+        print('Fail: get_price()')
         
-        testFailed += 1
+        test_failed += 1
 
 
+def test_set_price() -> None:
+    """Test the set_price() method."""
+    
+    # Use global variables
+    global test_passed
+    global test_failed
+    
+    # Local vairable
+    new_price = 2.15
+    
     try:
-        # Test: lock an unlocked locker
-        assert testLocker.lock() == True
+    
+        # Set the price of a menu item
+        test_menu_item.set_price(new_price)
+    
+        # Test: get the price of a menu item
+        assert test_menu_item.get_price() == new_price
         
-        print('Pass: lock() - unlocked locker')
+        print('Pass: set_price()')
         
-        testPassed += 1
+        test_passed += 1
 
     except:
         
-        print('Fail: lock() - locked locker')
+        print('Fail: set_price()')
         
-        testFailed += 1
+        test_failed += 1
 
 
-def testDetails() -> None:
-    '''Test the details() method.'''
-    
-    # Use global variables for assignment
-    global testPassed
-    global testFailed
-    
-    # Get locker details
-    details = testLocker.details()
-    
-    try:
-        
-        # Test: locker number
-        assert details[0] == lockerNo
-        
-        print('Pass: details() - locker name')
-        
-        testPassed += 1
-
-    except:
-        
-        print('Fail: details() - locker name')
-        
-        testFailed += 1
-    
-    
-    try:
-        
-        # Test: pupil name
-        assert details[1] == pupilName
-        
-        print('Pass: details() - pupil name')
-        
-        testPassed += 1
-
-    except:
-        
-        print('Fail: details() - pupil name')
-        
-        testFailed += 1
-    
-    
-    try:
-        
-        # Test: locked status
-        assert details[2] == True
-        
-        print('Pass: details() - locked status')
-        
-        testPassed += 1
-
-    except:
-        
-        print('Fail: details() - locked status')
-        
-        testFailed += 1
-
-
-def testAssign() -> None:
-    '''Test the assign() method.'''
-    
-    # Use global variables for assignment
-    global testPassed
-    global testFailed
-    
-    # Local variable
-    newPupil = 'A Pupil'
-        
-    #Assign locker
-    testLocker.assign(newPupil)
-    
-    try:
-              
-        # Test: pupil name
-        assert testLocker.details()[1] == newPupil
-        
-        print('Pass: details() - pupil name')
-        
-        testPassed += 1
-
-    except:
-        
-        print('Fail: details() - pupil name')
-        
-        testFailed += 1
-    
 #
 # Main program
 #
 
 # Global variables
-testPassed = 0
-testFailed = 0
-lockerNo = 12
-pupilName = 'Test'
+test_passed = 0
+test_failed = 0
+name = 'Hot Dog'
+price = 1.75
 
-# Create a locker
-testLocker = Locker(lockerNo, pupilName)
+# Create a menu item
+test_menu_item = Menu_Item(name, price)
 
 # Display header
-print('Locker Class Tests')
-print('------------------\n')
+print('Menu Item Class Tests')
+print('---------------------')
 
 # Run tests
-testLockUnlock()
-testDetails()
-testAssign()
+test_get_name()
+test_set_name()
+test_get_price()
+test_set_price()
 
 # Display results
 print('\nResults')
 print('-------')
 
-print(f'Passed: {testPassed}')
-print(f'Failed: {testFailed}')
+print(f'Passed: {test_passed}')
+print(f'Failed: {test_failed}')

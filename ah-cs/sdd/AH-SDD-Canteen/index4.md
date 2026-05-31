@@ -67,7 +67,7 @@ When an order has been paid for, canteen will serve it to the pupil and mark the
 
 The analysis of the proposed system allowed a UML use case diagram to be created.
 
-![UML use case diagram](assets/diagrams/useCase.png)
+![UML use case diagram](assets/diagrams/UseCase.png)
 
 
 ## Design
