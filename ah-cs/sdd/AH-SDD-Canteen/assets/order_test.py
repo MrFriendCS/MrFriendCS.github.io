@@ -171,7 +171,7 @@ def test_display_order() -> None:
         
     try:
         
-        # Update ststus
+        # Update status
         test_order.display_order()
 
     except:

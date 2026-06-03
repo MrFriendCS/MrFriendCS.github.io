@@ -1,4 +1,10 @@
+# Title: AH-SDD-Dog
+# Author: 
+# Date: 3 Jun 2026
+
+
 class Dog:
+    """A class to represent a virtual dog."""
     
     def __init__(self, name: str="", age=0):
         """Create a new dog."""
@@ -6,12 +12,12 @@ class Dog:
         self.__name = name
         self.__age = age
     
-    def getName(self) -> str:
+    def get_name(self) -> str:
         """Returns the name of a dog."""
         
         return self.__name
     
-    def getAge(self) -> int:
+    def get_age(self) -> int:
         """Returns the age of a dog."""
         
         return self.__age
@@ -24,7 +30,4 @@ class Dog:
     def eat(self, food: str="") -> None:
         """A dog's got to eat!"""
         
-        print(f'Woof! That {food.lower()} is tasty!')
-
-fido = Dog('Cindy', 16)
-        
+        print(f'\nWoof! {food.capitalize()} is tasty!\n')
