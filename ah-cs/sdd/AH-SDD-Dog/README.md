@@ -4,7 +4,7 @@
 ## Introduction
 
 Not everyone has the room for a dog, but everyone has space for a virtual dog!
-A new firm, Vatersay Virtual Pet Service (VVPS) will plans develop a product that will fill a gap in the market.
+A new firm, Vatersay Virtual Pet Service (VVPS) plans to develop a product that will fill a gap in the market.
 VVPS will start with a prototype to test the feasabilty of the idea.
 
 
