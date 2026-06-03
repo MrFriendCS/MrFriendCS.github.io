@@ -81,4 +81,4 @@ print(divide(6, 3))
 
 Test the functions to ensure they work.  Apart from TAD, remove any code that is not in the functions.
 
-Save the file [`mathsFuncsTest.py`](mathsFuncTest.py) to the same folder as `mathsFuncs.py`.  Open and run `mathsFuncsTest.py`.
+Save the file [`mathsFuncsTest.py`](assets/mathsFuncsTests.py) to the same folder as `mathsFuncs.py`.  Open and run `mathsFuncsTest.py`.
