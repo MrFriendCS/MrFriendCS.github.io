@@ -6,8 +6,8 @@
 | Title                    | Description                     | Concepts                    | Comments |
 | -----                    | -----------                     | --------                    | -------- |
 | H-SDD-Maths-Functions    | Simple functions to practise    | sp                          | Tests |
-| H-SDD-Conversion         | Conversion of different units   | sp, mod                     | Tests |
 | H-SDD-Substrings         | Substring functions             | sp, ss                      | Tests |
+| H-SDD-Conversion         | Conversion of different units   | sp, mod                     | Tests |
 | H-SDD-Caesar-Cipher Pt 1 | Plaintext to ciphertext         | sp, mod, ss, asc, chr       | Tests |
 | H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext         | sp, mod, ss, asc, chr       | Tests |
 | H-SDD-Standard           | Standard algorithms             | sp, ls, co, min, max        | Tests |
