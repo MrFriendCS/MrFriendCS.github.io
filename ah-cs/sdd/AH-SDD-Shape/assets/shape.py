@@ -6,7 +6,7 @@
 class Shape:
     """A class to represent a shape."""
     
-    def __init__(self, vertices:list):
+    def __init__(self, vertices:list[list[int]]):
         """Create a new shape."""
         
         self.__vertices = vertices

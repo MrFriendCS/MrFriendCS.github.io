@@ -4,28 +4,27 @@
 
 
 class Order:
-    """Declare a class to define a canteen order."""  
+    """A class for a canteen order."""  
     
     def __init__(self):
-        """Constructor method. """ \
-          """Automatically called when an order object is created."""
+        """Create a new canteen order"""
     
         # Instance variables - Private
         self.__items = []
         self.__status = 'In progress'
     
-    def add_item(self, item) -> None:
+    def add_item(self, item: MenuItem) -> None:
         """Method to add an item to the order."""
         
         self.__items.append(item)
     
-    def get_items(self) -> list:
+    def get_items(self) -> list[MenuItem]:
         """Method to access the menu items."""
         
         return self.__items
     
     def get_status(self) -> str:
-        """Method to access the status of an order."""
+        """Method to access the status of the order."""
         
         return self.__status
     

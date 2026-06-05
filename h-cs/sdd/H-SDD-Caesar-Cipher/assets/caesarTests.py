@@ -6,7 +6,7 @@
 
 from caesar import *
 
-def testEncode():
+def testEncode() -> None:
     """Test the functionality of the encode() function."""
     
     # Initialise local variables
@@ -44,7 +44,7 @@ def testEncode():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testDecode():
+def testDecode() -> None:
     """Test the functionality of the decode() function."""
     
     # Initialise local variables

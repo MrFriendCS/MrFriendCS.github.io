@@ -73,7 +73,7 @@ def count(values, target):
     """Counts the number of target values in the array of values.  Returns an integer."""
     
     # Local variables
-    count = 0
+    countFound = 0
     
     # Loop for each value in array
     for index in range(len(values)):
@@ -82,7 +82,7 @@ def count(values, target):
         if values[index] == target:
             
             # Increment count
-            count = count + 1
+            countFound = countFound + 1
     
     # Return result
-    return count
+    return countFound

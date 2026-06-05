@@ -9,7 +9,7 @@ from mathsFuncs import *
 # Sub-programs
 #
 
-def testAdd():
+def testAdd() -> None:
     """Test the funcationality of the add() function."""
     
     # Initialise variable
@@ -46,7 +46,7 @@ def testAdd():
         print("\tAll tests passed.")
 
 
-def testMultiply():
+def testMultiply() -> None:
     """Test the funcationality of the multiply() function."""
     
     # Initialise variable
@@ -92,7 +92,7 @@ def testMultiply():
         print("\tAll tests passed.")
 
 
-def testSubtract():
+def testSubtract() -> None:
     """Test the funcationality of the subtract() function."""
     
     # Initialise variable
@@ -117,7 +117,7 @@ def testSubtract():
         print("\tAll tests passed.")
         
 
-def testDivide():
+def testDivide() -> None:
     """Test the funcationality of the divide() function."""
     
     # Initialise variable

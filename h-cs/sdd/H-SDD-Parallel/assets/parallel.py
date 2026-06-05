@@ -6,7 +6,7 @@
 # Sub-programs
 #
 
-def left(inputs):
+def left(inputs: list[str]) -> list[str]:
     """Creates an array of strings with the first three characters of each supplied string.  Returns an array."""
     
     # Local variables

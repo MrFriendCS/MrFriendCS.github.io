@@ -9,7 +9,7 @@ from standard import *
 # Sub-programs
 #
 
-def testSearch():
+def testSearch() -> None:
     """Test the functionality of the search() function."""
     
     # Initialise local variables
@@ -62,7 +62,7 @@ def testSearch():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def testFindMin():
+def testFindMin() -> None:
     """Test the functionality of the findMin() function."""
     
     # Initialise local variables
@@ -112,7 +112,7 @@ def testFindMin():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testFindMax():
+def testFindMax() -> None:
     """Test the functionality of the findMax() function."""
     
     # Initialise local variables
@@ -162,7 +162,7 @@ def testFindMax():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testCount():
+def testCount() -> None:
     """Test the functionality of the count() function."""
     
     # Initialise local variables

@@ -3,7 +3,7 @@
 # Date: 29 May 2026
 
 
-class Menu_Item:
+class MenuItem:
     """Declare a class to define a menu item. """    
     
     def __init__(self, name: str='', price: float=0.0):

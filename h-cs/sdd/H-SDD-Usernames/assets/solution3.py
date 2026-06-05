@@ -6,7 +6,7 @@
 # Sub-programs
 #
 
-def getData():
+def getData() -> tuple[list[str], list[str], list[int]]:
     """Read pupil data from file.  Return parallel arrays."""
     # Declare local variables
     forenames = [""] * 25
@@ -38,14 +38,14 @@ def getData():
     return forenames, surnames, ages
 
 
-def makeUsernames(forenames, surnames, ages):
+def makeUsernames(forenames: list[str], surnames: list[str],
+                  ages: list[int]):
     """Generate an array of usernames using forenames, and surname if needed"""
 
     # Declare local variables
     usernames = [""] * len(forenames)
     usernameU = ""
     usernameL = ""
-    digit = 0
     letter = ""
 
     # Loop for each pupil
@@ -82,7 +82,7 @@ def makeUsernames(forenames, surnames, ages):
     return usernames
 
 
-def findOldest(ages):
+def findOldest(ages: list[int]) -> int:
     """Finds the oldest age in an array of ages"""
 
     # Declare local variables
@@ -103,7 +103,8 @@ def findOldest(ages):
     return oldest
 
 
-def summary(forenames, surnames, ages, oldest):
+def summary(forenames: list[str], surnames: list[str],
+            ages: list[int], oldest: int) -> None:
     """Display a list of the oldest pupils in the batch"""
 
     # 4.1 Display "The oldest pupils are aged " + oldest
@@ -125,7 +126,8 @@ def summary(forenames, surnames, ages, oldest):
     # 4.7 End loop
 
 
-def writeData(usernames, forenames, surnames):
+def writeData(usernames: list[str], forenames: list[str],
+              surnames: list[str]) -> None:
 
     # Create a file
     file = open("usernames1.csv", "w")
@@ -143,7 +145,7 @@ def writeData(usernames, forenames, surnames):
     file.close()
 
 
-def u2l(upper):
+def u2l(upper: str) -> str:
     """Converts an uppercase character to lowercase"""
 
     # Declare local variables
@@ -165,7 +167,7 @@ def u2l(upper):
     return lower
 
 
-def getDigit(age):
+def getDigit(age: int) -> int:
     """Returns remainder plus 1 of number divided by 9"""
 
     # Declare local variables
@@ -182,7 +184,7 @@ def getDigit(age):
     return plus1
 
 
-def getLetter(upper):
+def getLetter(upper: str) -> str:
     """Returns next lower lowercase letter in alphabet"""
 
     # Declare local variables

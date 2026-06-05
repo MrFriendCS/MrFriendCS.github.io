@@ -9,7 +9,7 @@ from conversionFuncs import *
 # Sub-programs
 #
 
-def testSecToMinSec():
+def testSecToMinSec() -> None:
     """Test the functionality of the secToMinSec() function."""
     
     # Initialise variable
@@ -42,7 +42,7 @@ def testSecToMinSec():
         print("\tAll " + str(len(inputs)) + " tests passed.")
         
 
-def testMinToHourMin():
+def testMinToHourMin() -> None:
     """Test the functionality of the minToHourMin() function."""
     
     # Initialise variable
@@ -76,7 +76,7 @@ def testMinToHourMin():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testHourToDayHour():
+def testHourToDayHour() -> None:
     """Test the functionality of the hourToDayHour() function."""
     
     # Initialise variable
@@ -109,7 +109,7 @@ def testHourToDayHour():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testMMtoCMmm():
+def testMMtoCMmm() -> None:
     """Test the functionality of the mmToCMmm() function."""
     
     # Initialise variable
@@ -142,7 +142,7 @@ def testMMtoCMmm():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testCMtoMcm():
+def testCMtoMcm() -> None:
     """Test the functionality of the cmToMcm() function."""
     
     # Initialise variable
@@ -175,7 +175,7 @@ def testCMtoMcm():
         print("\tAll " + str(len(inputs)) + " tests passed.")
         
 
-def testMtoKMm():
+def testMtoKMm() -> None:
     """Test the functionality of the mToKMm() function."""
     
     # Initialise variable
@@ -208,7 +208,7 @@ def testMtoKMm():
         print("\tAll " + str(len(inputs)) + " tests passed.")
         
 
-def testInchesToFeetInches():
+def testInchesToFeetInches() -> None:
     """Test the functionality of the inchesToFeetInches() function."""
     
     # Initialise variable
@@ -241,7 +241,7 @@ def testInchesToFeetInches():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testFeetToYardsFeet():
+def testFeetToYardsFeet() -> None:
     """Test the functionality of the feetToYardsFeet() function."""
     
     # Initialise variable

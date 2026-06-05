@@ -32,8 +32,6 @@ def makeUsername(name):
     # Initialise local variables
     substring = ""
     ascii = 0
-    number = 0
-    letter = ""
     username = "es"
     
     # Check if name is valid

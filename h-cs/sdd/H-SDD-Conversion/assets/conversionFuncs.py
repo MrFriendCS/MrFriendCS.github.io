@@ -1,4 +1,4 @@
-def secToMinSec(seconds):
+def secToMinSec(seconds: int) -> tuple[int, int]:
     if seconds < 0:
         mins = -1
         sec = -1
@@ -8,7 +8,7 @@ def secToMinSec(seconds):
     return (mins, sec)
 
 
-def minToHourMin(minutes):
+def minToHourMin(minutes: int) -> tuple[int, int]:
     if minutes < 0:
         hour = -1
         mins = -1

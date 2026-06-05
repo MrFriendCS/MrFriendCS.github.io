@@ -7,7 +7,7 @@
 #
 
 
-def circumference(size, rd="d"):
+def circumference(size: float, rd: str="d") -> float:
     """Calculate the circumference of a circle using the radius or diameter.  Returns the circumference to 4 dp."""
     
     # Local variables
@@ -36,7 +36,7 @@ def circumference(size, rd="d"):
     return c
 
 
-def radius(size, dc="d"):
+def radius(size: float, dc: str="d") -> float:
     """Calculate the radius of a circle using the diameter or circumference.  Returns the radius to 4 dp."""
     
     # Local variables
@@ -65,7 +65,7 @@ def radius(size, dc="d"):
     return r
 
 
-def diameter(size, rc="r"):
+def diameter(size: float, rc: str="r") -> float:
     """Calculate the diameter of a circle using the radius or circumference.  Returns the diameter to 4 dp."""
     
     # Local variables
@@ -98,7 +98,7 @@ def diameter(size, rc="r"):
     return d
 
 
-def area(size, rdc="r"):
+def area(size: float, rdc: str="r") -> float:
     """Calculate the area of a circle using the radius, diameter, or circumference.  Returns the area to 4 dp."""
     
     # Local variables

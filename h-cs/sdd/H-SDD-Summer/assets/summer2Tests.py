@@ -9,13 +9,13 @@ from summer2 import *
 # Sub-programs
 #
 
-def testReverse():
+def testReverse() -> None:
     """Test the functionality of the reverse() function."""
     
     # Initialise variable
     failCount = 0
     inputs = ["ABCD", "abcd", "WXYZ", "wxyz",
-              "1234", "6789", "\,./", "A b 1 !"]
+              "1234", "6789", "\\,./", "A b 1 !"]
     outputs = ["DCBA", "dcba", "ZYXW", "zyxw",
                "4321", "9876", "/.,\\", "! 1 b A"]
     
@@ -45,7 +45,7 @@ def testReverse():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testMakeUsername():
+def testMakeUsername() -> None:
     """Test the functionality of the makeUsername() function."""
     
     # Initialise variable

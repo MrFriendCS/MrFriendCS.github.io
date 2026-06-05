@@ -9,7 +9,7 @@ from summer1 import *
 # Sub-programs
 #
 
-def testCircumference():
+def testCircumference() -> None:
     """Test the functionality of the circumference() function."""
     
     # Initialise variable
@@ -50,7 +50,7 @@ def testCircumference():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def stretchCircumference():
+def stretchCircumference() -> None:
     """Test the stretch functionality of the circumference() function."""
     
     # Initialise variable
@@ -83,7 +83,7 @@ def stretchCircumference():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testRadius():
+def testRadius() -> None:
     """Test the functionality of the radius() function."""
     
     # Initialise variable
@@ -124,7 +124,7 @@ def testRadius():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def stretchRadius():
+def stretchRadius() -> None:
     """Test the stretch functionality of the radius() function."""
     
     # Initialise variable
@@ -157,7 +157,7 @@ def stretchRadius():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testDiameter():
+def testDiameter() -> None:
     """Test the functionality of the diameter() function."""
     
     # Initialise variable
@@ -198,7 +198,7 @@ def testDiameter():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def stretchDiameter():
+def stretchDiameter() -> None:
     """Test the stretch functionality of the diameter() function."""
     
     # Initialise variable
@@ -231,7 +231,7 @@ def stretchDiameter():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testArea():
+def testArea() -> None:
     """Test the functionality of the area() function."""
     
     # Initialise variable
@@ -275,7 +275,7 @@ def testArea():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def stretchArea():
+def stretchArea() -> None:
     """Test the stretch functionality of the area() function."""
     
     # Initialise variable

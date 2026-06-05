@@ -3,7 +3,7 @@
 # Date: 5 Sep 2024
 
 
-def encode(plainText, shift):
+def encode(plainText: str, shift: int) -> str:
     """Shift cipher.  Creates cipher text."""
     
     # Initialise local variables
@@ -41,7 +41,7 @@ def encode(plainText, shift):
     return cipherText
 
 
-def decode(cipherText, shift):
+def decode(cipherText: str, shift: int) -> str:
     """Shift cipher.  Creates plain text."""
     
     # Initialise local variables

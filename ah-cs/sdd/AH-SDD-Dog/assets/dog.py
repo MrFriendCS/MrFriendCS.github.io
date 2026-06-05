@@ -6,19 +6,19 @@
 class Dog:
     """A class to represent a virtual dog."""
     
-    def __init__(self, name: str="", age=0):
-        """Create a new dog."""
+    def __init__(self, name: str='', age: int=0):
+        """Creates a new dog."""
         
         self.__name = name
         self.__age = age
     
     def get_name(self) -> str:
-        """Returns the name of a dog."""
+        """Returns the name of the dog."""
         
         return self.__name
     
     def get_age(self) -> int:
-        """Returns the age of a dog."""
+        """Returns the age of the dog."""
         
         return self.__age
     

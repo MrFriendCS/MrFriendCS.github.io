@@ -7,7 +7,7 @@
 from substrings import *
 
 
-def testLeft():
+def testLeft() -> None:
     """Test the functionality of the left() function."""
     
     # Initialise local variables
@@ -42,7 +42,7 @@ def testLeft():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testRight():
+def testRight() -> None:
     """Test the functionality of the right() function."""
        
     # Initialise local variables
@@ -76,7 +76,7 @@ def testRight():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testMid():
+def testMid() -> None:
     """Test the functionality of the mid() function."""
     
     # Initialise local variables"Hello!", 2, 3) == "ell"

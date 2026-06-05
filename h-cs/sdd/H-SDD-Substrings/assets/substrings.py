@@ -2,7 +2,7 @@
 # Author: Mr Friend
 # Date: 12 Jun 2025
 
-def left(text, count):
+def left(text: str, count: int) -> str:
     """Creates a substring, counting from the left.  Returns the substring."""
     
     # Local variable
@@ -18,7 +18,7 @@ def left(text, count):
     return subString
 
 
-def right(text, count):
+def right(text: str, count: int) -> str:
     """Creates a substring, counting from the right.  Returns the substring."""
     
     # Local variable
@@ -34,7 +34,7 @@ def right(text, count):
     return subString
 
 
-def mid(text, start, count):
+def mid(text: str, start: int, count: int) -> str:
     """Creates a substring, starting at a position, counting from the left.  Returns the substring."""
     
     # Local variable
