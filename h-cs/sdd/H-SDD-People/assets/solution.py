@@ -15,7 +15,7 @@ class Person:
     age: int = 0
 
 
-def getData():
+def getData() -> list[Person]:
     """Reads data into array of records."""
     
     # Create array of records
@@ -40,7 +40,7 @@ def getData():
     return people
 
 
-def countMacs(people):
+def countMacs(people: list[Person]) -> int:
     """Count surnames that start with 'Mac' or 'Mc'."""
     
     # Initialise variables
@@ -54,7 +54,7 @@ def countMacs(people):
         surname = people[index].last
         
         # Count 'Mac' and 'Mc'
-        if surname[:3] == "Mac" or surname[:2] == 2:
+        if surname[:3] == "Mac" or surname[:2] == "Mc":
             
             # Increment count
             count = count + 1
@@ -62,7 +62,7 @@ def countMacs(people):
     return count
 
 
-def findOldest(people):
+def findOldest(people: list[Person]) -> int:
     """Find the age of the oldest person."""
     
     # Initialise local variables
@@ -80,7 +80,7 @@ def findOldest(people):
     return oldest
 
 
-def saveResults(people, macs, oldest):
+def saveResults(people: list[Person], macs: int, oldest: int) -> None:
     """Write the results to file."""
     
     # Create file
@@ -112,7 +112,7 @@ def saveResults(people, macs, oldest):
     file.close()
     
 
-def main():
+def main() -> None:
     """Main program."""
     
     people = getData()

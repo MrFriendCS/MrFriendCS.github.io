@@ -3,7 +3,7 @@
 # Date: 24 Sep 2022
 
 # Define function
-def check(isbn):
+def check(isbn: list[str]) -> str:
     '''Returns the check digit, as a character, of an ISBN-13, using first 12 values'''
 
     # Declare local variables and array

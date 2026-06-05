@@ -7,7 +7,7 @@
 import writeData1
 
 
-def testRandomData():
+def testRandomData() -> int:
     """Tests the randomData() function"""
     
     # Local variable
@@ -81,7 +81,7 @@ def testRandomData():
         return 0
 
 
-def testWriteData():
+def testWriteData() -> int:
     """Tests the writeData() function"""
     
     import os
@@ -115,7 +115,7 @@ def testWriteData():
         return 0
 
 
-def testAll():
+def testAll() -> None:
     """Tests all functions"""
     
     # Local variable
@@ -136,8 +136,8 @@ def testAll():
             1/0  # Throws an exception
         
     except:
-            print("\nTesting of all functions: FAILED!")
-            print("=================================\n")
+        print("\nTesting of all functions: FAILED!")
+        print("=================================\n")
         
 
 #

@@ -7,7 +7,7 @@
 import bearings1
 
 
-def testGetSizeData():
+def testGetSizeData() -> int:
     """Tests the getSizeData() function"""
     
     # Local variable
@@ -48,7 +48,7 @@ def testGetSizeData():
         return 0
 
 
-def testFindMin():
+def testFindMin() -> int:
     """Tests the findMin() function"""
     
     # Local variable
@@ -89,7 +89,7 @@ def testFindMin():
         return 0
   
 
-def testFindMax():
+def testFindMax() -> int:
     """Tests the findMax() function"""
     
     # Local variable
@@ -130,7 +130,7 @@ def testFindMax():
         return 0
     
     
-def testCountSmall():
+def testCountSmall() -> int:
     """Tests the countSmall() function"""
     
     # Local variable
@@ -183,7 +183,7 @@ def testCountSmall():
         return 0
 
 
-def testCountBig():
+def testCountBig() -> int:
     """Tests the countBig() function"""
     
     # Local variable
@@ -236,7 +236,7 @@ def testCountBig():
         return 0
     
 
-def testCalcPercent():
+def testCalcPercent() -> int:
     """Tests the calcPercent() function"""
     
     # Local variable
@@ -283,7 +283,7 @@ def testCalcPercent():
         return 0
 
 
-def testCalcBatchResult():
+def testCalcBatchResult() -> int:
     """Tests the calcBatchResult() function"""
     
     # Local variable
@@ -354,7 +354,7 @@ def testCalcBatchResult():
         return 0
     
 
-def testWriteData1():
+def testWriteData1() -> int:
     """Tests the writeData() function"""
     
     # Local variable
@@ -383,7 +383,7 @@ def testWriteData1():
         return 0
 
 
-def testWriteData2():
+def testWriteData2() -> int:
     """Tests the writeData() function"""
     
     # Local variable
@@ -412,7 +412,7 @@ def testWriteData2():
         return 0
 
 
-def testAll():
+def testAll() -> None:
     """Tests all functions"""
     
     # Local variable
@@ -440,8 +440,8 @@ def testAll():
             1/0  # Throws an exception
         
     except:
-            print("\nTesting of all functions: FAILED!")
-            print("=================================\n")
+        print("\nTesting of all functions: FAILED!")
+        print("=================================\n")
         
 
 #

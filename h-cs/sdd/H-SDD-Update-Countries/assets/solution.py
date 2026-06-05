@@ -6,7 +6,7 @@
 # Subprograms
 #
 
-def getData():
+def getData() -> tuple[list[str], list[str], list[float]]:
     """Return parallel arrays from countries.csv"""
 
     # Declare local variable and arrays
@@ -41,7 +41,7 @@ def getData():
     return caps, states, pops
 
 
-def increase(values):
+def increase(values: list[float]) -> list[float]:
     """Return array of real, increased by 10%"""
 
     # Declare local variables and array
@@ -66,7 +66,7 @@ def increase(values):
     return newValues
 
 
-def saveData(states, caps, pops):
+def saveData(states: list[str], caps: list[str], pops: list[float]) -> None:
     """Save parallel arrays to updated.csv"""
     
     # Open connection to file

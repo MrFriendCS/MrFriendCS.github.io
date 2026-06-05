@@ -2,10 +2,10 @@
 # Author: Mr Friend
 # Date: 27 Nov 2020
 
-def getCoord(point):
+def getCoord(point: int) -> list[float]:
     # Define local variables
-    xcoord = 0
-    ycoord = 0
+    xcoord = 0.0
+    ycoord = 0.0
 
     # Define local array
     coord = [0.0] * 2
@@ -17,9 +17,9 @@ def getCoord(point):
 
     coord = [xcoord, ycoord]
 
-    return(coord)
+    return coord
 
-def calcGradient(point1, point2):
+def calcGradient(point1: list[float], point2: list[float]) -> float:
     # Declare local variables
     x1 = 0.0
     y1 = 0.0
@@ -38,7 +38,7 @@ def calcGradient(point1, point2):
 
     return m
 
-def calcMidpoint(point1, point2):
+def calcMidpoint(point1: list[float], point2: list[float]) -> list[float]:
     # Declare local variables
     x1 = 0.0
     y1 = 0.0
@@ -63,7 +63,7 @@ def calcMidpoint(point1, point2):
 
     return coord
 
-def calcDistance(point1, point2):
+def calcDistance(point1: list[float], point2: list[float]) -> float:
     # Declare local variables
     x1 = 0.0
     y1 = 0.0

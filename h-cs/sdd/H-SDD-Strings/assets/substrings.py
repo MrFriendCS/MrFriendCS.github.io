@@ -2,7 +2,7 @@
 # Author: Mr Friend
 # Date: 12 Sep 2024
 
-def left(text, count):
+def left(text: str, count: int) -> str:
     """Creates a substring, counting from the left."""
     
     # Local variable
@@ -18,7 +18,7 @@ def left(text, count):
     return subString
 
 
-def right(text, count):
+def right(text: str, count: int) -> str:
     """Creates a substring, counting from the right."""
     
     # Local variable
@@ -34,7 +34,7 @@ def right(text, count):
     return subString
 
 
-def mid(text, start, count):
+def mid(text: str, start: int, count: int) -> str:
     """Creates a substring, starting at a position, counting from the left."""
     
     # Local variable
@@ -50,7 +50,7 @@ def mid(text, start, count):
     return subString
 
 
-def lower(text):
+def lower(text: str) -> str:
     """Creates a lowercase string."""
     
     # Local variables
@@ -75,7 +75,7 @@ def lower(text):
     return newText
 
 
-def upper(text):
+def upper(text: str) -> str:
     """Creates an uppercase string."""
     
     # Local variables
@@ -100,7 +100,7 @@ def upper(text):
     return newText
 
 
-def reverse(text):
+def reverse(text: str) -> str:
     """Creates a reveresed string."""
     
     # Local variables
@@ -116,7 +116,7 @@ def reverse(text):
     return newText
 
 
-def swap(text):
+def swap(text: str) -> str:
     """Swaps uppercase characters for lowercase once, and vice-versa."""
     
     # Local variables
@@ -146,7 +146,7 @@ def swap(text):
     return newText
 
 
-def remove(text):
+def remove(text: str) -> str:
     """Removes none uppercase and none lowercase characters."""
     
     # Local variables

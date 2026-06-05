@@ -14,7 +14,7 @@ def randomData(length):
     
     # Initialise local variables
     upperArray = [""] * length
-    numberArray = [""] * length
+    numberArray = [0] * length
     lowerArray = [""] * length
     
     # Populate arrays with data

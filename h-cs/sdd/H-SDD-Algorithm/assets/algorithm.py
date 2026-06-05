@@ -2,7 +2,7 @@
 # Author: Mr Friend
 # Date: 20 Sep 2024
 
-def findItem(items, target):
+def findItem(items: list[str], target: str):
     """Linear search.  Returns index position or -1"""
     
     # Initialise local variables
@@ -27,7 +27,7 @@ def findItem(items, target):
     return index
 
 
-def countItem(items, target):
+def countItem(items: list[str], target: str):
     """Count occurrences.  Returns count."""
     
     # Initialise local variables

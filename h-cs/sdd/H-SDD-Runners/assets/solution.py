@@ -5,16 +5,14 @@
 from dataclasses import dataclass
 
 @dataclass
-class runner:
+class Runner:
     name: str = ""
     distance: int = 0
     time: float = 0.0
 
 
-def getData():
-    '''
-    Read data from text file into array of records
-    '''
+def getData() -> list[Runner]:
+    """Read data from text file into array of records."""
 
     # Declare local variables
     line = ""
@@ -22,7 +20,7 @@ def getData():
     runnerName = ""
     runnerDist = 0
     runnerTime = 0.0
-    runners = [runner()] * 15
+    runners = [Runner()] * 15
 
     # Open connection to the file
     file = open("maleRunners.txt")
@@ -41,15 +39,13 @@ def getData():
         runnerTime = float(data[2].strip())
 
         # Store values in array of records
-        runners[index] = runner(runnerName, runnerDist, runnerTime)
+        runners[index] = Runner(runnerName, runnerDist, runnerTime)
 
     return runners
 
 
-def getDistance():
-    '''
-    Ask the user to enter the length of the race (100, 200 or 400)
-    '''
+def getDistance() -> int:
+    """Ask the user to enter the length of the race (100, 200 or 400)."""
 
     # Declare local variable
     userDist = 0
@@ -67,7 +63,7 @@ def getDistance():
     return userDist
 
 
-def getTime():
+def getTime() -> float:
     '''
     Ask the user to enter the qualifying time
     '''
@@ -81,10 +77,10 @@ def getTime():
     return userTime
 
 
-def displayQualified(runners, runDist, runTime):
-    '''
-    Display all the runners, for the selected race, who have run faster than the qualifying time
-    '''
+def displayQualified(runners: list[Runner], runDist: int,
+                     runTime: float) -> None:
+    """Display all the runners, for the selected race, who """ \
+               """have run faster than the qualifying time."""
 
     # Loop for each runner
     for index in range(len(runners)):
@@ -101,7 +97,7 @@ def displayQualified(runners, runDist, runTime):
 #
 
 # Declare global variables
-sprinters = [runner()] * 15
+sprinters = [Runner()] * 15
 qualDistance = 0
 qualTime = 0.0
 

@@ -2,7 +2,7 @@
 # Author: Mr Friend
 # Date: 20 Sep 2024
 
-def areaOfSquare(length):
+def areaOfSquare(length: float) -> float:
     """Returns the area of a square: length x length"""
     
     # Check length is valid
@@ -16,7 +16,7 @@ def areaOfSquare(length):
     return area
 
 
-def areaOfRectangle(width, height):
+def areaOfRectangle(width: float, height: float) -> float:
     """Returns the area of a rectangle: width x height"""
     
     # Check width and height are valid
@@ -30,7 +30,7 @@ def areaOfRectangle(width, height):
     return area
 
 
-def areaOfTriangle(base, height):
+def areaOfTriangle(base: float, height: float) -> float:
     """Returns the area of a traingle: 0.5 x base x height"""
     
     # Check base and height are valid
@@ -44,7 +44,7 @@ def areaOfTriangle(base, height):
     return area
 
 
-def areaOfCircle(value, option):
+def areaOfCircle(value: float, option: str) -> float:
     """Returns the area of a circle: pi x radius x radius"""
     
     # Initialise local variable
@@ -78,7 +78,7 @@ def areaOfCircle(value, option):
     return area
 
 
-def volOfCube(length):
+def volOfCube(length: float) -> float:
     """Returns the volume of a cube: length x length x length"""
     
     # Check length valid
@@ -92,7 +92,7 @@ def volOfCube(length):
     return volume
 
 
-def volOfCuboid(length, base, height):
+def volOfCuboid(length: float, base: float, height: float) -> float:
     """Returns the volume of a cube: length x base x height"""
     
     # Check width and height are valid
@@ -106,7 +106,7 @@ def volOfCuboid(length, base, height):
     return volume
 
 
-def volOfCylinder(value, option, height):
+def volOfCylinder(value: float, option: str, height: float) -> float:
     """Returns the volume of a cylinder: pi x radius x radius x height"""
     
     # Initialise local variable
@@ -143,7 +143,7 @@ def volOfCylinder(value, option, height):
     return volume
 
 
-def volOfSphere(value, option):
+def volOfSphere(value: float, option: str) -> float:
     """Returns the volume of a sphere: (4/3) * pi * radius * radius * radius"""
     
     # Initialise local variable

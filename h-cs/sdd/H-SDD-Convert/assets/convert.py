@@ -3,11 +3,11 @@
 # Date: 8 Sep 2024
 
 
-def f2c(fahrenheit):
+def f2c(fahrenheit: float) -> float:
     """Convert Fahrenheit to Celsius"""
     
     # Local variables
-    celcius = 0.0
+    celsius = 0.0
     
     # Convert
     celsius = (fahrenheit - 32) * (5/9)
@@ -19,7 +19,7 @@ def f2c(fahrenheit):
     return celsius
 
 
-def c2f(celsius):
+def c2f(celsius: float) -> float:
     """Convert Celsius to Fahrenheit"""
     
     # Local variables
@@ -35,7 +35,7 @@ def c2f(celsius):
     return fahrenheit
 
 
-def m2km(miles):
+def m2km(miles: float) -> float:
     """Convert miles to kilometres"""
     
     # Local variables
@@ -51,7 +51,7 @@ def m2km(miles):
     return km
 
 
-def km2m(km):
+def km2m(km: float) -> float:
     """Convert kilometres to miles"""
     
     # Local variables
@@ -67,7 +67,7 @@ def km2m(km):
     return miles
 
 
-def fi2cm(feet, inches):
+def fi2cm(feet: int, inches: float) -> float:
     """Convert feet and inches to centimetres"""
     
     # Local variables
@@ -84,7 +84,7 @@ def fi2cm(feet, inches):
     return cm
 
 
-def cm2fi(cm):
+def cm2fi(cm: float) -> int:
     """Convert centimetres to feet and inches"""
     
     # Local variables
@@ -103,7 +103,7 @@ def cm2fi(cm):
     return feet, inches0dp
 
 
-def sl2kg(stones, lbls):
+def sl2kg(stones: int, lbls: float) -> float:
     """Convert stones and pounds to kilograms"""
     
     # Local variables
@@ -120,7 +120,7 @@ def sl2kg(stones, lbls):
     return kg
 
 
-def kg2sl(kg):
+def kg2sl(kg: float) -> int:
     """Convert kilograms to stones and pounds"""
     
     # Local variables

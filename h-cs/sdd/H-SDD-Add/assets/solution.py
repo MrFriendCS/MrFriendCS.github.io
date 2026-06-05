@@ -3,7 +3,7 @@
 # Date: 29 Sep 2024
 
 
-def getValue():
+def getValue() -> float:
     """Asks user for a value and returns it."""
     
     # Initialise local variable
@@ -16,7 +16,7 @@ def getValue():
     return value
 
 
-def addValues(value1, value2):
+def addValues(value1: float, value2: float) -> float:
     """Adds two values together and returns the result."""
     
     # Initialise local varaibe
@@ -29,14 +29,14 @@ def addValues(value1, value2):
     return sum
 
 
-def displayResult(value):
+def displayResult(value: float) -> None:
     """Displays value as result."""
     
     # Display result
     print("\nResult: " + str(value))
     
 
-def main():
+def main() -> None:
     """Main program."""
     
     # Initialise variables

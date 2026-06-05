@@ -7,7 +7,7 @@
 import substring
 
 
-def testLeft():
+def testLeft() -> int:
     """Tests the left() function"""
     
     # Local variable
@@ -54,7 +54,7 @@ def testLeft():
         return 0
 
 
-def testRight():
+def testRight() -> int:
     """Tests the right() function"""
     
     # Local variable
@@ -101,7 +101,7 @@ def testRight():
         return 0
 
 
-def testMid():
+def testMid() -> int:
     """Tests the mid() function"""
     
     # Local variable
@@ -160,7 +160,7 @@ def testMid():
         return 0
 
 
-def testLower():
+def testLower() -> int:
     """Tests the lower() function"""
     
     # Local variable
@@ -207,7 +207,7 @@ def testLower():
         return 0
 
 
-def testUpper():
+def testUpper() -> int:
     """Tests the upper() function"""
     
     # Local variable
@@ -254,7 +254,7 @@ def testUpper():
         return 0
         
 
-def testReverse():
+def testReverse() -> int:
     """Tests the reverse() function"""
     
     # Local variable
@@ -301,7 +301,7 @@ def testReverse():
         return 0
 
 
-def testSwap():
+def testSwap() -> int:
     """Tests the swap() function"""
     
     # Local variable
@@ -348,7 +348,7 @@ def testSwap():
         return 0
         
 
-def testRemove():
+def testRemove() -> int:
     """Tests the remove() function"""
     
     # Local variable
@@ -395,7 +395,7 @@ def testRemove():
         return 0
 
 
-def testAll():
+def testAll() -> None:
     """Tests all functions"""
     
     # Local variable

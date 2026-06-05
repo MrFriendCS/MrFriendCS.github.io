@@ -9,7 +9,7 @@ import random
 # Subprograms
 #
 
-def leftSub(text):
+def leftSub(text: str) -> str:
     """Return the first three characters of a string"""
 
     # Declare local variable
@@ -21,7 +21,7 @@ def leftSub(text):
     # Return substring
     return subString
 
-def rightSub(text):
+def rightSub(text: str) -> str:
     """Return the last three characters of a string"""
 
     # Declare local variable
@@ -39,7 +39,7 @@ def rightSub(text):
 
 # Declare global variables
 line = ""
-tempArray = ""
+data = [""] * 2
 firstName = ""
 lastName = ""
 digit = 0
@@ -54,11 +54,11 @@ line = file.readline()
 # Loop for each line
 while line != "":
     # Split line at comma
-    tempArray = line.split(",")
+    data = line.split(",")
 
     # Extract names
-    firstName = tempArray[0].strip()
-    lastName = tempArray[1].strip()
+    firstName = data[0].strip()
+    lastName = data[1].strip()
 
     # Pick random digit
     digit = random.randint(1, 9)

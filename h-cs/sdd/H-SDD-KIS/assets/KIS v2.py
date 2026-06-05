@@ -14,9 +14,8 @@ class tempData:
     temp: float # Farhrenheit / Celsius values
 
 
-def getData():
+def getData() -> list[tempData]:
     # Declare local variables
-    file = ""
     line = ""
     lineDate = ""
     lineTime = ""
@@ -53,7 +52,7 @@ def getData():
     return values
 
 
-def convertFtoC(tempValuesF):
+def convertFtoC(tempValuesF: list[tempData]) -> list[tempData]:
     # Declare local variable
     tempCelsius = 0.0
     tempFahrenheit = 0.0
@@ -82,9 +81,9 @@ def convertFtoC(tempValuesF):
     return tempValuesC
 
 
-def getMax(tempValuesC):
+def getMax(tempValuesC: list[tempData]) -> float:
     # Declare local variable
-    maxC = 0
+    maxC = 0.0
 
     # Find maximum temperature
     maxC = tempValuesC[1].temp
@@ -96,9 +95,9 @@ def getMax(tempValuesC):
     return maxC
 
 
-def getMin(tempValuesC):
+def getMin(tempValuesC: list[tempData]) -> float:
     # Declare local variable
-    minC = 0
+    minC = 0.0
 
     # Find maximum temperature
     minC = tempValuesC[1].temp
@@ -110,7 +109,7 @@ def getMin(tempValuesC):
     return minC
 
 
-def writeData(maxC, minC, tempValuesC):
+def writeData(maxC: float, minC: float, tempValuesC: list[tempData]) -> None:
     # Declare local variables
     recDate = ""
     recTime = ""

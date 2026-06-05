@@ -3,7 +3,7 @@
 # Date: 5 Oct 2024
 
 
-def readData():
+def readData() -> tuple[list[str], list[int]]:
     """Read data from file into parallel arrays."""
 
     # Initialise local variables
@@ -35,7 +35,7 @@ def readData():
     return postcodes, origValues
 
 
-def countHS0(postcodes):
+def countHS0(postcodes: list[str]) -> int:
     """Count all HS0 postcodes."""
 
     # Initialise local variables
@@ -53,7 +53,7 @@ def countHS0(postcodes):
     return count
 
 
-def fixHS0(postcodes):
+def fixHS0(postcodes: list[str]) -> list[str]:
     """Find and change all HS0 postcodes to HS1."""
 
     # Loop for each postcode
@@ -69,7 +69,7 @@ def fixHS0(postcodes):
     return postcodes
 
 
-def newPrices(postcodes, origValues):
+def newPrices(postcodes: list[str], origValues: list[int])-> list[int]:
     """Updates house prices depending on postcodes."""
 
     # Initialise local variables
@@ -111,7 +111,7 @@ def newPrices(postcodes, origValues):
     return newValues
 
 
-def findLowest(newValues):
+def findLowest(newValues: list[int]) -> int:
     """Find lowest house price."""
 
     # Initialise local variables
@@ -131,7 +131,7 @@ def findLowest(newValues):
     return lowest
 
 
-def findHighest(newValues):
+def findHighest(newValues: list[int]) -> int:
     """Find highest house price."""
 
     # Initialise local variables
@@ -151,7 +151,7 @@ def findHighest(newValues):
     return highest
 
 
-def countValues(newValues, target):
+def countValues(newValues: list[int], target: int) -> int:
     """Count house prices that match the target"""
     
     # Initialise local variable
@@ -169,7 +169,9 @@ def countValues(newValues, target):
     return count
 
 
-def writeSummary(badCodes, lowest, highest, lowCount, highCount, postcodes, newValues):
+def writeSummary(badCodes: int, lowest: int, highest: int,
+                 lowCount: int, highCount: int, postcodes: list[str],
+                 newValues: list[int]) -> None:
     """Write summary information to file."""
 
     # Initialise local variables
@@ -219,7 +221,7 @@ def writeSummary(badCodes, lowest, highest, lowCount, highCount, postcodes, newV
     file.close()
 
 
-def writeData(postcodes, origValues, newValues):
+def writeData(postcodes: list[str], origValues: list[int], newValues: list[int]):
     """Write data to file."""
 
     # Make a connection to the file
@@ -237,7 +239,7 @@ def writeData(postcodes, origValues, newValues):
     file.close()
 
 
-def main():
+def main() -> None:
     """Main program."""
 
     # Initialise variables

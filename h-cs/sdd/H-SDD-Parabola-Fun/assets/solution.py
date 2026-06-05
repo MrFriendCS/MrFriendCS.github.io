@@ -7,7 +7,7 @@
 # Subprogram
 #
 
-def discriminant(a, b, c):
+def discriminant(a: float, b: float, c: float) -> None:
     "Calculates the discriminant from the coefficients. Displays the discriminant and the type of roots."
 
     # Local variable
@@ -30,7 +30,8 @@ def discriminant(a, b, c):
     else:
         print("No real roots")
 
-def roots(a, b, c):
+
+def roots(a: float, b: float, c: float) -> None:
     "Calculates the roots from the coefficients, rounded to 1 decimal place."
 
     # Local variables

@@ -9,7 +9,7 @@ import random  # used in subprogram
 # Subprograms
 #
 
-def getUserData():
+def getUserData() -> tuple[list[str], list[str]]:
     """Read first names and last names from file and return as parallel arrays"""
 
     # Declare local variable and arrays
@@ -41,7 +41,7 @@ def getUserData():
     return forenames, surnames
 
 
-def createUsernames(forenames, surnames):
+def createUsernames(forenames: list[str], surnames: list[str]) -> list[str]:
     """Create usernames from first names and last names and return as an array"""
 
     # Declare local variables and array
@@ -73,7 +73,7 @@ def createUsernames(forenames, surnames):
     return usernames
 
 
-def left(text, number):
+def left(text: str, number: int) -> str:
     """Returns a left substring.  Pads with underscore if short"""
 
     # Declare local variable
@@ -90,7 +90,8 @@ def left(text, number):
     return substring
     
 
-def saveUserData(surnames, forenames, usernames):
+def saveUserData(surnames: list[str], forenames: list[str],
+                 usernames: list[str]):
     """Save last names, forenames, and usernames to file"""
 
     # Make a connection to the file

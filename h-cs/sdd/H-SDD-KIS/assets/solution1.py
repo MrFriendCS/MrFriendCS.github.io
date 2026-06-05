@@ -30,7 +30,7 @@ def convertFtoC(tempValuesF):
 
 def getMax(tempValuesC):
     # Declare local variable
-    maxC = 0
+    maxC = 0.0
 
     # Find maximum temperature
 
@@ -41,7 +41,7 @@ def getMax(tempValuesC):
 
 def getMin(tempValuesC):
     # Declare local variable
-    minC = 0
+    minC = 0.0
 
     # Find maximum temperature
 

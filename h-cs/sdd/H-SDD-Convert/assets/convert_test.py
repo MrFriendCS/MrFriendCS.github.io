@@ -7,7 +7,7 @@
 import convert
 
 
-def testF2C():
+def testF2C() -> int:
     """Tests the f2c() function"""
     
     # Local variable
@@ -48,7 +48,7 @@ def testF2C():
         return 0
 
 
-def testC2F():
+def testC2F() -> int:
     """Tests the c2f() function"""
     
     # Local variable
@@ -89,7 +89,7 @@ def testC2F():
         return 0
 
 
-def testM2KM():
+def testM2KM() -> int:
     """Tests the m2km() function"""
     
     # Local variable
@@ -130,7 +130,7 @@ def testM2KM():
         return 0
 
 
-def testKM2M():
+def testKM2M() -> int:
     """Tests the km2m() function"""
     
     # Local variable
@@ -171,7 +171,7 @@ def testKM2M():
         return 0
 
 
-def testFI2CM():
+def testFI2CM() -> int:
     """Tests the fi2cm() function"""
     
     # Local variable
@@ -200,7 +200,7 @@ def testFI2CM():
         return 0
         
 
-def testCM2FI():
+def testCM2FI() -> int:
     """Tests the cm2fi() function"""
     
     # Local variable
@@ -229,7 +229,7 @@ def testCM2FI():
         return 0
 
 
-def testSL2KG():
+def testSL2KG() -> int:
     """Tests the sl2kg() function"""
     
     # Local variable
@@ -258,7 +258,7 @@ def testSL2KG():
         return 0
         
 
-def testKG2SL():
+def testKG2SL() -> int:
     """Tests the kg2sl() function"""
     
     # Local variable
@@ -293,7 +293,7 @@ def testKG2SL():
         return 0
 
 
-def testAll():
+def testAll() -> None:
     """Tests all functions"""
     
     # Local variable
@@ -320,8 +320,8 @@ def testAll():
             1/0  # Throws an exception
         
     except:
-            print("\nTesting of all functions FAILED!")
-            print("================================\n")
+        print("\nTesting of all functions FAILED!")
+        print("================================\n")
         
 
 #

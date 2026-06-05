@@ -7,7 +7,7 @@
 import calculation
 
 
-def testAreaOfSquare():
+def testAreaOfSquare() -> int:
     """Tests the areaOfSqaure() function"""
     
     # Local variable
@@ -54,7 +54,7 @@ def testAreaOfSquare():
         return 0
 
 
-def testAreaOfRectangle():
+def testAreaOfRectangle() -> int:
     """Tests the areaOfRectangle() function"""
     
     # Local variable
@@ -113,7 +113,7 @@ def testAreaOfRectangle():
         return 0
     
 
-def testAreaOfTriangle():
+def testAreaOfTriangle() -> int:
     """Tests the areaOfTriangle() function"""
     
     # Local variable
@@ -172,7 +172,7 @@ def testAreaOfTriangle():
         return 0
     
 
-def testAreaOfCircle():
+def testAreaOfCircle() -> int:
     """Tests the areaOfCircle() function"""
     
     # Local variable
@@ -255,7 +255,7 @@ def testAreaOfCircle():
         return 0
     
 
-def testVolOfCube():
+def testVolOfCube() -> int:
     """Tests the volOfCube() function"""
     
     # Local variable
@@ -302,7 +302,7 @@ def testVolOfCube():
         return 0
 
 
-def testVolOfCuboid():
+def testVolOfCuboid() -> int:
     """Tests the volOfCuboid() function"""
     
     # Local variable
@@ -367,7 +367,7 @@ def testVolOfCuboid():
         return 0
 
 
-def testVolOfCylinder():
+def testVolOfCylinder() -> int:
     """Tests the volOfCylinder() function"""
     
     # Local variable
@@ -468,7 +468,7 @@ def testVolOfCylinder():
         return 0
     
 
-def testVolOfSphere():
+def testVolOfSphere() -> int:
     """Tests the volOfSphere() function"""
     
     # Local variable
@@ -551,7 +551,7 @@ def testVolOfSphere():
         return 0
 
 
-def testAll():
+def testAll() -> None:
     """Tests all functions"""
     
     # Local variable
@@ -578,8 +578,8 @@ def testAll():
             1/0  # Throws an exception
         
     except:
-            print("\nTesting of all functions: FAILED!")
-            print("=================================\n")
+        print("\nTesting of all functions: FAILED!")
+        print("=================================\n")
         
 
 #

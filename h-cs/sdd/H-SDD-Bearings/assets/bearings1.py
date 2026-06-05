@@ -6,7 +6,7 @@
 # Subprograms
 #
 
-def getSizeData():
+def getSizeData() -> list[float]:
     """Read ball bearing test data from a csv file.  Return array."""
 
     # Declare local variable
@@ -29,7 +29,7 @@ def getSizeData():
     return bearingSizes
 
 
-def findMin(items):
+def findMin(items: list[float]) -> float:
     """Finds and returns minimum value in an array."""
     
     # Initialise local variable
@@ -51,7 +51,7 @@ def findMin(items):
     return min
 
 
-def findMax(items):
+def findMax(items: list[float]) -> float:
     """Finds and returns maximum value in an array."""
     
     # Initialise local variable
@@ -73,7 +73,7 @@ def findMax(items):
     return max
 
 
-def countSmall(items):
+def countSmall(items: list[float]) -> int:
     """Count and return how many ball bearings are too big."""
 
     # Initialise local variables
@@ -90,7 +90,7 @@ def countSmall(items):
     return count
 
 
-def countBig(items):
+def countBig(items: list[float]) -> int:
     """Count and return how many ball bearings are too big."""
 
     # Initialise local variables
@@ -107,7 +107,7 @@ def countBig(items):
     return count
 
 
-def calcPercent(count):
+def calcPercent(count: int) -> float:
     """Calculate percentage of small/big bearings to 2 dp."""
     
     # Initialise local variable
@@ -122,7 +122,7 @@ def calcPercent(count):
     return percent
 
 
-def calcBatchResult (smallPercent, bigPercent):
+def calcBatchResult (smallPercent: float, bigPercent: float) -> bool:
     """Calculate result of batch.  Returns Boolean."""
     
     # Initialise local variable
@@ -141,7 +141,8 @@ def calcBatchResult (smallPercent, bigPercent):
     return result
 
 
-def writeData(min, max, smallPercent, bigPercent, result):
+def writeData(min: float, max: float, smallPercent: float,
+              bigPercent: float, result: bool) -> None:
     """Write data to file."""
     
     # Initialise local variables
@@ -180,7 +181,7 @@ def writeData(min, max, smallPercent, bigPercent, result):
     file.close()
     
 
-def main():
+def main() -> None:
     """Main program"""
 
     # Initialise variables
@@ -189,8 +190,8 @@ def main():
     max = 0.0
     small = 0
     big = 0
-    smallPer = 0.0
-    bigPer = 0.0
+    smallPercent = 0.0
+    bigPercent = 0.0
     result = False
 
     # 1.  Read bearings sizes from file

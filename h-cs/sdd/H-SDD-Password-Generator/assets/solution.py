@@ -9,7 +9,7 @@ import random
 # Functions and procedures
 #
 
-def generatePassword():
+def generatePassword() -> str:
     '''Generate and return a password'''
     # Local variables
     length = 0
@@ -50,7 +50,7 @@ def generatePassword():
     # 1.3 Return password
     return localPassword
 
-def getChr(lower, upper):
+def getChr(lower: int, upper: int) -> str:
     '''Pick and return a character between the lower and upper values, at random'''
     # Local varaiable
     letter = ""
@@ -63,7 +63,7 @@ def getChr(lower, upper):
     # Return character
     return letter
 
-def validatePassword(localPassword):
+def validatePassword(localPassword: str) -> bool:
     '''Checks a password to see if it matches the requirements.  Returns Boolean.'''
 
     # Local variables
@@ -108,7 +108,7 @@ def validatePassword(localPassword):
     # Return result
     return localValid
 
-def displayResult(localPassword, localValid):
+def displayResult(localPassword: str, localValid: bool) -> None:
     '''Display password and its status'''
 
     # Declare local variable
