@@ -9,7 +9,7 @@ from summer3 import *
 # Sub-programs
 #
 
-def testContains():
+def testContains() -> None:
     """Test the functionality of the contains() function."""
     
     # Initialise variable
@@ -50,13 +50,13 @@ def testContains():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
         
 
-def testLetterTypes():
+def testLetterTypes() -> None:
     """Test the functionality of the letterTypes() function."""
     
     # Initialise variable
     failCount = 0
     inputs = ["Hello", "HELLO", "hello", "HeLlO!",
-              "", "A 1 * z", "\,./", "1 z A *"]
+              "", "A 1 * z", "\\,./", "1 z A *"]
     outputs = [(1, 4), (5,0), (0,5), (3, 2),
                (0, 0), (1, 1), (0, 0), (1, 1)]
     

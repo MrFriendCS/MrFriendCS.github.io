@@ -6,7 +6,7 @@
 # Subprograms
 #
 
-def readData():
+def readData() -> tuple:
     """Read data from csv file and return parallel arrays."""
 
     # Declare local varaibles and arrays
@@ -14,7 +14,7 @@ def readData():
     data = [""] * 3
     dates = [""] * 8759
     times = [""] * 8759
-    temps = [""] * 8759
+    temps = [0.0] * 8759
     
     # Open connection to file
     file = open("tempF.csv", "r")
@@ -40,7 +40,7 @@ def readData():
     return dates, times, temps
 
 
-def convertTemps(temps):
+def convertTemps(temps: list[float]) -> list[float]:
     """Convert fahrenheit to centigrade, to 1 dp, and return an array."""
 
     # Declare local variables
@@ -56,11 +56,11 @@ def convertTemps(temps):
     return newTemps
 
 
-def convertDates(dates):
+def convertDates(dates: list[str]) -> list[str]:
     """Convert US dates to ISO dates and return an array."""
 
     # Declare local variables
-    newDates = [0.0] * len(dates)
+    newDates = [""] * len(dates)
     tempDate = ""
     year = ""
     month = ""
@@ -84,7 +84,7 @@ def convertDates(dates):
     return newDates
   
 
-def writeData(dates, times, temps):
+def writeData(dates: list[str], times: list[str], temps: list[float]) -> None:
     """Write data to text file."""
     
     # Open connection to file

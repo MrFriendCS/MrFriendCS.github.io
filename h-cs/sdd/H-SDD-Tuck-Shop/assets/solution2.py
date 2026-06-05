@@ -6,14 +6,14 @@
 # Subprograms
 #
 
-def getData():
+def getData() -> tuple:
     """Return parallel arrays from costs.csv"""
 
     # Declare local variable and arrays
     line = ""
     
     subNames = [""] * 11
-    subWeights = [""] * 11
+    subWeights = [0] * 11
     subPrices = [0.0] * 11
     
     data = [""] * 3
@@ -42,7 +42,7 @@ def getData():
     return subNames, subWeights, subPrices
 
 
-def increase(subPrices):
+def increase(subPrices: list[float]) -> list[float]:
     """Return array of real, increased by 10%"""
 
     # Declare local variables and array
@@ -67,12 +67,11 @@ def increase(subPrices):
     return subNewPrices
 
 
-def firstLetter(subNames):
+def firstLetter(subNames: list[str]) -> list[str]:
     """Return array of strings.  Each starts with a cpital letter."""
 
     # Declare local variables and array
     firstChr = ""
-    newPrice = 0.0
     
     # Loop for each name
     for index in range(len(subNames)):
@@ -91,7 +90,8 @@ def firstLetter(subNames):
     return subNames
 
 
-def saveData(subNames, subWeights, subPrices):
+def saveData(subNames: list[str], subWeights: list[int],
+             subPrices: list[float]) -> None:
     """Save parallel arrays to saleprices.csv"""
     
     # Open connection to file

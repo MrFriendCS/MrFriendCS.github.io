@@ -1,210 +1,290 @@
-#L.I
-#functions
+# Title: H SDD - Functions
+# Author: Mr Friend
+# Date: 1 Oct 2025
 
 
-
-
-
-
-def gradient(dy, dx):
-    """Calculates dy/dx, to 2 dp.  Returns the result."""
+def gradient(dy: float, dx: float)-> float:
+    """Calculates dy/dx, to 2 dp.  Returns the result.""" 
     
-    gradient = 0.00
+    # Initialise local variable
+    m = 0.0
     
+    # Check for invalid dx
+    if dx == 0:
+        
+        # Set gradient to -1.0
+        m = -1.0
+        
+    # If dx is valid
+    else:
+        
+        # Calculate gradient
+        m = dy / dx
+        
+        # Round gradient
+        m = round(m, 2)
     
-    
-    
-    return gradient
+    # Return result
+    return m
 
 
-
-
-
-
-
-
-
-
-def hypontenuse(a, b):
+def hypotenuse(a: float, b: float) -> float:
     """Calculates the long side of a right angled triangle, to 2 dp.  Returns the result."""
     
+    # Initialise local variable
+    c = 0.0
     
+    # Check for invalid a or b
+    if a <= 0 or b <= 0:
+        
+        # Set c to -1.0
+        c = -1.0
+        
+    # If a and b are valid
+    else:
+        
+        # Calculate hypotenuse
+        c = (a**2 + b**2)**0.5
+        
+        # Round hypotenuse
+        c = round(c, 2)
+    
+    # Return result
     return c
 
 
-
-
-
-
-
-
-
-
-def areaCircle(radius):
+def areaCircle(radius: float) -> float:
     """Calculates the area of a circle, to 2 dp.  Returns the result."""
     
-    area = 0.00
-    radius = 0.00
-    radiusSQR = radius * radius
+    # Initialise local variables
+    pi = 3.1415
+    area = 0.0
     
-    area = 3.1415 * radiusSQR
-     
-    area = round(area,2)
+    # Check for invalid radius
+    if radius <= 0:
+        
+        # Set area to -1.0
+        area = -1.0
+        
+    # If radius is valid
+    else:
+        
+        # Calculate area
+        area = pi * radius**2
+        
+        # Round area
+        area = round(area, 2)
     
+    # Return result
     return area
 
 
-
-
-
-
-
-
-
-
-def areaTriangle(base, height):
+def areaTriangle(base: float, height: float) -> float:
     """Calculates the area of a triangle, to 2 dp.  Returns the result."""
     
+    # Initialise local variable
+    area = 0.0
     
+    # Check for invalid base or height
+    if base <= 0 or height <= 0:
+        
+        # Set area to -1.0
+        area = -1.0
+        
+    # If base and height are valid
+    else:
+        
+        # Calculate area
+        area = 0.5 * base * height
+        
+        # Round area
+        area = round(area, 2)
+    
+    # Return result
     return area
 
 
-
-
-
-
-
-
-
-
-
-
-def areaSquare(side):
+def areaSquare(side: float) -> float:
     """Calculates the area of a square, to 2 dp.  Returns the result."""
     
-    side = 0
+    # Initialise local variable
+    area = 0.0
     
-    area = side * side
+    # Check for invalid radius
+    if side <= 0:
+        
+        # Set area to -1.0
+        area = -1.0
+        
+    # If side is valid
+    else:
+        
+        # Calculate area
+        area = side**2
+        
+        # Round area
+        area = round(area, 2)
     
+    # Return result
     return area
 
 
-
-
-
-
-
-
-
-
-
-
-def areaRectangle(width, height):
+def areaRectangle(width: float, height: float) -> float:
     """Calculates the area of a rectangle, to 2 dp.  Returns the result."""
     
-    width = 0
-    height = 0
+    # Initialise local variable
+    area = 0.0
     
-    area = width * height
+    # Check for invalid width or height
+    if width <= 0 or height <= 0:
+        
+        # Set area to -1.0
+        area = -1.0
+        
+    # If base and height are valid
+    else:
+        
+        # Calculate area
+        area = width * height
+        
+        # Round area
+        area = round(area, 2)
     
+    # Return result
     return area
 
 
-
-
-
-
-
-
-
-
-
-
-def volPrism(csa, height):
+def volPrism(csa: float, height: float) -> float:
     """Calculates the volume of a prism, to 2 dp.  Returns the result."""
     
+    # Initialise local variable
     volume = 0.0
     
-    volume = csa * height
+    # Check for invalid csa or height
+    if csa <= 0 or height <= 0:
+        
+        # Set volume to -1.0
+        volume = -1.0
+        
+    # If csa and height are valid
+    else:
+        
+        # Calculate volume
+        volume = csa * height
+        
+        # Round volume
+        volume = round(volume, 2)
     
-    
-    return area
+    # Return result
+    return volume
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def volCylinder(radius, height):
+def volCylinder(radius: float, height: float) -> float:
     """Calculates the volume of a cylinder, to 2 dp.  Returns the result."""
+        
+    # Initialise local variable
+    pi = 3.1415
+    volume = 0.0
     
-    radius = 0.0
-    height = 0.0
-    radiusSQR = radius * radius
+    # Check for invalid csa or height
+    if radius <= 0 or height <= 0:
+        
+        # Set volume to -1.0
+        volume = -1.0
+        
+    # If radius and height are valid
+    else:
+        
+        # Calculate volume
+        volume = pi * radius**2 * height
+        
+        # Round volume
+        volume = round(volume, 2)
     
-    
-    volume = 3.1415 * radiusSQR * height
-    
-
-
+    # Return result
     return volume
 
 
-
-
-
-
-
-
-
-
-
-
-def volCone(radius, height):
+def volCone(radius: float, height: float) -> float:
     """Calculates the volume of a cone, to 2 dp.  Returns the result."""
- 
-    radius = 0.0
-    height = 0.0
-    radiusSQR = radius * radius
-    heightSQR * height * height
-     
-    surfaceA = ((radiusSQR + heightSQR) * 0.5)
-     
-    volume = 3.1415 * radius * (radius + surfaceA)
-     
+
+        
+    # Initialise local variable
+    pi = 3.1415
+    volume = 0.0
     
+    # Check for invalid radius or height
+    if radius <= 0 or height <= 0:
+        
+        # Set volume to -1.0
+        volume = -1.0
+        
+    # If radius and height are valid
+    else:
+        
+        # Calculate volume
+        volume = (1/3) * pi * radius**2 * height
+        
+        # Round volume
+        volume = round(volume, 2)
+    
+    # Return result
     return volume
 
 
-
-
-
-
-
-
-
-
-
-
-def volSphere(radius):
+def volSphere(radius: float) -> float:
     """Calculates the volume of a sphere, to 2 dp.  Returns the result."""
+
+    # Initialise local variable
+    pi = 3.1415
+    volume = 0.0
     
-    radius = 0.0
-    radiusCubed = radius * radius * radius
+    # Check for invalid radius
+    if radius <= 0:
+        
+        # Set volume to -1.0
+        volume = -1.0
+        
+    # If radius and height are valid
+    else:
+        
+        # Calculate volume
+        volume = (4/3) * pi * radius**3
+        
+        # Round volume
+        volume = round(volume, 2)
     
-    volume = (4/3) * 3.1415 * radiusCubed
-    
-    
-    
+    # Return result
     return volume
 
+
+def compoundInterest(initial: float, rate: float, periods: int)-> float:
+    """Calculates the compound interest, to 2 dp.  Returns the result."""
+    
+    # Initialise local variable
+    final = 0.0
+    interest = 0.0
+    multiplier = 0.0
+    
+    # Check for invalid values
+    if initial <= 0 or periods <= 0:
+        
+        # Set compound interest to -1.0
+        interest = -1.0
+    
+    else:
+        
+        # Calculate multiplier
+        multiplier = 1 + (rate / 100)
+        
+        # Calculate final amount
+        final = initial * multiplier ** periods
+        
+        # Calculate compund interest
+        interest = final - initial
+        
+        # Round compund interest to 2 dp
+        interest = round(interest, 2)
+    
+    # Return result
+    return interest

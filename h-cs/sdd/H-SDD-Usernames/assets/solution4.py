@@ -16,7 +16,7 @@ class Student:
     insuranceNo: str = ""
 
 
-def readData():
+def readData() -> list[Student]:
     """Read data from csv file.  Returns an array of records."""
     
     # Initialise local variables
@@ -48,7 +48,7 @@ def readData():
     return students
 
 
-def createUsernames(students):
+def createUsernames(students: list[Student]) -> list:
     """Create usernames for students.  Return an array."""
     
     # Initialise local variables
@@ -79,7 +79,7 @@ def createUsernames(students):
     return usernames
     
 
-def left(text, characters):
+def left(text: str, characters: int) -> str:
     """Left substring function."""
     
     # Initialise local variable
@@ -92,7 +92,7 @@ def left(text, characters):
     return left
 
 
-def right(text, characters):
+def right(text: str, characters: int) -> str:
     """Right substring function."""
     
     # Initialise local variable
@@ -105,7 +105,7 @@ def right(text, characters):
     return right
 
 
-def mid(text, start, characters):
+def mid(text: str, start: int, characters: int) -> str:
     """Mid substring function."""
     
     # Initialise local variable
@@ -118,7 +118,7 @@ def mid(text, start, characters):
     return mid
 
 
-def lower(text):
+def lower(text: str) -> str:
     """Changes all uppercase letters to lower case.  Returns a string."""
     
     # Initialise local variables
@@ -149,7 +149,7 @@ def lower(text):
     return word
 
 
-def writeData(usernames):
+def writeData(usernames: list) -> None:
     """Write the usernames to text file."""
     
     # Make connection to text file

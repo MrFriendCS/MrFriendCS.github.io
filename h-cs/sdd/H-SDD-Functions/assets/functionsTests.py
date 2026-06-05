@@ -10,7 +10,7 @@ from functions import *
 #
 
 
-def testGradient():
+def testGradient() -> None:
     """Test the functionality of the gradient() function."""
     
     # Initialise variables
@@ -47,7 +47,7 @@ def testGradient():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def testHypotenuse():
+def testHypotenuse() -> None:
     """Test the functionality of the hypotenuse() function."""
     
     # Initialise variables
@@ -84,7 +84,7 @@ def testHypotenuse():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def testAreaCircle():
+def testAreaCircle() -> None:
     """Test the functionality of the areaCircle() function."""
     
     # Initialise variables
@@ -119,7 +119,7 @@ def testAreaCircle():
         print("\tAll " + str(len(inputs)) + " tests passed.")
         
 
-def testAreaTriangle():
+def testAreaTriangle() -> None:
     """Test the functionality of the areaTriangle() function."""
     
     # Initialise variables
@@ -156,7 +156,7 @@ def testAreaTriangle():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def testAreaSquare():
+def testAreaSquare() -> None:
     """Test the functionality of the areaSquare() function."""
     
     # Initialise variables
@@ -191,7 +191,7 @@ def testAreaSquare():
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testAreaRectangle():
+def testAreaRectangle() -> None:
     """Test the functionality of the areaRectangle() function."""
     
     # Initialise variables
@@ -228,7 +228,7 @@ def testAreaRectangle():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def testVolPrism():
+def testVolPrism() -> None:
     """Test the functionality of the volPrism() function."""
     
     # Initialise variables
@@ -302,7 +302,7 @@ def testVolCylinder():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def testVolCone():
+def testVolCone() -> None:
     """Test the functionality of the volCone() function."""
     
     # Initialise variables
@@ -339,7 +339,7 @@ def testVolCone():
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def testSphere():
+def testSphere() -> None:
     """Test the functionality of the volSphere() function."""
     
     # Initialise variables

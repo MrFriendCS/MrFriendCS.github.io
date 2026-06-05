@@ -16,11 +16,7 @@ class HourlyValue:
     temp: float = 0.0
 
 
-# 
-# Subprograms
-#
-
-def readData():
+def readData() -> list[HourlyValue]:
     """Read data from csv file and return an array of records."""
 
     # Declare local varaibles and arrays
@@ -52,7 +48,7 @@ def readData():
     return hourlyValues
 
 
-def convertTemps(hourlyValues):
+def convertTemps(hourlyValues: list[HourlyValue]) -> list:
     """Convert fahrenheit to centigrade, to 1 dp, and return an array."""
 
     # Declare local variables
@@ -68,11 +64,11 @@ def convertTemps(hourlyValues):
     return newTemps
 
 
-def convertDates(hourlyValues):
+def convertDates(hourlyValues: list[HourlyValue]) -> list:
     """Convert US dates to ISO dates and return an array."""
 
     # Declare local variables
-    newDates = [0.0] * len(hourlyValues)
+    newDates = [""] * len(hourlyValues)
     tempDate = ""
     year = ""
     month = ""
@@ -96,11 +92,11 @@ def convertDates(hourlyValues):
     return newDates
 
 
-def extractTimes(hourlyValues):
+def extractTimes(hourlyValues: list[HourlyValue]) -> list[str]:
     """Extract times and return an array."""
 
     # Declare local variables
-    newTimes = [0.0] * len(hourlyValues)
+    newTimes = [""] * len(hourlyValues)
     
     # Loop for each time
     for index in range(len(hourlyValues)):
@@ -112,7 +108,7 @@ def extractTimes(hourlyValues):
     return newTimes
     
 
-def writeData(dates, times, temps):
+def writeData(dates: list, times, temps):
     """Write data to text file."""
     
     # Open connection to file

@@ -7,7 +7,7 @@
 #
 
 
-def contains(text, target):
+def contains(text: str, target: str) -> bool:
     """Returns True if character found in text."""
     
     # Initialise local variables
@@ -59,7 +59,7 @@ def contains(text, target):
     return found  
 
 
-def letterTypes(text):
+def letterTypes(text: str) -> tuple[int, int]:
     """Returns the number of uppercase and lowercase characters."""
     
     # Initialise local variables
