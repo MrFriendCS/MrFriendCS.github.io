@@ -7,7 +7,11 @@ class Dog:
     """A class to represent a virtual dog."""
     
     def __init__(self, name: str='', age: int=0):
-        """Creates a new dog."""
+        """Creates a new dog.
+           
+           name -- the name of the dog (default '')
+           age  -- the age of the dog (default 0)
+           """
         
         self.__name = name
         self.__age = age
@@ -31,3 +35,5 @@ class Dog:
         """A dog's got to eat!"""
         
         print(f'\nWoof! {food.capitalize()} is tasty!\n')
+
+myDogs = [Dog("A",1), Dog("B",2)]

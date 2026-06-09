@@ -24,7 +24,7 @@ VVPS has determined that the following characteristics are important:
 
 From the analysis of the problem, a class for Dog was designed.
 
-![UML clase diagram](assets/diagrams/class.png)
+![UML class diagram](assets/diagrams/class.png)
 
 
 ## Tasks

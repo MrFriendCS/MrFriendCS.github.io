@@ -4,11 +4,14 @@
 
 
 class MenuItem:
-    """Declare a class to define a menu item. """    
+    """A class to define a menu item. """    
     
     def __init__(self, name: str='', price: float=0.0):
-        """Constructor method. """ \
-          """Automatically called when a menu item object is created."""
+        """Create a menu item.
+           
+           name  -- what it is, i.e. 'Cheese toastie' (default '')
+           price -- how much it costs (default 0.0)
+           """
     
         # Instance variables - Private
         self.__name = name

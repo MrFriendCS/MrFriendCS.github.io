@@ -4,7 +4,7 @@
 
 
 # Import Menu Item and Order classes
-from menu_item import Menu_Item
+from menu_item import MenuItem
 from order import Order
 
 
@@ -74,7 +74,7 @@ def test_get_items() -> None:
         for item in array_of_objects:
             
             # Test: check object type
-            assert isinstance(item, Menu_Item) == True
+            assert isinstance(item, MenuItem) == True
         
         print(f'Pass: get_items() - {len(array_of_objects)} items in order')
         
@@ -195,8 +195,8 @@ item2_name = 'Hamburger'
 item2_price = 2.15
 
 # Create menu items
-test_menu_item1 = Menu_Item(item1_name, item1_price)
-test_menu_item2 = Menu_Item(item2_name, item2_price)
+test_menu_item1 = MenuItem(item1_name, item1_price)
+test_menu_item2 = MenuItem(item2_name, item2_price)
 
 # Create an order
 test_order = Order()

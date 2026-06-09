@@ -9,7 +9,12 @@ class Locker:
     
     def __init__(self, locker_no: int=0, pupil_name: str='',
                  locked: bool=True):
-        """Create a new locker."""
+        """Create a new locker.
+           
+           locker_no  -- the number on the locker (default 0)
+           pupil_name -- the name of the pupil assign the locker (default '')
+           locked     -- the locked status of the locker (default True)
+           """
     
         # Instance variables - Private
         self.__locker_no = locker_no
@@ -55,7 +60,7 @@ class Locker:
         return success
     
     
-    def details(self) -> tuple:
+    def details(self) -> tuple[int, str, bool]:
         """Method to return the details of the locker."""
         
         return self.__locker_no, self.__pupil_name, self.__islocked

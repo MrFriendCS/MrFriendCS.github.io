@@ -1,4 +1,9 @@
-def secToMinSec(seconds: int) -> tuple[int, int]:
+# Title: H SDD Conversion Functions
+# Author: Mr Friend
+# Date: 9 Jun 2026
+
+
+def secToMinSec(seconds: float) -> tuple[int, int]:
     if seconds < 0:
         mins = -1
         sec = -1
@@ -8,7 +13,7 @@ def secToMinSec(seconds: int) -> tuple[int, int]:
     return (mins, sec)
 
 
-def minToHourMin(minutes: int) -> tuple[int, int]:
+def minToHourMin(minutes: float) -> tuple[int, int]:
     if minutes < 0:
         hour = -1
         mins = -1
@@ -18,7 +23,7 @@ def minToHourMin(minutes: int) -> tuple[int, int]:
     return (hour, mins)
 
 
-def hourToDayHour(hours):
+def hourToDayHour(hours: float) -> tuple[int, int]:
     if hours < 0:
         days = -1
         hour = -1
@@ -28,7 +33,7 @@ def hourToDayHour(hours):
     return (days, hour)
 
 
-def mmToCMmm(milli):
+def mmToCMmm(milli: float) -> tuple[int, int]:
     if milli < 0:
         cm = -1
         mm = -1
@@ -38,7 +43,7 @@ def mmToCMmm(milli):
     return (cm, mm)
 
 
-def cmToMcm(centi):
+def cmToMcm(centi: float) -> tuple[int, int]:
     if centi < 0:
         m = -1
         cm = -1
@@ -48,7 +53,7 @@ def cmToMcm(centi):
     return (m, cm)
 
 
-def mToKMm(metres):
+def mToKMm(metres: float) -> tuple[int, int]:
     if metres < 0:
         km = -1
         m = -1
@@ -58,7 +63,7 @@ def mToKMm(metres):
     return (km, m)
 
 
-def inchesToFeetInches(inch):
+def inchesToFeetInches(inch: float) -> tuple[int, int]:
     if inch < 0:
         feet = -1
         inches = -1
@@ -68,7 +73,7 @@ def inchesToFeetInches(inch):
     return (feet, inches)
 
 
-def feetToYardsFeet(feets):
+def feetToYardsFeet(feets: float) -> tuple[int, int]:
     if feets < 0:
         yards = -1
         feet = -1

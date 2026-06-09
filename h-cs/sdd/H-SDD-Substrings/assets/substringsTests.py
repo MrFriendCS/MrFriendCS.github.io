@@ -67,8 +67,9 @@ def testRight() -> None:
             failCount = failCount + 1
             
             # Display failure message
-            print("\tFailed: \"" + inputs[index] + "\", "
-                  + str(chars[index]) + " = \"" + outputs[index] + "\"")
+            print("\tFailed \"" + str(index+1) + ": right(\""
+                  + inputs[index] + "\", " + str(chars[index])
+                  + ") = \"" + outputs[index] + "\"")
       
     # Display success message
     if failCount == 0:
@@ -102,9 +103,9 @@ def testMid() -> None:
             failCount = failCount + 1
             
             # Display failure message
-            print("\tFailed: \"" + inputs[index] + "\", "
-                  + str(starts[index]) + ", " + str(chars[index])
-                  + " = \"" + outputs[index] + "\"")
+            print("\tFailed \"" + str(index+1) + ": mid(\""
+                  + inputs[index] + "\", " + str(starts[index])
+                  + ", " + str(chars[index]) + ") = \"" + outputs[index] + "\"")
     
     # Display success message
     if failCount == 0:

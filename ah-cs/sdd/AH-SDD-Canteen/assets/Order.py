@@ -7,7 +7,11 @@ class Order:
     """A class for a canteen order."""  
     
     def __init__(self):
-        """Create a new canteen order"""
+        """Create a new canteen order
+           
+           items  -- menu_items that have been added to the order (default [])
+           status -- the status of the order (default 'In progress')
+           """
     
         # Instance variables - Private
         self.__items = []
@@ -16,7 +20,7 @@ class Order:
     def add_item(self, item: MenuItem) -> None:
         """Method to add an item to the order."""
         
-        self.__items.append(item)
+        self.__items += [item]
     
     def get_items(self) -> list[MenuItem]:
         """Method to access the menu items."""
