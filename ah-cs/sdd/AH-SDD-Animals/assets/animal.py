@@ -1,6 +1,6 @@
-# Title: Menu Item Class
+# Title: Animal Class
 # Author: Mr Friend
-# Date: 29 May 2026
+# Date: 10 Jun 2026
 
 
 class Animal:
@@ -36,7 +36,7 @@ class Animal:
         
         return self.__weight
     
-    def set_weight(self, weight: float=self.__weight) -> None:
+    def set_weight(self, weight: float=0.0) -> None:
         """A method to update the weight of the animal."""
         
         self.__weight = weight
@@ -47,6 +47,6 @@ class Animal:
         return self.__alive
     
     def die(self) -> None:
-        """A method to check if the animal is alive."""
+        """A method to acknowledge the sad passing of the animal."""
         
-        elf.__alive = False
+        self.__alive = False

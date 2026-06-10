@@ -1,0 +1,49 @@
+# Title: Animal Class
+# Author: Mr Friend
+# Date: 10 Jun 2026
+
+
+class Animals:
+    """A class to represent a collection of zoo animal."""    
+    
+    def __init__(self):
+        """Create a collection object."""
+    
+        # Instance variables - Private
+        self.__number_of_animals = 0
+        self.__animals = []
+    
+    def add_animal(self, animal: Animal) -> None:
+        """A method to add an animal to the collection."""
+        
+        # Add the animal
+        self.__animals += [animal]
+        
+        # Increment the number of animals
+        self.__number_of_animals += 1
+        
+    def get_number_of_animals(self) -> int:
+        """A method to access the number of animals."""
+        
+        return self.__number_of_animals
+        
+    def find_oldest(self) -> tuple[int, str]:
+        """A method to find the age and name of the oldest animal."""
+        
+        # Local variables
+        
+        oldest_age = -1
+        oldest_name = 'TBC'
+        
+        # Loop for each animal
+        for index in range(self.__number_of_animals):
+            
+            # Check if current animal is older
+            if self.__animals[index].get_age() > oldest_age \
+                and self.__animals[index].get_alive() == True:
+                
+                # Update oldest details
+                oldest_age = self.__animals[index].get_age()
+                oldest_name = self.__animals[index].get_name()
+        
+        return oldest_age, oldest_name
