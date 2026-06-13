@@ -10,7 +10,8 @@ import random
 #
 
 def generatePassword() -> str:
-    '''Generate and return a password'''
+    '''Generate and return a password.'''
+    
     # Local variables
     length = 0
     rndNumber = 0
@@ -51,7 +52,10 @@ def generatePassword() -> str:
     return localPassword
 
 def getChr(lower: int, upper: int) -> str:
-    '''Pick and return a character between the lower and upper values, at random'''
+    """Pick and return a character between the lower and upper values,
+       at random.
+       """
+    
     # Local varaiable
     letter = ""
     value = 0
@@ -64,7 +68,9 @@ def getChr(lower: int, upper: int) -> str:
     return letter
 
 def validatePassword(localPassword: str) -> bool:
-    '''Checks a password to see if it matches the requirements.  Returns Boolean.'''
+    """Checks a password to see if it matches the requirements.
+       Returns Boolean.
+       """
 
     # Local variables
     localValid = False
@@ -109,7 +115,7 @@ def validatePassword(localPassword: str) -> bool:
     return localValid
 
 def displayResult(localPassword: str, localValid: bool) -> None:
-    '''Display password and its status'''
+    """Display password and its status."""
 
     # Declare local variable
     status = ""

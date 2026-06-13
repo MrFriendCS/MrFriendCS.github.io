@@ -422,8 +422,8 @@ def testAll() -> None:
             1/0  # Throws an exception
         
     except:
-            print("\nTesting of all functions: FAILED!")
-            print("=================================\n")
+        print("\nTesting of all functions: FAILED!")
+        print("=================================\n")
         
 
 #

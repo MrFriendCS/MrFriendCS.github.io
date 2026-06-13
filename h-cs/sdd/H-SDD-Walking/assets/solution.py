@@ -36,7 +36,7 @@ for index in range(len(distances)):
 average = round(total/4 , 1)
 
 # Open a connect to the file
-file = open("walking.txt", "w")
+file = open("walking.txt", "w", encoding="UTF-8")
 
 # Write heading
 file.write("Walking Results - 4 Weeks\n")

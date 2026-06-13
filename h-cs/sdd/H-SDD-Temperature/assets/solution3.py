@@ -6,7 +6,7 @@
 # Subprograms
 #
 
-def readData() -> tuple:
+def readData() -> tuple[list[str], list[str], list[float]]:
     """Read data from csv file and return parallel arrays."""
 
     # Declare local varaibles and arrays
@@ -17,7 +17,7 @@ def readData() -> tuple:
     temps = [0.0] * 8759
     
     # Open connection to file
-    file = open("tempF.csv", "r")
+    file = open("tempF.csv", "r", encoding="UTF-8")
     
     # Loop for each row of data
     for index in range(len(dates)):
@@ -133,7 +133,7 @@ def writeData(dates: list[str], times: list[str], temps: list[float],
     """Write data to text file."""
     
     # Open connection to file
-    file = open("extreme.txt", "w")
+    file = open("extreme.txt", "w", encoding="UTF-8")
     
     # Minimum temperatures
     file.write("The minimum temperature was " + str(min) +

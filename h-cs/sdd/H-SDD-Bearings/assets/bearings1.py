@@ -13,7 +13,7 @@ def getSizeData() -> list[float]:
     bearingSizes = [0.0] * 1000
 
     # Open file in read mode
-    file = open("bearingsData.csv", "r")
+    file = open("bearingsData.csv", "r", encoding="UTF-8")
 
     # Loop for each value
     for index in range(len(bearingSizes)):
@@ -152,7 +152,7 @@ def writeData(min: float, max: float, smallPercent: float,
     totalPercent = smallPercent + bigPercent
         
     # Open file in write mode
-    file = open("batchResult.txt", "w")
+    file = open("batchResult.txt", "w", encoding="UTF-8")
     
     # Write header
     file.write("Batch Result\n")

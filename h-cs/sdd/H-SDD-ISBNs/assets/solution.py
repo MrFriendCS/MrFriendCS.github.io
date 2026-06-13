@@ -3,7 +3,7 @@
 # Date: 24 Sep 2022
 
 # Define function
-def check(isbn: list[str]) -> str:
+def check(isbn: str) -> str:
     '''Returns the check digit, as a character, of an ISBN-13, using first 12 values'''
 
     # Declare local variables and array
@@ -31,7 +31,7 @@ checkDigit = ""
 isbns = [""] * 1000
 
 # Read values from file
-file = open("Part ISBNs.csv", "r")
+file = open("Part ISBNs.csv", "r", encoding="UTF-8")
 for index in range (len(isbns)):
     isbns[index] = file.readline().strip()
 
@@ -46,7 +46,7 @@ for index in range (len(isbns)):
     isbns[index] = isbns[index] + checkDigit
 
 # Write values to file
-file = open("ISBNs.csv", "w")
+file = open("ISBNs.csv", "w", encoding="UTF-8")
 
 for index in range (len(isbns)):
     file.write(isbns[index] + "\n")

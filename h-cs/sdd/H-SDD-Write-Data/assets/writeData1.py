@@ -6,7 +6,7 @@
 # Subprograms
 #
 
-def randomData(length):
+def randomData(length: int) -> tuple[list[str], list[int], list[str]]:
     """Creates three parallel arrays containing random values."""
     
     # Import module
@@ -32,11 +32,12 @@ def randomData(length):
     return upperArray, numberArray, lowerArray
         
     
-def writeData(upperArray, numberArray, lowerArray):
+def writeData(upperArray: list[str], numberArray: list[int],
+              lowerArray: list[str]) -> None:
     """Writes three parallel arrays to csv file."""
     
     # Connect to file - write mode
-    file = open("randomData.csv", "w")
+    file = open("randomData.csv", "w", encoding="UTF-8")
     
     # Loop for each value
     for index in range(len(upperArray)):

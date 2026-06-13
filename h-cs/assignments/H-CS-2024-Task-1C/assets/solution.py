@@ -6,8 +6,8 @@
 # Sub-programs
 #
 
-def getData():
-    """Read data and return parallel arrays"""
+def getData() -> tuple[list[str], list[int], list[int]]:
+    """Read data and return parallel arrays."""
 
     # Initialise local variables
     names = [""] * 100
@@ -18,7 +18,7 @@ def getData():
     index = 0
 
     # Open connection to file
-    file = open("companies.csv" ,"r" )
+    file = open("companies.csv" ,"r", encoding="UTF-8")
 
     # Read line from file
     line = file.readline()
@@ -27,7 +27,7 @@ def getData():
     while line != "" and index < 100:
 
         # Split line at commas
-        tempData = line.split(",")
+        data = line.split(",")
 
         # Assign data to parallel arrays
         names[index] = data[0].strip()
@@ -47,7 +47,7 @@ def getData():
     return names, workers, incomes
 
 
-def findMaxPos(localArray):
+def findMaxPos(localArray: list[int]) -> int:
     """Returns position of maximum value in an array."""
 
     # Initialise local variables
@@ -71,12 +71,12 @@ def findMaxPos(localArray):
     return position
     
 
-def findSalaryDiff(names, incomes):
+def findSalaryDiff(names: list[str], incomes: list[int]) -> None:
     """Find and display the difference between the chosen
-       company’s CEO salary and the highest CEO salary."""
+       company’s CEO salary and the highest CEO salary.
+       """
 
     # Initialise local variables
-    company = ""
     maxPos = 0
     difference = 0
 
@@ -130,8 +130,8 @@ def findSalaryDiff(names, incomes):
     # 2.17 End if
 
 
-def findTop(workers):
-    """Find and display the companies with top 10% of employees"""
+def findTop(workers: list[int]) -> None:
+    """Find and display the companies with top 10% of employees."""
 
     # Initialise local variables
     maxPos = 0

@@ -25,7 +25,7 @@ def readData() -> list[Student]:
     students = [Student() for index in range(100)]
     
     # Open connection to file
-    file = open("students.csv", "r")
+    file = open("students.csv", "r", encoding="UTF-8")
     
     # Loop for each student
     for index in range(len(students)):
@@ -153,7 +153,7 @@ def writeData(usernames: list) -> None:
     """Write the usernames to text file."""
     
     # Make connection to text file
-    file = open("usernames.txt", "w")
+    file = open("usernames.txt", "w", encoding="UTF-8")
         
     # Loop for each username
     for username in usernames:

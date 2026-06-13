@@ -19,7 +19,7 @@ def getData() -> tuple[list[str], list[str], list[float]]:
     temp = [""] * 3
     
     # Open connection to file
-    file = open("countries.csv", "r")
+    file = open("countries.csv", "r", encoding="UTF-8")
 
     # Loop for each line of data
     for index in range(len(caps)):
@@ -70,7 +70,7 @@ def saveData(states: list[str], caps: list[str], pops: list[float]) -> None:
     """Save parallel arrays to updated.csv"""
     
     # Open connection to file
-    file = open("updated.csv", "w")
+    file = open("updated.csv", "w", encoding="UTF-8")
 
     # Loop for each line of data
     for index in range(len(caps)):

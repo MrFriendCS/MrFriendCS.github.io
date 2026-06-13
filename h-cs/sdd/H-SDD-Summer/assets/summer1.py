@@ -8,7 +8,9 @@
 
 
 def circumference(size: float, rd: str="d") -> float:
-    """Calculate the circumference of a circle using the radius or diameter.  Returns the circumference to 4 dp."""
+    """Calculate the circumference of a circle using the radius or diameter.
+       Returns the circumference to 4 dp.
+       """
     
     # Local variables
     PI = 3.1415
@@ -37,7 +39,9 @@ def circumference(size: float, rd: str="d") -> float:
 
 
 def radius(size: float, dc: str="d") -> float:
-    """Calculate the radius of a circle using the diameter or circumference.  Returns the radius to 4 dp."""
+    """Calculate the radius of a circle using the diameter or circumference.
+       Returns the radius to 4 dp.
+       """
     
     # Local variables
     PI = 3.1415
@@ -66,7 +70,9 @@ def radius(size: float, dc: str="d") -> float:
 
 
 def diameter(size: float, rc: str="r") -> float:
-    """Calculate the diameter of a circle using the radius or circumference.  Returns the diameter to 4 dp."""
+    """Calculate the diameter of a circle using the radius or circumference.
+       Returns the diameter to 4 dp.
+       """
     
     # Local variables
     PI = 3.1415
@@ -99,7 +105,9 @@ def diameter(size: float, rc: str="r") -> float:
 
 
 def area(size: float, rdc: str="r") -> float:
-    """Calculate the area of a circle using the radius, diameter, or circumference.  Returns the area to 4 dp."""
+    """Calculate the area of a circle using the radius, diameter,
+       or circumference.  Returns the area to 4 dp.
+       """
     
     # Local variables
     PI = 3.1415

@@ -3,7 +3,7 @@
 # Date: 29 Sep 2024
 
 
-def f2c(tempF):
+def f2c(tempF: float) -> float:
     """Converts fahrenheit to celsius.  Rounds to 1 dp."""
 
     # Declare local variable
@@ -19,7 +19,7 @@ def f2c(tempF):
     return tempC
 
 
-def us2iso(dateUS):
+def us2iso(dateUS: str) -> str:
     """Converts mm-dd-yyyy to yyyy-mm-dd."""
 
     # Declare local variables
@@ -40,7 +40,7 @@ def us2iso(dateUS):
     return dateISO
 
 
-def readData():
+def readData() -> tuple[list[str], list[str], list[float]]:
     """Read data from file and assign to parallel arrays."""
 
     # Declare local variables
@@ -51,7 +51,7 @@ def readData():
     temps = [0.0] * 8759
 
     # Open connection to the file
-    file = open("USdata.csv", "r")
+    file = open("dataUS.csv", "r", encoding="UTF-8")
 
     # Read each row of data
     for index in range(len(dates)):
@@ -74,7 +74,7 @@ def readData():
     return dates, times, temps
 
 
-def convertTemps(temps):
+def convertTemps(temps: list[float]) -> list[float]:
     """Convert array: fahrenheit to celsius."""
 
     # Loop for each value
@@ -85,7 +85,7 @@ def convertTemps(temps):
     return temps
 
 
-def convertDates(dates):
+def convertDates(dates: list[str]) -> list[str]:
     """Convert array: US to ISO."""
 
     # Loop for each value
@@ -96,11 +96,11 @@ def convertDates(dates):
     return dates
 
 
-def writeData(dates, times, temps):
+def writeData(dates: list[str], times: list[str], temps: list[float]) -> None:
     """Write data to file from parallel arrays."""
 
     # Create file
-    file = open("ISOdata.csv", "w")
+    file = open("dataISO.csv", "w", encoding="UTF-8")
     
     # Loop for each value
     for index in range(len(dates)):

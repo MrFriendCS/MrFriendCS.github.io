@@ -25,7 +25,7 @@ def readData() -> list[HourlyValue]:
     hourlyValues = [HourlyValue() for index in range(8759)]
     
     # Open connection to file
-    file = open("tempF.csv", "r")
+    file = open("tempF.csv", "r", encoding="UTF-8")
     
     # Loop for each row of data
     for index in range(len(hourlyValues)):
@@ -48,7 +48,7 @@ def readData() -> list[HourlyValue]:
     return hourlyValues
 
 
-def convertTemps(hourlyValues: list[HourlyValue]) -> list:
+def convertTemps(hourlyValues: list[HourlyValue]) -> list[float]:
     """Convert fahrenheit to centigrade, to 1 dp, and return an array."""
 
     # Declare local variables
@@ -64,7 +64,7 @@ def convertTemps(hourlyValues: list[HourlyValue]) -> list:
     return newTemps
 
 
-def convertDates(hourlyValues: list[HourlyValue]) -> list:
+def convertDates(hourlyValues: list[HourlyValue]) -> list[str]:
     """Convert US dates to ISO dates and return an array."""
 
     # Declare local variables
@@ -108,11 +108,11 @@ def extractTimes(hourlyValues: list[HourlyValue]) -> list[str]:
     return newTimes
     
 
-def writeData(dates: list, times, temps):
+def writeData(dates: list, times, temps) -> None:
     """Write data to text file."""
     
     # Open connection to file
-    file = open("tempC.csv", "w")
+    file = open("tempC.csv", "w", encoding="UTF-8")
     
     # Loop for each row of data
     for index in range(len(dates)):

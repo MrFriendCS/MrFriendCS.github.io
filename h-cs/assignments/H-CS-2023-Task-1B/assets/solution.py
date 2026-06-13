@@ -6,14 +6,14 @@
 # Functions and Procedures
 #
 
-def getData():
+def getData() -> tuple[list[str], list[str], list[int], list[int], list[str]]:
     '''
     Read data from file into parallel arrays
     '''
 
     # Declare local variables and arrays
     line = ""
-    tempArray = [""] * 5
+    data = [""] * 5
     
     length = 26
     attractions = [""] * length
@@ -23,7 +23,7 @@ def getData():
     heights = [""] * length
 
     # Open file
-    file = open("attractions.csv" ,"r" )
+    file = open("attractions.csv" ,"r", encoding="UTF-8")
 
     # Loop for each line
     for index in range(len(attractions)):
@@ -48,7 +48,7 @@ def getData():
     return attractions, categories, visitors, daysOpen, heights
 
 
-def displayPopular(attractions, visitors):
+def displayPopular(attractions: list[str], visitors: list[int]) -> None:
     '''
     Find and display the names of the least visited and most visited attractions
     '''
@@ -91,7 +91,8 @@ def displayPopular(attractions, visitors):
             print(attractions[index])
 
 
-def serviceDue(attractions, categories, daysOpen):
+def serviceDue(attractions: list[str], categories: list[str],
+               daysOpen: list[int]) -> None:
     '''
     Write to file the names of roller coasters that need a service within 7 days
     '''
@@ -100,7 +101,7 @@ def serviceDue(attractions, categories, daysOpen):
     days = 0
 
     # 3.1 Create ‘service.csv’ file
-    file = open("service.csv", "w")
+    file = open("service.csv", "w", encoding="UTF-8")
     
     # 3.2 Loop for each attraction
     for index in range(len(attractions)):
@@ -125,7 +126,7 @@ def serviceDue(attractions, categories, daysOpen):
     file.close()
 
 
-def findHeight(heights):
+def findHeight(heights: list[str]) -> None:
     '''
     Find attarctions with a height restriction of 1.0m and above
     '''

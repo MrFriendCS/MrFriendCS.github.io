@@ -3,6 +3,9 @@
 # Date: 27 Nov 2020
 
 def getCoord(point: int) -> list[float]:
+    """Gets the x, y values of a coordinate.""" 
+    
+    
     # Define local variables
     xcoord = 0.0
     ycoord = 0.0
@@ -20,6 +23,8 @@ def getCoord(point: int) -> list[float]:
     return coord
 
 def calcGradient(point1: list[float], point2: list[float]) -> float:
+    """Calculates the gradiant between two coordinates."""
+    
     # Declare local variables
     x1 = 0.0
     y1 = 0.0
@@ -39,6 +44,8 @@ def calcGradient(point1: list[float], point2: list[float]) -> float:
     return m
 
 def calcMidpoint(point1: list[float], point2: list[float]) -> list[float]:
+    """Calculates the mid-point between two coordinates."""
+    
     # Declare local variables
     x1 = 0.0
     y1 = 0.0
@@ -64,6 +71,8 @@ def calcMidpoint(point1: list[float], point2: list[float]) -> list[float]:
     return coord
 
 def calcDistance(point1: list[float], point2: list[float]) -> float:
+    """Calculates the distance between two coordinates."""
+    
     # Declare local variables
     x1 = 0.0
     y1 = 0.0

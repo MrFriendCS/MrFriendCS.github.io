@@ -16,7 +16,7 @@ def getData() -> tuple[list[str], list[str], list[int]]:
     data = [""]* 3
 
     # Connect to file
-    file = open("batch1.csv", "r")
+    file = open("batch1.csv", "r", encoding="UTF-8")
 
     # Loop for each pupil
     for index in range(len(ages)):
@@ -40,7 +40,9 @@ def getData() -> tuple[list[str], list[str], list[int]]:
 
 def makeUsernames(forenames: list[str], surnames: list[str],
                   ages: list[int]):
-    """Generate an array of usernames using forenames, and surname if needed"""
+    """Generate an array of usernames using forenames,
+       and surname if needed.
+       """
 
     # Declare local variables
     usernames = [""] * len(forenames)
@@ -83,7 +85,7 @@ def makeUsernames(forenames: list[str], surnames: list[str],
 
 
 def findOldest(ages: list[int]) -> int:
-    """Finds the oldest age in an array of ages"""
+    """Finds the oldest age in an array of ages."""
 
     # Declare local variables
     oldest = 0
@@ -105,7 +107,7 @@ def findOldest(ages: list[int]) -> int:
 
 def summary(forenames: list[str], surnames: list[str],
             ages: list[int], oldest: int) -> None:
-    """Display a list of the oldest pupils in the batch"""
+    """Display a list of the oldest pupils in the batch."""
 
     # 4.1 Display "The oldest pupils are aged " + oldest
     print("The oldest pupils are aged " + str(oldest))
@@ -130,7 +132,7 @@ def writeData(usernames: list[str], forenames: list[str],
               surnames: list[str]) -> None:
 
     # Create a file
-    file = open("usernames1.csv", "w")
+    file = open("usernames1.csv", "w", encoding="UTF-8")
 
     # Loop for each pupil
     for index in range(len(usernames)):
@@ -146,7 +148,7 @@ def writeData(usernames: list[str], forenames: list[str],
 
 
 def u2l(upper: str) -> str:
-    """Converts an uppercase character to lowercase"""
+    """Converts an uppercase character to lowercase."""
 
     # Declare local variables
     upperASCII = 0
@@ -168,7 +170,7 @@ def u2l(upper: str) -> str:
 
 
 def getDigit(age: int) -> int:
-    """Returns remainder plus 1 of number divided by 9"""
+    """Returns remainder plus 1 of number divided by 9."""
 
     # Declare local variables
     remainder = 0
@@ -185,7 +187,7 @@ def getDigit(age: int) -> int:
 
 
 def getLetter(upper: str) -> str:
-    """Returns next lower lowercase letter in alphabet"""
+    """Returns next lower lowercase letter in alphabet."""
 
     # Declare local variables
     lower = ""

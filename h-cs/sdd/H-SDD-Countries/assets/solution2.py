@@ -5,10 +5,10 @@
 # Initialise variables
 countries = [""] * 6
 capitals = [""] * 6
-populations = [0] * 6
+populations = [0.0] * 6
 
 # Make connection to file
-file = open("countries.csv", "r")
+file = open("countries.csv", "r", encoding="UTF-8")
 
 # Loop for each record
 for index in range(len(countries)):

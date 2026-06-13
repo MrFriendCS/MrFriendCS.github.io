@@ -3,8 +3,8 @@ Summary
 
 HS0 errors: 93
 
-Lowest value:  £73612
-Highest value: £261931
+Lowest value:  Â£73612
+Highest value: Â£261931
 
 Lowest value houses: 1
 	HS4 1RB

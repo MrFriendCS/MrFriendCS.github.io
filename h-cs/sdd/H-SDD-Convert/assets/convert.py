@@ -84,7 +84,7 @@ def fi2cm(feet: int, inches: float) -> float:
     return cm
 
 
-def cm2fi(cm: float) -> int:
+def cm2fi(cm: float) -> tuple[int, int]:
     """Convert centimetres to feet and inches"""
     
     # Local variables
@@ -120,7 +120,7 @@ def sl2kg(stones: int, lbls: float) -> float:
     return kg
 
 
-def kg2sl(kg: float) -> int:
+def kg2sl(kg: float) -> tuple[int, int]:
     """Convert kilograms to stones and pounds"""
     
     # Local variables

@@ -14,7 +14,7 @@ class Beach:
     rating: int = 0
 
 
-def getBeachData():
+def getBeachData() -> list[Beach]:
     """Read in beach names and ratings from file."""
 
     # Initialise local variables and datatypes
@@ -23,7 +23,7 @@ def getBeachData():
     beaches = [Beach() for index in range (973)]
 
     # Connect to the file
-    file = open("beachData.csv", "r")
+    file = open("beachData.csv", "r", encoding="UTF-8")
 
     # Loop for 973 beaches
     for index in range(len(beaches)):
@@ -41,7 +41,7 @@ def getBeachData():
     return beaches
 
 
-def calcAverage(beaches):
+def calcAverage(beaches: list[Beach]) -> float:
     """Calculate and return the average rating of the beaches tested."""
 
     # Initialise local variables
@@ -67,13 +67,13 @@ def calcAverage(beaches):
     return average
 
 
-def displayAverage(average):
+def displayAverage(average: float) -> None:
     """Display the average rating of all beaches tested."""
 
     print("The average rating for all beaches tested is " + str(average))
 
 
-def displayBeaches(beaches):
+def displayBeaches(beaches: list[Beach]) -> None:
     """Display all the beaches with a rating entered by the user."""
 
     # Initialise local variables
@@ -118,7 +118,7 @@ def displayBeaches(beaches):
             
             else:
                 # No - Display beach name from first character to the position of the space
-                beaches[index].name[0:position]
+                print(beaches[index].name[0:position])
 
 
 #

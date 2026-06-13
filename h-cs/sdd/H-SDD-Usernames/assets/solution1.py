@@ -19,7 +19,7 @@ def getUserData() -> tuple[list[str], list[str]]:
     surnames = [""] * 20
 
     # Make a connection to the file
-    file = open("employees.csv", "r")
+    file = open("employees.csv", "r", encoding="UTF-8")
 
     # Loop for each employee
     for index in range(len(forenames)):
@@ -91,11 +91,11 @@ def left(text: str, number: int) -> str:
     
 
 def saveUserData(surnames: list[str], forenames: list[str],
-                 usernames: list[str]):
+                 usernames: list[str]) -> None:
     """Save last names, forenames, and usernames to file"""
 
     # Make a connection to the file
-    file = open("usernames.csv", "w")
+    file = open("usernames.csv", "w", encoding="UTF-8")
 
     # Loop for each employee
     for index in range(len(forenames)):

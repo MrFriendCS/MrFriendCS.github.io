@@ -7,16 +7,13 @@
 # Functions and Procedures
 #
 
-def getData():
-    """
-    Get qualifying athletes’ data
-    """
+def getData() -> tuple[list[str], list[str], list[str], list[str], list[int]]:
+    """1. Get qualifying athletes’ data."""
     
     # Declare local varaibles and arrays
     length = 30
     line = ""
-    tempArray = [""] * 5
-    maxJumps = 0
+    data = [""] * 5
     entryID = [""] * length
     location = [""] * length
     forename = [""] * length
@@ -24,7 +21,7 @@ def getData():
     jumps = [0] * length
 
     # 1.1 Open athletes.csv file
-    file = open("athletes.csv", "r")
+    file = open("athletes.csv", "r", encoding="UTF-8")
     
     # 1.2 Loop for thirty athletes
     for index in range(30):
@@ -33,15 +30,15 @@ def getData():
         line = file.readline()
 
         # Split line
-        tempArray = line.split(",")
+        data = line.split(",")
     
         # 1.3 Store entryID, location, forename, surname, jumps
         #     for athlete in parallel arrays
-        entryID[index] = tempArray[0].strip()
-        location[index] = tempArray[1].strip()
-        forename[index] = tempArray[2].strip()
-        surname[index] = tempArray[3].strip()
-        jumps[index] = int(tempArray[4].strip())
+        entryID[index] = data[0].strip()
+        location[index] = data[1].strip()
+        forename[index] = data[2].strip()
+        surname[index] = data[3].strip()
+        jumps[index] = int(data[4].strip())
     
     # 1.4 End loop
     
@@ -52,17 +49,15 @@ def getData():
     return entryID, location, forename, surname, jumps
 
 
-def createBibValues(entryID, location, forename, surname):
-
-    """
-    2. Generate bib values and write to new file with entry IDs
-    """
+def createBibValues(entryID: list[str], location: list[str],
+                    forename: list[str], surname: list[str]) -> None:
+    """2. Generate bib values and write to new file with entry IDs."""
 
     # Declare local variable
     bibValue = ""
     
     # 2.1 Create bibValues.csv file
-    file = open("bibValues.csv", "w")
+    file = open("bibValues.csv", "w", encoding="UTF-8")
     
     # 2.2 Loop for thirty athletes
     for index in range(30):
@@ -81,11 +76,9 @@ def createBibValues(entryID, location, forename, surname):
     file.close()
 
 
-def findMost(jumps):
+def findMost(jumps: list[int]) -> int:
 
-    """
-    3. Find the highest number of jumping jacks completed
-    """
+    """3. Find the highest number of jumping jacks completed."""
 
     # Declare local variable
     maxJumps = 0
@@ -112,12 +105,11 @@ def findMost(jumps):
     return maxJumps
 
 
-def dislayBigJumpers(maxJumps, forename, surname, jumps):
-
-    """
-    4. Display the full name of the athlete(s) who completed
-       the highest number of jumping jacks
-    """
+def dislayBigJumpers(maxJumps: int, forenames: list[str],
+                     surnames: list[str], jumps: list[int]):
+    """4. Display the full name of the athlete(s) who completed
+       the highest number of jumping jacks.
+       """
     
     # 4.1 Loop for thirty athletes
     for index in range(30):
@@ -126,19 +118,17 @@ def dislayBigJumpers(maxJumps, forename, surname, jumps):
         if jumps[index] == maxJumps:
         
             # 4.3 Display forename and surname
-            print(forename[index] + " " + surname[index])
+            print(forenames[index] + " " + surnames[index])
 
         # 4.4 End if
         
     # 4.5 End loop
 
 
-def countLocations(location):
-
-    """
-    5. Display the total number of athletes from each
-         location in the final
-    """
+def countLocations(locations: list[str]) -> None:
+    """5. Display the total number of athletes from each
+       location in the final.
+       """
 
     # Declare local variables
     coatbridge = 0
@@ -150,16 +140,16 @@ def countLocations(location):
     # Loop for thirty athletes
     for index in range(30):
 
-        if location[index] == "Coatbridge":
+        if locations[index] == "Coatbridge":
             coatbridge = coatbridge + 1
         
-        elif location[index] == "Inverness":
+        elif locations[index] == "Inverness":
             inverness = inverness + 1
 
-        elif location[index] == "Kirkcaldy":
+        elif locations[index] == "Kirkcaldy":
             kirkcaldy = kirkcaldy + 1
 
-        elif location[index] == "Motherwell":
+        elif locations[index] == "Motherwell":
             motherwell = motherwell + 1
 
         else:

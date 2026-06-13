@@ -8,7 +8,9 @@
 #
 
 def discriminant(a: float, b: float, c: float) -> None:
-    "Calculates the discriminant from the coefficients. Displays the discriminant and the type of roots."
+    """Calculates the discriminant from the coefficients.
+       Displays the discriminant and the type of roots.
+       """
 
     # Local variable
     disc = 0.0
@@ -32,7 +34,9 @@ def discriminant(a: float, b: float, c: float) -> None:
 
 
 def roots(a: float, b: float, c: float) -> None:
-    "Calculates the roots from the coefficients, rounded to 1 decimal place."
+    """Calculates the roots from the coefficients,
+       rounded to 1 decimal place.
+       """
 
     # Local variables
     root1 = 0.0

@@ -85,16 +85,20 @@ def testMakeUsername() -> None:
                 
             else:
                 
-                number = int(returnValue[-2]) >= 1 and int(returnValue[-2]) <= 9
-                letter = ord(returnValue[-1]) >= 97 and ord(returnValue[-1]) <= 122
+                number = int(returnValue[-2]) >= 1 \
+                         and int(returnValue[-2]) <= 9
+                letter = ord(returnValue[-1]) >= 97 \
+                         and ord(returnValue[-1]) <= 122
                 
                 if len(inputs[index]) == 3:
                 
-                    assert returnValue[ :5] == outputs[index][ :5] and number and letter
+                    assert returnValue[ :5] == outputs[index][ :5] \
+                           and number and letter
                 
                 else:
                     
-                    assert returnValue[ :6] == outputs[index][ :6] and number and letter
+                    assert returnValue[ :6] == outputs[index][ :6] \
+                           and number and letter
             
         except:
             

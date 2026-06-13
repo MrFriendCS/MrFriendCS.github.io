@@ -19,10 +19,10 @@ def getData() -> list[Person]:
     """Reads data into array of records."""
     
     # Create array of records
-    people = [Person() for i in range(100)]
+    people = [Person() for index in range(100)]
 
     # Make connection to file
-    file = open("people.csv", "r")
+    file = open("people.csv", "r", encoding="UTF-8")
     
     for index in range(len(people)):
         
@@ -84,7 +84,7 @@ def saveResults(people: list[Person], macs: int, oldest: int) -> None:
     """Write the results to file."""
     
     # Create file
-    file = open("summary1871.txt", "w")
+    file = open("summary1871.txt", "w", encoding="UTF-8")
     
     file.write("1871 Census Summary\n")
     file.write("-------------------\n\n")

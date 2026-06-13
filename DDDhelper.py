@@ -93,7 +93,7 @@ def getSurname() -> str:
     return surname
 
 
-def getPhone(percentMobile=50) -> str:
+def getPhone(percentMobile: int=50) -> str:
     """Pick a random phone number - landline and mobile."""
     
     phoneNo = ""
@@ -110,7 +110,7 @@ def getPhone(percentMobile=50) -> str:
     return phoneNo
 
 
-def getEmail(forename="", surname="", percentNull=0) -> str:
+def getEmail(forename: str="", surname: str="", percentNull: int=0) -> str:
     """Create a random email address."""
     
     if forename == "":
@@ -148,7 +148,7 @@ def getEmail(forename="", surname="", percentNull=0) -> str:
     return email
 
 
-def getDate(min=2024, max=2024) -> str:
+def getDate(min: int=2024, max: int=2024) -> str:
     """Create a random date (yyyy-mm-dd)."""
     
     day = random.randint(1, 30)
@@ -175,7 +175,7 @@ def getDate(min=2024, max=2024) -> str:
     return date
 
 
-def getNights(min=1, max=14) -> int:
+def getNights(min: int=1, max: int=14) -> int:
     """Pick random number of nights."""
     
     nights = random.randint(min, max)
@@ -183,7 +183,7 @@ def getNights(min=1, max=14) -> int:
     return nights
 
 
-def getPrice(min=1, max=10, pence=True) -> float:
+def getPrice(min: int=1, max: int=10, pence: bool=True) -> float:
     """Pick a random price, with pence"""
     
     price = random.randint(int(min * 100), int(max * 100))
@@ -197,7 +197,7 @@ def getPrice(min=1, max=10, pence=True) -> float:
     return price
 
 
-def getTrue(percentTrue=50) -> bool:
+def getTrue(percentTrue: int=50) -> bool:
     """Pick a random Boolean value."""
     
     chance = random.randint(1, 100)
@@ -210,7 +210,7 @@ def getTrue(percentTrue=50) -> bool:
     return result
 
 
-def getNumber(min=0, max=100) -> int:
+def getNumber(min: int=0, max: int=100) -> int:
     """Pick a random number."""
     
     number = random.randint(min, max)
@@ -276,7 +276,7 @@ def getMake() -> str:
     return make
 
 
-def getModel(make="") -> str:
+def getModel(make: str="") -> str:
     """Pick a random vehicle model."""
     
     # Initialise local variables
@@ -294,7 +294,7 @@ def getModel(make="") -> str:
     # Loop for each make
     for index in range(len(makes)):
         if makes[index] == make:
-            makeNo == index
+            makeNo = index
     
     # Models - 1D arrays
     fords = ["B-MAX", "Capri", "C-MAX", "Cougar", "EcoSport", "Edge", "Escort",
@@ -448,7 +448,7 @@ def getConviction() -> str:
     return conviction
 
 
-def getSchoolYear(primary=False) -> str:
+def getSchoolYear(primary: bool=False) -> str:
     """Pick a school year model."""
     
     # Initialise list

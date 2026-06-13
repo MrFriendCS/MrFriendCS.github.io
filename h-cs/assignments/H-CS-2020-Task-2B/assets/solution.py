@@ -6,12 +6,8 @@
 # Subprograms
 #
 
-def newMember():
-
-    """
-    Get new member first name, surname, category and password.
-    OUT: first name, surname, category, password
-    """
+def newMember() -> tuple[str, str, str, str]:
+    """Get new member first name, surname, category and password."""
     
     # Declare local variables
     newFirstName = ""
@@ -34,13 +30,10 @@ def newMember():
     return newFirstName, newSurname, newCategory, newPassword
 
 
-def getPassword():
-
-    """
-    Get a valid password.
-    Starts with a Capital letter, finishes with #, $, or %.
-    OUT: password
-    """
+def getPassword() -> str:
+    """Get a valid password.
+       Starts with a Capital letter, finishes with #, $, or %.
+       """
 
     # Declare local variables
     password = ""
@@ -69,16 +62,14 @@ def getPassword():
     return password
 
 
-def getCategory(newFirstName, newSurname, newCategory, newPassword):
-
-    """
-    Read existing member data from file to parallel arrays.
-    Add new member data to parallel arrays.
-    Display first name, surname and category of all members.
-    """
+def getCategory(newFirstName: str, newSurname: str, newCategory: str,
+                newPassword: str) -> list[str]:
+    """Read existing member data from file to parallel arrays.
+       Add new member data to parallel arrays.
+       Display first name, surname and category of all members.
+       """
 
     # Declare local variables
-    file = ""
     line = ""
     counter = 0
     firstNames = [""] * 50
@@ -91,7 +82,7 @@ def getCategory(newFirstName, newSurname, newCategory, newPassword):
     #     firstName(), surname(), category(), password()
 
     # Connect to the file
-    file = open("members.txt", "r")
+    file = open("members.txt", "r", encoding="UTF-8")
 
     # Read a line from the file
     line = file.readline()
@@ -136,7 +127,7 @@ def getCategory(newFirstName, newSurname, newCategory, newPassword):
     return categories
 
 
-def displayInfo(categories):
+def displayInfo(categories: list[str]) -> None:
 
     """
     Find and display the number of members in each category

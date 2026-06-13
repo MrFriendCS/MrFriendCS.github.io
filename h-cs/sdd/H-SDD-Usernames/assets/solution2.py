@@ -46,7 +46,7 @@ digit = 0
 username = ""
 
 # Open file
-file = open("names.csv", "r")
+file = open("names.csv", "r", encoding="UTF-8")
 
 # Read first line
 line = file.readline()

@@ -13,7 +13,7 @@ firstLetter = ""
 ascii = 0
 
 # Open connection to file
-file = open("tuckshop.csv", "r")
+file = open("tuckshop.csv", "r", encoding="UTF-8")
 
 # Loop for each line of data
 for index in range(len(names)):
@@ -53,7 +53,7 @@ for index in range(len(names)):
 
 
 # Open connection to file
-file = open("pricelist.txt", "w")
+file = open("pricelist.txt", "w", encoding="UTF-8")
 
 file.write("Tuck Shop Price List\n")
 file.write("--------------------\n\n")

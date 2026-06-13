@@ -16,7 +16,7 @@ class Order:
     rating: int = 0
 
 
-def getData():
+def getData() -> list[Order]:
     """Read from file into array of records."""
     # OUT orders(orderNum,date,email,option,cost,rating) 
     
@@ -26,7 +26,7 @@ def getData():
     line = ""
 
     # Make a connection to the file
-    file = open("orders.txt" ,"r" )
+    file = open("orders.txt" ,"r", encoding="UTF-8")
 
     # Loop for each line in the file
     for index in range(len(orders)):
@@ -52,8 +52,10 @@ def getData():
     return orders
     
 
-def findRating(orders):
-    """Find the position of the customer who gave the first 5-star rating in a given month."""
+def findRating(orders: list[Order]) -> int:
+    """Find the position of the customer who gave the first
+       5-star rating in a given month.
+       """
     # IN orders(orderNum,date,email,option,cost,rating) 
     # OUT position
     
@@ -103,12 +105,14 @@ def findRating(orders):
     return position
 
 
-def writeWinner(orders, position):
-    """Write details of the winning customer, or ‘no winner’ message, to a text file."""
+def writeWinner(orders: list[Order], position: int):
+    """Write details of the winning customer, or ‘no winner’ message,
+       to a text file.
+       """
     # IN orders(orderNum,date,email,option,cost,rating), position
 
     # 3.1 Open new file ‘winningCustomer.txt’
-    file = open("winningCustomer.txt", "w")
+    file = open("winningCustomer.txt", "w", encoding="UTF-8")
     
     # 3.2 If position is 0 or above then
     if position >= 0:
@@ -130,8 +134,10 @@ def writeWinner(orders, position):
     file.close()
 
 
-def deliveredCollected(orders):
-    """Display the total number of orders delivered and the total number of orders collected."""
+def deliveredCollected(orders: list[Order]):
+    """Display the total number of orders delivered and the total
+       number of orders collected.
+       """
     # IN orders(orderNum,date,email,option,cost,rating)
     
     # Intialise local variable
@@ -151,7 +157,7 @@ def deliveredCollected(orders):
     print("Total number of orders collected to date: " + str(collected))
 
 
-def countOption(orders, option):
+def countOption(orders: list[Order], option):
     """Count the number of orders delivered or ordered."""
     
     # Initialise local variable

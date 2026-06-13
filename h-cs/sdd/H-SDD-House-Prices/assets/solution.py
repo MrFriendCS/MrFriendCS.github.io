@@ -13,7 +13,7 @@ def readData() -> tuple[list[str], list[int]]:
     origValues = [0] * 1000
 
     # Make connection to file
-    file = open("housePrices.csv", "r")
+    file = open("housePrices.csv", "r", encoding="UTF-8")
 
     # For each line of data    
     for index in range(len(postcodes)):
@@ -177,7 +177,7 @@ def writeSummary(badCodes: int, lowest: int, highest: int,
     # Initialise local variables
 
     # Make a connection to the file
-    file = open("summary.txt", "w")
+    file = open("summary.txt", "w", encoding="UTF-8")
     
     # Header
     file.write("Summary\n")
@@ -225,7 +225,7 @@ def writeData(postcodes: list[str], origValues: list[int], newValues: list[int])
     """Write data to file."""
 
     # Make a connection to the file
-    file = open("updatedPrices.csv", "w")
+    file = open("updatedPrices.csv", "w", encoding="UTF-8")
 
     # Loop for each house
     for index in range(len(postcodes)):

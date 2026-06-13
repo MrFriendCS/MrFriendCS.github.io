@@ -6,7 +6,7 @@
 # Subprograms
 #
 
-def getData() -> tuple:
+def getData() -> tuple[list[str], list[int], list[float]]:
     """Return parallel arrays from costs.csv"""
 
     # Declare local variable and arrays
@@ -19,7 +19,7 @@ def getData() -> tuple:
     data = [""] * 3
     
     # Open connection to file
-    file = open("tuckshop.csv", "r")
+    file = open("tuckshop.csv", "r", encoding="UTF-8")
 
     # Loop for each line of data
     for index in range(len(subNames)):
@@ -95,7 +95,7 @@ def saveData(subNames: list[str], subWeights: list[int],
     """Save parallel arrays to saleprices.csv"""
     
     # Open connection to file
-    file = open("saleprices.csv", "w")
+    file = open("saleprices.csv", "w", encoding="UTF-8")
 
     # Loop for each line of data
     for index in range(len(subNames)):

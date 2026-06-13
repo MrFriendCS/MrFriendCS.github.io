@@ -23,7 +23,7 @@ def getData() -> list[Runner]:
     runners = [Runner()] * 15
 
     # Open connection to the file
-    file = open("maleRunners.txt")
+    file = open("maleRunners.txt", encoding="UTF-8")
 
     # Read and store each row of data
     for index in range(len(runners)):
@@ -64,9 +64,7 @@ def getDistance() -> int:
 
 
 def getTime() -> float:
-    '''
-    Ask the user to enter the qualifying time
-    '''
+    """Ask the user to enter the qualifying time."""
 
     # Declare local variable
     userTime = 0.0
@@ -79,8 +77,9 @@ def getTime() -> float:
 
 def displayQualified(runners: list[Runner], runDist: int,
                      runTime: float) -> None:
-    """Display all the runners, for the selected race, who """ \
-               """have run faster than the qualifying time."""
+    """Display all the runners, for the selected race, who have
+       run faster than the qualifying time.
+       """
 
     # Loop for each runner
     for index in range(len(runners)):

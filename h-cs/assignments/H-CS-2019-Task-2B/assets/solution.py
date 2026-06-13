@@ -14,16 +14,15 @@ class Member:
     distance: float = 0.0
 
 
-def getData():
-    """Read members’ data from file into array of records"""
+def getData() -> list[Member]:
+    """Read members’ data from file into array of records."""
 
     # Initialise local variable and arrays
-    line = ""
     data = [""] * 3
-    membersArray = [Member() for i in range(20)]
+    membersArray = [Member() for iindex in range(20)]
     
     # 1.1 Open members.txt file
-    file = open("members.txt", "r")
+    file = open("members.txt", "r", encoding="UTF-8")
 
     # 1.2 Start loop for each member
     for index in range(len(membersArray)):
@@ -48,7 +47,7 @@ def getData():
     return membersArray
 
 
-def findFurthest(membersData):
+def findFurthest(membersData: list[Member]) -> float:
     """Find the furthest distance walked."""
 
     # Initialise local variable
@@ -74,20 +73,21 @@ def findFurthest(membersData):
     return furthestWalked
 
 
-def displayFurthest(furthestWalked):
+def displayFurthest(furthestWalked: float) -> None:
     """Display the furthest distance walked."""
 
     print("The furthest distance walked was " + str(furthestWalked) + " miles.")
 
 
-def writePrizeWinnersFile(membersArray, furthestWalked):
+def writePrizeWinnersFile(membersArray: list[Member],
+                          furthestWalked: float) -> None:
     """Write club prize winners to file."""
     
     # Initialise local variable
     wholeMarathons = 0
     
     # 4.1 Open results.txt file
-    file = open("results.txt", "w")
+    file = open("results.txt", "w", encoding="UTF-8")
 
     # 4.2 Write “The prize winning members are:” to the results.txt file
     file.write("The prize winning members are:\n")

@@ -13,7 +13,6 @@ def testRandomData() -> int:
     # Local variable
     test = 1
     uppers = []
-    numbers = []
     lowers = []
     
     print("\nrandomData() Tests")
@@ -53,8 +52,6 @@ def testRandomData() -> int:
               ": All numbers --> ", end="")
         
         numbers = writeData1.randomData(260)[1]
-        for counter in range(10):
-            counter in numbers
             
         print("Passed")
         

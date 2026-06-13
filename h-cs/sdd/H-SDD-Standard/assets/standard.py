@@ -7,7 +7,9 @@
 #
 
 def search(values, target):
-    """Linear search.  Returns True if target value is in list of values, otherwise returns False."""
+    """Linear search.  Returns True if target value is in list of values,
+       otherwise returns False.
+       """
     
     # Local variables
     found = False
@@ -70,7 +72,7 @@ def findMax(values):
 
 
 def count(values, target):
-    """Counts the number of target values in the array of values.  Returns an integer."""
+    """Counts the number of target values in the array of values."""
     
     # Local variables
     countFound = 0

@@ -16,19 +16,15 @@ class Sighting:
     age: int = 0
 
 
-def getSightings():
+def getSightings() -> list[Sighting]:
     """Read from text file into sightings array of records."""
     
     # Initialise local variables
-    town = ""
-    mammal = ""
-    date = ""
-    age = 0
     data = [""] * 4
-    sightingsData = [Sighting() for i in range(200)]
+    sightingsData = [Sighting() for index in range(200)]
 
     # Connect to the file
-    file = open("mammals.txt", "r")
+    file = open("mammals.txt", "r", encoding="UTF-8")
 
     # Loop for 200 sightings
     for index in range(len(sightingsData)):
@@ -48,7 +44,7 @@ def getSightings():
     return sightingsData
 
 
-def displayOldest(sightingsData):
+def displayOldest(sightingsData: list[Sighting]) -> None:
     """Find and display the age of the oldest walker in the sightings data."""
     
     # Initialise local variables
@@ -66,9 +62,10 @@ def displayOldest(sightingsData):
     print("Age of the oldest walker: " + str(oldest))
 
 
-def displaySightings(sightingsData):
+def displaySightings(sightingsData: list[Sighting]) -> None:
     """Find and display the dates of sightings of a 
-    chosen mammal in a particular town."""
+       chosen mammal in a particular town.
+       """
     
     # Initialise local variables
     town = ""
@@ -105,7 +102,7 @@ def displaySightings(sightingsData):
     # 3.10 End loop
 
 
-def upperChr(word):
+def upperChr(word: str) -> str:
     """Return a string that starts with an upper-case character."""
     
     # Declare local variables
@@ -129,9 +126,10 @@ def upperChr(word):
     return word
 
 
-def countSightings(sightingsData):
+def countSightings(sightingsData: list[Sighting]) -> None:
     """Count and display the number of sightings
-    for each date in the text file."""
+       for each date in the text file.
+       """
     
     # Declare local variables
     dayToCount = ""
@@ -177,7 +175,7 @@ def countSightings(sightingsData):
 #
 
 # Declare global variables
-sightings = [Sighting() for i in range(200)]
+sightings = [Sighting() for index in range(200)]
 
 # 1 Read from text file into sightings array
 #   of records

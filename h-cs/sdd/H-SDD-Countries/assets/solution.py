@@ -8,7 +8,7 @@ capitals = ["London", "Paris", "Berlin", "Oslo", "Madrid", "Rome"]
 populations = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
 
 # Make connection to file
-file = open("countries.csv", "w")
+file = open("countries.csv", "w", encoding="UTF-8")
 
 # Loop for each record
 for index in range(len(countries)):
