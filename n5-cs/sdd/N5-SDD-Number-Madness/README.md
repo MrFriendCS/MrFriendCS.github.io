@@ -7,8 +7,8 @@ Write a short program that will use two numbers.  The program will then show the
 1. Added
 2. Subtracted
 3. Multiplied
-4. Divided (rounded to 2 decimal places)
-5. Squared and subtracted
+4. Divided
+5. The first raised to the power of the second
 
 
 ### Example User Interface
@@ -17,16 +17,26 @@ Write a short program that will use two numbers.  The program will then show the
 Number Madness!
 ---------------
 
-First value: 10
-Second value: 2
+First value:
+10
 
-2 added to 10 is 12
-2 subtracted from 10 is 8
+Second value:
+2
 
-10 multiplied by 2 is 20
-10 divided by 2 is 5.0
+Added:
+12
 
-The square of 10 minus the square of 2 is 96
+Subtracted:
+8
+
+Multiplied:
+20
+
+Divided:
+5.0
+
+To the power of:
+100
 ```
 
 
@@ -51,4 +61,3 @@ Ensure that your program is easy to understand.  Use:
 ## Reminders
 
 1. Division creates a real value.
-2. Only strings can be concatenated.

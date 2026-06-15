@@ -1,8 +1,8 @@
-# N5 SDD - Number Madness Part 2
+# N5 SDD - Number Madness Part 3
 
 ## Task
 
-Write a short program that will use two numbers.  The program will then show the results of the numbers being:
+Write a short program that will ask the user for two values.  The program will then show the results of the numbers being:
 
 1. Added
 2. Subtracted
@@ -17,17 +17,21 @@ Write a short program that will use two numbers.  The program will then show the
 Number Madness!
 ---------------
 
-First value: 10
-Second value: 2
+What is the first value? 10
+What is the second value? 2
 
-2 added to 10 is 12
-2 subtracted from 10 is 8
+10 plus 2 is 12
+10 minus 2 is 8
 
 10 multiplied by 2 is 20
 10 divided by 2 is 5.0
 
 The square of 10 minus the square of 2 is 96
 ```
+
+## Assumptions
+
+The values entered by the user will be integers.
 
 
 ## Testing
@@ -43,12 +47,13 @@ The square of 10 minus the square of 2 is 96
 
 Ensure that your program is easy to understand.  Use:
 
-1. Meaningful identifiers (variable names)
-2. Internal commentary (comments)
-3. Whitespace (blank lines)
+- Meaningful identifiers (variable names)
+- Internal commentary (comments)
+- White space (blank lines)
 
 
 ## Reminders
 
-1. Division creates a real value.
-2. Only strings can be concatenated.
+- Everything from the keyboard is a string.
+- Division creates a real value.
+- Only strings can be concatenated.
