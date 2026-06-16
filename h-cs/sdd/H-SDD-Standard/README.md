@@ -14,7 +14,7 @@ The file will contain the code for the following functions:
 ## Assumptions
 
 1. The array of `values` is not empty
-2. Tthe `target` datatype is the same as the array of `values` datatype
+2. Tthe `target` data type is the same as the array of `values` data type
 
 
 ## Functions
