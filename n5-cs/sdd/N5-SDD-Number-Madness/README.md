@@ -10,7 +10,7 @@ Write a short program that will use two numbers.  The program will then show the
 4. Divided
 5. The first raised to the power of the second
 
-Use variables to store the result the above calculations before the answers are displayed.
+Use variables to store the results the above calculations before the answers are displayed.
 
 
 ### Example User Interface
