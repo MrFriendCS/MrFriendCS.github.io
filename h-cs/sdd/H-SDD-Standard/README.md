@@ -2,12 +2,13 @@
 
 ## Introduction
 
-Create a file called `standard.py`.  The file will contain the code for the following functions:
+Create a file called `standard.py`.
+The file will contain the code for the following functions:
 
-* _search(values, target)_
-* _findMin(values)_
-* _findMax(values)_
-* _count(values, target)_
+* _searchString(values, target)_
+* _findMinReal(values)_
+* _findMaxInteger(values)_
+* _countString(values, target)_
 
 
 ## Assumptions
@@ -19,60 +20,64 @@ Create a file called `standard.py`.  The file will contain the code for the foll
 ## Functions
 
 
-### search()
+### searchString()
 
-Create a function (`search`) that will accept an array and a search value.  The function will return `True` if the search value is in the array, and `False` if it is not.
+Create a function (`searchString`) that will accept an array of strings and a search value.
+The function will return `True` if the search value is in the array, and `False` if it is not.
+
 
 #### Examples
 
-| Input                        | Output | Comment |
-| -----                        | ------ | ------- |
-| search([1, 2, 3], 3)         | True   | |
-| search(["a", "b", "c"], "d") | False  | |
-| search([1.3, 2.2, 3.1], 2.2) | True   | |
+| Input                      | Output | Comment |
+| -----                      | ------ | ------- |
+| searchString([1, 2, 3], 3) | True   | |
+| searchString([1, 2, 3], 4) | False  | |
 
 
-### findMin()
+### findMinReal()
 
-Create a function (`findMin`) that will accept an array.  The function will return the smallest value that is in the array.
+Create a function (`findMinReal`) that will accept an array of real values.
+The function will return the smallest value that is in the array.
+
+
+#### Examples
+
+| Input                      | Output | Comment |
+| -----                      | ------ | ------- |
+| findMinReal(2.1, 1.7, 3.2) | 1.7    | |
+
+
+### findMaxInt()
+
+Create a function (`findMaxInt`) that will accept an array of intergers.
+The function will return the largest value that is in the array.
+
 
 #### Examples
 
 | Input                  | Output | Comment |
 | -----                  | ------ | ------- |
-| findMin(1, 7, 2, 4)    | 1      | |
-| findMin("o", "n", "e") | 'e'    | |
-| findMin(2.1, 1.7, 3.2) | 1.7    | |
+| findMaxInt(1, 7, 2, 4) | 7      | |
 
 
-### findMax()
+### countString()
 
-Create a function (`findMax`) that will accept an array.  The function will return the largest value that is in the array.
+Create a function (`countString`) that will accept an array of strings and a search value.
+The function will return how many of the search values are found.
+
 
 #### Examples
 
-| Input                   | Output | Comment |
-| -----                   | ------ | ------- |
-| findMax(1, 7, 2, 4)     | 7      | |
-| findMax("o", "n", "e")  | 'o'    | |
-| findMax(2.1, 1.7, 3.2)  | 3.2    | |
-
-
-### count()
-
-Create a function (`count`) that will accept an array and a search value.  The function will return how many of the search values are found.
-
-#### Examples
-
-| Input                        | Output | Comment |
-| -----                        | ------ | ------- |
-| count([3, 1, 2, 3], 3)       | 2      | |
-| count((["a", "b", "c"], "d") | 0      | |
-| count(([1.3, 2.2, 3.1], 2.2) | 1      | |
+| Input                                  | Output | Comment |
+| -----                                  | ------ | ------- |
+| countString((["Hi", "de", "Hi"], "Hi") | 2      | |
+| countString((["Hi", "de", "Hi"], "do") | 0      | |
 
 
 ## Testing
 
-Test the functions to ensure they work.  Apart from TAD, remove any code that is not in the functions.
+Test the functions to ensure they work.
+Apart from TAD, remove any code that is not in the functions.
 
-Save the file [`standardTests.py`](assets/standardTests.py) to the same folder as `standard.py`.  Open and run `standardTests.py`.
+Save the file [`standardTests.py`](assets/standardTests.py) to the same folder as `standard.py`.
+Open and run `standardTests.py`.

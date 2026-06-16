@@ -1,12 +1,12 @@
 # Title: H-SDD-Standard Algorithms
 # Author: Mr Friend
-# Date: 24 Jun 2025
+# Date: 16 Jun 2026
 
 #
 # Sub-programs
 #
 
-def search(values, target):
+def searchString(values: list[str], target: str) -> bool:
     """Linear search.  Returns True if target value is in list of values,
        otherwise returns False.
        """
@@ -33,7 +33,7 @@ def search(values, target):
     return found
 
 
-def findMin(values):
+def findMinReal(values: list[float]) -> float:
     """Returns the smallest value from an array of values."""
     
     # Local variable
@@ -52,7 +52,7 @@ def findMin(values):
     return minimum
 
 
-def findMax(values):
+def findMaxInt(values: list[int]) -> int:
     """Returns the largest value from an array of values."""
     
     # Local variable
@@ -71,7 +71,7 @@ def findMax(values):
     return maximum
 
 
-def count(values, target):
+def countString(values: list[str], target: str) -> int:
     """Counts the number of target values in the array of values."""
     
     # Local variables

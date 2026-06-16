@@ -1,6 +1,6 @@
 # Title: Testing Functions in standard.py
 # Author: Mr Friend
-# Date: 24 Jun 2025
+# Date: 16 Jun 2026
 
 # Get functions to be tested
 from standard import *
@@ -9,31 +9,30 @@ from standard import *
 # Sub-programs
 #
 
-def testSearch() -> None:
-    """Test the functionality of the search() function."""
+def testSearchString() -> None:
+    """Test the functionality of the searchString() function."""
     
     # Initialise local variables
     failCount = 0
     errorText = ""
     
-    values1 = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
-    values2 = ["A", "S", "A", "J", "K", "C", "D"]
-    values3 = ["Campbell", "Ford", "MacDonald", "Smyth", "Young", "Robertson"]
-    values4 = [17, 14, 16, 17, 13, 14, 12]
+    values1 = ["A", "B", "C", "D", "E", "F", "G"]
+    values2 = ["Campbell", "Ford", "MacDonald", "Smyth", "Young"]
     
-    inputs1 = [values1, values2, values3, values4]
-    inputs2 = [66.8, "K", "Robertson", 11]
+    inputs1 = [values1, values1, values2, values2]
+    inputs2 = ["A", "G", "Ford", "Robertson"]
     outputs = [True, True, True, False]
     
     # Display function being tested
-    print("\nTesting: search() function")
+    print("\nTesting: searchString() function")
 
     # Loop through tests
     for index in range(len(inputs1)):
         
         try:
             
-            assert search(inputs1[index], inputs2[index]) == outputs[index]
+            assert searchString(inputs1[index], inputs2[index]) \
+                   == outputs[index]
             
         except:
             
@@ -52,9 +51,9 @@ def testSearch() -> None:
                 errorText = ", " + str(inputs2[index]) + ") = "
             
             # Display failure message
-            print("\tFailed Test " + str(index+1) + ": search("
-                  + str(inputs1[index]) + errorText
-                  + str(outputs[index]))
+            print("\tFailed Test " + str(index+1)
+                  + ": searchString(" + str(inputs1[index])
+                  + errorText + str(outputs[index]))
     
     # Display success message
     if failCount == 0:
@@ -62,29 +61,28 @@ def testSearch() -> None:
         print("\tAll " + str(len(inputs1)) + " tests passed.")
 
 
-def testFindMin() -> None:
-    """Test the functionality of the findMin() function."""
+def testFindMinReal() -> None:
+    """Test the functionality of the findMinReal() function."""
     
     # Initialise local variables
     failCount = 0
     
-    values1 = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
-    values2 = ["A", "S", "A", "J", "K", "C", "D"]
-    values3 = ["Ford", "MacDonald", "Smyth", "Young", "Robertson", "Campbell"]
-    values4 = [17, 14, 16, 17, 13, 14, 12]
+    values1 = [6.8, 67.4, 83.2, 55.4, 46.8, 60.5]
+    values2 = [6.8, 67.4, 83.2, 55.4, 46.8, 6.5]
+    values3 = [6.8, 67.4, 3.2, 55.4, 46.8, 6.5]
     
-    inputs = [values1, values2, values3, values4]
-    outputs = [5.4, "A", "Campbell", 12]
+    inputs = [values1, values2, values3]
+    outputs = [6.8, 6.5, 3.2]
     
     # Display function being tested
-    print("\nTesting: findMin() function")
+    print("\nTesting: findMinReal() function")
 
     # Loop through tests
     for index in range(len(inputs)):
         
         try:
             
-            assert findMin(inputs[index]) == outputs[index]
+            assert findMinReal(inputs[index]) == outputs[index]
             
         except:
             
@@ -103,8 +101,9 @@ def testFindMin() -> None:
                 errorText = ") = " + str(outputs[index])
             
             # Display failure message
-            print("\tFailed Test " + str(index+1) + ": findMin("
-                  + str(inputs[index]) + errorText)
+            print("\tFailed Test " + str(index+1)
+                  + ": findMinReal(" + str(inputs[index])
+                  + errorText)
     
     # Display success message
     if failCount == 0:
@@ -112,29 +111,28 @@ def testFindMin() -> None:
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testFindMax() -> None:
-    """Test the functionality of the findMax() function."""
+def testFindMaxInt() -> None:
+    """Test the functionality of the findMaxInt() function."""
     
     # Initialise local variables
     failCount = 0
     
-    values1 = [83.2, 67.4, 66.8, 5.4, 46.8, 60.5]
-    values2 = ["A", "D", "A", "J", "K", "C", "S"]
-    values3 = ["Ford", "MacDonald", "Smyth", "Young", "Robertson", "Campbell"]
-    values4 = [17, 14, 16, 17, 13, 14, 12]
+    values1 = [17, 14, 16, 17, 13, 14, 12]
+    values2 = [17, 14, 16, 17, 13, 14, 22]
+    values3 = [17, 14, 16, 77, 13, 14, 22]
     
-    inputs = [values1, values2, values3, values4]
-    outputs = [83.2, "S", "Young", 17]
+    inputs = [values1, values2, values3]
+    outputs = [17, 22, 77]
     
     # Display function being tested
-    print("\nTesting: findMax() function")
+    print("\nTesting: findMaxInt() function")
 
     # Loop through tests
     for index in range(len(inputs)):
         
         try:
             
-            assert findMax(inputs[index]) == outputs[index]
+            assert findMaxInt(inputs[index]) == outputs[index]
             
         except:
             
@@ -153,8 +151,9 @@ def testFindMax() -> None:
                 errorText = ") = " + str(outputs[index])
             
             # Display failure message
-            print("\tFailed Test " + str(index+1) + ": findMax("
-                  + str(inputs[index]) + errorText)
+            print("\tFailed Test " + str(index+1)
+                  + ": findMaxInt(" + str(inputs[index])
+                  + errorText)
     
     # Display success message
     if failCount == 0:
@@ -162,30 +161,29 @@ def testFindMax() -> None:
         print("\tAll " + str(len(inputs)) + " tests passed.")
 
 
-def testCount() -> None:
-    """Test the functionality of the count() function."""
+def testCountString() -> None:
+    """Test the functionality of the countString() function."""
     
     # Initialise local variables
     failCount = 0
     
-    values1 = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
-    values2 = ["J", "S", "A", "J", "K", "C", "J"]
-    values3 = ["Campbell", "Ford", "MacDonald", "Smyth", "Young", "Robertson"]
-    values4 = [17, 14, 16, 17, 13, 14, 12]
+    values1 = ["A", "B", "C", "A", "D", "E", "A"]
+    values2 = ["Campbell", "Ford", "MacDonald", "Smyth", "Young"]
     
-    inputs1 = [values1, values2, values3, values4]
-    inputs2 = [66.8, "J", "Robertson", 11]
-    outputs = [1, 3, 1, 0]
+    inputs1 = [values1, values1, values2]
+    inputs2 = ["A", "B", "Robertson"]
+    outputs = [3, 1, 0]
     
     # Display function being tested
-    print("\nTesting: count() function")
+    print("\nTesting: countString() function")
 
     # Loop through tests
     for index in range(len(inputs1)):
         
         try:
             
-            assert count(inputs1[index], inputs2[index]) == outputs[index]
+            assert countString(inputs1[index], inputs2[index]) \
+                   == outputs[index]
             
         except:
             
@@ -204,9 +202,9 @@ def testCount() -> None:
                 errorText = ", " + str(inputs2[index]) + ") = "
             
             # Display failure message
-            print("\tFailed Test " + str(index+1) + ": count("
-                  + str(inputs1[index]) + errorText
-                  + str(outputs[index]))
+            print("\tFailed Test " + str(index+1)
+                  + ": countString(" + str(inputs1[index])
+                  + errorText + str(outputs[index]))
     
     # Display success message
     if failCount == 0:
@@ -219,7 +217,7 @@ def testCount() -> None:
 #
 
 # Tests
-testSearch()
-testFindMin()
-testFindMax()
-testCount()
+testSearchString()
+testFindMinReal()
+testFindMaxInt()
+testCountString()
