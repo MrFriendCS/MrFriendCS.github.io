@@ -1,11 +1,12 @@
 # AH SDD - Animals
 
-A solution is need will model some of the important attributes of zoo animals, such as name, age, and weight.
+A solution is need to model some of the important attributes of zoo animals, such as name, age, and weight.
 
 
 ## Design
 
 The UML class diagram shown below.
+
 
 ### UML Class Diagram
 

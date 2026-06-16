@@ -1,6 +1,6 @@
 # AH SDD - Animals Part 3
 
-A collection class has been design to help keep the Animal objects together.
+A collection class is needed to help keep the Animal objects together.
 
 
 ## Design
