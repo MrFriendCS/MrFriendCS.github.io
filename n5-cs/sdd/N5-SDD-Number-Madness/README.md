@@ -44,11 +44,9 @@ To the power of:
 
 ## Testing
 
-1. Pick values that you can calculate the answers to.
-2. Calculate the answers.
-3. Use the values in the program.
-4. Check the answers the computer gives.
-5. If the same, use another set of values, otherwise work out what is wrong.
+1. Use the values shown above.
+2. Check the answers your program gives.
+3. If the same, use another set of values that you know the answers to, otherwise work out what is wrong.
 
 
 ## Readability
