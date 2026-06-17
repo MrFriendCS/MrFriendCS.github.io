@@ -42,9 +42,9 @@ The function will return the smallest value that is in the array.
 
 #### Examples
 
-| Input                      | Output | Comment |
-| -----                      | ------ | ------- |
-| findMinReal(2.1, 1.7, 3.2) | 1.7    | |
+| Input                        | Output | Comment |
+| -----                        | ------ | ------- |
+| findMinReal([2.1, 1.7, 3.2]) | 1.7    | |
 
 
 ### findMaxInt()
@@ -55,9 +55,9 @@ The function will return the largest value that is in the array.
 
 #### Examples
 
-| Input                  | Output | Comment |
-| -----                  | ------ | ------- |
-| findMaxInt(1, 7, 2, 4) | 7      | |
+| Input                    | Output | Comment |
+| -----                    | ------ | ------- |
+| findMaxInt([1, 7, 2, 4]) | 7      | |
 
 
 ### countString()
@@ -70,8 +70,8 @@ The function will return how many of the search values are found.
 
 | Input                                  | Output | Comment |
 | -----                                  | ------ | ------- |
-| countString((["Hi", "de", "Hi"], "Hi") | 2      | |
-| countString((["Hi", "de", "Hi"], "do") | 0      | |
+| countString(["Hi", "de", "Hi"], "Hi") | 2      | |
+| countString(["Hi", "de", "Hi"], "do") | 0      | |
 
 
 ## Testing

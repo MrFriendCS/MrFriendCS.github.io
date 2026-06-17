@@ -2,13 +2,10 @@
 # Author: Mr Friend
 # Date: 16 Jun 2026
 
-#
-# Sub-programs
-#
 
 def searchString(values: list[str], target: str) -> bool:
-    """Linear search.  Returns True if target value is in list of values,
-       otherwise returns False.
+    """Linear search.  Returns True if target value is in list
+       of values, otherwise returns False.
        """
     
     # Local variables
