@@ -68,10 +68,10 @@ The function will return how many of the search values are found.
 
 #### Examples
 
-| Input                                  | Output | Comment |
-| -----                                  | ------ | ------- |
-| countString(["Hi", "de", "Hi"], "Hi") | 2      | |
-| countString(["Hi", "de", "Hi"], "do") | 0      | |
+| Input                                         | Output | Comment |
+| -----                                         | ------ | ------- |
+| countString([\"Hi\", \"de\", \"Hi\"], \"Hi\") | 2      | |
+| countString([\"Hi\", \"de\", \"Hi\"], \"do\") | 0      | |
 
 
 ## Testing
