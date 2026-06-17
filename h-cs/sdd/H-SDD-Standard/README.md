@@ -28,10 +28,10 @@ The function will return `True` if the search value is in the array, and `False`
 
 #### Examples
 
-| Input                              | Output | Comment |
-| -----                              | ------ | ------- |
-| searchString(["B", "B", "C"], "B") | True   | |
-| searchString(["B", "B", "C"], "D") | False  | |
+| Input                                      | Output | Comment |
+| -----                                      | ------ | ------- |
+| searchString([\"B\", \"B\", \"C\"], \"B\") | True   | |
+| searchString([\"B\", \"B\", \"C\"], \"D\") | False  | |
 
 
 ### findMinReal()
