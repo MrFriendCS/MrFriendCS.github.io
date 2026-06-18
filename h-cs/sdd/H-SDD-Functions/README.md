@@ -30,6 +30,7 @@ Create a file called `functions.py`. The file will contain the code for the foll
 
 Create a function to calculate and return the gradient, rounded to 2 decimal places.
 
+
 #### Starter Code
 
 ``` python
