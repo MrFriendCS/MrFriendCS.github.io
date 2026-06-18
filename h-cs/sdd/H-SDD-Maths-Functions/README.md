@@ -1,84 +1,58 @@
 # H SDD - Maths Functions
 
+
 ## Introduction
 
 Create a file called `mathsFuncs.py`.  The file will contain the code for the following functions:
 
-* _add_
-* _multiply_
-* _subtract_
-* _divide_
+* _r2d_
+* _d2r_
+* _circumference_
+* _areaOfCircle_
+* _areaOfTraiangle_
+* _gradient_
 
 
 ## Functions
 
-### add
+### r2d
 
-This function will add two values together and return the result.
+This function will return the diameter when passed a radius.
+
 
 #### Example code
 
 ``` python
-print(add(2, 3))
+print(r2d(7.5))
 ```
+
 
 #### Example output
 
 ```
-5
+15.0
 ```
 
-### multiply
 
-This function will multiply two values together and return the result.
+### d2r
+
+This function will return the radius when passed a diameter.
+
 
 #### Example code
 
 ``` python
-print(multiply(2, 3))
+print(d2r(32.4))
 ```
+
 
 #### Example output
 
 ```
-6
+16.2
 ```
 
-
-### subtract
-
-This function will subtract the second value from the first and return the result.
-
-#### Example code
-
-``` python
-print(subtract(5, 2))
-```
-
-#### Example output
-
-```
-3
-```
-
-### divide
-
-This function will divide the first value by the second and return the result.
-
-#### Example code
-
-``` python
-print(divide(6, 3))
-```
-
-#### Example output
-
-```
-2.0
-```
 
 ## Testing
 
 Test the functions to ensure they work.  Apart from TAD, remove any code that is not in the functions.
-
-Save the file [`mathsFuncsTest.py`](assets/mathsFuncsTest.py) to the same folder as `mathsFuncs.py`.  Open and run `mathsFuncsTest.py`.
