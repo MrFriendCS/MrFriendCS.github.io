@@ -10,6 +10,7 @@ Create a file called `mathsFuncs.py`.  The file will contain the code for the fo
 * _circumference_
 * _areaOfCircle_
 * _areaOfTraiangle_
+* _volOfSphere_
 * _gradient_
 
 
@@ -50,6 +51,101 @@ print(d2r(32.4))
 
 ```
 16.2
+```
+
+
+### circumference
+
+This function will return the circumference when passed a diameter.
+
+
+#### Example code
+
+``` python
+print(circumference(10.0))
+```
+
+
+#### Example output
+
+```
+31.415
+```
+
+
+### areaOfCircle
+
+This function will return the area of a circle when passed a radius.
+
+
+#### Example code
+
+``` python
+print(areaOfCircle(10.0))
+```
+
+
+#### Example output
+
+```
+314.15
+```
+
+
+### areaOfTraiangle
+
+This function will return the area of a traingle when passed the base and height.
+
+
+#### Example code
+
+``` python
+print(areaOfTraiangle(5.0, 4.0))
+```
+
+
+#### Example output
+
+```
+10.0
+```
+
+
+### volOfSphere
+
+This function will return the volume of a sphere when passed a radius.
+
+
+#### Example code
+
+``` python
+print(volOfSphere(10.0))
+```
+
+
+#### Example output
+
+```
+314.15
+```
+
+
+### gradient
+
+This function will return the gradient of a straight line when passed two coordinates.
+
+
+#### Example code
+
+``` python
+print(gradient([1.0, 2,0], [11.0, 12.0))
+```
+
+
+#### Example output
+
+```
+1.0
 ```
 
 
