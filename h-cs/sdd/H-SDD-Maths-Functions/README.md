@@ -9,9 +9,11 @@ Create a file called `mathsFuncs.py`.  The file will contain the code for the fo
 * _d2r_
 * _circumference_
 * _areaOfCircle_
-* _areaOfTraiangle_
+* _areaOfTriangle_
 * _volOfSphere_
 * _gradient_
+
+Use 3.1415 for any calculations that require pi.
 
 
 ## Functions
@@ -92,9 +94,9 @@ print(areaOfCircle(10.0))
 ```
 
 
-### areaOfTraiangle
+### areaOfTriangle
 
-This function will return the area of a traingle when passed the base and height.
+This function will return the area of a triangle when passed the base and height.
 
 
 #### Example code
