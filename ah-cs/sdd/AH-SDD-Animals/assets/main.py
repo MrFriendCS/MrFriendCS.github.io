@@ -1,70 +1,100 @@
-# Title: AH SDD Canteen
+# Title: AH SDD Barra Zoo
 # Author: Mr Friend
-# Date: 29 May 2026
+# Date: 19 Jun 2026
 
 
-# Locker class
-from order import Order
-from menu_item import Menu_Item
+# Import classes
+from animal import Animal
+from animals import Animals
+
+# Get extra code
+import sqlite3
 
 
-def readData() -> list:
-    '''Read CSV data into an array of Locker objects.'''
-
-    # Local variables
-    contents = ''
-    temp = []
-    data = []
-    arrayOfObjects = []
-    isLocked = False
-
-    # Connect to a file
-    file = open('Lockers.csv', 'r', encoding='utf-8')
-
-    # Read contents, remove end \n
-    contents = file.read().strip()
+def create_database() -> None:
+    """Create the zoo database if it doesn't exist,
+       and populate with some test data.
+       """
     
-    # Close the connection to the file
-    file.close()
+    # Local variables
+    query: str = ''
+    
+    # Create a connection to the database
+    # Create a new database file, if it doesn't exist
+    connection = sqlite3.connect('barra_zoo.db')
 
-    # Split at newlines
-    temp = contents.split('\n')
+    # Create a database cursor
+    cursor = connection.cursor()
 
-    # Loop for each object - Ignore first row
-    for index in range(1, len(temp)):
-        
-        # Split data
-        data = temp[index].split(',')
-        
-        # Extract values
-        lockerNo = int(data[0])
-        pupilName = data[1]
-        lock = int(data[2])
-        
-        # Check lock status
-        if lock == 1:
-            isLocked = True
-        else:
-            isLocked = False
-        
-        # Append new locker object to array
-        arrayOfObjects.append(Locker(lockerNo, pupilName, isLocked))
-        
-    return arrayOfObjects
+    # Create query - Table  
+    query = """CREATE TABLE IF NOT EXISTS Animal (
+    animal_id INTEGER NOT NULL,
+    name VARCHAR(30) UNIQUE NOT NULL,
+    age INTEGER NOT NULL CHECK (age >= 0),
+    weight REAL NOT NULL CHECK (weight >= 0.0),
+    alive BOOLEAN NOT NULL,
+    PRIMARY KEY (animal_id AUTOINCREMENT)
+    );"""
+    
+    # Create the table
+    cursor.execute(query)
+
+    # Close the connection to the database
+    connection.close()
+    
+    
+def add_example_data() -> None:
+    """Adds example data to the Animal table."""
+    
+    # Local variables
+    query: str = ''
+    
+    # Create a connection to the database
+    connection = sqlite3.connect('barra_zoo.db')
+
+    # Create a database cursor
+    cursor = connection.cursor()
+  
+    # Create query - Insert
+    query = '''
+    INSERT INTO Animal (name, age, weight, alive)
+        VALUES
+            ("Bonzo", 17, 15.4,TRUE),
+            ("Goldie", 2, 0.1, TRUE),
+            ("Kitty", 3, 2.7, TRUE);
+    '''
+
+    # Insert data
+    cursor.execute(query)
+
+    # Commit the data
+    connection.commit()
+
+    # Close the connection to the database
+    connection.close()
 
 
+def display_menu() -> None:
+    """Display the Barra Zoo menu."""
+    
+    # Header
+    print('Barra Zoo')
+    print('---------')
+    
+    
+    
+    
+def main() -> None:
+    """Main Barra Zoo code."""
+    
+    # Create database - if needed
+    create_database()
+    
+    # Display menu
+    display_menu()
+    
+    
+    
 
-#
-# Main program
-#
-
-item1 = Menu_Item('Sausage roll', 1.25)
-item2 = Menu_Item('Ketchup sachet', 0.25)
-
-order1 = Order()
-order1.add_item(item1)
-order1.add_item(item2)
-
-order1.display_order()
-
-print(f'£{order1.calculate_cost():.2f}')
+# Only run code if run directly
+if __name__ == "__main__": main()

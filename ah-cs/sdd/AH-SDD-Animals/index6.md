@@ -8,6 +8,19 @@
 ![UML clase diagram](assets/diagrams/class5.png)
 
 
+### Data Dictionary
+
+#### Entity: animal
+
+| Attribute   | Key   | Type    | Size  | Req'd | Validation |
+| ---------   | :---: | ----    | :---: | :---: | ---------- |
+| animal_id   | PK    | integer |       | Y     | Auto increment |
+| name        |       | varchar | 20    | Y     | Unique |
+| age         |       | integer |       | Y     | Range: >= 0 |
+| weight      |       | float   |       | Y     | Range: >= 0.0 |
+| alive       |       | boolean |       | Y     | |
+
+
 ### Structure Diagram
 
 ![Structure diagram](assets/diagrams/sd.png)
@@ -15,7 +28,7 @@
 ![Structure diagram](assets/diagrams/sd1.png)
 
 
-## Implementation
+### UI
 
 ```
 Barra Zoo

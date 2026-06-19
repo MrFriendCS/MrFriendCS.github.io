@@ -2,6 +2,9 @@
 # Author: Mr Friend
 # Date: 10 Jun 2026
 
+# Import Animal class
+from animal import Animal
+
 
 class Animals:
     """A class to represent a collection of zoo animal."""    

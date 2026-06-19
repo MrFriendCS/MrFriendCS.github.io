@@ -4,6 +4,8 @@
 ## SDD Tasks
 
 
+### Year 1
+
 | Title                      | Description                          | Concepts                      | Comments |
 | -----                      | -----------                          | --------                      | -------- |
 | N5-SDD-Hello Pt 1          | Produce an output using variables    |                               | |
@@ -59,6 +61,13 @@
 | N5-SDD-School-Enrollment   |  |  |  |
 | N5-SDD-SnapTok             |  |  |  |
 | N5-SDD-Swimming            |  |  |  |
+
+
+### Year 2
+
+| Title                      | Description                          | Concepts                        | Comments |
+| -----                      | -----------                          | --------                        | -------- |
+| N5-SDD-Wireframe           | Create a wireframe - calculator      | UI                              | |
 | N5-SDD-Food-Cost           | Calculate cost of 3, 4, or 5 items   | rt, iv, t1d x 2                 | |
 | N5-SDD-Boccia Pt 2         | Records scores, gives result         | rt x 2, iv, if4                 | |
 | N5-SDD-Tip-Calculator      | Calculate cost, tip, total, share    | rt, iv                          | sd |
@@ -98,7 +107,8 @@ lo = Logical operator,
 rd = Round,
 rnd = Random,
 rt = Running total,
-t1d = Traverse 1D array
+t1d = Traverse 1D array,
+ui = User interface
 
 fc = Flowchart,
 pc = Pseudocode,
