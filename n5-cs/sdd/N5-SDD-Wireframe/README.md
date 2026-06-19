@@ -5,7 +5,7 @@
 
 Some pupils need a bit of extra support when doing maths.
 Unfortunately, the calculators in the maths department have have too many features, which leads to confusion.
-It is hoped that a simple app can be created the will allow pupils to quickly check their answers.
+It is hoped that a simple app can be created that will allow pupils to quickly check their answers.
 
 
 ## Task
