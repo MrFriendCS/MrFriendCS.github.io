@@ -39,19 +39,9 @@
 ![Structure diagram](assets/diagrams/sd2.png)
 
 
-##### Display oldest animal
-
-![Structure diagram](assets/diagrams/sd3.png)
-
-
 ##### Display 10 oldest animals
 
 ![Structure diagram](assets/diagrams/sd4.png)
-
-
-##### Display all animals
-
-![Structure diagram](assets/diagrams/sd5.png)
 
 
 ### User Interface

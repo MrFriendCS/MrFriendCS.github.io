@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" pages="9">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" pages="10">
   <diagram id="dSmxpFlf6ctc98qw9gfx" name="UseCase">
     <mxGraphModel dx="934" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
@@ -312,7 +312,7 @@
             <mxPoint x="300" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tSvhca8uDiksRq3BuqKg-3" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Add Animal" vertex="1">
+        <mxCell id="tSvhca8uDiksRq3BuqKg-3" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Add a New&lt;div&gt;Animal&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="240" y="80" as="geometry" />
         </mxCell>
         <mxCell id="tSvhca8uDiksRq3BuqKg-4" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="tSvhca8uDiksRq3BuqKg-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
@@ -348,46 +348,93 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="sd2" id="-sT2KAoxM2hSMXQkvoGB">
-    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="413" math="0" shadow="0">
+  <diagram name="sd2" id="Wnjde-ag6jEQmivXFwWR">
+    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="413" pageHeight="583" math="0" shadow="0">
       <root>
-        <mxCell id="AvFJX-eMBSXUNId98vwl-0" />
-        <mxCell id="AvFJX-eMBSXUNId98vwl-1" parent="AvFJX-eMBSXUNId98vwl-0" />
-        <mxCell id="AvFJX-eMBSXUNId98vwl-2" edge="1" parent="AvFJX-eMBSXUNId98vwl-1" source="AvFJX-eMBSXUNId98vwl-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+        <mxCell id="sNMR6bvHFRT9GJwVmqaE-0" />
+        <mxCell id="sNMR6bvHFRT9GJwVmqaE-1" parent="sNMR6bvHFRT9GJwVmqaE-0" />
+        <mxCell id="sNMR6bvHFRT9GJwVmqaE-2" edge="1" parent="sNMR6bvHFRT9GJwVmqaE-1" source="sNMR6bvHFRT9GJwVmqaE-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="300" y="160" as="targetPoint" />
+            <mxPoint x="180" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AvFJX-eMBSXUNId98vwl-3" parent="AvFJX-eMBSXUNId98vwl-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Register a Death" vertex="1">
-          <mxGeometry height="60" width="120" x="240" y="80" as="geometry" />
+        <mxCell id="sNMR6bvHFRT9GJwVmqaE-3" parent="sNMR6bvHFRT9GJwVmqaE-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Register a Death" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="AvFJX-eMBSXUNId98vwl-4" edge="1" parent="AvFJX-eMBSXUNId98vwl-1" source="AvFJX-eMBSXUNId98vwl-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
+        <mxCell id="sNMR6bvHFRT9GJwVmqaE-7" edge="1" parent="sNMR6bvHFRT9GJwVmqaE-1" source="sNMR6bvHFRT9GJwVmqaE-8" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="220" y="160" as="targetPoint" />
+            <mxPoint x="260" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgFldyY9wy0fQrXL1l0O-1" edge="1" parent="AvFJX-eMBSXUNId98vwl-1" source="AvFJX-eMBSXUNId98vwl-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="hgFldyY9wy0fQrXL1l0O-0">
+        <mxCell id="sNMR6bvHFRT9GJwVmqaE-8" parent="sNMR6bvHFRT9GJwVmqaE-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Modify database&lt;div&gt;record&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="sNMR6bvHFRT9GJwVmqaE-9" edge="1" parent="sNMR6bvHFRT9GJwVmqaE-1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="160" as="sourcePoint" />
+            <mxPoint x="260" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tbjnx3SUo3FqCKrdCosY-2" edge="1" parent="sNMR6bvHFRT9GJwVmqaE-1" source="sNMR6bvHFRT9GJwVmqaE-10" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="Tbjnx3SUo3FqCKrdCosY-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AvFJX-eMBSXUNId98vwl-5" parent="AvFJX-eMBSXUNId98vwl-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Find animal" vertex="1">
-          <mxGeometry height="60" width="120" x="160" y="180" as="geometry" />
+        <mxCell id="sNMR6bvHFRT9GJwVmqaE-10" parent="sNMR6bvHFRT9GJwVmqaE-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Change animal&#39;s&lt;div&gt;alive status&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="AvFJX-eMBSXUNId98vwl-6" edge="1" parent="AvFJX-eMBSXUNId98vwl-1" source="AvFJX-eMBSXUNId98vwl-7" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
+        <mxCell id="Tbjnx3SUo3FqCKrdCosY-4" edge="1" parent="sNMR6bvHFRT9GJwVmqaE-1" source="Tbjnx3SUo3FqCKrdCosY-0" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="380" y="160" as="targetPoint" />
+            <mxPoint x="100" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AvFJX-eMBSXUNId98vwl-7" parent="AvFJX-eMBSXUNId98vwl-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Modify database&lt;div&gt;record&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="320" y="180" as="geometry" />
+        <mxCell id="Tbjnx3SUo3FqCKrdCosY-0" parent="sNMR6bvHFRT9GJwVmqaE-1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;arcSize=50;fillColor=none;" value="Loop until the&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;animal that died&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;is found&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="AvFJX-eMBSXUNId98vwl-8" edge="1" parent="AvFJX-eMBSXUNId98vwl-1" style="endArrow=none;html=1;rounded=0;" value="">
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="sd4" id="g3YQNNjkjALOGbL6TzCT">
+    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="413" pageHeight="583" math="0" shadow="0">
+      <root>
+        <mxCell id="kzIXoij09501m9RLLq6I-0" />
+        <mxCell id="kzIXoij09501m9RLLq6I-1" parent="kzIXoij09501m9RLLq6I-0" />
+        <mxCell id="kzIXoij09501m9RLLq6I-3" parent="kzIXoij09501m9RLLq6I-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Register a Death" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kzIXoij09501m9RLLq6I-7" edge="1" parent="kzIXoij09501m9RLLq6I-1" source="kzIXoij09501m9RLLq6I-8" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="kzIXoij09501m9RLLq6I-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kzIXoij09501m9RLLq6I-8" parent="kzIXoij09501m9RLLq6I-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Displays the&lt;div&gt;animal&#39;s details&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="kzIXoij09501m9RLLq6I-10" parent="kzIXoij09501m9RLLq6I-1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;arcSize=50;fillColor=none;" value="Loop for first&lt;div&gt;10 animals&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="zlnxN3gapeQJh6fjAY37-0" parent="kzIXoij09501m9RLLq6I-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Order the animals&lt;div&gt;by age&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Mh1nIcpEebzUXKXeTFHV-0" edge="1" parent="kzIXoij09501m9RLLq6I-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="179.5" y="140" as="sourcePoint" />
+            <mxPoint x="179.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mh1nIcpEebzUXKXeTFHV-1" edge="1" parent="kzIXoij09501m9RLLq6I-1" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="259.5" y="180" as="sourcePoint" />
+            <mxPoint x="259.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mh1nIcpEebzUXKXeTFHV-2" edge="1" parent="kzIXoij09501m9RLLq6I-1" style="endArrow=none;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="220" y="160" as="sourcePoint" />
-            <mxPoint x="380" y="160" as="targetPoint" />
+            <mxPoint x="99.5" y="160" as="sourcePoint" />
+            <mxPoint x="259.5" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgFldyY9wy0fQrXL1l0O-0" parent="AvFJX-eMBSXUNId98vwl-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Change animal&#39;s&lt;div&gt;alive status&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="160" y="280" as="geometry" />
+        <mxCell id="Mh1nIcpEebzUXKXeTFHV-3" edge="1" parent="kzIXoij09501m9RLLq6I-1" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="99.5" y="180" as="sourcePoint" />
+            <mxPoint x="99.5" y="160" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
