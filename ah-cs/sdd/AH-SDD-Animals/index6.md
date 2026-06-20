@@ -60,6 +60,11 @@ Enter choice:
 ![Structure diagram](assets/diagrams/sd2.png)
 
 
+##### Display oldest animal
+
+![Structure diagram](assets/diagrams/sd3.png)
+
+
 ##### Display 10 oldest animals
 
 ![Structure diagram](assets/diagrams/sd4.png)

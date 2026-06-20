@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" pages="10">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" pages="11">
   <diagram id="dSmxpFlf6ctc98qw9gfx" name="UseCase">
     <mxGraphModel dx="934" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
@@ -303,7 +303,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="sd1" id="Wis6yYvUmTlzrYAjUYuB">
-    <mxGraphModel dx="778" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
         <mxCell id="tSvhca8uDiksRq3BuqKg-0" />
         <mxCell id="tSvhca8uDiksRq3BuqKg-1" parent="tSvhca8uDiksRq3BuqKg-0" />
@@ -404,12 +404,53 @@
       </root>
     </mxGraphModel>
   </diagram>
+  <diagram name="sd3" id="o5E_0HgCafmPY0Yz-vCa">
+    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="413" pageHeight="583" math="0" shadow="0">
+      <root>
+        <mxCell id="Qr3H2UccXm-DwaxoQ6Dq-0" />
+        <mxCell id="Qr3H2UccXm-DwaxoQ6Dq-1" parent="Qr3H2UccXm-DwaxoQ6Dq-0" />
+        <mxCell id="Qr3H2UccXm-DwaxoQ6Dq-2" parent="Qr3H2UccXm-DwaxoQ6Dq-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Display Oldest&lt;div&gt;Animal&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Qr3H2UccXm-DwaxoQ6Dq-4" parent="Qr3H2UccXm-DwaxoQ6Dq-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Displays first&lt;div&gt;animal&#39;s details&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Qr3H2UccXm-DwaxoQ6Dq-6" parent="Qr3H2UccXm-DwaxoQ6Dq-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Order the animals&lt;div&gt;by age&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Qr3H2UccXm-DwaxoQ6Dq-7" edge="1" parent="Qr3H2UccXm-DwaxoQ6Dq-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="179.5" y="140" as="sourcePoint" />
+            <mxPoint x="179.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qr3H2UccXm-DwaxoQ6Dq-8" edge="1" parent="Qr3H2UccXm-DwaxoQ6Dq-1" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="259.5" y="180" as="sourcePoint" />
+            <mxPoint x="259.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qr3H2UccXm-DwaxoQ6Dq-9" edge="1" parent="Qr3H2UccXm-DwaxoQ6Dq-1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="99.5" y="160" as="sourcePoint" />
+            <mxPoint x="259.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qr3H2UccXm-DwaxoQ6Dq-10" edge="1" parent="Qr3H2UccXm-DwaxoQ6Dq-1" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="99.5" y="180" as="sourcePoint" />
+            <mxPoint x="99.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
   <diagram name="sd4" id="g3YQNNjkjALOGbL6TzCT">
     <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="413" pageHeight="583" math="0" shadow="0">
       <root>
         <mxCell id="kzIXoij09501m9RLLq6I-0" />
         <mxCell id="kzIXoij09501m9RLLq6I-1" parent="kzIXoij09501m9RLLq6I-0" />
-        <mxCell id="kzIXoij09501m9RLLq6I-3" parent="kzIXoij09501m9RLLq6I-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Register a Death" vertex="1">
+        <mxCell id="kzIXoij09501m9RLLq6I-3" parent="kzIXoij09501m9RLLq6I-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Display 10&lt;div&gt;Oldest Animals&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="120" y="80" as="geometry" />
         </mxCell>
         <mxCell id="kzIXoij09501m9RLLq6I-7" edge="1" parent="kzIXoij09501m9RLLq6I-1" source="kzIXoij09501m9RLLq6I-8" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="kzIXoij09501m9RLLq6I-10">
