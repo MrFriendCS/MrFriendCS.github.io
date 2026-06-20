@@ -303,47 +303,59 @@
     </mxGraphModel>
   </diagram>
   <diagram name="sd1" id="Wis6yYvUmTlzrYAjUYuB">
-    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="413" math="0" shadow="0">
+    <mxGraphModel dx="778" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
         <mxCell id="tSvhca8uDiksRq3BuqKg-0" />
         <mxCell id="tSvhca8uDiksRq3BuqKg-1" parent="tSvhca8uDiksRq3BuqKg-0" />
-        <mxCell id="tSvhca8uDiksRq3BuqKg-2" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="tSvhca8uDiksRq3BuqKg-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+        <mxCell id="0V6wE4oG5XW9JzP0JMXW-6" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="tSvhca8uDiksRq3BuqKg-3" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="300" y="160" as="targetPoint" />
+            <mxPoint x="260.3333333333335" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="tSvhca8uDiksRq3BuqKg-3" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Add a New&lt;div&gt;Animal&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="240" y="80" as="geometry" />
+          <mxGeometry height="60" width="120" x="200" y="80" as="geometry" />
         </mxCell>
         <mxCell id="tSvhca8uDiksRq3BuqKg-4" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="tSvhca8uDiksRq3BuqKg-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="140" y="160" as="targetPoint" />
+            <mxPoint x="260" y="160" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="0V6wE4oG5XW9JzP0JMXW-2" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="tSvhca8uDiksRq3BuqKg-5" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="tSvhca8uDiksRq3BuqKg-7">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tSvhca8uDiksRq3BuqKg-5" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Connect to&lt;div&gt;database&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="80" y="180" as="geometry" />
+          <mxGeometry height="60" width="120" x="200" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="tSvhca8uDiksRq3BuqKg-6" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="tSvhca8uDiksRq3BuqKg-7" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="300" y="160" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="0V6wE4oG5XW9JzP0JMXW-3" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="tSvhca8uDiksRq3BuqKg-7" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="J2InNbnwwxLu9fQ8MVjG-0">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tSvhca8uDiksRq3BuqKg-7" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Add new record&lt;div&gt;to Animal table&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="240" y="180" as="geometry" />
+          <mxGeometry height="60" width="120" x="200" y="280" as="geometry" />
         </mxCell>
         <mxCell id="tSvhca8uDiksRq3BuqKg-8" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" style="endArrow=none;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="140" y="160" as="sourcePoint" />
-            <mxPoint x="460" y="160" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="J2InNbnwwxLu9fQ8MVjG-1" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="J2InNbnwwxLu9fQ8MVjG-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="460" y="160" as="targetPoint" />
+            <mxPoint x="100" y="160" as="sourcePoint" />
+            <mxPoint x="420" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="J2InNbnwwxLu9fQ8MVjG-0" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Disconnect from&lt;div&gt;database&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="400" y="180" as="geometry" />
+          <mxGeometry height="60" width="120" x="200" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="0V6wE4oG5XW9JzP0JMXW-1" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="0V6wE4oG5XW9JzP0JMXW-0" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0V6wE4oG5XW9JzP0JMXW-0" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Add animal to&lt;div&gt;animals()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="0V6wE4oG5XW9JzP0JMXW-5" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="0V6wE4oG5XW9JzP0JMXW-4" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100.33333333333337" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0V6wE4oG5XW9JzP0JMXW-4" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Get new&lt;div&gt;animal&#39;s details&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
