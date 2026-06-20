@@ -3,14 +3,11 @@
 
 ## Design
 
-### UML Class Diagram
-
-![UML clase diagram](assets/diagrams/class5.png)
-
 
 ### Data Dictionary
 
-#### Entity: animal
+
+#### Entity: Animal
 
 | Attribute   | Key   | Type    | Size  | Req'd | Validation |
 | ---------   | :---: | ----    | :---: | :---: | ---------- |
@@ -39,6 +36,10 @@ Menu:
   
 Enter choice: 
 ```
+
+### UML Class Diagram
+
+![UML clase diagram](assets/diagrams/class5.png)
 
 
 ### Structure Diagram
