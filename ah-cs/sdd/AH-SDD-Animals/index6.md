@@ -26,11 +26,11 @@ Barra Zoo
 
 Menu:
 
-  1 Add a new animal
-  2 Register a death
-  3 Display oldest animal
-  4 Display 10 oldest animals
-  5 Display all animals
+  1 Display all animals
+  2 Add a new animal
+  3 Register a death
+  4 Display oldest animal
+  5 Display 10 oldest animals
   
   x Exit
   
@@ -50,21 +50,26 @@ Enter choice:
 ![Structure diagram](assets/diagrams/sd.png)
 
 
-##### Add a new animal
+##### Display all animals
 
 ![Structure diagram](assets/diagrams/sd1.png)
 
 
-##### Register a death
+##### Add a new animal
 
 ![Structure diagram](assets/diagrams/sd2.png)
 
 
-##### Display oldest animal
+##### Register a death
 
 ![Structure diagram](assets/diagrams/sd3.png)
 
 
-##### Display 10 oldest animals
+##### Display oldest animal
 
 ![Structure diagram](assets/diagrams/sd4.png)
+
+
+##### Display 10 oldest animals
+
+![Structure diagram](assets/diagrams/sd5.png)

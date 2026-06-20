@@ -39,10 +39,53 @@ def create_database() -> None:
 
     # Close the connection to the database
     connection.close()
+
+
+def read_data() -> Animals:
+    """Read the animals into an array of objects."""
+    
+    # Local variables
+    animals = Animals()
+    name: str = ''
+    age: int = 0
+    weight: float = 0.0
+    alive: bool = True
+    
+    # Create a connection to the database
+    # Create a new database file, if it doesn't exist
+    connection = sqlite3.connect('barra_zoo.db')
+
+    # Create a database cursor
+    cursor = connection.cursor()
+
+    # Create query - Table  
+    query = """SELECT *
+    FROM Animal;
+    """
+    
+    # Run query and store result
+    result = cursor.execute(query)
+
+    # Loop for each animal
+    for row in result:
+        
+        # Get data
+        name = row[1]
+        age = row[2]
+        weight = row[3]
+        alive = row[4]
+
+        # Add animal to the collection
+        animals.add_animal(Animal(name, age, weight, alive))
+
+    # Close the connection to the database
+    connection.close()
+    
+    return animals
     
     
 def add_example_data() -> None:
-    """Adds example data to the Animal table."""
+    """Add example data to the Animal table."""
     
     # Local variables
     query: str = ''
@@ -81,6 +124,25 @@ def add_example_data() -> None:
     connection.close()
 
 
+def display_oldest(animals: Animals) -> None:
+    '''Display details of oldest animal.'''
+    
+    # Local variables
+    name: str = ''
+    age: int = ''
+    
+    # Get data
+    age, name = animals.find_oldest()
+    
+    print('\nOldest Animal')
+    print('--------------')
+    
+    print(f'Name: {name}')
+    print(f'Age: {age}')
+    
+    print('--------------\n')
+
+
 def display_menu() -> None:
     """Display the Barra Zoo menu."""
     
@@ -111,6 +173,9 @@ def main() -> None:
     # Create database - if needed
     create_database()
     
+    # Read animal data
+    animals = read_data()
+    
     # Loop
     while run:
     
@@ -125,14 +190,17 @@ def main() -> None:
             
             # Add example animals
             add_example_data()
+        
+        elif option == '4':
+            
+            # Display oldest animal
+            display_oldest(animals)
             
         elif option == 'x':
         
             # Stop running code
             run = False
-    
-    
-    
+
 
 # Only run code if run directly
-if __name__ == "__main__": main()
+if __name__ == '__main__': main()
