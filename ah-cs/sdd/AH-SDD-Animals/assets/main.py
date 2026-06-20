@@ -12,9 +12,7 @@ import sqlite3
 
 
 def create_database() -> None:
-    """Create the zoo database if it doesn't exist,
-       and populate with some test data.
-       """
+    """Create the zoo database if it doesn't exist."""
     
     # Local variables
     query: str = ''
@@ -64,11 +62,20 @@ def add_example_data() -> None:
             ("Kitty", 3, 2.7, TRUE);
     '''
 
-    # Insert data
-    cursor.execute(query)
-
-    # Commit the data
-    connection.commit()
+    try:
+        # Insert data
+        cursor.execute(query)
+        
+        # Commit the data
+        connection.commit()
+    
+        # Success message
+        print('\nThree animals added to database.')
+        
+    except:
+    
+        # Failure message
+        print('\nNo animals were added to database.')
 
     # Close the connection to the database
     connection.close()
@@ -78,20 +85,51 @@ def display_menu() -> None:
     """Display the Barra Zoo menu."""
     
     # Header
-    print('Barra Zoo')
+    print('\nBarra Zoo')
     print('---------')
+    print('\nMenu:\n')
     
+    # Options
+    print('\t1 Display all animals')
+    print('\t2 Add a new animal')
+    print('\t3 Report a death')
+    print('\t4 Display oldest animal')
+    print('\t5 Display 10 oldest animals')
     
-    
-    
+    # Options
+    print('\n\te Add three example animals')
+    print('\tx Exit\n')
+
+
 def main() -> None:
     """Main Barra Zoo code."""
+    
+    # Local variables
+    option: str = ''
+    run: bool = True
     
     # Create database - if needed
     create_database()
     
-    # Display menu
-    display_menu()
+    # Loop
+    while run:
+    
+        # Display menu
+        display_menu()
+        
+        # Get option
+        option = input('Enter choice: ')
+        
+        # Select option
+        if option == 'e':
+            
+            # Add example animals
+            add_example_data()
+            
+        elif option == 'x':
+        
+            # Stop running code
+            run = False
     
     
     

@@ -23,12 +23,38 @@
 
 ### Structure Diagram
 
+
+#### Top-level Design
+
 ![Structure diagram](assets/diagrams/sd.png)
+
+
+##### Add a new animal
 
 ![Structure diagram](assets/diagrams/sd1.png)
 
 
-### UI
+##### Register a death
+
+![Structure diagram](assets/diagrams/sd2.png)
+
+
+##### Display oldest animal
+
+![Structure diagram](assets/diagrams/sd3.png)
+
+
+##### Display 10 oldest animals
+
+![Structure diagram](assets/diagrams/sd4.png)
+
+
+##### Display all animals
+
+![Structure diagram](assets/diagrams/sd5.png)
+
+
+### User Interface
 
 ```
 Barra Zoo
@@ -36,7 +62,7 @@ Barra Zoo
 
 Menu:
 
-  1 Add an animal
+  1 Add a new animal
   2 Register a death
   3 Display oldest animal
   4 Display 10 oldest animals

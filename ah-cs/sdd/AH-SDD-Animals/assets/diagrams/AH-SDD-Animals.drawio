@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" pages="8">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" pages="9">
   <diagram id="dSmxpFlf6ctc98qw9gfx" name="UseCase">
-    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+    <mxGraphModel dx="934" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -303,39 +303,91 @@
     </mxGraphModel>
   </diagram>
   <diagram name="sd1" id="Wis6yYvUmTlzrYAjUYuB">
-    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="413" math="0" shadow="0">
       <root>
         <mxCell id="tSvhca8uDiksRq3BuqKg-0" />
         <mxCell id="tSvhca8uDiksRq3BuqKg-1" parent="tSvhca8uDiksRq3BuqKg-0" />
         <mxCell id="tSvhca8uDiksRq3BuqKg-2" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="tSvhca8uDiksRq3BuqKg-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="260" y="160" as="targetPoint" />
+            <mxPoint x="300" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="tSvhca8uDiksRq3BuqKg-3" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Add Animal" vertex="1">
-          <mxGeometry height="60" width="120" x="200" y="80" as="geometry" />
+          <mxGeometry height="60" width="120" x="240" y="80" as="geometry" />
         </mxCell>
         <mxCell id="tSvhca8uDiksRq3BuqKg-4" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="tSvhca8uDiksRq3BuqKg-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="160" as="targetPoint" />
+            <mxPoint x="140" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tSvhca8uDiksRq3BuqKg-5" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Read animals" vertex="1">
-          <mxGeometry height="60" width="120" x="120" y="180" as="geometry" />
+        <mxCell id="tSvhca8uDiksRq3BuqKg-5" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Connect to&lt;div&gt;database&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="180" as="geometry" />
         </mxCell>
         <mxCell id="tSvhca8uDiksRq3BuqKg-6" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="tSvhca8uDiksRq3BuqKg-7" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="160" as="targetPoint" />
+            <mxPoint x="300" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tSvhca8uDiksRq3BuqKg-7" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Menu" vertex="1">
-          <mxGeometry height="60" width="120" x="280" y="180" as="geometry" />
+        <mxCell id="tSvhca8uDiksRq3BuqKg-7" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Add new record&lt;div&gt;to Animal table&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="180" as="geometry" />
         </mxCell>
         <mxCell id="tSvhca8uDiksRq3BuqKg-8" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" style="endArrow=none;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="180" y="160" as="sourcePoint" />
-            <mxPoint x="340" y="160" as="targetPoint" />
+            <mxPoint x="140" y="160" as="sourcePoint" />
+            <mxPoint x="460" y="160" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="J2InNbnwwxLu9fQ8MVjG-1" edge="1" parent="tSvhca8uDiksRq3BuqKg-1" source="J2InNbnwwxLu9fQ8MVjG-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J2InNbnwwxLu9fQ8MVjG-0" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Disconnect from&lt;div&gt;database&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="sd2" id="-sT2KAoxM2hSMXQkvoGB">
+    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="413" math="0" shadow="0">
+      <root>
+        <mxCell id="AvFJX-eMBSXUNId98vwl-0" />
+        <mxCell id="AvFJX-eMBSXUNId98vwl-1" parent="AvFJX-eMBSXUNId98vwl-0" />
+        <mxCell id="AvFJX-eMBSXUNId98vwl-2" edge="1" parent="AvFJX-eMBSXUNId98vwl-1" source="AvFJX-eMBSXUNId98vwl-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AvFJX-eMBSXUNId98vwl-3" parent="AvFJX-eMBSXUNId98vwl-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Register a Death" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AvFJX-eMBSXUNId98vwl-4" edge="1" parent="AvFJX-eMBSXUNId98vwl-1" source="AvFJX-eMBSXUNId98vwl-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgFldyY9wy0fQrXL1l0O-1" edge="1" parent="AvFJX-eMBSXUNId98vwl-1" source="AvFJX-eMBSXUNId98vwl-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="hgFldyY9wy0fQrXL1l0O-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AvFJX-eMBSXUNId98vwl-5" parent="AvFJX-eMBSXUNId98vwl-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Find animal" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="AvFJX-eMBSXUNId98vwl-6" edge="1" parent="AvFJX-eMBSXUNId98vwl-1" source="AvFJX-eMBSXUNId98vwl-7" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AvFJX-eMBSXUNId98vwl-7" parent="AvFJX-eMBSXUNId98vwl-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Modify database&lt;div&gt;record&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="AvFJX-eMBSXUNId98vwl-8" edge="1" parent="AvFJX-eMBSXUNId98vwl-1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="160" as="sourcePoint" />
+            <mxPoint x="380" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgFldyY9wy0fQrXL1l0O-0" parent="AvFJX-eMBSXUNId98vwl-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Change animal&#39;s&lt;div&gt;alive status&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="280" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
