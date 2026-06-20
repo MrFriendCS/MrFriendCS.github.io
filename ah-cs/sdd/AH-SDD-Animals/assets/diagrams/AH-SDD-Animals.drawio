@@ -354,7 +354,7 @@
             <mxPoint x="100.33333333333337" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0V6wE4oG5XW9JzP0JMXW-4" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Get new&lt;div&gt;animal&#39;s details&lt;/div&gt;" vertex="1">
+        <mxCell id="0V6wE4oG5XW9JzP0JMXW-4" parent="tSvhca8uDiksRq3BuqKg-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Get vaild&lt;div&gt;animal details&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="40" y="180" as="geometry" />
         </mxCell>
       </root>
