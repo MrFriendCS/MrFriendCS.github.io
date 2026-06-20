@@ -21,6 +21,26 @@
 | alive       |       | boolean |       | Y     | |
 
 
+### User Interface
+
+```
+Barra Zoo
+---------
+
+Menu:
+
+  1 Add a new animal
+  2 Register a death
+  3 Display oldest animal
+  4 Display 10 oldest animals
+  5 Display all animals
+  
+  x Exit
+  
+Enter choice: 
+```
+
+
 ### Structure Diagram
 
 
@@ -42,23 +62,3 @@
 ##### Display 10 oldest animals
 
 ![Structure diagram](assets/diagrams/sd4.png)
-
-
-### User Interface
-
-```
-Barra Zoo
----------
-
-Menu:
-
-  1 Add a new animal
-  2 Register a death
-  3 Display oldest animal
-  4 Display 10 oldest animals
-  5 Display all animals
-  
-  x Exit
-  
-Enter choice: 
-```
