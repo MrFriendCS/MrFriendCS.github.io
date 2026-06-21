@@ -50,3 +50,41 @@ class Animals:
                 oldest_name = self.__animals[index].get_name()
         
         return oldest_age, oldest_name
+    
+    def get_animals(self) -> list[Animal]:
+        """A method to get the array of animals."""
+        
+        return self.__animals
+    
+    def order_by_age(self) -> None:
+        """A method to order the animals by age descending."""
+        
+        # Get number of elements
+        n = self.__number_of_animals
+
+        # Turn sort on
+        sort = True
+
+        # Sort if needed
+        while sort == True:
+
+            # Turn sort off
+            sort = False
+
+            # Loop from start of array
+            for index in range(n - 1):
+
+                # Compare current element with next element
+                if self.__animals[index].get_age() \
+                   < self.__animals[index + 1].get_age():
+
+                    # Swap values
+                    temp = self.__animals[index]
+                    self.__animals[index]  = self.__animals[index + 1]
+                    self.__animals[index + 1] = temp
+
+                    # Sorting still needed
+                    sort = True
+
+            # Reduce the number elements to be checked
+            n = n - 1
