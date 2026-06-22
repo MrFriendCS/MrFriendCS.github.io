@@ -11,7 +11,7 @@ from animals import Animals
 
 
 def create_database() -> None:
-    """Create the zoo database if it doesn't exist."""
+    """Create the zoo database, if it doesn't exist."""
     
     # Variables
     query: str = ''
@@ -92,7 +92,8 @@ def read_data() -> Animals:
 def add_record(name: str='', age: int=0, weight: float=0.0) -> None:
     '''Change the record of a dead animal.'''
     
-    # Variable
+    # Variables
+    query: str = ''
     global database
     
     # Create a connection to the database
@@ -127,7 +128,8 @@ def add_record(name: str='', age: int=0, weight: float=0.0) -> None:
 
 def update_record(name: str='', die: bool=True) -> None:
     
-    # Variable
+    # Variables
+    query: str = ''
     global database
 
 
@@ -380,8 +382,6 @@ def display_10_oldest(animals) -> None:
     # Local variables
     name: str = ''
     age: int = 0
-    weight: float = 0.0
-    alive: bool = True
     array_of_animals: list = []
     index: int = 0
     count: int = 1
@@ -405,16 +405,12 @@ def display_10_oldest(animals) -> None:
             # Get details
             name = array_of_animals[index].get_name()
             age = array_of_animals[index].get_age()
-            weight = array_of_animals[index].get_weight()
-            alive = array_of_animals[index].get_alive()
             
             # Display details        
             print(f'\nAnimal No {count}')
             
             print(f'\tName: {name}')
             print(f'\tAge: {age}')
-            print(f'\tWeight {weight} kg')
-            print(f'\tAlive: {alive}')
             
             # Increment number of animals displayed
             count += 1
