@@ -125,23 +125,17 @@ def add_record(name: str='', age: int=0, weight: float=0.0) -> None:
     connection.close()
     
 
-def change_record(name: str='', die: bool=True) -> None:
+def update_record(name: str='', die: bool=True) -> None:
     
     # Variable
     global database
-    
-    # Create a connection to the database
-    # Create a new database file, if it doesn't exist
-    connection = sqlite3.connect(database)
 
-    # Create a database cursor
-    cursor = connection.cursor()
 
     if die:
         
         # Create query - Table  
         query = f"""UPDATE Animal
-        SET alive = False
+        SET age = age + 1
         WHERE name = '{name}';
         """
     
@@ -149,9 +143,15 @@ def change_record(name: str='', die: bool=True) -> None:
         
         # Create query - Table  
         query = f"""UPDATE Animal
-        SET age = age + 1
+        SET alive = False
         WHERE name = '{name}';
         """
+    
+    # Create a connection to the database
+    connection = sqlite3.connect(database)
+
+    # Create a database cursor
+    cursor = connection.cursor()
     
     try:
     
@@ -287,7 +287,7 @@ def celebrate_a_birthday(animals) -> None:
             found = True
             
             # Update database
-            change_record(name, False)
+            update_record(name, True)
             
         else:
             
@@ -336,7 +336,7 @@ def register_a_death(animals) -> None:
             found = True
             
             # Update database
-            change_record(name)
+            update_record(name, False)
             
         else:
             

@@ -79,3 +79,8 @@ Enter choice:
 ##### Display 10 oldest animals
 
 ![Structure diagram](assets/diagrams/sd6.png)
+
+
+##### Update record
+
+![Structure diagram](assets/diagrams/sd7.png)
