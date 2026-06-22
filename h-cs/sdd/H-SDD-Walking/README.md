@@ -1,4 +1,4 @@
-# H SDD - Walking Part 2
+# H SDD - Walking Calculator
 
 
 ## Task
