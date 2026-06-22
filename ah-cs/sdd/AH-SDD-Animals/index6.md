@@ -28,9 +28,10 @@ Menu:
 
   1 Display all animals
   2 Add a new animal
-  3 Register a death
-  4 Display oldest animal
-  5 Display 10 oldest animals
+  3 Celebrate a birthday
+  4 Register a death
+  5 Display oldest animal
+  6 Display 10 oldest animals
   
   x Exit
   

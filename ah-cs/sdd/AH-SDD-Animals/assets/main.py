@@ -13,12 +13,13 @@ from animals import Animals
 def create_database() -> None:
     """Create the zoo database if it doesn't exist."""
     
-    # Local variables
+    # Variables
     query: str = ''
+    global database
     
     # Create a connection to the database
     # Create a new database file, if it doesn't exist
-    connection = sqlite3.connect('barra_zoo.db')
+    connection = sqlite3.connect(database)
 
     # Create a database cursor
     cursor = connection.cursor()
@@ -43,16 +44,17 @@ def create_database() -> None:
 def read_data() -> Animals:
     """Read the animals into an array of objects."""
     
-    # Local variables
+    # Variables
     animals = Animals()
     name: str = ''
     age: int = 0
     weight: float = 0.0
     alive: bool = True
+    global database
     
     # Create a connection to the database
     # Create a new database file, if it doesn't exist
-    connection = sqlite3.connect('barra_zoo.db')
+    connection = sqlite3.connect(database)
 
     # Create a database cursor
     cursor = connection.cursor()
@@ -90,9 +92,12 @@ def read_data() -> Animals:
 def add_record(name: str='', age: int=0, weight: float=0.0) -> None:
     '''Change the record of a dead animal.'''
     
+    # Variable
+    global database
+    
     # Create a connection to the database
     # Create a new database file, if it doesn't exist
-    connection = sqlite3.connect('barra_zoo.db')
+    connection = sqlite3.connect(database)
 
     # Create a database cursor
     cursor = connection.cursor()
@@ -120,21 +125,34 @@ def add_record(name: str='', age: int=0, weight: float=0.0) -> None:
     connection.close()
     
 
-def change_record(name: str='') -> None:
+def change_record(name: str='', die: bool=True) -> None:
+    
+    # Variable
+    global database
     
     # Create a connection to the database
     # Create a new database file, if it doesn't exist
-    connection = sqlite3.connect('barra_zoo.db')
+    connection = sqlite3.connect(database)
 
     # Create a database cursor
     cursor = connection.cursor()
 
-    # Create query - Table  
-    query = f"""UPDATE Animal
-    SET alive = False
-    WHERE name = '{name}';
-    """
-    print(query)
+    if die:
+        
+        # Create query - Table  
+        query = f"""UPDATE Animal
+        SET alive = False
+        WHERE name = '{name}';
+        """
+    
+    else:
+        
+        # Create query - Table  
+        query = f"""UPDATE Animal
+        SET age = age + 1
+        WHERE name = '{name}';
+        """
+    
     try:
     
         # Insert new data
@@ -143,7 +161,7 @@ def change_record(name: str='') -> None:
         # Commit the new data
         connection.commit()
         
-        print('Record modified Animal table.')
+        print('Record modified in Animal table.')
     
     except:
         
@@ -164,9 +182,10 @@ def display_menu() -> None:
     # Options
     print('\t1 Display all animals')
     print('\t2 Add a new animal')
-    print('\t3 Report a death')
-    print('\t4 Display oldest animal')
-    print('\t5 Display 10 oldest animals')
+    print('\t3 Celbrate a birthday')
+    print('\t4 Report a death')
+    print('\t5 Display oldest animal')
+    print('\t6 Display 10 oldest animals')
     
     # Options
     print('\n\te Add three example animals')
@@ -215,7 +234,8 @@ def add_new_animal(animals) -> None:
     
     # Local variables
     name: str = ''
-    index: int = 0
+    age: int = 0
+    weight: float = 0.0
         
     # Display Header
     print('\nAdd a New Animal')
@@ -235,6 +255,55 @@ def add_new_animal(animals) -> None:
     
     # Add animal to database
     add_record(name, age, weight)
+
+
+def celebrate_a_birthday(animals) -> None:
+    """Celbrate the birthday of an animal."""
+    
+    # Local variables
+    name: str = ''
+    array_of_animals: list = []
+    index: int = 0
+    found = False
+        
+    # Display Header
+    print('\nCelebrate a Death')
+    print('-----------------\n')
+    
+    # Get name of animal that died
+    name = input('Which animal has a birthday? ')
+    
+    # Get animal data
+    array_of_animals = animals.get_animals()
+    
+    # Loop for each animal
+    while not found and index < len(array_of_animals):
+        
+        # Check name
+        if array_of_animals[index].get_name() == name:
+            
+            # Update details
+            array_of_animals[index].birthday()
+            found = True
+            
+            # Update database
+            change_record(name, False)
+            
+        else:
+            
+            index += 1
+           
+        # Result
+        if found:
+            
+            print(f'Happy birthday {name}!')
+            
+        else:
+            
+            print(f'No animal called {name} was found.')
+        
+        # Footer
+        print('\n-----------------\n')
 
 
 def register_a_death(animals) -> None:
@@ -315,6 +384,7 @@ def display_10_oldest(animals) -> None:
     alive: bool = True
     array_of_animals: list = []
     index: int = 0
+    count: int = 1
     
     # Order animals, oldest to youngest
     animals.order_by_age()
@@ -339,12 +409,15 @@ def display_10_oldest(animals) -> None:
             alive = array_of_animals[index].get_alive()
             
             # Display details        
-            print(f'\nAnimal No {index+1}')
+            print(f'\nAnimal No {count}')
             
             print(f'\tName: {name}')
             print(f'\tAge: {age}')
             print(f'\tWeight {weight} kg')
             print(f'\tAlive: {alive}')
+            
+            # Increment number of animals displayed
+            count += 1
         
         # Increment index
         index += 1
@@ -353,11 +426,12 @@ def display_10_oldest(animals) -> None:
 def add_example_data() -> None:
     """Add example data to the Animal table."""
     
-    # Local variables
+    # Variables
     query: str = ''
+    global database
     
     # Create a connection to the database
-    connection = sqlite3.connect('barra_zoo.db')
+    connection = sqlite3.connect(database)
 
     # Create a database cursor
     cursor = connection.cursor()
@@ -427,17 +501,23 @@ def main() -> None:
         # Select option
         elif option == '3':
             
+            # Celebrate a birthday
+            celebrate_a_birthday(animals)
+        
+        # Select option
+        elif option == '4':
+            
             # Register a death
             register_a_death(animals)
         
         # Select option
-        elif option == '4':
+        elif option == '5':
             
             # Display oldest animal
             display_oldest(animals)
         
         # Select option
-        elif option == '5':
+        elif option == '6':
             
             # Display 10 oldest animals
             display_10_oldest(animals)
@@ -451,6 +531,9 @@ def main() -> None:
         
             # Stop running code
             run = False
+
+# Global variable
+database = 'barra_zoo.db'
 
 
 # Only run code if run directly
