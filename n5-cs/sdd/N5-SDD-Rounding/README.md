@@ -19,9 +19,12 @@ All values are to be correct to 2 decimal places.
 __Note__:  &#8508; = 3.1415
 
 
-### Example UI
+### User Interface: Example
 
 ```
+Circles Fun
+-----------
+
 Given a radius of
 5
 units
@@ -37,4 +40,5 @@ units
 The area is
 78.54
 units squared
+===========
 ```

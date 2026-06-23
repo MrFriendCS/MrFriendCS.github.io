@@ -10,6 +10,219 @@ from mathsFuncs import *
 #
 
 
+def testR2D() -> None:
+    """Test the functionality of the r2d() function."""
+    
+    # Initialise variables
+    failCount = 0
+    inputs = [20, 10, 5, 2.5, 1.2]
+    outputs = [40.0, 20.0, 10.0, 5.0, 2.4]
+    
+    # Display function being tested
+    print("\nTesting: r2d() function")
+
+    # Loop through tests
+    for index in range(len(inputs)):
+        
+        try:
+            
+            assert r2d(inputs[index]) == outputs[index]
+            
+        except:
+            
+            # Increment failure count
+            failCount = failCount + 1
+            
+            # Display failure message
+            print("\tFailed Test " +
+                  str(index+1) + ": r2d("
+                  + str(inputs[index]) + ") = "
+                  + str(outputs[index]))
+    
+    # Display success message
+    if failCount == 0:
+        
+        print("\tAll " + str(len(inputs)) + " tests passed.")
+
+
+def testD2R() -> None:
+    """Test the functionality of the d2r() function."""
+    
+    # Initialise variables
+    failCount = 0
+    inputs = [20, 10, 5, 2.4, 1.2]
+    outputs = [10.0, 5.0, 2.5, 1.2, 0.6]
+    
+    # Display function being tested
+    print("\nTesting: d2r() function")
+
+    # Loop through tests
+    for index in range(len(inputs)):
+        
+        try:
+            
+            assert d2r(inputs[index]) == outputs[index]
+            
+        except:
+            
+            # Increment failure count
+            failCount = failCount + 1
+            
+            # Display failure message
+            print("\tFailed Test " +
+                  str(index+1) + ": d2r("
+                  + str(inputs[index]) + ") = "
+                  + str(outputs[index]))
+    
+    # Display success message
+    if failCount == 0:
+        
+        print("\tAll " + str(len(inputs)) + " tests passed.")
+
+
+def testCircumference() -> None:
+    """Test the functionality of the circumference() function."""
+    
+    # Initialise variables
+    failCount = 0
+    inputs = [1, 10, 100]
+    outputs = [3.14, 31.42, 314.15]
+    
+    # Display function being tested
+    print("\nTesting: circumference() function")
+
+    # Loop through tests
+    for index in range(len(inputs)):
+        
+        try:
+            
+            assert round(circumference(inputs[index]), 2) == outputs[index]
+            
+        except:
+            
+            # Increment failure count
+            failCount = failCount + 1
+            
+            # Display failure message
+            print("\tFailed Test " +
+                  str(index+1) + ": circumference("
+                  + str(inputs[index]) + ") = "
+                  + str(outputs[index]))
+    
+    # Display success message
+    if failCount == 0:
+        
+        print("\tAll " + str(len(inputs)) + " tests passed.")
+
+
+def testAreaOfCircle() -> None:
+    """Test the functionality of the areaOfCircle() function."""
+    
+    # Initialise variables
+    failCount = 0
+    inputs =  [ 0, 0.01, 0.5,  1,    5,     10]
+    outputs = [0, 0,    0.79, 3.14, 78.54, 314.15]
+    
+    # Display function being tested
+    print("\nTesting: areaOfCircle() function")
+
+    # Loop through tests
+    for index in range(len(inputs)):
+        
+        try:
+            
+            assert round(areaOfCircle(inputs[index]), 2) == outputs[index]
+            
+        except:
+            
+            # Increment failure count
+            failCount = failCount + 1
+            
+            # Display failure message
+            print("\tFailed Test " +
+                  str(index+1) + ": areaOfCircle("
+                  + str(inputs[index]) + ") = "
+                  + str(outputs[index]))
+    
+    # Display success message
+    if failCount == 0:
+        
+        print("\tAll " + str(len(inputs)) + " tests passed.")
+        
+
+def testAreaOfTriangle() -> None:
+    """Test the functionality of the areaOfTriangle() function."""
+    
+    # Initialise variables
+    failCount = 0
+    inputs1 = [0,  1,  0.01, 1,    3, 4, 0.1,  0.25]
+    inputs2 = [1,  0,  1,    0.01, 4, 3, 0.2,  0.3]
+    outputs = [0, 0, 0.01, 0.01, 6, 6, 0.01, 0.04]
+    
+    # Display function being tested
+    print("\nTesting: areaOfTriangle() function")
+
+    # Loop through tests
+    for index in range(len(inputs1)):
+        
+        try:
+            
+            assert round(areaOfTriangle(inputs1[index], inputs2[index]), 2) \
+                   == outputs[index]
+            
+        except:
+            
+            # Increment failure count
+            failCount = failCount + 1
+            
+            # Display failure message
+            print("\tFailed Test " +
+                  str(index+1) + ": areaOfTriangle(" +
+                  str(inputs1[index]) + ", "
+                  + str(inputs2[index]) + ") = "
+                  + str(outputs[index]))
+    
+    # Display success message
+    if failCount == 0:
+        
+        print("\tAll " + str(len(inputs1)) + " tests passed.")
+
+
+def testVolOfSphere() -> None:
+    """Test the functionality of the volOfSphere() function."""
+    
+    # Initialise variables
+    failCount = 0
+    inputs =  [0.01, 1,    5,      10]
+    outputs = [0,   4.19, 523.58, 4188.67]
+    
+    # Display function being tested
+    print("\nTesting: volOfSphere() function")
+
+    # Loop through tests
+    for index in range(len(inputs)):
+        
+        try:
+            
+            assert round(volOfSphere(inputs[index]), 2) == outputs[index]
+            
+        except:
+            
+            # Increment failure count
+            failCount = failCount + 1
+            
+            # Display failure message
+            print("\tFailed Test " +
+                  str(index+1) + ": volOfSphere("
+                  + str(inputs[index]) + ") = "
+                  + str(outputs[index]))
+    
+    # Display success message
+    if failCount == 0:
+        
+        print("\tAll " + str(len(inputs)) + " tests passed.")
+
+
 def testGradient() -> None:
     """Test the functionality of the gradient() function."""
     
@@ -37,336 +250,9 @@ def testGradient() -> None:
             # Display failure message
             print("\tFailed Test " +
                   str(index+1) + ": gradient(" +
-                  str(inputs1[index]) + ", " +
-                  str(inputs2[index]) + ") = " +
-                  str(outputs[index]))
-    
-    # Display success message
-    if failCount == 0:
-        
-        print("\tAll " + str(len(inputs1)) + " tests passed.")
-
-
-def testSphere() -> None:
-    """Test the functionality of the volOfSphere() function."""
-    
-    # Initialise variables
-    failCount = 0
-    inputs =  [0.01, 1,    5,      10]
-    outputs = [0,   4.19, 523.58, 4188.67]
-    
-    # Display function being tested
-    print("\nTesting: volOfSphere() function")
-
-    # Loop through tests
-    for index in range(len(inputs)):
-        
-        try:
-            
-            assert volOfSphere(inputs[index]) == outputs[index]
-            
-        except:
-            
-            # Increment failure count
-            failCount = failCount + 1
-            
-            # Display failure message
-            print("\tFailed Test " +
-                  str(index+1) + ": volOfSphere(" +
-                  str(inputs[index]) + ") = " +
-                  str(outputs[index]))
-    
-    # Display success message
-    if failCount == 0:
-        
-        print("\tAll " + str(len(inputs)) + " tests passed.")
-
-
-def testHypotenuse() -> None:
-    """Test the functionality of the hypotenuse() function."""
-    
-    # Initialise variables
-    failCount = 0
-    inputs1 = [ 0,  1, 0.01, 1, 3, 4, 1,       0.2]
-    inputs2 = [ 1,  0, 1,    0.01, 4, 3, 1,    0.2]
-    outputs = [-1, -1, 1,    1,    5, 5, 1.41, 0.28]
-    
-    # Display function being tested
-    print("\nTesting: hypotenuse() function")
-
-    # Loop through tests
-    for index in range(len(inputs1)):
-        
-        try:
-            
-            assert hypotenuse(inputs1[index], inputs2[index]) == outputs[index]
-            
-        except:
-            
-            # Increment failure count
-            failCount = failCount + 1
-            
-            # Display failure message
-            print("\tFailed Test " +
-                  str(index+1) + ": hypotenuse(" +
-                  str(inputs1[index]) + ", " +
-                  str(inputs2[index]) + ") = " +
-                  str(outputs[index]))
-    
-    # Display success message
-    if failCount == 0:
-        
-        print("\tAll " + str(len(inputs1)) + " tests passed.")
-
-
-def testAreaCircle() -> None:
-    """Test the functionality of the areaCircle() function."""
-    
-    # Initialise variables
-    failCount = 0
-    inputs =  [ 0, 0.01, 0.5,  1,    5,     10]
-    outputs = [-1, 0,    0.79, 3.14, 78.54, 314.15]
-    
-    # Display function being tested
-    print("\nTesting: areaCircle() function")
-
-    # Loop through tests
-    for index in range(len(inputs)):
-        
-        try:
-            
-            assert areaCircle(inputs[index]) == outputs[index]
-            
-        except:
-            
-            # Increment failure count
-            failCount = failCount + 1
-            
-            # Display failure message
-            print("\tFailed Test " +
-                  str(index+1) + ": areaCircle(" +
-                  str(inputs[index]) + ") = " +
-                  str(outputs[index]))
-    
-    # Display success message
-    if failCount == 0:
-        
-        print("\tAll " + str(len(inputs)) + " tests passed.")
-        
-
-def testAreaTriangle() -> None:
-    """Test the functionality of the areaTriangle() function."""
-    
-    # Initialise variables
-    failCount = 0
-    inputs1 = [0,  1,  0.01, 1,    3, 4, 0.1,  0.25]
-    inputs2 = [1,  0,  1,    0.01, 4, 3, 0.2,  0.3]
-    outputs = [-1, -1, 0.01, 0.01, 6, 6, 0.01, 0.04]
-    
-    # Display function being tested
-    print("\nTesting: areaTriangle() function")
-
-    # Loop through tests
-    for index in range(len(inputs1)):
-        
-        try:
-            
-            assert areaTriangle(inputs1[index], inputs2[index]) == outputs[index]
-            
-        except:
-            
-            # Increment failure count
-            failCount = failCount + 1
-            
-            # Display failure message
-            print("\tFailed Test " +
-                  str(index+1) + ": areaTriangle(" +
-                  str(inputs1[index]) + ", " +
-                  str(inputs2[index]) + ") = " +
-                  str(outputs[index]))
-    
-    # Display success message
-    if failCount == 0:
-        
-        print("\tAll " + str(len(inputs1)) + " tests passed.")
-
-
-def testAreaSquare() -> None:
-    """Test the functionality of the areaSquare() function."""
-    
-    # Initialise variables
-    failCount = 0
-    inputs =  [ 0, 0.01, 1, 10,  0.5,  0.25]
-    outputs = [-1, 0,    1, 100, 0.25, 0.06]
-    
-    # Display function being tested
-    print("\nTesting: areaSquare() function")
-
-    # Loop through tests
-    for index in range(len(inputs)):
-        
-        try:
-            
-            assert areaSquare(inputs[index]) == outputs[index]
-            
-        except:
-            
-            # Increment failure count
-            failCount = failCount + 1
-            
-            # Display failure message
-            print("\tFailed Test " +
-                  str(index+1) + ": areaSquare(" +
-                  str(inputs[index]) + ") = " +
-                  str(outputs[index]))
-    
-    # Display success message
-    if failCount == 0:
-        
-        print("\tAll " + str(len(inputs)) + " tests passed.")
-
-
-def testAreaRectangle() -> None:
-    """Test the functionality of the areaRectangle() function."""
-    
-    # Initialise variables
-    failCount = 0
-    inputs1 = [ 0,  1, 0.01, 1,    3,  4,  0.1,  0.25]
-    inputs2 = [ 1,  0, 1,    0.01, 4,  3,  0.2,  0.3]
-    outputs = [-1, -1, 0.01, 0.01, 12, 12, 0.02, 0.07]
-    
-    # Display function being tested
-    print("\nTesting: areaRectangle() function")
-
-    # Loop through tests
-    for index in range(len(inputs1)):
-        
-        try:
-            
-            assert areaRectangle(inputs1[index], inputs2[index]) == outputs[index]
-            
-        except:
-            
-            # Increment failure count
-            failCount = failCount + 1
-            
-            # Display failure message
-            print("\tFailed Test " +
-                  str(index+1) + ": areaRectangle(" +
-                  str(inputs1[index]) + ", " +
-                  str(inputs2[index]) + ") = " +
-                  str(outputs[index]))
-    
-    # Display success message
-    if failCount == 0:
-        
-        print("\tAll " + str(len(inputs1)) + " tests passed.")
-
-
-def testVolPrism() -> None:
-    """Test the functionality of the volPrism() function."""
-    
-    # Initialise variables
-    failCount = 0
-    inputs1 = [ 0,  1, 0.01, 1,    3,  4,  0.1,  0.25]
-    inputs2 = [ 1,  0, 1,    0.01, 4,  3,  0.2,  0.3]
-    outputs = [-1, -1, 0.01, 0.01, 12, 12, 0.02, 0.07]
-    
-    # Display function being tested
-    print("\nTesting: volPrism() function")
-
-    # Loop through tests
-    for index in range(len(inputs1)):
-        
-        try:
-            
-            assert volPrism(inputs1[index], inputs2[index]) == outputs[index]
-            
-        except:
-            
-            # Increment failure count
-            failCount = failCount + 1
-            
-            # Display failure message
-            print("\tFailed Test " +
-                  str(index+1) + ": volPrism(" +
-                  str(inputs1[index]) + ", " +
-                  str(inputs2[index]) + ") = " +
-                  str(outputs[index]))
-    
-    # Display success message
-    if failCount == 0:
-        
-        print("\tAll " + str(len(inputs1)) + " tests passed.")
-
-
-def testVolCylinder():
-    """Test the functionality of the volCylinder() function."""
-    
-    # Initialise variables
-    failCount = 0
-    inputs1 = [ 0,  1, 0.01, 10,   1,    10,     1]
-    inputs2 = [ 1,  0, 100,  0.01, 3,    30,     1]
-    outputs = [-1, -1, 0.03, 3.14, 9.42, 9424.5, 3.14]
-    
-    # Display function being tested
-    print("\nTesting: volCylinder() function")
-
-    # Loop through tests
-    for index in range(len(inputs1)):
-        
-        try:
-            
-            assert volCylinder(inputs1[index], inputs2[index]) == outputs[index]
-            
-        except:
-            
-            # Increment failure count
-            failCount = failCount + 1
-            
-            # Display failure message
-            print("\tFailed Test " +
-                  str(index+1) + ": volCylinder(" +
-                  str(inputs1[index]) + ", " +
-                  str(inputs2[index]) + ") = " +
-                  str(outputs[index]))
-    
-    # Display success message
-    if failCount == 0:
-        
-        print("\tAll " + str(len(inputs1)) + " tests passed.")
-
-
-def testVolCone() -> None:
-    """Test the functionality of the volCone() function."""
-    
-    # Initialise variables
-    failCount = 0
-    inputs1 = [ 0,  1, 0.01, 1,    1,    10,     1]
-    inputs2 = [ 1,  0, 1,    0.01, 3,    30,     1]
-    outputs = [-1, -1, 0,    0.01, 3.14, 3141.5, 1.05]
-    
-    # Display function being tested
-    print("\nTesting: volCone() function")
-
-    # Loop through tests
-    for index in range(len(inputs1)):
-        
-        try:
-            
-            assert volCone(inputs1[index], inputs2[index]) == outputs[index]
-            
-        except:
-            
-            # Increment failure count
-            failCount = failCount + 1
-            
-            # Display failure message
-            print("\tFailed Test " +
-                  str(index+1) + ": volCone(" +
-                  str(inputs1[index]) + ", " +
-                  str(inputs2[index]) + ") = " +
-                  str(outputs[index]))
+                  str(inputs1[index]) + ", "
+                  + str(inputs2[index]) + ") = "
+                  + str(outputs[index]))
     
     # Display success message
     if failCount == 0:
@@ -377,19 +263,16 @@ def testVolCone() -> None:
 #
 # Main program
 #
+def main() -> None:
+    
+    # Tests
+    testR2D()
+    testD2R()
+    testCircumference()
+    testAreaOfCircle()
+    testAreaOfTriangle()
+    testVolOfSphere()
+    testGradient()
 
-# Tests
 
-testGradient()
-testSphere()
-"""
-testHypotenuse()
-testAreaCircle()
-testAreaTriangle()
-testAreaSquare()
-testAreaRectangle()
-
-testVolPrism()
-testVolCylinder()
-testVolCone()
-"""
+main()

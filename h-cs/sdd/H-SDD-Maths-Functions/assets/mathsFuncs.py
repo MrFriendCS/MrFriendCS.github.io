@@ -35,7 +35,7 @@ def circumference(d: float) -> float:
     c: float = 0.0
     
     # Calculate diameter
-    c = 2 * pi * d
+    c = pi * d
     
     return c
 
