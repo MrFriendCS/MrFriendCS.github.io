@@ -582,7 +582,7 @@
       <root>
         <mxCell id="T31JlDUDwswGzkLinUCw-0" />
         <mxCell id="T31JlDUDwswGzkLinUCw-1" parent="T31JlDUDwswGzkLinUCw-0" />
-        <mxCell id="T31JlDUDwswGzkLinUCw-2" value="Update Record" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="T31JlDUDwswGzkLinUCw-1" vertex="1">
+        <mxCell id="T31JlDUDwswGzkLinUCw-2" value="Modify a Record" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="T31JlDUDwswGzkLinUCw-1" vertex="1">
           <mxGeometry x="280" y="40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="T31JlDUDwswGzkLinUCw-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="T31JlDUDwswGzkLinUCw-1" edge="1">

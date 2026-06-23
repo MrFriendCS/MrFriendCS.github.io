@@ -80,7 +80,7 @@ Record added to Animal table.
 #### Celebrate a birthday
 
 ```
-Celebrate a birthday
+Celebrate a Birthday
 --------------------
 
 Which animal has a birthday? Lassie
@@ -97,7 +97,6 @@ Register a Death
 ----------------
 
 Which animal died? Lassie
-No animal called Lassie was found.
 
 Record modified in Animal table.
 Lassie's death has been registered.
