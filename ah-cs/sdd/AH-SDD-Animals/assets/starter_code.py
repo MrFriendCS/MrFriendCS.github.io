@@ -71,8 +71,7 @@ def display_menu() -> None:
     print('\t5 Display oldest animal')
     print('\t6 Display 10 oldest animals')
     
-    # Options
-    print('\n\te Add three example animals')
+    # Option
     print('\tx Exit\n')
 
 
@@ -100,6 +99,70 @@ def display_oldest(animals: Animals) -> None:
 
 def display_10_oldest(animals) -> None:
     """Display the details of the 10 oldest animals."""
+
+
+def main() -> None:
+    """Main Barra Zoo code."""
+    
+    # Local variables
+    option: str = ''
+    run: bool = True
+    
+    # Create database - if needed
+    create_database()
+    
+    # Read animal data
+    animals = read_data()
+    
+    # Loop
+    while run:
+    
+        # Display menu
+        display_menu()
+        
+        # Get option
+        option = input('Enter choice: ')
+        
+        # Select option
+        if option == '1':
+            
+            # Display all animals
+            display_all_animals(animals)
+        
+        # Select option
+        elif option == '2':
+            
+            # Add a new animal
+            add_new_animal(animals)
+        
+        # Select option
+        elif option == '3':
+            
+            # Celebrate a birthday
+            celebrate_a_birthday(animals)
+        
+        # Select option
+        elif option == '4':
+            
+            # Register a death
+            register_a_death(animals)
+        
+        # Select option
+        elif option == '5':
+            
+            # Display oldest animal
+            display_oldest(animals)
+        
+        # Select option
+        elif option == '6':
+            
+            # Display 10 oldest animals
+            display_10_oldest(animals)
+            
+        elif option == 'x':
+        
+            # Stop running code
+            run = False
 
 
 # Global variable
