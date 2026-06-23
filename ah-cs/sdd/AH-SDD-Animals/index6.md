@@ -182,3 +182,10 @@ Animal No 3
 ##### Update record
 
 ![Structure diagram](assets/diagrams/sd7.png)
+
+
+## Implementation
+
+Starter code is available.
+
+File: [`starter_code.py`](assets/starter_code.py)

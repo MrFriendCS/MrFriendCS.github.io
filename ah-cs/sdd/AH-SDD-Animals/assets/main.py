@@ -90,7 +90,7 @@ def read_data() -> Animals:
 
 
 def add_record(name: str='', age: int=0, weight: float=0.0) -> None:
-    '''Change the record of a dead animal.'''
+    """Change the record of a dead animal."""
     
     # Variables
     query: str = ''
@@ -127,6 +127,9 @@ def add_record(name: str='', age: int=0, weight: float=0.0) -> None:
     
 
 def update_record(name: str='', die: bool=True) -> None:
+    """Update a record in the Animal table.
+       Either increase the age, or change the alive status.
+       """
     
     # Variables
     query: str = ''
@@ -358,7 +361,7 @@ def register_a_death(animals) -> None:
 
 
 def display_oldest(animals: Animals) -> None:
-    '''Display details of oldest animal.'''
+    """Display details of oldest animal."""
     
     # Local variables
     name: str = ''
