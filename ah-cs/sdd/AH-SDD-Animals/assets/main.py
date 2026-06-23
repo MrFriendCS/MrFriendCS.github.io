@@ -1,6 +1,6 @@
 # Title: AH SDD Barra Zoo
 # Author: Mr Friend
-# Date: 19 Jun 2026
+# Date: 22 Jun 2026
 
 # Get extra code
 import sqlite3
@@ -184,7 +184,7 @@ def display_menu() -> None:
     # Options
     print('\t1 Display all animals')
     print('\t2 Add a new animal')
-    print('\t3 Celbrate a birthday')
+    print('\t3 Celebrate a birthday')
     print('\t4 Report a death')
     print('\t5 Display oldest animal')
     print('\t6 Display 10 oldest animals')
@@ -269,8 +269,8 @@ def celebrate_a_birthday(animals) -> None:
     found = False
         
     # Display Header
-    print('\nCelebrate a Death')
-    print('-----------------\n')
+    print('\nCelebrate a Birthday')
+    print('--------------------\n')
     
     # Get name of animal that died
     name = input('Which animal has a birthday? ')
@@ -295,17 +295,17 @@ def celebrate_a_birthday(animals) -> None:
             
             index += 1
            
-        # Result
-        if found:
-            
-            print(f'Happy birthday {name}!')
-            
-        else:
-            
-            print(f'No animal called {name} was found.')
+    # Result
+    if found:
         
-        # Footer
-        print('\n-----------------\n')
+        print(f'Happy birthday {name}!')
+        
+    else:
+        
+        print(f'No animal called {name} was found.')
+    
+    # Footer
+    print('----------------\n')
 
 
 def register_a_death(animals) -> None:
@@ -344,17 +344,17 @@ def register_a_death(animals) -> None:
             
             index += 1
            
-        # Result
-        if found:
-            
-            print(f'{name}\'s death has been registered.')
-            
-        else:
-            
-            print(f'No animal called {name} was found.')
+    # Result
+    if found:
         
-        # Footer
-        print('\n----------------\n')
+        print(f'{name}\'s death has been registered.')
+        
+    else:
+        
+        print(f'No animal called {name} was found.')
+    
+    # Footer
+    print('----------------\n')
 
 
 def display_oldest(animals: Animals) -> None:

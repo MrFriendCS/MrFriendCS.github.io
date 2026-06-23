@@ -20,6 +20,9 @@
 
 ### User Interface
 
+
+#### Menu
+
 ```
 Barra Zoo
 ---------
@@ -37,6 +40,102 @@ Menu:
   
 Enter choice: 
 ```
+
+
+#### Display all animals
+
+```
+All Animals
+------------
+
+Animal No 1
+    Name: Bonzo
+    Age: 17
+    Weight 15.4 kg
+    Alive: False
+
+Animal No 2
+    Name: Goldie
+    Age: 2
+    Weight 0.1 kg
+    Alive: True
+
+...
+```
+
+
+#### Add a new animal
+
+```
+Add a New Animal
+----------------
+
+Name? Lassie
+Age? 7
+Weight? 21.2
+Record added to Animal table.
+```
+
+
+#### Celebrate a birthday
+
+```
+Celebrate a birthday
+--------------------
+
+Which animal has a birthday? Lassie
+
+Record modified in Animal table.
+Happy birthday Lassie!
+```
+
+
+#### Register a death
+
+```
+Register a Death
+----------------
+
+Which animal died? Lassie
+No animal called Lassie was found.
+
+Record modified in Animal table.
+Lassie's death has been registered.
+```
+
+
+#### Display oldest animal
+
+```
+Oldest Animal
+--------------
+Name: Ginge
+Age: 10
+--------------
+```
+
+
+#### Display 10 oldest animals
+
+```
+Ten Oldest Animals
+-------------------
+
+Animal No 1
+    Name: Ginge
+    Age: 10
+
+Animal No 2
+    Name: Moss
+    Age: 5
+
+Animal No 3
+    Name: Fidget
+    Age: 4
+    
+...
+```
+
 
 ### UML Class Diagram
 
