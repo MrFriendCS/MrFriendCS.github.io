@@ -8,7 +8,9 @@ Computers are useful for doing maths homework!
 
 ## Task
 
-Write a program that will be be given the radius of a circle.  The program will calculate and display the following:
+Write a program that will be be given the radius of a circle.
+Use variables to store the results of all calculations before displaying the results.
+The program will calculate and display the following:
 
 * diameter (2 &#215; r)
 * circumference (&#8508; &#215; d)
