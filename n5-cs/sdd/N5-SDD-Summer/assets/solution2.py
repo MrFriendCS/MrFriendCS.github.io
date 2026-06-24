@@ -16,7 +16,7 @@ answer = 0
 
 # Get number of numbers from user
 while numbers < 2 or numbers > 5:
-    numbers = int(input("How many numbers: "))
+    numbers = int(input("\nHow many numbers: "))
     
     # Check value
     if numbers < 2 or numbers > 5:
@@ -24,7 +24,7 @@ while numbers < 2 or numbers > 5:
 
 # Get maximum value from user
 while maximum <= 0:
-    maximum = int(input("Largest number: "))
+    maximum = int(input("\nLargest number: "))
     
     # Check value
     if maximum <= 0:
@@ -51,6 +51,9 @@ answer = int(input("\nWhat is the sum? "))
 
 # Display result
 if answer == sumTotal:
+    
     print("\nCorrect!")
+    
 else:
+    
     print("\nWrong.  It's " + str(sumTotal) + "!")

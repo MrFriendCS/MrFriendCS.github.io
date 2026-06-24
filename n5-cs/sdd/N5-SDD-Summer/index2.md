@@ -8,7 +8,10 @@ Create a file called `summer2.py`.
 
 ## Task
 
-Write a program to help with addition.  Ask how many numbers are to be added together, and the maximum value of any number.  Only from 2 to 5 numbers can be added together.  The maximum value must be positive.
+Write a program to help with addition.
+Ask how many numbers are to be added together, and the maximum value of any number.
+Only from 2 to 5 numbers can be added together.
+The maximum value must be positive.
 
 Create and display a list of random numbers that meet the criteria.
 
@@ -18,6 +21,14 @@ __Notes__
 
 * `"\n"` = new line
 * `"\t"` = tab
+
+
+## Design
+
+
+## Program top-level design (Structure Diagram)
+
+![Structure diagram](assets/sd2.png "Structure diagram")
 
 
 ### Example UI
