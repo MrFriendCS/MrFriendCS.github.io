@@ -1,11 +1,11 @@
 Walking Results - 4 Weeks
 -------------------------
 
-Week 1: 12.3
-Week 2: 9.7
-Week 3: 11.1
-Week 4: 12.7
+Week 1: 1.2
+Week 2: 2.3
+Week 3: 3.4
+Week 4: 4.5
 
-Total: 45.8 miles
+Total: 11.4 miles
 
-Average: 11.4 miles (1 dp)
+Average: 2.9 miles (1 dp)

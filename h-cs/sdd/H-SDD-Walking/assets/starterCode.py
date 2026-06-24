@@ -52,7 +52,7 @@ def writeData(distances: list[float], total: float,
 
 
 # Global variables
-distances: list = [0.0] * 4
+distances: list[float] = [0.0] * 4
 total: float = 0.0
 average: float = 0.0
 
