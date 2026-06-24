@@ -32,4 +32,5 @@ My big seagull ate slowly.
 The rainbow dog ran happily.
 ```
 
-__Tip__ Five arrays are needed.  More elements in each array will create more random poetry.
+__Tip__ Five arrays are needed.
+More elements in each array will create more random poetry.
