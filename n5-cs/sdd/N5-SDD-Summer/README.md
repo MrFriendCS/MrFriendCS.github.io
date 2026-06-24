@@ -26,23 +26,7 @@ __Notes__:
 ![Structure diagram](assets/sd1.png "Structure diagram")
 
 
-### Example UI
-
-#### Example 1
-
-```
-Square Rooter
--------------
-
-Enter a value: 25
-
-The square root is 5.0
-
-=============
-```
-
-
-#### Example 2
+### Example User Interface
 
 ```
 Square Rooter
