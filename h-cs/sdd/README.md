@@ -9,7 +9,7 @@
 | H-SDD-Substrings         | Substring functions             | sp, ss                      | Tests |
 | H-SDD-Conversion         | Conversion of different units   | sp, mod                     | Tests |
 | H-SDD-Maths Pt 2         | Simple functions to practise    | sp                          | Tests |
-| H-SDD-Walking Pt 1       | Write data to file              | sp, w                       | sd, Starter code|
+| H-SDD-Walking            | Write data to file              | sp, w                       | sd, Starter code|
 | H-SDD-Caesar-Cipher Pt 1 | Plaintext to ciphertext         | sp, mod, ss, asc, chr       | Tests |
 | H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext         | sp, mod, ss, asc, chr       | Tests |
 | H-SDD-Standard           | Standard algorithms             | sp, ls, co, min, max        | Tests |
@@ -20,7 +20,6 @@
 | H-SDD-Summer Pt 3        | Text related functions          | sp, ss, asc, ls             | Tests |
 | H-SDD-Add                | Add two values                  | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%     | sp, r, w                    | sd |
-| H-SDD-Walking Pt 2       | Write data to file              | sp, w                       | sd |
 | H-SDD-Countries          | Write parallel arrays to file   | w, pa                       | |
 | H-SDD-Tuck-Shop Pt 1     | Create a price list             | r, pa, ss, asc, chr, w      | pc |
 | H-SDD-Tuck-Shop Pt 2     | Create a price list             | sp, r, pa, ss, asc, chr, w  | sd |
