@@ -1,142 +1,172 @@
 # Title: H-SDD-Summer Part 1
 # Author: Mr Friend
-# Date: 23 Jun 2025
+# Date: 24 Jun 2026
 
 #
 # Sub-programs
 #
 
 
-def circumference(size: float, rd: str="d") -> float:
-    """Calculate the circumference of a circle using the radius or diameter.
-       Returns the circumference to 4 dp.
-       """
+def getRadius() -> float:
+    """Get a valid radius."""
     
-    # Local variables
-    PI = 3.1415
-    c = 0.0
+    # Local variable
+    r: float = 0.0
     
-    # Check if values are valid
-    if size >= 0 and (rd == "r" or rd == "d"):
+    # Header
+    print("Radius Fun")
+    print("----------")
+    
+    # Get valid radius from user
+    while r <= 0.0:
         
-        # Check if radius being used
-        if rd == "r":
+        # Get radius
+        r = float(input("\nEnter the radius: "))
+        
+        # Check rdius
+        if r <= 0.0:
             
-            # Convert radius to diameter
-            size = size * 2
-        
-        # Calculate circumference and round to 4 dp
-        c = round(PI * size, 4)
-        
-    #
-    else:
-        
-        # Set c to error values
-        c = -1.0
+            # Display error message
+            print("The rdius must be more than zero.")
     
-    # Return circumference
-    return c
-
-
-def radius(size: float, dc: str="d") -> float:
-    """Calculate the radius of a circle using the diameter or circumference.
-       Returns the radius to 4 dp.
-       """
-    
-    # Local variables
-    PI = 3.1415
-    r = 0.0
-    
-    # Check if values are valid
-    if size >= 0 and (dc == "d" or dc == "c"):
-        
-        # Check if circumference being used
-        if dc == "c":
-            
-            # Convert circumference to diameter
-            size = size / PI
-        
-        # Calculate radius and round to 4 dp
-        r = round(size / 2, 4)
-        
-    #
-    else:
-        
-        # Set r to error values
-        r = -1.0
-        
-    # Return radius
+    # End function
     return r
 
 
-def diameter(size: float, rc: str="r") -> float:
-    """Calculate the diameter of a circle using the radius or circumference.
-       Returns the diameter to 4 dp.
+def calcDiameter(r: float) -> float:
+    """Calculate the diameter of a circle to
+       2 dp using the radius.
        """
     
-    # Local variables
-    PI = 3.1415
-    d = 0.0
+    # Local variable
+    d: float = 0.0
     
-    # Check if values are valid
-    if size >= 0 and (rc == "r" or rc == "c"):
+    # Calculate the diameter
+    d = r * 2
+    
+    # Round to 2 dp
+    d = round(d, 2)
         
-        # Check if circumference being used
-        if rc == "c":
-            
-            # Convert circumference to diameter
-            d = round(size / PI, 4)
-        
-        else:
-            # Convert radius to diameter
-            d = size * 2.0
-
-        # Round to 4 dp
-        d = round(d, 4)
-        
-    #
-    else:
-        
-        # Set d to error values
-        d = -1.0
-        
-    # Return diameter
+    # End function
     return d
 
 
-def area(size: float, rdc: str="r") -> float:
-    """Calculate the area of a circle using the radius, diameter,
-       or circumference.  Returns the area to 4 dp.
+def calcCircumference(r: float) -> float:
+    """Calculate the circumference of a circle to
+       2 dp using the radius.
        """
     
     # Local variables
-    PI = 3.1415
-    a = 0.0
+    PI: float = 3.1415
+    c: float = 0.0
     
-    # Check if values are valid
-    if size >= 0 and (rdc == "r" or rdc == "d" or rdc == "c"):
-        
-        # Check if diameter being used
-        if rdc == "d":
+    # Calculate the circumference
+    c = 2 * PI * r
+    
+    # Round to 2 dp
+    c = round(c, 2)
             
-            # Convert diameter to radius
-            size = size / 2
-        
-        # Check if curcumference being used
-        elif rdc == "c":
+    # End function
+    return c
+
+
+def calcArea(r: float) -> float:
+    """Calculate the area of a circle to
+       2 dp using the radius.
+       """
+    
+    # Local variables
+    PI: float = 3.1415
+    area: float = 0.0
+    
+    # Calculate the area
+    area = PI * r**2
+    
+    # Round to 2 dp
+    area = round(area, 2)
             
-            # Convert diameter to radius
-            size = size / (2 * PI)
+    # End function
+    return area
+
+
+def calcVolume(r: float) -> float:
+    """Calculate the volume of a sphere to
+       2 dp using the radius.
+       """
+    
+    # Local variables
+    PI: float = 3.1415
+    vol: float = 0.0
+    
+    # Calculate the volume
+    vol = (4/3) * PI * r**3
+    
+    # Round to 2 dp
+    vol = round(vol, 2)
             
-        # Calculate area and round to 4 dp
-        a = round(PI * size**2, 4)
-        
-    #
-    else:
-        
-        # Set a to error values
-        a = -1.0
-        
-    # Return area
-    return a
+    # End function
+    return vol
+
+
+def writeResults(r: float, d: float, c: float,
+                 area: float, vol: float) -> None:
+    """Write the results to a file."""
+    
+    # Connect to the file
+    file = open("radiusFun.txt", "w", encoding="utf-8")
+    
+    # Write header
+    file.write("Radius Fun Results\n")
+    file.write("------------------\n\n")
+    
+    # Write radius
+    file.write("Radius: " + str(r) + "\n")
+    
+    # Write diameter
+    file.write("Diameter: " + str(d) + "\n")
+    
+    # Write circumference
+    file.write("Circumference: " + str(c) + "\n")
+    
+    # Write area
+    file.write("Area of circle: " + str(area) + "\n")
+    
+    # Write volume
+    file.write("Volume of sphere: " + str(vol) + "\n")
+    
+    # Footer
+    file.write("\n==================\n")
+    
+    # Close connection to file
+    file.close()
+
+
+#
+# Main Program
+#
+
+# Global variables
+r: float = 0.0
+d: float = 0.0
+c: float = 0.0
+area: float = 0.0
+vol: float = 0.0
+
+# Get valid radius
+r = getRadius()
+
+# Calculate diameter
+d = calcDiameter(r)
+
+# Calculate circumference
+c = calcCircumference(r)
+
+# Calculate area of circle
+area = calcArea(r)
+
+# Calculate volume of sphere
+vol = calcVolume(r)
+
+# Write results to file
+writeResults(r, d, c, area, vol)
 

@@ -8,7 +8,8 @@ Create a file called `summer1.py`.
 
 ## Task
 
-Write a program to ask the user for a value and then display the square root of the value.  Only positive values are acceptable.  If the square root is an integer display it with no trailing zeros, otherwise round it to 3 decimal places.
+Write a program to ask the user for a value and then display the square root of the value.
+Only values more than zero are acceptable.
 
 __Notes__:
 
@@ -17,21 +18,39 @@ __Notes__:
 3. `9` to the power of `0.5` = `3`
 
 
+## Design
+
+
+## Program top-level design (Structure Diagram)
+
+![Structure diagram](assets/sd1.png "Structure diagram")
+
+
 ### Example UI
 
 #### Example 1
 
 ```
+Square Rooter
+-------------
+
 Enter a value: 25
 
-The square root of 25 is 5
+The square root is 5.0
+
+=============
 ```
 
 
 #### Example 2
 
 ```
+Square Rooter
+-------------
+
 Enter a value: 26
 
-The square of 26 root is 5.099
+The square root is 5.099
+
+=============
 ```

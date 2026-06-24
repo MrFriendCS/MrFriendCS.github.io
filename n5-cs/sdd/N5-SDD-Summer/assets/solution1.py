@@ -1,29 +1,38 @@
 # Title: N5 SDD Summer Tasks
 # Author: Mr Friend
-# Date: 25 Aug 2025
-
+# Date: 24 Jun 2026
 
 # Initilise variables
-value = 0
-root = 0
-result = ""
+value: float = 0.0
+root: float = 0.0
+result: str = ""
 
-# Get value from user
-value = int(input("Enter a value: "))
+# Header
+print("Square Rooter")
+print("-------------")
+
+
+# Get valid value
+while value <= 0.0:
+    
+    # Get value from user
+    value = float(input("\nEnter a value: "))
+
+    # Chack value
+    if value <= 0.0:
+        
+        # Display error message
+        print("Value must be more than zero.")
 
 # Calculate result
 root = value ** 0.5
 
-# Check if decimal places
-if root == round(root):
-    
-    # Round to 0 dp
-    result = str(round(root))
-    
-else:
-    
-    # Round to 3 dp
-    result = str(round(root, 3))
-    
+# Round to 3 dp
+root = round(root,3)
+   
 # Display result
-print("The root of " + str(value) + " is " + result)
+print("The square root is " + str(root))
+
+# Footer
+print("\n=============")
+
