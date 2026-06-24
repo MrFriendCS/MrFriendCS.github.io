@@ -20,7 +20,7 @@ area = length * breadth
 perimeter = round(perimeter, 2)
 area = round(area, 2)
 
-# Display eader
+# Display header
 print("Rectangle Fun")
 print("-------------")
 print()
@@ -36,13 +36,13 @@ print()
 # Display perimeter
 print("Perimeter:")
 print(perimeter)
-print("units")
+print("units (2 dp)")
 print()
 
 # Display area
 print("Area:")
 print(area)
-print("square units")
+print("square units (2 dp)")
 print()
 
 # Display footer
