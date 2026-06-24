@@ -1,9 +1,10 @@
-# H SDD - Maths Functions
+# H SDD - Maths Functions Part 2
 
 
 ## Introduction
 
-Create a file called `mathsFuncs.py`.  The file will contain the code for the following functions:
+Create a file called `mathsFuncs2.py`.
+The file will contain the code for the following functions:
 
 * _r2d_
 * _d2r_
@@ -153,4 +154,8 @@ print(gradient([1.0, 2,0], [11.0, 12.0))
 
 ## Testing
 
-Test the functions to ensure they work.  Apart from TAD, remove any code that is not in the functions.
+Test the functions to ensure they work.
+Apart from TAD, remove any code that is not in the functions.
+
+Save the file [`mathsFuncsTest2.py`](assets/mathsFuncsTests2.py) to the same folder as `mathsFuncs2.py`.
+Open and run `mathsFuncsTest2.py`.

@@ -1,8 +1,9 @@
-# H SDD - Numeracy Functions
+# H SDD - Maths Functions
 
 ## Introduction
 
-Create a file called `numeracyFuncs.py`.  The file will contain the code for the following functions:
+Create a file called `mathsFuncs.py`.
+The file will contain the code for the following functions:
 
 * _add_
 * _multiply_
@@ -79,6 +80,8 @@ print(divide(6, 3))
 
 ## Testing
 
-Test the functions to ensure they work.  Apart from TAD, remove any code that is not in the functions.
+Test the functions to ensure they work.
+Apart from TAD, remove any code that is not in the functions.
 
-Save the file [`numeracyFuncsTest.py`](assets/numeracyFuncsTests.py) to the same folder as `numeracyFuncs.py`.  Open and run `numeracyFuncsTest.py`.
+Save the file [`mathsFuncsTest.py`](assets/mathsFuncsTests.py) to the same folder as `mathsFuncs.py`.
+Open and run `mathsFuncsTest.py`.
