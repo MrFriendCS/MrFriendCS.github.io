@@ -1,34 +1,36 @@
-# Title: N5 SDD Summer Tasks Part 3
+# Title: N5 SDD Summer Year 1 Part 3
 # Author: Mr Friend
-# Date: 25 Aug 2025
-
-
-# Get extra code
-import random
+# Date: 24 Jun 2026
 
 # Initilise variables
-determiner = ["A", "My", "The"]
-adjective = ["blue", "big", "rainbow"]
-noun = ["wind", "seagull", "dog"]
-verb = ["slept", "ate", "ran"]
-adverb = ["playfully", "slowly", "happily"]
+radius: float = 0.0
+pi = 3.1415
+area: float = 0.0
 
-ranDet = 0
-ranAdj = 0
-ranNou = 0
-ranVer = 0
-ranAdv = 0
+# Set value
+radius = 2.25
 
-# Pick random words
-ranDet = random.randint(0, len(determiner)-1)
-ranAdj = random.randint(0, len(adjective)-1)
-ranNou = random.randint(0, len(noun)-1)
-ranVer = random.randint(0, len(verb)-1)
-ranAdv = random.randint(0, len(adverb)-1)
+# Calculation
+area = pi * radius**2
 
-# Display a line of poetry
-print(determiner[ranDet] + " " +
-      adjective[ranAdj] + " " +
-      noun[ranNou] + " " +
-      verb[ranVer] + " " +
-      adverb[ranAdv])
+# Round value
+area = round(area, 2)
+
+# Display header
+print("Circle Fun")
+print("----------")
+print()
+
+# Display values
+print("Radius:")
+print(radius)
+print()
+
+# Display area
+print("Area:")
+print(area)
+print("units square (2 dp)")
+print()
+
+# Display footer
+print("==========")

@@ -28,7 +28,7 @@ units (2 dp)
 
 Area:
 16.31
-square units (2 dp)
+units square (2 dp)
 
 =============
 ```

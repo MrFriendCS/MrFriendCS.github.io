@@ -1,59 +1,40 @@
-# Title: N5 SDD Summer Tasks Part 2
+# Title: N5 SDD Summer Year 1 Part 2
 # Author: Mr Friend
-# Date: 25 Aug 2025
-
-
-# Get extra code
-import random
+# Date: 24 Jun 2026
 
 # Initilise variables
-numbers = 0
-maximum = 0
-value = 0
-sumText = ""
-sumTotal = 0
-answer = 0
+base: float = 0.0
+height: float = 0.0
+area: float = 0.0
 
-# Get number of numbers from user
-while numbers < 2 or numbers > 5:
-    numbers = int(input("\nHow many numbers: "))
-    
-    # Check value
-    if numbers < 2 or numbers > 5:
-        print("Value must be between 2 and 5.\n")
+# Set values
+base = 2.25
+height = 7.25
 
-# Get maximum value from user
-while maximum <= 0:
-    maximum = int(input("\nLargest number: "))
-    
-    # Check value
-    if maximum <= 0:
-        print("Value must be greater than 0.\n")
+# Calculation
+area = 0.5 * base * height
 
-# Create problem
-for counter in range(numbers):
-    
-    # Generate value to add
-    value = random.randint(1, maximum)
-    
-    # Add value to text
-    sumText = sumText + "  " + str(value)
-    
-    # Add value to total
-    sumTotal = sumTotal + value
+# Round value
+area = round(area, 2)
 
-# Display problem
-print("\nAdd the following numbers together:")
-print(sumText)
+# Display header
+print("Triangle Fun")
+print("------------")
+print()
 
-# Get value from user
-answer = int(input("\nWhat is the sum? "))
+# Display values
+print("Base:")
+print(base)
+print()
+print("Height")
+print(height)
+print()
 
-# Display result
-if answer == sumTotal:
-    
-    print("\nCorrect!")
-    
-else:
-    
-    print("\nWrong.  It's " + str(sumTotal) + "!")
+# Display area
+print("Area:")
+print(area)
+print("units square (2 dp)")
+print()
+
+# Display footer
+print("============")

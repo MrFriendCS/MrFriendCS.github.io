@@ -1,4 +1,4 @@
-# Title: N5 SDD Summer 1 Part 1
+# Title: N5 SDD Summer Year 1 Part 1
 # Author: Mr Friend
 # Date: 24 Jun 2026
 
@@ -42,7 +42,7 @@ print()
 # Display area
 print("Area:")
 print(area)
-print("square units (2 dp)")
+print("units square (2 dp)")
 print()
 
 # Display footer
