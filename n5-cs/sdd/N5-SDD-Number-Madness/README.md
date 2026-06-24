@@ -2,7 +2,8 @@
 
 ## Task
 
-Write a short program that will use two whole numbers.  The program will then show the results of the numbers being:
+Write a short program that will use two whole numbers.
+The program will then show the results of the numbers being:
 
 1. Added
 2. Subtracted
