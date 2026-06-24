@@ -5,7 +5,7 @@
 
 Write a short program that will calculate the perimeter and area of a rectangle.
 
-Use variables to store the values of the length and breadth of the rectangle, the results before the answers are displayed.
+Use variables to store the values of the length, breadth, and the results before the answers are displayed.
 
 Round the results to 2 decimal places.
 
