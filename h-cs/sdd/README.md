@@ -5,19 +5,19 @@
 
 | Title                    | Description                     | Concepts                    | Comments |
 | -----                    | -----------                     | --------                    | -------- |
-| H-SDD-Maths Pt 1         | Simple functions to practise    | sp                          | Tests |
+| H-SDD-Maths Pt 1         | Simple functions - numercy      | sp                          | Tests |
 | H-SDD-Substrings         | Substring functions             | sp, ss                      | Tests |
 | H-SDD-Conversion         | Conversion of different units   | sp, mod                     | Tests |
-| H-SDD-Maths Pt 2         | Simple functions to practise    | sp                          | Tests |
-| H-SDD-Walking            | Write data to file              | sp, w                       | sd, Starter code|
-| H-SDD-Caesar-Cipher Pt 1 | Plaintext to ciphertext         | sp, mod, ss, asc, chr       | Tests |
-| H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext         | sp, mod, ss, asc, chr       | Tests |
 | H-SDD-Standard           | Standard algorithms             | sp, ls, co, min, max        | Tests |
-| H-SDD-Parallel           | Skelton parallel arrays         | pa                          | |
-| H-SDD-Ski-Slope          | Calculations and results        | sp                          | pc |
+| H-SDD-Maths Pt 2         | Pi related functions            | sp                          | Tests |
+| H-SDD-Walking            | Write data to file              | sp, w                       | sd, Starter code|
 | H-SDD-Summer Pt 1        | Pi related functions            | sp                          | Tests |
 | H-SDD-Summer Pt 2        | Text related functions          | sp, ss, chr                 | Tests |
 | H-SDD-Summer Pt 3        | Text related functions          | sp, ss, asc, ls             | Tests |
+| H-SDD-Caesar-Cipher Pt 1 | Plaintext to ciphertext         | sp, mod, ss, asc, chr       | Tests |
+| H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext         | sp, mod, ss, asc, chr       | Tests |
+| H-SDD-Parallel           | Skelton parallel arrays         | pa                          | |
+| H-SDD-Ski-Slope          | Calculations and results        | sp                          | pc |
 | H-SDD-Add                | Add two values                  | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%     | sp, r, w                    | sd |
 | H-SDD-Countries          | Write parallel arrays to file   | w, pa                       | |

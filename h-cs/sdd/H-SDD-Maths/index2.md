@@ -157,5 +157,5 @@ print(gradient([1.0, 2,0], [11.0, 12.0))
 Test the functions to ensure they work.
 Apart from TAD, remove any code that is not in the functions.
 
-Save the file [`mathsFuncsTest2.py`](assets/mathsFuncsTests2.py) to the same folder as `mathsFuncs2.py`.
-Open and run `mathsFuncsTest2.py`.
+Save the file [`mathsFuncsTests2.py`](assets/mathsFuncsTests2.py) to the same folder as `mathsFuncs2.py`.
+Open and run `mathsFuncsTests2.py`.
