@@ -34,7 +34,7 @@ Create a function (`letterTypes`) that will accept a string.  The function will 
 | Input                         | Output | Comment |
 | -----                         | ------ | ------- |
 | letterTypes("Hello")          | (1, 4) | |
-| letterTypes("Fun! Fun! Fun!") | (1, 3) | |
+| letterTypes("Fun! Fun! Fun!") | (3, 6) | |
 | letterTypes("####! ####!")    | (0, 0) | |
 
 

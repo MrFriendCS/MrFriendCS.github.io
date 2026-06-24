@@ -39,3 +39,10 @@ Total: 45.8 miles
 
 Average: 11.4 miles (1 dp)
 ```
+
+
+## Implementation
+
+Starter code is available.
+
+File: [`starterCode.py`](assets/starterCode.py)
