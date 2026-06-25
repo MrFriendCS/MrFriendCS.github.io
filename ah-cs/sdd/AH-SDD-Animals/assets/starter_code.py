@@ -42,7 +42,9 @@ def create_database() -> None:
 
 
 def read_data() -> Animals:
-    """Read the animals data into an Animals objects."""
+    """Read the animals data into Animal objects
+       in an Animals object.
+       """
 
 
 def add_record(name: str='', age: int=0, weight: float=0.0) -> None:

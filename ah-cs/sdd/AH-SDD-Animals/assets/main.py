@@ -42,7 +42,9 @@ def create_database() -> None:
 
 
 def read_data() -> Animals:
-    """Read the animals into an array of objects."""
+    """Read the animals data into Animal objects
+       in an Animals object.
+       """
     
     # Variables
     animals = Animals()
