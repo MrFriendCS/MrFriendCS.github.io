@@ -8,8 +8,8 @@ Create a file called `summer1.py`.
 
 ## Task
 
-Write a program to ask the user for a value and then display the square root of the value.
-Only values more than zero are acceptable.
+Write a program to ask the user for a number and then display the square root of the number.
+Only numbers larger than zero are acceptable.
 
 __Notes__:
 
@@ -32,7 +32,7 @@ __Notes__:
 Square Rooter
 -------------
 
-Enter a value: 26
+Enter a number: 26
 
 The square root is 5.099
 

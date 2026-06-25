@@ -3,7 +3,7 @@
 # Date: 24 Jun 2026
 
 # Initilise variables
-value: float = 0.0
+number: float = 0.0
 root: float = 0.0
 result: str = ""
 
@@ -13,19 +13,19 @@ print("-------------")
 
 
 # Get valid value
-while value <= 0.0:
+while number <= 0.0:
     
     # Get value from user
-    value = float(input("\nEnter a value: "))
+    number = float(input("\nEnter a number: "))
 
     # Chack value
-    if value <= 0.0:
+    if number <= 0.0:
         
         # Display error message
-        print("Value must be more than zero.")
+        print("number must be more than zero.")
 
 # Calculate result
-root = value ** 0.5
+root = number ** 0.5
 
 # Round to 3 dp
 root = round(root,3)
