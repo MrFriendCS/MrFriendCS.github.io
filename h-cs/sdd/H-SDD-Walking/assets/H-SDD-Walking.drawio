@@ -40,7 +40,7 @@
             <mxPoint x="220" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KL4S8WIwbTE8AwIzojDe-3" value="Get data" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="KL4S8WIwbTE8AwIzojDe-3" value="Get vaild&lt;div&gt;distances&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KL4S8WIwbTE8AwIzojDe-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="KL4S8WIwbTE8AwIzojDe-4" edge="1">
