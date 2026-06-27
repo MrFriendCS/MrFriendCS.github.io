@@ -1,6 +1,6 @@
 # Title: AH SDD Barra Zoo
 # Author: Mr Friend
-# Date: 22 Jun 2026
+# Date: 27 Jun 2026
 
 # Get extra code
 import sqlite3
@@ -187,16 +187,18 @@ def display_menu() -> None:
     print('\nMenu:\n')
     
     # Options
-    print('\t1 Display all animals')
-    print('\t2 Add a new animal')
-    print('\t3 Celebrate a birthday')
-    print('\t4 Report a death')
-    print('\t5 Display oldest animal')
-    print('\t6 Display 10 oldest animals')
+    print(f'{1:>5} Display all animals')
+    print(f'{2:>5} Add a new animal')
+    print(f'{3:>5} Celebrate a birthday')
+    print(f'{4:>5} Report a death')
+    print(f'{5:>5} Display oldest animal')
+    print(f'{6:>5} Display 10 oldest animals')
+    print(f'{7:>5} Display heaviest animal')
+    print(f'{8:>5} Display 10 heaviest animals')
     
     # Options
-    print('\n\te Add three example animals')
-    print('\tx Exit\n')
+    print(f'\n{"e":>5} Add three example animals')
+    print(f'{"x":>5} Exit\n')
 
 
 def display_all_animals(animals) -> None:
@@ -373,7 +375,7 @@ def display_oldest(animals: Animals) -> None:
     age, name = animals.find_oldest()
     
     print('\nOldest Animal')
-    print('--------------')
+    print('------------')
     
     print(f'Name: {name}')
     print(f'Age: {age}')
@@ -381,25 +383,55 @@ def display_oldest(animals: Animals) -> None:
     print('--------------\n')
 
 
-def display_10_oldest(animals) -> None:
-    """Display the details of the 10 oldest animals."""
+def display_heaviest(animals: Animals) -> None:
+    """Display details of heaviest animal."""
+    
+    # Local variables
+    name: str = ''
+    weight: float = 0.0
+    
+    # Get data
+    weight, name = animals.find_heaviest()
+    
+    print('\nHeaviest Animal')
+    print('---------------')
+    
+    print(f'Name: {name}')
+    print(f'Weight: {weight}')
+    
+    print('---------------\n')
+
+
+def display_10(animals: Animals, age_weight: bool) -> None:
+    """Display the details of the 10 animals."""
     
     # Local variables
     name: str = ''
     age: int = 0
+    weight: float = 0.0
     array_of_animals: list = []
     index: int = 0
     count: int = 1
     
-    # Order animals, oldest to youngest
-    animals.order_by_age()
+    if age_weight:
+        # Order animals, oldest to youngest
+        animals.order_by_age()
+        
+        # Display Header
+        print('\nTen Oldest Animals')
+        print('------------------')
+        
+    else:
+        # Order animals, heaviest to lightest
+        animals.order_by_weight()
+        
+        # Display Header
+        print('\nTen Heavy Animals')
+        print('-----------------')
     
     # Get animal data
     array_of_animals = animals.get_animals()
         
-    # Display Header
-    print('\nTen Oldest Animals')
-    print('-------------------')
     
     # Loop for each animal
     while index < 10 and index != len(array_of_animals):
@@ -410,12 +442,14 @@ def display_10_oldest(animals) -> None:
             # Get details
             name = array_of_animals[index].get_name()
             age = array_of_animals[index].get_age()
+            weight = array_of_animals[index].get_weight()
             
             # Display details        
             print(f'\nAnimal No {count}')
             
-            print(f'\tName: {name}')
-            print(f'\tAge: {age}')
+            print(f'{"Name":>10}: {name}')
+            print(f'{"Age":>10}: {age}')
+            print(f'{"Weight":>10}: {weight}')
             
             # Increment number of animals displayed
             count += 1
@@ -521,7 +555,19 @@ def main() -> None:
         elif option == '6':
             
             # Display 10 oldest animals
-            display_10_oldest(animals)
+            display_10(animals, True)
+        
+        # Select option
+        elif option == '7':
+            
+            # Display heaviest animal
+            display_heaviest(animals)
+        
+        # Select option
+        elif option == '8':
+            
+            # Display 10 heaviest animals
+            display_10(animals, False)
             
         elif option == 'e':
             

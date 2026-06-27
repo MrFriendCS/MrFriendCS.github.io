@@ -1,6 +1,6 @@
 # Title: Animal Class
 # Author: Mr Friend
-# Date: 10 Jun 2026
+# Date: 27 Jun 2026
 
 # Import Animal class
 from animal import Animal
@@ -50,6 +50,27 @@ class Animals:
                 oldest_name = self.__animals[index].get_name()
         
         return oldest_age, oldest_name
+        
+    def find_heaviest(self) -> tuple[int, str]:
+        """A method to find the age and name of the heaviest animal."""
+        
+        # Local variables
+        
+        heaviest_weight: float = -1.0
+        heaviest_name: str = 'TBC'
+        
+        # Loop for each animal
+        for index in range(self.__number_of_animals):
+            
+            # Check if current animal is older
+            if self.__animals[index].get_weight() > heaviest_weight \
+                and self.__animals[index].get_alive() == True:
+                
+                # Update oldest details
+                heaviest_weight = self.__animals[index].get_weight()
+                heaviest_name = self.__animals[index].get_name()
+        
+        return heaviest_weight, heaviest_name
     
     def get_animals(self) -> list[Animal]:
         """A method to get the array of animals."""
