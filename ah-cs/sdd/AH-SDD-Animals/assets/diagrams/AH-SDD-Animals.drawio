@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2" pages="14">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" pages="15">
   <diagram id="dSmxpFlf6ctc98qw9gfx" name="UseCase">
     <mxGraphModel dx="934" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
@@ -251,6 +251,41 @@
           <mxGeometry height="128" width="230" y="102" as="geometry" />
         </mxCell>
         <mxCell id="RhRKgga8_ihRIR0LZ_kO-10" edge="1" parent="RhRKgga8_ihRIR0LZ_kO-1" source="RhRKgga8_ihRIR0LZ_kO-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.841;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;exitPerimeter=0;" target="RhRKgga8_ihRIR0LZ_kO-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="class6" id="J_ysGoxsQgjHsKUDo73y">
+    <mxGraphModel dx="934" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="413" math="0" shadow="0">
+      <root>
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-0" />
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-1" parent="J_4ZyXnS1UajDAuP3LCJ-0" />
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-2" parent="J_4ZyXnS1UajDAuP3LCJ-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="Animals" vertex="1">
+          <mxGeometry height="210" width="210" x="40" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-3" parent="J_4ZyXnS1UajDAuP3LCJ-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- number_of_animals: Integer = 0&lt;/div&gt;&lt;div&gt;- animals: Array of Animal() = [ ]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-4" parent="J_4ZyXnS1UajDAuP3LCJ-2" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="12" width="210" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-5" parent="J_4ZyXnS1UajDAuP3LCJ-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Animals()&lt;div&gt;+ add_animal(Animal): void&lt;/div&gt;&lt;div&gt;+ get_number_of_animals(): Integer&lt;br&gt;&lt;div&gt;+ find_oldest(): Integer, String&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ get_animals(): Array of Animal()&lt;/div&gt;&lt;div&gt;+ order_by_age(): void&lt;/div&gt;&lt;div&gt;+ find_heaviest(): Float, String&lt;/div&gt;&lt;div&gt;+ order_by_weight(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="128" width="210" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-6" parent="J_4ZyXnS1UajDAuP3LCJ-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="Animal" vertex="1">
+          <mxGeometry height="230" width="230" x="330" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-7" parent="J_4ZyXnS1UajDAuP3LCJ-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- name: String&lt;div&gt;- age: Integer&lt;/div&gt;&lt;div&gt;- weight: Real&lt;/div&gt;&lt;div&gt;- alive: Boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-8" parent="J_4ZyXnS1UajDAuP3LCJ-6" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="12" width="230" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-9" parent="J_4ZyXnS1UajDAuP3LCJ-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Animal(String, Integer, Real, Boolean)&lt;div&gt;+ get_name(): String&lt;/div&gt;&lt;div&gt;+ get_age(): Integer&lt;/div&gt;&lt;div&gt;+ birthday(): void&lt;/div&gt;&lt;div&gt;+ get_weight(): Real&lt;/div&gt;&lt;div&gt;+ set_weight(Real): void&lt;/div&gt;&lt;div&gt;+ get_alive(): Boolean&lt;/div&gt;&lt;div&gt;+ die(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="128" width="230" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="J_4ZyXnS1UajDAuP3LCJ-10" edge="1" parent="J_4ZyXnS1UajDAuP3LCJ-1" source="J_4ZyXnS1UajDAuP3LCJ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.841;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;exitPerimeter=0;" target="J_4ZyXnS1UajDAuP3LCJ-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

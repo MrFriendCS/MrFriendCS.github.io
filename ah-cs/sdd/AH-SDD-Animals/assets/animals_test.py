@@ -95,7 +95,7 @@ def test_find_oldest() -> None:
         test_failed += 1
     
     # Bonzo died :-(
-    animal1.die()
+    animal3.die()
     
     try:
         # Test: get the oldest animal in collection
@@ -112,6 +112,29 @@ def test_find_oldest() -> None:
         test_failed += 1
     
     
+def display_animals() -> None:
+    """Display the details of all the animals."""
+    
+    # Variables
+    animals = test_object.get_animals()
+    
+    # Header
+    print('\nAnimals')
+    print('-------')
+    
+    for index in range(len(animals)):
+        
+        # Animal's details
+        print(f'\nAnimal {index+1}')
+        print(f'Name: {animals[index].get_name()}')
+        print(f'Age: {animals[index].get_age()}')
+        print(f'Weight: {animals[index].get_weight()}')
+        print(f'Alive: {animals[index].get_alive()}')
+        
+    # Footer
+    print('=======\n')
+    
+    
 
 
 #
@@ -126,9 +149,9 @@ test_failed = 0
 test_object = Animals()
 
 # Create animal objects
-animal1 = Animal('Bonzo', 17, 15.4, True)
-animal3 = Animal('Goldie', 2, 0.1, True)
+animal1 = Animal('Goldie', 2, 0.1, True)
 animal2 = Animal('Kitty', 3, 2.7, True)
+animal3 = Animal('Bonzo', 17, 15.4, True)
 
 # Display header
 print('Animal Class Tests')
@@ -138,6 +161,11 @@ print('------------------')
 test_get_number_of_animals()
 test_add_animal()
 test_find_oldest()
+display_animals()
+test_object.order_by_age()
+display_animals()
+test_object.order_by_weight()
+display_animals()
 
 # Display results
 print('\nResults')

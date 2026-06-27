@@ -13,8 +13,8 @@ class Animals:
         """Create a collection object."""
     
         # Instance variables - Private
-        self.__number_of_animals = 0
-        self.__animals = []
+        self.__number_of_animals: int = 0
+        self.__animals: list[Animal] = []
     
     def add_animal(self, animal: Animal) -> None:
         """A method to add an animal to the collection."""
@@ -35,8 +35,8 @@ class Animals:
         
         # Local variables
         
-        oldest_age = -1
-        oldest_name = 'TBC'
+        oldest_age: int = -1
+        oldest_name: str = 'TBC'
         
         # Loop for each animal
         for index in range(self.__number_of_animals):
@@ -57,13 +57,13 @@ class Animals:
         return self.__animals
     
     def order_by_age(self) -> None:
-        """A method to order the animals by age descending."""
+        """A bubble sort to order the animals by age descending."""
         
         # Get number of elements
-        n = self.__number_of_animals
+        n: int = self.__number_of_animals
 
         # Turn sort on
-        sort = True
+        sort: bool = True
 
         # Sort if needed
         while sort == True:
@@ -88,3 +88,33 @@ class Animals:
 
             # Reduce the number elements to be checked
             n = n - 1
+    
+    def order_by_weight(self) -> None:
+        """An insertion sort to order the animals by weight descending."""
+        
+        # Variables
+        animal: Animal
+        position: int = 0
+
+        # Loop over array of Animal objects
+        for index in range(1, len(self.__animals)):
+
+            # Get current object from array
+            animal = self.__animals[index]
+
+            # Get current position
+            position = index
+
+            # Loop if current value is smaller then value to the left
+            while (position > 0) \
+                  and (animal.get_weight() >
+                       self.__animals[position-1].get_weight()):
+
+                # Move value left
+                self.__animals[position] = self.__animals[position-1]
+
+                # Decrement position
+                position = position - 1
+
+            # Set current position to the original value
+            self.__animals[position] = animal
