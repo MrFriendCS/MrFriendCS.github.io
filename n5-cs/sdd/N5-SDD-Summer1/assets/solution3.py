@@ -4,8 +4,8 @@
 
 # Initilise variables
 radius: float = 0.0
-pi = 3.1415
 area: float = 0.0
+pi: float = 3.1415
 
 # Set value
 radius = 2.25
