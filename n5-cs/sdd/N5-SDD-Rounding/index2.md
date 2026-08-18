@@ -14,7 +14,7 @@ Write a program that will be be given the radius of a circle.  The program will 
 * circumference (&#8508; &#215; d)
 * area (&#8508; &#215; r&#178; )
 
-All values are to be correct to 2 decimal places.
+All calculated values are to be correct to 2 decimal places.
 
 __Note__:  &#8508; = 3.1415
 
@@ -32,6 +32,5 @@ The diameter is 10 units.
 The circumference is 31.42 units.
 
 The area is 78.54 units squared.
-
 ===========
 ```

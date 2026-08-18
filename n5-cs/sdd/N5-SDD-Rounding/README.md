@@ -16,7 +16,7 @@ The program will calculate and display the following:
 * circumference (&#8508; &#215; d)
 * area (&#8508; &#215; r&#178; )
 
-All values are to be correct to 2 decimal places.
+All calculated values are to be correct to 2 decimal places.
 
 __Note__:  &#8508; = 3.1415
 
