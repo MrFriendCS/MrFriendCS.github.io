@@ -21,8 +21,7 @@
 | H-SDD-Add                | Add two values                  | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%     | sp, r, w                    | sd |
 | H-SDD-Countries          | Write parallel arrays to file   | w, pa                       | |
-| H-SDD-Tuck-Shop Pt 1     | Create a price list             | r, pa, ss, asc, chr, w      | pc |
-| H-SDD-Tuck-Shop Pt 2     | Create a price list             | sp, r, pa, ss, asc, chr, w  | sd |
+| H-SDD-Tuck-Shop          | Create a price list             | sp, r, pa, ss, asc, chr, w  | sd |
 | H-SDD-Temperature Pt 1   | Convert F to C, US to ISO dates | sp, r, pa, w                | sd |
 | H-SDD-Temperature Pt 2   | Convert F to C, US to ISO dates | sp, r, ar, w                | sd |
 | H-SDD-Temperature Pt 3   | Convert F to C, US to ISO dates | sp, r, pa, min, max, ls+, w | sd |
