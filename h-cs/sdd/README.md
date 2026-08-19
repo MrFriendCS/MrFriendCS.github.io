@@ -16,7 +16,7 @@
 | H-SDD-Summer Pt 3        | Text related functions          | sp, ss, asc, ls             | Tests |
 | H-SDD-Caesar-Cipher Pt 1 | Plaintext to ciphertext         | sp, mod, ss, asc, chr       | Tests |
 | H-SDD-Caesar-Cipher Pt 2 | Ciphertext to plaintext         | sp, mod, ss, asc, chr       | Tests |
-| H-SDD-Parallel           | Skelton parallel arrays         | pa                          | |
+| H-SDD-Parallel           | Skelton parallel arrays         | pa                          | Classwork |
 | H-SDD-Ski-Slope          | Calculations and results        | sp                          | pc |
 | H-SDD-Add                | Add two values                  | sp                          | pc |
 | H-SDD-Update-Countries   | Increase populations by 10%     | sp, r, w                    | sd |
