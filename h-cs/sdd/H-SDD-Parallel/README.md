@@ -36,6 +36,7 @@ ages: list[int] = [17, 14, 16, 17, 13, 14, 12]
 
 ## Tasks
 
+
 ### Countries data
 
 Create a sub-program to create the following output for
@@ -58,3 +59,25 @@ The population of France is 67.4 million.
 #### Structure diagram
 
 ![Structure diagram](assets/sd1.png)
+
+
+### Pupils data
+
+Create a sub-program to create the following output for
+
+```
+Pupils Data
+------------
+
+Aimee Campbell is 17 years olds.
+
+Stewart Ford is 14 years olds.
+
+...
+
+============
+```
+ 
+#### Structure diagram
+
+![Structure diagram](assets/sd2.png)
