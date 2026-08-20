@@ -32,3 +32,25 @@ forenames: list[str] = ["Aimee", "Stewart", "Aonghas", "James", "Kieran", "Callu
 surnames: list[str] = ["Campbell", "Ford", "MacDonald", "Smyth", "Young", "Robertson", "Walker"]
 ages: list[int] = [17, 14, 16, 17, 13, 14, 12]
 ```
+
+
+## Tasks
+
+### Countries data
+
+Create a sub-program to create the following output for
+
+```
+Countries Data
+--------------
+
+The capital of UK is London.
+The population of UK is 66.8 million
+
+The capital of France is Paris.
+The population of France is 67.4 million.
+
+...
+
+==============
+```
