@@ -45,7 +45,7 @@ Countries Data
 --------------
 
 The capital of UK is London.
-The population of UK is 66.8 million
+The population of UK is 66.8 million.
 
 The capital of France is Paris.
 The population of France is 67.4 million.
@@ -54,3 +54,7 @@ The population of France is 67.4 million.
 
 ==============
 ```
+ 
+#### Structure diagram
+
+![Structure diagram](assets/sd1.png)
