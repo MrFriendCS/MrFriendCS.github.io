@@ -20,8 +20,8 @@ def left(inputs: list[str]) -> list[str]:
     
     # Return array of strings
     return outputs
-    
-    
+
+
 #
 # Main program
 #
@@ -29,12 +29,14 @@ def left(inputs: list[str]) -> list[str]:
 # Global variables
 
 # Countries
-capitals = ["London", "Paris", "Berlin", "Oslo", "Madrid", "Rome"]
-countries = ["UK", "France", "Germany", "Norway", "Spain", "Italy"]
-populations = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
+capitals: list = ["London", "Paris", "Berlin", "Oslo", "Madrid", "Rome"]
+countries: list = ["UK", "France", "Germany", "Norway", "Spain", "Italy"]
+populations: list = [66.8, 67.4, 83.2, 5.4, 46.8, 60.5]
 
 
 # Pupils
-forenames = ["Aimee", "Stewart", "Aonghas", "James", "Kieran", "Callum", "Darren"]
-surnames = ["Campbell", "Ford", "MacDonald", "Smyth", "Young", "Robertson", "Walker"]
-ages = [17, 14, 16, 17, 13, 14, 12]
+forenames: list = ["Aimee", "Stewart", "Aonghas", "James", "Kieran", "Callum", "Darren"]
+surnames: list = ["Campbell", "Ford", "MacDonald", "Smyth", "Young", "Robertson", "Walker"]
+ages: list = [17, 14, 16, 17, 13, 14, 12]
+
+print(ages)
