@@ -21,3 +21,8 @@ Norway,Oslo,5.4
 Spain,Madrid,46.8
 Italy,Rome,60.5
 ```
+
+
+## Structure diagram
+
+![Structure diagram](assets/sd.png)
