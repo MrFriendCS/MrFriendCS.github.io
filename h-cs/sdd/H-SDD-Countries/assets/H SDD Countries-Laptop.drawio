@@ -1,0 +1,21 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="sd" id="VnjkQmpZoNo_wONIIv6f">
+    <mxGraphModel dx="786" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="291" pageHeight="413" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xxJK9P8Vd8mZIawA9TZV-18" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;startArrow=block;startFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xxJK9P8Vd8mZIawA9TZV-20" target="xxJK9P8Vd8mZIawA9TZV-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xxJK9P8Vd8mZIawA9TZV-20" value="Write country&lt;div&gt;data to csv file&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;spacingLeft=4;spacingRight=4;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xxJK9P8Vd8mZIawA9TZV-21" value="countries()&lt;br&gt;capitals()&lt;div&gt;populations()&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="70" y="190" width="80" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
