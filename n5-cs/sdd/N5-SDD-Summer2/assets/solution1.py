@@ -18,7 +18,7 @@ while number <= 0.0:
     # Get value from user
     number = float(input("\nEnter a number: "))
 
-    # Chack value
+    # Check value
     if number <= 0.0:
         
         # Display error message

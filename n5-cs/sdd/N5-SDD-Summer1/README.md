@@ -43,7 +43,7 @@ Starter code, showing internal commentary is below:
 # Author: 
 # Date: 
 
-# Initilise variables
+# Initialise variables
 
 
 # Set values

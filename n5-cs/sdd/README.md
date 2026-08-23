@@ -12,20 +12,20 @@
 | N5-SDD-Number-Madness Pt 1 | Two values, various results          | maths                         | |
 | N5-SDD-Rounding Pt 1       | Calculations using radius and pi     | maths, rd                     | |
 | N5-SDD-Hello Pt 2          | Produce an output using variables    | cat                           | |
-| N5-SDD-Rounding Pt 2       | Calculations using radius and pi     | maths, rd, cat                | |
-| N5-SDD-Number-Madness Pt 2 | Two values, various results          | maths, rd, cat                | |
-| N5-SDD-Gradient Pt 1       | Calculate gradient from rise and run | maths, rd, cat                | |
+| N5-SDD-Rounding Pt 2       | Calculations using radius and pi     | maths, rd, cs                 | |
+| N5-SDD-Number-Madness Pt 2 | Two values, various results          | maths, rd, cs                 | |
+| N5-SDD-Gradient Pt 1       | Calculate gradient from rise and run | maths, rd, cs                 | |
 | N5-SDD-Fractions-Fun       | Add two fractions together           | maths, cat                    | |
 | N5-SDD-Hello Pt 3          | Produce an output using inputs       | ip, cat                       | |
-| N5-SDD-Hello Pt 4          | Produce an output using inputs       | ip, maths, cat                | |
-| N5-SDD-Number-Madness Pt 3 | Two values, various results          | ip, maths, rd, cat            | |
-| N5-SDD-Rectangle-Calcs     | Calculate perimeter and area         | ip, maths, cat                | |
-| N5-SDD-Walking-Calculator  | Calculate total and mean distance    | ip, maths, cat                | |
-| N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, maths, cat                | sd |
-| N5-SDD-Times-Tables Pt 1   | Display a times table                | fl, ip, maths, cat            | |
+| N5-SDD-Hello Pt 4          | Produce an output using inputs       | ip, maths, cs                 | |
+| N5-SDD-Number-Madness Pt 3 | Two values, various results          | ip, maths, rd, cs             | |
+| N5-SDD-Rectangle-Calcs     | Calculate perimeter and area         | ip, maths, cs                 | |
+| N5-SDD-Walking-Calculator  | Calculate total and mean distance    | ip, maths, cs                 | |
+| N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, maths, cs                 | sd |
+| N5-SDD-Times-Tables Pt 1   | Display a times table                | fl, ip, maths, cs             | |
 | N5-SDD-Walking Calc Pt 2   | Calculate total and mean distance    | rt, ip, rd                    | sd |
 | N5-SDD-Shopping            | Calculate a discount, if appropriate | ip, if1, rd                   | sd |
-| N5-SDD-Average             | Calculate mean                       | ip, maths, rd, cat            | |
+| N5-SDD-Average             | Calculate mean                       | ip, maths, rd, cs             | |
 | N5-SDD-Boccia Pt 1         | Records scores, gives result         | ip, if1                       | |
 | N5-SDD-Book-Shop Pt 1      | Calculate student book price         | ip, if1                       | sd |
 | N5-SDD-Negative            | Determine if a value is negative     | ip, if2                       | |
@@ -42,8 +42,8 @@
 | N5-SDD-Book-Shop Pt 3      | Calculate student/staff price        | ip, if4, lo, maths            | sd |
 | N5-SDD-Chance Pt 1         | Simulate a dice game                 | rnd, if4                      | sd |
 | N5-SDD-School-Club         | Check eSports club eligibility       | ip, if5, lo                   | sd, tricky |
-| N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, if2, maths, cat           | |
-| N5-SDD-Gradient Pt 3       | Calculate gradient from rise and run | iv, maths, cat                | |
+| N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, if2, maths, cs            | |
+| N5-SDD-Gradient Pt 3       | Calculate gradient from rise and run | iv, maths, cs                 | |
 | N5-SDD-Chance Pt 2         | Simulate heads and tails game        | rnd, if2                      | sd |
 | N5-SDD-Result Pt 3         | Convert test score to pass / fail    | iv, if2                       | sd |
 | N5-SDD-Chance Pt 3         | Simulate heads and tails game        | rnd, iv, if4                  | sd |
@@ -75,13 +75,14 @@
 | N5-SDD-Chance Pt 5 v2      | Guess random number, 3 chances       | rnd, cl, iv, lo, if2            | ??? sd |
 | N5-SDD-Chance Pt 6         | Rock, Paper, Scissors                | rnd, cl, iv, lo, if2            | sd |
 | N5-SDD-Chance Pt 7         | Rock, Paper, Scissors                | 1d, rnd, cl, iv, lo, if2        | sd |
-| N5-SDD-Homework            | Calculate total homework over 7 days | 1d, iv, lo, rt                  | sd |
+| N5-SDD-Homework            | Calculate homework hours over 7 days | 1d, iv, lo, rt                  | sd |
 | N5-SDD-Cafe                | Calculate order total                | 1d, iv, lo, rt                  | sd |
 | N5-SDD-Triathlon           | Calculate triathlon time - 5 times   | t1d& times; 2, rt, iv &times; 3 | sd |
 | N5-SDD-Task-Picker         | Pick random person for random task   | 1d &times; 2, iv, rnd           | fc |
 | N5-SDD-Summer Pt 1         | Calculate square root                | ip, maths                       | |
 | N5-SDD-Summer Pt 2         | Maths addition helper                | iv, rnd, rt, if2                | |
-| N5-SDD-Summer Pt 2         | Create a line of poetry              | 1d, rnd                         | |
+| N5-SDD-Summer Pt 3         | Create a line of poetry              | 1d, rnd                         | |
+| N5-SDD-Youth Club          | Register names for an activity       | 1d, ca, fe                      | |
 | N5-SDD-TST                 | Tangasdale Sea Tours                 | iv &times; 3, fl, t1d, rt, rd   | sd |
 | N5-SDD-Pontoon Part 2      | Multiplayer, multiple arrays         | iv, t1d, rt, rnd, len, fl, cl   | pc |
 | N5-SDD-Menu-Options        |  |  |  |
@@ -92,9 +93,11 @@
 ### Abbreviations
 
 1d = Array,
-cat = Concatenate,
+cs = Concatenate string,
+ca = Concatenate array,
 cl = Conditional loop,
 fl = Fixed loop,
+fe = For each loop,
 if1 = if,
 if2 = if/else,
 if3 = nested if
