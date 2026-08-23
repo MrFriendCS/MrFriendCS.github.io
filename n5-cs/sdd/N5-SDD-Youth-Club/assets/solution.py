@@ -21,7 +21,7 @@ while name != "x":
     if len(name) < 3 and name != "x":
         
         # Display error message
-        print("Name must be at least 3 letters long.")
+        print("Name must be at least 3 letters long or 'x'.")
     
         # Get name from user
         name = input("Enter a name or 'x' to exit: ")
