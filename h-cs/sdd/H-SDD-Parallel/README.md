@@ -36,6 +36,8 @@ ages: list[int] = [17, 14, 16, 17, 13, 14, 12]
 
 ## Tasks
 
+Create a file called `parallel.py`.
+
 
 ### Countries data
 
