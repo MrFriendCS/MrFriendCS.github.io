@@ -17,7 +17,7 @@ Only names with at least three letters are acceptable.
 
 ## Program top-level design (Structure Diagram)
 
-![Structure diagram](assets/sd1.png "Structure diagram")
+![Structure diagram](assets/sd.png "Structure diagram")
 
 
 ### Example User Interface
