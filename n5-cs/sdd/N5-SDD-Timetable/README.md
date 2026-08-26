@@ -19,14 +19,13 @@ Write a program to ask the user for:
 3. The interval between buses
 
 The program will then display the bus departure times.
+Only departure times from 09:00 to 09:59 will be displayed.
+
+
+Departures are from 1 to 30 minutes,
 
 
 ## Design
-
-
-## Program top-level design (Structure Diagram)
-
-![Structure diagram](assets/sd.png "Structure diagram")
 
 
 ### Example User Interface
