@@ -28,6 +28,11 @@ Departures are from 1 to 30 minutes,
 ## Design
 
 
+## Program top-level design (Structure Diagram)
+
+![Structure diagram](assets/sd.png "Structure diagram")
+
+
 ### Example User Interface
 
 ```
