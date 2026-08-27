@@ -11,12 +11,10 @@ def getData() -> tuple[list[str], list[str], list[float]]:
 
     # Declare local variable and arrays
     line = ""
-    
+    temp = [""] * 3
     caps = [""] * 6
     states = [""] * 6
     pops = [0.0] * 6
-    
-    temp = [""] * 3
     
     # Open connection to file
     file = open("countries.csv", "r", encoding="UTF-8")

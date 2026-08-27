@@ -19,8 +19,8 @@
 | H-SDD-Parallel           | Skelton parallel arrays         | pa                          | Classwork |
 | H-SDD-Ski-Slope          | Calculations and results        | sp                          | pc |
 | H-SDD-Add                | Add two values                  | sp                          | pc |
-| H-SDD-Update-Countries   | Increase populations by 10%     | sp, r, w                    | sd |
 | H-SDD-Countries          | Write parallel arrays to file   | w, pa                       | |
+| H-SDD-Update-Countries   | Increase populations by 10%     | sp, r, w                    | sd |
 | H-SDD-Tuck-Shop          | Create a price list             | sp, r, pa, ss, asc, chr, w  | sd |
 | H-SDD-Temperature Pt 1   | Convert F to C, US to ISO dates | sp, r, pa, w                | sd |
 | H-SDD-Temperature Pt 2   | Convert F to C, US to ISO dates | sp, r, ar, w                | sd |
