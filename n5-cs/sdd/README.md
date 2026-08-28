@@ -93,14 +93,14 @@
 ### Abbreviations
 
 1d = Array,
-cs = Concatenate string,
 ca = Concatenate array,
 cl = Conditional loop,
-fl = Fixed loop,
+cs = Concatenate string,
 fe = For each loop,
+fl = Fixed loop,
 if1 = if,
 if2 = if/else,
-if3 = nested if
+if3 = nested if,
 if4 = if/elif/else,
 if5 = if/elif,
 ip = User input,

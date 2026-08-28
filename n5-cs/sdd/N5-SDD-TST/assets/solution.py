@@ -116,7 +116,7 @@ for index in range(noOfTours):
 
 
 # Display average cost of tours
-print("\nAvg: £" + str(average))
+print("\nAverage: £" + str(average))
 
 
 # Display total cost of tours
