@@ -48,18 +48,31 @@ An example of the expected output is shown below.
 ![Structure diagram](assets/sd.png)
 
 
-#### Expected output
+#### Example user interface
 
 ```
+ TST
+-----
+
+Number of tours: 2
+
+Number passengers on tour 1: 2
+Tour 1 passenger 1 type: a
+Tour 1 passenger 2 type: c
+
+Number passengers on tour 2: 3
+Tour 2 passenger 1 type: a
+Tour 2 passenger 2 type: c
+Tour 2 passenger 3 type: c
+
 Tours
 -----
 
-1:  £80
-2:  £85
-3: £115
+1: £40
+2: £55
 
-Avg: £93.33
-Total: £280
+Avg: £47.5
+Total: £95
 ===========
 ```
 

@@ -3,13 +3,13 @@
 # Date: 3 Sep 2024
 
 # Initalise variables
-noOfTours = 0
-noOfPassengers = 0
-passengerType = ""
-tourCost = 0
-tourCosts = [0] * 4
-totalCost = 0
-averageCost = 0.0
+noOfTours: int = 0
+noOfPassengers: int = 0
+passengerType: str = ""
+tourCost: int = 0
+tourCosts: list[int] = [0] * 4
+totalCost: int = 0
+averageCost: float = 0.0
 
 # Display header
 print("\n TST")
