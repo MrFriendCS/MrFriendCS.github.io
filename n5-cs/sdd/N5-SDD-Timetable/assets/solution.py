@@ -50,7 +50,7 @@ while step <= 0 or step > 30:
 print("\nDeparture times:\n")
 
 # Loop for each bus departure
-for time in range(start, stop + step, step):
+for time in range(start, stop + 1, step):
     
     if time < 10:
         print("\t09:0" + str(time))
