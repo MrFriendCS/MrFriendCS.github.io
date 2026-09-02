@@ -31,7 +31,6 @@ Loop 2 times
     If card value > 10
         Set card value to 10
     Else
-
         If card value is 1 and total score < 10
             Set card value to 11
         End if
