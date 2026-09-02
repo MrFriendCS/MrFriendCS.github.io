@@ -29,17 +29,12 @@ Loop 2 times
     Pick a random card value from 1 to 13
     
     If card value > 10
-    
         Set card value to 10
-        
-    else
+    Else
 
         If card value is 1 and total score < 10
-
             Set card value to 11
-
         End if
-
     End if
 
     Display card value
@@ -55,17 +50,11 @@ Start conditional loop for twist and total < 21
     Pick a random card value from 1 to 13
     
     If card value > 10
-    
         Set card value to 10
-        
-    else
-
+    Else
         If card value is 1 and total score < 10
-
             Set card value to 11
-
         End if
-
     End if
 
     Display card value
@@ -73,13 +62,9 @@ Start conditional loop for twist and total < 21
     Add card value to total score
 
     If total score > 21
-
         Display "Bust!"
-
     Else
-
         Get valid stick or twist from user
-
     End if
 
 End conditional loop
