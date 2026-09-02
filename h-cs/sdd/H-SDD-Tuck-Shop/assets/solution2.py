@@ -1,6 +1,6 @@
 # Title: H SDD Update Prices
 # Author: Mr Friend
-# Date 22 Aug 2024
+# Date 2 Sep 2026
 
 #
 # Subprograms
@@ -12,11 +12,11 @@ def getData() -> tuple[list[str], list[int], list[float]]:
     # Declare local variable and arrays
     line = ""
     
-    subNames = [""] * 11
-    subWeights = [0] * 11
-    subPrices = [0.0] * 11
+    subNames: list[str] = [""] * 11
+    subWeights: list[int] = [0] * 11
+    subPrices: list[float] = [0.0] * 11
     
-    data = [""] * 3
+    data: list[str] = [""] * 3
     
     # Open connection to file
     file = open("tuckshop.csv", "r", encoding="UTF-8")
@@ -46,8 +46,8 @@ def increase(subPrices: list[float]) -> list[float]:
     """Return array of real, increased by 10%"""
 
     # Declare local variables and array
-    price = 0.0
-    newPrice = 0.0
+    price: float = 0.0
+    newPrice: float = 0.0
     
     subNewPrices = [0.0] * len(subPrices)
 
@@ -71,7 +71,8 @@ def firstLetter(subNames: list[str]) -> list[str]:
     """Return array of strings.  Each starts with a cpital letter."""
 
     # Declare local variables and array
-    firstChr = ""
+    firstChr: str = ""
+    asciiValue: int = 0
     
     # Loop for each name
     for index in range(len(subNames)):
@@ -80,10 +81,10 @@ def firstLetter(subNames: list[str]) -> list[str]:
         firstChr = subNames[index][0]
         
         # ASCII value
-        ascii = ord(firstChr)
+        asciiValue = ord(firstChr)
         
-        if ascii >= 97 and ascii <= 122:
-            firstChr = chr(ascii-32)
+        if asciiValue >= 97 and asciiValue <= 122:
+            firstChr = chr(asciiValue-32)
             subNames[index] = firstChr + subNames[index][1: ]
     
     # Return values
@@ -95,13 +96,23 @@ def saveData(subNames: list[str], subWeights: list[int],
     """Save parallel arrays to saleprices.csv"""
     
     # Open connection to file
-    file = open("saleprices.csv", "w", encoding="UTF-8")
+    file = open("pricelist.txt", "w", encoding="UTF-8")
+
+    file.write("Tuck Shop Price List\n")
+    file.write("--------------------\n\n")
 
     # Loop for each line of data
-    for index in range(len(subNames)):
-        file.write(subNames[index] + ",")
-        file.write(str(subWeights[index]) + ",")
-        file.write(str(subPrices[index]) + "\n")
+    for index in range(len(names)):
+        
+        file.write(subNames[index] + " (")
+        file.write(str(subWeights[index]) + "g) - ")
+        
+        if prices[index] >= 1:
+            file.write("£" + str(subPrices[index]) + "\n")
+        else:
+            file.write(str(round(subPrices[index] * 100)) + "p" + "\n")
+
+    file.write("\nEnd of price list!")
 
     # close connection to file
     file.close()
