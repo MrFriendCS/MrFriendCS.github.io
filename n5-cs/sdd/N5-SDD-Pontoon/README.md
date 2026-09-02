@@ -26,11 +26,15 @@ initialise twist answer
 
 Loop 2 times
 
-    Pick a random card value from 2 to 11
+    Pick a random card value from 1 to 13
+    
+    If card value > 10
+    
+        Set card value to 10
 
-    If card value is 11 and total score > 10
+    If card value is 1 and total score < 10
 
-        Set card value to 1
+        Set card value to 11
 
     End if
 
@@ -44,11 +48,15 @@ Get valid stick or twist from user
 
 Start conditional loop for twist and total < 21
 
-    Pick a random card value from 2 to 11
+    Pick a random card value from 1 to 13
+    
+    If card value > 10
+    
+        Set card value to 10
 
-    If card value is 11 and total score > 10
+    If card value is 1 and total score < 10
 
-        Set card value to 1
+        Set card value to 11
 
     End if
 
