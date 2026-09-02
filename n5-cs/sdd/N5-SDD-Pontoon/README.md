@@ -31,10 +31,14 @@ Loop 2 times
     If card value > 10
     
         Set card value to 10
+        
+    else
 
-    If card value is 1 and total score < 10
+        If card value is 1 and total score < 10
 
-        Set card value to 11
+            Set card value to 11
+
+        End if
 
     End if
 
@@ -53,10 +57,14 @@ Start conditional loop for twist and total < 21
     If card value > 10
     
         Set card value to 10
+        
+    else
 
-    If card value is 1 and total score < 10
+        If card value is 1 and total score < 10
 
-        Set card value to 11
+            Set card value to 11
+
+        End if
 
     End if
 
