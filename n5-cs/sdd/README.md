@@ -85,7 +85,7 @@
 | N5-SDD-Youth Club          | Register names for an activity       | 1d, ca, fe                      | |
 | N5-SDD-TST                 | Tangasdale Sea Tours                 | iv &times; 3, fl, t1d, rt, rd   | sd |
 | N5-SDD-Pontoon Part 2      | Multiplayer, multiple arrays         | iv, t1d, rt, rnd, len, fl, cl   | pc |
-| N5-SDD-Menu-Options        |  |  |  |
+| N5-SDD-Menu-Options        | Access different tasks via a menu    | iv, t1d, rt, rnd, len, fl       | |
 | N5-SDD-Password-Checker    |  |  |  |
 | N5-SDD-Walking             |  |  |  |
 

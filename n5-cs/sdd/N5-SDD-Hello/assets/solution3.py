@@ -1,10 +1,10 @@
 # Title: N5 SDD Hello Part 3
 # Author: Mr Friend
-# Date: 7 Sep 2025
+# Date: 4 Sep 2026
 
 # Declare variables
-firstName = ""
-lastName = ""
+firstName: str = ""
+lastName: str = ""
 
 # Display header
 print("Hello!")

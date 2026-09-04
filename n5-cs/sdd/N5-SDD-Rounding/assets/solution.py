@@ -3,11 +3,11 @@
 # Date: 21 Aug 2025
 
 # Initialise variables
-pi = 3.1415
-radius = 5
-diameter = 0.0
-circumference = 0.0
-area = 0.0
+pi: float = 3.1415
+radius: int = 5
+diameter: int = 0
+circumference: float = 0.0
+area: float = 0.0
 
 # Calculations
 diameter = 2 * radius
@@ -18,6 +18,10 @@ area = pi * radius**2
 diameter = round(diameter, 2)
 circumference = round(circumference, 2)
 area = round(area, 2)
+
+# Display header
+print("Circles Fun")
+print("-----------")
 
 # Display results
 print("Given a radius of")
@@ -38,3 +42,6 @@ print()
 print("The area is")
 print(area)
 print("units squared")
+
+# Display footer
+print("===========")

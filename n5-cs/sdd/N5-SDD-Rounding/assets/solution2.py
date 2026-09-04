@@ -3,9 +3,9 @@
 # Date: 24 Aug 2025
 
 # Initialise variables
-pi = 3.1415
-radius = 5
-diameter = 0.0
+pi: float = 3.1415
+radius: int = 5
+diameter: int = 0
 circumference = 0.0
 area = 0.0
 
