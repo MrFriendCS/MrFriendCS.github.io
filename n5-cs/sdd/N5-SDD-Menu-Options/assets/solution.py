@@ -1,6 +1,6 @@
 # Title: N5 SDD Menu Options (Group Task)
 # Author: Mr Friend
-# Date 4 Sep 2026
+# Date 7 Sep 2026
 
 # Import module
 import random
@@ -9,7 +9,7 @@ import random
 option: int = 0
 value1: float = 0.0
 value2: float = 0.0
-result: float = 0.0
+answer: int = 0
 dp: int = 0
 phrase: str = ""
 loop: int = 0
@@ -48,11 +48,11 @@ if option == 1:
     value1 = float(input("\nEnter first value: "))
     value2 = float(input("Enter second value: "))
 
-    # Calculate answer
-    answer = value1 + value2
+    # Calculate result
+    result = value1 + value2
 
     # Display answer
-    print("\n\t" + str(value1) + " + " + str(value2) + " = " + str(answer))
+    print("\n\t" + str(value1) + " + " + str(value2) + " = " + str(result))
 
 # 2. Divide one value by another, and round result
 elif option == 2:
@@ -71,14 +71,14 @@ elif option == 2:
 
     dp = int(input("Decimal places: "))
 
-    # Calculate answer
-    answer = value1 / value2
+    # Calculate result
+    result = value1 / value2
 
     # Round result
-    answer = round(answer, dp)
+    result = round(answer, dp)
 
     # Display answer
-    print("\n\t" + str(value1) + " / " + str(value2) + " = " + str(answer) + " (" + str(dp) + " dp)")
+    print("\n\t" + str(value1) + " / " + str(value2) + " = " + str(result) + " (" + str(dp) + " dp)")
 
 # 3. Raise one value by the power of another
 elif option == 3:
@@ -119,6 +119,15 @@ elif option == 5:
     # Get values
     value1 = int(input("\nEnter minimum value value: "))
     value2 = int(input("Enter maximum value: "))
+    
+    # Check maximum is bigger than the minimum
+    whicl value2 < value1:
+        
+        # Error message
+        print("\nThe maximum must be more than the minimum.")
+        
+        # Get maximum from user
+        value2 = int(input("Enter maximum value: "))
 
     # Pick random value
     answer = random.randint(value1, value2)

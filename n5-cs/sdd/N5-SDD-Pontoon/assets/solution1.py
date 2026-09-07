@@ -6,9 +6,9 @@
 import random
 
 # Declare variables
-card = 0
-total = 0
-twist = ""
+card: int = 0
+total: int = 0
+twist: str = ""
 
 # Display Header
 print("Craigston Casino")
