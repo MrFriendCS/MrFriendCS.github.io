@@ -77,7 +77,7 @@
 | N5-SDD-Chance Pt 7         | Rock, Paper, Scissors                | 1d, rnd, cl, iv, lo, if2        | sd |
 | N5-SDD-Homework            | Calculate homework hours over 7 days | 1d, iv, lo, rt                  | sd |
 | N5-SDD-Cafe                | Calculate order total                | 1d, iv, lo, rt                  | sd |
-| N5-SDD-Triathlon           | Calculate triathlon time - 5 times   | t1d& times; 2, rt, iv &times; 3 | sd |
+| N5-SDD-Triathlon           | Calculate triathlon time - 5 times   | t1d &times; 2, rt, iv &times; 3 | sd |
 | N5-SDD-Task-Picker         | Pick random person for random task   | 1d &times; 2, iv, rnd           | fc |
 | N5-SDD-Summer Pt 1         | Calculate square root                | ip, maths                       | |
 | N5-SDD-Summer Pt 2         | Maths addition helper                | iv, rnd, rt, if2                | |

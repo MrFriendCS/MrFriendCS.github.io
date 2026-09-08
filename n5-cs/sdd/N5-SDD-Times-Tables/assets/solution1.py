@@ -1,9 +1,9 @@
 # Title: N5 Times Tables
 # Author: Mr Friend
-# Date: 18 Sep 2025
+# Date: 8 Sep 2026
 
 # Initialise variables
-table = 0
+table: int = 0
 
 # Display header
 print("Times Table Generator")
