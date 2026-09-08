@@ -8,7 +8,7 @@ Display the requested times table.
 
 ### Example User Interface
 
-``` python
+```
 Times Table Generator
 ---------------------
 
