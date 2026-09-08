@@ -22,7 +22,7 @@
 | N5-SDD-Rectangle-Calcs     | Calculate perimeter and area         | ip, maths, cs                 | |
 | N5-SDD-Walking-Calculator  | Calculate total and mean distance    | ip, maths, cs                 | |
 | N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, maths, cs                 | sd |
-| N5-SDD-Times-Tables Pt 1   | Display a times table                | fl, ip, maths, cs             | |
+| N5-SDD-Times-Tables        | Display a times table                | fl, ip, maths, cs             | |
 | N5-SDD-Walking Calc Pt 2   | Calculate total and mean distance    | rt, ip, rd                    | sd |
 | N5-SDD-Shopping            | Calculate a discount, if appropriate | ip, if1, rd                   | sd |
 | N5-SDD-Average             | Calculate mean                       | ip, maths, rd, cs             | |
