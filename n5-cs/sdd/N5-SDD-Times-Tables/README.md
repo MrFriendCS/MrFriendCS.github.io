@@ -48,7 +48,7 @@ Look at the expected interface.  Identify:
 2. Calculate the answers.
 3. Use the input values in the program.
 4. Check the answers the computer gives.
-5. If the your answers and the computer's answers are the same, use another set of values, otherwise work out what is wrong.
+5. If your answers and the computer's answers are the same, test again using another set of values, otherwise work out what is wrong.
 
 
 ## Readability
