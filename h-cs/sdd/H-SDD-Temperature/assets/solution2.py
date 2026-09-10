@@ -1,5 +1,5 @@
 # Title: H SDD Temperature Part 2
-# Date: 9 Sep 2025
+# Date: 10 Sep 2026
 # Author: Mr Friend
 
 # Get extra code
@@ -20,9 +20,9 @@ def readData() -> list[HourlyValue]:
     """Read data from csv file and return an array of records."""
 
     # Declare local varaibles and arrays
-    line = ""
-    data = [""] * 3
-    hourlyValues = [HourlyValue() for index in range(8759)]
+    line: str = ""
+    data: list[str] = ["" for _ in range(3)]
+    hourlyValues: list[HourlyValue] = [HourlyValue() for _ in range(8759)]
     
     # Open connection to file
     file = open("tempF.csv", "r", encoding="UTF-8")
@@ -52,7 +52,7 @@ def convertTemps(hourlyValues: list[HourlyValue]) -> list[float]:
     """Convert fahrenheit to centigrade, to 1 dp, and return an array."""
 
     # Declare local variables
-    newTemps = [0.0] * len(hourlyValues)
+    newTemps: list[float] = [0.0 for _ in range(len(hourlyValues))]
     
     # Loop for each temperature
     for index in range(len(hourlyValues)):
@@ -68,11 +68,11 @@ def convertDates(hourlyValues: list[HourlyValue]) -> list[str]:
     """Convert US dates to ISO dates and return an array."""
 
     # Declare local variables
-    newDates = [""] * len(hourlyValues)
-    tempDate = ""
-    year = ""
-    month = ""
-    day = ""
+    newDates: list[str] = ["" for _ in range (len(hourlyValues))]
+    tempDate: str = ""
+    year: str = ""
+    month: str = ""
+    day: str = ""
     
     # Loop for each date
     for index in range(len(hourlyValues)):
@@ -96,7 +96,7 @@ def extractTimes(hourlyValues: list[HourlyValue]) -> list[str]:
     """Extract times and return an array."""
 
     # Declare local variables
-    newTimes = [""] * len(hourlyValues)
+    newTimes: list[str] = ["" for _ in range(len(hourlyValues))]
     
     # Loop for each time
     for index in range(len(hourlyValues)):
@@ -133,10 +133,10 @@ def writeData(dates: list, times, temps) -> None:
 def main():
     
     # Declare global variables and arrays
-    hourlyValues = [HourlyValue() for index in range(8759)]
-    tempsC = [0.0] * len(hourlyValues)
-    datesISO = [""] * len(hourlyValues)
-    times = [""] * len(hourlyValues)
+    hourlyValues: list[HourlyValue] = [HourlyValue() for _ in range(8759)]
+    tempsC: list[float] = [0.0 for _ in range(len(hourlyValues))]
+    datesISO: list[str] = ["" for _ in range(len(hourlyValues))]
+    times: list[str] = ["" for _ in range(len(hourlyValues))]
 
     # Read data from csv file
     hourlyValues = readData()

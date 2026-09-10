@@ -22,7 +22,7 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
 
 2. Convert the temperatures from              IN: data(date, time, temp)
    Fahrenheit to Centigrade and               OUT: data(date, time, temp)
-   US to ISO format
+   US dates to ISO format
    
 3. Write the data to a csv file               IN: data(date, time, temp)
 ```

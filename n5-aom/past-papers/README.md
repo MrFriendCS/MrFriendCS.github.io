@@ -5,6 +5,8 @@
 
 | Year  | QP 1                                   | MI 1                                   | QP 2                                   | MI 2 |
 | ----  | ----                                   | ----                                   | ----                                   | ---- |
+| 2026  | [QP](N5-AoM-2026-QP-1.pdf "2026 QP 1") | [MI](N5-AoM-2026-MI-1.pdf "2026 MI 1") | [QP](N5-AoM-2026-QP-2.pdf "2026 QP 2") | [MI](N5-AoM-2026-MI-2.pdf "2026 MI 2") |
+| 2026G | [QP](N5-GM-2026-QP-1.pdf "2026 QP 1")  | [MI](N5-AoM-2026-MI-1.pdf "2026 MI 1") | [QP](N5-GM-2026-QP-2.pdf "2026 QP 2")  | [MI](N5-AoM-2026-MI-2.pdf "2026 MI 2") |
 | 2025  | [QP](N5-AoM-2025-QP-1.pdf "2025 QP 1") | [MI](N5-AoM-2025-MI-1.pdf "2025 MI 1") | [QP](N5-AoM-2025-QP-2.pdf "2025 QP 2") | [MI](N5-AoM-2025-MI-2.pdf "2025 MI 2") |
 | 2025G | [QP](N5-GM-2025-QP-1.pdf "2025 QP 1")  | [MI](N5-AoM-2025-MI-1.pdf "2025 MI 1") | [QP](N5-GM-2025-QP-2.pdf "2025 QP 2")  | [MI](N5-AoM-2025-MI-2.pdf "2025 MI 2") |
 | 2024  | [QP](N5-AoM-2024-QP-1.pdf "2024 QP 1") | [MI](N5-AoM-2024-MI-1.pdf "2024 MI 1") | [QP](N5-AoM-2024-QP-2.pdf "2024 QP 2") | [MI](N5-AoM-2024-MI-2.pdf "2024 MI 2") |
