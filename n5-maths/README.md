@@ -5,6 +5,7 @@
 
 | Year | QP 1                                     | MI 1                                     | QP 2                                     | MI 2 |
 | ---- | ----                                     | ----                                     | ----                                     | ---- |
+| 2026 | [QP](N5-Maths-2026-QP-1.pdf "2026 QP 1") | [MI](N5-Maths-2026-MI-1.pdf "2026 MI 1") | [QP](N5-Maths-2026-QP-2.pdf "2026 QP 2") | [MI](N5-Maths-2026-MI-2.pdf "2026 MI 2") |
 | 2025 | [QP](N5-Maths-2025-QP-1.pdf "2025 QP 1") | [MI](N5-Maths-2025-MI-1.pdf "2025 MI 1") | [QP](N5-Maths-2025-QP-2.pdf "2025 QP 2") | [MI](N5-Maths-2025-MI-2.pdf "2025 MI 2") |
 | 2024 | [QP](N5-Maths-2024-QP-1.pdf "2024 QP 1") | [MI](N5-Maths-2024-MI-1.pdf "2024 MI 1") | [QP](N5-Maths-2024-QP-2.pdf "2024 QP 2") | [MI](N5-Maths-2024-MI-2.pdf "2024 MI 2") |
 | 2023 | [QP](N5-Maths-2023-QP-1.pdf "2023 QP 1") | [MI](N5-Maths-2023-MI-1.pdf "2023 MI 1") | [QP](N5-Maths-2023-QP-2.pdf "2023 QP 2") | [MI](N5-Maths-2023-MI-2.pdf "2023 MI 2") |
