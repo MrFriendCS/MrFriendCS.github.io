@@ -67,11 +67,7 @@ while True:
         
     
     # Loop - Dot x 3
-    
-    
-    # Letter pause
         
         
     # Word pause
-    
  ```
