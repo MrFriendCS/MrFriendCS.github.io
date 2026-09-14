@@ -1,4 +1,4 @@
-# H SDD - Bearings Part 1
+# H SDD - Bearings
 
 
 ## Introduction
@@ -58,22 +58,22 @@ FAIL
 
 3.  Determine size of largest bearing       IN: sizeData()
                                             OUT: max
-											   
+ 
 4.  Count how many bearings are too small   IN: sizeData()
                                             OUT: small
-											   
+ 
 5.  Count how many bearings are too big     IN: sizeData()
                                             OUT: big
-												
+
 6.  Calculate percentage of small bearings  IN: small
       to 2 decimal places                   OUT: smallPercent
-											
+
 7.  Calculate percentage of big bearings    IN: big
       to 2 decimal places                   OUT: bigPercent
-												
+
 8.  Calculate batch result                  IN: smallPercent, bigPercent
                                             OUT: result
-											  
+
 9.  Write data to file                      IN: min, max, smallPercent, bigPercent, result					  
 ```
 
@@ -85,4 +85,4 @@ Using the program analysis and the design, implement the program in a language o
 
 ## Testing
 
-Run the file [Bearings1-Test.py](assets/Bearings1-Test.py "Download file"). The file must be in the same folder as `bearings1.py`.
+Run the file [Bearings-Test.py](assets/Bearings-Test.py "Download file"). The file must be in the same folder as `bearings.py`.
