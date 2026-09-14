@@ -74,7 +74,7 @@ FAIL
 8.  Calculate batch result                  IN: smallPercent, bigPercent
                                             OUT: result
 
-9.  Write data to file                      IN: min, max, smallPercent, bigPercent, result					  
+9.  Write data to file                      IN: min, max, smallPercent, bigPercent, result
 ```
 
 
@@ -85,4 +85,4 @@ Using the program analysis and the design, implement the program in a language o
 
 ## Testing
 
-Run the file [Bearings-Test.py](assets/Bearings-Test.py "Download file"). The file must be in the same folder as `bearings.py`.
+Run the file [bearingsTest.py](assets/bearingsTest.py "Download file"). The file must be in the same folder as `bearings.py`.
