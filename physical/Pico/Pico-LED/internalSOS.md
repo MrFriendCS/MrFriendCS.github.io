@@ -9,12 +9,33 @@ Install the picozero library, if not already installed:
 [Instructions](https://projects.raspberrypi.org/en/projects/introduction-to-the-pico/4 "RPi website").
 
 
-## Layout
+## Task
 
-![RGB LED Layout](assets/internalLED.png)
+Use the Pico's internal LED to send the international distress code of __SOS__ in Morse code.
 
 
-## Code
+### Morse
+
+
+#### Time Units
+
+Dot: 1 unit
+
+Dash: 3 units
+
+Dot/Dash pause: 1 unit
+
+Letter pause: 3 units
+
+Word pause: 7 units
+
+
+#### SOS
+
+![SOS in Morse Code](assets/SOS.png)
+
+
+## Starter Code
 
 ``` python
 # Get extra code
@@ -26,16 +47,31 @@ from time import sleep
 while True:
     
     
-    # Turn LED on
-    pico_led.on()
+    # Loop - Dot x 3
     
-    # Pause
-    sleep(0.5)
+        # Turn LED on
+        
+        # Pause
+        
+        # Turn LED off
+        
+        # Pause
+        
+    # Letter pause
     
     
-    # Turn LED off
-    pico_led.off()
+    # Loop - Dash x 3
     
-    # Pause
-    sleep(0.5)
+    
+    # Letter pause
+        
+    
+    # Loop - Dot x 3
+    
+    
+    # Letter pause
+        
+        
+    # Word pause
+    
  ```
