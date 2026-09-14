@@ -42,10 +42,8 @@ Word pause: 7 units
 from picozero import pico_led
 from time import sleep
 
-
 # Loop forever
 while True:
-    
     
     # Loop - Dot x 3
     
@@ -59,15 +57,11 @@ while True:
         
     # Letter pause
     
-    
     # Loop - Dash x 3
-    
     
     # Letter pause
         
-    
     # Loop - Dot x 3
-        
         
     # Word pause
  ```
