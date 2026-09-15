@@ -1,6 +1,6 @@
 # Title: H SDD Bearings v1
 # Author: Mr Friend
-# Date: 26 Sep 2024
+# Date: 15 Sep 2026
 
 #
 # Subprograms
@@ -9,9 +9,10 @@
 def getSizeData() -> list[float]:
     """Read ball bearing test data from a csv file.  Return array."""
 
-    # Declare local variable
-    bearingSizes = [0.0] * 1000
-
+    # Declare local variables
+    bearingSizes: list[float] = [0.0 for _ in range(1000)]
+    line: str = ""
+    
     # Open file in read mode
     file = open("bearingsData.csv", "r", encoding="UTF-8")
 
@@ -33,52 +34,52 @@ def findMin(items: list[float]) -> float:
     """Finds and returns minimum value in an array."""
     
     # Initialise local variable
-    min = 0.0
+    minSize: float = 0.0
     
     # Set min to first value in array
-    min = items[0]
+    minSize = items[0]
     
     # Loop from second element
     for index in range(1, len(items)):
         
         # Compare current value with min
-        if items[index] < min:
+        if items[index] < minSize:
             
             # Update min
-            min = items[index]
+            minSize = items[index]
             
     # Return minimum value
-    return min
+    return minSize
 
 
 def findMax(items: list[float]) -> float:
     """Finds and returns maximum value in an array."""
     
     # Initialise local variable
-    max = 0.0
+    maxSize: float = 0.0
     
     # Set max to first value in array
-    max = items[0]
+    maxSize = items[0]
     
     # Loop from second element
     for index in range(1, len(items)):
         
         # Compare current value with min
-        if items[index] > max:
+        if items[index] > maxSize:
             
             # Update min
-            max = items[index]
+            maxSize = items[index]
             
     # Return maximum value
-    return max
+    return maxSize
 
 
 def countSmall(items: list[float]) -> int:
     """Count and return how many ball bearings are too big."""
 
     # Initialise local variables
-    count = 0
-    minSize = 2.99
+    count: int = 0
+    minSize: float = 2.99
 
     # Loop for each value
     for index in range(len(items)):
@@ -94,8 +95,8 @@ def countBig(items: list[float]) -> int:
     """Count and return how many ball bearings are too big."""
 
     # Initialise local variables
-    count = 0
-    maxSize = 3.01
+    count: int = 0
+    maxSize: float = 3.01
 
     # Loop for each value
     for index in range(len(items)):
@@ -111,7 +112,7 @@ def calcPercent(count: int) -> float:
     """Calculate percentage of small/big bearings to 2 dp."""
     
     # Initialise local variable
-    percent = 0.0
+    percent: float = 0.0
     
     # Calculate percentage
     percent = (count / 1000) * 100
@@ -126,8 +127,8 @@ def calcBatchResult (smallPercent: float, bigPercent: float) -> bool:
     """Calculate result of batch.  Returns Boolean."""
     
     # Initialise local variable
-    totalPercent = 0.0
-    result = False
+    totalPercent: float = 0.0
+    result: bool = False
     
     # Calculate total percent
     totalPercent = smallPercent + bigPercent
@@ -146,7 +147,7 @@ def writeData(min: float, max: float, smallPercent: float,
     """Write data to file."""
     
     # Initialise local variables
-    totalPercent = 0.0
+    totalPercent: float = 0.0
     
     # Calculate total percentage
     totalPercent = smallPercent + bigPercent
@@ -185,23 +186,23 @@ def main() -> None:
     """Main program"""
 
     # Initialise variables
-    sizeData = [0.0] * 1000
-    min = 0.0
-    max = 0.0
-    small = 0
-    big = 0
-    smallPercent = 0.0
-    bigPercent = 0.0
-    result = False
+    sizeData: list[float] = [0.0 for _ in range(1000)]
+    minSize: float = 0.0
+    maxSize: float = 0.0
+    small: int = 0
+    big: int = 0
+    smallPercent: float = 0.0
+    bigPercent: float = 0.0
+    result: bool = False
 
     # 1.  Read bearings sizes from file
     sizeData = getSizeData()
     
     # 2.  Determine size of smallest bearing                                      
-    min = findMin(sizeData)
+    minSize = findMin(sizeData)
     
     # 3.  Determine size of largest bearing                                      
-    max = findMax(sizeData)
+    maxSize = findMax(sizeData)
 
     # 4.  Calculate how many bearings are too small
     small = countSmall(sizeData)
@@ -219,7 +220,7 @@ def main() -> None:
     result = calcBatchResult(smallPercent, bigPercent)
 
     # 9.  Write data to file
-    writeData(min, max, smallPercent, bigPercent, result)
+    writeData(minSize, maxSize, smallPercent, bigPercent, result)
     
 # Call main()
 #main()

@@ -54,10 +54,10 @@ FAIL
 1.  Read bearings sizes from file           OUT: sizeData()
 
 2.  Determine size of smallest bearing      IN: sizeData()
-                                            OUT: min
+                                            OUT: minSize
 
 3.  Determine size of largest bearing       IN: sizeData()
-                                            OUT: max
+                                            OUT: maxSize
  
 4.  Count how many bearings are too small   IN: sizeData()
                                             OUT: small
@@ -74,7 +74,7 @@ FAIL
 8.  Calculate batch result                  IN: smallPercent, bigPercent
                                             OUT: result
 
-9.  Write data to file                      IN: min, max, smallPercent, bigPercent, result
+9.  Write data to file                      IN: minSize, maxSize, smallPercent, bigPercent, result
 ```
 
 
