@@ -223,4 +223,4 @@ def main() -> None:
     writeData(minSize, maxSize, smallPercent, bigPercent, result)
     
 # Call main()
-#main()
+main()
