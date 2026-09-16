@@ -87,7 +87,7 @@ FAIL
 Using the program analysis and the design, implement the program in a language of your choice.
 
 
-### Start Code
+### Starter Code
 
 Starter code is below.
 The names of sub-programs are given, and must be used, but the input, process, and output is missing.
@@ -114,8 +114,6 @@ def calcBatchResult()
 def writeData() 
 
 def main()
-
-main()
 ```
 
 
