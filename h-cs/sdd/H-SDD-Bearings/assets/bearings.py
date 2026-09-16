@@ -6,7 +6,7 @@
 # Subprograms
 #
 
-def getSizeData() -> list[float]:
+def readData() -> list[float]:
     """Read ball bearing test data from a csv file.  Return array."""
 
     # Declare local variables
@@ -123,7 +123,7 @@ def calcPercent(count: int) -> float:
     return percent
 
 
-def calcBatchResult (smallPercent: float, bigPercent: float) -> bool:
+def calcBatchResult(smallPercent: float, bigPercent: float) -> bool:
     """Calculate result of batch.  Returns Boolean."""
     
     # Initialise local variable
@@ -196,7 +196,7 @@ def main() -> None:
     result: bool = False
 
     # 1.  Read bearings sizes from file
-    sizeData = getSizeData()
+    sizeData = readData()
     
     # 2.  Determine size of smallest bearing                                      
     minSize = findMin(sizeData)

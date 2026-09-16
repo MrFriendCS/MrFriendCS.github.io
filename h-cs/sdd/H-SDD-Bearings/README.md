@@ -83,6 +83,37 @@ FAIL
 Using the program analysis and the design, implement the program in a language of your choice.
 
 
+### Start Code
+
+Starter code is below.  The names of sub-programs are given, and must be used, but the input, process, and output is missing.
+
+``` python
+# Title: 
+# Author: 
+# Date: 
+
+def readData()
+
+def findMin()
+
+def findMax() 
+
+def countSmall()
+
+def countBig()
+
+def calcPercent() 
+
+def calcBatchResult() 
+
+def writeData() 
+
+def main()
+
+main()
+```
+
+
 ## Testing
 
 Run the file [bearingsTest.py](assets/bearingsTest.py "Download file"). The file must be in the same folder as `bearings.py`.

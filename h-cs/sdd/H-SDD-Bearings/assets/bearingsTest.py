@@ -4,45 +4,45 @@
 
 """Tests the functions in bearings.py"""
 
-import bearings1
+import bearings
 
 
-def testGetSizeData() -> int:
-    """Tests the getSizeData() function"""
+def testReadData() -> int:
+    """Tests the readData() function"""
     
     # Local variable
-    test = 1
+    test: int = 1
     
-    print("\ngetSizeData() Tests")
+    print("\nreadData() Tests")
     print("-------------------\n")
     
     try:
         
         print("Test " + str(test) +
               ": Read data --> ", end="")
-        assert len(bearings1.getSizeData()) == 1000
+        assert len(bearings.readData()) == 1000
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": First value --> ", end="")
-        assert type(bearings1.getSizeData()[0]) == type(1.1)
+        assert type(bearings.readData()[0]) == type(1.1)
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": Last value --> ", end="")
-        assert type(bearings1.getSizeData()[-1]) == type(1.1)
+        assert type(bearings.readData()[-1]) == type(1.1)
         print("Passed")
         
-        print("\nPASSED: getSizeData()")
+        print("\nPASSED: readData()")
         print("=====================\n")
         
         return 1
         
     except:
         print("Failed")
-        print("\nFAILED: getSizeData()")
+        print("\nFAILED: readData()")
         print("=====================\n")
         
         return 0
@@ -52,7 +52,7 @@ def testFindMin() -> int:
     """Tests the findMin() function"""
     
     # Local variable
-    test = 1
+    test: int = 1
     
     print("\nfindMin() Tests")
     print("---------------\n")
@@ -60,20 +60,20 @@ def testFindMin() -> int:
     try:
         
         print("Test " + str(test) +
-              ": [1, 2, 3] --> ", end="")
-        assert bearings1.findMin([1,2,3]) == 1
+              ": [1.1, 2.2, 3.3] --> ", end="")
+        assert bearings.findMin([1.1,2.2,3.3]) == 1.1
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": [3, 1, 2] --> ", end="")
-        assert bearings1.findMin([3,1,2]) == 1
+              ": [3.3, 1.1, 2.2] --> ", end="")
+        assert bearings.findMin([3.3,1.1,2.2]) == 1.1
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
-              ": [2, 3, 1] --> ", end="")
-        assert bearings1.findMin([2,3,1]) == 1
+              ": [2.2, 3.3, 1.1] --> ", end="")
+        assert bearings.findMin([2.2,3.3,1.1]) == 1.1
         print("Passed")
                      
         print("\nPASSED: findMin()")
@@ -93,7 +93,7 @@ def testFindMax() -> int:
     """Tests the findMax() function"""
     
     # Local variable
-    test = 1
+    test: int = 1
     
     print("\nfindMax Tests")
     print("-------------\n")
@@ -102,19 +102,19 @@ def testFindMax() -> int:
         
         print("Test " + str(test) +
               ": [1, 2, 3] --> ", end="")
-        assert bearings1.findMax([1,2,3]) == 3
+        assert bearings.findMax([1,2,3]) == 3
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [3, 1, 2] --> ", end="")
-        assert bearings1.findMax([3,1,2]) == 3
+        assert bearings.findMax([3,1,2]) == 3
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [2, 3, 1] --> ", end="")
-        assert bearings1.findMax([2,3,1]) == 3
+        assert bearings.findMax([2,3,1]) == 3
         print("Passed")
                              
         print("\nPASSED: findMax()")
@@ -134,7 +134,7 @@ def testCountSmall() -> int:
     """Tests the countSmall() function"""
     
     # Local variable
-    test = 1
+    test: int = 1
     
     print("\ncountSmall() Tests")
     print("----------------\n")
@@ -143,31 +143,31 @@ def testCountSmall() -> int:
         
         print("Test " + str(test) +
               ": [3.0, 3.0, 3.0] --> ", end="")
-        assert bearings1.countSmall([3.0, 3.0, 3.0]) == 0
+        assert bearings.countSmall([3.0, 3.0, 3.0]) == 0
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [2.99, 2.99, 2.99] --> ", end="")
-        assert bearings1.countSmall([2.99, 2.99, 2.99]) == 0
+        assert bearings.countSmall([2.99, 2.99, 2.99]) == 0
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [2.989, 2.99, 2.99] --> ", end="")
-        assert bearings1.countSmall([2.989, 2.99, 2.99]) == 1
+        assert bearings.countSmall([2.989, 2.99, 2.99]) == 1
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [2.989, 2.989, 2.99] --> ", end="")
-        assert bearings1.countSmall([2.989, 2.989, 2.99]) == 2
+        assert bearings.countSmall([2.989, 2.989, 2.99]) == 2
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [2.989, 2.989, 2.989] --> ", end="")
-        assert bearings1.countSmall([2.989, 2.989, 2.989]) == 3
+        assert bearings.countSmall([2.989, 2.989, 2.989]) == 3
         print("Passed")
                      
         print("\nPASSED: countSmall()")
@@ -187,7 +187,7 @@ def testCountBig() -> int:
     """Tests the countBig() function"""
     
     # Local variable
-    test = 1
+    test: int = 1
     
     print("\ncountItem() Tests")
     print("-----------------\n")
@@ -196,31 +196,31 @@ def testCountBig() -> int:
         
         print("Test " + str(test) +
               ": [3.0, 3.0, 3.0] --> ", end="")
-        assert bearings1.countBig([3.0, 3.0, 3.0]) == 0
+        assert bearings.countBig([3.0, 3.0, 3.0]) == 0
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [3.01, 3.01, 3.01] --> ", end="")
-        assert bearings1.countBig([3.01, 3.01, 3.01]) == 0
+        assert bearings.countBig([3.01, 3.01, 3.01]) == 0
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [3.011, 3.01, 3.01] --> ", end="")
-        assert bearings1.countBig([3.011, 3.01, 3.01]) == 1
+        assert bearings.countBig([3.011, 3.01, 3.01]) == 1
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [3.011, 3.011, 3.01] --> ", end="")
-        assert bearings1.countBig([3.011, 3.011, 3.01]) == 2
+        assert bearings.countBig([3.011, 3.011, 3.01]) == 2
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [3.011, 3.011, 3.011] --> ", end="")
-        assert bearings1.countBig([3.011, 3.011, 3.011]) == 3
+        assert bearings.countBig([3.011, 3.011, 3.011]) == 3
         print("Passed")
                      
         print("\nPASSED: countBig()")
@@ -240,7 +240,7 @@ def testCalcPercent() -> int:
     """Tests the calcPercent() function"""
     
     # Local variable
-    test = 1
+    test: int = 1
     
     print("\ncalcPercent() Tests")
     print("------------------------\n")
@@ -249,25 +249,25 @@ def testCalcPercent() -> int:
         
         print("Test " + str(test) +
               ": 14 --> ", end="")
-        assert bearings1.calcPercent(14) == 1.4
+        assert bearings.calcPercent(14) == 1.4
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 15 --> ", end="")
-        assert bearings1.calcPercent(15) == 1.5
+        assert bearings.calcPercent(15) == 1.5
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 19 --> ", end="")
-        assert bearings1.calcPercent(19) == 1.9
+        assert bearings.calcPercent(19) == 1.9
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 20 --> ", end="")
-        assert bearings1.calcPercent(20) == 2.0
+        assert bearings.calcPercent(20) == 2.0
         print("Passed")
                      
         print("\nPASSED: calcPercent()")
@@ -287,7 +287,7 @@ def testCalcBatchResult() -> int:
     """Tests the calcBatchResult() function"""
     
     # Local variable
-    test = 1
+    test: int = 1
     
     print("\ncalcBatchResult() Tests")
     print("-----------------------\n")
@@ -296,49 +296,49 @@ def testCalcBatchResult() -> int:
         
         print("Test " + str(test) +
               ": 0, 0 --> ", end="")
-        assert bearings1.calcBatchResult(0, 0) == True
+        assert bearings.calcBatchResult(0, 0) == True
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 2, 0 --> ", end="")
-        assert bearings1.calcBatchResult(2, 0) == False
+        assert bearings.calcBatchResult(2, 0) == False
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 0, 2 --> ", end="")
-        assert bearings1.calcBatchResult(0, 2) == False
+        assert bearings.calcBatchResult(0, 2) == False
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 1.5, 1.5 --> ", end="")
-        assert bearings1.calcBatchResult(1.5, 1.5) == False
+        assert bearings.calcBatchResult(1.5, 1.5) == False
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 1.5, 1.4 --> ", end="")
-        assert bearings1.calcBatchResult(1.5, 1.4) == True
+        assert bearings.calcBatchResult(1.5, 1.4) == True
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 1.4, 1.5 --> ", end="")
-        assert bearings1.calcBatchResult(1.4, 1.5) == True
+        assert bearings.calcBatchResult(1.4, 1.5) == True
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 1.9, 0 --> ", end="")
-        assert bearings1.calcBatchResult(1.9, 0) == True
+        assert bearings.calcBatchResult(1.9, 0) == True
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": 0, 1.9 --> ", end="")
-        assert bearings1.calcBatchResult(0, 1.9) == True
+        assert bearings.calcBatchResult(0, 1.9) == True
         print("Passed")
                      
         print("\nPASSED: calcBatchResult()")
@@ -358,7 +358,7 @@ def testWriteData1() -> int:
     """Tests the writeData() function"""
     
     # Local variable
-    test = 1
+    test: int = 1
     
     print("\nwriteData() Tests")
     print("-----------------\n")
@@ -367,7 +367,7 @@ def testWriteData1() -> int:
         
         print("Test " + str(test) +
               ": 1.0, 2.0, 3.0, 4.0, True --> ", end="")
-        bearings1.writeData(1.0, 2.0, 3.0, 4.0, True)
+        bearings.writeData(1.0, 2.0, 3.0, 4.0, True)
         print("Written")
                      
         print("\nCompleted: writeData()")
@@ -387,7 +387,7 @@ def testWriteData2() -> int:
     """Tests the writeData() function"""
     
     # Local variable
-    test = 1
+    test: int = 1
     
     print("\nwriteData() Tests")
     print("-----------------\n")
@@ -396,7 +396,7 @@ def testWriteData2() -> int:
         
         print("Test " + str(test) +
               ": 0.1, 0.2, 0.3, 0.4, False --> ", end="")
-        bearings1.writeData(0.1, 0.2, 0.3, 0.4, False)
+        bearings.writeData(0.1, 0.2, 0.3, 0.4, False)
         print("Written")
                      
         print("\nCompleted: writeData()")
@@ -416,14 +416,14 @@ def testAll() -> None:
     """Tests all functions"""
     
     # Local variable
-    passed = 0
+    passed: int = 0
     
     print("\nRun All Tests")
     print("-------------\n")
     
     try:
         
-        passed += testGetSizeData()
+        passed += testReadData()
         passed += testFindMin()
         passed += testFindMax()
         passed += testCountSmall()
@@ -449,8 +449,8 @@ def testAll() -> None:
 #
 
 # Initialise global variables
-test = ""
-run = True
+test: str = ""
+run: bool = True
 
 while run:
     print("\nBearings Tests")
@@ -473,7 +473,7 @@ while run:
     test = input("\nTest: ")
 
     if test == "1":
-        testGetSizeData()
+        testReadData()
         
     elif test == "2":
         testFindMin()
