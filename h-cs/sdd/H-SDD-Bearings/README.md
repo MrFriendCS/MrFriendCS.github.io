@@ -70,10 +70,10 @@ FAIL
                                             OUT: big
 
 6.  Calculate percentage of small bearings  IN: small
-      to 2 decimal places                   OUT: smallPercent
+      to 1 decimal place                    OUT: smallPercent
 
 7.  Calculate percentage of big bearings    IN: big
-      to 2 decimal places                   OUT: bigPercent
+      to 1 decimal place                    OUT: bigPercent
 
 8.  Calculate batch result                  IN: smallPercent, bigPercent
                                             OUT: result
