@@ -3,9 +3,12 @@
 
 ## Introduction
 
-Horve Engineering Ltd produce ball bearings to exacting requirements.  The quality assurance is carried out manually as so few ball bearings fail to meet the standard.  If too many are too big or too small the batch is melted down and the batch remade.
+Horve Engineering Ltd produce ball bearings to exacting requirements.
+The quality assurance is carried out manually as so few ball bearings fail to meet the standard.
+If too many are too big or too small the batch is melted down and the batch remade.
 
-Unfortunately, there is a blip each year when pupils from the local school undertake a week's work experience.  The number of failures increases and it has become too time consuming to do the quality assurance manually.
+Unfortunately, there is a blip each year when pupils from the local school undertake a week's work experience.
+The number of failures increases and it has become too time consuming to do the quality assurance manually.
 
 
 ## Analysis
@@ -22,7 +25,8 @@ The ball bearing specification is 3 cm ± 0.01 cm.
 
 The sizes of the smallest and largest bearings are to be included in the results.
 
-The results of the batch are to be written to `batchResult.txt`.  An example is shown below:
+The results of the batch are to be written to `batchResult.txt`.
+An example is shown below:
 
 ```
 Batch Result
@@ -85,7 +89,8 @@ Using the program analysis and the design, implement the program in a language o
 
 ### Start Code
 
-Starter code is below.  The names of sub-programs are given, and must be used, but the input, process, and output is missing.
+Starter code is below.
+The names of sub-programs are given, and must be used, but the input, process, and output is missing.
 
 ``` python
 # Title: 
@@ -116,4 +121,7 @@ main()
 
 ## Testing
 
-Run the file [bearingsTest.py](assets/bearingsTest.py "Download file"). The file must be in the same folder as `bearings.py`.
+Comment out the call to main().
+
+Run the file [bearingsTest.py](assets/bearingsTest.py "Download file").
+The file must be in the same folder as `bearings.py`.
