@@ -95,3 +95,36 @@ HS9 3CC,100000,105000
 
 1. There are 1000 properties.
 2. The data is correctly formatted in the file provided by KCL.
+
+
+## Starter Code
+
+Starter code is below.
+The names of sub-programs are given, and must be used, but the input, process, and output is missing.
+
+``` python
+# Title:
+# Author:
+# Date:
+
+
+def readData()
+
+def countHS0()
+
+def fixHS0()
+
+def newPrices()
+
+def findLowest()
+
+def findHighest()
+
+def countValues()
+
+def writeSummary()
+
+def writeData(
+
+def main()
+```

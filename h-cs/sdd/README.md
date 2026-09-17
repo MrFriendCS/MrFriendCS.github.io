@@ -34,7 +34,7 @@
 | H-SDD-Calculation        | Multiple calculations           | sp, ss, asc, chr            | Tests |
 | H-SDD-Algorithm          | Standard algorithms             | sp, ls, co, min, max        | Tests |
 | H-SDD-Bearings Pt 1      | Check size of bearings          | sp, r, min, max, co+, w     | Tests |
-| H-SDD-House-Prices       | Update house prices             | sp, r, co, ls+, min, max, w | |
+| H-SDD-House-Prices       | Update house prices             | pa, r, co, ls+, min, max, w | |
 | H-SDD-People             | Read and write with records     | sp, r, ar, co, max, ls+     | |
 | H-SDD-Runners            | Find qualifying runners         | sp, r, ar, ls+              | pc |
 | H-SDD-Bearings Pt 2      | | | |
