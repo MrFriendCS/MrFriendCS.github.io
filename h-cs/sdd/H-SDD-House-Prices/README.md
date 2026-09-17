@@ -128,3 +128,11 @@ def writeData(
 
 def main()
 ```
+
+
+## Testing
+
+Comment out the call to main().
+
+Run the file [housePricesTest.py](assets/housePricesTest.py "Download file").
+The file must be in the same folder as `housePrices.py`.
