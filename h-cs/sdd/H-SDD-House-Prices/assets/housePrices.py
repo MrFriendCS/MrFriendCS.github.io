@@ -63,7 +63,7 @@ def fixHS0(postcodes: list[str]) -> list[str]:
         if postcodes[index][0:3] == "HS0":
             
             # Update postcode
-            postcodes[index] = "HS1 " + postcodes[index][3: ]
+            postcodes[index] = "HS1" + postcodes[index][3: ]
 
     # Return postcodes
     return postcodes
@@ -284,4 +284,4 @@ def main() -> None:
 
 
 # Call main()
-main()
+if __name__ == '__main__': main()

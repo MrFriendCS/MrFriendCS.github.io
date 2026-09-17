@@ -456,7 +456,7 @@ while run:
     print("\nBearings Tests")
     print("--------------\n")
 
-    print("1. getSizeData()")
+    print("1. readData()")
     print("2. findMin()")
     print("3. findMax()")
     print("4. countSmall()")

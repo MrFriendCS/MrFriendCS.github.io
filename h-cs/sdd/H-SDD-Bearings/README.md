@@ -89,7 +89,7 @@ Using the program analysis and the design, implement the program in a language o
 
 ### Starter Code
 
-Starter code is below.
+Starter code for `bearings.py` is below.
 The names of sub-programs are given, and must be used, but the input, process, and output is missing.
 
 ``` python
@@ -114,12 +114,13 @@ def calcBatchResult()
 def writeData() 
 
 def main()
+
+# Run program
+if __name__ == '__main__': main()
 ```
 
 
 ## Testing
-
-Comment out the call to main().
 
 Run the file [bearingsTest.py](assets/bearingsTest.py "Download file").
 The file must be in the same folder as `bearings.py`.

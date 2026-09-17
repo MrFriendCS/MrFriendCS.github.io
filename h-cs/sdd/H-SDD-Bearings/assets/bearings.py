@@ -222,5 +222,5 @@ def main() -> None:
     # 9.  Write data to file
     writeData(minSize, maxSize, smallPercent, bigPercent, result)
     
-# Call main()
-main()
+# Run program
+if __name__ == '__main__': main()
