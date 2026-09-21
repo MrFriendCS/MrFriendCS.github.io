@@ -20,10 +20,10 @@
 | N5-SDD-Hello Pt 4          | Produce an output using inputs       | ip, maths, cs                 | |
 | N5-SDD-Number-Madness Pt 3 | Two values, various results          | ip, maths, rd, cs             | |
 | N5-SDD-Rectangle-Calcs     | Calculate perimeter and area         | ip, maths, cs                 | |
-| N5-SDD-Walking-Calculator  | Calculate total and mean distance    | ip, maths, cs                 | |
+| N5-SDD-Walking             | Calculate total and mean distance    | ip, maths, cs                 | |
 | N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, maths, cs                 | sd |
 | N5-SDD-Times-Tables        | Display a times table                | fl, ip, maths, cs             | |
-| N5-SDD-Walking Calc Pt 2   | Calculate total and mean distance    | rt, ip, rd                    | sd |
+| N5-SDD-Walking Pt 2        | Calculate total and mean distance    | rt, ip, rd                    | sd |
 | N5-SDD-Shopping            | Calculate a discount, if appropriate | ip, if1, rd                   | sd |
 | N5-SDD-Average             | Calculate mean                       | ip, maths, rd, cs             | |
 | N5-SDD-Boccia Pt 1         | Records scores, gives result         | ip, if1                       | |
@@ -44,6 +44,7 @@
 | N5-SDD-School-Club         | Check eSports club eligibility       | ip, if5, lo                   | sd, tricky |
 | N5-SDD-Gradient Pt 2       | Calculate gradient from rise and run | ip, if2, maths, cs            | |
 | N5-SDD-Gradient Pt 3       | Calculate gradient from rise and run | iv, maths, cs                 | |
+| N5-SDD-Walking Pt 3        | Calculate total and mean distance    | iv, rt, rd                    | sd |
 | N5-SDD-Chance Pt 2         | Simulate heads and tails game        | rnd, if2                      | sd |
 | N5-SDD-Result Pt 3         | Convert test score to pass / fail    | iv, if2                       | sd |
 | N5-SDD-Chance Pt 3         | Simulate heads and tails game        | rnd, iv, if4                  | sd |
@@ -87,7 +88,6 @@
 | N5-SDD-Pontoon Part 2      | Multiplayer, multiple arrays         | iv, t1d, rt, rnd, len, fl, cl   | pc |
 | N5-SDD-Menu-Options        | Access different tasks via a menu    | iv, t1d, rt, rnd, len, fl       | |
 | N5-SDD-Password-Checker    |  |  |  |
-| N5-SDD-Walking             |  |  |  |
 
 
 ### Abbreviations
