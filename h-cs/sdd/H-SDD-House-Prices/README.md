@@ -129,7 +129,9 @@ def writeData(
 def main()
 
 # Run program
-if __name__ == '__main__': main()
+if __name__ == "__main__":
+
+    main()
 ```
 
 

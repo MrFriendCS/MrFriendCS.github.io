@@ -29,9 +29,9 @@ Walking Calculator
 How many weeks? 4
 
 Week 1 distance? 12
-Week 2 distance? 7.5
+Week 2 distance? 7.3
 Week 3 distance? 9
-Week 4 distance? 11.5
+Week 4 distance? 11.2
 
 Total: 40 units
 Average: 10.0 units per week
