@@ -1,13 +1,16 @@
 Summary
 -------
 
-HS0 errors: 1
+HS0 errors: 0
 
-Lowest value:  £2
-Highest value: £3
+Lowest value:  £1
+Highest value: £2
 
-Lowest value houses: 4
+Lowest value houses: 1
+	HS1 2AB
 
-Highest value houses: 5
+Highest value houses: 2
+	HS7 5LQ
+	HS9 5XD
 
 =======

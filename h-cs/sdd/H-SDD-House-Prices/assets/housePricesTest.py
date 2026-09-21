@@ -346,9 +346,9 @@ def testWriteSummary() -> int:
     try:
         
         print("Test: writeSummary(" +
-              "1, 2, 3, 4, 5, ['HS1 2AB', 'HS9 5XD'], [1, 1000]" +
+              "0, 1, 2, 1, 2, ['HS1 2AB', 'HS7 5LQ', 'HS9 5XD'], [1, 2, 2]" +
               ") --> ", end="")
-        housePrices.writeSummary(1, 2, 3, 4, 5, ['HS1 2AB', 'HS9 5XD'], [1, 1000])
+        housePrices.writeSummary(0, 1, 2, 1, 2, ['HS1 2AB', 'HS7 5LQ', 'HS9 5XD'], [1, 2, 2])
         print("Written")
                      
         print("\nCompleted: writeSummary()")
