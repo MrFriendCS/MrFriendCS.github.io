@@ -1,6 +1,9 @@
 Country Details
 ---------------
 
-No country infomation found.
+Country: c
+Capital: f
+Area: 3.3 km^2
+Population: 3
 
 ===============

@@ -14,7 +14,7 @@ def test_read_data() -> int:
     test: int = 1
     
     print('\nread_data() Tests')
-    print('----------------\n')
+    print('-----------------\n')
     
     try:
         
@@ -94,14 +94,14 @@ def test_read_data() -> int:
         print('Passed')
         
         print('\nPASSED: read_data()')
-        print('==================\n')
+        print('===================\n')
         
         return 1
         
     except:
         print('Failed')
         print('\nFAILED: read_data()')
-        print('==================\n')
+        print('===================\n')
         
         return 0
     
@@ -150,35 +150,90 @@ def test_find_country() -> int:
         return 0
 
 
-def test_write_summary() -> int:
-    """Tests the writeSummary() function"""
+def test_display_country() -> int:
+    """Tests the display_country() function"""
     
-    print('\nwriteSummary() Tests')
-    print('--------------------\n')
+    # Local variables
+    test: int = 1
+    inputs1: list[list[str]]
+    inputs2: list[list[float]]
+    inputs3: list[list[int]]
+    inputs4: list[int]
+    
+    # Values
+    inputs1 = [['a', 'b', 'c'], ['a', 'b', 'c']]
+    inputs2 = [[1.1, 2.2, 3.3], [1.1, 2.2, 3.3]]
+    inputs3 = [[1, 2, 3], [1, 2, 3]]
+    inputs4 = [2, -1]
+    
+    print('\ndisplay_country() Tests')
+    print('-----------------------\n')
     
     try:
         
-        print('Test: writeSummary(' +
-              '0, 1, 2, 1, 2, ["HS1 2AB", "HS7 5LQ", "HS9 5XD"], [1, 2, 2]' +
-              ') --> ', end='')
-        housePrices.writeSummary(0, 1, 2, 1, 2, ['HS1 2AB', 'HS7 5LQ', 'HS9 5XD'], [1, 2, 2])
-        print('Written')
-                     
-        print('\nCompleted: writeSummary()')
-        print('=========================\n')
+        for index in range(len(inputs1)):
+            
+            print(f'Test {test}: display_country({inputs1[index]}, {inputs2[index]}, {inputs3[index]}, {inputs4[index]}) --> ')
+            
+            find_country.display_country(inputs1[index], inputs2[index],
+                                         inputs3[index], inputs4[index])
+            
+            test += 1
         
         return 1
         
     except:
+        
         print('Failed')
-        print('\nFAILED: writeSummary()')
-        print('===================\n')
+        print('\nFAILED: display_country()')
+        print('=========================\n')
         
         return 0
 
 
 
-def testAll() -> None:
+def test_write_summary() -> int:
+    """Tests the write_summary() function"""
+    
+    # Local variables
+    test: int = 1
+    inputs1: list[str]
+    inputs2: list[str]
+    inputs3: list[float]
+    inputs4: list[int]
+    inputs5: int
+    
+    # Values
+    inputs1 = ['a', 'b', 'c']
+    inputs2 = ['d', 'e', 'f']
+    inputs3 = [1.1, 2.2, 3.3]
+    inputs4 = [1, 2, 3]
+    inputs5 = 2
+    
+    print('\nwrite_summary() Tests')
+    print('---------------------\n')
+    
+    try:
+            
+        print(f'Test {test}: write_summary({inputs1}, {inputs2}, {inputs3}, {inputs4}, {inputs5}) --> ')
+        
+        find_country.write_summary(inputs1, inputs2, inputs3, inputs4, inputs5)
+        
+        test += 1
+        
+        return 1
+        
+    except:
+        
+        print('Failed')
+        print('\nFAILED: write_summary()')
+        print('=======================\n')
+        
+        return 0
+
+
+
+def test_all() -> None:
     '''Tests all functions'''
     
     # Local variable
@@ -190,15 +245,18 @@ def testAll() -> None:
     try:
         
         passed += test_read_data()
+        passed += test_find_country()
+        passed += test_display_country()
         passed += test_write_summary()
         
-        if passed == 9:
+        if passed == 4:
             print('\nTesting of all functions: PASSED!')
             print('=================================\n')
         else:
             1/0  # Throws an exception
         
     except:
+        
         print('\nTesting of all functions: FAILED!')
         print('=================================\n')
         
