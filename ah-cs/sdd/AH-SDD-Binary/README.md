@@ -1,6 +1,14 @@
 # AH SDD - Find a Country
 
 
+# Introduction
+
+A data file ([countries.csv](assets/countries.csv "Download file")) countains the data for a number of countries (name, capital, area, and population).
+The countries are in alphabetical order.
+The data will be used to extract the information about one country.
+The information will be displayed to the user, and written to a file called `country.txt`.
+
+
 ## Design
 
 A Structure Diagram is shown below.
