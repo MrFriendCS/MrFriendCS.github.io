@@ -58,8 +58,8 @@
         <mxCell id="uBkPbKrAVtswJLntQWj0-7" value="Display country infomation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="cC_0VmBzqEa95q8hH64M-1" vertex="1">
           <mxGeometry x="440" y="280" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uBkPbKrAVtswJLntQWj0-8" value="countries()&lt;div&gt;capitals()&lt;/div&gt;&lt;div&gt;areas()&lt;/div&gt;&lt;div&gt;populations()&lt;/div&gt;&lt;div&gt;index&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="cC_0VmBzqEa95q8hH64M-1" vertex="1">
-          <mxGeometry x="440" y="400" width="80" height="70" as="geometry" />
+        <mxCell id="uBkPbKrAVtswJLntQWj0-8" value="&lt;div&gt;capitals()&lt;/div&gt;&lt;div&gt;areas()&lt;/div&gt;&lt;div&gt;populations()&lt;/div&gt;&lt;div&gt;index&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="cC_0VmBzqEa95q8hH64M-1" vertex="1">
+          <mxGeometry x="440" y="400" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uBkPbKrAVtswJLntQWj0-9" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.333;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=1;" parent="cC_0VmBzqEa95q8hH64M-1" source="uBkPbKrAVtswJLntQWj0-8" target="uBkPbKrAVtswJLntQWj0-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
