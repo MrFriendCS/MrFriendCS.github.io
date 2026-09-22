@@ -59,7 +59,7 @@ Result
 ------
 
 Capital: Copenhagen
-Area: 43094 km^2
+Area: 43094.0 km^2
 Population: 5822763
 
 ======
@@ -73,7 +73,7 @@ Country Details
 
 Country: Denmark
 Capital: Copenhagen
-Area: 43094 km^2
+Area: 43094.0 km^2
 Population: 5822763
 
 ===============
