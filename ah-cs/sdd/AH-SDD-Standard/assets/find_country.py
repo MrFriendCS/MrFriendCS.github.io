@@ -92,10 +92,17 @@ def display_country(capitals: list[str], areas: list[float],
     print('\nResult')
     print('------\n')
     
-    # Display information
-    print(f'Capital: {capitals[index]}')
-    print(f'Area: {areas[index]:} km^2')
-    print(f'Population: {populations[index]}')
+    if index >= 0:
+        
+        # Display information
+        print(f'Capital: {capitals[index]}')
+        print(f'Area: {areas[index]:} km^2')
+        print(f'Population: {populations[index]}')
+        
+    else:
+        
+        # Display error message
+        print('No country infomation found.')
     
     # Display footer
     print('\n=======')
@@ -113,12 +120,19 @@ def write_summary(countries: list[str], capitals: list[str],
     file.write('Country Details\n')
     file.write('---------------\n\n')
     
-    # Write information
-    file.write(f'Country: {countries[index]}\n')
-    file.write(f'Capital: {capitals[index]}\n')
-    file.write(f'Area: {areas[index]:} km^2\n')
-    file.write(f'Population: {populations[index]}\n')
-    
+    if index >= 0:
+        
+        # Write information
+        file.write(f'Country: {countries[index]}\n')
+        file.write(f'Capital: {capitals[index]}\n')
+        file.write(f'Area: {areas[index]:} km^2\n')
+        file.write(f'Population: {populations[index]}\n')
+        
+    else:
+        
+        # Display error message
+        file.write('No country infomation found.\n')
+        
     # Write footer
     file.write('\n===============')
 
