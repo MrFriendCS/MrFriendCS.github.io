@@ -111,41 +111,41 @@ def test_find_country() -> int:
     
     # Local variables
     test: int = 1
-    inputs: list[list[str]]
+    inputs1: list[list[str]]
+    inputs2: list[str]
     outputs: list[int]
     
     # Values
-    inputs = [['HS1 1AB', 'HS2 2CD', 'HS3 3EF'],
-              ['HS0 1AB', 'HS2 2CD', 'HS3 3EF'],
-              ['HS0 1AB', 'HS2 2CD', 'HS0 3EF'],
-              ['HS0 1AB', 'HS0 2CD', 'HS0 3EF']]
-    outputs = [0, 1, 2, 3]
+    inputs1 = [['a', 'b', 'c'], ['a', 'b', 'c'],
+               ['a', 'b', 'c'], ['a', 'b', 'c']]
+    inputs2 = ['x', 'a', 'b', 'c']
+    outputs = [-1, 0, 1, 2]
     
     print("\nfind_country() Tests")
-    print("------------===-\n")
+    print("--------------------\n")
     
     try:
         
-        for index in range(len(inputs)):
+        for index in range(len(inputs1)):
             
-            print(f'Test {str(test)}: find_country({inputs[index]}) --> ', end="")
+            print(f'Test {test}: find_country({inputs1[index]}, {inputs2[index]}) --> ', end="")
             
-            assert find_country.find_country(inputs[index]) == outputs[index]
+            assert find_country.find_country(inputs1[index], inputs2[index]) == outputs[index]
             
             print("Passed")
             
             test += 1
                
-        print("\nPASSED: display_information()")
-        print("==================\n")
+        print("\nPASSED: find_country()")
+        print("======================\n")
         
         return 1
         
     except:
         
         print("Failed")
-        print("\nFAILED: display_information()")
-        print("==================\n")
+        print("\nFAILED: find_country()")
+        print("======================\n")
         
         return 0
 
@@ -212,8 +212,8 @@ test: str = ''
 run: bool = True
 
 while run:
-    print('\nhousePrices Tests')
-    print('--------------\n')
+    print('\nfind_country Tests')
+    print('------------------\n')
 
     print('1. read_data()')
     print('2. find_country()')
