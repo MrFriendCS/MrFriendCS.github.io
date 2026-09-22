@@ -23,7 +23,7 @@ Implement a soultion using the design.
 
 ### Starter Code
 
-Starter code for `findCountry.py` is below.
+Starter code for `find_country.py` is below.
 The names of sub-programs are given, and must be used, but the input, process, and output is missing.
 
 ``` python
@@ -31,13 +31,13 @@ The names of sub-programs are given, and must be used, but the input, process, a
 # Author:
 # Date:
 
-def readData()
+def read_data()
 
-def findCountry()
+def find_country()
 
-def displayCountry()
+def display_country()
 
-def writeSummary()
+def write_summary()
 
 def main()
 
@@ -81,4 +81,5 @@ Population: 5822763
 
 ## Testing
 
-___TBC___
+Run the file [find_country_test.py](assets/find_country_test.py "Download file").
+The file must be in the same folder as `find_country.py`.
