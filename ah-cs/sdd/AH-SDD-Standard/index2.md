@@ -56,7 +56,7 @@ Top 5 by Population
 
 1.
     Country: Russia
-    Capital: Copenhagen
+    Capital: Moscow
     Area: 17098242.0 km^2
     Population: 146171015
 
