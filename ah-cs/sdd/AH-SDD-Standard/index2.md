@@ -55,15 +55,15 @@ Top 5 by Population
 -------------------
 
 1.
-    Country: Russia
-    Population: 146171015
+  Country: Russia
+  Population: 146171015
 
 2.
-    Country: Turkey
-    Population: 85279553
+  Country: Turkey
+  Population: 85279553
 
 3.
-    ...
+  ...
 
 ===================
 ```

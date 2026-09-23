@@ -1,6 +1,7 @@
-# Title: AH SDD Find a Country
+# Title: AH SDD Order by Population
 # author: Mr Friend
-# Date: 22 Sep 2026
+# Date: 23 Sep 2026
+
 
 def read_data() -> tuple[list[str], list[str], list[float], list[int]]:
     """Read data from csv file and return parallel arrays."""
@@ -41,100 +42,104 @@ def read_data() -> tuple[list[str], list[str], list[float], list[int]]:
     return countries, capitals, areas, populations
 
 
-def find_country(countries: list[str], country: str) -> int:
-    """Binary search to find a country in an array."""
-    """Returns the index position."""
+def order_population(countries: list[str], capitals: list[str],
+                     areas: list[float], populations: list[int]) \
+                     -> tuple[list[str], list[str], \
+                              list[float], list[int]]:
+    """Bubble sort to order aparllel arrays, descending population."""
+    """Returns parallel arrays."""
     
     # Initialise local variables
-    start: int = 0
-    end: int = len(countries) - 1
-    middle: int = 0
-    found: bool = False
+    tempcountry: str = ""
+    tempCapital: str = ""
+    tempArea: float = 0.0
+    tempPopulation: int = 0
+    n: int = 0
+    sort: bool = True
     
-    # Loop until found, or all elements checked
-    while not found and (start <= end):
-
-        # Calculate mid point of array to be searched
-        middle = int((start + end) / 2)
-
-        # Check if found
-        if countries[middle] == country:
-
-            # Update result
-            found = True
-
-        # Check if target value is greater than current value
-        elif countries[middle] > country:
-
-            # Update end of array to be searched
-            end = middle - 1
-
-        else:
-
-            # Update start of array to be searched
-            start = middle + 1
+    # Get number of elements
+    n = len(countries)
     
-    # Return index position
-    if found:
-        
-        return middle
+    # Sort if needed
+    while sort == True:
     
-    else:
-        
-        return -1
+        # Turn sort off
+        sort = False
+    
+        # Loop from start of array
+        for index in range(n - 1):
+    
+            # Compare current element with next element
+            if populations[index] < populations[index + 1]:
+    
+                # Swap countries
+                tempCountry = countries[index]
+                countries[index]  = countries[index + 1]
+                countries[index + 1] = tempCountry
+    
+                # Swap capitals
+                tempCapital = capitals[index]
+                capitals[index]  = capitals[index + 1]
+                capitals[index + 1] = tempCapital
+    
+                # Swap areas
+                tempArea = areas[index]
+                areas[index]  = areas[index + 1]
+                areas[index + 1] = tempArea
+    
+                # Swap populations
+                tempPopulation = populations[index]
+                populations[index]  = populations[index + 1]
+                populations[index + 1] = tempPopulation
+    
+                # Sorting still needed
+                sort = True
+    
+        # Reduce the number elements to be checked
+        n = n - 1
+    
+    # Return sorted parallel arrays
+    return countries, capitals, areas, populations
+    
 
 
-def display_country(capitals: list[str], areas: list[float],
-                    populations: list[int], index: int) -> None:
+def display_top_5(countries: list[str], populations: list[int]) -> None:
     """Display the information about the country on the screen."""
     
     # Display header
-    print('\nResult')
-    print('------\n')
+    print('\nTop 5 by Population')
+    print('-------------------\n')
     
-    if index >= 0:
+    for index in range(5):
+        
+        # Display count
+        print(f'{index + 1}.')
         
         # Display information
-        print(f'Capital: {capitals[index]}')
-        print(f'Area: {areas[index]:} km^2')
-        print(f'Population: {populations[index]}')
-        
-    else:
-        
-        # Display error message
-        print('No country infomation found.')
-    
+        print(f'\tCountry: {countries[index]}')
+        print(f'\tPopulation: {populations[index]}')
+            
     # Display footer
     print('\n=======')
     
 
-def write_summary(countries: list[str], capitals: list[str],
-                  areas: list[float], populations: list[int],
-                  index: int) -> None:
+def write_top_10(countries: list[str], capitals: list[str],
+                areas: list[float], populations: list[int]) -> None:
     """Write the information about the country to a text file."""
     
     # Connect to file
-    file = open('country.txt', 'w', encoding='utf-8')
+    file = open('top_populations.csv', 'w', encoding='utf-8')
     
-    # Write header
-    file.write('Country Details\n')
-    file.write('---------------\n\n')
+    # Write column headers
+    file.write('country,capital,area,population\n')
     
-    if index >= 0:
+    for index in range(10):
         
         # Write information
-        file.write(f'Country: {countries[index]}\n')
-        file.write(f'Capital: {capitals[index]}\n')
-        file.write(f'Area: {areas[index]:} km^2\n')
-        file.write(f'Population: {populations[index]}\n')
-        
-    else:
-        
-        # Display error message
-        file.write('No country infomation found.\n')
-        
-    # Write footer
-    file.write('\n===============')
+        file.write(f'{countries[index]},')
+        file.write(f'{capitals[index]},')
+        file.write(f'{areas[index]:},')
+        file.write(f'{populations[index]}\n')
 
 
 def main() -> None:
@@ -149,23 +154,18 @@ def main() -> None:
     
     # Read data from csv file
     countries, capitals, areas, populations = read_data()
+     
+    # Order by population, descending
+    countries, capitals, areas, populations \
+        = order_population(countries, capitals, areas, populations)
     
-    # Display header
-    print('Find a Country')
-    print('--------------\n')
+    # Display information about top 5 populous countries
+    display_top_5(countries, populations)
     
-    # Get country from user
-    country = input('Which country? ')
-    
-    # Get index position of country
-    index = find_country(countries, country)
-    
-    # Display country information
-    display_country(capitals, areas, populations, index)
-    
-    # Write country information to text file.
-    write_summary(countries, capitals, areas, populations, index)
-                  
+    # Write data of top 10 populous countries to csv file
+    write_top_10(countries, capitals, areas, populations)
+
+
 # Run program
 if __name__ == "__main__":
 
