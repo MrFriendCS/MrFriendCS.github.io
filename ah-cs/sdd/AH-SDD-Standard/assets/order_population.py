@@ -2,7 +2,6 @@
 # author: Mr Friend
 # Date: 22 Sep 2026
 
-
 def read_data() -> tuple[list[str], list[str], list[float], list[int]]:
     """Read data from csv file and return parallel arrays."""
     

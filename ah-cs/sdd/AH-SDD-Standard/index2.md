@@ -19,7 +19,7 @@ A Structure Diagram is shown below.
 Implement a soultion using the design that will:
 
 1. Display the information about the five most populous countries.
-2. Write the data about the ten most populous countries to a file called `top_population.csv`.
+2. Write the data of the ten most populous countries to a file called `top_populations.csv`.
 
 
 ### Starter Code
@@ -56,11 +56,13 @@ Top 5 by Population
 
 1.
     Country: Russia
-    Capital: Moscow
-    Area: 17098242.0 km^2
     Population: 146171015
 
 2.
+    Country: Turkey
+    Population: 85279553
+
+3.
     ...
 
 ===================
