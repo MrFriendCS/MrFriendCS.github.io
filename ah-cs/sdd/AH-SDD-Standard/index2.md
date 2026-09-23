@@ -43,7 +43,7 @@ def write_top_10()
 def main()
 
 # Run program
-if __name__ == "__main__":
+if __name__ == '__main__':
 
     main()
 ```
