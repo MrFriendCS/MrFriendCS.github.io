@@ -47,7 +47,7 @@ if __name__ == "__main__":
     main()
 ```
 
-### Example use interface
+### Example User Interface
 
 ```
 Find a Country

@@ -50,7 +50,7 @@ def order_population(countries: list[str], capitals: list[str],
     """Returns parallel arrays."""
     
     # Initialise local variables
-    tempcountry: str = ""
+    tempCountry: str = ""
     tempCapital: str = ""
     tempArea: float = 0.0
     tempPopulation: int = 0
@@ -116,11 +116,11 @@ def display_top_5(countries: list[str], populations: list[int]) -> None:
         print(f'{index + 1}.')
         
         # Display information
-        print(f'\tCountry: {countries[index]}')
-        print(f'\tPopulation: {populations[index]}')
+        print(f'  Country: {countries[index]}')
+        print(f'  Population: {populations[index]}\n')
             
     # Display footer
-    print('\n=======')
+    print('=======')
     
 
 def write_top_10(countries: list[str], capitals: list[str],
@@ -149,8 +149,6 @@ def main() -> None:
     capitals: list[str] = ["" for _ in range(47)]
     areas: list[float] = [0.0 for _ in range(47)]
     populations: list[int] = [0 for _ in range(47)]
-    country: str = ""
-    index: int = 0
     
     # Read data from csv file
     countries, capitals, areas, populations = read_data()

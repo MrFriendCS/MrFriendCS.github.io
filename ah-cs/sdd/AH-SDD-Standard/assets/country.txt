@@ -1,45 +1,9 @@
 Country Details
 ---------------
 
-Country: Albania
-Capital: Tirana
-Area: 28748.0 km^2
-Population: 2886026
-Country: Austria
-Capital: Vienna
-Area: 83879.0 km^2
-Population: 8923073
-Country: Belarus
-Capital: Minsk
-Area: 207600.0 km^2
-Population: 9408400
-Country: Belgium
-Capital: Brussels
-Area: 30528.0 km^2
-Population: 11492641
-Country: Bosnia and Herzegovina
-Capital: Sarajevo
-Area: 51197.0 km^2
-Population: 3301000
-Country: Bulgaria
-Capital: Sofia
-Area: 110879.0 km^2
-Population: 6916548
-Country: Croatia
-Capital: Zagreb
-Area: 56594.0 km^2
-Population: 4036355
-Country: Cyprus
-Capital: Nicosia
-Area: 9251.0 km^2
-Population: 1189085
-Country: Czech Republic
-Capital: Prague
-Area: 78866.0 km^2
-Population: 10693939
-Country: Denmark
-Capital: Copenhagen
-Area: 43094.0 km^2
-Population: 5822763
+Country: c
+Capital: f
+Area: 3.3 km^2
+Population: 3
 
 ===============

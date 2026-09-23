@@ -1,10 +1,10 @@
-# Title: AH SDD - Find a Country - Tests
+# Title: AH SDD - Order by Population - Tests
 # Author: Mr Friend
-# Date: 22 Sep 2026
+# Date: 23 Sep 2026
 
-'''Tests the functions in find_country.py'''
+'''Tests the functions in order_population.py'''
 
-import find_country
+import order_population
 
 
 def test_read_data() -> int:
@@ -22,75 +22,75 @@ def test_read_data() -> int:
         
         print('Test ' + str(test) +
               ': Read data --> ', end='')
-        assert len(find_country.read_data()) == 4
+        assert len(order_population.read_data()) == 4
         print('Passed')
         
         print('Test ' + str(test) +
               ': Read data - Array of countries --> ', end='')
-        assert len(find_country.read_data()[0]) == 47
+        assert len(order_population.read_data()[0]) == 47
         print('Passed')
         
         test += 1
         print('Test ' + str(test) +
               ': First value --> ', end='')
-        assert find_country.read_data()[0][0] == 'Albania'
+        assert order_population.read_data()[0][0] == 'Albania'
         print('Passed')
         
         test += 1
         print('Test ' + str(test) +
               ': Last value --> ', end='')
-        assert find_country.read_data()[0][-1] == 'Vatican City'
+        assert order_population.read_data()[0][-1] == 'Vatican City'
         print('Passed')
         
         print('Test ' + str(test) +
               ': Read data - Array of capitals --> ', end='')
-        assert len(find_country.read_data()[1]) == 47
+        assert len(order_population.read_data()[1]) == 47
         print('Passed')
         
         test += 1
         print('Test ' + str(test) +
               ': First value --> ', end='')
-        assert find_country.read_data()[1][0] == 'Tirana'
+        assert order_population.read_data()[1][0] == 'Tirana'
         print('Passed')
         
         test += 1
         print('Test ' + str(test) +
               ': Last value --> ', end='')
-        assert find_country.read_data()[1][-1] == 'Vatican City'
+        assert order_population.read_data()[1][-1] == 'Vatican City'
         print('Passed')
         
         print('Test ' + str(test) +
               ': Read data - Array of areas --> ', end='')
-        assert len(find_country.read_data()[2]) == 47
+        assert len(order_population.read_data()[2]) == 47
         print('Passed')
         
         test += 1
         print('Test ' + str(test) +
               ': First value --> ', end='')
-        assert find_country.read_data()[2][0] == 28748
+        assert order_population.read_data()[2][0] == 28748
         print('Passed')
         
         test += 1
         print('Test ' + str(test) +
               ': Last value --> ', end='')
-        assert find_country.read_data()[2][-1] == 0.49
+        assert order_population.read_data()[2][-1] == 0.49
         print('Passed')
         
         print('Test ' + str(test) +
               ': Read data - Array of populations --> ', end='')
-        assert len(find_country.read_data()[3]) == 47
+        assert len(order_population.read_data()[3]) == 47
         print('Passed')
         
         test += 1
         print('Test ' + str(test) +
               ': First value --> ', end='')
-        assert find_country.read_data()[3][0] == 2886026
+        assert order_population.read_data()[3][0] == 2886026
         print('Passed')
         
         test += 1
         print('Test ' + str(test) +
               ': Last value --> ', end='')
-        assert find_country.read_data()[3][-1] == 825
+        assert order_population.read_data()[3][-1] == 825
         print('Passed')
         
         print('\nPASSED: read_data()')
@@ -107,124 +107,88 @@ def test_read_data() -> int:
         return 0
     
 
-def test_find_country() -> int:
-    """Tests the find_country() function"""
+def test_order_population() -> int:
+    """Tests the order_population() function"""
     
     # Local variables
     test: int = 1
     inputs1: list[list[str]]
-    inputs2: list[str]
-    outputs: list[int]
+    inputs2: list[list[str]]
+    inputs3: list[list[float]]
+    inputs4: list[list[int]]
+    
+    output1: list[str]
+    output2: list[str]
+    output3: list[float]
+    output4: list[int]
     
     # Values
-    inputs1 = [['a', 'b', 'c'], ['a', 'b', 'c'],
-               ['a', 'b', 'c'], ['a', 'b', 'c']]
-    inputs2 = ['x', 'a', 'b', 'c']
-    outputs = [-1, 0, 1, 2]
+    inputs1 = [['a', 'b', 'c'], ['c', 'b', 'a'],
+               ['b', 'a', 'c'], ['a', 'c', 'b']]
+    inputs2 = [['a', 'b', 'c'], ['c', 'b', 'a'],
+               ['b', 'a', 'c'], ['a', 'c', 'b']]
+    inputs3 = [[1.1, 2.2, 3.3], [3.3, 2.2, 1.1],
+               [2.2, 1.1, 3.3], [1.1, 3.3, 2.2]]
+    inputs4 = [[1, 2, 3], [3, 2, 1],
+               [2, 1, 3], [1, 3, 2]]
     
-    print("\nfind_country() Tests")
-    print("--------------------\n")
+    outputs1 = ['c', 'b', 'a']
+    outputs2 = ['c', 'b', 'a']
+    outputs3 = [3.3, 2.2, 1.1]
+    outputs4 = [3, 2, 1]
+    
+    print("\norder_population() Tests")
+    print("------------------------\n")
     
     try:
         
         for index in range(len(inputs1)):
             
-            print(f'Test {test}: find_country({inputs1[index]}, {inputs2[index]}) --> ', end="")
+            print(f'Test {test}: order_population({inputs1[index]}, {inputs2[index]}, {inputs3[index]}, {inputs4[index]}) --> ', end="")
             
-            assert find_country.find_country(inputs1[index], inputs2[index]) == outputs[index]
+            assert order_population.order_population(inputs1[index], inputs2[index], inputs3[index], inputs4[index]) == (outputs1, outputs2, outputs3, outputs4)
             
             print("Passed")
             
             test += 1
                
-        print("\nPASSED: find_country()")
-        print("======================\n")
+        print("\nPASSED: order_population()")
+        print("==========================\n")
         
         return 1
         
     except:
         
         print("Failed")
-        print("\nFAILED: find_country()")
-        print("======================\n")
+        print("\nFAILED: order_population()")
+        print("==========================\n")
         
         return 0
 
 
-def test_display_country() -> int:
-    """Tests the display_country() function"""
-    
-    # Local variables
-    test: int = 1
-    inputs1: list[list[str]]
-    inputs2: list[list[float]]
-    inputs3: list[list[int]]
-    inputs4: list[int]
-    
-    # Values
-    inputs1 = [['a', 'b', 'c'], ['a', 'b', 'c']]
-    inputs2 = [[1.1, 2.2, 3.3], [1.1, 2.2, 3.3]]
-    inputs3 = [[1, 2, 3], [1, 2, 3]]
-    inputs4 = [2, -1]
-    
-    print('\ndisplay_country() Tests')
-    print('-----------------------\n')
-    
-    try:
-        
-        for index in range(len(inputs1)):
-            
-            print(f'Test {test}: display_country({inputs1[index]}, {inputs2[index]}, {inputs3[index]}, {inputs4[index]}) --> ')
-            
-            find_country.display_country(inputs1[index], inputs2[index],
-                                         inputs3[index], inputs4[index])
-            
-            test += 1
-               
-        print("\nCOMPLETED: display_country()")
-        print("============================\n")
-        
-        return 1
-        
-    except:
-        
-        print('Failed')
-        print('\nFAILED: display_country()')
-        print('=========================\n')
-        
-        return 0
-
-
-def test_write_summary() -> int:
-    """Tests the write_summary() function"""
+def test_display_top_5() -> int:
+    """Tests the display_top_5() function"""
     
     # Local variables
     test: int = 1
     inputs1: list[str]
-    inputs2: list[str]
-    inputs3: list[float]
-    inputs4: list[int]
-    inputs5: int
+    inputs2: list[int]
     
     # Values
-    inputs1 = ['a', 'b', 'c']
-    inputs2 = ['d', 'e', 'f']
-    inputs3 = [1.1, 2.2, 3.3]
-    inputs4 = [1, 2, 3]
-    inputs5 = 2
+    inputs1 = ['a', 'b', 'c', 'd', 'e', 'f']
+    inputs2 = [1, 2, 3, 4, 5, 6]
     
-    print('\nwrite_summary() Tests')
+    print('\ndisplay_top_5() Tests')
     print('---------------------\n')
     
     try:
+        
             
-        print(f'Test {test}: write_summary({inputs1}, {inputs2}, {inputs3}, {inputs4}, {inputs5}) --> ')
+        print(f'Test {test}: display_top_5({inputs1}, {inputs2}) --> ')
         
-        find_country.write_summary(inputs1, inputs2, inputs3, inputs4, inputs5)
-        
-        test += 1
+        order_population.display_top_5(inputs1, inputs2)
                
-        print("\nCOMPLETED: write_summary()")
+        print("\nCOMPLETED: display_top_5()")
         print("==========================\n")
         
         return 1
@@ -232,11 +196,52 @@ def test_write_summary() -> int:
     except:
         
         print('Failed')
-        print('\nFAILED: write_summary()')
+        print('\nFAILED: display_top_5()')
         print('=======================\n')
         
         return 0
 
+
+
+def test_write_top_10() -> int:
+    """Tests the write_top_10() function"""
+    
+    # Local variables
+    test: int = 1
+    inputs1: list[str]
+    inputs2: list[str]
+    inputs3: list[float]
+    inputs4: list[int]
+    
+    # Values
+    inputs1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
+    inputs2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
+    inputs3 = [1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9, 10.8, 11.7]
+    inputs4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    
+    print('\nwrite_top_10() Tests')
+    print('--------------------\n')
+    
+    try:
+            
+        print(f'Test {test}: write_top_10({inputs1}, {inputs2}, {inputs3}, {inputs4}) --> ')
+        
+        order_population.write_top_10(inputs1, inputs2, inputs3, inputs4)
+        
+        test += 1
+               
+        print("\nCOMPLETED: write_top_10()")
+        print("=========================\n")
+        
+        return 1
+        
+    except:
+        
+        print('Failed')
+        print('\nFAILED: write_top_10()')
+        print('=======================\n')
+        
+        return 0
 
 
 def test_all() -> None:
@@ -251,9 +256,9 @@ def test_all() -> None:
     try:
         
         passed += test_read_data()
-        passed += test_find_country()
-        passed += test_display_country()
-        passed += test_write_summary()
+        passed += test_order_population()
+        passed += test_display_top_5()
+        passed += test_write_top_10()
         
         if passed == 4:
             print('\nTesting of all functions: COMPLETED!')
@@ -276,13 +281,13 @@ test: str = ''
 run: bool = True
 
 while run:
-    print('\nfind_country Tests')
+    print('\norder_population Tests')
     print('------------------\n')
 
     print('1. read_data()')
-    print('2. find_country()')
-    print('3. display_country()')
-    print('4. write_summary()')
+    print('2. order_population()')
+    print('3. display_top_5()')
+    print('4. write_top_10()')
     
     print('\na. All tests')
     print('x. Exit')
@@ -294,13 +299,13 @@ while run:
         test_read_data()
         
     elif test == '2':
-        test_find_country()
+        test_order_population()
         
     elif test == '3':
-        test_display_country()
+        test_display_top_5()
         
     elif test == '4':
-        test_write_summary()
+        test_write_top_10()
              
     elif test == 'a':
         # Run all tests
