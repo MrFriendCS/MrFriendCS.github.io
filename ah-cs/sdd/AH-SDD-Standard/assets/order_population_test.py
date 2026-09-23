@@ -117,10 +117,10 @@ def test_order_population() -> int:
     inputs3: list[list[float]]
     inputs4: list[list[int]]
     
-    output1: list[str]
-    output2: list[str]
-    output3: list[float]
-    output4: list[int]
+    outputs1: list[str]
+    outputs2: list[str]
+    outputs3: list[float]
+    outputs4: list[int]
     
     # Values
     inputs1 = [['a', 'b', 'c'], ['c', 'b', 'a'],
