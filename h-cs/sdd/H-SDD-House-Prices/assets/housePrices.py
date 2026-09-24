@@ -7,10 +7,10 @@ def readData() -> tuple[list[str], list[int]]:
     """Read data from file into parallel arrays."""
 
     # Initialise local variables
-    line = ""
-    data = [""] * 2
-    postcodes = [""] * 1000
-    origValues = [0] * 1000
+    line: str = ""
+    data: list[str] = ["", ""]
+    postcodes: list[str] = ["" for index in range(1000)]
+    origValues: list[int] = [0 for index in range(1000)]
 
     # Make connection to file
     file = open("housePrices.csv", "r", encoding="UTF-8")
@@ -39,7 +39,7 @@ def countHS0(postcodes: list[str]) -> int:
     """Count all HS0 postcodes."""
 
     # Initialise local variables
-    count = 0
+    count: int = 0
 
     # Loop for each postcode
     for index in range(len(postcodes)):
@@ -73,11 +73,11 @@ def newPrices(postcodes: list[str], origValues: list[int])-> list[int]:
     """Updates house prices depending on postcodes."""
 
     # Initialise local variables
-    newValues = [0] * len(origValues)
-    currentValue = 0
-    newValue = 0
-    digit = 0
-    percent = 0
+    newValues: list[int] = [0 for index in range(len(origValues))]
+    currentValue: int = 0
+    newValue: int = 0
+    digit: int = 0
+    percent: int = 0
 
     # Loop for each property
     for index in range(len(postcodes)):
@@ -115,7 +115,7 @@ def findLowest(newValues: list[int]) -> int:
     """Find lowest house price."""
 
     # Initialise local variables
-    lowest = 0
+    lowest: int = 0
 
     # Assign first value as lowest
     lowest = newValues[0]
@@ -135,7 +135,7 @@ def findHighest(newValues: list[int]) -> int:
     """Find highest house price."""
 
     # Initialise local variables
-    highest = 0
+    highest: int = 0
 
     # Assign first value as highest
     highest = newValues[0]
@@ -155,7 +155,7 @@ def countValues(newValues: list[int], target: int) -> int:
     """Count house prices that match the target"""
     
     # Initialise local variable
-    count = 0
+    count: int = 0
 
     # Loop for each house price
     for index in range(len(newValues)):
@@ -243,14 +243,14 @@ def main() -> None:
     """Main program."""
 
     # Initialise variables
-    badCodes = 0
-    postcodes = [""] * 1000
-    origValues = [0] * 1000
-    newValues = [0] * 1000
-    lowest = 0
-    highest = 0
-    lowCount = 0
-    highCount = 0
+    badCodes: int = 0
+    postcodes: list[str] = ["" for index in range(1000)]
+    origValues: list[int] = [0 for index in range(1000)]
+    newValues: list[int] = [0 for index in range(1000)]
+    lowest: int = 0
+    highest: int = 0
+    lowCount: int = 0
+    highCount: int = 0
 
     # 1. Read values from file
     postcodes, origValues = readData()
@@ -283,5 +283,7 @@ def main() -> None:
     writeData(postcodes, origValues, newValues)
 
 
-# Call main()
-if __name__ == '__main__': main()
+# Run program
+if __name__ == "__main__":
+    
+    main()
