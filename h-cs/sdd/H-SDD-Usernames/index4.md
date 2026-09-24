@@ -99,3 +99,43 @@ earvic618
 angham242
 ...
 ```
+
+
+## Starter Code
+
+Starter code for `usernames4.py` is below.
+The names of sub-programs are given, and must be used, but the input, process, and output is missing.
+
+``` python
+# Title:
+# Author:
+# Date:
+
+
+def readData()
+
+def createUsernames()
+
+def left()
+
+def right()
+
+def mid()
+
+def lower()
+
+def writeData()
+
+def main()
+
+# Run program
+if __name__ == "__main__":
+
+    main()
+```
+
+
+## Testing
+
+Run the file [usernames4Test.py](assets/usernames4Test.py "Download file").
+The file must be in the same folder as `usernames4.py`.

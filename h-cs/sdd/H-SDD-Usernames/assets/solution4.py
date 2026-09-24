@@ -20,9 +20,9 @@ def readData() -> list[Student]:
     """Read data from csv file.  Returns an array of records."""
     
     # Initialise local variables
-    line = ""
-    data = [""] * 3
-    students = [Student() for index in range(100)]
+    line: str = ""
+    data: list[str] = ["" for _ in range(3)]
+    students = [Student() for _ in range(100)]
     
     # Open connection to file
     file = open("students.csv", "r", encoding="UTF-8")
@@ -52,11 +52,11 @@ def createUsernames(students: list[Student]) -> list:
     """Create usernames for students.  Return an array."""
     
     # Initialise local variables
-    usernames = [""] * len(students)
-    part1 = ""
-    part2 = ""
-    part3 = ""
-    username = ""
+    usernames: list[str] = ["" for _ in range(len(students))]
+    part1: str = ""
+    part2: str = ""
+    part3: str = ""
+    username: str = ""
     
     # Loop for each student
     for index in range(len(students)):
@@ -83,7 +83,7 @@ def left(text: str, characters: int) -> str:
     """Left substring function."""
     
     # Initialise local variable
-    left = ""
+    left: str = ""
     
     # Create substring
     left = text[ :characters]
@@ -96,7 +96,7 @@ def right(text: str, characters: int) -> str:
     """Right substring function."""
     
     # Initialise local variable
-    right = ""
+    right: str = ""
     
     # Create substring
     right = text[-characters: ]
@@ -109,7 +109,7 @@ def mid(text: str, start: int, characters: int) -> str:
     """Mid substring function."""
     
     # Initialise local variable
-    mid = ""
+    mid: str = ""
     
     # Create substring
     mid = text[start-1:start-1+characters]
@@ -122,8 +122,8 @@ def lower(text: str) -> str:
     """Changes all uppercase letters to lower case.  Returns a string."""
     
     # Initialise local variables
-    word = ""
-    ascii = 0
+    word: str = ""
+    ascii: int = 0
     
     # Loop for each letter
     for letter in text:
@@ -185,5 +185,7 @@ def main():
     
     
 
-# Call main program
-main()
+# Run program
+if __name__ == "__main__":
+    
+    main()
