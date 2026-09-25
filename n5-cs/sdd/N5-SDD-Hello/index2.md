@@ -1,5 +1,6 @@
 # N5 SDD - Hello Part 2
 
+
 ## Task
 
 Write a short program that will use two variables that will hold a string, and then produce an output using the values assigned to the variables.

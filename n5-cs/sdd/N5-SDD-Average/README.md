@@ -1,14 +1,18 @@
 # N5 SDD - Average
 
+
 ## Introduction
 
 A program is required that will calculate the [mean](https://www.mathsisfun.com/mean.html "Maths help") of a set of numbers.
 
+
 ## Task
 
-Write a short program that will ask the user how many numbers they have.  The program will then ask the user to enter each value in turn.
+Write a short program that will ask the user how many numbers they have.
+The program will then ask the user to enter each value in turn.
 
 The sum of the values will be displayed, and the mean.
+
 
 ### Example 1
 
@@ -25,6 +29,7 @@ Value 3: 10
 Sum: 30.0
 Mean: 10.0
 ```
+
 
 ### Example 2
 

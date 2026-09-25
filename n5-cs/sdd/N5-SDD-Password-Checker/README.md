@@ -1,8 +1,10 @@
 # N5 SDD - Password Checker
 
+
 The developers of Bright, the possible replacement for Glow, want users to be issued with temporary passwords for the first time that they log into the system.
 
 They have produced a program to create the temporary passwords in batches of up to five at a time, but they want to confirm if they are valid.
+
 
 ## Program Analysis
 
@@ -16,10 +18,12 @@ A program is required that will determine if passwords are valid.  A password is
     * ?
     * $
 
+
 ### Input
 
 * enter a valid number of passwords to check
 * enter the parts of a password
+
 
 ### Process
 
@@ -28,6 +32,7 @@ A program is required that will determine if passwords are valid.  A password is
 * store result
 * combine parts into a single password
 * store password
+
 
 ### Output
 
@@ -56,7 +61,9 @@ The main steps of the program are shown below.
    4.1. Display result
 ```
 
+
 ## User Interface
+
 
 ### Example 1
 
@@ -76,6 +83,8 @@ Results
 -------
 1. Valid
 ```
+
+
 ### Example 2
 
 ```

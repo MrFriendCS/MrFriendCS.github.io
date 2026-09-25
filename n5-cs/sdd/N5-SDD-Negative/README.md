@@ -15,7 +15,7 @@ Follow the design shown in the structure diagram below.
 
 ### Example use interface
 
-``` python
+```
 Number Checker
 --------------
 

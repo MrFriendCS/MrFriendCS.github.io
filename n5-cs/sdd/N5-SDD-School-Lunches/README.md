@@ -1,10 +1,11 @@
 # N5 SDD - Five Lunches
 
+
 ## Task
 
 Using Python, create a program that implements the pseudocode below.
 
-``` Python
+```
 # Calculate the cost of 5 lunches
 
 # Declarations for the program
@@ -28,6 +29,7 @@ END FOR
 # Display the total
 SEND "The total cost is: £" & total TO DISPLAY
 ```
+
 
 ## User Experience
 

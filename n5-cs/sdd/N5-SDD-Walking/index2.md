@@ -22,7 +22,7 @@ It will display the total distance, to 0 decimal places, and the mean distance, 
 
 ## Example User Interface
 
-``` python
+```
 Walking Calculator
 ------------------
 

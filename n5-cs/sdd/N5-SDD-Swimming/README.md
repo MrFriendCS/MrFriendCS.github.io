@@ -1,8 +1,10 @@
 # N5 SDD - Swimming
 
+
 ## Introduction
 
 A swimming club wants a program that will calculate the average number of lengths a person swims in a week.
+
 
 ## Anlaysis
 
@@ -13,9 +15,11 @@ Because the pool is very popular, a person is allowed:
 
 The program will only be used if a person swims more than once in a week.
 
+
 ### Average Calculation
 
 Average lengths = Total lengths ÷ Number of swims
+
 
 ## Instructions  
 
@@ -35,11 +39,14 @@ To improve the readability of the program, use:
 * White space
 * Indentation
 
+
 ## Structure diagram
 
   ![Structure diagram](assets/sd.png)
 
+
 ## User Interface
+
 
 ### Example 1
 
@@ -53,6 +60,7 @@ Swim 2 lengths? 9
 15 lengths were swum over 2 swims.
 An average of 7.5 lengths per swim.
 ```
+
 
 ### Example 2
 

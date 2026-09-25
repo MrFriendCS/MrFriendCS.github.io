@@ -18,7 +18,7 @@ Calculate the gradient of a slope when the user enters values for the **rise** a
 
 ### Example User Interface
 
-``` python
+```
 Gradient Calculator
 -------------------
 

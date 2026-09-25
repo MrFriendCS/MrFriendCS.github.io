@@ -13,7 +13,7 @@ Create a small program for those who do not want to share their data.  It will c
 
 ## Example User Interface
 
-``` python
+```
 Walking Calculator
 ------------------
 

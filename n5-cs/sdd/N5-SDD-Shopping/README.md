@@ -23,8 +23,8 @@ A structure diagram of the design is provided below.
 
 - The amount to pay will be entered as pounds:
 
-	- £10 as 10
-	- 50p as 0.50
+    - £10 as 10
+    - 50p as 0.50
 
 - Any text entered is lower case.
 

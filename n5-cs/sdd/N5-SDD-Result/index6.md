@@ -1,5 +1,6 @@
 # Test Result v5
 
+
 ## Introduction
 
 A user wants an automatic grading system that will find the average of 3 scores, and then classify the average score using the table below.  Only scores from ___0___ to ___100___ are acceptable.
@@ -14,6 +15,7 @@ The scores the user enters will be stored for later use.
 | 40 - 49 | D |
 | 0 - 39 | No Award |
 
+
 ## Tasks
 
 1. Create a comprehensive test plan for the program.  Use OneNote.
@@ -27,6 +29,7 @@ The scores the user enters will be stored for later use.
    1. Meanigful identifiers.
    2. Internal commentary.
    3. Whitespace.
+
 
 ## User experience
 
@@ -45,6 +48,7 @@ Below is an example of the user experience.
   Average: 72  
   Grade: A  
 ```
+
 
 ## Structure Diagram
 ![Structure Diagram](assets/TestResult-Stored.png)

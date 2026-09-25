@@ -9,7 +9,7 @@ Ensure that the diagram and equation are included in the output
 
 ### Example User Interface
 
-``` python
+```
 Gradient Calculator
 -------------------
 

@@ -33,6 +33,7 @@ __Notes__
 
 ### Example UI
 
+
 #### Example 1
 
 ```
@@ -46,6 +47,7 @@ What is the sum? 15
 
 Correct!
 ```
+
 
 #### Example 2
 

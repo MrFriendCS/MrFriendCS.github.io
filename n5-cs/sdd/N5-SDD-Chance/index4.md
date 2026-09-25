@@ -15,14 +15,17 @@ The child could provide an answer that is:
 
 An appropriate message should be displayed, and the correct answer given if incorrect.
 
+
 ### Input
 
 * enter a valid answer
+
 
 ### Process
 
 * pick a random number
 * determine how the answer compares with the random number
+
 
 ### Output
 
@@ -30,6 +33,7 @@ An appropriate message should be displayed, and the correct answer given if inco
 * a message, including the correct answer, is displayed if the answer is too big
 * a message, including the correct answer, is displayed if the answer is too small
 * a message, including the correct answer, is displayed if the answer is the same
+
 
 ### Assumptions
 

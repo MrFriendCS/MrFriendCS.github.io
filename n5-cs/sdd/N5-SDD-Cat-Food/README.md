@@ -19,6 +19,7 @@ Implement a program that macthes the structure diagram below.  It will allow a u
 
 ## User interface
 
+
 ### Example 1
 
 ```
@@ -33,6 +34,7 @@ Feed it kitten food.
 Meow!
 =====
 ```
+
 
 ### Example 2
 

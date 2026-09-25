@@ -16,6 +16,7 @@ To improve the readability of the program, use:
 * White space
 * Indentation
 
+
 ## Structure diagram
 
   ![Structure diagram](assets/sd3.png)

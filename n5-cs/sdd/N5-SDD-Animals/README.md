@@ -1,12 +1,18 @@
 # N5 SDD - Animals
 
-The Higher Psychology pupils want a program that will give a quick answer to a couple of questions.  Unfortunately, they didn't pick wisely with their choices and don't know how to do it themselves.
+
+The Higher Psychology pupils want a program that will give a quick answer to a couple of questions.
+Unfortunately, they didn't pick wisely with their choices and don't know how to do it themselves.
+
 
 ## Program Analysis
 
-A program is required that will ask the user their name and age.  It will then ask if they like cats, and then ask if they like dogs.
+A program is required that will ask the user their name and age.
+It will then ask if they like cats, and then ask if they like dogs.
 
-The answers to all of the questions are to be displayed.  The type of person they are will then be displayed
+The answers to all of the questions are to be displayed.
+The type of person they are will then be displayed
+
 
 ### Input
 
@@ -15,14 +21,17 @@ The answers to all of the questions are to be displayed.  The type of person the
 * like cats: only ___yes___ or  ___no___ allowed
 * like dogs: only ___yes___ or  ___no___ allowed
 
+
 ### Process
 
 * determine the type of person
+
 
 ### Output
 
 * display a data summary
 * display the person type
+
 
 ## Type of Person
 
@@ -37,6 +46,7 @@ The program will use someone's answers about whateher they like cats and dogs to
 
 
 ## User Interface
+
 
 ### Example 1
 
@@ -60,6 +70,7 @@ From your answers about animals
 I think you're a good person!
 ```
 
+
 ### Example 2
 
 ```
@@ -81,6 +92,7 @@ Like dogs: no
 From your answers about animals
 I think you're an evil person!
 ```
+
 
 ### Example 3
 
@@ -113,6 +125,7 @@ Like dogs: no
 From your answers about animals
 I think you're an ok person!
 ```
+
 
 ## Assumptions
 

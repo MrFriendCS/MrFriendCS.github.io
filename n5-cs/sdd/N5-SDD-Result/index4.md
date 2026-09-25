@@ -1,8 +1,10 @@
 # N5 SDD - Result Part 3
 
+
 ## Introduction
 
-A user wants an automatic grading system that will classify a test score using the table below.  Only scores from ___0___ to ___100___ are acceptable.
+A user wants an automatic grading system that will classify a test score using the table below.
+Only scores from ___0___ to ___100___ are acceptable.
 
 | Mark    | Grade |
 | ----    | :---: |
@@ -11,6 +13,7 @@ A user wants an automatic grading system that will classify a test score using t
 | 50 - 59 | C |
 | 40 - 49 | D |
 | 0 - 39  | No Award |
+
 
 ## Tasks
 
@@ -25,6 +28,7 @@ A user wants an automatic grading system that will classify a test score using t
    1. Meanigful identifiers.
    2. Internal commentary.
    3. Whitespace.
+
 
 ## User Experience
 

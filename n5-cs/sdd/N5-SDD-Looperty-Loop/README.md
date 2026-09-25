@@ -1,8 +1,10 @@
 # N5 SDD - Looperty Loop
 
+
 ## Task 1
 
 Write a short program that will ask the user their name, and then say hello to them 5 times.
+
 
 ### Example
 
@@ -16,9 +18,11 @@ Hello Tom.
 Hello Tom.
 ```
 
+
 ## Task 2
 
 Write a short program that will ask the user their name and a number, and then say hello to them that number of times.
+
 
 ### Example
 
@@ -31,9 +35,11 @@ Hello Sue.
 Hello Sue.
 ```
 
+
 ## Assumptions
 
 The value entered by the user will be an integer.
+
 
 ## Readability
 
