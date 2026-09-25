@@ -86,11 +86,11 @@ def newPrices(postcodes: list[str], origValues: list[int])-> list[int]:
         digit = int(postcodes[index][2])
 
         # Set percentage change
-        if digit < 6:
+        if digit <= 5:
             # 2% less
             percent = -2
             
-        elif digit < 9:
+        elif digit <= 8:
             # 2% more
             percent = 2
             
