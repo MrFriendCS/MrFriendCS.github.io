@@ -7,11 +7,11 @@ def read_data() -> tuple[list[str], list[str], list[float], list[int]]:
     """Read data from csv file and return parallel arrays."""
     
     # Initialise local variables
-    countries: list[str] = ["" for _ in range(47)]
-    capitals: list[str] = ["" for _ in range(47)]
+    countries: list[str] = ['' for _ in range(47)]
+    capitals: list[str] = ['' for _ in range(47)]
     areas: list[float] = [0.0 for _ in range(47)]
     populations: list[int] = [0 for _ in range(47)]
-    data: list[str] = ["" for _ in range(4)]
+    data: list[str] = ['' for _ in range(4)]
     line: str = ""
     
     # Connect to file
@@ -168,6 +168,6 @@ def main() -> None:
     write_summary(countries, capitals, areas, populations, index)
                   
 # Run program
-if __name__ == "__main__":
+if __name__ == '__main__':
 
     main()

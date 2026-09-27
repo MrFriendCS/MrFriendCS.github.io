@@ -1,0 +1,8 @@
+Country Details
+------------
+
+Country: Vatican City
+Capital: Vatican City
+Area: 0.49
+Population: 825
+
