@@ -269,16 +269,48 @@ def testCreateUsernames() -> int:
 def testWriteData() -> int:
     """Tests the writeData() function"""
     
+    # Local variables
+    test: int = 1
+    inputs: list[str]
+    
+    # Values
+    inputs = ["baruse181", "jetock620", "earvic618"]
+    
     print("\nwriteData() Tests")
     print("-----------------\n")
     
     try:
         
-        print("Test: writeData(" +
-              "['HS1 2AB', 'HS9 5XD'], [1, 1000], [2, 2000]" +
+        print(f"Test {test}: writeData(" +
+              '["baruse181", "jetock620", "earvic618"]' +
               ") --> ", end="")
-        writeData(['HS1 2AB', 'HS9 5XD'], [1, 1000], [2, 2000])
+        
+        writeData(inputs)
+        
         print("Written")
+        
+        test += 1
+        
+        # Connect to file
+        print(f"Test {test}: connect to file --> ", end="")
+        
+        file = open("usernames.txt", "r", encoding="utf-8")
+        
+        print("Passed")
+        
+        test += 1
+        
+        # Loop for each line
+        for index in range(len(inputs)):
+            
+            print(f"Test {test}: readline() --> ", end="")
+            
+            assert file.readline().strip() == inputs[index]
+            
+            print("Passed")
+            
+            test += 1
+            
                      
         print("\nCompleted: writeData()")
         print("======================\n")
