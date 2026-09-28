@@ -147,9 +147,9 @@ def testMid() -> int:
     
     # Values
     inputs1 = ['Hello world!', 'Hello world!', 'Hello world!']
-    inputs2 = [2, 4, 6]
+    inputs2 = [2, 4, 7]
     inputs3 = [4, 5, 3]
-    outputs = ['ello', 'lo wo', 'Wor']
+    outputs = ['ello', 'lo wo', 'wor']
     
     print("\nmid() Tests")
     print("-----------\n")
@@ -228,7 +228,7 @@ def testCreateUsernames() -> int:
     last: list[str]
     ni: list[str]
     outputs: list[str]
-    student: Student()
+    student: Student
     
     # Values
     first = ["Barbra", "Jeth" , "Earl"]
