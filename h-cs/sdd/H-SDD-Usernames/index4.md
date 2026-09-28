@@ -111,6 +111,7 @@ The names of sub-programs are given, and must be used, but the input, process, a
 # Author:
 # Date:
 
+def Student()
 
 def readData()
 
