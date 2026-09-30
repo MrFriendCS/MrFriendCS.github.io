@@ -27,4 +27,4 @@ Save the code as `algorithm.py`.
 
 ## Testing
 
-Run the file [Algorithm-Test.py](assets/Algorithm-Test.py "Download file"). The file must be in the same folder as `algorithm.py`.
+Run the file [algorithmTest.py](assets/algorithmTest.py "Download file"). The file must be in the same folder as `algorithm.py`.

@@ -104,14 +104,14 @@ angham242
 ## Starter Code
 
 Starter code for `usernames4.py` is below.
-The names of sub-programs are given, and must be used, but the input, process, and output is missing.
+The names of the record and sub-programs are given, but the input, process, and output is missing.
 
 ``` python
 # Title:
 # Author:
 # Date:
 
-def Student()
+def Student
 
 def readData()
 

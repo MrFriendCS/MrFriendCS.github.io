@@ -2,9 +2,9 @@
 # Author: Mr Friend
 # Date: 17 Sep 2026
 
-"""Tests the functions in housePrices.py"""
+"""Tests the functions in py"""
 
-import housePrices
+from housePrices import *
 
 
 def testReadData() -> int:
@@ -22,38 +22,38 @@ def testReadData() -> int:
         
         print("Test " + str(test) +
               ": Read data, postcodes array --> ", end="")
-        assert len(housePrices.readData()[0]) == 1000
+        assert len(readData()[0]) == 1000
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": First value --> ", end="")
-        assert type(housePrices.readData()[0][0]) == type("str")
+        assert type(readData()[0][0]) == type("str")
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": Last value --> ", end="")
-        assert type(housePrices.readData()[0][-1]) == type("str")
+        assert type(readData()[0][-1]) == type("str")
         print("Passed")
         
         # Array of prices
         
         print("Test " + str(test) +
               ": Read data, prices array --> ", end="")
-        assert len(housePrices.readData()[1]) == 1000
+        assert len(readData()[1]) == 1000
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": First value --> ", end="")
-        assert type(housePrices.readData()[1][0]) == type(123)
+        assert type(readData()[1][0]) == type(123)
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": Last value --> ", end="")
-        assert type(housePrices.readData()[1][-1]) == type(123)
+        assert type(readData()[1][-1]) == type(123)
         print("Passed")
         
         print("\nPASSED: readData()")
@@ -93,7 +93,7 @@ def testCountHS0() -> int:
             
             print(f'Test {str(test)}: countHS0({inputs[index]}) --> ', end="")
             
-            assert housePrices.countHS0(inputs[index]) == outputs[index]
+            assert countHS0(inputs[index]) == outputs[index]
             
             print("Passed")
             
@@ -139,7 +139,7 @@ def testFixHS0() -> int:
             
             print(f'Test {str(test)}: fixHS0({inputs[index]}) --> ', end="")
             
-            assert housePrices.fixHS0(inputs[index]) == outputs[index]
+            assert fixHS0(inputs[index]) == outputs[index]
             
             print("Passed")
             
@@ -188,7 +188,7 @@ def testNewPrices() -> int:
             print(f'Test {str(test)}: newPrices({inputs1[index]}, ', \
                   f'{inputs2[index]}) --> ', end="")
             
-            assert housePrices.newPrices(inputs1[index], inputs2[index]) == outputs[index]
+            assert newPrices(inputs1[index], inputs2[index]) == outputs[index]
             
             print("Passed")
             
@@ -230,7 +230,7 @@ def testFindLowest() -> int:
             
             print(f'Test {str(test)}: findLowest({inputs[index]}) --> ', end="")
             
-            assert housePrices.findLowest(inputs[index]) == outputs[index]
+            assert findLowest(inputs[index]) == outputs[index]
             
             print("Passed")
             
@@ -272,7 +272,7 @@ def testFindHighest() -> int:
             
             print(f'Test {str(test)}: findHighest({inputs[index]}) --> ', end="")
             
-            assert housePrices.findHighest(inputs[index]) == outputs[index]
+            assert findHighest(inputs[index]) == outputs[index]
             
             print("Passed")
             
@@ -318,7 +318,7 @@ def testCountValues() -> int:
             print(f'Test {str(test)}: countValues({inputs1[index]}, ', \
                   f'{inputs2[index]}) --> ', end="")
             
-            assert housePrices.countValues(inputs1[index], inputs2[index]) == outputs[index]
+            assert countValues(inputs1[index], inputs2[index]) == outputs[index]
             
             print("Passed")
             
@@ -348,7 +348,7 @@ def testWriteSummary() -> int:
         print("Test: writeSummary(" +
               "0, 1, 2, 1, 2, ['HS1 2AB', 'HS7 5LQ', 'HS9 5XD'], [1, 2, 2]" +
               ") --> ", end="")
-        housePrices.writeSummary(0, 1, 2, 1, 2, ['HS1 2AB', 'HS7 5LQ', 'HS9 5XD'], [1, 2, 2])
+        writeSummary(0, 1, 2, 1, 2, ['HS1 2AB', 'HS7 5LQ', 'HS9 5XD'], [1, 2, 2])
         print("Written")
                      
         print("\nCompleted: writeSummary()")
@@ -375,7 +375,7 @@ def testWriteData() -> int:
         print("Test: writeData(" +
               "['HS1 2AB', 'HS9 5XD'], [1, 1000], [2, 2000]" +
               ") --> ", end="")
-        housePrices.writeData(['HS1 2AB', 'HS9 5XD'], [1, 1000], [2, 2000])
+        writeData(['HS1 2AB', 'HS9 5XD'], [1, 1000], [2, 2000])
         print("Written")
                      
         print("\nCompleted: writeData()")

@@ -2,9 +2,9 @@
 # Author: Mr Friend
 # Date: 20 Sep 2024
 
-"""Tests the functions in algorithm.py"""
+"""Tests the functions in py"""
 
-import algorithm
+from algorithm import *
 
 
 def testFindItem():
@@ -20,19 +20,19 @@ def testFindItem():
         
         print("Test " + str(test) +
               ": ['A','B','C'], 'A' --> ", end="")
-        assert algorithm.findItem(["A","B","C"], "A") == 0
+        assert findItem(["A","B","C"], "A") == 0
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": ['X','Y','Z'], 'Z' --> ", end="")
-        assert algorithm.findItem(["X","Y","Z"], "Z") == 2
+        assert findItem(["X","Y","Z"], "Z") == 2
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": ['A','B','C'], 'D' --> ", end="")
-        assert algorithm.findItem(["A","B","C"], "D") == -1
+        assert findItem(["A","B","C"], "D") == -1
         print("Passed")
         
         print("\nPASSED: findItem()")
@@ -61,25 +61,25 @@ def testCountItem():
         
         print("Test " + str(test) +
               ": ['A','B','C'], 'A' --> ", end="")
-        assert algorithm.countItem(["A","B","C"], "A") == 1
+        assert countItem(["A","B","C"], "A") == 1
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": ['X','Y','Z'], 'Z' --> ", end="")
-        assert algorithm.countItem(["X","Y","Z"], "Z") == 1
+        assert countItem(["X","Y","Z"], "Z") == 1
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": ['C','C','C'], 'C' --> ", end="")
-        assert algorithm.countItem(["C","C","C"], "C") == 3
+        assert countItem(["C","C","C"], "C") == 3
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": ['A','A','A'], 'D' --> ", end="")
-        assert algorithm.countItem(["A","A","A"], "D") == 0
+        assert countItem(["A","A","A"], "D") == 0
         print("Passed")
                      
         print("\nPASSED: countItem()")
@@ -108,25 +108,25 @@ def testFindMax():
         
         print("Test " + str(test) +
               ": ['A','B','C'] --> ", end="")
-        assert algorithm.findMax(["A","B","C"]) == "C"
+        assert findMax(["A","B","C"]) == "C"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": ['Z','Y','X'] --> ", end="")
-        assert algorithm.findMax(["Z","Y","X"]) == "Z"
+        assert findMax(["Z","Y","X"]) == "Z"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [17,61,19] --> ", end="")
-        assert algorithm.findMax([17,61,19]) == 61
+        assert findMax([17,61,19]) == 61
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [1.7,6.1,1.9] --> ", end="")
-        assert algorithm.findMax([1.7,6.1,1.9]) == 6.1
+        assert findMax([1.7,6.1,1.9]) == 6.1
         print("Passed")
                              
         print("\nPASSED: findMax()")
@@ -155,25 +155,25 @@ def testFindMin():
         
         print("Test " + str(test) +
               ": ['A','B','C'] --> ", end="")
-        assert algorithm.findMin(["A","B","C"]) == "A"
+        assert findMin(["A","B","C"]) == "A"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": ['Z','Y','X'] --> ", end="")
-        assert algorithm.findMin(["Z","Y","X"]) == "X"
+        assert findMin(["Z","Y","X"]) == "X"
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [17,61,19] --> ", end="")
-        assert algorithm.findMin([17,61,19]) == 17
+        assert findMin([17,61,19]) == 17
         print("Passed")
         
         test += 1
         print("Test " + str(test) +
               ": [1.7,6.1,1.9] --> ", end="")
-        assert algorithm.findMin([1.7,6.1,1.9]) == 1.7
+        assert findMin([1.7,6.1,1.9]) == 1.7
         print("Passed")
                      
         print("\nPASSED: findMin()")

@@ -365,7 +365,7 @@ run: bool = True
 
 while run:
     print("\nusernames4 Tests")
-    print("--------------\n")
+    print("----------------\n")
 
     print("1. readData()")
     print("2. left()")

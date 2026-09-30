@@ -34,7 +34,8 @@
 | H-SDD-Calculation        | Multiple calculations           | sp, ss, asc, chr            | Tests |
 | H-SDD-Algorithm          | Standard algorithms             | sp, ls, co, min, max        | Tests |
 | H-SDD-Bearings Pt 1      | Check size of bearings          | sp, r, min, max, co+, w     | Tests |
-| H-SDD-House-Prices       | Update house prices             | pa, r, co, ls+, min, max, w | |
+| H-SDD-House-Prices       | Update house prices             | pa, r, co, ls+, min, max, w | Tests |
+| H-SDD-Usernames Pt 4     | Create pupil usernames          | sp+, r, ar, ss, w           | Tests |
 | H-SDD-People             | Read and write with records     | sp, r, ar, co, max, ls+     | |
 | H-SDD-Runners            | Find qualifying runners         | sp, r, ar, ls+              | pc |
 | H-SDD-Bearings Pt 2      | | | |
@@ -53,25 +54,25 @@
 
 ### Abbreviations
 
+ar = Array of records,
 asc = Character to ASCII,
 chr = ASCII to character,
+co = Count occurrences,
+co+ = co plus a twist,
 int = Real to integer,
+ls = Linear search,
+ls+ = ls plus a twist,
+max = Find maximum,
+max+ = max plus a twist,
+min = Find minimum,
+min+ = min plus a twist,
 mod = Modulus,
 pa = Parallel arrays,
 r = Read from file,
-ar = Array of records,
 sp = Sub-programs,
 sp+ = sp calls a sp,
 ss = Sub-strings,
-w = Write to file,
-ls = Linear search,
-ls+ = ls plus a twist,
-co = Count occurrences,
-co+ = co plus a twist,
-min = Find minimum,
-min+ = min plus a twist,
-max = Find maximum,
-max+ = max plus a twist
+w = Write to file
 
 pc = Pseudocode,
 pc+ = pc plus refinements,
