@@ -111,7 +111,7 @@ The names of the record and sub-programs are given, but the input, process, and 
 # Author:
 # Date:
 
-def Student
+class Student
 
 def readData()
 
