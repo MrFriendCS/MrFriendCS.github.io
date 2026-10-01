@@ -1,6 +1,6 @@
 # Title: H CS 2018S Task 2
 # Author: Mr Friend
-# Date: 8 Oct 2024
+# Date: 1 Oct 2026
 
 # Get extra code
 from dataclasses import dataclass
@@ -18,8 +18,8 @@ def getBeachData() -> list[Beach]:
     """Read in beach names and ratings from file."""
 
     # Initialise local variables and datatypes
-    line = ""
-    data = [""] * 2
+    line: str = ""
+    data: list[str] = ["", ""]
     beaches = [Beach() for index in range (973)]
 
     # Connect to the file
@@ -45,9 +45,9 @@ def calcAverage(beaches: list[Beach]) -> float:
     """Calculate and return the average rating of the beaches tested."""
 
     # Initialise local variables
-    total = 0
-    counter = 0
-    average = 0.0
+    total: int = 0
+    counter: int = 0
+    average: float = 0.0
 
     # Start loop for each beach
     for index in range(len(beaches)):
@@ -77,7 +77,7 @@ def displayBeaches(beaches: list[Beach]) -> None:
     """Display all the beaches with a rating entered by the user."""
 
     # Initialise local variables
-    userRating = 0
+    userRating: int = 0
 
     # Get rating from user
     userRating = int(input("Enter the rating to search for: "))
@@ -121,22 +121,25 @@ def displayBeaches(beaches: list[Beach]) -> None:
                 print(beaches[index].name[0:position])
 
 
-#
-# Main program
-#
+def main() -> None:
 
-# Global variables
-averageRating = 0.0
-beachData = [Beach() for index in range(973)]
+    # Variables
+    averageRating: float = 0.0
+    beachData: list[Beach] = [Beach() for index in range(973)]
 
-# Read in beach names and ratings from file
-beachData = getBeachData()
+    # Read in beach names and ratings from file
+    beachData = getBeachData()
 
-# Calculate and return the average rating of the beaches tested
-averageRating = calcAverage(beachData)
+    # Calculate and return the average rating of the beaches tested
+    averageRating = calcAverage(beachData)
 
-# Display the average rating of all beaches tested
-displayAverage(averageRating)
+    # Display the average rating of all beaches tested
+    displayAverage(averageRating)
 
-# Display all the beaches with a rating entered by the user
-displayBeaches(beachData)
+    # Display all the beaches with a rating entered by the user
+    displayBeaches(beachData)
+
+
+if __name__ == "main":
+
+    main()
