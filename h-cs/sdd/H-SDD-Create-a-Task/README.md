@@ -20,6 +20,7 @@ Make sure all the parts 'hang together'.
 
 ## Links
 
+The back story can be formatted in Markdown, but it is not a requirement.
 The structure diagram can be hand drawn.
 
 * Markdown: [https://www.markdownguide.org](https://www.markdownguide.org/basic-syntax/)
