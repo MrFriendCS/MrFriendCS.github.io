@@ -45,7 +45,7 @@ Download the maze image (Right click, `Save image as...`).  It must be saved in 
 
 When your turtle escapes the first maze create a new file with the starter code called `maze2.py`, and change the image to `maze2.png`.
 
-___Note:___ There are different file extensions, __.py__ and __.png__
+***Note:*** There are different file extensions, **.py** and **.png**
 
 Can you complete all three mazes?
 

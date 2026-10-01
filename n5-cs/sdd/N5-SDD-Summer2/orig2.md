@@ -10,7 +10,7 @@ Use [Thonny](https://thonny.org/) or the [RPF Code Editor](https://editor.raspbe
 
 Write a program to ask the user for a value and then display the square root of the value.  Only positive values are acceptable.  If the square root is an integer display it with no trailing zeros, otherwise round it to 3 decimal places.
 
-__Note__:  9 to the power of `0.5` = 3
+**Note**:  9 to the power of `0.5` = 3
 
 ### Example 1
 
@@ -49,8 +49,8 @@ Create and display a list of random numbers that meet the criteria.
 
 Ask the user for the sum of the values, and display an appropriate message.
 
-__Note 1__: `"\n"` = new line
-__Note 2__: `"\t"` = tab
+**Note 1**: `"\n"` = new line
+**Note 2**: `"\t"` = tab
 
 ### Example 3
 
@@ -153,4 +153,4 @@ My big seagull ate slowly.
 The rainbow dog ran happily.
 ```
 
-__Tip__ Five arrays are needed.  More elements in each array will create more random poetry.
+**Tip** Five arrays are needed.  More elements in each array will create more random poetry.

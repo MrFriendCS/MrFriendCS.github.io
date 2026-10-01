@@ -21,11 +21,11 @@ and swimmers.
 |                | eventID*           | raceTime            | teamRef*          | |
 
 
-___2c___  The NSA would like to know the total number of races won by individual swimmers.
+***2c***  The NSA would like to know the total number of races won by individual swimmers.
 
 Implement the SQL statement to produce the output shown in the table below.
 
-(__4 marks__)
+(**4 marks**)
 
 | initial | surname  | swimCategory | teamName         | Races won |
 | ------- | -------  | ------------ | -------          | --------- |
@@ -42,12 +42,12 @@ Implement the SQL statement to produce the output shown in the table below.
 Print evidence of the implemented SQL statement and the output produced.
 
 
-___2d___  They want to identify the swimmer who swam in lanes 1 or 8 with the fastest time 
+***2d***  They want to identify the swimmer who swam in lanes 1 or 8 with the fastest time 
 from any race. 
  
 Implement the SQL statement(s) to produce the result below.
 
-(__4 marks__)
+(**4 marks**)
 
 
 | initial | surname | teamName | city    | eventDate |
@@ -57,7 +57,7 @@ Implement the SQL statement(s) to produce the result below.
 Print evidence of the implemented SQL statement(s) and the output produced.
 
 
-___2e___  All swimmers who finish in positions 1, 2 and 3 are awarded medals. 
+***2e***  All swimmers who finish in positions 1, 2 and 3 are awarded medals. 
  
 The medal total for each team is shown below.
 
@@ -82,15 +82,15 @@ When run, the actual output does not match the expected output.
 
 Amend the query to produce the expected output.
 
-(__2 marks__)
+(**2 marks**)
 
 Print evidence of the amended SQL statement and the output produced.
 
 
-__2f__ The end-user requirement below could not be met.
+**2f** The end-user requirement below could not be met.
 
 "I need to know the total number of days each city has hosted an event."
 
 Explain, with reference to the database structure, what additional data would be required.
 
-(__1 mark__)
+(**1 mark**)

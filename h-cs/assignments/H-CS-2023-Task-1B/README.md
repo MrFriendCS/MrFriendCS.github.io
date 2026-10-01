@@ -70,7 +70,7 @@ The design for the program is shown below.
 ```
 
 
-__1c(i)__ Using the problem description and design, implement the program in a language of your choice.
+**1c(i)** Using the problem description and design, implement the program in a language of your choice.
 
 Your program should:
 
@@ -81,21 +81,21 @@ Your program should:
 * write the names of roller coasters that require a service within 7 days to ‘service.csv’
 * be maintainable and modular
 
-(___12 marks___)
+(***12 marks***)
 
-__1c(ii)__ The theme park’s manager wants an update on attractions with a height restriction of 1.0m and above. Height restrictions range from 0.9m to 1.4m. 
+**1c(ii)** The theme park’s manager wants an update on attractions with a height restriction of 1.0m and above. Height restrictions range from 0.9m to 1.4m. 
 
 Implement a new sub-program to count and display the number of attractions with a height restriction beginning with the character ‘1’.
 
-(___3 marks___)
+(***3 marks***)
 
 Print evidence of:
 
 * your program code
-* program outputs from __1c(i)__ and __1c(ii)__
+* program outputs from **1c(i)** and **1c(ii)**
 * the 'service.csv' file
 
-__1d__ The sub-program 'Write to file the names of roller coasters that need a service within 7 days' is tested using the sample data below. 
+**1d** The sub-program 'Write to file the names of roller coasters that need a service within 7 days' is tested using the sample data below. 
 
 ```
 Aftershock,Roller Coaster,510324,695,1.2m
@@ -105,7 +105,7 @@ Asteroid Belt,Roller Coaster,551218,623,1.4m
 
 Complete the trace table below to show the values up to the end of the third iteration. 
 
-(___3 marks___)
+(***3 marks***)
 
 |  &nbsp;       | If current category is <br> 'Roller Coaster' | days   | If (90 – days) is less than or <br> equal to 7 |
 | :------       | :-------------------------------------- | :---   | :----- |
@@ -114,8 +114,8 @@ Complete the trace table below to show the values up to the end of the third ite
 | 3rd iteration | &nbsp;                                  | &nbsp; | &nbsp; |
 
 
-__1e__  A new attraction is added to the theme park and the CSV file now has data for 27 attractions. 
+**1e**  A new attraction is added to the theme park and the CSV file now has data for 27 attractions. 
 
 Evaluate the maintainability of your first sub-program 'Read data from file into parallel arrays', with reference to data structures and loops, based on this change. 
 
-(___2 marks___)
+(***2 marks***)

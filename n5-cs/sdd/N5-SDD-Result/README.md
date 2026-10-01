@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A user wants an automatic decision system that will classify a test score as either a '__Pass__' or a '__Fail__'.  A score of 60 or more is a pass, and anything else as a fail.
+A user wants an automatic decision system that will classify a test score as either a '**Pass**' or a '**Fail**'.  A score of 60 or more is a pass, and anything else as a fail.
 
 
 ### Top level design (flowchart)

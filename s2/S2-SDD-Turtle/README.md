@@ -35,7 +35,7 @@ import turtle
 
 Now create a new turtle and give it a name.  This one will be called `tim`.  Any name came be used but spaces are not allowed.
 
-__Tip__: A short name saves lots of typing! 
+**Tip**: A short name saves lots of typing! 
 
 ``` python
 tim = turtle.Turtle()
@@ -113,8 +113,8 @@ For longer list of colours visit: [Turtle Colours](https://cs111.wellesley.edu/r
 
 ## Grid
 
-The grid uses cooridinates in the form __(__ ___x___, ___y___ __)__.
-The centre of the grid, `home()`, is __(__ ___0___, ___0___ __)__.
+The grid uses cooridinates in the form **(** ***x***, ***y*** **)**.
+The centre of the grid, `home()`, is **(** ***0***, ***0*** **)**.
 Some example coordinates are shown below.
 
 ![Python Turtle Grid](assets/Grid.png "Python Turtle Grid")

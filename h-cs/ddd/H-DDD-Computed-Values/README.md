@@ -57,7 +57,7 @@ The table called Table3 stores the details of students and the marks they achiev
 5.  Use a SQL query to list each test mark as a percentage.
 6.  Use a SQL query to list the full name of each student together with the student's total mark as a percentage.  These details should be listed from smallest percentage to largest; students with the same percentage should be listed in alphabetical order of surname.
 
-__NB__: To generate the percentages, divide each mark by 16 and multiply by 100.
+**NB**: To generate the percentages, divide each mark by 16 and multiply by 100.
 
 
 ## Table: Table4
@@ -75,7 +75,7 @@ The table called Table4 stores details of items for sale in the school tuckshop.
 7.  Use a SQL query to list the name of each item, its buying price, selling price and the profit or loss for that item.
 8.  Use a SQL query to list the name of each loss-making item with the amount of its loss.  The items should be arranged so that the item with the smallest loss is listed first.
 
-__NB__: Profit = Sale price – Cost Price
+**NB**: Profit = Sale price – Cost Price
  
 
 ## Table: Table5
@@ -92,7 +92,7 @@ The table called Table5 stores details of products and their prices.
 9.  Use a SQL query to list the products name, UK price and the equivalent prices in Euros.
 10.  Use a SQL query to list the ID of any products that cost most than $40 dollars.  The query should show the UK prices as well as the equivalent prices in US Dollars.  The products should be listed with the cheapest displayed first; products that cost the same should be listed with the highest productID shown first.
 
-__Notes__:
+**Notes**:
 
 - £1 buys €1.13
 - £1 buys $1.39

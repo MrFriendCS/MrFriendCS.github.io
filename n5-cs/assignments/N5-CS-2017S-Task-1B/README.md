@@ -11,7 +11,7 @@ File: [WhitestarAmps.db](assets/WhitestarAmps.db "Download file")
 
 ## Tasks
 
-___1d___ The personal details of a new employee are listed below.
+***1d*** The personal details of a new employee are listed below.
 
 * Employee number: 1599
 * Name: Jeremy May
@@ -19,6 +19,6 @@ ___1d___ The personal details of a new employee are listed below.
 * Driving licence: True
 * Contact telephone number: 07923782534
 
-Implement the SQL statement that will add this new record to the correct table. (__2 marks__)
+Implement the SQL statement that will add this new record to the correct table. (**2 marks**)
 
 Print evidence of both the implemented SQL statement and the Employee table (clearly showing the new record).

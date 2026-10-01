@@ -32,13 +32,13 @@ A program is required to calculate the approximate reading age (junior, teen or 
 
 ![Diagram](assets/Task1C.png)
 
-___1c___ Using the program analysis and the design, implement the program in a language of your choice.
+***1c*** Using the program analysis and the design, implement the program in a language of your choice.
 
 Ensure the program matches the completed structure diagram.
 
-Print evidence of your program code. (__15 marks__)
+Print evidence of your program code. (**15 marks**)
 
-___1d (i)___ You should test your program to ensure it produces the expected output.
+***1d (i)*** You should test your program to ensure it produces the expected output.
 
 Use the following data to check that the message ‘Long words — suitable for senior readers’ is displayed:
 
@@ -53,15 +53,15 @@ Words in sentence: distressed
 
 Run your program to show that it produces the correct message.
 
-Print evidence of the test run showing inputs and outputs. (__1 mark__)
+Print evidence of the test run showing inputs and outputs. (**1 mark**)
 
-___1d (ii)___ Additional test data is required to check that the other two messages are also displayed correctly.
+***1d (ii)*** Additional test data is required to check that the other two messages are also displayed correctly.
 
-Complete the test table below with data that could be used to produce the other two messages. (__2 marks__)
+Complete the test table below with data that could be used to produce the other two messages. (**2 marks**)
 
 ![Test table](assets/TestTable.png)
 
-___1e___ With reference to your code, evaluate your program by commenting on the following:
+***1e*** With reference to your code, evaluate your program by commenting on the following:
 
-* Efficiency of your program code (__1 mark__)
-* Readability of your program code (__1 mark__)
+* Efficiency of your program code (**1 mark**)
+* Readability of your program code (**1 mark**)

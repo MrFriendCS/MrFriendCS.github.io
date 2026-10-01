@@ -39,13 +39,13 @@ A program is required to display the five readings taken at the event and a sign
 
 ![Structure diagram](assets/sd.png "Structure diagram")
 
-___2a___ Using the program analysis and design, implement the program in a language of your choice. Ensure the program matches the structure diagram provided.  (__15 marks__)
+***2a*** Using the program analysis and design, implement the program in a language of your choice. Ensure the program matches the structure diagram provided.  (**15 marks**)
 
 Print evidence of your program code.
 
-___2b___ Your program should be tested to ensure it produces different signal patterns correctly.
+***2b*** Your program should be tested to ensure it produces different signal patterns correctly.
 
-Complete the table below to create one set of test data that will produce the expected output for the signal pattern shown.  (__2 marks__)
+Complete the table below to create one set of test data that will produce the expected output for the signal pattern shown.  (**2 marks**)
 
 ![Test data](assets/tt.png "Test table")
 
@@ -53,20 +53,20 @@ You must demonstrate that your program correctly outputs the signal pattern and 
 
 Print evidence of inputs and outputs to show that you have completed the test.
 
-___2c___ Your program should be tested to ensure that each signal strength character is correctly assigned as S, M or P. Six extreme test values are required to test this fully.
+***2c*** Your program should be tested to ensure that each signal strength character is correctly assigned as S, M or P. Six extreme test values are required to test this fully.
 
-State the six test data values required:  (__3 marks__)
+State the six test data values required:  (**3 marks**)
 
-* Extreme 1 ____
-* Extreme 2 ____
-* Extreme 3 ____
-* Extreme 4 ____
-* Extreme 5 ____
-* Extreme 6 ____
+* Extreme 1 ***_
+* Extreme 2 ***_
+* Extreme 3 ***_
+* Extreme 4 ***_
+* Extreme 5 ***_
+* Extreme 6 ***_
 
-___2d___ With reference to your code, evaluate your program by commenting on the following:
+***2d*** With reference to your code, evaluate your program by commenting on the following:
 
-* Fitness for purpose (__1 mark__)
-* Where your code demonstrates efficient use of programming constructs (__1 mark__)
-* Robustness of your completed program (__1 mark__)
-* Readability of your code (__2 marks__)
+* Fitness for purpose (**1 mark**)
+* Where your code demonstrates efficient use of programming constructs (**1 mark**)
+* Robustness of your completed program (**1 mark**)
+* Readability of your code (**2 marks**)

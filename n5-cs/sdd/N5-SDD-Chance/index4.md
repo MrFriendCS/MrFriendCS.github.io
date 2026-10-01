@@ -55,30 +55,30 @@ The design was implemented, as shown below.
 
 ## Testing
 
-___1___ Produce screen shots to show each of the four possible messages being correctly displayed.  __(2 marks)__
+***1*** Produce screen shots to show each of the four possible messages being correctly displayed.  **(2 marks)**
 
 
 ## Evaluation
 
-___2___ With reference to the implemented code and any testing you have done, evaluate the program by commenting on the following:
+***2*** With reference to the implemented code and any testing you have done, evaluate the program by commenting on the following:
 
-* The readability of the code: __(3 marks)__
+* The readability of the code: **(3 marks)**
   
     * Meaningful identifiers
     * Internal commentary
     * Whitespace
 
-* Efficient use of programming constructs in the code. __(1 mark)__
+* Efficient use of programming constructs in the code. **(1 mark)**
 
-* Robustness of the program __(1 mark)__
+* Robustness of the program **(1 mark)**
 
-* The fitness for purpose of the solution __(2 marks)__
+* The fitness for purpose of the solution **(2 marks)**
 
 
 ## Iterative Process
 
-___3___ Improve the code to remove any issues that have been identified.
+***3*** Improve the code to remove any issues that have been identified.
 
 Print evidence of your program code.
 
-___4___ Repeat the testing and evaluation tasks with reference to your improved code.  __(8 marks)__
+***4*** Repeat the testing and evaluation tasks with reference to your improved code.  **(8 marks)**

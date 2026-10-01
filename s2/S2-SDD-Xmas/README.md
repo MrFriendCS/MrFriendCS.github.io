@@ -331,8 +331,8 @@ For longer list of colours visit:
 
 ## Grid
 
-The grid uses cooridinates in the form __(__ ___x___, ___y___ __)__.
-The centre of the grid is __(__ ___0___, ___0___ __)__.
+The grid uses cooridinates in the form **(** ***x***, ***y*** **)**.
+The centre of the grid is **(** ***0***, ***0*** **)**.
 
 
 ## Starter Code

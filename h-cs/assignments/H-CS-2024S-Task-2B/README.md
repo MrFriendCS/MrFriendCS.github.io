@@ -9,13 +9,13 @@ The entity relationship diagram for the MyTreat database is shown below.
 ![MyTreat database](assets/ERD.png)
 
 
-___2c___ MyTreat would like to know how much money is being spent on the different types of escape room vouchers.
+***2c*** MyTreat would like to know how much money is being spent on the different types of escape room vouchers.
 
 A query is required to find customers who have purchased vouchers for an escape room from the ‘Adventure’ category. The output should include the amount of money spent by the customer on the voucher.
 
 Implement the SQL statement to produce the following output.
 
-(__3 marks__)
+(**3 marks**)
 
 | firstName | surname | voucherID | Amount of Money Spent on Voucher £ |
 | --------- | ------- | --------- | ---------------------------------- |
@@ -26,11 +26,11 @@ Implement the SQL statement to produce the following output.
 | Becky     | Bennett | V890      | 344 |
 
 
-___2d___ MyTreat would like to know how many vouchers are still available for voucher ID V543.
+***2d*** MyTreat would like to know how many vouchers are still available for voucher ID V543.
 
 Implement the SQL statement(s) to produce the following output.
 
-(__4 marks__)
+(**4 marks**)
 
 | voucherID | supplierName | voucherName          | Still Available |
 | --------- | ------------ | -----------          | --------------- |
@@ -44,7 +44,7 @@ For 2c and 2d print evidence of:
 _Include your name and candidate number on all evidence._
 
 
-___2e___ A query is designed to find the number of customers who bought a voucher from the ‘Family’ category that costs less than £15.00.
+***2e*** A query is designed to find the number of customers who bought a voucher from the ‘Family’ category that costs less than £15.00.
 
 The expected output from the query is shown below.
 
@@ -70,15 +70,15 @@ Test the SQL statement by running the query.
 
 Amend the query to produce the expected output as shown above.
 
-(__2 marks__)
+(**2 marks**)
 
 _Print evidence of the amended SQL statement._
 
 _Include your name and candidate number on all evidence._
 
 
-___2f___ The `Voucher` table has no validation.
+***2f*** The `Voucher` table has no validation.
 
 Evaluate one potential problem that may occur when adding new data to this table.
 
-(__1 mark__)
+(**1 mark**)

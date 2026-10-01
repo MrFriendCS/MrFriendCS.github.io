@@ -72,7 +72,7 @@ CSS rules are declared in the `head` of a webpage using the `style` tag.
 
 ## CSS Proprties and Values
 
-CSS uses ___American___ spelling.
+CSS uses ***American*** spelling.
 
 | Property         | Example Values           | Comment |
 | --------         | --------------           | ------- |

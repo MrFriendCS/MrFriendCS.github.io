@@ -18,8 +18,8 @@ The type of person they are will then be displayed
 
 * name: must not be left blank
 * age: only secondary ages are allowed
-* like cats: only ___yes___ or  ___no___ allowed
-* like dogs: only ___yes___ or  ___no___ allowed
+* like cats: only ***yes*** or  ***no*** allowed
+* like dogs: only ***yes*** or  ***no*** allowed
 
 
 ### Process
@@ -129,5 +129,5 @@ I think you're an ok person!
 
 ## Assumptions
 
-* All ___yes___ / ___no___ answers will be lower case.
+* All ***yes*** / ***no*** answers will be lower case.
 * All ages will be integers.

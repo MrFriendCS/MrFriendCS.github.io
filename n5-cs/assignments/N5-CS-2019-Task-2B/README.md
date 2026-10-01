@@ -66,20 +66,20 @@ For a student with the first name David the technician would enter Dav. The prog
 
 ```
 
-___2b___ Using the program design and refinements, implement the program in a language of your choice. Ensure the program matches the pseudocode provided. __(15 marks)__
+***2b*** Using the program design and refinements, implement the program in a language of your choice. Ensure the program matches the pseudocode provided. **(15 marks)**
 
 Print evidence of your program code.
 
-___2c___ Your program should be tested to ensure it will only accept 3 characters.
+***2c*** Your program should be tested to ensure it will only accept 3 characters.
 
-Complete the test table below __(2 marks)__
+Complete the test table below **(2 marks)**
 
 | Type of test | User input | Expected result | Actual result |
 | --- | --- | --- | --- |
 | Normal | | Input accepted | Printout of final output to show the input is accepted |
 | Exceptional | | Error message displayed | Printout to show that an error message is generated. |
 
-___2d___ Test your program using the following student names.
+***2d*** Test your program using the following student names.
 
 Chris  
 Christina  
@@ -88,14 +88,14 @@ Chrethe
 Chrisoula  
 Christie
 
-Provide evidence of the inputs and outputs to show that you have completed the test. __(1 mark)__
+Provide evidence of the inputs and outputs to show that you have completed the test. **(1 mark)**
 
-___2e___ With reference to your code and testing, evaluate your own program by commenting on the following:
+***2e*** With reference to your code and testing, evaluate your own program by commenting on the following:
 
-* Efficient use of programming constructs in your code __(1 mark)__
+* Efficient use of programming constructs in your code **(1 mark)**
 
-* Robustness of your completed program __(1 mark)__
+* Robustness of your completed program **(1 mark)**
 
-* The readability of your code __(1 mark)__
+* The readability of your code **(1 mark)**
 
-* Evaluate the fitness for purpose of the solution __(1 mark)__
+* Evaluate the fitness for purpose of the solution **(1 mark)**

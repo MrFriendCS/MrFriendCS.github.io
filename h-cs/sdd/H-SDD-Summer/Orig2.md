@@ -23,7 +23,7 @@ Create a file called `summer1.py`. The file will contain the code for the follow
 
 Create a function (`circumference`) that will accept a real value and a character.  The real value will represent the size of the radius or diameter, and the character will clarify which it is.  The function will calculate and return the circumference of a circle, rounded to 4 decimal places.
 
-__Stretch task__: If only a single parameter is passed to the function, it will calculate the circumference with the value used as the diameter.
+**Stretch task**: If only a single parameter is passed to the function, it will calculate the circumference with the value used as the diameter.
 
 #### Examples
 
@@ -38,7 +38,7 @@ __Stretch task__: If only a single parameter is passed to the function, it will 
 
 Create a function (`radius`) that will accept a real value and a character.  The real value will represent the size of the diameter or circumference, and the character will clarify which it is.  The function will calculate and return the radius of a circle, rounded to 4 decimal places.
 
-__Stretch task__: If only a single parameter is passed to the function, it will calculate the radius with the value used as the diameter.
+**Stretch task**: If only a single parameter is passed to the function, it will calculate the radius with the value used as the diameter.
 
 #### Examples
 
@@ -53,7 +53,7 @@ __Stretch task__: If only a single parameter is passed to the function, it will 
 
 Create a function (`diameter`) that will accept a real value and a character.  The real value will represent the size of the radius or circumference, and the character will clarify which it is.  The function will calculate and return the diameter of a circle, rounded to 4 decimal places.
 
-__Stretch task__: If only a single parameter is passed to the function, it will calculate the diameter with the value used as the radius.
+**Stretch task**: If only a single parameter is passed to the function, it will calculate the diameter with the value used as the radius.
 
 #### Examples
 
@@ -68,7 +68,7 @@ __Stretch task__: If only a single parameter is passed to the function, it will 
 
 Create a function (`area`) that will accept a real value and a character.  The real value will represent the size of the radius, diameter, or circumference.  The character will clarify which it is.  The function will calculate and return the area of a circle, rounded to 4 decimal places.
 
-__Stretch task__: If only a single parameter is passed to the function, it will calculate the area with the value used as the radius.
+**Stretch task**: If only a single parameter is passed to the function, it will calculate the area with the value used as the radius.
 
 #### Examples
 

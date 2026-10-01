@@ -16,7 +16,7 @@ Write a program that will be be given the radius of a circle.  The program will 
 
 All calculated values are to be correct to 2 decimal places.
 
-__Note__:  &#8508; = 3.1415
+**Note**:  &#8508; = 3.1415
 
 
 ### Example UI

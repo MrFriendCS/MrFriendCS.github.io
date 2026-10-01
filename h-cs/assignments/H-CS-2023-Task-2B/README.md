@@ -33,11 +33,11 @@ This is a relational database with the following tables.
 | emailAddres       |                |                        | |
 
 
-___2b___  Gnome Sweet Gnome would like to produce a list showing the number sold for each gnome with the word 'solar' in the description. 
+***2b***  Gnome Sweet Gnome would like to produce a list showing the number sold for each gnome with the word 'solar' in the description. 
 
 Implement the SQL statement to produce the following output.
 
-(__5 marks__)
+(**5 marks**)
 
 | gnomeName  | Total gnomes sold |
 | ---------  | ----------------- |
@@ -48,12 +48,12 @@ Implement the SQL statement to produce the following output.
 Print evidence of the implemented SQL statement and the output produced. 
 
 
-___2c___  A discount voucher will be sent to customers who bought three or more of the most 
+***2c***  A discount voucher will be sent to customers who bought three or more of the most 
 expensive gnome available, in a single order.
 
 Implement the SQL statement(s) to produce the output shown below.
 
-(__4 marks__)
+(**4 marks**)
 
 | emailAddress                 | orderID | Quantity |
 | ------------                 | ------- | -------- |
@@ -63,7 +63,7 @@ Implement the SQL statement(s) to produce the output shown below.
 Print evidence of the implemented SQL statement(s) and the output produced. 
 
 
-___2d___  A query is designed to add 20% VAT to all orders.
+***2d***  A query is designed to add 20% VAT to all orders.
 The query is tested using order ord0024.
 The expected output is shown below.
 
@@ -89,19 +89,19 @@ When run, the actual output does not match the expected output.
 
 Amend the query to produce the expected output as shown above.
 
-(__2 marks__)
+(**2 marks**)
 
 Print evidence of the amended SQL query and the output produced.
 
 
-___2e___  A customer requests a copy of a previous order for an insurance claim.
+***2e***  A customer requests a copy of a previous order for an insurance claim.
 
 Evaluate the accuracy of output when running a new query to produce a copy of the original order by:
 
-___(i)___ explaining why the copy of the order may not reflect the price paid at the time 
+***(i)*** explaining why the copy of the order may not reflect the price paid at the time 
 
-(__1 mark__)
+(**1 mark**)
 
-___(ii)___ describing how the database could be amended to rectify this
+***(ii)*** describing how the database could be amended to rectify this
 
-(__1 mark__)
+(**1 mark**)

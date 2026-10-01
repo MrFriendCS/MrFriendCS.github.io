@@ -92,7 +92,7 @@ A top level design for the main steps of the program (with partial refinements) 
 ```
 
 
-__1c__ Using the problem description and design, implement the program in a language of your choice.
+**1c** Using the problem description and design, implement the program in a language of your choice.
 
 You should:
 
@@ -103,7 +103,7 @@ You should:
     * find and display the highest number of employees employed by a single company, and the number of companies who employ within 10% of that figure
 * test your program by using the chosen company Goldman
 
-(___15 marks___)
+(***15 marks***)
 
 Print evidence of:
 
@@ -111,7 +111,7 @@ Print evidence of:
 * program outputs from 1(c)
 
 
-__1d__ Step 2 of the program is tested with the following sample test data.
+**1d** Step 2 of the program is tested with the following sample test data.
 
 ```
 Grap,724,375000
@@ -125,7 +125,7 @@ EastA,401,32000
 ```
 
 
-__1d(i)__ The refinement at 2.12 is shown below:
+**1d(i)** The refinement at 2.12 is shown below:
 
 ```
 2.12   Display message containing name of company with highest CEO salary,
@@ -134,14 +134,14 @@ __1d(i)__ The refinement at 2.12 is shown below:
 
 Explain why the output from the refinements provided for step 2 would be incorrect if the sample test data was used with Selop as a chosen input.
 
-(___1 mark___)
+(***1 mark***)
 
 
-__1d(ii)__ Describe the additional refinements that would be required before step 2.12 to ensure that the correct company name(s) are found.
+**1d(ii)** Describe the additional refinements that would be required before step 2.12 to ensure that the correct company name(s) are found.
 
-(___2 marks___)
+(***2 marks***)
 
 
-__1e__ Evaluate the efficiency of your own program, with reference to the use of the findMaxPos function. 
+**1e** Evaluate the efficiency of your own program, with reference to the use of the findMaxPos function. 
 
-(___1 mark___)
+(***1 mark***)

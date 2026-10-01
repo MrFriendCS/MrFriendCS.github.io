@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A user wants an automatic grading system that will find the average of 3 scores, and then classify the average score using the table below.  Only scores from ___0___ to ___100___ are acceptable.
+A user wants an automatic grading system that will find the average of 3 scores, and then classify the average score using the table below.  Only scores from ***0*** to ***100*** are acceptable.
 
 The scores the user enters will be stored for later use.
 

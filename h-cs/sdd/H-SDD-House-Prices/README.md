@@ -22,10 +22,10 @@ Each property has a postcode in the format:
 
 Where:
 
- * __x__ is a single digit
- * __#__ is a single digit
- * __a__ is a single letter
- * __b__ is a single letter
+ * **x** is a single digit
+ * **#** is a single digit
+ * **a** is a single letter
+ * **b** is a single letter
 
 
 ## Design

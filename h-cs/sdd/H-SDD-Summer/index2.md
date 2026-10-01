@@ -43,8 +43,8 @@ Create a function (`makeUsername`) that will accept a string.  It will use the s
 
 | Input                   | Output     | Comment |
 | -----                   | ------     | ------- |
-| makeUsername("William") | 'eswill2f' | __eswill__ + random parts |
-| makeUsername("SUE")     | 'essue5t'  | __essue__ + random parts  |
+| makeUsername("William") | 'eswill2f' | **eswill** + random parts |
+| makeUsername("SUE")     | 'essue5t'  | **essue** + random parts  |
 | makeUsername("KC")      | 'invalid'  | |
 
 

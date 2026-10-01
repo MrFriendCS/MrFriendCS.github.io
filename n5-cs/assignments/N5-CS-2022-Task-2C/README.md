@@ -19,17 +19,17 @@ A property cannot be listed for sale without the seller’s details being record
 
 ## Tasks
 
-___2c(i)___ The asking price for propertyRef DUN-101 has not been recorded correctly.
+***2c(i)*** The asking price for propertyRef DUN-101 has not been recorded correctly.
 This should be changed from £105500 to £112000.
 
 Implement an SQL statement that will make the required change to the asking price.
 
-(__2 marks__)
+(**2 marks**)
 
 Print evidence of the SQL statement and the Property table, clearly showing that the change has been implemented.
 
 
-___2c(ii)___ Implement an SQL statement that will add the following details of a new seller to the database. 
+***2c(ii)*** Implement an SQL statement that will add the following details of a new seller to the database. 
 
 ```
 sellerID:        1502
@@ -39,22 +39,22 @@ email:           EveGrace@yehoo.net
 telephoneNumber: 0131 279100
 ```
 
-(__2 marks__)
+(**2 marks**)
 
 _Print evidence of the SQL statement and the Seller table, clearly showing that the change has been implemented._
 
 
-___(iii)___ ScotAuction is running a workshop to give sellers advice on how to achieve a higher sale price.
+***(iii)*** ScotAuction is running a workshop to give sellers advice on how to achieve a higher sale price.
 Due to the limited spaces available, ScotAuction is only inviting selected sellers to attend. 
 
 Implement an SQL statement that will display the seller’s email address and telephone number along with the property’s postcode for properties that have three bedrooms and an asking price of less than £150000.
 
-(__4 marks__)
+(**4 marks**)
 
 _Print evidence of the SQL statement and the output._
 
 
-___2d___ ScotAuction would like a list of seller IDs and asking prices for properties in Glasgow. The list should be sorted showing the lowest price first.
+***2d*** ScotAuction would like a list of seller IDs and asking prices for properties in Glasgow. The list should be sorted showing the lowest price first.
 
 The following incorrect SQL statement is written:
 
@@ -69,10 +69,10 @@ Test this SQL statement.
 
 State two reasons why this SQL statement will not run when implemented.
 
-(__2 marks__)
+(**2 marks**)
 
 
-___2e___ The initial analysis identified the following functional requirements for the database. It should:
+***2e*** The initial analysis identified the following functional requirements for the database. It should:
 
 * allow ScotAuction to store a seller’s email address and telephone number
 * allow sellers to state an estimated value of their property
@@ -81,4 +81,4 @@ ___2e___ The initial analysis identified the following functional requirements f
 
 Use the above analysis to evaluate the database in terms of fitness for purpose.
 
-(__1 mark__)
+(**1 mark**)

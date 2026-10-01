@@ -3,10 +3,10 @@
 
 ## Introduction
 
-Barra's very own Meta, Beta (pronounced ___better___), is looking to break into the finacially lucrative social media market.
-It is in the early stages of design but Beta has an idea for an app that will be called __SnapTok__.
+Barra's very own Meta, Beta (pronounced ***better***), is looking to break into the finacially lucrative social media market.
+It is in the early stages of design but Beta has an idea for an app that will be called **SnapTok**.
 
-To avoid issues with other tech companies __SnapTok__ will initially only be for UK users.
+To avoid issues with other tech companies **SnapTok** will initially only be for UK users.
 To comply with UK law, users must be at least 13 years old to create an account.
 If the app was available in Europe then users would need to be at least 16 years old to comply with European law!
 

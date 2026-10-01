@@ -14,7 +14,7 @@ A skeleton procedure has been provided.
 
 Create a procedure to calculate the roots of a parabola when passed the coefficients of `a`, `b`, and `c`, rounded to 1 decimal place.
 
-__Assumption__: Only coefficients for parabolas that have real roots will be passed to the procedure.
+**Assumption**: Only coefficients for parabolas that have real roots will be passed to the procedure.
 
 
 ## Example Output

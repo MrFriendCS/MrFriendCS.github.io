@@ -18,7 +18,7 @@ An alias should be used to display a meaningful heading for each computed field.
 1.  List the title and the profit made of any movie that made a profit with its international sales.
 Display the movie with the largest profit first.
 
-    __NB__:  profit = international sales – movie budget
+    **NB**:  profit = international sales – movie budget
 
 2.  List each movie, its director, and the value of the combined US and international sales.
 Display the details in alphabetical order of director; movies by the same director should be listed in order of total income, from most to least.

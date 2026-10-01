@@ -13,7 +13,7 @@ This design is then implemented.
 ![Table](assets/Table.png)
 
 
-___1b(i)___ John Smith, Customer ID - GR01932, has asked for a copy of the tax he has paid on flight QH182.
+***1b(i)*** John Smith, Customer ID - GR01932, has asked for a copy of the tax he has paid on flight QH182.
 The tax for a booking is calculated as follows:
 
 * adults pay £5.50 
@@ -27,10 +27,10 @@ Implement the SQL statement that will produce an output with the headings.
 |          |         |         |
 
 
-Print evidence of the implemented SQL statement and the output it produced. (__3 marks__) 
+Print evidence of the implemented SQL statement and the output it produced. (**3 marks**) 
 
 
-___1b(ii)___ The airline wishes to identify the customer(s) who made a booking with the greatest number of children.
+***1b(ii)*** The airline wishes to identify the customer(s) who made a booking with the greatest number of children.
 
 Implement two SQL statements that will find the forename and surname of the customer(s) who made a booking with the greatest number of children. 
 
@@ -38,4 +38,4 @@ Implement two SQL statements that will find the forename and surname of the cust
 | -------- | ------- |
 |          |         |
 
-Print evidence of the implemented SQL statements and the output produced. (__4 marks__)
+Print evidence of the implemented SQL statements and the output produced. (**4 marks**)

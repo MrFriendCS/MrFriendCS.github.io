@@ -24,4 +24,4 @@ Use both the HTML and CSS validators to check that each webpage is correct.
 * HTML: [validator.w3.org](https://validator.w3.org/)
 * CSS: [jigsaw.w3.org/css-validator](https://jigsaw.w3.org/css-validator/)
 
-__N.B.__ If the CSS is correct on one page, it will be correct on all pages!
+**N.B.** If the CSS is correct on one page, it will be correct on all pages!

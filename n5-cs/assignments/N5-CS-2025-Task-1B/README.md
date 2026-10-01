@@ -41,22 +41,22 @@ The program will output a summary of the user’s fruit choice, including the my
 ![Flowchart 2](assets/fc2.png)
 
 
-__1c__ Using the program design, complete the expected output in the test table below. Use mango as the mystery fruit.   (___2 marks___)
+**1c** Using the program design, complete the expected output in the test table below. Use mango as the mystery fruit.   (***2 marks***)
 
 ![Test table](assets/tt.png)
 
 
-__1d__ Using the program description and the design, implement the program in a language of your choice. 
+**1d** Using the program description and the design, implement the program in a language of your choice. 
 
 Make sure the program matches the design given.
 
 Run your completed program entering two fruits of your choice.
 
-Print evidence of your program code and your program output.  (___15 marks___)
+Print evidence of your program code and your program output.  (***15 marks***)
 
 
-__1e__ With reference to your code, evaluate your program by commenting on the following:
+**1e** With reference to your code, evaluate your program by commenting on the following:
 
-- Efficient use of programming constructs  (___1 mark___)
-- Robustness of your program   (___1 mark___)
-- Readability of your code   (___1 mark___)
+- Efficient use of programming constructs  (***1 mark***)
+- Robustness of your program   (***1 mark***)
+- Readability of your code   (***1 mark***)

@@ -62,24 +62,24 @@ For example, if making the journey from Aberdeen to Dumfries via Stirling (shown
 
 ![Refinement](assets/r3.png "Refinement")
 
-__1b__	Using the program analysis and the design, implement the program in a language of your choice.
+**1b**	Using the program analysis and the design, implement the program in a language of your choice.
 
-Ensure the program matches the structure diagram given. (___15 marks___)
+Ensure the program matches the structure diagram given. (***15 marks***)
 
 Print evidence of your program code.	
 
-__1c(i)__  Your program should be tested to ensure it produces the correct output.
+**1c(i)**  Your program should be tested to ensure it produces the correct output.
 
 Use the test data provided below to check that your program produces the correct output.
 
 ![Test table](assets/tt1.png "Test table")
 
-Print evidence of the test showing inputs and outputs.  (___1 mark___)
+Print evidence of the test showing inputs and outputs.  (***1 mark***)
 
-__1c(ii)__	In the test data below, the mileage entered at Charge station 2 is not correct.
+**1c(ii)**	In the test data below, the mileage entered at Charge station 2 is not correct.
 
-Complete the test table below — this will show that the program is not fit for purpose.  (___2 marks___)
+Complete the test table below — this will show that the program is not fit for purpose.  (***2 marks***)
 
 ![Test data](assets/tt2.png "Test data")
 
-__1c(iii)__   With reference to the test data above, describe how to make the program fit for purpose. (___1 mark___)
+**1c(iii)**   With reference to the test data above, describe how to make the program fit for purpose. (***1 mark***)

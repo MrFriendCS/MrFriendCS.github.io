@@ -5,7 +5,7 @@
 
 A Caesar cipher is a simple shift cipher.  Each letter of a plaintext message is shifted a set number of places.
 
-With a shift of 3, __a__ becomes __d__, and __m__ becomes __p__.  The end of the alhpabet wraps around to the beginning.
+With a shift of 3, **a** becomes **d**, and **m** becomes **p**.  The end of the alhpabet wraps around to the beginning.
 
 Julius Caesar used the cipher to encrypt messages over 2,000 years ago but today it can be quickly decrypted without knowing the shift key.
 

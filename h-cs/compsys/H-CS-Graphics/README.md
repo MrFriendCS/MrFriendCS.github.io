@@ -1,6 +1,6 @@
 # H CS - Graphics
 
-___Do not change the webpage, only the images!___
+***Do not change the webpage, only the images!***
 
 ## Task
 

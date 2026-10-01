@@ -66,23 +66,23 @@ Refinement of 'Display all the beaches with a rating entered by the user'
 ![Display beaches procedure](assets/sd3.png)
 
 
-___2a___ Using the program analysis and design, identify two boundaries in this problem. __(2 marks)__
+***2a*** Using the program analysis and design, identify two boundaries in this problem. **(2 marks)**
 
 * Boundary 1
 * Boundary 2
 
 
-___2b (i)___ Using the program analysis and design, implement the program in a language of your choice. Your program should:
+***2b (i)*** Using the program analysis and design, implement the program in a language of your choice. Your program should:
 
 * be maintainable and modular
 * use a function to 'calculate and return the average rating for all beaches tested'
 * use a procedure to 'display all the beaches with a rating entered by the user'
 * match the top level design and the refinements provided
 
-Print evidence of your program code. __(12 marks)__
+Print evidence of your program code. **(12 marks)**
 
 
-___2b (ii)___ The process 'display all the beaches with a rating entered by the user' currently
+***2b (ii)*** The process 'display all the beaches with a rating entered by the user' currently
 displays the complete name of each beach.
 
 The program is redesigned so that if the beach name is longer than one word, only the first word is displayed.
@@ -95,19 +95,19 @@ A refinement of 'Display beach name' is shown on the following page. This finds 
 
 Using the above design, alter your program code so that only the first word in the beach name is displayed.
 
-Print evidence of your altered program code. __(3 marks)__
+Print evidence of your altered program code. **(3 marks)**
 
 
-___2c___ Describe a comprehensive test plan that could be used to test the program inputs. __(2 marks)__
+***2c*** Describe a comprehensive test plan that could be used to test the program inputs. **(2 marks)**
 
 
-___2d___ Identify where a breakpoint could be used to test that only the beach names with a rating entered by the user are displayed.
+***2d*** Identify where a breakpoint could be used to test that only the beach names with a rating entered by the user are displayed.
 
-Mark this clearly on one of the printouts of your code. __(1 mark)__
+Mark this clearly on one of the printouts of your code. **(1 mark)**
 
 
-___2e___ With reference to your own program code, evaluate:
+***2e*** With reference to your own program code, evaluate:
 
-* the robustness of your program if additional beach data was added to the CSV file __(1 mark)__
-* the usability of your program __(2 marks)__
-* the maintainability of your program __(2 marks)__
+* the robustness of your program if additional beach data was added to the CSV file **(1 mark)**
+* the usability of your program **(2 marks)**
+* the maintainability of your program **(2 marks)**

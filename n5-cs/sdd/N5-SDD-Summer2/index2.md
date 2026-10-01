@@ -17,7 +17,7 @@ Create and display a list of random numbers that meet the criteria.
 
 Ask the user for the sum of the values, and display an appropriate message.
 
-__Notes__
+**Notes**
 
 * `"\n"` = new line
 * `"\t"` = tab

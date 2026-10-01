@@ -18,7 +18,7 @@ Gradient Calculator
            .       |
        .           | Rise
    .               |
-___________________|
+******************_|
        Run
 
            Rise

@@ -32,7 +32,7 @@ Username could be:
 
 * SueMacNe (3 + 5)
 * Sue_MacN (4 + 4)
-* Sue__Mac (5 + 3)
+* Sue**Mac (5 + 3)
 
 ### Example 3
 
@@ -41,7 +41,7 @@ Username could be:
 
 Username could be:
 
-* PhiLow__ (3 + 5)
+* PhiLow** (3 + 5)
 * PhilLow_ (4 + 4)
 * PhillLow (5 + 3)
 

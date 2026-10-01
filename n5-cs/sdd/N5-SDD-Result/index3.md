@@ -10,7 +10,7 @@ A teacher wants an automatic grading system that will classify a test score usin
 | 50-100   | Pass |
 | 0-49     | Fail |
 
-Only scores from ___0___ to ___100___ are acceptable.
+Only scores from ***0*** to ***100*** are acceptable.
 
 
 ### Top level design (structure diagram)

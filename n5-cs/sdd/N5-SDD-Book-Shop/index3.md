@@ -17,7 +17,7 @@ Use the structure diagram to implement a program that will accept a non-discount
 calculate the discounted price if appropriate, and then take into account using a voucher to pay for some, 
 or all, of the amount.
 
-__NB__ Two different logical operators (`AND`, `OR`, `NOT`) are to be used.
+**NB** Two different logical operators (`AND`, `OR`, `NOT`) are to be used.
 
 
 ## Top level design (Structure diagram)

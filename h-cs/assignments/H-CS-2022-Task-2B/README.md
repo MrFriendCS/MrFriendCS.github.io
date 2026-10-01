@@ -11,7 +11,7 @@ The entity-occurrence diagram is used to draw the entity-relationship diagram fo
 The design is then implemented.
 
 
-___2b___ West Fife Walkers wants the most successful planner to design a new route. 
+***2b*** West Fife Walkers wants the most successful planner to design a new route. 
 The most successful planner is the person whose route(s) have been walked more than other routes.
 
 A query is required to display details of the four planners,
@@ -20,7 +20,7 @@ The most successful planner should be displayed at the top.
 
 Implement the SQL statement to produce the following output.
 
-(__4 marks__)
+(**4 marks**)
 
 | forename | surname | plannerNo | Total participants |
 | -------- | ------- | --------- | ------------------ |
@@ -34,7 +34,7 @@ _Print evidence of the implemented SQL statement and the output produced._
 _Include your name and candidate number on all evidence._
 
 
-___2c___ The most successful planner begins to design the new route. 
+***2c*** The most successful planner begins to design the new route. 
 As this route will be longer than the current longest route, 
 West Fife Walkers would like to produce a list of all walkers 
 who have walked the current longest route to ask them questions.
@@ -42,7 +42,7 @@ who have walked the current longest route to ask them questions.
 Implement the SQL statement(s) required to produce the list. 
 The expected output is partially shown below.
 
-(__5 marks__)
+(**5 marks**)
 
 | walkerNo | forename | surname | telNo |
 | -------- | -------- | ------- | ----- |
@@ -60,7 +60,7 @@ _Print evidence of the implemented SQL statement(s) and the output produced._
 _Include your name and candidate number on all evidence._
 
 
-___2d___ The footwear field in the Route table contains suitable footwear for the routes:
+***2d*** The footwear field in the Route table contains suitable footwear for the routes:
 
 * Trail shoes
 * Walking boots
@@ -96,14 +96,14 @@ Re-write the query so that it will always produce the expected output even if ad
 
 Test that your amended query still produces the above output.
 
-(__2 marks__)
+(**2 marks**)
 
 _Print evidence of the amended SQL statement and the output produced._
 
 _Include your name and candidate number on all evidence._
 
 
-___2e___ Initial analysis identified the following functional requirements:
+***2e*** Initial analysis identified the following functional requirements:
 
 * display suitable footwear for a chosen route
 * display walkers who prefer to walk a route with a chosen level of difficulty
@@ -114,4 +114,4 @@ ___2e___ Initial analysis identified the following functional requirements:
 
 State the functional requirement that cannot be implemented using the West Fife Walker’s database.
 
-(__1 mark__)
+(**1 mark**)

@@ -7,16 +7,16 @@ File: [NorasComics.db](assets/NorasComics.db "Download")
 An entity-relationship diagram for the database was created and is shown below.
 
 
-___2b___ Explain why Nora had to include the ‘ComicCharacter’ entity in the final design.  (__1 mark__)
+***2b*** Explain why Nora had to include the ‘ComicCharacter’ entity in the final design.  (**1 mark**)
 
 
-___2c___ Nora would like to work out the average value of all the comics in the collection 
+***2c*** Nora would like to work out the average value of all the comics in the collection 
 and those that are above this average.
 
 Implement the SQL statement(s) to display a list of the comic title, issue, publisher name, 
 and valuation for comics that are valued at least £300 above this average. 
 
-The expected output is shown below.  (__3 marks__)
+The expected output is shown below.  (**3 marks**)
 
 | comicTitle              | issue | publisherName      | valuation |
 | ----------              | ----- | -------------      | --------- |
@@ -32,11 +32,11 @@ The expected output is shown below.  (__3 marks__)
 Print evidence of the implemented SQL statement(s) and the output produced. 
 
 
-___2d___ Nora wants to see the total value of comics where the main character's name contains 'Duck'.
+***2d*** Nora wants to see the total value of comics where the main character's name contains 'Duck'.
 
 Implement the SQL statement to display the total values by character name with the highest value first.
 
-The expected output is shown below. (__5 marks__)
+The expected output is shown below. (**5 marks**)
 
 | characterName | Total Valuation |
 | ------------- | --------------- |
@@ -48,7 +48,7 @@ The expected output is shown below. (__5 marks__)
 Print evidence of the implemented SQL statement and the output produced.
 
 
-___2e___ A comic book collector contacts Nora saying he would like to purchase any 
+***2e*** A comic book collector contacts Nora saying he would like to purchase any 
 comics from the series 'The OK Seven' that feature the character named 'Starlordly'. 
 He is willing to pay double what they are worth to ensure he gets them.
 
@@ -71,7 +71,7 @@ When run, the output appears to be incorrect.
 
 Amend the query by making the required changes to produce the correct output.
 
-Print evidence of the amended SQL query and the output produced.  (__2 marks__)
+Print evidence of the amended SQL query and the output produced.  (**2 marks**)
 
 The expected output is shown below.
 
@@ -80,7 +80,7 @@ The expected output is shown below.
 | Silver Surface | 5     | Epic Doddles  | 1180 |
 
 
-___2f___ A full list of functional requirements for the database is shown below.
+***2f*** A full list of functional requirements for the database is shown below.
 
 - A query to calculate the total value of comics that include specific characters
 - A query to calculate how much a comic has increased in value since it was purchased
@@ -90,9 +90,9 @@ ___2f___ A full list of functional requirements for the database is shown below.
 - A query to find all the comics from a series that started in the 1980s
 
 
-___2f(i)___ Identify the functional requirement that cannot be met using the current 
-database structure.  (__1 mark__)
+***2f(i)*** Identify the functional requirement that cannot be met using the current 
+database structure.  (**1 mark**)
 
 
-___2f(ii)___ Explain, with reference to the database structure, what additional data would 
-be required to allow this requirement to be met.  (__1 mark__)
+***2f(ii)*** Explain, with reference to the database structure, what additional data would 
+be required to allow this requirement to be met.  (**1 mark**)

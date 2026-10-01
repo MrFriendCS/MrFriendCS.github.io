@@ -94,7 +94,7 @@ Only include nice children to create an output similar to the one below.
 | ------- | -------- | ------- | -------------- |
 | 894     | Billy    | Bragg   | 7              |
 
-__NB.__ The result of one VIEW can be used in another VIEW.
+**NB.** The result of one VIEW can be used in another VIEW.
 
 {:start="14"}
 14. Will every child get a gift?

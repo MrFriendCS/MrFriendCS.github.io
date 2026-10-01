@@ -51,8 +51,8 @@ Convert all of the dates from US to ISO format.  Convert all of the temperatures
 
 Example date: 1st August 2024
 
-* US: mm-dd-yyyy __/__ 08-01-2024
-* ISO: yyyy-mm-dd __/__ 2024-08-01
+* US: mm-dd-yyyy **/** 08-01-2024
+* ISO: yyyy-mm-dd **/** 2024-08-01
 
 ### Temperatures
 

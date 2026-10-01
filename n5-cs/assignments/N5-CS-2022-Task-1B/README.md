@@ -99,13 +99,13 @@ After analysing the problem, the following inputs, processes and outputs have be
 5.6  display stored recommendation message
 ```
 
-__1b__ Using the program analysis and the design, implement the program in a language of your choice. 
+**1b** Using the program analysis and the design, implement the program in a language of your choice. 
 
-Make sure the program matches the pseudocode provided.  (___15 marks___)
+Make sure the program matches the pseudocode provided.  (***15 marks***)
 
 Print evidence of your program code.
                   
-__1c (i)__ Run your program using the following test data to check that the message “This weight of food is suitable for your medium dog” is displayed: 
+**1c (i)** Run your program using the following test data to check that the message “This weight of food is suitable for your medium dog” is displayed: 
 	
 	Weight 1: 134.23
 	Weight 2: 74.99
@@ -114,18 +114,18 @@ __1c (i)__ Run your program using the following test data to check that the mess
 	Weight 5: 53.78
 	Size of dog: medium
 
-	Print evidence of the test run showing all inputs and the message displayed.  (___1 mark___)
+	Print evidence of the test run showing all inputs and the message displayed.  (***1 mark***)
 
-__1c (ii)__	Additional test data is required to check that the correct output messages are displayed. 
+**1c (ii)**	Additional test data is required to check that the correct output messages are displayed. 
 
-Complete the test table below to show the expected results for Test 1 and appropriate inputs for Test 2.  (___2 marks___)
+Complete the test table below to show the expected results for Test 1 and appropriate inputs for Test 2.  (***2 marks***)
 
 ![Test table](assets/tt.png "Test table")
                   
-__1d__	With reference to your code, evaluate your program by commenting on the following:
+**1d**	With reference to your code, evaluate your program by commenting on the following:
 
-* Efficiency of your program code	(___2 marks___)
+* Efficiency of your program code	(***2 marks***)
                   
-* Robustness of your completed program (___1 mark___)
+* Robustness of your completed program (***1 mark***)
 
-* Readability of your code (___1 mark___)
+* Readability of your code (***1 mark***)

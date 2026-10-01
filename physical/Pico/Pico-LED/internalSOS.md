@@ -11,7 +11,7 @@ Install the picozero library, if not already installed:
 
 ## Task
 
-Use the Pico's internal LED to send the international distress code of __SOS__ in Morse code.
+Use the Pico's internal LED to send the international distress code of **SOS** in Morse code.
 
 
 ### Morse

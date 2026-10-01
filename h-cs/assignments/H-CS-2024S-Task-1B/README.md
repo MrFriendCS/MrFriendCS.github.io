@@ -90,13 +90,13 @@ highest number of jumping jacks                                | IN: maxJumps,fo
 4.5 End loop
 ```
 
-___1c(i)___ Using the problem description and design, implement the program in a language of your choice. Your program should:
+***1c(i)*** Using the problem description and design, implement the program in a language of your choice. Your program should:
 
 * be maintainable and modular
 * use a function to find and return the maximum number of jumps
 * follow the design and the refinements provided
 
-(__13 marks__) 
+(**13 marks**) 
 
 Print evidence of:
 
@@ -106,7 +106,7 @@ Print evidence of:
 
 _Include your name and candidate number on all evidence._
 
-___1c(ii)___ The location with the fewest number of athletes qualifying will host the next final.
+***1c(ii)*** The location with the fewest number of athletes qualifying will host the next final.
 
 A new sub-program is to be implemented to find the total number of athletes from each location in the final. An example of the output is shown below.
 
@@ -119,7 +119,7 @@ Motherwell has 9 finalists
 
 Implement the additional sub-program.
 
-(__2 marks__)
+(**2 marks**)
 
 Print evidence of:
 
@@ -128,7 +128,7 @@ Print evidence of:
 
 _Include your name and candidate number on all evidence._
 
-___1d___ The function to find the maximum number of jumps is tested using the following test data.
+***1d*** The function to find the maximum number of jumps is tested using the following test data.
 
 jumps = [100,87,102,108,95]
 
@@ -143,13 +143,13 @@ Complete the table below by entering:
 | ----------------------------   | --- |
 | &nbsp;                         | &nbsp; |
 
-(__3 marks__)
+(**3 marks**)
 
-___1e___ With reference to your own program code, evaluate:
+***1e*** With reference to your own program code, evaluate:
 
 
 * the fitness for purpose of the function to generate bib values
 
 * the maintainability of your program, referring to modularity
 
-(__2 marks__)
+(**2 marks**)

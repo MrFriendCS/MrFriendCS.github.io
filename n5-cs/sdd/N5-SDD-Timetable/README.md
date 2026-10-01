@@ -23,7 +23,7 @@ The program will then display the bus departure times.
 * Only departure times from 09:00 to 09:59 will be displayed.
 * Departures intervals are from 1 to 30 minutes.
 
-__Note__:  The latest departure time must be after the earliest departure time.
+**Note**:  The latest departure time must be after the earliest departure time.
 
 
 ## Design

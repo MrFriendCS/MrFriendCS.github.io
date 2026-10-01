@@ -121,7 +121,7 @@ To link to a different website:
 
 #### img
 
-___No end tag!___
+***No end tag!***
 
 There are two attributes.  The file name, and a short description of the image.
 The image file is in the same folder as the webpage file.

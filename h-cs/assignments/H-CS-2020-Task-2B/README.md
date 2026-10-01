@@ -83,7 +83,7 @@ each category and the total number of members.  IN: category()
 
 The file `members.txt` contains the data for 10 existing members of the club. The maximum number of members is 50.
 
-___2c___ Using the data flow, refinements and the information provided, implement the program in a language of your choice. Your programming language may need you to initialise variables before step 1 of the design.
+***2c*** Using the data flow, refinements and the information provided, implement the program in a language of your choice. Your programming language may need you to initialise variables before step 1 of the design.
 
 Your fully completed program should:
 
@@ -121,7 +121,7 @@ There are currently 2 Senior members
 Total current membership is 11
 ```
 
-(__15 marks__)
+(**15 marks**)
 
 Print evidence of:
 
@@ -130,12 +130,12 @@ Print evidence of:
 
 Ensure your name and candidate number is on all evidence.
 
-___2d___ Describe how the function being used to validate the password could be comprehensively tested.
+***2d*** Describe how the function being used to validate the password could be comprehensively tested.
 
-Your answer should make reference to your code. (__2 marks__)
+Your answer should make reference to your code. (**2 marks**)
 
-___2e___ With reference to your own program code, evaluate:
+***2e*** With reference to your own program code, evaluate:
 
-* the efficiency of your program (__1 mark__)
-* the robustness of your program (__1 mark__)
-* the fitness for purpose of your program (__1 mark__)
+* the efficiency of your program (**1 mark**)
+* the robustness of your program (**1 mark**)
+* the fitness for purpose of your program (**1 mark**)

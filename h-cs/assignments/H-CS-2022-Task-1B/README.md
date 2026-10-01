@@ -93,7 +93,7 @@ Return the string
 ```
 
 
-___1c___ Using the problem description and design, implement the program in a language of your choice. Your program should:
+***1c*** Using the problem description and design, implement the program in a language of your choice. Your program should:
 
 * use a procedure to:
     * read data from the file to an array of records
@@ -104,7 +104,7 @@ ___1c___ Using the problem description and design, implement the program in a la
 * be maintainable and modular
 * follow the design and the refinements provided
 
-(__15 marks__)
+(**15 marks**)
 
 Print evidence of:
 
@@ -114,16 +114,16 @@ Print evidence of:
 Include your name and candidate number on all evidence.
 
 
-___1d___ Step 4 of the main algorithm counts the number of sightings for each date in the file. There are six sightings on 1 September 2021.
+***1d*** Step 4 of the main algorithm counts the number of sightings for each date in the file. There are six sightings on 1 September 2021.
 
 Describe how a watchpoint could be used to test that these sightings are counted correctly.
 
-(__2 marks__)
+(**2 marks**)
 
 
-___1e___ With reference to your own program code, evaluate:
+***1e*** With reference to your own program code, evaluate:
 
 * the efficiency of the function that changes the first character of the user’s input to upper-case
 * the maintainability of your program, referring to modularity
 
-(__2 marks__)
+(**2 marks**)

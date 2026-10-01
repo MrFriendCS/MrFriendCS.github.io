@@ -34,27 +34,27 @@ File: [AnyTimeFlowers.db](assets/AnyTimeFlowers.db "Download file")
 
 ## Tasks
 
-___1b___ Using the data dictionary, complete the relational database by:
+***1b*** Using the data dictionary, complete the relational database by:
 
 * identifying two fields where the validation shown below has yet to be applied
 * adding the validation to the two identified fields
 
 Print evidence to show that you have added the validation to the database to match the data dictionary requirements.
 
-(__2 marks__)
+(**2 marks**)
 
 
-___1c (i)___ A customer would like to change their order from ‘rose’ to ‘tulip’.
+***1c (i)*** A customer would like to change their order from ‘rose’ to ‘tulip’.
 The price of the order will change from £34 to £17. The orderID is CHQ3848.
 
-Implement __one__ SQL statement that will make the required changes to the order.
+Implement **one** SQL statement that will make the required changes to the order.
 
-(__4 marks__)
+(**4 marks**)
 
 Print evidence of the SQL statement and the FlowerOrder table, clearly showing that the changes have been implemented.
 
 
-___1c (ii)___ A new customer provides their name and telephone number.
+***1c (ii)*** A new customer provides their name and telephone number.
 
 Implement an SQL statement that will add their details to the database.
 
@@ -67,4 +67,4 @@ Assign them customerID — 2986
 
 Print evidence of the SQL statement and the Customer table, clearly showing that the changes have been implemented.
 
-(__2 marks__)
+(**2 marks**)

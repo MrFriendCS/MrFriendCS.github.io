@@ -35,26 +35,26 @@ The program will ask the user to enter the number of hits scored by each of the 
 
 ![Flow chart](assets/fc.png)
 
-___2a___ Using the program analysis and flowchart design, implement the program in a language of your choice. Ensure the program matches the design. (__15 marks__)
+***2a*** Using the program analysis and flowchart design, implement the program in a language of your choice. Ensure the program matches the design. (**15 marks**)
 
 Print evidence of the program code.
 
-___2b___ Complete the table below to create two sets of test data. You must demonstrate that the program correctly outputs the messages that one or both points have been earned. (__3 marks__)
+***2b*** Complete the table below to create two sets of test data. You must demonstrate that the program correctly outputs the messages that one or both points have been earned. (**3 marks**)
 
 ![Test data](assets/test.png)
 
 Test your program using both sets of test data. Print evidence of inputs and outputs to show that you have completed each test.
 
-___2c___ The program should ensure that only a valid number of hits can be entered for each of the six players. State two extreme and one exceptional numerical value that could be used as part of a test run to check that only a valid number of hits can be
-entered: (__2 marks__)
+***2c*** The program should ensure that only a valid number of hits can be entered for each of the six players. State two extreme and one exceptional numerical value that could be used as part of a test run to check that only a valid number of hits can be
+entered: (**2 marks**)
 
-* Extreme 1: __________
-* Extreme 2: __________
-* Exceptional: __________
+* Extreme 1: *********_
+* Extreme 2: *********_
+* Exceptional: *********_
 
-___2d___ Evaluate your program by commenting on the following:
+***2d*** Evaluate your program by commenting on the following:
 
-* Fitness for purpose (__1 mark__)
-* Efficiency of your code (__1 mark__)
-* Robustness of your completed program (__1 mark__)
-* Readability of your code (__2 marks__)
+* Fitness for purpose (**1 mark**)
+* Efficiency of your code (**1 mark**)
+* Robustness of your completed program (**1 mark**)
+* Readability of your code (**2 marks**)

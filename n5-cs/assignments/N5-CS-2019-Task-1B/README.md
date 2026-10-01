@@ -6,9 +6,9 @@ File: [Vlogger.db](assets/Vlogger.db "Download file")
 
 ## Task
 
-___1b___ Using the data dictionary below complete the Vlogger table by adding the validation.
+***1b*** Using the data dictionary below complete the Vlogger table by adding the validation.
 
-(__2 marks__)
+(**2 marks**)
 
 
 ### Entity: Vlogger

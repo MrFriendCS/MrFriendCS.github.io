@@ -124,7 +124,7 @@ Ord9,maxpower11@inlook.com,19.34
 4.4  Output the total number of orders collected
 ```
 
-__1c__ Using the problem description and design, implement the program in a 
+**1c** Using the problem description and design, implement the program in a 
 language of your choice.
 
 Your program should:
@@ -140,7 +140,7 @@ and the total number of orders collected
 - be tested using the month of 'Oct' as the input. The expected output is shown 
 in the problem description. 
 
-(___15 marks___)
+(***15 marks***)
 
 Print evidence of your:
 
@@ -148,7 +148,7 @@ Print evidence of your:
 - program output from your test run
 - `winningCustomer.txt` file
 
-__1d__ The function 'Find the position of the customer who gave the first 5-star rating 
+**1d** The function 'Find the position of the customer who gave the first 5-star rating 
 in a given month' is tested using the sample data below.
 
 ```
@@ -163,7 +163,7 @@ Ord170,01-Nov-24,duckguy@male.com,Collection,44.89,5
 Complete the trace table below to show the values up to the end of the iteration 
 of the conditional loop.
 
-(___2 marks___)
+(***2 marks***)
 
 Month searched: Nov
 
@@ -175,14 +175,14 @@ Month searched: Nov
 | Ord168   |          |       |
 
 
-__1e__ With reference to your own program code, evaluate the following.
+**1e** With reference to your own program code, evaluate the following.
 
 The efficiency of your program with reference to the use of the 'countOption' function.
 
-(___1 mark___)
+(***1 mark***)
 
 The maintainability of the first subprogram 'Read from file into array of records' 
 if the file now contained data for a whole year from January 2025 to December 2025. 
 Your answer should refer to data structures and loops.
 
-(___2 marks___)
+(***2 marks***)

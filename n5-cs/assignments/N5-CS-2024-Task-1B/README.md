@@ -73,19 +73,19 @@ The program will select a random song when the DJ should switch on the foam mach
 5.11 display total with message 
 ```
 
-__1c__ Using the program design, complete the expected output in the test table below.
+**1c** Using the program design, complete the expected output in the test table below.
 
-Assume the foam machine message is displayed at song 2.  (___2 marks___)
+Assume the foam machine message is displayed at song 2.  (***2 marks***)
 
 ![Test table](assets/tt.png)
 
-__1d__ Implement the program in a language of your choice.
+**1d** Implement the program in a language of your choice.
 
 Ensure the program matches the design given and remember to test your program.
 
-Print evidence of your program code.  (___15 marks___)
+Print evidence of your program code.  (***15 marks***)
 
-__1e__ With reference to your code, evaluate your program by commenting on the following:
+**1e** With reference to your code, evaluate your program by commenting on the following:
 
-* Efficient use of programming constructs  (___2 marks___)
-* Robustness of your completed program   (___1 marks___)
+* Efficient use of programming constructs  (***2 marks***)
+* Robustness of your completed program   (***1 marks***)

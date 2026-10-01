@@ -41,13 +41,13 @@ A program is required to calculate a customer’s bill. The user will enter the 
 
 ![Flowchart](assets/Task2B.png)
 
-___2b___ Using the program analysis and the design, implement the program in a language of your choice.
+***2b*** Using the program analysis and the design, implement the program in a language of your choice.
 
-Ensure the program matches the flowchart provided. (__15 marks__)
+Ensure the program matches the flowchart provided. (**15 marks**)
 
 Print evidence of your program code.
 
-___2c (i)___ Your program should be tested to ensure it produces one of three different random outputs.
+***2c (i)*** Your program should be tested to ensure it produces one of three different random outputs.
 
 Use the following data to do this:
 
@@ -63,18 +63,18 @@ State the possible values (outputs) for the final bill produced from this test d
 
 Run your program to show that it produces one of these three outputs.
 
-Print evidence of the test run showing inputs and outputs. (__2 marks__)
+Print evidence of the test run showing inputs and outputs. (**2 marks**)
 
-___2c (ii)___ Complete the test table below to check the validation for the item type.
+***2c (ii)*** Complete the test table below to check the validation for the item type.
 
 ![Test data](assets/TestData.png)
 
-Run your program to show the result of the exceptional test data. (__1 mark__)
+Run your program to show the result of the exceptional test data. (**1 mark**)
 
 Print evidence of the test run.
 
-___2d___ With reference to your code, evaluate your program by commenting on the following:
+***2d*** With reference to your code, evaluate your program by commenting on the following:
 
-* Efficiency of your program code (__2 marks__)
-* Robustness of your completed program (__1 mark__)
-* Readability of your code (__1 mark__)
+* Efficiency of your program code (**2 marks**)
+* Robustness of your completed program (**1 mark**)
+* Readability of your code (**1 mark**)

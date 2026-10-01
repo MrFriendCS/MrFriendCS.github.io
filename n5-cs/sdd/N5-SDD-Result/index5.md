@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A user wants an automatic grading system that will classify a test score using the table below.  Only scores from ___0___ to ___100___ are acceptable.
+A user wants an automatic grading system that will classify a test score using the table below.  Only scores from ***0*** to ***100*** are acceptable.
 
 | Mark    | Grade |
 | ----    | :---: |

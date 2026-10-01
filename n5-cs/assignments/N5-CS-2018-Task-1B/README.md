@@ -34,16 +34,16 @@ File: [Gardening.db](assets/Gardening.db "Download file")
 | staffID      | FK    | text   | 5     | Y     | existing staffID from Staff table |
 
 
-___1c___ Using the data dictionary complete the relational database by:
+***1c*** Using the data dictionary complete the relational database by:
 
 * creating a new table to store the job details
 * adding all validation to the job entity
 * creating a relationship between the two tables
 
-(__5 marks__) 
+(**5 marks**) 
 
 
-___1d___ Staff member DS021 has moved house recently.
+***1d*** Staff member DS021 has moved house recently.
 
 Implement an SQL statement that will change the address of this member of staff to:
 
@@ -51,4 +51,4 @@ Implement an SQL statement that will change the address of this member of staff 
 
 Print evidence of your SQL statement and the Staff table (clearly showing the new address) once the SQL statement has been implemented.
 
-(__2 marks__)
+(**2 marks**)

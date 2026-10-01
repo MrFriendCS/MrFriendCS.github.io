@@ -59,4 +59,4 @@ Meow!
 
 Ensure that the age of the cat is valid.  How long, approximately, can cats live?
 
-___xx___ Example 2 is the upper limit that you choose.
+***xx*** Example 2 is the upper limit that you choose.

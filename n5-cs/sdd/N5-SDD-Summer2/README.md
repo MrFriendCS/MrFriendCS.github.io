@@ -11,7 +11,7 @@ Create a file called `summer1.py`.
 Write a program to ask the user for a number and then display the square root of the number.
 Only numbers larger than zero are acceptable.
 
-__Notes__:
+**Notes**:
 
 1. Do not import any code
 2. Square root of `9` = `3`

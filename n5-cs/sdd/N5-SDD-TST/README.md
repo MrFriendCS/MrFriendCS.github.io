@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Tangasdale Sea Tours (TST) is a small business that does popular tours along the west coast of Barra, with the slogan "__West is Best!__".
+Tangasdale Sea Tours (TST) is a small business that does popular tours along the west coast of Barra, with the slogan "**West is Best!**".
 Every trip is different, depending on the customers wishes: touring Castlebay marina, visiting the iconic Seal Bay, or going to the far north to see Spàgan.
 When the weather is good enough, TST runs up to 4 tours a day, two before lunch and two after lunch.
 Each tour has space for 5 passengers, which can be any mixture of adults and children.

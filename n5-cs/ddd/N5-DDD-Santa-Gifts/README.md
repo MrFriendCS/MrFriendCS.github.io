@@ -105,7 +105,7 @@ Toys are to be sorted from most to least expensive.
 
 19. The elves want a delivery list for Santa.
 It is to be sorted alphabetically by surname and then forename.
-The elves are insistent that ___only___ nice children are to appear on this list.
+The elves are insistent that ***only*** nice children are to appear on this list.
 Naughty children will be on their own 'special' list.
 An example of the output is shown below:
 

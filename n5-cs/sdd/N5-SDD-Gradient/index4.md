@@ -3,7 +3,7 @@
 
 ## Task
 
-Use the structure diagram to implement a program that will calculate the gradient when a user enters the __rise__ and the __run__.
+Use the structure diagram to implement a program that will calculate the gradient when a user enters the **rise** and the **run**.
 
 
 ### Top level design (Structure diagram)
@@ -18,4 +18,4 @@ Use the structure diagram to implement a program that will calculate the gradien
 
 ### Assumptions
 
-* The __rise__ and __run__ values can be real values.
+* The **rise** and **run** values can be real values.

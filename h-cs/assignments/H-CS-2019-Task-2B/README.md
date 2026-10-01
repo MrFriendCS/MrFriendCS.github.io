@@ -32,10 +32,10 @@ The design for the walking club program is shown below.
 
 | Step                                                  | Data Flow |
 | :---                                                  | :-------- |
-| 1. Read members’ data from file into array of records | __OUT__: members(forename,surname,distance) |
-| 2. Find the furthest distance walked                  | __IN__: members(forename,surname,distance) <br> __OUT__: furthest |
-| 3. Display the furthest distance walked               | __IN__: furthest |
-| 4. Write club prize winners to file                   | __IN__: members(forename,surname,distance), furthest |
+| 1. Read members’ data from file into array of records | **OUT**: members(forename,surname,distance) |
+| 2. Find the furthest distance walked                  | **IN**: members(forename,surname,distance) <br> **OUT**: furthest |
+| 3. Display the furthest distance walked               | **IN**: furthest |
+| 4. Write club prize winners to file                   | **IN**: members(forename,surname,distance), furthest |
 
 
 ### Refinements
@@ -66,16 +66,16 @@ The design for the walking club program is shown below.
 4.7 End loop
 ```
 
-___2c(i)___ Using the problem description and design, implement the program in a language of your choice. Your program should:
+***2c(i)*** Using the problem description and design, implement the program in a language of your choice. Your program should:
 
 * be maintainable and modular 
 * use a function to find and return the furthest distance walked by a member
 * use a procedure to display the furthest distance walked 
 * follow the design and the refinements provided
 
-Print evidence of your program code and the results.txt file.  (__13 marks__)
+Print evidence of your program code and the results.txt file.  (**13 marks**)
 
-___2c(ii)___ The club wants to display the number of whole marathons each member has walked. A marathon is 26.22 miles long.
+***2c(ii)*** The club wants to display the number of whole marathons each member has walked. A marathon is 26.22 miles long.
 
 An example of the calculation required is:
 
@@ -102,7 +102,7 @@ Using the above design, edit your original program code so that, for each member
 
 Run your program and print evidence of your edited program code and evidence  that your program correctly stores the new data in the results.txt file. (2 marks)
 
-___2d___ The function in step 2 is to be tested with the data shown below. 
+***2d*** The function in step 2 is to be tested with the data shown below. 
 
 ```
     John,Davie,189.4
@@ -112,10 +112,10 @@ ___2d___ The function in step 2 is to be tested with the data shown below.
     Emir,Jones,170.3 
 ```
 
-Using the variable names and data structure names from your own code, create a trace table to find the furthest distance walked by the members in the test data. (__2 marks__)
+Using the variable names and data structure names from your own code, create a trace table to find the furthest distance walked by the members in the test data. (**2 marks**)
 
-___2e___ With reference to your own program code, evaluate:
+***2e*** With reference to your own program code, evaluate:
 
-* the fitness for purpose of your program (__1 mark__)
+* the fitness for purpose of your program (**1 mark**)
 
-* the maintainability of your program with reference to readability and modularity (__2 marks__)
+* the maintainability of your program with reference to readability and modularity (**2 marks**)
