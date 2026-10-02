@@ -57,12 +57,12 @@ Print evidence of inputs and outputs to show that you have completed the test.
 
 State the six test data values required:  (**3 marks**)
 
-* Extreme 1 ***_
-* Extreme 2 ***_
-* Extreme 3 ***_
-* Extreme 4 ***_
-* Extreme 5 ***_
-* Extreme 6 ***_
+* Extreme 1 ____
+* Extreme 2 ____
+* Extreme 3 ____
+* Extreme 4 ____
+* Extreme 5 ____
+* Extreme 6 ____
 
 ***2d*** With reference to your code, evaluate your program by commenting on the following:
 
