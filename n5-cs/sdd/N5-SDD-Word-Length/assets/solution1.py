@@ -1,10 +1,10 @@
 # Title: N5 SDD Word Length
 # Author: Mr Friend
-# Date: 8 Oct 2025
+# Date: 2 Oct 2026
 
 # Initialise Variables
-word = ""
-wordLength = 0
+word: str = ""
+wordLength: int = 0
 
 
 # Display header
