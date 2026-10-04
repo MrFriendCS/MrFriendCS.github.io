@@ -1,9 +1,10 @@
-# N5 SDD - Result Part 4
+# N5 SDD - Result Part 4a
 
 
 ## Introduction
 
 A user wants an automatic grading system that will classify a test score using the table below.
+Only scores from ***0*** to ***100*** are acceptable.
 
 | Mark    | Grade |
 | ----    | :---: |
@@ -16,16 +17,17 @@ A user wants an automatic grading system that will classify a test score using t
 
 ## Tasks
 
-1. Implement a program that matches the structure diagram below. Ensure the code is efficient.
+1. Create a comprehensive test plan for the program.  Use OneNote.
 
-2. Use the test plan to check that the program works correctly.
+2. Implement a program that matches the structure diagram below. Ensure the code is efficient.
 
-3. Ensure the code is readable by using:
+3. Use the test plan to check that the program works correctly.
 
-   * Meanigful identifiers.
-   * Internal commentary.
-   * Whitespace.
-   * Indentation
+4. Ensure the code is readable by using:
+
+   1. Meanigful identifiers.
+   2. Internal commentary.
+   3. Whitespace.
 
 
 ## User Experience

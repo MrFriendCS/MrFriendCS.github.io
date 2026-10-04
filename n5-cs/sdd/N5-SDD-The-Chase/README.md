@@ -1,13 +1,16 @@
 # N5 SDD - The Chase
 
-A popular TV quiz show was planning on coming to Barra.  Unfortunately, due to a combination of weather and equipment faults none of the production team was able to get here.
+A popular TV quiz show was planning on coming to Barra.
+Unfortunately, due to a combination of weather and equipment faults none of the production team was able to get here.
 
 
 ## Task
 
 To save the day you are to produce a program that will ask questions, show the correct answers if wrong, and then give a result.
 
-As a proof of concept, the initial program will ask three questions.  Implement the design shown below.
+As a proof of concept, the initial program will ask three questions.
+Implement the design shown below.
+Create your you own questions.
 
 
 ## Top level design (Structure diagram)
@@ -15,7 +18,7 @@ As a proof of concept, the initial program will ask three questions.  Implement 
 ![Structure Diagram](assets/sd.png)
 
 
-### Example User Interface
+### Example user interface
 
 ```
 The Chase
