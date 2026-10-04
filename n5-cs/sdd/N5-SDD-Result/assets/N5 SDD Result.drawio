@@ -250,19 +250,21 @@
         <mxCell id="qrFmPJ6-ptgdQkXmSBxx-2" parent="qrFmPJ6-ptgdQkXmSBxx-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Graded Test Result" vertex="1">
           <mxGeometry height="60" width="120" x="520" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="qrFmPJ6-ptgdQkXmSBxx-3" edge="1" parent="qrFmPJ6-ptgdQkXmSBxx-1" source="qrFmPJ6-ptgdQkXmSBxx-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="qrFmPJ6-ptgdQkXmSBxx-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="qrFmPJ6-ptgdQkXmSBxx-4" edge="1" parent="qrFmPJ6-ptgdQkXmSBxx-1" source="qrFmPJ6-ptgdQkXmSBxx-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="140" as="targetPoint" />
+            <mxPoint x="260" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qrFmPJ6-ptgdQkXmSBxx-5" parent="qrFmPJ6-ptgdQkXmSBxx-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Initialise variables" vertex="1">
-          <mxGeometry height="60" width="120" x="280" y="160" as="geometry" />
+          <mxGeometry height="60" width="120" x="200" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="pQ8rXmtShqCRRZRRQutH-0" edge="1" parent="qrFmPJ6-ptgdQkXmSBxx-1" source="qrFmPJ6-ptgdQkXmSBxx-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="140" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="qrFmPJ6-ptgdQkXmSBxx-6" parent="qrFmPJ6-ptgdQkXmSBxx-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Get score" vertex="1">
-          <mxGeometry height="60" width="120" x="280" y="260" as="geometry" />
+          <mxGeometry height="60" width="120" x="360" y="160" as="geometry" />
         </mxCell>
         <mxCell id="qrFmPJ6-ptgdQkXmSBxx-7" parent="qrFmPJ6-ptgdQkXmSBxx-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Set grade to A" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="260" as="geometry" />
@@ -352,7 +354,7 @@
         </mxCell>
         <mxCell id="qrFmPJ6-ptgdQkXmSBxx-35" edge="1" parent="qrFmPJ6-ptgdQkXmSBxx-1" style="endArrow=none;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="340" y="140" as="sourcePoint" />
+            <mxPoint x="260" y="140" as="sourcePoint" />
             <mxPoint x="820" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
