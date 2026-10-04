@@ -22,9 +22,9 @@ A user wants an automatic grading system that will classify a test score using t
 
 3. Ensure the code is readable by using:
 
-   * Meanigful identifiers.
-   * Internal commentary.
-   * Whitespace.
+   * Meanigful identifiers
+   * Internal commentary
+   * Whitespace
    * Indentation
 
 
