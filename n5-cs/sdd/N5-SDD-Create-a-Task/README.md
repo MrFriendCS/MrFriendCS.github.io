@@ -21,8 +21,10 @@ Make sure all 3 parts 'hang together'.
 ## Links
 
 The back story can be formatted in Markdown, but it is not a requirement.
-If structure diagram or flowchart is used, they can be hand drawn.
+Diagrams can be hand drawn.
 
 * Markdown: [https://www.markdownguide.org](https://www.markdownguide.org/basic-syntax/)
 
 * Draw.io: [https://app.diagrams.net](https://app.diagrams.net/)
+
+* Implementation: [https://mrfriendcs.github.io/n5-cs/sdd/implementation.html)
