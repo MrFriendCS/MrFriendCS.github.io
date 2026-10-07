@@ -27,4 +27,4 @@ Diagrams can be hand drawn.
 
 * Draw.io: [https://app.diagrams.net](https://app.diagrams.net/)
 
-* Implementation: [https://mrfriendcs.github.io/n5-cs/sdd/implementation.html)
+* Implementation: [https://mrfriendcs.github.io/n5-cs/sdd/implementation.html](https://mrfriendcs.github.io/n5-cs/sdd/implementation.html)
