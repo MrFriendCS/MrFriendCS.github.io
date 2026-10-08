@@ -1,26 +1,25 @@
 # Title: H CS 2018S Task 2
 # Author: Mr Friend
-# Date: 1 Oct 2026
+# Date: 7 Oct 2026
 
 # Get extra code
 from dataclasses import dataclass
 
 
-# Define the record
 @dataclass
-class Beach:
+class BeachData:
     """A record to represent a beach and its rating."""
     name: str = ""
     rating: int = 0
 
 
-def getBeachData() -> list[Beach]:
+def getBeachData() -> list[BeachData]:
     """Read in beach names and ratings from file."""
 
     # Initialise local variables and datatypes
     line: str = ""
     data: list[str] = ["", ""]
-    beaches = [Beach() for index in range (973)]
+    beaches: list[BeachData] = [BeachData() for index in range (973)]
 
     # Connect to the file
     file = open("beachData.csv", "r", encoding="UTF-8")
@@ -41,7 +40,7 @@ def getBeachData() -> list[Beach]:
     return beaches
 
 
-def calcAverage(beaches: list[Beach]) -> float:
+def calcAverage(beaches: list[BeachData]) -> float:
     """Calculate and return the average rating of the beaches tested."""
 
     # Initialise local variables
@@ -73,11 +72,13 @@ def displayAverage(average: float) -> None:
     print("The average rating for all beaches tested is " + str(average))
 
 
-def displayBeaches(beaches: list[Beach]) -> None:
+def displayBeaches(beaches: list[BeachData]) -> None:
     """Display all the beaches with a rating entered by the user."""
 
     # Initialise local variables
     userRating: int = 0
+    position: int = 0
+    found: bool = False
 
     # Get rating from user
     userRating = int(input("Enter the rating to search for: "))
@@ -125,7 +126,7 @@ def main() -> None:
 
     # Variables
     averageRating: float = 0.0
-    beachData: list[Beach] = [Beach() for index in range(973)]
+    beachData: list[BeachData] = [BeachData() for index in range(973)]
 
     # Read in beach names and ratings from file
     beachData = getBeachData()
@@ -140,6 +141,6 @@ def main() -> None:
     displayBeaches(beachData)
 
 
-if __name__ == "main":
+if __name__ == "__main__":
 
     main()
