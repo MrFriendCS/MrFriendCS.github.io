@@ -10,11 +10,11 @@ The compensation scheme is known as **Delay Repay**.
 
 The amount of compensation depends on the length of the delay, see the table below.
 
-    | Delay (mins) | Compensation |
-    | :----------: | :----------: |
-    | 15-29        | 25% |
-    | 30-59        | 50% | 
-    | 60+          | 100% |
+| Delay (mins) | Compensation |
+| :----------: | :----------: |
+| 15-29        | 25% |
+| 30-59        | 50% | 
+| 60+          | 100% |
 
 
 ## Task
