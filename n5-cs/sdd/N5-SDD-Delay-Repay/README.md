@@ -29,10 +29,10 @@ Create a program that will calculate the compensation to be paid when a train is
 
 ## User Interface
 
-Examples of the expected user interface are shown below, with some possible input and output values.
+An example of the expected user interface is shown below, with some possible input and output values.
 
 
-### Example 1
+### Example
 
 ```
 BUTS Delay Repay
