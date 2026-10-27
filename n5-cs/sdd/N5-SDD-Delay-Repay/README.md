@@ -4,8 +4,8 @@
 ## Introduction
 
 The Barra & Uist Train Service (BUTS) runs an efficient train service.
-BUTS is the envy of the rail industry as nearly 100% of trains running on time, as they should.
-If a train is late, then customers are entilted to a refund, depending how bad the delay was.
+BUTS is the envy of the rail industry as nearly 100% of trains run on time, as they should.
+Very occasionally a train is late, then customers are entitled to a refund, depending how bad the delay was.
 The compensation scheme is known as **Delay Repay**.
 
 The amount of compensation depends on the length of the delay, see the table below.
