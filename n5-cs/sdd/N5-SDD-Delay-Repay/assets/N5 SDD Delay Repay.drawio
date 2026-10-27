@@ -54,10 +54,10 @@
         <mxCell id="7nu_7CsurFHiE4qF7FWT-6" edge="1" parent="qxK7CoafIRBLT2qcAN7d-1" source="7nu_7CsurFHiE4qF7FWT-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" target="7nu_7CsurFHiE4qF7FWT-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="7nu_7CsurFHiE4qF7FWT-0" parent="qxK7CoafIRBLT2qcAN7d-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;Get timetabled arrive time (hours)&lt;/div&gt;" vertex="1">
+        <mxCell id="7nu_7CsurFHiE4qF7FWT-0" parent="qxK7CoafIRBLT2qcAN7d-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;Get timetabled&lt;/div&gt;&lt;div&gt;arrival time (hours)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="200" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="7nu_7CsurFHiE4qF7FWT-1" parent="qxK7CoafIRBLT2qcAN7d-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;Get timetabled arrive time (minutes)&lt;/div&gt;" vertex="1">
+        <mxCell id="7nu_7CsurFHiE4qF7FWT-1" parent="qxK7CoafIRBLT2qcAN7d-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;Get timetabled&lt;/div&gt;&lt;div&gt;arrival time (minutes)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="200" y="260" as="geometry" />
         </mxCell>
         <mxCell id="7nu_7CsurFHiE4qF7FWT-8" edge="1" parent="qxK7CoafIRBLT2qcAN7d-1" source="7nu_7CsurFHiE4qF7FWT-2" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
@@ -65,10 +65,10 @@
             <mxPoint x="420" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7nu_7CsurFHiE4qF7FWT-2" parent="qxK7CoafIRBLT2qcAN7d-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;Get actual arrive&lt;/div&gt;&lt;div&gt;time (hours)&lt;/div&gt;" vertex="1">
+        <mxCell id="7nu_7CsurFHiE4qF7FWT-2" parent="qxK7CoafIRBLT2qcAN7d-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;Get actual arrival&lt;/div&gt;&lt;div&gt;time (hours)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="360" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="7nu_7CsurFHiE4qF7FWT-3" parent="qxK7CoafIRBLT2qcAN7d-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;Get actual arrive&lt;/div&gt;&lt;div&gt;time (minutes)&lt;/div&gt;" vertex="1">
+        <mxCell id="7nu_7CsurFHiE4qF7FWT-3" parent="qxK7CoafIRBLT2qcAN7d-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;Get actual arrival&lt;/div&gt;&lt;div&gt;time (minutes)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="360" y="260" as="geometry" />
         </mxCell>
         <mxCell id="7nu_7CsurFHiE4qF7FWT-7" edge="1" parent="qxK7CoafIRBLT2qcAN7d-1" source="7nu_7CsurFHiE4qF7FWT-2" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="7nu_7CsurFHiE4qF7FWT-3">
