@@ -1,13 +1,13 @@
-# Title: N5 SDD Book Shop - Part 2
+# Title: N5 SDD Book Shop - Part 3
 # Author: Mr Friend
-# Date: 11 Sep 2024
+# Date: 3 Nov 2026
 
 # Initialise variables
-total = 0.0
-discountType = ""
-discountRate = 0
-discount = 0.0
-voucher = ""
+total: float = 0.0
+discountType: str = ""
+discountRate: int = 0
+discount: float = 0.0
+voucher: str = ""
 
 # Display header
 print("UoB Book Shop")
@@ -70,3 +70,6 @@ if total < 0:
 
 # Display final amount to pay
 print("\nFinal amount to pay: £" + str(total))
+
+# Footer
+print("====================")
