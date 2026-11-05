@@ -35,8 +35,12 @@ elif discountType == "staff" or discountType == "STAFF":
 
 # Is discount to be applied?
 if discountRate != 0:
-    #Calculate discount
+    
+    # Calculate discount
     discount = total / 100 * discountRate
+    
+    # Round doscount to 2 dp
+    disount = round(discount, 2)
     
     # Update total
     total = total - discount
