@@ -15,7 +15,7 @@ delay: int = 0
 compensation: float = 0.0
 
 # Header
-print("BUTL Delay Repay")
+print("BUTS Delay Repay")
 print("----------------")
 
 # Get ticket price
@@ -28,7 +28,7 @@ print("Timetabled arrival time:")
 arrHour = int(input("  Hour: "))
 arrMins = int(input("  Mins: "))
 
-# Timetabled actual time
+# Actual arrival time
 print()
 print("Actual arrival time:")
 actHour = int(input("  Hour: "))
