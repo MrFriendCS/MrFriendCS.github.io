@@ -73,11 +73,11 @@ Increase each of their test 2 results by 2 marks and each of their test 4 result
 
 The table called Table4 stores details of items for sale in the school tuckshop.
 
-The buying price of the product with a product name ending in `e`, has been reduced by 2 pence.
+The buying price of products with a product name ending in `e`, have been reduced by 2 pence.
 Also, the selling price is being updated to make a profit of 40% of the revised buying price.
 
 {:start="4"}
-4.  Use two SQL queries to alter the buying price and selling price of the relevant product records.
+4.  Use two seperate SQL queries to alter the buying price and selling price of the relevant product records.
  
 
 ## Table: Table5
