@@ -10,7 +10,7 @@ Using a computer instead of physical dice is just moving with the times.
 ## Task
 
 Create a program that will simulate a single dice being thrown, and then ask a player to guess its value.
-A message will thn be displayed depending if the guess was too high, too low, or correct.
+A message will then be displayed depending if the guess was too high, too low, or correct.
 The value the computer threw will then be shown, so there's no cheating!
 
 
