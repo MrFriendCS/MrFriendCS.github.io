@@ -29,7 +29,7 @@ Sample data stored in each table is shown below.
 | 23       | 122      | Thirsty Hippos         | hippos_pmckay.jpg |
 | 24       | 122      | Glenrothes Irises      | irises_mharris.jpg |
 | 31       | 123      | Newark Castle at Night | newark_at_night.png |
-| 32       | 122      | Pond at Riverside Park | riverside_park_pong.jpg |
+| 32       | 122      | Pond at Riverside Park | riverside_park_pond.jpg |
 
 
 ## Tasks
