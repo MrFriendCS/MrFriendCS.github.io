@@ -1,4 +1,4 @@
-# N5 DDD Entity and ERD Design
+# N5 DDD Query Design
 
 
 ## Introduction
@@ -9,7 +9,7 @@ The entity has the 8 attributes listed below.
 ![Customer Entity](../N5-DDD-Clydeview/assets/Diagrams/Entity-Customer.png)
 
 Before queries are written, they are designed by stating the fields and tables that will be used, plus the search citeria and the display order.
-This layout is useful designing a `SELECT` query:
+This layout is useful for designing a `SELECT` query:
 
 ![Query design](../N5-DDD-Clydeview/assets/Diagrams/Query.png)
 
