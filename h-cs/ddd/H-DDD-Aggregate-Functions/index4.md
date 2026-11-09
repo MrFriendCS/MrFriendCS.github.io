@@ -25,12 +25,19 @@ An example of the expected output is shown below.
 
 {:start="2"}
 2.  List the name of each customer together with the largest and the average number of products ordered by the shop (round the average to 1 decimal place).
+
 3.  List the name of each customer and the number of orders that the shop has placed.
+
 The shop with the largest number of orders should be listed first; shops with the same number of orders should be listed alphabetically.
+
 4.  List each order number together with the number of different products ordered in each order.
-5.  List the name of each supplier together with the total value of the products that they supply.  These details should be listed from smallest to largest value.
+
+5.  List the name of each supplier together with the total value of the products that they supply.
+These details should be listed from smallest to largest value.
+
 6.  List the name of each product that has been ordered with the combined total quantity of the product that has been ordered.
 The products should be listed from largest combined total to smallest; products with the same combined total should be listed alphabetically by product name.
+
 7.  List the name of each customer and the total number of bears that have been ordered by the shop.
 The shop that has ordered the smallest number of bears should be listed first.
 An example of the expected output is shown below.
