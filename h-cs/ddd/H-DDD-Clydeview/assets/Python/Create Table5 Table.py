@@ -3,8 +3,8 @@
 # Date: 17 Nov 2025
 
 # Files
-fileIn = open("../CSV/Table5.csv", "r")
-fileOut = open("../SQL/Table5.sql", "w")
+fileIn = open("../CSV/Table5.csv", "r", encoding="utf-8")
+fileOut = open("../SQL/Table5.sql", "w", encoding="utf-8")
 
 
 # Create table
@@ -12,8 +12,8 @@ fileOut = open("../SQL/Table5.sql", "w")
 table = """CREATE TABLE Table5 (
     productName VARCHAR(20) NOT NULL,
     productID VARCHAR(50) NOT NULL,
-    pricePounds FLOAT NOT NULL
-        CHECK(pricePounds >= 0.00),
+    priceUK FLOAT NOT NULL
+        CHECK(priceUK >= 0.00),
     PRIMARY KEY (productID)
 );"""
 
@@ -33,7 +33,7 @@ while line != "":
     
     fileOut.write("(\""   + data[0].strip() + "\",")  # productName
     fileOut.write( "\"" + data[1].strip() + "\",")  # productID
-    fileOut.write(        data[2].strip() + ");\n")  # pricePounds
+    fileOut.write(        data[2].strip() + ");\n")  # priceUK
 
     line = fileIn.readline()
     
