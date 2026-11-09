@@ -16,7 +16,7 @@ This layout is useful for designing a `SELECT` query:
 
 ## Tasks
 
-Design queries to perform each of the following tasks.
+Design `SELECT` queries to perform each of the following tasks.
 
 1.  Search the database to display the full name (forename and surname) of the customer with the surname "Rice".
 
