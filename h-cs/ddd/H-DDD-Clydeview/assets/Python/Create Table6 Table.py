@@ -13,8 +13,8 @@ table = """CREATE TABLE Table6 (
     fishType VARCHAR(12) NOT NULL,
     pricePerKilo FLOAT NOT NULL
         CHECK(pricePerKilo >= 0.00),
-    numberOfKilos FLOAT NOT NULL
-        CHECK(numberOfKilos >= 0.0),
+    kilosSold FLOAT NOT NULL
+        CHECK(kilosSold >= 0.0),
     PRIMARY KEY (fishType)
 );"""
 
@@ -34,7 +34,7 @@ while line != "":
     
     fileOut.write("(\"" + data[0].strip() + "\",")  # fishType
     fileOut.write(        data[1].strip() + ",")  # pricePerKilo
-    fileOut.write(        data[2].strip() + ");\n")  # numberOfKilos
+    fileOut.write(        data[2].strip() + ");\n")  # kilosSold
 
     line = fileIn.readline()
     

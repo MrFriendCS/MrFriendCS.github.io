@@ -2,8 +2,8 @@ CREATE TABLE Table6 (
     fishType VARCHAR(12) NOT NULL,
     pricePerKilo FLOAT NOT NULL
         CHECK(pricePerKilo >= 0.00),
-    numberOfKilos FLOAT NOT NULL
-        CHECK(numberOfKilos >= 0.0),
+    kilosSold FLOAT NOT NULL
+        CHECK(kilosSold >= 0.0),
     PRIMARY KEY (fishType)
 );
 
