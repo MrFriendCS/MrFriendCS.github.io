@@ -12,7 +12,7 @@ File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 | variety     |     | Text   | 20   | Y     | |
 | code        |     | Text   | 3    | Y     | |
 | referenceID | PK  | Text   | 3    | Y     | |
-| unit        |     | Number |      | Y     | Range: >=0 |
+| quantity    |     | Number |      | Y     | Range: >=0 |
 | price       |     | Number |      | Y     | Range: >=0.00 |
 | height      |     | Text   | 1    | Y     | Restricted choice: S, M, T |
 
