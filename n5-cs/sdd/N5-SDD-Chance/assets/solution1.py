@@ -1,13 +1,13 @@
 # Title: N5 SDD Dice
 # Author: Mr Friend
-# Date: 3 Nov 2025
+# Date: 11 Nov 2026
 
 # Get extra code
 import random
 
 # Initialise variables
-dice = 0
-guess = 0
+dice: int = 0
+guess: int = 0
 
 # Header
 print("Guess the Dice Value")
