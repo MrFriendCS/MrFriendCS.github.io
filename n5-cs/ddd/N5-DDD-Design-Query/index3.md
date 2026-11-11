@@ -1,4 +1,4 @@
-# N5 DDD Query Design - Equi-join
+# N5 - DDD Query Design - Equi-join
 
 
 ## Introduction

@@ -1,4 +1,4 @@
-# N5 DDD Query Design
+# N5 DDD - Query Design
 
 
 ## Introduction
