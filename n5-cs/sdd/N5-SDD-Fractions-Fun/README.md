@@ -2,11 +2,23 @@
 
 ## Task
 
-Write a short program that will add two fractions together.  There is no need to simplify the result.
+Write a short program that will add two fractions together.
 
 Ensure equivalent fractions are shown.
 
 *Tip:* Just use smile and a kiss
+
+
+## Design
+
+1. Initialise variables
+2. Assign first fraction numerator and denominator to variables
+3. Assign second fraction numerator and denominator to variables
+4. Calculate common denominator
+5. Calculate first equivalent numerator
+6. Calculate second equivalent numerator
+7. Calcualte final numrator
+8. Display initial fractions, equivalent fractions, and final fraction
 
 
 ### Example User Interface
@@ -21,6 +33,13 @@ Fractions Fun!
 ```
 
 *Note* Depending on the fractions used, the results might not line up nicely.  This is not an issue.
+
+
+## Assumptions
+
+1. The fractions are 
+2. A denominator will never be zero.
+3. There is no need to simplify the result.
 
 
 ## Testing
