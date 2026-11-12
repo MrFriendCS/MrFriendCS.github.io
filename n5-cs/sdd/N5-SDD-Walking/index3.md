@@ -43,7 +43,7 @@ Average: 10.0 units per week
 
 ## Efficiency
 
-Use an efficient coding construct to reduce the lines of code written.
+Use efficient coding constructs to reduce the lines of code written.
 
 
 ## Readability
