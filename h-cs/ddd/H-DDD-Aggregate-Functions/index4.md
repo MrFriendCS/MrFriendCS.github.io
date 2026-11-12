@@ -30,6 +30,7 @@ An example of the expected output is shown below.
 
 The shop with the largest number of orders should be listed first; shops with the same number of orders should be listed alphabetically.
 
+{:start="4"}
 4.  List each order number together with the number of different products ordered in each order.
 
 5.  List the name of each supplier together with the total value of the products that they supply.

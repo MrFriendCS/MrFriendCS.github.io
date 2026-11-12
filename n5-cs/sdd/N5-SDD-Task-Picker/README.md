@@ -3,7 +3,8 @@
 
 ## Introduction
 
-Very few people enjoy doing chores.  There are different ways of organising them: a rota, leave them until someone buckles, lucky dip, ...
+Very few people enjoy doing chores.
+There are different ways of organising them: a rota, leave them until someone buckles, lucky dip, ...
 
 
 ## Task
@@ -14,6 +15,7 @@ The names and the tasks are your choice, but there must be at least:
 
 * 4 different names
 * 6 different tasks
+
 
 ### Top level design (Flowchart)
 
