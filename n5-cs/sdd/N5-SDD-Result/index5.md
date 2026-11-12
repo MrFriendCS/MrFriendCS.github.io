@@ -1,8 +1,10 @@
-# Test Result v4
+# Test Result Part 4
+
 
 ## Introduction
 
-A user wants an automatic grading system that will classify a test score using the table below.  Only scores from ***0*** to ***100*** are acceptable.
+A user wants an automatic grading system that will classify a test score using the table below.
+Only scores from ***0*** to ***100*** are acceptable.
 
 | Mark    | Grade |
 | ----    | :---: |
@@ -31,6 +33,7 @@ The grades are to be stored so they can be used later.
 
 ### Example user interface
 
+
 #### Input
 
 ```
@@ -42,6 +45,7 @@ Mark 3: 85
 Mark 4: 20
 Mark 5: 55
 ```
+
 
 #### Output
 
