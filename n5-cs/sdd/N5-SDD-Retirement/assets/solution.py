@@ -1,11 +1,11 @@
 # Title: N5 SDD Retirement
 # Author: Mr Friend
-# Date: 22 Aug 2023
+# Date: 12 Nov 2026
 
 # Declare variables
-name = ""
-age = 0
-yearsLeft = 0
+name: str = ""
+age: int = 0
+yearsLeft: int = 0
 
 # Display Header
 print("Retirement Calculator")

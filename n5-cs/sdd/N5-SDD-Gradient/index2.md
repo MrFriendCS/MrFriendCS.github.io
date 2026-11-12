@@ -3,7 +3,8 @@
 
 ## Task
 
-Calculate the gradient of a slope when the user enters values for the **rise** and the **run**.  Round the result to 2 decimal places.
+Calculate the gradient of a slope when the user enters values for the **rise** and the **run**.
+Round the result to 2 decimal places.
 
 
 ### Top level design (Structure diagram)
@@ -27,17 +28,22 @@ Gradient Calculator
            .       |
        .           | Rise
    .               |
-******************_|
+-------------------|
        Run
 
 
 What is the rise? 2.5
-What is the run? 10
+What is the run? 15
 
            Rise   2.5
 Gradient = ---- = ----
-           Run    10.0
+           Run    15.0
 
-Gradient = 0.25
-===================
+Gradient = 0.17
+===============
 ```
+
+
+## Assumptions
+
+1. The `run` will never be zero.

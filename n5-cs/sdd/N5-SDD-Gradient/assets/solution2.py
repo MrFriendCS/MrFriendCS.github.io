@@ -1,11 +1,11 @@
 # Title: N5 Gradient Calculator Part 2
 # Author: Mr Friend
-# Date: 31 Oct 2025
+# Date: 12 Nov 2026
 
 # Initialise variables
-rise = 0.0
-run = 0.0
-gradient = 0.0
+rise: float = 0.0
+run: float = 0.0
+gradient: float = 0.0
 
 # Display header
 print("Gradient Calculator")
