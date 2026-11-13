@@ -15,8 +15,8 @@ table = """CREATE TABLE Owner (
     surname VARCHAR(20) NOT NULL,
     address VARCHAR(40) NOT NULL,
     town VARCHAR(20) NOT NULL,
-    contactTele VARCHAR(11) NOT NULL 
-        CHECK (LENGTH(contactTele) = 11),
+    telephone VARCHAR(11) NOT NULL 
+        CHECK (LENGTH(telephone) = 11),
     PRIMARY KEY (ownerID)
 );"""
 
@@ -39,7 +39,7 @@ while line != "":
     fileOut.write( "\"" + data[2].strip() + "\",")  # surname
     fileOut.write( "\"" + data[3].strip() + "\",")  # address
     fileOut.write( "\"" + data[4].strip() + "\",")  # town
-    fileOut.write( "\"" + data[5].strip() + "\");\n")  # contactTele
+    fileOut.write( "\"" + data[5].strip() + "\");\n")  # telephone
 
     line = fileIn.readline()
     

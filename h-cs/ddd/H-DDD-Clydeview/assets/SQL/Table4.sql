@@ -1,10 +1,10 @@
 CREATE TABLE Table4 (
     productID INT NOT NULL,
     productName VARCHAR(12) NOT NULL,
-    buyingPrice(p) INT NOT NULL
-        CHECK(buyingPrice(p) >= 0),
-    sellingPrice(p) INT NOT NULL
-        CHECK(sellingPrice(p) >= 0),
+    buyPricePence INT NOT NULL
+        CHECK(buyPricePence >= 0),
+    sellPricePence INT NOT NULL
+        CHECK(sellPricePence >= 0),
     PRIMARY KEY (productID)
 );
 

@@ -1,6 +1,6 @@
 # Title: N5 SDD Menu Options (Group Task)
 # Author: Mr Friend
-# Date 7 Sep 2026
+# Date 12 Nov 2026
 
 # Import module
 import random
@@ -75,7 +75,7 @@ elif option == 2:
     result = value1 / value2
 
     # Round result
-    result = round(answer, dp)
+    result = round(result, dp)
 
     # Display answer
     print("\n\t" + str(value1) + " / " + str(value2) + " = " + str(result) + " (" + str(dp) + " dp)")
@@ -121,7 +121,7 @@ elif option == 5:
     value2 = int(input("Enter maximum value: "))
     
     # Check maximum is bigger than the minimum
-    whicl value2 < value1:
+    while value2 < value1:
         
         # Error message
         print("\nThe maximum must be more than the minimum.")

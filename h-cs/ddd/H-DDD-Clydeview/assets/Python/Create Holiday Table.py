@@ -18,7 +18,7 @@ table = """CREATE TABLE Holiday (
     hotelRef VARCHAR(4),
     FOREIGN KEY (hotelRef)
         REFERENCES Hotel(hotelRef),
-    PRIMARY KEY (title)
+    PRIMARY KEY (name)
 );"""
 
 fileOut.write(table + "\n\n")

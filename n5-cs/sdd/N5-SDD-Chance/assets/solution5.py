@@ -6,17 +6,14 @@
 import random
 
 # Initialise variables
-compValue = 0
-guess = 0
-found = False
-life = 3
-go = 1
+compValue: int = 0
+guess: int = 0
+found: bool = False
+life: int = 3
+go: int = 1
 
 # Pick random number
 compValue = random.randint(1, 10)
-
-# NOTE: Only used for testing
-compValue = 5
 
 # Display header
 print("Number Guess")

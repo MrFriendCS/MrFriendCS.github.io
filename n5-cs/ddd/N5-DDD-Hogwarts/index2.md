@@ -44,15 +44,15 @@ Database file: [Hogwarts.db](assets/Hogwarts.db "Download file")
 
 4. Write a statement to show all the pupil records, sorted by surname and then forename, both alphabetically.
 
-5. Show name and `id` of all pupils, sorted by age, oldest to youngest, and then surname alphbetically.
+5. Show name and `id` of all pupils, sorted by age, oldest to youngest, and then surname alphabetically.
 
-6. Display the name and year of all S5 and S6 pupils sorted by year, lowest first, and then surname and forename alphbetically.
+6. Display the name and year of all S5 and S6 pupils sorted by year, lowest first, and then surname and forename alphabetically.
 
 7. Write the SQL to show the  `colour`, `emblem`, and name of all of the houses.
-Sort the data by colour aplabetically.
+Sort the data by colour alphabetically.
 
 8. Show the full name and `house` for pupils in S5.
 
-9. Write a SQL statment to show the names and house for pupils younger than 13.
+9. Write a SQL statement to show the names and house for pupils younger than 13.
 
 10. Display the forename and `house` of pupils who are 14.

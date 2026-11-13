@@ -30,28 +30,30 @@ SELECT firstName, lastName, guidanceTeacher
 SELECT firstName, lastName, year
     FROM House, Pupil
     WHERE House.id = Pupil.houseID
-      AND name = "Slytherin";
+      AND name = "Slytherin"
+    ORDER BY year DESC;
 
 -- or
 
 SELECT firstName, lastName, year
     FROM Pupil
-    WHERE houseID = 4;
+    WHERE houseID = 4
+    ORDER BY year DESC;
 
 
 -- Task 6 - 
 SELECT *
     FROM House, Pupil
     WHERE House.id = Pupil.houseID
-      AND firstName = "James"
-      AND lastName = "Friend";
+      AND firstName = "John"
+      AND lastName = "Smith";
 
 
 -- Task 7 - 
 SELECT *
     FROM House, Pupil
     WHERE House.id = Pupil.houseID
-      AND lastName = "Friend"
+      AND lastName = "Smith"
       AND emblem = "Eagle";
 
 
@@ -75,6 +77,7 @@ SELECT firstName, lastName, year, guidanceTeacher
     FROM House, Pupil
     WHERE House.id = Pupil.houseID
     ORDER BY year DESC,
+             firstName ASC
              lastName ASC;
 
 

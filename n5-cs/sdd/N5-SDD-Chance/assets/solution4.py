@@ -1,6 +1,6 @@
-# Title: N5 SDD Number Game
+# Title: N5 SDD - Chance Part 4
 # Author: Mr Friend
-# Date: 11 Oct 2023
+# Date: 12 Nov 2026
 
 """Using program analysis."""
 
@@ -8,8 +8,8 @@
 import random
 
 # Declare variables
-compNum = 0
-childNum = 0
+compNum: int = 0
+childNum: int = 0
 
 # Pick random number: 1 - 9
 compNum = random.randint(1, 9)
@@ -31,14 +31,14 @@ if childNum == compNum + 1:
 # Is answer too big?
 elif childNum > compNum + 1:
     print("Too big!")
-    print(str(num1 + 1) + " is one bigger than " + str(num1))
+    print(str(childNum + 1) + " is one bigger than " + str(childNum))
 
 # Is answer too small?
 elif childNum < compNum:
     print("Too small!")
-    print(str(num1 + 1) + " is one bigger than " + str(num1))
+    print(str(childNum + 1) + " is one bigger than " + str(childNum))
 
 # Is answer same as number?
 else:
     print("That's the same!")
-    print(str(num1 + 1) + " is one bigger than " + str(num1))
+    print(str(childNum + 1) + " is one bigger than " + str(childNum))

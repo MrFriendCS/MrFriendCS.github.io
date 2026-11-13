@@ -11,7 +11,7 @@ def reverse(text):
     """Returns the characters in reverse order."""
     
     # Initialise local variable
-    output = ""
+    output: str = ""
     
     # Loop for each characters
     for letter in text:
@@ -30,9 +30,9 @@ def makeUsername(name):
     import random
     
     # Initialise local variables
-    substring = ""
-    ascii = 0
-    username = "es"
+    substring: str = ""
+    ascii: int = 0
+    username: str = "es"
     
     # Check if name is valid
     if len(name) > 2:

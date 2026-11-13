@@ -1,4 +1,4 @@
-# H DDD Aggregate Functions Part 4
+# H DDD Double Query Part 4
 
 File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 
@@ -18,11 +18,9 @@ Aliases should be used to display meaningful headings.
 1.  Display the name, destination, country and distance from the airport of the hotel that is furthest from the airport.
 
 2.  Display the name and star rating of any hotel with a rating that is poorer than the average star rating of all the holidays that have the word `Break` or `Package` in their title.
-
 The hotel with the highest star rating should be listed first; hotels with the same star rating should be listed in alphabetical order of hotel name.
 
 3.  Display the name, city and price per night of any hotel which is dearer that the dearest hotel in Edinburgh.
-
 List the hotel details with the dearest hotel first; hotels with the same price should be listed in alphabetical order of city.
 
 4.  Display the number of hotels that have the same star rating as the `Der Wald` hotel.

@@ -7,7 +7,7 @@ CREATE TABLE Holiday (
     hotelRef VARCHAR(4),
     FOREIGN KEY (hotelRef)
         REFERENCES Hotel(hotelRef),
-    PRIMARY KEY (title)
+    PRIMARY KEY (name)
 );
 
 INSERT INTO Holiday VALUES ("Barcelona Pricebuster","Catalonia","Spain","2024-07-12",3,"H102");

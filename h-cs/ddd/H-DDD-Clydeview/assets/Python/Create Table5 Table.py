@@ -12,8 +12,8 @@ fileOut = open("../SQL/Table5.sql", "w", encoding="utf-8")
 table = """CREATE TABLE Table5 (
     productName VARCHAR(20) NOT NULL,
     productID VARCHAR(50) NOT NULL,
-    priceUK FLOAT NOT NULL
-        CHECK(priceUK >= 0.00),
+    priceUKpounds FLOAT NOT NULL
+        CHECK(priceUKpounds >= 0.00),
     PRIMARY KEY (productID)
 );"""
 
@@ -33,7 +33,7 @@ while line != "":
     
     fileOut.write("(\""   + data[0].strip() + "\",")  # productName
     fileOut.write( "\"" + data[1].strip() + "\",")  # productID
-    fileOut.write(        data[2].strip() + ");\n")  # priceUK
+    fileOut.write(        data[2].strip() + ");\n")  # priceUKpounds
 
     line = fileIn.readline()
     

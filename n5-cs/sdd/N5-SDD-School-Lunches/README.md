@@ -9,7 +9,6 @@ Using Python, create a program that implements the pseudocode below.
 # Calculate the cost of 5 lunches
 
 # Declarations for the program
-DECLARE day INITIALLY 0
 DECLARE lunch INITIALLY 0.0
 DECLARE total INITIALLY 0.0
 DECLARE costs INITIALLY [0.0, 0.0, 0.0, 0.0, 0.0]
@@ -39,11 +38,11 @@ Example below.
 School Lunches
 --------------
 
-Enter to cost of lunch 1: £2.60
-Enter to cost of lunch 2: £2.40
-Enter to cost of lunch 3: £3.00
-Enter to cost of lunch 4: £1.44
-Enter to cost of lunch 5: £2.50
+Enter to cost of day 1: £2.60
+Enter to cost of day 2: £2.40
+Enter to cost of day 3: £3.00
+Enter to cost of day 4: £1.44
+Enter to cost of day 5: £2.50
 
 The total cost is: £11.94
 ```

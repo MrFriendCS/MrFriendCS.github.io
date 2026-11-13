@@ -3,14 +3,14 @@
 # Date 25 Aug 2025
 
 # Declare global variables and arrays
-names = [""] * 11
-weights = [0] * 11
-prices = [0.0] * 11
-newPrices = [0.0] * 11
-line = ""
-data = [""] * 3
-firstLetter = ""
-ascii = 0
+names: list[str] = ["" for _ in range(11)]
+weights: list[int] = [0 for _ in range(11)]
+prices: list[float] = [0.0 for _ in range(11)]
+newPrices: list[float] = [0.0 for _ in range(11)]
+line: str = ""
+data: list[str] = ["" for _ in range(3)]
+firstLetter: str = ""
+ascii: int = 0
 
 # Open connection to file
 file = open("tuckshop.csv", "r", encoding="UTF-8")

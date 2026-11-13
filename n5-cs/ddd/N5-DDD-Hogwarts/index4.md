@@ -50,7 +50,7 @@ age: 11
 ```
 
 {:start="3"}
-3. Add a another new pupil.  The details are:
+3. Add another new pupil.  The details are:
 
 ```
 id: 302

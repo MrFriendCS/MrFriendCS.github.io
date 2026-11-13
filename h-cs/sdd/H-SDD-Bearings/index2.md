@@ -1,4 +1,4 @@
-# H SDD - Ball Bearings v2
+# H SDD - Ball Bearings Part 2
 
 After the successful delivery of the software solution Sea Software Ltd has been rehired by Barra Ball Bearing Ltd to make some changes to the software.
 

@@ -3,13 +3,13 @@
 # Date: 23 Aug 2023
 
 # Declare variables and array
-items = 0
-cost = 0.0
-net = 0.0
-gross = 0.0
-netTotal = 0.0
-grossTotal= 0.0
-costs = [0.0] * 5
+items: int = 0
+cost: float = 0.0
+net: float = 0.0
+gross: float = 0.0
+netTotal: float = 0.0
+grossTotal: float = 0.0
+costs: list[float] = [0.0 for _ in range(5)]
 
 # Get number of ingredients
 count = int(input("How many ingredients? "))
@@ -17,7 +17,7 @@ count = int(input("How many ingredients? "))
 # Ensure number is valid
 while count < 3 or count > 5:
     print("Invalid.  Only 3, 4, or 5 ingredients allowed")
-    count = float(input("How many ingredients? "))
+    count = int(input("How many ingredients? "))
 
 print("\nNet")
 print("-------------")
@@ -30,7 +30,7 @@ for index in range(count):
     # Ensure net cost is valid
     while cost <= 0 or cost >= 10:
         print("Invalid.  Must be less than £10")
-        cost = int(input("Item " + str(index +1) + ": "))
+        cost = float(input("Cost " + str(index +1) + ": "))
         
     # Store net cost
     costs[index] = cost
