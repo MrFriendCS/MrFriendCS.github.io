@@ -1,38 +1,27 @@
 /*
--- Don't touch lines 1 to 5
-.open ComputerSales.db
-.headers ON
-.mode column
--- Don't touch lines 1 to 5
+Title: H DDD Computer Sales
+Author: Mr Friend
+Date: 14 Nov 2026
 */
 
 
 -- Q1
-SELECT locality AS Location
+SELECT locality
     FROM employee
-    ORDER BY locality;
+    GROUP BY locality;
 
 
 -- Q2
-SELECT locality AS Location
-    FROM employee
-    ORDER BY locality;
+SELECT manufacturer.name,
+       model.name
+    FROM model,
+         manufacturer
+    WHERE model.manufacturerID = manufacturer.manufacturerID
+    ORDER BY manufacturer.name ASC,
+             model.name DESC;
+
 
 -- Q3
-SELECT model.name, manufacturer.name
-    FROM model, manufacturer
-    WHERE model.manufacturer_id = manufacturer.manufacturer_id
-    ORDER BY manufacturer.name ASC, model.name DESC;
-
-
--- Q4
-SELECT mo.name AS Model, ma.name AS Manufacturer
-    FROM model AS mo, manufacturer AS ma
-    WHERE mo.manufacturer_id = ma.manufacturer_id
-    ORDER BY ma.name ASC, mo.name DESC;
-
-
--- Q5
 SELECT COUNT(*)
     FROM sales;
 
@@ -51,20 +40,24 @@ SELECT COUNT(*)
 
 
 -- Q8
-SELECT MIN(price) AS Minimum, ROUND(AVG(price), 2) AS Average, MAX(price) AS Maximum
+SELECT MIN(price) AS Minimum,
+       ROUND(AVG(price), 2) AS Average,
+       MAX(price) AS Maximum
     FROM sales;
 
 
 -- Q9
-SELECT name, cpu_speed AS "Speed (GHz)", ram
+SELECT name,
+       cpuSpeed AS "Speed (GHz)",
+       ram
     FROM model
     WHERE name LIKE "%Pi%";
 
 
 -- Q10
-SELECT COUNT(sale_id)
+SELECT COUNT(saleID)
     FROM sales
-    WHERE sale_date >= "2019-07-01";
+    WHERE saleDate >= "2019-07-01";
 
 
 -- Q11
@@ -75,27 +68,26 @@ SELECT SUM(price)
 -- Q12
 SELECT SUM(price)
     FROM sales
-    WHERE sale_date >= "2019-06-01"
-      AND sale_date <= "2019-06-30";
+    WHERE saleDate >= "2019-06-01"
+      AND saleDate <= "2019-06-30";
 
 
 -- Q13
 SELECT SUM(price) * 0.2
     FROM sales
-    WHERE sale_date >= "2019-01-01"
-      AND sale_date <= "2019-12-31";
+    WHERE saleDate >= "2019-01-01"
+      AND saleDate <= "2019-12-31";
 
 
 -- Q14
-SELECT sale_date, COUNT(sale_date)
+SELECT saleDate, COUNT(saleDate)
     FROM sales
-    WHERE sale_date >= "2019-06-01"
-	  AND sale_date <= "2019-06-30"
-    ORDER BY sale_date;
+    WHERE saleDate >= "2019-06-01"
+      AND saleDate <= "2019-06-30"
+    ORDER BY saleDate;
 
 
 -- Q15
 SELECT SUM(price)
     FROM sales, returns
-    WHERE sales.sale_id = returns.sale_id;
-
+    WHERE sales.saleDate = returns.saleDate;

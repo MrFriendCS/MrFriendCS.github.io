@@ -1,4 +1,4 @@
-model_id,manufacturer_id,name,cpu_speed,ram,cores,wifi,release_date
+modelID,manufacturerID,name,cpuSpeed,ram,cores,wifi,releaseDate
 1,1,Raspberry Pi 1 Model A,0.7,256.0,1,0,2013-02-01
 2,1,Raspberry Pi 1 Model B 256MB,0.7,256.0,1,0,2012-04-01
 3,1,Raspberry Pi 1 Model B 512MB,0.7,512.0,1,0,2012-10-01
