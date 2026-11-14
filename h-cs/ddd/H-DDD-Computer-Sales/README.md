@@ -4,45 +4,33 @@ Use appropriate aliases.
 
 ## Tasks
 
-1. Display the locality of the employees without any duplication.
+1. Display the towns where the employees live, without any duplication.
 
 2. Create a query that returns the names of the manufacturers and the computer models.
 Sort the results alphabetically for manufacturers and in reverse for the models.
 
 3. Display the number of sales.
 
-9. Create a query to return the highest sale.
+4. Display the value of the highest sale.
 
-10.  Create a query to count the Number of sales that are equal to the highest sale.
+5. Create a query to return the minimum, average, and maximum prices of all sales.
 
-11. Create a query to return the minimum, average, and maximum prices of all sales.
+6. Create a query that returns the name, CPU speed (GHz), and RAM of all the different computer models.
 
-12. Modify the query to round the average value to 2 decimal places.
+7. Modify the query to return only the computers with 'Pi' in their names.
 
-13. Modify the query and give each of the returned columns an appropriate name.
+8. Create a query that calculates the value of all the sales in 2019.
 
-14. Create a query that returns the name, CPU speed, and RAM of all the different computer
-models.
+9. Create a query to calculate the VAT due to be paid to HMRC on all the sales in 2019.
+VAT is 1/5 (a fifth) of the sale price.
 
-15. Rename the CPU speed column as 'Speed (GHz)'.
+10. Count the number of sales in the last six months of 2019.
 
-16. Modify the query to return only the computers with 'Pi' in their names.
+11. Calculate the average value of all the sales June 2019.
 
-17. Create a query that counts the sales in the last six months of 2019.
+12. Create a query to display the number of sales per day in June 2019, in date order.
 
-18. Create a query that calculates the value of all the sales in 2019.
-Use an appropriate alias.
-
-19. Using the last query, calculate the value of all the sales June 2019.
-Use an appropriate alias.
-
-20. Create a query to calculate the VAT due to be paid to HMRC on all the sales in 2019.
-VAT is 1/6 (a sixth) of the sale price. The calculation will need to use a decimal, not a percentage.
-
-21. Create a query to display the Number of sales per day in June 2019, in date order.
-
-22. Calculate the value of all the returns in 2019.
-
+13.  Create a query to count the number of sales that are equal to the highest priced sale.
 
 ## Data Dictionary
 
