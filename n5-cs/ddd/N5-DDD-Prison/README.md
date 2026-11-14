@@ -12,7 +12,7 @@ File: [Prison.db](assets/Prison.db "Download file")
 | prisonID   | PK    | Number  |       | Y     | |
 | surname    |       | Text    | 30    | Y     | Length >= 3 |
 | forename   |       | Text    | 20    | Y     | Length >= 3 |
-| hair       |       | Text    | 6     | N     | Restricted choice: Auburn, Black, Blond, Brown, Grey, None, Red, White |
+| hair       |       | Text    | 6     | N     | Restricted choice: Black, Blond, Brown, Grey, None, Red, White |
 | eyes       |       | Text    | 5     | N     | Restricted choice: Amber, Black, Blue, Brown, Green, Hazel, Grey |
 | height     |       | Number  |       | Y     | Range: >= 1.3 and <= 2.5 |
 | conviction |       | Text    | 20    | Y     | |       
@@ -43,7 +43,7 @@ SELECT
 ```
 
 {:start="5"}	 
-5. Add a query to show prison ID, conviction, and date of birth for all prisoner born on or after 1st Jan 2000.
+5. Add a query to show prison ID, conviction, and date of birth for all prisoners born on or after 1st Jan 2000.
 
 6. Display the eye colour and date of birth for every prisoner convicted of cyberbullying.
 
@@ -57,13 +57,15 @@ SELECT
 ```
 
 {:start="8"}
-8. Display the eyes, hair, and prison IDs for all prisoner with either black eyes or black hair.
+8. Display the eyes, hair, and prison IDs for all prisoners with either black eyes or black hair.
 
-9. Display the eyes, hair, and  prison IDs for all prisoner with either black eyes and black hair.
+9. Display the eyes, hair, and  prison IDs for all prisoners with black eyes and black hair.
 
-10. Find all MacNeils who are not in an open prison. Display their forename, conviction, and date of birth.
+10. Find all MacNeils who are not in an open prison.
+Display their forename, conviction, and date of birth.
     
-11. Find all redheads convited of assault.  Display their names and eye colour.
+11. Find all redheads convicted of assault.
+Display their names and eye colour.
 
 12. Show the dates of birth and prison IDs of all prisoners born in 1999.
 

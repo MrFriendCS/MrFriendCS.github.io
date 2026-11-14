@@ -42,7 +42,7 @@ SELECT eyes, dob
 SELECT *
     FROM Prisoner
     WHERE conviction = "Kidnapping"
-      AND open = TRUE;
+      AND openPrison = TRUE;
 
 
 -- Task 8 -- Filter: Complex
@@ -63,7 +63,7 @@ SELECT eyes, hair, prisonID
 SELECT forename, conviction, dob
     FROM Prisoner
     WHERE surname = "MacNeil"
-      AND open = FALSE;
+      AND openPrison = FALSE;
 
 
 -- Task 11 -- Filter: Complex
