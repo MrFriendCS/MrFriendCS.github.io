@@ -35,16 +35,16 @@ while weeks < 2:
 # Loop for each week
 for counter in range(weeks):
     
-    # Get distance
+    # Get distance from user
     distance = float(input("Week " + str(counter+1) + " distance: "))
     
-    # Validate number of weeks
+    # Validate distance
     while distance < 0:
     
         # Error message
-        print("NDistance must be 0 or more.")
+        print("Distance must be 0 or more.")
         
-        # Get number of weeks from user
+        # Get distance from user
         distance = float(input("Week " + str(counter+1) + " distance: "))
         print()
     
