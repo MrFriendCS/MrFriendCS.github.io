@@ -2,7 +2,8 @@
 
 ## Task
 
-Write a short program that will ask the user for two values, first name and last name, and then produce an output using those values.
+Write a short program that will ask the user for three values, first name, last name, and age.
+An output using these values will be produced.
 
 
 ### Example User Interface
