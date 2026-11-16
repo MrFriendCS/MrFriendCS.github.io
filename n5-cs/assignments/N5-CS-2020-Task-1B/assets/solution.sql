@@ -13,7 +13,8 @@ CREATE TABLE newCustomer(
     forename VARCHAR(40) NOT NULL,
     surname VARCHAR(50) NOT NULL,
     address VARCHAR(100),
-    telephoneNumber VARCHAR(11) CHECK(LENGTH(telephoneNumber) = 11),
+    telephoneNo VARCHAR(11)
+        CHECK (LENGTH(telephoneNumber) = 11),
     PRIMARY KEY (customerID)
 );
 
@@ -42,13 +43,17 @@ PRAGMA foreign_keys = on;
 CREATE TABLE newFlowerOrder(
     orderID VARCHAR(10) NOT NULL,
     dateDue DATE NOT NULL,
-    price REAL NOT NULL CHECK(price >= 5.00 AND price <= 50.00),
-    flowerType VARCHAR(8) NOT NULL CHECK(flowerType IN ("rose", "lily", "tulip", "daffodil")),
-    bunchSize VARCHAR(6) NOT NULL CHECK(bunchSize IN ("small", "medium", "large")),
+    price REAL NOT NULL
+        CHECK (price >= 5.00 AND price <= 50.00),
+    flowerType VARCHAR(8) NOT NULL
+        CHECK (flowerType IN ("rose", "lily", "tulip", "daffodil")),
+    bunchSize VARCHAR(6) NOT NULL
+        CHECK (bunchSize IN ("small", "medium", "large")),
     chocolates BOOL NOT NULL,
     message VARCHAR(200),
     customerID INT NOT NULL,
-    FOREIGN KEY (customerID) REFERENCES Customer(customerID),
+    FOREIGN KEY (customerID)
+        REFERENCES Customer(customerID),
     PRIMARY KEY (orderID)
 );
 

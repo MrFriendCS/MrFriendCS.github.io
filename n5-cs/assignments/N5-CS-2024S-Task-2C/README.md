@@ -25,12 +25,12 @@
 | Attribute    | Key   | Type   | Size  | Req'd | Validation |
 | ---------    | :---: | ----   | :---: | :---: | ---------- |
 | registration | PK    | number |       | Y     | Range: >= 100000 and <= 999999 |
-| clubName     | FK    | text   | 12    | Y     | Existing clubName from Club table |
+| clubName     | FK    | text   | 20    | Y     | Existing clubName from Club table |
 | forename     |       | text   | 20    | Y     | |
 | surname      |       | text   | 30    | Y     | |
 | mobileNo     |       | text   | 12    | Y     | length = 12 |
 | dateOfBirth  |       | date   |       | Y     | |
-| position     |       | text   | 10    | Y     | Restricted choice: Striker, Midefielder, Defender, Goalkeeper |
+| position     |       | text   | 10    | Y     | Restricted choice: Striker, Midfielder, Defender, Goalkeeper |
 | shirtNumber  |       | number |       | Y     | Range: >= 1 and <= 25 |
 
 

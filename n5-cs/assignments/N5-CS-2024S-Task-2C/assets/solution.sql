@@ -14,21 +14,20 @@ SELECT sql
 -- Create temporary table
 CREATE TABLE newPlayer(
     registration INT NOT NULL
-        CHECK(registration >= 100000
-          AND registration <= 999999),
+        CHECK (registration >= 100000
+           AND registration <= 999999),
     clubName VARCHAR(20) NOT NULL,
     forename VARCHAR(20) NOT NULL,
     surname VARCHAR(30) NOT NULL,
     mobileNo VARCHAR(12) NOT NULL 
-        CHECK(LENGTH(mobileNo) = 12),
+        CHECK (LENGTH(mobileNo) = 12),
     dateOfBirth DATE NOT NULL,
     position VARCHAR(10) NOT NULL 
-        CHECK(position IN ("Striker", 
-            "Midfielder", "Defender", 
-            "Goalkeeper")),
+        CHECK (position IN ("Striker", "Midfielder",
+                            "Defender", "Goalkeeper")),
     shirtNumber INT NOT NULL 
-        CHECK(shirtNumber >= 1 
-          AND shirtNumber <= 25),
+        CHECK (shirtNumber >= 1 
+           AND shirtNumber <= 25),
     FOREIGN KEY (clubName)
         REFERENCES Club(clubName),
     PRIMARY KEY (registration)
@@ -69,7 +68,7 @@ SELECT * from Player
 
 
 --Q2d(ii) - Goalkeeping coaching day
-SELECT Club.clubName, forename, surname
+SELECT Club.clubName, forename, surname, mobileNo
     FROM Club, Player
     WHERE Club.clubName = Player.clubName
         AND league = 1
