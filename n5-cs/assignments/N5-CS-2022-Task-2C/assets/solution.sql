@@ -8,6 +8,7 @@ UPDATE property
     SET askingPrice = 112000
     WHERE propertyRef = "DUN-101";
 
+
 -- Q2c(i)  - Evidence
 SELECT * FROM property
     WHERE propertyRef = "DUN-101";
@@ -16,6 +17,7 @@ SELECT * FROM property
 -- Q2c(ii) - Add seller
 INSERT INTO seller
     VALUES ("Eve Grace", "128 Cameron Drive Edinburgh EH4 5DS", 1502, "EveGrace@yehoo.net", "0131 279100");
+
 
 -- Q2c(ii) - Evidence
 SELECT *

@@ -48,7 +48,7 @@ Implement **one** SQL statement that will make the required changes to Noreen’
 
 (**3 marks**)
 
-Print evidence of the SQL statement and the ‘Player’ table, clearly showing the change you have implemented.
+Print evidence of the SQL statement and the 'Player' table, clearly showing the change you have implemented.
 
 
 ***(ii)*** The Association would like to invite suitable players to a goalkeeper coaching day.
