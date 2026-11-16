@@ -46,7 +46,6 @@ Test Result
 Score: 101
 
 Only scores from 0 to 100 can be used.
-
 Score: 1
 
 Result: Fail
