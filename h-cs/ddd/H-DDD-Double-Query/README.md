@@ -22,7 +22,7 @@ Aliases should be used to display meaningful headings.
     | China   | Beijing | 1210004956 |
 
 
-2.  Display details the name, country and population of any city that has a population which is at least 5,000,000 more than the average population of all the cities.
+2.  Display the name, country and population of any city that has a population which is at least 5,000,000 more than the average population of all the cities.
 
     | City     | Country        | population |
     | ----     | -------        | ---------- |
