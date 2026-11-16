@@ -26,19 +26,56 @@ An example of the expected output is shown below.
 {:start="2"}
 2.  List the name of each customer together with the largest and the average number of products ordered by the shop (round the average to 1 decimal place).
 
-3.  List the name of each customer and the number of orders that the shop has placed.
+    | Customer Name | Largest Order | Average Order |
+    | ------------- | ------------- | ------------- |
+    | Fun4All       | 100           | 55.0 |
+    | The Toy Store | 10            | 8.0 |
+    | Village Toys  | 250           | 190.0 |
 
+{:start="3"}
+3.  List the name of each customer and the number of orders that the shop has placed.
 The shop with the largest number of orders should be listed first; shops with the same number of orders should be listed alphabetically.
+
+    | Customer Name | Number of Orders |
+    | ------------- | ---------------- |
+    | Fun4All | 2 |
+    | Village Toys | 2 |
+    | The Toy Store | 1 |
 
 {:start="4"}
 4.  List each order number together with the number of different products ordered in each order.
 
+    | orderNumber | Number of Products |
+    | ----------- | ------------------ |
+    | 20005       | 2 |
+    | 20006       | 3 |
+    | 20007       | 5 |
+    | 20008       | 5 |
+    | 20009       | 3 |
+
+{:start="5"}
 5.  List the name of each supplier together with the total value of the products that they supply.
 These details should be listed from smallest to largest value.
 
+    | Supplier Name | Total Value |
+    | ------------- | ----------- |
+    | Bears R Us    | 26.97 |
+    | Fun and Games | 18.98 |
+    | Dolls House   | 18.46 |
+
+{:start="6"}
 6.  List the name of each product that has been ordered with the combined total quantity of the product that has been ordered.
 The products should be listed from largest combined total to smallest; products with the same combined total should be listed alphabetically by product name.
 
+    | Product Name        | Quantity |
+    | ------------        | -------- |
+    | Bird bean bag toy   | 360 |
+    | Fish bean bag toy   | 360 |
+    | Rabbit bean bag toy | 360 |
+    | 18 inch teddy bear  | 165 |
+    | 8 inch teddy bear   | 120 |
+
+{:start="7"}
 7.  List the name of each customer and the total number of bears that have been ordered by the shop.
 The shop that has ordered the smallest number of bears should be listed first.
 An example of the expected output is shown below.
