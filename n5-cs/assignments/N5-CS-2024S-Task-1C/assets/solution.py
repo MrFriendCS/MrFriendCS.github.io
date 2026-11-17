@@ -1,22 +1,23 @@
 # Title: N5 CS Specimen Task 1C
 # Author: Mr Friend
-# Date: 5 Sep 2023
+# Date: 17 Nov 2026
 
 # Declare variables
-word = ""
-length = 0
-average = 0.0
-noOfWords = 0
-totalLetters = 0
+word: str = ""
+length: int = 0
+average: float = 0.0
+noOfWords: int = 0
+totalLetters: int = 0
 
 # Declare array
-words = [""] * 20
+words: list[str] = ["" for index in range(20)]
 
 # Get sentance length
 noOfWords = int(input("How many words? "))
 
 # Ensure valid number of words
 while noOfWords < 1 or noOfWords > 20:
+    
     print("Enter a number from 1 to 20")
     noOfWords = int(input("How many words? "))
 
@@ -46,8 +47,13 @@ print("The average word length is: " + str(average))
 
 # Display message about average length
 if average < 5:
+    
     print("Short words - suitable for junior readers")
+    
 elif average >= 5 and average <= 7:
+    
     print("Medium words - suitable for teen readers")
+    
 else:
+    
     print("Long words - suitable for senior readers")

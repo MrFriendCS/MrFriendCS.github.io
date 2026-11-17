@@ -6,13 +6,13 @@
 import random
 
 # 1 initialise variables
-total = 0
-songCounter = 0
-durationSession = 0
-durationSong = 0
-songs = []
-counter = 0
-foamMachine = 0
+total: int = 0
+songCounter: int = 0
+durationSession: int = 0
+durationSong: int = 0
+songs: list[int] = []
+counter: int = 0
+foamMachine: int = 0
 
 # 2 get valid training session duration
 
@@ -23,7 +23,7 @@ durationSession = int(input("Duration of training session: "))
 while durationSession < 10 or durationSession > 30:
 
     # 2.3 display error message to enter valid number
-    print("Error: Duration must be between 10 and 30 inclusive")
+    print("\nError: Duration must be between 10 and 30 inclusive")
 
     # 2.4 ask user to re-enter duration of training session
     durationSession = int(input("Duration of training session: "))
@@ -46,7 +46,7 @@ songCounter = 0
 while total < durationSession:
 
     # 4.3 get and store duration of next song in seconds
-    durationSong = int(input("Song " + str(counter + 1) + ": "))
+    durationSong = int(input("Song " + str(songCounter + 1) + ": "))
     songs = songs + [durationSong]
 
     # 4.4 total = total + duration of next song
@@ -56,7 +56,7 @@ while total < durationSession:
     if total >= durationSession:
 
         # 4.6 display message to inform user that they have entered enough songs
-        print("Enough songs have now been entered.")
+        print("\nEnough songs have now been entered.")
 
     # 4.7 end if
 
@@ -73,7 +73,7 @@ counter = 1
 
 
 # 5.2  display message stating the number of songs played + songCounter
-print("The number of songs played was " + str(songCounter) + ".")
+print("\nThe number of songs played was " + str(songCounter) + ".\n")
 
 # 5.3  foamMachine = random number between 1 and songCounter
 foamMachine = random.randint(1, songCounter)
@@ -88,7 +88,7 @@ for index in range(len(songs)):
     if foamMachine == counter:
 
         # 5.7 display message to start foam machine
-        print("Start foam machine")
+        print("\nStart foam machine\n")
 
     # 5.8 end if
 
@@ -99,4 +99,4 @@ for index in range(len(songs)):
 
 
 # 5.11 display total with message
-print("The total length of the training session was " + str(total) + ".")
+print("\nThe total length of the training session was " + str(total) + ".")
