@@ -6,7 +6,6 @@ File: [WhitestarAmps.db](assets/WhitestarAmps.db "Download file")
 
 ## Data dictionary
 
-[Vlogger database](assets/dd.png)
 
 ### Entity name: Employee
 
