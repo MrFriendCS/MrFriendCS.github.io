@@ -41,7 +41,8 @@ The program will output a summary of the user’s fruit choice, including the my
 ![Flowchart 2](assets/fc2.png)
 
 
-**1c** Using the program design, complete the expected output in the test table below. Use mango as the mystery fruit.   (***2 marks***)
+**1c** Using the program design, complete the expected output in the test table below.
+Use mango as the mystery fruit.   (***2 marks***)
 
 ![Test table](assets/tt.png)
 

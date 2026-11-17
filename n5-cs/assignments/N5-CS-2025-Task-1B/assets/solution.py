@@ -6,10 +6,10 @@
 import random
 
 #Initialise variables
-fruit = ""
-counter = 0
-decision = "yes"
-randomNumber = 0
+fruit: str = ""
+counter: int = 0
+decision: str = "yes"
+randomNumber: int = 0
 
 # initialise a data structure and store the mystery fruits
 mysteryFruits = ["apple", "banana", "blueberry", "kiwi",
@@ -17,7 +17,7 @@ mysteryFruits = ["apple", "banana", "blueberry", "kiwi",
                  "raspberry", "strawberry"]
 
 # initialise a data structure to store the user's fruit selections
-userFruits = [""] * 6
+userFruits: list[str] = ["" for index in range(6)]
 
 
 # Get and store valid fruit selection
@@ -55,8 +55,8 @@ for index in range(counter):
     
     print("\t" + userFruits[index])
     
-# Display the mystery fruits is
-print("\nThe mystery fruits is: \n")
+# Display the mystery fruit is
+print("\nThe mystery fruit is: \n")
 
 # Display the randomly slected mystery fruit
 print("\t" + mysteryFruits[randomNumber])
