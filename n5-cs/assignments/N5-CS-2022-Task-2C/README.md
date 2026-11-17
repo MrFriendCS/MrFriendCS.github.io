@@ -8,9 +8,11 @@ File: [AuctionDatabase.db](assets/AuctionDatabase.db "Download file")
 
 ScotAuction sells property in Aberdeen, Dundee, Edinburgh, Glasgow, Inverness, Perth and Stirling.
 
-To register a property for sale, ScotAuction requests the following details from sellers: name, email address, telephone number and home address. ScotAuction gives each seller a unique ID and will contact the seller if an offer is made.
+To register a property for sale, ScotAuction requests the following details from sellers: name, email address, telephone number and home address.
+ScotAuction gives each seller a unique ID and will contact the seller if an offer is made.
 
-Every property registered for sale must have the following information recorded: house number, street, city, postcode, asking price and estimated property value. ScotAuction generates a unique reference code for all properties. Sellers should also state the number of bedrooms in the property.
+Every property registered for sale must have the following information recorded: house number, street, city, postcode, asking price and estimated property value.
+ScotAuction generates a unique reference code for all properties. Sellers should also state the number of bedrooms in the property.
 
 A seller can have multiple properties for sale.
 

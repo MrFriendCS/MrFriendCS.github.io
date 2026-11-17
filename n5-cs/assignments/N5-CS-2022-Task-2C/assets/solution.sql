@@ -16,7 +16,7 @@ SELECT * FROM property
 
 -- Q2c(ii) - Add seller
 INSERT INTO seller
-    VALUES ("Eve Grace", "128 Cameron Drive Edinburgh EH4 5DS", 1502, "EveGrace@yehoo.net", "0131 279100");
+    VALUES (1502, "Eve Grace", "128 Cameron Drive Edinburgh EH4 5DS", "EveGrace@yehoo.net", "0131 279100");
 
 
 -- Q2c(ii) - Evidence
@@ -26,8 +26,11 @@ SELECT *
 
 
 -- Q2c(iii) - Workshop  
-SELECT email, telephoneNumber, postcode
-    FROM seller, property
+SELECT email,
+       telephoneNumber,
+       postcode
+    FROM seller,
+         property
     WHERE seller.sellerID = property.sellerID
-        AND numberOfBedrooms = 3
-        AND askingPrice < 150000;
+      AND numberOfBedrooms = 3
+      AND askingPrice < 150000;
