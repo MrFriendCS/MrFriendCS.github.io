@@ -14,7 +14,7 @@ CREATE TABLE newCustomer(
     surname VARCHAR(50) NOT NULL,
     address VARCHAR(100),
     telephoneNo VARCHAR(11)
-        CHECK (LENGTH(telephoneNumber) = 11),
+        CHECK (LENGTH(telephoneNo) = 11),
     PRIMARY KEY (customerID)
 );
 
