@@ -34,7 +34,7 @@ The hotel with the highest star rating should be listed first; hotels with the s
     | Lado Colina    | 2 |
     | Napolean Ville | 2 |
 
-3.  Display the name, city and price per night of any hotel which is dearer that the dearest hotel in Edinburgh.
+3.  Display the name, city and price per night of any hotel which is dearer than the dearest hotel in Edinburgh.
 List the hotel details with the dearest hotel first; hotels with the same price should be listed in alphabetical order of city.
 
     | name                          | city      | pricePerNight |
@@ -52,7 +52,7 @@ List the hotel details with the dearest hotel first; hotels with the same price 
     | 14 |
 
 
-5.  Display the name and distance from the airport of any hotel in Lisbon that is closer to the airport than the average distance from the airport of all the hotels in Spain.
+5.  Display the name and distance from the airport of any hotel in Lisbon that is closer to the airport than the average distance from the airport of all the hotels in Barcelona and Madrid.
 
     | name    | kmFromAirport |
     | ----    | ------------- |

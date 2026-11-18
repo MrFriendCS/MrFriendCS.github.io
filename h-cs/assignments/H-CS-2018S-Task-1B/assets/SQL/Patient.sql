@@ -50,7 +50,7 @@ INSERT INTO Patient VALUES (38,'Jessica','Cooper','1991-07-05','19 Braid Road  M
 INSERT INTO Patient VALUES (39,'Peter','Sorenson','1966-03-24','65 Comiston Drive  Morningside  Edinburgh','0131 417 2256');
 INSERT INTO Patient VALUES (40,'Katrina','Young','1963-12-22','6a Maxwell Street  Edin','0131 410 2266');
 INSERT INTO Patient VALUES (41,'Rozalyn','Kerr','1961-12-29','17 Eden Lane  Edinburgh  EH10 6FG','0131 224 3511');
-INSERT INTO Patient VALUES (42,'Michael','O'Leary','1985-03-03','92 Hermitage Drive  Edin  EH10','07791 444123');
+INSERT INTO Patient VALUES (42,'Michael','Leary','1985-03-03','92 Hermitage Drive  Edin  EH10','07791 444123');
 INSERT INTO Patient VALUES (43,'Charlie','Taylor','1948-01-30','1 Morningside Place  Edinburgh  EH10 5RD','0131 412 8249');
 INSERT INTO Patient VALUES (44,'Lorraine','McFarlane','1950-06-01','16 Nile Grove  Edinbrugh  EH10 7KC','0131 412 7733');
 INSERT INTO Patient VALUES (45,'Martha','Humpheries','1956-11-23','17 Cluny Drive  Morningside  Edin','0131 412 6511');
@@ -104,11 +104,11 @@ INSERT INTO Patient VALUES (92,'Sereena','Hilton','1985-07-04','91 Craiglea Driv
 INSERT INTO Patient VALUES (93,'Bridget','McTear','1978-04-17','104 Morningside Drive  Edinburgh','0131 412 1872');
 INSERT INTO Patient VALUES (94,'Callum','Patterson','1967-10-20','52 Braid Crescent  Morningside  Edinburgh  EH10 2 AQ','0131 442 1562');
 INSERT INTO Patient VALUES (95,'Sandy','McPherson','1958-06-03','4 Dalhousie Terrace  Morningside  Edinburgh  EH10 2ST','0131 412 1002');
-INSERT INTO Patient VALUES (96,'Brian','O'leary','1956-04-10','15 Comiston Road  Morningside  Edinburgh','0131 412 1106');
+INSERT INTO Patient VALUES (96,'Brian','leary','1956-04-10','15 Comiston Road  Morningside  Edinburgh','0131 412 1106');
 INSERT INTO Patient VALUES (97,'John','Martyn','1968-12-31','74 Plewlands Avenue  Morningside  Edinburgh','07796 533812');
 INSERT INTO Patient VALUES (98,'Piet','Rostov','1977-12-17','18 Plewlands Avenue  Morningside  Edin','0131 412 6225');
-INSERT INTO Patient VALUES (99,'Tristian','O'Reilly','1986-03-26','9 St. Finnians Terrace  Morningside  Edinburgh  EH10 2BF','0131 412 7222');
-INSERT INTO Patient VALUES (100,'Rory','O'Sullivan','1984-09-04','53 Comiston Drive  Edinburgh','0131 412 1123');
+INSERT INTO Patient VALUES (99,'Tristian','Reilly','1986-03-26','9 St. Finnians Terrace  Morningside  Edinburgh  EH10 2BF','0131 412 7222');
+INSERT INTO Patient VALUES (100,'Rory','Sullivan','1984-09-04','53 Comiston Drive  Edinburgh','0131 412 1123');
 INSERT INTO Patient VALUES (101,'Martin','Brown','1981-12-28','1 Balcarres Street  Morningside  Edinburgh  EH10 5 DF','0131 412 6722');
 INSERT INTO Patient VALUES (102,'Alice','Jennings','1989-09-14','14 Ethel Terrace  Morningside  Edinburgh','0131 412 6114');
 INSERT INTO Patient VALUES (103,'Eleanor','Riggs','1997-07-07','6 Greenbank Road  Edin','0131 412 1117');
