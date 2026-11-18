@@ -18,16 +18,16 @@ Aliases should be used to display meaningful headings.
 
 1.  Display the name, destination, country and distance from the airport of the hotel that is furthest from the airport.
 
-    | name | destination | country | kmFromAirport
-    | 
-    | Hotel Vicori | Lazio | Italy | 34.5
+    | name         | destination | country | kmFromAirport |
+    | ----         | ----------- | ------- | ------------- |
+    | Hotel Vicori | Lazio       | Italy   | 34.5 |
 
 
 2.  Display the name and star rating of any hotel with a rating that is poorer than the average star rating of all the holidays that have the word `Break` or `Package` in their title.
 The hotel with the highest star rating should be listed first; hotels with the same star rating should be listed in alphabetical order of hotel name.
 
     | name           | starRating |
-    | ----           | ----------|
+    | ----           | ---------- |
     | Avanti         | 2 |
     | Catalonia Inn  | 2 |
     | Eastern Hotel  | 2 |
