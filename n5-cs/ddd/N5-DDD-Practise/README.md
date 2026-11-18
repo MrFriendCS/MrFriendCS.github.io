@@ -1,7 +1,9 @@
 # N5 DDD Practise
 
 
-File: [Practise.db](assets/Practise.db "Download file")
+Database file: [Practise.db](assets/Practise.db "Download file")
+
+DB Browser Settings: [DB4S-Settings.ini](assets/DB4S-Settings.ini "Download file")
 
 
 ## Data Dictionary
