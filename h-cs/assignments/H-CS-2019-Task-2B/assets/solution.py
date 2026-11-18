@@ -18,8 +18,9 @@ def getData() -> list[Member]:
     """Read members’ data from file into array of records."""
 
     # Initialise local variable and arrays
-    data = [""] * 3
-    membersArray = [Member() for iindex in range(20)]
+    line: str = ""
+    data: list = ["" for index in range(3)]
+    membersArray: list[Member] = [Member() for iindex in range(20)]
     
     # 1.1 Open members.txt file
     file = open("members.txt", "r", encoding="UTF-8")
@@ -51,13 +52,13 @@ def findFurthest(membersData: list[Member]) -> float:
     """Find the furthest distance walked."""
 
     # Initialise local variable
-    furthestWalked = 0.0
+    furthestWalked: float = 0.0
 
     # 2.1 Set furthest to distance stored for first member in members() array
     furthestWalked = membersData[0].distance
     
     # 2.2 Start fixed loop from second member to end of array
-    for index in range(1, len(members)):
+    for index in range(1, len(membersData)):
 
         # 2.3 If distance the current member walked is greater than furthest Then
         if membersData[index].distance > furthestWalked:
@@ -84,7 +85,7 @@ def writePrizeWinnersFile(membersArray: list[Member],
     """Write club prize winners to file."""
     
     # Initialise local variable
-    wholeMarathons = 0
+    wholeMarathons: int = 0
     
     # 4.1 Open results.txt file
     file = open("results.txt", "w", encoding="UTF-8")
@@ -133,8 +134,8 @@ def writePrizeWinnersFile(membersArray: list[Member],
 #
 
 # Initialise global variables and arrays
-furthest = 0.0
-members = [Member() for i in range(20)]
+furthest: float = 0.0
+members: list[Member] = [Member() for i in range(20)]
 
 # 1. Read members' data into an array of records
 members = getData()

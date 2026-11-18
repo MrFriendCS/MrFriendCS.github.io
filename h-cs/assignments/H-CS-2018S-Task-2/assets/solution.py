@@ -36,6 +36,9 @@ def getBeachData() -> list[BeachData]:
         # Add a record to array
         beaches[index].name = data[0].strip()
         beaches[index].rating = int(data[1].strip())
+    
+    # Close connection to file
+    file.close()
 
     return beaches
 

@@ -2,20 +2,17 @@
 # Author: Mr Friend
 # Date: 3 Feb 2024
 
-#
-# Sub-programs
-#
 
 def getData() -> tuple[list[str], list[int], list[int]]:
     """Read data and return parallel arrays."""
 
     # Initialise local variables
-    names = [""] * 100
-    workers = [0] * 100
-    incomes = [0] * 100
-    data = [""] * 3
-    line = ""
-    index = 0
+    names: list[str] = ["" for index in range(100)]
+    workers: list[int] = [0 for index in range(100)]
+    incomes: list[int] = [0 for index in range(100)]
+    data: list[str] = ["" for index in range(3)]
+    line: str = ""
+    index: int = 0
 
     # Open connection to file
     file = open("companies.csv" ,"r", encoding="UTF-8")
@@ -51,21 +48,21 @@ def findMaxPos(localArray: list[int]) -> int:
     """Returns position of maximum value in an array."""
 
     # Initialise local variables
-    position = 0
-    max = 0
+    position: int = 0
+    maxPos: int = 0
 
     # Set max to first value
-    max = localArray[0]
+    maxPos = localArray[0]
 
     # Loop for each vaue from second value
     for index in range(1, len(localArray)):
 
         # New maximum?
-        if localArray[index] > max:
+        if localArray[index] > maxPos:
 
             # Update values
             position = index
-            max = localArray[index]
+            maxPos = localArray[index]
 
     # Return position of maximum value
     return position
@@ -77,8 +74,9 @@ def findSalaryDiff(names: list[str], incomes: list[int]) -> None:
        """
 
     # Initialise local variables
-    maxPos = 0
-    difference = 0
+    maxPos: int = 0
+    difference: int = 0
+    found: bool = False
 
     # 2.1  Ask user to enter the name of chosen company
     name = input("Which company are you interest in? ")
@@ -115,10 +113,10 @@ def findSalaryDiff(names: list[str], incomes: list[int]) -> None:
         difference = incomes[maxPos] - incomes[foundPos]
         
         # 2.13 Display message containing name of company with highest CEO salary
-        print("Highest salary: " + names[maxPos]  + ", £" + str(incomes[maxPos]))
+        print(names[maxPos]  + " company has the highest paid CEO.")
     
         # 2.14 Display the name of the chosen company, and difference in salaries
-        print("Interested salary: " + names[foundPos]  + ", £" + str(difference) + " less")
+        print("The " + names[foundPos]  + " CEO earns £" + str(difference) + " less than the highest CEO.")
 
     
     # 2.15 Else
@@ -134,7 +132,8 @@ def findTop(workers: list[int]) -> None:
     """Find and display the companies with top 10% of employees."""
 
     # Initialise local variables
-    maxPos = 0
+    maxPos: int = 0
+    count: int = 0
 
     # 3.1  Call findMaxPos function to return position of highest number of employees
     maxPos = findMaxPos(workers)
@@ -156,26 +155,31 @@ def findTop(workers: list[int]) -> None:
     # 3.7  End Loop
 
     # 3.8  Display message showing number of companies that employ within 10% of the highest number of employees
-    print("Count of top 10% of employees: " + str(count))
+    print("\nThe highest number of employees employed by a single company is " + str(workers[maxPos]) + ".")
+    print(str(count) + " companies employ within 10% of " + str(workers[maxPos]) + ".")
 
 
-#
-# Main Program
-#
+def main() -> None:
+    
+    # Initialise global variables
+    companys: list[str] = ["" for index in range(100)]
+    numEmployees: list[int] = [0 for index in range(100)]
+    ceoSalary: list[int] = [0 for index in range(100)]
 
-# Initialise global variables
-companys = [""] * 100
-numEmployees = [0] * 100
-ceoSalary = [0] * 100
+    # 1 Read from file into parallel arrays.
+    # OUT: company(), numEmployees(), ceoSalary()
+    companys, numEmployees, ceoSalary = getData()
 
-# 1 Read from file into parallel arrays.
-# OUT: company(), numEmployees(), ceoSalary()
-companys, numEmployees, ceoSalary = getData()
+    # 2 Find and display the difference between CEO salary.
+    # IN: company(), ceoSalary()
+    findSalaryDiff(companys, ceoSalary)
 
-# 2 Find and display the difference between CEO salary.
-# IN: company(), ceoSalary()
-findSalaryDiff(companys, ceoSalary)
+    # 3 Find and display the companies with top 10% of employees
+    # IN: numEmployees()
+    findTop(numEmployees)
 
-# 3 Find and display the companies with top 10% of employees
-# IN: numEmployees()
-findTop(numEmployees)
+
+if __name__ == "__main__":
+    
+    # Run program
+    main()

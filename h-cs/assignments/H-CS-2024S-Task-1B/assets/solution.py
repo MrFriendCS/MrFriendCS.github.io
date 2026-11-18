@@ -11,14 +11,13 @@ def getData() -> tuple[list[str], list[str], list[str], list[str], list[int]]:
     """1. Get qualifying athletes’ data."""
     
     # Declare local varaibles and arrays
-    length = 30
-    line = ""
-    data = [""] * 5
-    entryID = [""] * length
-    location = [""] * length
-    forename = [""] * length
-    surname = [""] * length
-    jumps = [0] * length
+    line: str = ""
+    data: list[str] = ["" for index in range(5)]
+    entryID: list[str] = ["" for index in range(30)]
+    location: list[str] = ["" for index in range(30)]
+    forename: list[str] = ["" for index in range(30)]
+    surname: list[str] = ["" for index in range(30)]
+    jumps: list[int] = [0 for index in range(30)]
 
     # 1.1 Open athletes.csv file
     file = open("athletes.csv", "r", encoding="UTF-8")
@@ -54,13 +53,13 @@ def createBibValues(entryID: list[str], location: list[str],
     """2. Generate bib values and write to new file with entry IDs."""
 
     # Declare local variable
-    bibValue = ""
+    bibValue: str = ""
     
     # 2.1 Create bibValues.csv file
     file = open("bibValues.csv", "w", encoding="UTF-8")
     
     # 2.2 Loop for thirty athletes
-    for index in range(30):
+    for index in range(len(entryID)):
         
         # 2.3 Set bibValue to first letter of forename & full surname
         #     & ASCII value of first letter of location
@@ -81,14 +80,14 @@ def findMost(jumps: list[int]) -> int:
     """3. Find the highest number of jumping jacks completed."""
 
     # Declare local variable
-    maxJumps = 0
+    maxJumps: int = 0
     
     # 3.1 Set maximum jumps to the value stored in the first
     #     index of the jumps array
     maxJumps = jumps[0]
 
     # 3.2 Start loop from second index to end of array
-    for index in range(1, 30):
+    for index in range(1, len(jumps)):
             
         # 3.3 If the current number of jumps is more than
         #     maximum jumps then
@@ -112,7 +111,7 @@ def dislayBigJumpers(maxJumps: int, forenames: list[str],
        """
     
     # 4.1 Loop for thirty athletes
-    for index in range(30):
+    for index in range(len(forenames)):
         
         # 4.2 If current number of jumps equals maximum jumps then
         if jumps[index] == maxJumps:
@@ -131,14 +130,14 @@ def countLocations(locations: list[str]) -> None:
        """
 
     # Declare local variables
-    coatbridge = 0
-    inverness = 0     
-    kirkcaldy = 0
-    motherwell = 0
-    other = 0
+    coatbridge: int = 0
+    inverness: int = 0     
+    kirkcaldy: int = 0
+    motherwell: int = 0
+    other: int = 0
 
     # Loop for thirty athletes
-    for index in range(30):
+    for index in range(len(locations)):
 
         if locations[index] == "Coatbridge":
             coatbridge = coatbridge + 1
@@ -165,34 +164,35 @@ def countLocations(locations: list[str]) -> None:
     if other != 0:
         print("There are " + str(other) + "other finalists")
 
-        
-#
-# Main Program
-#
 
-# Declare global variables and arrays
+def main() -> None:
+    
+    # Declare global variables and arrays
+    maxJumps: int = 0
+    entryID: list[str] = ["" for index in range(30)]
+    location: list[str] = ["" for index in range(30)]
+    forename: list[str] = ["" for index in range(30)]
+    surname: list[str] = ["" for index in range(30)]
+    jumps: list[int] = [0 for index in range(30)]
 
-length = 30
-maxJumps = 0
-entryID = [""] * length
-location = [""] * length
-forename = [""] * length
-surname = [""] * length
-jumps = [0] * length
+    # 1. Get qualifying athletes’ data
+    entryID, location, forename, surname, jumps =  getData()
 
-# 1. Get qualifying athletes’ data
-entryID, location, forename, surname, jumps =  getData()
+    # 2. Generate bib values and write to new file with entry IDs
+    createBibValues(entryID, location, forename, surname)
 
-# 2. Generate bib values and write to new file with entry IDs
-createBibValues(entryID, location, forename, surname)
+    # 3. Find the highest number of jumping jacks completed
+    maxJumps = findMost(jumps)
 
-# 3. Find the highest number of jumping jacks completed
-maxJumps = findMost(jumps)
+    # 4. Display the full name of the athlete(s) who completed
+    #    the highest number of jumping jacks
+    dislayBigJumpers(maxJumps, forename, surname, jumps)
 
-# 4. Display the full name of the athlete(s) who completed
-#    the highest number of jumping jacks
-dislayBigJumpers(maxJumps, forename, surname, jumps)
+    # 5. Display the total number of athletes from each location
+    #    in the final
+    countLocations(location)
 
-# 5. Display the total number of athletes from each location
-#    in the final
-countLocations(location)
+
+if __name__ == "__main__":
+    
+    main()

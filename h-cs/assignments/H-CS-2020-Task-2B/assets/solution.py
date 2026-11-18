@@ -10,10 +10,10 @@ def newMember() -> tuple[str, str, str, str]:
     """Get new member first name, surname, category and password."""
     
     # Declare local variables
-    newFirstName = ""
-    newSurname = ""
-    newCategory = ""
-    newPassword = ""
+    newFirstName: str = ""
+    newSurname: str = ""
+    newCategory: str = ""
+    newPassword: str = ""
     
     # 1.1 Get first name
     newFirstName = input("Enter the new member's first name: ")
@@ -36,9 +36,9 @@ def getPassword() -> str:
        """
 
     # Declare local variables
-    password = ""
-    firstLetter = False
-    lastLetter = False
+    password: str = ""
+    firstLetter: bool = False
+    lastLetter: bool = False
     
     # 1.4.1 Loop until password is valid
     while (not firstLetter) or (not lastLetter):
@@ -51,12 +51,14 @@ def getPassword() -> str:
             firstLetter = True
         else:
             print("Password must start with a capital letter.")
+            firstLetter = False
         
         # 1.4.4 - Check that the last character is #, $ or %
         if ord(password[-1]) >= 35 and ord(password[-1]) <= 37:
             lastLetter = True
         else:
             print("Password must finish with #, $, or %.")
+            lastLetter = False
         
     # 1.4.5 Return a valid password
     return password
@@ -70,13 +72,13 @@ def getCategory(newFirstName: str, newSurname: str, newCategory: str,
        """
 
     # Declare local variables
-    line = ""
-    counter = 0
-    firstNames = [""] * 50
-    surnames = [""] * 50
-    categories = [""] * 50
-    passwords = [""] * 50
-    data = [""] * 4
+    line: str = ""
+    counter: int = 0
+    firstNames: list[str] = ["" for index in range(50)]
+    surnames: list[str] = ["" for index in range(50)]
+    categories: list[str] = ["" for index in range(50)]
+    passwords: list[str] = ["" for index in range(50)]
+    data: list[str] = ["" for index in range(4)]
 
     # 2.1 Read existing member data from file into four parallel arrays:
     #     firstName(), surname(), category(), password()
@@ -135,11 +137,11 @@ def displayInfo(categories: list[str]) -> None:
     """
 
     # Declare local variables
-    category = ""
-    adult = 0
-    junior = 0
-    senior = 0
-    total = 0
+    category: str = ""
+    adult: int = 0
+    junior: int = 0
+    senior: int = 0
+    total: int = 0
 
     # Loop for length of array
     for index in range(len(categories)):
@@ -168,11 +170,11 @@ def displayInfo(categories: list[str]) -> None:
 ##
 
 # Declare global variables
-firstName = ""
-surname = ""
-category = ""
-password = ""
-categories = [""] * 50
+firstName: str = ""
+surname: str = ""
+category: str = ""
+password: str = ""
+categories: list[str] = ["" for index in range(50)]
 
 # 1. Get new member first name, surname, category and password
 firstName, surname, category, password = newMember()

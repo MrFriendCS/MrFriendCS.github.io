@@ -7,7 +7,7 @@ File: [NorasComics.db](assets/NorasComics.db "Download")
 An entity-relationship diagram for the database was created and is shown below.
 
 
-***2b*** Explain why Nora had to include the ‘ComicCharacter’ entity in the final design.  (**1 mark**)
+***2b*** Explain why Nora had to include the 'ComicCharacter' entity in the final design.  (**1 mark**)
 
 
 ***2c*** Nora would like to work out the average value of all the comics in the collection 

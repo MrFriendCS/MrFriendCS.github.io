@@ -9,9 +9,12 @@ It would like to develop a program to manage the information of existing and new
 
 
 ## Purpose
-When a new member visits the golf club, an administrator enters the member’s first name, surname and category of membership into the program. During this process, the new member enters a password that is stored along with their details. The password is then validated to ensure that it meets password strength requirements.
+When a new member visits the golf club, an administrator enters the member’s first name, surname and category of membership into the program.
+During this process, the new member enters a password that is stored along with their details.
+The password is then validated to ensure that it meets password strength requirements.
 
-The program reads the existing member data from a text file and the new member’s details are added to the existing member details. Details of all members are then displayed.
+The program reads the existing member data from a text file and the new member’s details are added to the existing member details.
+Details of all members are then displayed.
 
 The program can find and display the number of members in each category (junior, adult or senior) and the total number of members.
 
@@ -83,7 +86,8 @@ each category and the total number of members.  IN: category()
 
 The file `members.txt` contains the data for 10 existing members of the club. The maximum number of members is 50.
 
-***2c*** Using the data flow, refinements and the information provided, implement the program in a language of your choice. Your programming language may need you to initialise variables before step 1 of the design.
+***2c*** Using the data flow, refinements and the information provided, implement the program in a language of your choice.
+Your programming language may need you to initialise variables before step 1 of the design.
 
 Your fully completed program should:
 

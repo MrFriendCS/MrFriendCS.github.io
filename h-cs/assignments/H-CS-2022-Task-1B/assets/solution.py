@@ -20,8 +20,9 @@ def getSightings() -> list[Sighting]:
     """Read from text file into sightings array of records."""
     
     # Initialise local variables
-    data = [""] * 4
-    sightingsData = [Sighting() for index in range(200)]
+    line: str = ""
+    data: list[str] = ["" for index in range(4)]
+    sightingsData: list[Sighting] = [Sighting() for index in range(200)]
 
     # Connect to the file
     file = open("mammals.txt", "r", encoding="UTF-8")
@@ -48,9 +49,9 @@ def displayOldest(sightingsData: list[Sighting]) -> None:
     """Find and display the age of the oldest walker in the sightings data."""
     
     # Initialise local variables
-    oldest = 0
+    oldest: int = 0
     
-    # Set furthest to first value
+    # Set oldest to first value
     oldest = sightingsData[0].age
     
     # Loop through all records
@@ -68,8 +69,8 @@ def displaySightings(sightingsData: list[Sighting]) -> None:
        """
     
     # Initialise local variables
-    town = ""
-    mammal = ""
+    town: str = ""
+    mammal: str = ""
 
     # 3.1 Ask user to enter town
     town = input("Which town? ")
@@ -106,7 +107,7 @@ def upperChr(word: str) -> str:
     """Return a string that starts with an upper-case character."""
     
     # Declare local variables
-    firstChar = 0
+    firstChar: int = 0
 
     # Set firstChar to ASCII value of first character in string 
     firstChar = ord(word[0])
@@ -132,8 +133,8 @@ def countSightings(sightingsData: list[Sighting]) -> None:
        """
     
     # Declare local variables
-    dayToCount = ""
-    count = 0
+    dayToCount: str = ""
+    count: int = 0
 
     # 4.1 Set dayToCount to first date in sightings array
     dayToCount = sightingsData[0].date
@@ -170,25 +171,29 @@ def countSightings(sightingsData: list[Sighting]) -> None:
     print(dayToCount + " - " + str(count))
 
 
-#
-## Main Program
-#
+def main() -> None:
+    
+    # Declare global variables
+    sightings = [Sighting() for index in range(200)]
 
-# Declare global variables
-sightings = [Sighting() for index in range(200)]
+    # 1 Read from text file into sightings array
+    #   of records
+    sightings = getSightings()
 
-# 1 Read from text file into sightings array
-#   of records
-sightings = getSightings()
+    # 2 Find and display the age of the
+    #   oldest walker in the sightings data
+    displayOldest(sightings)
 
-# 2 Find and display the age of the
-#   oldest walker in the sightings data
-displayOldest(sightings)
+    # 3 Find and display the dates of sightings
+    #   of a chosen mammal in a particular town
+    displaySightings(sightings)
 
-# 3 Find and display the dates of sightings
-#   of a chosen mammal in a particular town
-displaySightings(sightings)
+    # 4 Count and display the number of sightings 
+    #   for each date in the text file
+    countSightings(sightings)
 
-# 4 Count and display the number of sightings 
-#   for each date in the text file
-countSightings(sightings)
+
+if __name__ == "__main__":
+
+    # Run program
+    main()

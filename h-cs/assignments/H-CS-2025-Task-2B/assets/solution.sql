@@ -3,14 +3,14 @@
 -- Date: 20 Jan 2025
 
 -- 2c
-CREATE TEMP VIEW AvgValuation (avgValuation) AS
-    SELECT AVG(valuation)
+CREATE TEMP VIEW AvgValuation AS
+    SELECT AVG(valuation) AS avgValuation
     FROM Comic;
 
 SELECT comicTitle, issue, publisherName, valuation
     FROM Comic, Publisher, AvgValuation
     WHERE Publisher.publisherID = Comic.publisherID
-      AND valuation > (avgValuation + 300);
+      AND valuation >= (avgValuation + 300);
 
 
 -- 2d

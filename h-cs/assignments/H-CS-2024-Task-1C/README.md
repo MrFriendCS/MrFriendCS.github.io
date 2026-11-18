@@ -6,7 +6,8 @@ File: [companies.csv](assets/companies.csv "Download")
 
 ## Problem description
 
-A research organisation currently gathers and stores data on the salaries paid to the chief executive officers (CEOs) of the top 100 technology companies in the country.  They want a program to help them use this data effectively.
+A research organisation currently gathers and stores data on the salaries paid to the chief executive officers (CEOs) of the top 100 technology companies in the country. 
+They want a program to help them use this data effectively.
 
 
 ## Purpose
@@ -19,7 +20,7 @@ A CSV file (companies.csv) stores the following data about the 100 companies:
 
 This data will be read into parallel arrays.
 
-The program will allow the user to enter the name of a company to find and display the difference between that company’s CEO’s salary and the highest paid CEO of all 100 companies.
+The program will allow the user to enter the name of a company to find and display the difference between that company's CEO's salary and the highest paid CEO of all 100 companies.
 
 The program will also find the highest number of employees employed by a single company, and the number of companies who employ within 10% of that figure. 
 
@@ -50,7 +51,7 @@ A top level design for the main steps of the program (with partial refinements) 
 1 Read from file into parallel arrays.     OUT: company(), numEmployees(), ceoSalary()
 
 2 Find and display the difference between  IN: company(), ceoSalary()
-  the chosen company’s CEO salary and the
+  the chosen company's CEO salary and the
   highest CEO salary.
 
 3 Find and display the highest number of   IN: numEmployees()
@@ -66,13 +67,13 @@ A top level design for the main steps of the program (with partial refinements) 
 2.2   Set found to false
 2.3   Call findMaxPos function to return the position of highest CEO salary
 2.4   Loop for company array
-2.5   If current company is the chosen company
-2.6   Set found to true
-2.7   Set position to current index
-2.8   End if
+2.5       If current company is the chosen company
+2.6           Set found to true
+2.7           Set position to current index
+2.8       End if
 2.9   End loop
 2.10  If chosen company name is in list
-2.11      Subtract and store chosen company’s CEO salary from highest CEO salary
+2.11      Subtract and store chosen company's CEO salary from highest CEO salary
 2.12      Display message containing name of company with highest CEO salary, name
           of chosen company, and difference in salaries
 2.13  Else
@@ -98,8 +99,8 @@ You should:
 
 * use a single function to find and return the position of the highest CEO salary, and the position of highest number of employees
 * use procedures to:
-    * read data from the ‘companies.csv’ file to parallel arrays
-    * find and display the difference between the chosen company’s CEO salary and the highest CEO salary
+    * read data from the ‘companies.csv' file to parallel arrays
+    * find and display the difference between the chosen company's CEO salary and the highest CEO salary
     * find and display the highest number of employees employed by a single company, and the number of companies who employ within 10% of that figure
 * test your program by using the chosen company Goldman
 
