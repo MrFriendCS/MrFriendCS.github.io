@@ -1,0 +1,116 @@
+CREATE TABLE Patient (
+    patientID INT NOT NULL
+        CHECK (patientID >= 1),
+    forename VARCHAR(15) NOT NULL,
+    surname VARCHAR(15) NOT NULL,
+    dateOfBirth DATE NOT NULL,
+    address VARCHAR(30) NOT NULL,
+    contactNo VARCHAR(12) NOT NULL,
+    PRIMARY KEY (patientID)
+);
+
+INSERT INTO Patient VALUES (1,'David','Grey','1987-10-05','12 Hap Lane  Morningside  Edinburgh  EH8 9LK','07524 764532');
+INSERT INTO Patient VALUES (2,'Susan','Lamb','1989-07-13','45 Garage Lane  Edinburgh EH12','0131 9875364');
+INSERT INTO Patient VALUES (3,'Camila','Rodriguez','1951-01-02','16 Stable Lane  Morningside  Edinburgh  EH8 9GB','0131 2228755');
+INSERT INTO Patient VALUES (4,'Rachel','Williams','1964-02-28','1 Nile Grove  Edinburgh  EH9 4DE','07654 987568');
+INSERT INTO Patient VALUES (5,'Antoine','Richard','2001-12-31','33 Woodburn Terrace  Morningside  Edinburgh  EH8 4YT','07009 637449');
+INSERT INTO Patient VALUES (6,'Luke','Walker','1977-03-13','128 Cluny Gardens  Edinburgh  EH9 6GR','07253 761233');
+INSERT INTO Patient VALUES (7,'Jamie','Roberts','1993-09-22','2 Hermitage Gardens  Morningside  Edinburgh  EH8 1GY','0131 0098546');
+INSERT INTO Patient VALUES (8,'Gifty','Adisa','2003-08-01','29 Pentland Drive  Oxgangs  Edinburgh  EH12 8DW','0131 6664998');
+INSERT INTO Patient VALUES (9,'Lewis','Robinson','1945-04-10','100 Camus Avenue  Oxgangs  Edinburgh  EH12 7YY','0131 1278354');
+INSERT INTO Patient VALUES (10,'Rashida','Chipo','1981-11-07','13 OxGangs Avenue  Oxgangs  Edinburgh','07974 353475');
+INSERT INTO Patient VALUES (11,'Morgane','Dubios','1973-06-26','145 Dreghorn Avenue  Oxgangs  EH12 3DE','07864 118253');
+INSERT INTO Patient VALUES (12,'Juliana','Garcia','1968-05-14','9 Charterhall Road  Blackford  Edinburgh  EH13 3SW','07112 835637');
+INSERT INTO Patient VALUES (13,'Ben','Jones','2000-09-18','1 West Savile Terrace  Blackford  Edinburgh','07992 102938');
+INSERT INTO Patient VALUES (14,'Chloe','Taylor','1975-01-23','89 Observatory Road  Blackford  Edin  EH13 9QQ','07935 746019');
+INSERT INTO Patient VALUES (15,'Jess','Wright','1960-02-29','10 Watertown Rd  Blackford  EH13 6KP','0131 0935463');
+INSERT INTO Patient VALUES (16,'Toby','Malone','1970-07-10','1 Falcon Avenue  Edin EH12','0131 427 3567');
+INSERT INTO Patient VALUES (17,'Brenda','McWilliams','1969-03-12','85 Nile Grove  Edin  EH310 8TY','0131 487 1299');
+INSERT INTO Patient VALUES (18,'Terry','Souza','1993-07-31','7 Jordan Lane  Edinburgh','0131 422 7812');
+INSERT INTO Patient VALUES (19,'Lesley','Graham','1985-10-17','65 Newbattle Terrace  Edin  EH10','0131 447 1211');
+INSERT INTO Patient VALUES (20,'Peter','Littlewood','2002-01-19','4B Cluny Gardens  Blackford  Edinburgh','0131 422 5461');
+INSERT INTO Patient VALUES (21,'Dora','Hutton','1975-01-24','6 Whitehouse Loan  Edinburgh  EH10 5YY','0131 343 9854');
+INSERT INTO Patient VALUES (22,'Sylvia','White','2000-06-03','62 Clinton Road  Morningside  Edinburgh  EH10 5FD','0131 447 1256');
+INSERT INTO Patient VALUES (23,'Scott','Kordiak','1994-12-12','88 Greenbank Drive  Edin','0131 447 2811');
+INSERT INTO Patient VALUES (24,'Robbie','Kane','1975-10-13','18 Maxwell Street  Morningside  Edin EH10 5RD','0131 441 5281');
+INSERT INTO Patient VALUES (25,'Jean','Paterson','1975-08-05','15 Craiglea Drive  Edinburgh  EH10 6RT','0131 447 2344');
+INSERT INTO Patient VALUES (26,'Joe','Spiers','1989-04-13','72 Nile Grove  Edin','0131 447 2311');
+INSERT INTO Patient VALUES (27,'Lesley','McWhirter','1997-06-30','6 Morningside Drive  Edinburgh  EH10 6KJ','0131 472 6611');
+INSERT INTO Patient VALUES (28,'Patricia','Davidson','1975-08-05','16 Cluny Avenue  Morningside  Edinburgh  EH10','0131 476 7221');
+INSERT INTO Patient VALUES (29,'Martyn','Cairns','1953-09-09','62 Maxwell Street  Edinburgh','0131 441 6511');
+INSERT INTO Patient VALUES (30,'Chris','Simpson','1954-07-06','61 Morningside Place  Edinburgh  EH10 7GF','0131 441 7111');
+INSERT INTO Patient VALUES (31,'Deborah','Nelken','1956-10-17','71 Balcarres Street  Edinburgh  EH10','0131 441 4229');
+INSERT INTO Patient VALUES (32,'Ray','Burns','1979-06-15','22 Cluny Avenue  Morningside  Edinburgh  EH10 6GF','07751 622672');
+INSERT INTO Patient VALUES (33,'Craig','Selkirk','1981-06-16','52 Braid Avenue  Edinburgh  EH10','07722 887290');
+INSERT INTO Patient VALUES (34,'Antony','Houston','2004-10-15','18 Balcarres Street  Edinburgh  EH10 6GD','07725 522710');
+INSERT INTO Patient VALUES (35,'Tricia','Marlowe','2001-05-30','22 Millar Crescent  Edinburgh  EH10 7DS','0131 455 3399');
+INSERT INTO Patient VALUES (36,'Craig','Harkins','1994-12-26','13 Greenbank Crescent  Edin','0131 441 7498');
+INSERT INTO Patient VALUES (37,'Samantha','Robertson','1994-12-31','68 Cluny Drive  Edinburgh','0131 411 6512');
+INSERT INTO Patient VALUES (38,'Jessica','Cooper','1991-07-05','19 Braid Road  Morningside  Edinburgh','0131 417 8826');
+INSERT INTO Patient VALUES (39,'Peter','Sorenson','1966-03-24','65 Comiston Drive  Morningside  Edinburgh','0131 417 2256');
+INSERT INTO Patient VALUES (40,'Katrina','Young','1963-12-22','6a Maxwell Street  Edin','0131 410 2266');
+INSERT INTO Patient VALUES (41,'Rozalyn','Kerr','1961-12-29','17 Eden Lane  Edinburgh  EH10 6FG','0131 224 3511');
+INSERT INTO Patient VALUES (42,'Michael','O'Leary','1985-03-03','92 Hermitage Drive  Edin  EH10','07791 444123');
+INSERT INTO Patient VALUES (43,'Charlie','Taylor','1948-01-30','1 Morningside Place  Edinburgh  EH10 5RD','0131 412 8249');
+INSERT INTO Patient VALUES (44,'Lorraine','McFarlane','1950-06-01','16 Nile Grove  Edinbrugh  EH10 7KC','0131 412 7733');
+INSERT INTO Patient VALUES (45,'Martha','Humpheries','1956-11-23','17 Cluny Drive  Morningside  Edin','0131 412 6511');
+INSERT INTO Patient VALUES (46,'Jim','White','1976-12-31','81 Balcarres Street  Edinburgh  EH10 9GW','0131 418 6639');
+INSERT INTO Patient VALUES (47,'Phyllis','Regis','1979-04-14','2 Comiston Drive  Edin','07791 565421');
+INSERT INTO Patient VALUES (48,'Rachael','Ferguson','1990-10-17','16 Morningside Grove  Edinburgh  EH10 7FG','07741 722639');
+INSERT INTO Patient VALUES (49,'Kausar','Ali','1990-10-22','15 Hermitage Drive  Edinburgh  EH10 6GQ','0131 416 2512');
+INSERT INTO Patient VALUES (50,'Sue','Lamb','2002-05-27','18 Greenbank Road  Edin','07745 118642');
+INSERT INTO Patient VALUES (51,'Karen','Sinclair','1977-09-12','14 Morningside Park  Edinburgh  EH10 8ER','0131 417 2377');
+INSERT INTO Patient VALUES (52,'Clair','McKenzie','1960-05-20','16 Greenbank Crescent  Morningside  Edinburgh  EH10','0131 422 7624');
+INSERT INTO Patient VALUES (53,'Trevor','McKenzie','1962-11-27','16 Greenbank Crescent  Morningside  Edinburgh  EH10','0131 422 7624');
+INSERT INTO Patient VALUES (54,'Adela','Mansur','1964-07-11','62 Maxwell Street  Edinburgh','07791669014');
+INSERT INTO Patient VALUES (55,'Kristoffer','Anders','1970-01-15','15 Millar Crescent  Edinburgh  EH10 7GH','013 411 6599');
+INSERT INTO Patient VALUES (56,'Christine','McGregor','1987-11-25','62 Braid Avenue  Morningside  Edinburgh  EH10','0131 412 7720');
+INSERT INTO Patient VALUES (57,'Suzanne','Cohen','1989-08-29','2 Greenbank Terrace  Morningside  Edinburgh','0131 412 7936');
+INSERT INTO Patient VALUES (58,'Martyn','Sutherland','1990-10-15','4 Greenbank Road  Morningside  Edin','07791 658711');
+INSERT INTO Patient VALUES (59,'Dmitri','Alexis','1991-11-18','10 Craiglea Drive  Morningside  Edinburgh  EH10 7BK','0131 412 6519');
+INSERT INTO Patient VALUES (60,'Norman','Henderson','1989-01-20','72 Braid Avenue  Morningside  Edinburgh  EH10 7GG','0131 4129350');
+INSERT INTO Patient VALUES (61,'Carol','Smith','1950-11-16','4 Millar Crescent  Morningside  Edinburgh  EH10 7DS','0131 412 5128');
+INSERT INTO Patient VALUES (62,'Teresa','McPhee','1948-08-15','70 Cluny Avenue  Morningside  Edin','07714 528765');
+INSERT INTO Patient VALUES (63,'Morag','Peterson','1949-03-02','61 Comiston Drive  Morningside  Edin','0131 412 7326');
+INSERT INTO Patient VALUES (64,'Derek','Park','1983-03-11','52 Falcon Avenue  Morningside  Edin','0131 412 7992');
+INSERT INTO Patient VALUES (65,'Elizabeth','Arden','1980-05-19','17 Craiglea Drive  Morningside  Edinburgh  EH10 7DL','0131 412 1273');
+INSERT INTO Patient VALUES (66,'Graham','Flynn','1979-07-08','82 Morningside Park  Edinburgh  EH10 7HJ','0131 412 1524');
+INSERT INTO Patient VALUES (67,'Ian','Lee','1981-06-30','106 Cluny Gardens  Morningside  Edinburgh  EH10 6GG','07793 365810');
+INSERT INTO Patient VALUES (68,'Mohammed','Salwar','1983-06-23','93 Comiston Drive  Morningside  Edinburgh  EH10 7AA','0131 412 6119');
+INSERT INTO Patient VALUES (69,'Karinne','Stewart','1972-03-07','4 Nile Grove  Morningside  Edinburgh  EH10 3 DR','0131 412 6310');
+INSERT INTO Patient VALUES (70,'Niomi','Quinn','1955-02-11','78 Braid Farm Road  Morningside  Edinburgh  EH10 8AQ','0131 412 7890');
+INSERT INTO Patient VALUES (71,'William','McCall','1973-01-29','7 Eden Lane  Edinburgh','0131 412 8351');
+INSERT INTO Patient VALUES (72,'Samantha','Oldershaw','1973-02-03','81 Jordan Lane  Morningside  Edinburgh  EH10 2CY','0131 412 1550');
+INSERT INTO Patient VALUES (73,'Jose','Carreras','1953-07-24','4 Craiglea Drive  Morningston  Edinburgh  EH10 2SU','07794 226193');
+INSERT INTO Patient VALUES (74,'Callum','Sinclair','1961-05-19','71 Hermitage Drive  Morningside  Edinbrugh  EH10 7AQ','0131 412 1739');
+INSERT INTO Patient VALUES (75,'Ernest','Callachan','1966-10-12','15 Falcon Court  Edinburgh','0131 412 8811');
+INSERT INTO Patient VALUES (76,'Gillian','Hendry','1969-04-27','32 Falcon Avenue  Morningside  Edinbrugh  EH10 3ED','0131 317 4216');
+INSERT INTO Patient VALUES (77,'Steve','McKenzie','1974-08-26','6 Napier Road  Edinburgh  EH10 2SD','0131 412 5172');
+INSERT INTO Patient VALUES (78,'Carol','Munro','1976-08-22','102 Greenbank Drive  Morningside  Edinburgh  EH10 8JW','0131 412 8222');
+INSERT INTO Patient VALUES (79,'Andre','Pileau','1981-12-06','66 Balcarres Street  Edinburgh  EH10 8SW','0131 412 1184');
+INSERT INTO Patient VALUES (80,'Tommy','McLean','1982-05-18','90 Braid Avenue  Morningside  Edin','0131 412 1100');
+INSERT INTO Patient VALUES (81,'Peter','Chow','1993-11-29','12 Greenbank Loan  Edin','07715226719');
+INSERT INTO Patient VALUES (82,'Victor','Hugo','1968-08-06','98 Millar Crescent  Morningside  Edinburgh','0131 412 6124');
+INSERT INTO Patient VALUES (83,'Hugh','Murphy','1954-01-07','6 Hermitage Gardens  Morningside  Edinburgh  EH10 2TF','0131 4125521');
+INSERT INTO Patient VALUES (84,'Patrice','Roberts','1976-04-04','18 Ethel Terrace  Morningside  Edinburgh  EH10','0131 4122271');
+INSERT INTO Patient VALUES (85,'Sylvia','Plath','1978-12-11','16 Braidburn Terrace  Morningside  Edinburgh  EH10 3CA','0131 412 6234');
+INSERT INTO Patient VALUES (86,'Leo','Shostakovich','1999-10-26','81 Corrennie Gardens  Morningside  Edinburgh  EH10 6VS','07791 152782');
+INSERT INTO Patient VALUES (87,'Michael','MacLaughlin','1972-12-14','25 Maxwell Street  Morningside  Edinburgh  EH10 8HG','0131 413 5227');
+INSERT INTO Patient VALUES (88,'Juliet','Simpson','1974-12-07','14 Braidburn Crescent  Morningside  Edinburgh','07791 145271');
+INSERT INTO Patient VALUES (89,'Karen','White','1977-05-25','72 Braid Avenue  Morningside  Edin','0131 412 5112');
+INSERT INTO Patient VALUES (90,'Fillipo','Perez','1980-09-25','13 Braidburn Terrace  Morningside  Edinburgh  EH10 2SD','0131 412 1814');
+INSERT INTO Patient VALUES (91,'Anna','Davidson','1983-02-14','41 Ethel Terrace  Morningside  Edinburgh  EH10 5FF','07751 152893');
+INSERT INTO Patient VALUES (92,'Sereena','Hilton','1985-07-04','91 Craiglea Drive  Edinburgh  EH10 3SD','0131 412 6723');
+INSERT INTO Patient VALUES (93,'Bridget','McTear','1978-04-17','104 Morningside Drive  Edinburgh','0131 412 1872');
+INSERT INTO Patient VALUES (94,'Callum','Patterson','1967-10-20','52 Braid Crescent  Morningside  Edinburgh  EH10 2 AQ','0131 442 1562');
+INSERT INTO Patient VALUES (95,'Sandy','McPherson','1958-06-03','4 Dalhousie Terrace  Morningside  Edinburgh  EH10 2ST','0131 412 1002');
+INSERT INTO Patient VALUES (96,'Brian','O'leary','1956-04-10','15 Comiston Road  Morningside  Edinburgh','0131 412 1106');
+INSERT INTO Patient VALUES (97,'John','Martyn','1968-12-31','74 Plewlands Avenue  Morningside  Edinburgh','07796 533812');
+INSERT INTO Patient VALUES (98,'Piet','Rostov','1977-12-17','18 Plewlands Avenue  Morningside  Edin','0131 412 6225');
+INSERT INTO Patient VALUES (99,'Tristian','O'Reilly','1986-03-26','9 St. Finnians Terrace  Morningside  Edinburgh  EH10 2BF','0131 412 7222');
+INSERT INTO Patient VALUES (100,'Rory','O'Sullivan','1984-09-04','53 Comiston Drive  Edinburgh','0131 412 1123');
+INSERT INTO Patient VALUES (101,'Martin','Brown','1981-12-28','1 Balcarres Street  Morningside  Edinburgh  EH10 5 DF','0131 412 6722');
+INSERT INTO Patient VALUES (102,'Alice','Jennings','1989-09-14','14 Ethel Terrace  Morningside  Edinburgh','0131 412 6114');
+INSERT INTO Patient VALUES (103,'Eleanor','Riggs','1997-07-07','6 Greenbank Road  Edin','0131 412 1117');
+INSERT INTO Patient VALUES (104,'Sergei','Simonov','1958-05-03','61 Dalhousie Terrace  Edin','07745 639910');
+INSERT INTO Patient VALUES (105,'Greg','Reith','1960-04-30','91 Craiglea Drive  Morningside  Edinburgh  EH10','0131 412 6723');
