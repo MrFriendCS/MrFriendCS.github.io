@@ -20,7 +20,7 @@ def getData() -> list[Member]:
     # Initialise local variable and arrays
     line: str = ""
     data: list = ["" for index in range(3)]
-    membersArray: list[Member] = [Member() for iindex in range(20)]
+    membersArray: list[Member] = [Member() for index in range(20)]
     
     # 1.1 Open members.txt file
     file = open("members.txt", "r", encoding="UTF-8")

@@ -41,7 +41,10 @@ def getSightings() -> list[Sighting]:
         sightingsData[index].mammal = data[1].strip()
         sightingsData[index].date = data[2].strip()
         sightingsData[index].age = int(data[3].strip())
-
+    
+    # Close connection to file
+    file.close()
+    
     return sightingsData
 
 

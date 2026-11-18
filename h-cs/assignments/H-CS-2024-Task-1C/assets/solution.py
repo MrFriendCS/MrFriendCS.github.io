@@ -70,7 +70,7 @@ def findMaxPos(localArray: list[int]) -> int:
 
 def findSalaryDiff(names: list[str], incomes: list[int]) -> None:
     """Find and display the difference between the chosen
-       company’s CEO salary and the highest CEO salary.
+       company's CEO salary and the highest CEO salary.
        """
 
     # Initialise local variables
@@ -79,7 +79,7 @@ def findSalaryDiff(names: list[str], incomes: list[int]) -> None:
     found: bool = False
 
     # 2.1  Ask user to enter the name of chosen company
-    name = input("Which company are you interest in? ")
+    name = input("Which company are you interested in? ")
     
     # 2.2  Set found to false
     found = False
@@ -122,7 +122,7 @@ def findSalaryDiff(names: list[str], incomes: list[int]) -> None:
     # 2.15 Else
     else:
     
-        # 2.16 Display “Company not found”
+        # 2.16 Display Company not found"
         print("Company not found")
     
     # 2.17 End if

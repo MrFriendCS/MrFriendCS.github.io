@@ -104,7 +104,7 @@ def findMost(jumps: list[int]) -> int:
     return maxJumps
 
 
-def dislayBigJumpers(maxJumps: int, forenames: list[str],
+def displayBigJumpers(maxJumps: int, forenames: list[str],
                      surnames: list[str], jumps: list[int]):
     """4. Display the full name of the athlete(s) who completed
        the highest number of jumping jacks.
@@ -162,7 +162,7 @@ def countLocations(locations: list[str]) -> None:
 
     # Not really needed
     if other != 0:
-        print("There are " + str(other) + "other finalists")
+        print("There are " + str(other) + " other finalists")
 
 
 def main() -> None:
@@ -186,7 +186,7 @@ def main() -> None:
 
     # 4. Display the full name of the athlete(s) who completed
     #    the highest number of jumping jacks
-    dislayBigJumpers(maxJumps, forename, surname, jumps)
+    displayBigJumpers(maxJumps, forename, surname, jumps)
 
     # 5. Display the total number of athletes from each location
     #    in the final

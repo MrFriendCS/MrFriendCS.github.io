@@ -37,7 +37,7 @@ Aliases should be used to display meaningful headings.
 The query should show the name of each relevant city, its latitude and country name.
 The city that is furthest north should be listed first.
 
-    | City         | Country  | latitude |
+    | City         | Country  | Latitude |
     | ----         | -------  | -------- |
     | Longyearbyen | Svalbard | 78.13 |
     | Vadsoe       | Norway   | 70.5 |

@@ -122,7 +122,7 @@ def getCategory(newFirstName: str, newSurname: str, newCategory: str,
     counter = counter + 1
     
     # 2.3 Display the first name, surname and category of all members
-    print("Ours members are: ")
+    print("Our members are: ")
     for index in range(counter):
         print(firstNames[index] + " " + surnames[index] + " " + categories[index])
 
