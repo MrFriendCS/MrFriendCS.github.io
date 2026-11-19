@@ -52,3 +52,20 @@ Result: Fail
 
 ============
 ```
+
+
+## Testing
+
+USe the test table below to test the program.
+If errors are found, correct the program and run all the tests again.
+
+    | Test No | Test Data | Test Type   | Expected         | Actual | Comment |
+    | :-----: | :-------: | ---------   | --------         | ------ | ------- |
+    | 1       | 25        | Normal      | "Result: Fail"   |        | |
+    | 2       | 75        | Normal      | "Result: Pass"   |        | |
+    | 3       | 49        | Extreme     | "Result: Fail"   |        | |
+    | 4       | 50        | Extreme     | "Result: Pass"   |        | |
+    | 5       | 0         | Extreme     | "Result: Fail"   |        | |
+    | 6a      | -1        | Exceptional | Error / Re-enter |        | |
+    | 6b      | 101       | Exceptional | Error / Re-enter |        | |
+    | 6c      | 100       | Extreme     | "Result: Pass"   |        | |
