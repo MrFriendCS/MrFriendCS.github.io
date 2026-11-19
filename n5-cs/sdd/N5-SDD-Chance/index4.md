@@ -7,12 +7,12 @@ The local nursery wants to help children practise the concept of plus 1, using t
 The program will pick a random value, 1 to 9, and show it to the child.
 The child is then asked what number is one more than the number shown.
 
-The child could provide an answer that is:
+The child could provide an answer that is classified as:
 
 * correct
+* the same
 * too big
 * too small
-* the same
 
 An appropriate message should be displayed, and the correct answer given if incorrect.
 

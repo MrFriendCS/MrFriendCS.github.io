@@ -48,7 +48,7 @@
 | N5-SDD-Chance Pt 2         | Simulate heads and tails game        | rnd, if2                      | sd |
 | N5-SDD-Result Pt 3         | Convert test score to pass / fail    | iv, if2                       | sd |
 | N5-SDD-Chance Pt 3         | Simulate heads and tails game        | rnd, iv, if4                  | sd |
-| N5-SDD-Chance Pt 4         | Pick a number 1-10                   | rnd, iv, if4                  | sd, needs work |
+| N5-SDD-Chance Pt 4         | Pick a number 1-10                   | rnd, iv, if4                  | sd |
 | N5-SDD-Pontoon Part 1      | Play a single hand of pontoon        | rnd, ip, cl, lo, if2          | pc |
 | N5-SDD-Result Pt 4         | Convert exam mark to grade           | iv, if4                       | sd |
 | N5-SDD-Result Pt 5         | Convert mark to grade and store      | fl, iv, if4, t1d              | sd |
