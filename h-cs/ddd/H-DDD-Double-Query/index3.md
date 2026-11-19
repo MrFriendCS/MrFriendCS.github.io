@@ -71,11 +71,12 @@ List the reference ID, name and quantity of all tall plants that individually ha
     | H64         | Dog Wood | 10       |
 
 
-5.  List the reference ID, name and variety of any other plant that costs the same as the plant with reference ID `S73`.
-List the plants in alphabetical order of name.
+5.  List the reference ID, name and variety of all plants that cost the same as the plant with reference ID S73.
+List the plants in alphabetical order of name; plants with the same name should be listed in order of reference ID.
 
     | referenceID | name     | variety |
     | ----------- | -------- | ------- |
+    | S73         | Magnolia | Soulang |
     | S79         | Magnolia | Paul    |
     | C64         | Wisteria | Wonder  |
 
