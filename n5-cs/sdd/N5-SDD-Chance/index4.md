@@ -47,6 +47,22 @@ An appropriate message should be displayed, and the correct answer given if inco
 ![Structure diagram](assets/sd4.png "Structure diagram")
 
 
+### User Interface
+
+
+```
+Plus 1 Game
+-----------
+
+What is 1 more than 5?
+
+Answer: 6
+
+Correct!
+===========
+```
+
+
 ## Implementation
 
 Implement a solution that matches the design.
@@ -55,7 +71,7 @@ Implement a solution that matches the design.
 ## Testing
 
 Conduct the following tests.
-Temporarily verwrite the random number to test the selction logic.
+Temporarily overwrite the random number to test the selction logic.
 
 
 | Test No | Random Number | User Input | Test Type   | Expected               | Actual | Comment |
@@ -68,4 +84,4 @@ Temporarily verwrite the random number to test the selction logic.
 | 4       | 5             | 6          | Normal      | "Correct!"             |        | |
 | 5       | 5             | 5          | Normal      | "That number is the same.<br>The answer is 6."  | | |
 | 6       | 5             | 7          | Normal      | "That number is too big.<br>The answer is 6."   | | |
-| 7       | 5             | 4          | Normal      | "That number is to0 small.<br>The answer is 6." | | |
+| 7       | 5             | 4          | Normal      | "That number is too small.<br>The answer is 6." | | |
