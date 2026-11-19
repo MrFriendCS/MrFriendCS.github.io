@@ -31,9 +31,9 @@ An appropriate message should be displayed, and the correct answer given if inco
 ### Output
 
 * a message is displayed if the answer is correct
+* a message, including the correct answer, is displayed if the answer is the same
 * a message, including the correct answer, is displayed if the answer is too big
 * a message, including the correct answer, is displayed if the answer is too small
-* a message, including the correct answer, is displayed if the answer is the same
 
 
 ### Assumptions
@@ -56,30 +56,14 @@ The design was implemented, as shown below.
 
 ## Testing
 
-***1*** Produce screen shots to show each of the four possible messages being correctly displayed.  **(2 marks)**
-
-
-## Evaluation
-
-***2*** With reference to the implemented code and any testing you have done, evaluate the program by commenting on the following:
-
-* The readability of the code: **(3 marks)**
-  
-    * Meaningful identifiers
-    * Internal commentary
-    * Whitespace
-
-* Efficient use of programming constructs in the code. **(1 mark)**
-
-* Robustness of the program **(1 mark)**
-
-* The fitness for purpose of the solution **(2 marks)**
-
-
-## Iterative Process
-
-***3*** Improve the code to remove any issues that have been identified.
-
-Print evidence of your program code.
-
-***4*** Repeat the testing and evaluation tasks with reference to your improved code.  **(8 marks)**
+    | Test No | Random Number | User Input | Test Type   | Expected               | Actual | Comment |
+    | :-----: | :-----------: | :--------: | ---------   | --------               | ------ | ------- |
+    | 1       | ?             | 5          | Normal      | An appropriate message |        | |
+    | 2       | ?             | 1          | Extreme     | An appropriate message |        | |
+    | 3a      | ?             | 0          | Exceptional | Error / Re-enter       |        | |
+    | 3b      | ?             | 11         | Exceptional | Error / Re-enter       |        | |
+    | 3c      | ?             | 10         | Extreme     | An appropriate message |        | |
+    | 4       | 5             | 6          | Normal      | "Correct!"             |        | |
+    | 5       | 5             | 5          | Normal      | "That number is the same.<br>The answer is 6."  | | |
+    | 6       | 5             | 7          | Normal      | "That number is too big.<br>The answer is 6."   | | |
+    | 7       | 5             | 4          | Normal      | "That number is to0 small.<br>The answer is 6." | | |
