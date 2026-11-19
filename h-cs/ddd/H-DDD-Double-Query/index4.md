@@ -28,16 +28,16 @@ Only the first five records are shown where more than five records are returned.
     | WALL-E | Andrew Stanton | 8.5    |
 
 
-2.  List the title and duration of all movies not directed by John Lasseter that are longer than the average duration of his movies.
+2.  List the title and duration of all movies that are longer than the average duration of movies directed by John Lasseter.
 The longest movie should be listed first.
 
     | title               | durationsMins |
-    | ------------------- | ------------- |
-    | The Incredibles     | 116           |
-    | Ratatouille         | 115           |
-    | Monsters University | 110           |
-    | Finding Nemo        | 107           |
-    | WALL-E              | 104           |
+    | -----               | ------------- |
+    | Cars 2              | 120 |
+    | Cars                | 117 |
+    | The Incredibles     | 116 |
+    | Ratatouille         | 115 |
+    | Monsters University | 110 |
 
 
 3.  List the title and budget of any movie whose budget is less than that of the lowest-budget movie directed by Brad Bird.
