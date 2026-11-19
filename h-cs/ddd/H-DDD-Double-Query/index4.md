@@ -52,7 +52,7 @@ Display the largest budget first; movies with the same budget should be listed i
     | Toy Story 2   | 240000000   |
 
 
-4.  List the title, year of release and rating of all other movies that have a rating equal to or greater than the rating of the movie `Up`.
+4.  List the title, year of release and rating of all movies that have a rating equal to or greater than the rating of the movie Up.
 Display the highest-rated movie first; movies with the same rating should be listed in alphabetical order of title.
 
     | title       | yearReleased | rating |
@@ -60,6 +60,7 @@ Display the highest-rated movie first; movies with the same rating should be lis
     | WALL-E      | 2008         | 8.5    |
     | Toy Story 3 | 2010         | 8.4    |
     | Toy Story   | 1995         | 8.3    |
+    | Up          | 2009         | 8.3    |
 
 
 5.  List the title and combined US and international sales of all movies whose combined sales are above the average combined sales for all movies.
@@ -95,8 +96,8 @@ Display the earliest released movie first.
     | Cars 2 | 2011         |
 
 
-8.  Display the number of movies that do not have a title beginning with `Toy Story` but have a rating greater than the average rating of the movies whose titles begin with `Toy Story`.
+8.  Display the number of movies that have a rating greater than the average rating of the movies whose titles begin with Toy Story.
 
     | Number of Movies |
     | ---------------- |
-    | 2                |
+    | 4                |
