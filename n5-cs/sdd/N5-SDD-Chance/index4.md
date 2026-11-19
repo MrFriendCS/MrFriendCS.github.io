@@ -49,21 +49,23 @@ An appropriate message should be displayed, and the correct answer given if inco
 
 ## Implementation
 
-The design was implemented, as shown below.
-
-![Code](assets/code.png "Code")
+Implement a solution that matches the design.
 
 
 ## Testing
 
-    | Test No | Random Number | User Input | Test Type   | Expected               | Actual | Comment |
-    | :-----: | :-----------: | :--------: | ---------   | --------               | ------ | ------- |
-    | 1       | ?             | 5          | Normal      | An appropriate message |        | |
-    | 2       | ?             | 1          | Extreme     | An appropriate message |        | |
-    | 3a      | ?             | 0          | Exceptional | Error / Re-enter       |        | |
-    | 3b      | ?             | 11         | Exceptional | Error / Re-enter       |        | |
-    | 3c      | ?             | 10         | Extreme     | An appropriate message |        | |
-    | 4       | 5             | 6          | Normal      | "Correct!"             |        | |
-    | 5       | 5             | 5          | Normal      | "That number is the same.<br>The answer is 6."  | | |
-    | 6       | 5             | 7          | Normal      | "That number is too big.<br>The answer is 6."   | | |
-    | 7       | 5             | 4          | Normal      | "That number is to0 small.<br>The answer is 6." | | |
+Conduct the following tests.
+Temporarily verwrite the random number to test the selction logic.
+
+
+| Test No | Random Number | User Input | Test Type   | Expected               | Actual | Comment |
+| :-----: | :-----------: | :--------: | ---------   | --------               | ------ | ------- |
+| 1       | ?             | 5          | Normal      | An appropriate message |        | |
+| 2       | ?             | 1          | Extreme     | An appropriate message |        | |
+| 3a      | ?             | 0          | Exceptional | Error / Re-enter       |        | |
+| 3b      | ?             | 11         | Exceptional | Error / Re-enter       |        | |
+| 3c      | ?             | 10         | Extreme     | An appropriate message |        | |
+| 4       | 5             | 6          | Normal      | "Correct!"             |        | |
+| 5       | 5             | 5          | Normal      | "That number is the same.<br>The answer is 6."  | | |
+| 6       | 5             | 7          | Normal      | "That number is too big.<br>The answer is 6."   | | |
+| 7       | 5             | 4          | Normal      | "That number is to0 small.<br>The answer is 6." | | |
