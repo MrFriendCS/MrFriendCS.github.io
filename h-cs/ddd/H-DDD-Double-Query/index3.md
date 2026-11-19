@@ -7,27 +7,30 @@ File: [Clydeview.db](../H-DDD-Clydeview/assets/Clydeview.db "Download file")
 
 ### Table: Plant
 
-| Name        | Key | Type   | Size | Req'd | Validation                 |
-| ----------- | --- | ------ | ---- | ----- | -------------------------- |
-| category    |     | Text   | 10   | Y     |                            |
-| name        |     | Text   | 20   | Y     |                            |
-| variety     |     | Text   | 20   | Y     |                            |
-| code        |     | Text   | 3    | Y     |                            |
-| referenceID | PK  | Text   | 3    | Y     |                            |
-| quantity    |     | Number |      | Y     | Range: >= 0                |
-| price       |     | Number |      | Y     | Range: >= 0.00             |
-| height      |     | Text   | 1    | Y     | Restricted choice: S, M, T |
+| Name        | Key  | Type   | Size | Req'd | Validation                 |
+| ----------- | :--: | ------ | :--: | ----- | -------------------------- |
+| category    |      | Text   | 10   | Y     |                            |
+| name        |      | Text   | 20   | Y     |                            |
+| variety     |      | Text   | 20   | Y     |                            |
+| code        |      | Text   | 3    | Y     |                            |
+| referenceID | PK   | Text   | 3    | Y     |                            |
+| quantity    |      | Number |      | Y     | Range: >= 0                |
+| price       |      | Number |      | Y     | Range: >= 0.00             |
+| height      |      | Text   | 1    | Y     | Restricted choice: S, M, T |
 
 Height: `S` = short, `M` = medium, `T` = tall.
 
 
-## Tasks
+## Introduction
 
 Create SQL queries to display the required details.
 Aliases should be used to display meaningful headings.
 Use a temporary view containing a single value in the first query, then use this value in the second query.
-Example output is shown for each answer. Only the first five records are shown where more than five records are returned.
+Example output is shown for each answer.
+Only the first five records are shown where more than five records are returned.
 
+
+## Tasks
 
 1.  List the reference ID, name, variety and price of the cheapest plant.
 
@@ -48,7 +51,7 @@ The dearest plant should be listed first; plants with the same price should be l
     | P46         | Phlox   | 3.3   |
 
 
-3.  List the reference ID, name and quantity of all non-fuchsia plants that have a quantity greater than the largest quantity of any fuchsia plant.
+3.  List the reference ID, name and quantity of all patio or hedge plants that have a quantity greater than the largest quantity of any fuchsia plant.
 Display the largest quantity first; plants with the same quantity should be listed in order of reference ID.
 
     | referenceID | name       | quantity |

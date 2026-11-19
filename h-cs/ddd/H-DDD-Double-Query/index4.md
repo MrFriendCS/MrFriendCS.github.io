@@ -10,13 +10,16 @@ The tables called `Movie` and `BoxOffice` are shown below.
 ![ERD](../H-DDD-Computed-Values/assets/erd3.png)
 
 
-## Tasks
+## Introduction
 
 Create SQL queries to display the required details.
 Aliases should be used to display meaningful headings.
 Use a temporary view containing a single value in the first query, then use this value in the second query.
-Example output is shown for each answer. Only the first five records are shown where more than five records are returned.
+Example output is shown for each answer.
+Only the first five records are shown where more than five records are returned.
 
+
+## Tasks
 
 1.  List the title, director and rating of the movie with the highest rating.
 
