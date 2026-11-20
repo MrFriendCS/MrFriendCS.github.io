@@ -1,6 +1,6 @@
 # Title: N5 SDD - Chance Part 4
 # Author: Mr Friend
-# Date: 12 Nov 2026
+# Date: 20 Nov 2026
 
 # Get extra code
 import random
@@ -53,7 +53,7 @@ elif childNum == compNum:
     print("The answer is " + str(compNum + 1) + ".")
 
 # Is answer too big?
-elif childNum < compNum + 1:
+elif childNum > compNum + 1:
     
     print("That number is too big.")
     print("The answer is " + str(compNum + 1) + ".")
