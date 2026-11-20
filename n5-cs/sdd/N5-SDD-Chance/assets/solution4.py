@@ -2,43 +2,67 @@
 # Author: Mr Friend
 # Date: 12 Nov 2026
 
-"""Using program analysis."""
-
-# Import module
+# Get extra code
 import random
 
-# Declare variables
+# Initialise variables
 compNum: int = 0
 childNum: int = 0
 
-# Pick random number: 1 - 9
+# Pick a random number: 1 - 9
 compNum = random.randint(1, 9)
 
-# Only accept valid answers: 1 - 10
+# Display header
+print("Plus 1 Game")
+print("-----------")
+print()
+
+# Display number
+print("What is 1 more than " + str(compNum))
+
+# Blank line
+print()
+
+# Get valid answer
+childNum = int(input("Answer: "))
+
+# Check answer is valid: 1 - 10
 while childNum < 1 or childNum > 10:
     
-    # Display the number and get answer
-    childNum = int(input("What number is one bigger than " + str(compNum) + "? "))
+    # Blank line
+    print()
+    
+    # Display error message
+    print("Answer must be between 1 and 10.")
+    
+    # Get valid answer
+    childNum = int(input("Answer: "))
 
-    if childNum < 1 or childNum > 10:
-        # Error message
-        print("\nNumber must be from 1 to 10")
+# Blank line
+print()
 
 # Is answer correct?
 if childNum == compNum + 1:
-    print("\nCorrect - Well done!")
+    
+    print("Correct!")
+
+# Is answer the same?
+elif childNum == compNum:
+    
+    print("That number is the same.")
+    print("The answer is " + str(compNum + 1) + ".")
 
 # Is answer too big?
-elif childNum > compNum + 1:
-    print("Too big!")
-    print(str(childNum + 1) + " is one bigger than " + str(childNum))
+elif childNum < compNum + 1:
+    
+    print("That number is too big.")
+    print("The answer is " + str(compNum + 1) + ".")
 
 # Is answer too small?
-elif childNum < compNum:
-    print("Too small!")
-    print(str(childNum + 1) + " is one bigger than " + str(childNum))
-
-# Is answer same as number?
 else:
-    print("That's the same!")
-    print(str(childNum + 1) + " is one bigger than " + str(childNum))
+    
+    print("That number is too small.")
+    print("The answer is " + str(compNum + 1) + ".")
+
+# Display footer
+print("===========")
