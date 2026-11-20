@@ -1,6 +1,11 @@
 # N5 SDD - Five Lunches
 
 
+## Introduction
+
+To help people budget, an app is need to help calculate the cost of five school 
+
+
 ## Task
 
 Using Python, create a program that implements the pseudocode below.
@@ -14,8 +19,10 @@ DECLARE total INITIALLY 0.0
 DECLARE costs INITIALLY [0.0, 0.0, 0.0, 0.0, 0.0]
 
 # Get the costs of 5 lunches from the user
+SEND "Enter to cost of:" TO DISPLAY
+
 FOR day FROM 1 to 5 DO
-    SEND "Enter to cost of day " & day & ": £"
+    SEND "Day " & day & ": £" TO DISPLAY
     RECEIVE lunch FROM KEYBOARD
     SET costs[day] TO lunch
 END FOR
@@ -30,19 +37,20 @@ SEND "The total cost is: £" & total TO DISPLAY
 ```
 
 
-## User Experience
-
-Example below.
+## User Interface Example
 
 ```
 School Lunches
 --------------
 
-Enter to cost of day 1: £2.60
-Enter to cost of day 2: £2.40
-Enter to cost of day 3: £3.00
-Enter to cost of day 4: £1.44
-Enter to cost of day 5: £2.50
+Enter to cost of:
+
+Day 1: £2.60
+Day 2: £2.40
+Day 3: £3.00
+Day 4: £1.44
+Day 5: £2.50
 
 The total cost is: £11.94
+==============
 ```
