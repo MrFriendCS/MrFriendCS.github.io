@@ -71,7 +71,7 @@ Implement a solution that matches the design.
 ## Testing
 
 Conduct the following tests.
-Temporarily overwrite the random number to test the selction logic.
+Temporarily overwrite the random number to test the selection logic.
 
 
 | Test No | Random Number | User Input | Test Type   | Expected               | Actual | Comment |

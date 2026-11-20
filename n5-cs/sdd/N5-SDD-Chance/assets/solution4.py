@@ -18,7 +18,7 @@ print("-----------")
 print()
 
 # Display number
-print("What is 1 more than " + str(compNum))
+print("What is 1 more than " + str(compNum) + "?")
 
 # Blank line
 print()
