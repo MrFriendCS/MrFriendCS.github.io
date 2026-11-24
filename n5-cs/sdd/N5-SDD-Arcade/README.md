@@ -4,6 +4,7 @@
 
 The school gaming club is holding an arcade tournament.
 Five players are competing to see who can achieve the highest score in a computer game.
+The maximum possible score is 200.
 
 A program is needed to record the five players' scores and display them when required.
 
@@ -22,7 +23,8 @@ A program is needed to record the five players' scores and display them when req
 
 ### Assumptions
 
-All scores are whole numbers.
+* All scores are whole numbers.
+* All player numbers are whole numbers.
 
 
 ## User Experience
