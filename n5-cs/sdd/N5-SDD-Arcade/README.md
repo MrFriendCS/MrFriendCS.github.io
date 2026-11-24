@@ -71,14 +71,14 @@ Player 3 scored 200 points
 
 Conduct the following tests.
 
-| Test<br>No | Scores Entered<br>(Players 1–5) | Player<br>Number | Test Type   | Expected                                             | Actual | Comment |
-| :--:       | --------------                  | :----:           | ---------   | --------                                             | ------ | ------- |
-| 1          | 120, 85, 200, 150, 95           | 3                | Normal      | All scores displayed.<br>Player 3 scored 200 points. |        | |
-| 2          | 0, 50, 100, 150, 200            | 3                | Extreme     | All scores displayed.<br>Player 3 scored 100 points. |        | |
-| 3a         | -1                              |                  | Exceptional | Error / Re-enter score.                              |        | |
-| 3b         | 201                             |                  | Exceptional | Error / Re-enter score.                              |        | |
-| 3c         | 10, 20, 30, 40, 50              | 3                | Normal      | All scores displayed.<br>Player 3 scored 30 points.  |        | |
-| 4          | 10, 20, 30, 40, 50              | 1                | Extreme     | Player 1 scored 10 points.                           |        | |
-| 5a         | 10, 20, 30, 40, 50              | 0                | Exceptional | Error / Re-enter player number.                      |        | |
-| 5b         |                                 | 6                | Exceptional | Error / Re-enter player number.                      |        | |
-| 5b         |                                 | 5                | Extreme     | Player 5 scored 50 points.                           |        | |
+| Test<br>No | Scores<br>(Players 1–5) | Player | Test Type   | Expected                                             | Actual | Comment |
+| :--:       | ------                  | :----: | ---------   | --------                                             | ------ | ------- |
+| 1          | 120, 85, 200, 150, 95   | 3      | Normal      | All scores displayed.<br>Player 3 scored 200 points. |        | |
+| 2          | 0, 50, 100, 150, 200    | 3      | Extreme     | All scores displayed.<br>Player 3 scored 100 points. |        | |
+| 3a         | -1                      |        | Exceptional | Error / Re-enter score.                              |        | |
+| 3b         | 201                     |        | Exceptional | Error / Re-enter score.                              |        | |
+| 3c         | 10, 20, 30, 40, 50      | 3      | Normal      | All scores displayed.<br>Player 3 scored 30 points.  |        | |
+| 4          | 10, 20, 30, 40, 50      | 1      | Extreme     | Player 1 scored 10 points.                           |        | |
+| 5a         | 10, 20, 30, 40, 50      | 0      | Exceptional | Error / Re-enter player number.                      |        | |
+| 5b         |                         | 6      | Exceptional | Error / Re-enter player number.                      |        | |
+| 5b         |                         | 5      | Extreme     | Player 5 scored 50 points.                           |        | |
