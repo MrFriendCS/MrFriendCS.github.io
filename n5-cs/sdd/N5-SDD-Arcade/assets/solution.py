@@ -2,7 +2,7 @@
 # Author: Mr Friend
 # Date: 24 Nov 2026
 
-# Intialize variables
+# Initialise variables
 score: int = 0
 player: int = 0
 scores: list[int] = [0 for index in range(5)]
