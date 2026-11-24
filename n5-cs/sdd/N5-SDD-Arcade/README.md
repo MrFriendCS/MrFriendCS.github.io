@@ -73,7 +73,7 @@ Conduct the following tests.
 
 | Test<br>No | Scores<br>(Players 1–5) | Player<br>No | Test Type   | Expected                                             | Actual | Comment |
 | :--:       | ------                  | :----:       | ---------   | --------                                             | ------ | ------- |
-| 1          | 120, 85, 200, 150, 95   | 3            | Normal      | All scores displayed.<br>Player 3 scored 200 points. |        | |
+| 1          | 25, 50, 75, 100, 125    | 3            | Normal      | All scores displayed.<br>Player 3 scored 75 points. |        | |
 | 2          | 0, 50, 100, 150, 200    | 3            | Extreme     | All scores displayed.<br>Player 3 scored 100 points. |        | |
 | 3a         | -1                      |              | Exceptional | Error / Re-enter score.                              |        | |
 | 3b         | 201                     |              | Exceptional | Error / Re-enter score.                              |        | |
