@@ -24,7 +24,8 @@ for index in range(5):
     while score < 0 or score > 200:
         
         # Error message
-        print("Score must be between 0 and 200.")
+        print()
+        print("  Score must be between 0 and 200.")
         
         # Get valid score
         score = int(input("  Player " + str(index + 1) + ": "))
@@ -60,10 +61,11 @@ player = int(input("Enter a player's number: "))
 while player < 1 or player > 5:
     
     # Error message
+    print()
     print("Player's number must be between 1 and 5.")
     
     # Get valid player number
-    player = int(input("Enter a player's number: " + str(index + 1) + ": "))
+    player = int(input("Enter a player's number: "))
 
 # Display selected player's number
 print()
