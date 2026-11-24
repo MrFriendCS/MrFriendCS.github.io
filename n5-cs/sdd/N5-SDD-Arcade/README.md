@@ -1,19 +1,23 @@
-# N5 SDD - Test Result
+# N5 SDD - Arcade
 
 ## Introduction
 
-A user wants an automatic decision system that will classify a test score as either a '**Pass**' or a '**Fail**'.  A score of 60 or more is a pass, and anything else as a fail.
+The school gaming club is holding an arcade tournament.
+Five players are competing to see who can achieve the highest score in a computer game.
+
+A program is needed to record the five players' scores and display them when required.
 
 
-### Top level design (flowchart)
+### Top level design (structure diagram)
 
-![Flowchart](assets/fc1.png)
+![Structure diagram](assets/sd1.png)
 
 
 ## Tasks
 
 1. Implement a program that matches the design.
 2. Ensure the code is efficient.
+3. Test the code
 
 
 ### Assumptions
@@ -26,12 +30,36 @@ All scores are whole numbers.
 An example of the expected user interface are shown below, with possible input and output values.
 
 ```Python
-Score Classifier
-----------------
+Arcade Tournament
+-----------------
 
-Enter test score: 75 
+Enter the scores:
 
-Grade: Pass  
+  Player 1: 120
+  Player 2: 85
+  Player 3: 200
+  Player 4: 150
+  Player 5: 95
 
-================
+-----------------
+
+Tournament Results
+------------------
+
+Player 1 scored 120 points
+Player 2 scored 85 points
+Player 3 scored 200 points
+Player 4 scored 150 points
+Player 5 scored 95 points
+
+------------------
+
+Individual Result
+-----------------
+
+Enter a players' number: 3
+
+Player 3 scored 200 points
+
+=================
 ```
