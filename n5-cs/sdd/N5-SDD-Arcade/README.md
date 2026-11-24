@@ -81,4 +81,4 @@ Conduct the following tests.
 | 4          | 10, 20, 30, 40, 50      | 1            | Extreme     | All scores displayed.<br>Player 1 scored 10 points.  |        | |
 | 5a         | 10, 20, 30, 40, 50      | 0            | Exceptional | Error / Re-enter player number.                      |        | |
 | 5b         |                         | 6            | Exceptional | Error / Re-enter player number.                      |        | |
-| 5b         |                         | 5            | Extreme     | All scores displayed.<br>Player 5 scored 50 points.  |        | |
+| 5c         |                         | 5            | Extreme     | All scores displayed.<br>Player 5 scored 50 points.  |        | |
