@@ -56,13 +56,13 @@ print()
 # Get valid player number
 player = int(input("Enter a player's number: "))
 
-# Validate score
+# Validate player number
 while player < 1 or player > 5:
     
     # Error message
     print("Player's number must be between 1 and 5.")
     
-    # Get valid score
+    # Get valid player number
     player = int(input("Enter a player's number: " + str(index + 1) + ": "))
 
 # Display selected player's number
