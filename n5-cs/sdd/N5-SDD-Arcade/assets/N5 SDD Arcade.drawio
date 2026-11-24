@@ -82,7 +82,7 @@
             <mxPoint x="820" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ye8uzHBO5RR3Nxjkz_Ta-5" value="Get valid&lt;div&gt;player numver&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="qrFmPJ6-ptgdQkXmSBxx-1" vertex="1">
+        <mxCell id="Ye8uzHBO5RR3Nxjkz_Ta-5" value="Get valid&lt;div&gt;player number&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="qrFmPJ6-ptgdQkXmSBxx-1" vertex="1">
           <mxGeometry x="760" y="340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Ye8uzHBO5RR3Nxjkz_Ta-6" value="" style="endArrow=none;html=1;rounded=0;" parent="qrFmPJ6-ptgdQkXmSBxx-1" edge="1">
