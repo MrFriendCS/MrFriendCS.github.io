@@ -104,10 +104,10 @@ Display the dearest plant first.
 List the reference ID, name and stock value of all plant records with a stock value greater than the average stock value.
 Display the largest stock value first; records with the same stock value should be listed in order of reference ID.
 
-    | referenceID | name       | StockValue |
-    | ----------- | ---------- | ---------- |
-    | H59         | Bamboo     | 1490.0     |
-    | H64         | Dog Wood   | 500.0      |
-    | B23         | Begonia    | 175.5      |
-    | H25         | Berberis   | 175.0      |
-    | B07         | Eunonymous | 150.0      |
+    | referenceID | name       | Stock Value |
+    | ----------- | ---------- | ----------- |
+    | H59         | Bamboo     | 1490.0      |
+    | H64         | Dog Wood   | 500.0       |
+    | B23         | Begonia    | 175.5       |
+    | H25         | Berberis   | 175.0       |
+    | B07         | Eunonymous | 150.0       |
